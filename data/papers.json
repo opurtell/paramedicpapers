@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-11T21:36:38Z",
+  "lastUpdated": "2026-05-11T21:37:12Z",
   "featuredPapers": [
     {
       "id": "10.1080/10903127.2026.2666857",
@@ -8,8 +8,8 @@
       "date": "2026-05-11",
       "pmid": "",
       "doi": "10.1080/10903127.2026.2666857",
-      "summary": "",
-      "relevance": "",
+      "summary": "This retrospective cohort study analysed paramedic treat and discharge medical directives to understand utilisation patterns and key metrics for prehospital and emergency department decision-making \u2014 the findings provide valuable insights into the scope, safety, and operational impact of treat-and-refer pathways.",
+      "relevance": "\ud83d\udfe2 High",
       "featuredReason": "Recent publication in Prehospital Emergency Care"
     },
     {
@@ -19,8 +19,8 @@
       "date": "2026-05-11",
       "pmid": "",
       "doi": "10.1080/10903127.2026.2668008",
-      "summary": "",
-      "relevance": "",
+      "summary": "This study tested whether a large language model trained on agency-specific prehospital protocol documents could generate accurate care recommendations \u2014 they found promising accuracy for protocol interpretation and clinical decision support, suggesting potential for LLMs to assist with guideline navigation at the point of care.",
+      "relevance": "\ud83d\udfe1 Medium",
       "featuredReason": "Recent publication in Prehospital Emergency Care"
     },
     {
@@ -41,8 +41,8 @@
       "date": "2026-05-09",
       "pmid": "",
       "doi": "10.1186/s13049-026-01618-0",
-      "summary": "",
-      "relevance": "",
+      "summary": "Register-based cohort of 340 eye-related emergency calls found chemical exposures (31.5%), vision loss (25.9%), and trauma (18.2%) as leading causes, with 11.5% of patients initially coded for eye problems later diagnosed with stroke.",
+      "relevance": "\ud83d\udfe1 Medium",
       "featuredReason": "Recent publication in Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine"
     },
     {
@@ -52,8 +52,8 @@
       "date": "2026-05-07",
       "pmid": "",
       "doi": "10.1186/s13049-026-01626-0",
-      "summary": "",
-      "relevance": "",
+      "summary": "Prospective study of 205 HEMS patients comparing ondansetron prophylaxis, aromatherapy, and no prophylaxis for opioid-induced nausea \u2014 neither intervention showed benefit compared to no prophylaxis in unselected patients.",
+      "relevance": "\ud83d\udfe2 High",
       "featuredReason": "Recent publication in Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine"
     }
   ],
@@ -68,8 +68,8 @@
           "date": "2026-05-11",
           "pmid": "",
           "doi": "10.1080/10903127.2026.2666857",
-          "summary": "",
-          "relevance": ""
+          "summary": "This retrospective cohort study analysed paramedic treat and discharge medical directives to understand utilisation patterns and key metrics for prehospital and emergency department decision-making \u2014 the findings provide valuable insights into the scope, safety, and operational impact of treat-and-refer pathways.",
+          "relevance": "\ud83d\udfe2 High"
         },
         {
           "id": "10.1080/10903127.2026.2668008",
@@ -78,8 +78,8 @@
           "date": "2026-05-11",
           "pmid": "",
           "doi": "10.1080/10903127.2026.2668008",
-          "summary": "",
-          "relevance": ""
+          "summary": "This study tested whether a large language model trained on agency-specific prehospital protocol documents could generate accurate care recommendations \u2014 they found promising accuracy for protocol interpretation and clinical decision support, suggesting potential for LLMs to assist with guideline navigation at the point of care.",
+          "relevance": "\ud83d\udfe1 Medium"
         },
         {
           "id": "10.1186/s13049-026-01620-6",
@@ -103,8 +103,8 @@
           "date": "2026-05-09",
           "pmid": "",
           "doi": "10.1186/s13049-026-01618-0",
-          "summary": "",
-          "relevance": ""
+          "summary": "Register-based cohort of 340 eye-related emergency calls found chemical exposures (31.5%), vision loss (25.9%), and trauma (18.2%) as leading causes, with 11.5% of patients initially coded for eye problems later diagnosed with stroke.",
+          "relevance": "\ud83d\udfe1 Medium"
         }
       ]
     },
@@ -118,8 +118,8 @@
           "date": "2026-05-07",
           "pmid": "",
           "doi": "10.1186/s13049-026-01626-0",
-          "summary": "",
-          "relevance": ""
+          "summary": "Prospective study of 205 HEMS patients comparing ondansetron prophylaxis, aromatherapy, and no prophylaxis for opioid-induced nausea \u2014 neither intervention showed benefit compared to no prophylaxis in unselected patients.",
+          "relevance": "\ud83d\udfe2 High"
         }
       ]
     },
@@ -133,8 +133,8 @@
           "date": "2026-05-06",
           "pmid": "41996547",
           "doi": "10.1080/10903127.2026.2658592",
-          "summary": "",
-          "relevance": ""
+          "summary": "Meta-analysis testing whether intranasal or intramuscular midazolam works better for paediatric seizures without cannula access \u2014 intramuscular midazolam was associated with faster seizure termination and less need for rescue therapy, especially in the prehospital setting.",
+          "relevance": "\ud83d\udfe2 High"
         },
         {
           "id": "41919775",
@@ -143,8 +143,8 @@
           "date": "2026-05-06",
           "pmid": "41919775",
           "doi": "10.1080/10903127.2026.2651924",
-          "summary": "",
-          "relevance": ""
+          "summary": "Simulation study comparing bag-valve ventilation with automated ventilation during short-haul helicopter rescue using an i-gel \u2014 automated ventilation achieved target minute ventilation more consistently, caused less airway movement, and avoided disconnects.",
+          "relevance": "\ud83d\udfe1 Medium"
         },
         {
           "id": "10.1186/s13049-026-01621-5",
@@ -153,8 +153,8 @@
           "date": "2026-05-06",
           "pmid": "",
           "doi": "10.1186/s13049-026-01621-5",
-          "summary": "",
-          "relevance": ""
+          "summary": "Interview study exploring how Swedish tactical police medics view their training, role, and real-world practice \u2014 they reported being well trained but underused, with scope restrictions and inconsistent collaboration limiting what they can actually do.",
+          "relevance": "\ud83d\udd34 Low"
         }
       ]
     },
@@ -168,8 +168,8 @@
           "date": "2026-05-05",
           "pmid": "41950410",
           "doi": "10.1080/10903127.2026.2655289",
-          "summary": "",
-          "relevance": ""
+          "summary": "Retrospective Ontario review testing how paramedics decide to withhold CPR in traumatic cardiac arrest \u2014 most no-CPR decisions were based on signs clearly incompatible with life, and post-mortem findings supported paramedic assessment in the large majority of cases.",
+          "relevance": "\ud83d\udfe2 High"
         },
         {
           "id": "10.1186/s13049-026-01613-5",
@@ -178,8 +178,8 @@
           "date": "2026-05-05",
           "pmid": "",
           "doi": "10.1186/s13049-026-01613-5",
-          "summary": "",
-          "relevance": ""
+          "summary": "Retrospective physician-led HEMS trauma study examining whether more advanced interventions are stretching scene times \u2014 each additional intervention increased scene time by 41%, although overall scene times stayed similar over two decades because of changing case mix.",
+          "relevance": "\ud83d\udfe1 Medium"
         },
         {
           "id": "41980047",
@@ -188,8 +188,8 @@
           "date": "2026-05-05",
           "pmid": "41980047",
           "doi": "10.1080/10903127.2026.2655989",
-          "summary": "",
-          "relevance": ""
+          "summary": "Commentary challenging continued routine spinal immobilisation in suspected spinal injury \u2014 the authors argue decades of evidence now consistently show harm without benefit, and that paramedic scope should evolve to reflect current evidence.",
+          "relevance": "\ud83d\udfe2 High"
         }
       ]
     },
@@ -203,8 +203,8 @@
           "date": "2026-05-01",
           "pmid": "41369631",
           "doi": "10.1016/j.annemergmed.2025.10.009",
-          "summary": "",
-          "relevance": ""
+          "summary": "Retrospective cohort testing whether rapid systolic BP reduction \u2264150 mm Hg after spontaneous intracerebral haemorrhage improved outcomes \u2014 early target achievement and overshooting <120 mm Hg were associated with worse functional outcome.",
+          "relevance": "\ud83d\udfe1 Medium"
         },
         {
           "id": "10.1186/s13049-026-01617-1",
@@ -213,8 +213,8 @@
           "date": "2026-05-01",
           "pmid": "",
           "doi": "10.1186/s13049-026-01617-1",
-          "summary": "",
-          "relevance": ""
+          "summary": "Retrospective review tested whether immediate discharge after normal CT was safe for anticoagulated head-injury patients with GCS 14\u201315 \u2014 no delayed intracranial haemorrhage, neurosurgical intervention, or clinically significant deterioration occurred.",
+          "relevance": "\ud83d\udfe1 Medium"
         }
       ]
     },
@@ -228,8 +228,8 @@
           "date": "2026-04-30",
           "pmid": "42054269",
           "doi": "10.1080/10903127.2026.2661803",
-          "summary": "",
-          "relevance": ""
+          "summary": "Cadaveric crossover study testing needle decompression versus simple thoracostomy for theoretical tension pneumothorax \u2014 simple thoracostomy was more successful and faster, but the model limits clinical certainty.",
+          "relevance": "\ud83d\udfe1 Medium"
         },
         {
           "id": "41967757",
@@ -238,8 +238,8 @@
           "date": "2026-04-30",
           "pmid": "41967757",
           "doi": "10.1016/j.resuscitation.2026.111083",
-          "summary": "",
-          "relevance": ""
+          "summary": "Greater Sydney costing analysis of expedited OHCA transport for possible ECPR versus standard care \u2014 overall health system costs were comparable, with higher costs when patients arrived during ECPR business hours.",
+          "relevance": "\ud83d\udfe2 High"
         },
         {
           "id": "41967754",
@@ -248,8 +248,8 @@
           "date": "2026-04-30",
           "pmid": "41967754",
           "doi": "10.1016/j.resuscitation.2026.111087",
-          "summary": "",
-          "relevance": ""
+          "summary": "IVIO follow-up comparing initial intraosseous versus intravenous access in adult non-traumatic OHCA \u2014 6-month and 1-year outcomes were similar, with no evidence that either access strategy improves long-term survival or neurological outcome.",
+          "relevance": "\ud83d\udfe1 Medium"
         }
       ]
     },
@@ -263,8 +263,8 @@
           "date": "2026-04-28",
           "pmid": "",
           "doi": "10.1186/s13049-026-01612-6",
-          "summary": "",
-          "relevance": ""
+          "summary": "Simulation study comparing portable telemedicine devices for ambulance triage, and found the Vuzix headset ranked highest overall, but the smartphone app was the most practical early implementation option.",
+          "relevance": "\ud83d\udfe1 Medium"
         }
       ]
     },
@@ -278,8 +278,8 @@
           "date": "2026-04-26",
           "pmid": "42008734",
           "doi": "10.1080/10903127.2026.2659958",
-          "summary": "",
-          "relevance": ""
+          "summary": "This study used a modern transport model to estimate whether lights and sirens save time, and it found a median gain of only 3.0 to 3.3 minutes per trip, which likely does not justify the known driving risks except in selected cases.",
+          "relevance": "\ud83d\udfe1 Medium"
         },
         {
           "id": "Statewide Emergency Medical Services Protocols for",
@@ -303,8 +303,8 @@
           "date": "2026-04-25",
           "pmid": "41856454",
           "doi": "10.1016/j.resuscitation.2026.111061",
-          "summary": "",
-          "relevance": ""
+          "summary": "Secondary analysis of DOSE VF examined whether transthoracic current, pad position, and ROSC were linked, and found AP pad placement delivered higher current and was independently associated with ROSC, while delivered current itself was not.",
+          "relevance": "\ud83d\udfe2 High"
         }
       ]
     },
@@ -318,8 +318,8 @@
           "date": "2026-04-24",
           "pmid": "",
           "doi": "10.1186/s13049-026-01612-6",
-          "summary": "",
-          "relevance": ""
+          "summary": "Simulation study comparing portable telemedicine devices for ambulance triage, and found the Vuzix headset ranked highest overall, but the smartphone app was the most practical early implementation option.",
+          "relevance": "\ud83d\udfe1 Medium"
         },
         {
           "id": "10.1186/s13049-026-01611-7",
@@ -328,8 +328,8 @@
           "date": "2026-04-24",
           "pmid": "",
           "doi": "10.1186/s13049-026-01611-7",
-          "summary": "",
-          "relevance": ""
+          "summary": "Concept editorial arguing that the first minutes after injury, before EMS arrival, are a distinct high-risk window where bystander action and dispatcher guidance can prevent deaths, especially through haemorrhage control and airway management.",
+          "relevance": "\ud83d\udfe1 Medium"
         }
       ]
     },
@@ -343,8 +343,8 @@
           "date": "2026-04-23",
           "pmid": "41886731",
           "doi": "10.1080/10903127.2026.2650541",
-          "summary": "",
-          "relevance": ""
+          "summary": "They tested whether Ambulance Victoria's patella-reduction guideline improved analgesia and service outcomes, and found no analgesia gain but fewer cannulae, fewer transports, and shorter cases.",
+          "relevance": "\ud83d\udfe2 High"
         },
         {
           "id": "32741576",
@@ -353,8 +353,8 @@
           "date": "2026-04-23",
           "pmid": "32741576",
           "doi": "10.1016/j.jemermed.2020.06.010",
-          "summary": "",
-          "relevance": ""
+          "summary": "They measured whether lights and sirens meaningfully shorten critical care transport, and found a statistically significant but modest time saving of about 8 minutes.",
+          "relevance": "\ud83d\udfe1 Medium"
         },
         {
           "id": "41243403",
@@ -363,8 +363,8 @@
           "date": "2026-04-23",
           "pmid": "41243403",
           "doi": "10.1111/1742-6723.70168",
-          "summary": "",
-          "relevance": ""
+          "summary": "They tested a pre-hospital telehealth model for ambulance-retrieved patients, and found it was feasible, advanced senior review, and reduced ED length of stay without improving crew cycle times.",
+          "relevance": "\ud83d\udfe2 High"
         }
       ]
     },
@@ -378,8 +378,8 @@
           "date": "2026-04-22",
           "pmid": "41987276",
           "doi": "10.1186/s13049-026-01610-8",
-          "summary": "",
-          "relevance": ""
+          "summary": "Tested whether Quantra can rapidly detect trauma-induced coagulopathy against standard lab tests, and found early Quantra analysis may reliably exclude TIC, but prospective validation is still needed.",
+          "relevance": "\ud83d\udfe2 High"
         },
         {
           "id": "41998677",
@@ -388,8 +388,8 @@
           "date": "2026-04-22",
           "pmid": "41998677",
           "doi": "10.1186/s13049-026-01616-2",
-          "summary": "",
-          "relevance": ""
+          "summary": "Tested whether a vision-enabled GPT model could estimate pneumothorax size and guide tube thoracostomy vs conservative care, and it matched radiologist measurements closely with good agreement to real-world ED decisions.",
+          "relevance": "\ud83d\udfe1 Medium"
         }
       ]
     },
@@ -403,8 +403,8 @@
           "date": "2026-04-21",
           "pmid": "41886731",
           "doi": "10.1080/10903127.2026.2650541",
-          "summary": "",
-          "relevance": ""
+          "summary": "Retrospective study (n=1,210) evaluating whether Ambulance Victoria's Nov 2022 CPG for paramedic patella reduction changed practice \u2014 91.8% reduction success rate, transport rate dropped 38.4%, case duration cut by ~33 minutes, and IV cannula use down 17.3%, with no change in effective analgesia rates.",
+          "relevance": "\ud83d\udfe2 High"
         },
         {
           "id": "41881292",
@@ -413,8 +413,8 @@
           "date": "2026-04-21",
           "pmid": "41881292",
           "doi": "10.1016/j.resuscitation.2026.111071",
-          "summary": "",
-          "relevance": ""
+          "summary": "Case series examining the problem of ventricular arrhythmias occurring during TCP and delays to defibrillation \u2014 highlights the clinical trap of pacing artefact masking VF and the need to pause pacing to identify shockable rhythms.",
+          "relevance": "\ud83d\udfe1 Medium"
         },
         {
           "id": "10.1186/s13049-026-01611-7",
@@ -423,8 +423,8 @@
           "date": "2026-04-21",
           "pmid": "",
           "doi": "10.1186/s13049-026-01611-7",
-          "summary": "",
-          "relevance": ""
+          "summary": "Concept editorial arguing that the first minutes after injury, before EMS arrival, are a distinct high-risk window where bystander action and dispatcher guidance can prevent deaths, especially through haemorrhage control and airway management.",
+          "relevance": "\ud83d\udfe1 Medium"
         }
       ]
     }
