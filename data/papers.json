@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-11T21:37:12Z",
+  "lastUpdated": "2026-05-11T23:49:18Z",
   "featuredPapers": [
     {
       "id": "10.1080/10903127.2026.2666857",
@@ -10,7 +10,29 @@
       "doi": "10.1080/10903127.2026.2666857",
       "summary": "This retrospective cohort study analysed paramedic treat and discharge medical directives to understand utilisation patterns and key metrics for prehospital and emergency department decision-making \u2014 the findings provide valuable insights into the scope, safety, and operational impact of treat-and-refer pathways.",
       "relevance": "\ud83d\udfe2 High",
-      "featuredReason": "Recent publication in Prehospital Emergency Care"
+      "featuredReason": "Directly relevant to Australian paramedic scope of practice \u2014 examines how treat-and-discharge directives are used and their impact on ED workload, a growing area of interest for extended-care paramedic roles."
+    },
+    {
+      "id": "41950410",
+      "title": "Paramedics' decisions to withhold resuscitation in traumatic cardiac arrest: accuracy of paramedic assessments compared with autopsy findings",
+      "journal": "Prehospital Emergency Care",
+      "date": "2026-05-05",
+      "pmid": "41950410",
+      "doi": "10.1080/10903127.2026.2655289",
+      "summary": "Retrospective Ontario review testing how paramedics decide to withhold CPR in traumatic cardiac arrest \u2014 most no-CPR decisions were based on signs clearly incompatible with life, and post-mortem findings supported paramedic assessment in the large majority of cases.",
+      "relevance": "\ud83d\udfe2 High",
+      "featuredReason": "Examines paramedic decision-making around withholding CPR in traumatic cardiac arrest \u2014 highly relevant to Australian guidelines on termination of resuscitation and clinical judgement."
+    },
+    {
+      "id": "41996547",
+      "title": "Intranasal Versus Intramuscular Midazolam in Pediatric Seizure Control: A Systematic Review and Meta-Analysis",
+      "journal": "Prehospital Emergency Care",
+      "date": "2026-05-06",
+      "pmid": "41996547",
+      "doi": "10.1080/10903127.2026.2658592",
+      "summary": "Meta-analysis testing whether intranasal or intramuscular midazolam works better for paediatric seizures without cannula access \u2014 intramuscular midazolam was associated with faster seizure termination and less need for rescue therapy, especially in the prehospital setting.",
+      "relevance": "\ud83d\udfe2 High",
+      "featuredReason": "Meta-analysis comparing IN vs IM midazolam for paediatric seizures \u2014 directly applicable to Australian paramedic protocols for convulsive status epilepticus in children."
     },
     {
       "id": "10.1080/10903127.2026.2668008",
@@ -21,40 +43,18 @@
       "doi": "10.1080/10903127.2026.2668008",
       "summary": "This study tested whether a large language model trained on agency-specific prehospital protocol documents could generate accurate care recommendations \u2014 they found promising accuracy for protocol interpretation and clinical decision support, suggesting potential for LLMs to assist with guideline navigation at the point of care.",
       "relevance": "\ud83d\udfe1 Medium",
-      "featuredReason": "Recent publication in Prehospital Emergency Care"
+      "featuredReason": "Tests whether AI can correctly apply agency-specific prehospital protocols \u2014 relevant as services explore clinical decision support tools and the future of protocol-guided care."
     },
     {
-      "id": "10.1186/s13049-026-01620-6",
-      "title": "Predictive Value of Carotid Artery Doppler Ultrasound for Resuscitation Outcomes in Patients with Cardiac Arrest",
+      "id": "10.1186/s13049-026-01613-5",
+      "title": "The impact of advanced pre-hospital interventions on scene time",
       "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
-      "date": "2026-05-11",
+      "date": "2026-05-05",
       "pmid": "",
-      "doi": "10.1186/s13049-026-01620-6",
-      "summary": "",
-      "relevance": "",
-      "featuredReason": "Recent publication in Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine"
-    },
-    {
-      "id": "10.1186/s13049-026-01618-0",
-      "title": "Eye-related emergency calls and prehospital management in region Zealand, Danmark: a register-based cohort study",
-      "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
-      "date": "2026-05-09",
-      "pmid": "",
-      "doi": "10.1186/s13049-026-01618-0",
-      "summary": "Register-based cohort of 340 eye-related emergency calls found chemical exposures (31.5%), vision loss (25.9%), and trauma (18.2%) as leading causes, with 11.5% of patients initially coded for eye problems later diagnosed with stroke.",
+      "doi": "10.1186/s13049-026-01613-5",
+      "summary": "Retrospective physician-led HEMS trauma study examining whether more advanced interventions are stretching scene times \u2014 each additional intervention increased scene time by 41%, although overall scene times stayed similar over two decades because of changing case mix.",
       "relevance": "\ud83d\udfe1 Medium",
-      "featuredReason": "Recent publication in Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine"
-    },
-    {
-      "id": "10.1186/s13049-026-01626-0",
-      "title": "Prophylaxis of opioid-induced nausea in helicopter emergency medical service: a prospective quasi-experimental study",
-      "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
-      "date": "2026-05-07",
-      "pmid": "",
-      "doi": "10.1186/s13049-026-01626-0",
-      "summary": "Prospective study of 205 HEMS patients comparing ondansetron prophylaxis, aromatherapy, and no prophylaxis for opioid-induced nausea \u2014 neither intervention showed benefit compared to no prophylaxis in unselected patients.",
-      "relevance": "\ud83d\udfe2 High",
-      "featuredReason": "Recent publication in Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine"
+      "featuredReason": "Physician-led HEMS study on whether advanced interventions extend scene times \u2014 relevant to the ongoing debate about scoop-and-run vs stay-and-play in Australian trauma systems."
     }
   ],
   "dailyUpdates": [
