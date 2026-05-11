@@ -1,74 +1,110 @@
 {
-  "lastUpdated": "2026-05-10T07:00:00Z",
+  "lastUpdated": "2026-05-11T21:21:17Z",
   "featuredPapers": [
     {
-      "id": "pm-2026-bvm-vs-sga",
-      "title": "Supraglottic Airway versus Bag-Valve-Mask Ventilation in Out-of-Hospital Cardiac Arrest: A Pragmatic Randomized Trial",
-      "journal": "Resuscitation",
-      "date": "2026-05-08",
-      "pmid": "42101234",
-      "doi": "10.1016/j.resuscitation.2026.03.042",
-      "summary": "Multicentre RCT (n=4,210) finding no difference in 30-day survival between initial SGA insertion and BVM ventilation, but SGA resulted in fewer airway complications and faster time to first ventilation.",
-      "relevance": "🟢 High — direct prehospital airway management evidence",
-      "featuredReason": "Landmark trial directly comparing two foundational airway strategies in OHCA — changes to guidelines likely"
-    },
-    {
-      "id": "pm-2026-txa-ped-trauma",
-      "title": "Tranexamic Acid in Paediatric Traumatic Brain Injury: Prehospital Administration Feasibility Study",
-      "journal": "Emergency Medicine Journal",
-      "date": "2026-05-06",
-      "pmid": "42098765",
-      "doi": "10.1136/emermed-2025-214892",
-      "summary": "Prospective cohort across 8 EMS agencies demonstrating safe prehospital TXA administration in children with suspected TBI, with 94% protocol compliance and no adverse thromboembolic events.",
-      "relevance": "🟢 High — extends TXA evidence to paediatric prehospital population",
-      "featuredReason": "First prehospital paediatric TXA feasibility data — addresses a significant evidence gap"
-    },
-    {
-      "id": "pm-2026-ecpr-metanalysis",
-      "title": "Extracorporeal Cardiopulmonary Resuscitation in Out-of-Hospital Cardiac Arrest: Updated Systematic Review and Meta-Analysis",
-      "journal": "JAMA Cardiology",
-      "date": "2026-05-01",
-      "pmid": "42087654",
-      "doi": "10.1001/jamacardio.2026.1234",
-      "summary": "Meta-analysis of 14 studies (n=62,500) showing ECPR associated with improved survival to hospital discharge (OR 2.8, 95% CI 1.9-4.1) in refractory VF/VT arrest when initiated within 60 minutes.",
-      "relevance": "🟢 High — ECPR evidence synthesis relevant to advanced EMS systems",
-      "featuredReason": "Comprehensive meta-analysis strengthening the case for ECPR in selected patients — important for services considering implementation"
-    },
-    {
-      "id": "pm-2026-ketamine-excited",
-      "title": "Ketamine versus Midazolam for Excited Delirium Syndrome in the Prehospital Setting",
+      "id": "10.1080/10903127.2026.2666857",
+      "title": "Utilization and Metrics Associated with Paramedic Treat and Discharge Medical Directives for Paramedic Services and Emergency Departments: A Retrospective Cohort Study",
       "journal": "Prehospital Emergency Care",
-      "date": "2026-04-28",
-      "pmid": "42076543",
-      "doi": "10.1080/10903127.2026.2850541",
-      "summary": "Retrospective cohort (n=892) showing ketamine was associated with faster sedation onset and fewer required rescue doses compared to midazolam, but higher rates of emergent airway intervention (12% vs 5%).",
-      "relevance": "🟡 Medium — relevant to operational chemical sedation protocols",
-      "featuredReason": "Directly informs the ketamine vs midazolam debate for excited delirium — safety signal worth noting"
+      "date": "2026-05-11",
+      "pmid": "",
+      "doi": "10.1080/10903127.2026.2666857",
+      "summary": "",
+      "relevance": "",
+      "featuredReason": "Recent publication in Prehospital Emergency Care"
+    },
+    {
+      "id": "10.1080/10903127.2026.2668008",
+      "title": "Can a Large Language Model Grounded in Text-Based Agency-Specific Prehospital Protocols Provide Accurate Care Recommendations?",
+      "journal": "Prehospital Emergency Care",
+      "date": "2026-05-11",
+      "pmid": "",
+      "doi": "10.1080/10903127.2026.2668008",
+      "summary": "",
+      "relevance": "",
+      "featuredReason": "Recent publication in Prehospital Emergency Care"
+    },
+    {
+      "id": "10.1186/s13049-026-01620-6",
+      "title": "Predictive Value of Carotid Artery Doppler Ultrasound for Resuscitation Outcomes in Patients with Cardiac Arrest",
+      "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+      "date": "2026-05-11",
+      "pmid": "",
+      "doi": "10.1186/s13049-026-01620-6",
+      "summary": "",
+      "relevance": "",
+      "featuredReason": "Recent publication in Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine"
+    },
+    {
+      "id": "10.1186/s13049-026-01618-0",
+      "title": "Eye-related emergency calls and prehospital management in region Zealand, Danmark: a register-based cohort study",
+      "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+      "date": "2026-05-09",
+      "pmid": "",
+      "doi": "10.1186/s13049-026-01618-0",
+      "summary": "",
+      "relevance": "",
+      "featuredReason": "Recent publication in Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine"
+    },
+    {
+      "id": "10.1186/s13049-026-01626-0",
+      "title": "Prophylaxis of opioid-induced nausea in helicopter emergency medical service: a prospective quasi-experimental study",
+      "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+      "date": "2026-05-07",
+      "pmid": "",
+      "doi": "10.1186/s13049-026-01626-0",
+      "summary": "",
+      "relevance": "",
+      "featuredReason": "Recent publication in Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine"
     }
   ],
   "dailyUpdates": [
     {
+      "date": "2026-05-11",
+      "papers": [
+        {
+          "id": "10.1080/10903127.2026.2666857",
+          "title": "Utilization and Metrics Associated with Paramedic Treat and Discharge Medical Directives for Paramedic Services and Emergency Departments: A Retrospective Cohort Study",
+          "journal": "Prehospital Emergency Care",
+          "date": "2026-05-11",
+          "pmid": "",
+          "doi": "10.1080/10903127.2026.2666857",
+          "summary": "",
+          "relevance": ""
+        },
+        {
+          "id": "10.1080/10903127.2026.2668008",
+          "title": "Can a Large Language Model Grounded in Text-Based Agency-Specific Prehospital Protocols Provide Accurate Care Recommendations?",
+          "journal": "Prehospital Emergency Care",
+          "date": "2026-05-11",
+          "pmid": "",
+          "doi": "10.1080/10903127.2026.2668008",
+          "summary": "",
+          "relevance": ""
+        },
+        {
+          "id": "10.1186/s13049-026-01620-6",
+          "title": "Predictive Value of Carotid Artery Doppler Ultrasound for Resuscitation Outcomes in Patients with Cardiac Arrest",
+          "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+          "date": "2026-05-11",
+          "pmid": "",
+          "doi": "10.1186/s13049-026-01620-6",
+          "summary": "",
+          "relevance": ""
+        }
+      ]
+    },
+    {
       "date": "2026-05-09",
       "papers": [
         {
-          "id": "pm-2026-bvm-vs-sga",
-          "title": "Supraglottic Airway versus Bag-Valve-Mask Ventilation in Out-of-Hospital Cardiac Arrest: A Pragmatic Randomized Trial",
-          "journal": "Resuscitation",
-          "date": "2026-05-08",
-          "pmid": "42101234",
-          "doi": "10.1016/j.resuscitation.2026.03.042",
-          "summary": "Multicentre RCT (n=4,210) finding no difference in 30-day survival between initial SGA insertion and BVM ventilation, but SGA resulted in fewer airway complications and faster time to first ventilation.",
-          "relevance": "🟢 High — direct prehospital airway management evidence"
-        },
-        {
-          "id": "pm-2026-wearable-ecg",
-          "title": "Wearable ECG Detection of Occult Atrial Fibrillation in Prehospital Stroke Screen",
-          "journal": "Stroke",
-          "date": "2026-05-07",
-          "pmid": "42102345",
-          "doi": "10.1161/STROKEAHA.125.048123",
-          "summary": "Pilot study using single-lead wearable ECG during paramedic stroke screening identified previously undetected AF in 8.3% of patients, suggesting potential for prehospital AF detection workflows.",
-          "relevance": "🟡 Medium — emerging technology for paramedic practice"
+          "id": "10.1186/s13049-026-01618-0",
+          "title": "Eye-related emergency calls and prehospital management in region Zealand, Danmark: a register-based cohort study",
+          "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+          "date": "2026-05-09",
+          "pmid": "",
+          "doi": "10.1186/s13049-026-01618-0",
+          "summary": "",
+          "relevance": ""
         }
       ]
     },
@@ -76,94 +112,259 @@
       "date": "2026-05-07",
       "papers": [
         {
-          "id": "pm-2026-txa-ped-trauma",
-          "title": "Tranexamic Acid in Paediatric Traumatic Brain Injury: Prehospital Administration Feasibility Study",
-          "journal": "Emergency Medicine Journal",
-          "date": "2026-05-06",
-          "pmid": "42098765",
-          "doi": "10.1136/emermed-2025-214892",
-          "summary": "Prospective cohort across 8 EMS agencies demonstrating safe prehospital TXA administration in children with suspected TBI, with 94% protocol compliance and no adverse thromboembolic events.",
-          "relevance": "🟢 High — extends TXA evidence to paediatric prehospital population"
-        },
-        {
-          "id": "pm-2026-telestroke-ems",
-          "title": "Prehospital Telestroke Consultation Reduces Door-to-Needle Time in Rural EMS",
-          "journal": "Neurology",
-          "date": "2026-05-05",
-          "pmid": "42095432",
-          "doi": "10.1212/WNL.0000000000021345",
-          "summary": "Cluster RCT across 24 rural EMS agencies showing prehospital video consultation with a neurologist reduced median door-to-needle time by 23 minutes and increased thrombolysis rates from 8% to 14%.",
-          "relevance": "🟢 High — direct impact on rural prehospital stroke care pathways"
-        },
-        {
-          "id": "pm-2026-backboard-comparison",
-          "title": "Scoop Stretcher versus Long Spine Board for Prehospital Spinal Motion Restriction: Crossover Simulation Study",
+          "id": "10.1186/s13049-026-01626-0",
+          "title": "Prophylaxis of opioid-induced nausea in helicopter emergency medical service: a prospective quasi-experimental study",
           "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
-          "date": "2026-05-04",
+          "date": "2026-05-07",
           "pmid": "",
-          "doi": "10.1186/s13049-026-01234-5",
-          "summary": "Simulation study with paramedic teams showing scoop stretcher provided equivalent spinal motion restriction with significantly faster application time and less patient movement during extrication.",
-          "relevance": "🟡 Medium — practical equipment comparison for daily practice"
+          "doi": "10.1186/s13049-026-01626-0",
+          "summary": "",
+          "relevance": ""
         }
       ]
     },
     {
-      "date": "2026-05-03",
+      "date": "2026-05-06",
       "papers": [
         {
-          "id": "pm-2026-ecpr-metanalysis",
-          "title": "Extracorporeal Cardiopulmonary Resuscitation in Out-of-Hospital Cardiac Arrest: Updated Systematic Review and Meta-Analysis",
-          "journal": "JAMA Cardiology",
-          "date": "2026-05-01",
-          "pmid": "42087654",
-          "doi": "10.1001/jamacardio.2026.1234",
-          "summary": "Meta-analysis of 14 studies (n=62,500) showing ECPR associated with improved survival to hospital discharge (OR 2.8, 95% CI 1.9-4.1) in refractory VF/VT arrest when initiated within 60 minutes.",
-          "relevance": "🟢 High — ECPR evidence synthesis relevant to advanced EMS systems"
-        },
-        {
-          "id": "pm-2026-pain-inhaled",
-          "title": "Inhaled Methoxyflurane for Acute Traumatic Pain in the Prehospital Setting: A Randomized Controlled Trial",
-          "journal": "Annals of Emergency Medicine",
-          "date": "2026-04-30",
-          "pmid": "42086543",
-          "doi": "10.1016/j.annemergmed.2026.02.015",
-          "summary": "RCT (n=312) demonstrating inhaled methoxyflurane provided clinically significant pain reduction (≥2 points on NRS) within 5 minutes, with efficacy comparable to IV fentanyl but without requiring IV access.",
-          "relevance": "🟢 High — non-invasive analgesia option directly applicable to paramedic practice"
-        }
-      ]
-    },
-    {
-      "date": "2026-04-29",
-      "papers": [
-        {
-          "id": "pm-2026-ketamine-excited",
-          "title": "Ketamine versus Midazolam for Excited Delirium Syndrome in the Prehospital Setting",
+          "id": "41996547",
+          "title": "Intranasal Versus Intramuscular Midazolam in Pediatric Seizure Control: A Systematic Review and Meta-Analysis",
           "journal": "Prehospital Emergency Care",
+          "date": "2026-05-06",
+          "pmid": "41996547",
+          "doi": "10.1080/10903127.2026.2658592",
+          "summary": "",
+          "relevance": ""
+        },
+        {
+          "id": "41919775",
+          "title": "Manual versus Automated Ventilation with an i-gel\u00ae Airway During Short-Haul Helicopter Operations",
+          "journal": "Prehospital Emergency Care",
+          "date": "2026-05-06",
+          "pmid": "41919775",
+          "doi": "10.1080/10903127.2026.2651924",
+          "summary": "",
+          "relevance": ""
+        },
+        {
+          "id": "10.1186/s13049-026-01621-5",
+          "title": "The role of tactical police medics in the prehospital environment: results from an interview study",
+          "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+          "date": "2026-05-06",
+          "pmid": "",
+          "doi": "10.1186/s13049-026-01621-5",
+          "summary": "",
+          "relevance": ""
+        }
+      ]
+    },
+    {
+      "date": "2026-05-05",
+      "papers": [
+        {
+          "id": "41950410",
+          "title": "Paramedics' decisions to withhold resuscitation in traumatic cardiac arrest: accuracy of paramedic assessments compared with autopsy findings",
+          "journal": "Prehospital Emergency Care",
+          "date": "2026-05-05",
+          "pmid": "41950410",
+          "doi": "10.1080/10903127.2026.2655289",
+          "summary": "",
+          "relevance": ""
+        },
+        {
+          "id": "10.1186/s13049-026-01613-5",
+          "title": "The impact of advanced pre-hospital interventions on scene time",
+          "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+          "date": "2026-05-05",
+          "pmid": "",
+          "doi": "10.1186/s13049-026-01613-5",
+          "summary": "",
+          "relevance": ""
+        },
+        {
+          "id": "41980047",
+          "title": "Out-of-Hospital Management of Suspected Spinal Cord Injuries: How Much Evidence Does it Take to Change Practice?",
+          "journal": "Prehospital Emergency Care",
+          "date": "2026-05-05",
+          "pmid": "41980047",
+          "doi": "10.1080/10903127.2026.2655989",
+          "summary": "",
+          "relevance": ""
+        }
+      ]
+    },
+    {
+      "date": "2026-05-01",
+      "papers": [
+        {
+          "id": "41369631",
+          "title": "Early Intensive Blood Pressure Reduction After Intracerebral Hemorrhage Is Associated With Worse Functional Outcome: The Risk of Overshooting Blood Pressure Goals",
+          "journal": "Annals of Emergency Medicine",
+          "date": "2026-05-01",
+          "pmid": "41369631",
+          "doi": "10.1016/j.annemergmed.2025.10.009",
+          "summary": "",
+          "relevance": ""
+        },
+        {
+          "id": "10.1186/s13049-026-01617-1",
+          "title": "No delayed intracranial hemorrhage in head injury patients on oral anticoagulants and with normal CT: a retrospective study of 215 patients",
+          "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+          "date": "2026-05-01",
+          "pmid": "",
+          "doi": "10.1186/s13049-026-01617-1",
+          "summary": "",
+          "relevance": ""
+        }
+      ]
+    },
+    {
+      "date": "2026-04-30",
+      "papers": [
+        {
+          "id": "42054269",
+          "title": "Comparison of needle decompression to simple (finger) thoracostomy in non-perfused cadaveric models with theoretical tension pneumothorax",
+          "journal": "Prehospital Emergency Care",
+          "date": "2026-04-30",
+          "pmid": "42054269",
+          "doi": "10.1080/10903127.2026.2661803",
+          "summary": "",
+          "relevance": ""
+        },
+        {
+          "id": "41967757",
+          "title": "Healthcare costs of expedited transport compared with standard care following out-of-hospital cardiac arrest: results from the EVIDENCE randomised controlled trial",
+          "journal": "Resuscitation",
+          "date": "2026-04-30",
+          "pmid": "41967757",
+          "doi": "10.1016/j.resuscitation.2026.111083",
+          "summary": "",
+          "relevance": ""
+        },
+        {
+          "id": "41967754",
+          "title": "Effect of vascular access strategy on long-term outcomes in patients with out-of-hospital cardiac arrest: a randomised clinical trial",
+          "journal": "Resuscitation",
+          "date": "2026-04-30",
+          "pmid": "41967754",
+          "doi": "10.1016/j.resuscitation.2026.111087",
+          "summary": "",
+          "relevance": ""
+        }
+      ]
+    },
+    {
+      "date": "2026-04-28",
+      "papers": [
+        {
+          "id": "10.1186/s13049-026-01612-6",
+          "title": "Feasibility of portable telemedicine devices for ambulance-based prehospital triage: a comparative simulation study",
+          "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
           "date": "2026-04-28",
-          "pmid": "42076543",
-          "doi": "10.1080/10903127.2026.2850541",
-          "summary": "Retrospective cohort (n=892) showing ketamine was associated with faster sedation onset and fewer required rescue doses compared to midazolam, but higher rates of emergent airway intervention (12% vs 5%).",
-          "relevance": "🟡 Medium — relevant to operational chemical sedation protocols"
-        },
+          "pmid": "",
+          "doi": "10.1186/s13049-026-01612-6",
+          "summary": "",
+          "relevance": ""
+        }
+      ]
+    },
+    {
+      "date": "2026-04-26",
+      "papers": [
         {
-          "id": "pm-2026-mass-cas-triage",
-          "title": "Accuracy of SALT Triage among Paramedics in Simulated Mass Casualty Incidents",
-          "journal": "Prehospital and Disaster Medicine",
-          "date": "2026-04-27",
-          "pmid": "42075432",
-          "doi": "",
-          "summary": "Simulation-based study finding SALT triage accuracy of 71% among experienced paramedics, with consistent under-triage of respiratory compromise and over-triage of walking wounded.",
-          "relevance": "🟡 Medium — triage training implications for MCI preparedness"
-        },
-        {
-          "id": "pm-2026-epinephrine-dose",
-          "title": "Standard versus High-Dose Epinephrine in Pediatric Out-of-Hospital Cardiac Arrest",
-          "journal": "Pediatrics",
+          "id": "42008734",
+          "title": "The Estimated Benefit of Lights and Sirens During Ambulance Transport",
+          "journal": "Prehospital Emergency Care",
           "date": "2026-04-26",
-          "pmid": "42074321",
-          "doi": "10.1542/peds.2025-098765",
-          "summary": "Retrospective analysis of 1,847 paediatric OHCA cases finding no survival benefit with high-dose epinephrine (0.1 mg/kg) over standard dose (0.01 mg/kg), and increased risk of post-ROSC myocardial dysfunction.",
-          "relevance": "🔴 Indirect — paediatric cardiac arrest, reinforces current dosing recommendations"
+          "pmid": "42008734",
+          "doi": "10.1080/10903127.2026.2659958",
+          "summary": "",
+          "relevance": ""
+        },
+        {
+          "id": "Statewide Emergency Medical Services Protocols for",
+          "title": "Statewide Emergency Medical Services Protocols for Field-Initiated Blood Resuscitation",
+          "journal": "Prehospital Emergency Care",
+          "date": "2026-04-26",
+          "pmid": "",
+          "doi": "",
+          "summary": "",
+          "relevance": ""
+        }
+      ]
+    },
+    {
+      "date": "2026-04-25",
+      "papers": [
+        {
+          "id": "41856454",
+          "title": "The impact of defibrillation current and pad position on return of spontaneous circulation during refractory ventricular fibrillation",
+          "journal": "Resuscitation",
+          "date": "2026-04-25",
+          "pmid": "41856454",
+          "doi": "10.1016/j.resuscitation.2026.111061",
+          "summary": "",
+          "relevance": ""
+        }
+      ]
+    },
+    {
+      "date": "2026-04-24",
+      "papers": [
+        {
+          "id": "10.1186/s13049-026-01612-6",
+          "title": "Feasibility of portable telemedicine devices for ambulance-based prehospital triage: a comparative simulation study",
+          "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+          "date": "2026-04-24",
+          "pmid": "",
+          "doi": "10.1186/s13049-026-01612-6",
+          "summary": "",
+          "relevance": ""
+        },
+        {
+          "id": "10.1186/s13049-026-01611-7",
+          "title": "The diamond minutes: rethinking the earliest link of the trauma chain of survival",
+          "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+          "date": "2026-04-24",
+          "pmid": "",
+          "doi": "10.1186/s13049-026-01611-7",
+          "summary": "",
+          "relevance": ""
+        }
+      ]
+    },
+    {
+      "date": "2026-04-23",
+      "papers": [
+        {
+          "id": "41886731",
+          "title": "Introduction of a Clinical Practice Guideline for Patella Reduction by Paramedics: The Effect on Pain Relief, Relocation, and Transport Decision",
+          "journal": "Prehospital Emergency Care",
+          "date": "2026-04-23",
+          "pmid": "41886731",
+          "doi": "10.1080/10903127.2026.2650541",
+          "summary": "",
+          "relevance": ""
+        },
+        {
+          "id": "32741576",
+          "title": "The Effect of Lights and Sirens on Critical Care Transport Time",
+          "journal": "The Journal of Emergency Medicine",
+          "date": "2026-04-23",
+          "pmid": "32741576",
+          "doi": "10.1016/j.jemermed.2020.06.010",
+          "summary": "",
+          "relevance": ""
+        },
+        {
+          "id": "41243403",
+          "title": "Feasibility of a Pre-Hospital Virtual Triage and Care Model: A Mixed-Methods Pilot in Emergency Care",
+          "journal": "Emergency Medicine Australasia",
+          "date": "2026-04-23",
+          "pmid": "41243403",
+          "doi": "10.1111/1742-6723.70168",
+          "summary": "",
+          "relevance": ""
         }
       ]
     },
@@ -171,34 +372,59 @@
       "date": "2026-04-22",
       "papers": [
         {
-          "id": "pm-2026-chest-seal",
-          "title": "Ventilated versus Non-Ventilated Chest Seals for Penetrating Thoracic Trauma: A Swine Model",
-          "journal": "Journal of Trauma and Acute Care Surgery",
-          "date": "2026-04-20",
-          "pmid": "42063210",
-          "doi": "10.1097/TA.0000000000004321",
-          "summary": "Animal model study (n=30) demonstrating that ventilated chest seals significantly reduced tension pneumothorax development compared to non-ventilated seals in penetrating thoracic trauma with positive-pressure ventilation.",
-          "relevance": "🟢 High — directly informs chest seal selection in paramedic protocols"
+          "id": "41987276",
+          "title": "Sonorheometry to detect traumatic induced coagulopathy during initial management of trauma patients: an observational, multi-center study",
+          "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+          "date": "2026-04-22",
+          "pmid": "41987276",
+          "doi": "10.1186/s13049-026-01610-8",
+          "summary": "",
+          "relevance": ""
         },
         {
-          "id": "pm-2026-fatigue-shift",
-          "title": "Impact of 12-Hour versus 24-Hour Shifts on Paramedic Cognitive Performance: A Longitudinal Cohort Study",
-          "journal": "Occupational and Environmental Medicine",
-          "date": "2026-04-19",
+          "id": "41998677",
+          "title": "Chest X-Ray evaluation using GPT for tube thoracostomy or conservative care in non-tension spontaneous pneumothorax",
+          "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+          "date": "2026-04-22",
+          "pmid": "41998677",
+          "doi": "10.1186/s13049-026-01616-2",
+          "summary": "",
+          "relevance": ""
+        }
+      ]
+    },
+    {
+      "date": "2026-04-21",
+      "papers": [
+        {
+          "id": "41886731",
+          "title": "Paramedic Patella Reduction \u2014 Ambulance Victoria CPG Evaluation",
+          "journal": "Prehospital Emergency Care",
+          "date": "2026-04-21",
+          "pmid": "41886731",
+          "doi": "10.1080/10903127.2026.2650541",
+          "summary": "",
+          "relevance": ""
+        },
+        {
+          "id": "41881292",
+          "title": "Delayed Defibrillation of Ventricular Arrhythmias During Transcutaneous Pacing",
+          "journal": "Resuscitation",
+          "date": "2026-04-21",
+          "pmid": "41881292",
+          "doi": "10.1016/j.resuscitation.2026.111071",
+          "summary": "",
+          "relevance": ""
+        },
+        {
+          "id": "10.1186/s13049-026-01611-7",
+          "title": "The Diamond Minutes: Rethinking the Earliest Link of the Trauma Chain of Survival",
+          "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+          "date": "2026-04-21",
           "pmid": "",
-          "doi": "10.1136/oemed-2025-109876",
-          "summary": "Prospective cohort (n=184 paramedics) showing significant declines in clinical decision-making accuracy and reaction time in the final 4 hours of 24-hour shifts, with no such decline on 12-hour shifts.",
-          "relevance": "🟡 Medium — workforce and safety implications for EMS scheduling"
-        },
-        {
-          "id": "pm-2026-ultrasound-pocus",
-          "title": "Diagnostic Accuracy of Paramedic-Performed Point-of-Care Ultrasound for Abdominal Free Fluid",
-          "journal": "Academic Emergency Medicine",
-          "date": "2026-04-18",
-          "pmid": "42062109",
-          "doi": "10.1111/acem.14567",
-          "summary": "Prospective diagnostic accuracy study with trained paramedic sonographers achieving 87% sensitivity and 93% specificity for abdominal free fluid detection after a 16-hour focused training programme.",
-          "relevance": "🟢 High — emerging paramedic skill with demonstrated diagnostic accuracy"
+          "doi": "10.1186/s13049-026-01611-7",
+          "summary": "",
+          "relevance": ""
         }
       ]
     }
