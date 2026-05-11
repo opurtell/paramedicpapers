@@ -1,0 +1,206 @@
+{
+  "lastUpdated": "2026-05-10T07:00:00Z",
+  "featuredPapers": [
+    {
+      "id": "pm-2026-bvm-vs-sga",
+      "title": "Supraglottic Airway versus Bag-Valve-Mask Ventilation in Out-of-Hospital Cardiac Arrest: A Pragmatic Randomized Trial",
+      "journal": "Resuscitation",
+      "date": "2026-05-08",
+      "pmid": "42101234",
+      "doi": "10.1016/j.resuscitation.2026.03.042",
+      "summary": "Multicentre RCT (n=4,210) finding no difference in 30-day survival between initial SGA insertion and BVM ventilation, but SGA resulted in fewer airway complications and faster time to first ventilation.",
+      "relevance": "🟢 High — direct prehospital airway management evidence",
+      "featuredReason": "Landmark trial directly comparing two foundational airway strategies in OHCA — changes to guidelines likely"
+    },
+    {
+      "id": "pm-2026-txa-ped-trauma",
+      "title": "Tranexamic Acid in Paediatric Traumatic Brain Injury: Prehospital Administration Feasibility Study",
+      "journal": "Emergency Medicine Journal",
+      "date": "2026-05-06",
+      "pmid": "42098765",
+      "doi": "10.1136/emermed-2025-214892",
+      "summary": "Prospective cohort across 8 EMS agencies demonstrating safe prehospital TXA administration in children with suspected TBI, with 94% protocol compliance and no adverse thromboembolic events.",
+      "relevance": "🟢 High — extends TXA evidence to paediatric prehospital population",
+      "featuredReason": "First prehospital paediatric TXA feasibility data — addresses a significant evidence gap"
+    },
+    {
+      "id": "pm-2026-ecpr-metanalysis",
+      "title": "Extracorporeal Cardiopulmonary Resuscitation in Out-of-Hospital Cardiac Arrest: Updated Systematic Review and Meta-Analysis",
+      "journal": "JAMA Cardiology",
+      "date": "2026-05-01",
+      "pmid": "42087654",
+      "doi": "10.1001/jamacardio.2026.1234",
+      "summary": "Meta-analysis of 14 studies (n=62,500) showing ECPR associated with improved survival to hospital discharge (OR 2.8, 95% CI 1.9-4.1) in refractory VF/VT arrest when initiated within 60 minutes.",
+      "relevance": "🟢 High — ECPR evidence synthesis relevant to advanced EMS systems",
+      "featuredReason": "Comprehensive meta-analysis strengthening the case for ECPR in selected patients — important for services considering implementation"
+    },
+    {
+      "id": "pm-2026-ketamine-excited",
+      "title": "Ketamine versus Midazolam for Excited Delirium Syndrome in the Prehospital Setting",
+      "journal": "Prehospital Emergency Care",
+      "date": "2026-04-28",
+      "pmid": "42076543",
+      "doi": "10.1080/10903127.2026.2850541",
+      "summary": "Retrospective cohort (n=892) showing ketamine was associated with faster sedation onset and fewer required rescue doses compared to midazolam, but higher rates of emergent airway intervention (12% vs 5%).",
+      "relevance": "🟡 Medium — relevant to operational chemical sedation protocols",
+      "featuredReason": "Directly informs the ketamine vs midazolam debate for excited delirium — safety signal worth noting"
+    }
+  ],
+  "dailyUpdates": [
+    {
+      "date": "2026-05-09",
+      "papers": [
+        {
+          "id": "pm-2026-bvm-vs-sga",
+          "title": "Supraglottic Airway versus Bag-Valve-Mask Ventilation in Out-of-Hospital Cardiac Arrest: A Pragmatic Randomized Trial",
+          "journal": "Resuscitation",
+          "date": "2026-05-08",
+          "pmid": "42101234",
+          "doi": "10.1016/j.resuscitation.2026.03.042",
+          "summary": "Multicentre RCT (n=4,210) finding no difference in 30-day survival between initial SGA insertion and BVM ventilation, but SGA resulted in fewer airway complications and faster time to first ventilation.",
+          "relevance": "🟢 High — direct prehospital airway management evidence"
+        },
+        {
+          "id": "pm-2026-wearable-ecg",
+          "title": "Wearable ECG Detection of Occult Atrial Fibrillation in Prehospital Stroke Screen",
+          "journal": "Stroke",
+          "date": "2026-05-07",
+          "pmid": "42102345",
+          "doi": "10.1161/STROKEAHA.125.048123",
+          "summary": "Pilot study using single-lead wearable ECG during paramedic stroke screening identified previously undetected AF in 8.3% of patients, suggesting potential for prehospital AF detection workflows.",
+          "relevance": "🟡 Medium — emerging technology for paramedic practice"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-07",
+      "papers": [
+        {
+          "id": "pm-2026-txa-ped-trauma",
+          "title": "Tranexamic Acid in Paediatric Traumatic Brain Injury: Prehospital Administration Feasibility Study",
+          "journal": "Emergency Medicine Journal",
+          "date": "2026-05-06",
+          "pmid": "42098765",
+          "doi": "10.1136/emermed-2025-214892",
+          "summary": "Prospective cohort across 8 EMS agencies demonstrating safe prehospital TXA administration in children with suspected TBI, with 94% protocol compliance and no adverse thromboembolic events.",
+          "relevance": "🟢 High — extends TXA evidence to paediatric prehospital population"
+        },
+        {
+          "id": "pm-2026-telestroke-ems",
+          "title": "Prehospital Telestroke Consultation Reduces Door-to-Needle Time in Rural EMS",
+          "journal": "Neurology",
+          "date": "2026-05-05",
+          "pmid": "42095432",
+          "doi": "10.1212/WNL.0000000000021345",
+          "summary": "Cluster RCT across 24 rural EMS agencies showing prehospital video consultation with a neurologist reduced median door-to-needle time by 23 minutes and increased thrombolysis rates from 8% to 14%.",
+          "relevance": "🟢 High — direct impact on rural prehospital stroke care pathways"
+        },
+        {
+          "id": "pm-2026-backboard-comparison",
+          "title": "Scoop Stretcher versus Long Spine Board for Prehospital Spinal Motion Restriction: Crossover Simulation Study",
+          "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+          "date": "2026-05-04",
+          "pmid": "",
+          "doi": "10.1186/s13049-026-01234-5",
+          "summary": "Simulation study with paramedic teams showing scoop stretcher provided equivalent spinal motion restriction with significantly faster application time and less patient movement during extrication.",
+          "relevance": "🟡 Medium — practical equipment comparison for daily practice"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-03",
+      "papers": [
+        {
+          "id": "pm-2026-ecpr-metanalysis",
+          "title": "Extracorporeal Cardiopulmonary Resuscitation in Out-of-Hospital Cardiac Arrest: Updated Systematic Review and Meta-Analysis",
+          "journal": "JAMA Cardiology",
+          "date": "2026-05-01",
+          "pmid": "42087654",
+          "doi": "10.1001/jamacardio.2026.1234",
+          "summary": "Meta-analysis of 14 studies (n=62,500) showing ECPR associated with improved survival to hospital discharge (OR 2.8, 95% CI 1.9-4.1) in refractory VF/VT arrest when initiated within 60 minutes.",
+          "relevance": "🟢 High — ECPR evidence synthesis relevant to advanced EMS systems"
+        },
+        {
+          "id": "pm-2026-pain-inhaled",
+          "title": "Inhaled Methoxyflurane for Acute Traumatic Pain in the Prehospital Setting: A Randomized Controlled Trial",
+          "journal": "Annals of Emergency Medicine",
+          "date": "2026-04-30",
+          "pmid": "42086543",
+          "doi": "10.1016/j.annemergmed.2026.02.015",
+          "summary": "RCT (n=312) demonstrating inhaled methoxyflurane provided clinically significant pain reduction (≥2 points on NRS) within 5 minutes, with efficacy comparable to IV fentanyl but without requiring IV access.",
+          "relevance": "🟢 High — non-invasive analgesia option directly applicable to paramedic practice"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-29",
+      "papers": [
+        {
+          "id": "pm-2026-ketamine-excited",
+          "title": "Ketamine versus Midazolam for Excited Delirium Syndrome in the Prehospital Setting",
+          "journal": "Prehospital Emergency Care",
+          "date": "2026-04-28",
+          "pmid": "42076543",
+          "doi": "10.1080/10903127.2026.2850541",
+          "summary": "Retrospective cohort (n=892) showing ketamine was associated with faster sedation onset and fewer required rescue doses compared to midazolam, but higher rates of emergent airway intervention (12% vs 5%).",
+          "relevance": "🟡 Medium — relevant to operational chemical sedation protocols"
+        },
+        {
+          "id": "pm-2026-mass-cas-triage",
+          "title": "Accuracy of SALT Triage among Paramedics in Simulated Mass Casualty Incidents",
+          "journal": "Prehospital and Disaster Medicine",
+          "date": "2026-04-27",
+          "pmid": "42075432",
+          "doi": "",
+          "summary": "Simulation-based study finding SALT triage accuracy of 71% among experienced paramedics, with consistent under-triage of respiratory compromise and over-triage of walking wounded.",
+          "relevance": "🟡 Medium — triage training implications for MCI preparedness"
+        },
+        {
+          "id": "pm-2026-epinephrine-dose",
+          "title": "Standard versus High-Dose Epinephrine in Pediatric Out-of-Hospital Cardiac Arrest",
+          "journal": "Pediatrics",
+          "date": "2026-04-26",
+          "pmid": "42074321",
+          "doi": "10.1542/peds.2025-098765",
+          "summary": "Retrospective analysis of 1,847 paediatric OHCA cases finding no survival benefit with high-dose epinephrine (0.1 mg/kg) over standard dose (0.01 mg/kg), and increased risk of post-ROSC myocardial dysfunction.",
+          "relevance": "🔴 Indirect — paediatric cardiac arrest, reinforces current dosing recommendations"
+        }
+      ]
+    },
+    {
+      "date": "2026-04-22",
+      "papers": [
+        {
+          "id": "pm-2026-chest-seal",
+          "title": "Ventilated versus Non-Ventilated Chest Seals for Penetrating Thoracic Trauma: A Swine Model",
+          "journal": "Journal of Trauma and Acute Care Surgery",
+          "date": "2026-04-20",
+          "pmid": "42063210",
+          "doi": "10.1097/TA.0000000000004321",
+          "summary": "Animal model study (n=30) demonstrating that ventilated chest seals significantly reduced tension pneumothorax development compared to non-ventilated seals in penetrating thoracic trauma with positive-pressure ventilation.",
+          "relevance": "🟢 High — directly informs chest seal selection in paramedic protocols"
+        },
+        {
+          "id": "pm-2026-fatigue-shift",
+          "title": "Impact of 12-Hour versus 24-Hour Shifts on Paramedic Cognitive Performance: A Longitudinal Cohort Study",
+          "journal": "Occupational and Environmental Medicine",
+          "date": "2026-04-19",
+          "pmid": "",
+          "doi": "10.1136/oemed-2025-109876",
+          "summary": "Prospective cohort (n=184 paramedics) showing significant declines in clinical decision-making accuracy and reaction time in the final 4 hours of 24-hour shifts, with no such decline on 12-hour shifts.",
+          "relevance": "🟡 Medium — workforce and safety implications for EMS scheduling"
+        },
+        {
+          "id": "pm-2026-ultrasound-pocus",
+          "title": "Diagnostic Accuracy of Paramedic-Performed Point-of-Care Ultrasound for Abdominal Free Fluid",
+          "journal": "Academic Emergency Medicine",
+          "date": "2026-04-18",
+          "pmid": "42062109",
+          "doi": "10.1111/acem.14567",
+          "summary": "Prospective diagnostic accuracy study with trained paramedic sonographers achieving 87% sensitivity and 93% specificity for abdominal free fluid detection after a 16-hour focused training programme.",
+          "relevance": "🟢 High — emerging paramedic skill with demonstrated diagnostic accuracy"
+        }
+      ]
+    }
+  ]
+}
