@@ -145,7 +145,7 @@
   function paperCardHTML(p) {
     const titleLink = paperTitleHref(p);
     return `
-      <div class="paper-card">
+      <div class="paper-card" id="paper-${cssId(p.id)}">
         <div class="paper-title"><a href="${titleLink}" target="_blank" rel="noopener">${esc(p.title)}</a></div>
         <div class="paper-meta">${esc(p.journal)}${p.date ? ' · ' + formatDateShort(new Date(p.date + 'T00:00:00')) : ''}</div>
         <div class="paper-summary">${esc(p.summary)}</div>
@@ -239,18 +239,86 @@
 
       // Render individual paper highlights if present
       if (tldr.highlights && tldr.highlights.length) {
-        $tldrBody.innerHTML += tldr.highlights.map(h =>
-          '<div class="tldr-item">' +
-            '<div class="tldr-title">' + esc(h.title) + '</div>' +
+        $tldrBody.innerHTML += tldr.highlights.map(h => {
+          const pid = cssId(h.id || '');
+          const extUrl = h.pmid
+            ? 'https://pubmed.ncbi.nlm.nih.gov/' + encodeURIComponent(h.pmid) + '/'
+            : h.doi ? 'https://doi.org/' + encodeURIComponent(h.doi) : '#';
+          return '<div class="tldr-item" data-paper-id="' + pid + '" data-ext-url="' + esc(extUrl) + '">' +
+            '<div class="tldr-title tldr-link" data-paper-id="' + pid + '" data-ext-url="' + esc(extUrl) + '">' + esc(h.title) + '</div>' +
             '<div class="tldr-note">' + esc(h.note) + '</div>' +
-          '</div>'
-        ).join('');
+          '</div>';
+        }).join('');
+
+        // Bind clicks on tldr titles
+        $tldrBody.querySelectorAll('.tldr-link').forEach(el => {
+          el.addEventListener('click', (e) => {
+            e.stopPropagation();
+            showTldrPopover(el);
+          });
+        });
       }
     } else {
       $tldrBody.innerHTML = '<p class="tldr-empty">TLDR not yet available for today. Check back after the next daily scan.</p>';
       $tldrDate.textContent = '';
     }
   }
+
+  // --- TLDR Popover ---
+  let activePopover = null;
+
+  function showTldrPopover(el) {
+    closeTldrPopover();
+    const paperId = el.getAttribute('data-paper-id');
+    const extUrl = el.getAttribute('data-ext-url');
+
+    const popover = document.createElement('div');
+    popover.className = 'tldr-popover';
+    popover.innerHTML =
+      '<button class="tldr-popover-btn" data-action="jump">↓ Jump to paper</button>' +
+      '<button class="tldr-popover-btn" data-action="visit">↗ View article</button>';
+
+    el.style.position = 'relative';
+    el.appendChild(popover);
+    activePopover = popover;
+
+    popover.querySelector('[data-action="jump"]').addEventListener('click', (e) => {
+      e.stopPropagation();
+      closeTldrPopover();
+      $tldrModal.classList.add('hidden');
+      // Expand the day group if collapsed, then scroll
+      setTimeout(() => {
+        const card = document.getElementById('paper-' + paperId);
+        if (card) {
+          const group = card.closest('.day-group');
+          if (group && group.classList.contains('collapsed')) group.classList.remove('collapsed');
+          card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          card.classList.add('paper-highlight');
+          setTimeout(() => card.classList.remove('paper-highlight'), 2000);
+        }
+      }, 150);
+    });
+
+    popover.querySelector('[data-action="visit"]').addEventListener('click', (e) => {
+      e.stopPropagation();
+      closeTldrPopover();
+      if (extUrl && extUrl !== '#') window.open(extUrl, '_blank', 'noopener');
+    });
+  }
+
+  function closeTldrPopover() {
+    if (activePopover) {
+      activePopover.remove();
+      activePopover = null;
+    }
+  }
+
+  // Close popover on outside click
+  document.addEventListener('click', (e) => {
+    if (activePopover && !e.target.closest('.tldr-popover') && !e.target.closest('.tldr-link')) {
+      closeTldrPopover();
+    }
+  });
 
   // --- Toggle day groups ---
   window.toggleDay = function (headerEl) {
@@ -275,5 +343,10 @@
     const div = document.createElement('div');
     div.textContent = str || '';
     return div.innerHTML;
+  }
+
+  // --- CSS-safe ID ---
+  function cssId(id) {
+    return (id || '').replace(/[^a-zA-Z0-9_-]/g, '_');
   }
 })();
