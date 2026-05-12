@@ -27,11 +27,20 @@
   // --- Init ---
   document.addEventListener('DOMContentLoaded', init);
 
+  const $btnRefresh = document.getElementById('btn-refresh');
+
+  async function loadData(cacheBust) {
+    const url = cacheBust
+      ? 'data/papers.json?t=' + Date.now()
+      : 'data/papers.json';
+    const resp = await fetch(url);
+    if (!resp.ok) throw new Error('Failed to load papers.json');
+    return resp.json();
+  }
+
   async function init() {
     try {
-      const resp = await fetch('data/papers.json');
-      if (!resp.ok) throw new Error('Failed to load papers.json');
-      data = await resp.json();
+      data = await loadData(false);
     } catch (err) {
       $feed.innerHTML = '<p class="no-results">Unable to load research data. Please try again later.</p>';
       console.error(err);
@@ -42,6 +51,7 @@
     render();
     bindSearch();
     bindTldr();
+    bindRefresh();
   }
 
   // --- Render ---
@@ -196,6 +206,24 @@
       $searchClear.style.display = 'none';
       render();
       $searchInput.focus();
+    });
+  }
+
+  // --- Refresh ---
+  function bindRefresh() {
+    $btnRefresh.addEventListener('click', async () => {
+      $btnRefresh.disabled = true;
+      $btnRefresh.classList.add('spinning');
+      try {
+        data = await loadData(true);
+        renderLastUpdated();
+        render();
+      } catch (err) {
+        console.error('Refresh failed:', err);
+      } finally {
+        $btnRefresh.disabled = false;
+        $btnRefresh.classList.remove('spinning');
+      }
     });
   }
 
