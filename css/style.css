@@ -609,6 +609,26 @@ a:hover {
   color: var(--color-text);
 }
 
+.modal-body .tldr-bullets {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 6px 0;
+}
+
+.modal-body .tldr-bullets li {
+  padding: 5px 0 5px 18px;
+  position: relative;
+  line-height: 1.5;
+}
+
+.modal-body .tldr-bullets li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
 .modal-body .tldr-item {
   padding: 10px 0;
   border-bottom: 1px solid var(--color-border);

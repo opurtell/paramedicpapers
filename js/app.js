@@ -230,9 +230,12 @@
     const tldr = data.tldr;
     if (tldr && tldr.summary) {
       $tldrDate.textContent = 'Based on ' + tldr.paperCount + ' papers · ' + tldr.date;
-      // Render summary paragraphs
-      const paras = tldr.summary.split('\n').filter(s => s.trim());
-      $tldrBody.innerHTML = paras.map(p => '<p style="margin-bottom:10px">' + esc(p) + '</p>').join('');
+      // Render summary bullets
+      const lines = tldr.summary.split('\n').filter(s => s.trim());
+      $tldrBody.innerHTML = '<ul class="tldr-bullets">' + lines.map(l => {
+        const cleaned = l.replace(/^[•\-]\s*/, '');
+        return '<li>' + esc(cleaned) + '</li>';
+      }).join('') + '</ul>';
 
       // Render individual paper highlights if present
       if (tldr.highlights && tldr.highlights.length) {
