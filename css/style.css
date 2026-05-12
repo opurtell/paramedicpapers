@@ -137,12 +137,14 @@ a:hover {
   display: inline-flex;
   align-items: center;
   gap: 2px;
-  padding: 7px 16px;
+  height: 36px;
+  padding: 0 16px;
   border-radius: 20px;
   background: var(--color-text);
   color: #fff;
   font-size: 0.82rem;
   font-weight: 600;
+  line-height: 1;
   border: none;
   cursor: pointer;
   white-space: nowrap;
@@ -159,16 +161,17 @@ a:hover {
   display: inline-flex;
   align-items: center;
   gap: 2px;
-  padding: 7px 16px;
+  height: 36px;
+  padding: 0 16px;
   border-radius: 20px;
   background: var(--color-primary);
   color: #fff;
   font-size: 0.82rem;
   font-weight: 600;
+  line-height: 1;
   text-decoration: none;
   white-space: nowrap;
   transition: background var(--transition), transform var(--transition);
-  margin-bottom: 12px;
 }
 
 .btn-new-releases:hover {
