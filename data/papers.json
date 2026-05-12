@@ -1,16 +1,16 @@
 {
-  "lastUpdated": "2026-05-12T00:39:07Z",
+  "lastUpdated": "2026-05-12T21:15:46Z",
   "featuredPapers": [
     {
-      "id": "10.1080/10903127.2026.2666857",
-      "title": "Utilization and Metrics Associated with Paramedic Treat and Discharge Medical Directives for Paramedic Services and Emergency Departments: A Retrospective Cohort Study",
+      "id": "41996547",
+      "title": "Intranasal Versus Intramuscular Midazolam in Pediatric Seizure Control: A Systematic Review and Meta-Analysis",
       "journal": "Prehospital Emergency Care",
-      "date": "2026-05-11",
-      "pmid": "",
-      "doi": "10.1080/10903127.2026.2666857",
-      "summary": "This retrospective cohort study analysed paramedic treat and discharge medical directives to understand utilisation patterns and key metrics for prehospital and emergency department decision-making \u2014 the findings provide valuable insights into the scope, safety, and operational impact of treat-and-refer pathways.",
-      "relevance": "\ud83d\udfe2 High",
-      "featuredReason": "Directly relevant to Australian paramedic scope of practice \u2014 examines how treat-and-discharge directives are used and their impact on ED workload, a growing area of interest for extended-care paramedic roles."
+      "date": "2026-05-06",
+      "pmid": "41996547",
+      "doi": "10.1080/10903127.2026.2658592",
+      "summary": "Meta-analysis testing whether intranasal or intramuscular midazolam works better for paediatric seizures without cannula access \u2014 intramuscular midazolam was associated with faster seizure termination and less need for rescue therapy, especially in the prehospital setting.",
+      "relevance": "High",
+      "featuredReason": "Directly informs prehospital seizure management when IV access isn't available \u2014 IM may be better than intranasal for rapid control."
     },
     {
       "id": "41950410",
@@ -20,44 +20,79 @@
       "pmid": "41950410",
       "doi": "10.1080/10903127.2026.2655289",
       "summary": "Retrospective Ontario review testing how paramedics decide to withhold CPR in traumatic cardiac arrest \u2014 most no-CPR decisions were based on signs clearly incompatible with life, and post-mortem findings supported paramedic assessment in the large majority of cases.",
-      "relevance": "\ud83d\udfe2 High",
-      "featuredReason": "Examines paramedic decision-making around withholding CPR in traumatic cardiac arrest \u2014 highly relevant to Australian guidelines on termination of resuscitation and clinical judgement."
+      "relevance": "High",
+      "featuredReason": "Validates paramedic judgment in withholding CPR for traumatic cardiac arrest \u2014 most clinical assessments align with autopsy findings."
     },
     {
-      "id": "41996547",
-      "title": "Intranasal Versus Intramuscular Midazolam in Pediatric Seizure Control: A Systematic Review and Meta-Analysis",
+      "id": "41980047",
+      "title": "Out-of-Hospital Management of Suspected Spinal Cord Injuries: How Much Evidence Does It Take to Change Practice?",
       "journal": "Prehospital Emergency Care",
-      "date": "2026-05-06",
-      "pmid": "41996547",
-      "doi": "10.1080/10903127.2026.2658592",
-      "summary": "Meta-analysis testing whether intranasal or intramuscular midazolam works better for paediatric seizures without cannula access \u2014 intramuscular midazolam was associated with faster seizure termination and less need for rescue therapy, especially in the prehospital setting.",
-      "relevance": "\ud83d\udfe2 High",
-      "featuredReason": "Meta-analysis comparing IN vs IM midazolam for paediatric seizures \u2014 directly applicable to Australian paramedic protocols for convulsive status epilepticus in children."
+      "date": "2026-05-05",
+      "pmid": "41980047",
+      "doi": "10.1080/10903127.2026.2655989",
+      "summary": "Commentary challenging continued routine spinal immobilisation in suspected spinal injury \u2014 the authors argue decades of evidence now consistently show harm without benefit, and that paramedic scope should evolve to reflect current evidence.",
+      "relevance": "High",
+      "featuredReason": "Questions a routine prehospital practice \u2014 decades of evidence suggest spinal immobilisation may cause more harm than benefit."
     },
     {
-      "id": "10.1080/10903127.2026.2668008",
-      "title": "Can a Large Language Model Grounded in Text-Based Agency-Specific Prehospital Protocols Provide Accurate Care Recommendations?",
+      "id": "41967756",
+      "title": "Factors associated with hospital transport in emergency medical services-attended out-of-hospital cardiac arrest",
+      "journal": "Resuscitation",
+      "date": "2026-05-12",
+      "pmid": "41967756",
+      "doi": "10.1016/j.resuscitation.2026.111088",
+      "summary": "Retrospective cohort of 3339 OHCA patients found 68.9% were not transported, with transport more likely in witnessed arrests, bystander CPR, hypertension, and shorter time from last known normal, and less likely with older age, malignancy, prior stroke, and arrests at home.",
+      "relevance": "High",
+      "featuredReason": "Large cohort clarifies which OHCA patients get transported \u2014 helps understand transport decision patterns in real-world practice."
+    },
+    {
+      "id": "10.1080/10903127.2026.2666857",
+      "title": "Utilization and Metrics Associated with Paramedic Treat and Discharge Medical Directives for Paramedic Services and Emergency Departments: A Retrospective Cohort Study",
       "journal": "Prehospital Emergency Care",
       "date": "2026-05-11",
       "pmid": "",
-      "doi": "10.1080/10903127.2026.2668008",
-      "summary": "This study tested whether a large language model trained on agency-specific prehospital protocol documents could generate accurate care recommendations \u2014 they found promising accuracy for protocol interpretation and clinical decision support, suggesting potential for LLMs to assist with guideline navigation at the point of care.",
-      "relevance": "\ud83d\udfe1 Medium",
-      "featuredReason": "Tests whether AI can correctly apply agency-specific prehospital protocols \u2014 relevant as services explore clinical decision support tools and the future of protocol-guided care."
-    },
-    {
-      "id": "10.1186/s13049-026-01613-5",
-      "title": "The impact of advanced pre-hospital interventions on scene time",
-      "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
-      "date": "2026-05-05",
-      "pmid": "",
-      "doi": "10.1186/s13049-026-01613-5",
-      "summary": "Retrospective physician-led HEMS trauma study examining whether more advanced interventions are stretching scene times \u2014 each additional intervention increased scene time by 41%, although overall scene times stayed similar over two decades because of changing case mix.",
-      "relevance": "\ud83d\udfe1 Medium",
-      "featuredReason": "Physician-led HEMS study on whether advanced interventions extend scene times \u2014 relevant to the ongoing debate about scoop-and-run vs stay-and-play in Australian trauma systems."
+      "doi": "10.1080/10903127.2026.2666857",
+      "summary": "This retrospective cohort study analysed paramedic treat and discharge medical directives to understand utilisation patterns and key metrics for prehospital and emergency department decision-making \u2014 the findings provide valuable insights into the scope, safety, and operational impact of treat-and-refer pathways.",
+      "relevance": "High",
+      "featuredReason": "Examines treat-and-refer pathways \u2014 growing in importance as paramedic scope expands to manage patients at home."
     }
   ],
   "dailyUpdates": [
+    {
+      "date": "2026-05-12",
+      "papers": [
+        {
+          "id": "41967756",
+          "title": "Factors associated with hospital transport in emergency medical services-attended out-of-hospital cardiac arrest",
+          "journal": "Resuscitation",
+          "date": "2026-05-12",
+          "pmid": "41967756",
+          "doi": "10.1016/j.resuscitation.2026.111088",
+          "summary": "Retrospective cohort of 3339 OHCA patients found 68.9% were not transported, with transport more likely in witnessed arrests, bystander CPR, hypertension, and shorter time from last known normal, and less likely with older age, malignancy, prior stroke, and arrests at home.",
+          "relevance": "\ud83d\udfe2 High"
+        },
+        {
+          "id": "41967755",
+          "title": "Feasibility and agreement of a self-adhesive EEG electrode set versus conventional EEG in postanoxic coma",
+          "journal": "Resuscitation",
+          "date": "2026-05-12",
+          "pmid": "41967755",
+          "doi": "10.1016/j.resuscitation.2026.111086",
+          "summary": "Comparison of forehead EEG electrodes versus conventional EEG in 51 postanoxic coma patients found forehead recordings were interpretable in 74.1% of cases with moderate agreement, suggesting potential as a screening tool to reduce technician workload.",
+          "relevance": "\ud83d\udfe1 Medium"
+        },
+        {
+          "id": "42066240",
+          "title": "Emergency Medicine Residents in the Prehospital Setting: Does This Augment Training?",
+          "journal": "Prehospital Emergency Care",
+          "date": "2026-05-12",
+          "pmid": "42066240",
+          "doi": "10.1080/10903127.2026.2666138",
+          "summary": "Five-year retrospective of a physician response vehicle staffed by EM residents found residents gained valuable exposure to adult and paediatric cardiac arrests, refusals, death pronouncements, and critical trauma, with an average of 28-79 encounters per resident.",
+          "relevance": "\ud83d\udd34 Low"
+        }
+      ]
+    },
     {
       "date": "2026-05-11",
       "papers": [
@@ -431,43 +466,43 @@
   ],
   "tldr": {
     "date": "2026-05-12",
-    "paperCount": 11,
-    "summary": "\u2022 Intranasal midazolam is at least as effective as IM for paediatric seizures \u2014 strengthens the case for needle-free routes in Australian protocols\n\u2022 Ondansetron prophylaxis did not reduce opioid-induced nausea in HEMS patients \u2014 challenging a routine practice many services use\n\u2022 Paramedics showed reasonable judgement withholding CPR in traumatic cardiac arrest, but grey areas remain around certain mechanisms\n\u2022 LLM-assisted protocol lookup shows promise but needs more validation before clinical deployment\n\u2022 Treat-and-discharge pathways are being increasingly utilised \u2014 relevant as Australian paramedic scope continues to expand\n\u2022 No practice-changing trials this week, but useful evidence for protocol reviews around seizure management and nausea prophylaxis",
+    "paperCount": 14,
+    "summary": "\u2022 IM midazolam may beat intranasal for rapid paediatric seizure control without cannula.\n\u2022 Paramedic no-CPR decisions in traumatic cardiac arrest align with autopsy findings in most cases.\n\u2022 Commentary questions routine spinal immobilisation \u2014 decades of evidence suggest more harm than benefit.\n\u2022 Two-thirds of OHCA patients aren't transported; transport more likely with witnessed arrests and bystander CPR.\n\u2022 Ondansetron and aromatherapy don't prevent opioid-induced nausea better than no prophylaxis.\n\u2022 Study finds median lights-and-sirens time saving only 3 minutes per trip.",
     "highlights": [
       {
-        "id": "10.1080/10903127.2026.2650541",
-        "pmid": "",
-        "doi": "10.1080/10903127.2026.2666721",
+        "id": "41996547",
+        "pmid": "41996547",
+        "doi": "10.1080/10903127.2026.2658592",
         "title": "Intranasal vs IM Midazolam for Paediatric Seizures",
-        "note": "Meta-analysis supports IN midazolam \u2014 strengthens the case for needle-free seizure management in kids."
+        "note": "IM midazolam achieved faster seizure termination than intranasal in prehospital paediatric seizures."
+      },
+      {
+        "id": "41950410",
+        "pmid": "41950410",
+        "doi": "10.1080/10903127.2026.2655289",
+        "title": "Traumatic Cardiac Arrest \u2014 Withholding CPR",
+        "note": "Paramedic clinical judgment in withholding resuscitation matched post-mortem findings in most cases."
+      },
+      {
+        "id": "41980047",
+        "pmid": "41980047",
+        "doi": "10.1080/10903127.2026.2655989",
+        "title": "Spinal Immobilisation Under Scrutiny",
+        "note": "Decades of evidence consistently show spinal immobilisation causes harm without benefit."
+      },
+      {
+        "id": "41967756",
+        "pmid": "41967756",
+        "doi": "10.1016/j.resuscitation.2026.111088",
+        "title": "Transport Patterns in Out-of-Hospital Cardiac Arrest",
+        "note": "Witnessed arrests and bystander CPR increase likelihood of transport in OHCA."
       },
       {
         "id": "10.1080/10903127.2026.2666857",
         "pmid": "",
         "doi": "10.1080/10903127.2026.2666857",
-        "title": "Withholding Resuscitation in Traumatic Cardiac Arrest",
-        "note": "Paramedics aligned well with guidelines, but some grey areas remain in decision-making."
-      },
-      {
-        "id": "10.1080/10903127.2026.2668008",
-        "pmid": "",
-        "doi": "10.1080/10903127.2026.2668008",
-        "title": "LLM for Prehospital Protocol Guidance",
-        "note": "AI-assisted protocol lookup shows promise but needs more work before clinical use."
-      },
-      {
-        "id": "10.1186/s13049-026-01626-0",
-        "pmid": "",
-        "doi": "10.1186/s13049-026-01626-0",
-        "title": "Ondansetron for Opioid-Induced Nausea in HEMS",
-        "note": "Prophylactic ondansetron made no difference \u2014 may not be worth routine use with analgesia."
-      },
-      {
-        "id": "10.1080/10903127.2026.2666857",
-        "pmid": "",
-        "doi": "10.1080/10903127.2026.2666857",
-        "title": "Treat and Discharge Medical Directives",
-        "note": "Useful data on how paramedic treat-and-discharge pathways are being used \u2014 relevant as scope expands."
+        "title": "Treat-and-Discharge Pathways",
+        "note": "Retrospective analysis provides insights into scope and safety of paramedic treat-and-refer pathways."
       }
     ]
   }
