@@ -18,6 +18,11 @@
   const $searchInput   = document.getElementById('search-input');
   const $searchClear   = document.getElementById('search-clear');
   const $searchHint    = document.getElementById('search-hint');
+  const $btnTldr       = document.getElementById('btn-tldr');
+  const $tldrModal     = document.getElementById('tldr-modal');
+  const $tldrClose     = document.getElementById('tldr-close');
+  const $tldrBody      = document.getElementById('tldr-body');
+  const $tldrDate      = document.getElementById('tldr-date');
 
   // --- Init ---
   document.addEventListener('DOMContentLoaded', init);
@@ -36,6 +41,7 @@
     renderLastUpdated();
     render();
     bindSearch();
+    bindTldr();
   }
 
   // --- Render ---
@@ -198,6 +204,49 @@
       || (p.journal || '').toLowerCase().includes(term)
       || (p.summary || '').toLowerCase().includes(term)
       || (p.relevance || '').toLowerCase().includes(term);
+  }
+
+  // --- TLDR Modal ---
+  function bindTldr() {
+    $btnTldr.addEventListener('click', () => {
+      renderTldr();
+      $tldrModal.classList.remove('hidden');
+    });
+
+    $tldrClose.addEventListener('click', () => {
+      $tldrModal.classList.add('hidden');
+    });
+
+    $tldrModal.addEventListener('click', (e) => {
+      if (e.target === $tldrModal) $tldrModal.classList.add('hidden');
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') $tldrModal.classList.add('hidden');
+    });
+  }
+
+  function renderTldr() {
+    const tldr = data.tldr;
+    if (tldr && tldr.summary) {
+      $tldrDate.textContent = 'Based on ' + tldr.paperCount + ' papers · ' + tldr.date;
+      // Render summary paragraphs
+      const paras = tldr.summary.split('\n').filter(s => s.trim());
+      $tldrBody.innerHTML = paras.map(p => '<p style="margin-bottom:10px">' + esc(p) + '</p>').join('');
+
+      // Render individual paper highlights if present
+      if (tldr.highlights && tldr.highlights.length) {
+        $tldrBody.innerHTML += tldr.highlights.map(h =>
+          '<div class="tldr-item">' +
+            '<div class="tldr-title">' + esc(h.title) + '</div>' +
+            '<div class="tldr-note">' + esc(h.note) + '</div>' +
+          '</div>'
+        ).join('');
+      }
+    } else {
+      $tldrBody.innerHTML = '<p class="tldr-empty">TLDR not yet available for today. Check back after the next daily scan.</p>';
+      $tldrDate.textContent = '';
+    }
   }
 
   // --- Toggle day groups ---
