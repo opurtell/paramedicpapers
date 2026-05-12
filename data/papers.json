@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-12T00:34:13Z",
+  "lastUpdated": "2026-05-12T00:39:07Z",
   "featuredPapers": [
     {
       "id": "10.1080/10903127.2026.2666857",
@@ -435,22 +435,37 @@
     "summary": "\u2022 Intranasal midazolam is at least as effective as IM for paediatric seizures \u2014 strengthens the case for needle-free routes in Australian protocols\n\u2022 Ondansetron prophylaxis did not reduce opioid-induced nausea in HEMS patients \u2014 challenging a routine practice many services use\n\u2022 Paramedics showed reasonable judgement withholding CPR in traumatic cardiac arrest, but grey areas remain around certain mechanisms\n\u2022 LLM-assisted protocol lookup shows promise but needs more validation before clinical deployment\n\u2022 Treat-and-discharge pathways are being increasingly utilised \u2014 relevant as Australian paramedic scope continues to expand\n\u2022 No practice-changing trials this week, but useful evidence for protocol reviews around seizure management and nausea prophylaxis",
     "highlights": [
       {
+        "id": "10.1080/10903127.2026.2650541",
+        "pmid": "",
+        "doi": "10.1080/10903127.2026.2666721",
         "title": "Intranasal vs IM Midazolam for Paediatric Seizures",
         "note": "Meta-analysis supports IN midazolam \u2014 strengthens the case for needle-free seizure management in kids."
       },
       {
+        "id": "10.1080/10903127.2026.2666857",
+        "pmid": "",
+        "doi": "10.1080/10903127.2026.2666857",
         "title": "Withholding Resuscitation in Traumatic Cardiac Arrest",
-        "note": "Canadian paramedics aligned well with guidelines, but some grey areas remain in decision-making."
+        "note": "Paramedics aligned well with guidelines, but some grey areas remain in decision-making."
       },
       {
+        "id": "10.1080/10903127.2026.2668008",
+        "pmid": "",
+        "doi": "10.1080/10903127.2026.2668008",
         "title": "LLM for Prehospital Protocol Guidance",
         "note": "AI-assisted protocol lookup shows promise but needs more work before clinical use."
       },
       {
+        "id": "10.1186/s13049-026-01626-0",
+        "pmid": "",
+        "doi": "10.1186/s13049-026-01626-0",
         "title": "Ondansetron for Opioid-Induced Nausea in HEMS",
         "note": "Prophylactic ondansetron made no difference \u2014 may not be worth routine use with analgesia."
       },
       {
+        "id": "10.1080/10903127.2026.2666857",
+        "pmid": "",
+        "doi": "10.1080/10903127.2026.2666857",
         "title": "Treat and Discharge Medical Directives",
         "note": "Useful data on how paramedic treat-and-discharge pathways are being used \u2014 relevant as scope expands."
       }
