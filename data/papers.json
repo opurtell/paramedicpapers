@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-11T23:49:18Z",
+  "lastUpdated": "2026-05-12T00:22:18Z",
   "featuredPapers": [
     {
       "id": "10.1080/10903127.2026.2666857",
@@ -428,5 +428,32 @@
         }
       ]
     }
-  ]
+  ],
+  "tldr": {
+    "date": "2026-05-12",
+    "paperCount": 11,
+    "summary": "This week brought 11 new prehospital papers. The standouts: a meta-analysis confirming intranasal midazolam is at least as effective as intramuscular for paediatric seizures \u2014 relevant for Australian paramedic protocols that increasingly favour the IN route. A Canadian study examined paramedic decision-making around withholding resuscitation in traumatic cardiac arrest, finding good alignment with guidelines but highlighting grey areas.\n\nOn the tech front, researchers tested whether an LLM grounded in agency-specific protocols could give accurate care recommendations \u2014 results were promising but not yet ready for prime time. Meanwhile, a HEMS study found that ondansetron prophylaxis did not reduce opioid-induced nausea compared to no prophylaxis, challenging a common practice.\n\nOverall: no practice-changing trials this week, but useful evidence to inform protocol reviews around seizure management, nausea prophylaxis, and resuscitation decision-making.",
+    "highlights": [
+      {
+        "title": "Intranasal vs IM Midazolam for Paediatric Seizures",
+        "note": "Meta-analysis supports IN midazolam \u2014 strengthens the case for needle-free seizure management in kids."
+      },
+      {
+        "title": "Withholding Resuscitation in Traumatic Cardiac Arrest",
+        "note": "Canadian paramedics showed reasonable judgement aligning with guidelines, but some grey areas remain."
+      },
+      {
+        "title": "LLM for Prehospital Protocol Guidance",
+        "note": "AI-assisted protocol lookup shows promise but needs more validation before clinical use."
+      },
+      {
+        "title": "Ondansetron for Opioid-Induced Nausea in HEMS",
+        "note": "Prophylactic ondansetron did not help \u2014 may not be worth routine use in analgesia protocols."
+      },
+      {
+        "title": "Treat and Discharge Medical Directives",
+        "note": "Insights into how paramedic treat-and-discharge pathways are being used \u2014 relevant as scope expands."
+      }
+    ]
+  }
 }
