@@ -1,39 +1,6 @@
 {
-  "lastUpdated": "2026-05-12T21:15:46Z",
+  "lastUpdated": "2026-05-13T21:15:26Z",
   "featuredPapers": [
-    {
-      "id": "41996547",
-      "title": "Intranasal Versus Intramuscular Midazolam in Pediatric Seizure Control: A Systematic Review and Meta-Analysis",
-      "journal": "Prehospital Emergency Care",
-      "date": "2026-05-06",
-      "pmid": "41996547",
-      "doi": "10.1080/10903127.2026.2658592",
-      "summary": "Meta-analysis testing whether intranasal or intramuscular midazolam works better for paediatric seizures without cannula access \u2014 intramuscular midazolam was associated with faster seizure termination and less need for rescue therapy, especially in the prehospital setting.",
-      "relevance": "High",
-      "featuredReason": "Directly informs prehospital seizure management when IV access isn't available \u2014 IM may be better than intranasal for rapid control."
-    },
-    {
-      "id": "41950410",
-      "title": "Paramedics' decisions to withhold resuscitation in traumatic cardiac arrest: accuracy of paramedic assessments compared with autopsy findings",
-      "journal": "Prehospital Emergency Care",
-      "date": "2026-05-05",
-      "pmid": "41950410",
-      "doi": "10.1080/10903127.2026.2655289",
-      "summary": "Retrospective Ontario review testing how paramedics decide to withhold CPR in traumatic cardiac arrest \u2014 most no-CPR decisions were based on signs clearly incompatible with life, and post-mortem findings supported paramedic assessment in the large majority of cases.",
-      "relevance": "High",
-      "featuredReason": "Validates paramedic judgment in withholding CPR for traumatic cardiac arrest \u2014 most clinical assessments align with autopsy findings."
-    },
-    {
-      "id": "41980047",
-      "title": "Out-of-Hospital Management of Suspected Spinal Cord Injuries: How Much Evidence Does It Take to Change Practice?",
-      "journal": "Prehospital Emergency Care",
-      "date": "2026-05-05",
-      "pmid": "41980047",
-      "doi": "10.1080/10903127.2026.2655989",
-      "summary": "Commentary challenging continued routine spinal immobilisation in suspected spinal injury \u2014 the authors argue decades of evidence now consistently show harm without benefit, and that paramedic scope should evolve to reflect current evidence.",
-      "relevance": "High",
-      "featuredReason": "Questions a routine prehospital practice \u2014 decades of evidence suggest spinal immobilisation may cause more harm than benefit."
-    },
     {
       "id": "41967756",
       "title": "Factors associated with hospital transport in emergency medical services-attended out-of-hospital cardiac arrest",
@@ -42,8 +9,8 @@
       "pmid": "41967756",
       "doi": "10.1016/j.resuscitation.2026.111088",
       "summary": "Retrospective cohort of 3339 OHCA patients found 68.9% were not transported, with transport more likely in witnessed arrests, bystander CPR, hypertension, and shorter time from last known normal, and less likely with older age, malignancy, prior stroke, and arrests at home.",
-      "relevance": "High",
-      "featuredReason": "Large cohort clarifies which OHCA patients get transported \u2014 helps understand transport decision patterns in real-world practice."
+      "relevance": "\ud83d\udfe2 High",
+      "featuredReason": "Transport decisions after OHCA vary by patient factors\u2014understanding who gets transported and why informs your termination-of-resuscitation decisions."
     },
     {
       "id": "10.1080/10903127.2026.2666857",
@@ -53,8 +20,41 @@
       "pmid": "",
       "doi": "10.1080/10903127.2026.2666857",
       "summary": "This retrospective cohort study analysed paramedic treat and discharge medical directives to understand utilisation patterns and key metrics for prehospital and emergency department decision-making \u2014 the findings provide valuable insights into the scope, safety, and operational impact of treat-and-refer pathways.",
-      "relevance": "High",
-      "featuredReason": "Examines treat-and-refer pathways \u2014 growing in importance as paramedic scope expands to manage patients at home."
+      "relevance": "\ud83d\udfe2 High",
+      "featuredReason": "Treat-and-refer pathways are expanding\u2014this study shows how they work in practice and what metrics matter for patient safety and ED capacity."
+    },
+    {
+      "id": "10.1186/s13049-026-01626-0",
+      "title": "Prophylaxis of opioid-induced nausea in helicopter emergency medical service: a prospective quasi-experimental study",
+      "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+      "date": "2026-05-07",
+      "pmid": "",
+      "doi": "10.1186/s13049-026-01626-0",
+      "summary": "Prospective study of 205 HEMS patients comparing ondansetron prophylaxis, aromatherapy, and no prophylaxis for opioid-induced nausea \u2014 neither intervention showed benefit compared to no prophylaxis in unselected patients.",
+      "relevance": "\ud83d\udfe2 High",
+      "featuredReason": "Routine ondansetron prophylaxis for opioid-induced nausea showed no benefit\u2014save the drug for patients who actually develop vomiting."
+    },
+    {
+      "id": "41996547",
+      "title": "Intranasal Versus Intramuscular Midazolam in Pediatric Seizure Control: A Systematic Review and Meta-Analysis",
+      "journal": "Prehospital Emergency Care",
+      "date": "2026-05-06",
+      "pmid": "41996547",
+      "doi": "10.1080/10903127.2026.2658592",
+      "summary": "Meta-analysis testing whether intranasal or intramuscular midazolam works better for paediatric seizures without cannula access \u2014 intramuscular midazolam was associated with faster seizure termination and less need for rescue therapy, especially in the prehospital setting.",
+      "relevance": "\ud83d\udfe2 High",
+      "featuredReason": "When cannula access isn't available, IM midazolam beats IN for paediatric seizures\u2014faster seizure control and less need for rescue meds."
+    },
+    {
+      "id": "41950410",
+      "title": "Paramedics' decisions to withhold resuscitation in traumatic cardiac arrest: accuracy of paramedic assessments compared with autopsy findings",
+      "journal": "Prehospital Emergency Care",
+      "date": "2026-05-05",
+      "pmid": "41950410",
+      "doi": "10.1080/10903127.2026.2655289",
+      "summary": "Retrospective Ontario review testing how paramedics decide to withhold CPR in traumatic cardiac arrest \u2014 most no-CPR decisions were based on signs clearly incompatible with life, and post-mortem findings supported paramedic assessment in the large majority of cases.",
+      "relevance": "\ud83d\udfe2 High",
+      "featuredReason": "Your judgement calls on traumatic cardiac arrest hold up\u2014when you withhold CPR for obvious nonsurvivable injuries, autopsy findings back you up."
     }
   ],
   "dailyUpdates": [
@@ -465,45 +465,9 @@
     }
   ],
   "tldr": {
-    "date": "2026-05-12",
-    "paperCount": 14,
-    "summary": "\u2022 IM midazolam may beat intranasal for rapid paediatric seizure control without cannula.\n\u2022 Paramedic no-CPR decisions in traumatic cardiac arrest align with autopsy findings in most cases.\n\u2022 Commentary questions routine spinal immobilisation \u2014 decades of evidence suggest more harm than benefit.\n\u2022 Two-thirds of OHCA patients aren't transported; transport more likely with witnessed arrests and bystander CPR.\n\u2022 Ondansetron and aromatherapy don't prevent opioid-induced nausea better than no prophylaxis.\n\u2022 Study finds median lights-and-sirens time saving only 3 minutes per trip.",
-    "highlights": [
-      {
-        "id": "41996547",
-        "pmid": "41996547",
-        "doi": "10.1080/10903127.2026.2658592",
-        "title": "Intranasal vs IM Midazolam for Paediatric Seizures",
-        "note": "IM midazolam achieved faster seizure termination than intranasal in prehospital paediatric seizures."
-      },
-      {
-        "id": "41950410",
-        "pmid": "41950410",
-        "doi": "10.1080/10903127.2026.2655289",
-        "title": "Traumatic Cardiac Arrest \u2014 Withholding CPR",
-        "note": "Paramedic clinical judgment in withholding resuscitation matched post-mortem findings in most cases."
-      },
-      {
-        "id": "41980047",
-        "pmid": "41980047",
-        "doi": "10.1080/10903127.2026.2655989",
-        "title": "Spinal Immobilisation Under Scrutiny",
-        "note": "Decades of evidence consistently show spinal immobilisation causes harm without benefit."
-      },
-      {
-        "id": "41967756",
-        "pmid": "41967756",
-        "doi": "10.1016/j.resuscitation.2026.111088",
-        "title": "Transport Patterns in Out-of-Hospital Cardiac Arrest",
-        "note": "Witnessed arrests and bystander CPR increase likelihood of transport in OHCA."
-      },
-      {
-        "id": "10.1080/10903127.2026.2666857",
-        "pmid": "",
-        "doi": "10.1080/10903127.2026.2666857",
-        "title": "Treat-and-Discharge Pathways",
-        "note": "Retrospective analysis provides insights into scope and safety of paramedic treat-and-refer pathways."
-      }
-    ]
+    "date": "2026-05-13",
+    "paperCount": 0,
+    "summary": "No new papers today.",
+    "highlights": []
   }
 }
