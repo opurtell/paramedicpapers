@@ -23,6 +23,11 @@
   const $tldrClose     = document.getElementById('tldr-close');
   const $tldrBody      = document.getElementById('tldr-body');
   const $tldrDate      = document.getElementById('tldr-date');
+  const $btnWeeklyTldr = document.getElementById('btn-weekly-tldr');
+  const $weeklyTldrModal = document.getElementById('weekly-tldr-modal');
+  const $weeklyTldrClose = document.getElementById('weekly-tldr-close');
+  const $weeklyTldrBody  = document.getElementById('weekly-tldr-body');
+  const $weeklyTldrDate  = document.getElementById('weekly-tldr-date');
 
   // --- Init ---
   document.addEventListener('DOMContentLoaded', init);
@@ -51,6 +56,7 @@
     render();
     bindSearch();
     bindTldr();
+    bindWeeklyTldr();
     bindRefresh();
   }
 
@@ -232,6 +238,74 @@
       || (p.journal || '').toLowerCase().includes(term)
       || (p.summary || '').toLowerCase().includes(term)
       || (p.relevance || '').toLowerCase().includes(term);
+  }
+
+  // --- Weekly TLDR Modal ---
+  function bindWeeklyTldr() {
+    $btnWeeklyTldr.addEventListener('click', () => {
+      renderWeeklyTldr();
+      $weeklyTldrModal.classList.remove('hidden');
+    });
+
+    $weeklyTldrClose.addEventListener('click', () => {
+      $weeklyTldrModal.classList.add('hidden');
+    });
+
+    $weeklyTldrModal.addEventListener('click', (e) => {
+      if (e.target === $weeklyTldrModal) $weeklyTldrModal.classList.add('hidden');
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') $weeklyTldrModal.classList.add('hidden');
+    });
+  }
+
+  function renderWeeklyTldr() {
+    const wt = data.weeklyTldr;
+    if (wt && wt.summary) {
+      $weeklyTldrDate.textContent = wt.dateRange || '';
+
+      let html = '';
+
+      // TL;DR bullets
+      if (wt.summary) {
+        const lines = wt.summary.split('\n').filter(s => s.trim());
+        html += '<h4 class="weekly-section-title">TL;DR</h4>';
+        html += '<ul class="tldr-bullets">' + lines.map(l => {
+          const cleaned = l.replace(/^[•\-]\s*/, '');
+          return '<li>' + esc(cleaned) + '</li>';
+        }).join('') + '</ul>';
+      }
+
+      // Top picks
+      if (wt.topPicks && wt.topPicks.length) {
+        html += '<h4 class="weekly-section-title">Top Picks</h4>';
+        html += '<div class="weekly-picks">';
+        wt.topPicks.forEach((p, i) => {
+          const extUrl = p.pmid
+            ? 'https://pubmed.ncbi.nlm.nih.gov/' + encodeURIComponent(p.pmid) + '/'
+            : p.doi ? 'https://doi.org/' + encodeURIComponent(p.doi) : '#';
+          html += '<div class="weekly-pick-card">';
+          html += '<div class="weekly-pick-number">' + (i + 1) + '</div>';
+          html += '<div class="weekly-pick-content">';
+          html += '<div class="paper-title"><a href="' + esc(extUrl) + '" target="_blank" rel="noopener">' + esc(p.title) + '</a></div>';
+          if (p.authors) html += '<div class="paper-meta">' + esc(p.authors) + '</div>';
+          if (p.journal) html += '<div class="paper-meta">' + esc(p.journal) + '</div>';
+          if (p.summary) html += '<div class="paper-summary">' + esc(p.summary) + '</div>';
+          html += '<div class="paper-footer">';
+          if (p.relevance) html += relevanceBadge(p.relevance);
+          html += paperLinksHTML(p);
+          html += '</div>';
+          html += '</div></div>';
+        });
+        html += '</div>';
+      }
+
+      $weeklyTldrBody.innerHTML = html;
+    } else {
+      $weeklyTldrBody.innerHTML = '<p class="tldr-empty">Weekly digest not yet available. Check back after Monday\'s weekly review.</p>';
+      $weeklyTldrDate.textContent = '';
+    }
   }
 
   // --- TLDR Modal ---
