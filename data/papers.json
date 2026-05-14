@@ -1,62 +1,6 @@
 {
-  "lastUpdated": "2026-05-13T21:15:26Z",
-  "featuredPapers": [
-    {
-      "id": "41967756",
-      "title": "Factors associated with hospital transport in emergency medical services-attended out-of-hospital cardiac arrest",
-      "journal": "Resuscitation",
-      "date": "2026-05-12",
-      "pmid": "41967756",
-      "doi": "10.1016/j.resuscitation.2026.111088",
-      "summary": "Retrospective cohort of 3339 OHCA patients found 68.9% were not transported, with transport more likely in witnessed arrests, bystander CPR, hypertension, and shorter time from last known normal, and less likely with older age, malignancy, prior stroke, and arrests at home.",
-      "relevance": "\ud83d\udfe2 High",
-      "featuredReason": "Transport decisions after OHCA vary by patient factors\u2014understanding who gets transported and why informs your termination-of-resuscitation decisions."
-    },
-    {
-      "id": "10.1080/10903127.2026.2666857",
-      "title": "Utilization and Metrics Associated with Paramedic Treat and Discharge Medical Directives for Paramedic Services and Emergency Departments: A Retrospective Cohort Study",
-      "journal": "Prehospital Emergency Care",
-      "date": "2026-05-11",
-      "pmid": "",
-      "doi": "10.1080/10903127.2026.2666857",
-      "summary": "This retrospective cohort study analysed paramedic treat and discharge medical directives to understand utilisation patterns and key metrics for prehospital and emergency department decision-making \u2014 the findings provide valuable insights into the scope, safety, and operational impact of treat-and-refer pathways.",
-      "relevance": "\ud83d\udfe2 High",
-      "featuredReason": "Treat-and-refer pathways are expanding\u2014this study shows how they work in practice and what metrics matter for patient safety and ED capacity."
-    },
-    {
-      "id": "10.1186/s13049-026-01626-0",
-      "title": "Prophylaxis of opioid-induced nausea in helicopter emergency medical service: a prospective quasi-experimental study",
-      "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
-      "date": "2026-05-07",
-      "pmid": "",
-      "doi": "10.1186/s13049-026-01626-0",
-      "summary": "Prospective study of 205 HEMS patients comparing ondansetron prophylaxis, aromatherapy, and no prophylaxis for opioid-induced nausea \u2014 neither intervention showed benefit compared to no prophylaxis in unselected patients.",
-      "relevance": "\ud83d\udfe2 High",
-      "featuredReason": "Routine ondansetron prophylaxis for opioid-induced nausea showed no benefit\u2014save the drug for patients who actually develop vomiting."
-    },
-    {
-      "id": "41996547",
-      "title": "Intranasal Versus Intramuscular Midazolam in Pediatric Seizure Control: A Systematic Review and Meta-Analysis",
-      "journal": "Prehospital Emergency Care",
-      "date": "2026-05-06",
-      "pmid": "41996547",
-      "doi": "10.1080/10903127.2026.2658592",
-      "summary": "Meta-analysis testing whether intranasal or intramuscular midazolam works better for paediatric seizures without cannula access \u2014 intramuscular midazolam was associated with faster seizure termination and less need for rescue therapy, especially in the prehospital setting.",
-      "relevance": "\ud83d\udfe2 High",
-      "featuredReason": "When cannula access isn't available, IM midazolam beats IN for paediatric seizures\u2014faster seizure control and less need for rescue meds."
-    },
-    {
-      "id": "41950410",
-      "title": "Paramedics' decisions to withhold resuscitation in traumatic cardiac arrest: accuracy of paramedic assessments compared with autopsy findings",
-      "journal": "Prehospital Emergency Care",
-      "date": "2026-05-05",
-      "pmid": "41950410",
-      "doi": "10.1080/10903127.2026.2655289",
-      "summary": "Retrospective Ontario review testing how paramedics decide to withhold CPR in traumatic cardiac arrest \u2014 most no-CPR decisions were based on signs clearly incompatible with life, and post-mortem findings supported paramedic assessment in the large majority of cases.",
-      "relevance": "\ud83d\udfe2 High",
-      "featuredReason": "Your judgement calls on traumatic cardiac arrest hold up\u2014when you withhold CPR for obvious nonsurvivable injuries, autopsy findings back you up."
-    }
-  ],
+  "lastUpdated": "2026-05-14T02:04:57Z",
+  "featuredPapers": [],
   "dailyUpdates": [
     {
       "date": "2026-05-12",
@@ -464,10 +408,37 @@
       ]
     }
   ],
-  "tldr": {
-    "date": "2026-05-13",
-    "paperCount": 0,
-    "summary": "No new papers today.",
-    "highlights": []
+  "weeklyTldr": {
+    "dateRange": "5\u201311 May 2026",
+    "summary": "Paramedic treat-and-discharge directives show promising safety data from Canada\nLLMs for prehospital protocol guidance show proof-of-concept accuracy\nCarotid Doppler ultrasound may predict resuscitation outcomes in cardiac arrest\nOHCA transport decisions vary significantly by patient factors\nPostanoxic EEG screening with forehead electrodes shows moderate agreement with conventional EEG",
+    "topPicks": [
+      {
+        "title": "Factors associated with hospital transport in EMS-attended OHCA",
+        "authors": "Chih-Wei Sung, Chia-Yu Fan, et al.",
+        "journal": "",
+        "summary": "Retrospective cohort of 3339 OHCA patients found 68.9% were not transported, with transport more likely in witnessed arrests and bystander CPR.",
+        "relevance": "\ud83d\udfe2 High transferability \u2014 Directly relevant to transport decision frameworks",
+        "pmid": "41967756",
+        "doi": "10.1016/j.resuscitation.2026.111088"
+      },
+      {
+        "title": "Utilization and Metrics Associated with Paramedic Treat and Discharge Medical Directives",
+        "authors": "Ryan P. Strum, Shawn Mondoux, et al.",
+        "journal": "",
+        "summary": "Retrospective cohort analysing treat and discharge directives, providing insights into scope, safety, and operational impact.",
+        "relevance": "\ud83d\udfe2 High transferability \u2014 Treat-and-refer pathways gaining traction in Australian jurisdictions",
+        "pmid": "",
+        "doi": "10.1080/10903127.2026.2666857"
+      },
+      {
+        "title": "Can a Large Language Model Grounded in Prehospital Protocols Provide Accurate Care Recommendations?",
+        "authors": "Colin G Wang, Nichole Bosson, et al.",
+        "journal": "",
+        "summary": "Tested whether an LLM trained on agency-specific protocols could generate accurate care recommendations \u2014 promising accuracy for protocol interpretation.",
+        "relevance": "\ud83d\udfe1 Medium transferability \u2014 Early proof-of-concept, needs clinical validation",
+        "pmid": "",
+        "doi": "10.1080/10903127.2026.2668008"
+      }
+    ]
   }
 }
