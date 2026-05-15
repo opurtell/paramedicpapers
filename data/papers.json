@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-14T21:16:35Z",
+  "lastUpdated": "2026-05-15T21:16:19Z",
   "featuredPapers": [
     {
       "id": "10.1186/s13049-026-01629-x",
@@ -9,8 +9,8 @@
       "pmid": "",
       "doi": "10.1186/s13049-026-01629-x",
       "summary": "This commentary argues freeze-dried plasma complements whole blood in prehospital resuscitation, offering a scalable, shelf-stable solution for rural and remote regions with long transport times.",
-      "relevance": "High",
-      "featuredReason": "Highly relevant for Australian rural and remote paramedics who face long transport times and limited access to blood products. Freeze-dried plasma offers a shelf-stable, scalable option that could significantly improve haemorrhagic resuscitation in the prehospital setting."
+      "relevance": "\ud83d\udd34 High",
+      "featuredReason": "Directly relevant to Australian aeromedical and remote retrieval services where blood product storage is challenging \u2014 freeze-dried plasma could fill a critical gap in rural resuscitation."
     },
     {
       "id": "41967756",
@@ -20,8 +20,8 @@
       "pmid": "41967756",
       "doi": "10.1016/j.resuscitation.2026.111088",
       "summary": "Retrospective cohort of 3339 OHCA patients found 68.9% were not transported, with transport more likely in witnessed arrests, bystander CPR, hypertension, and shorter time from last known normal, and less likely with older age, malignancy, prior stroke, and arrests at home.",
-      "relevance": "High",
-      "featuredReason": "Directly relevant to paramedics' daily OHCA transport decisions. Large cohort (3339 patients) provides robust evidence on patient factors influencing transport, helping refine paramedic judgement on when continued resuscitation and transport is appropriate."
+      "relevance": "\ud83d\udd34 High",
+      "featuredReason": "Critically relevant to paramedic OHCA transport decision-making \u2014 provides evidence-based factors to consider when deciding whether to terminate or transport cardiac arrest patients."
     },
     {
       "id": "10.1080/10903127.2026.2666857",
@@ -31,30 +31,30 @@
       "pmid": "",
       "doi": "10.1080/10903127.2026.2666857",
       "summary": "This retrospective cohort study analysed paramedic treat and discharge medical directives to understand utilisation patterns and key metrics for prehospital and emergency department decision-making \u2014 the findings provide valuable insights into the scope, safety, and operational impact of treat-and-refer pathways.",
-      "relevance": "High",
-      "featuredReason": "Treat-and-refer pathways are gaining traction in Australian jurisdictions. This study provides important safety and utilisation data that directly inform the expansion of paramedic scope and avoid unnecessary emergency department presentations."
+      "relevance": "\ud83d\udd34 High",
+      "featuredReason": "Highly relevant as Australian paramedic services expand treat-and-refer pathways \u2014 this study provides evidence on safety metrics and operational impact that can inform local protocol development."
     },
     {
-      "id": "41996547",
-      "title": "Intranasal Versus Intramuscular Midazolam in Pediatric Seizure Control: A Systematic Review and Meta-Analysis",
+      "id": "10.1080/10903127.2026.2668008",
+      "title": "Can a Large Language Model Grounded in Text-Based Agency-Specific Prehospital Protocols Provide Accurate Care Recommendations?",
       "journal": "Prehospital Emergency Care",
-      "date": "2026-05-06",
-      "pmid": "41996547",
-      "doi": "10.1080/10903127.2026.2658592",
-      "summary": "Meta-analysis testing whether intranasal or intramuscular midazolam works better for paediatric seizures without cannula access \u2014 intramuscular midazolam was associated with faster seizure termination and less need for rescue therapy, especially in the prehospital setting.",
-      "relevance": "High",
-      "featuredReason": "Paediatric seizures are a common prehospital scenario, especially when IV access isn't available. This meta-analysis provides evidence-based guidance on midazolam administration, suggesting IM may be superior to IN for seizure termination in the prehospital setting."
+      "date": "2026-05-11",
+      "pmid": "",
+      "doi": "10.1080/10903127.2026.2668008",
+      "summary": "This study tested whether a large language model trained on agency-specific prehospital protocol documents could generate accurate care recommendations \u2014 they found promising accuracy for protocol interpretation and clinical decision support, suggesting potential for LLMs to assist with guideline navigation at the point of care.",
+      "relevance": "\ud83d\udfe1 Medium",
+      "featuredReason": "Forward-looking research with direct relevance to paramedic clinical decision support \u2014 shows AI could help with protocol interpretation at the point of care, though needs clinical validation before deployment."
     },
     {
-      "id": "41950410",
-      "title": "Paramedics' decisions to withhold resuscitation in traumatic cardiac arrest: accuracy of paramedic assessments compared with autopsy findings",
-      "journal": "Prehospital Emergency Care",
-      "date": "2026-05-05",
-      "pmid": "41950410",
-      "doi": "10.1080/10903127.2026.2655289",
-      "summary": "Retrospective Ontario review testing how paramedics decide to withhold CPR in traumatic cardiac arrest \u2014 most no-CPR decisions were based on signs clearly incompatible with life, and post-mortem findings supported paramedic assessment in the large majority of cases.",
-      "relevance": "High",
-      "featuredReason": "Traumatic cardiac arrest is a high-stakes decision point for paramedics. This Ontario study provides validation that paramedic assessment of futility is largely accurate, supporting paramedic autonomy in withholding resuscitation when injuries are clearly incompatible with life."
+      "id": "10.1186/s13049-026-01618-0",
+      "title": "Eye-related emergency calls and prehospital management in region Zealand, Danmark: a register-based cohort study",
+      "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+      "date": "2026-05-09",
+      "pmid": "",
+      "doi": "10.1186/s13049-026-01618-0",
+      "summary": "Register-based cohort of 340 eye-related emergency calls found chemical exposures (31.5%), vision loss (25.9%), and trauma (18.2%) as leading causes, with 11.5% of patients initially coded for eye problems later diagnosed with stroke.",
+      "relevance": "\ud83d\udfe1 Medium",
+      "featuredReason": "Clinically important diagnostic caution \u2014 highlights that 1 in 10 eye-related calls are actually strokes, reminding paramedics to maintain broad differential assessment even for seemingly focused presentations."
     }
   ],
   "dailyUpdates": [
@@ -480,18 +480,10 @@
     }
   ],
   "tldr": {
-    "date": "2026-05-14",
-    "paperCount": 1,
-    "summary": "\u2022 Freeze-dried plasma emerges as a shelf-stable complement to whole blood for prehospital resuscitation.\n\u2022 Particularly valuable for rural and remote regions with long transport times.\n\u2022 Offers scalable blood product solution when whole blood not available.\n\u2022 Canadian perspective provides practical implementation insights.\n\u2022 Addresses haemorrhagic resuscitation challenges in prehospital setting.\n\u2022 Could improve outcomes in trauma patients with massive bleeding.",
-    "highlights": [
-      {
-        "id": "10.1186/s13049-026-01629-x",
-        "pmid": "",
-        "doi": "10.1186/s13049-026-01629-x",
-        "title": "Freeze-Dried Plasma for Prehospital Resuscitation",
-        "note": "Shelf-stable blood product could be a game-changer for rural paramedics facing long transports."
-      }
-    ]
+    "date": "2026-05-15",
+    "paperCount": 0,
+    "summary": "No new papers today.",
+    "highlights": []
   },
   "weeklyTldr": {
     "dateRange": "5\u201311 May 2026",
