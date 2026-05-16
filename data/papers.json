@@ -1,17 +1,6 @@
 {
-  "lastUpdated": "2026-05-15T21:16:19Z",
+  "lastUpdated": "2026-05-16T21:16:20Z",
   "featuredPapers": [
-    {
-      "id": "10.1186/s13049-026-01629-x",
-      "title": "The role of freeze-dried plasma in a world of whole blood: a Canadian prehospital and transport perspective",
-      "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
-      "date": "2026-05-14",
-      "pmid": "",
-      "doi": "10.1186/s13049-026-01629-x",
-      "summary": "This commentary argues freeze-dried plasma complements whole blood in prehospital resuscitation, offering a scalable, shelf-stable solution for rural and remote regions with long transport times.",
-      "relevance": "\ud83d\udd34 High",
-      "featuredReason": "Directly relevant to Australian aeromedical and remote retrieval services where blood product storage is challenging \u2014 freeze-dried plasma could fill a critical gap in rural resuscitation."
-    },
     {
       "id": "41967756",
       "title": "Factors associated with hospital transport in emergency medical services-attended out-of-hospital cardiac arrest",
@@ -20,8 +9,8 @@
       "pmid": "41967756",
       "doi": "10.1016/j.resuscitation.2026.111088",
       "summary": "Retrospective cohort of 3339 OHCA patients found 68.9% were not transported, with transport more likely in witnessed arrests, bystander CPR, hypertension, and shorter time from last known normal, and less likely with older age, malignancy, prior stroke, and arrests at home.",
-      "relevance": "\ud83d\udd34 High",
-      "featuredReason": "Critically relevant to paramedic OHCA transport decision-making \u2014 provides evidence-based factors to consider when deciding whether to terminate or transport cardiac arrest patients."
+      "relevance": "High",
+      "featuredReason": "Large study provides practical framework for transport decisions in OHCA, helping paramedics balance on-scene resuscitation against transport for ECPR consideration."
     },
     {
       "id": "10.1080/10903127.2026.2666857",
@@ -31,8 +20,19 @@
       "pmid": "",
       "doi": "10.1080/10903127.2026.2666857",
       "summary": "This retrospective cohort study analysed paramedic treat and discharge medical directives to understand utilisation patterns and key metrics for prehospital and emergency department decision-making \u2014 the findings provide valuable insights into the scope, safety, and operational impact of treat-and-refer pathways.",
-      "relevance": "\ud83d\udd34 High",
-      "featuredReason": "Highly relevant as Australian paramedic services expand treat-and-refer pathways \u2014 this study provides evidence on safety metrics and operational impact that can inform local protocol development."
+      "relevance": "High",
+      "featuredReason": "Directly relevant to Australian treat-and-refer pathways, providing safety data and operational insights as jurisdictions expand paramedic scope."
+    },
+    {
+      "id": "10.1186/s13049-026-01629-x",
+      "title": "The role of freeze-dried plasma in a world of whole blood: a Canadian prehospital and transport perspective",
+      "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+      "date": "2026-05-14",
+      "pmid": "",
+      "doi": "10.1186/s13049-026-01629-x",
+      "summary": "This commentary argues freeze-dried plasma complements whole blood in prehospital resuscitation, offering a scalable, shelf-stable solution for rural and remote regions with long transport times.",
+      "relevance": "High",
+      "featuredReason": "Relevant to rural Australian services where transport times are long, offering a potentially scalable blood product solution for prehospital trauma resuscitation."
     },
     {
       "id": "10.1080/10903127.2026.2668008",
@@ -42,8 +42,8 @@
       "pmid": "",
       "doi": "10.1080/10903127.2026.2668008",
       "summary": "This study tested whether a large language model trained on agency-specific prehospital protocol documents could generate accurate care recommendations \u2014 they found promising accuracy for protocol interpretation and clinical decision support, suggesting potential for LLMs to assist with guideline navigation at the point of care.",
-      "relevance": "\ud83d\udfe1 Medium",
-      "featuredReason": "Forward-looking research with direct relevance to paramedic clinical decision support \u2014 shows AI could help with protocol interpretation at the point of care, though needs clinical validation before deployment."
+      "relevance": "Medium",
+      "featuredReason": "Early proof-of-concept for AI-assisted protocol guidance at the bedside\u2014relevant as health services explore decision support tools to reduce cognitive load."
     },
     {
       "id": "10.1186/s13049-026-01618-0",
@@ -53,8 +53,8 @@
       "pmid": "",
       "doi": "10.1186/s13049-026-01618-0",
       "summary": "Register-based cohort of 340 eye-related emergency calls found chemical exposures (31.5%), vision loss (25.9%), and trauma (18.2%) as leading causes, with 11.5% of patients initially coded for eye problems later diagnosed with stroke.",
-      "relevance": "\ud83d\udfe1 Medium",
-      "featuredReason": "Clinically important diagnostic caution \u2014 highlights that 1 in 10 eye-related calls are actually strokes, reminding paramedics to maintain broad differential assessment even for seemingly focused presentations."
+      "relevance": "Medium",
+      "featuredReason": "Highlights an important diagnostic pitfall\u2014stroke mimics presenting as eye complaints\u2014reminding paramedics to maintain high suspicion for cerebrovascular events."
     }
   ],
   "dailyUpdates": [
@@ -480,7 +480,7 @@
     }
   ],
   "tldr": {
-    "date": "2026-05-15",
+    "date": "2026-05-16",
     "paperCount": 0,
     "summary": "No new papers today.",
     "highlights": []
