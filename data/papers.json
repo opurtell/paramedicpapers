@@ -1,6 +1,17 @@
 {
-  "lastUpdated": "2026-05-16T21:16:20Z",
+  "lastUpdated": "2026-05-17T21:15:58Z",
   "featuredPapers": [
+    {
+      "id": "10.1186/s13049-026-01629-x",
+      "title": "The role of freeze-dried plasma in a world of whole blood: a Canadian prehospital and transport perspective",
+      "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+      "date": "2026-05-14",
+      "pmid": "",
+      "doi": "10.1186/s13049-026-01629-x",
+      "summary": "This commentary argues freeze-dried plasma complements whole blood in prehospital resuscitation, offering a scalable, shelf-stable solution for rural and remote regions with long transport times.",
+      "relevance": "High",
+      "featuredReason": "Highly relevant for Australian remote and retrieval services where blood products are logistically challenging \u2014 freeze-dried plasma could expand prehospital resuscitation options in regional and aeromedical settings."
+    },
     {
       "id": "41967756",
       "title": "Factors associated with hospital transport in emergency medical services-attended out-of-hospital cardiac arrest",
@@ -10,7 +21,7 @@
       "doi": "10.1016/j.resuscitation.2026.111088",
       "summary": "Retrospective cohort of 3339 OHCA patients found 68.9% were not transported, with transport more likely in witnessed arrests, bystander CPR, hypertension, and shorter time from last known normal, and less likely with older age, malignancy, prior stroke, and arrests at home.",
       "relevance": "High",
-      "featuredReason": "Large study provides practical framework for transport decisions in OHCA, helping paramedics balance on-scene resuscitation against transport for ECPR consideration."
+      "featuredReason": "Directly relevant to OHCA transport decision frameworks in Australian ambulance services \u2014 helps refine termination of resuscitation criteria and resource allocation during cardiac arrests."
     },
     {
       "id": "10.1080/10903127.2026.2666857",
@@ -21,18 +32,18 @@
       "doi": "10.1080/10903127.2026.2666857",
       "summary": "This retrospective cohort study analysed paramedic treat and discharge medical directives to understand utilisation patterns and key metrics for prehospital and emergency department decision-making \u2014 the findings provide valuable insights into the scope, safety, and operational impact of treat-and-refer pathways.",
       "relevance": "High",
-      "featuredReason": "Directly relevant to Australian treat-and-refer pathways, providing safety data and operational insights as jurisdictions expand paramedic scope."
+      "featuredReason": "Highly relevant as Australian services expand treat-and-refer pathways \u2014 provides evidence on utilisation patterns and safety metrics that can inform local protocol development and operational planning."
     },
     {
-      "id": "10.1186/s13049-026-01629-x",
-      "title": "The role of freeze-dried plasma in a world of whole blood: a Canadian prehospital and transport perspective",
-      "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
-      "date": "2026-05-14",
-      "pmid": "",
-      "doi": "10.1186/s13049-026-01629-x",
-      "summary": "This commentary argues freeze-dried plasma complements whole blood in prehospital resuscitation, offering a scalable, shelf-stable solution for rural and remote regions with long transport times.",
-      "relevance": "High",
-      "featuredReason": "Relevant to rural Australian services where transport times are long, offering a potentially scalable blood product solution for prehospital trauma resuscitation."
+      "id": "41967755",
+      "title": "Feasibility and agreement of a self-adhesive EEG electrode set versus conventional EEG in postanoxic coma",
+      "journal": "Resuscitation",
+      "date": "2026-05-12",
+      "pmid": "41967755",
+      "doi": "10.1016/j.resuscitation.2026.111086",
+      "summary": "Comparison of forehead EEG electrodes versus conventional EEG in 51 postanoxic coma patients found forehead recordings were interpretable in 74.1% of cases with moderate agreement, suggesting potential as a screening tool to reduce technician workload.",
+      "relevance": "Medium",
+      "featuredReason": "Emerging technology for post-cardiac arrest prognostication could simplify neurological assessment in retrieval and ICU settings, though clinical validation and prehospital applicability remain to be established."
     },
     {
       "id": "10.1080/10903127.2026.2668008",
@@ -43,18 +54,7 @@
       "doi": "10.1080/10903127.2026.2668008",
       "summary": "This study tested whether a large language model trained on agency-specific prehospital protocol documents could generate accurate care recommendations \u2014 they found promising accuracy for protocol interpretation and clinical decision support, suggesting potential for LLMs to assist with guideline navigation at the point of care.",
       "relevance": "Medium",
-      "featuredReason": "Early proof-of-concept for AI-assisted protocol guidance at the bedside\u2014relevant as health services explore decision support tools to reduce cognitive load."
-    },
-    {
-      "id": "10.1186/s13049-026-01618-0",
-      "title": "Eye-related emergency calls and prehospital management in region Zealand, Danmark: a register-based cohort study",
-      "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
-      "date": "2026-05-09",
-      "pmid": "",
-      "doi": "10.1186/s13049-026-01618-0",
-      "summary": "Register-based cohort of 340 eye-related emergency calls found chemical exposures (31.5%), vision loss (25.9%), and trauma (18.2%) as leading causes, with 11.5% of patients initially coded for eye problems later diagnosed with stroke.",
-      "relevance": "Medium",
-      "featuredReason": "Highlights an important diagnostic pitfall\u2014stroke mimics presenting as eye complaints\u2014reminding paramedics to maintain high suspicion for cerebrovascular events."
+      "featuredReason": "Forward-looking study on AI for protocol support could inform future clinical decision tools for Australian paramedics, though integration with local protocols and safety validation would be essential."
     }
   ],
   "dailyUpdates": [
@@ -480,7 +480,7 @@
     }
   ],
   "tldr": {
-    "date": "2026-05-16",
+    "date": "2026-05-17",
     "paperCount": 0,
     "summary": "No new papers today.",
     "highlights": []
