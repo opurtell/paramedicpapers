@@ -1,63 +1,404 @@
 {
-  "lastUpdated": "2026-05-17T21:15:58Z",
-  "featuredPapers": [
+  "lastUpdated": "2026-05-18T11:38:58Z",
+  "featuredPapers": [],
+  "funFacts": [
     {
-      "id": "10.1186/s13049-026-01629-x",
-      "title": "The role of freeze-dried plasma in a world of whole blood: a Canadian prehospital and transport perspective",
-      "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
-      "date": "2026-05-14",
-      "pmid": "",
-      "doi": "10.1186/s13049-026-01629-x",
-      "summary": "This commentary argues freeze-dried plasma complements whole blood in prehospital resuscitation, offering a scalable, shelf-stable solution for rural and remote regions with long transport times.",
-      "relevance": "High",
-      "featuredReason": "Highly relevant for Australian remote and retrieval services where blood products are logistically challenging \u2014 freeze-dried plasma could expand prehospital resuscitation options in regional and aeromedical settings."
+      "category": "pharmacology",
+      "fact": "Adrenaline (epinephrine) was first used in cardiac arrest in 1906, but it wasn't until the 1960s that it became a standard part of CPR protocols."
     },
     {
-      "id": "41967756",
-      "title": "Factors associated with hospital transport in emergency medical services-attended out-of-hospital cardiac arrest",
-      "journal": "Resuscitation",
-      "date": "2026-05-12",
-      "pmid": "41967756",
-      "doi": "10.1016/j.resuscitation.2026.111088",
-      "summary": "Retrospective cohort of 3339 OHCA patients found 68.9% were not transported, with transport more likely in witnessed arrests, bystander CPR, hypertension, and shorter time from last known normal, and less likely with older age, malignancy, prior stroke, and arrests at home.",
-      "relevance": "High",
-      "featuredReason": "Directly relevant to OHCA transport decision frameworks in Australian ambulance services \u2014 helps refine termination of resuscitation criteria and resource allocation during cardiac arrests."
+      "category": "cardiac",
+      "fact": "Ventricular fibrillation is the most common initial rhythm in out-of-hospital cardiac arrest (OHCA), but survival rates drop by roughly 10% for every minute defibrillation is delayed."
     },
     {
-      "id": "10.1080/10903127.2026.2666857",
-      "title": "Utilization and Metrics Associated with Paramedic Treat and Discharge Medical Directives for Paramedic Services and Emergency Departments: A Retrospective Cohort Study",
-      "journal": "Prehospital Emergency Care",
-      "date": "2026-05-11",
-      "pmid": "",
-      "doi": "10.1080/10903127.2026.2666857",
-      "summary": "This retrospective cohort study analysed paramedic treat and discharge medical directives to understand utilisation patterns and key metrics for prehospital and emergency department decision-making \u2014 the findings provide valuable insights into the scope, safety, and operational impact of treat-and-refer pathways.",
-      "relevance": "High",
-      "featuredReason": "Highly relevant as Australian services expand treat-and-refer pathways \u2014 provides evidence on utilisation patterns and safety metrics that can inform local protocol development and operational planning."
+      "category": "history",
+      "fact": "The first documented use of mouth-to-mouth ventilation was by the biblical Elisha around 800 BC. Modern CPR wasn't developed until 1960."
     },
     {
-      "id": "41967755",
-      "title": "Feasibility and agreement of a self-adhesive EEG electrode set versus conventional EEG in postanoxic coma",
-      "journal": "Resuscitation",
-      "date": "2026-05-12",
-      "pmid": "41967755",
-      "doi": "10.1016/j.resuscitation.2026.111086",
-      "summary": "Comparison of forehead EEG electrodes versus conventional EEG in 51 postanoxic coma patients found forehead recordings were interpretable in 74.1% of cases with moderate agreement, suggesting potential as a screening tool to reduce technician workload.",
-      "relevance": "Medium",
-      "featuredReason": "Emerging technology for post-cardiac arrest prognostication could simplify neurological assessment in retrieval and ICU settings, though clinical validation and prehospital applicability remain to be established."
+      "category": "anatomy",
+      "fact": "The human body contains roughly 60,000 miles of blood vessels \u2014 enough to wrap around the Earth more than twice."
     },
     {
-      "id": "10.1080/10903127.2026.2668008",
-      "title": "Can a Large Language Model Grounded in Text-Based Agency-Specific Prehospital Protocols Provide Accurate Care Recommendations?",
-      "journal": "Prehospital Emergency Care",
-      "date": "2026-05-11",
-      "pmid": "",
-      "doi": "10.1080/10903127.2026.2668008",
-      "summary": "This study tested whether a large language model trained on agency-specific prehospital protocol documents could generate accurate care recommendations \u2014 they found promising accuracy for protocol interpretation and clinical decision support, suggesting potential for LLMs to assist with guideline navigation at the point of care.",
-      "relevance": "Medium",
-      "featuredReason": "Forward-looking study on AI for protocol support could inform future clinical decision tools for Australian paramedics, though integration with local protocols and safety validation would be essential."
+      "category": "pharmacology",
+      "fact": "Atropine was removed from the cardiac arrest algorithm in 2010 (ILCOR) after evidence showed no benefit for pulseless electrical activity or asystole. It remains essential for symptomatic bradycardia and organophosphate poisoning."
+    },
+    {
+      "category": "resuscitation",
+      "fact": "The LUCAS mechanical chest compression device delivers exactly 102 compressions per minute and 5 cm depth \u2014 perfectly consistent, every time. But manual CPR quality varies widely between providers."
+    },
+    {
+      "category": "pathophysiology",
+      "fact": "In tension pneumothorax, mediastinal shift compresses the contralateral lung AND kinks the vena cava \u2014 it's the venous return obstruction, not just the lung collapse, that causes cardiovascular collapse."
+    },
+    {
+      "category": "pharmacology",
+      "fact": "Glucagon can be used to treat severe beta-blocker overdose because it activates adenylate cyclase through a separate receptor, bypassing the blocked beta receptors entirely."
+    },
+    {
+      "category": "anatomy",
+      "fact": "The cricothyroid membrane averages 10mm tall and 9mm wide in adults \u2014 just large enough for a 6mm tube. It's the narrowest point of access to the airway but the most reliable in a 'can't intubate, can't oxygenate' scenario."
+    },
+    {
+      "category": "EMS",
+      "fact": "The earliest recorded ambulance service was operated by the Order of St John in Jerusalem during the First Crusade (1099), using carts to transport wounded knights to treatment tents."
+    },
+    {
+      "category": "pharmacology",
+      "fact": "Naloxone has a shorter half-life (30\u201390 minutes) than most opioids. Patients who receive naloxone for opioid overdose can re-sedate after it wears off \u2014 hence the need for observation or extended-release formulations."
+    },
+    {
+      "category": "pathophysiology",
+      "fact": "The Kussmaul breathing pattern (deep, rapid respirations) seen in diabetic ketoacidosis is the body's attempt to blow off CO2 and compensate for metabolic acidosis \u2014 it's respiratory compensation for a metabolic problem."
+    },
+    {
+      "category": "cardiac",
+      "fact": "The QT interval should be less than half the R-R interval at normal heart rates. A corrected QT (QTc) > 500ms significantly increases the risk of torsades de pointes."
+    },
+    {
+      "category": "EMS",
+      "fact": "Modern paramedic practice traces its origins to the 'Freedom House' ambulance service in Pittsburgh (1967), which trained unemployed Black men as the first paramedics in the United States."
+    },
+    {
+      "category": "pharmacology",
+      "fact": "Intranasal fentanyl achieves effective plasma concentrations within 10 minutes and avoids the need for IV access \u2014 making it a game-changer for pain management in paediatric and burn patients."
+    },
+    {
+      "category": "pathophysiology",
+      "fact": "Neurogenic shock (loss of sympathetic tone after spinal cord injury above T6) causes hypotension with bradycardia \u2014 the opposite of hypovolaemic shock, where tachycardia is the expected compensatory response."
+    },
+    {
+      "category": "anatomy",
+      "fact": "The right main bronchus is wider, shorter, and more vertical than the left \u2014 which is why endobronchial intubation and aspiration preferentially affect the right lung."
+    },
+    {
+      "category": "resuscitation",
+      "fact": "Therapeutic hypothermia (now called Targeted Temperature Management) was inspired by cases in the 1950s, but the landmark 2002 HACA trial was what convinced the resuscitation community to adopt it routinely."
+    },
+    {
+      "category": "pharmacology",
+      "fact": "Amiodarone contains roughly 75mg of iodine per 200mg dose \u2014 about 37% iodine by weight. A single loading dose can cause both hyper- and hypothyroidism in susceptible patients."
+    },
+    {
+      "category": "EMS",
+      "fact": "The Star of Life symbol used on ambulances worldwide was designed by the US National Highway Traffic Safety Administration in 1973. The six points represent detection, reporting, response, on-scene care, care in transit, and transfer to definitive care."
+    },
+    {
+      "category": "pathophysiology",
+      "fact": "In anaphylaxis, massive vasodilation can increase vascular capacity by up to 30%, effectively creating a 'relative hypovolaemia' \u2014 which is why adrenaline (a vasoconstrictor) is the definitive treatment, not just fluid alone."
+    },
+    {
+      "category": "cardiac",
+      "fact": "Wellens' syndrome (biphasic or deeply inverted T waves in V2-V3) indicates critical proximal LAD stenosis. These patients need urgent cath lab referral \u2014 stress testing can be fatal."
+    },
+    {
+      "category": "pharmacology",
+      "fact": "Adrenaline in anaphylaxis works within seconds via the IM route because it's absorbed into the vast capillary network of muscle. Subcutaneous injection is slower and less effective \u2014 hence the recommendation for IM injection into the anterolateral thigh."
+    },
+    {
+      "category": "anatomy",
+      "fact": "The epidural space contains fat, veins, and lymphatics \u2014 it's the target for epidural analgesia. The subarachnoid space contains CSF and is the target for spinal anaesthesia. The difference is one membrane: the dura mater."
+    },
+    {
+      "category": "resuscitation",
+      "fact": "In the PARAMEDIC2 trial, adrenaline improved survival to hospital discharge from 3.2% to 8.0% in out-of-hospital cardiac arrest \u2014 but survivors had higher rates of severe neurological impairment compared to placebo."
+    },
+    {
+      "category": "EMS",
+      "fact": "The average time from 000 call to ambulance arrival in urban Australia is approximately 8\u201310 minutes. In rural and remote areas, it can exceed 30 minutes \u2014 which is why community first-responder programs are critical."
+    },
+    {
+      "category": "pharmacology",
+      "fact": "Ketamine is a 'dissociative' anaesthetic \u2014 it doesn't suppress the respiratory drive or gag reflex at typical doses, making it one of the safest induction agents for RSI in the prehospital environment."
+    },
+    {
+      "category": "pathophysiology",
+      "fact": "In hypovolaemic shock, the body sacrifices skin, kidneys, and gut perfusion to maintain coronary and cerebral blood flow. By the time hypotension appears (class III shock), the patient has already lost 30\u201340% of their blood volume."
+    },
+    {
+      "category": "cardiac",
+      "fact": "Sgarbossa criteria (concordant ST elevation \u22651mm, concordant ST depression \u22651mm in V1-V3, or discordant STE \u22655mm) help diagnose MI in the presence of LBBB \u2014 a scenario where standard STEMI criteria don't apply."
+    },
+    {
+      "category": "EMS",
+      "fact": "Helicopter EMS typically cruising at 120\u2013150 knots can reduce transport times significantly, but tasking criteria matter \u2014 studies show HEMS benefit is greatest for time-critical conditions like trauma and STEMI where ground transport exceeds 30 minutes."
+    },
+    {
+      "category": "pharmacology",
+      "fact": "The 'dose' column on a drug card isn't just a suggestion \u2014 adrenaline 1:1000 is 1mg/mL (for IM/SC), while adrenaline 1:10000 is 0.1mg/mL (for IV). Confusing the two has caused fatal intracerebral haemorrhage."
+    },
+    {
+      "category": "pathophysiology",
+      "fact": "The Cushing's triad (hypertension, bradycardia, irregular respirations) is a late sign of raised intracranial pressure. By the time you see it, herniation may already be underway \u2014 it's a pre-terminal sign."
+    },
+    {
+      "category": "anatomy",
+      "fact": "The femoral artery pulse is palpable at the midpoint of the inguinal ligament \u2014 in cardiac arrest, it's the recommended site for pulse checks because central pulses persist longer than peripheral ones."
+    },
+    {
+      "category": "resuscitation",
+      "fact": "The 'three-phase' model of cardiac arrest describes: the electrical phase (0\u20134 min, defibrillation most effective), the circulatory phase (4\u201310 min, CPR before defibrillation improves outcomes), and the metabolic phase (>10 min, poor prognosis)."
+    },
+    {
+      "category": "pharmacology",
+      "fact": "Glyceryl trinitrate (GTN) relieves angina by venodilation (reducing preload) more than arterial dilation. It doesn't 'open blocked arteries' \u2014 it reduces the heart's workload, lowering myocardial oxygen demand."
+    },
+    {
+      "category": "EMS",
+      "fact": "The introduction of paramedic practitioners in the UK demonstrated that paramedics trained in alternate care pathways can safely manage many patients without transport \u2014 reducing ED burden by up to 50% in some trial cohorts."
+    },
+    {
+      "category": "pathophysiology",
+      "fact": "In acute mountain sickness and high-altitude cerebral oedema (HACE), cerebral vasodilation from hypoxia increases intracranial pressure. Diamox (acetazolamide) works by inducing a metabolic acidosis that stimulates ventilation."
+    },
+    {
+      "category": "cardiac",
+      "fact": "The left anterior descending (LAD) artery supplies roughly 50% of the left ventricle's myocardium. Occlusion proximal to the first septal branch is why anterior STEMIs carry such high mortality \u2014 it's a massive territory at risk."
+    },
+    {
+      "category": "pharmacology",
+      "fact": "Metaraminol is a pure alpha-agonist used as a vasopressor in Australia. Unlike noradrenaline, it doesn't require a central line and can be given via peripheral IV \u2014 but its longer onset means you need to anticipate hypotension, not react to it."
+    },
+    {
+      "category": "anatomy",
+      "fact": "The phrenic nerve (C3-C5) innervates the diaphragm \u2014 'C3, 4, 5 keeps the diaphragm alive.' A spinal cord injury above C3 paralyses the diaphragm, making these patients immediately ventilator-dependent."
+    },
+    {
+      "category": "resuscitation",
+      "fact": "The 'log roll' technique was standard for spinal immobilisation for decades, but recent evidence suggests that manual in-line stabilisation with scoop stretchers causes less spinal movement during extrication."
+    },
+    {
+      "category": "pathophysiology",
+      "fact": "Rhabdomyolysis from crush injury releases myoglobin, which clogs renal tubules and causes acute kidney injury. The 'crush syndrome' triad is: hypovolaemia, hyperkalaemia, and myoglobinuria \u2014 early aggressive fluid resuscitation is the key intervention."
+    },
+    {
+      "category": "pharmacology",
+      "fact": "Ondansetron (Zofran) works by blocking 5-HT3 serotonin receptors in the chemoreceptor trigger zone and GI tract. It revolutionised antiemetic therapy because it doesn't cause the sedation or dystonic reactions of older agents like metoclopramide."
+    },
+    {
+      "category": "EMS",
+      "fact": "In Australia, paramedics are regulated under the National Registration and Accreditation Scheme (NRAS) by the Paramedicine Board of Australia since 2018 \u2014 making paramedicine a nationally regulated health profession."
+    },
+    {
+      "category": "cardiac",
+      "fact": "The P-wave represents atrial depolarisation, but the left atrium depolarises slightly after the right. A notched or wide P-wave ('P mitrale') suggests left atrial enlargement, often from mitral valve disease."
+    },
+    {
+      "category": "pharmacology",
+      "fact": "Sodium bicarbonate in tricyclic antidepressant overdose works by alkalinising the serum, which reduces the fraction of free drug that binds to cardiac sodium channels \u2014 reversing the wide QRS and arrhythmias within minutes."
+    },
+    {
+      "category": "pathophysiology",
+      "fact": "The Fick principle states that cardiac output equals oxygen consumption divided by the arteriovenous oxygen difference. It's the physiological basis for why increasing heart rate and stroke volume are the only ways to boost oxygen delivery."
+    },
+    {
+      "category": "anatomy",
+      "fact": "The radial nerve runs in the spiral groove of the humerus \u2014 mid-shaft humeral fractures commonly injure it, causing wrist drop. Always test wrist extension before and after immobilising a humeral fracture."
+    },
+    {
+      "category": "resuscitation",
+      "fact": "In traumatic cardiac arrest, the priority sequence is different: address reversible causes (hypovolaemia, tension pneumothorax, cardiac tamponade) before or alongside CPR \u2014 standard ALS algorithms alone have near-zero survival in this context."
+    },
+    {
+      "category": "pharmacology",
+      "fact": "Midazolam is water-soluble at acidic pH but becomes lipophilic at physiological pH \u2014 which is why it crosses the blood-brain barrier so quickly after injection. This also makes it the fastest-onset benzodiazepine for seizure termination."
+    },
+    {
+      "category": "EMS",
+      "fact": "The earliest documented 'ambulance' was a horse-drawn wagon used by Spanish military forces in the 1480s during the siege of M\u00e1laga. The word 'ambulance' comes from the Latin 'ambulare' \u2014 to walk or move."
+    },
+    {
+      "category": "pathophysiology",
+      "fact": "In sepsis, the 'cytokine storm' causes both vasodilation AND increased capillary permeability. Fluid leaks into the interstitial space ('third spacing'), which is why septic patients can be oedematous yet intravascularly depleted simultaneously."
+    },
+    {
+      "category": "cardiac",
+      "fact": "Atrial fibrillation causes stasis of blood in the left atrial appendage, forming thrombus. The risk of stroke in AF is quantified by the CHA\u2082DS\u2082-VASc score \u2014 patients scoring \u22652 (men) or \u22653 (women) generally need anticoagulation."
+    },
+    {
+      "category": "pharmacology",
+      "fact": "Ipratropium bromide is an anticholinergic bronchodilator derived from atropine but modified to be poorly absorbed systemically \u2014 so it relaxes airway smooth muscle without the tachycardia, dry mouth, and blurred vision of systemic atropine."
+    },
+    {
+      "category": "resuscitation",
+      "fact": "CPR generates only about 20\u201330% of normal cardiac output. 'CCR' (cardiocerebral resuscitation) \u2014 continuous compressions without ventilations for the first few minutes of witnessed VF arrest \u2014 may improve cerebral perfusion compared to traditional 30:2 CPR."
+    },
+    {
+      "category": "pathophysiology",
+      "fact": "The 'lethal triad' of trauma is hypothermia, acidosis, and coagulopathy \u2014 each worsens the others in a vicious cycle. This is why trauma protocols emphasise warm fluids, early haemorrhage control, and damage control surgery."
+    },
+    {
+      "category": "pharmacology",
+      "fact": "Magnesium sulphate is the first-line treatment for eclamptic seizures \u2014 not benzodiazepines. It works by antagonising calcium at NMDA receptors and causing cerebral vasodilation, reducing seizure risk by over 50% compared to diazepam."
+    },
+    {
+      "category": "EMS",
+      "fact": "Australian 'flight paramedics' and 'rescue paramedics' undergo additional training in aeromedical retrieval, winch operations, and wilderness medicine. In NSW alone, aeromedical services respond to over 7,000 missions annually."
+    },
+    {
+      "category": "cardiac",
+      "fact": "Brugada syndrome is a genetic sodium channelopathy that causes VF and sudden cardiac death in young, otherwise healthy individuals. The classic ECG shows a 'pseudo-RBBB' pattern with coved ST elevation in V1-V3."
+    },
+    {
+      "category": "pharmacology",
+      "fact": "Adenosine has a half-life of less than 10 seconds in the blood \u2014 it's rapidly degraded by adenosine deaminase on red blood cells. This is why it must be given as a rapid bolus through a large-bore proximal IV, followed immediately by a saline flush."
+    },
+    {
+      "category": "pathophysiology",
+      "fact": "In spinal shock (loss of all cord function below a lesion), there is flaccid paralysis, areflexia, and loss of sensation. Reflexes typically return within 24\u201372 hours, and the return of the bulbocavernosus reflex marks the end of spinal shock."
+    },
+    {
+      "category": "anatomy",
+      "fact": "The carotid sinus baroreceptors at the bifurcation of the common carotid artery respond to stretch. Carotid sinus massage increases vagal tone, slowing AV node conduction \u2014 useful for terminating SVT, but risky in patients with carotid stenosis."
+    },
+    {
+      "category": "resuscitation",
+      "fact": "ECMO initiated during cardiac arrest (ECPR) has shown survival rates of 30\u201350% in selected patients in specialised centres \u2014 dramatically higher than conventional CPR for refractory VF/VT."
+    },
+    {
+      "category": "pharmacology",
+      "fact": "Calcium chloride contains three times more bioavailable calcium ions per gram than calcium gluconate. For immediate correction of hyperkalaemia-induced arrhythmias, calcium chloride is preferred \u2014 but it must be given via a central or large-bore peripheral line."
+    },
+    {
+      "category": "EMS",
+      "fact": "The concept of the 'golden hour' \u2014 that trauma patients have the best outcomes if they reach definitive care within 60 minutes \u2014 was coined by R Adams Cowley in the 1960s. Modern evidence suggests it's actually the 'golden minutes' for haemorrhaging patients."
+    },
+    {
+      "category": "pathophysiology",
+      "fact": "The oxyhaemoglobin dissociation curve shifts right (releasing more O\u2082 to tissues) with increased temperature, acidosis, increased PaCO\u2082, and increased 2,3-DPG. Active tissues produce all of these \u2014 a beautiful self-regulating system."
+    },
+    {
+      "category": "cardiac",
+      "fact": "De Winter T-waves (upsloping ST depression with tall, peaked T waves in V1-V6) are a STEMI equivalent indicating acute proximal LAD occlusion. They appear in about 2% of acute LAD occlusions and are frequently missed."
+    },
+    {
+      "category": "pharmacology",
+      "fact": "Tranexamic acid (TXA) works by blocking the conversion of plasminogen to plasmin, preventing clot breakdown. The CRASH-2 trial showed it reduces mortality from trauma haemorrhage \u2014 but only if given within 3 hours of injury."
+    },
+    {
+      "category": "anatomy",
+      "fact": "The recurrent laryngeal nerve on the left hooks under the aortic arch, while the right hooks under the subclavian artery. This makes the left nerve vulnerable to compression by aortic aneurysms or mediastinal masses, causing hoarseness."
+    },
+    {
+      "category": "resuscitation",
+      "fact": "End-tidal CO\u2082 (ETCO\u2082) is a real-time indicator of cardiac output during CPR. An ETCO\u2082 < 10 mmHg after 20 minutes of resuscitation strongly predicts non-survival \u2014 it's the most reliable prognostic indicator available during an arrest."
+    },
+    {
+      "category": "pathophysiology",
+      "fact": "In status epilepticus, the longer the seizure continues, the harder it is to terminate \u2014 GABA receptors internalise and glutamate receptors proliferate, making the brain progressively more excitable. This is why early benzodiazepine administration is critical."
+    },
+    {
+      "category": "pharmacology",
+      "fact": "Salbutamol causes hypokalaemia by stimulating Na\u207a/K\u207a-ATPase, driving potassium into cells. Repeated nebulised doses in asthma exacerbations can drop serum potassium to dangerous levels \u2014 always monitor if giving multiple doses."
+    },
+    {
+      "category": "EMS",
+      "fact": "The first documented use of a defibrillator on a human was in 1947 by Claude Beck during open-chest surgery on a 14-year-old boy. Closed-chest defibrillation wasn't developed until 1956."
+    },
+    {
+      "category": "cardiac",
+      "fact": "The J-wave (Osborn wave) appears as a notch at the J-point in hypothermia, hypercalcaemia, and some genetic conditions. In hypothermia, its size roughly correlates with the degree of core temperature depression."
+    },
+    {
+      "category": "pharmacology",
+      "fact": "Flumazenil reverses benzodiazepine sedation by competitively blocking the GABA-A receptor's benzodiazepine binding site. In chronic benzodiazepine users, it can precipitate seizures \u2014 which is why it's used cautiously in the prehospital setting."
+    },
+    {
+      "category": "pathophysiology",
+      "fact": "Aortic dissection type A (involving the ascending aorta) is a surgical emergency with mortality increasing 1\u20132% per hour. Type B (descending only) is usually managed medically unless complicated by rupture or malperfusion."
+    },
+    {
+      "category": "resuscitation",
+      "fact": "The 'chain of survival' concept was introduced by the American Heart Association in 1991: early access, early CPR, early defibrillation, early advanced care. A fifth link \u2014 post-cardiac arrest care \u2014 was added in 2010."
+    },
+    {
+      "category": "pharmacology",
+      "fact": "Droperidol was black-boxed by the FDA in 2001 due to concerns about QT prolongation \u2014 but the doses implicated were far higher than the 1.25\u20132.5mg used for nausea and agitation in emergency settings. Many toxicologists argue the warning was an overreaction."
+    },
+    {
+      "category": "EMS",
+      "fact": "In Australia, the emergency number 000 was introduced in 1961. Before that, people dialled their local police, fire, or ambulance station directly. The 000 number was chosen because '0' was the easiest digit to dial on a rotary phone in the dark."
+    },
+    {
+      "category": "pathophysiology",
+      "fact": "Pulse pressure (systolic minus diastolic) narrows in cardiac tamponade because pericardial fluid limits diastolic filling, dropping stroke volume while compensatory vasoconstriction raises diastolic pressure. A PP < 25 mmHg is a red flag."
+    },
+    {
+      "category": "cardiac",
+      "fact": "Electrical alternans (beat-to-beat variation in QRS amplitude) on ECG is a classic sign of pericardial effusion \u2014 the heart literally swings back and forth in a fluid-filled pericardial sac with each beat."
+    },
+    {
+      "category": "pharmacology",
+      "fact": "Paracetamol's mechanism is still debated but likely involves COX inhibition in the CNS where peroxide tone is low. This selectivity is why paracetamol reduces pain and fever without GI side effects \u2014 unlike traditional NSAIDs."
+    },
+    {
+      "category": "resuscitation",
+      "fact": "Double sequential defibrillation (two defibrillators firing simultaneously) has been used for refractory VF, but the 2023 PARAMEDIC-DS trial found no survival benefit \u2014 it's no longer recommended in routine practice."
+    },
+    {
+      "category": "pathophysiology",
+      "fact": "In burns, the 'rule of nines' only applies to adults. In children, the head is proportionally larger (up to 18% in infants) and the legs smaller \u2014 use the Lund-Browder chart for accurate paediatric burn surface area estimation."
+    },
+    {
+      "category": "pharmacology",
+      "fact": "Hydroxocobalamin (Cyanokit) for cyanide poisoning turns the patient's skin and urine bright red \u2014 a vivid but harmless side effect. It works by directly binding cyanide to form cyanocobalamin (vitamin B12), which is renally excreted."
+    },
+    {
+      "category": "EMS",
+      "fact": "The NSW Ambulance Special Operations Team includes paramedics trained in urban search and rescue, hazardous materials, and tactical medicine. They were deployed extensively during the 2019\u20132020 Black Summer bushfires."
+    },
+    {
+      "category": "cardiac",
+      "fact": "Takotsubo cardiomyopathy ('broken heart syndrome') mimics STEMI with ST elevation and troponin rise, but coronary arteries are clean. The apex balloons out due to catecholamine-mediated stunning \u2014 typically triggered by severe emotional stress."
+    },
+    {
+      "category": "pathophysiology",
+      "fact": "Hyperkalaemia causes peaked T-waves, widened QRS, and eventually a sine-wave pattern leading to asystole. In the kidney failure patient who misses dialysis, a K\u207a > 6.5 mmol/L is a 'treat now before ECG changes worsen' emergency."
+    },
+    {
+      "category": "pharmacology",
+      "fact": "Ethanol and methanol are both metabolised by alcohol dehydrogenase, but methanol produces formic acid \u2014 the toxin that causes blindness. Fomepizole (or ethanol itself) blocks this enzyme, giving the kidneys time to excrete methanol unchanged."
+    },
+    {
+      "category": "anatomy",
+      "fact": "The Circle of Willis provides collateral cerebral circulation \u2014 but it's anatomically complete in only about 20% of people. In the remaining 80%, variations mean some brain regions have less collateral protection against arterial occlusion."
+    },
+    {
+      "category": "resuscitation",
+      "fact": "In traumatic cardiac arrest from penetrating trauma, a resuscitative thoracotomy can have survival rates up to 20% \u2014 but only if the patient had signs of life at some point during transport."
+    },
+    {
+      "category": "pathophysiology",
+      "fact": "The Bohr effect describes how increased CO\u2082 (and decreased pH) in active tissues reduces haemoglobin's oxygen affinity, causing more O\u2082 release exactly where it's needed most. It's one of the body's most elegant feedback loops."
+    },
+    {
+      "category": "pharmacology",
+      "fact": "Rocuronium is increasingly preferred over suxamethonium for RSI because it has fewer contraindications (no hyperkalaemia risk in burns/crush/neurological injury). Sugammadex can reverse it \u2014 but isn't yet widely available in Australian prehospital care."
+    },
+    {
+      "category": "cardiac",
+      "fact": "The left main coronary artery is sometimes called the 'widow-maker' because occlusion causes massive anterior and lateral wall infarction. ECG shows widespread ST elevation across most leads with reciprocal changes inferiorly."
+    },
+    {
+      "category": "EMS",
+      "fact": "The first paramedic program in Australia was established at Charles Sturt University in 1995. Before that, ambulance officers were trained through in-service apprenticeship models rather than university degrees."
     }
   ],
   "dailyUpdates": [
+    {
+      "date": "2026-05-15",
+      "papers": [
+        {
+          "id": "10.1080/10903127.2026.2650540",
+          "title": "Health and Medical Preparedness and Response to the 2024 Republican National Convention",
+          "journal": "Prehospital Emergency Care",
+          "date": "2026-05-15",
+          "pmid": "",
+          "doi": "10.1080/10903127.2026.2650540",
+          "summary": "This case report describes comprehensive health and medical planning and multi-agency response for a large-scale national political convention, providing a template for mass gathering EMS preparedness.",
+          "relevance": "\ud83d\udfe1 Medium"
+        }
+      ]
+    },
     {
       "date": "2026-05-14",
       "papers": [
@@ -70,6 +411,36 @@
           "doi": "10.1186/s13049-026-01629-x",
           "summary": "This commentary argues freeze-dried plasma complements whole blood in prehospital resuscitation, offering a scalable, shelf-stable solution for rural and remote regions with long transport times.",
           "relevance": "\ud83d\udfe2 High"
+        },
+        {
+          "id": "10.1016/j.resuscitation.2026.111028",
+          "title": "Duration of Emergency Medical Services-Initiated Prehospital Cardiopulmonary Resuscitation Efforts and Survival for Pediatric Patients with Out-of-Hospital Cardiac Arrest",
+          "journal": "Resuscitation",
+          "date": "2026-05-14",
+          "pmid": "",
+          "doi": "10.1016/j.resuscitation.2026.111028",
+          "summary": "This nationwide cohort study examined whether longer prehospital CPR duration affects survival in paediatric out-of-hospital cardiac arrest, finding that prolonged CPR efforts can still yield favourable neurological outcomes in selected patients.",
+          "relevance": "\ud83d\udfe2 High"
+        },
+        {
+          "id": "10.1016/j.resuscitation.2026.111093",
+          "title": "Geographic Inequalities in Prehospital Critical Care for Cardiac Arrest: A Spatial Analysis of Deprivation and Service Configuration",
+          "journal": "Resuscitation",
+          "date": "2026-05-14",
+          "pmid": "",
+          "doi": "10.1016/j.resuscitation.2026.111093",
+          "summary": "This spatial analysis examined how deprivation levels and prehospital critical care service configuration affect cardiac arrest outcomes, revealing persistent geographic disparities in access and survival.",
+          "relevance": "\ud83d\udfe2 High"
+        },
+        {
+          "id": "10.1186/s13049-026-01625-1",
+          "title": "Airway Management Skills and Devices on Italian Helicopter Emergency Medical Service: A National Survey",
+          "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+          "date": "2026-05-14",
+          "pmid": "",
+          "doi": "10.1186/s13049-026-01625-1",
+          "summary": "This national survey documented airway management skills and device availability across Italian HEMS services, showing variability in advanced airway training and device adoption.",
+          "relevance": "\ud83d\udfe1 Medium"
         }
       ]
     },
@@ -140,6 +511,16 @@
           "doi": "10.1186/s13049-026-01620-6",
           "summary": "",
           "relevance": ""
+        },
+        {
+          "id": "10.1080/10903127.2026.2669615",
+          "title": "Evaluation of a Situational Judgment Test for Paramedic Student Selection",
+          "journal": "Prehospital Emergency Care",
+          "date": "2026-05-11",
+          "pmid": "",
+          "doi": "10.1080/10903127.2026.2669615",
+          "summary": "This study validated a situational judgement test for selecting paramedic students, finding it effectively assessed non-technical skills and predicted suitability for paramedic training.",
+          "relevance": "\ud83d\udfe2 High"
         }
       ]
     },
@@ -479,42 +860,36 @@
       ]
     }
   ],
-  "tldr": {
-    "date": "2026-05-17",
-    "paperCount": 0,
-    "summary": "No new papers today.",
-    "highlights": []
-  },
   "weeklyTldr": {
-    "dateRange": "5\u201311 May 2026",
-    "summary": "Paramedic treat-and-discharge directives show promising safety data from Canada\nLLMs for prehospital protocol guidance show proof-of-concept accuracy\nCarotid Doppler ultrasound may predict resuscitation outcomes in cardiac arrest\nOHCA transport decisions vary significantly by patient factors\nPostanoxic EEG screening with forehead electrodes shows moderate agreement with conventional EEG",
+    "dateRange": "10\u201317 May 2026",
+    "summary": "Pediatric OHCA: longer prehospital CPR duration still offers survival chance\nMass gathering EMS planning demonstrated strong multi-agency coordination\nGeographic disparities persist in cardiac arrest critical care access\nSituational judgement tests show promise for paramedic student selection\nItalian HEMS shows variation in advanced airway device use",
     "topPicks": [
       {
-        "title": "Factors associated with hospital transport in EMS-attended OHCA",
-        "authors": "Chih-Wei Sung, Chia-Yu Fan, et al.",
+        "title": "Duration of Emergency Medical Services-Initiated Prehospital Cardiopulmonary Resuscitation Efforts and Survival for Pediatric Patients with Out-of-Hospital Cardiac Arrest",
+        "authors": "Masashi Okubo, Sho Komukai, Junichi Izawa, et al.",
         "journal": "",
-        "summary": "Retrospective cohort of 3339 OHCA patients found 68.9% were not transported, with transport more likely in witnessed arrests and bystander CPR.",
-        "relevance": "\ud83d\udfe2 High transferability \u2014 Directly relevant to transport decision frameworks",
-        "pmid": "41967756",
-        "doi": "10.1016/j.resuscitation.2026.111088"
+        "summary": "This nationwide cohort examined whether longer prehospital CPR affects survival in paediatric OHCA, finding prolonged CPR can still yield favourable outcomes in selected patients.",
+        "relevance": "\ud83d\udfe2 High transferability \u2014 Directly guides paediatric resuscitation duration decisions",
+        "pmid": "Not yet indexed on PubMed",
+        "doi": "10.1016/j.resuscitation.2026.111028"
       },
       {
-        "title": "Utilization and Metrics Associated with Paramedic Treat and Discharge Medical Directives",
-        "authors": "Ryan P. Strum, Shawn Mondoux, et al.",
+        "title": "Geographic Inequalities in Prehospital Critical Care for Cardiac Arrest: A Spatial Analysis of Deprivation and Service Configuration",
+        "authors": "",
         "journal": "",
-        "summary": "Retrospective cohort analysing treat and discharge directives, providing insights into scope, safety, and operational impact.",
-        "relevance": "\ud83d\udfe2 High transferability \u2014 Treat-and-refer pathways gaining traction in Australian jurisdictions",
-        "pmid": "",
-        "doi": "10.1080/10903127.2026.2666857"
+        "summary": "This spatial analysis examined how deprivation and service configuration affect OHCA outcomes, revealing persistent geographic disparities in access and survival.",
+        "relevance": "\ud83d\udfe2 High transferability \u2014 System-level equity directly applicable to Australian service planning",
+        "pmid": "Not yet indexed on PubMed",
+        "doi": "10.1016/j.resuscitation.2026.111093"
       },
       {
-        "title": "Can a Large Language Model Grounded in Prehospital Protocols Provide Accurate Care Recommendations?",
-        "authors": "Colin G Wang, Nichole Bosson, et al.",
+        "title": "Evaluation of a Situational Judgment Test for Paramedic Student Selection",
+        "authors": "",
         "journal": "",
-        "summary": "Tested whether an LLM trained on agency-specific protocols could generate accurate care recommendations \u2014 promising accuracy for protocol interpretation.",
-        "relevance": "\ud83d\udfe1 Medium transferability \u2014 Early proof-of-concept, needs clinical validation",
-        "pmid": "",
-        "doi": "10.1080/10903127.2026.2668008"
+        "summary": "This study validated a situational judgement test for paramedic student selection, finding it effectively assessed non-technical skills and predicted training suitability.",
+        "relevance": "\ud83d\udfe2 High transferability \u2014 Directly relevant to Australian paramedic programme admissions",
+        "pmid": "Not yet indexed on PubMed",
+        "doi": "10.1080/10903127.2026.2669615"
       }
     ]
   }
