@@ -1,386 +1,914 @@
 {
-  "lastUpdated": "2026-05-18T11:38:58Z",
+  "lastUpdated": "2026-05-18T12:09:10Z",
   "featuredPapers": [],
   "funFacts": [
     {
       "category": "pharmacology",
-      "fact": "Adrenaline (epinephrine) was first used in cardiac arrest in 1906, but it wasn't until the 1960s that it became a standard part of CPR protocols."
+      "fact": "Adrenaline's been thrown into cardiac arrests since 1906, but it didn't become standard CPR gear until the 1960s \u2014 meaning for over fifty years, we just sort of... hoped for the best."
     },
     {
       "category": "cardiac",
-      "fact": "Ventricular fibrillation is the most common initial rhythm in out-of-hospital cardiac arrest (OHCA), but survival rates drop by roughly 10% for every minute defibrillation is delayed."
+      "fact": "VF is the most common initial rhythm in out-of-hospital cardiac arrest \u2014 and survival drops roughly 10% for every single minute defibrillation is delayed. Every minute. Not exaggerating."
     },
     {
       "category": "history",
-      "fact": "The first documented use of mouth-to-mouth ventilation was by the biblical Elisha around 800 BC. Modern CPR wasn't developed until 1960."
+      "fact": "The first recorded mouth-to-mouth was around 800 BC \u2014 the biblical Elisha breathing life back into a child. Modern CPR didn't come together until 1960. So for about 2,800 years, we just... didn't have a plan."
     },
     {
       "category": "anatomy",
-      "fact": "The human body contains roughly 60,000 miles of blood vessels \u2014 enough to wrap around the Earth more than twice."
+      "fact": "Your body contains roughly 96,000 kilometres of blood vessels. That's enough to wrap around the Earth more than twice. You're basically a walking tube map."
     },
     {
       "category": "pharmacology",
-      "fact": "Atropine was removed from the cardiac arrest algorithm in 2010 (ILCOR) after evidence showed no benefit for pulseless electrical activity or asystole. It remains essential for symptomatic bradycardia and organophosphate poisoning."
+      "fact": "Atropine got the boot from the cardiac arrest algorithm in 2010 after evidence showed it did precisely nothing for PEA or asystole. Still lifesaving for bradycardia and organophosphate poisoning though \u2014 just don't reach for it in a flatline."
     },
     {
       "category": "resuscitation",
-      "fact": "The LUCAS mechanical chest compression device delivers exactly 102 compressions per minute and 5 cm depth \u2014 perfectly consistent, every time. But manual CPR quality varies widely between providers."
+      "fact": "The LUCAS device hammers away at exactly 102 compressions per minute and 5 cm depth, every single time. No fatigue, no drift, no arguments about whether you're pushing hard enough. The machine doesn't have an ego."
     },
     {
       "category": "pathophysiology",
-      "fact": "In tension pneumothorax, mediastinal shift compresses the contralateral lung AND kinks the vena cava \u2014 it's the venous return obstruction, not just the lung collapse, that causes cardiovascular collapse."
+      "fact": "Tension pneumothorax doesn't just collapse a lung \u2014 the mediastinum shifts and kinks the vena cava, which is what actually kills the patient. The collapsed lung is almost a sideshow compared to obliterating venous return."
     },
     {
       "category": "pharmacology",
-      "fact": "Glucagon can be used to treat severe beta-blocker overdose because it activates adenylate cyclase through a separate receptor, bypassing the blocked beta receptors entirely."
+      "fact": "Glucagon treats severe beta-blocker overdose by sneaking in the back door \u2014 it activates adenylate cyclase through its own receptor, completely bypassing the blocked beta receptors. It's the pharmacological equivalent of going around the obstacle."
     },
     {
       "category": "anatomy",
-      "fact": "The cricothyroid membrane averages 10mm tall and 9mm wide in adults \u2014 just large enough for a 6mm tube. It's the narrowest point of access to the airway but the most reliable in a 'can't intubate, can't oxygenate' scenario."
+      "fact": "The cricothyroid membrane is roughly 10mm tall and 9mm wide in adults \u2014 just enough for a 6mm tube. It's the narrowest window into the airway, but when you're in a 'can't intubate, can't oxygenate' nightmare, it's the only window that matters."
     },
     {
       "category": "EMS",
-      "fact": "The earliest recorded ambulance service was operated by the Order of St John in Jerusalem during the First Crusade (1099), using carts to transport wounded knights to treatment tents."
+      "fact": "The earliest ambulance service on record was run by the Order of St John during the First Crusade in 1099 \u2014 carts dragging wounded knights to treatment tents. Nearly a thousand years later, we've upgraded from carts, but the job's the same."
     },
     {
       "category": "pharmacology",
-      "fact": "Naloxone has a shorter half-life (30\u201390 minutes) than most opioids. Patients who receive naloxone for opioid overdose can re-sedate after it wears off \u2014 hence the need for observation or extended-release formulations."
+      "fact": "Naloxone wears off in 30 to 90 minutes \u2014 shorter than most opioids. So your freshly reversed patient can drift back into respiratory depression while you're busy feeling like a hero. Observation isn't optional."
     },
     {
       "category": "pathophysiology",
-      "fact": "The Kussmaul breathing pattern (deep, rapid respirations) seen in diabetic ketoacidosis is the body's attempt to blow off CO2 and compensate for metabolic acidosis \u2014 it's respiratory compensation for a metabolic problem."
+      "fact": "Kussmaul breathing \u2014 those deep, desperate, rapid respirations in DKA \u2014 is your patient literally trying to breathe their way out of a metabolic acidosis by blowing off CO2. Respiratory compensation for a metabolic catastrophe."
     },
     {
       "category": "cardiac",
-      "fact": "The QT interval should be less than half the R-R interval at normal heart rates. A corrected QT (QTc) > 500ms significantly increases the risk of torsades de pointes."
+      "fact": "At normal heart rates, the QT interval should be less than half the R-R interval. A corrected QT over 500ms? That's your ticket to torsades de pointes \u2014 a rhythm as dangerous as it sounds."
     },
     {
       "category": "EMS",
-      "fact": "Modern paramedic practice traces its origins to the 'Freedom House' ambulance service in Pittsburgh (1967), which trained unemployed Black men as the first paramedics in the United States."
+      "fact": "Modern paramedicine traces its roots to Freedom House in Pittsburgh, 1967 \u2014 where unemployed Black men and women were trained as America's first paramedics. They were so good that the city's white establishment tried to shut them down. They didn't succeed."
     },
     {
       "category": "pharmacology",
-      "fact": "Intranasal fentanyl achieves effective plasma concentrations within 10 minutes and avoids the need for IV access \u2014 making it a game-changer for pain management in paediatric and burn patients."
+      "fact": "Intranasal fentanyl hits effective plasma levels in under 10 minutes without needing a cannula. For paediatric and burns patients \u2014 where getting access is its own special hell \u2014 it's a genuine game-changer."
     },
     {
       "category": "pathophysiology",
-      "fact": "Neurogenic shock (loss of sympathetic tone after spinal cord injury above T6) causes hypotension with bradycardia \u2014 the opposite of hypovolaemic shock, where tachycardia is the expected compensatory response."
+      "fact": "Neurogenic shock from a spinal cord injury above T6 gives you hypotension with bradycardia \u2014 the mirror opposite of hypovolaemic shock. Your patient's blood pressure is in the basement but their heart's barely trying. Sympathetic tone: gone."
     },
     {
       "category": "anatomy",
-      "fact": "The right main bronchus is wider, shorter, and more vertical than the left \u2014 which is why endobronchial intubation and aspiration preferentially affect the right lung."
+      "fact": "The right main bronchus is wider, shorter, and more vertical than the left \u2014 which is why ETTs and aspirated vomit both seem to prefer it. The right lung takes the hit more often than the left. No one said anatomy was fair."
     },
     {
       "category": "resuscitation",
-      "fact": "Therapeutic hypothermia (now called Targeted Temperature Management) was inspired by cases in the 1950s, but the landmark 2002 HACA trial was what convinced the resuscitation community to adopt it routinely."
+      "fact": "Targeted Temperature Management (the artist formerly known as therapeutic hypothermia) was inspired by cases from the 1950s, but it took until the 2002 HACA trial to convince everyone that cooling dead-ish patients actually worked."
     },
     {
       "category": "pharmacology",
-      "fact": "Amiodarone contains roughly 75mg of iodine per 200mg dose \u2014 about 37% iodine by weight. A single loading dose can cause both hyper- and hypothyroidism in susceptible patients."
+      "fact": "Amiodarone is about 37% iodine by weight \u2014 roughly 75mg of iodine per 200mg dose. A single loading dose can trigger both hyper- and hypothyroidism. It's an antiarrhythmic that moonlights as an endocrine wrecking ball."
     },
     {
       "category": "EMS",
-      "fact": "The Star of Life symbol used on ambulances worldwide was designed by the US National Highway Traffic Safety Administration in 1973. The six points represent detection, reporting, response, on-scene care, care in transit, and transfer to definitive care."
+      "fact": "The Star of Life on ambulances was designed by the US National Highway Traffic Safety Administration in 1973. The six points represent detection, reporting, response, on-scene care, care in transit, and transfer to definitive care \u2014 the full journey from disaster to survival."
     },
     {
       "category": "pathophysiology",
-      "fact": "In anaphylaxis, massive vasodilation can increase vascular capacity by up to 30%, effectively creating a 'relative hypovolaemia' \u2014 which is why adrenaline (a vasoconstrictor) is the definitive treatment, not just fluid alone."
+      "fact": "In anaphylaxis, massive vasodilation can expand vascular capacity by up to 30%. The patient hasn't lost blood \u2014 their pipes just got dramatically bigger. That's why adrenaline (a vasoconstrictor) is the answer, not just drowning them in fluids."
     },
     {
       "category": "cardiac",
-      "fact": "Wellens' syndrome (biphasic or deeply inverted T waves in V2-V3) indicates critical proximal LAD stenosis. These patients need urgent cath lab referral \u2014 stress testing can be fatal."
+      "fact": "Wellens' syndrome \u2014 biphasic or deeply inverted T waves in V2-V3 \u2014 means critical proximal LAD stenosis. These patients need the cath lab urgently. Putting them on a stress test can literally kill them. Don't."
     },
     {
       "category": "pharmacology",
-      "fact": "Adrenaline in anaphylaxis works within seconds via the IM route because it's absorbed into the vast capillary network of muscle. Subcutaneous injection is slower and less effective \u2014 hence the recommendation for IM injection into the anterolateral thigh."
+      "fact": "IM adrenaline works in seconds because muscle is riddled with capillaries that suck it straight into circulation. Subcutaneous is slower and less effective \u2014 which is why the anterolateral thigh is the gold standard. More blood flow, faster rescue."
     },
     {
       "category": "anatomy",
-      "fact": "The epidural space contains fat, veins, and lymphatics \u2014 it's the target for epidural analgesia. The subarachnoid space contains CSF and is the target for spinal anaesthesia. The difference is one membrane: the dura mater."
+      "fact": "Epidural space: fat, veins, lymphatics \u2014 target for epidurals. Subarachnoid space: cerebrospinal fluid \u2014 target for spinals. The difference between them is one membrane: the dura mater. One membrane. Two completely different procedures."
     },
     {
       "category": "resuscitation",
-      "fact": "In the PARAMEDIC2 trial, adrenaline improved survival to hospital discharge from 3.2% to 8.0% in out-of-hospital cardiac arrest \u2014 but survivors had higher rates of severe neurological impairment compared to placebo."
+      "fact": "PARAMEDIC2 showed adrenaline boosted survival to discharge from 2.3% to 3.2% in OHCA \u2014 a modest but statistically significant improvement. Survivors had higher rates of severe neurological impairment. We're saving more people, but not all of them are getting back the person they were."
     },
     {
       "category": "EMS",
-      "fact": "The average time from 000 call to ambulance arrival in urban Australia is approximately 8\u201310 minutes. In rural and remote areas, it can exceed 30 minutes \u2014 which is why community first-responder programs are critical."
+      "fact": "Urban Australian ambulance response averages 8 to 10 minutes. In rural and remote areas, it can blow past 30 minutes \u2014 which is why community first-responder programs aren't a nice-to-have, they're essential."
     },
     {
       "category": "pharmacology",
-      "fact": "Ketamine is a 'dissociative' anaesthetic \u2014 it doesn't suppress the respiratory drive or gag reflex at typical doses, making it one of the safest induction agents for RSI in the prehospital environment."
+      "fact": "Ketamine is a dissociative anaesthetic that preserves respiratory drive and gag reflex at typical doses \u2014 making it one of the safest RSI induction agents in the prehospital toolbox. It keeps breathing while everything else stops."
     },
     {
       "category": "pathophysiology",
-      "fact": "In hypovolaemic shock, the body sacrifices skin, kidneys, and gut perfusion to maintain coronary and cerebral blood flow. By the time hypotension appears (class III shock), the patient has already lost 30\u201340% of their blood volume."
+      "fact": "In hypovolaemic shock, the body throws skin, kidneys, and gut under the bus to keep the heart and brain perfused. By the time hypotension shows up, the patient's already lost 30 to 40% of their blood volume. The map is not the territory."
     },
     {
       "category": "cardiac",
-      "fact": "Sgarbossa criteria (concordant ST elevation \u22651mm, concordant ST depression \u22651mm in V1-V3, or discordant STE \u22655mm) help diagnose MI in the presence of LBBB \u2014 a scenario where standard STEMI criteria don't apply."
+      "fact": "Sgarbossa criteria help you spot an MI hiding behind a LBBB \u2014 because standard STEMI criteria are basically useless when the conduction system's already doing its own thing. Concordant ST changes or wildly discordant STE >5mm are your clues."
     },
     {
       "category": "EMS",
-      "fact": "Helicopter EMS typically cruising at 120\u2013150 knots can reduce transport times significantly, but tasking criteria matter \u2014 studies show HEMS benefit is greatest for time-critical conditions like trauma and STEMI where ground transport exceeds 30 minutes."
+      "fact": "HEMS cruises at 120 to 150 knots and can slash transport times dramatically \u2014 but the benefit is real only for time-critical cases where ground transport would exceed 30 minutes. Otherwise you've just got a very expensive, very noisy ambulance."
     },
     {
       "category": "pharmacology",
-      "fact": "The 'dose' column on a drug card isn't just a suggestion \u2014 adrenaline 1:1000 is 1mg/mL (for IM/SC), while adrenaline 1:10000 is 0.1mg/mL (for IV). Confusing the two has caused fatal intracerebral haemorrhage."
+      "fact": "Adrenaline 1:1000 is 1mg per mL (for IM use). Adrenaline 1:10000 is 0.1mg per mL (for IV). Mix them up and you can cause a fatal intracerebral haemorrhage. This is not a drug that forgives carelessness."
     },
     {
       "category": "pathophysiology",
-      "fact": "The Cushing's triad (hypertension, bradycardia, irregular respirations) is a late sign of raised intracranial pressure. By the time you see it, herniation may already be underway \u2014 it's a pre-terminal sign."
+      "fact": "Cushing's triad \u2014 hypertension, bradycardia, irregular breathing \u2014 is your brain's last-ditch alarm bell before herniation. If you spot it, you're already late to the party. Like, really late."
     },
     {
       "category": "anatomy",
-      "fact": "The femoral artery pulse is palpable at the midpoint of the inguinal ligament \u2014 in cardiac arrest, it's the recommended site for pulse checks because central pulses persist longer than peripheral ones."
+      "fact": "In cardiac arrest, the femoral pulse is your go-to \u2014 central pulses persist longer than peripheral ones. Palpate at the midpoint of the inguinal ligament. If you can't feel it, they don't have one."
     },
     {
       "category": "resuscitation",
-      "fact": "The 'three-phase' model of cardiac arrest describes: the electrical phase (0\u20134 min, defibrillation most effective), the circulatory phase (4\u201310 min, CPR before defibrillation improves outcomes), and the metabolic phase (>10 min, poor prognosis)."
+      "fact": "Cardiac arrest has three phases: electrical (0 to 4 min, defib works best), circulatory (4 to 10 min, do CPR first then defib), and metabolic (>10 min, prognosis tanks). Timing isn't everything \u2014 it's the only thing."
     },
     {
       "category": "pharmacology",
-      "fact": "Glyceryl trinitrate (GTN) relieves angina by venodilation (reducing preload) more than arterial dilation. It doesn't 'open blocked arteries' \u2014 it reduces the heart's workload, lowering myocardial oxygen demand."
+      "fact": "GTN doesn't 'open blocked arteries' \u2014 it works mostly by venodilation, dropping preload and reducing the heart's workload. It's not fixing the problem, it's making the problem more survivable until someone with a catheter can."
     },
     {
       "category": "EMS",
-      "fact": "The introduction of paramedic practitioners in the UK demonstrated that paramedics trained in alternate care pathways can safely manage many patients without transport \u2014 reducing ED burden by up to 50% in some trial cohorts."
+      "fact": "UK paramedic practitioners trained in alternate care pathways can safely manage many patients without transport \u2014 cutting ED burden by up to 50% in some trials. Turns out not everyone needs a hospital. They just need someone who knows what they're doing."
     },
     {
       "category": "pathophysiology",
-      "fact": "In acute mountain sickness and high-altitude cerebral oedema (HACE), cerebral vasodilation from hypoxia increases intracranial pressure. Diamox (acetazolamide) works by inducing a metabolic acidosis that stimulates ventilation."
+      "fact": "At high altitude, hypoxia triggers cerebral vasodilation, which increases intracranial pressure. Diamox works by inducing a metabolic acidosis that forces you to breathe harder. It's hacky, but it works."
     },
     {
       "category": "cardiac",
-      "fact": "The left anterior descending (LAD) artery supplies roughly 50% of the left ventricle's myocardium. Occlusion proximal to the first septal branch is why anterior STEMIs carry such high mortality \u2014 it's a massive territory at risk."
+      "fact": "The LAD supplies roughly half the left ventricle's myocardium. Occlusion proximal to the first septal branch is why anterior STEMIs carry such brutal mortality \u2014 that's an enormous chunk of heart muscle starving."
     },
     {
       "category": "pharmacology",
-      "fact": "Metaraminol is a pure alpha-agonist used as a vasopressor in Australia. Unlike noradrenaline, it doesn't require a central line and can be given via peripheral IV \u2014 but its longer onset means you need to anticipate hypotension, not react to it."
+      "fact": "Metaraminol is a pure alpha-agonist vasopressor that doesn't need a central line \u2014 you can run it through a peripheral cannula. But its slower onset means you'd better anticipate the blood pressure drop, not chase it."
     },
     {
       "category": "anatomy",
-      "fact": "The phrenic nerve (C3-C5) innervates the diaphragm \u2014 'C3, 4, 5 keeps the diaphragm alive.' A spinal cord injury above C3 paralyses the diaphragm, making these patients immediately ventilator-dependent."
+      "fact": "C3, 4, 5 keeps the diaphragm alive. A spinal cord injury above C3 paralyses the diaphragm entirely \u2014 these patients are immediately ventilator-dependent. It's one of the few injuries where the first seconds truly determine everything."
     },
     {
       "category": "resuscitation",
-      "fact": "The 'log roll' technique was standard for spinal immobilisation for decades, but recent evidence suggests that manual in-line stabilisation with scoop stretchers causes less spinal movement during extrication."
+      "fact": "The log roll was gospel for spinal immobilisation for decades \u2014 but recent evidence says manual in-line stabilisation with a scoop stretcher actually causes less spinal movement. Sometimes the thing we've done forever is the wrong thing."
     },
     {
       "category": "pathophysiology",
-      "fact": "Rhabdomyolysis from crush injury releases myoglobin, which clogs renal tubules and causes acute kidney injury. The 'crush syndrome' triad is: hypovolaemia, hyperkalaemia, and myoglobinuria \u2014 early aggressive fluid resuscitation is the key intervention."
+      "fact": "Crush injury releases myoglobin into circulation, which clogs renal tubules like mud in a pipe. The crush syndrome triad \u2014 hypovolaemia, hyperkalaemia, myoglobinuria \u2014 is why you hammer these patients with fluids early. The kidneys won't thank you if you wait."
     },
     {
       "category": "pharmacology",
-      "fact": "Ondansetron (Zofran) works by blocking 5-HT3 serotonin receptors in the chemoreceptor trigger zone and GI tract. It revolutionised antiemetic therapy because it doesn't cause the sedation or dystonic reactions of older agents like metoclopramide."
+      "fact": "Ondansetron revolutionised antiemetics because it blocks 5-HT3 receptors without the sedation or dystonic reactions of older drugs like metoclopramide. No one misses watching a patient's eyes roll back after an anti-nausea injection."
     },
     {
       "category": "EMS",
-      "fact": "In Australia, paramedics are regulated under the National Registration and Accreditation Scheme (NRAS) by the Paramedicine Board of Australia since 2018 \u2014 making paramedicine a nationally regulated health profession."
+      "fact": "Since 2018, Australian paramedics have been nationally regulated under the Paramedicine Board of Australia \u2014 making paramedicine a formally recognised health profession. We're not just 'ambulance drivers' anymore. We were never just ambulance drivers."
     },
     {
       "category": "cardiac",
-      "fact": "The P-wave represents atrial depolarisation, but the left atrium depolarises slightly after the right. A notched or wide P-wave ('P mitrale') suggests left atrial enlargement, often from mitral valve disease."
+      "fact": "The P-wave looks like one simple bump, but the left atrium depolarises slightly after the right. A notched or wide P-wave ('P mitrale') suggests left atrial enlargement \u2014 usually from mitral valve disease. The ECG sees things your eyes can't."
     },
     {
       "category": "pharmacology",
-      "fact": "Sodium bicarbonate in tricyclic antidepressant overdose works by alkalinising the serum, which reduces the fraction of free drug that binds to cardiac sodium channels \u2014 reversing the wide QRS and arrhythmias within minutes."
+      "fact": "Sodium bicarb in TCA overdose alkalinises the serum, which reduces the fraction of free drug that binds to cardiac sodium channels. The wide QRS narrows within minutes. It's one of those rare antidotes that works so dramatically you can almost watch it happen."
     },
     {
       "category": "pathophysiology",
-      "fact": "The Fick principle states that cardiac output equals oxygen consumption divided by the arteriovenous oxygen difference. It's the physiological basis for why increasing heart rate and stroke volume are the only ways to boost oxygen delivery."
+      "fact": "The Fick principle says cardiac output equals oxygen consumption divided by the arteriovenous oxygen difference. Translation: the only levers for boosting oxygen delivery are heart rate and stroke volume. That's it. Two dials."
     },
     {
       "category": "anatomy",
-      "fact": "The radial nerve runs in the spiral groove of the humerus \u2014 mid-shaft humeral fractures commonly injure it, causing wrist drop. Always test wrist extension before and after immobilising a humeral fracture."
+      "fact": "The radial nerve runs through the spiral groove of the humerus \u2014 so mid-shaft fractures commonly nail it, causing wrist drop. Always test wrist extension before and after you splint. Miss this and you'll hear about it from the orthopods."
     },
     {
       "category": "resuscitation",
-      "fact": "In traumatic cardiac arrest, the priority sequence is different: address reversible causes (hypovolaemia, tension pneumothorax, cardiac tamponade) before or alongside CPR \u2014 standard ALS algorithms alone have near-zero survival in this context."
+      "fact": "Traumatic cardiac arrest is a different beast \u2014 you address reversible causes (hypovolaemia, tension pneumo, tamponade) before or alongside CPR. Standard ALS alone has near-zero survival here. The algorithm that saves lives in medical arrest won't save this one."
     },
     {
       "category": "pharmacology",
-      "fact": "Midazolam is water-soluble at acidic pH but becomes lipophilic at physiological pH \u2014 which is why it crosses the blood-brain barrier so quickly after injection. This also makes it the fastest-onset benzodiazepine for seizure termination."
+      "fact": "Midazolam is water-soluble at acidic pH but turns lipophilic at body pH \u2014 so it crosses the blood-brain barrier almost instantly after injection. That's why it's the fastest benzodiazepine for stopping seizures. Chemistry doing the heavy lifting."
     },
     {
       "category": "EMS",
-      "fact": "The earliest documented 'ambulance' was a horse-drawn wagon used by Spanish military forces in the 1480s during the siege of M\u00e1laga. The word 'ambulance' comes from the Latin 'ambulare' \u2014 to walk or move."
+      "fact": "The word 'ambulance' comes from the Latin 'ambulare' \u2014 to walk or move. The earliest documented ambulance was a horse-drawn wagon used by Spanish forces during the siege of Malaga in the 1480s. We've been moving the wounded for over 500 years."
     },
     {
       "category": "pathophysiology",
-      "fact": "In sepsis, the 'cytokine storm' causes both vasodilation AND increased capillary permeability. Fluid leaks into the interstitial space ('third spacing'), which is why septic patients can be oedematous yet intravascularly depleted simultaneously."
+      "fact": "Sepsis triggers a cytokine storm that causes vasodilation AND capillary leak simultaneously. Fluid pours into the interstitial space \u2014 'third spacing.' The patient looks swollen but is dry on the inside. It's a cruel trick."
     },
     {
       "category": "cardiac",
-      "fact": "Atrial fibrillation causes stasis of blood in the left atrial appendage, forming thrombus. The risk of stroke in AF is quantified by the CHA\u2082DS\u2082-VASc score \u2014 patients scoring \u22652 (men) or \u22653 (women) generally need anticoagulation."
+      "fact": "Atrial fibrillation lets blood pool in the left atrial appendage, where it clots. The CHA2DS2-VASc score decides who needs anticoagulation \u2014 score 2 or more for men, 3 or more for women. Miss this and you're one embolic stroke away from a very bad day."
     },
     {
       "category": "pharmacology",
-      "fact": "Ipratropium bromide is an anticholinergic bronchodilator derived from atropine but modified to be poorly absorbed systemically \u2014 so it relaxes airway smooth muscle without the tachycardia, dry mouth, and blurred vision of systemic atropine."
+      "fact": "Ipratropium is an anticholinergic bronchodilator derived from atropine, but tweaked so it barely absorbs systemically. It relaxes airways without the tachycardia, dry mouth, and blurred vision. Pharmacology at its cleverest."
     },
     {
       "category": "resuscitation",
-      "fact": "CPR generates only about 20\u201330% of normal cardiac output. 'CCR' (cardiocerebral resuscitation) \u2014 continuous compressions without ventilations for the first few minutes of witnessed VF arrest \u2014 may improve cerebral perfusion compared to traditional 30:2 CPR."
+      "fact": "CPR only generates about 20 to 30% of normal cardiac output. Cardiocerebral resuscitation \u2014 continuous compressions without breaths for the first minutes of witnessed VF \u2014 may deliver better cerebral perfusion. Less Interruption, more pump."
     },
     {
       "category": "pathophysiology",
-      "fact": "The 'lethal triad' of trauma is hypothermia, acidosis, and coagulopathy \u2014 each worsens the others in a vicious cycle. This is why trauma protocols emphasise warm fluids, early haemorrhage control, and damage control surgery."
+      "fact": "The lethal triad of trauma \u2014 hypothermia, acidosis, coagulopathy \u2014 is a vicious cycle where each worsens the others. Warm fluids, early haemorrhage control, damage control surgery. Break the triangle or the patient breaks."
     },
     {
       "category": "pharmacology",
-      "fact": "Magnesium sulphate is the first-line treatment for eclamptic seizures \u2014 not benzodiazepines. It works by antagonising calcium at NMDA receptors and causing cerebral vasodilation, reducing seizure risk by over 50% compared to diazepam."
+      "fact": "Magnesium sulphate \u2014 not a benzo \u2014 is first-line for eclamptic seizures. It antagonises calcium at NMDA receptors and causes cerebral vasodilation. It halves seizure risk compared to diazepam. In eclampsia, reach for the magnesium."
     },
     {
       "category": "EMS",
-      "fact": "Australian 'flight paramedics' and 'rescue paramedics' undergo additional training in aeromedical retrieval, winch operations, and wilderness medicine. In NSW alone, aeromedical services respond to over 7,000 missions annually."
+      "fact": "NSW flight and rescue paramedics train in aeromedical retrieval, winch operations, and wilderness medicine. NSW aeromedical services alone respond to over 7,000 missions a year. Most of those jobs don't have a road in sight."
     },
     {
       "category": "cardiac",
-      "fact": "Brugada syndrome is a genetic sodium channelopathy that causes VF and sudden cardiac death in young, otherwise healthy individuals. The classic ECG shows a 'pseudo-RBBB' pattern with coved ST elevation in V1-V3."
+      "fact": "Brugada syndrome is a sodium channelopathy that causes VF in young, otherwise perfectly healthy people. The ECG shows a pseudo-RBBB pattern with coved ST elevation in V1-V3. It's one of the reasons young people drop dead with no warning."
     },
     {
       "category": "pharmacology",
-      "fact": "Adenosine has a half-life of less than 10 seconds in the blood \u2014 it's rapidly degraded by adenosine deaminase on red blood cells. This is why it must be given as a rapid bolus through a large-bore proximal IV, followed immediately by a saline flush."
+      "fact": "Adenosine's half-life is under 10 seconds \u2014 by the time you've finished pushing it, your body's already destroyed it. Hence the 'push, flush, pray' technique we all know and love."
     },
     {
       "category": "pathophysiology",
-      "fact": "In spinal shock (loss of all cord function below a lesion), there is flaccid paralysis, areflexia, and loss of sensation. Reflexes typically return within 24\u201372 hours, and the return of the bulbocavernosus reflex marks the end of spinal shock."
+      "fact": "Spinal shock wipes out all cord function below the lesion \u2014 flaccid paralysis, areflexia, nothing. Reflexes crawl back within 24 to 72 hours. The return of the bulbocavernosus reflex is the official 'spinal shock is over' signal."
     },
     {
       "category": "anatomy",
-      "fact": "The carotid sinus baroreceptors at the bifurcation of the common carotid artery respond to stretch. Carotid sinus massage increases vagal tone, slowing AV node conduction \u2014 useful for terminating SVT, but risky in patients with carotid stenosis."
+      "fact": "Carotid sinus baroreceptors at the bifurcation respond to stretch \u2014 massage them and vagal tone spikes, slowing AV conduction. Handy for SVT termination, risky if they've got carotid stenosis. Feel before you rub."
     },
     {
       "category": "resuscitation",
-      "fact": "ECMO initiated during cardiac arrest (ECPR) has shown survival rates of 30\u201350% in selected patients in specialised centres \u2014 dramatically higher than conventional CPR for refractory VF/VT."
+      "fact": "ECMO during cardiac arrest (ECPR) has shown 30 to 50% survival in selected patients at specialised centres \u2014 massively better than conventional CPR for refractory VF/VT. The catch: you need the team, the gear, and the patient in the right place at the right time."
     },
     {
       "category": "pharmacology",
-      "fact": "Calcium chloride contains three times more bioavailable calcium ions per gram than calcium gluconate. For immediate correction of hyperkalaemia-induced arrhythmias, calcium chloride is preferred \u2014 but it must be given via a central or large-bore peripheral line."
+      "fact": "Calcium chloride packs three times more elemental calcium per gram than calcium gluconate. For hyperkalaemia-induced arrhythmias, it's the one you want \u2014 but it needs a central or big-bore peripheral line. Tissue extravasation is not pretty."
     },
     {
       "category": "EMS",
-      "fact": "The concept of the 'golden hour' \u2014 that trauma patients have the best outcomes if they reach definitive care within 60 minutes \u2014 was coined by R Adams Cowley in the 1960s. Modern evidence suggests it's actually the 'golden minutes' for haemorrhaging patients."
+      "fact": "The 'golden hour' was coined by R Adams Cowley in the 1960s \u2014 the idea that trauma patients do best if they reach definitive care within 60 minutes. Modern evidence says it's more like 'golden minutes' for the actively bleeding. The clock starts before you arrive."
     },
     {
       "category": "pathophysiology",
-      "fact": "The oxyhaemoglobin dissociation curve shifts right (releasing more O\u2082 to tissues) with increased temperature, acidosis, increased PaCO\u2082, and increased 2,3-DPG. Active tissues produce all of these \u2014 a beautiful self-regulating system."
+      "fact": "The oxyhaemoglobin dissociation curve shifts right \u2014 releasing more oxygen \u2014 with heat, acid, CO2, and 2,3-DPG. Active tissues produce all of these. It's a self-regulating system so elegant it almost looks designed."
     },
     {
       "category": "cardiac",
-      "fact": "De Winter T-waves (upsloping ST depression with tall, peaked T waves in V1-V6) are a STEMI equivalent indicating acute proximal LAD occlusion. They appear in about 2% of acute LAD occlusions and are frequently missed."
+      "fact": "De Winter T-waves \u2014 upsloping ST depression with tall peaked T waves across V1-V6 \u2014 are a STEMI equivalent for acute proximal LAD occlusion. They show up in about 2% of LAD occlusions and get missed all the time."
     },
     {
       "category": "pharmacology",
-      "fact": "Tranexamic acid (TXA) works by blocking the conversion of plasminogen to plasmin, preventing clot breakdown. The CRASH-2 trial showed it reduces mortality from trauma haemorrhage \u2014 but only if given within 3 hours of injury."
+      "fact": "Tranexamic acid stops clots from breaking down by blocking plasminogen-to-plasmin conversion. The CRASH-2 trial showed it saves lives in trauma haemorrhage \u2014 but only if given within 3 hours. After that, the benefit vanishes. The clock is merciless."
     },
     {
       "category": "anatomy",
-      "fact": "The recurrent laryngeal nerve on the left hooks under the aortic arch, while the right hooks under the subclavian artery. This makes the left nerve vulnerable to compression by aortic aneurysms or mediastinal masses, causing hoarseness."
+      "fact": "The left recurrent laryngeal nerve hooks under the aortic arch before heading up to the larynx \u2014 which means an aortic aneurysm or mediastinal mass can compress it and cause hoarseness. Sometimes the first sign of a thoracic catastrophe is a voice change."
     },
     {
       "category": "resuscitation",
-      "fact": "End-tidal CO\u2082 (ETCO\u2082) is a real-time indicator of cardiac output during CPR. An ETCO\u2082 < 10 mmHg after 20 minutes of resuscitation strongly predicts non-survival \u2014 it's the most reliable prognostic indicator available during an arrest."
+      "fact": "End-tidal CO2 is the most reliable prognostic indicator during cardiac arrest. An ETCO2 below 10 mmHg after 20 minutes of CPR strongly predicts non-survival. It's the closest thing to a crystal ball we have."
     },
     {
       "category": "pathophysiology",
-      "fact": "In status epilepticus, the longer the seizure continues, the harder it is to terminate \u2014 GABA receptors internalise and glutamate receptors proliferate, making the brain progressively more excitable. This is why early benzodiazepine administration is critical."
+      "fact": "In status epilepticus, the longer the seizure runs, the harder it is to stop \u2014 GABA receptors retreat inward while glutamate receptors multiply. The brain literally rewires itself to stay excited. Early benzos aren't just best practice, they're fighting a closing window."
     },
     {
       "category": "pharmacology",
-      "fact": "Salbutamol causes hypokalaemia by stimulating Na\u207a/K\u207a-ATPase, driving potassium into cells. Repeated nebulised doses in asthma exacerbations can drop serum potassium to dangerous levels \u2014 always monitor if giving multiple doses."
+      "fact": "Salbutamol drives potassium into cells by stimulating Na+/K+-ATPase. Throw enough nebs at an asthma exacerbation and serum potassium can tank to dangerous levels. The patient's breathing better \u2014 but their heart's in trouble."
     },
     {
       "category": "EMS",
-      "fact": "The first documented use of a defibrillator on a human was in 1947 by Claude Beck during open-chest surgery on a 14-year-old boy. Closed-chest defibrillation wasn't developed until 1956."
+      "fact": "The first defibrillator used on a human was in 1947 \u2014 Claude Beck, open-chest, on a 14-year-old boy during surgery. Closed-chest defibrillation didn't arrive until 1956. For nearly a decade, you had to crack the chest to shock the heart."
     },
     {
       "category": "cardiac",
-      "fact": "The J-wave (Osborn wave) appears as a notch at the J-point in hypothermia, hypercalcaemia, and some genetic conditions. In hypothermia, its size roughly correlates with the degree of core temperature depression."
+      "fact": "The Osborn wave \u2014 a little notch at the J-point \u2014 shows up in hypothermia, hypercalcaemia, and some genetic conditions. In hypothermia, the bigger the wave, the colder the patient. It's the ECG's built-in thermometer."
     },
     {
       "category": "pharmacology",
-      "fact": "Flumazenil reverses benzodiazepine sedation by competitively blocking the GABA-A receptor's benzodiazepine binding site. In chronic benzodiazepine users, it can precipitate seizures \u2014 which is why it's used cautiously in the prehospital setting."
+      "fact": "Flumazenil reverses benzo sedation by kicking benzodiazepines off the GABA-A receptor. In chronic users, this can trigger seizures \u2014 which is why it's handled with extreme caution prehospitally. The cure can be worse than the condition."
     },
     {
       "category": "pathophysiology",
-      "fact": "Aortic dissection type A (involving the ascending aorta) is a surgical emergency with mortality increasing 1\u20132% per hour. Type B (descending only) is usually managed medically unless complicated by rupture or malperfusion."
+      "fact": "Type A aortic dissection (ascending aorta) is a surgical emergency with mortality climbing 1 to 2% per hour. Type B (descending only) is usually managed medically unless it ruptures or cuts off blood flow somewhere critical."
     },
     {
       "category": "resuscitation",
-      "fact": "The 'chain of survival' concept was introduced by the American Heart Association in 1991: early access, early CPR, early defibrillation, early advanced care. A fifth link \u2014 post-cardiac arrest care \u2014 was added in 2010."
+      "fact": "The chain of survival \u2014 early access, early CPR, early defibrillation, early advanced care \u2014 was introduced by the AHA in 1991. A fifth link, post-cardiac arrest care, was added in 2010. Surviving the arrest is just the first half."
     },
     {
       "category": "pharmacology",
-      "fact": "Droperidol was black-boxed by the FDA in 2001 due to concerns about QT prolongation \u2014 but the doses implicated were far higher than the 1.25\u20132.5mg used for nausea and agitation in emergency settings. Many toxicologists argue the warning was an overreaction."
+      "fact": "Droperidol got an FDA black box in 2001 for QT prolongation \u2014 but the doses that caused problems were far higher than the 1.25 to 2.5mg used for nausea and agitation. Many toxicologists reckon the warning was a massive overreaction that scared everyone off a useful drug."
     },
     {
       "category": "EMS",
-      "fact": "In Australia, the emergency number 000 was introduced in 1961. Before that, people dialled their local police, fire, or ambulance station directly. The 000 number was chosen because '0' was the easiest digit to dial on a rotary phone in the dark."
+      "fact": "Australia's 000 emergency number launched in 1961. Before that, you just dialled your local police, fire, or ambulance station directly. 000 was chosen because '0' was the easiest digit to find on a rotary phone in the dark. Practicality over glamour."
     },
     {
       "category": "pathophysiology",
-      "fact": "Pulse pressure (systolic minus diastolic) narrows in cardiac tamponade because pericardial fluid limits diastolic filling, dropping stroke volume while compensatory vasoconstriction raises diastolic pressure. A PP < 25 mmHg is a red flag."
+      "fact": "Pulse pressure narrows in cardiac tamponade because pericardial fluid strangles diastolic filling \u2014 stroke volume tanks while vasoconstriction pushes diastolic pressure up. A pulse pressure under 25 mmHg? That's your red flag waving furiously."
     },
     {
       "category": "cardiac",
-      "fact": "Electrical alternans (beat-to-beat variation in QRS amplitude) on ECG is a classic sign of pericardial effusion \u2014 the heart literally swings back and forth in a fluid-filled pericardial sac with each beat."
+      "fact": "Electrical alternans \u2014 the QRS amplitude bouncing up and down beat to beat \u2014 means the heart is literally swinging inside a fluid-filled pericardial sac. The ECG is showing you a heart doing loop-the-loops."
     },
     {
       "category": "pharmacology",
-      "fact": "Paracetamol's mechanism is still debated but likely involves COX inhibition in the CNS where peroxide tone is low. This selectivity is why paracetamol reduces pain and fever without GI side effects \u2014 unlike traditional NSAIDs."
+      "fact": "Paracetamol's mechanism is still debated \u2014 probably COX inhibition in the CNS where peroxide tone is low. That selectivity is why it kills pain and fever without gutting your stomach lining. A drug we've used for over a century and we're still not entirely sure how it works."
     },
     {
       "category": "resuscitation",
-      "fact": "Double sequential defibrillation (two defibrillators firing simultaneously) has been used for refractory VF, but the 2023 PARAMEDIC-DS trial found no survival benefit \u2014 it's no longer recommended in routine practice."
+      "fact": "Double sequential defibrillation \u2014 two defibs firing at once \u2014 was a desperate move for refractory VF. The 2023 PARAMEDIC-DS trial found no survival benefit. Turns out sometimes the answer is 'more electricity' and sometimes it isn't."
     },
     {
       "category": "pathophysiology",
-      "fact": "In burns, the 'rule of nines' only applies to adults. In children, the head is proportionally larger (up to 18% in infants) and the legs smaller \u2014 use the Lund-Browder chart for accurate paediatric burn surface area estimation."
+      "fact": "The rule of nines for burns only works for adults. Kids have proportionally giant heads (up to 18% BSA in infants) and smaller legs. Use the Lund-Browder chart or you'll get the burn area badly wrong."
     },
     {
       "category": "pharmacology",
-      "fact": "Hydroxocobalamin (Cyanokit) for cyanide poisoning turns the patient's skin and urine bright red \u2014 a vivid but harmless side effect. It works by directly binding cyanide to form cyanocobalamin (vitamin B12), which is renally excreted."
+      "fact": "Hydroxocobalamin for cyanide poisoning turns the patient's skin and urine bright red. It works by binding cyanide to form cyanocobalamin \u2014 vitamin B12 \u2014 which the kidneys just excrete. You're literally turning poison into a vitamin."
     },
     {
       "category": "EMS",
-      "fact": "The NSW Ambulance Special Operations Team includes paramedics trained in urban search and rescue, hazardous materials, and tactical medicine. They were deployed extensively during the 2019\u20132020 Black Summer bushfires."
+      "fact": "NSW Ambulance's Special Operations Team covers urban search and rescue, hazmat, and tactical medicine. They were hammered during the 2019 to 2020 Black Summer bushfires \u2014 one of the biggest deployments in the service's history."
     },
     {
       "category": "cardiac",
-      "fact": "Takotsubo cardiomyopathy ('broken heart syndrome') mimics STEMI with ST elevation and troponin rise, but coronary arteries are clean. The apex balloons out due to catecholamine-mediated stunning \u2014 typically triggered by severe emotional stress."
+      "fact": "Takotsubo cardiomyopathy \u2014 broken heart syndrome \u2014 looks exactly like a STEMI with ST elevation and troponin rise. But the coronaries are clean. The apex balloons out from catecholamine stunning, usually triggered by severe emotional stress. The heart can literally break."
     },
     {
       "category": "pathophysiology",
-      "fact": "Hyperkalaemia causes peaked T-waves, widened QRS, and eventually a sine-wave pattern leading to asystole. In the kidney failure patient who misses dialysis, a K\u207a > 6.5 mmol/L is a 'treat now before ECG changes worsen' emergency."
+      "fact": "Hyperkalaemia progresses from peaked T-waves to widened QRS to a sine-wave pattern to asystole. The dialysis patient who missed their session and has a K+ over 6.5? That's a 'treat right now' emergency, not a 'monitor and see' situation."
     },
     {
       "category": "pharmacology",
-      "fact": "Ethanol and methanol are both metabolised by alcohol dehydrogenase, but methanol produces formic acid \u2014 the toxin that causes blindness. Fomepizole (or ethanol itself) blocks this enzyme, giving the kidneys time to excrete methanol unchanged."
+      "fact": "Methanol and ethanol compete for the same enzyme \u2014 alcohol dehydrogenase \u2014 but methanol produces formic acid, which causes blindness. Fomepizole blocks the enzyme entirely, giving the kidneys time to excrete methanol unchanged. We block the poison by blocking its metabolism."
     },
     {
       "category": "anatomy",
-      "fact": "The Circle of Willis provides collateral cerebral circulation \u2014 but it's anatomically complete in only about 20% of people. In the remaining 80%, variations mean some brain regions have less collateral protection against arterial occlusion."
+      "fact": "The Circle of Willis is supposed to provide collateral cerebral circulation \u2014 but it's anatomically complete in only about 20% of people. The other 80% have variations that leave some brain regions with less backup. When a stroke hits, luck matters."
     },
     {
       "category": "resuscitation",
-      "fact": "In traumatic cardiac arrest from penetrating trauma, a resuscitative thoracotomy can have survival rates up to 20% \u2014 but only if the patient had signs of life at some point during transport."
+      "fact": "Resuscitative thoracotomy for penetrating traumatic cardiac arrest can achieve survival up to 20% \u2014 but only if the patient had signs of life at some point during transport. No signs of life? The outcome is essentially zero."
     },
     {
       "category": "pathophysiology",
-      "fact": "The Bohr effect describes how increased CO\u2082 (and decreased pH) in active tissues reduces haemoglobin's oxygen affinity, causing more O\u2082 release exactly where it's needed most. It's one of the body's most elegant feedback loops."
+      "fact": "The Bohr effect: more CO2 and lower pH in active tissues makes haemoglobin release more oxygen exactly where it's needed. It's one of the body's most elegant feedback loops \u2014 the harder a tissue works, the more oxygen it automatically gets."
     },
     {
       "category": "pharmacology",
-      "fact": "Rocuronium is increasingly preferred over suxamethonium for RSI because it has fewer contraindications (no hyperkalaemia risk in burns/crush/neurological injury). Sugammadex can reverse it \u2014 but isn't yet widely available in Australian prehospital care."
+      "fact": "Rocuronium is overtaking suxamethonium for RSI because it doesn't carry the hyperkalaemia risk in burns, crush injuries, and neurological conditions. Sugammadex can reverse it \u2014 if you can get your hands on it prehospitally in Australia."
     },
     {
       "category": "cardiac",
-      "fact": "The left main coronary artery is sometimes called the 'widow-maker' because occlusion causes massive anterior and lateral wall infarction. ECG shows widespread ST elevation across most leads with reciprocal changes inferiorly."
+      "fact": "The left main coronary artery \u2014 the 'widow-maker' \u2014 supplies such a massive territory that occlusion causes widespread ST elevation across most leads with reciprocal changes inferiorly. If this one goes, a huge chunk of heart muscle dies in minutes."
     },
     {
       "category": "EMS",
-      "fact": "The first paramedic program in Australia was established at Charles Sturt University in 1995. Before that, ambulance officers were trained through in-service apprenticeship models rather than university degrees."
+      "fact": "Australia's first paramedic program started at Charles Sturt University in 1995. Before that, ambulance officers were trained through in-service apprenticeships. We went from 'learn on the job' to university degrees in one leap."
+    },
+    {
+      "category": "weird",
+      "fact": "The first blood transfusion on record was in 1667 \u2014 between a man and a sheep. It went about as well as you'd expect. Jean-Baptiste Denys, the doctor responsible, was eventually charged with murder. He was acquitted, but they stopped doing sheep transfusions."
+    },
+    {
+      "category": "weird",
+      "fact": "In 2003, climber Aron Ralston amputated his own arm with a blunt pocketknife after being trapped by a boulder for five days. He then rappeled down a cliff one-armed and hiked out. He didn't pass out. He didn't bleed to death. The human body's stress response is absolutely terrifying when it works properly."
+    },
+    {
+      "category": "weird",
+      "fact": "Your stomach lining replaces itself every 3 to 4 days. Any slower and your own gastric acid would digest your stomach from the inside. Your body is in a constant race against itself \u2014 and it wins, most of the time."
+    },
+    {
+      "category": "weird",
+      "fact": "The longest survived cardiac arrest without CPR was around 2 hours \u2014 in deep hypothermia. The cold slowed metabolism enough that the brain survived. It's the principle behind ECPR and targeted temperature management, taken to its extreme."
+    },
+    {
+      "category": "weird",
+      "fact": "In WWI, medics used sphagnum moss as wound dressings because it's naturally antiseptic \u2014 it can hold up to 20 times its weight in fluid and has a pH that inhibits bacterial growth. It actually worked better than cotton. Nature had the answer the whole time."
+    },
+    {
+      "category": "weird",
+      "fact": "In 1921, a surgeon named Evan O'Neill Kane operated on himself \u2014 removing his own appendix under local anaesthetic \u2014 to prove it could be done. He reportedly leaned up during the procedure to watch. He recovered fine and went back to work."
+    },
+    {
+      "category": "weird",
+      "fact": "The first successful tracheostomy on a human was probably performed by Antonio Musa Brasavola in 1546 on a patient with an airway obstruction from tonsillar abscess. The operation had been described for centuries but most doctors considered it essentially a death sentence."
+    },
+    {
+      "category": "weird",
+      "fact": "Your body produces about 25 million new cells per second. By the time you finish reading this fact, you've made roughly 75 million. Most of those are red blood cells \u2014 your bone marrow is a 24/7 factory that never shuts down."
+    },
+    {
+      "category": "weird",
+      "fact": "There's a documented case of a patient sneezing their way into an MI \u2014 the vasovagal response to a particularly violent sneeze triggered enough bradycardia and hypotension to cause coronary hypoperfusion. One sneeze. One heart attack."
+    },
+    {
+      "category": "weird",
+      "fact": "Rigor mortis sets in because ATP depletion locks myosin heads onto actin filaments \u2014 the muscles literally can't let go. It starts in the small muscles (jaw, face) and spreads. The body isn't stiffening; the muscles are frozen mid-contraction."
+    },
+    {
+      "category": "weird",
+      "fact": "In the 1800s, doctors treated 'hysteria' in women with pelvic massage \u2014 basically bringing them to orgasm. When their hands got tired, they invented the vibrator. The world's first electromechanical vibrator was a medical device."
+    },
+    {
+      "category": "weird",
+      "fact": "Bee venom (melittin) is being studied as a potential treatment for arthritis and even some cancers. It punches holes in cell membranes \u2014 which sounds bad, but if you point it at cancer cells, it's actually useful. The ancients who used bee stings therapeutically weren't entirely wrong."
+    },
+    {
+      "category": "weird",
+      "fact": "In 1999, a Swedish radiologist named Anna B\u00e5genholm fell into a frozen stream and was trapped under ice for 80 minutes. Her core temperature dropped to 13.7 degrees Celsius. She survived with no lasting brain damage. The coldest surviving human on record."
+    },
+    {
+      "category": "weird",
+      "fact": "The average person produces enough saliva in a lifetime to fill two swimming pools. Saliva contains histatins \u2014 antimicrobial peptides that can kill fungi and bacteria. Your spit is genuinely medicinal."
+    },
+    {
+      "category": "weird",
+      "fact": "Ancient Egyptians used honey on wounds \u2014 and it actually works. Honey is hyperosmolar, produces small amounts of hydrogen peroxide, and has a low pH that inhibits bacterial growth. Medical-grade honey dressings are still used in wound care today."
+    },
+    {
+      "category": "weird",
+      "fact": "In the 19th century, arsenic was sold as a health tonic. 'Fowler's solution' \u2014 potassium arsenite \u2014 was prescribed for everything from asthma to malaria. Patients developed a tolerance and arsenic-eaters were a real thing. The dose makes the poison, apparently."
+    },
+    {
+      "category": "weird",
+      "fact": "Your nose can remember 50,000 different scents. The olfactory bulb has a direct line to the amygdala and hippocampus \u2014 which is why smells trigger memories and emotions more powerfully than any other sense. It's a straight wire to the feeling brain."
+    },
+    {
+      "category": "weird",
+      "fact": "In 1822, a fur trapper named Alexis St Martin sustained a gunshot wound to the stomach that healed with a permanent fistula \u2014 a hole straight into his stomach. His doctor, William Beaumont, used it to study digestion in a living human for years, literally watching food digest through the hole."
+    },
+    {
+      "category": "weird",
+      "fact": "Your skeleton replaces itself completely about every 10 years through continuous remodelling. The bone you have now is not the same bone you had a decade ago. You're wearing a whole new skeleton and didn't even notice."
+    },
+    {
+      "category": "weird",
+      "fact": "In the 1940s, lobotomies were performed with an ice pick through the eye socket \u2014 hammered through the thin bone and waggled to sever frontal lobe connections. The inventor, Walter Freeman, drove around the US in a van he called the 'lobotomobile' performing them. Over 40,000 Americans were lobotomised."
+    },
+    {
+      "category": "weird",
+      "fact": "A human head remains conscious for about 10 to 15 seconds after decapitation \u2014 long enough for the eyes to track movement and possibly even register what's happened. This was observed during the French Revolution and confirmed by more recent animal studies. Gruesome, but physiologically fascinating."
+    },
+    {
+      "category": "weird",
+      "fact": "The antibiotic streptomycin was discovered in soil bacteria from heavily manured compost. The high-yield strain of penicillin used for mass production came from mould on a cantaloupe in a Peoria market \u2014 far more productive than Fleming's original lab contaminant. Some of medicine's greatest breakthroughs came from literal garbage."
+    },
+    {
+      "category": "weird",
+      "fact": "In medieval Europe, wound treatment sometimes involved applying mouldy bread. This wasn't entirely crazy \u2014 some bread moulds produce antibiotics. They had no idea why it sometimes worked, but they were onto something."
+    },
+    {
+      "category": "weird",
+      "fact": "There's a condition called auto-brewery syndrome where gut fungi ferment carbohydrates into ethanol. People with it can get genuinely drunk just from eating carbs. They blow positive on breathalysers without touching a drop."
+    },
+    {
+      "category": "weird",
+      "fact": "The plasticiser DEHP, once common in IV bags and giving sets, was found to leach into fluids \u2014 especially lipophilic drugs. It's also an endocrine disruptor. PVC IV equipment has quietly been phased out in many countries for exactly this reason."
+    },
+    {
+      "category": "weird",
+      "fact": "In 1961, a surgeon named Leonid Rogozov was stationed at a remote Antarctic base when his appendix burst. With no other doctor for thousands of kilometres, he operated on himself \u2014 removing his own appendix under local anaesthetic while his non-medical colleagues handed him instruments. He recovered fully."
+    },
+    {
+      "category": "weird",
+      "fact": "Your liver can regenerate from just 25% of its tissue. It's the only internal organ that can do this. Hepatocytes divide until the original mass is restored, then they just... stop. Nobody's entirely sure how they know when to stop."
+    },
+    {
+      "category": "weird",
+      "fact": "Maggot therapy is still used in modern wound care. Sterile maggots of the green bottle fly are placed in wounds where they eat dead tissue, secrete antimicrobial compounds, and stimulate healing. Medicare covers it in the US. It's gross. It works."
+    },
+    {
+      "category": "weird",
+      "fact": "During the American Civil War, wounded soldiers reported that glowing wounds healed faster and with less infection. The 'Angel's Glow' was likely caused by Photorhabdus luminescens \u2014 bioluminescent bacteria that produce antibiotics and kill other bacteria. The soldiers weren't hallucinating."
+    },
+    {
+      "category": "weird",
+      "fact": "You can survive without your spleen, gallbladder, appendix, colon, one kidney, most of your liver, one lung, your stomach, your bladder, and most of your intestines. The human body is absurdly modular. You just need your brain, heart, and at least one functioning kidney."
+    },
+    {
+      "category": "weird",
+      "fact": "In 2007, a woman named Jennifer Strange died from water intoxication after drinking nearly 7.5 litres of water in a radio station contest called 'Hold Your Wee for a Wii.' Hyponatraemia can kill just as dead as hypernatraemia \u2014 water isn't always benign."
+    },
+    {
+      "category": "weird",
+      "fact": "There are documented cases of people being struck by lightning and developing sudden new skills or personality changes \u2014 called 'acquired savant syndrome.' One man was hit by lightning and suddenly became a piano prodigy. Nobody knows how."
+    },
+    {
+      "category": "weird",
+      "fact": "In 1844, a dentist named Horace Wells pioneered the use of nitrous oxide as an anaesthetic \u2014 after witnessing a laughing gas demonstration where someone injured themselves without feeling pain. He later became addicted to chloroform and committed suicide in prison in 1848. Anaesthesia's founding story is genuinely tragic."
+    },
+    {
+      "category": "weird",
+      "fact": "Your gut produces about 95% of your body's serotonin \u2014 not your brain. The enteric nervous system is so complex it's sometimes called the 'second brain.' When you have a gut feeling, it's not entirely a metaphor."
+    },
+    {
+      "category": "weird",
+      "fact": "In the 16th century, Paracelsus dosed patients with mercury to treat syphilis. It sort of worked \u2014 mercury does kill the bacteria \u2014 but it also caused terrible toxicity. Patients died from the cure almost as often as the disease."
+    },
+    {
+      "category": "weird",
+      "fact": "CPR was developed in part from observations of asphyxiated dogs. In the 1950s, researchers at Johns Hopkins found that external chest compressions could maintain circulation. Before that, the standard response to cardiac arrest was essentially to open the chest and squeeze the heart by hand."
+    },
+    {
+      "category": "weird",
+      "fact": "In the 18th century, resuscitation attempts for drowning victims included rectal tobacco smoke enemas. The Royal Humane Society kept resuscitation kits along the Thames that included bellows for blowing smoke up the rectum. The phrase 'blowing smoke up your arse' comes from literal medical practice."
+    },
+    {
+      "category": "weird",
+      "fact": "There's a documented phenomenon called 'cognitive skew' where experienced clinicians become less accurate at reading ECGs as they gain experience \u2014 not because they forget, but because they start pattern-matching instead of reading systematically. Experience can be its own trap."
+    },
+    {
+      "category": "weird",
+      "fact": "In 2013, surgeons in Pakistan removed a bullet from a man's heart that had been sitting there for 12 years. He'd been shot in the chest at age 16 and didn't know the bullet was lodged in his myocardium. He found out when he went to hospital with chest pain over a decade later."
+    },
+    {
+      "category": "weird",
+      "fact": "A woman named December Levy (yes, really) went to hospital with a headache and was found to have a nail in her brain \u2014 from an incident where a nail gun had been fired near her a year earlier. She didn't remember it. The brain has no pain receptors. She literally never felt it go in."
+    },
+    {
+      "category": "weird",
+      "fact": "In 2015, a man in China went to hospital with a headache and doctors found he'd been living with a knife blade embedded in his head for four years after a robbery. The knife had been stuck in his skull so long that the tissue had grown around it."
+    },
+    {
+      "category": "pharmacology",
+      "fact": "Digoxin comes from the foxglove plant \u2014 digitalis. William Withering published his findings on it in 1785 after learning about it from a folk herbalist. One of modern cardiology's most important drugs came from a witch's remedy."
+    },
+    {
+      "category": "pharmacology",
+      "fact": "Aspirin was derived from willow bark, which Hippocrates recommended for pain in 400 BC. The synthetic version (acetylsalicylic acid) was developed by Bayer in 1897. A drug that old and still on the cardiac guidelines. Not many medications have that kind of staying power."
+    },
+    {
+      "category": "pharmacology",
+      "fact": "Warfarin was originally developed as rat poison in the 1940s. It started being used in humans after a US army recruit attempted suicide by eating rat poison and survived \u2014 which made researchers think, 'hang on, maybe we can control the dose.' One of pharmacology's weirder origin stories."
+    },
+    {
+      "category": "pharmacology",
+      "fact": "Viagra was discovered by accident \u2014 researchers at Pfizer were testing sildenafil for angina when trial participants reported an unexpected side effect. A very specific, very marketable side effect. Sometimes the best discoveries are the ones you weren't looking for."
+    },
+    {
+      "category": "pharmacology",
+      "fact": "Insulin was first extracted from dogs' pancreases by Banting and Best in 1921. Before that, type 1 diabetes was a death sentence \u2014 patients survived on starvation diets for months at most. The first human treated was a 14-year-old boy who'd been given weeks to live."
+    },
+    {
+      "category": "pharmacology",
+      "fact": "The first ever antibiotic \u2014 Salvarsan \u2014 was developed in 1909 to treat syphilis. It was an arsenic compound. It worked, mostly. But the side effects were brutal. The name literally means 'that which saves by arsenic.' Medicine was a contact sport back then."
+    },
+    {
+      "category": "pharmacology",
+      "fact": "Lidocaine was synthesised in 1943 and originally called 'xylocaine' \u2014 from the Greek 'xylon' meaning wood, because one of the starting materials came from wood pulp. The local anaesthetic that's in every ED and ambulance on Earth has a name that means 'wood thing.'"
+    },
+    {
+      "category": "pharmacology",
+      "fact": "Prednisone and other corticosteroids were developed after a rheumatoid arthritis patient at the Mayo Clinic dramatically improved after being given cortisone in 1948. The 'miracle' drug turned out to have a dark side \u2014 long-term use causes osteoporosis, diabetes, immunosuppression, and adrenal suppression."
+    },
+    {
+      "category": "pharmacology",
+      "fact": "Clozapine \u2014 one of the most effective antipsychotics \u2014 can cause agranulocytosis in about 1% of patients, which is potentially fatal. It requires regular blood monitoring. But for treatment-resistant schizophrenia, nothing else comes close. The best drug is sometimes the most dangerous one."
+    },
+    {
+      "category": "pharmacology",
+      "fact": "Metformin comes from the French lilac plant (Galega officinalis), which was used to treat 'sweet urine' in medieval Europe. The active compound, galegine, was identified in the early 1900s. A diabetes drug with roots in medieval herbalism."
+    },
+    {
+      "category": "pharmacology",
+      "fact": "Suxamethonium can trigger malignant hyperthermia \u2014 a rare but catastrophic reaction where the body's temperature rockets upward and muscles break down. It kills fast if untreated. Dantrolene is the antidote. If you're giving sux, you'd better know where the dantrolene is."
+    },
+    {
+      "category": "pharmacology",
+      "fact": "Naloxone was patented in 1961. Before that, opioid overdose was essentially untreatable in the field. The drug has saved hundreds of thousands of lives and is now carried by police, teachers, and community workers \u2014 not just paramedics."
+    },
+    {
+      "category": "pharmacology",
+      "fact": "Thiopental \u2014 the barbiturate once used for induction \u2014 was part of the lethal injection protocol in the US. The same drug that anaesthetised surgical patients was used to execute prisoners. Pharmacology is morally neutral. Its applications aren't."
+    },
+    {
+      "category": "history",
+      "fact": "During the American Civil War, amputation was the most common surgery \u2014 performed over 60,000 times. Surgeons would hold the bloody saw between their knees while working. Infection rates were astronomical, but it beat the alternative."
+    },
+    {
+      "category": "history",
+      "fact": "The first blood bank was established in 1937 in Chicago. Before that, doctors did direct person-to-person transfusions \u2014 literally connecting a donor's artery to a recipient's vein with tubing. It was as chaotic as it sounds."
+    },
+    {
+      "category": "history",
+      "fact": "Before the stethoscope was invented in 1816, doctors listened to hearts by pressing their ear directly against the patient's chest. Rene Laennec rolled up a piece of paper to avoid putting his ear on a woman's chest \u2014 and invented the stethoscope out of awkwardness."
+    },
+    {
+      "category": "history",
+      "fact": "In ancient Rome, Galen performed surgeries on gladiators and developed theories about anatomy that were wrong but lasted 1,400 years \u2014 because dissecting humans was banned. He based everything on animal dissections. Monkeys don't have the same anatomy as humans. Nobody checked for over a millennium."
+    },
+    {
+      "category": "history",
+      "fact": "The Iron Lung was invented in 1928 and saved thousands of polio patients who couldn't breathe on their own. Some patients lived in them for decades. The machine breathed for them by creating negative pressure around the chest \u2014 a mechanical ghost of normal breathing."
+    },
+    {
+      "category": "history",
+      "fact": "Penicillin wasn't mass-produced until 1943 \u2014 and the first batches were so precious that patients' urine was collected to extract and reuse the drug. It was literally recycled from piss. The drug that changed medicine was too valuable to waste."
+    },
+    {
+      "category": "history",
+      "fact": "The first successful kidney transplant was in 1954 \u2014 between identical twins, so no rejection. The surgeon, Joseph Murray, later won a Nobel Prize. Before immunosuppressants, the only transplant option was finding your genetic clone."
+    },
+    {
+      "category": "history",
+      "fact": "In 1846, William Morton demonstrated ether anaesthesia in a public operation at Massachusetts General Hospital. The audience was stunned \u2014 the patient didn't scream. The room became known as the 'Ether Dome' and still exists. Surgery before anaesthesia was... spirited."
+    },
+    {
+      "category": "history",
+      "fact": "Florence Nightingale's statistical analysis of Crimean War deaths showed that far more soldiers died from preventable diseases than from combat. She essentially invented the use of statistics in healthcare \u2014 a nurse did more for data-driven medicine than most doctors of her era."
+    },
+    {
+      "category": "history",
+      "fact": "The first ECG machine, built by Willem Einthoven in 1903, used a wire immersed in a bucket of saline. It weighed 270 kilograms. He won a Nobel Prize for it. Your 12-lead traces its ancestry to a bucket of salt water."
+    },
+    {
+      "category": "history",
+      "fact": "In the 19th century, 'railway spine' was a recognised diagnosis \u2014 back pain and neurological symptoms after train accidents. Doctors thought it was a physical injury; others thought it was hysteria. It was probably what we now call whiplash and PTSD. Some debates never change."
+    },
+    {
+      "category": "history",
+      "fact": "Ambulances in World War I were often driven by volunteers \u2014 including many women. The American ambulance corps in France was initially staffed almost entirely by volunteers from US universities before America even entered the war."
+    },
+    {
+      "category": "history",
+      "fact": "The first ambulance service in Australia was the St John Ambulance, established in the late 1800s. Initially it was volunteers with first aid certificates and a stretcher. We've come a long way from 'enthusiastic bloke with a blanket.'"
+    },
+    {
+      "category": "cardiac",
+      "fact": "Your heart beats roughly 100,000 times a day \u2014 about 2.5 billion times in an average lifetime. It never gets a proper rest. The 'resting' between beats is its version of a holiday. A fraction of a second, then back to work."
+    },
+    {
+      "category": "cardiac",
+      "fact": "The SA node generates electrical impulses at about 60 to 100 per minute. The AV node can only conduct about 170 impulses per minute before it starts blocking \u2014 which is actually protective. In atrial fibrillation with a rapid ventricular rate, the AV node is the only thing standing between your ventricles and chaos."
+    },
+    {
+      "category": "cardiac",
+      "fact": "The left ventricle has myocardium three times thicker than the right \u2014 because it's pushing blood through the entire systemic circulation, not just the lungs. On an ECG, the left ventricle's dominance is why we see the QRS complex so prominently."
+    },
+    {
+      "category": "cardiac",
+      "fact": "Sudden cardiac death in young athletes is rare but devastating \u2014 about 1 in 50,000. The most common cause is hypertrophic cardiomyopathy, where the heart muscle is abnormally thick. A thick heart sounds strong but it's actually a time bomb \u2014 obstructing outflow and predisposing to lethal arrhythmias."
+    },
+    {
+      "category": "cardiac",
+      "fact": "Atrial flutter produces a classic sawtooth pattern on ECG \u2014 regular, repetitive flutter waves at about 300 per minute. The AV node usually blocks most of them, giving a ventricular rate of about 150. If you see a rate of exactly 150, think flutter until proven otherwise."
+    },
+    {
+      "category": "cardiac",
+      "fact": "The coronary arteries fill during diastole \u2014 not systole. The myocardium squeezes its own blood vessels shut during contraction. This is why tachycardia is dangerous for ischaemic patients: shorter diastole means less coronary perfusion time. The heart can literally outrun its own blood supply."
+    },
+    {
+      "category": "cardiac",
+      "fact": "Prinzmetal's angina \u2014 vasospastic angina \u2014 causes transient ST elevation that resolves on its own. The coronary artery spasms, the ECG looks like a STEMI, then it relaxes and everything goes back to normal. It's a heart attack that changes its mind."
+    },
+    {
+      "category": "cardiac",
+      "fact": "Commotio cordis \u2014 sudden cardiac death from a blunt impact to the chest \u2014 happens when the blow lands during the vulnerable repolarisation window (the T-wave upstroke). It doesn't need to be hard. It needs to be perfectly timed. It's most common in young male athletes. And it's terrifying."
+    },
+    {
+      "category": "cardiac",
+      "fact": "The ECG lead aVR is the most neglected lead on the 12-lead \u2014 but widespread ST depression with ST elevation in aVR suggests severe triple-vessel or left main disease. The ugly duckling lead might be the most important one on the page."
+    },
+    {
+      "category": "cardiac",
+      "fact": "Right ventricular infarction complicates about 30 to 50% of inferior STEMIs. These patients are preload-dependent \u2014 giving nitrates or diuretics can crash their blood pressure because the right ventricle can't pump forward. Fluids first. Always."
+    },
+    {
+      "category": "anatomy",
+      "fact": "Your spleen is basically a giant lymph node that also recycles old red blood cells. It stores about a third of your platelets, ready to dump them into circulation when needed. Rupture it, and you can bleed out into your own abdomen in minutes."
+    },
+    {
+      "category": "anatomy",
+      "fact": "The aorta is about the diameter of a garden hose. At peak systolic pressure, blood moves through it at about 1 metre per second. It's not a passive pipe \u2014 it's an elastic structure that stores energy during systole and releases it during diastole."
+    },
+    {
+      "category": "anatomy",
+      "fact": "The epiglottis is made of elastic cartilage \u2014 one of the few places in the body that uses it. It needs to snap shut fast during swallowing to protect the airway. That springiness is literally what stops you from inhaling your dinner."
+    },
+    {
+      "category": "anatomy",
+      "fact": "Your kidneys filter about 180 litres of blood per day and produce 1 to 2 litres of urine. The rest is reabsorbed. They process your entire blood volume roughly 60 times a day. The tubules are where the real work happens \u2014 filtration is just the start."
+    },
+    {
+      "category": "anatomy",
+      "fact": "The median nerve runs through the carpal tunnel at the wrist \u2014 compress it and you get carpal tunnel syndrome. But if you lacerate it at the wrist, you lose sensation to the lateral three and a half fingers and can't oppose your thumb. It's why wrist lacerations always get a proper neurological exam."
+    },
+    {
+      "category": "anatomy",
+      "fact": "The brain weighs about 1.4 kg but consumes 20% of the body's oxygen and 25% of its glucose. It has essentially no energy reserves \u2014 cut off supply for 4 to 6 minutes and neurons start dying. The brain is a high-performance engine with no fuel tank."
+    },
+    {
+      "category": "anatomy",
+      "fact": "The thoracic duct drains lymph from everything below the diaphragm and the left side above it \u2014 it's the largest lymphatic vessel in the body and empties into the venous system at the junction of the left subclavian and internal jugular veins. One puncture in the wrong place and you've got a chyle leak."
+    },
+    {
+      "category": "anatomy",
+      "fact": "There are 206 bones in the adult human body \u2014 but babies are born with about 270. Many fuse together as you grow. By the time you're an adult, you've lost about 60 bones. You didn't break them. Your body just decided it didn't need them anymore."
+    },
+    {
+      "category": "anatomy",
+      "fact": "The pericardial sac contains about 15 to 50 mL of serous fluid \u2014 just enough to lubricate the heart's constant movement. Add more than about 200 mL quickly (blood, effusion) and tamponade develops. Slow accumulation? The sac can stretch to hold over 2 litres. Speed kills."
+    },
+    {
+      "category": "anatomy",
+      "fact": "The sciatic nerve is the thickest nerve in the body \u2014 about as wide as your thumb at its thickest point. A misplaced IM injection into the glute can hit it. That's why you aim for the upper outer quadrant. Miss, and your patient might never walk properly again."
+    },
+    {
+      "category": "pathophysiology",
+      "fact": "In DIC (disseminated intravascular coagulation), the body simultaneously clots AND bleeds. Clotting factors get consumed by widespread microthrombi, leaving nothing to stop bleeding elsewhere. The patient is clotting and haemorrhaging at the same time. It's a pathological paradox."
+    },
+    {
+      "category": "pathophysiology",
+      "fact": "Decorticate posturing (arms flexed, legs extended) means damage above the red nucleus in the midbrain. Decerebrate posturing (arms and legs extended) means damage at or below the red nucleus. Decerebrate is worse. Both mean the brainstem is in trouble."
+    },
+    {
+      "category": "pathophysiology",
+      "fact": "In acute pancreatitis, the pancreas digests itself. Enzymes activate prematurely inside the gland instead of in the duodenum. The pain radiates straight through to the back and the patient looks genuinely unwell \u2014 because their organs are being dissolved from the inside."
+    },
+    {
+      "category": "pathophysiology",
+      "fact": "Fat embolism syndrome typically appears 24 to 72 hours after a long-bone fracture. Fat globules enter the circulation, lodge in capillaries, and cause a triad of respiratory distress, neurological changes, and petechial rash. The rash is pathognomonic \u2014 see it and you know."
+    },
+    {
+      "category": "pathophysiology",
+      "fact": "In hypothermia, the cold-induced diuresis can dump massive volumes of urine. Vasoconstriction shunts blood centrally, the kidneys perceive volume overload, and they start excreting. The patient is cold, wet, and getting hypovolaemic from their own kidneys."
+    },
+    {
+      "category": "pathophysiology",
+      "fact": "The blood-brain barrier is formed by tight junctions between endothelial cells in cerebral capillaries. It keeps most drugs and toxins out \u2014 which is great for brain protection but terrible for drug delivery. Getting a drug into the brain is pharmacology's hardest problem."
+    },
+    {
+      "category": "pathophysiology",
+      "fact": "In aneurysmal subarachnoid haemorrhage, the classic presentation is a 'thunderclap headache' \u2014 the worst headache of the patient's life, reaching maximum intensity within seconds. About 1 in 8 people who present with thunderclap headache have had an SAH. Don't brush it off as a migraine."
+    },
+    {
+      "category": "pathophysiology",
+      "fact": "The normal anion gap is about 8 to 12. A high anion gap metabolic acidosis means there's an unmeasured acid \u2014 lactate, ketones, salicylate, methanol, ethylene glycol. The mnemonic MUDPILES exists for a reason. It's one of the most useful calculations in emergency medicine."
+    },
+    {
+      "category": "pathophysiology",
+      "fact": "Auto-PEEP (intrinsic PEEP) happens when a patient on positive pressure ventilation doesn't fully exhale before the next breath arrives. Air stacks up, intrathoracic pressure rises, venous return drops, and blood pressure tanks. The fix? Slow down. Let them breathe out."
+    },
+    {
+      "category": "pathophysiology",
+      "fact": "In hepatic failure, the liver stops clearing ammonia, which crosses the blood-brain barrier and causes cerebral oedema and encephalopathy. The patient gets confused, then drowsy, then comatose. The liver and brain are more connected than most people think."
+    },
+    {
+      "category": "pathophysiology",
+      "fact": "Reperfusion injury is real \u2014 when blood flow returns to ischaemic tissue, the sudden influx of oxygen generates free radicals that cause additional damage. Saving the tissue also hurts it. Sometimes the cure and the injury arrive on the same ambulance."
+    },
+    {
+      "category": "pathophysiology",
+      "fact": "In Addisonian crisis (acute adrenal insufficiency), the patient is hypotensive, hyponatraemic, hyperkalaemic, and hypoglycaemic \u2014 a biochemical disaster. The treatment is IV hydrocortisone and aggressive fluid resuscitation. Without cortisol, the body can't maintain vascular tone or glucose."
+    },
+    {
+      "category": "pathophysiology",
+      "fact": "Decompression sickness \u2014 the bends \u2014 happens when dissolved nitrogen comes out of solution and forms bubbles in blood and tissues during rapid ascent. The bubbles can obstruct vessels, compress nerves, and trigger a systemic inflammatory response. It's not just 'surfacing too fast' \u2014 it's physics in your bloodstream."
+    },
+    {
+      "category": "resuscitation",
+      "fact": "The original AED was developed in the 1970s and weighed over 10 kg. Modern AEDs weigh under 2 kg and talk you through the whole process. The machine that can restart a heart now fits in a backpack."
+    },
+    {
+      "category": "resuscitation",
+      "fact": "During CPR, chest compressions generate a 'thoracic pump' effect \u2014 pressure changes in the thorax squeeze blood through the circulatory system. It's not the heart being manually squeezed. It's the entire chest acting as a pump."
+    },
+    {
+      "category": "resuscitation",
+      "fact": "The survival rate for out-of-hospital cardiac arrest globally sits at about 7 to 10%. In places with excellent bystander CPR and AED access (like certain parts of Scandinavia), it can reach 20 to 25%. The difference isn't the paramedics \u2014 it's the public."
+    },
+    {
+      "category": "resuscitation",
+      "fact": "Bystander CPR doubles or triples survival from out-of-hospital cardiac arrest. Yet in many countries, less than half of cardiac arrest patients receive bystander CPR before ambulance arrival. The single biggest survival lever is a bystander willing to push on a chest."
+    },
+    {
+      "category": "resuscitation",
+      "fact": "In neonatal resuscitation, the first step is always warmth, drying, and stimulation \u2014 not ventilation. Most newborns respond to this alone. Only about 1% of term births need intubation. The smallest intervention that works is the right one."
+    },
+    {
+      "category": "resuscitation",
+      "fact": "The 'sniffing the morning air' position \u2014 slight neck extension \u2014 is the optimal airway position for bag-valve-mask ventilation. Head too far back or too far forward and you've obstructed the airway. The sweet spot is surprisingly narrow."
+    },
+    {
+      "category": "resuscitation",
+      "fact": "In paediatric cardiac arrest, the overwhelming majority are respiratory in origin \u2014 not cardiac. The heart stops because the child stopped breathing. This is why paediatric BLS emphasises ventilation alongside compressions. Fix the oxygen and you might fix the arrest."
+    },
+    {
+      "category": "resuscitation",
+      "fact": "Defibrillation doesn't 'restart' the heart. It stops it \u2014 briefly \u2014 in the hope that the natural pacemaker (SA node) reasserts control when the electrical chaos settles. You're not jump-starting a battery. You're hitting reset on a system gone haywire."
+    },
+    {
+      "category": "resuscitation",
+      "fact": "The RECOVERY trial showed that dexamethasone reduced mortality in COVID-19 patients on ventilators by about a third. A cheap, old drug outperformed many newer, flashier treatments. Sometimes the best medicine is the one that's been on the shelf for decades."
+    },
+    {
+      "category": "EMS",
+      "fact": "The first 911 system in the US was established in Haleyville, Alabama, in 1968. The first 911 call was made by a state legislator to test the system. It connected him to the local police station. Anti-climactic, but historic."
+    },
+    {
+      "category": "EMS",
+      "fact": "In Australia, the Triple Zero (000) service receives about 8 million calls a year across police, fire, and ambulance. Not all are genuine emergencies. A non-trivial number are people calling to ask what time it is, or to report that their cat won't come inside."
+    },
+    {
+      "category": "EMS",
+      "fact": "The first air ambulance in Australia was the Royal Flying Doctor Service, founded in 1928 by Reverend John Flynn. It started with a single de Havilland aircraft covering vast stretches of the outback. It's now one of the largest aeromedical services in the world."
+    },
+    {
+      "category": "EMS",
+      "fact": "In the 1970s, the TV show 'Emergency!' \u2014 about two fictional Los Angeles paramedics \u2014 was so popular that it drove public demand for real paramedic services across the US. A TV show literally created political pressure for better EMS. Hollywood's most useful contribution to medicine."
+    },
+    {
+      "category": "EMS",
+      "fact": "The highest cardiac arrest survival rate in the world is in Seattle, Washington \u2014 around 20 to 22% overall, and much higher for witnessed VF. They achieved this through massive public CPR training, widespread AED placement, and a coordinated EMS system. It can be done. Most places just don't."
+    },
+    {
+      "category": "EMS",
+      "fact": "In some Scandinavian countries, ambulance crews include a physician on scene for critical calls. In Australia and the UK, paramedics handle most of this themselves. Different systems, same goal. The debate about whether doctors belong on ambulances is older than most paramedics."
+    },
+    {
+      "category": "EMS",
+      "fact": "The longest ambulance in the world is a custom-built vehicle in Dubai that's essentially a mobile hospital \u2014 complete with ICU beds, ventilators, and monitoring equipment. Useful for a city that occasionally needs to transport patients between palaces."
+    },
+    {
+      "category": "EMS",
+      "fact": "Paramedic burnout rates are high \u2014 studies suggest 20 to 30% of paramedics meet criteria for PTSD, and burnout affects up to 40%. Shift work, repeated trauma exposure, and organisational pressure all contribute. The people who show up for everyone else often need someone to show up for them."
+    },
+    {
+      "category": "EMS",
+      "fact": "Before GPS, paramedics navigated using map books \u2014 often the Melway in Melbourne or the UBD in Sydney. Knowing your grid reference was a core skill. Some veteran paramedics still remember their patch's grid numbers better than their own postcode."
+    },
+    {
+      "category": "EMS",
+      "fact": "In remote Australia, cattle stations can be larger than some European countries. The RFDS might fly for hours to reach a single patient. In the time it takes some Australian paramedics to reach a job, a European paramedic could have transported three patients and had lunch."
+    },
+    {
+      "category": "history",
+      "fact": "The first documented use of an AED on a human was in 1979 \u2014 an experimental device tested in Brighton, England. It was designed to be used by ambulance crews with minimal training. Before that, defibrillation required a physician and an ECG machine the size of a small car."
+    },
+    {
+      "category": "history",
+      "fact": "In the 1800s, 'resurrection men' dug up freshly buried corpses and sold them to medical schools for dissection. It was a lucrative trade. Some even resorted to murder \u2014 the Burke and Hare case being the most infamous. Medical education has a surprisingly dark supply chain history."
+    },
+    {
+      "category": "history",
+      "fact": "Alexander Fleming discovered penicillin in 1928 because he was messy. He left a petri dish uncovered and mould grew on it, killing the surrounding bacteria. He almost threw it away. The most important discovery in modern medicine came from forgetting to wash up."
+    },
+    {
+      "category": "history",
+      "fact": "The first person to survive a tracheostomy was probably performed in the 1500s, but the procedure was described in ancient Egyptian texts and by Hippocrates. For most of history, surgeons avoided it because it almost always killed the patient. Then someone finally got it right."
+    },
+    {
+      "category": "history",
+      "fact": "Ignaz Semmelweis figured out that hand-washing saved lives in 1847 \u2014 and his colleagues mocked him for it. He was right. He was committed to an asylum and died of sepsis from a beating. The man who discovered infection control died of an infection. History doesn't always have a happy ending."
+    },
+    {
+      "category": "history",
+      "fact": "In WWII, medics on the front lines faced extraordinary danger \u2014 they were unarmed, marked with red crosses, and still took fire. The survival rate for wounded soldiers who reached a medic was about 70%. Those medics earned every statistic. Those medics earned every statistic."
+    },
+    {
+      "category": "weird",
+      "fact": "There are roughly the same number of bacterial cells as human cells in your body \u2014 about 38 trillion bacteria to 30 trillion human cells, mostly in your gut. For decades we thought the ratio was 10:1, but a 2016 study revised it to roughly 1:1. Either way, you're never alone."
+    },
+    {
+      "category": "weird",
+      "fact": "In 2004, a man in the UK was admitted to hospital with severe abdominal pain. X-rays revealed he'd swallowed 78 pieces of cutlery \u2014 mostly spoons. He told doctors he 'liked the taste of metal.' He survived. The surgeons had to remove them one by one."
+    },
+    {
+      "category": "weird",
+      "fact": "Priapism \u2014 a persistent, painful erection \u2014 is a genuine emergency. It can be caused by spinal cord injury, sickle cell disease, or cocaine use. The treatment involves aspirating blood from the corpora cavernosa with a large-bore needle. Patients remember this procedure forever."
+    },
+    {
+      "category": "weird",
+      "fact": "The longest surgery on record lasted 96 hours \u2014 a marathon operation to remove an ovarian cyst that had essentially become a second body (a teratoma with hair, teeth, and bone). The patient survived. The surgeons needed therapy."
+    },
+    {
+      "category": "weird",
+      "fact": "In 2010, a man in Serbia survived being impaled through the chest by a 1.5-metre fence post. The post entered through his back and exited through his neck. Surgeons removed it in a 5-hour operation. He was back at work within months. Sometimes the human body just refuses to die."
+    },
+    {
+      "category": "weird",
+      "fact": "Your eyes have a separate immune system. If your body's main immune system discovers your eyes exist, it can attack them as foreign tissue. This is why eye injuries that breach the globe can trigger sympathetic ophthalmia \u2014 the immune system suddenly realises there's something in the socket and attacks both eyes."
+    },
+    {
+      "category": "weird",
+      "fact": "In the 1700s, patients were sometimes submerged in horse manure as a treatment for various ailments \u2014 the thinking being that the warmth and 'vapours' were therapeutic. It was neither warm enough nor vapoury enough to actually help. But they tried."
     }
   ],
   "dailyUpdates": [
