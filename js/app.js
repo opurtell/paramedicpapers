@@ -28,6 +28,11 @@
   const $weeklyTldrClose = document.getElementById('weekly-tldr-close');
   const $weeklyTldrBody  = document.getElementById('weekly-tldr-body');
   const $weeklyTldrDate  = document.getElementById('weekly-tldr-date');
+  const $btnFunFact     = document.getElementById('btn-fun-fact');
+  const $funFactModal   = document.getElementById('fun-fact-modal');
+  const $funFactClose   = document.getElementById('fun-fact-close');
+  const $funFactBody    = document.getElementById('fun-fact-body');
+  const $funFactDate    = document.getElementById('fun-fact-date');
 
   // --- Init ---
   document.addEventListener('DOMContentLoaded', init);
@@ -57,6 +62,7 @@
     bindSearch();
     bindTldr();
     bindWeeklyTldr();
+    bindFunFact();
     bindRefresh();
   }
 
@@ -238,6 +244,63 @@
       || (p.journal || '').toLowerCase().includes(term)
       || (p.summary || '').toLowerCase().includes(term)
       || (p.relevance || '').toLowerCase().includes(term);
+  }
+
+  // --- Fun Fact Modal ---
+  function bindFunFact() {
+    $btnFunFact.addEventListener('click', () => {
+      renderFunFact();
+      $funFactModal.classList.remove('hidden');
+    });
+
+    $funFactClose.addEventListener('click', () => {
+      $funFactModal.classList.add('hidden');
+    });
+
+    $funFactModal.addEventListener('click', (e) => {
+      if (e.target === $funFactModal) $funFactModal.classList.add('hidden');
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') $funFactModal.classList.add('hidden');
+    });
+  }
+
+  function renderFunFact() {
+    const facts = data.funFacts;
+    if (!facts || !facts.length) {
+      $funFactBody.innerHTML = '<p class="tldr-empty">No fun facts available yet.</p>';
+      $funFactDate.textContent = '';
+      return;
+    }
+
+    // Pick today's fact using day-of-year rotation
+    const now = new Date();
+    const start = new Date(now.getFullYear(), 0, 0);
+    const diff = now - start;
+    const oneDay = 1000 * 60 * 60 * 24;
+    const dayOfYear = Math.floor(diff / oneDay);
+    const index = dayOfYear % facts.length;
+    const fact = facts[index];
+
+    const dateStr = now.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
+    $funFactDate.textContent = dateStr + ' · Fact #' + (index + 1) + ' of ' + facts.length;
+
+    // Category emoji mapping
+    const categoryEmoji = {
+      'pharmacology': '💊',
+      'cardiac': '❤️',
+      'anatomy': '🫀',
+      'pathophysiology': '🔬',
+      'resuscitation': '⚡',
+      'EMS': '🚑',
+      'history': '📜'
+    };
+    const emoji = categoryEmoji[fact.category] || '🧠';
+
+    $funFactBody.innerHTML =
+      '<div class="fun-fact-category">' + emoji + ' ' + esc(fact.category.charAt(0).toUpperCase() + fact.category.slice(1)) + '</div>' +
+      '<div class="fun-fact-text">' + esc(fact.fact) + '</div>';
   }
 
   // --- Weekly TLDR Modal ---

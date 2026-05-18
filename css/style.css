@@ -209,6 +209,30 @@ a:hover {
   transform: translateY(-1px);
 }
 
+/* --- Fun Fact Button --- */
+.btn-fun-fact {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  height: 36px;
+  padding: 0 16px;
+  border-radius: 20px;
+  background: #0891b2;
+  color: #fff;
+  font-size: 0.82rem;
+  font-weight: 600;
+  line-height: 1;
+  border: none;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background var(--transition), transform var(--transition);
+}
+
+.btn-fun-fact:hover {
+  background: #0e7490;
+  transform: translateY(-1px);
+}
+
 /* --- New Releases Button --- */
 .btn-new-releases {
   display: inline-flex;
@@ -838,6 +862,26 @@ a:hover {
 
 /* --- Utility --- */
 .hidden { display: none !important; }
+
+/* --- Fun Fact Modal --- */
+.fun-fact-category {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  background: #ecfeff;
+  color: #0891b2;
+  padding: 4px 12px;
+  border-radius: 20px;
+  margin-bottom: 16px;
+}
+
+.fun-fact-text {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--color-text);
+}
 
 /* --- Print --- */
 @media print {
