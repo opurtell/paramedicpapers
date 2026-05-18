@@ -1,49 +1,38 @@
 {
-  "lastUpdated": "2026-05-18T12:51:17Z",
+  "lastUpdated": "2026-05-18T21:16:39Z",
   "featuredPapers": [
     {
-      "id": "41886731",
-      "title": "Introduction of a Clinical Practice Guideline for Patella Reduction by Paramedics: The Effect on Pain Relief, Relocation, and Transport Decision",
+      "id": "41996547",
+      "title": "Intranasal Versus Intramuscular Midazolam in Pediatric Seizure Control: A Systematic Review and Meta-Analysis",
       "journal": "Prehospital Emergency Care",
-      "date": "2026-04-23",
+      "date": "2026-05-06",
+      "pmid": "41996547",
+      "doi": "10.1080/10903127.2026.2658592",
+      "summary": "Meta-analysis testing whether intranasal or intramuscular midazolam works better for paediatric seizures without cannula access \u2014 intramuscular midazolam was associated with faster seizure termination and less need for rescue therapy, especially in the prehospital setting.",
+      "relevance": "\ud83d\udfe2 High",
+      "featuredReason": "Challenges the common prehospital practice of IN midazolam for seizures \u2014 IM administration achieves faster seizure control and fewer rescue requirements, which may change how we approach paediatric status epilepticus in the field."
+    },
+    {
+      "id": "41886731",
+      "title": "Paramedic Patella Reduction \u2014 Ambulance Victoria CPG Evaluation",
+      "journal": "Prehospital Emergency Care",
+      "date": "2026-04-21",
       "pmid": "41886731",
       "doi": "10.1080/10903127.2026.2650541",
-      "summary": "They tested whether Ambulance Victoria's patella-reduction guideline improved analgesia and service outcomes, and found no analgesia gain but fewer cannulae, fewer transports, and shorter cases.",
+      "summary": "Retrospective study (n=1,210) evaluating whether Ambulance Victoria's Nov 2022 CPG for paramedic patella reduction changed practice \u2014 91.8% reduction success rate, transport rate dropped 38.4%, case duration cut by ~33 minutes, and IV cannula use down 17.3%, with no change in effective analgesia rates.",
       "relevance": "\ud83d\udfe2 High",
-      "featuredReason": "Directly relevant to Australian paramedic practice with Ambulance Victoria data showing real-world scope expansion benefits\u2014fewer cannulae, fewer transports, and shorter cases without compromising analgesia."
+      "featuredReason": "Directly relevant to Australian practice \u2014 demonstrates how expanded paramedic scope can safely keep patients out of ED, reducing unnecessary transports and improving operational efficiency while maintaining patient outcomes."
     },
     {
-      "id": "10.1080/10903127.2026.2666857",
-      "title": "Utilization and Metrics Associated with Paramedic Treat and Discharge Medical Directives for Paramedic Services and Emergency Departments: A Retrospective Cohort Study",
-      "journal": "Prehospital Emergency Care",
-      "date": "2026-05-11",
-      "pmid": "",
-      "doi": "10.1080/10903127.2026.2666857",
-      "summary": "This retrospective cohort study analysed paramedic treat and discharge medical directives to understand utilisation patterns and key metrics for prehospital and emergency department decision-making \u2014 the findings provide valuable insights into the scope, safety, and operational impact of treat-and-refer pathways.",
-      "relevance": "\ud83d\udfe2 High",
-      "featuredReason": "Treat-and-refer pathways are expanding globally and this study provides safety and operational metrics for paramedic discharge directives, directly informing scope-of-practice decisions."
-    },
-    {
-      "id": "10.1016/j.resuscitation.2026.111093",
-      "title": "Geographic Inequalities in Prehospital Critical Care for Cardiac Arrest: A Spatial Analysis of Deprivation and Service Configuration",
+      "id": "10.1016/j.resuscitation.2026.111028",
+      "title": "Duration of Emergency Medical Services-Initiated Prehospital Cardiopulmonary Resuscitation Efforts and Survival for Pediatric Patients with Out-of-Hospital Cardiac Arrest",
       "journal": "Resuscitation",
       "date": "2026-05-14",
       "pmid": "",
-      "doi": "10.1016/j.resuscitation.2026.111093",
-      "summary": "This spatial analysis examined how deprivation levels and prehospital critical care service configuration affect cardiac arrest outcomes, revealing persistent geographic disparities in access and survival.",
+      "doi": "10.1016/j.resuscitation.2026.111028",
+      "summary": "This nationwide cohort study examined whether longer prehospital CPR duration affects survival in paediatric out-of-hospital cardiac arrest, finding that prolonged CPR efforts can still yield favourable neurological outcomes in selected patients.",
       "relevance": "\ud83d\udfe2 High",
-      "featuredReason": "Highly relevant to Australia's rural/remote cardiac arrest disparities\u2014this evidence helps argue for better critical care configuration in underserved regions."
-    },
-    {
-      "id": "10.1186/s13049-026-01629-x",
-      "title": "The role of freeze-dried plasma in a world of whole blood: a Canadian prehospital and transport perspective",
-      "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
-      "date": "2026-05-14",
-      "pmid": "",
-      "doi": "10.1186/s13049-026-01629-x",
-      "summary": "This commentary argues freeze-dried plasma complements whole blood in prehospital resuscitation, offering a scalable, shelf-stable solution for rural and remote regions with long transport times.",
-      "relevance": "\ud83d\udfe2 High",
-      "featuredReason": "Directly addresses Australia's rural/remote blood product challenges\u2014freeze-dried plasma could be a game-changer for long retrievals where whole blood logistics are difficult."
+      "featuredReason": "Provides evidence supporting continued resuscitation efforts in paediatric cardiac arrest \u2014 helps inform termination decisions when every minute feels endless, showing that meaningful survival is still possible with prolonged CPR."
     },
     {
       "id": "41950410",
@@ -54,7 +43,18 @@
       "doi": "10.1080/10903127.2026.2655289",
       "summary": "Retrospective Ontario review testing how paramedics decide to withhold CPR in traumatic cardiac arrest \u2014 most no-CPR decisions were based on signs clearly incompatible with life, and post-mortem findings supported paramedic assessment in the large majority of cases.",
       "relevance": "\ud83d\udfe2 High",
-      "featuredReason": "Provides confidence in paramedic termination-of-resuscitation decisions for traumatic cardiac arrest\u2014post-mortem validation showed paramedic assessments were accurate."
+      "featuredReason": "Validates paramedic clinical judgment in one of the toughest decisions we face \u2014 confirms that when we withhold resuscitation in traumatic cardiac arrest based on obvious signs of death, our assessment is usually correct."
+    },
+    {
+      "id": "10.1186/s13049-026-01629-x",
+      "title": "The role of freeze-dried plasma in a world of whole blood: a Canadian prehospital and transport perspective",
+      "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+      "date": "2026-05-14",
+      "pmid": "",
+      "doi": "10.1186/s13049-026-01629-x",
+      "summary": "This commentary argues freeze-dried plasma complements whole blood in prehospital resuscitation, offering a scalable, shelf-stable solution for rural and remote regions with long transport times.",
+      "relevance": "\ud83d\udfe2 High",
+      "featuredReason": "Highly relevant to Australian remote and aeromedical practice \u2014 freeze-dried plasma could revolutionise prehospital haemorrhage control where whole blood isn't feasible, especially given our vast distances and retrieval medicine context."
     }
   ],
   "funFacts": [
@@ -1447,42 +1447,42 @@
   "tldr": {
     "date": "2026-05-18",
     "paperCount": 12,
-    "summary": "\u2022 Prolonged CPR in kids can still pay off with favourable neurological outcomes\u2014don't write them off too early.\n\u2022 Geographic cardiac arrest disparities persist\u2014deprivation levels and critical care configuration drive outcome gaps.\n\u2022 Freeze-dried plasma complements whole blood in prehospital resuscitation, especially for rural and remote retrievals.\n\u2022 Treat-and-discharge directives are working\u2014safe pathways reducing unnecessary transports and ED burden.\n\u2022 LLMs trained on agency-specific protocols showed promising accuracy for clinical decision support at the point of care.\n\u2022 HEMS airway management varies widely\u2014skills and device adoption inconsistent across services.\n\u2022 Most OHCA patients aren't transported\u2014witnessed arrests, bystander CPR, and shorter collapse-to-EMS time increase transport odds.\n\u2022 Forehead EEG electrodes were interpretable in 74% of postanoxic coma cases with moderate agreement, offering a potential screening tool.",
+    "summary": "\u2022 Longer CPR duration still offers survival chance in paediatric OHCA \u2014 don't give up too early.\n\u2022 Freeze-dried plasma may complement whole blood for rural prehospital resuscitation.\n\u2022 IM midazolam works faster than IN for paediatric seizures without cannula access.\n\u2022 Geographic disparities persist in cardiac arrest critical care access and outcomes.\n\u2022 Paramedic treat-and-discharge directives show safe utilisation patterns.\n\u2022 LLMs trained on local protocols show promise for clinical decision support.\n\u2022 Ondansetron prophylaxis doesn't reduce opioid-induced nausea in HEMS.\n\u2022 Situational judgement tests effectively predict paramedic student suitability.",
     "highlights": [
       {
         "id": "10.1016/j.resuscitation.2026.111028",
         "pmid": "",
         "doi": "10.1016/j.resuscitation.2026.111028",
-        "title": "Prolonged CPR in paediatric OHCA",
-        "note": "Nationwide cohort shows longer CPR efforts can still yield favourable neurological outcomes in selected paediatric patients."
-      },
-      {
-        "id": "10.1080/10903127.2026.2666857",
-        "pmid": "",
-        "doi": "10.1080/10903127.2026.2666857",
-        "title": "Paramedic treat-and-discharge directives",
-        "note": "Retrospective cohort confirms safe pathways reducing unnecessary transports without compromising care."
-      },
-      {
-        "id": "10.1016/j.resuscitation.2026.111093",
-        "pmid": "",
-        "doi": "10.1016/j.resuscitation.2026.111093",
-        "title": "Geographic cardiac arrest disparities",
-        "note": "Spatial analysis reveals persistent outcome gaps linked to deprivation and critical care configuration."
+        "title": "Prolonged CPR survival in paediatric cardiac arrest",
+        "note": "Extended prehospital CPR can still achieve good neurological outcomes in kids \u2014 challenges when to terminate."
       },
       {
         "id": "10.1186/s13049-026-01629-x",
         "pmid": "",
         "doi": "10.1186/s13049-026-01629-x",
-        "title": "Freeze-dried plasma prehospital role",
-        "note": "Canadian commentary argues FDP complements whole blood for rural/remote retrievals with long transport times."
+        "title": "Freeze-dried plasma for remote prehospital use",
+        "note": "Shelf-stable plasma could bridge the gap where whole blood isn't feasible in rural retrievals."
       },
       {
-        "id": "10.1080/10903127.2026.2668008",
+        "id": "41996547",
+        "pmid": "41996547",
+        "doi": "10.1080/10903127.2026.2658592",
+        "title": "IM beats IN midazolam for paediatric seizures",
+        "note": "Faster seizure control with IM administration may change practice when cannulation isn't an option."
+      },
+      {
+        "id": "10.1016/j.resuscitation.2026.111093",
         "pmid": "",
-        "doi": "10.1080/10903127.2026.2668008",
-        "title": "LLM protocol decision support",
-        "note": "LLM trained on agency-specific protocols showed promising accuracy for guideline navigation at the point of care."
+        "doi": "10.1016/j.resuscitation.2026.111093",
+        "title": "Geographic inequality in cardiac arrest care",
+        "note": "Where you live still determines your chance of survival \u2014 highlights need for equitable service design."
+      },
+      {
+        "id": "10.1080/10903127.2026.2666857",
+        "pmid": "",
+        "doi": "10.1080/10903127.2026.2666857",
+        "title": "Paramedic treat-and-discharge pathways",
+        "note": "Safe utilisation of treat-and-refer directives shows we can keep appropriate patients out of ED."
       }
     ]
   },
