@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-19T00:04:26Z",
+  "lastUpdated": "2026-05-19T21:16:12Z",
   "featuredPapers": [
     {
       "id": "10.1056/nejmoa2602167",
@@ -9,19 +9,30 @@
       "pmid": "",
       "doi": "10.1056/nejmoa2602167",
       "summary": "Multicenter randomized trial comparing prehospital type O whole blood resuscitation to standard care in trauma patients with hemorrhage.",
-      "relevance": "\ud83d\udd34 High",
-      "featuredReason": "Major RCT from NEJM evaluating prehospital whole blood for trauma bleeding - directly relevant to Australian blood product protocols and rural/remote resuscitation where whole blood or lyophilised plasma may become standard practice."
+      "relevance": "\ud83d\udfe2 High",
+      "featuredReason": "NEJM RCT that could transform prehospital trauma resuscitation. Australian services moving toward field blood need this evidence on whole blood efficacy."
     },
     {
-      "id": "10.1080/10903127.2026.2674263",
-      "title": "Use of double sequential external defibrillation in the United States before and after the DOSE VF randomized clinical trial",
+      "id": "10.1080/10903127.2026.2673361",
+      "title": "Prehospital outcomes associated with an initial strategy of intranasal vs. intramuscular naloxone administration by EMS clinicians: a nationwide cohort study",
       "journal": "Prehospital Emergency Care",
       "date": "2026-05-18",
       "pmid": "",
-      "doi": "10.1080/10903127.2026.2674263",
-      "summary": "Nationwide observational study examined trends in DSED use for refractory VF before and after publication of the DOSE VF trial.",
-      "relevance": "\ud83d\udd34 High",
-      "featuredReason": "DOSE VF fundamentally changed refractory VF management (vector change first, then DSED) - this US trend analysis shows real-world practice changes and offers insights into guideline implementation challenges."
+      "doi": "10.1080/10903127.2026.2673361",
+      "summary": "Nationwide cohort study compared prehospital outcomes for initial intranasal versus intramuscular naloxone administration in suspected opioid overdose.",
+      "relevance": "\ud83d\udfe2 High",
+      "featuredReason": "Massive real-world evidence on IN vs IM naloxone. With daily opioid calls, this directly informs prehospital overdose management decisions."
+    },
+    {
+      "id": "10.1016/j.resuscitation.2026.111028",
+      "title": "Duration of Emergency Medical Services-Initiated Prehospital Cardiopulmonary Resuscitation Efforts and Survival for Pediatric Patients with Out-of-Hospital Cardiac Arrest",
+      "journal": "Resuscitation",
+      "date": "2026-05-14",
+      "pmid": "",
+      "doi": "10.1016/j.resuscitation.2026.111028",
+      "summary": "This nationwide cohort study examined whether longer prehospital CPR duration affects survival in paediatric out-of-hospital cardiac arrest, finding that prolonged CPR efforts can still yield favourable neurological outcomes in selected patients.",
+      "relevance": "\ud83d\udfe2 High",
+      "featuredReason": "Paediatric arrests are rare but devastating. This evidence supports continuing resuscitation efforts longer than we might expect."
     },
     {
       "id": "10.1080/10903127.2026.2666857",
@@ -31,30 +42,19 @@
       "pmid": "",
       "doi": "10.1080/10903127.2026.2666857",
       "summary": "This retrospective cohort study analysed paramedic treat and discharge medical directives to understand utilisation patterns and key metrics for prehospital and emergency department decision-making \u2014 the findings provide valuable insights into the scope, safety, and operational impact of treat-and-refer pathways.",
-      "relevance": "\ud83d\udd34 High",
-      "featuredReason": "Treat-and-refer is expanding in Australian paramedicine - this study provides real-world data on utilisation patterns, safety metrics, and ED impact, directly informing alternative care pathway development."
+      "relevance": "\ud83d\udfe2 High",
+      "featuredReason": "Treat-and-refer pathways are expanding across Australia. This study provides crucial data on utilisation patterns and safety metrics."
     },
     {
-      "id": "41950410",
-      "title": "Paramedics' decisions to withhold resuscitation in traumatic cardiac arrest: accuracy of paramedic assessments compared with autopsy findings",
+      "id": "41886731",
+      "title": "Introduction of a Clinical Practice Guideline for Patella Reduction by Paramedics: The Effect on Pain Relief, Relocation, and Transport Decision",
       "journal": "Prehospital Emergency Care",
-      "date": "2026-05-05",
-      "pmid": "41950410",
-      "doi": "10.1080/10903127.2026.2655289",
-      "summary": "Retrospective Ontario review testing how paramedics decide to withhold CPR in traumatic cardiac arrest \u2014 most no-CPR decisions were based on signs clearly incompatible with life, and post-mortem findings supported paramedic assessment in the large majority of cases.",
-      "relevance": "\ud83d\udd34 High",
-      "featuredReason": "Validates paramedic judgement in trauma arrest - important for crew wellbeing and safety in high-stakes resuscitation decisions, with findings likely transferable to Australian practice."
-    },
-    {
-      "id": "41980047",
-      "title": "Out-of-Hospital Management of Suspected Spinal Cord Injuries: How Much Evidence Does it Take to Change Practice?",
-      "journal": "Prehospital Emergency Care",
-      "date": "2026-05-05",
-      "pmid": "41980047",
-      "doi": "10.1080/10903127.2026.2655989",
-      "summary": "Commentary challenging continued routine spinal immobilisation in suspected spinal injury \u2014 the authors argue decades of evidence now consistently show harm without benefit, and that paramedic scope should evolve to reflect current evidence.",
-      "relevance": "\ud83d\udd34 High",
-      "featuredReason": "Spinal immobilisation practice is overdue for evidence-based review - this commentary synthesises decades of evidence showing lack of benefit and actual harm, directly challenging long-standing spinal clearance protocols."
+      "date": "2026-04-23",
+      "pmid": "41886731",
+      "doi": "10.1080/10903127.2026.2650541",
+      "summary": "They tested whether Ambulance Victoria's patella-reduction guideline improved analgesia and service outcomes, and found no analgesia gain but fewer cannulae, fewer transports, and shorter cases.",
+      "relevance": "\ud83d\udfe2 High",
+      "featuredReason": "Ambulance Victoria data shows paramedic patella reduction works\u2014reducing unnecessary transports and cannula use. Practical scope expansion."
     }
   ],
   "funFacts": [
@@ -1510,39 +1510,10 @@
     }
   ],
   "tldr": {
-    "date": "2026-05-18",
-    "paperCount": 6,
-    "summary": "\u2022 NEJM RCT reports prehospital whole blood outcomes for trauma bleeding - watch for definitive results that could shift resuscitation protocols\n\u2022 DSED use patterns shifted after DOSE VF trial - vector change first, then DSED, became more common as guidelines propagated\n\u2022 Intranasal naloxone holds its own against IM nationwide - supports current practice for rapid reversal without needing cannula access\n\u2022 New blind intubation device (Alfen) shows >98% success in manikin study across experience levels - could simplify difficult airways if trials translate to patients\n\u2022 Traumatic cardiac arrest data quality varies widely - Utstein reporting gaps limit research comparability and quality improvement",
-    "highlights": [
-      {
-        "id": "10.1056/nejmoa2602167",
-        "pmid": "",
-        "doi": "10.1056/nejmoa2602167",
-        "title": "Prehospital Resuscitation with Type O Whole Blood for Trauma and Hemorrhage",
-        "note": "Major multicenter RCT testing whole blood vs component therapy - results will shape future prehospital bleeding protocols."
-      },
-      {
-        "id": "10.1080/10903127.2026.2674263",
-        "pmid": "",
-        "doi": "10.1080/10903127.2026.2674263",
-        "title": "DSED use trends after DOSE VF trial",
-        "note": "US practice shifted toward vector change first, then DSED for refractory VF - guideline diffusion took time to reach ground crews."
-      },
-      {
-        "id": "10.1080/10903127.2026.2673361",
-        "pmid": "",
-        "doi": "10.1080/10903127.2026.2673361",
-        "title": "Intranasal vs IM naloxone outcomes",
-        "note": "Nationwide cohort found intranasal route non-inferior for reversal, supporting current rapid-reversal practice without delaying for IV access."
-      },
-      {
-        "id": "10.1136/bmjinnov-2025-001512",
-        "pmid": "",
-        "doi": "10.1136/bmjinnov-2025-001512",
-        "title": "Alfen blind intubation device",
-        "note": "Novel device achieved >98% success in manikins across all experience levels - promising alternative if real-world performance matches."
-      }
-    ]
+    "date": "2026-05-19",
+    "paperCount": 0,
+    "summary": "No new papers today.",
+    "highlights": []
   },
   "weeklyTldr": {
     "dateRange": "10\u201317 May 2026",
