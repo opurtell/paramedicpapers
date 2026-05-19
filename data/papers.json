@@ -1,38 +1,38 @@
 {
-  "lastUpdated": "2026-05-18T21:16:39Z",
+  "lastUpdated": "2026-05-19T00:04:26Z",
   "featuredPapers": [
     {
-      "id": "41996547",
-      "title": "Intranasal Versus Intramuscular Midazolam in Pediatric Seizure Control: A Systematic Review and Meta-Analysis",
-      "journal": "Prehospital Emergency Care",
-      "date": "2026-05-06",
-      "pmid": "41996547",
-      "doi": "10.1080/10903127.2026.2658592",
-      "summary": "Meta-analysis testing whether intranasal or intramuscular midazolam works better for paediatric seizures without cannula access \u2014 intramuscular midazolam was associated with faster seizure termination and less need for rescue therapy, especially in the prehospital setting.",
-      "relevance": "\ud83d\udfe2 High",
-      "featuredReason": "Challenges the common prehospital practice of IN midazolam for seizures \u2014 IM administration achieves faster seizure control and fewer rescue requirements, which may change how we approach paediatric status epilepticus in the field."
-    },
-    {
-      "id": "41886731",
-      "title": "Paramedic Patella Reduction \u2014 Ambulance Victoria CPG Evaluation",
-      "journal": "Prehospital Emergency Care",
-      "date": "2026-04-21",
-      "pmid": "41886731",
-      "doi": "10.1080/10903127.2026.2650541",
-      "summary": "Retrospective study (n=1,210) evaluating whether Ambulance Victoria's Nov 2022 CPG for paramedic patella reduction changed practice \u2014 91.8% reduction success rate, transport rate dropped 38.4%, case duration cut by ~33 minutes, and IV cannula use down 17.3%, with no change in effective analgesia rates.",
-      "relevance": "\ud83d\udfe2 High",
-      "featuredReason": "Directly relevant to Australian practice \u2014 demonstrates how expanded paramedic scope can safely keep patients out of ED, reducing unnecessary transports and improving operational efficiency while maintaining patient outcomes."
-    },
-    {
-      "id": "10.1016/j.resuscitation.2026.111028",
-      "title": "Duration of Emergency Medical Services-Initiated Prehospital Cardiopulmonary Resuscitation Efforts and Survival for Pediatric Patients with Out-of-Hospital Cardiac Arrest",
-      "journal": "Resuscitation",
-      "date": "2026-05-14",
+      "id": "10.1056/nejmoa2602167",
+      "title": "Prehospital Resuscitation with Type O Whole Blood for Trauma and Hemorrhage",
+      "journal": "New England Journal of Medicine",
+      "date": "2026-05-18",
       "pmid": "",
-      "doi": "10.1016/j.resuscitation.2026.111028",
-      "summary": "This nationwide cohort study examined whether longer prehospital CPR duration affects survival in paediatric out-of-hospital cardiac arrest, finding that prolonged CPR efforts can still yield favourable neurological outcomes in selected patients.",
-      "relevance": "\ud83d\udfe2 High",
-      "featuredReason": "Provides evidence supporting continued resuscitation efforts in paediatric cardiac arrest \u2014 helps inform termination decisions when every minute feels endless, showing that meaningful survival is still possible with prolonged CPR."
+      "doi": "10.1056/nejmoa2602167",
+      "summary": "Multicenter randomized trial comparing prehospital type O whole blood resuscitation to standard care in trauma patients with hemorrhage.",
+      "relevance": "\ud83d\udd34 High",
+      "featuredReason": "Major RCT from NEJM evaluating prehospital whole blood for trauma bleeding - directly relevant to Australian blood product protocols and rural/remote resuscitation where whole blood or lyophilised plasma may become standard practice."
+    },
+    {
+      "id": "10.1080/10903127.2026.2674263",
+      "title": "Use of double sequential external defibrillation in the United States before and after the DOSE VF randomized clinical trial",
+      "journal": "Prehospital Emergency Care",
+      "date": "2026-05-18",
+      "pmid": "",
+      "doi": "10.1080/10903127.2026.2674263",
+      "summary": "Nationwide observational study examined trends in DSED use for refractory VF before and after publication of the DOSE VF trial.",
+      "relevance": "\ud83d\udd34 High",
+      "featuredReason": "DOSE VF fundamentally changed refractory VF management (vector change first, then DSED) - this US trend analysis shows real-world practice changes and offers insights into guideline implementation challenges."
+    },
+    {
+      "id": "10.1080/10903127.2026.2666857",
+      "title": "Utilization and Metrics Associated with Paramedic Treat and Discharge Medical Directives for Paramedic Services and Emergency Departments: A Retrospective Cohort Study",
+      "journal": "Prehospital Emergency Care",
+      "date": "2026-05-11",
+      "pmid": "",
+      "doi": "10.1080/10903127.2026.2666857",
+      "summary": "This retrospective cohort study analysed paramedic treat and discharge medical directives to understand utilisation patterns and key metrics for prehospital and emergency department decision-making \u2014 the findings provide valuable insights into the scope, safety, and operational impact of treat-and-refer pathways.",
+      "relevance": "\ud83d\udd34 High",
+      "featuredReason": "Treat-and-refer is expanding in Australian paramedicine - this study provides real-world data on utilisation patterns, safety metrics, and ED impact, directly informing alternative care pathway development."
     },
     {
       "id": "41950410",
@@ -42,19 +42,19 @@
       "pmid": "41950410",
       "doi": "10.1080/10903127.2026.2655289",
       "summary": "Retrospective Ontario review testing how paramedics decide to withhold CPR in traumatic cardiac arrest \u2014 most no-CPR decisions were based on signs clearly incompatible with life, and post-mortem findings supported paramedic assessment in the large majority of cases.",
-      "relevance": "\ud83d\udfe2 High",
-      "featuredReason": "Validates paramedic clinical judgment in one of the toughest decisions we face \u2014 confirms that when we withhold resuscitation in traumatic cardiac arrest based on obvious signs of death, our assessment is usually correct."
+      "relevance": "\ud83d\udd34 High",
+      "featuredReason": "Validates paramedic judgement in trauma arrest - important for crew wellbeing and safety in high-stakes resuscitation decisions, with findings likely transferable to Australian practice."
     },
     {
-      "id": "10.1186/s13049-026-01629-x",
-      "title": "The role of freeze-dried plasma in a world of whole blood: a Canadian prehospital and transport perspective",
-      "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
-      "date": "2026-05-14",
-      "pmid": "",
-      "doi": "10.1186/s13049-026-01629-x",
-      "summary": "This commentary argues freeze-dried plasma complements whole blood in prehospital resuscitation, offering a scalable, shelf-stable solution for rural and remote regions with long transport times.",
-      "relevance": "\ud83d\udfe2 High",
-      "featuredReason": "Highly relevant to Australian remote and aeromedical practice \u2014 freeze-dried plasma could revolutionise prehospital haemorrhage control where whole blood isn't feasible, especially given our vast distances and retrieval medicine context."
+      "id": "41980047",
+      "title": "Out-of-Hospital Management of Suspected Spinal Cord Injuries: How Much Evidence Does it Take to Change Practice?",
+      "journal": "Prehospital Emergency Care",
+      "date": "2026-05-05",
+      "pmid": "41980047",
+      "doi": "10.1080/10903127.2026.2655989",
+      "summary": "Commentary challenging continued routine spinal immobilisation in suspected spinal injury \u2014 the authors argue decades of evidence now consistently show harm without benefit, and that paramedic scope should evolve to reflect current evidence.",
+      "relevance": "\ud83d\udd34 High",
+      "featuredReason": "Spinal immobilisation practice is overdue for evidence-based review - this commentary synthesises decades of evidence showing lack of benefit and actual harm, directly challenging long-standing spinal clearance protocols."
     }
   ],
   "funFacts": [
@@ -969,6 +969,71 @@
   ],
   "dailyUpdates": [
     {
+      "date": "2026-05-18",
+      "papers": [
+        {
+          "id": "10.31067/acusaglik.1908114",
+          "title": "Field Acuity, Triage Concordance, and Clinical Outcomes in Communicative and Clinically Stable Adults Transported by 112 Ambulance Services",
+          "journal": "Ac\u0131badem \u00dcniversitesi Sa\u011fl\u0131k Bilimleri Dergisi",
+          "date": "2026-05-18",
+          "pmid": "",
+          "doi": "10.31067/acusaglik.1908114",
+          "summary": "Prospective study of 393 patients transported by ambulance found urgent field classification, hypotension, critical hyperglycemia, and prehospital interventions predicted ICU admission.",
+          "relevance": "\ud83d\udfe1 Medium"
+        },
+        {
+          "id": "10.1056/nejmoa2602167",
+          "title": "Prehospital Resuscitation with Type O Whole Blood for Trauma and Hemorrhage",
+          "journal": "New England Journal of Medicine",
+          "date": "2026-05-18",
+          "pmid": "",
+          "doi": "10.1056/nejmoa2602167",
+          "summary": "Multicenter randomized trial comparing prehospital type O whole blood resuscitation to standard care in trauma patients with hemorrhage.",
+          "relevance": "\ud83d\udfe2 High"
+        },
+        {
+          "id": "10.1136/bmjinnov-2025-001512",
+          "title": "Alfen: a novel blind intubation device for prehospital medicine \u2013 a manikin study",
+          "journal": "BMJ Innovations",
+          "date": "2026-05-18",
+          "pmid": "",
+          "doi": "10.1136/bmjinnov-2025-001512",
+          "summary": "Manikin study with 157 intubation attempts achieved >98% success rate with the novel blind intubation device across operators of varying experience.",
+          "relevance": "\ud83d\udfe1 Medium"
+        },
+        {
+          "id": "10.1080/10903127.2026.2674263",
+          "title": "Use of double sequential external defibrillation in the United States before and after the DOSE VF randomized clinical trial",
+          "journal": "Prehospital Emergency Care",
+          "date": "2026-05-18",
+          "pmid": "",
+          "doi": "10.1080/10903127.2026.2674263",
+          "summary": "Nationwide observational study examined trends in DSED use for refractory VF before and after publication of the DOSE VF trial.",
+          "relevance": "\ud83d\udfe2 High"
+        },
+        {
+          "id": "10.1186/s12873-026-01609-5",
+          "title": "Reporting of Utstein-recommended variables in prehospital traumatic cardiac arrest: a scoping review",
+          "journal": "BMC Emergency Medicine",
+          "date": "2026-05-18",
+          "pmid": "",
+          "doi": "10.1186/s12873-026-01609-5",
+          "summary": "Scoping review evaluated the extent to which prehospital traumatic cardiac arrest studies report Utstein-recommended variables to improve data standardization.",
+          "relevance": "\ud83d\udfe1 Medium"
+        },
+        {
+          "id": "10.1080/10903127.2026.2673361",
+          "title": "Prehospital outcomes associated with an initial strategy of intranasal vs. intramuscular naloxone administration by EMS clinicians: a nationwide cohort study",
+          "journal": "Prehospital Emergency Care",
+          "date": "2026-05-18",
+          "pmid": "",
+          "doi": "10.1080/10903127.2026.2673361",
+          "summary": "Nationwide cohort study compared prehospital outcomes for initial intranasal versus intramuscular naloxone administration in suspected opioid overdose.",
+          "relevance": "\ud83d\udfe2 High"
+        }
+      ]
+    },
+    {
       "date": "2026-05-15",
       "papers": [
         {
@@ -1446,43 +1511,36 @@
   ],
   "tldr": {
     "date": "2026-05-18",
-    "paperCount": 12,
-    "summary": "\u2022 Longer CPR duration still offers survival chance in paediatric OHCA \u2014 don't give up too early.\n\u2022 Freeze-dried plasma may complement whole blood for rural prehospital resuscitation.\n\u2022 IM midazolam works faster than IN for paediatric seizures without cannula access.\n\u2022 Geographic disparities persist in cardiac arrest critical care access and outcomes.\n\u2022 Paramedic treat-and-discharge directives show safe utilisation patterns.\n\u2022 LLMs trained on local protocols show promise for clinical decision support.\n\u2022 Ondansetron prophylaxis doesn't reduce opioid-induced nausea in HEMS.\n\u2022 Situational judgement tests effectively predict paramedic student suitability.",
+    "paperCount": 6,
+    "summary": "\u2022 NEJM RCT reports prehospital whole blood outcomes for trauma bleeding - watch for definitive results that could shift resuscitation protocols\n\u2022 DSED use patterns shifted after DOSE VF trial - vector change first, then DSED, became more common as guidelines propagated\n\u2022 Intranasal naloxone holds its own against IM nationwide - supports current practice for rapid reversal without needing cannula access\n\u2022 New blind intubation device (Alfen) shows >98% success in manikin study across experience levels - could simplify difficult airways if trials translate to patients\n\u2022 Traumatic cardiac arrest data quality varies widely - Utstein reporting gaps limit research comparability and quality improvement",
     "highlights": [
       {
-        "id": "10.1016/j.resuscitation.2026.111028",
+        "id": "10.1056/nejmoa2602167",
         "pmid": "",
-        "doi": "10.1016/j.resuscitation.2026.111028",
-        "title": "Prolonged CPR survival in paediatric cardiac arrest",
-        "note": "Extended prehospital CPR can still achieve good neurological outcomes in kids \u2014 challenges when to terminate."
+        "doi": "10.1056/nejmoa2602167",
+        "title": "Prehospital Resuscitation with Type O Whole Blood for Trauma and Hemorrhage",
+        "note": "Major multicenter RCT testing whole blood vs component therapy - results will shape future prehospital bleeding protocols."
       },
       {
-        "id": "10.1186/s13049-026-01629-x",
+        "id": "10.1080/10903127.2026.2674263",
         "pmid": "",
-        "doi": "10.1186/s13049-026-01629-x",
-        "title": "Freeze-dried plasma for remote prehospital use",
-        "note": "Shelf-stable plasma could bridge the gap where whole blood isn't feasible in rural retrievals."
+        "doi": "10.1080/10903127.2026.2674263",
+        "title": "DSED use trends after DOSE VF trial",
+        "note": "US practice shifted toward vector change first, then DSED for refractory VF - guideline diffusion took time to reach ground crews."
       },
       {
-        "id": "41996547",
-        "pmid": "41996547",
-        "doi": "10.1080/10903127.2026.2658592",
-        "title": "IM beats IN midazolam for paediatric seizures",
-        "note": "Faster seizure control with IM administration may change practice when cannulation isn't an option."
+        "id": "10.1080/10903127.2026.2673361",
+        "pmid": "",
+        "doi": "10.1080/10903127.2026.2673361",
+        "title": "Intranasal vs IM naloxone outcomes",
+        "note": "Nationwide cohort found intranasal route non-inferior for reversal, supporting current rapid-reversal practice without delaying for IV access."
       },
       {
-        "id": "10.1016/j.resuscitation.2026.111093",
+        "id": "10.1136/bmjinnov-2025-001512",
         "pmid": "",
-        "doi": "10.1016/j.resuscitation.2026.111093",
-        "title": "Geographic inequality in cardiac arrest care",
-        "note": "Where you live still determines your chance of survival \u2014 highlights need for equitable service design."
-      },
-      {
-        "id": "10.1080/10903127.2026.2666857",
-        "pmid": "",
-        "doi": "10.1080/10903127.2026.2666857",
-        "title": "Paramedic treat-and-discharge pathways",
-        "note": "Safe utilisation of treat-and-refer directives shows we can keep appropriate patients out of ED."
+        "doi": "10.1136/bmjinnov-2025-001512",
+        "title": "Alfen blind intubation device",
+        "note": "Novel device achieved >98% success in manikins across all experience levels - promising alternative if real-world performance matches."
       }
     ]
   },
