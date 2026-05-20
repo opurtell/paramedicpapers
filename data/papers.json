@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-19T21:16:12Z",
+  "lastUpdated": "2026-05-20T21:16:21Z",
   "featuredPapers": [
     {
       "id": "10.1056/nejmoa2602167",
@@ -9,19 +9,19 @@
       "pmid": "",
       "doi": "10.1056/nejmoa2602167",
       "summary": "Multicenter randomized trial comparing prehospital type O whole blood resuscitation to standard care in trauma patients with hemorrhage.",
-      "relevance": "\ud83d\udfe2 High",
-      "featuredReason": "NEJM RCT that could transform prehospital trauma resuscitation. Australian services moving toward field blood need this evidence on whole blood efficacy."
+      "relevance": "High",
+      "featuredReason": "Major NEJM RCT directly testing whole blood vs standard components in the field \u2014 the results will shape blood product policy for trauma services carrying O-negative or low-titre O whole blood."
     },
     {
-      "id": "10.1080/10903127.2026.2673361",
-      "title": "Prehospital outcomes associated with an initial strategy of intranasal vs. intramuscular naloxone administration by EMS clinicians: a nationwide cohort study",
+      "id": "41980047",
+      "title": "Out-of-Hospital Management of Suspected Spinal Cord Injuries: How Much Evidence Does It Take to Change Practice?",
       "journal": "Prehospital Emergency Care",
-      "date": "2026-05-18",
-      "pmid": "",
-      "doi": "10.1080/10903127.2026.2673361",
-      "summary": "Nationwide cohort study compared prehospital outcomes for initial intranasal versus intramuscular naloxone administration in suspected opioid overdose.",
-      "relevance": "\ud83d\udfe2 High",
-      "featuredReason": "Massive real-world evidence on IN vs IM naloxone. With daily opioid calls, this directly informs prehospital overdose management decisions."
+      "date": "2026-05-05",
+      "pmid": "41980047",
+      "doi": "10.1080/10903127.2026.2655989",
+      "summary": "Commentary challenging continued routine spinal immobilisation in suspected spinal injury \u2014 the authors argue decades of evidence now consistently show harm without benefit, and that paramedic scope should evolve to reflect current evidence.",
+      "relevance": "High",
+      "featuredReason": "This isn't just another spinal study \u2014 it's a direct challenge to the core 'immobilise everything' reflex that paramedics have been trained on for decades. The evidence now strongly suggests routine spinal boards and collars cause more harm than good, and this paper pushes paramedic scope to evolve."
     },
     {
       "id": "10.1016/j.resuscitation.2026.111028",
@@ -31,30 +31,30 @@
       "pmid": "",
       "doi": "10.1016/j.resuscitation.2026.111028",
       "summary": "This nationwide cohort study examined whether longer prehospital CPR duration affects survival in paediatric out-of-hospital cardiac arrest, finding that prolonged CPR efforts can still yield favourable neurological outcomes in selected patients.",
-      "relevance": "\ud83d\udfe2 High",
-      "featuredReason": "Paediatric arrests are rare but devastating. This evidence supports continuing resuscitation efforts longer than we might expect."
+      "relevance": "High",
+      "featuredReason": "Paediatric cardiac arrest is emotionally and clinically challenging \u2014 this nationwide study gives you data on when to keep going and when to stop. It shows prolonged CPR isn't futile in kids, which directly changes those brutal termination calls."
     },
     {
-      "id": "10.1080/10903127.2026.2666857",
-      "title": "Utilization and Metrics Associated with Paramedic Treat and Discharge Medical Directives for Paramedic Services and Emergency Departments: A Retrospective Cohort Study",
+      "id": "41996547",
+      "title": "Intranasal Versus Intramuscular Midazolam in Pediatric Seizure Control: A Systematic Review and Meta-Analysis",
       "journal": "Prehospital Emergency Care",
-      "date": "2026-05-11",
-      "pmid": "",
-      "doi": "10.1080/10903127.2026.2666857",
-      "summary": "This retrospective cohort study analysed paramedic treat and discharge medical directives to understand utilisation patterns and key metrics for prehospital and emergency department decision-making \u2014 the findings provide valuable insights into the scope, safety, and operational impact of treat-and-refer pathways.",
-      "relevance": "\ud83d\udfe2 High",
-      "featuredReason": "Treat-and-refer pathways are expanding across Australia. This study provides crucial data on utilisation patterns and safety metrics."
+      "date": "2026-05-06",
+      "pmid": "41996547",
+      "doi": "10.1080/10903127.2026.2658592",
+      "summary": "Meta-analysis testing whether intranasal or intramuscular midazolam works better for paediatric seizures without cannula access \u2014 intramuscular midazolam was associated with faster seizure termination and less need for rescue therapy, especially in the prehospital setting.",
+      "relevance": "High",
+      "featuredReason": "IN vs IM midazolam for seizing kids \u2014 this meta-analysis cuts through the noise and gives you a clear answer. IM was faster and needed fewer rescue drugs. If you're struggling with nasal absorption or trying to avoid cannulating a seizing child, this changes your approach."
     },
     {
-      "id": "41886731",
-      "title": "Introduction of a Clinical Practice Guideline for Patella Reduction by Paramedics: The Effect on Pain Relief, Relocation, and Transport Decision",
+      "id": "41950410",
+      "title": "Paramedics' decisions to withhold resuscitation in traumatic cardiac arrest: accuracy of paramedic assessments compared with autopsy findings",
       "journal": "Prehospital Emergency Care",
-      "date": "2026-04-23",
-      "pmid": "41886731",
-      "doi": "10.1080/10903127.2026.2650541",
-      "summary": "They tested whether Ambulance Victoria's patella-reduction guideline improved analgesia and service outcomes, and found no analgesia gain but fewer cannulae, fewer transports, and shorter cases.",
-      "relevance": "\ud83d\udfe2 High",
-      "featuredReason": "Ambulance Victoria data shows paramedic patella reduction works\u2014reducing unnecessary transports and cannula use. Practical scope expansion."
+      "date": "2026-05-05",
+      "pmid": "41950410",
+      "doi": "10.1080/10903127.2026.2655289",
+      "summary": "Retrospective Ontario review testing how paramedics decide to withhold CPR in traumatic cardiac arrest \u2014 most no-CPR decisions were based on signs clearly incompatible with life, and post-mortem findings supported paramedic assessment in the large majority of cases.",
+      "relevance": "High",
+      "featuredReason": "Traumatic cardiac arrest decisions are gut-wrenching \u2014 this study validates paramedic judgement against autopsy findings. When you call 'incompatible with life', you're right. It's the kind of validation that helps you sleep after those jobs."
     }
   ],
   "funFacts": [
@@ -1510,7 +1510,7 @@
     }
   ],
   "tldr": {
-    "date": "2026-05-19",
+    "date": "2026-05-20",
     "paperCount": 0,
     "summary": "No new papers today.",
     "highlights": []
