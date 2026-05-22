@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-21T21:16:18Z",
+  "lastUpdated": "2026-05-22T21:16:12Z",
   "featuredPapers": [
     {
       "id": "10.1056/nejmoa2602167",
@@ -9,19 +9,19 @@
       "pmid": "",
       "doi": "10.1056/nejmoa2602167",
       "summary": "Multicenter randomized trial comparing prehospital type O whole blood resuscitation to standard care in trauma patients with hemorrhage.",
-      "relevance": "High",
-      "featuredReason": "NEJM-level evidence on prehospital whole blood - this could change how Australian HEMS services approach trauma haemorrhage resuscitation."
+      "relevance": "\ud83d\udd34 High",
+      "featuredReason": "Major NEJM trial that could transform prehospital blood product use in Australia, particularly for HEMS and rapid response units. Whole blood offers clotting factors, platelets, and plasma in one bag - potentially superior to crystalloids for massive haemorrhage before reaching hospital."
     },
     {
-      "id": "41996547",
-      "title": "Intranasal Versus Intramuscular Midazolam in Pediatric Seizure Control: A Systematic Review and Meta-Analysis",
-      "journal": "Prehospital Emergency Care",
-      "date": "2026-05-06",
-      "pmid": "41996547",
-      "doi": "10.1080/10903127.2026.2658592",
-      "summary": "Meta-analysis testing whether intranasal or intramuscular midazolam works better for paediatric seizures without cannula access - intramuscular midazolam was associated with faster seizure termination and less need for rescue therapy.",
-      "relevance": "High",
-      "featuredReason": "Direct practice guidance for one of our most common paediatric calls - may challenge the routine use of IN midazolam."
+      "id": "10.1016/j.resuscitation.2026.111028",
+      "title": "Duration of Emergency Medical Services-Initiated Prehospital Cardiopulmonary Resuscitation Efforts and Survival for Pediatric Patients with Out-of-Hospital Cardiac Arrest",
+      "journal": "Resuscitation",
+      "date": "2026-05-14",
+      "pmid": "",
+      "doi": "10.1016/j.resuscitation.2026.111028",
+      "summary": "Nationwide cohort study examined whether longer prehospital CPR duration affects survival in paediatric out-of-hospital cardiac arrest, finding that prolonged CPR efforts can still yield favourable neurological outcomes in selected patients.",
+      "relevance": "\ud83d\udd34 High",
+      "featuredReason": "Nationwide cohort challenges the notion that paediatric arrests with prolonged CPR are futile. Provides evidence to support continued resuscitation efforts beyond standard timeframes, especially for witnessed arrests or when reversible causes exist. Directly informs termination of resuscitation decisions."
     },
     {
       "id": "41886731",
@@ -31,30 +31,30 @@
       "pmid": "41886731",
       "doi": "10.1080/10903127.2026.2650541",
       "summary": "They tested whether Ambulance Victoria's patella-reduction guideline improved analgesia and service outcomes, and found no analgesia gain but fewer cannulae, fewer transports, and shorter cases.",
-      "relevance": "High",
-      "featuredReason": "Real-world Victorian data showing patella reduction can reduce ED transports and case times - a practical skill expansion that works."
+      "relevance": "\ud83d\udd34 High",
+      "featuredReason": "Australian data from Ambulance Victoria showing paramedic patella reduction can safely reduce ED transports (down 38%) and shorten case duration by 33 minutes. Real-world evidence supporting paramedic scope expansion to avoid unnecessary hospital transports."
     },
     {
-      "id": "10.1016/j.resuscitation.2026.111028",
-      "title": "Duration of Emergency Medical Services-Initiated Prehospital Cardiopulmonary Resuscitation Efforts and Survival for Pediatric Patients with Out-of-Hospital Cardiac Arrest",
-      "journal": "Resuscitation",
-      "date": "2026-05-14",
-      "pmid": "",
-      "doi": "10.1016/j.resuscitation.2026.111028",
-      "summary": "This nationwide cohort study examined whether longer prehospital CPR duration affects survival in paediatric out-of-hospital cardiac arrest, finding that prolonged CPR efforts can still yield favourable neurological outcomes in selected patients.",
-      "relevance": "High",
-      "featuredReason": "Challenges the instinct to stop paediatric CPR early - evidence that longer efforts can still yield meaningful survival."
-    },
-    {
-      "id": "41950410",
-      "title": "Paramedics' decisions to withhold resuscitation in traumatic cardiac arrest: accuracy of paramedic assessments compared with autopsy findings",
+      "id": "41980047",
+      "title": "Out-of-Hospital Management of Suspected Spinal Cord Injuries: How Much Evidence Does it Take to Change Practice?",
       "journal": "Prehospital Emergency Care",
       "date": "2026-05-05",
-      "pmid": "41950410",
-      "doi": "10.1080/10903127.2026.2655289",
-      "summary": "Retrospective Ontario review testing how paramedics decide to withhold CPR in traumatic cardiac arrest - most no-CPR decisions were based on signs clearly incompatible with life, and post-mortem findings supported paramedic assessment in the large majority of cases.",
-      "relevance": "High",
-      "featuredReason": "Validates paramedic judgement in traumatic arrest decisions - supports the move to recognising futility in obvious non-survivors."
+      "pmid": "41980047",
+      "doi": "10.1080/10903127.2026.2655989",
+      "summary": "Commentary challenging continued routine spinal immobilisation in suspected spinal injury \u2014 the authors argue decades of evidence now consistently show harm without benefit, and that paramedic scope should evolve to reflect current evidence.",
+      "relevance": "\ud83d\udd34 High",
+      "featuredReason": "Challenges one of the most entrenched prehospital practices. Evidence suggests spinal boards cause pain, pressure injuries, and airway compromise without preventing neurological deterioration. Paramedic scope may need to evolve toward selective immobilisation based on mechanism and exam findings."
+    },
+    {
+      "id": "10.1080/10903127.2026.2668008",
+      "title": "Can a Large Language Model Grounded in Text-Based Agency-Specific Prehospital Protocols Provide Accurate Care Recommendations?",
+      "journal": "Prehospital Emergency Care",
+      "date": "2026-05-11",
+      "pmid": "",
+      "doi": "10.1080/10903127.2026.2668008",
+      "summary": "This study tested whether a large language model trained on agency-specific prehospital protocol documents could generate accurate care recommendations \u2014 they found promising accuracy for protocol interpretation and clinical decision support, suggesting potential for LLMs to assist with guideline navigation at the point of care.",
+      "relevance": "\ud83d\udfe1 Medium",
+      "featuredReason": "Early evidence that AI could serve as a real-time clinical decision support tool, helping paramedics navigate complex protocols during high-stress calls. While not ready for frontline use, it points toward a future where tech augments clinical judgement without replacing it."
     }
   ],
   "funFacts": [
@@ -1570,25 +1570,10 @@
     }
   ],
   "tldr": {
-    "date": "2026-05-21",
-    "paperCount": 2,
-    "summary": "\u2022 Two studies today examining system-level EMS questions rather than direct clinical care.\n\u2022 AED use disparities study from the US reveals racial and geographic differences in defibrillator access and application.\n\u2022 Alberta geospatial analysis compares air versus ground EMS response and transport times to optimise triage criteria.\n\u2022 Neither study directly changes frontline practice but both inform service planning and equitable access to emergency care.\n\u2022 System-level research like this shapes future policy and resource allocation in prehospital services.",
-    "highlights": [
-      {
-        "id": "10.3390/su18105199",
-        "pmid": "",
-        "doi": "10.3390/su18105199",
-        "title": "Air vs Ground EMS Response Times in Alberta",
-        "note": "Geospatial analysis to identify optimal triage criteria for air versus ground transport."
-      },
-      {
-        "id": "10.3390/healthcare14101413",
-        "pmid": "",
-        "doi": "10.3390/healthcare14101413",
-        "title": "AED Access and Use Disparities in US EMS",
-        "note": "Reveals racial and geographic differences in defibrillator deployment and application patterns."
-      }
-    ]
+    "date": "2026-05-22",
+    "paperCount": 0,
+    "summary": "No new papers today.",
+    "highlights": []
   },
   "weeklyTldr": {
     "dateRange": "10\u201317 May 2026",
