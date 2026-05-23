@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-22T21:16:12Z",
+  "lastUpdated": "2026-05-23T21:16:27Z",
   "featuredPapers": [
     {
       "id": "10.1056/nejmoa2602167",
@@ -9,52 +9,52 @@
       "pmid": "",
       "doi": "10.1056/nejmoa2602167",
       "summary": "Multicenter randomized trial comparing prehospital type O whole blood resuscitation to standard care in trauma patients with hemorrhage.",
-      "relevance": "\ud83d\udd34 High",
-      "featuredReason": "Major NEJM trial that could transform prehospital blood product use in Australia, particularly for HEMS and rapid response units. Whole blood offers clotting factors, platelets, and plasma in one bag - potentially superior to crystalloids for massive haemorrhage before reaching hospital."
+      "relevance": "High",
+      "featuredReason": "Landmark NEJM RCT on prehospital whole blood for trauma \u2013 practice-changing if positive, with direct relevance to haemorrhage resuscitation in Australian aeromedical and trauma systems."
     },
     {
-      "id": "10.1016/j.resuscitation.2026.111028",
-      "title": "Duration of Emergency Medical Services-Initiated Prehospital Cardiopulmonary Resuscitation Efforts and Survival for Pediatric Patients with Out-of-Hospital Cardiac Arrest",
-      "journal": "Resuscitation",
-      "date": "2026-05-14",
+      "id": "10.1016/j.ahj.2026.107378",
+      "title": "Design and rationale of a multicenter paramedic randomized trial of noradrenaline versus adrenaline in the initial management of patients with cardiogenic shock\u2014The PANDA trial",
+      "journal": "American Heart Journal",
+      "date": "2026-05-23",
       "pmid": "",
-      "doi": "10.1016/j.resuscitation.2026.111028",
-      "summary": "Nationwide cohort study examined whether longer prehospital CPR duration affects survival in paediatric out-of-hospital cardiac arrest, finding that prolonged CPR efforts can still yield favourable neurological outcomes in selected patients.",
-      "relevance": "\ud83d\udd34 High",
-      "featuredReason": "Nationwide cohort challenges the notion that paediatric arrests with prolonged CPR are futile. Provides evidence to support continued resuscitation efforts beyond standard timeframes, especially for witnessed arrests or when reversible causes exist. Directly informs termination of resuscitation decisions."
+      "doi": "10.1016/j.ahj.2026.107378",
+      "summary": "This multicenter RCT protocol tests whether noradrenaline improves outcomes compared with adrenaline for paramedic management of cardiogenic shock, with the PANDA trial aiming to settle the debate on optimal vasopressor choice in the prehospital setting.",
+      "relevance": "High",
+      "featuredReason": "Direct RCT addressing a common prehospital dilemma \u2013 which vasopressor for cardiogenic shock? Results could change guideline recommendations and roadside practice."
     },
     {
-      "id": "41886731",
-      "title": "Introduction of a Clinical Practice Guideline for Patella Reduction by Paramedics: The Effect on Pain Relief, Relocation, and Transport Decision",
+      "id": "41996547",
+      "title": "Intranasal Versus Intramuscular Midazolam in Pediatric Seizure Control: A Systematic Review and Meta-Analysis",
       "journal": "Prehospital Emergency Care",
-      "date": "2026-04-23",
-      "pmid": "41886731",
-      "doi": "10.1080/10903127.2026.2650541",
-      "summary": "They tested whether Ambulance Victoria's patella-reduction guideline improved analgesia and service outcomes, and found no analgesia gain but fewer cannulae, fewer transports, and shorter cases.",
-      "relevance": "\ud83d\udd34 High",
-      "featuredReason": "Australian data from Ambulance Victoria showing paramedic patella reduction can safely reduce ED transports (down 38%) and shorten case duration by 33 minutes. Real-world evidence supporting paramedic scope expansion to avoid unnecessary hospital transports."
+      "date": "2026-05-06",
+      "pmid": "41996547",
+      "doi": "10.1080/10903127.2026.2658592",
+      "summary": "Meta-analysis testing whether intranasal or intramuscular midazolam works better for paediatric seizures without cannula access \u2013 intramuscular midazolam was associated with faster seizure termination and less need for rescue therapy, especially in the prehospital setting.",
+      "relevance": "High",
+      "featuredReason": "Practical answer to a common prehospital question: IN or IM midazolam for kids? Faster termination with IM may guide route choice when a cannula isn't essential."
     },
     {
-      "id": "41980047",
-      "title": "Out-of-Hospital Management of Suspected Spinal Cord Injuries: How Much Evidence Does it Take to Change Practice?",
+      "id": "10.1080/10903127.2026.2673361",
+      "title": "Prehospital outcomes associated with an initial strategy of intranasal vs. intramuscular naloxone administration by EMS clinicians: a nationwide cohort study",
+      "journal": "Prehospital Emergency Care",
+      "date": "2026-05-18",
+      "pmid": "",
+      "doi": "10.1080/10903127.2026.2673361",
+      "summary": "Nationwide cohort study compared prehospital outcomes for initial intranasal versus intramuscular naloxone administration in suspected opioid overdose.",
+      "relevance": "High",
+      "featuredReason": "Large-scale comparison of IN vs IM naloxone for opioid overdose \u2013 results could inform first-pass strategy for a very common prehospital presentation."
+    },
+    {
+      "id": "41950410",
+      "title": "Paramedics' decisions to withhold resuscitation in traumatic cardiac arrest: accuracy of paramedic assessments compared with autopsy findings",
       "journal": "Prehospital Emergency Care",
       "date": "2026-05-05",
-      "pmid": "41980047",
-      "doi": "10.1080/10903127.2026.2655989",
-      "summary": "Commentary challenging continued routine spinal immobilisation in suspected spinal injury \u2014 the authors argue decades of evidence now consistently show harm without benefit, and that paramedic scope should evolve to reflect current evidence.",
-      "relevance": "\ud83d\udd34 High",
-      "featuredReason": "Challenges one of the most entrenched prehospital practices. Evidence suggests spinal boards cause pain, pressure injuries, and airway compromise without preventing neurological deterioration. Paramedic scope may need to evolve toward selective immobilisation based on mechanism and exam findings."
-    },
-    {
-      "id": "10.1080/10903127.2026.2668008",
-      "title": "Can a Large Language Model Grounded in Text-Based Agency-Specific Prehospital Protocols Provide Accurate Care Recommendations?",
-      "journal": "Prehospital Emergency Care",
-      "date": "2026-05-11",
-      "pmid": "",
-      "doi": "10.1080/10903127.2026.2668008",
-      "summary": "This study tested whether a large language model trained on agency-specific prehospital protocol documents could generate accurate care recommendations \u2014 they found promising accuracy for protocol interpretation and clinical decision support, suggesting potential for LLMs to assist with guideline navigation at the point of care.",
-      "relevance": "\ud83d\udfe1 Medium",
-      "featuredReason": "Early evidence that AI could serve as a real-time clinical decision support tool, helping paramedics navigate complex protocols during high-stress calls. While not ready for frontline use, it points toward a future where tech augments clinical judgement without replacing it."
+      "pmid": "41950410",
+      "doi": "10.1080/10903127.2026.2655289",
+      "summary": "Retrospective Ontario review testing how paramedics decide to withhold CPR in traumatic cardiac arrest \u2013 most no-CPR decisions were based on signs clearly incompatible with life, and post-mortem findings supported paramedic assessment in the large majority of cases.",
+      "relevance": "High",
+      "featuredReason": "Validates paramedic clinical judgement in traumatic cardiac arrest \u2013 supports no-CPR decisions based on obvious signs of death, with autopsy confirmation of accuracy."
     }
   ],
   "funFacts": [
@@ -969,6 +969,71 @@
   ],
   "dailyUpdates": [
     {
+      "date": "2026-05-23",
+      "papers": [
+        {
+          "id": "10.1016/j.ahj.2026.107378",
+          "title": "Design and rationale of a multicenter paramedic randomized trial of noradrenaline versus adrenaline in the initial management of patients with cardiogenic shock\u2014The PANDA trial",
+          "journal": "American Heart Journal",
+          "date": "2026-05-23",
+          "pmid": "",
+          "doi": "10.1016/j.ahj.2026.107378",
+          "summary": "This multicenter RCT protocol tests whether noradrenaline improves outcomes compared with adrenaline for paramedic management of cardiogenic shock, with the PANDA trial aiming to settle the debate on optimal vasopressor choice in the prehospital setting.",
+          "relevance": "\ud83d\udfe2 High"
+        },
+        {
+          "id": "10.1016/j.ajem.2026.04.029",
+          "title": "EMS protocol gaps for defibrillator pad placement in prehospital STEMI care",
+          "journal": "The American Journal of Emergency Medicine",
+          "date": "2026-05-23",
+          "pmid": "",
+          "doi": "10.1016/j.ajem.2026.04.029",
+          "summary": "They reviewed whether EMS protocols adequately address defibrillator pad placement in prehospital STEMI care, and found significant variability and gaps that may compromise monitoring and pacing capability during transport.",
+          "relevance": "\ud83d\udfe2 High"
+        },
+        {
+          "id": "10.1016/j.resuscitation.2026.111127",
+          "title": "The G\u00e9ocoeur system: recruiting real-time first responders at the point of the defibrillator",
+          "journal": "Resuscitation",
+          "date": "2026-05-23",
+          "pmid": "",
+          "doi": "10.1016/j.resuscitation.2026.111127",
+          "summary": "This study evaluated whether a geolocation system can recruit volunteer first responders to nearby defibrillators in real time, and found it successfully mobilised responders and shortened time to first shock compared with historical controls.",
+          "relevance": "\ud83d\udfe1 Medium"
+        },
+        {
+          "id": "10.1016/j.ijmedinf.2026.106480",
+          "title": "From decision support to clinical integration: A scoping review of artificial intelligence in prehospital airway management",
+          "journal": "International Journal of Medical Informatics",
+          "date": "2026-05-23",
+          "pmid": "",
+          "doi": "10.1016/j.ijmedinf.2026.106480",
+          "summary": "They reviewed AI applications in prehospital airway management and found most tools remain experimental, with limited integration into clinical workflows despite promising capabilities for difficult airway prediction and real-time guidance.",
+          "relevance": "\ud83d\udfe1 Medium"
+        },
+        {
+          "id": "10.1016/j.ienj.2026.101837",
+          "title": "Impact of practical-based education on paramedic students' confidence and competence in assessing and managing mental health conditions",
+          "journal": "International Emergency Nursing",
+          "date": "2026-05-23",
+          "pmid": "",
+          "doi": "10.1016/j.ienj.2026.101837",
+          "summary": "They tested whether practical-based education improved paramedic students' confidence and competence in mental health assessment and management, and found hands-on training significantly improved both self-efficacy and clinical performance compared with traditional classroom teaching.",
+          "relevance": "\ud83d\udfe1 Medium"
+        },
+        {
+          "id": "10.1016/j.resuscitation.2026.111119",
+          "title": "Manufactured futility: prehospital system failure as the primary determinant of resuscitation outcomes in India",
+          "journal": "Resuscitation",
+          "date": "2026-05-23",
+          "pmid": "",
+          "doi": "10.1016/j.resuscitation.2026.111119",
+          "summary": "This commentary argues that poor resuscitation outcomes in India are driven by prehospital system failures rather than individual provider limitations, highlighting the need for structural reforms in emergency response infrastructure and training.",
+          "relevance": "\ud83d\udd34 Low"
+        }
+      ]
+    },
+    {
       "date": "2026-05-21",
       "papers": [
         {
@@ -1570,10 +1635,46 @@
     }
   ],
   "tldr": {
-    "date": "2026-05-22",
-    "paperCount": 0,
-    "summary": "No new papers today.",
-    "highlights": []
+    "date": "2026-05-23",
+    "paperCount": 6,
+    "summary": "\u2022 PANDA trial protocol launched to settle the noradrenaline vs adrenaline debate in prehospital cardiogenic shock.\n\u2022 EMS protocols show significant gaps in defibrillator pad placement guidance for STEMI patients during transport.\n\u2022 G\u00e9ocoeur geolocation system successfully recruits volunteer first responders to AEDs, shortening time to first shock.\n\u2022 AI tools for prehospital airway management remain experimental with limited clinical integration despite promising capabilities.\n\u2022 Practical-based training significantly improves paramedic student confidence and competence in mental health assessment.\n\u2022 Commentary highlights prehospital system failures rather than provider limitations as the primary driver of poor resuscitation outcomes in India.",
+    "highlights": [
+      {
+        "id": "10.1016/j.ahj.2026.107378",
+        "pmid": "",
+        "doi": "10.1016/j.ahj.2026.107378",
+        "title": "Noradrenaline vs Adrenaline in Cardiogenic Shock",
+        "note": "Multicenter RCT protocol to determine optimal vasopressor choice for paramedic-managed cardiogenic shock."
+      },
+      {
+        "id": "10.1016/j.ajem.2026.04.029",
+        "pmid": "",
+        "doi": "10.1016/j.ajem.2026.04.029",
+        "title": "Defibrillator Pad Placement Gaps in STEMI",
+        "note": "Protocol variability in pad placement may compromise monitoring and pacing capability during STEMI transport."
+      },
+      {
+        "id": "10.1016/j.resuscitation.2026.111127",
+        "pmid": "",
+        "doi": "10.1016/j.resuscitation.2026.111127",
+        "title": "Geolocation System for AED Access",
+        "note": "Recruited volunteer first responders to nearby defibrillators faster than historical controls."
+      },
+      {
+        "id": "10.1016/j.ienj.2026.101837",
+        "pmid": "",
+        "doi": "10.1016/j.ienj.2026.101837",
+        "title": "Practical Mental Health Training",
+        "note": "Hands-on education boosted paramedic student confidence and competence in mental health assessment."
+      },
+      {
+        "id": "10.1016/j.ijmedinf.2026.106480",
+        "pmid": "",
+        "doi": "10.1016/j.ijmedinf.2026.106480",
+        "title": "AI for Prehospital Airway Management",
+        "note": "Most AI airway tools remain experimental with limited integration into clinical workflows."
+      }
+    ]
   },
   "weeklyTldr": {
     "dateRange": "10\u201317 May 2026",
