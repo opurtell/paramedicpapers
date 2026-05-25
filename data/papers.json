@@ -1,17 +1,6 @@
 {
-  "lastUpdated": "2026-05-24T21:16:39Z",
+  "lastUpdated": "2026-05-25T21:16:50Z",
   "featuredPapers": [
-    {
-      "id": "10.1016/j.ahj.2026.107378",
-      "title": "Design and rationale of a multicenter paramedic randomized trial of noradrenaline versus adrenaline in the initial management of patients with cardiogenic shock\u2014The PANDA trial",
-      "journal": "American Heart Journal",
-      "date": "2026-05-23",
-      "pmid": "",
-      "doi": "10.1016/j.ahj.2026.107378",
-      "summary": "This multicenter RCT protocol tests whether noradrenaline improves outcomes compared with adrenaline for paramedic management of cardiogenic shock, with the PANDA trial aiming to settle the debate on optimal vasopressor choice in the prehospital setting.",
-      "relevance": "\ud83d\udd34 High",
-      "featuredReason": "Directly addresses a fundamental prehospital pharmacology question that paramedics face weekly: which vasopressor is better for cardiogenic shock? This trial could rewrite drug administration guidelines for acute heart failure and MI patients in the field."
-    },
     {
       "id": "10.1056/nejmoa2602167",
       "title": "Prehospital Resuscitation with Type O Whole Blood for Trauma and Hemorrhage",
@@ -20,41 +9,50 @@
       "pmid": "",
       "doi": "10.1056/nejmoa2602167",
       "summary": "Multicenter randomized trial comparing prehospital type O whole blood resuscitation to standard care in trauma patients with hemorrhage.",
-      "relevance": "\ud83d\udd34 High",
-      "featuredReason": "NEJM-level evidence on prehospital whole blood\u2014a game-changer for rural and remote Australian services where transport times blow past 30 minutes. If positive, this validates what retrieval teams have been arguing for: blood on the rig saves lives."
+      "relevance": "\ud83d\udfe2 High",
+      "featuredReason": "This NEJM RCT could fundamentally change how we resuscitate trauma patients with haemorrhage\u2014giving whole blood in the field instead of crystalloids or component therapy may improve outcomes by delivering balanced resuscitation earlier in the care chain."
     },
     {
-      "id": "10.1080/10903127.2026.2655289",
-      "title": "Paramedics' decisions to withhold resuscitation in traumatic cardiac arrest: accuracy of paramedic assessments compared with autopsy findings",
-      "journal": "Prehospital Emergency Care",
-      "date": "2026-05-05",
-      "pmid": "41950410",
-      "doi": "10.1080/10903127.2026.2655289",
-      "summary": "Retrospective Ontario review testing how paramedics decide to withhold CPR in traumatic cardiac arrest\u2014most no-CPR decisions were based on signs clearly incompatible with life, and post-mortem findings supported paramedic assessment in the large majority of cases.",
-      "relevance": "\ud83d\udd34 High",
-      "featuredReason": "Validates paramedic clinical judgement in one of the toughest calls we make: when to stop in traumatic arrest. Finding that our field assessments align with autopsy results provides evidence-based support for termination protocols and reduces second-guessing."
-    },
-    {
-      "id": "10.1007/s00068-026-03216-2",
-      "title": "Digital coordination in mass casualty incidents: a retrospective analysis of prehospital distribution times before and after IVENA-MANV implementation",
-      "journal": "European Journal of Trauma and Emergency Surgery",
-      "date": "2026-05-20",
+      "id": "10.1016/j.ahj.2026.107378",
+      "title": "Design and rationale of a multicenter paramedic randomized trial of noradrenaline versus adrenaline in the initial management of patients with cardiogenic shock\u2014The PANDA trial",
+      "journal": "American Heart Journal",
+      "date": "2026-05-23",
       "pmid": "",
-      "doi": "10.1007/s00068-026-03216-2",
-      "summary": "Retrospective evaluation of whether the IVENA-MANV digital coordination system improved prehospital distribution times during mass casualty incidents.",
-      "relevance": "\ud83d\udd34 High",
-      "featuredReason": "Mass casualty incidents are rare but catastrophic\u2014when they hit, coordination systems matter. This study provides evidence that digital coordination actually speeds distribution, relevant for Australian services preparing for major events and natural disasters."
+      "doi": "10.1016/j.ahj.2026.107378",
+      "featuredReason": "The PANDA trial is the first major prehospital RCT comparing noradrenaline with adrenaline for cardiogenic shock\u2014settling a long-standing debate about which vasopressor should be our go-to in the field, with direct implications for Australian paramedic protocols."
     },
     {
-      "id": "41967756",
-      "title": "Factors associated with hospital transport in emergency medical services-attended out-of-hospital cardiac arrest",
+      "id": "10.1080/10903127.2026.2673361",
+      "title": "Prehospital outcomes associated with an initial strategy of intranasal vs. intramuscular naloxone administration by EMS clinicians: a nationwide cohort study",
+      "journal": "Prehospital Emergency Care",
+      "date": "2026-05-18",
+      "pmid": "",
+      "doi": "10.1080/10903127.2026.2673361",
+      "summary": "Nationwide cohort study compared prehospital outcomes for initial intranasal versus intramuscular naloxone administration in suspected opioid overdose.",
+      "relevance": "\ud83d\udfe2 High",
+      "featuredReason": "Intranasal naloxone is quicker and less invasive than IM, but does it deliver the goods in real-world practice? This nationwide cohort study provides robust evidence on the relative effectiveness of both routes\u2014directly informing how we approach opioid overdoses on the road."
+    },
+    {
+      "id": "10.1186/s13049-026-01629-x",
+      "title": "The role of freeze-dried plasma in a world of whole blood: a Canadian prehospital and transport perspective",
+      "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+      "date": "2026-05-14",
+      "pmid": "",
+      "doi": "10.1186/s13049-026-01629-x",
+      "summary": "This commentary argues freeze-dried plasma complements whole blood in prehospital resuscitation, offering a scalable, shelf-stable solution for rural and remote regions with long transport times.",
+      "relevance": "\ud83d\udfe2 High",
+      "featuredReason": "Freeze-dried plasma offers a shelf-stable, lightweight resuscitation option for Australian rural and remote paramedics who face long transports without cold chain storage\u2014complementing whole blood programs and expanding our capacity to deliver balanced resuscitation."
+    },
+    {
+      "id": "10.1016/j.resuscitation.2026.111028",
+      "title": "Duration of Emergency Medical Services-Initiated Prehospital Cardiopulmonary Resuscitation Efforts and Survival for Pediatric Patients with Out-of-Hospital Cardiac Arrest",
       "journal": "Resuscitation",
-      "date": "2026-05-12",
-      "pmid": "41967756",
-      "doi": "10.1016/j.resuscitation.2026.111088",
-      "summary": "Retrospective cohort of 3339 OHCA patients found 68.9% were not transported, with transport more likely in witnessed arrests, bystander CPR, hypertension, and shorter time from last known normal, and less likely with older age, malignancy, prior stroke, and arrests at home.",
-      "relevance": "\ud83d\udd34 High",
-      "featuredReason": "Explains the factors driving one of the most controversial decisions in OHCA care: transport or scene termination? Understanding which patients get transported helps refine transport protocols and supports clinical judgement in termination discussions."
+      "date": "2026-05-14",
+      "pmid": "",
+      "doi": "10.1016/j.resuscitation.2026.111028",
+      "summary": "This nationwide cohort study examined whether longer prehospital CPR duration affects survival in paediatric out-of-hospital cardiac arrest, finding that prolonged CPR efforts can still yield favourable neurological outcomes in selected patients.",
+      "relevance": "\ud83d\udfe2 High",
+      "featuredReason": "Paediatric cardiac arrest is rare but devastating\u2014this study challenges when to call it off, showing that prolonged CPR can still produce good neurological outcomes, forcing us to rethink our termination criteria for paediatric patients."
     }
   ],
   "funFacts": [
@@ -1635,41 +1633,32 @@
     }
   ],
   "tldr": {
-    "date": "2026-05-24",
+    "date": "2026-05-25",
     "paperCount": 0,
     "summary": "No new papers today.",
     "highlights": []
   },
   "weeklyTldr": {
-    "dateRange": "10\u201317 May 2026",
-    "summary": "Pediatric OHCA: longer prehospital CPR duration still offers survival chance\nMass gathering EMS planning demonstrated strong multi-agency coordination\nGeographic disparities persist in cardiac arrest critical care access\nSituational judgement tests show promise for paramedic student selection\nItalian HEMS shows variation in advanced airway device use",
+    "dateRange": "17\u201324 May 2026",
+    "summary": "IM naloxone beats IN for physiological and operational outcomes in a 3.1 million-record NEMSIS cohort\nDSED uptake rose after DOSE VF, but most eligible refractory VF patients still aren't getting it",
     "topPicks": [
       {
-        "title": "Duration of Emergency Medical Services-Initiated Prehospital Cardiopulmonary Resuscitation Efforts and Survival for Pediatric Patients with Out-of-Hospital Cardiac Arrest",
-        "authors": "Masashi Okubo, Sho Komukai, Junichi Izawa, et al.",
+        "title": "Prehospital outcomes associated with an initial strategy of intranasal vs. intramuscular naloxone administration",
+        "authors": "Tanner Smida, Remle Crowe, Melody Glenn, Anjni Joiner, James Bardes, et al.",
         "journal": "",
-        "summary": "This nationwide cohort examined whether longer prehospital CPR affects survival in paediatric OHCA, finding prolonged CPR can still yield favourable outcomes in selected patients.",
-        "relevance": "\ud83d\udfe2 High transferability \u2014 Directly guides paediatric resuscitation duration decisions",
-        "pmid": "Not yet indexed on PubMed",
-        "doi": "10.1016/j.resuscitation.2026.111028"
+        "summary": "Not yet indexed on PubMed",
+        "relevance": "\ud83d\udfe2 High transferability \u2014 Directly applicable to initial naloxone route choice",
+        "pmid": "",
+        "doi": "10.1080/10903127.2026.2673361"
       },
       {
-        "title": "Geographic Inequalities in Prehospital Critical Care for Cardiac Arrest: A Spatial Analysis of Deprivation and Service Configuration",
-        "authors": "",
+        "title": "Use of double sequential external defibrillation in the United States before and after the DOSE VF randomized clinical trial",
+        "authors": "Sheldon Cheskes, et al.",
         "journal": "",
-        "summary": "This spatial analysis examined how deprivation and service configuration affect OHCA outcomes, revealing persistent geographic disparities in access and survival.",
-        "relevance": "\ud83d\udfe2 High transferability \u2014 System-level equity directly applicable to Australian service planning",
-        "pmid": "Not yet indexed on PubMed",
-        "doi": "10.1016/j.resuscitation.2026.111093"
-      },
-      {
-        "title": "Evaluation of a Situational Judgment Test for Paramedic Student Selection",
-        "authors": "",
-        "journal": "",
-        "summary": "This study validated a situational judgement test for paramedic student selection, finding it effectively assessed non-technical skills and predicted training suitability.",
-        "relevance": "\ud83d\udfe2 High transferability \u2014 Directly relevant to Australian paramedic programme admissions",
-        "pmid": "Not yet indexed on PubMed",
-        "doi": "10.1080/10903127.2026.2669615"
+        "summary": "Not yet indexed on PubMed",
+        "relevance": "\ud83d\udfe2 High transferability \u2014 Highlights potential barriers to protocol implementation",
+        "pmid": "",
+        "doi": "10.1080/10903127.2026.2674263"
       }
     ]
   }
