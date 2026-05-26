@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-25T21:16:50Z",
+  "lastUpdated": "2026-05-26T21:16:22Z",
   "featuredPapers": [
     {
       "id": "10.1056/nejmoa2602167",
@@ -9,8 +9,8 @@
       "pmid": "",
       "doi": "10.1056/nejmoa2602167",
       "summary": "Multicenter randomized trial comparing prehospital type O whole blood resuscitation to standard care in trauma patients with hemorrhage.",
-      "relevance": "\ud83d\udfe2 High",
-      "featuredReason": "This NEJM RCT could fundamentally change how we resuscitate trauma patients with haemorrhage\u2014giving whole blood in the field instead of crystalloids or component therapy may improve outcomes by delivering balanced resuscitation earlier in the care chain."
+      "relevance": "High",
+      "featuredReason": "Game-changing for Australian trauma care\u2014bringing whole blood to the roadside could save lives in our long transport times, especially in rural and remote regions where definitive care is hours away."
     },
     {
       "id": "10.1016/j.ahj.2026.107378",
@@ -19,29 +19,31 @@
       "date": "2026-05-23",
       "pmid": "",
       "doi": "10.1016/j.ahj.2026.107378",
-      "featuredReason": "The PANDA trial is the first major prehospital RCT comparing noradrenaline with adrenaline for cardiogenic shock\u2014settling a long-standing debate about which vasopressor should be our go-to in the field, with direct implications for Australian paramedic protocols."
+      "summary": "This multicenter RCT protocol tests whether noradrenaline improves outcomes compared with adrenaline for paramedic management of cardiogenic shock, with the PANDA trial aiming to settle the debate on optimal vasopressor choice in the prehospital setting.",
+      "relevance": "High",
+      "featuredReason": "Directly relevant to prehospital practice\u2014noradrenaline versus adrenaline is a live debate in Australian cardiac arrest and shock protocols, and this trial could change what we push in the field."
     },
     {
-      "id": "10.1080/10903127.2026.2673361",
-      "title": "Prehospital outcomes associated with an initial strategy of intranasal vs. intramuscular naloxone administration by EMS clinicians: a nationwide cohort study",
+      "id": "41950410",
+      "title": "Paramedics' decisions to withhold resuscitation in traumatic cardiac arrest: accuracy of paramedic assessments compared with autopsy findings",
       "journal": "Prehospital Emergency Care",
-      "date": "2026-05-18",
-      "pmid": "",
-      "doi": "10.1080/10903127.2026.2673361",
-      "summary": "Nationwide cohort study compared prehospital outcomes for initial intranasal versus intramuscular naloxone administration in suspected opioid overdose.",
-      "relevance": "\ud83d\udfe2 High",
-      "featuredReason": "Intranasal naloxone is quicker and less invasive than IM, but does it deliver the goods in real-world practice? This nationwide cohort study provides robust evidence on the relative effectiveness of both routes\u2014directly informing how we approach opioid overdoses on the road."
+      "date": "2026-05-05",
+      "pmid": "41950410",
+      "doi": "10.1080/10903127.2026.2655289",
+      "summary": "Retrospective Ontario review testing how paramedics decide to withhold CPR in traumatic cardiac arrest\u2014most no-CPR decisions were based on signs clearly incompatible with life, and post-mortem findings supported paramedic assessment in the large majority of cases.",
+      "relevance": "High",
+      "featuredReason": "Validates paramedic judgment in one of the hardest calls we make\u2014this evidence supports standing orders for withholding resuscitation in obvious non-survivable traumatic arrest, reducing futile interventions and supporting crews in difficult decisions."
     },
     {
-      "id": "10.1186/s13049-026-01629-x",
-      "title": "The role of freeze-dried plasma in a world of whole blood: a Canadian prehospital and transport perspective",
-      "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
-      "date": "2026-05-14",
+      "id": "10.1080/10903127.2026.2666857",
+      "title": "Utilization and Metrics Associated with Paramedic Treat and Discharge Medical Directives for Paramedic Services and Emergency Departments: A Retrospective Cohort Study",
+      "journal": "Prehospital Emergency Care",
+      "date": "2026-05-11",
       "pmid": "",
-      "doi": "10.1186/s13049-026-01629-x",
-      "summary": "This commentary argues freeze-dried plasma complements whole blood in prehospital resuscitation, offering a scalable, shelf-stable solution for rural and remote regions with long transport times.",
-      "relevance": "\ud83d\udfe2 High",
-      "featuredReason": "Freeze-dried plasma offers a shelf-stable, lightweight resuscitation option for Australian rural and remote paramedics who face long transports without cold chain storage\u2014complementing whole blood programs and expanding our capacity to deliver balanced resuscitation."
+      "doi": "10.1080/10903127.2026.2666857",
+      "summary": "This retrospective cohort study analysed paramedic treat and discharge medical directives to understand utilisation patterns and key metrics for prehospital and emergency department decision-making\u2014the findings provide valuable insights into the scope, safety, and operational impact of treat-and-refer pathways.",
+      "relevance": "High",
+      "featuredReason": "Treat-and-refer is expanding across Australian services\u2014this study provides real-world evidence on safety and utilisation, supporting paramedic autonomy in managing low-acuity patients without unnecessary ED transport."
     },
     {
       "id": "10.1016/j.resuscitation.2026.111028",
@@ -51,8 +53,8 @@
       "pmid": "",
       "doi": "10.1016/j.resuscitation.2026.111028",
       "summary": "This nationwide cohort study examined whether longer prehospital CPR duration affects survival in paediatric out-of-hospital cardiac arrest, finding that prolonged CPR efforts can still yield favourable neurological outcomes in selected patients.",
-      "relevance": "\ud83d\udfe2 High",
-      "featuredReason": "Paediatric cardiac arrest is rare but devastating\u2014this study challenges when to call it off, showing that prolonged CPR can still produce good neurological outcomes, forcing us to rethink our termination criteria for paediatric patients."
+      "relevance": "High",
+      "featuredReason": "Paediatric arrests hit crews hard\u2014this evidence supports continuing resuscitation efforts beyond traditional time limits in selected cases, potentially saving children we might otherwise have called off."
     }
   ],
   "funFacts": [
@@ -967,6 +969,31 @@
   ],
   "dailyUpdates": [
     {
+      "date": "2026-05-26",
+      "papers": [
+        {
+          "id": "10.1186/s13049-026-01632-2",
+          "title": "Feasibility and challenges of large language model (LLM)-generated neonatal resuscitation simulations: a multicenter exploratory study",
+          "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+          "date": "2026-05-26",
+          "pmid": "",
+          "doi": "10.1186/s13049-026-01632-2",
+          "summary": "This prospective multicenter pilot tested whether ChatGPT-4o and DeepSeek-R1 could generate valid neonatal resuscitation simulation scenarios for training, finding ChatGPT-4o performed comparably to official NRP scenarios in overall quality while demonstrating strengths in debriefing design but having gaps in dynamic vital sign provision.",
+          "relevance": "\ud83d\udfe1 Medium"
+        },
+        {
+          "id": "10.1186/s13049-026-01631-3",
+          "title": "Epidemiology and severity of mountain rescue missions in Poland: a retrospective study of 9,477 patients rescued by the Tatra Mountain Rescue Service",
+          "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+          "date": "2026-05-26",
+          "pmid": "",
+          "doi": "10.1186/s13049-026-01631-3",
+          "summary": "Retrospective analysis of 9,477 mountain rescue missions over 10 years found a median NACA score of 2 with 38% classified as moderate-to-severe, seasonal variation in severity, and helicopter use correlated with higher acuity, providing epidemiological data that could inform training and resource planning for wilderness EMS.",
+          "relevance": "\ud83d\udfe1 Medium"
+        }
+      ]
+    },
+    {
       "date": "2026-05-23",
       "papers": [
         {
@@ -1633,10 +1660,25 @@
     }
   ],
   "tldr": {
-    "date": "2026-05-25",
-    "paperCount": 0,
-    "summary": "No new papers today.",
-    "highlights": []
+    "date": "2026-05-26",
+    "paperCount": 2,
+    "summary": "\u2022 ChatGPT-4o can generate neonatal resuscitation training scenarios that match official NRP standards in quality\u2014AI could become a cost-effective training tool for paramedic education.\n\u2022 Polish mountain rescue data shows 38% of moderate-to-severe cases with higher acuity correlating to helicopter use\u2014patterns relevant to Australian wilderness EMS planning and resource allocation.",
+    "highlights": [
+      {
+        "id": "10.1186/s13049-026-01632-2",
+        "pmid": "",
+        "doi": "10.1186/s13049-026-01632-2",
+        "title": "AI for Neonatal Resuscitation Training",
+        "note": "ChatGPT-4o generates valid training scenarios matching NRP standards\u2014could expand paramedic education access at scale."
+      },
+      {
+        "id": "10.1186/s13049-026-01631-3",
+        "pmid": "",
+        "doi": "10.1186/s13049-026-01631-3",
+        "title": "Mountain Rescue Epidemiology",
+        "note": "38% of mountain rescues are moderate-to-severe\u2014data that can inform Australian wilderness EMS training and helicopter deployment criteria."
+      }
+    ]
   },
   "weeklyTldr": {
     "dateRange": "17\u201324 May 2026",
