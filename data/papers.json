@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-26T21:16:22Z",
+  "lastUpdated": "2026-05-27T21:18:24Z",
   "featuredPapers": [
     {
       "id": "10.1056/nejmoa2602167",
@@ -9,8 +9,19 @@
       "pmid": "",
       "doi": "10.1056/nejmoa2602167",
       "summary": "Multicenter randomized trial comparing prehospital type O whole blood resuscitation to standard care in trauma patients with hemorrhage.",
-      "relevance": "High",
-      "featuredReason": "Game-changing for Australian trauma care\u2014bringing whole blood to the roadside could save lives in our long transport times, especially in rural and remote regions where definitive care is hours away."
+      "relevance": "\ud83d\udd34 High",
+      "featuredReason": "First major RCT on prehospital whole blood in trauma \u2014 results could reshape resuscitation protocols for major haemorrhage in Australia."
+    },
+    {
+      "id": "10.1080/10903127.2026.2673361",
+      "title": "Prehospital outcomes associated with an initial strategy of intranasal vs. intramuscular naloxone administration by EMS clinicians: a nationwide cohort study",
+      "journal": "Prehospital Emergency Care",
+      "date": "2026-05-18",
+      "pmid": "",
+      "doi": "10.1080/10903127.2026.2673361",
+      "summary": "Nationwide cohort study compared prehospital outcomes for initial intranasal versus intramuscular naloxone administration in suspected opioid overdose.",
+      "relevance": "\ud83d\udd34 High",
+      "featuredReason": "3.1 million patient cohort settling the IN vs IM naloxone debate \u2014 directly relevant to initial route choice in the opioid crisis."
     },
     {
       "id": "10.1016/j.ahj.2026.107378",
@@ -20,41 +31,30 @@
       "pmid": "",
       "doi": "10.1016/j.ahj.2026.107378",
       "summary": "This multicenter RCT protocol tests whether noradrenaline improves outcomes compared with adrenaline for paramedic management of cardiogenic shock, with the PANDA trial aiming to settle the debate on optimal vasopressor choice in the prehospital setting.",
-      "relevance": "High",
-      "featuredReason": "Directly relevant to prehospital practice\u2014noradrenaline versus adrenaline is a live debate in Australian cardiac arrest and shock protocols, and this trial could change what we push in the field."
+      "relevance": "\ud83d\udd34 High",
+      "featuredReason": "First RCT testing noradrenaline vs adrenaline for prehospital cardiogenic shock \u2014 could change vasopressor practice for these critical patients."
     },
     {
-      "id": "41950410",
-      "title": "Paramedics' decisions to withhold resuscitation in traumatic cardiac arrest: accuracy of paramedic assessments compared with autopsy findings",
+      "id": "10.1080/10903127.2026.2674263",
+      "title": "Use of double sequential external defibrillation in the United States before and after the DOSE VF randomized clinical trial",
       "journal": "Prehospital Emergency Care",
-      "date": "2026-05-05",
-      "pmid": "41950410",
-      "doi": "10.1080/10903127.2026.2655289",
-      "summary": "Retrospective Ontario review testing how paramedics decide to withhold CPR in traumatic cardiac arrest\u2014most no-CPR decisions were based on signs clearly incompatible with life, and post-mortem findings supported paramedic assessment in the large majority of cases.",
-      "relevance": "High",
-      "featuredReason": "Validates paramedic judgment in one of the hardest calls we make\u2014this evidence supports standing orders for withholding resuscitation in obvious non-survivable traumatic arrest, reducing futile interventions and supporting crews in difficult decisions."
-    },
-    {
-      "id": "10.1080/10903127.2026.2666857",
-      "title": "Utilization and Metrics Associated with Paramedic Treat and Discharge Medical Directives for Paramedic Services and Emergency Departments: A Retrospective Cohort Study",
-      "journal": "Prehospital Emergency Care",
-      "date": "2026-05-11",
+      "date": "2026-05-18",
       "pmid": "",
-      "doi": "10.1080/10903127.2026.2666857",
-      "summary": "This retrospective cohort study analysed paramedic treat and discharge medical directives to understand utilisation patterns and key metrics for prehospital and emergency department decision-making\u2014the findings provide valuable insights into the scope, safety, and operational impact of treat-and-refer pathways.",
-      "relevance": "High",
-      "featuredReason": "Treat-and-refer is expanding across Australian services\u2014this study provides real-world evidence on safety and utilisation, supporting paramedic autonomy in managing low-acuity patients without unnecessary ED transport."
+      "doi": "10.1080/10903127.2026.2674263",
+      "summary": "Nationwide observational study examined trends in DSED use for refractory VF before and after publication of the DOSE VF trial.",
+      "relevance": "\ud83d\udd34 High",
+      "featuredReason": "Shows DSED uptake post-DOSE VF \u2014 helps explain why a potentially life-saving technique for refractory VF isn't being used in eligible patients."
     },
     {
-      "id": "10.1016/j.resuscitation.2026.111028",
-      "title": "Duration of Emergency Medical Services-Initiated Prehospital Cardiopulmonary Resuscitation Efforts and Survival for Pediatric Patients with Out-of-Hospital Cardiac Arrest",
+      "id": "41967757",
+      "title": "Healthcare costs of expedited transport compared with standard care following out-of-hospital cardiac arrest: results from the EVIDENCE randomised controlled trial",
       "journal": "Resuscitation",
-      "date": "2026-05-14",
-      "pmid": "",
-      "doi": "10.1016/j.resuscitation.2026.111028",
-      "summary": "This nationwide cohort study examined whether longer prehospital CPR duration affects survival in paediatric out-of-hospital cardiac arrest, finding that prolonged CPR efforts can still yield favourable neurological outcomes in selected patients.",
-      "relevance": "High",
-      "featuredReason": "Paediatric arrests hit crews hard\u2014this evidence supports continuing resuscitation efforts beyond traditional time limits in selected cases, potentially saving children we might otherwise have called off."
+      "date": "2026-04-30",
+      "pmid": "41967757",
+      "doi": "10.1016/j.resuscitation.2026.111083",
+      "summary": "Greater Sydney costing analysis of expedited OHCA transport for possible ECPR versus standard care \u2014 overall health system costs were comparable, with higher costs when patients arrived during ECPR business hours.",
+      "relevance": "\ud83d\udd34 High",
+      "featuredReason": "Sydney-based ECPR transport cost analysis \u2014 directly relevant to Australian services considering expedited OHCA transport pathways."
     }
   ],
   "funFacts": [
@@ -969,6 +969,31 @@
   ],
   "dailyUpdates": [
     {
+      "date": "2026-05-27",
+      "papers": [
+        {
+          "id": "10.1080/10903127.2026.2676028",
+          "title": "Effect of Compression Surfaces on Cardiopulmonary Resuscitation Quality and Clinician Fatigue",
+          "journal": "Prehospital Emergency Care",
+          "date": "2026-05-27",
+          "pmid": "",
+          "doi": "10.1080/10903127.2026.2676028",
+          "summary": "They tested whether different compression surfaces affect CPR quality and clinician fatigue, and found surface characteristics significantly impact compression depth and rate consistency while also affecting provider fatigue.",
+          "relevance": "\ud83d\udfe2 High"
+        },
+        {
+          "id": "10.1080/10903127.2026.2677176",
+          "title": "Beyond blood pressure: The emerging role of wearable doppler ultrasound in prehospital care",
+          "journal": "Prehospital Emergency Care",
+          "date": "2026-05-27",
+          "pmid": "",
+          "doi": "10.1080/10903127.2026.2677176",
+          "summary": "They reviewed wearable Doppler ultrasound technology for prehospital haemodynamic monitoring, and found it may detect occult haemodynamic compromise earlier than standard vital signs alone.",
+          "relevance": "\ud83d\udfe1 Medium"
+        }
+      ]
+    },
+    {
       "date": "2026-05-26",
       "papers": [
         {
@@ -1660,23 +1685,23 @@
     }
   ],
   "tldr": {
-    "date": "2026-05-26",
+    "date": "2026-05-27",
     "paperCount": 2,
-    "summary": "\u2022 ChatGPT-4o can generate neonatal resuscitation training scenarios that match official NRP standards in quality\u2014AI could become a cost-effective training tool for paramedic education.\n\u2022 Polish mountain rescue data shows 38% of moderate-to-severe cases with higher acuity correlating to helicopter use\u2014patterns relevant to Australian wilderness EMS planning and resource allocation.",
+    "summary": "\u2022 Compression surface characteristics affect CPR quality and clinician fatigue\n\u2022 Wearable Doppler ultrasound may detect occult haemodynamic compromise earlier than standard vital signs",
     "highlights": [
       {
-        "id": "10.1186/s13049-026-01632-2",
+        "id": "10.1080/10903127.2026.2676028",
         "pmid": "",
-        "doi": "10.1186/s13049-026-01632-2",
-        "title": "AI for Neonatal Resuscitation Training",
-        "note": "ChatGPT-4o generates valid training scenarios matching NRP standards\u2014could expand paramedic education access at scale."
+        "doi": "10.1080/10903127.2026.2676028",
+        "title": "CPR Surface Effects on Quality and Fatigue",
+        "note": "Surface choice impacts compression depth, rate consistency, and how fast you get knackered during CPR."
       },
       {
-        "id": "10.1186/s13049-026-01631-3",
+        "id": "10.1080/10903127.2026.2677176",
         "pmid": "",
-        "doi": "10.1186/s13049-026-01631-3",
-        "title": "Mountain Rescue Epidemiology",
-        "note": "38% of mountain rescues are moderate-to-severe\u2014data that can inform Australian wilderness EMS training and helicopter deployment criteria."
+        "doi": "10.1080/10903127.2026.2677176",
+        "title": "Wearable Doppler for Haemodynamic Monitoring",
+        "note": "Emerging tech could spot patients circling the drain before their BP drops \u2014 worth watching."
       }
     ]
   },
