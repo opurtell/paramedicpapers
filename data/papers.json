@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-27T21:18:24Z",
+  "lastUpdated": "2026-05-28T21:16:17Z",
   "featuredPapers": [
     {
       "id": "10.1056/nejmoa2602167",
@@ -10,7 +10,7 @@
       "doi": "10.1056/nejmoa2602167",
       "summary": "Multicenter randomized trial comparing prehospital type O whole blood resuscitation to standard care in trauma patients with hemorrhage.",
       "relevance": "\ud83d\udd34 High",
-      "featuredReason": "First major RCT on prehospital whole blood in trauma \u2014 results could reshape resuscitation protocols for major haemorrhage in Australia."
+      "featuredReason": "Game-changing RCT in NEJM: prehospital whole blood could shift trauma resuscitation. Australian remote services are watching this closely."
     },
     {
       "id": "10.1080/10903127.2026.2673361",
@@ -21,7 +21,18 @@
       "doi": "10.1080/10903127.2026.2673361",
       "summary": "Nationwide cohort study compared prehospital outcomes for initial intranasal versus intramuscular naloxone administration in suspected opioid overdose.",
       "relevance": "\ud83d\udd34 High",
-      "featuredReason": "3.1 million patient cohort settling the IN vs IM naloxone debate \u2014 directly relevant to initial route choice in the opioid crisis."
+      "featuredReason": "Practical question we debate on the road: IN vs IM naloxone? This massive cohort study gives real-world evidence to guide your choice."
+    },
+    {
+      "id": "10.1016/j.resuscitation.2026.111028",
+      "title": "Duration of Emergency Medical Services-Initiated Prehospital Cardiopulmonary Resuscitation Efforts and Survival for Pediatric Patients with Out-of-Hospital Cardiac Arrest",
+      "journal": "Resuscitation",
+      "date": "2026-05-14",
+      "pmid": "",
+      "doi": "10.1016/j.resuscitation.2026.111028",
+      "summary": "This nationwide cohort study examined whether longer prehospital CPR duration affects survival in paediatric out-of-hospital cardiac arrest, finding that prolonged CPR efforts can still yield favourable neurological outcomes in selected patients.",
+      "relevance": "\ud83d\udd34 High",
+      "featuredReason": "Challenging the clock on paediatric arrest: prolonged CPR can still save kids with good outcomes. When to work vs when to call it?"
     },
     {
       "id": "10.1016/j.ahj.2026.107378",
@@ -32,29 +43,18 @@
       "doi": "10.1016/j.ahj.2026.107378",
       "summary": "This multicenter RCT protocol tests whether noradrenaline improves outcomes compared with adrenaline for paramedic management of cardiogenic shock, with the PANDA trial aiming to settle the debate on optimal vasopressor choice in the prehospital setting.",
       "relevance": "\ud83d\udd34 High",
-      "featuredReason": "First RCT testing noradrenaline vs adrenaline for prehospital cardiogenic shock \u2014 could change vasopressor practice for these critical patients."
+      "featuredReason": "Adrenaline vs noradrenaline for cardiogenic shock \u2014 a fundamental pharmacological question. The PANDA RCT could rewrite your shock protocol."
     },
     {
-      "id": "10.1080/10903127.2026.2674263",
-      "title": "Use of double sequential external defibrillation in the United States before and after the DOSE VF randomized clinical trial",
-      "journal": "Prehospital Emergency Care",
-      "date": "2026-05-18",
-      "pmid": "",
-      "doi": "10.1080/10903127.2026.2674263",
-      "summary": "Nationwide observational study examined trends in DSED use for refractory VF before and after publication of the DOSE VF trial.",
-      "relevance": "\ud83d\udd34 High",
-      "featuredReason": "Shows DSED uptake post-DOSE VF \u2014 helps explain why a potentially life-saving technique for refractory VF isn't being used in eligible patients."
-    },
-    {
-      "id": "41967757",
-      "title": "Healthcare costs of expedited transport compared with standard care following out-of-hospital cardiac arrest: results from the EVIDENCE randomised controlled trial",
+      "id": "10.1016/j.resuscitation.2026.111093",
+      "title": "Geographic Inequalities in Prehospital Critical Care for Cardiac Arrest: A Spatial Analysis of Deprivation and Service Configuration",
       "journal": "Resuscitation",
-      "date": "2026-04-30",
-      "pmid": "41967757",
-      "doi": "10.1016/j.resuscitation.2026.111083",
-      "summary": "Greater Sydney costing analysis of expedited OHCA transport for possible ECPR versus standard care \u2014 overall health system costs were comparable, with higher costs when patients arrived during ECPR business hours.",
+      "date": "2026-05-14",
+      "pmid": "",
+      "doi": "10.1016/j.resuscitation.2026.111093",
+      "summary": "This spatial analysis examined how deprivation levels and prehospital critical care service configuration affect cardiac arrest outcomes, revealing persistent geographic disparities in access and survival.",
       "relevance": "\ud83d\udd34 High",
-      "featuredReason": "Sydney-based ECPR transport cost analysis \u2014 directly relevant to Australian services considering expedited OHCA transport pathways."
+      "featuredReason": "Where you work matters for cardiac arrest survival. This study shows system-level disparities that could inform service design and resourcing decisions."
     }
   ],
   "funFacts": [
@@ -969,6 +969,31 @@
   ],
   "dailyUpdates": [
     {
+      "date": "2026-05-28",
+      "papers": [
+        {
+          "id": "10.1080/10903127.2026.2677167",
+          "title": "Feasibility of Electric Vehicle Adoption in US Ambulance Fleets: A Retrospective Analysis of NEMSIS Data",
+          "journal": "Prehospital Emergency Care",
+          "date": "2026-05-28",
+          "pmid": "",
+          "doi": "10.1080/10903127.2026.2677167",
+          "summary": "Retrospective NEMSIS analysis examined operational feasibility of electric ambulance adoption \u2014 fleet integration appears viable under specific conditions, though infrastructure readiness remains key.",
+          "relevance": "\ud83d\udfe1 Medium"
+        },
+        {
+          "id": "10.1080/10903127.2026.2677850",
+          "title": "Incidence of Adverse Events with Prehospital Use of Droperidol for Nausea or Vomiting",
+          "journal": "Prehospital Emergency Care",
+          "date": "2026-05-28",
+          "pmid": "",
+          "doi": "10.1080/10903127.2026.2677850",
+          "summary": "This study evaluated adverse events associated with prehospital droperidol use for nausea or vomiting \u2014 the incidence of clinically significant adverse events was low, suggesting droperidol may be safe for prehospital use.",
+          "relevance": "\ud83d\udfe2 High"
+        }
+      ]
+    },
+    {
       "date": "2026-05-27",
       "papers": [
         {
@@ -1094,7 +1119,7 @@
           "pmid": "",
           "doi": "10.3390/healthcare14101413",
           "summary": "Analysis of AED deployment patterns during EMS encounters revealing racial and geographic differences in defibrillator access and application.",
-          "relevance": "\ud83d\udf34 Low"
+          "relevance": "\ud83d\udd34 Low"
         },
         {
           "id": "10.3390/su18105199",
@@ -1468,7 +1493,7 @@
           "date": "2026-05-01",
           "pmid": "",
           "doi": "10.1186/s13049-026-01617-1",
-          "summary": "Retrospective review tested whether immediate discharge after normal CT was safe for anticoagulated head-injury patients with GCS 14\u201315 \u2014 no delayed intracranial haemorrhage, neurosurgical intervention, or clinically significant deterioration occurred.",
+          "summary": "Retrospective review tested whether immediate discharge after normal CT was safe for anticoagulated head-injury patients with GCS 14-15 \u2014 no delayed intracranial haemorrhage, neurosurgical intervention, or clinically significant deterioration occurred.",
           "relevance": "\ud83d\udfe1 Medium"
         }
       ]
@@ -1685,23 +1710,23 @@
     }
   ],
   "tldr": {
-    "date": "2026-05-27",
+    "date": "2026-05-28",
     "paperCount": 2,
-    "summary": "\u2022 Compression surface characteristics affect CPR quality and clinician fatigue\n\u2022 Wearable Doppler ultrasound may detect occult haemodynamic compromise earlier than standard vital signs",
+    "summary": "\u2022 Prehospital droperidol for nausea had low adverse events \u2014 could be safer than regulatory warnings suggest.\n\u2022 Electric ambulance fleets are operationally viable under specific conditions, but charging infrastructure remains the real bottleneck.\n\u2022 Both studies highlight the tension between emerging evidence and legacy constraints in paramedic practice.",
     "highlights": [
       {
-        "id": "10.1080/10903127.2026.2676028",
+        "id": "10.1080/10903127.2026.2677850",
         "pmid": "",
-        "doi": "10.1080/10903127.2026.2676028",
-        "title": "CPR Surface Effects on Quality and Fatigue",
-        "note": "Surface choice impacts compression depth, rate consistency, and how fast you get knackered during CPR."
+        "doi": "10.1080/10903127.2026.2677850",
+        "title": "Droperidol Safety in Prehospital Nausea Management",
+        "note": "Regulatory scare or genuine risk? This study suggests droperidol may be safer for prehospital use than we've been told."
       },
       {
-        "id": "10.1080/10903127.2026.2677176",
+        "id": "10.1080/10903127.2026.2677167",
         "pmid": "",
-        "doi": "10.1080/10903127.2026.2677176",
-        "title": "Wearable Doppler for Haemodynamic Monitoring",
-        "note": "Emerging tech could spot patients circling the drain before their BP drops \u2014 worth watching."
+        "doi": "10.1080/10903127.2026.2677167",
+        "title": "Electric Ambulance Fleet Feasibility",
+        "note": "Your next fleet might be electric, but only if the infrastructure is ready. Planning matters more than the trucks themselves."
       }
     ]
   },
