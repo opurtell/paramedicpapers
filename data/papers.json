@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-28T21:16:17Z",
+  "lastUpdated": "2026-05-29T21:16:34Z",
   "featuredPapers": [
     {
       "id": "10.1056/nejmoa2602167",
@@ -9,8 +9,8 @@
       "pmid": "",
       "doi": "10.1056/nejmoa2602167",
       "summary": "Multicenter randomized trial comparing prehospital type O whole blood resuscitation to standard care in trauma patients with hemorrhage.",
-      "relevance": "\ud83d\udd34 High",
-      "featuredReason": "Game-changing RCT in NEJM: prehospital whole blood could shift trauma resuscitation. Australian remote services are watching this closely."
+      "relevance": "\ud83d\udfe2 High",
+      "featuredReason": "NEJM RCT on prehospital whole blood resuscitation\u2014practice-defining evidence that could change how we approach traumatic haemorrhage in the field."
     },
     {
       "id": "10.1080/10903127.2026.2673361",
@@ -20,19 +20,19 @@
       "pmid": "",
       "doi": "10.1080/10903127.2026.2673361",
       "summary": "Nationwide cohort study compared prehospital outcomes for initial intranasal versus intramuscular naloxone administration in suspected opioid overdose.",
-      "relevance": "\ud83d\udd34 High",
-      "featuredReason": "Practical question we debate on the road: IN vs IM naloxone? This massive cohort study gives real-world evidence to guide your choice."
+      "relevance": "\ud83d\udfe2 High",
+      "featuredReason": "3.1 million-patient NEMSIS cohort showing IM naloxone outperforms IN for overdose reversal\u2014direct implications for first-line route choice."
     },
     {
-      "id": "10.1016/j.resuscitation.2026.111028",
-      "title": "Duration of Emergency Medical Services-Initiated Prehospital Cardiopulmonary Resuscitation Efforts and Survival for Pediatric Patients with Out-of-Hospital Cardiac Arrest",
-      "journal": "Resuscitation",
-      "date": "2026-05-14",
+      "id": "10.1080/10903127.2026.2674263",
+      "title": "Use of double sequential external defibrillation in the United States before and after the DOSE VF randomized clinical trial",
+      "journal": "Prehospital Emergency Care",
+      "date": "2026-05-18",
       "pmid": "",
-      "doi": "10.1016/j.resuscitation.2026.111028",
-      "summary": "This nationwide cohort study examined whether longer prehospital CPR duration affects survival in paediatric out-of-hospital cardiac arrest, finding that prolonged CPR efforts can still yield favourable neurological outcomes in selected patients.",
-      "relevance": "\ud83d\udd34 High",
-      "featuredReason": "Challenging the clock on paediatric arrest: prolonged CPR can still save kids with good outcomes. When to work vs when to call it?"
+      "doi": "10.1080/10903127.2026.2674263",
+      "summary": "Nationwide observational study examined trends in DSED use for refractory VF before and after publication of the DOSE VF trial.",
+      "relevance": "\ud83d\udfe2 High",
+      "featuredReason": "Real-world uptake of DSED post-DOSE VF trial\u2014shows evidence-to-practice gaps and potential barriers to implementing this refractory VF protocol."
     },
     {
       "id": "10.1016/j.ahj.2026.107378",
@@ -42,19 +42,19 @@
       "pmid": "",
       "doi": "10.1016/j.ahj.2026.107378",
       "summary": "This multicenter RCT protocol tests whether noradrenaline improves outcomes compared with adrenaline for paramedic management of cardiogenic shock, with the PANDA trial aiming to settle the debate on optimal vasopressor choice in the prehospital setting.",
-      "relevance": "\ud83d\udd34 High",
-      "featuredReason": "Adrenaline vs noradrenaline for cardiogenic shock \u2014 a fundamental pharmacological question. The PANDA RCT could rewrite your shock protocol."
+      "relevance": "\ud83d\udfe2 High",
+      "featuredReason": "PANDA trial will settle the noradrenaline vs adrenaline debate for cardiogenic shock\u2014protocol worth watching for future prehospital practice changes."
     },
     {
-      "id": "10.1016/j.resuscitation.2026.111093",
-      "title": "Geographic Inequalities in Prehospital Critical Care for Cardiac Arrest: A Spatial Analysis of Deprivation and Service Configuration",
-      "journal": "Resuscitation",
-      "date": "2026-05-14",
+      "id": "10.1080/10903127.2026.2668009",
+      "title": "The Role of Emergency Medical Services in Addressing Opioid Use Disorder\u2014A Position Statement and Resource Document of NAEMSP",
+      "journal": "Prehospital Emergency Care",
+      "date": "2026-05-20",
       "pmid": "",
-      "doi": "10.1016/j.resuscitation.2026.111093",
-      "summary": "This spatial analysis examined how deprivation levels and prehospital critical care service configuration affect cardiac arrest outcomes, revealing persistent geographic disparities in access and survival.",
-      "relevance": "\ud83d\udd34 High",
-      "featuredReason": "Where you work matters for cardiac arrest survival. This study shows system-level disparities that could inform service design and resourcing decisions."
+      "doi": "10.1080/10903127.2026.2668009",
+      "summary": "NAEMSP position statement outlining EMS roles in opioid use disorder treatment, including harm reduction, medication-assisted treatment initiation, and referral pathways.",
+      "relevance": "\ud83d\udfe1 Medium",
+      "featuredReason": "NAEMSP position expands EMS role in opioid use disorder\u2014moves beyond reversal to harm reduction and treatment initiation in the field."
     }
   ],
   "funFacts": [
@@ -1710,25 +1710,10 @@
     }
   ],
   "tldr": {
-    "date": "2026-05-28",
-    "paperCount": 2,
-    "summary": "\u2022 Prehospital droperidol for nausea had low adverse events \u2014 could be safer than regulatory warnings suggest.\n\u2022 Electric ambulance fleets are operationally viable under specific conditions, but charging infrastructure remains the real bottleneck.\n\u2022 Both studies highlight the tension between emerging evidence and legacy constraints in paramedic practice.",
-    "highlights": [
-      {
-        "id": "10.1080/10903127.2026.2677850",
-        "pmid": "",
-        "doi": "10.1080/10903127.2026.2677850",
-        "title": "Droperidol Safety in Prehospital Nausea Management",
-        "note": "Regulatory scare or genuine risk? This study suggests droperidol may be safer for prehospital use than we've been told."
-      },
-      {
-        "id": "10.1080/10903127.2026.2677167",
-        "pmid": "",
-        "doi": "10.1080/10903127.2026.2677167",
-        "title": "Electric Ambulance Fleet Feasibility",
-        "note": "Your next fleet might be electric, but only if the infrastructure is ready. Planning matters more than the trucks themselves."
-      }
-    ]
+    "date": "2026-05-29",
+    "paperCount": 0,
+    "summary": "No new papers today.",
+    "highlights": []
   },
   "weeklyTldr": {
     "dateRange": "17\u201324 May 2026",
