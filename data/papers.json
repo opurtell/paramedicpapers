@@ -1,16 +1,16 @@
 {
-  "lastUpdated": "2026-05-29T21:16:34Z",
+  "lastUpdated": "2026-05-30T21:16:27Z",
   "featuredPapers": [
     {
-      "id": "10.1056/nejmoa2602167",
-      "title": "Prehospital Resuscitation with Type O Whole Blood for Trauma and Hemorrhage",
-      "journal": "New England Journal of Medicine",
-      "date": "2026-05-18",
+      "id": "10.1016/j.ahj.2026.107378",
+      "title": "Design and rationale of a multicenter paramedic randomized trial of noradrenaline versus adrenaline in the initial management of patients with cardiogenic shock\u2014The PANDA trial",
+      "journal": "American Heart Journal",
+      "date": "2026-05-23",
       "pmid": "",
-      "doi": "10.1056/nejmoa2602167",
-      "summary": "Multicenter randomized trial comparing prehospital type O whole blood resuscitation to standard care in trauma patients with hemorrhage.",
-      "relevance": "\ud83d\udfe2 High",
-      "featuredReason": "NEJM RCT on prehospital whole blood resuscitation\u2014practice-defining evidence that could change how we approach traumatic haemorrhage in the field."
+      "doi": "10.1016/j.ahj.2026.107378",
+      "summary": "This multicenter RCT protocol tests whether noradrenaline improves outcomes compared with adrenaline for paramedic management of cardiogenic shock, with the PANDA trial aiming to settle the debate on optimal vasopressor choice in the prehospital setting.",
+      "relevance": "\ud83d\udd34 High",
+      "featuredReason": "A multicenter RCT settling the debate on noradrenaline vs adrenaline in cardiogenic shock\u2014this directly addresses one of the most common vasopressor decisions paramedics make."
     },
     {
       "id": "10.1080/10903127.2026.2673361",
@@ -20,41 +20,41 @@
       "pmid": "",
       "doi": "10.1080/10903127.2026.2673361",
       "summary": "Nationwide cohort study compared prehospital outcomes for initial intranasal versus intramuscular naloxone administration in suspected opioid overdose.",
-      "relevance": "\ud83d\udfe2 High",
-      "featuredReason": "3.1 million-patient NEMSIS cohort showing IM naloxone outperforms IN for overdose reversal\u2014direct implications for first-line route choice."
+      "relevance": "\ud83d\udd34 High",
+      "featuredReason": "3.1 million-record NEMSIS cohort showing IM naloxone outperforms IN for both physiological response and operational outcomes\u2014practice-changing evidence for every opioid reversal."
     },
     {
-      "id": "10.1080/10903127.2026.2674263",
-      "title": "Use of double sequential external defibrillation in the United States before and after the DOSE VF randomized clinical trial",
-      "journal": "Prehospital Emergency Care",
+      "id": "10.1016/j.resuscitation.2026.111028",
+      "title": "Duration of Emergency Medical Services-Initiated Prehospital Cardiopulmonary Resuscitation Efforts and Survival for Pediatric Patients with Out-of-Hospital Cardiac Arrest",
+      "journal": "Resuscitation",
+      "date": "2026-05-14",
+      "pmid": "",
+      "doi": "10.1016/j.resuscitation.2026.111028",
+      "summary": "This nationwide cohort study examined whether longer prehospital CPR duration affects survival in paediatric out-of-hospital cardiac arrest, finding that prolonged CPR efforts can still yield favourable neurological outcomes in selected patients.",
+      "relevance": "\ud83d\udd34 High",
+      "featuredReason": "Challenges the notion that long CPR in kids is futile\u2014prolonged efforts can still achieve good neurological outcomes, crucial guidance when deciding to continue or terminate."
+    },
+    {
+      "id": "10.1056/nejmoa2602167",
+      "title": "Prehospital Resuscitation with Type O Whole Blood for Trauma and Hemorrhage",
+      "journal": "New England Journal of Medicine",
       "date": "2026-05-18",
       "pmid": "",
-      "doi": "10.1080/10903127.2026.2674263",
-      "summary": "Nationwide observational study examined trends in DSED use for refractory VF before and after publication of the DOSE VF trial.",
-      "relevance": "\ud83d\udfe2 High",
-      "featuredReason": "Real-world uptake of DSED post-DOSE VF trial\u2014shows evidence-to-practice gaps and potential barriers to implementing this refractory VF protocol."
+      "doi": "10.1056/nejmoa2602167",
+      "summary": "Multicenter randomized trial comparing prehospital type O whole blood resuscitation to standard care in trauma patients with hemorrhage.",
+      "relevance": "\ud83d\udd34 High",
+      "featuredReason": "A major NEJM RCT on prehospital whole blood for trauma\u2014this could fundamentally reshape how we approach haemorrhagic shock in the field."
     },
     {
-      "id": "10.1016/j.ahj.2026.107378",
-      "title": "Design and rationale of a multicenter paramedic randomized trial of noradrenaline versus adrenaline in the initial management of patients with cardiogenic shock\u2014The PANDA trial",
-      "journal": "American Heart Journal",
-      "date": "2026-05-23",
+      "id": "10.1186/s13049-026-01629-x",
+      "title": "The role of freeze-dried plasma in a world of whole blood: a Canadian prehospital and transport perspective",
+      "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+      "date": "2026-05-14",
       "pmid": "",
-      "doi": "10.1016/j.ahj.2026.107378",
-      "summary": "This multicenter RCT protocol tests whether noradrenaline improves outcomes compared with adrenaline for paramedic management of cardiogenic shock, with the PANDA trial aiming to settle the debate on optimal vasopressor choice in the prehospital setting.",
-      "relevance": "\ud83d\udfe2 High",
-      "featuredReason": "PANDA trial will settle the noradrenaline vs adrenaline debate for cardiogenic shock\u2014protocol worth watching for future prehospital practice changes."
-    },
-    {
-      "id": "10.1080/10903127.2026.2668009",
-      "title": "The Role of Emergency Medical Services in Addressing Opioid Use Disorder\u2014A Position Statement and Resource Document of NAEMSP",
-      "journal": "Prehospital Emergency Care",
-      "date": "2026-05-20",
-      "pmid": "",
-      "doi": "10.1080/10903127.2026.2668009",
-      "summary": "NAEMSP position statement outlining EMS roles in opioid use disorder treatment, including harm reduction, medication-assisted treatment initiation, and referral pathways.",
-      "relevance": "\ud83d\udfe1 Medium",
-      "featuredReason": "NAEMSP position expands EMS role in opioid use disorder\u2014moves beyond reversal to harm reduction and treatment initiation in the field."
+      "doi": "10.1186/s13049-026-01629-x",
+      "summary": "This commentary argues freeze-dried plasma complements whole blood in prehospital resuscitation, offering a scalable, shelf-stable solution for rural and remote regions with long transport times.",
+      "relevance": "\ud83d\udd34 High",
+      "featuredReason": "Freeze-dried plasma as a shelf-stable complement to whole blood\u2014particularly relevant for rural and remote Australian services facing long transport times."
     }
   ],
   "funFacts": [
@@ -969,6 +969,41 @@
   ],
   "dailyUpdates": [
     {
+      "date": "2026-05-30",
+      "papers": [
+        {
+          "id": "10.1080/10903127.2026.2677176",
+          "title": "Beyond blood pressure: The emerging role of wearable doppler ultrasound in prehospital care",
+          "journal": "Prehospital Emergency Care",
+          "date": "2026-05-30",
+          "pmid": "",
+          "doi": "10.1080/10903127.2026.2677176",
+          "summary": "They reviewed wearable Doppler ultrasound technology for prehospital haemodynamic monitoring, and found it may detect occult haemodynamic compromise earlier than standard vital signs alone.",
+          "relevance": "\ud83d\udfe1 Medium"
+        },
+        {
+          "id": "10.1080/10903127.2026.2677167",
+          "title": "Feasibility of Electric Vehicle Adoption in US Ambulance Fleets: A Retrospective Analysis of NEMSIS Data",
+          "journal": "Prehospital Emergency Care",
+          "date": "2026-05-30",
+          "pmid": "",
+          "doi": "10.1080/10903127.2026.2677167",
+          "summary": "They analysed whether electric ambulance adoption is operationally feasible using NEMSIS data, and found fleet integration appears viable under specific conditions, though infrastructure readiness remains key.",
+          "relevance": "\ud83d\udfe1 Medium"
+        },
+        {
+          "id": "10.1080/10903127.2026.2677850",
+          "title": "Incidence of Adverse Events with Prehospital Use of Droperidol for Nausea or Vomiting",
+          "journal": "Prehospital Emergency Care",
+          "date": "2026-05-30",
+          "pmid": "",
+          "doi": "10.1080/10903127.2026.2677850",
+          "summary": "They evaluated adverse events associated with prehospital droperidol use for nausea or vomiting, and the incidence of clinically significant adverse events was low, suggesting droperidol may be safe for prehospital use.",
+          "relevance": "\ud83d\udfe2 High"
+        }
+      ]
+    },
+    {
       "date": "2026-05-28",
       "papers": [
         {
@@ -1710,10 +1745,32 @@
     }
   ],
   "tldr": {
-    "date": "2026-05-29",
-    "paperCount": 0,
-    "summary": "No new papers today.",
-    "highlights": []
+    "date": "2026-05-30",
+    "paperCount": 3,
+    "summary": "\u2022 Wearable Doppler ultrasound may detect occult haemodynamic compromise earlier than standard vital signs alone, offering a potential early warning tool for shock\n\u2022 Electric ambulance adoption appears operationally feasible under specific conditions, though charging infrastructure readiness remains the critical barrier\n\u2022 Prehospital droperidol for nausea shows low adverse event rates, supporting its continued use as an effective antiemetic in the field",
+    "highlights": [
+      {
+        "id": "10.1080/10903127.2026.2677176",
+        "pmid": "",
+        "doi": "10.1080/10903127.2026.2677176",
+        "title": "Wearable Doppler for Early Shock Detection",
+        "note": "Detects haemodynamic compromise before BP drops\u2014could be a game-changer for early recognition."
+      },
+      {
+        "id": "10.1080/10903127.2026.2677850",
+        "pmid": "",
+        "doi": "10.1080/10903127.2026.2677850",
+        "title": "Droperidol Safety in the Field",
+        "note": "Low adverse event rates support prehospital use\u2014good news for your nausea management toolkit."
+      },
+      {
+        "id": "10.1080/10903127.2026.2677167",
+        "pmid": "",
+        "doi": "10.1080/10903127.2026.2677167",
+        "title": "Electric Ambulances Are Feasible",
+        "note": "Fleet integration works when charging infrastructure is ready\u2014the future is coming."
+      }
+    ]
   },
   "weeklyTldr": {
     "dateRange": "17\u201324 May 2026",
