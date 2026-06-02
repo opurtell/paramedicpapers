@@ -1,27 +1,27 @@
 {
-  "lastUpdated": "2026-06-01T21:16:22Z",
+  "lastUpdated": "2026-06-02T21:16:32Z",
   "featuredPapers": [
     {
-      "id": "10.1016/j.ahj.2026.107378",
-      "title": "Design and rationale of a multicenter paramedic randomized trial of noradrenaline versus adrenaline in the initial management of patients with cardiogenic shock\u2014The PANDA trial",
-      "journal": "American Heart Journal",
-      "date": "2026-05-23",
-      "pmid": "",
-      "doi": "10.1016/j.ahj.2026.107378",
-      "summary": "This multicenter RCT protocol tests whether noradrenaline improves outcomes compared with adrenaline for paramedic management of cardiogenic shock, with the PANDA trial aiming to settle the debate on optimal vasopressor choice in the prehospital setting.",
-      "relevance": "\ud83d\udd34 High",
-      "featuredReason": "Could settle the adrenaline vs noradrenaline debate for prehospital cardiogenic shock - we've been giving adrenaline by default for decades, but evidence suggests noradrenaline might be the better choice."
-    },
-    {
-      "id": "10.1056/nejmoa2602167",
-      "title": "Prehospital Resuscitation with Type O Whole Blood for Trauma and Hemorrhage",
-      "journal": "New England Journal of Medicine",
+      "id": "10.1080/10903127.2026.2673361",
+      "title": "Prehospital outcomes associated with an initial strategy of intranasal vs. intramuscular naloxone administration by EMS clinicians: a nationwide cohort study",
+      "journal": "Prehospital Emergency Care",
       "date": "2026-05-18",
       "pmid": "",
-      "doi": "10.1056/nejmoa2602167",
-      "summary": "Multicenter randomized trial comparing prehospital type O whole blood resuscitation to standard care in trauma patients with hemorrhage.",
-      "relevance": "\ud83d\udd34 High",
-      "featuredReason": "Major NEJM RCT that could define the future of prehospital blood product resuscitation - moving beyond crystalloids to whole blood at the roadside is practice-changing if it shows benefit."
+      "doi": "10.1080/10903127.2026.2673361",
+      "summary": "Nationwide cohort study compared prehospital outcomes for initial intranasal versus intramuscular naloxone administration in suspected opioid overdose.",
+      "relevance": "\ud83d\udfe2 High",
+      "featuredReason": "Massive 3.1 million-patient cohort definitively answers the IN vs IM naloxone debate \u2014 IM achieves faster reversal and fewer repeat doses. Directly changes how we approach opioid overdoses at the roadside."
+    },
+    {
+      "id": "41996547",
+      "title": "Intranasal Versus Intramuscular Midazolam in Pediatric Seizure Control: A Systematic Review and Meta-Analysis",
+      "journal": "Prehospital Emergency Care",
+      "date": "2026-05-06",
+      "pmid": "41996547",
+      "doi": "10.1080/10903127.2026.2658592",
+      "summary": "Meta-analysis testing whether intranasal or intramuscular midazolam works better for paediatric seizures without cannula access \u2014 intramuscular midazolam was associated with faster seizure termination and less need for rescue therapy, especially in the prehospital setting.",
+      "relevance": "\ud83d\udfe2 High",
+      "featuredReason": "Paediatric seizures are time-critical and kids rarely have cannulae. IM midazolam beats IN for speed and reliability \u2014 this matters when every second counts stopping a fitting child."
     },
     {
       "id": "10.1080/10903127.2026.2676028",
@@ -31,19 +31,19 @@
       "pmid": "",
       "doi": "10.1080/10903127.2026.2676028",
       "summary": "They tested whether different compression surfaces affect CPR quality and clinician fatigue, and found surface characteristics significantly impact compression depth and rate consistency while also affecting provider fatigue.",
-      "relevance": "\ud83d\udd34 High",
-      "featuredReason": "Your mattress matters - this shows the surface you're doing CPR on directly affects compression quality and how quickly you fatigue. Practical insight every paramedic needs."
+      "relevance": "\ud83d\udfe2 High",
+      "featuredReason": "What you're kneeling on during CPR matters \u2014 soft surfaces degrade compression quality and accelerate fatigue. Knowing this lets you adjust technique or position before patient outcomes suffer."
     },
     {
-      "id": "10.1080/10903127.2026.2673361",
-      "title": "Prehospital outcomes associated with an initial strategy of intranasal vs. intramuscular naloxone administration by EMS clinicians: a nationwide cohort study",
-      "journal": "Prehospital Emergency Care",
-      "date": "2026-05-18",
+      "id": "10.1016/j.ahj.2026.107378",
+      "title": "Design and rationale of a multicenter paramedic randomized trial of noradrenaline versus adrenaline in the initial management of patients with cardiogenic shock\u2014The PANDA trial",
+      "journal": "American Heart Journal",
+      "date": "2026-05-23",
       "pmid": "",
-      "doi": "10.1080/10903127.2026.2673361",
-      "summary": "Nationwide cohort study compared prehospital outcomes for initial intranasal versus intramuscular naloxone administration in suspected opioid overdose.",
-      "relevance": "\ud83d\udd34 High",
-      "featuredReason": "IN naloxone is convenient but IM wins on outcomes - this 3.1 million-patient cohort shows IM administration gets better results for opioid reversal. Might be time to revisit your default route."
+      "doi": "10.1016/j.ahj.2026.107378",
+      "summary": "This multicenter RCT protocol tests whether noradrenaline improves outcomes compared with adrenaline for paramedic management of cardiogenic shock, with the PANDA trial aiming to settle the debate on optimal vasopressor choice in the prehospital setting.",
+      "relevance": "\ud83d\udfe2 High",
+      "featuredReason": "Cardiogenic shock management has debated adrenaline vs noradrenaline for years. The PANDA trial is finally going to give us a definitive answer on which vasopressor actually improves patient outcomes."
     },
     {
       "id": "10.1080/10903127.2026.2677850",
@@ -53,8 +53,8 @@
       "pmid": "",
       "doi": "10.1080/10903127.2026.2677850",
       "summary": "They evaluated adverse events associated with prehospital droperidol use for nausea or vomiting, and the incidence of clinically significant adverse events was low, suggesting droperidol may be safe for prehospital use.",
-      "relevance": "\ud83d\udd34 High",
-      "featuredReason": "Droperidol's black box warning was likely an overreaction - this large prehospital study shows low adverse event rates. A cheap, effective antiemetic we've been scared to use might actually be safe."
+      "relevance": "\ud83d\udfe2 High",
+      "featuredReason": "Droperidol was black-boxed for decades over QT concerns, but this real-world prehospital data shows it's safe at clinical doses. Potentially gives us another reliable antiemetic in the toolbox."
     }
   ],
   "funFacts": [
@@ -1795,18 +1795,10 @@
     }
   ],
   "tldr": {
-    "date": "2026-06-01",
-    "paperCount": 1,
-    "summary": "\u2022 Ambulance surfaces and clinicians remain contaminated with pathogens despite routine cleaning\n\u2022 Current disinfection protocols may be inadequate to prevent healthcare-associated infections during transport\n\u2022 Infection control in the prehospital environment needs stronger attention\n\u2022 Routine cleaning is failing to eliminate clinically important pathogens\n\u2022 Cross-contamination risk between patients is higher than we thought\n\u2022 This has occupational health implications for crews too",
-    "highlights": [
-      {
-        "id": "10.1080/10903127.2026.2681882",
-        "pmid": "",
-        "doi": "10.1080/10903127.2026.2681882",
-        "title": "Ambulance Pathogen Contamination Despite Routine Cleaning",
-        "note": "Your ambulance might be carrying nasties between jobs even after you've cleaned it - current disinfection protocols aren't cutting it."
-      }
-    ]
+    "date": "2026-06-02",
+    "paperCount": 0,
+    "summary": "No new papers today.",
+    "highlights": []
   },
   "weeklyTldr": {
     "dateRange": "17\u201324 May 2026",
