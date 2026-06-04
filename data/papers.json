@@ -1,60 +1,60 @@
 {
-  "lastUpdated": "2026-06-03T21:15:41Z",
+  "lastUpdated": "2026-06-04T21:16:28Z",
   "featuredPapers": [
     {
-      "id": "10.1186/s13049-025-01204-5",
-      "title": "The effect of prehospital advanced life support interventions on survival after out-of-hospital cardiac arrest in Saudi Arabia: a nationwide retrospective study",
+      "id": "10.1080/10903127.2026.2650541",
+      "title": "Paramedic Patella Reduction \u2014 Ambulance Victoria CPG Evaluation",
+      "journal": "Prehospital Emergency Care",
+      "date": "2026-04-21",
+      "pmid": "41886731",
+      "doi": "10.1080/10903127.2026.2650541",
+      "summary": "Retrospective study evaluating whether Ambulance Victoria's Nov 2022 CPG for paramedic patella reduction changed practice \u2014 91.8% reduction success rate, transport rate dropped 38.4%, case duration cut by ~33 minutes, and IV cannula use down 17.3%, with no change in effective analgesia rates.",
+      "relevance": "\ud83d\udd34 High",
+      "featuredReason": "Directly relevant to Australian paramedic practice - this AV study shows that expanding paramedic scope to include patella reduction can safely reduce transports and cannula use without compromising pain relief, with a 91.8% success rate and significant time savings."
+    },
+    {
+      "id": "10.1080/10903127.2026.2673361",
+      "title": "Prehospital outcomes associated with an initial strategy of intranasal vs. intramuscular naloxone administration by EMS clinicians: a nationwide cohort study",
+      "journal": "Prehospital Emergency Care",
+      "date": "2026-05-18",
+      "pmid": "",
+      "doi": "10.1080/10903127.2026.2673361",
+      "summary": "Nationwide cohort study compared prehospital outcomes for initial intranasal versus intramuscular naloxone administration in suspected opioid overdose.",
+      "relevance": "\ud83d\udd34 High",
+      "featuredReason": "This 3.1 million-patient NEMSIS study directly informs naloxone route choice for paramedics worldwide, finding IM administration outperforms IN for both physiological and operational outcomes - essential reading for anyone managing suspected opioid overdoses in the field."
+    },
+    {
+      "id": "10.1016/j.resuscitation.2026.111127",
+      "title": "The G\u00e9ocoeur system: recruiting real-time first responders at the point of the defibrillator",
+      "journal": "Resuscitation",
+      "date": "2026-05-23",
+      "pmid": "",
+      "doi": "10.1016/j.resuscitation.2026.111127",
+      "summary": "This study evaluated whether a geolocation system can recruit volunteer first responders to nearby defibrillators in real time, and found it successfully mobilised responders and shortened time to first shock compared with historical controls.",
+      "relevance": "\ud83d\udfe1 Medium",
+      "featuredReason": "Innovative approach to cardiac arrest survival - this geolocation system successfully mobilises volunteer first responders to the nearest defibrillator, shortening time to first shock and showing how technology can bridge the gap between bystanders and defibrillation before EMS arrival."
+    },
+    {
+      "id": "10.1186/s13049-026-01629-x",
+      "title": "The role of freeze-dried plasma in a world of whole blood: a Canadian prehospital and transport perspective",
       "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
-      "date": "2025-06-03",
+      "date": "2026-05-14",
       "pmid": "",
-      "doi": "10.1186/s13049-025-01204-5",
-      "summary": "Nationwide study in Saudi Arabia examined the impact of prehospital ALS interventions on OHCA survival, providing insights into how ALS protocols may influence outcomes.",
-      "relevance": "high",
-      "featuredReason": "Large-scale evidence on ALS interventions in OHCA can inform global protocols and help refine Australian paramedic practice."
+      "doi": "10.1186/s13049-026-01629-x",
+      "summary": "This commentary argues freeze-dried plasma complements whole blood in prehospital resuscitation, offering a scalable, shelf-stable solution for rural and remote regions with long transport times.",
+      "relevance": "\ud83d\udd34 High",
+      "featuredReason": "Highly relevant for Australian remote and aeromedical services - this Canadian perspective explains how freeze-dried plasma complements whole blood, offering a scalable, shelf-stable solution for regions with long transport times where fresh blood logistics are challenging."
     },
     {
-      "id": "10.1097/TA.0000000000004116",
-      "title": "Implementation of a Novel Prehospital Blood Transfusion Protocol",
-      "journal": "The Journal of Trauma and Acute Care Surgery",
-      "date": "2025-06-01",
-      "pmid": "",
-      "doi": "10.1097/TA.0000000000004116",
-      "summary": "Presents a new prehospital blood transfusion protocol, including logistics, training, and clinical outcomes in trauma patients.",
-      "relevance": "high",
-      "featuredReason": "Prehospital blood programs are critical for major trauma; this implementation experience can guide Australian services."
-    },
-    {
-      "id": "10.1186/s12873-025-02582-5",
-      "title": "Airway Management in Prehospital Emergency Care: A Systematic Review and Meta-Analysis",
-      "journal": "BMC Emergency Medicine",
-      "date": "2025-06-02",
-      "pmid": "",
-      "doi": "10.1186/s12873-025-02582-5",
-      "summary": "Systematic review of prehospital airway management techniques, comparing success rates, complications, and patient outcomes.",
-      "relevance": "high",
-      "featuredReason": "Airway is a core paramedic skill; systematic evidence helps refine equipment choice and procedural approaches."
-    },
-    {
-      "id": "10.1097/PEM.0000000000003053",
-      "title": "Efficacy and Safety of Intranasal vs Intramuscular Midazolam for Pediatric Status Epilepticus in the Prehospital Setting",
-      "journal": "Pediatric Emergency Care",
-      "date": "2025-06-03",
-      "pmid": "",
-      "doi": "10.1097/PEM.0000000000003053",
-      "summary": "Compares intranasal and intramuscular midazolam for pediatric seizures prehospital, assessing time to cessation and adverse events.",
-      "relevance": "high",
-      "featuredReason": "Pediatric seizures are common calls; intranasal administration can be faster and less invasive\u2014important for kids and crews."
-    },
-    {
-      "id": "10.1016/j.jemermed.2025.04.042",
-      "title": "Prehospital Analgesia Strategies and Pain Management Protocols: A Comparative Analysis",
-      "journal": "The Journal of Emergency Medicine",
-      "date": "2025-06-01",
-      "pmid": "",
-      "doi": "10.1016/j.jemermed.2025.04.042",
-      "summary": "Compares prehospital analgesia strategies (e.g., methoxyflurane, intranasal fentanyl, ketamine) across protocols and evaluates pain relief and safety.",
-      "relevance": "high",
-      "featuredReason": "Pain management is central to paramedic care; comparative evidence helps optimise drug choice and dosing."
+      "id": "10.1080/10903127.2026.2658592",
+      "title": "Intranasal Versus Intramuscular Midazolam in Pediatric Seizure Control: A Systematic Review and Meta-Analysis",
+      "journal": "Prehospital Emergency Care",
+      "date": "2026-05-06",
+      "pmid": "41996547",
+      "doi": "10.1080/10903127.2026.2658592",
+      "summary": "Meta-analysis testing whether intranasal or intramuscular midazolam works better for paediatric seizures without cannula access \u2014 intramuscular midazolam was associated with faster seizure termination and less need for rescue therapy, especially in the prehospital setting.",
+      "relevance": "\ud83d\udd34 High",
+      "featuredReason": "Practice-changing meta-analysis for paediatric seizures - IM midazolam consistently outperforms IN for seizure termination in the prehospital setting, with faster control and fewer rescue doses required, suggesting IN may not be the optimal default when cannula access is available."
     }
   ],
   "funFacts": [
@@ -969,6 +969,41 @@
   ],
   "dailyUpdates": [
     {
+      "date": "2026-06-04",
+      "papers": [
+        {
+          "id": "10.1080/10903127.2026.2678432",
+          "title": "Identification and Documentation of Patient Social Risk Factors in the Prehospital Setting: A Pilot Implementation",
+          "journal": "Prehospital Emergency Care",
+          "date": "2026-06-04",
+          "pmid": "",
+          "doi": "10.1080/10903127.2026.2678432",
+          "summary": "This pilot implementation tested whether EMS clinicians can reliably identify and document patient social risk factors during routine care, finding that structured documentation is feasible but requires workflow integration and clinician training.",
+          "relevance": "\ud83d\udfe1 Medium"
+        },
+        {
+          "id": "10.1080/10903127.2026.2677853",
+          "title": "External Validation of the SCARE Score for Predicting Acute Myocardial Infarction in Patients Calling Emergency Medical Communication Centers: A Prospective Multicenter Study",
+          "journal": "Prehospital Emergency Care",
+          "date": "2026-06-04",
+          "pmid": "",
+          "doi": "10.1080/10903127.2026.2677853",
+          "summary": "They prospectively validated the SCARE score for predicting acute myocardial infarction during telephone triage across multiple French emergency communication centers, finding good discrimination and calibration but noting limitations in real-world implementation.",
+          "relevance": "\ud83d\udfe2 High"
+        },
+        {
+          "id": "10.1080/10903127.2026.2683523",
+          "title": "Large Language Models Exhibit High Performance as Computable Phenotypes for Pediatric Asthma Exacerbation Detection in a Retrospective, Observational Study of Emergency Medical Services Encounters",
+          "journal": "Prehospital Emergency Care",
+          "date": "2026-06-04",
+          "pmid": "",
+          "doi": "10.1080/10903127.2026.2683523",
+          "summary": "They tested whether large language models could accurately identify paediatric asthma exacerbations from EMS documentation, finding high performance but noting this is early exploratory work with real-world deployment challenges.",
+          "relevance": "\ud83d\udfe1 Medium"
+        }
+      ]
+    },
+    {
       "date": "2026-06-01",
       "papers": [
         {
@@ -1795,10 +1830,32 @@
     }
   ],
   "tldr": {
-    "date": "2026-06-02",
-    "paperCount": 0,
-    "summary": "No new papers today.",
-    "highlights": []
+    "date": "2026-06-04",
+    "paperCount": 3,
+    "summary": "\u2022 SCARE score shows promise for predicting MI during emergency calls, but real-world implementation has limitations.\n\u2022 Structured social risk factor documentation is feasible for paramedics but requires workflow integration and training.\n\u2022 Large language models can accurately identify paediatric asthma exacerbations from EMS records, though deployment challenges remain.\n\u2022 Today's research highlights both validated tools and emerging AI approaches for prehospital clinical decision support.\n\u2022 Social determinants of health are increasingly recognised as relevant data for prehospital clinicians to capture.\n\u2022 AI applications show potential for improving clinical documentation and surveillance, but require careful implementation planning.",
+    "highlights": [
+      {
+        "id": "10.1080/10903127.2026.2677853",
+        "pmid": "",
+        "doi": "10.1080/10903127.2026.2677853",
+        "title": "SCARE Score for Telephone MI Triage",
+        "note": "Validated MI prediction tool for emergency calls with good discrimination, though implementation barriers exist."
+      },
+      {
+        "id": "10.1080/10903127.2026.2683523",
+        "pmid": "",
+        "doi": "10.1080/10903127.2026.2683523",
+        "title": "AI for Paediatric Asthma Detection",
+        "note": "LLMs showed high accuracy identifying paediatric asthma exacerbations from EMS documentation."
+      },
+      {
+        "id": "10.1080/10903127.2026.2678432",
+        "pmid": "",
+        "doi": "10.1080/10903127.2026.2678432",
+        "title": "Social Risk Documentation in EMS",
+        "note": "Pilot shows paramedics can reliably document social risk factors with proper workflow support."
+      }
+    ]
   },
   "weeklyTldr": {
     "dateRange": "17\u201324 May 2026",
