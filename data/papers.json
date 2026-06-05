@@ -1,16 +1,16 @@
 {
-  "lastUpdated": "2026-06-04T21:16:28Z",
+  "lastUpdated": "2026-06-05T21:16:43Z",
   "featuredPapers": [
     {
-      "id": "10.1080/10903127.2026.2650541",
-      "title": "Paramedic Patella Reduction \u2014 Ambulance Victoria CPG Evaluation",
+      "id": "41886731",
+      "title": "Introduction of a Clinical Practice Guideline for Patella Reduction by Paramedics: The Effect on Pain Relief, Relocation, and Transport Decision",
       "journal": "Prehospital Emergency Care",
-      "date": "2026-04-21",
+      "date": "2026-04-23",
       "pmid": "41886731",
       "doi": "10.1080/10903127.2026.2650541",
-      "summary": "Retrospective study evaluating whether Ambulance Victoria's Nov 2022 CPG for paramedic patella reduction changed practice \u2014 91.8% reduction success rate, transport rate dropped 38.4%, case duration cut by ~33 minutes, and IV cannula use down 17.3%, with no change in effective analgesia rates.",
-      "relevance": "\ud83d\udd34 High",
-      "featuredReason": "Directly relevant to Australian paramedic practice - this AV study shows that expanding paramedic scope to include patella reduction can safely reduce transports and cannula use without compromising pain relief, with a 91.8% success rate and significant time savings."
+      "summary": "They tested whether Ambulance Victoria's patella-reduction guideline improved analgesia and service outcomes, and found no analgesia gain but fewer cannulae, fewer transports, and shorter cases.",
+      "relevance": "\ud83d\udfe2 High",
+      "featuredReason": "Ambulance Victoria's paramedic patella reduction guideline is now operational, with 92% success rate and fewer patients transported - a clear win for prehospital musculoskeletal management and system efficiency."
     },
     {
       "id": "10.1080/10903127.2026.2673361",
@@ -20,41 +20,41 @@
       "pmid": "",
       "doi": "10.1080/10903127.2026.2673361",
       "summary": "Nationwide cohort study compared prehospital outcomes for initial intranasal versus intramuscular naloxone administration in suspected opioid overdose.",
-      "relevance": "\ud83d\udd34 High",
-      "featuredReason": "This 3.1 million-patient NEMSIS study directly informs naloxone route choice for paramedics worldwide, finding IM administration outperforms IN for both physiological and operational outcomes - essential reading for anyone managing suspected opioid overdoses in the field."
+      "relevance": "\ud83d\udfe2 High",
+      "featuredReason": "Massive 3.1 million-patient study from the US shows IM naloxone outperforms intranasal for both physiological and operational outcomes - a practice-changing finding that may prompt protocol review in Australian services."
     },
     {
-      "id": "10.1016/j.resuscitation.2026.111127",
-      "title": "The G\u00e9ocoeur system: recruiting real-time first responders at the point of the defibrillator",
-      "journal": "Resuscitation",
-      "date": "2026-05-23",
-      "pmid": "",
-      "doi": "10.1016/j.resuscitation.2026.111127",
-      "summary": "This study evaluated whether a geolocation system can recruit volunteer first responders to nearby defibrillators in real time, and found it successfully mobilised responders and shortened time to first shock compared with historical controls.",
-      "relevance": "\ud83d\udfe1 Medium",
-      "featuredReason": "Innovative approach to cardiac arrest survival - this geolocation system successfully mobilises volunteer first responders to the nearest defibrillator, shortening time to first shock and showing how technology can bridge the gap between bystanders and defibrillation before EMS arrival."
-    },
-    {
-      "id": "10.1186/s13049-026-01629-x",
-      "title": "The role of freeze-dried plasma in a world of whole blood: a Canadian prehospital and transport perspective",
-      "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
-      "date": "2026-05-14",
-      "pmid": "",
-      "doi": "10.1186/s13049-026-01629-x",
-      "summary": "This commentary argues freeze-dried plasma complements whole blood in prehospital resuscitation, offering a scalable, shelf-stable solution for rural and remote regions with long transport times.",
-      "relevance": "\ud83d\udd34 High",
-      "featuredReason": "Highly relevant for Australian remote and aeromedical services - this Canadian perspective explains how freeze-dried plasma complements whole blood, offering a scalable, shelf-stable solution for regions with long transport times where fresh blood logistics are challenging."
-    },
-    {
-      "id": "10.1080/10903127.2026.2658592",
+      "id": "41996547",
       "title": "Intranasal Versus Intramuscular Midazolam in Pediatric Seizure Control: A Systematic Review and Meta-Analysis",
       "journal": "Prehospital Emergency Care",
       "date": "2026-05-06",
       "pmid": "41996547",
       "doi": "10.1080/10903127.2026.2658592",
-      "summary": "Meta-analysis testing whether intranasal or intramuscular midazolam works better for paediatric seizures without cannula access \u2014 intramuscular midazolam was associated with faster seizure termination and less need for rescue therapy, especially in the prehospital setting.",
-      "relevance": "\ud83d\udd34 High",
-      "featuredReason": "Practice-changing meta-analysis for paediatric seizures - IM midazolam consistently outperforms IN for seizure termination in the prehospital setting, with faster control and fewer rescue doses required, suggesting IN may not be the optimal default when cannula access is available."
+      "summary": "Meta-analysis testing whether intranasal or intramuscular midazolam works better for paediatric seizures without cannula access - intramuscular midazolam was associated with faster seizure termination and less need for rescue therapy, especially in the prehospital setting.",
+      "relevance": "\ud83d\udfe2 High",
+      "featuredReason": "Meta-analysis finds IM midazolam stops paediatric seizures faster than intranasal dosing, especially prehospital - challenges the common preference for IN routes when cannulation isn't immediately required."
+    },
+    {
+      "id": "10.1016/j.ahj.2026.107378",
+      "title": "Design and rationale of a multicenter paramedic randomized trial of noradrenaline versus adrenaline in the initial management of patients with cardiogenic shock\u2014The PANDA trial",
+      "journal": "American Heart Journal",
+      "date": "2026-05-23",
+      "pmid": "",
+      "doi": "10.1016/j.ahj.2026.107378",
+      "summary": "This multicenter RCT protocol tests whether noradrenaline improves outcomes compared with adrenaline for paramedic management of cardiogenic shock, with the PANDA trial aiming to settle the debate on optimal vasopressor choice in the prehospital setting.",
+      "relevance": "\ud83d\udfe2 High",
+      "featuredReason": "The PANDA trial is now recruiting, testing whether noradrenaline should replace adrenaline as first-line prehospital vasopressor for cardiogenic shock - could change a core cardiac arrest drug protocol."
+    },
+    {
+      "id": "41950410",
+      "title": "Paramedics' decisions to withhold resuscitation in traumatic cardiac arrest: accuracy of paramedic assessments compared with autopsy findings",
+      "journal": "Prehospital Emergency Care",
+      "date": "2026-05-05",
+      "pmid": "41950410",
+      "doi": "10.1080/10903127.2026.2655289",
+      "summary": "Retrospective Ontario review testing how paramedics decide to withhold CPR in traumatic cardiac arrest - most no-CPR decisions were based on signs clearly incompatible with life, and post-mortem findings supported paramedic assessment in the large majority of cases.",
+      "relevance": "\ud83d\udfe2 High",
+      "featuredReason": "Ontario study confirms paramedic decisions not to start CPR in traumatic cardiac arrest are accurate in the majority of cases when compared to autopsy - supports clinical judgement in these devastating presentations."
     }
   ],
   "funFacts": [
@@ -1830,32 +1830,10 @@
     }
   ],
   "tldr": {
-    "date": "2026-06-04",
-    "paperCount": 3,
-    "summary": "\u2022 SCARE score shows promise for predicting MI during emergency calls, but real-world implementation has limitations.\n\u2022 Structured social risk factor documentation is feasible for paramedics but requires workflow integration and training.\n\u2022 Large language models can accurately identify paediatric asthma exacerbations from EMS records, though deployment challenges remain.\n\u2022 Today's research highlights both validated tools and emerging AI approaches for prehospital clinical decision support.\n\u2022 Social determinants of health are increasingly recognised as relevant data for prehospital clinicians to capture.\n\u2022 AI applications show potential for improving clinical documentation and surveillance, but require careful implementation planning.",
-    "highlights": [
-      {
-        "id": "10.1080/10903127.2026.2677853",
-        "pmid": "",
-        "doi": "10.1080/10903127.2026.2677853",
-        "title": "SCARE Score for Telephone MI Triage",
-        "note": "Validated MI prediction tool for emergency calls with good discrimination, though implementation barriers exist."
-      },
-      {
-        "id": "10.1080/10903127.2026.2683523",
-        "pmid": "",
-        "doi": "10.1080/10903127.2026.2683523",
-        "title": "AI for Paediatric Asthma Detection",
-        "note": "LLMs showed high accuracy identifying paediatric asthma exacerbations from EMS documentation."
-      },
-      {
-        "id": "10.1080/10903127.2026.2678432",
-        "pmid": "",
-        "doi": "10.1080/10903127.2026.2678432",
-        "title": "Social Risk Documentation in EMS",
-        "note": "Pilot shows paramedics can reliably document social risk factors with proper workflow support."
-      }
-    ]
+    "date": "2026-06-05",
+    "paperCount": 0,
+    "summary": "No new papers today.",
+    "highlights": []
   },
   "weeklyTldr": {
     "dateRange": "17\u201324 May 2026",
