@@ -1,6 +1,17 @@
 {
-  "lastUpdated": "2026-06-06T21:16:31Z",
+  "lastUpdated": "2026-06-07T21:16:20Z",
   "featuredPapers": [
+    {
+      "id": "10.1056/nejmoa2602167",
+      "title": "Prehospital Resuscitation with Type O Whole Blood for Trauma and Hemorrhage",
+      "journal": "New England Journal of Medicine",
+      "date": "2026-05-18",
+      "pmid": "",
+      "doi": "10.1056/nejmoa2602167",
+      "summary": "Multicenter randomized trial comparing prehospital type O whole blood resuscitation to standard care in trauma patients with hemorrhage.",
+      "relevance": "\ud83d\udfe2 High",
+      "featuredReason": "Landmark NEJM RCT that will define the future of prehospital blood resuscitation. With trauma bleeding remaining a leading cause of preventable death, this trial provides the highest-quality evidence yet on whether whole blood improves survival in the prehospital setting."
+    },
     {
       "id": "42176972",
       "title": "Naloxone administration associated with improved survival in PEA out-of-hospital cardiac arrests",
@@ -10,7 +21,7 @@
       "doi": "10.1016/j.resuscitation.2026.111139",
       "summary": "Retrospective cohort (n=40,333) testing whether prehospital naloxone improves outcomes stratified by presenting rhythm, and found naloxone was associated with higher survival to discharge in PEA arrests but not in shockable rhythms or asystole.",
       "relevance": "\ud83d\udfe2 High",
-      "featuredReason": "First large-scale evidence that naloxone might actually help in PEA arrests \u2014 a rhythm where we've historically been hopeless. If your arrest patient has opioid history, giving naloxone could change the outcome even when they're in PEA."
+      "featuredReason": "This large cohort study suggests naloxone may improve PEA OHCA survival, potentially identifying a rhythm-specific benefit in opioid-related arrests. Given the prevalence of opioid overdoses in Australian communities, this could change how paramedics approach naloxone administration during CPR."
     },
     {
       "id": "42237186",
@@ -21,40 +32,29 @@
       "doi": "10.1186/s13049-026-01630-4",
       "summary": "Consensus summit with 50+ experts developed 12 statements on prehospital transfusion, identifying RBCs and TXA as foundational, recommending freeze-dried plasma and whole blood for rural settings, and emphasising calcium and hypothermia prevention.",
       "relevance": "\ud83d\udfe2 High",
-      "featuredReason": "Expert consensus on prehospital blood transfusion with direct relevance to Australian rural and remote services \u2014 freeze-dried plasma and whole blood are getting serious backing as the way forward when transport times blow out."
+      "featuredReason": "As more Australian ambulance services explore prehospital blood programs, this consensus provides practical implementation guidance. The emphasis on calcium and hypothermia prevention addresses common prehospital oversights that can undermine blood product effectiveness."
     },
     {
-      "id": "10.1080/10903127.2026.2658592",
-      "title": "Intranasal Versus Intramuscular Midazolam in Pediatric Seizure Control: A Systematic Review and Meta-Analysis",
+      "id": "41886731",
+      "title": "Introduction of a Clinical Practice Guideline for Patella Reduction by Paramedics: The Effect on Pain Relief, Relocation, and Transport Decision",
       "journal": "Prehospital Emergency Care",
-      "date": "2026-05-06",
-      "pmid": "41996547",
-      "doi": "10.1080/10903127.2026.2658592",
-      "summary": "Meta-analysis testing whether intranasal or intramuscular midazolam works better for paediatric seizures without cannula access \u2014 intramuscular midazolam was associated with faster seizure termination and less need for rescue therapy, especially in the prehospital setting.",
+      "date": "2026-04-23",
+      "pmid": "41886731",
+      "doi": "10.1080/10903127.2026.2650541",
+      "summary": "They tested whether Ambulance Victoria's patella-reduction guideline improved analgesia and service outcomes, and found no analgesia gain but fewer cannulae, fewer transports, and shorter cases.",
       "relevance": "\ud83d\udfe2 High",
-      "featuredReason": "Directly challenges the widespread preference for IN midazolam in seizing kids \u2014 IM may actually be faster and more reliable when you need to stop a seizure now, especially in prolonged status where time matters."
+      "featuredReason": "This Australian study demonstrates how extending paramedic scope can safely improve service efficiency. Ambulance Victoria achieved 91.8% reduction success rates while cutting transports by 38% - a model that other Australian services could adapt for other minor injuries."
     },
     {
-      "id": "10.1016/j.resuscitation.2026.111061",
-      "title": "The impact of defibrillation current and pad position on return of spontaneous circulation during refractory ventricular fibrillation",
-      "journal": "Resuscitation",
-      "date": "2026-04-25",
-      "pmid": "41856454",
-      "doi": "10.1016/j.resuscitation.2026.111061",
-      "summary": "Secondary analysis of DOSE VF examined whether transthoracic current, pad position, and ROSC were linked, and found AP pad placement delivered higher current and was independently associated with ROSC, while delivered current itself was not.",
+      "id": "41950410",
+      "title": "Paramedics' decisions to withhold resuscitation in traumatic cardiac arrest: accuracy of paramedic assessments compared with autopsy findings",
+      "journal": "Prehospital Emergency Care",
+      "date": "2026-05-05",
+      "pmid": "41950410",
+      "doi": "10.1080/10903127.2026.2655289",
+      "summary": "Retrospective Ontario review testing how paramedics decide to withhold CPR in traumatic cardiac arrest \u2014 most no-CPR decisions were based on signs clearly incompatible with life, and post-mortem findings supported paramedic assessment in the large majority of cases.",
       "relevance": "\ud83d\udfe2 High",
-      "featuredReason": "DOSE VF secondary analysis suggests AP pad placement improves ROSC in refractory VF \u2014 if you're stuck in a VF loop, rotating pads to anterior-posterior might be the move before you reach for double sequential defibrillation."
-    },
-    {
-      "id": "41987276",
-      "title": "Sonorheometry to detect traumatic induced coagulopathy during initial management of trauma patients: an observational, multi-center study",
-      "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
-      "date": "2026-04-22",
-      "pmid": "41987276",
-      "doi": "10.1186/s13049-026-01610-8",
-      "summary": "Tested whether Quantra can rapidly detect trauma-induced coagulopathy against standard lab tests, and found early Quantra analysis may reliably exclude TIC, but prospective validation is still needed.",
-      "relevance": "\ud83d\udfe2 High",
-      "featuredReason": "Point-of-care viscoelastic testing could spot trauma-induced coagulopathy fast enough to guide prehospital transfusion decisions \u2014 identifying who actually needs blood products versus who's just bleeding from vessels."
+      "featuredReason": "This study validates paramedic judgment in traumatic cardiac arrest, showing that when paramedics identify signs incompatible with life, they're usually right. It provides evidence to support protocols allowing paramedics to withhold futile traumatic CPR, protecting crews from unnecessary risk while maintaining appropriate dignity for the deceased."
     }
   ],
   "funFacts": [
@@ -1855,25 +1855,10 @@
     }
   ],
   "tldr": {
-    "date": "2026-06-06",
-    "paperCount": 2,
-    "summary": "\u2022 Prehospital naloxone improves survival in PEA arrests \u2014 first large-scale evidence we should consider it for opioid-associated non-shockable rhythms.\n\u2022 Expert consensus backs RBCs and TXA as foundations of prehospital blood protocols, with freeze-dried plasma recommended for rural settings.\n\u2022 Calcium management and hypothermia prevention are essential elements of any prehospital transfusion program.\n\u2022 Naloxone benefit was specific to PEA \u2014 no survival advantage seen in shockable rhythms or asystole, so target patients carefully.",
-    "highlights": [
-      {
-        "id": "42176972",
-        "pmid": "42176972",
-        "doi": "10.1016/j.resuscitation.2026.111139",
-        "title": "Naloxone improves survival in PEA cardiac arrest",
-        "note": "If your arrest patient has opioid history, naloxone might actually help even in PEA \u2014 rhythm where we've historically been hopeless."
-      },
-      {
-        "id": "42237186",
-        "pmid": "42237186",
-        "doi": "10.1186/s13049-026-01630-4",
-        "title": "Prehospital blood transfusion consensus guidelines",
-        "note": "RBCs plus TXA form the backbone of prehospital haemorrhage protocols, with freeze-dried plasma ideal for rural Aussie services."
-      }
-    ]
+    "date": "2026-06-07",
+    "paperCount": 0,
+    "summary": "No new papers today.",
+    "highlights": []
   },
   "weeklyTldr": {
     "dateRange": "17\u201324 May 2026",
