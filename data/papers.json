@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-07T21:16:20Z",
+  "lastUpdated": "2026-06-08T21:16:22Z",
   "featuredPapers": [
     {
       "id": "10.1056/nejmoa2602167",
@@ -9,8 +9,8 @@
       "pmid": "",
       "doi": "10.1056/nejmoa2602167",
       "summary": "Multicenter randomized trial comparing prehospital type O whole blood resuscitation to standard care in trauma patients with hemorrhage.",
-      "relevance": "\ud83d\udfe2 High",
-      "featuredReason": "Landmark NEJM RCT that will define the future of prehospital blood resuscitation. With trauma bleeding remaining a leading cause of preventable death, this trial provides the highest-quality evidence yet on whether whole blood improves survival in the prehospital setting."
+      "relevance": "\ud83d\udd34 High",
+      "featuredReason": "First major RCT on prehospital whole blood - could change how we manage haemorrhagic shock in the field, especially relevant for rural Australian services with long transports."
     },
     {
       "id": "42176972",
@@ -20,8 +20,19 @@
       "pmid": "42176972",
       "doi": "10.1016/j.resuscitation.2026.111139",
       "summary": "Retrospective cohort (n=40,333) testing whether prehospital naloxone improves outcomes stratified by presenting rhythm, and found naloxone was associated with higher survival to discharge in PEA arrests but not in shockable rhythms or asystole.",
-      "relevance": "\ud83d\udfe2 High",
-      "featuredReason": "This large cohort study suggests naloxone may improve PEA OHCA survival, potentially identifying a rhythm-specific benefit in opioid-related arrests. Given the prevalence of opioid overdoses in Australian communities, this could change how paramedics approach naloxone administration during CPR."
+      "relevance": "\ud83d\udd34 High",
+      "featuredReason": "Huge sample showing naloxone might actually improve outcomes in PEA arrests - suggests we should be giving it more often, not just when opioid use is obvious."
+    },
+    {
+      "id": "10.1016/j.resuscitation.2026.111028",
+      "title": "Duration of emergency medical services-initiated prehospital cardiopulmonary resuscitation efforts and survival for pediatric patients with out-of-hospital cardiac arrest",
+      "journal": "Resuscitation",
+      "date": "2026-06-07",
+      "pmid": "",
+      "doi": "10.1016/j.resuscitation.2026.111028",
+      "summary": "They examined whether prehospital CPR duration affects survival in pediatric OHCA and found survival with favourable neurological outcome was extremely rare when EMS-initiated CPR exceeded 20 minutes.",
+      "relevance": "\ud83d\udd34 High",
+      "featuredReason": "Hard data on when to stop paediatric CPR - if you've been running it for 20 minutes without ROSC, the chances of a good outcome are essentially zero. Helps with termination decisions."
     },
     {
       "id": "42237186",
@@ -31,30 +42,19 @@
       "pmid": "42237186",
       "doi": "10.1186/s13049-026-01630-4",
       "summary": "Consensus summit with 50+ experts developed 12 statements on prehospital transfusion, identifying RBCs and TXA as foundational, recommending freeze-dried plasma and whole blood for rural settings, and emphasising calcium and hypothermia prevention.",
-      "relevance": "\ud83d\udfe2 High",
-      "featuredReason": "As more Australian ambulance services explore prehospital blood programs, this consensus provides practical implementation guidance. The emphasis on calcium and hypothermia prevention addresses common prehospital oversights that can undermine blood product effectiveness."
+      "relevance": "\ud83d\udd34 High",
+      "featuredReason": "Expert consensus on prehospital transfusion - practical guidance for services developing or refining blood protocols, with specific recommendations for rural and remote areas."
     },
     {
-      "id": "41886731",
-      "title": "Introduction of a Clinical Practice Guideline for Patella Reduction by Paramedics: The Effect on Pain Relief, Relocation, and Transport Decision",
-      "journal": "Prehospital Emergency Care",
-      "date": "2026-04-23",
-      "pmid": "41886731",
-      "doi": "10.1080/10903127.2026.2650541",
-      "summary": "They tested whether Ambulance Victoria's patella-reduction guideline improved analgesia and service outcomes, and found no analgesia gain but fewer cannulae, fewer transports, and shorter cases.",
-      "relevance": "\ud83d\udfe2 High",
-      "featuredReason": "This Australian study demonstrates how extending paramedic scope can safely improve service efficiency. Ambulance Victoria achieved 91.8% reduction success rates while cutting transports by 38% - a model that other Australian services could adapt for other minor injuries."
-    },
-    {
-      "id": "41950410",
-      "title": "Paramedics' decisions to withhold resuscitation in traumatic cardiac arrest: accuracy of paramedic assessments compared with autopsy findings",
-      "journal": "Prehospital Emergency Care",
-      "date": "2026-05-05",
-      "pmid": "41950410",
-      "doi": "10.1080/10903127.2026.2655289",
-      "summary": "Retrospective Ontario review testing how paramedics decide to withhold CPR in traumatic cardiac arrest \u2014 most no-CPR decisions were based on signs clearly incompatible with life, and post-mortem findings supported paramedic assessment in the large majority of cases.",
-      "relevance": "\ud83d\udfe2 High",
-      "featuredReason": "This study validates paramedic judgment in traumatic cardiac arrest, showing that when paramedics identify signs incompatible with life, they're usually right. It provides evidence to support protocols allowing paramedics to withhold futile traumatic CPR, protecting crews from unnecessary risk while maintaining appropriate dignity for the deceased."
+      "id": "41856454",
+      "title": "The impact of defibrillation current and pad position on return of spontaneous circulation during refractory ventricular fibrillation",
+      "journal": "Resuscitation",
+      "date": "2026-04-25",
+      "pmid": "41856454",
+      "doi": "10.1016/j.resuscitation.2026.111061",
+      "summary": "Secondary analysis of DOSE VF examined whether transthoracic current, pad position, and ROSC were linked, and found AP pad placement delivered higher current and was independently associated with ROSC, while delivered current itself was not.",
+      "relevance": "\ud83d\udd34 High",
+      "featuredReason": "DOSE VF follow-up showing anterior-posterior pad placement improves ROSC in refractory VF - confirms we should be using AP pads for stubborn arrests, not just stick with the default."
     }
   ],
   "funFacts": [
@@ -969,6 +969,31 @@
   ],
   "dailyUpdates": [
     {
+      "date": "2026-06-07",
+      "papers": [
+        {
+          "id": "10.1016/j.resuscitation.2026.111028",
+          "title": "Duration of emergency medical services-initiated prehospital cardiopulmonary resuscitation efforts and survival for pediatric patients with out-of-hospital cardiac arrest",
+          "journal": "Resuscitation",
+          "date": "2026-06-07",
+          "pmid": "",
+          "doi": "10.1016/j.resuscitation.2026.111028",
+          "summary": "They examined whether prehospital CPR duration affects survival in pediatric OHCA and found survival with favourable neurological outcome was extremely rare when EMS-initiated CPR exceeded 20 minutes.",
+          "relevance": "\ud83d\udfe2 High"
+        },
+        {
+          "id": "10.1016/j.resuscitation.2026.111118",
+          "title": "Combined short- and mid-latency SSEP amplitudes for early prediction of favorable neurological recovery after cardiac arrest",
+          "journal": "Resuscitation",
+          "date": "2026-06-07",
+          "pmid": "",
+          "doi": "10.1016/j.resuscitation.2026.111118",
+          "summary": "They tested whether combined somatosensory evoked potential amplitudes could predict favorable neurological recovery after cardiac arrest and found the combined measure outperformed traditional single-latency assessments.",
+          "relevance": "\ud83d\udfe1 Medium"
+        }
+      ]
+    },
+    {
       "date": "2026-06-06",
       "papers": [
         {
@@ -1855,33 +1880,14 @@
     }
   ],
   "tldr": {
-    "date": "2026-06-07",
+    "date": "2026-06-08",
     "paperCount": 0,
     "summary": "No new papers today.",
     "highlights": []
   },
   "weeklyTldr": {
-    "dateRange": "17\u201324 May 2026",
-    "summary": "IM naloxone beats IN for physiological and operational outcomes in a 3.1 million-record NEMSIS cohort\nDSED uptake rose after DOSE VF, but most eligible refractory VF patients still aren't getting it",
-    "topPicks": [
-      {
-        "title": "Prehospital outcomes associated with an initial strategy of intranasal vs. intramuscular naloxone administration",
-        "authors": "Tanner Smida, Remle Crowe, Melody Glenn, Anjni Joiner, James Bardes, et al.",
-        "journal": "",
-        "summary": "Not yet indexed on PubMed",
-        "relevance": "\ud83d\udfe2 High transferability \u2014 Directly applicable to initial naloxone route choice",
-        "pmid": "",
-        "doi": "10.1080/10903127.2026.2673361"
-      },
-      {
-        "title": "Use of double sequential external defibrillation in the United States before and after the DOSE VF randomized clinical trial",
-        "authors": "Sheldon Cheskes, et al.",
-        "journal": "",
-        "summary": "Not yet indexed on PubMed",
-        "relevance": "\ud83d\udfe2 High transferability \u2014 Highlights potential barriers to protocol implementation",
-        "pmid": "",
-        "doi": "10.1080/10903127.2026.2674263"
-      }
-    ]
+    "dateRange": "31 May \u2013 7 June 2026",
+    "summary": "",
+    "topPicks": []
   }
 }
