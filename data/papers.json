@@ -1,6 +1,17 @@
 {
-  "lastUpdated": "2026-06-08T21:16:22Z",
+  "lastUpdated": "2026-06-09T21:16:15Z",
   "featuredPapers": [
+    {
+      "id": "10.1016/j.ahj.2026.107378",
+      "title": "Design and rationale of a multicenter paramedic randomized trial of noradrenaline versus adrenaline in the initial management of patients with cardiogenic shock\u2014The PANDA trial",
+      "journal": "American Heart Journal",
+      "date": "2026-05-23",
+      "pmid": "",
+      "doi": "10.1016/j.ahj.2026.107378",
+      "summary": "This multicenter RCT protocol tests whether noradrenaline improves outcomes compared with adrenaline for paramedic management of cardiogenic shock, with the PANDA trial aiming to settle the debate on optimal vasopressor choice in the prehospital setting.",
+      "relevance": "\ud83d\udd34 High",
+      "featuredReason": "Directly addresses a core prehospital debate: which vasopressor should paramedics give for cardiogenic shock? The PANDA trial could change clinical guidelines and practice for one of our most critical presentations."
+    },
     {
       "id": "10.1056/nejmoa2602167",
       "title": "Prehospital Resuscitation with Type O Whole Blood for Trauma and Hemorrhage",
@@ -10,7 +21,7 @@
       "doi": "10.1056/nejmoa2602167",
       "summary": "Multicenter randomized trial comparing prehospital type O whole blood resuscitation to standard care in trauma patients with hemorrhage.",
       "relevance": "\ud83d\udd34 High",
-      "featuredReason": "First major RCT on prehospital whole blood - could change how we manage haemorrhagic shock in the field, especially relevant for rural Australian services with long transports."
+      "featuredReason": "NEJM-level evidence on whether whole blood improves outcomes prehospital for major haemorrhage. This could define the future of prehospital transfusion protocols for Australian trauma services."
     },
     {
       "id": "42176972",
@@ -21,18 +32,7 @@
       "doi": "10.1016/j.resuscitation.2026.111139",
       "summary": "Retrospective cohort (n=40,333) testing whether prehospital naloxone improves outcomes stratified by presenting rhythm, and found naloxone was associated with higher survival to discharge in PEA arrests but not in shockable rhythms or asystole.",
       "relevance": "\ud83d\udd34 High",
-      "featuredReason": "Huge sample showing naloxone might actually improve outcomes in PEA arrests - suggests we should be giving it more often, not just when opioid use is obvious."
-    },
-    {
-      "id": "10.1016/j.resuscitation.2026.111028",
-      "title": "Duration of emergency medical services-initiated prehospital cardiopulmonary resuscitation efforts and survival for pediatric patients with out-of-hospital cardiac arrest",
-      "journal": "Resuscitation",
-      "date": "2026-06-07",
-      "pmid": "",
-      "doi": "10.1016/j.resuscitation.2026.111028",
-      "summary": "They examined whether prehospital CPR duration affects survival in pediatric OHCA and found survival with favourable neurological outcome was extremely rare when EMS-initiated CPR exceeded 20 minutes.",
-      "relevance": "\ud83d\udd34 High",
-      "featuredReason": "Hard data on when to stop paediatric CPR - if you've been running it for 20 minutes without ROSC, the chances of a good outcome are essentially zero. Helps with termination decisions."
+      "featuredReason": "Challenges conventional thinking\u2014giving naloxone in PEA cardiac arrest might actually save lives. A massive dataset (40,000+ arrests) showing a rhythm-specific survival benefit could prompt immediate protocol reconsideration."
     },
     {
       "id": "42237186",
@@ -43,18 +43,18 @@
       "doi": "10.1186/s13049-026-01630-4",
       "summary": "Consensus summit with 50+ experts developed 12 statements on prehospital transfusion, identifying RBCs and TXA as foundational, recommending freeze-dried plasma and whole blood for rural settings, and emphasising calcium and hypothermia prevention.",
       "relevance": "\ud83d\udd34 High",
-      "featuredReason": "Expert consensus on prehospital transfusion - practical guidance for services developing or refining blood protocols, with specific recommendations for rural and remote areas."
+      "featuredReason": "Expert consensus from 50+ specialists on how to structure a prehospital blood protocol. Practical, actionable guidance that could be directly adapted for Australian services developing or refining haemorrhage management pathways."
     },
     {
-      "id": "41856454",
-      "title": "The impact of defibrillation current and pad position on return of spontaneous circulation during refractory ventricular fibrillation",
-      "journal": "Resuscitation",
-      "date": "2026-04-25",
-      "pmid": "41856454",
-      "doi": "10.1016/j.resuscitation.2026.111061",
-      "summary": "Secondary analysis of DOSE VF examined whether transthoracic current, pad position, and ROSC were linked, and found AP pad placement delivered higher current and was independently associated with ROSC, while delivered current itself was not.",
+      "id": "10.1080/10903127.2026.2674263",
+      "title": "Use of double sequential external defibrillation in the United States before and after the DOSE VF randomized clinical trial",
+      "journal": "Prehospital Emergency Care",
+      "date": "2026-05-18",
+      "pmid": "",
+      "doi": "10.1080/10903127.2026.2674263",
+      "summary": "Nationwide observational study examined trends in DSED use for refractory VF before and after publication of the DOSE VF trial.",
       "relevance": "\ud83d\udd34 High",
-      "featuredReason": "DOSE VF follow-up showing anterior-posterior pad placement improves ROSC in refractory VF - confirms we should be using AP pads for stubborn arrests, not just stick with the default."
+      "featuredReason": "Shows how a high-profile negative trial (DOSE VF) changed real-world practice. Understanding whether evidence shifted behaviour helps us learn how to translate research into guideline changes and keep up with the latest evidence."
     }
   ],
   "funFacts": [
@@ -1880,7 +1880,7 @@
     }
   ],
   "tldr": {
-    "date": "2026-06-08",
+    "date": "2026-06-09",
     "paperCount": 0,
     "summary": "No new papers today.",
     "highlights": []
