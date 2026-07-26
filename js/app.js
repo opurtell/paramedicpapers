@@ -123,13 +123,20 @@
     $('page-kicker').textContent = text;
   }
 
-  /* Fun fact — same day-of-year rotation as the previous build. */
+  /* Fun fact — prefer the server-picked daily fact (funFact), which changes
+     with each dashboard push. Fall back to client-side day-of-year rotation
+     for older cached data that lacks the field. */
   function renderFunFact() {
     var facts = state.data.funFacts || [];
-    if (!facts.length) { $('fun-fact-panel').hidden = true; return; }
-    var now = new Date();
-    var dayOfYear = Math.floor((now - new Date(now.getFullYear(), 0, 0)) / 86400000);
-    var fact = facts[dayOfYear % facts.length];
+    if (!facts.length && !state.data.funFact) { $('fun-fact-panel').hidden = true; return; }
+    var fact;
+    if (state.data.funFact && state.data.funFact.fact) {
+      fact = state.data.funFact;
+    } else {
+      var now = new Date();
+      var dayOfYear = Math.floor((now - new Date(now.getFullYear(), 0, 0)) / 86400000);
+      fact = facts[dayOfYear % facts.length];
+    }
     var text = fact.fact || '';
     var split = text.indexOf('. ');
     var head = split > 40 ? text.slice(0, split + 1) : text;
