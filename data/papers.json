@@ -1,6 +1,27 @@
 {
-  "lastUpdated": "2026-07-26T21:03:17Z",
-  "featuredPapers": [],
+  "lastUpdated": "2026-07-26T21:04:16Z",
+  "featuredPapers": [
+    {
+      "id": "42372567",
+      "note": "Practice-changing potential — epinephrine in traumatic cardiac arrest challenges current guidance"
+    },
+    {
+      "id": "42307216",
+      "note": "Direct clinical relevance — RCT on sedation during aeromedical retrieval"
+    },
+    {
+      "id": "42288074",
+      "note": "CPR mechanics — mean airway pressure may be a missing metric in resuscitation quality"
+    },
+    {
+      "id": "42364464",
+      "note": "Emerging tech — smart glasses show promise for EMS-OLMC communication"
+    },
+    {
+      "id": "42391298",
+      "note": "Paediatric trauma — identifies optimal targets for prehospital blood transfusion programs"
+    }
+  ],
   "funFacts": [
     {
       "category": "pharmacology",
@@ -2618,6 +2639,34 @@
       ]
     }
   ],
+  "tldr": {
+    "date": "2026-07-26",
+    "paperCount": 26,
+    "summary": "• Epinephrine in traumatic cardiac arrest associated with improved survival, challenging current guidance\n• Ketamine outperforms propofol for sedation during aeromedical retrieval with fewer adverse events\n• Mean airway pressure during CPR substantially lower than ED studies — may be missing resuscitation metric\n• Smart glasses enhance EMS-OLMC communication but extend interaction time\n• Pelvic binders showed no mortality benefit in pelvic fractures despite higher angioembolization rates",
+    "highlights": [
+      {
+        "id": "42372567",
+        "pmid": "42372567",
+        "doi": "10.1016/j.ajem.2026.06.039",
+        "title": "Prehospital epinephrine as a bridge to survival in traumatic cardiac arrest",
+        "note": "Controversial — may challenge current TCA guidance"
+      },
+      {
+        "id": "42307216",
+        "pmid": "42307216",
+        "doi": "10.1080/10903127.2026.2690178",
+        "title": "Ketamine Versus Propofol for Sedation in Acute Psychiatric Emergencies During Aeromedical Retrieval",
+        "note": "RCT — ketamine had fewer adverse events"
+      },
+      {
+        "id": "42384975",
+        "pmid": "42384975",
+        "doi": "10.1080/10903127.2026.2693743",
+        "title": "Hypopharyngeal Perforation Associated with King Laryngeal Tube Use",
+        "note": "Safety alert — rare but serious airway complication"
+      }
+    ]
+  },
   "weeklyTldr": {
     "dateRange": "20-27 July 2026",
     "summary": "Conventional CPR with ventilations beats hands-only for drowning-related OHCA, with 24% vs 9% one-month survival\nPrehospital adrenaline associated with improved survival in traumatic cardiac arrest, challenging the permissive hypotension paradigm\nKetamine outperformed propofol for sedation in acute psychiatric emergencies during aeromedical transport, with fewer adverse events\nKing laryngeal tube associated with rare but serious hypopharyngeal perforation — adds to existing airway adjunct concerns\nPrehospital critical care physician presence linked to improved neurological and survival outcomes after OHCA",
