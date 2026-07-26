@@ -168,7 +168,12 @@
     if (w && w.summary) {
       var lines = bulletLines(w.summary);
       lead = lines[0] || '';
-      items = lines.slice(1).map(function (l) { return { text: l, ref: refForText(l) }; });
+      /* Prefer explicit ids from weeklyTldr.highlights; only fall back to the
+         title-word heuristic when the backend has not supplied that field. */
+      var byText = weeklyRefIndex(w.highlights);
+      items = lines.slice(1).map(function (l) {
+        return { text: l, ref: byText ? (byText[normText(l)] || null) : refForText(l) };
+      });
     }
     ['', '-home'].forEach(function (sfx) {
       var leadEl = $('weekly-tldr-lead' + sfx);
@@ -180,8 +185,33 @@
     });
   }
 
+  /* Build a bullet-text -> paper-id lookup from weeklyTldr.highlights.
+     Returns null when the field is absent/empty so callers keep the heuristic;
+     an entry whose id matches no paper is dropped, leaving that bullet plain. */
+  function weeklyRefIndex(highlights) {
+    if (!highlights || !highlights.length) return null;
+    var index = {};
+    highlights.forEach(function (h) {
+      if (!h || !h.text || !h.id) return;
+      if (!paperById(h.id)) return;
+      index[normText(h.text)] = h.id;
+    });
+    return index;
+  }
+
+  /* Bullets are read off weeklyTldr.summary and ids off weeklyTldr.highlights;
+     normalising both sides keeps them matched despite bullet-marker/space drift. */
+  function normText(text) {
+    return String(text == null ? '' : text)
+      .replace(/^[•\-]\s*/, '')
+      .replace(/\s+/g, ' ')
+      .trim()
+      .toLowerCase();
+  }
+
   /* Match a weekly bullet to a paper by longest shared title token run.
-     Returns a paper id or null — bullets without a match render unlinked. */
+     Returns a paper id or null — bullets without a match render unlinked.
+     Fallback only: used when weeklyTldr.highlights is absent. */
   function refForText(text) {
     var lower = text.toLowerCase();
     var best = null, bestScore = 0;
