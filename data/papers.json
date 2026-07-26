@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-26T14:50:53Z",
+  "lastUpdated": "2026-07-26T21:03:17Z",
   "featuredPapers": [],
   "funFacts": [
     {
@@ -1729,6 +1729,46 @@
           "doi": "10.1016/j.resplu.2026.101372",
           "summary": "Tocilizumab did not affect NGAL in comatose survivors of OHCA.",
           "relevance": "🟡 Medium"
+        },
+        {
+          "id": "10.1016/j.resuscitation.2026.111080",
+          "title": "Public defibrillators: high investment, low return – lowering the cost per shock – the D€FI-CO$T study",
+          "journal": "Resuscitation",
+          "date": "2026-07-26",
+          "pmid": "",
+          "doi": "10.1016/j.resuscitation.2026.111080",
+          "summary": "Analysis of public AED deployment cost-effectiveness found very low usage rates relative to investment — the study examines strategies to improve cost per delivered shock.",
+          "relevance": "🟡 Medium"
+        },
+        {
+          "id": "10.1016/j.resuscitation.2026.111194",
+          "title": "Resolving uncertainties in patient selection for mechanical circulatory support after out-of-hospital cardiac arrest",
+          "journal": "Resuscitation",
+          "date": "2026-07-26",
+          "pmid": "",
+          "doi": "10.1016/j.resuscitation.2026.111194",
+          "summary": "Review of patient selection criteria for ECPR after OHCA.",
+          "relevance": "🟢 High"
+        },
+        {
+          "id": "10.1016/j.annemergmed.2026.02.030",
+          "title": "Late Tranexamic Acid After Trauma: Uncertainty Is Not Neutral",
+          "journal": "Annals of Emergency Medicine",
+          "date": "2026-07-26",
+          "pmid": "",
+          "doi": "10.1016/j.annemergmed.2026.02.030",
+          "summary": "Commentary on the evidence gap around TXA administration beyond 3 hours post-injury.",
+          "relevance": "🟡 Medium"
+        },
+        {
+          "id": "10.1016/j.annemergmed.2026.02.029",
+          "title": "Early Intensive Blood Pressure Reduction After Intracerebral Hemorrhage Is Associated With Worse Functional Outcome: The Risk of Overshooting Blood Pressure Goals",
+          "journal": "Annals of Emergency Medicine",
+          "date": "2026-07-26",
+          "pmid": "",
+          "doi": "10.1016/j.annemergmed.2026.02.029",
+          "summary": "Retrospective cohort examining whether rapid systolic BP reduction ≤150 mm Hg after spontaneous intracerebral haemorrhage improved outcomes — early target achievement and overshooting <120 mm Hg were associated with worse functional outcome.",
+          "relevance": "🟢 High"
         }
       ]
     },
