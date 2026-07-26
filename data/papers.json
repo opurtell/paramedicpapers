@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-26T14:43:08Z",
+  "lastUpdated": "2026-07-26T14:50:53Z",
   "featuredPapers": [],
   "funFacts": [
     {
@@ -1061,46 +1061,6 @@
           "relevance": "🟢 High"
         },
         {
-          "id": "10.29381/0103-8559/20213101143-6",
-          "title": "O AFETO NEGATIVO E UM CORAÇÃO PARTIDO: O PAPEL DA PSICOLOGIA NA ATUAÇÃO COM A SÍNDROME DE TAKOTSUBO",
-          "journal": "Revista da Sociedade de Cardiologia do Estado de São Paulo",
-          "date": "2026-07-26",
-          "pmid": "",
-          "doi": "10.29381/0103-8559/20213101143-6",
-          "summary": "ntrodução: A “síndrome do coração partido”, de nome científico “síndrome de takotsubo”, é uma doença rara, com sintomas similares ao infarto.",
-          "relevance": "🔴 Low"
-        },
-        {
-          "id": "10.1504/ijims.2028.10077165",
-          "title": "Enhancing Patient Data Security in Hospital Information Systems (HIS) through Blockchain Technology",
-          "journal": "International Journal of Internet Manufacturing and Services",
-          "date": "2026-07-26",
-          "pmid": "",
-          "doi": "10.1504/ijims.2028.10077165",
-          "summary": "Study on: Enhancing Patient Data Security in Hospital Information Systems (HIS) through Blockchain Technology. No abstract available for detailed assessment.",
-          "relevance": "🔴 Low"
-        },
-        {
-          "id": "10.15556/ijiim.01.02.003",
-          "title": "CULTURE AS AN INTERFACE BETWEEN COMMUNICATION AND COMPARISON THE CONCEPT OF CULTURE FROM THE SYSTEMS THEORY PERSPECTIVE",
-          "journal": "International Journal on Integrated Information Management",
-          "date": "2026-07-26",
-          "pmid": "",
-          "doi": "10.15556/ijiim.01.02.003",
-          "summary": "Study on: CULTURE AS AN INTERFACE BETWEEN COMMUNICATION AND COMPARISON THE CONCEPT OF CULTURE FROM THE SYSTEMS THEORY PERSPECTIVE. No abstract available for detailed assessment.",
-          "relevance": "🔴 Low"
-        },
-        {
-          "id": "10.32598/jaehr.9.4.1217",
-          "title": "Comparing and Prioritizing Different Methods of Collection and Decontamination of Waste in Decentralized Healthcare Centers",
-          "journal": "Journal of Advances in Environmental Health Research",
-          "date": "2026-07-26",
-          "pmid": "",
-          "doi": "10.32598/jaehr.9.4.1217",
-          "summary": "The most appropriate way to decontaminate this type of waste is autoclaving after collection at a centralized location.",
-          "relevance": "🟡 Medium"
-        },
-        {
           "id": "42307216",
           "title": "Ketamine Versus Propofol for Sedation in Acute Psychiatric Emergencies During Aeromedical Retrieval: A Randomized Clinical Trial",
           "journal": "Prehospital Emergency Care",
@@ -1321,16 +1281,6 @@
           "relevance": "🟡 Medium"
         },
         {
-          "id": "42173426",
-          "title": "Reply to: Calibration, generalization, and explainability: AI challenges behind bedside EEG prognostication",
-          "journal": "Resuscitation",
-          "date": "2026-07-26",
-          "pmid": "42173426",
-          "doi": "10.1016/j.resuscitation.2026.111145",
-          "summary": "Study on: Reply to: Calibration, generalization, and explainability: AI challenges behind bedside EEG prognostication. No abstract available for detailed assessment.",
-          "relevance": "🔴 Low"
-        },
-        {
           "id": "42361894",
           "title": "Optimal site of tactile stimulation during initial steps of neonatal resuscitation: a three-arm randomized controlled trial",
           "journal": "Resuscitation",
@@ -1391,36 +1341,6 @@
           "relevance": "🟡 Medium"
         },
         {
-          "id": "42315210",
-          "title": "Response to Letter to the Editor for “Boarding and Overcrowding are Facts of Life. It’s Time We Adapt Resident Education to Them”",
-          "journal": "Annals of Emergency Medicine",
-          "date": "2026-07-26",
-          "pmid": "42315210",
-          "doi": "10.1016/j.annemergmed.2026.02.009",
-          "summary": "Study on: Response to Letter to the Editor for “Boarding and Overcrowding are Facts of Life. It’s Time We Adapt Resident Education to Them”. No abstract available for detailed assessment.",
-          "relevance": "🔴 Low"
-        },
-        {
-          "id": "42315215",
-          "title": "Man With Left Lower Limb Pain",
-          "journal": "Annals of Emergency Medicine",
-          "date": "2026-07-26",
-          "pmid": "42315215",
-          "doi": "10.1016/j.annemergmed.2026.01.011",
-          "summary": "Study on: Man With Left Lower Limb Pain. No abstract available for detailed assessment.",
-          "relevance": "🔴 Low"
-        },
-        {
-          "id": "42476692",
-          "title": "Man With Pain in the Eye",
-          "journal": "Annals of Emergency Medicine",
-          "date": "2026-07-26",
-          "pmid": "42476692",
-          "doi": "10.1016/j.annemergmed.2026.02.022",
-          "summary": "Study on: Man With Pain in the Eye. No abstract available for detailed assessment.",
-          "relevance": "🔴 Low"
-        },
-        {
           "id": "41989358",
           "title": "Emergency Department Observation and Computed Tomography Use in Children With Blunt Abdominal Trauma",
           "journal": "Annals of Emergency Medicine",
@@ -1429,46 +1349,6 @@
           "doi": "10.1016/j.annemergmed.2026.02.012",
           "summary": "Observation with deferred CT decisionmaking was associated with less frequent CT use, particularly in patients with intermediate clinician suspicion, without an increase in missed injuries.",
           "relevance": "🟡 Medium"
-        },
-        {
-          "id": "42132715",
-          "title": "From Chaos to Coordination: Fundamentals of Teamwork and How Residents Can Practice Teaming to Improve Acute Care",
-          "journal": "Annals of Emergency Medicine",
-          "date": "2026-07-26",
-          "pmid": "42132715",
-          "doi": "10.1016/j.annemergmed.2026.02.026",
-          "summary": "Study on: From Chaos to Coordination: Fundamentals of Teamwork and How Residents Can Practice Teaming to Improve Acute Care. No abstract available for detailed assessment.",
-          "relevance": "🔴 Low"
-        },
-        {
-          "id": "42315219",
-          "title": "Policy Statements",
-          "journal": "Annals of Emergency Medicine",
-          "date": "2026-07-26",
-          "pmid": "42315219",
-          "doi": "10.1016/j.annemergmed.2026.03.015",
-          "summary": "Study on: Policy Statements. No abstract available for detailed assessment.",
-          "relevance": "🔴 Low"
-        },
-        {
-          "id": "10.1016/s0196-0644(26)00447-6",
-          "title": "Information for Readers",
-          "journal": "Annals of Emergency Medicine",
-          "date": "2026-07-26",
-          "pmid": "",
-          "doi": "10.1016/s0196-0644(26)00447-6",
-          "summary": "Study on: Information for Readers. No abstract available for detailed assessment.",
-          "relevance": "🔴 Low"
-        },
-        {
-          "id": "10.1016/s0196-0644(26)00445-2",
-          "title": "Masthead",
-          "journal": "Annals of Emergency Medicine",
-          "date": "2026-07-26",
-          "pmid": "",
-          "doi": "10.1016/s0196-0644(26)00445-2",
-          "summary": "Study on: Masthead. No abstract available for detailed assessment.",
-          "relevance": "🔴 Low"
         },
         {
           "id": "42429726",
@@ -1491,16 +1371,6 @@
           "relevance": "🟡 Medium"
         },
         {
-          "id": "42315216",
-          "title": "Woman With Blunt Abdominal Trauma",
-          "journal": "Annals of Emergency Medicine",
-          "date": "2026-07-26",
-          "pmid": "42315216",
-          "doi": "10.1016/j.annemergmed.2026.01.012",
-          "summary": "Study on: Woman With Blunt Abdominal Trauma. No abstract available for detailed assessment.",
-          "relevance": "🔴 Low"
-        },
-        {
           "id": "42405914",
           "title": "“It’s Just So Important to Make Them Feel Seen”: Teen and Caregiver Perspectives of Lethal Means Safety Planning for the Emergency Department",
           "journal": "Annals of Emergency Medicine",
@@ -1509,16 +1379,6 @@
           "doi": "10.1016/j.annemergmed.2026.06.004",
           "summary": "Lethal means safety counseling is an essential, high-yield component of suicide prevention.",
           "relevance": "🟡 Medium"
-        },
-        {
-          "id": "42476689",
-          "title": "Commentary",
-          "journal": "Annals of Emergency Medicine",
-          "date": "2026-07-26",
-          "pmid": "42476689",
-          "doi": "10.1016/j.annemergmed.2026.04.007",
-          "summary": "Study on: Commentary. No abstract available for detailed assessment.",
-          "relevance": "🔴 Low"
         },
         {
           "id": "42458552",
@@ -1569,26 +1429,6 @@
           "doi": "10.1186/s13049-026-01656-8",
           "summary": "Emergency clinicians should be familiar with the distinct injury profiles associated with crowd-control weapons and be prepared to manage them within the emergency care setting.",
           "relevance": "🟡 Medium"
-        },
-        {
-          "id": "42482160",
-          "title": "Correction: The epidemiology of canyoning rescue operations in Italy: a retrospective 15-year database study",
-          "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
-          "date": "2026-07-26",
-          "pmid": "42482160",
-          "doi": "10.1186/s13049-026-01660-y",
-          "summary": "Study on: Correction: The epidemiology of canyoning rescue operations in Italy: a retrospective 15-year database study. No abstract available for detailed assessment.",
-          "relevance": "🔴 Low"
-        },
-        {
-          "id": "42498957",
-          "title": "Known to crews, missing from the literature - electrostatic discharge during helicopter hoist operations",
-          "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
-          "date": "2026-07-26",
-          "pmid": "42498957",
-          "doi": "10.1186/s13049-026-01666-6",
-          "summary": "Study on: Known to crews, missing from the literature - electrostatic discharge during helicopter hoist operations. No abstract available for detailed assessment.",
-          "relevance": "🔴 Low"
         },
         {
           "id": "42432757",
@@ -1689,16 +1529,6 @@
           "doi": "10.1111/1742-6723.70307",
           "summary": "Patients with closed head injury in this rural emergency department had substantial neuroimaging needs despite the absence of hospital‐based CT.",
           "relevance": "🟡 Medium"
-        },
-        {
-          "id": "10.1111/1742-6723.70277",
-          "title": "Issue Information",
-          "journal": "Emergency Medicine Australasia",
-          "date": "2026-07-26",
-          "pmid": "",
-          "doi": "10.1111/1742-6723.70277",
-          "summary": "Study on: Issue Information. No abstract available for detailed assessment.",
-          "relevance": "🔴 Low"
         },
         {
           "id": "42437660",
