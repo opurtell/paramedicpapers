@@ -1,16 +1,38 @@
 {
-  "lastUpdated": "2026-06-09T21:16:15Z",
+  "lastUpdated": "2026-07-26T04:56:06Z",
   "featuredPapers": [
     {
-      "id": "10.1016/j.ahj.2026.107378",
-      "title": "Design and rationale of a multicenter paramedic randomized trial of noradrenaline versus adrenaline in the initial management of patients with cardiogenic shock\u2014The PANDA trial",
-      "journal": "American Heart Journal",
-      "date": "2026-05-23",
-      "pmid": "",
-      "doi": "10.1016/j.ahj.2026.107378",
-      "summary": "This multicenter RCT protocol tests whether noradrenaline improves outcomes compared with adrenaline for paramedic management of cardiogenic shock, with the PANDA trial aiming to settle the debate on optimal vasopressor choice in the prehospital setting.",
-      "relevance": "\ud83d\udd34 High",
-      "featuredReason": "Directly addresses a core prehospital debate: which vasopressor should paramedics give for cardiogenic shock? The PANDA trial could change clinical guidelines and practice for one of our most critical presentations."
+      "id": "41886731",
+      "title": "Introduction of a Clinical Practice Guideline for Patella Reduction by Paramedics: The Effect on Pain Relief, Relocation, and Transport Decision",
+      "journal": "Prehospital Emergency Care",
+      "date": "2026-04-23",
+      "pmid": "41886731",
+      "doi": "10.1080/10903127.2026.2650541",
+      "summary": "They tested whether Ambulance Victoria's patella-reduction guideline improved analgesia and service outcomes, and found no analgesia gain but fewer cannulae, fewer transports, and shorter cases.",
+      "relevance": "\ud83d\udfe2 High",
+      "featuredReason": "Directly Australian \u2014 an Ambulance Victoria CPG evaluation showing paramedic-led patella reduction achieved 91.8% success, cut transports by 38%, and saved ~33 minutes per case. A model example of expanding paramedic scope to reduce unnecessary ED presentations."
+    },
+    {
+      "id": "41967757",
+      "title": "Healthcare costs of expedited transport compared with standard care following out-of-hospital cardiac arrest: results from the EVIDENCE randomised controlled trial",
+      "journal": "Resuscitation",
+      "date": "2026-04-30",
+      "pmid": "41967757",
+      "doi": "10.1016/j.resuscitation.2026.111083",
+      "summary": "Greater Sydney costing analysis of expedited OHCA transport for possible ECPR versus standard care \u2014 overall health system costs were comparable, with higher costs when patients arrived during ECPR business hours.",
+      "relevance": "\ud83d\udfe2 High",
+      "featuredReason": "Greater Sydney RCT data on the economics of expedited OHCA transport for ECPR \u2014 directly relevant as Australian services weigh up ECPR bypass pathways. Shows the health system cost of prehospital ECPR routing is broadly comparable to standard care."
+    },
+    {
+      "id": "41819340",
+      "title": "Decline in rescue breathing and its impact on outcomes in pediatric out-of-hospital cardiac arrest due to drowning: a nationwide study, 2012\u20132023",
+      "journal": "Resuscitation",
+      "date": "2026-07-26",
+      "pmid": "41819340",
+      "doi": "10.1016/j.resuscitation.2026.111049",
+      "summary": "In pediatric drowning OHCA, CO-CPR was associated with worse survival and neurological outcomes than RB-CPR.",
+      "relevance": "\ud83d\udfe2 High",
+      "featuredReason": "Drowning is a leading cause of paediatric cardiac arrest in Australia, and this nationwide study shows compression-only CPR is harmful here \u2014 rescue-breathing CPR remains essential. Reinforces dispatcher and bystander CPR guidance for drowning arrests."
     },
     {
       "id": "10.1056/nejmoa2602167",
@@ -20,41 +42,19 @@
       "pmid": "",
       "doi": "10.1056/nejmoa2602167",
       "summary": "Multicenter randomized trial comparing prehospital type O whole blood resuscitation to standard care in trauma patients with hemorrhage.",
-      "relevance": "\ud83d\udd34 High",
-      "featuredReason": "NEJM-level evidence on whether whole blood improves outcomes prehospital for major haemorrhage. This could define the future of prehospital transfusion protocols for Australian trauma services."
+      "relevance": "\ud83d\udfe2 High",
+      "featuredReason": "Landmark NEJM randomised trial on prehospital whole blood for traumatic haemorrhage \u2014 the highest-impact prehospital resuscitation paper of the period. Directly informs the ongoing rollout of prehospital blood products by Australian services including HEMS and rural retrieval."
     },
     {
-      "id": "42176972",
-      "title": "Naloxone administration associated with improved survival in PEA out-of-hospital cardiac arrests",
-      "journal": "Resuscitation",
-      "date": "2026-06-06",
-      "pmid": "42176972",
-      "doi": "10.1016/j.resuscitation.2026.111139",
-      "summary": "Retrospective cohort (n=40,333) testing whether prehospital naloxone improves outcomes stratified by presenting rhythm, and found naloxone was associated with higher survival to discharge in PEA arrests but not in shockable rhythms or asystole.",
-      "relevance": "\ud83d\udd34 High",
-      "featuredReason": "Challenges conventional thinking\u2014giving naloxone in PEA cardiac arrest might actually save lives. A massive dataset (40,000+ arrests) showing a rhythm-specific survival benefit could prompt immediate protocol reconsideration."
-    },
-    {
-      "id": "42237186",
-      "title": "Best practices on blood and blood products for a prehospital hemorrhage protocol: consensus from the 2025 Canadian prehospital transfusion summit",
-      "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
-      "date": "2026-06-06",
-      "pmid": "42237186",
-      "doi": "10.1186/s13049-026-01630-4",
-      "summary": "Consensus summit with 50+ experts developed 12 statements on prehospital transfusion, identifying RBCs and TXA as foundational, recommending freeze-dried plasma and whole blood for rural settings, and emphasising calcium and hypothermia prevention.",
-      "relevance": "\ud83d\udd34 High",
-      "featuredReason": "Expert consensus from 50+ specialists on how to structure a prehospital blood protocol. Practical, actionable guidance that could be directly adapted for Australian services developing or refining haemorrhage management pathways."
-    },
-    {
-      "id": "10.1080/10903127.2026.2674263",
-      "title": "Use of double sequential external defibrillation in the United States before and after the DOSE VF randomized clinical trial",
+      "id": "42307216",
+      "title": "Ketamine Versus Propofol for Sedation in Acute Psychiatric Emergencies During Aeromedical Retrieval: A Randomized Clinical Trial",
       "journal": "Prehospital Emergency Care",
-      "date": "2026-05-18",
-      "pmid": "",
-      "doi": "10.1080/10903127.2026.2674263",
-      "summary": "Nationwide observational study examined trends in DSED use for refractory VF before and after publication of the DOSE VF trial.",
-      "relevance": "\ud83d\udd34 High",
-      "featuredReason": "Shows how a high-profile negative trial (DOSE VF) changed real-world practice. Understanding whether evidence shifted behaviour helps us learn how to translate research into guideline changes and keep up with the latest evidence."
+      "date": "2026-07-26",
+      "pmid": "42307216",
+      "doi": "10.1080/10903127.2026.2690178",
+      "summary": "In this RCT of 170 patients, ketamine was associated with fewer adverse events compared to propofol when used for sedation during aeromedical retrieval of patients experiencing acute psychiatric agitation.",
+      "relevance": "\ud83d\udfe2 High",
+      "featuredReason": "RCT evidence directly applicable to Australian aeromedical retrieval (RFDS, air ambulance) for the common and high-risk scenario of acute psychiatric agitation. Ketamine's superior safety profile supports it as first-line sedation for these retrievals."
     }
   ],
   "funFacts": [
@@ -969,6 +969,976 @@
   ],
   "dailyUpdates": [
     {
+      "date": "2026-07-26",
+      "papers": [
+        {
+          "id": "42372567",
+          "title": "Prehospital epinephrine as a bridge to survival in traumatic cardiac arrest: A nationwide propensity score-matched analysis",
+          "journal": "The American Journal of Emergency Medicine",
+          "date": "2026-07-26",
+          "pmid": "42372567",
+          "doi": "10.1016/j.ajem.2026.06.039",
+          "summary": "Prehospital epinephrine administration in patients with traumatic cardiac arrest was associated with increased survival to hospital discharge and prehospital ROSC.",
+          "relevance": "\ud83d\udfe2 High"
+        },
+        {
+          "id": "10.1016/j.cor.2026.107559",
+          "title": "Simulation-based dynamic optimization for ambulance dispatch and casualty distribution in mass casualty incident",
+          "journal": "Computers & Operations Research",
+          "date": "2026-07-26",
+          "pmid": "",
+          "doi": "10.1016/j.cor.2026.107559",
+          "summary": "Study on: Simulation-based dynamic optimization for ambulance dispatch and casualty distribution in mass casualty incident. No abstract available for detailed assessment.",
+          "relevance": "\ud83d\udfe1 Medium"
+        },
+        {
+          "id": "42480287",
+          "title": "Prehospital pelvic binder use and transfusion requirements in patients with pelvic fractures: A nationwide propensity-matched cohort study",
+          "journal": "Injury",
+          "date": "2026-07-26",
+          "pmid": "42480287",
+          "doi": "10.1016/j.injury.2026.113501",
+          "summary": "In this nationwide propensity-matched cohort of patients with blunt pelvic fractures, prehospital pelvic binder use was not associated with reduced 24-hour transfusion requirements or in-hospital mortality, but was associated with a higher rate of pelvic angioembolization.",
+          "relevance": "\ud83d\udfe1 Medium"
+        },
+        {
+          "id": "42364464",
+          "title": "Pilot evaluation of smart glasses for communication workflow and task performance in prehospital care",
+          "journal": "International Journal of Medical Informatics",
+          "date": "2026-07-26",
+          "pmid": "42364464",
+          "doi": "10.1016/j.ijmedinf.2026.106571",
+          "summary": "Smart glasses have the potential to enhance EMS-OLMC communication and improve completion of physician-guided critical tasks, though these benefits come with longer interactions.",
+          "relevance": "\ud83d\udfe2 High"
+        },
+        {
+          "id": "42288074",
+          "title": "Mean airway pressure as the missing link in CPR physiology: A prehospital comparison of manual and mechanical chest compressions",
+          "journal": "The American Journal of Emergency Medicine",
+          "date": "2026-07-26",
+          "pmid": "42288074",
+          "doi": "10.1016/j.ajem.2026.06.012",
+          "summary": "Prehospital mPAW values were substantially lower than those reported in previous ED-based studies.",
+          "relevance": "\ud83d\udfe2 High"
+        },
+        {
+          "id": "42407270",
+          "title": "Psychosocial predictors of mental health outcomes in different groups of emergency responders: implications for tailored support systems",
+          "journal": "Journal of Psychiatric Research",
+          "date": "2026-07-26",
+          "pmid": "42407270",
+          "doi": "10.1016/j.jpsychires.2026.06.056",
+          "summary": "This study provides important insights into the mental health challenges faced by emergency service workers (ESWs), including paramedics, firefighters, and emergency medical dispatchers (EMDs).",
+          "relevance": "\ud83d\udfe2 High"
+        },
+        {
+          "id": "42269317",
+          "title": "The impact of an ambulance destination policy change on emergency department care metrics in New York City",
+          "journal": "The American Journal of Emergency Medicine",
+          "date": "2026-07-26",
+          "pmid": "42269317",
+          "doi": "10.1016/j.ajem.2026.05.042",
+          "summary": "EMS destination policies can affect ED care delivery metrics.",
+          "relevance": "\ud83d\udfe1 Medium"
+        },
+        {
+          "id": "10.1016/j.acepjo.2026.100459",
+          "title": "Effectiveness of Multidisciplinary \u201cCase Management\u201d Approaches to the Management of Patients Who Make High Use of the Emergency Ambulance Service: A Quasi-experimental Evaluation Using Linked Routine Records",
+          "journal": "JACEP Open",
+          "date": "2026-07-26",
+          "pmid": "",
+          "doi": "10.1016/j.acepjo.2026.100459",
+          "summary": "Study on: Effectiveness of Multidisciplinary \u201cCase Management\u201d Approaches to the Management of Patients Who Make High Use of the Emergency Ambulance Service: A Quasi-experimental Evaluation Using Linked Routine. No abstract available for detailed assessment.",
+          "relevance": "\ud83d\udfe1 Medium"
+        },
+        {
+          "id": "42398220",
+          "title": "Systemic Inefficiency versus Geographic Proximity: Decoupling Distance from Prehospital Delay in Urban Interhospital Trauma Transfers, Guayaquil-Ecuador",
+          "journal": "Journal of Surgical Research",
+          "date": "2026-07-26",
+          "pmid": "42398220",
+          "doi": "10.1016/j.jss.2026.06.012",
+          "summary": "Prehospital delay and injury severity exhibit a lethal synergistic interaction.",
+          "relevance": "\ud83d\udfe1 Medium"
+        },
+        {
+          "id": "42155347",
+          "title": "Prehospital prediction of mechanical circulatory support during hospital stay in cardiogenic shock: The FLAG score",
+          "journal": "Heart & Lung",
+          "date": "2026-07-26",
+          "pmid": "42155347",
+          "doi": "10.1016/j.hrtlng.2026.102847",
+          "summary": "The FLAG risk score is a simple, registry-based model to predict MCS treatment during hospital stay in a prehospital setting.",
+          "relevance": "\ud83d\udfe1 Medium"
+        },
+        {
+          "id": "42361889",
+          "title": "Sex differences in OHCA outcomes are driven by arrest circumstances rather than different EMS treatment: a nationwide registry study from Norway 2015 to 2024",
+          "journal": "Resuscitation",
+          "date": "2026-07-26",
+          "pmid": "42361889",
+          "doi": "10.1016/j.resuscitation.2026.111188",
+          "summary": "We found differences in baseline characteristics and treatment performed by Emergency Medical Services (EMS) between women and men, as well as differences in survived event and survival to 30 days.",
+          "relevance": "\ud83d\udfe2 High"
+        },
+        {
+          "id": "10.29381/0103-8559/20213101143-6",
+          "title": "O AFETO NEGATIVO E UM CORA\u00c7\u00c3O PARTIDO: O PAPEL DA PSICOLOGIA NA ATUA\u00c7\u00c3O COM A S\u00cdNDROME DE TAKOTSUBO",
+          "journal": "Revista da Sociedade de Cardiologia do Estado de S\u00e3o Paulo",
+          "date": "2026-07-26",
+          "pmid": "",
+          "doi": "10.29381/0103-8559/20213101143-6",
+          "summary": "ntrodu\u00e7\u00e3o: A \u201cs\u00edndrome do cora\u00e7\u00e3o partido\u201d, de nome cient\u00edfico \u201cs\u00edndrome de takotsubo\u201d, \u00e9 uma doen\u00e7a rara, com sintomas similares ao infarto.",
+          "relevance": "\ud83d\udd34 Low"
+        },
+        {
+          "id": "10.1504/ijims.2028.10077165",
+          "title": "Enhancing Patient Data Security in Hospital Information Systems (HIS) through Blockchain Technology",
+          "journal": "International Journal of Internet Manufacturing and Services",
+          "date": "2026-07-26",
+          "pmid": "",
+          "doi": "10.1504/ijims.2028.10077165",
+          "summary": "Study on: Enhancing Patient Data Security in Hospital Information Systems (HIS) through Blockchain Technology. No abstract available for detailed assessment.",
+          "relevance": "\ud83d\udd34 Low"
+        },
+        {
+          "id": "10.15556/ijiim.01.02.003",
+          "title": "CULTURE AS AN INTERFACE BETWEEN COMMUNICATION AND COMPARISON THE CONCEPT OF CULTURE FROM THE SYSTEMS THEORY PERSPECTIVE",
+          "journal": "International Journal on Integrated Information Management",
+          "date": "2026-07-26",
+          "pmid": "",
+          "doi": "10.15556/ijiim.01.02.003",
+          "summary": "Study on: CULTURE AS AN INTERFACE BETWEEN COMMUNICATION AND COMPARISON THE CONCEPT OF CULTURE FROM THE SYSTEMS THEORY PERSPECTIVE. No abstract available for detailed assessment.",
+          "relevance": "\ud83d\udd34 Low"
+        },
+        {
+          "id": "10.32598/jaehr.9.4.1217",
+          "title": "Comparing and Prioritizing Different Methods of Collection and Decontamination of Waste in Decentralized Healthcare Centers",
+          "journal": "Journal of Advances in Environmental Health Research",
+          "date": "2026-07-26",
+          "pmid": "",
+          "doi": "10.32598/jaehr.9.4.1217",
+          "summary": "The most appropriate way to decontaminate this type of waste is autoclaving after collection at a centralized location.",
+          "relevance": "\ud83d\udfe1 Medium"
+        },
+        {
+          "id": "42307216",
+          "title": "Ketamine Versus Propofol for Sedation in Acute Psychiatric Emergencies During Aeromedical Retrieval: A Randomized Clinical Trial",
+          "journal": "Prehospital Emergency Care",
+          "date": "2026-07-26",
+          "pmid": "42307216",
+          "doi": "10.1080/10903127.2026.2690178",
+          "summary": "In this RCT of 170 patients, ketamine was associated with fewer adverse events compared to propofol when used for sedation during aeromedical retrieval of patients experiencing acute psychiatric agitation.",
+          "relevance": "\ud83d\udfe2 High"
+        },
+        {
+          "id": "42391298",
+          "title": "Characterizing Pediatric Trauma Patients and EMS Agencies That Are Optimal Targets for Prehospital Pediatric Blood Transfusion Programs",
+          "journal": "Prehospital Emergency Care",
+          "date": "2026-07-26",
+          "pmid": "42391298",
+          "doi": "10.1080/10903127.2026.2696013",
+          "summary": "In a nationally representative prehospital sample, many injured children appeared eligible for transfusion.",
+          "relevance": "\ud83d\udfe2 High"
+        },
+        {
+          "id": "42330187",
+          "title": "Prehospital Assessment and Treatment of Infants and Toddlers in Respiratory Distress: A Retrospective Analysis",
+          "journal": "Prehospital Emergency Care",
+          "date": "2026-07-26",
+          "pmid": "42330187",
+          "doi": "10.1080/10903127.2026.2659342",
+          "summary": "EMS clinicians documented similar primary impressions and administered many of the same treatments across both upper and lower airway groups, demonstrating minimal differentiation in prehospital management of young children.",
+          "relevance": "\ud83d\udfe2 High"
+        },
+        {
+          "id": "42460987",
+          "title": "Developing an Emergency Medical Services Research Reading List for Emergency Medical Services Practitioners",
+          "journal": "Prehospital Emergency Care",
+          "date": "2026-07-26",
+          "pmid": "42460987",
+          "doi": "10.1080/10903127.2026.2693158",
+          "summary": "We identified 10 high-impact primary publications to prioritize for inclusion in initial and ongoing EMS education to inform evidenced-based out-of-hospital care and address gaps in existing prehospital EBGs.",
+          "relevance": "\ud83d\udfe2 High"
+        },
+        {
+          "id": "42384975",
+          "title": "Hypopharyngeal Perforation Associated with King Laryngeal Tube Use in Prehospital Cardiac Arrest Management",
+          "journal": "Prehospital Emergency Care",
+          "date": "2026-07-26",
+          "pmid": "42384975",
+          "doi": "10.1080/10903127.2026.2693743",
+          "summary": "Hypopharyngeal perforation is a rare but serious complication of prehospital King laryngeal tube placement.",
+          "relevance": "\ud83d\udfe2 High"
+        },
+        {
+          "id": "42413030",
+          "title": "Landscape of Extracorporeal Cardiopulmonary Resuscitation in Germany. A Nationwide Retrospective Study",
+          "journal": "Prehospital Emergency Care",
+          "date": "2026-07-26",
+          "pmid": "42413030",
+          "doi": "10.1080/10903127.2026.2697436",
+          "summary": "Between 2018 and 2023, ECPR was used for 2.9% of refractory OHCA cases admitted to hospitals in Germany.",
+          "relevance": "\ud83d\udfe2 High"
+        },
+        {
+          "id": "42456095",
+          "title": "Prehospital Management of Suspected Spinal Cord Injuries: Perspectives from the American College of Surgeons Committee on Trauma",
+          "journal": "Prehospital Emergency Care",
+          "date": "2026-07-26",
+          "pmid": "42456095",
+          "doi": "10.1080/10903127.2026.2703176",
+          "summary": "Study on: Prehospital Management of Suspected Spinal Cord Injuries: Perspectives from the American College of Surgeons Committee on Trauma. No abstract available for detailed assessment.",
+          "relevance": "\ud83d\udfe1 Medium"
+        },
+        {
+          "id": "42301897",
+          "title": "Cardiac Arrest During Interfacility Transport with Emergency Medical Services: A Preliminary Nationwide Cross-Sectional Study",
+          "journal": "Prehospital Emergency Care",
+          "date": "2026-07-26",
+          "pmid": "42301897",
+          "doi": "10.1080/10903127.2026.2690618",
+          "summary": "Using a large nationwide sample of OHCA incidents that occurred during IFT, we found that higher level of EMS care was associated with superior short-term outcomes while controlling for other key factors.",
+          "relevance": "\ud83d\udfe2 High"
+        },
+        {
+          "id": "10.1080/10903127.2026.2705415",
+          "title": "Outcome-informed Emergency Medical Services Response Planning: A Systematic Review",
+          "journal": "Prehospital Emergency Care",
+          "date": "2026-07-26",
+          "pmid": "",
+          "doi": "10.1080/10903127.2026.2705415",
+          "summary": "Study on: Outcome-informed Emergency Medical Services Response Planning: A Systematic Review. No abstract available for detailed assessment.",
+          "relevance": "\ud83d\udfe1 Medium"
+        },
+        {
+          "id": "42384761",
+          "title": "Prehospital physiologic instability and in-hospital mortality among non-trauma patients with low-risk emergency department triage",
+          "journal": "Prehospital Emergency Care",
+          "date": "2026-07-26",
+          "pmid": "42384761",
+          "doi": "10.1080/10903127.2026.2695257",
+          "summary": "Prehospital physiologic instability was associated with increased in-hospital mortality among patients classified as low risk at ED triage.",
+          "relevance": "\ud83d\udfe2 High"
+        },
+        {
+          "id": "42480096",
+          "title": "Signs of Life During Out-of-Hospital Cardiac Arrest: A Retrospective Cohort Study",
+          "journal": "Prehospital Emergency Care",
+          "date": "2026-07-26",
+          "pmid": "42480096",
+          "doi": "10.1080/10903127.2026.2706747",
+          "summary": "One in four treated OHCA patients displayed at least one sign of life during resuscitation.",
+          "relevance": "\ud83d\udfe2 High"
+        },
+        {
+          "id": "42467413",
+          "title": "Differential Association of Prehospital Physician Presence with Outcomes in Out-of-Hospital Cardiac Arrest: Secondary Analysis of a Nationwide Registry",
+          "journal": "Prehospital Emergency Care",
+          "date": "2026-07-26",
+          "pmid": "42467413",
+          "doi": "10.1080/10903127.2026.2704730",
+          "summary": "Prehospital physician presence was associated with improved neurological and survival outcomes after OHCA, with variation across patient subgroups; however, given the observational design and potential selection bias, these findings should be regarded as hypothesis-generating.",
+          "relevance": "\ud83d\udfe2 High"
+        },
+        {
+          "id": "42456096",
+          "title": "Performance of termination-of-resuscitation rules in foreign body airway obstruction-related out-of-hospital cardiac arrest: a prospective multicenter registry analysis",
+          "journal": "Prehospital Emergency Care",
+          "date": "2026-07-26",
+          "pmid": "42456096",
+          "doi": "10.1080/10903127.2026.2703842",
+          "summary": "In FBAO-related OHCA, BLS-TOR would have classified two patients with favorable neurological outcome as TOR-positive.",
+          "relevance": "\ud83d\udfe2 High"
+        },
+        {
+          "id": "42301896",
+          "title": "Trends and Regional Variation in Heat-Related EMS Encounters in the US",
+          "journal": "Prehospital Emergency Care",
+          "date": "2026-07-26",
+          "pmid": "42301896",
+          "doi": "10.1080/10903127.2026.2687829",
+          "summary": "While national odds and proportions of heat-related prehospital encounters have risen slightly in 2023 compared to 2019, certain geographic regions have experienced far greater increases.",
+          "relevance": "\ud83d\udfe2 High"
+        },
+        {
+          "id": "42001985",
+          "title": "EEG-guided early cessation of sedation and TTM in patients after cardiac arrest: a feasibility and safety study",
+          "journal": "Resuscitation",
+          "date": "2026-07-26",
+          "pmid": "42001985",
+          "doi": "10.1016/j.resuscitation.2026.111101",
+          "summary": "Early withdrawal of sedation is feasible and safe in patients with an early favourable EEG following cardiac arrest.",
+          "relevance": "\ud83d\udfe1 Medium"
+        },
+        {
+          "id": "42435798",
+          "title": "Beyond patient outcomes: considering device safety during dual defibrillation",
+          "journal": "Resuscitation",
+          "date": "2026-07-26",
+          "pmid": "42435798",
+          "doi": "10.1016/j.resuscitation.2026.111208",
+          "summary": "Study on: Beyond patient outcomes: considering device safety during dual defibrillation. No abstract available for detailed assessment.",
+          "relevance": "\ud83d\udd34 Low"
+        },
+        {
+          "id": "42498035",
+          "title": "One Size Does Not Save All: Designing Interventions to Reduce Cardiac Arrest Disparities",
+          "journal": "Resuscitation",
+          "date": "2026-07-26",
+          "pmid": "42498035",
+          "doi": "10.1016/j.resuscitation.2026.111223",
+          "summary": "Study on: One Size Does Not Save All: Designing Interventions to Reduce Cardiac Arrest Disparities. No abstract available for detailed assessment.",
+          "relevance": "\ud83d\udfe1 Medium"
+        },
+        {
+          "id": "42498034",
+          "title": "Does early sedation improve outcomes of cardiac arrest? Biologically plausible but elusive causal estimates",
+          "journal": "Resuscitation",
+          "date": "2026-07-26",
+          "pmid": "42498034",
+          "doi": "10.1016/j.resuscitation.2026.111222",
+          "summary": "Study on: Does early sedation improve outcomes of cardiac arrest? Biologically plausible but elusive causal estimates. No abstract available for detailed assessment.",
+          "relevance": "\ud83d\udfe1 Medium"
+        },
+        {
+          "id": "42114800",
+          "title": "Out of hospital cardiac arrest, uncontrolled donation after circulatory death only lung and lung transplants",
+          "journal": "Resuscitation",
+          "date": "2026-07-26",
+          "pmid": "42114800",
+          "doi": "10.1016/j.resuscitation.2026.111125",
+          "summary": "Study on: Out of hospital cardiac arrest, uncontrolled donation after circulatory death only lung and lung transplants. No abstract available for detailed assessment.",
+          "relevance": "\ud83d\udfe1 Medium"
+        },
+        {
+          "id": "42385983",
+          "title": "Device damage and malfunction during dual defibrillation or dual electrical cardioversion: a scoping review",
+          "journal": "Resuscitation",
+          "date": "2026-07-26",
+          "pmid": "42385983",
+          "doi": "10.1016/j.resuscitation.2026.111186",
+          "summary": "To map and characterize device damage and malfunction associated with dual defibrillator use in defibrillation and cardioversion, which is increasingly employed in both elective and emergency settings, and to identify knowledge gaps relevant to practice and future research.MethodsWe conducted a scop",
+          "relevance": "\ud83d\udd34 Low"
+        },
+        {
+          "id": "42000027",
+          "title": "DeepCRI: real-time EEG-based prognostication after cardiac arrest",
+          "journal": "Resuscitation",
+          "date": "2026-07-26",
+          "pmid": "42000027",
+          "doi": "10.1016/j.resuscitation.2026.111102",
+          "summary": "Accurate prediction of neurological outcome after cardiac arrest is essential for guiding intensive care decisions.",
+          "relevance": "\ud83d\udfe1 Medium"
+        },
+        {
+          "id": "42288236",
+          "title": "Dispatching the community to save children in cardiac arrest: the psychological cost of activating community first responders",
+          "journal": "Resuscitation",
+          "date": "2026-07-26",
+          "pmid": "42288236",
+          "doi": "10.1016/j.resuscitation.2026.111175",
+          "summary": "Study on: Dispatching the community to save children in cardiac arrest: the psychological cost of activating community first responders. No abstract available for detailed assessment.",
+          "relevance": "\ud83d\udfe1 Medium"
+        },
+        {
+          "id": "42173426",
+          "title": "Reply to: Calibration, generalization, and explainability: AI challenges behind bedside EEG prognostication",
+          "journal": "Resuscitation",
+          "date": "2026-07-26",
+          "pmid": "42173426",
+          "doi": "10.1016/j.resuscitation.2026.111145",
+          "summary": "Study on: Reply to: Calibration, generalization, and explainability: AI challenges behind bedside EEG prognostication. No abstract available for detailed assessment.",
+          "relevance": "\ud83d\udd34 Low"
+        },
+        {
+          "id": "42361894",
+          "title": "Optimal site of tactile stimulation during initial steps of neonatal resuscitation: a three-arm randomized controlled trial",
+          "journal": "Resuscitation",
+          "date": "2026-07-26",
+          "pmid": "42361894",
+          "doi": "10.1016/j.resuscitation.2026.111190",
+          "summary": "There was no difference in 5-min SpO2, need for further resuscitation in DR, cerebral oxygenation, and in-hospital complications with the three modes of TS, sole rub, trunk rub and back rub.",
+          "relevance": "\ud83d\udfe1 Medium"
+        },
+        {
+          "id": "42264171",
+          "title": "Long-term functional and quality of life outcomes for survivors of asystolic out-of-hospital cardiac arrest",
+          "journal": "Resuscitation",
+          "date": "2026-07-26",
+          "pmid": "42264171",
+          "doi": "10.1016/j.resuscitation.2026.111165",
+          "summary": "Among 12-month survivors of EMS-treated asystolic OHCA, good functional recovery was achieved by only one-third of patients, with most survivors experiencing persistent disability and impaired HRQoL.",
+          "relevance": "\ud83d\udfe2 High"
+        },
+        {
+          "id": "41819340",
+          "title": "Decline in rescue breathing and its impact on outcomes in pediatric out-of-hospital cardiac arrest due to drowning: a nationwide study, 2012\u20132023",
+          "journal": "Resuscitation",
+          "date": "2026-07-26",
+          "pmid": "41819340",
+          "doi": "10.1016/j.resuscitation.2026.111049",
+          "summary": "In pediatric drowning OHCA, CO-CPR was associated with worse survival and neurological outcomes than RB-CPR.",
+          "relevance": "\ud83d\udfe2 High"
+        },
+        {
+          "id": "42401209",
+          "title": "Sedation early after return of spontaneous circulation and during pre-hospital transport after out-of-hospital cardiac arrest: retrospective analysis of the AfterROSC1 &amp; 2 database",
+          "journal": "Resuscitation",
+          "date": "2026-07-26",
+          "pmid": "42401209",
+          "doi": "10.1016/j.resuscitation.2026.111196",
+          "summary": "The decision of sedation started after ROSC and before ICU admission was associated with a good functional recovery on day 90.",
+          "relevance": "\ud83d\udfe1 Medium"
+        },
+        {
+          "id": "41575401",
+          "title": "Dexamethasone Treatment Regimen and Clinical Outcomes in Children With Asthma Exacerbations",
+          "journal": "Annals of Emergency Medicine",
+          "date": "2026-07-26",
+          "pmid": "41575401",
+          "doi": "10.1016/j.annemergmed.2025.12.010",
+          "summary": "Nearly two-thirds of children with asthma exacerbations were treated with 2 doses of dexamethasone rather than a single dose, even though treatment with 2 doses was not associated with improved outcomes.",
+          "relevance": "\ud83d\udd34 Low"
+        },
+        {
+          "id": "41854578",
+          "title": "A Pilot Study to Evaluate Artificial Intelligence-Driven Early Retrieval of Medical Histories in the Emergency Department",
+          "journal": "Annals of Emergency Medicine",
+          "date": "2026-07-26",
+          "pmid": "41854578",
+          "doi": "10.1016/j.annemergmed.2026.01.022",
+          "summary": "This pilot study of ChatGPT-enabled patient history taking in the pediatric emergency department waiting room was feasible, well accepted, and produced accurate, complete, readable, and efficient summaries.",
+          "relevance": "\ud83d\udfe1 Medium"
+        },
+        {
+          "id": "42315210",
+          "title": "Response to Letter to the Editor for \u201cBoarding and Overcrowding are Facts of Life. It\u2019s Time We Adapt Resident Education to Them\u201d",
+          "journal": "Annals of Emergency Medicine",
+          "date": "2026-07-26",
+          "pmid": "42315210",
+          "doi": "10.1016/j.annemergmed.2026.02.009",
+          "summary": "Study on: Response to Letter to the Editor for \u201cBoarding and Overcrowding are Facts of Life. It\u2019s Time We Adapt Resident Education to Them\u201d. No abstract available for detailed assessment.",
+          "relevance": "\ud83d\udd34 Low"
+        },
+        {
+          "id": "42315215",
+          "title": "Man With Left Lower Limb Pain",
+          "journal": "Annals of Emergency Medicine",
+          "date": "2026-07-26",
+          "pmid": "42315215",
+          "doi": "10.1016/j.annemergmed.2026.01.011",
+          "summary": "Study on: Man With Left Lower Limb Pain. No abstract available for detailed assessment.",
+          "relevance": "\ud83d\udd34 Low"
+        },
+        {
+          "id": "42476692",
+          "title": "Man With Pain in the Eye",
+          "journal": "Annals of Emergency Medicine",
+          "date": "2026-07-26",
+          "pmid": "42476692",
+          "doi": "10.1016/j.annemergmed.2026.02.022",
+          "summary": "Study on: Man With Pain in the Eye. No abstract available for detailed assessment.",
+          "relevance": "\ud83d\udd34 Low"
+        },
+        {
+          "id": "41989358",
+          "title": "Emergency Department Observation and Computed Tomography Use in Children With Blunt Abdominal Trauma",
+          "journal": "Annals of Emergency Medicine",
+          "date": "2026-07-26",
+          "pmid": "41989358",
+          "doi": "10.1016/j.annemergmed.2026.02.012",
+          "summary": "Observation with deferred CT decisionmaking was associated with less frequent CT use, particularly in patients with intermediate clinician suspicion, without an increase in missed injuries.",
+          "relevance": "\ud83d\udfe1 Medium"
+        },
+        {
+          "id": "42132715",
+          "title": "From Chaos to Coordination: Fundamentals of Teamwork and How Residents Can Practice Teaming to Improve Acute Care",
+          "journal": "Annals of Emergency Medicine",
+          "date": "2026-07-26",
+          "pmid": "42132715",
+          "doi": "10.1016/j.annemergmed.2026.02.026",
+          "summary": "Study on: From Chaos to Coordination: Fundamentals of Teamwork and How Residents Can Practice Teaming to Improve Acute Care. No abstract available for detailed assessment.",
+          "relevance": "\ud83d\udd34 Low"
+        },
+        {
+          "id": "42315219",
+          "title": "Policy Statements",
+          "journal": "Annals of Emergency Medicine",
+          "date": "2026-07-26",
+          "pmid": "42315219",
+          "doi": "10.1016/j.annemergmed.2026.03.015",
+          "summary": "Study on: Policy Statements. No abstract available for detailed assessment.",
+          "relevance": "\ud83d\udd34 Low"
+        },
+        {
+          "id": "10.1016/s0196-0644(26)00447-6",
+          "title": "Information for Readers",
+          "journal": "Annals of Emergency Medicine",
+          "date": "2026-07-26",
+          "pmid": "",
+          "doi": "10.1016/s0196-0644(26)00447-6",
+          "summary": "Study on: Information for Readers. No abstract available for detailed assessment.",
+          "relevance": "\ud83d\udd34 Low"
+        },
+        {
+          "id": "10.1016/s0196-0644(26)00445-2",
+          "title": "Masthead",
+          "journal": "Annals of Emergency Medicine",
+          "date": "2026-07-26",
+          "pmid": "",
+          "doi": "10.1016/s0196-0644(26)00445-2",
+          "summary": "Study on: Masthead. No abstract available for detailed assessment.",
+          "relevance": "\ud83d\udd34 Low"
+        },
+        {
+          "id": "42429726",
+          "title": "A Research Agenda for Acute Pediatric Mental and Behavioral Health Emergencies",
+          "journal": "Annals of Emergency Medicine",
+          "date": "2026-07-26",
+          "pmid": "42429726",
+          "doi": "10.1016/j.annemergmed.2026.05.015",
+          "summary": "This consensus-based research agenda, which integrates diverse perspectives, informs the need for research to improve identification and management of children at risk of harming themselves or others in the out-of-hospital and emergency department settings.",
+          "relevance": "\ud83d\udfe1 Medium"
+        },
+        {
+          "id": "42405912",
+          "title": "Incidence and Outcomes of Emergency Physician-Performed Awake Intubations: A Report From the Airway Interventions Registry and Observational Database",
+          "journal": "Annals of Emergency Medicine",
+          "date": "2026-07-26",
+          "pmid": "42405912",
+          "doi": "10.1016/j.annemergmed.2026.06.007",
+          "summary": "In this preliminary single-center study, emergency physicians performed awake intubation with relatively high incidence, high overall success, and low rates of major adverse events.",
+          "relevance": "\ud83d\udfe1 Medium"
+        },
+        {
+          "id": "42315216",
+          "title": "Woman With Blunt Abdominal Trauma",
+          "journal": "Annals of Emergency Medicine",
+          "date": "2026-07-26",
+          "pmid": "42315216",
+          "doi": "10.1016/j.annemergmed.2026.01.012",
+          "summary": "Study on: Woman With Blunt Abdominal Trauma. No abstract available for detailed assessment.",
+          "relevance": "\ud83d\udd34 Low"
+        },
+        {
+          "id": "42405914",
+          "title": "\u201cIt\u2019s Just So Important to Make Them Feel Seen\u201d: Teen and Caregiver Perspectives of Lethal Means Safety Planning for the Emergency Department",
+          "journal": "Annals of Emergency Medicine",
+          "date": "2026-07-26",
+          "pmid": "42405914",
+          "doi": "10.1016/j.annemergmed.2026.06.004",
+          "summary": "Lethal means safety counseling is an essential, high-yield component of suicide prevention.",
+          "relevance": "\ud83d\udfe1 Medium"
+        },
+        {
+          "id": "42476689",
+          "title": "Commentary",
+          "journal": "Annals of Emergency Medicine",
+          "date": "2026-07-26",
+          "pmid": "42476689",
+          "doi": "10.1016/j.annemergmed.2026.04.007",
+          "summary": "Study on: Commentary. No abstract available for detailed assessment.",
+          "relevance": "\ud83d\udd34 Low"
+        },
+        {
+          "id": "42458552",
+          "title": "Geographical alignment of prehospital critical care services with population need for out-of-hospital cardiac arrest patients",
+          "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+          "date": "2026-07-26",
+          "pmid": "42458552",
+          "doi": "10.1186/s13049-026-01655-9",
+          "summary": "Prehospital critical care is associated with improved outcomes following out-of-hospital cardiac arrest (OHCA), but may not be distributed equitably.",
+          "relevance": "\ud83d\udfe2 High"
+        },
+        {
+          "id": "42387527",
+          "title": "EDEN - Enhanced Dispatch for Efficient Neurointervention: mathematical model from national data",
+          "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+          "date": "2026-07-26",
+          "pmid": "42387527",
+          "doi": "10.1186/s13049-026-01653-x",
+          "summary": "A hybrid transportation strategy improved access to MT in a single center study.",
+          "relevance": "\ud83d\udfe2 High"
+        },
+        {
+          "id": "42464301",
+          "title": "Early non-intravenous analgesia in prehospital trauma care: time to act",
+          "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+          "date": "2026-07-26",
+          "pmid": "42464301",
+          "doi": "10.1186/s13049-026-01663-9",
+          "summary": "Study on: Early non-intravenous analgesia in prehospital trauma care: time to act. No abstract available for detailed assessment.",
+          "relevance": "\ud83d\udfe1 Medium"
+        },
+        {
+          "id": "10.1186/s13049-026-01664-8",
+          "title": "Pre-hospital care delays in trauma-related mass casualty incidents: a comparative international survey of high-income and low- and middle-income country perspectives",
+          "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+          "date": "2026-07-26",
+          "pmid": "",
+          "doi": "10.1186/s13049-026-01664-8",
+          "summary": "Mass casualty incidents (MCIs) place substantial demands on pre-hospital systems.",
+          "relevance": "\ud83d\udfe1 Medium"
+        },
+        {
+          "id": "42387588",
+          "title": "Emergency department medical care during civil unrest: a narrative review",
+          "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+          "date": "2026-07-26",
+          "pmid": "42387588",
+          "doi": "10.1186/s13049-026-01656-8",
+          "summary": "Emergency clinicians should be familiar with the distinct injury profiles associated with crowd-control weapons and be prepared to manage them within the emergency care setting.",
+          "relevance": "\ud83d\udfe1 Medium"
+        },
+        {
+          "id": "42482160",
+          "title": "Correction: The epidemiology of canyoning rescue operations in Italy: a retrospective 15-year database study",
+          "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+          "date": "2026-07-26",
+          "pmid": "42482160",
+          "doi": "10.1186/s13049-026-01660-y",
+          "summary": "Study on: Correction: The epidemiology of canyoning rescue operations in Italy: a retrospective 15-year database study. No abstract available for detailed assessment.",
+          "relevance": "\ud83d\udd34 Low"
+        },
+        {
+          "id": "42498957",
+          "title": "Known to crews, missing from the literature - electrostatic discharge during helicopter hoist operations",
+          "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+          "date": "2026-07-26",
+          "pmid": "42498957",
+          "doi": "10.1186/s13049-026-01666-6",
+          "summary": "Study on: Known to crews, missing from the literature - electrostatic discharge during helicopter hoist operations. No abstract available for detailed assessment.",
+          "relevance": "\ud83d\udd34 Low"
+        },
+        {
+          "id": "42432757",
+          "title": "Cross-border collaboration in a major incident: emergency medical services response to a train crash",
+          "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+          "date": "2026-07-26",
+          "pmid": "42432757",
+          "doi": "10.1186/s13049-026-01661-x",
+          "summary": "This report describes the response to a major incident, characterized by effective inter-authority cooperation and successful cross-border collaboration between Danish and German emergency services.",
+          "relevance": "\ud83d\udd34 Low"
+        },
+        {
+          "id": "42421149",
+          "title": "Impact of Helicopter Emergency Medical Services on endovascular thrombectomy delays, clinical outcomes, and societal costs in large vessel occlusion stroke: a retrospective registry based counterfactual simulation study",
+          "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+          "date": "2026-07-26",
+          "pmid": "42421149",
+          "doi": "10.1186/s13049-026-01658-6",
+          "summary": "The efficacy of endovascular thrombectomy (EVT) for large vessel occlusion (LVO) stroke is highly time-dependent.",
+          "relevance": "\ud83d\udfe1 Medium"
+        },
+        {
+          "id": "42493807",
+          "title": "Expanding the framework of non-technical skills in resuscitation: why family communication matters",
+          "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+          "date": "2026-07-26",
+          "pmid": "42493807",
+          "doi": "10.1186/s13049-026-01665-7",
+          "summary": "Study on: Expanding the framework of non-technical skills in resuscitation: why family communication matters. No abstract available for detailed assessment.",
+          "relevance": "\ud83d\udfe1 Medium"
+        },
+        {
+          "id": "42381031",
+          "title": "Exploring tools used in the assessment of Trauma Team Leadership using video review: a systematic review",
+          "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+          "date": "2026-07-26",
+          "pmid": "42381031",
+          "doi": "10.1186/s13049-026-01643-z",
+          "summary": "Leadership is a key non\u2011technical determinant of trauma team performance and is associated with adherence to protocols and patient outcomes.",
+          "relevance": "\ud83d\udfe1 Medium"
+        },
+        {
+          "id": "42337794",
+          "title": "Need-standardised comparisons must not become a barrier to recognising and addressing sex and gender disparities in major trauma care",
+          "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+          "date": "2026-07-26",
+          "pmid": "42337794",
+          "doi": "10.1186/s13049-026-01652-y",
+          "summary": "Study on: Need-standardised comparisons must not become a barrier to recognising and addressing sex and gender disparities in major trauma care. No abstract available for detailed assessment.",
+          "relevance": "\ud83d\udfe1 Medium"
+        },
+        {
+          "id": "42363248",
+          "title": "Management and outcome of patients with traumatic brain injury treated in three major Nordic intensive care units: a comparative cohort study",
+          "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+          "date": "2026-07-26",
+          "pmid": "42363248",
+          "doi": "10.1186/s13049-026-01657-7",
+          "summary": "Traumatic brain injury (TBI) is a major cause of death and disability, with large variations in management strategies and outcomes across countries.",
+          "relevance": "\ud83d\udfe1 Medium"
+        },
+        {
+          "id": "42387340",
+          "title": "The evolving prehospital care: a 12-year retrospective analysis",
+          "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+          "date": "2026-07-26",
+          "pmid": "42387340",
+          "doi": "10.1186/s13049-026-01651-z",
+          "summary": "Emergency medical services (EMS) are one of the main interfaces between acutely ill patients in the prehospital environment and hospital-based care.",
+          "relevance": "\ud83d\udfe2 High"
+        },
+        {
+          "id": "42366324",
+          "title": "Implementation of Electronic Clinical Decision Support for Radiology Referrals: The Role of Governance, Clinician Engagement and Education",
+          "journal": "Emergency Medicine Australasia",
+          "date": "2026-07-26",
+          "pmid": "42366324",
+          "doi": "10.1111/1742-6723.70305",
+          "summary": "Successful implementation of eCDS requires more than technological deployment.",
+          "relevance": "\ud83d\udfe1 Medium"
+        },
+        {
+          "id": "42489016",
+          "title": "What Is Old Is New Again: Tips and Tricks for Recognizing and Treating Vaccine\u2010Preventable Diseases of Childhood Presenting to the Emergency Department",
+          "journal": "Emergency Medicine Australasia",
+          "date": "2026-07-26",
+          "pmid": "42489016",
+          "doi": "10.1111/1742-6723.70313",
+          "summary": "ABSTRACT Across the globe, there has been a resurgence in vaccine\u2010preventable diseases reflecting declining immunity, vaccine hesitancy and gaps in vaccine coverage.",
+          "relevance": "\ud83d\udd34 Low"
+        },
+        {
+          "id": "42457220",
+          "title": "Management of Adult Closed Head Injury in Rural Queensland Without Hospital\u2010Based CT : A Retrospective Cohort Study",
+          "journal": "Emergency Medicine Australasia",
+          "date": "2026-07-26",
+          "pmid": "42457220",
+          "doi": "10.1111/1742-6723.70307",
+          "summary": "Patients with closed head injury in this rural emergency department had substantial neuroimaging needs despite the absence of hospital\u2010based CT.",
+          "relevance": "\ud83d\udfe1 Medium"
+        },
+        {
+          "id": "10.1111/1742-6723.70277",
+          "title": "Issue Information",
+          "journal": "Emergency Medicine Australasia",
+          "date": "2026-07-26",
+          "pmid": "",
+          "doi": "10.1111/1742-6723.70277",
+          "summary": "Study on: Issue Information. No abstract available for detailed assessment.",
+          "relevance": "\ud83d\udd34 Low"
+        },
+        {
+          "id": "42437660",
+          "title": "Initial Laryngoscope Blade Selection and Outcomes in Paediatric Emergency Department Intubations: Miller vs. Macintosh",
+          "journal": "Emergency Medicine Australasia",
+          "date": "2026-07-26",
+          "pmid": "42437660",
+          "doi": "10.1111/1742-6723.70306",
+          "summary": "In this cohort of young children intubated in the ED, Macintosh blade use was associated with higher FPS and fewer hypoxic events compared with Miller blade.",
+          "relevance": "\ud83d\udfe2 High"
+        },
+        {
+          "id": "42493416",
+          "title": "The Return of Diphtheria: Reflections From the Emergency Department",
+          "journal": "Emergency Medicine Australasia",
+          "date": "2026-07-26",
+          "pmid": "42493416",
+          "doi": "10.1111/1742-6723.70315",
+          "summary": "ABSTRACT Diphtheria has re\u2010emerged in Australia in 2026, prompting significant public health concern and placing additional demands on healthcare services.",
+          "relevance": "\ud83d\udfe1 Medium"
+        },
+        {
+          "id": "42442415",
+          "title": "Caregiver and Care Recipient Perspectives on Paediatric ED Mental Health Presentations: A Qualitative Study",
+          "journal": "Emergency Medicine Australasia",
+          "date": "2026-07-26",
+          "pmid": "42442415",
+          "doi": "10.1111/1742-6723.70309",
+          "summary": "Care recipients and care providers identified challenges in service coordination, clinician readiness and the ED environment.",
+          "relevance": "\ud83d\udfe2 High"
+        },
+        {
+          "id": "42463417",
+          "title": "Epidemiology of Patients With Chronic Liver Disease Presenting to Emergency Departments in Australia",
+          "journal": "Emergency Medicine Australasia",
+          "date": "2026-07-26",
+          "pmid": "42463417",
+          "doi": "10.1111/1742-6723.70310",
+          "summary": "CLD\u2010related ED presentations are increasing and place substantial demand on hospital services in Queensland.",
+          "relevance": "\ud83d\udfe1 Medium"
+        },
+        {
+          "id": "42476606",
+          "title": "Exploring Inter\u2010Rater Agreement in Classification of Radiological Features of Tension in Adults With Primary Spontaneous Pneumothorax",
+          "journal": "Emergency Medicine Australasia",
+          "date": "2026-07-26",
+          "pmid": "42476606",
+          "doi": "10.1111/1742-6723.70311",
+          "summary": "Interpretation for radiological tension features had poor inter\u2010rater reliability, which seriously changes their appropriateness as drivers for interventional management.",
+          "relevance": "\ud83d\udd34 Low"
+        },
+        {
+          "id": "42436730",
+          "title": "Timing and outcomes of out-of-hospital traumatic cardiac arrest: results of a multicentre, retrospective cohort study",
+          "journal": "Resuscitation Plus",
+          "date": "2026-07-26",
+          "pmid": "42436730",
+          "doi": "10.1016/j.resplu.2026.101393",
+          "summary": "Nine out of ten out-of-hospital TCAs occur before EMS arrival.",
+          "relevance": "\ud83d\udfe2 High"
+        },
+        {
+          "id": "10.1016/j.resplu.2026.101414",
+          "title": "Consistency of definitions used in International Liaison Committee on Resuscitation Neonatal Life Support documents",
+          "journal": "Resuscitation Plus",
+          "date": "2026-07-26",
+          "pmid": "",
+          "doi": "10.1016/j.resplu.2026.101414",
+          "summary": "Study on: Consistency of definitions used in International Liaison Committee on Resuscitation Neonatal Life Support documents. No abstract available for detailed assessment.",
+          "relevance": "\ud83d\udfe1 Medium"
+        },
+        {
+          "id": "10.1016/j.resplu.2026.101417",
+          "title": "Automated External Defibrillator pad placement pictograms in Japan: sex representation in publicly available product information",
+          "journal": "Resuscitation Plus",
+          "date": "2026-07-26",
+          "pmid": "",
+          "doi": "10.1016/j.resplu.2026.101417",
+          "summary": "Study on: Automated External Defibrillator pad placement pictograms in Japan: sex representation in publicly available product information. No abstract available for detailed assessment.",
+          "relevance": "\ud83d\udd34 Low"
+        },
+        {
+          "id": "10.1016/j.resplu.2026.101420",
+          "title": "Public Access Defibrillation by Activated Community First Responders - the randomized HeartRunner Trial",
+          "journal": "Resuscitation Plus",
+          "date": "2026-07-26",
+          "pmid": "",
+          "doi": "10.1016/j.resplu.2026.101420",
+          "summary": "Study on: Public Access Defibrillation by Activated Community First Responders - the randomized HeartRunner Trial. No abstract available for detailed assessment.",
+          "relevance": "\ud83d\udd34 Low"
+        },
+        {
+          "id": "10.1016/j.resplu.2026.101410",
+          "title": "Step-by-step: Translating deliberate practice to the bedside",
+          "journal": "Resuscitation Plus",
+          "date": "2026-07-26",
+          "pmid": "",
+          "doi": "10.1016/j.resplu.2026.101410",
+          "summary": "Study on: Step-by-step: Translating deliberate practice to the bedside. No abstract available for detailed assessment.",
+          "relevance": "\ud83d\udd34 Low"
+        },
+        {
+          "id": "42305994",
+          "title": "Cardiopulmonary resuscitation with synchronized ventilation versus 3:1 compression to ventilation ratio in a neonatal porcine model",
+          "journal": "Resuscitation Plus",
+          "date": "2026-07-26",
+          "pmid": "42305994",
+          "doi": "10.1016/j.resplu.2026.101371",
+          "summary": "In a neonatal piglet model of asystolic cardiac arrest, CCSV resulted in a significantly faster time to ROSC compared to 3:1 C:V.",
+          "relevance": "\ud83d\udfe1 Medium"
+        },
+        {
+          "id": "42404314",
+          "title": "Strengthening workplace emergency preparedness through a university CPR and first aid responder programme: four-year experience",
+          "journal": "Resuscitation Plus",
+          "date": "2026-07-26",
+          "pmid": "42404314",
+          "doi": "10.1016/j.resplu.2026.101390",
+          "summary": "Study on: Strengthening workplace emergency preparedness through a university CPR and first aid responder programme: four-year experience. No abstract available for detailed assessment.",
+          "relevance": "\ud83d\udd34 Low"
+        },
+        {
+          "id": "42494464",
+          "title": "Conservative versus liberal oxygen therapy in hypoxic ischemic encephalopathy following cardiac arrest: a trial-based cost-effectiveness analysis",
+          "journal": "Resuscitation Plus",
+          "date": "2026-07-26",
+          "pmid": "42494464",
+          "doi": "10.1016/j.resplu.2026.101403",
+          "summary": "Conservative oxygen was associated with modest cost savings and small differences in health outcomes, with no clear economic advantage over liberal oxygen.",
+          "relevance": "\ud83d\udfe1 Medium"
+        },
+        {
+          "id": "10.1016/j.resplu.2026.101423",
+          "title": "Comparing Chest compression Quality in 1-Minute vs. 2-Minute Rescuer Rotations with and without Audiovisual Feedback Guidance during full Adult Advance Life Support Simulated Scenarios: A Randomized Simulation Study",
+          "journal": "Resuscitation Plus",
+          "date": "2026-07-26",
+          "pmid": "",
+          "doi": "10.1016/j.resplu.2026.101423",
+          "summary": "Study on: Comparing Chest compression Quality in 1-Minute vs. 2-Minute Rescuer Rotations with and without Audiovisual Feedback Guidance during full Adult Advance Life Support Simulated Scenarios: A Randomized S. No abstract available for detailed assessment.",
+          "relevance": "\ud83d\udd34 Low"
+        },
+        {
+          "id": "10.1016/j.resplu.2026.101402",
+          "title": "Beyond feasibility: does simulation-based POCUS training translate into clinically meaningful pediatric arrest performance?",
+          "journal": "Resuscitation Plus",
+          "date": "2026-07-26",
+          "pmid": "",
+          "doi": "10.1016/j.resplu.2026.101402",
+          "summary": "Study on: Beyond feasibility: does simulation-based POCUS training translate into clinically meaningful pediatric arrest performance?. No abstract available for detailed assessment.",
+          "relevance": "\ud83d\udd34 Low"
+        },
+        {
+          "id": "10.1016/j.resplu.2026.101419",
+          "title": "Validation of a Hospital-Wide Risk Stratification Model for Predicting Code Events Among Critically Ill Children",
+          "journal": "Resuscitation Plus",
+          "date": "2026-07-26",
+          "pmid": "",
+          "doi": "10.1016/j.resplu.2026.101419",
+          "summary": "Study on: Validation of a Hospital-Wide Risk Stratification Model for Predicting Code Events Among Critically Ill Children. No abstract available for detailed assessment.",
+          "relevance": "\ud83d\udd34 Low"
+        },
+        {
+          "id": "10.1016/j.resplu.2026.101424",
+          "title": "External Validation and Comparative Performance of ACLS, SARICA, NULL-PLEASE, BDR scores for In-Hospital Mortality after Out-of-Hospital Cardiac Arrest: A Multicenter Retrospective Cohort Study",
+          "journal": "Resuscitation Plus",
+          "date": "2026-07-26",
+          "pmid": "",
+          "doi": "10.1016/j.resplu.2026.101424",
+          "summary": "Study on: External Validation and Comparative Performance of ACLS, SARICA, NULL-PLEASE, BDR scores for In-Hospital Mortality after Out-of-Hospital Cardiac Arrest: A Multicenter Retrospective Cohort Study. No abstract available for detailed assessment.",
+          "relevance": "\ud83d\udfe1 Medium"
+        },
+        {
+          "id": "10.1016/j.resplu.2026.101413",
+          "title": "Characteristics of pediatric drowning out-of-hospital cardiac arrests in the United States",
+          "journal": "Resuscitation Plus",
+          "date": "2026-07-26",
+          "pmid": "",
+          "doi": "10.1016/j.resplu.2026.101413",
+          "summary": "Study on: Characteristics of pediatric drowning out-of-hospital cardiac arrests in the United States. No abstract available for detailed assessment.",
+          "relevance": "\ud83d\udfe1 Medium"
+        },
+        {
+          "id": "42328132",
+          "title": "Improving surgical team confidence for intraoperative cardiac arrest in non-standard positions (sitting beach chair and prone): a prospective in-situ simulation study with three-month follow-up",
+          "journal": "Resuscitation Plus",
+          "date": "2026-07-26",
+          "pmid": "42328132",
+          "doi": "10.1016/j.resplu.2026.101374",
+          "summary": "A half-day, multi-station in situ simulation course at an elective surgical unit was associated with higher self-reported confidence at three months, and self-reported application of course content to real patients.",
+          "relevance": "\ud83d\udfe1 Medium"
+        },
+        {
+          "id": "42328133",
+          "title": "Effects of tocilizumab on neutrophil gelatinase-associated lipocalin following out-of-hospital cardiac arrest, and its prognostic value",
+          "journal": "Resuscitation Plus",
+          "date": "2026-07-26",
+          "pmid": "42328133",
+          "doi": "10.1016/j.resplu.2026.101372",
+          "summary": "Tocilizumab did not affect NGAL in comatose survivors of OHCA.",
+          "relevance": "\ud83d\udfe1 Medium"
+        }
+      ]
+    },
+    {
+      "date": "2026-06-25",
+      "papers": [
+        {
+          "id": "10.1186/s13049-026-01654-w",
+          "title": "Maintenance of prehospital anaesthesia using an intermittent bolus regime in blunt trauma patients with a high GCS and hemodynamic reserve: a retrospective cohort study",
+          "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+          "date": "2026-06-25",
+          "pmid": "",
+          "doi": "10.1186/s13049-026-01654-w",
+          "summary": "Retrospective study showing that prehospital anaesthesia maintenance using intermittent boluses results in high variability of cumulative sedative/analgesic doses, potentially risking sub-therapeutic plasma levels.",
+          "relevance": "\ud83d\udfe1 Medium"
+        }
+      ]
+    },
+    {
       "date": "2026-06-07",
       "papers": [
         {
@@ -1880,10 +2850,46 @@
     }
   ],
   "tldr": {
-    "date": "2026-06-09",
-    "paperCount": 0,
-    "summary": "No new papers today.",
-    "highlights": []
+    "date": "2026-07-26",
+    "paperCount": 95,
+    "summary": "\u2022 Prehospital adrenaline in traumatic cardiac arrest linked to improved survival to discharge in a large propensity-matched cohort \u2014 challenges the long-held caution around vasopressors in TCA.\n\u2022 Ketamine outperformed propofol for sedation during aeromedical retrieval of acutely agitated psychiatric patients, with fewer adverse events in an RCT of 170 patients.\n\u2022 For paediatric drowning arrests, compression-only CPR was associated with worse survival and neurological outcomes than rescue-breathing CPR \u2014 dispatch and bystander guidance must favour ventilations.\n\u2022 Nine in ten out-of-hospital traumatic cardiac arrests occur before EMS arrival, underscoring that prevention and bystander response matter more than downstream retrieval.\n\u2022 Hypopharyngeal perforation is flagged as a rare but serious complication of prehospital King LT (supraglottic airway) use in cardiac arrest \u2014 relevant to services weighing i-gel vs laryngeal tube.\n\u2022 Sex differences in OHCA outcomes are driven by arrest circumstances (bystander CPR, witnessed status) rather than differences in EMS treatment, per a Norwegian nationwide registry.",
+    "highlights": [
+      {
+        "id": "42372567",
+        "pmid": "42372567",
+        "doi": "10.1016/j.ajem.2026.06.039",
+        "title": "Adrenaline in Traumatic Cardiac Arrest",
+        "note": "Large propensity-matched study links prehospital adrenaline to better survival in traumatic arrest \u2014 challenges conventional caution."
+      },
+      {
+        "id": "42307216",
+        "pmid": "42307216",
+        "doi": "10.1080/10903127.2026.2690178",
+        "title": "Ketamine vs Propofol for Psychiatric Aeromedical Retrieval",
+        "note": "RCT of 170 retrievals shows ketamine has fewer adverse events than propofol for acute psychiatric agitation in flight."
+      },
+      {
+        "id": "41819340",
+        "pmid": "41819340",
+        "doi": "10.1016/j.resuscitation.2026.111049",
+        "title": "Rescue Breathing Beats Compression-Only CPR in Paediatric Drowning",
+        "note": "Nationwide data shows compression-only CPR harms survival in paediatric drowning arrests \u2014 ventilations remain essential."
+      },
+      {
+        "id": "42384975",
+        "pmid": "42384975",
+        "doi": "10.1080/10903127.2026.2693743",
+        "title": "King Laryngeal Tube Hypopharyngeal Perforation Risk",
+        "note": "Rare but serious airway injury flagged with King LT use in cardiac arrest \u2014 supports review of supraglottic airway choice."
+      },
+      {
+        "id": "42361889",
+        "pmid": "42361889",
+        "doi": "10.1016/j.resuscitation.2026.111188",
+        "title": "Sex Differences in OHCA: Circumstances, Not Treatment",
+        "note": "Norwegian registry shows women's worse OHCA outcomes stem from arrest circumstances, not unequal EMS care."
+      }
+    ]
   },
   "weeklyTldr": {
     "dateRange": "31 May \u2013 7 June 2026",
