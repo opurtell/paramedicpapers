@@ -23,7 +23,7 @@
   --serif: Newsreader, Georgia, serif;
   --mono: 'IBM Plex Mono', ui-monospace, monospace;
 
-  --tabbar-h: 74px;
+  --tabbar-h: 49px;
 }
 
 * { box-sizing: border-box; }
@@ -246,34 +246,33 @@ a.act { color: var(--accent); }
 }
 .wide-btn:hover { background: #F4F2ED; }
 
-/* ── tab bar ──────────────────────────────────────────── */
+/* ── tab bar (iOS-standard 49px + safe area) ──────────── */
 .tabbar {
   position: fixed; left: 0; right: 0; bottom: 0; z-index: 30;
   display: grid; grid-template-columns: repeat(4, 1fr);
   background: var(--surface); border-top: 1px solid var(--line);
-  padding: 9px 10px calc(12px + env(safe-area-inset-bottom));
+  height: calc(49px + env(safe-area-inset-bottom));
 }
 .tab {
-  display: flex; flex-direction: column; align-items: center; gap: 5px;
-  min-height: 48px; padding: 6px 0; cursor: pointer;
-  background: none; border: 0;
-  font-family: var(--mono); font-size: 9.5px; letter-spacing: .07em;
-  text-transform: uppercase; color: var(--muted-2);
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px;
+  cursor: pointer; background: none; border: 0;
+  font-family: var(--mono); font-size: 10px; letter-spacing: .01em;
+  color: var(--muted-2);
 }
 .tab.is-on { color: var(--accent); }
-.ico { width: 17px; height: 17px; display: block; }
-.ico-home { border: 1.5px solid currentColor; border-radius: 5px; }
+.ico { width: 24px; height: 24px; display: block; }
+.ico-home { border: 1.5px solid currentColor; border-radius: 6px; }
 .tab.is-on .ico-home { border-width: 2px; }
-.ico-feed { display: flex; flex-direction: column; justify-content: center; gap: 3px; }
-.ico-feed i { display: block; height: 1.5px; background: currentColor; border-radius: 1px; }
-.tab.is-on .ico-feed i { height: 2px; }
+.ico-feed { display: flex; flex-direction: column; justify-content: center; gap: 4px; }
+.ico-feed i { display: block; height: 2px; background: currentColor; border-radius: 1px; }
+.tab.is-on .ico-feed i { height: 2.5px; }
 .ico-weekly {
-  width: 14px; height: 14px; margin: 1.5px 0;
-  border: 1.5px solid currentColor; border-radius: 2px; transform: rotate(45deg);
+  width: 20px; height: 20px;
+  border: 1.5px solid currentColor; border-radius: 3px; transform: rotate(45deg);
 }
 .tab.is-on .ico-weekly { border-width: 2px; }
 .ico-saved {
-  width: 13px; height: 17px; border: 1.5px solid currentColor; border-radius: 2px;
+  width: 18px; height: 24px; border: 1.5px solid currentColor; border-radius: 2px;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 76%, 0 100%);
 }
 .tab.is-on .ico-saved { background: currentColor; }
