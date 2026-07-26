@@ -1,6 +1,47 @@
 {
-  "lastUpdated": "2026-07-26T09:45:23Z",
-  "featuredPapers": [],
+  "lastUpdated": "2026-07-26T09:46:18Z",
+  "featuredPapers": [
+    {
+      "id": "41932674",
+      "pmid": "41932674",
+      "doi": "10.1016/j.resuscitation.2026.111079",
+      "title": "Effect of bystander cardiopulmonary resuscitation type on 1-month survival in drowning following out-of-hospital cardiac arrest in natural water bodies: a nationwide retrospective cohort study",
+      "journal": "Resuscitation",
+      "date": "2026-07-27"
+    },
+    {
+      "id": "42361888",
+      "pmid": "42361888",
+      "doi": "10.1016/j.resuscitation.2026.111191",
+      "title": "Telemedicine-assisted vs conventional telephone instruction in cardiopulmonary resuscitation: the TACTIC cluster randomized trial",
+      "journal": "Resuscitation",
+      "date": "2026-07-27"
+    },
+    {
+      "id": "42372567",
+      "pmid": "42372567",
+      "doi": "10.1016/j.ajem.2026.06.039",
+      "title": "Prehospital epinephrine as a bridge to survival in traumatic cardiac arrest: A nationwide propensity score-matched analysis",
+      "journal": "The American Journal of Emergency Medicine",
+      "date": "2026-07-26"
+    },
+    {
+      "id": "42364464",
+      "pmid": "42364464",
+      "doi": "10.1016/j.ijmedinf.2026.106571",
+      "title": "Pilot evaluation of smart glasses for communication workflow and task performance in prehospital care",
+      "journal": "International Journal of Medical Informatics",
+      "date": "2026-07-26"
+    },
+    {
+      "id": "42307216",
+      "pmid": "42307216",
+      "doi": "10.1080/10903127.2026.2690178",
+      "title": "Ketamine Versus Propofol for Sedation in Acute Psychiatric Emergencies During Aeromedical Retrieval: A Randomized Clinical Trial",
+      "journal": "Prehospital Emergency Care",
+      "date": "2026-07-26"
+    }
+  ],
   "funFacts": [
     {
       "category": "pharmacology",
@@ -2828,6 +2869,34 @@
       ]
     }
   ],
+  "tldr": {
+    "date": "2026-07-27",
+    "paperCount": 3,
+    "summary": "\u2022 Conventional CPR with ventilations outperforms hands-only CPR in drowning-related OHCA, with 24.1% vs 9.4% one-month survival\n\u2022 Video-assisted dispatcher CPR instruction showed no benefit over telephone protocols and had lower protocol compliance\n\u2022 AI dispatcher copilot concept proposes multimodal LLM integration for dynamic Tele-CPR, but requires clinical validation",
+    "highlights": [
+      {
+        "id": "41932674",
+        "pmid": "41932674",
+        "doi": "10.1016/j.resuscitation.2026.111079",
+        "title": "Effect of bystander cardiopulmonary resuscitation type on 1-month survival in drowning following out-of-hospital cardiac arrest",
+        "note": "Conventional CPR with ventilations remains the standard for drowning OHCA"
+      },
+      {
+        "id": "42361888",
+        "pmid": "42361888",
+        "doi": "10.1016/j.resuscitation.2026.111191",
+        "title": "Telemedicine-assisted vs conventional telephone instruction in cardiopulmonary resuscitation: the TACTIC cluster randomized trial",
+        "note": "Real-time video CPR coaching didn't improve outcomes and was harder to implement"
+      },
+      {
+        "id": "42314898",
+        "pmid": "42314898",
+        "doi": "10.1016/j.resuscitation.2026.111180",
+        "title": "The AI dispatcher copilot: beyond cardiac arrest recognition to dynamic large language model-assisted Tele-CPR",
+        "note": "Conceptual framework requiring prospective validation before clinical implementation"
+      }
+    ]
+  },
   "weeklyTldr": {
     "dateRange": "31 May \u2013 7 June 2026",
     "summary": "",
