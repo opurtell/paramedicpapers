@@ -1,62 +1,6 @@
 {
-  "lastUpdated": "2026-07-26T21:22:14Z",
-  "featuredPapers": [
-    {
-      "id": "41932674",
-      "title": "Effect of bystander cardiopulmonary resuscitation type on 1-month survival in drowning following out-of-hospital cardiac arrest in natural water bodies: a nationwide retrospective cohort study",
-      "journal": "Resuscitation",
-      "date": "2026-07-27",
-      "pmid": "41932674",
-      "doi": "10.1016/j.resuscitation.2026.111079",
-      "summary": "Conventional CPR (compressions with rescue breaths) was associated with higher 1-month survival in drowning OHCA compared with hands-only CPR (24.1% vs 9.4%).",
-      "relevance": "🟢 High",
-      "featuredReason": "Drowning is a significant cause of cardiac arrest in Australia, particularly during summer months. This study provides strong evidence that conventional CPR with rescue breaths is substantially more effective than hands-only CPR for drowning patients — critical guidance for community responders and paramedics educating the public."
-    },
-    {
-      "id": "42372567",
-      "title": "Prehospital epinephrine as a bridge to survival in traumatic cardiac arrest: A nationwide propensity score-matched analysis",
-      "journal": "The American Journal of Emergency Medicine",
-      "date": "2026-07-26",
-      "pmid": "42372567",
-      "doi": "10.1016/j.ajem.2026.06.039",
-      "summary": "Prehospital epinephrine administration in patients with traumatic cardiac arrest was associated with increased survival to hospital discharge and prehospital ROSC.",
-      "relevance": "🟢 High",
-      "featuredReason": "Traumatic cardiac arrest has historically been considered almost universally fatal, with conventional teaching discouraging epinephrine use. This large nationwide study challenges that paradigm and may prompt re-evaluation of epinephrine protocols for traumatic arrest in Australian ambulance services."
-    },
-    {
-      "id": "42307216",
-      "title": "Ketamine Versus Propofol for Sedation in Acute Psychiatric Emergencies During Aeromedical Retrieval: A Randomized Clinical Trial",
-      "journal": "Prehospital Emergency Care",
-      "date": "2026-07-26",
-      "pmid": "42307216",
-      "doi": "10.1080/10903127.2026.2690178",
-      "summary": "In this RCT of 170 patients, ketamine was associated with fewer adverse events compared to propofol when used for sedation during aeromedical retrieval of patients experiencing acute psychiatric agitation.",
-      "relevance": "🟢 High",
-      "featuredReason": "Aeromedical retrieval services are integral to Australian healthcare, particularly for remote communities. This RCT provides high-quality evidence supporting ketamine as the safer sedation choice for acute psychiatric agitation during flight, with direct applicability to Australian retrieval services like RFDS and state HEMS operations."
-    },
-    {
-      "id": "42391298",
-      "title": "Characterizing Pediatric Trauma Patients and EMS Agencies That Are Optimal Targets for Prehospital Pediatric Blood Transfusion Programs",
-      "journal": "Prehospital Emergency Care",
-      "date": "2026-07-26",
-      "pmid": "42391298",
-      "doi": "10.1080/10903127.2026.2696013",
-      "summary": "In a nationally representative prehospital sample, many injured children appeared eligible for transfusion.",
-      "relevance": "🟢 High",
-      "featuredReason": "Prehospital blood transfusion programs are expanding in Australia, with several ambulance services now carrying blood products. This study helps identify which EMS agencies and patient populations would benefit most from paediatric blood protocols — directly relevant to services developing or expanding their prehospital transfusion capabilities."
-    },
-    {
-      "id": "42407270",
-      "title": "Psychosocial predictors of mental health outcomes in different groups of emergency responders: implications for tailored support systems",
-      "journal": "Journal of Psychiatric Research",
-      "date": "2026-07-26",
-      "pmid": "42407270",
-      "doi": "10.1016/j.jpsychires.2026.06.056",
-      "summary": "This study provides important insights into the mental health challenges faced by emergency service workers (ESWs), including paramedics, firefighters, and emergency medical dispatchers (EMDs).",
-      "relevance": "🟢 High",
-      "featuredReason": "Paramedic wellbeing is a critical issue for Australian ambulance services, with high rates of PTSD, burnout, and mental health challenges. This research provides evidence-based insights that can inform tailored mental health support systems for paramedics, addressing a workforce sustainability issue that directly impacts patient care and staff retention."
-    }
-  ],
+  "lastUpdated": "2026-07-26T23:24:58Z",
+  "featuredPapers": [],
   "funFacts": [
     {
       "category": "pharmacology",
@@ -967,6 +911,10 @@
       "fact": "In the 1700s, patients were sometimes submerged in horse manure as a treatment for various ailments — the thinking being that the warmth and 'vapours' were therapeutic. It was neither warm enough nor vapoury enough to actually help. But they tried."
     }
   ],
+  "funFact": {
+    "category": "EMS",
+    "fact": "The highest cardiac arrest survival rate in the world is in Seattle, Washington — around 20 to 22% overall, and much higher for witnessed VF. They achieved this through massive public CPR training, widespread AED placement, and a coordinated EMS system. It can be done. Most places just don't."
+  },
   "dailyUpdates": [
     {
       "date": "2026-07-27",
@@ -2674,48 +2622,6 @@
       ]
     }
   ],
-  "tldr": {
-    "date": "2026-07-26",
-    "paperCount": 62,
-    "summary": "• Major traumatic cardiac arrest study suggests prehospital epinephrine may improve survival, challenging conventional dogma\n• Ketamine outperforms propofol for psychiatric agitation during aeromedical retrieval with fewer adverse events\n• Heat-related EMS encounters are rising in many regions, with significant geographic variation\n• Sex differences in OHCA outcomes driven by arrest circumstances rather than EMS treatment\n• New evidence on pediatric blood transfusion eligibility and prehospital program targeting\n• Long-term outcomes for asystolic OHCA survivors show persistent disability for two-thirds\n• Rescue breathing remains superior to hands-only CPR for drowning cardiac arrests",
-    "highlights": [
-      {
-        "id": "42372567",
-        "pmid": "42372567",
-        "doi": "10.1016/j.ajem.2026.06.039",
-        "title": "Prehospital epinephrine improves survival in traumatic cardiac arrest",
-        "note": "This nationwide study challenges the conventional teaching that epinephrine is ineffective in traumatic arrest, showing increased survival to hospital discharge and ROSC."
-      },
-      {
-        "id": "42307216",
-        "pmid": "42307216",
-        "doi": "10.1080/10903127.2026.2690178",
-        "title": "Ketamine safer than propofol for aeromedical psychiatric sedation",
-        "note": "RCT of 170 patients found ketamine had fewer adverse events for psychiatric agitation during flight — directly relevant to Australian retrieval services."
-      },
-      {
-        "id": "41932674",
-        "pmid": "41932674",
-        "doi": "10.1016/j.resuscitation.2026.111079",
-        "title": "Conventional CPR superior for drowning cardiac arrests",
-        "note": "Nationwide study found conventional CPR with rescue breaths achieved 24.1% survival versus 9.4% with hands-only CPR in drowning OHCA."
-      },
-      {
-        "id": "42301896",
-        "pmid": "42301896",
-        "doi": "10.1080/10903127.2026.2687829",
-        "title": "Heat-related EMS encounters increasing with regional variation",
-        "note": "While national increases are modest, certain regions are experiencing dramatic rises in heat-related prehospital presentations."
-      },
-      {
-        "id": "42264171",
-        "pmid": "42264171",
-        "doi": "10.1016/j.resuscitation.2026.111165",
-        "title": "Asystolic OHCA survivors face long-term disability",
-        "note": "Only one-third of 12-month survivors achieved good functional recovery, with most experiencing persistent disability and impaired quality of life."
-      }
-    ]
-  },
   "weeklyTldr": {
     "dateRange": "20-27 July 2026",
     "summary": "Conventional CPR with ventilations beats hands-only for drowning-related OHCA, with 24% vs 9% one-month survival\nPrehospital adrenaline associated with improved survival in traumatic cardiac arrest, challenging the permissive hypotension paradigm\nKetamine outperformed propofol for sedation in acute psychiatric emergencies during aeromedical transport, with fewer adverse events\nKing laryngeal tube associated with rare but serious hypopharyngeal perforation — adds to existing airway adjunct concerns\nPrehospital critical care physician presence linked to improved neurological and survival outcomes after OHCA",
