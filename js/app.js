@@ -269,27 +269,14 @@
      expands it to reveal the full summary and full relevance detail.
      Title link and action buttons are outside the tappable area. */
   function todayCardInnerHTML(p) {
-    var lvl = relLevel(p.relevance);
-    var detail = cleanRelevance(p.relevance);
     return tagsHTML(p) +
       '<h3 class="paper-title">' + titleLinkHTML(p) + '</h3>' +
       '<div class="today-expand" data-expand>' +
         (p.summary ? '<p class="paper-summary">' + esc(p.summary) + '</p>' : '') +
-        (detail ? '<p class="today-detail">' + esc(detail) + '</p>' : '') +
+        (p.relevance ? '<p class="today-detail">' + esc(p.relevance) + '</p>' : '') +
         '<span class="today-chev" aria-hidden="true"></span>' +
       '</div>' +
       footHTML(p);
-  }
-
-  /* Strip emoji circles and normalise the relevance string for display. */
-  function cleanRelevance(text) {
-    if (!text) return '';
-    return String(text)
-      .replace(/[\u{1F534}\u{1F7E2}\u{1F7E1}\u{2B1C}]/gu, '')
-      .replace(/^\s*High\s+/i, 'High — ')
-      .replace(/^\s*Medium\s+/i, 'Medium — ')
-      .replace(/^\s*Low\s+/i, 'Low — ')
-      .trim();
   }
 
   function bindTodayExpand(root) {
