@@ -258,9 +258,36 @@
     var papers = day ? day.papers : [];
     $('today-count').textContent = papers.length + ' new today';
     $('today-list').innerHTML = papers.map(function (p) {
-      return '<article class="today-item">' + cardInnerHTML(p) + '</article>';
+      return '<article class="today-item" data-today-id="' + esc(p.id) + '">' +
+        todayCardInnerHTML(p) + '</article>';
     }).join('');
     bindActs($('today-list'));
+    bindTodayExpand($('today-list'));
+  }
+
+  /* Home cards are compact: summary is line-clamped, tapping the body
+     expands it to reveal the full summary and full relevance detail.
+     Title link and action buttons are outside the tappable area. */
+  function todayCardInnerHTML(p) {
+    var lvl = relLevel(p.relevance);
+    return tagsHTML(p) +
+      '<h3 class="paper-title">' + titleLinkHTML(p) + '</h3>' +
+      '<div class="today-expand" data-expand>' +
+        (p.summary ? '<p class="paper-summary">' + esc(p.summary) + '</p>' : '') +
+        (lvl && p.relevance ? '<p class="today-detail">' + esc(p.relevance) + '</p>' : '') +
+        '<span class="today-chev" aria-hidden="true"></span>' +
+      '</div>' +
+      footHTML(p);
+  }
+
+  function bindTodayExpand(root) {
+    root.querySelectorAll('[data-expand]').forEach(function (el) {
+      el.addEventListener('click', function () {
+        var card = el.closest('.today-item');
+        if (!card) return;
+        card.classList.toggle('is-expanded');
+      });
+    });
   }
 
   function renderFeed() {
