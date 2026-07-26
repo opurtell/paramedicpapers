@@ -153,11 +153,18 @@
     var lines = bulletLines(t.summary);
     $('daily-tldr-lead').textContent = lines[0] || '';
 
-    var rest = lines.slice(1).map(function (l) { return { text: l, ref: null }; });
-    var highlights = (t.highlights || []).map(function (h) {
-      return { text: h.note || h.title, ref: h.id, refTitle: h.title };
-    });
-    $('daily-tldr-body').innerHTML = bulletsHTML(rest.concat(highlights), false);
+    /* Use highlights (structured, with paper ids) as the expanded bullets.
+       Each highlight's note is the bullet text and its id links to the paper.
+       If no highlights exist, fall back to plain summary lines. */
+    var items;
+    if (t.highlights && t.highlights.length) {
+      items = t.highlights.map(function (h) {
+        return { text: h.note || h.title, ref: h.id, refTitle: h.title };
+      });
+    } else {
+      items = lines.slice(1).map(function (l) { return { text: l, ref: null }; });
+    }
+    $('daily-tldr-body').innerHTML = bulletsHTML(items, false);
     bindBulletLinks($('daily-tldr-body'));
   }
 
