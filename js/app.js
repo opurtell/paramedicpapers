@@ -41,8 +41,11 @@
   }
 
   async function loadData(bust) {
-    var url = bust ? 'data/papers.json?t=' + Date.now() : 'data/papers.json';
-    var resp = await fetch(url);
+    /* Always cache-bust: GitHub Pages caches for ~10 min, and the fun
+       fact / TLDR change with each push. The query string forces a fresh
+       fetch on every page load and manual refresh. */
+    var url = 'data/papers.json?t=' + Date.now();
+    var resp = await fetch(url, { cache: 'no-cache' });
     if (!resp.ok) throw new Error('Failed to load papers.json');
     return resp.json();
   }
