@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-26T23:24:58Z",
+  "lastUpdated": "2026-07-27T00:16:42Z",
   "featuredPapers": [],
   "funFacts": [
     {
@@ -914,6 +914,34 @@
   "funFact": {
     "category": "EMS",
     "fact": "The highest cardiac arrest survival rate in the world is in Seattle, Washington — around 20 to 22% overall, and much higher for witnessed VF. They achieved this through massive public CPR training, widespread AED placement, and a coordinated EMS system. It can be done. Most places just don't."
+  },
+  "tldr": {
+    "date": "2026-07-27",
+    "paperCount": 3,
+    "summary": "• Retrospective cohort of 3914 drowning-related OHCA patients found conventional CPR (compressions with rescue breaths) was associated with higher 1-month survival compared with hands-only CPR (24.1% vs 9.4%), and both were superior to no CPR (2.7%).\n• Cluster-randomized trial of 108 OHCA patients compared video-assisted dispatcher CPR instruction with conventional telephone instruction, finding no difference in bystander CPR rates (87.3% vs 92.5%, p=0.53) or ongoing CPR at EMS arrival, but significantly lower protocol compliance in the telemedicine group.\n• Concept paper proposes an AI dispatcher copilot using multimodal large language models for dynamic Tele-CPR, integrating acoustic agonal breathing detection, adaptive instruction generation, real-time video CPR coaching with compression feedback, and automated first responder and AED coordination.",
+    "highlights": [
+      {
+        "id": "41932674",
+        "pmid": "41932674",
+        "doi": "10.1016/j.resuscitation.2026.111079",
+        "title": "Effect of bystander cardiopulmonary resuscitation type on 1-month survival in drowning following out-of-hospital cardiac arrest in natural water bodies: a nationwide retrospective cohort study",
+        "note": "Retrospective cohort of 3914 drowning-related OHCA patients found conventional CPR (compressions with rescue breaths) was associated with higher 1-month survival compared with hands-only CPR (24.1% vs 9.4%), and both were superior to no CPR (2.7%)."
+      },
+      {
+        "id": "42361888",
+        "pmid": "42361888",
+        "doi": "10.1016/j.resuscitation.2026.111191",
+        "title": "Telemedicine-assisted vs conventional telephone instruction in cardiopulmonary resuscitation: the TACTIC cluster randomized trial",
+        "note": "Cluster-randomized trial of 108 OHCA patients compared video-assisted dispatcher CPR instruction with conventional telephone instruction, finding no difference in bystander CPR rates (87.3% vs 92.5%, p=0.53) or ongoing CPR at EMS arrival, but significantly lower protocol compliance in the telemedicine group."
+      },
+      {
+        "id": "42314898",
+        "pmid": "42314898",
+        "doi": "10.1016/j.resuscitation.2026.111180",
+        "title": "The AI dispatcher copilot: beyond cardiac arrest recognition to dynamic large language model-assisted Tele-CPR",
+        "note": "Concept paper proposes an AI dispatcher copilot using multimodal large language models for dynamic Tele-CPR, integrating acoustic agonal breathing detection, adaptive instruction generation, real-time video CPR coaching with compression feedback, and automated first responder and AED coordination."
+      }
+    ]
   },
   "dailyUpdates": [
     {
