@@ -1,62 +1,6 @@
 {
-  "lastUpdated": "2026-07-27T21:22:04Z",
-  "featuredPapers": [
-    {
-      "id": "41932674",
-      "title": "Effect of bystander cardiopulmonary resuscitation type on 1-month survival in drowning following out-of-hospital cardiac arrest in natural water bodies: a nationwide retrospective cohort study",
-      "journal": "Resuscitation",
-      "date": "2026-07-27",
-      "pmid": "41932674",
-      "doi": "10.1016/j.resuscitation.2026.111079",
-      "summary": "Retrospective cohort of 3914 drowning-related OHCA patients found conventional CPR (compressions with rescue breaths) was associated with higher 1-month survival compared with hands-only CPR (24.1% vs 9.4%), and both were superior to no CPR (2.7%).",
-      "relevance": "🟢 High",
-      "featuredReason": "Critically important for Australia's beach culture and surf rescue — directly challenges the hands-only CPR message for drowning cases, showing conventional CPR with ventilations saves more than twice as many lives."
-    },
-    {
-      "id": "42372567",
-      "title": "Prehospital epinephrine as a bridge to survival in traumatic cardiac arrest: A nationwide propensity score-matched analysis",
-      "journal": "The American Journal of Emergency Medicine",
-      "date": "2026-07-26",
-      "pmid": "42372567",
-      "doi": "10.1016/j.ajem.2026.06.039",
-      "summary": "Prehospital epinephrine administration in patients with traumatic cardiac arrest was associated with increased survival to hospital discharge and prehospital ROSC.",
-      "relevance": "🟢 High",
-      "featuredReason": "Challenges current trauma arrest guidelines that discourage adrenaline — Australian services will need to watch this debate closely as it could reshape our approach to traumatic cardiac arrest."
-    },
-    {
-      "id": "42307216",
-      "title": "Ketamine Versus Propofol for Sedation in Acute Psychiatric Emergencies During Aeromedical Retrieval: A Randomized Clinical Trial",
-      "journal": "Prehospital Emergency Care",
-      "date": "2026-07-26",
-      "pmid": "42307216",
-      "doi": "10.1080/10903127.2026.2690178",
-      "summary": "In this RCT of 170 patients, ketamine was associated with fewer adverse events compared to propofol when used for sedation during aeromedical retrieval of patients experiencing acute psychiatric agitation.",
-      "relevance": "🟢 High",
-      "featuredReason": "RCT evidence for a common Australian aeromedical scenario — ketamine may be the safer choice for agitated patients requiring sedation for transport, with direct applicability to NSW, CareFlight, and other retrieval services."
-    },
-    {
-      "id": "42391298",
-      "title": "Characterizing Pediatric Trauma Patients and EMS Agencies That Are Optimal Targets for Prehospital Pediatric Blood Transfusion Programs",
-      "journal": "Prehospital Emergency Care",
-      "date": "2026-07-26",
-      "pmid": "42391298",
-      "doi": "10.1080/10903127.2026.2696013",
-      "summary": "In a nationally representative prehospital sample, many injured children appeared eligible for transfusion.",
-      "relevance": "🟢 High",
-      "featuredReason": "Identifies which children and services should be targeted for prehospital blood programs — crucial for Australian services like NSW Ambulance and Queensland Ambulance Service developing or expanding prehospital blood capabilities."
-    },
-    {
-      "id": "42384975",
-      "title": "Hypopharyngeal Perforation Associated with King Laryngeal Tube Use in Prehospital Cardiac Arrest Management",
-      "journal": "Prehospital Emergency Care",
-      "date": "2026-07-26",
-      "pmid": "42384975",
-      "doi": "10.1080/10903127.2026.2693743",
-      "summary": "Hypopharyngeal perforation is a rare but serious complication of prehospital King laryngeal tube placement.",
-      "relevance": "🟢 High",
-      "featuredReason": "Important safety finding about a commonly used airway device — reminds paramedics that supraglottic airways aren't risk-free and proper placement technique is critical."
-    }
-  ],
+  "lastUpdated": "2026-07-27T23:09:38Z",
+  "featuredPapers": [],
   "funFacts": [
     {
       "category": "pharmacology",
@@ -973,29 +917,50 @@
   },
   "tldr": {
     "date": "2026-07-27",
-    "paperCount": 5,
-    "summary": "• Conventional CPR with rescue breaths outperforms hands-only CPR for drowning-related OHCA, with 24.1% vs 9.4% one-month survival\n• Video-assisted dispatcher CPR instruction showed no improvement in bystander CPR rates compared with conventional telephone instruction in the TACTIC trial\n• Concept paper proposes AI dispatcher copilot using multimodal LLMs for dynamic Tele-CPR with real-time acoustic and video coaching",
+    "paperCount": 9,
+    "summary": "• Retrospective cohort of 3914 drowning-related OHCA patients found conventional CPR (compressions with rescue breaths) was associated with higher 1-month survival compared with hands-only CPR (24.1% vs 9.4%), and both were superior to no CPR (2.7%).\n• Cluster-randomized trial of 108 OHCA patients compared video-assisted dispatcher CPR instruction with conventional telephone instruction, finding no difference in bystander CPR rates (87.3% vs 92.5%, p=0.53) or ongoing CPR at EMS arrival, but significantly lower protocol compliance in the telemedicine group.\n• Concept paper proposes an AI dispatcher copilot using multimodal large language models for dynamic Tele-CPR, integrating acoustic agonal breathing detection, adaptive instruction generation, real-time video CPR coaching with compression feedback, and automated first responder and AED coordination.\n• Commentary reinforcing that infection control standards must be maintained for all percutaneous procedures including those perceived as routine like POCUS-guided cannulation, following widespread adoption of point-of-care ultrasound.\n• No abstract available — title suggests exploration of mitochondrial-directed therapies after return of spontaneous circulation.\n• Editorial summarising two nationwide Norwegian studies demonstrating electrostatic discharge affects all rescue paramedics and 73% of physicians, with 23% experiencing severe events including pain, falls, impaired communication, and operation termination.",
     "highlights": [
       {
         "id": "41932674",
         "pmid": "41932674",
         "doi": "10.1016/j.resuscitation.2026.111079",
-        "title": "Conventional CPR saves more lives than hands-only in drowning",
-        "note": "Challenges the hands-only CPR message for drowning cases — rescue breaths matter in aquatic arrests."
+        "title": "Effect of bystander cardiopulmonary resuscitation type on 1-month survival in drowning following out-of-hospital cardiac arrest in natural water bodies: a nationwide retrospective cohort study",
+        "note": "Retrospective cohort of 3914 drowning-related OHCA patients found conventional CPR (compressions with rescue breaths) was associated with higher 1-month survival compared with hands-only CPR (24.1% vs 9.4%), and both were superior to no CPR (2.7%)."
       },
       {
         "id": "42361888",
         "pmid": "42361888",
         "doi": "10.1016/j.resuscitation.2026.111191",
-        "title": "Video CPR instruction no better than phone guidance",
-        "note": "Adding video to dispatcher CPR instruction didn't improve bystander CPR rates — technology doesn't always translate to better outcomes."
+        "title": "Telemedicine-assisted vs conventional telephone instruction in cardiopulmonary resuscitation: the TACTIC cluster randomized trial",
+        "note": "Cluster-randomized trial of 108 OHCA patients compared video-assisted dispatcher CPR instruction with conventional telephone instruction, finding no difference in bystander CPR rates (87.3% vs 92.5%, p=0.53) or ongoing CPR at EMS arrival, but significantly lower protocol compliance in the telemedicine group."
       },
       {
         "id": "42314898",
         "pmid": "42314898",
         "doi": "10.1016/j.resuscitation.2026.111180",
-        "title": "AI dispatcher copilot proposed for Tele-CPR",
-        "note": "Concept explores using multimodal AI for dynamic CPR coaching with acoustic breathing detection and video feedback."
+        "title": "The AI dispatcher copilot: beyond cardiac arrest recognition to dynamic large language model-assisted Tele-CPR",
+        "note": "Concept paper proposes an AI dispatcher copilot using multimodal large language models for dynamic Tele-CPR, integrating acoustic agonal breathing detection, adaptive instruction generation, real-time video CPR coaching with compression feedback, and automated first responder and AED coordination."
+      },
+      {
+        "id": "42476689",
+        "pmid": "42476689",
+        "doi": "10.1016/j.annemergmed.2026.04.007",
+        "title": "Commentary",
+        "note": "Commentary reinforcing that infection control standards must be maintained for all percutaneous procedures including those perceived as routine like POCUS-guided cannulation, following widespread adoption of point-of-care ultrasound."
+      },
+      {
+        "id": "10.1016/j.resuscitation.2026.111112",
+        "pmid": "",
+        "doi": "10.1016/j.resuscitation.2026.111112",
+        "title": "Deciphering mitochondrial therapeutic heterogeneity at the post-resuscitation point of care",
+        "note": "No abstract available — title suggests exploration of mitochondrial-directed therapies after return of spontaneous circulation."
+      },
+      {
+        "id": "10.1186/s13049-026-01666-6",
+        "pmid": "",
+        "doi": "10.1186/s13049-026-01666-6",
+        "title": "Known to crews, missing from the literature - electrostatic discharge during helicopter hoist operations",
+        "note": "Editorial summarising two nationwide Norwegian studies demonstrating electrostatic discharge affects all rescue paramedics and 73% of physicians, with 23% experiencing severe events including pain, falls, impaired communication, and operation termination."
       }
     ]
   },
@@ -1052,6 +1017,46 @@
           "doi": "10.1016/j.resuscitation.2026.111112",
           "summary": "No abstract available — title suggests exploration of mitochondrial-directed therapies after return of spontaneous circulation.",
           "relevance": "🔴 Low"
+        },
+        {
+          "id": "10.1186/s13049-026-01666-6",
+          "title": "Known to crews, missing from the literature - electrostatic discharge during helicopter hoist operations",
+          "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+          "date": "2026-07-27",
+          "pmid": "",
+          "doi": "10.1186/s13049-026-01666-6",
+          "summary": "Editorial summarising two nationwide Norwegian studies demonstrating electrostatic discharge affects all rescue paramedics and 73% of physicians, with 23% experiencing severe events including pain, falls, impaired communication, and operation termination.",
+          "relevance": "🟢 High"
+        },
+        {
+          "id": "10.1186/s13049-026-01662-w",
+          "title": "Evaluating performance and potential clinical benefit of the Swedish On Scene Injury Severity Prediction (OSISP) model for prehospital field triage on Norwegian trauma data",
+          "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+          "date": "2026-07-27",
+          "pmid": "",
+          "doi": "10.1186/s13049-026-01662-w",
+          "summary": "External validation of AI-based trauma triage model on 29,709 Norwegian trauma patients showed OSISP combined with clinical judgement reduced undertriage from 56% to 2.7% and mortality from 4.1% to 3.4–3.5%.",
+          "relevance": "🟢 High"
+        },
+        {
+          "id": "10.1016/j.resuscitation.2026.111193",
+          "title": "Reply to: Sex-specific effects of manual pressure augmentation during defibrillation: a mechanistic hypothesis",
+          "journal": "Resuscitation",
+          "date": "2026-07-27",
+          "pmid": "",
+          "doi": "10.1016/j.resuscitation.2026.111193",
+          "summary": "Author response to criticism of sex-specific findings in the DOSE VF trial, defending the methodology and arguing biological plausibility for differential effects of manual pressure augmentation.",
+          "relevance": "🟡 Medium"
+        },
+        {
+          "id": "10.1016/j.ordal.2026.200511",
+          "title": "Meta-heuristics for the maximal covering location problem with distance constraint. An application to ambulance location in Spanish rural areas",
+          "journal": "Operations Research, Data Analytics and Logistics",
+          "date": "2026-07-27",
+          "pmid": "",
+          "doi": "10.1016/j.ordal.2026.200511",
+          "summary": "Mathematical optimisation study applying meta-heuristic algorithms to ambulance station location problems in rural Spain, focusing on maximising population coverage within distance constraints.",
+          "relevance": "🟡 Medium"
         }
       ]
     },
@@ -2728,62 +2733,50 @@
   ],
   "weeklyTldr": {
     "dateRange": "20-27 July 2026",
-    "summary": "Conventional CPR with ventilations beats hands-only for drowning-related OHCA, with 24% vs 9% one-month survival\nPrehospital adrenaline associated with improved survival in traumatic cardiac arrest, challenging the permissive hypotension paradigm\nKetamine outperformed propofol for sedation in acute psychiatric emergencies during aeromedical transport, with fewer adverse events\nKing laryngeal tube associated with rare but serious hypopharyngeal perforation — adds to existing airway adjunct concerns\nPrehospital critical care physician presence linked to improved neurological and survival outcomes after OHCA",
+    "summary": "Electrostatic discharge during helicopter hoist operations is a genuine clinical and safety risk, not just a occupational inconvenience, with nationwide Norwegian data showing widespread exposure and serious consequences\nSwedish AI-based trauma triage model (OSISP) validated on Norwegian data reduces undertriage from 56% to 2.7% and may lower mortality when used alongside clinical judgement\nReply to sex-specific effects of manual pressure augmentation during defibrillation continues the debate on resuscitation techniques",
     "highlights": [
       {
-        "text": "Conventional CPR with ventilations beats hands-only for drowning-related OHCA, with 24% vs 9% one-month survival",
-        "id": "41932674"
+        "text": "Electrostatic discharge during helicopter hoist operations is a genuine clinical and safety risk, not just a occupational inconvenience, with nationwide Norwegian data showing widespread exposure and serious consequences",
+        "id": "10.1186/s13049-026-01666-6"
       },
       {
-        "text": "Prehospital adrenaline associated with improved survival in traumatic cardiac arrest, challenging the permissive hypotension paradigm",
-        "id": "42372567"
-      },
-      {
-        "text": "Ketamine outperformed propofol for sedation in acute psychiatric emergencies during aeromedical transport, with fewer adverse events",
-        "id": "42307216"
-      },
-      {
-        "text": "King laryngeal tube associated with rare but serious hypopharyngeal perforation — adds to existing airway adjunct concerns",
-        "id": "42384975"
-      },
-      {
-        "text": "Prehospital critical care physician presence linked to improved neurological and survival outcomes after OHCA",
-        "id": "42467413"
+        "text": "Swedish AI-based trauma triage model (OSISP) validated on Norwegian data reduces undertriage from 56% to 2.7% and may lower mortality when used alongside clinical judgement",
+        "id": "10.1186/s13049-026-01662-w"
       }
     ],
     "topPicks": [
       {
-        "id": "41932674",
-        "title": "Effect of bystander cardiopulmonary resuscitation type on 1-month survival in drowning-related OHCA",
-        "authors": "Retrospective cohort (n=3914)",
-        "journal": "Resuscitation",
-        "summary": "Conventional CPR (compressions with ventilations) outperformed hands-only CPR for drowning OHCA — 24.1% vs 9.4% one-month survival.",
-        "relevance": "🟢 High transferability — Directly challenges the general OHCA hands-only message for drowning cases",
-        "pmid": "41932674",
-        "doi": "",
-        "featuredReason": "Directly applicable to Australian surf rescue and paramedic practice — the standard hands-only CPR guidance doesn't hold for drowning."
+        "id": "10.1186/s13049-026-01666-6",
+        "title": "Known to crews, missing from the literature - electrostatic discharge during helicopter hoist operations",
+        "authors": "Jostein Rødseth Brede",
+        "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+        "summary": "Editorial summarising two nationwide Norwegian studies demonstrating electrostatic discharge affects all rescue paramedics and 73% of physicians, with 23% experiencing severe events including pain, falls, impaired communication, and operation termination.",
+        "relevance": "🟢 High transferability — HEMS crews face this risk universally, though frequency may vary by aircraft and conditions",
+        "pmid": "",
+        "doi": "10.1186/s13049-026-01666-6",
+        "featuredReason": "This matters because it moves ESD from an accepted hazard into a formal safety risk requiring systematic reporting, mitigation evaluation, and longitudinal health studies — crew safety shouldn't be a cost of doing business."
       },
       {
-        "id": "42372567",
-        "title": "Prehospital epinephrine as a bridge to survival in traumatic cardiac arrest",
-        "authors": "Cohort study",
-        "journal": "Resuscitation",
-        "summary": "Prehospital adrenaline administration in traumatic cardiac arrest was associated with improved survival, adding to the debate around vasoactive use in TCA.",
-        "relevance": "🟢 High transferability — Challenges the blanket recommendation against adrenaline in traumatic arrest",
-        "pmid": "42372567",
-        "doi": "",
-        "featuredReason": "Challenges current trauma arrest guidelines that discourage adrenaline — Australian services will need to watch this debate closely."
+        "id": "10.1186/s13049-026-01662-w",
+        "title": "Evaluating performance and potential clinical benefit of the Swedish On Scene Injury Severity Prediction (OSISP) model for prehospital field triage on Norwegian trauma data",
+        "authors": "Anna Bakidou, Eva-Corina Caragounis, Magnus Andersson Hagiwara, et al.",
+        "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+        "summary": "External validation of AI-based trauma triage model on 29,709 Norwegian trauma patients showed OSISP combined with clinical judgement reduced undertriage from 56% to 2.7% and mortality from 4.1% to 3.4–3.5%.",
+        "relevance": "🟢 High transferability — AI decision support for trauma triage is applicable across similar EMS systems, though requires local validation before implementation",
+        "pmid": "",
+        "doi": "10.1186/s13049-026-01662-w",
+        "featuredReason": "AI tools for prehospital decision support are emerging rapidly, but external validation is rare — this study shows promise for improving trauma triage accuracy, particularly for elderly and remote patients often missed by current protocols."
       },
       {
-        "id": "42307216",
-        "title": "Ketamine vs Propofol for Sedation in Acute Psychiatric Emergencies During Aeromedical Transport",
-        "authors": "RCT (n=170)",
-        "journal": "Prehospital Emergency Care",
-        "summary": "Ketamine was associated with fewer adverse events compared to propofol for sedation in acute psychiatric emergencies during aeromedical transport.",
-        "relevance": "🟢 High transferability — Directly applicable to Australian aeromedical retrieval",
-        "pmid": "42307216",
-        "doi": "",
-        "featuredReason": "RCT evidence for a common aeromedical scenario — ketamine may be the safer choice for agitated patients requiring sedation for transport."
+        "id": "10.1016/j.resuscitation.2026.111193",
+        "title": "Reply to: Sex-specific effects of manual pressure augmentation during defibrillation: a mechanistic hypothesis",
+        "authors": "Ziad Nehme, Emily Mahony, Emily Nehme, et al.",
+        "journal": "Resuscitation",
+        "summary": "Author response to criticism of sex-specific findings in the DOSE VF trial, defending the methodology and arguing biological plausibility for differential effects of manual pressure augmentation.",
+        "relevance": "🟡 Medium transferability — relevant to resuscitation researchers and clinicians following the defibrillation technique debate, but limited direct impact on current practice",
+        "pmid": "",
+        "doi": "10.1016/j.resuscitation.2026.111193",
+        "featuredReason": "Included to highlight ongoing debate about manual pressure augmentation during defibrillation — while academic in nature, it reflects how resuscitation science continues to refine understanding of what actually improves shock success."
       }
     ]
   }
