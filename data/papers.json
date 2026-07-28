@@ -1,27 +1,27 @@
 {
-  "lastUpdated": "2026-07-28T21:03:58Z",
-  "lastUpdatedSydney": "2026-07-29 07:03 AEST",
+  "lastUpdated": "2026-07-28T21:04:54Z",
+  "lastUpdatedSydney": "2026-07-29 07:04 AEST",
   "lastUpdatedDate": "2026-07-29",
   "featuredPapers": [
     {
-      "id": "burn-surface-estimation-2026-07-28",
-      "title": "Comparison of burn surface area estimated by ambulance crews or referring hospitals and an Advanced Critical Care and Emergency Center",
-      "note": "Direct prehospital relevance: ambulance burn assessment accuracy compared to specialist center evaluation"
-    },
-    {
-      "id": "electrostatic-discharge-helicopter-2026-07-28",
+      "id": "10.1186/s13049-026-01666-6",
       "title": "Known to crews, missing from the literature - electrostatic discharge during helicopter hoist operations",
       "note": "Australian paramedic-relevant: addresses known HEMS safety issue affecting rescuers and equipment"
     },
     {
-      "id": "bystander-cpr-drowning-2026-07-28",
+      "id": "41932674",
       "title": "Effect of bystander cardiopulmonary resuscitation type on 1-month survival in drowning following out-of-hospital cardiac arrest in natural water bodies",
       "note": "High-stakes clinical finding: CPR type impacts survival in drowning-related cardiac arrest"
     },
     {
-      "id": "osisp-triage-validation-2026-07-28",
+      "id": "10.1186/s13049-026-01662-w",
       "title": "Evaluating performance and potential clinical benefit of the Swedish On Scene Injury Severity Prediction (OSISP) model for prehospital field triage on Norwegian trauma data",
       "note": "Trauma triage innovation: AI-assisted field triage model with mortality reduction evidence"
+    },
+    {
+      "id": "10.1016/j.burns.2026.108158",
+      "title": "Comparison of burn surface area estimated by ambulance crews or referring hospitals and an Advanced Critical Care and Emergency Center",
+      "note": "Direct prehospital relevance: ambulance burn assessment accuracy compared to specialist center evaluation"
     }
   ],
   "funFacts": [
@@ -944,22 +944,22 @@
     "summary": "• HEMS safety: electrostatic discharge during helicopter operations documented in Scandinavian study\n• Trauma triage: Swedish OSISP model validated on Norwegian data showing mortality reduction\n• Drowning resuscitation: bystander CPR type impacts 1-month survival in water-related cardiac arrest\n• Burn assessment: ambulance crew TBSA estimation accuracy compared to specialist center evaluation",
     "highlights": [
       {
-        "id": "electrostatic-discharge-helicopter-2026-07-28",
+        "id": "10.1186/s13049-026-01666-6",
         "pmid": "",
-        "doi": "10.1186/s13049-026-01634-6",
+        "doi": "10.1186/s13049-026-01666-6",
         "title": "Known to crews, missing from the literature - electrostatic discharge during helicopter hoist operations",
         "note": "Electrostatic discharge affects rescuers and equipment during helicopter hoist operations - a known hazard now documented in literature"
       },
       {
-        "id": "osisp-triage-validation-2026-07-28",
+        "id": "10.1186/s13049-026-01662-w",
         "pmid": "",
         "doi": "10.1186/s13049-026-01662-w",
         "title": "Evaluating performance and potential clinical benefit of the Swedish On Scene Injury Severity Prediction (OSISP) model for prehospital field triage on Norwegian trauma data",
         "note": "AI-based trauma triage model reduced undertriage from 56% to 2.7% with mortality benefit"
       },
       {
-        "id": "bystander-cpr-drowning-2026-07-28",
-        "pmid": "",
+        "id": "41932674",
+        "pmid": "41932674",
         "doi": "10.1016/j.resuscitation.2026.111232",
         "title": "Effect of bystander cardiopulmonary resuscitation type on 1-month survival in drowning following out-of-hospital cardiac arrest in natural water bodies",
         "note": "CPR type significantly impacts survival in drowning-related cardiac arrest"
