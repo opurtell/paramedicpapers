@@ -1,27 +1,62 @@
 {
-  "lastUpdated": "2026-07-28T21:04:54Z",
-  "lastUpdatedSydney": "2026-07-29 07:04 AEST",
+  "lastUpdated": "2026-07-28T21:22:30Z",
+  "lastUpdatedSydney": "2026-07-29 07:22 AEST",
   "lastUpdatedDate": "2026-07-29",
   "featuredPapers": [
     {
-      "id": "10.1186/s13049-026-01666-6",
-      "title": "Known to crews, missing from the literature - electrostatic discharge during helicopter hoist operations",
-      "note": "Australian paramedic-relevant: addresses known HEMS safety issue affecting rescuers and equipment"
+      "id": "41932674",
+      "title": "Effect of bystander cardiopulmonary resuscitation type on 1-month survival in drowning following out-of-hospital cardiac arrest in natural water bodies: a nationwide retrospective cohort study",
+      "journal": "Resuscitation",
+      "date": "2026-07-28",
+      "pmid": "41932674",
+      "doi": "10.1016/j.resuscitation.2026.111079",
+      "summary": "Retrospective cohort of 3914 drowning-related OHCA patients found conventional CPR (compressions with rescue breaths) was associated with higher 1-month survival compared with hands-only CPR (24.1% vs 9.4%), and both were superior to no CPR (2.7%).",
+      "relevance": "🟢 High",
+      "featuredReason": "With Australia's extensive coastline and drowning a significant prehospital presentation, this large nationwide cohort provides compelling evidence that rescue breaths matter in drowning OHCA — directly challenging hands-only CPR guidance in this specific context."
     },
     {
-      "id": "41932674",
-      "title": "Effect of bystander cardiopulmonary resuscitation type on 1-month survival in drowning following out-of-hospital cardiac arrest in natural water bodies",
-      "note": "High-stakes clinical finding: CPR type impacts survival in drowning-related cardiac arrest"
+      "id": "10.1186/s13049-026-01666-6",
+      "title": "Known to crews, missing from the literature - electrostatic discharge during helicopter hoist operations",
+      "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+      "date": "2026-07-28",
+      "pmid": "",
+      "doi": "10.1186/s13049-026-01666-6",
+      "summary": "Editorial summarising two nationwide Norwegian studies demonstrating electrostatic discharge affects all rescue paramedics and 73% of physicians, with 23% experiencing severe events including pain, falls, impaired communication, and operation termination.",
+      "relevance": "🟢 High",
+      "featuredReason": "Australian aeromedical services rely heavily on helicopter hoist operations, yet this systematic documentation of electrostatic discharge risks has been missing from the literature — this brings a known operational hazard into the evidence base and may inform PPE and procedural updates."
     },
     {
       "id": "10.1186/s13049-026-01662-w",
       "title": "Evaluating performance and potential clinical benefit of the Swedish On Scene Injury Severity Prediction (OSISP) model for prehospital field triage on Norwegian trauma data",
-      "note": "Trauma triage innovation: AI-assisted field triage model with mortality reduction evidence"
+      "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+      "date": "2026-07-28",
+      "pmid": "",
+      "doi": "10.1186/s13049-026-01662-w",
+      "summary": "External validation of AI-based trauma triage model on 29,709 Norwegian trauma patients showed OSISP combined with clinical judgement reduced undertriage from 56% to 2.7% and mortality from 4.1% to 3.4–3.5%.",
+      "relevance": "🟢 High",
+      "featuredReason": "Dramatic reduction in undertriage from 56% to 2.7% with AI-supported triage has direct implications for Australian trauma systems, particularly in rural and remote areas where accurate field triage to major trauma centres can significantly impact outcomes."
     },
     {
-      "id": "10.1016/j.burns.2026.108158",
-      "title": "Comparison of burn surface area estimated by ambulance crews or referring hospitals and an Advanced Critical Care and Emergency Center",
-      "note": "Direct prehospital relevance: ambulance burn assessment accuracy compared to specialist center evaluation"
+      "id": "42307216",
+      "title": "Ketamine Versus Propofol for Sedation in Acute Psychiatric Emergencies During Aeromedical Retrieval: A Randomized Clinical Trial",
+      "journal": "Prehospital Emergency Care",
+      "date": "2026-07-27",
+      "pmid": "42307216",
+      "doi": "10.1080/10903127.2026.2690178",
+      "summary": "In this RCT of 170 patients, ketamine was associated with fewer adverse events compared to propofol when used for sedation during aeromedical retrieval of patients experiencing acute psychiatric agitation.",
+      "relevance": "🟢 High",
+      "featuredReason": "Directly relevant to Australian aeromedical retrieval services managing acute psychiatric agitation in remote settings, this RCT provides high-quality evidence supporting ketamine as the safer sedative option over propofol in the challenging aeromedical environment."
+    },
+    {
+      "id": "42372567",
+      "title": "Prehospital epinephrine as a bridge to survival in traumatic cardiac arrest: A nationwide propensity score-matched analysis",
+      "journal": "The American Journal of Emergency Medicine",
+      "date": "2026-07-27",
+      "pmid": "42372567",
+      "doi": "10.1016/j.ajem.2026.06.039",
+      "summary": "Prehospital epinephrine administration in patients with traumatic cardiac arrest was associated with increased survival to hospital discharge and prehospital ROSC.",
+      "relevance": "🟢 High",
+      "featuredReason": "Challenges conventional teaching that traumatic cardiac arrest has dismal prognosis and that epinephrine is contraindicated — this nationwide analysis suggests epinephrine may have a role, potentially prompting reassessment of traumatic arrest protocols in Australian ambulance services."
     }
   ],
   "funFacts": [
@@ -941,28 +976,35 @@
   "tldr": {
     "date": "2026-07-28",
     "paperCount": 10,
-    "summary": "• HEMS safety: electrostatic discharge during helicopter operations documented in Scandinavian study\n• Trauma triage: Swedish OSISP model validated on Norwegian data showing mortality reduction\n• Drowning resuscitation: bystander CPR type impacts 1-month survival in water-related cardiac arrest\n• Burn assessment: ambulance crew TBSA estimation accuracy compared to specialist center evaluation",
+    "summary": "• Large nationwide cohort of drowning OHCA found conventional CPR with rescue breaths achieved 24.1% survival versus 9.4% for hands-only — rescue breaths matter in drowning.\n• Telemedicine-assisted dispatcher CPR instruction showed no difference in bystander CPR rates compared to conventional telephone instructions, though protocol compliance was lower.\n• Nationwide Norwegian studies document electrostatic discharge affecting all rescue paramedics during helicopter hoist operations, with 23% experiencing severe events.\n• AI-based OSISP trauma triage model validated on nearly 30,000 patients reduced undertriage from 56% to 2.7% and lowered mortality.\n• Commentary reinforces infection control standards for all percutaneous procedures including routine POCUS-guided cannulation.",
     "highlights": [
+      {
+        "id": "41932674",
+        "pmid": "41932674",
+        "doi": "10.1016/j.resuscitation.2026.111079",
+        "title": "Conventional CPR outperforms hands-only in drowning OHCA",
+        "note": "Nationwide cohort of 3914 patients showed conventional CPR with rescue breaths achieved 24.1% survival versus 9.4% for hands-only, directly challenging hands-first guidance for drowning arrests."
+      },
       {
         "id": "10.1186/s13049-026-01666-6",
         "pmid": "",
         "doi": "10.1186/s13049-026-01666-6",
-        "title": "Known to crews, missing from the literature - electrostatic discharge during helicopter hoist operations",
-        "note": "Electrostatic discharge affects rescuers and equipment during helicopter hoist operations - a known hazard now documented in literature"
+        "title": "Electrostatic discharge during helicopter hoist operations documented",
+        "note": "Two nationwide Norwegian studies found all rescue paramedics affected by electrostatic discharge, with 23% experiencing severe events including pain, falls, and impaired communication during hoist operations."
       },
       {
         "id": "10.1186/s13049-026-01662-w",
         "pmid": "",
         "doi": "10.1186/s13049-026-01662-w",
-        "title": "Evaluating performance and potential clinical benefit of the Swedish On Scene Injury Severity Prediction (OSISP) model for prehospital field triage on Norwegian trauma data",
-        "note": "AI-based trauma triage model reduced undertriage from 56% to 2.7% with mortality benefit"
+        "title": "AI trauma triage model slashes undertriage from 56% to 2.7%",
+        "note": "External validation of the OSISP model on 29,709 Norwegian trauma patients demonstrated that AI-assisted triage combined with clinical judgement dramatically reduced undertriage and mortality."
       },
       {
-        "id": "41932674",
-        "pmid": "41932674",
-        "doi": "10.1016/j.resuscitation.2026.111232",
-        "title": "Effect of bystander cardiopulmonary resuscitation type on 1-month survival in drowning following out-of-hospital cardiac arrest in natural water bodies",
-        "note": "CPR type significantly impacts survival in drowning-related cardiac arrest"
+        "id": "42361888",
+        "pmid": "42361888",
+        "doi": "10.1016/j.resuscitation.2026.111191",
+        "title": "Video-assisted dispatcher CPR no better than telephone instruction",
+        "note": "Cluster-randomized TACTIC trial found telemedicine-assisted CPR instruction did not improve bystander CPR rates compared to conventional telephone instructions, with lower protocol compliance in the video group."
       }
     ]
   },
@@ -2744,29 +2786,52 @@
     }
   ],
   "weeklyTldr": {
-    "dateRange": "20-27 July 2026",
-    "summary": "Electrostatic discharge during helicopter hoist operations is a genuine clinical and safety risk, not just a occupational inconvenience, with nationwide Norwegian data showing widespread exposure and serious consequences\nSwedish AI-based trauma triage model (OSISP) validated on Norwegian data reduces undertriage from 56% to 2.7% and may lower mortality when used alongside clinical judgement\nReply to sex-specific effects of manual pressure augmentation during defibrillation continues the debate on resuscitation techniques",
+    "dateRange": "22-29 July 2026",
+    "summary": "Large nationwide cohort of drowning OHCA found conventional CPR with rescue breaths achieved 24.1% survival versus 9.4% for hands-only — rescue breaths matter in drowning\nSwedish AI-based trauma triage model (OSISP) validated on Norwegian data reduces undertriage from 56% to 2.7% and may lower mortality when used alongside clinical judgement\nNationwide Norwegian studies document electrostatic discharge affecting all rescue paramedics during helicopter hoist operations, with 23% experiencing severe events\nPrehospital epinephrine in traumatic cardiac arrest associated with increased survival to hospital discharge and prehospital ROSC in nationwide propensity-matched analysis\nKetamine associated with fewer adverse events than propofol for sedation of acute psychiatric agitation during aeromedical retrieval in RCT",
     "highlights": [
       {
-        "text": "Electrostatic discharge during helicopter hoist operations is a genuine clinical and safety risk, not just a occupational inconvenience, with nationwide Norwegian data showing widespread exposure and serious consequences",
-        "id": "10.1186/s13049-026-01666-6"
+        "text": "Large nationwide cohort of drowning OHCA found conventional CPR with rescue breaths achieved 24.1% survival versus 9.4% for hands-only — rescue breaths matter in drowning",
+        "id": "41932674"
       },
       {
         "text": "Swedish AI-based trauma triage model (OSISP) validated on Norwegian data reduces undertriage from 56% to 2.7% and may lower mortality when used alongside clinical judgement",
         "id": "10.1186/s13049-026-01662-w"
+      },
+      {
+        "text": "Nationwide Norwegian studies document electrostatic discharge affecting all rescue paramedics during helicopter hoist operations, with 23% experiencing severe events",
+        "id": "10.1186/s13049-026-01666-6"
+      },
+      {
+        "text": "Prehospital epinephrine in traumatic cardiac arrest associated with increased survival to hospital discharge and prehospital ROSC in nationwide propensity-matched analysis",
+        "id": "42372567"
+      },
+      {
+        "text": "Ketamine associated with fewer adverse events than propofol for sedation of acute psychiatric agitation during aeromedical retrieval in RCT",
+        "id": "42307216"
       }
     ],
     "topPicks": [
+      {
+        "id": "41932674",
+        "title": "Effect of bystander cardiopulmonary resuscitation type on 1-month survival in drowning following out-of-hospital cardiac arrest in natural water bodies: a nationwide retrospective cohort study",
+        "authors": "Kosuke Kiyohara, Chika Nishiyama, Taku Iwami, et al.",
+        "journal": "Resuscitation",
+        "summary": "Retrospective cohort of 3914 drowning-related OHCA patients found conventional CPR (compressions with rescue breaths) was associated with higher 1-month survival compared with hands-only CPR (24.1% vs 9.4%), and both were superior to no CPR (2.7%).",
+        "relevance": "🟢 High",
+        "pmid": "41932674",
+        "doi": "10.1016/j.resuscitation.2026.111079",
+        "featuredReason": "This large nationwide cohort provides compelling evidence that rescue breaths significantly improve outcomes in drowning OHCA, challenging hands-only CPR guidance in this specific context and directly relevant to Australia's extensive coastal regions."
+      },
       {
         "id": "10.1186/s13049-026-01666-6",
         "title": "Known to crews, missing from the literature - electrostatic discharge during helicopter hoist operations",
         "authors": "Jostein Rødseth Brede",
         "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
         "summary": "Editorial summarising two nationwide Norwegian studies demonstrating electrostatic discharge affects all rescue paramedics and 73% of physicians, with 23% experiencing severe events including pain, falls, impaired communication, and operation termination.",
-        "relevance": "🟢 High transferability — HEMS crews face this risk universally, though frequency may vary by aircraft and conditions",
+        "relevance": "🟢 High",
         "pmid": "",
         "doi": "10.1186/s13049-026-01666-6",
-        "featuredReason": "This matters because it moves ESD from an accepted hazard into a formal safety risk requiring systematic reporting, mitigation evaluation, and longitudinal health studies — crew safety shouldn't be a cost of doing business."
+        "featuredReason": "Brings a known operational hazard into the evidence base with systematic documentation of electrostatic discharge risks during hoist operations, directly relevant to Australian aeromedical services and potentially informing PPE and procedural updates."
       },
       {
         "id": "10.1186/s13049-026-01662-w",
@@ -2774,21 +2839,10 @@
         "authors": "Anna Bakidou, Eva-Corina Caragounis, Magnus Andersson Hagiwara, et al.",
         "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
         "summary": "External validation of AI-based trauma triage model on 29,709 Norwegian trauma patients showed OSISP combined with clinical judgement reduced undertriage from 56% to 2.7% and mortality from 4.1% to 3.4–3.5%.",
-        "relevance": "🟢 High transferability — AI decision support for trauma triage is applicable across similar EMS systems, though requires local validation before implementation",
+        "relevance": "🟢 High",
         "pmid": "",
         "doi": "10.1186/s13049-026-01662-w",
-        "featuredReason": "AI tools for prehospital decision support are emerging rapidly, but external validation is rare — this study shows promise for improving trauma triage accuracy, particularly for elderly and remote patients often missed by current protocols."
-      },
-      {
-        "id": "10.1016/j.resuscitation.2026.111193",
-        "title": "Reply to: Sex-specific effects of manual pressure augmentation during defibrillation: a mechanistic hypothesis",
-        "authors": "Ziad Nehme, Emily Mahony, Emily Nehme, et al.",
-        "journal": "Resuscitation",
-        "summary": "Author response to criticism of sex-specific findings in the DOSE VF trial, defending the methodology and arguing biological plausibility for differential effects of manual pressure augmentation.",
-        "relevance": "🟡 Medium transferability — relevant to resuscitation researchers and clinicians following the defibrillation technique debate, but limited direct impact on current practice",
-        "pmid": "",
-        "doi": "10.1016/j.resuscitation.2026.111193",
-        "featuredReason": "Included to highlight ongoing debate about manual pressure augmentation during defibrillation — while academic in nature, it reflects how resuscitation science continues to refine understanding of what actually improves shock success."
+        "featuredReason": "Dramatic reduction in undertriage from 56% to 2.7% has direct implications for Australian trauma systems, particularly in rural and remote areas where accurate field triage to major trauma centres can significantly impact outcomes."
       }
     ]
   }
