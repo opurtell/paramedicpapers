@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-07-28T04:53:13Z",
-  "lastUpdatedSydney": "2026-07-28 14:53 AEST",
-  "lastUpdatedDate": "2026-07-28",
+  "lastUpdated": "2026-07-28T21:02:07Z",
+  "lastUpdatedSydney": "2026-07-29 07:02 AEST",
+  "lastUpdatedDate": "2026-07-29",
   "featuredPapers": [],
   "funFacts": [
     {
@@ -915,11 +915,11 @@
   ],
   "funFact": {
     "category": "EMS",
-    "fact": "In some Scandinavian countries, ambulance crews include a physician on scene for critical calls. In Australia and the UK, paramedics handle most of this themselves. Different systems, same goal. The debate about whether doctors belong on ambulances is older than most paramedics."
+    "fact": "The longest ambulance in the world is a custom-built vehicle in Dubai that's essentially a mobile hospital — complete with ICU beds, ventilators, and monitoring equipment. Useful for a city that occasionally needs to transport patients between palaces."
   },
   "tldr": {
     "date": "2026-07-28",
-    "paperCount": 9,
+    "paperCount": 10,
     "summary": "• Retrospective cohort of 3914 drowning-related OHCA patients found conventional CPR (compressions with rescue breaths) was associated with higher 1-month survival compared with hands-only CPR (24.1% vs 9.4%), and both were superior to no CPR (2.7%).\n• Cluster-randomized trial of 108 OHCA patients compared video-assisted dispatcher CPR instruction with conventional telephone instruction, finding no difference in bystander CPR rates (87.3% vs 92.5%, p=0.53) or ongoing CPR at EMS arrival, but significantly lower protocol compliance in the telemedicine group.\n• Concept paper proposes an AI dispatcher copilot using multimodal large language models for dynamic Tele-CPR, integrating acoustic agonal breathing detection, adaptive instruction generation, real-time video CPR coaching with compression feedback, and automated first responder and AED coordination.\n• Commentary reinforcing that infection control standards must be maintained for all percutaneous procedures including those perceived as routine like POCUS-guided cannulation, following widespread adoption of point-of-care ultrasound.\n• No abstract available — title suggests exploration of mitochondrial-directed therapies after return of spontaneous circulation.\n• Editorial summarising two nationwide Norwegian studies demonstrating electrostatic discharge affects all rescue paramedics and 73% of physicians, with 23% experiencing severe events including pain, falls, impaired communication, and operation termination.",
     "highlights": [
       {
@@ -1059,6 +1059,16 @@
           "doi": "10.1016/j.ordal.2026.200511",
           "summary": "Mathematical optimisation study applying meta-heuristic algorithms to ambulance station location problems in rural Spain, focusing on maximising population coverage within distance constraints.",
           "relevance": "🟡 Medium"
+        },
+        {
+          "id": "10.1016/j.burns.2026.108158",
+          "title": "Comparison of burn surface area estimated by ambulance crews or referring hospitals and an Advanced Critical Care and Emergency Center",
+          "journal": "Burns",
+          "date": "2026-07-28",
+          "pmid": "",
+          "doi": "10.1016/j.burns.2026.108158",
+          "summary": "Study comparing burn size estimates by ambulance crews and referring hospitals against definitive assessment at a specialised burn center — reports accuracy of prehospital burn assessment.",
+          "relevance": "🔴 Low"
         }
       ]
     },
