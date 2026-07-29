@@ -1,64 +1,8 @@
 {
-  "lastUpdated": "2026-07-28T21:22:30Z",
-  "lastUpdatedSydney": "2026-07-29 07:22 AEST",
-  "lastUpdatedDate": "2026-07-29",
-  "featuredPapers": [
-    {
-      "id": "41932674",
-      "title": "Effect of bystander cardiopulmonary resuscitation type on 1-month survival in drowning following out-of-hospital cardiac arrest in natural water bodies: a nationwide retrospective cohort study",
-      "journal": "Resuscitation",
-      "date": "2026-07-28",
-      "pmid": "41932674",
-      "doi": "10.1016/j.resuscitation.2026.111079",
-      "summary": "Retrospective cohort of 3914 drowning-related OHCA patients found conventional CPR (compressions with rescue breaths) was associated with higher 1-month survival compared with hands-only CPR (24.1% vs 9.4%), and both were superior to no CPR (2.7%).",
-      "relevance": "🟢 High",
-      "featuredReason": "With Australia's extensive coastline and drowning a significant prehospital presentation, this large nationwide cohort provides compelling evidence that rescue breaths matter in drowning OHCA — directly challenging hands-only CPR guidance in this specific context."
-    },
-    {
-      "id": "10.1186/s13049-026-01666-6",
-      "title": "Known to crews, missing from the literature - electrostatic discharge during helicopter hoist operations",
-      "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
-      "date": "2026-07-28",
-      "pmid": "",
-      "doi": "10.1186/s13049-026-01666-6",
-      "summary": "Editorial summarising two nationwide Norwegian studies demonstrating electrostatic discharge affects all rescue paramedics and 73% of physicians, with 23% experiencing severe events including pain, falls, impaired communication, and operation termination.",
-      "relevance": "🟢 High",
-      "featuredReason": "Australian aeromedical services rely heavily on helicopter hoist operations, yet this systematic documentation of electrostatic discharge risks has been missing from the literature — this brings a known operational hazard into the evidence base and may inform PPE and procedural updates."
-    },
-    {
-      "id": "10.1186/s13049-026-01662-w",
-      "title": "Evaluating performance and potential clinical benefit of the Swedish On Scene Injury Severity Prediction (OSISP) model for prehospital field triage on Norwegian trauma data",
-      "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
-      "date": "2026-07-28",
-      "pmid": "",
-      "doi": "10.1186/s13049-026-01662-w",
-      "summary": "External validation of AI-based trauma triage model on 29,709 Norwegian trauma patients showed OSISP combined with clinical judgement reduced undertriage from 56% to 2.7% and mortality from 4.1% to 3.4–3.5%.",
-      "relevance": "🟢 High",
-      "featuredReason": "Dramatic reduction in undertriage from 56% to 2.7% with AI-supported triage has direct implications for Australian trauma systems, particularly in rural and remote areas where accurate field triage to major trauma centres can significantly impact outcomes."
-    },
-    {
-      "id": "42307216",
-      "title": "Ketamine Versus Propofol for Sedation in Acute Psychiatric Emergencies During Aeromedical Retrieval: A Randomized Clinical Trial",
-      "journal": "Prehospital Emergency Care",
-      "date": "2026-07-27",
-      "pmid": "42307216",
-      "doi": "10.1080/10903127.2026.2690178",
-      "summary": "In this RCT of 170 patients, ketamine was associated with fewer adverse events compared to propofol when used for sedation during aeromedical retrieval of patients experiencing acute psychiatric agitation.",
-      "relevance": "🟢 High",
-      "featuredReason": "Directly relevant to Australian aeromedical retrieval services managing acute psychiatric agitation in remote settings, this RCT provides high-quality evidence supporting ketamine as the safer sedative option over propofol in the challenging aeromedical environment."
-    },
-    {
-      "id": "42372567",
-      "title": "Prehospital epinephrine as a bridge to survival in traumatic cardiac arrest: A nationwide propensity score-matched analysis",
-      "journal": "The American Journal of Emergency Medicine",
-      "date": "2026-07-27",
-      "pmid": "42372567",
-      "doi": "10.1016/j.ajem.2026.06.039",
-      "summary": "Prehospital epinephrine administration in patients with traumatic cardiac arrest was associated with increased survival to hospital discharge and prehospital ROSC.",
-      "relevance": "🟢 High",
-      "featuredReason": "Challenges conventional teaching that traumatic cardiac arrest has dismal prognosis and that epinephrine is contraindicated — this nationwide analysis suggests epinephrine may have a role, potentially prompting reassessment of traumatic arrest protocols in Australian ambulance services."
-    }
-  ],
+  "lastUpdated": "2026-07-29T21:11:20Z",
+  "lastUpdatedSydney": "2026-07-30 07:11 AEST",
+  "lastUpdatedDate": "2026-07-30",
+  "featuredPapers": [],
   "funFacts": [
     {
       "category": "pharmacology",
@@ -971,44 +915,72 @@
   ],
   "funFact": {
     "category": "EMS",
-    "fact": "The longest ambulance in the world is a custom-built vehicle in Dubai that's essentially a mobile hospital — complete with ICU beds, ventilators, and monitoring equipment. Useful for a city that occasionally needs to transport patients between palaces."
+    "fact": "Paramedic burnout rates are high — studies suggest 20 to 30% of paramedics meet criteria for PTSD, and burnout affects up to 40%. Shift work, repeated trauma exposure, and organisational pressure all contribute. The people who show up for everyone else often need someone to show up for them."
   },
   "tldr": {
-    "date": "2026-07-28",
-    "paperCount": 10,
-    "summary": "• Large nationwide cohort of drowning OHCA found conventional CPR with rescue breaths achieved 24.1% survival versus 9.4% for hands-only — rescue breaths matter in drowning.\n• Telemedicine-assisted dispatcher CPR instruction showed no difference in bystander CPR rates compared to conventional telephone instructions, though protocol compliance was lower.\n• Nationwide Norwegian studies document electrostatic discharge affecting all rescue paramedics during helicopter hoist operations, with 23% experiencing severe events.\n• AI-based OSISP trauma triage model validated on nearly 30,000 patients reduced undertriage from 56% to 2.7% and lowered mortality.\n• Commentary reinforces infection control standards for all percutaneous procedures including routine POCUS-guided cannulation.",
+    "date": "2026-07-29",
+    "paperCount": 3,
+    "summary": "• This Australian study identifies factors affecting timely prehospital thrombolysis delivery in Victoria's pharmacoinvasive STEMI network.\n• Observational cohort testing an EMS physician-led prehospital ECPR activation protocol for refractory VT/VF cardiac arrest — only 4.3% of 347 OHCA patients were eligible, ECPR was activated in 66.7% of eligible patients, and 40% of the activation group survived to discharge with good neurological outcome.\n• Systematic review and meta-analysis evaluating outcomes of prehospital whole blood transfusion compared to blood component therapy in traumatic haemorrhagic shock.",
     "highlights": [
       {
-        "id": "41932674",
-        "pmid": "41932674",
-        "doi": "10.1016/j.resuscitation.2026.111079",
-        "title": "Conventional CPR outperforms hands-only in drowning OHCA",
-        "note": "Nationwide cohort of 3914 patients showed conventional CPR with rescue breaths achieved 24.1% survival versus 9.4% for hands-only, directly challenging hands-first guidance for drowning arrests."
-      },
-      {
-        "id": "10.1186/s13049-026-01666-6",
+        "id": "10.1080/10903127.2026.2711274",
         "pmid": "",
-        "doi": "10.1186/s13049-026-01666-6",
-        "title": "Electrostatic discharge during helicopter hoist operations documented",
-        "note": "Two nationwide Norwegian studies found all rescue paramedics affected by electrostatic discharge, with 23% experiencing severe events including pain, falls, and impaired communication during hoist operations."
+        "doi": "10.1080/10903127.2026.2711274",
+        "title": "Determinants of Timely Prehospital Thrombolysis Administration within a Pharmacoinvasive STEMI Network in Victoria, Australia",
+        "note": "This Australian study identifies factors affecting timely prehospital thrombolysis delivery in Victoria's pharmacoinvasive STEMI network."
       },
       {
-        "id": "10.1186/s13049-026-01662-w",
+        "id": "42467420",
+        "pmid": "42467420",
+        "doi": "10.1080/10903127.2026.2704728",
+        "title": "Emergency Medical Services Physician-Led Activation for Extracorporeal Cardiopulmonary Resuscitation in Out-of-Hospital Cardiac Arrest",
+        "note": "Observational cohort testing an EMS physician-led prehospital ECPR activation protocol for refractory VT/VF cardiac arrest — only 4.3% of 347 OHCA patients were eligible, ECPR was activated in 66.7% of eligible patients, and 40% of the activation group survived to discharge with good neurological outcome."
+      },
+      {
+        "id": "10.1016/j.ajem.2026.07.040",
         "pmid": "",
-        "doi": "10.1186/s13049-026-01662-w",
-        "title": "AI trauma triage model slashes undertriage from 56% to 2.7%",
-        "note": "External validation of the OSISP model on 29,709 Norwegian trauma patients demonstrated that AI-assisted triage combined with clinical judgement dramatically reduced undertriage and mortality."
-      },
-      {
-        "id": "42361888",
-        "pmid": "42361888",
-        "doi": "10.1016/j.resuscitation.2026.111191",
-        "title": "Video-assisted dispatcher CPR no better than telephone instruction",
-        "note": "Cluster-randomized TACTIC trial found telemedicine-assisted CPR instruction did not improve bystander CPR rates compared to conventional telephone instructions, with lower protocol compliance in the video group."
+        "doi": "10.1016/j.ajem.2026.07.040",
+        "title": "Efficacy and safety of prehospital whole blood resuscitation in traumatic haemorrhagic shock a systematic review and meta-analysis",
+        "note": "Systematic review and meta-analysis evaluating outcomes of prehospital whole blood transfusion compared to blood component therapy in traumatic haemorrhagic shock."
       }
     ]
   },
   "dailyUpdates": [
+    {
+      "date": "2026-07-29",
+      "papers": [
+        {
+          "id": "10.1080/10903127.2026.2711274",
+          "title": "Determinants of Timely Prehospital Thrombolysis Administration within a Pharmacoinvasive STEMI Network in Victoria, Australia",
+          "journal": "Prehospital Emergency Care",
+          "date": "2026-07-29",
+          "pmid": "",
+          "doi": "10.1080/10903127.2026.2711274",
+          "summary": "This Australian study identifies factors affecting timely prehospital thrombolysis delivery in Victoria's pharmacoinvasive STEMI network.",
+          "relevance": "🟢 High"
+        },
+        {
+          "id": "42467420",
+          "title": "Emergency Medical Services Physician-Led Activation for Extracorporeal Cardiopulmonary Resuscitation in Out-of-Hospital Cardiac Arrest",
+          "journal": "Prehospital Emergency Care",
+          "date": "2026-07-29",
+          "pmid": "42467420",
+          "doi": "10.1080/10903127.2026.2704728",
+          "summary": "Observational cohort testing an EMS physician-led prehospital ECPR activation protocol for refractory VT/VF cardiac arrest — only 4.3% of 347 OHCA patients were eligible, ECPR was activated in 66.7% of eligible patients, and 40% of the activation group survived to discharge with good neurological outcome.",
+          "relevance": "🟡 Medium"
+        },
+        {
+          "id": "10.1016/j.ajem.2026.07.040",
+          "title": "Efficacy and safety of prehospital whole blood resuscitation in traumatic haemorrhagic shock a systematic review and meta-analysis",
+          "journal": "The American Journal of Emergency Medicine",
+          "date": "2026-07-29",
+          "pmid": "",
+          "doi": "10.1016/j.ajem.2026.07.040",
+          "summary": "Systematic review and meta-analysis evaluating outcomes of prehospital whole blood transfusion compared to blood component therapy in traumatic haemorrhagic shock.",
+          "relevance": "🟡 Medium"
+        }
+      ]
+    },
     {
       "date": "2026-07-28",
       "papers": [
