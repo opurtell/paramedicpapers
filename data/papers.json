@@ -1,8 +1,61 @@
 {
-  "lastUpdated": "2026-07-29T21:11:20Z",
-  "lastUpdatedSydney": "2026-07-30 07:11 AEST",
+  "lastUpdated": "2026-07-29T21:12:03Z",
+  "lastUpdatedSydney": "2026-07-30 07:12 AEST",
   "lastUpdatedDate": "2026-07-30",
-  "featuredPapers": [],
+  "featuredPapers": {
+    "featured": [
+      {
+        "id": "10.1080/10903127.2026.2711274",
+        "title": "Determinants of Timely Prehospital Thrombolysis Administration within a Pharmacoinvasive STEMI Network in Victoria, Australia",
+        "journal": "Prehospital Emergency Care",
+        "date": "2026-07-29",
+        "pmid": "",
+        "doi": "10.1080/10903127.2026.2711274",
+        "summary": "This Australian study identifies factors affecting timely prehospital thrombolysis delivery in Victoria's pharmacoinvasive STEMI network.",
+        "relevance": "🟢 High"
+      },
+      {
+        "id": "42332674",
+        "title": "Effect of bystander cardiopulmonary resuscitation type on 1-month survival in drowning following out-of-hospital cardiac arrest in natural water bodies: a nationwide retrospective cohort study",
+        "journal": "Resuscitation",
+        "date": "2026-07-28",
+        "pmid": "42332674",
+        "doi": "10.1016/j.resuscitation.2026.111079",
+        "summary": "Retrospective cohort of 3914 drowning-related OHCA patients found conventional CPR (compressions with rescue breaths) was associated with higher 1-month survival compared with hands-only CPR (24.1% vs 9.4%), and both were superior to no CPR (2.7%).",
+        "relevance": "🟢 High"
+      },
+      {
+        "id": "10.1186/s13049-026-01662-w",
+        "title": "Evaluating performance and potential clinical benefit of the Swedish On Scene Injury Severity Prediction (OSISP) model for prehospital field triage on Norwegian trauma data",
+        "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+        "date": "2026-07-28",
+        "pmid": "",
+        "doi": "10.1186/s13049-026-01662-w",
+        "summary": "External validation of AI-based trauma triage model on 29,709 Norwegian trauma patients showed OSISP combined with clinical judgement reduced undertriage from 56% to 2.7% and mortality from 4.1% to 3.4–3.5%.",
+        "relevance": "🟢 High"
+      },
+      {
+        "id": "42467420",
+        "title": "Emergency Medical Services Physician-Led Activation for Extracorporeal Cardiopulmonary Resuscitation in Out-of-Hospital Cardiac Arrest",
+        "journal": "Prehospital Emergency Care",
+        "date": "2026-07-29",
+        "pmid": "42467420",
+        "doi": "10.1080/10903127.2026.2704728",
+        "summary": "Observational cohort testing an EMS physician-led prehospital ECPR activation protocol for refractory VT/VF cardiac arrest — only 4.3% of 347 OHCA patients were eligible, ECPR was activated in 66.7% of eligible patients, and 40% of the activation group survived to discharge with good neurological outcome.",
+        "relevance": "🟡 Medium"
+      },
+      {
+        "id": "42372567",
+        "title": "Prehospital epinephrine as a bridge to survival in traumatic cardiac arrest: A nationwide propensity score-matched analysis",
+        "journal": "The American Journal of Emergency Medicine",
+        "date": "2026-07-27",
+        "pmid": "42372567",
+        "doi": "10.1016/j.ajem.2026.06.039",
+        "summary": "Prehospital epinephrine administration in patients with traumatic cardiac arrest was associated with increased survival to hospital discharge and prehospital ROSC.",
+        "relevance": "🟢 High"
+      }
+    ]
+  },
   "funFacts": [
     {
       "category": "pharmacology",
@@ -920,7 +973,7 @@
   "tldr": {
     "date": "2026-07-29",
     "paperCount": 3,
-    "summary": "• This Australian study identifies factors affecting timely prehospital thrombolysis delivery in Victoria's pharmacoinvasive STEMI network.\n• Observational cohort testing an EMS physician-led prehospital ECPR activation protocol for refractory VT/VF cardiac arrest — only 4.3% of 347 OHCA patients were eligible, ECPR was activated in 66.7% of eligible patients, and 40% of the activation group survived to discharge with good neurological outcome.\n• Systematic review and meta-analysis evaluating outcomes of prehospital whole blood transfusion compared to blood component therapy in traumatic haemorrhagic shock.",
+    "summary": "• Australian STEMI thrombolysis timing study\n• EMS physician-led ECPR activation protocol\n• Prehospital whole blood resuscitation meta-analysis",
     "highlights": [
       {
         "id": "10.1080/10903127.2026.2711274",
