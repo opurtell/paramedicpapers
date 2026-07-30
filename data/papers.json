@@ -1,8 +1,64 @@
 {
-  "lastUpdated": "2026-07-30T21:03:41Z",
-  "lastUpdatedSydney": "2026-07-31 07:03 AEST",
+  "lastUpdated": "2026-07-30T21:06:28Z",
+  "lastUpdatedSydney": "2026-07-31 07:06 AEST",
   "lastUpdatedDate": "2026-07-31",
-  "featuredPapers": [],
+  "featuredPapers": [
+    {
+      "id": "10.1056/nejmoa2602167",
+      "pmid": "",
+      "doi": "10.1056/nejmoa2602167",
+      "title": "Prehospital Resuscitation with Type O Whole Blood for Trauma and Hemorrhage",
+      "journal": "New England Journal of Medicine",
+      "authors": null,
+      "date": "2026-05-18",
+      "summary": "Multicenter randomized trial comparing prehospital type O whole blood resuscitation to standard care in trauma patients with hemorrhage.",
+      "relevance": "🟢 High"
+    },
+    {
+      "id": "41886731",
+      "pmid": "41886731",
+      "doi": "10.1080/10903127.2026.2650541",
+      "title": "Paramedic Patella Reduction — Ambulance Victoria CPG Evaluation",
+      "journal": "Prehospital Emergency Care",
+      "authors": null,
+      "date": "2026-04-21",
+      "summary": "Retrospective study (n=1,210) evaluating whether Ambulance Victoria's Nov 2022 CPG for paramedic patella reduction changed practice — 91.8% reduction success rate, transport rate dropped 38.4%, case duration cut by ~33 minutes, and IV cannula use down 17.3%, with no change in effective analgesia rates.",
+      "relevance": "🟢 High"
+    },
+    {
+      "id": "41856454",
+      "pmid": "41856454",
+      "doi": "10.1016/j.resuscitation.2026.111061",
+      "title": "The impact of defibrillation current and pad position on return of spontaneous circulation during refractory ventricular fibrillation",
+      "journal": "Resuscitation",
+      "authors": null,
+      "date": "2026-04-25",
+      "summary": "Secondary analysis of DOSE VF examined whether transthoracic current, pad position, and ROSC were linked, and found AP pad placement delivered higher current and was independently associated with ROSC, while delivered current itself was not.",
+      "relevance": "🟢 High"
+    },
+    {
+      "id": "10.1080/10903127.2026.2666857",
+      "pmid": "",
+      "doi": "10.1080/10903127.2026.2666857",
+      "title": "Utilization and Metrics Associated with Paramedic Treat and Discharge Medical Directives for Paramedic Services and Emergency Departments: A Retrospective Cohort Study",
+      "journal": "Prehospital Emergency Care",
+      "authors": null,
+      "date": "2026-05-11",
+      "summary": "This retrospective cohort study analysed paramedic treat and discharge medical directives to understand utilisation patterns and key metrics for prehospital and emergency department decision-making — the findings provide valuable insights into the scope, safety, and operational impact of treat-and-refer pathways.",
+      "relevance": "🟢 High"
+    },
+    {
+      "id": "41996547",
+      "pmid": "41996547",
+      "doi": "10.1080/10903127.2026.2658592",
+      "title": "Intranasal Versus Intramuscular Midazolam in Pediatric Seizure Control: A Systematic Review and Meta-Analysis",
+      "journal": "Prehospital Emergency Care",
+      "authors": null,
+      "date": "2026-05-06",
+      "summary": "Meta-analysis testing whether intranasal or intramuscular midazolam works better for paediatric seizures without cannula access — intramuscular midazolam was associated with faster seizure termination and less need for rescue therapy, especially in the prehospital setting.",
+      "relevance": "🟢 High"
+    }
+  ],
   "funFacts": [
     {
       "category": "pharmacology",
@@ -920,14 +976,14 @@
   "tldr": {
     "date": "2026-07-30",
     "paperCount": 3,
-    "summary": "• Secondary analysis testing whether prehospital magnesium sulfate followed by thrombolysis improves 90-day outcomes — feasible and safe but no significant overall clinical benefit, though severe stroke patients (NIHSS >15) showed better outcomes in hypothesis-generating subgroup analysis.\n• Survey examining EMS characteristics and care differences between rural and urban areas — reports on resource availability, response times, and clinical capabilities.\n• Systematic review evaluating prehospital REBOA for traumatic cardiac arrest — reports on feasibility, survival outcomes, and complications.",
+    "summary": "• Prehospital magnesium for stroke showed no overall benefit but severe strokes may benefit\n• US rural EMS characteristics survey highlights resource disparities\n• Prehospital REBOA for traumatic arrest remains experimental with limited evidence",
     "highlights": [
       {
         "id": "42497969",
         "pmid": "42497969",
         "doi": "10.1016/j.jstrokecerebrovasdis.2026.108709",
         "title": "Prehospital neuroprotectant in combination with post-arrival thrombolytic therapy for acute ischemic stroke. Secondary analysis of the FAST-MAG prehospital trial",
-        "note": "Secondary analysis testing whether prehospital magnesium sulfate followed by thrombolysis improves 90-day outcomes — feasible and safe but no significant overall clinical benefit, though severe stroke patients (NIHSS >15) showed better outcomes in hypothesis-generating subgroup analysis."
+        "note": "Secondary analysis testing whether prehospital magnesium sulfate followed by thrombolysis improves 90-day outcomes — feasible and safe but no significant overall clinical benefit, though severe stroke..."
       },
       {
         "id": "10.1080/10903127.2026.2712606",
