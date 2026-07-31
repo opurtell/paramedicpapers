@@ -1,62 +1,62 @@
 {
-  "lastUpdated": "2026-07-30T21:24:15Z",
-  "lastUpdatedSydney": "2026-07-31 07:24 AEST",
-  "lastUpdatedDate": "2026-07-31",
+  "lastUpdated": "2026-07-31T21:21:54Z",
+  "lastUpdatedSydney": "2026-08-01 07:21 AEST",
+  "lastUpdatedDate": "2026-08-01",
   "featuredPapers": [
+    {
+      "id": "41886731",
+      "title": "Paramedic Patella Reduction — Ambulance Victoria CPG Evaluation",
+      "journal": "Prehospital Emergency Care",
+      "date": "2026-04-21",
+      "pmid": "41886731",
+      "doi": "10.1080/10903127.2026.2650541",
+      "summary": "Retrospective study (n=1,210) evaluating whether Ambulance Victoria's Nov 2022 CPG for paramedic patella reduction changed practice — 91.8% reduction success rate, transport rate dropped 38.4%, case duration cut by ~33 minutes, and IV cannula use down 17.3%, with no change in effective analgesia rates.",
+      "relevance": "🟢 High",
+      "featuredReason": "Ambulance Victoria CPG evaluation showing strong clinical impact: 91.8% success rate, 38% reduction in transports, and 33-minute case time savings. Demonstrates how Australian paramedic scope expansion can safely reduce ED burden while maintaining patient outcomes."
+    },
+    {
+      "id": "41967757",
+      "title": "Healthcare costs of expedited transport compared with standard care following out-of-hospital cardiac arrest: results from the EVIDENCE randomised controlled trial",
+      "journal": "Resuscitation",
+      "date": "2026-04-30",
+      "pmid": "41967757",
+      "doi": "10.1016/j.resuscitation.2026.111083",
+      "summary": "Greater Sydney costing analysis of expedited OHCA transport for possible ECPR versus standard care — overall health system costs were comparable, with higher costs when patients arrived during ECPR business hours.",
+      "relevance": "🟢 High",
+      "featuredReason": "Australian cost-effectiveness analysis from Greater Sydney showing expedited ECPR transport is economically viable, supporting system planning for prehospital ECPR networks in major Australian centres."
+    },
+    {
+      "id": "41856454",
+      "title": "The impact of defibrillation current and pad position on return of spontaneous circulation during refractory ventricular fibrillation",
+      "journal": "Resuscitation",
+      "date": "2026-04-25",
+      "pmid": "41856454",
+      "doi": "10.1016/j.resuscitation.2026.111061",
+      "summary": "Secondary analysis of DOSE VF examined whether transthoracic current, pad position, and ROSC were linked, and found AP pad placement delivered higher current and was independently associated with ROSC, while delivered current itself was not.",
+      "relevance": "🟢 High",
+      "featuredReason": "DOSE VF secondary analysis showing AP pad placement is independently associated with ROSC in refractory VF, directly informing Australian defibrillator pad positioning protocols for the highest-risk cardiac arrests."
+    },
+    {
+      "id": "41950410",
+      "title": "Paramedics' decisions to withhold resuscitation in traumatic cardiac arrest: accuracy of paramedic assessments compared with autopsy findings",
+      "journal": "Prehospital Emergency Care",
+      "date": "2026-05-05",
+      "pmid": "41950410",
+      "doi": "10.1080/10903127.2026.2655289",
+      "summary": "Retrospective Ontario review testing how paramedics decide to withhold CPR in traumatic cardiac arrest — most no-CPR decisions were based on signs clearly incompatible with life, and post-mortem findings supported paramedic assessment in the large majority of cases.",
+      "relevance": "🟢 High",
+      "featuredReason": "Validates paramedic clinical judgement in traumatic cardiac arrest decision-making, with post-mortem confirmation supporting no-CPR decisions in most cases. Provides evidence to support paramedic scope in withholding futile resuscitation efforts."
+    },
     {
       "id": "41932674",
       "title": "Effect of bystander cardiopulmonary resuscitation type on 1-month survival in drowning following out-of-hospital cardiac arrest in natural water bodies: a nationwide retrospective cohort study",
       "journal": "Resuscitation",
-      "date": "2026-07-28",
+      "date": "2026-07-25",
       "pmid": "41932674",
       "doi": "10.1016/j.resuscitation.2026.111079",
-      "summary": "Retrospective cohort of 3914 drowning-related OHCA patients found conventional CPR (compressions with rescue breaths) was associated with higher 1-month survival compared with hands-only CPR (24.1% vs 9.4%).",
+      "summary": "Retrospective cohort of 3914 drowning-related OHCA patients found conventional CPR (compressions with rescue breaths) was associated with higher 1-month survival compared with hands-only CPR (24.1% vs 9.4%), and both were superior to no CPR (2.7%).",
       "relevance": "🟢 High",
-      "featuredReason": "This large nationwide cohort provides compelling evidence that rescue breaths significantly improve outcomes in drowning OHCA, challenging hands-only CPR guidance in this specific context and directly relevant to Australia's extensive coastal regions."
-    },
-    {
-      "id": "10.1186/s13049-026-01666-6",
-      "title": "Known to crews, missing from the literature - electrostatic discharge during helicopter hoist operations",
-      "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
-      "date": "2026-07-28",
-      "pmid": "",
-      "doi": "10.1186/s13049-026-01666-6",
-      "summary": "Editorial summarising two nationwide Norwegian studies demonstrating electrostatic discharge affects all rescue paramedics and 73% of physicians, with 23% experiencing severe events including pain, falls, impaired communication, and operation termination.",
-      "relevance": "🟢 High",
-      "featuredReason": "Brings a known operational hazard into the evidence base with systematic documentation of electrostatic discharge risks during hoist operations, directly relevant to Australian aeromedical services and potentially informing PPE and procedural updates."
-    },
-    {
-      "id": "10.1186/s13049-026-01662-w",
-      "title": "Evaluating performance and potential clinical benefit of the Swedish On Scene Injury Severity Prediction (OSISP) model for prehospital field triage on Norwegian trauma data",
-      "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
-      "date": "2026-07-28",
-      "pmid": "",
-      "doi": "10.1186/s13049-026-01662-w",
-      "summary": "External validation of AI-based trauma triage model on 29,709 Norwegian trauma patients showed OSISP combined with clinical judgement reduced undertriage from 56% to 2.7% and mortality from 4.1% to 3.4–3.5%.",
-      "relevance": "🟢 High",
-      "featuredReason": "Dramatic reduction in undertriage from 56% to 2.7% has direct implications for Australian trauma systems, particularly in rural and remote areas where accurate field triage to major trauma centres can significantly impact outcomes."
-    },
-    {
-      "id": "42372567",
-      "title": "Prehospital epinephrine as a bridge to survival in traumatic cardiac arrest: A nationwide propensity score-matched analysis",
-      "journal": "The American Journal of Emergency Medicine",
-      "date": "2026-07-27",
-      "pmid": "42372567",
-      "doi": "10.1016/j.ajem.2026.06.039",
-      "summary": "Prehospital epinephrine administration in patients with traumatic cardiac arrest was associated with increased survival to hospital discharge and prehospital ROSC.",
-      "relevance": "🟢 High",
-      "featuredReason": "Challenges traditional guidance against epinephrine in traumatic cardiac arrest with nationwide propensity-matched data showing improved survival, prompting reconsideration of current protocols in Australian paramedic practice."
-    },
-    {
-      "id": "42307216",
-      "title": "Ketamine Versus Propofol for Sedation in Acute Psychiatric Emergencies During Aeromedical Retrieval: A Randomized Clinical Trial",
-      "journal": "Prehospital Emergency Care",
-      "date": "2026-07-27",
-      "pmid": "42307216",
-      "doi": "10.1080/10903127.2026.2690178",
-      "summary": "In this RCT of 170 patients, ketamine was associated with fewer adverse events compared to propofol when used for sedation during aeromedical retrieval of patients experiencing acute psychiatric agitation.",
-      "relevance": "🟢 High",
-      "featuredReason": "First RCT directly comparing ketamine and propofol for aeromedical retrieval sedation, providing evidence to support ketamine as the preferred agent for acute psychiatric agitation in the challenging aeromedical environment."
+      "featuredReason": "Large nationwide cohort (3914 patients) provides compelling evidence that rescue breaths significantly improve drowning OHCA outcomes (24.1% vs 9.4% survival), challenging hands-only CPR guidance and directly relevant to Australia's coastal regions and water safety."
     }
   ],
   "funFacts": [
@@ -971,28 +971,13 @@
   ],
   "funFact": {
     "category": "EMS",
-    "fact": "Before GPS, paramedics navigated using map books — often the Melway in Melbourne or the UBD in Sydney. Knowing your grid reference was a core skill. Some veteran paramedics still remember their patch's grid numbers better than their own postcode."
+    "fact": "In remote Australia, cattle stations can be larger than some European countries. The RFDS might fly for hours to reach a single patient. In the time it takes some Australian paramedics to reach a job, a European paramedic could have transported three patients and had lunch."
   },
   "tldr": {
-    "date": "2026-07-30",
-    "paperCount": 3,
-    "summary": "• Secondary analysis of FAST-MAG trial found prehospital magnesium sulfate followed by thrombolysis feasible and safe for acute ischemic stroke, though no overall clinical benefit – severe stroke patients (NIHSS >15) showed better outcomes in hypothesis-generating subgroup analysis\n• National survey examined EMS characteristics and care differences between rural and urban areas, reporting on resource availability, response times, and clinical capabilities across Australian services\n• Systematic review evaluated prehospital REBOA for traumatic cardiac arrest, reporting on feasibility, survival outcomes, and complication rates",
-    "highlights": [
-      {
-        "id": "42497969",
-        "pmid": "42497969",
-        "doi": "10.1016/j.jstrokecerebrovasdis.2026.108709",
-        "title": "Prehospital neuroprotectant shows promise in severe stroke",
-        "note": "Magnesium sulfate before thrombolysis was safe and showed better outcomes in patients with NIHSS >15, supporting further research into neuroprotectant strategies."
-      },
-      {
-        "id": "10.1080/10903127.2026.2712606",
-        "pmid": "",
-        "doi": "10.1080/10903127.2026.2712606",
-        "title": "Rural-urban EMS gap documented in national survey",
-        "note": "Systematic documentation of resource disparities between rural and urban Australian ambulance services highlights ongoing challenges in equitable prehospital care delivery."
-      }
-    ]
+    "date": "2026-08-01",
+    "paperCount": 0,
+    "summary": "No new papers today.",
+    "highlights": []
   },
   "dailyUpdates": [
     {
