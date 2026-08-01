@@ -1,8 +1,64 @@
 {
-  "lastUpdated": "2026-08-01T11:53:16Z",
-  "lastUpdatedSydney": "2026-08-01 21:53 AEST",
-  "lastUpdatedDate": "2026-08-01",
-  "featuredPapers": [],
+  "lastUpdated": "2026-08-01T21:01:23Z",
+  "lastUpdatedSydney": "2026-08-02 07:01 AEST",
+  "lastUpdatedDate": "2026-08-02",
+  "featuredPapers": [
+    {
+      "id": "41932674",
+      "title": "Effect of bystander cardiopulmonary resuscitation type on 1-month survival in drowning following out-of-hospital cardiac arrest in natural water bodies: a nationwide retrospective cohort study",
+      "journal": "Resuscitation",
+      "date": "2026-07-29",
+      "pmid": "41932674",
+      "doi": "10.1016/j.resuscitation.2026.111079",
+      "summary": "Retrospective cohort of 3914 drowning-related OHCA patients found conventional CPR (compressions with rescue breaths) was associated with higher 1-month survival compared with hands-only CPR (24.1% vs 9.4%), and both were superior to no CPR (2.7%).",
+      "relevance": "🟢 High",
+      "featuredReason": "Selected for clinical relevance to prehospital practice."
+    },
+    {
+      "id": "42361888",
+      "title": "Telemedicine-assisted vs conventional telephone instruction in cardiopulmonary resuscitation: the TACTIC cluster randomized trial",
+      "journal": "Resuscitation",
+      "date": "2026-07-29",
+      "pmid": "42361888",
+      "doi": "10.1016/j.resuscitation.2026.111191",
+      "summary": "Cluster-randomized trial of 108 OHCA patients compared video-assisted dispatcher CPR instruction with conventional telephone instruction, finding no difference in bystander CPR rates (87.3% vs 92.5%, p=0.53) or ongoing CPR at EMS arrival, but significantly lower protocol compliance in the telemedicine group.",
+      "relevance": "🟡 Medium",
+      "featuredReason": "Selected for clinical relevance to prehospital practice."
+    },
+    {
+      "id": "10.1186/s13049-026-01666-6",
+      "title": "Known to crews, missing from the literature - electrostatic discharge during helicopter hoist operations",
+      "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+      "date": "2026-07-29",
+      "pmid": "",
+      "doi": "10.1186/s13049-026-01666-6",
+      "summary": "Editorial summarising two nationwide Norwegian studies demonstrating electrostatic discharge affects all rescue paramedics and 73% of physicians, with 23% experiencing severe events including pain, falls, impaired communication, and operation termination.",
+      "relevance": "🟢 High",
+      "featuredReason": "Selected for clinical relevance to prehospital practice."
+    },
+    {
+      "id": "42307216",
+      "title": "Ketamine Versus Propofol for Sedation in Acute Psychiatric Emergencies During Aeromedical Retrieval: A Randomized Clinical Trial",
+      "journal": "Prehospital Emergency Care",
+      "date": "2026-07-27",
+      "pmid": "42307216",
+      "doi": "10.1080/10903127.2026.2690178",
+      "summary": "In this RCT of 170 patients, ketamine was associated with fewer adverse events compared to propofol when used for sedation during aeromedical retrieval of patients experiencing acute psychiatric agitation.",
+      "relevance": "🟢 High",
+      "featuredReason": "Selected for clinical relevance to prehospital practice."
+    },
+    {
+      "id": "10.1080/10903127.2026.2674263",
+      "title": "Use of double sequential external defibrillation in the United States before and after the DOSE VF randomized clinical trial",
+      "journal": "Prehospital Emergency Care",
+      "date": "2026-05-18",
+      "pmid": "",
+      "doi": "10.1080/10903127.2026.2674263",
+      "summary": "Nationwide observational study examined trends in DSED use for refractory VF before and after publication of the DOSE VF trial.",
+      "relevance": "🟢 High",
+      "featuredReason": "Selected for clinical relevance to prehospital practice."
+    }
+  ],
   "funFacts": [
     {
       "category": "pharmacology",
@@ -914,36 +970,14 @@
     }
   ],
   "funFact": {
-    "category": "EMS",
-    "fact": "In remote Australia, cattle stations can be larger than some European countries. The RFDS might fly for hours to reach a single patient. In the time it takes some Australian paramedics to reach a job, a European paramedic could have transported three patients and had lunch."
+    "category": "history",
+    "fact": "The first documented use of an AED on a human was in 1979 — an experimental device tested in Brighton, England. It was designed to be used by ambulance crews with minimal training. Before that, defibrillation required a physician and an ECG machine the size of a small car."
   },
   "tldr": {
-    "date": "2026-07-31",
-    "paperCount": 3,
-    "summary": "• Secondary analysis testing whether prehospital magnesium sulfate followed by thrombolysis improves 90-day outcomes — feasible and safe but no significant overall clinical benefit, though severe stroke patients (NIHSS >15) showed better outcomes in hypothesis-generating subgroup analysis.\n• Survey examining EMS characteristics and care differences between rural and urban areas — reports on resource availability, response times, and clinical capabilities.\n• Systematic review evaluating prehospital REBOA for traumatic cardiac arrest — reports on feasibility, survival outcomes, and complications.",
-    "highlights": [
-      {
-        "id": "42497969",
-        "pmid": "42497969",
-        "doi": "10.1016/j.jstrokecerebrovasdis.2026.108709",
-        "title": "Prehospital neuroprotectant in combination with post-arrival thrombolytic therapy for acute ischemic stroke. Secondary analysis of the FAST-MAG prehospital trial",
-        "note": "Secondary analysis testing whether prehospital magnesium sulfate followed by thrombolysis improves 90-day outcomes — feasible and safe but no significant overall clinical benefit, though severe stroke patients (NIHSS >15) showed better outcomes in hypothesis-generating subgroup analysis."
-      },
-      {
-        "id": "10.1080/10903127.2026.2712606",
-        "pmid": "",
-        "doi": "10.1080/10903127.2026.2712606",
-        "title": "National Characteristics of Emergency Medical Services in Rural and Frontier Areas: A 2024 Update on Rural-Urban Differences in EMS Care",
-        "note": "Survey examining EMS characteristics and care differences between rural and urban areas — reports on resource availability, response times, and clinical capabilities."
-      },
-      {
-        "id": "10.1080/10903127.2026.2706098",
-        "pmid": "",
-        "doi": "10.1080/10903127.2026.2706098",
-        "title": "Prehospital resuscitative endovascular balloon occlusion of the aorta (REBOA) in patients with major trauma and cardiac arrest: a systematic review",
-        "note": "Systematic review evaluating prehospital REBOA for traumatic cardiac arrest — reports on feasibility, survival outcomes, and complications."
-      }
-    ]
+    "date": "2026-08-01",
+    "paperCount": 0,
+    "summary": "No new papers today.",
+    "highlights": []
   },
   "dailyUpdates": [
     {
