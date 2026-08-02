@@ -1,40 +1,29 @@
 {
-  "lastUpdated": "2026-08-01T21:02:01Z",
-  "lastUpdatedSydney": "2026-08-02 07:02 AEST",
-  "lastUpdatedDate": "2026-08-02",
+  "lastUpdated": "2026-08-02T21:02:04Z",
+  "lastUpdatedSydney": "2026-08-03 07:02 AEST",
+  "lastUpdatedDate": "2026-08-03",
   "featuredPapers": [
     {
-      "id": "41932674",
-      "title": "Effect of bystander cardiopulmonary resuscitation type on 1-month survival in drowning following out-of-hospital cardiac arrest in natural water bodies: a nationwide retrospective cohort study",
+      "id": "42398849",
+      "title": "Volume-controlled mechanical ventilation during cardiopulmonary resuscitation: a systematic review and meta-analysis",
       "journal": "Resuscitation",
-      "date": "2026-07-29",
-      "pmid": "41932674",
-      "doi": "10.1016/j.resuscitation.2026.111079",
-      "summary": "Retrospective cohort of 3914 drowning-related OHCA patients found conventional CPR (compressions with rescue breaths) was associated with higher 1-month survival compared with hands-only CPR (24.1% vs 9.4%), and both were superior to no CPR (2.7%).",
-      "relevance": "🟢 High",
-      "featuredReason": "Selected for clinical relevance to prehospital practice."
+      "date": "2026-08-03",
+      "pmid": "42398849",
+      "doi": "10.1016/j.resuscitation.2026.111199",
+      "summary": "This systematic review of 13 articles (six RCTs, seven non-randomised studies) found very low to low certainty evidence showing no significant difference in ROSC between volume-controlled mechanical ventilation and manual ventilation during CPR.",
+      "relevance": "🟡 Medium — Relevant to advanced airway management during cardiac arrest, but very low certainty evidence means no practice change warranted",
+      "featuredReason": "Relevant to advanced airway management during cardiac arrest, but very low certainty evidence means no practice change warranted"
     },
     {
-      "id": "42361888",
-      "title": "Telemedicine-assisted vs conventional telephone instruction in cardiopulmonary resuscitation: the TACTIC cluster randomized trial",
+      "id": "42435793",
+      "title": "Perceived cognitive load among emergency department code blue teams: distribution, correlates and relationship with team performance",
       "journal": "Resuscitation",
-      "date": "2026-07-29",
-      "pmid": "42361888",
-      "doi": "10.1016/j.resuscitation.2026.111191",
-      "summary": "Cluster-randomized trial of 108 OHCA patients compared video-assisted dispatcher CPR instruction with conventional telephone instruction, finding no difference in bystander CPR rates (87.3% vs 92.5%, p=0.53) or ongoing CPR at EMS arrival, but significantly lower protocol compliance in the telemedicine group.",
-      "relevance": "🟡 Medium",
-      "featuredReason": "Selected for clinical relevance to prehospital practice."
-    },
-    {
-      "id": "10.1186/s13049-026-01666-6",
-      "title": "Known to crews, missing from the literature - electrostatic discharge during helicopter hoist operations",
-      "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
-      "date": "2026-07-29",
-      "pmid": "",
-      "doi": "10.1186/s13049-026-01666-6",
-      "summary": "Editorial summarising two nationwide Norwegian studies demonstrating electrostatic discharge affects all rescue paramedics and 73% of physicians, with 23% experiencing severe events including pain, falls, impaired communication, and operation termination.",
-      "relevance": "🟢 High",
-      "featuredReason": "Selected for clinical relevance to prehospital practice."
+      "date": "2026-08-03",
+      "pmid": "42435793",
+      "doi": "10.1016/j.resuscitation.2026.111206",
+      "summary": "This multicentre cross-sectional study of 58 resuscitations found perceived cognitive load was highest among team leaders (mean 5.5/9) and higher team leader cognitive load was associated with higher load among team members and lower TEAM-assessed performance.",
+      "relevance": "🟢 High — Directly applicable to resuscitation team training and leadership, with clear implications for supporting team leaders during high-acuity events",
+      "featuredReason": "Directly applicable to resuscitation team training and leadership, with clear implications for supporting team leaders during high-acuity events"
     },
     {
       "id": "42307216",
@@ -57,6 +46,17 @@
       "summary": "Nationwide observational study examined trends in DSED use for refractory VF before and after publication of the DOSE VF trial.",
       "relevance": "🟢 High",
       "featuredReason": "Selected for clinical relevance to prehospital practice."
+    },
+    {
+      "id": "42264170",
+      "title": "Refractory ventricular fibrillation in out-of-hospital cardiac arrest: shock characteristics, predictors and clinical outcomes",
+      "journal": "Resuscitation",
+      "date": "2026-08-03",
+      "pmid": "42264170",
+      "doi": "10.1016/j.resuscitation.2026.111166",
+      "summary": "This registry study of 436 OHCA patients compared refractory VF (all three shocks failed to terminate, 5% of cases) versus recurrent VF, finding refractory VF patients had lower ROSC (41% vs 59%) and 30-day survival (23% vs 46%) with predictors including no CPR/AED before EMS, longer delay to first shock, and lower amplitude spectral area.",
+      "relevance": "🟢 High — Directly relevant to OHCA VF management and defibrillation decision-making, though low event numbers limit certainty",
+      "featuredReason": "Directly relevant to OHCA VF management and defibrillation decision-making, though low event numbers limit certainty"
     }
   ],
   "funFacts": [
@@ -971,15 +971,75 @@
   ],
   "funFact": {
     "category": "history",
-    "fact": "The first documented use of an AED on a human was in 1979 — an experimental device tested in Brighton, England. It was designed to be used by ambulance crews with minimal training. Before that, defibrillation required a physician and an ECG machine the size of a small car."
+    "fact": "In the 1800s, 'resurrection men' dug up freshly buried corpses and sold them to medical schools for dissection. It was a lucrative trade. Some even resorted to murder — the Burke and Hare case being the most infamous. Medical education has a surprisingly dark supply chain history."
   },
   "tldr": {
-    "date": "2026-08-02",
-    "paperCount": 0,
-    "summary": "No new papers today.",
-    "highlights": []
+    "date": "2026-08-03",
+    "paperCount": 4,
+    "summary": "• 5% of VF OHCA patients have refractory VF (all three shocks fail) with poorer outcomes\n• Counterintuitive Japanese findings: no bystander CPR associated with better neuro outcomes in suffocation than compression-only\n• Systematic review finds no difference between mechanical and manual ventilation during CPR (very low certainty)\n• Higher team leader cognitive load linked to poorer resuscitation team performance",
+    "highlights": [
+      {
+        "id": "42264170",
+        "pmid": "42264170",
+        "doi": "10.1016/j.resuscitation.2026.111166",
+        "title": "Refractory VF in OHCA: 5% of cases, worse outcomes",
+        "note": "Refractory VF patients had lower ROSC (41% vs 59%) and 30-day survival (23% vs 46%); predictors include no CPR/AED before EMS and longer delay to first shock"
+      },
+      {
+        "id": "42435793",
+        "pmid": "42435793",
+        "doi": "10.1016/j.resuscitation.2026.111206",
+        "title": "Team leader cognitive load affects resuscitation performance",
+        "note": "Cross-sectional study of 58 resuscitations found highest cognitive load in team leaders; higher leader load associated with lower TEAM-assessed performance"
+      }
+    ]
   },
   "dailyUpdates": [
+    {
+      "date": "2026-08-03",
+      "papers": [
+        {
+          "id": "42264170",
+          "title": "Refractory ventricular fibrillation in out-of-hospital cardiac arrest: shock characteristics, predictors and clinical outcomes",
+          "journal": "Resuscitation",
+          "date": "2026-08-03",
+          "pmid": "42264170",
+          "doi": "10.1016/j.resuscitation.2026.111166",
+          "summary": "This registry study of 436 OHCA patients compared refractory VF (all three shocks failed to terminate, 5% of cases) versus recurrent VF, finding refractory VF patients had lower ROSC (41% vs 59%) and 30-day survival (23% vs 46%) with predictors including no CPR/AED before EMS, longer delay to first shock, and lower amplitude spectral area.",
+          "relevance": "🟢 High — Directly relevant to OHCA VF management and defibrillation decision-making, though low event numbers limit certainty"
+        },
+        {
+          "id": "42361892",
+          "title": "Association of rescue breathing with outcomes in adult suffocation-related cardiac arrest",
+          "journal": "Resuscitation",
+          "date": "2026-08-03",
+          "pmid": "42361892",
+          "doi": "10.1016/j.resuscitation.2026.111189",
+          "summary": "This retrospective cohort of 76,774 Japanese patients with witnessed suffocation-related OHCA found no bystander CPR was associated with higher favourable neurological outcomes compared with compression-only CPR (OR 1.20, 95% CI 1.04-1.38), while CCV-CPR showed no significant difference versus compression-only.",
+          "relevance": "🟡 Medium — Japanese-specific context and counterintuitive findings that require local validation before changing practice guidance"
+        },
+        {
+          "id": "42398849",
+          "title": "Volume-controlled mechanical ventilation during cardiopulmonary resuscitation: a systematic review and meta-analysis",
+          "journal": "Resuscitation",
+          "date": "2026-08-03",
+          "pmid": "42398849",
+          "doi": "10.1016/j.resuscitation.2026.111199",
+          "summary": "This systematic review of 13 articles (six RCTs, seven non-randomised studies) found very low to low certainty evidence showing no significant difference in ROSC between volume-controlled mechanical ventilation and manual ventilation during CPR.",
+          "relevance": "🟡 Medium — Relevant to advanced airway management during cardiac arrest, but very low certainty evidence means no practice change warranted"
+        },
+        {
+          "id": "42435793",
+          "title": "Perceived cognitive load among emergency department code blue teams: distribution, correlates and relationship with team performance",
+          "journal": "Resuscitation",
+          "date": "2026-08-03",
+          "pmid": "42435793",
+          "doi": "10.1016/j.resuscitation.2026.111206",
+          "summary": "This multicentre cross-sectional study of 58 resuscitations found perceived cognitive load was highest among team leaders (mean 5.5/9) and higher team leader cognitive load was associated with higher load among team members and lower TEAM-assessed performance.",
+          "relevance": "🟢 High — Directly applicable to resuscitation team training and leadership, with clear implications for supporting team leaders during high-acuity events"
+        }
+      ]
+    },
     {
       "date": "2026-07-31",
       "papers": [
