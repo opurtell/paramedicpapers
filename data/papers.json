@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-08-03T21:01:32Z",
-  "lastUpdatedSydney": "2026-08-04 07:01 AEST",
+  "lastUpdated": "2026-08-03T23:04:41Z",
+  "lastUpdatedSydney": "2026-08-04 09:04 AEST",
   "lastUpdatedDate": "2026-08-04",
   "featuredPapers": [
     {
@@ -48,15 +48,15 @@
       "featuredReason": "Selected for clinical relevance to prehospital practice."
     },
     {
-      "id": "42264170",
-      "title": "Refractory ventricular fibrillation in out-of-hospital cardiac arrest: shock characteristics, predictors and clinical outcomes",
-      "journal": "Resuscitation",
-      "date": "2026-08-03",
-      "pmid": "42264170",
-      "doi": "10.1016/j.resuscitation.2026.111166",
-      "summary": "This registry study of 436 OHCA patients compared refractory VF (all three shocks failed to terminate, 5% of cases) versus recurrent VF, finding refractory VF patients had lower ROSC (41% vs 59%) and 30-day survival (23% vs 46%) with predictors including no CPR/AED before EMS, longer delay to first shock, and lower amplitude spectral area.",
-      "relevance": "🟢 High — Directly relevant to OHCA VF management and defibrillation decision-making, though low event numbers limit certainty",
-      "featuredReason": "Directly relevant to OHCA VF management and defibrillation decision-making, though low event numbers limit certainty"
+      "id": "42538126",
+      "title": "Family, Domestic and Sexual Violence Presentations to a Virtual Emergency Department: A Retrospective Cohort Study",
+      "journal": "Emergency Medicine Australasia",
+      "date": "2026-08-04",
+      "pmid": "42538126",
+      "doi": "10.1111/1742-6723.70316",
+      "summary": "Retrospective cohort of Victoria's Virtual ED — only 21 FDSV presentations identified among 173,936 visits (0.012%), suggesting significant under-detection",
+      "relevance": "🟢 High transferability — Direct Australian context, virtual EDs are expanding, and paramedics need awareness that FDSV presentations may be missed in telehealth settings",
+      "featuredReason": "Direct Australian context, virtual EDs are expanding, and paramedics need awareness that FDSV presentations may be missed in telehealth settings"
     }
   ],
   "funFacts": [
@@ -975,9 +975,52 @@
   },
   "tldr": {
     "date": "2026-08-04",
-    "paperCount": 2,
-    "summary": "• Two clinical papers identified but no abstracts available for full assessment\n• Cold-water immersion for heatstroke cardiac arrest and adverse events with neuromuscular blockade in airway management — both require full text review\n• Limited ability to assess transferability without access to abstracts",
-    "highlights": []
+    "paperCount": 8,
+    "summary": "• Examines feasibility and outcomes of cold-water immersion during prehospital heatstroke cardiac arrest resuscitation\n• Investigates the prevalence of adverse events following prehospital airway management using neuromuscular blockade\n• Retrospective analysis of 36.7 million NEMSIS records — 99.5% represent unique patient-care episodes with only 0.5% involving multiple records for the same encounter\n• Retrospective cohort of Victoria's Virtual ED — only 21 FDSV presentations identified among 173,936 visits (0.012%), suggesting significant under-detection\n• Retrospective cohort across four Australian hospitals — single-dose aminoglycosides caused AKI in 30.9% of CKD patients vs 13.4% without CKD (OR 2.88)\n• Model explainability analysis of START-AI — AUROC improved from 0.78 to 0.90 with AI features, driven primarily by blood test results, triage comments, and clinical notes",
+    "highlights": [
+      {
+        "id": "10.1016/j.resplu.2026.101426",
+        "pmid": "",
+        "doi": "10.1016/j.resplu.2026.101426",
+        "title": "Cold-water immersion during out-of-hospital heatstroke cardiac arrest resuscitation: feasible but futile?",
+        "note": "Examines feasibility and outcomes of cold-water immersion during prehospital heatstroke cardiac arrest resuscitation"
+      },
+      {
+        "id": "10.1080/10903127.2026.2713128",
+        "pmid": "",
+        "doi": "10.1080/10903127.2026.2713128",
+        "title": "The Prevalence of Adverse Events After Prehospital Neuromuscular Blockade-Assisted Airway Management",
+        "note": "Investigates the prevalence of adverse events following prehospital airway management using neuromuscular blockade"
+      },
+      {
+        "id": "10.1080/10903127.2026.2711920",
+        "pmid": "",
+        "doi": "10.1080/10903127.2026.2711920",
+        "title": "The estimated prevalence of multiple record encounters in the National Emergency Medical Services Information System",
+        "note": "Retrospective analysis of 36.7 million NEMSIS records — 99.5% represent unique patient-care episodes with only 0.5% involving multiple records for the same encounter"
+      },
+      {
+        "id": "42538126",
+        "pmid": "42538126",
+        "doi": "10.1111/1742-6723.70316",
+        "title": "Family, Domestic and Sexual Violence Presentations to a Virtual Emergency Department: A Retrospective Cohort Study",
+        "note": "Retrospective cohort of Victoria's Virtual ED — only 21 FDSV presentations identified among 173,936 visits (0.012%), suggesting significant under-detection"
+      },
+      {
+        "id": "42538121",
+        "pmid": "42538121",
+        "doi": "10.1111/1742-6723.70318",
+        "title": "The Safety of Single Aminoglycoside Dose in Emergency Departments (SAD-ED) Among Patients With and Without Chronic Kidney Disease: A Retrospective Cohort Study",
+        "note": "Retrospective cohort across four Australian hospitals — single-dose aminoglycosides caused AKI in 30.9% of CKD patients vs 13.4% without CKD (OR 2.88)"
+      },
+      {
+        "id": "42522152",
+        "pmid": "42522152",
+        "doi": "10.1111/1742-6723.70285",
+        "title": "The Sydney Triage to Admission Risk Tool With Artificial Intelligence (START-AI) to Support Decision Making in Emergency Departments: Model Explainability and Feature Importance Analysis",
+        "note": "Model explainability analysis of START-AI — AUROC improved from 0.78 to 0.90 with AI features, driven primarily by blood test results, triage comments, and clinical notes"
+      }
+    ]
   },
   "dailyUpdates": [
     {
@@ -1002,6 +1045,66 @@
           "doi": "10.1080/10903127.2026.2713128",
           "summary": "Investigates the prevalence of adverse events following prehospital airway management using neuromuscular blockade",
           "relevance": "🔴 Low — No abstract available — cannot assess safety outcomes or transferability without full text"
+        },
+        {
+          "id": "10.1080/10903127.2026.2711920",
+          "title": "The estimated prevalence of multiple record encounters in the National Emergency Medical Services Information System",
+          "journal": "Prehospital Emergency Care",
+          "date": "2026-08-04",
+          "pmid": "",
+          "doi": "10.1080/10903127.2026.2711920",
+          "summary": "Retrospective analysis of 36.7 million NEMSIS records — 99.5% represent unique patient-care episodes with only 0.5% involving multiple records for the same encounter",
+          "relevance": "🟡 Medium transferability — Australian paramedics don't use NEMSIS, but data quality issues are universal for anyone doing EMS research or evaluating large datasets"
+        },
+        {
+          "id": "42538126",
+          "title": "Family, Domestic and Sexual Violence Presentations to a Virtual Emergency Department: A Retrospective Cohort Study",
+          "journal": "Emergency Medicine Australasia",
+          "date": "2026-08-04",
+          "pmid": "42538126",
+          "doi": "10.1111/1742-6723.70316",
+          "summary": "Retrospective cohort of Victoria's Virtual ED — only 21 FDSV presentations identified among 173,936 visits (0.012%), suggesting significant under-detection",
+          "relevance": "🟢 High transferability — Direct Australian context, virtual EDs are expanding, and paramedics need awareness that FDSV presentations may be missed in telehealth settings"
+        },
+        {
+          "id": "42538121",
+          "title": "The Safety of Single Aminoglycoside Dose in Emergency Departments (SAD-ED) Among Patients With and Without Chronic Kidney Disease: A Retrospective Cohort Study",
+          "journal": "Emergency Medicine Australasia",
+          "date": "2026-08-04",
+          "pmid": "42538121",
+          "doi": "10.1111/1742-6723.70318",
+          "summary": "Retrospective cohort across four Australian hospitals — single-dose aminoglycosides caused AKI in 30.9% of CKD patients vs 13.4% without CKD (OR 2.88)",
+          "relevance": "🟢 High transferability — Australian study with direct clinical relevance — gentamicin is commonly given in ED/prehospital settings and CKD patients are at substantially higher risk"
+        },
+        {
+          "id": "42522152",
+          "title": "The Sydney Triage to Admission Risk Tool With Artificial Intelligence (START-AI) to Support Decision Making in Emergency Departments: Model Explainability and Feature Importance Analysis",
+          "journal": "Emergency Medicine Australasia",
+          "date": "2026-08-04",
+          "pmid": "42522152",
+          "doi": "10.1111/1742-6723.70285",
+          "summary": "Model explainability analysis of START-AI — AUROC improved from 0.78 to 0.90 with AI features, driven primarily by blood test results, triage comments, and clinical notes",
+          "relevance": "🟢 High transferability — Australian-developed tool with strong validation results; AI triage support is coming to pre-hospital care and this shows what features matter most"
+        },
+        {
+          "id": "42538133",
+          "title": "Vaccine Preventable Diseases in the Emergency Department",
+          "journal": "Emergency Medicine Australasia",
+          "date": "2026-08-04",
+          "pmid": "42538133",
+          "doi": "10.1111/1742-6723.70317",
+          "summary": "Editorial on the re-emergence of vaccine-preventable diseases post-COVID — declining vaccination rates are causing outbreaks of diphtheria, measles, and other VPDs in Australasia",
+          "relevance": "🟢 High transferability — Directly relevant to paramedic occupational health and patient care — VPDs are presenting more frequently and require heightened awareness"
+        },
+        {
+          "id": "42522206",
+          "title": "Does the Emergency Department Have a Role in Immunisation? Yes—But Not as a Routine Vaccine Clinic",
+          "journal": "Emergency Medicine Australasia",
+          "date": "2026-08-04",
+          "pmid": "42522206",
+          "doi": "10.1111/1742-6723.70312",
+          "summary": "Editorial arguing EDs should provide opportunistic, proportionate immunisation for vulnerable patients rather than functioning as routine vaccine clinics",
+          "relevance": "🟡 Medium transferability — Relevant to understanding the role EDs (and by extension, paramedics) play in immunisation, though less directly actionable for pre-hospital care"
         }
       ]
     },
@@ -2897,63 +3000,55 @@
     }
   ],
   "weeklyTldr": {
-    "dateRange": "22-29 July 2026",
-    "summary": "Large nationwide cohort of drowning OHCA found conventional CPR with rescue breaths achieved 24.1% survival versus 9.4% for hands-only — rescue breaths matter in drowning\nSwedish AI-based trauma triage model (OSISP) validated on Norwegian data reduces undertriage from 56% to 2.7% and may lower mortality when used alongside clinical judgement\nNationwide Norwegian studies document electrostatic discharge affecting all rescue paramedics during helicopter hoist operations, with 23% experiencing severe events\nPrehospital epinephrine in traumatic cardiac arrest associated with increased survival to hospital discharge and prehospital ROSC in nationwide propensity-matched analysis\nKetamine associated with fewer adverse events than propofol for sedation of acute psychiatric agitation during aeromedical retrieval in RCT",
+    "dateRange": "28 Jul – 3 Aug 2026",
+    "summary": "NEMSIS data quality: 99.5% of EMS records represent unique patient-care episodes, only 0.5% involve multi-unit documentation\nVirtual EDs may be under-identifying family violence presentations — only 0.012% of 173,936 virtual ED presentations in Victoria were coded as FDSV\nSingle-dose gentamicin carries higher AKI risk in CKD patients (30.9% vs 13.4%) — be cautious in this population\nSTART-AI triage model reaches 90% AUROC for admission prediction, with blood tests and clinical notes driving most predictive power\nVaccine-preventable diseases are re-emerging post-COVID — EDs need heightened awareness for diphtheria, measles, and other VPDs",
     "highlights": [
       {
-        "text": "Large nationwide cohort of drowning OHCA found conventional CPR with rescue breaths achieved 24.1% survival versus 9.4% for hands-only — rescue breaths matter in drowning",
-        "id": "41932674"
+        "text": "NEMSIS data quality: 99.5% of EMS records represent unique patient-care episodes, only 0.5% involve multi-unit documentation",
+        "id": "10.1080/10903127.2026.2711920"
       },
       {
-        "text": "Swedish AI-based trauma triage model (OSISP) validated on Norwegian data reduces undertriage from 56% to 2.7% and may lower mortality when used alongside clinical judgement",
-        "id": "10.1186/s13049-026-01662-w"
+        "text": "Virtual EDs may be under-identifying family violence presentations — only 0.012% of 173,936 virtual ED presentations in Victoria were coded as FDSV",
+        "id": "42538126"
       },
       {
-        "text": "Nationwide Norwegian studies document electrostatic discharge affecting all rescue paramedics during helicopter hoist operations, with 23% experiencing severe events",
-        "id": "10.1186/s13049-026-01666-6"
-      },
-      {
-        "text": "Prehospital epinephrine in traumatic cardiac arrest associated with increased survival to hospital discharge and prehospital ROSC in nationwide propensity-matched analysis",
-        "id": "42372567"
-      },
-      {
-        "text": "Ketamine associated with fewer adverse events than propofol for sedation of acute psychiatric agitation during aeromedical retrieval in RCT",
-        "id": "42307216"
+        "text": "Single-dose gentamicin carries higher AKI risk in CKD patients (30.9% vs 13.4%) — be cautious in this population",
+        "id": "42538121"
       }
     ],
     "topPicks": [
       {
-        "id": "41932674",
-        "title": "Effect of bystander cardiopulmonary resuscitation type on 1-month survival in drowning following out-of-hospital cardiac arrest in natural water bodies: a nationwide retrospective cohort study",
-        "authors": "Kosuke Kiyohara, Chika Nishiyama, Taku Iwami, et al.",
-        "journal": "Resuscitation",
-        "summary": "Retrospective cohort of 3914 drowning-related OHCA patients found conventional CPR (compressions with rescue breaths) was associated with higher 1-month survival compared with hands-only CPR (24.1% vs 9.4%), and both were superior to no CPR (2.7%).",
-        "relevance": "🟢 High",
-        "pmid": "41932674",
-        "doi": "10.1016/j.resuscitation.2026.111079",
-        "featuredReason": "This large nationwide cohort provides compelling evidence that rescue breaths significantly improve outcomes in drowning OHCA, challenging hands-only CPR guidance in this specific context and directly relevant to Australia's extensive coastal regions."
+        "id": "42538121",
+        "title": "The Safety of Single Aminoglycoside Dose in Emergency Departments (SAD-ED) Among Patients With and Without Chronic Kidney Disease: A Retrospective Cohort Study",
+        "authors": "Grace Lau, Charles Xin, Roy Kadira, et al.",
+        "journal": "Emergency Medicine Australasia",
+        "summary": "Retrospective cohort across four Australian hospitals — single-dose aminoglycosides caused AKI in 30.9% of CKD patients vs 13.4% without CKD (OR 2.88)",
+        "relevance": "🟢 High transferability — gentamicin is commonly given in ED/prehospital settings and CKD patients are at substantially higher risk",
+        "pmid": "42538121",
+        "doi": "10.1111/1742-6723.70318",
+        "featuredReason": "Direct clinical impact — gentamicin is commonly used and this study quantifies the real AKI risk in CKD patients, a population paramedics encounter regularly"
       },
       {
-        "id": "10.1186/s13049-026-01666-6",
-        "title": "Known to crews, missing from the literature - electrostatic discharge during helicopter hoist operations",
-        "authors": "Jostein Rødseth Brede",
-        "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
-        "summary": "Editorial summarising two nationwide Norwegian studies demonstrating electrostatic discharge affects all rescue paramedics and 73% of physicians, with 23% experiencing severe events including pain, falls, impaired communication, and operation termination.",
-        "relevance": "🟢 High",
-        "pmid": "",
-        "doi": "10.1186/s13049-026-01666-6",
-        "featuredReason": "Brings a known operational hazard into the evidence base with systematic documentation of electrostatic discharge risks during hoist operations, directly relevant to Australian aeromedical services and potentially informing PPE and procedural updates."
+        "id": "42538126",
+        "title": "Family, Domestic and Sexual Violence Presentations to a Virtual Emergency Department: A Retrospective Cohort Study",
+        "authors": "Eleanor R. Johnson, Kristina Edvardsson, Jennifer Hutton, et al.",
+        "journal": "Emergency Medicine Australasia",
+        "summary": "Retrospective cohort of Victoria's Virtual ED — only 21 FDSV presentations identified among 173,936 visits (0.012%), suggesting significant under-detection",
+        "relevance": "🟢 High transferability — virtual EDs are expanding, and paramedics need awareness that FDSV presentations may be missed in telehealth settings",
+        "pmid": "42538126",
+        "doi": "10.1111/1742-6723.70316",
+        "featuredReason": "Important safety signal — virtual EDs are expanding but may be systematically missing FDSV presentations; paramedics need to be aware of this detection gap"
       },
       {
-        "id": "10.1186/s13049-026-01662-w",
-        "title": "Evaluating performance and potential clinical benefit of the Swedish On Scene Injury Severity Prediction (OSISP) model for prehospital field triage on Norwegian trauma data",
-        "authors": "Anna Bakidou, Eva-Corina Caragounis, Magnus Andersson Hagiwara, et al.",
-        "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
-        "summary": "External validation of AI-based trauma triage model on 29,709 Norwegian trauma patients showed OSISP combined with clinical judgement reduced undertriage from 56% to 2.7% and mortality from 4.1% to 3.4–3.5%.",
-        "relevance": "🟢 High",
-        "pmid": "",
-        "doi": "10.1186/s13049-026-01662-w",
-        "featuredReason": "Dramatic reduction in undertriage from 56% to 2.7% has direct implications for Australian trauma systems, particularly in rural and remote areas where accurate field triage to major trauma centres can significantly impact outcomes."
+        "id": "42522152",
+        "title": "The Sydney Triage to Admission Risk Tool With Artificial Intelligence (START-AI) to Support Decision Making in Emergency Departments: Model Explainability and Feature Importance Analysis",
+        "authors": "Michael Dinh, Elizabeth Corbett, Thuy Truc Ngo, et al.",
+        "journal": "Emergency Medicine Australasia",
+        "summary": "Model explainability analysis of START-AI — AUROC improved from 0.78 to 0.90 with AI features, driven primarily by blood test results, triage comments, and clinical notes",
+        "relevance": "🟢 High transferability — Australian-developed tool with strong validation results; AI triage support is coming to pre-hospital care and this shows what features matter most",
+        "pmid": "42522152",
+        "doi": "10.1111/1742-6723.70285",
+        "featuredReason": "Future of triage — Australian AI tool achieving 90% prediction accuracy shows what's coming and validates that clinical documentation (not just vitals) drives decision support"
       }
     ]
   }
