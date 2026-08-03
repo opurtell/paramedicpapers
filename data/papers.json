@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-08-02T21:02:04Z",
-  "lastUpdatedSydney": "2026-08-03 07:02 AEST",
-  "lastUpdatedDate": "2026-08-03",
+  "lastUpdated": "2026-08-03T21:01:32Z",
+  "lastUpdatedSydney": "2026-08-04 07:01 AEST",
+  "lastUpdatedDate": "2026-08-04",
   "featuredPapers": [
     {
       "id": "42398849",
@@ -971,30 +971,40 @@
   ],
   "funFact": {
     "category": "history",
-    "fact": "In the 1800s, 'resurrection men' dug up freshly buried corpses and sold them to medical schools for dissection. It was a lucrative trade. Some even resorted to murder — the Burke and Hare case being the most infamous. Medical education has a surprisingly dark supply chain history."
+    "fact": "Alexander Fleming discovered penicillin in 1928 because he was messy. He left a petri dish uncovered and mould grew on it, killing the surrounding bacteria. He almost threw it away. The most important discovery in modern medicine came from forgetting to wash up."
   },
   "tldr": {
-    "date": "2026-08-03",
-    "paperCount": 4,
-    "summary": "• 5% of VF OHCA patients have refractory VF (all three shocks fail) with poorer outcomes\n• Counterintuitive Japanese findings: no bystander CPR associated with better neuro outcomes in suffocation than compression-only\n• Systematic review finds no difference between mechanical and manual ventilation during CPR (very low certainty)\n• Higher team leader cognitive load linked to poorer resuscitation team performance",
-    "highlights": [
-      {
-        "id": "42264170",
-        "pmid": "42264170",
-        "doi": "10.1016/j.resuscitation.2026.111166",
-        "title": "Refractory VF in OHCA: 5% of cases, worse outcomes",
-        "note": "Refractory VF patients had lower ROSC (41% vs 59%) and 30-day survival (23% vs 46%); predictors include no CPR/AED before EMS and longer delay to first shock"
-      },
-      {
-        "id": "42435793",
-        "pmid": "42435793",
-        "doi": "10.1016/j.resuscitation.2026.111206",
-        "title": "Team leader cognitive load affects resuscitation performance",
-        "note": "Cross-sectional study of 58 resuscitations found highest cognitive load in team leaders; higher leader load associated with lower TEAM-assessed performance"
-      }
-    ]
+    "date": "2026-08-04",
+    "paperCount": 2,
+    "summary": "• Two clinical papers identified but no abstracts available for full assessment\n• Cold-water immersion for heatstroke cardiac arrest and adverse events with neuromuscular blockade in airway management — both require full text review\n• Limited ability to assess transferability without access to abstracts",
+    "highlights": []
   },
   "dailyUpdates": [
+    {
+      "date": "2026-08-04",
+      "papers": [
+        {
+          "id": "10.1016/j.resplu.2026.101426",
+          "title": "Cold-water immersion during out-of-hospital heatstroke cardiac arrest resuscitation: feasible but futile?",
+          "journal": "Resuscitation Plus",
+          "date": "2026-08-04",
+          "pmid": "",
+          "doi": "10.1016/j.resplu.2026.101426",
+          "summary": "Examines feasibility and outcomes of cold-water immersion during prehospital heatstroke cardiac arrest resuscitation",
+          "relevance": "🔴 Low — No abstract available — cannot assess findings or applicability to Australian practice"
+        },
+        {
+          "id": "10.1080/10903127.2026.2713128",
+          "title": "The Prevalence of Adverse Events After Prehospital Neuromuscular Blockade-Assisted Airway Management",
+          "journal": "Prehospital Emergency Care",
+          "date": "2026-08-04",
+          "pmid": "",
+          "doi": "10.1080/10903127.2026.2713128",
+          "summary": "Investigates the prevalence of adverse events following prehospital airway management using neuromuscular blockade",
+          "relevance": "🔴 Low — No abstract available — cannot assess safety outcomes or transferability without full text"
+        }
+      ]
+    },
     {
       "date": "2026-08-03",
       "papers": [
