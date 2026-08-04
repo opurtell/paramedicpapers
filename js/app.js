@@ -8,12 +8,20 @@
 
   var SAVED_KEY = 'pp:saved';
 
+  /* Matches the desktop layer in css/style.css. Above it the sidebar takes
+     over navigation, search lives in the header and the Feed gains two
+     extra filters; below it the mobile layout is untouched. */
+  var DESKTOP = window.matchMedia('(min-width: 960px)');
+  function isWide() { return DESKTOP.matches; }
+
   var state = {
     data: null,
     tab: 'home',
     query: '',
     sort: 'newest',
     pinned: '',
+    highRelOnly: false,
+    savedOnly: false,
     saved: loadSaved()
   };
 
@@ -28,6 +36,8 @@
     bindWeekly();
     $('btn-refresh').addEventListener('click', refresh);
     window.addEventListener('hashchange', function () { setTab(tabFromHash(), true); });
+    DESKTOP.addEventListener('change', syncLayout);
+    syncLayout();
 
     try {
       state.data = await loadData(false);
@@ -67,14 +77,18 @@
 
   var TABS = ['home', 'feed', 'weekly', 'saved'];
   var TITLES = { home: 'Paramedic Papers', feed: 'Research feed', weekly: 'Weekly', saved: 'Saved' };
+  /* On desktop the sidebar carries the wordmark, so the content header
+     names the view instead of the app. */
+  var TITLES_WIDE = { home: 'Today', feed: 'Research feed', weekly: 'Weekly digest', saved: 'Saved papers' };
 
   function tabFromHash() {
     var h = (location.hash || '').replace('#', '');
     return TABS.indexOf(h) !== -1 ? h : 'home';
   }
 
+  /* Binds both the mobile tab bar and the desktop sidebar nav. */
   function bindTabs() {
-    document.querySelectorAll('.tab').forEach(function (btn) {
+    document.querySelectorAll('[data-tab]').forEach(function (btn) {
       btn.addEventListener('click', function () { setTab(btn.getAttribute('data-tab')); });
     });
   }
@@ -82,13 +96,57 @@
   function setTab(tab, silent) {
     state.tab = tab;
     TABS.forEach(function (t) { $('page-' + t).hidden = (t !== tab); });
-    document.querySelectorAll('.tab').forEach(function (btn) {
+    document.querySelectorAll('[data-tab]').forEach(function (btn) {
       btn.classList.toggle('is-on', btn.getAttribute('data-tab') === tab);
     });
-    $('page-title').textContent = TITLES[tab];
+    $('page-title').textContent = (isWide() ? TITLES_WIDE : TITLES)[tab];
     renderKicker();
     if (!silent) location.hash = tab;
     window.scrollTo(0, 0);
+  }
+
+  /* ── desktop / mobile layout swap ───────────────────── */
+
+  /* The search box and the updated-stamp + refresh pair live in different
+     places per breakpoint. Rather than duplicating them (and their ids),
+     the same nodes are re-parented when the breakpoint flips. */
+  function syncLayout() {
+    var wide = isWide();
+    var search = document.querySelector('.search-wrap');
+    var acts = document.querySelector('.masthead-actions');
+    var row = $('masthead-row');
+    var feed = $('page-feed');
+
+    if (wide) {
+      $('sidebar-foot').appendChild(acts);
+      row.appendChild(search);
+    } else {
+      feed.insertBefore(search, feed.firstChild);
+      row.appendChild(acts);
+    }
+    applyPanelDefaults();
+    $('page-title').textContent = (wide ? TITLES_WIDE : TITLES)[state.tab];
+    if (state.data) renderToday();
+  }
+
+  /* TLDR and fun-fact panels start expanded on desktop (the rail has the
+     room) and collapsed on mobile. The +/− toggles stay live either way. */
+  function applyPanelDefaults() {
+    var wide = isWide();
+    [['daily-tldr-toggle', 'daily-tldr-body'],
+     ['weekly-tldr-toggle-home', 'weekly-tldr-body-home']].forEach(function (pair) {
+      var btn = $(pair[0]), body = $(pair[1]);
+      body.hidden = !wide;
+      btn.textContent = wide ? '−' : '+';
+      btn.setAttribute('aria-expanded', String(wide));
+    });
+
+    var factBody = $('fun-fact-body'), factToggle = $('fun-fact-toggle');
+    var hasMore = !!factBody.textContent;
+    factBody.hidden = !(wide && hasMore);
+    factToggle.hidden = !hasMore || wide;
+    factToggle.textContent = 'Read more';
+    factToggle.setAttribute('aria-expanded', 'false');
   }
 
   /* ── rendering ──────────────────────────────────────── */
@@ -103,6 +161,34 @@
     renderFeed();
     renderWeeklyPicks();
     renderSaved();
+    renderSidebar();
+    applyPanelDefaults();
+  }
+
+  /* Sidebar count pills and the scan-window block. The week count is taken
+     relative to the newest scan rather than today, so the numbers stay
+     meaningful when a scan has not run for a day or two. */
+  function renderSidebar() {
+    var days = state.data.dailyUpdates || [];
+    var savedCount = savedPapers().length;
+
+    $('nav-count-feed').textContent = allPapers().length;
+    $('nav-count-saved').textContent = savedCount;
+    $('nav-count-saved').hidden = savedCount === 0;
+
+    var todayCount = days.length ? (days[0].papers || []).length : 0;
+    $('scan-today').textContent = todayCount + ' new';
+    $('scan-week').textContent = weekPaperCount(days);
+    $('scan-total').textContent = days.length;
+  }
+
+  function weekPaperCount(days) {
+    if (!days.length) return 0;
+    var newest = new Date(days[0].date + 'T00:00:00');
+    var cutoff = new Date(newest.getTime() - 6 * 86400000);
+    return days.reduce(function (n, d) {
+      return new Date(d.date + 'T00:00:00') >= cutoff ? n + (d.papers || []).length : n;
+    }, 0);
   }
 
   function renderUpdated() {
@@ -273,7 +359,9 @@
   function renderToday() {
     var day = (state.data.dailyUpdates || [])[0];
     var papers = day ? day.papers : [];
-    $('today-count').textContent = papers.length + ' new today';
+    /* The desktop section head carries the scan date alongside the count. */
+    $('today-count').textContent = papers.length + ' new today' +
+      (isWide() && day ? ' · ' + dayLabel(day.date).replace('Today · ', '') : '');
     $('today-list').innerHTML = papers.map(function (p) {
       return '<article class="today-item" data-today-id="' + esc(p.id) + '">' +
         todayCardInnerHTML(p) + '</article>';
@@ -308,7 +396,12 @@
 
   function renderFeed() {
     var term = state.query.trim().toLowerCase();
-    var list = allPapers().filter(function (p) { return !term || matches(p, term); });
+    var list = allPapers().filter(function (p) {
+      if (term && !matches(p, term)) return false;
+      if (state.highRelOnly && relLevel(p.relevance) !== 'High') return false;
+      if (state.savedOnly && !isSaved(p.id)) return false;
+      return true;
+    });
     $('result-count').textContent = list.length + ' result' + (list.length === 1 ? '' : 's');
 
     /* pinned card, if a TLDR bullet sent us here */
@@ -439,7 +532,7 @@
   function toggleSave(id) {
     if (state.saved[id]) delete state.saved[id]; else state.saved[id] = true;
     persistSaved();
-    renderToday(); renderFeed(); renderWeeklyPicks(); renderSaved();
+    renderToday(); renderFeed(); renderWeeklyPicks(); renderSaved(); renderSidebar();
   }
   function savedPapers() {
     return allPapers().filter(function (p) { return isSaved(p.id); });
@@ -452,6 +545,7 @@
     collapser('daily-tldr-toggle', 'daily-tldr-body', '+', '−');
     collapser('weekly-tldr-toggle-home', 'weekly-tldr-body-home', '+', '−');
     $('btn-open-feed').addEventListener('click', function () { setTab('feed'); });
+    $('btn-see-week').addEventListener('click', function () { setTab('weekly'); });
   }
 
   function bindWeekly() {
@@ -473,6 +567,9 @@
     $('search-input').addEventListener('input', function (e) {
       state.query = e.target.value;
       renderFeed();
+      /* On desktop the search sits in the header on every view — typing
+         there means the reader wants the feed. */
+      if (state.tab !== 'feed') setTab('feed');
     });
     document.querySelectorAll('.chip[data-sort]').forEach(function (chip) {
       chip.addEventListener('click', function () {
@@ -482,6 +579,23 @@
         });
         renderFeed();
       });
+    });
+    /* Desktop-only feed filters; not persisted. */
+    document.querySelectorAll('.chip[data-filter]').forEach(function (chip) {
+      chip.addEventListener('click', function () {
+        var key = chip.getAttribute('data-filter') === 'high' ? 'highRelOnly' : 'savedOnly';
+        state[key] = !state[key];
+        chip.classList.toggle('is-on', state[key]);
+        chip.setAttribute('aria-pressed', String(state[key]));
+        renderFeed();
+      });
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key !== 'k' || !(e.metaKey || e.ctrlKey)) return;
+      e.preventDefault();
+      if (state.tab !== 'feed' && !isWide()) setTab('feed');
+      $('search-input').focus();
+      $('search-input').select();
     });
   }
 
