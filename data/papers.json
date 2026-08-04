@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-08-03T23:04:41Z",
-  "lastUpdatedSydney": "2026-08-04 09:04 AEST",
-  "lastUpdatedDate": "2026-08-04",
+  "lastUpdated": "2026-08-04T21:03:06Z",
+  "lastUpdatedSydney": "2026-08-05 07:03 AEST",
+  "lastUpdatedDate": "2026-08-05",
   "featuredPapers": [
     {
       "id": "42398849",
@@ -26,17 +26,6 @@
       "featuredReason": "Directly applicable to resuscitation team training and leadership, with clear implications for supporting team leaders during high-acuity events"
     },
     {
-      "id": "42307216",
-      "title": "Ketamine Versus Propofol for Sedation in Acute Psychiatric Emergencies During Aeromedical Retrieval: A Randomized Clinical Trial",
-      "journal": "Prehospital Emergency Care",
-      "date": "2026-07-27",
-      "pmid": "42307216",
-      "doi": "10.1080/10903127.2026.2690178",
-      "summary": "In this RCT of 170 patients, ketamine was associated with fewer adverse events compared to propofol when used for sedation during aeromedical retrieval of patients experiencing acute psychiatric agitation.",
-      "relevance": "🟢 High",
-      "featuredReason": "Selected for clinical relevance to prehospital practice."
-    },
-    {
       "id": "10.1080/10903127.2026.2674263",
       "title": "Use of double sequential external defibrillation in the United States before and after the DOSE VF randomized clinical trial",
       "journal": "Prehospital Emergency Care",
@@ -57,6 +46,17 @@
       "summary": "Retrospective cohort of Victoria's Virtual ED — only 21 FDSV presentations identified among 173,936 visits (0.012%), suggesting significant under-detection",
       "relevance": "🟢 High transferability — Direct Australian context, virtual EDs are expanding, and paramedics need awareness that FDSV presentations may be missed in telehealth settings",
       "featuredReason": "Direct Australian context, virtual EDs are expanding, and paramedics need awareness that FDSV presentations may be missed in telehealth settings"
+    },
+    {
+      "id": "42538121",
+      "title": "The Safety of Single Aminoglycoside Dose in Emergency Departments (SAD-ED) Among Patients With and Without Chronic Kidney Disease: A Retrospective Cohort Study",
+      "journal": "Emergency Medicine Australasia",
+      "date": "2026-08-04",
+      "pmid": "42538121",
+      "doi": "10.1111/1742-6723.70318",
+      "summary": "Retrospective cohort across four Australian hospitals — single-dose aminoglycosides caused AKI in 30.9% of CKD patients vs 13.4% without CKD (OR 2.88)",
+      "relevance": "🟢 High transferability — Australian study with direct clinical relevance — gentamicin is commonly given in ED/prehospital settings and CKD patients are at substantially higher risk",
+      "featuredReason": "Australian study with direct clinical relevance — gentamicin is commonly given in ED/prehospital settings and CKD patients are at substantially higher risk"
     }
   ],
   "funFacts": [
@@ -971,56 +971,13 @@
   ],
   "funFact": {
     "category": "history",
-    "fact": "Alexander Fleming discovered penicillin in 1928 because he was messy. He left a petri dish uncovered and mould grew on it, killing the surrounding bacteria. He almost threw it away. The most important discovery in modern medicine came from forgetting to wash up."
+    "fact": "The first person to survive a tracheostomy was probably performed in the 1500s, but the procedure was described in ancient Egyptian texts and by Hippocrates. For most of history, surgeons avoided it because it almost always killed the patient. Then someone finally got it right."
   },
   "tldr": {
-    "date": "2026-08-04",
-    "paperCount": 8,
-    "summary": "• Examines feasibility and outcomes of cold-water immersion during prehospital heatstroke cardiac arrest resuscitation\n• Investigates the prevalence of adverse events following prehospital airway management using neuromuscular blockade\n• Retrospective analysis of 36.7 million NEMSIS records — 99.5% represent unique patient-care episodes with only 0.5% involving multiple records for the same encounter\n• Retrospective cohort of Victoria's Virtual ED — only 21 FDSV presentations identified among 173,936 visits (0.012%), suggesting significant under-detection\n• Retrospective cohort across four Australian hospitals — single-dose aminoglycosides caused AKI in 30.9% of CKD patients vs 13.4% without CKD (OR 2.88)\n• Model explainability analysis of START-AI — AUROC improved from 0.78 to 0.90 with AI features, driven primarily by blood test results, triage comments, and clinical notes",
-    "highlights": [
-      {
-        "id": "10.1016/j.resplu.2026.101426",
-        "pmid": "",
-        "doi": "10.1016/j.resplu.2026.101426",
-        "title": "Cold-water immersion during out-of-hospital heatstroke cardiac arrest resuscitation: feasible but futile?",
-        "note": "Examines feasibility and outcomes of cold-water immersion during prehospital heatstroke cardiac arrest resuscitation"
-      },
-      {
-        "id": "10.1080/10903127.2026.2713128",
-        "pmid": "",
-        "doi": "10.1080/10903127.2026.2713128",
-        "title": "The Prevalence of Adverse Events After Prehospital Neuromuscular Blockade-Assisted Airway Management",
-        "note": "Investigates the prevalence of adverse events following prehospital airway management using neuromuscular blockade"
-      },
-      {
-        "id": "10.1080/10903127.2026.2711920",
-        "pmid": "",
-        "doi": "10.1080/10903127.2026.2711920",
-        "title": "The estimated prevalence of multiple record encounters in the National Emergency Medical Services Information System",
-        "note": "Retrospective analysis of 36.7 million NEMSIS records — 99.5% represent unique patient-care episodes with only 0.5% involving multiple records for the same encounter"
-      },
-      {
-        "id": "42538126",
-        "pmid": "42538126",
-        "doi": "10.1111/1742-6723.70316",
-        "title": "Family, Domestic and Sexual Violence Presentations to a Virtual Emergency Department: A Retrospective Cohort Study",
-        "note": "Retrospective cohort of Victoria's Virtual ED — only 21 FDSV presentations identified among 173,936 visits (0.012%), suggesting significant under-detection"
-      },
-      {
-        "id": "42538121",
-        "pmid": "42538121",
-        "doi": "10.1111/1742-6723.70318",
-        "title": "The Safety of Single Aminoglycoside Dose in Emergency Departments (SAD-ED) Among Patients With and Without Chronic Kidney Disease: A Retrospective Cohort Study",
-        "note": "Retrospective cohort across four Australian hospitals — single-dose aminoglycosides caused AKI in 30.9% of CKD patients vs 13.4% without CKD (OR 2.88)"
-      },
-      {
-        "id": "42522152",
-        "pmid": "42522152",
-        "doi": "10.1111/1742-6723.70285",
-        "title": "The Sydney Triage to Admission Risk Tool With Artificial Intelligence (START-AI) to Support Decision Making in Emergency Departments: Model Explainability and Feature Importance Analysis",
-        "note": "Model explainability analysis of START-AI — AUROC improved from 0.78 to 0.90 with AI features, driven primarily by blood test results, triage comments, and clinical notes"
-      }
-    ]
+    "date": "2026-08-05",
+    "paperCount": 0,
+    "summary": "Three new papers found but all are ahead-of-print without abstracts; none selected for alert.",
+    "highlights": []
   },
   "dailyUpdates": [
     {
