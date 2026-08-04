@@ -131,11 +131,28 @@ Keys are paper `id`s. This shape must not be changed to an array — `JSON.strin
 
 - **Vanilla HTML/CSS/JS** — no frameworks, no build step
 - Client-side rendering from `papers.json`
-- Four tabs: Home, Feed, Weekly, Saved
-- Bottom-bar navigation; tab state in the URL hash (`#home`, `#feed`, `#weekly`, `#saved`)
+- Four views: Home, Feed, Weekly, Saved
+- View state in the URL hash (`#home`, `#feed`, `#weekly`, `#saved`)
 - Client-side full-text search across title, journal, and summary
 - Save/Remove on every card, persisted to `localStorage`
 - TLDR bullets link to their paper card (switches to Feed with the paper pinned)
+
+### Responsive layout
+
+One set of views, two layouts, split at **960px** (`--sidebar-w` and the desktop
+layer live at the bottom of `css/style.css`):
+
+| | Below 960px | 960px and up |
+|---|---|---|
+| Navigation | Bottom tab bar | Persistent left sidebar with count pills and a scan-window summary |
+| Masthead | App title + refresh | Sticky content header: view title, kicker, always-visible search + `⌘K` |
+| Home | Single column | Reading column plus a sticky TLDR rail |
+| Feed | Stacked cards | Card grid, plus **High rel only** / **Saved only** filters |
+| TLDR panels | Collapsed by default | Expanded by default |
+
+Both layouts drive the same view state and the same DOM. `syncLayout()` in
+`js/app.js` re-parents the search box and the refresh/last-updated pair when the
+breakpoint flips, rather than duplicating those nodes and their ids.
 
 ## License
 
