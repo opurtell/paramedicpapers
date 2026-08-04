@@ -9,13 +9,42 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=3">
+  <link rel="stylesheet" href="css/style.css?v=4">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚑</text></svg>">
 </head>
 <body>
 
+  <!-- Desktop-only sidebar (hidden below 960px). The masthead actions are
+       moved into #sidebar-foot by js/app.js at the desktop breakpoint. -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-head">
+      <p class="wordmark">Paramedic Papers</p>
+      <p class="kicker">Prehospital research scan</p>
+    </div>
+
+    <nav class="sidebar-nav" aria-label="Views">
+      <button class="nav-item is-on" data-tab="home" type="button"><span class="ico ico-home" aria-hidden="true"></span>Home</button>
+      <button class="nav-item" data-tab="feed" type="button"><span class="ico ico-feed" aria-hidden="true"><i></i><i></i><i></i></span>Feed<span class="nav-pill" id="nav-count-feed"></span></button>
+      <button class="nav-item" data-tab="weekly" type="button"><span class="ico ico-weekly" aria-hidden="true"></span>Weekly</button>
+      <button class="nav-item" data-tab="saved" type="button"><span class="ico ico-saved" aria-hidden="true"></span>Saved<span class="nav-pill nav-pill-warm" id="nav-count-saved" hidden></span></button>
+    </nav>
+
+    <div class="scan-window">
+      <span class="scan-label">Scan window</span>
+      <div class="scan-rows">
+        <div class="scan-row"><span>Today</span><span class="scan-new" id="scan-today"></span></div>
+        <div class="scan-row"><span>This week</span><span class="scan-n" id="scan-week"></span></div>
+        <div class="scan-row"><span>Scans logged</span><span class="scan-n" id="scan-total"></span></div>
+      </div>
+    </div>
+
+    <div class="sidebar-foot" id="sidebar-foot"></div>
+  </aside>
+
+  <div class="shell">
+
   <header class="masthead">
-    <div class="masthead-row">
+    <div class="masthead-row" id="masthead-row">
       <div>
         <h1 id="page-title">Paramedic Papers</h1>
         <p class="kicker" id="page-kicker">Loading…</p>
@@ -33,6 +62,10 @@
 
     <!-- ── HOME ───────────────────────────────────────────── -->
     <section class="page" id="page-home">
+      <!-- .home-rail / .home-main are `display: contents` below 960px, so the
+           mobile stacking order is unchanged; on desktop they become the
+           sticky right rail and the left reading column. -->
+      <div class="home-rail">
       <article class="panel panel-dark" id="fun-fact-panel">
         <div class="panel-kicker panel-kicker-invert">Fun fact of the day</div>
         <p class="fact-headline" id="fun-fact-headline"></p>
@@ -52,12 +85,15 @@
       <article class="panel" id="weekly-tldr-panel-home">
         <div class="panel-head">
           <span class="panel-kicker">This week's TLDR</span>
+          <button class="link-btn wide-only" id="btn-see-week" type="button">See week ↗</button>
           <button class="sign-btn" id="weekly-tldr-toggle-home" type="button" aria-expanded="false" aria-label="Expand this week's TLDR">+</button>
         </div>
         <p class="panel-lead" id="weekly-tldr-lead-home"></p>
         <div class="collapse bullets" id="weekly-tldr-body-home" hidden></div>
       </article>
+      </div>
 
+      <div class="home-main">
       <div class="section-head">
         <h2>Today's newest</h2>
         <span class="count-flag" id="today-count"></span>
@@ -65,17 +101,23 @@
       <div class="today-list" id="today-list"></div>
 
       <button class="wide-btn" id="btn-open-feed" type="button">Open full feed</button>
+      </div>
     </section>
 
     <!-- ── FEED ───────────────────────────────────────────── -->
     <section class="page" id="page-feed" hidden>
+      <!-- Moved into the masthead by js/app.js at the desktop breakpoint. -->
       <div class="search-wrap">
         <input type="search" id="search-input" placeholder="Search title, journal, summary" autocomplete="off">
+        <span class="kbd-hint" aria-hidden="true">⌘K</span>
       </div>
       <div class="controls">
-        <div class="chips" role="group" aria-label="Sort">
+        <div class="chips" role="group" aria-label="Sort and filter">
           <button class="chip is-on" data-sort="newest" type="button">Newest</button>
           <button class="chip" data-sort="relevance" type="button">Relevance</button>
+          <span class="chip-divider wide-only" aria-hidden="true"></span>
+          <button class="chip wide-only" data-filter="high" type="button" aria-pressed="false">High rel only</button>
+          <button class="chip wide-only" data-filter="saved" type="button" aria-pressed="false">Saved only</button>
         </div>
         <span class="result-count" id="result-count"></span>
       </div>
@@ -114,6 +156,8 @@
 
   </main>
 
+  </div>
+
   <nav class="tabbar" aria-label="Primary">
     <button class="tab is-on" data-tab="home" type="button"><span class="ico ico-home" aria-hidden="true"></span>Home</button>
     <button class="tab" data-tab="feed" type="button"><span class="ico ico-feed" aria-hidden="true"><i></i><i></i><i></i></span>Feed</button>
@@ -121,6 +165,6 @@
     <button class="tab" data-tab="saved" type="button"><span class="ico ico-saved" aria-hidden="true"></span>Saved</button>
   </nav>
 
-  <script src="js/app.js?v=6"></script>
+  <script src="js/app.js?v=7"></script>
 </body>
 </html>
