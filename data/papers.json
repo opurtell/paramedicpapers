@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-08-04T21:20:47Z",
-  "lastUpdatedSydney": "2026-08-05 07:20 AEST",
-  "lastUpdatedDate": "2026-08-05",
+  "lastUpdated": "2026-08-05T21:04:19Z",
+  "lastUpdatedSydney": "2026-08-06 07:04 AEST",
+  "lastUpdatedDate": "2026-08-06",
   "featuredPapers": [
     {
       "id": "42398849",
@@ -971,15 +971,48 @@
   ],
   "funFact": {
     "category": "history",
-    "fact": "The first person to survive a tracheostomy was probably performed in the 1500s, but the procedure was described in ancient Egyptian texts and by Hippocrates. For most of history, surgeons avoided it because it almost always killed the patient. Then someone finally got it right."
+    "fact": "Ignaz Semmelweis figured out that hand-washing saved lives in 1847 — and his colleagues mocked him for it. He was right. He was committed to an asylum and died of sepsis from a beating. The man who discovered infection control died of an infection. History doesn't always have a happy ending."
   },
   "tldr": {
-    "date": "2026-08-05",
-    "paperCount": 0,
-    "summary": "Three new papers found but all are ahead-of-print without abstracts; none selected for alert.",
-    "highlights": []
+    "date": "2026-08-06",
+    "paperCount": 2,
+    "summary": "• Phase II protocol explores individualised post-arrest MAP targets via real-time cerebral autoregulation monitoring — moves away from one-size-fits-all blood pressure goals.\n• US data shows pediatric patients are 7% of EMS transports but disproportionately high acuity with rising psychiatric presentations.\n• Both papers highlight need for personalised care pathways in post-arrest management and pediatric emergency care.",
+    "highlights": [
+      {
+        "id": "10.1016/j.resplu.2026.101430",
+        "pmid": "",
+        "doi": "10.1016/j.resplu.2026.101430",
+        "title": "Neuroprotection via optimizing cerebral blood flow after cardiac arrest",
+        "note": "Individualised MAP targets based on real-time autoregulation monitoring could transform post-arrest care if trials show benefit."
+      }
+    ]
   },
   "dailyUpdates": [
+    {
+      "date": "2026-08-06",
+      "papers": [
+        {
+          "id": "10.1016/j.resplu.2026.101430",
+          "title": "Neuroprotection via optimizing cerebral blood flow after cardiac arrest (neuro-intact) study – A phase II proof-of-concept study protocol",
+          "journal": "Resuscitation Plus",
+          "date": "2026-08-06",
+          "pmid": "",
+          "doi": "10.1016/j.resplu.2026.101430",
+          "summary": "Phase II protocol testing whether individualised MAP targets derived from real-time cerebral autoregulation monitoring reduce secondary brain injury after cardiac arrest — this proof-of-concept trial uses near-infrared spectroscopy and transcranial Doppler to identify each patient's optimal MAP rather than applying uniform targets.",
+          "relevance": "🟡 Medium — Protocol study without results yet — the concept of individualised post-arrest blood pressure targets is promising and relevant to Australian practice, but clinical utility depends on trial outcomes showing actual benefit."
+        },
+        {
+          "id": "10.1080/10903127.2026.2704184",
+          "title": "National Patterns of Pediatric Emergency Department Utilization by Arrival Mode and Geographic Setting: Final Data from the National Hospital Ambulatory Medical Care Survey 2016–2022",
+          "journal": "Prehospital Emergency Care",
+          "date": "2026-08-06",
+          "pmid": "",
+          "doi": "10.1080/10903127.2026.2704184",
+          "summary": "Retrospective analysis of 202.5 million US pediatric ED visits (2016–2022) found children comprised only 7% of EMS transports but presented with higher acuity, more abnormal vital signs, and increasing psychiatric and behavioral presentations over time.",
+          "relevance": "🟡 Medium — Descriptive US epidemiology — the trend toward increasing pediatric psych/behavioral EMS encounters likely reflects similar patterns in Australia and informs system planning, though absolute numbers and specifics will differ between health systems."
+        }
+      ]
+    },
     {
       "date": "2026-08-04",
       "papers": [
