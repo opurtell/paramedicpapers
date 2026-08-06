@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-08-05T21:20:56Z",
-  "lastUpdatedSydney": "2026-08-06 07:20 AEST",
-  "lastUpdatedDate": "2026-08-06",
+  "lastUpdated": "2026-08-06T21:01:55Z",
+  "lastUpdatedSydney": "2026-08-07 07:01 AEST",
+  "lastUpdatedDate": "2026-08-07",
   "featuredPapers": [
     {
       "id": "42398849",
@@ -971,23 +971,38 @@
   ],
   "funFact": {
     "category": "history",
-    "fact": "Ignaz Semmelweis figured out that hand-washing saved lives in 1847 — and his colleagues mocked him for it. He was right. He was committed to an asylum and died of sepsis from a beating. The man who discovered infection control died of an infection. History doesn't always have a happy ending."
+    "fact": "In WWII, medics on the front lines faced extraordinary danger — they were unarmed, marked with red crosses, and still took fire. The survival rate for wounded soldiers who reached a medic was about 70%. Those medics earned every statistic. Those medics earned every statistic."
   },
   "tldr": {
-    "date": "2026-08-06",
-    "paperCount": 2,
-    "summary": "• Phase II protocol explores individualised post-arrest MAP targets via real-time cerebral autoregulation monitoring — moves away from one-size-fits-all blood pressure goals.\n• US data shows pediatric patients are 7% of EMS transports but disproportionately high acuity with rising psychiatric presentations.\n• Both papers highlight need for personalised care pathways in post-arrest management and pediatric emergency care.",
+    "date": "2026-08-07",
+    "paperCount": 1,
+    "summary": "• Swedish survey shows 80% willingness to perform CPR on strangers\n• Recent training increases confidence, but home AED awareness remains low\n• Three ahead-of-print papers unavailable for assessment",
     "highlights": [
       {
-        "id": "10.1016/j.resplu.2026.101430",
+        "id": "10.1016/j.resplu.2026.101428",
         "pmid": "",
-        "doi": "10.1016/j.resplu.2026.101430",
-        "title": "Neuroprotection via optimizing cerebral blood flow after cardiac arrest",
-        "note": "Individualised MAP targets based on real-time autoregulation monitoring could transform post-arrest care if trials show benefit."
+        "doi": "10.1016/j.resplu.2026.101428",
+        "title": "Willingness to act in a cardiac arrest and awareness of automated external defibrillators",
+        "note": "Highlights persistent gap between CPR willingness and AED location awareness in the community"
       }
     ]
   },
   "dailyUpdates": [
+    {
+      "date": "2026-08-07",
+      "papers": [
+        {
+          "id": "10.1016/j.resplu.2026.101428",
+          "title": "Willingness to act in a cardiac arrest and awareness of automated external defibrillators: a survey of the Swedish population",
+          "journal": "Resuscitation Plus",
+          "date": "2026-08-07",
+          "pmid": "",
+          "doi": "10.1016/j.resplu.2026.101428",
+          "summary": "Population-based survey found 80% of Swedish adults willing to perform CPR on a stranger, with recent training increasing confidence and awareness, but only 20% know where their nearest AED is located at home.",
+          "relevance": "🟡 Medium — Relevant to understanding bystander CPR willingness and AED awareness barriers, but Swedish-specific data may not directly translate to Australian community context."
+        }
+      ]
+    },
     {
       "date": "2026-08-06",
       "papers": [
