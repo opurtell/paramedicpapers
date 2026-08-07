@@ -1,30 +1,8 @@
 {
-  "lastUpdated": "2026-08-06T21:20:06Z",
-  "lastUpdatedSydney": "2026-08-07 07:20 AEST",
-  "lastUpdatedDate": "2026-08-07",
+  "lastUpdated": "2026-08-07T21:20:15Z",
+  "lastUpdatedSydney": "2026-08-08 07:20 AEST",
+  "lastUpdatedDate": "2026-08-08",
   "featuredPapers": [
-    {
-      "id": "42398849",
-      "title": "Volume-controlled mechanical ventilation during cardiopulmonary resuscitation: a systematic review and meta-analysis",
-      "journal": "Resuscitation",
-      "date": "2026-08-03",
-      "pmid": "42398849",
-      "doi": "10.1016/j.resuscitation.2026.111199",
-      "summary": "This systematic review of 13 articles (six RCTs, seven non-randomised studies) found very low to low certainty evidence showing no significant difference in ROSC between volume-controlled mechanical ventilation and manual ventilation during CPR.",
-      "relevance": "🟡 Medium — Relevant to advanced airway management during cardiac arrest, but very low certainty evidence means no practice change warranted",
-      "featuredReason": "Relevant to advanced airway management during cardiac arrest, but very low certainty evidence means no practice change warranted"
-    },
-    {
-      "id": "42435793",
-      "title": "Perceived cognitive load among emergency department code blue teams: distribution, correlates and relationship with team performance",
-      "journal": "Resuscitation",
-      "date": "2026-08-03",
-      "pmid": "42435793",
-      "doi": "10.1016/j.resuscitation.2026.111206",
-      "summary": "This multicentre cross-sectional study of 58 resuscitations found perceived cognitive load was highest among team leaders (mean 5.5/9) and higher team leader cognitive load was associated with higher load among team members and lower TEAM-assessed performance.",
-      "relevance": "🟢 High — Directly applicable to resuscitation team training and leadership, with clear implications for supporting team leaders during high-acuity events",
-      "featuredReason": "Directly applicable to resuscitation team training and leadership, with clear implications for supporting team leaders during high-acuity events"
-    },
     {
       "id": "10.1080/10903127.2026.2674263",
       "title": "Use of double sequential external defibrillation in the United States before and after the DOSE VF randomized clinical trial",
@@ -57,6 +35,28 @@
       "summary": "Retrospective cohort across four Australian hospitals — single-dose aminoglycosides caused AKI in 30.9% of CKD patients vs 13.4% without CKD (OR 2.88)",
       "relevance": "🟢 High transferability — Australian study with direct clinical relevance — gentamicin is commonly given in ED/prehospital settings and CKD patients are at substantially higher risk",
       "featuredReason": "Australian study with direct clinical relevance — gentamicin is commonly given in ED/prehospital settings and CKD patients are at substantially higher risk"
+    },
+    {
+      "id": "42398849",
+      "title": "Volume-controlled mechanical ventilation during cardiopulmonary resuscitation: a systematic review and meta-analysis",
+      "journal": "Resuscitation",
+      "date": "2026-08-03",
+      "pmid": "42398849",
+      "doi": "10.1016/j.resuscitation.2026.111199",
+      "summary": "This systematic review of 13 articles (six RCTs, seven non-randomised studies) found very low to low certainty evidence showing no significant difference in ROSC between volume-controlled mechanical ventilation and manual ventilation during CPR.",
+      "relevance": "🟡 Medium — Relevant to advanced airway management during cardiac arrest, but very low certainty evidence means no practice change warranted",
+      "featuredReason": "Relevant to advanced airway management during cardiac arrest, but very low certainty evidence means no practice change warranted"
+    },
+    {
+      "id": "42435793",
+      "title": "Perceived cognitive load among emergency department code blue teams: distribution, correlates and relationship with team performance",
+      "journal": "Resuscitation",
+      "date": "2026-08-03",
+      "pmid": "42435793",
+      "doi": "10.1016/j.resuscitation.2026.111206",
+      "summary": "This multicentre cross-sectional study of 58 resuscitations found perceived cognitive load was highest among team leaders (mean 5.5/9) and higher team leader cognitive load was associated with higher load among team members and lower TEAM-assessed performance.",
+      "relevance": "🟢 High — Directly applicable to resuscitation team training and leadership, with clear implications for supporting team leaders during high-acuity events",
+      "featuredReason": "Directly applicable to resuscitation team training and leadership, with clear implications for supporting team leaders during high-acuity events"
     }
   ],
   "funFacts": [
@@ -970,20 +970,20 @@
     }
   ],
   "funFact": {
-    "category": "history",
-    "fact": "In WWII, medics on the front lines faced extraordinary danger — they were unarmed, marked with red crosses, and still took fire. The survival rate for wounded soldiers who reached a medic was about 70%. Those medics earned every statistic. Those medics earned every statistic."
+    "category": "weird",
+    "fact": "There are roughly the same number of bacterial cells as human cells in your body — about 38 trillion bacteria to 30 trillion human cells, mostly in your gut. For decades we thought the ratio was 10:1, but a 2016 study revised it to roughly 1:1. Either way, you're never alone."
   },
   "tldr": {
     "date": "2026-08-07",
     "paperCount": 1,
-    "summary": "• Swedish survey shows 80% willingness to perform CPR on strangers\n• Recent training increases confidence, but home AED awareness remains low\n• Three ahead-of-print papers unavailable for assessment",
+    "summary": "• Swedish survey shows 80% of public willing to act in cardiac arrest\n• Only half know where their nearest AED is located at home\n• Recent CPR training increases willingness to act and AED confidence",
     "highlights": [
       {
         "id": "10.1016/j.resplu.2026.101428",
         "pmid": "",
         "doi": "10.1016/j.resplu.2026.101428",
         "title": "Willingness to act in a cardiac arrest and awareness of automated external defibrillators",
-        "note": "Highlights persistent gap between CPR willingness and AED location awareness in the community"
+        "note": "Relevant data for community resuscitation programs and public AED placement strategies"
       }
     ]
   },
