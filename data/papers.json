@@ -1,8 +1,19 @@
 {
-  "lastUpdated": "2026-08-07T21:20:15Z",
-  "lastUpdatedSydney": "2026-08-08 07:20 AEST",
-  "lastUpdatedDate": "2026-08-08",
+  "lastUpdated": "2026-08-08T21:20:24Z",
+  "lastUpdatedSydney": "2026-08-09 07:20 AEST",
+  "lastUpdatedDate": "2026-08-09",
   "featuredPapers": [
+    {
+      "id": "10.1016/j.resplu.2026.101422",
+      "title": "Bag size for manual ventilation during cardiopulmonary resuscitation in adult cardiac arrest: a systematic review",
+      "journal": "Resuscitation Plus",
+      "date": "2026-08-09",
+      "pmid": "",
+      "doi": "10.1016/j.resplu.2026.101422",
+      "summary": "Systematic review testing whether smaller self-inflating bags improve CPR outcomes — they found limited very-low-certainty evidence suggesting smaller bags (450-700mL) were associated with lower survival with favourable neuro outcomes compared to standard adult bags (1000-1685mL).",
+      "relevance": "🟢 High — Directly relevant to prehospital CPR practice — bag valve choice is a standard clinical decision and these findings challenge the assumption that smaller bags are safer for airway protection during CPR.",
+      "featuredReason": "Directly relevant to prehospital CPR practice — bag valve choice is a standard clinical decision and these findings challenge the assumption that smaller bags are safer for airway protection during CPR."
+    },
     {
       "id": "10.1080/10903127.2026.2674263",
       "title": "Use of double sequential external defibrillation in the United States before and after the DOSE VF randomized clinical trial",
@@ -15,26 +26,15 @@
       "featuredReason": "Selected for clinical relevance to prehospital practice."
     },
     {
-      "id": "42538126",
-      "title": "Family, Domestic and Sexual Violence Presentations to a Virtual Emergency Department: A Retrospective Cohort Study",
-      "journal": "Emergency Medicine Australasia",
-      "date": "2026-08-04",
-      "pmid": "42538126",
-      "doi": "10.1111/1742-6723.70316",
-      "summary": "Retrospective cohort of Victoria's Virtual ED — only 21 FDSV presentations identified among 173,936 visits (0.012%), suggesting significant under-detection",
-      "relevance": "🟢 High transferability — Direct Australian context, virtual EDs are expanding, and paramedics need awareness that FDSV presentations may be missed in telehealth settings",
-      "featuredReason": "Direct Australian context, virtual EDs are expanding, and paramedics need awareness that FDSV presentations may be missed in telehealth settings"
-    },
-    {
-      "id": "42538121",
-      "title": "The Safety of Single Aminoglycoside Dose in Emergency Departments (SAD-ED) Among Patients With and Without Chronic Kidney Disease: A Retrospective Cohort Study",
-      "journal": "Emergency Medicine Australasia",
-      "date": "2026-08-04",
-      "pmid": "42538121",
-      "doi": "10.1111/1742-6723.70318",
-      "summary": "Retrospective cohort across four Australian hospitals — single-dose aminoglycosides caused AKI in 30.9% of CKD patients vs 13.4% without CKD (OR 2.88)",
-      "relevance": "🟢 High transferability — Australian study with direct clinical relevance — gentamicin is commonly given in ED/prehospital settings and CKD patients are at substantially higher risk",
-      "featuredReason": "Australian study with direct clinical relevance — gentamicin is commonly given in ED/prehospital settings and CKD patients are at substantially higher risk"
+      "id": "10.1016/j.resplu.2026.101427",
+      "title": "Impact of calcium administration on survival and neurologic outcomes in adults with in-hospital cardiac arrest",
+      "journal": "Resuscitation Plus",
+      "date": "2026-08-09",
+      "pmid": "",
+      "doi": "10.1016/j.resplu.2026.101427",
+      "summary": "Retrospective cohort study of 599 in-hospital cardiac arrest patients testing whether calcium administration improves outcomes — calcium was associated with significantly lower rates of sustained ROSC, survival to discharge, and favourable neuro outcomes.",
+      "relevance": "🟡 Medium — In-hospital context limits direct prehospital applicability, but findings support current guideline recommendations against routine calcium use during undifferentiated cardiac arrest.",
+      "featuredReason": "In-hospital context limits direct prehospital applicability, but findings support current guideline recommendations against routine calcium use during undifferentiated cardiac arrest."
     },
     {
       "id": "42398849",
@@ -971,23 +971,82 @@
   ],
   "funFact": {
     "category": "weird",
-    "fact": "There are roughly the same number of bacterial cells as human cells in your body — about 38 trillion bacteria to 30 trillion human cells, mostly in your gut. For decades we thought the ratio was 10:1, but a 2016 study revised it to roughly 1:1. Either way, you're never alone."
+    "fact": "In 2004, a man in the UK was admitted to hospital with severe abdominal pain. X-rays revealed he'd swallowed 78 pieces of cutlery — mostly spoons. He told doctors he 'liked the taste of metal.' He survived. The surgeons had to remove them one by one."
   },
   "tldr": {
-    "date": "2026-08-07",
-    "paperCount": 1,
-    "summary": "• Swedish survey shows 80% of public willing to act in cardiac arrest\n• Only half know where their nearest AED is located at home\n• Recent CPR training increases willingness to act and AED confidence",
+    "date": "2026-08-09",
+    "paperCount": 4,
+    "summary": "• Smaller ventilation bags (450-700mL) may reduce favourable neuro outcomes compared to standard bags during CPR\n• Independent EMS models outperformed hospital-based systems for OHCA despite longer response times\n• Calcium administration in cardiac arrest associated with worse outcomes — harm confirmed in in-hospital setting\n• Standard CPR compression point may target LVOT rather than optimal compression zone",
     "highlights": [
       {
-        "id": "10.1016/j.resplu.2026.101428",
+        "id": "10.1016/j.resplu.2026.101422",
         "pmid": "",
-        "doi": "10.1016/j.resplu.2026.101428",
-        "title": "Willingness to act in a cardiac arrest and awareness of automated external defibrillators",
-        "note": "Relevant data for community resuscitation programs and public AED placement strategies"
+        "doi": "10.1016/j.resplu.2026.101422",
+        "title": "Bag size for manual ventilation during CPR",
+        "note": "Systematic review found smaller bags associated with lower survival with favourable neuro outcomes — challenges assumption that smaller bags are safer"
+      },
+      {
+        "id": "10.1016/j.resplu.2026.101431",
+        "pmid": "",
+        "doi": "10.1016/j.resplu.2026.101431",
+        "title": "EMS organizational structure and OHCA outcomes",
+        "note": "Large Chinese study (n=24,814) found independent EMS models had higher survived event rates than hospital-based systems despite longer response times"
+      },
+      {
+        "id": "10.1016/j.resplu.2026.101427",
+        "pmid": "",
+        "doi": "10.1016/j.resplu.2026.101427",
+        "title": "Calcium administration in cardiac arrest",
+        "note": "In-hospital study confirms harm — calcium associated with lower sustained ROSC, survival to discharge, and favourable neuro outcomes"
       }
     ]
   },
   "dailyUpdates": [
+    {
+      "date": "2026-08-09",
+      "papers": [
+        {
+          "id": "10.1016/j.resplu.2026.101422",
+          "title": "Bag size for manual ventilation during cardiopulmonary resuscitation in adult cardiac arrest: a systematic review",
+          "journal": "Resuscitation Plus",
+          "date": "2026-08-09",
+          "pmid": "",
+          "doi": "10.1016/j.resplu.2026.101422",
+          "summary": "Systematic review testing whether smaller self-inflating bags improve CPR outcomes — they found limited very-low-certainty evidence suggesting smaller bags (450-700mL) were associated with lower survival with favourable neuro outcomes compared to standard adult bags (1000-1685mL).",
+          "relevance": "🟢 High — Directly relevant to prehospital CPR practice — bag valve choice is a standard clinical decision and these findings challenge the assumption that smaller bags are safer for airway protection during CPR."
+        },
+        {
+          "id": "10.1016/j.resplu.2026.101431",
+          "title": "Emergency medical service organizational structure and prehospital outcomes after out-of-hospital cardiac arrest in China: Insights from the BASIC-OHCA",
+          "journal": "Resuscitation Plus",
+          "date": "2026-08-09",
+          "pmid": "",
+          "doi": "10.1016/j.resplu.2026.101431",
+          "summary": "Retrospective analysis of 24,814 OHCA patients comparing independent EMS models with hospital-based models in China — the independent model had higher survived event rates (2.23% vs 1.40%) despite longer response times.",
+          "relevance": "🟡 Medium — Organizational structure is relevant to Australian services, but China's EMS context differs significantly — still offers useful comparative data on system design and its impact on OHCA outcomes."
+        },
+        {
+          "id": "10.1016/j.resplu.2026.101427",
+          "title": "Impact of calcium administration on survival and neurologic outcomes in adults with in-hospital cardiac arrest",
+          "journal": "Resuscitation Plus",
+          "date": "2026-08-09",
+          "pmid": "",
+          "doi": "10.1016/j.resplu.2026.101427",
+          "summary": "Retrospective cohort study of 599 in-hospital cardiac arrest patients testing whether calcium administration improves outcomes — calcium was associated with significantly lower rates of sustained ROSC, survival to discharge, and favourable neuro outcomes.",
+          "relevance": "🟡 Medium — In-hospital context limits direct prehospital applicability, but findings support current guideline recommendations against routine calcium use during undifferentiated cardiac arrest."
+        },
+        {
+          "id": "10.1016/j.resuscitation.2026.111220",
+          "title": "Where should we compress? Ultrasound identification of the ideal area of maximal compression for CPR",
+          "journal": "Resuscitation",
+          "date": "2026-08-09",
+          "pmid": "",
+          "doi": "10.1016/j.resuscitation.2026.111220",
+          "summary": "Prospective observational study using transthoracic echocardiography to map optimal chest compression location — guideline-recommended hand placement frequently overlies the left ventricular outflow tract rather than the ideal area of maximal compression.",
+          "relevance": "🟡 Medium — Anatomically relevant to CPR technique, but requires ultrasound for application — the finding that standard compression points may not be optimal is worth noting, though practice change would need stronger outcome evidence."
+        }
+      ]
+    },
     {
       "date": "2026-08-07",
       "papers": [
