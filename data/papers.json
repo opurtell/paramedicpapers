@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-08-08T21:20:24Z",
-  "lastUpdatedSydney": "2026-08-09 07:20 AEST",
-  "lastUpdatedDate": "2026-08-09",
+  "lastUpdated": "2026-08-09T21:20:34Z",
+  "lastUpdatedSydney": "2026-08-10 07:20 AEST",
+  "lastUpdatedDate": "2026-08-10",
   "featuredPapers": [
     {
       "id": "10.1016/j.resplu.2026.101422",
@@ -26,6 +26,17 @@
       "featuredReason": "Selected for clinical relevance to prehospital practice."
     },
     {
+      "id": "10.1016/j.resplu.2026.101425",
+      "title": "Incidence, aetiologies and survival outcomes of paediatric out-of-hospital cardiac arrest in Singapore",
+      "journal": "Resuscitation Plus",
+      "date": "2026-08-10",
+      "pmid": "",
+      "doi": "10.1016/j.resplu.2026.101425",
+      "summary": "Abstract not yet available (ahead-of-print). Observational study reporting incidence, aetiologies and survival outcomes of paediatric out-of-hospital cardiac arrest in Singapore.",
+      "relevance": "🟢 High — Paediatric OHCA is directly relevant to Australian paramedic practice; Singapore provides a useful regional comparator with similar urban EMS systems.",
+      "featuredReason": "Paediatric OHCA is directly relevant to Australian paramedic practice; Singapore provides a useful regional comparator with similar urban EMS systems."
+    },
+    {
       "id": "10.1016/j.resplu.2026.101427",
       "title": "Impact of calcium administration on survival and neurologic outcomes in adults with in-hospital cardiac arrest",
       "journal": "Resuscitation Plus",
@@ -46,17 +57,6 @@
       "summary": "This systematic review of 13 articles (six RCTs, seven non-randomised studies) found very low to low certainty evidence showing no significant difference in ROSC between volume-controlled mechanical ventilation and manual ventilation during CPR.",
       "relevance": "🟡 Medium — Relevant to advanced airway management during cardiac arrest, but very low certainty evidence means no practice change warranted",
       "featuredReason": "Relevant to advanced airway management during cardiac arrest, but very low certainty evidence means no practice change warranted"
-    },
-    {
-      "id": "42435793",
-      "title": "Perceived cognitive load among emergency department code blue teams: distribution, correlates and relationship with team performance",
-      "journal": "Resuscitation",
-      "date": "2026-08-03",
-      "pmid": "42435793",
-      "doi": "10.1016/j.resuscitation.2026.111206",
-      "summary": "This multicentre cross-sectional study of 58 resuscitations found perceived cognitive load was highest among team leaders (mean 5.5/9) and higher team leader cognitive load was associated with higher load among team members and lower TEAM-assessed performance.",
-      "relevance": "🟢 High — Directly applicable to resuscitation team training and leadership, with clear implications for supporting team leaders during high-acuity events",
-      "featuredReason": "Directly applicable to resuscitation team training and leadership, with clear implications for supporting team leaders during high-acuity events"
     }
   ],
   "funFacts": [
@@ -971,37 +971,58 @@
   ],
   "funFact": {
     "category": "weird",
-    "fact": "In 2004, a man in the UK was admitted to hospital with severe abdominal pain. X-rays revealed he'd swallowed 78 pieces of cutlery — mostly spoons. He told doctors he 'liked the taste of metal.' He survived. The surgeons had to remove them one by one."
+    "fact": "Priapism — a persistent, painful erection — is a genuine emergency. It can be caused by spinal cord injury, sickle cell disease, or cocaine use. The treatment involves aspirating blood from the corpora cavernosa with a large-bore needle. Patients remember this procedure forever."
   },
   "tldr": {
-    "date": "2026-08-09",
-    "paperCount": 4,
-    "summary": "• Smaller ventilation bags (450-700mL) may reduce favourable neuro outcomes compared to standard bags during CPR\n• Independent EMS models outperformed hospital-based systems for OHCA despite longer response times\n• Calcium administration in cardiac arrest associated with worse outcomes — harm confirmed in in-hospital setting\n• Standard CPR compression point may target LVOT rather than optimal compression zone",
+    "date": "2026-08-10",
+    "paperCount": 3,
+    "summary": "• AI/ML models showing strong predictive performance in LMIC prehospital trauma settings (AUC 0.91-0.94)\n• Paediatric OHCA outcomes data from Singapore — useful regional comparator\n• Prehospital buprenorphine implementation perspectives (abstract pending)",
     "highlights": [
       {
-        "id": "10.1016/j.resplu.2026.101422",
+        "id": "10.1016/j.ijmedinf.2026.106638",
         "pmid": "",
-        "doi": "10.1016/j.resplu.2026.101422",
-        "title": "Bag size for manual ventilation during CPR",
-        "note": "Systematic review found smaller bags associated with lower survival with favourable neuro outcomes — challenges assumption that smaller bags are safer"
-      },
-      {
-        "id": "10.1016/j.resplu.2026.101431",
-        "pmid": "",
-        "doi": "10.1016/j.resplu.2026.101431",
-        "title": "EMS organizational structure and OHCA outcomes",
-        "note": "Large Chinese study (n=24,814) found independent EMS models had higher survived event rates than hospital-based systems despite longer response times"
-      },
-      {
-        "id": "10.1016/j.resplu.2026.101427",
-        "pmid": "",
-        "doi": "10.1016/j.resplu.2026.101427",
-        "title": "Calcium administration in cardiac arrest",
-        "note": "In-hospital study confirms harm — calcium associated with lower sustained ROSC, survival to discharge, and favourable neuro outcomes"
+        "doi": "10.1016/j.ijmedinf.2026.106638",
+        "title": "Artificial Intelligence in the Golden Hour: A scoping review of prehospital trauma triage and implementation feasibility in LMICs",
+        "note": "ML models outperformed manual trauma scores and AI platforms reduced response times dramatically in Bangladesh (162→13min)"
       }
     ]
   },
   "dailyUpdates": [
+    {
+      "date": "2026-08-10",
+      "papers": [
+        {
+          "id": "10.1016/j.ijmedinf.2026.106638",
+          "title": "Artificial Intelligence in the Golden Hour: A scoping review of prehospital trauma triage and implementation feasibility in LMICs",
+          "journal": "International Journal of Medical Informatics",
+          "date": "2026-08-10",
+          "pmid": "",
+          "doi": "10.1016/j.ijmedinf.2026.106638",
+          "summary": "Scoping review mapping AI applications in LMIC prehospital trauma care found ML models achieved AUC 0.91-0.94 for mortality prediction and digital platforms reduced response times from 162 to 13 minutes in Bangladesh.",
+          "relevance": "🟡 Medium — AI/ML methods are methodologically relevant, but study focused on LMIC contexts (Indonesia, Kenya, Bangladesh, Tanzania) with very different infrastructure and system constraints than Australia."
+        },
+        {
+          "id": "10.1016/j.ajem.2026.07.062",
+          "title": "Paramedic perspectives on prehospital buprenorphine: A qualitative case study of implementation in emergency medical services",
+          "journal": "The American Journal of Emergency Medicine",
+          "date": "2026-08-10",
+          "pmid": "",
+          "doi": "10.1016/j.ajem.2026.07.062",
+          "summary": "Abstract not yet available (ahead-of-print). Qualitative case study of paramedic perspectives on prehospital buprenorphine implementation in emergency medical services.",
+          "relevance": "🟡 Medium — Relevant clinical topic (OUD treatment with buprenorphine) but no abstract yet and likely US-focused based on journal."
+        },
+        {
+          "id": "10.1016/j.resplu.2026.101425",
+          "title": "Incidence, aetiologies and survival outcomes of paediatric out-of-hospital cardiac arrest in Singapore",
+          "journal": "Resuscitation Plus",
+          "date": "2026-08-10",
+          "pmid": "",
+          "doi": "10.1016/j.resplu.2026.101425",
+          "summary": "Abstract not yet available (ahead-of-print). Observational study reporting incidence, aetiologies and survival outcomes of paediatric out-of-hospital cardiac arrest in Singapore.",
+          "relevance": "🟢 High — Paediatric OHCA is directly relevant to Australian paramedic practice; Singapore provides a useful regional comparator with similar urban EMS systems."
+        }
+      ]
+    },
     {
       "date": "2026-08-09",
       "papers": [
