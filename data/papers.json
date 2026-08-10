@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-08-09T21:20:34Z",
-  "lastUpdatedSydney": "2026-08-10 07:20 AEST",
-  "lastUpdatedDate": "2026-08-10",
+  "lastUpdated": "2026-08-10T21:20:43Z",
+  "lastUpdatedSydney": "2026-08-11 07:20 AEST",
+  "lastUpdatedDate": "2026-08-11",
   "featuredPapers": [
     {
       "id": "10.1016/j.resplu.2026.101422",
@@ -971,21 +971,13 @@
   ],
   "funFact": {
     "category": "weird",
-    "fact": "Priapism — a persistent, painful erection — is a genuine emergency. It can be caused by spinal cord injury, sickle cell disease, or cocaine use. The treatment involves aspirating blood from the corpora cavernosa with a large-bore needle. Patients remember this procedure forever."
+    "fact": "The longest surgery on record lasted 96 hours — a marathon operation to remove an ovarian cyst that had essentially become a second body (a teratoma with hair, teeth, and bone). The patient survived. The surgeons needed therapy."
   },
   "tldr": {
     "date": "2026-08-10",
-    "paperCount": 3,
-    "summary": "• AI/ML models showing strong predictive performance in LMIC prehospital trauma settings (AUC 0.91-0.94)\n• Paediatric OHCA outcomes data from Singapore — useful regional comparator\n• Prehospital buprenorphine implementation perspectives (abstract pending)",
-    "highlights": [
-      {
-        "id": "10.1016/j.ijmedinf.2026.106638",
-        "pmid": "",
-        "doi": "10.1016/j.ijmedinf.2026.106638",
-        "title": "Artificial Intelligence in the Golden Hour: A scoping review of prehospital trauma triage and implementation feasibility in LMICs",
-        "note": "ML models outperformed manual trauma scores and AI platforms reduced response times dramatically in Bangladesh (162→13min)"
-      }
-    ]
+    "paperCount": 0,
+    "summary": "No new papers today.",
+    "highlights": []
   },
   "dailyUpdates": [
     {
