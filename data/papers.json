@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-08-10T21:20:43Z",
-  "lastUpdatedSydney": "2026-08-11 07:20 AEST",
-  "lastUpdatedDate": "2026-08-11",
+  "lastUpdated": "2026-08-11T21:20:52Z",
+  "lastUpdatedSydney": "2026-08-12 07:20 AEST",
+  "lastUpdatedDate": "2026-08-12",
   "featuredPapers": [
     {
       "id": "10.1016/j.resplu.2026.101422",
@@ -26,6 +26,17 @@
       "featuredReason": "Selected for clinical relevance to prehospital practice."
     },
     {
+      "id": "10.1186/s13049-026-01669-3",
+      "title": "Ambient oxygen enrichment during cardiopulmonary resuscitation: an overestimated risk? - Insights from a manikin study",
+      "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+      "date": "2026-08-12",
+      "pmid": "",
+      "doi": "10.1186/s13049-026-01669-3",
+      "summary": "Mannequin study testing whether removing oxygen-delivery devices reduces ambient oxygen concentration at defibrillation sites — it found no clinically relevant oxygen accumulation, and removing devices made no difference to oxygen levels.",
+      "relevance": "🟢 High — Directly challenges current ERC guideline (followed by Australian services) requiring oxygen device removal before defibrillation; could simplify CPR workflow if adopted.",
+      "featuredReason": "Directly challenges current ERC guideline (followed by Australian services) requiring oxygen device removal before defibrillation; could simplify CPR workflow if adopted."
+    },
+    {
       "id": "10.1016/j.resplu.2026.101425",
       "title": "Incidence, aetiologies and survival outcomes of paediatric out-of-hospital cardiac arrest in Singapore",
       "journal": "Resuscitation Plus",
@@ -46,17 +57,6 @@
       "summary": "Retrospective cohort study of 599 in-hospital cardiac arrest patients testing whether calcium administration improves outcomes — calcium was associated with significantly lower rates of sustained ROSC, survival to discharge, and favourable neuro outcomes.",
       "relevance": "🟡 Medium — In-hospital context limits direct prehospital applicability, but findings support current guideline recommendations against routine calcium use during undifferentiated cardiac arrest.",
       "featuredReason": "In-hospital context limits direct prehospital applicability, but findings support current guideline recommendations against routine calcium use during undifferentiated cardiac arrest."
-    },
-    {
-      "id": "42398849",
-      "title": "Volume-controlled mechanical ventilation during cardiopulmonary resuscitation: a systematic review and meta-analysis",
-      "journal": "Resuscitation",
-      "date": "2026-08-03",
-      "pmid": "42398849",
-      "doi": "10.1016/j.resuscitation.2026.111199",
-      "summary": "This systematic review of 13 articles (six RCTs, seven non-randomised studies) found very low to low certainty evidence showing no significant difference in ROSC between volume-controlled mechanical ventilation and manual ventilation during CPR.",
-      "relevance": "🟡 Medium — Relevant to advanced airway management during cardiac arrest, but very low certainty evidence means no practice change warranted",
-      "featuredReason": "Relevant to advanced airway management during cardiac arrest, but very low certainty evidence means no practice change warranted"
     }
   ],
   "funFacts": [
@@ -971,15 +971,53 @@
   ],
   "funFact": {
     "category": "weird",
-    "fact": "The longest surgery on record lasted 96 hours — a marathon operation to remove an ovarian cyst that had essentially become a second body (a teratoma with hair, teeth, and bone). The patient survived. The surgeons needed therapy."
+    "fact": "In 2010, a man in Serbia survived being impaled through the chest by a 1.5-metre fence post. The post entered through his back and exited through his neck. Surgeons removed it in a 5-hour operation. He was back at work within months. Sometimes the human body just refuses to die."
   },
   "tldr": {
-    "date": "2026-08-10",
-    "paperCount": 0,
-    "summary": "No new papers today.",
-    "highlights": []
+    "date": "2026-08-12",
+    "paperCount": 1,
+    "summary": "• A manikin study finds no clinically relevant oxygen accumulation at defibrillation sites, challenging the ERC guideline requiring oxygen device removal before defibrillation\n• Removing oxygen devices made no difference to ambient oxygen concentrations\n• This could simplify CPR workflow if the guideline is revised",
+    "highlights": [
+      {
+        "id": "10.1186/s13049-026-01669-3",
+        "pmid": "",
+        "doi": "10.1186/s13049-026-01669-3",
+        "title": "Ambient oxygen enrichment during CPR: an overestimated risk?",
+        "note": "Challenges the ERC guideline requiring oxygen device removal before defib — no oxygen accumulation found"
+      }
+    ]
   },
   "dailyUpdates": [
+    {
+      "date": "2026-08-12",
+      "papers": [
+        {
+          "id": "10.1186/s13049-026-01669-3",
+          "title": "Ambient oxygen enrichment during cardiopulmonary resuscitation: an overestimated risk? - Insights from a manikin study",
+          "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+          "date": "2026-08-12",
+          "pmid": "",
+          "doi": "10.1186/s13049-026-01669-3",
+          "summary": "Mannequin study testing whether removing oxygen-delivery devices reduces ambient oxygen concentration at defibrillation sites — it found no clinically relevant oxygen accumulation, and removing devices made no difference to oxygen levels.",
+          "relevance": "🟢 High — Directly challenges current ERC guideline (followed by Australian services) requiring oxygen device removal before defibrillation; could simplify CPR workflow if adopted."
+        }
+      ]
+    },
+    {
+      "date": "2026-08-11",
+      "papers": [
+        {
+          "id": "10.1016/j.resplu.2026.101432",
+          "title": "Location-resolved performance of public-access defibrillation in an urban EMS system: a population-based study in Yokohama, Japan",
+          "journal": "Resuscitation Plus",
+          "date": "2026-08-11",
+          "pmid": "",
+          "doi": "10.1016/j.resplu.2026.101432",
+          "summary": "Population-based study of public-access defibrillation performance across different locations in urban Yokohama, Japan",
+          "relevance": "🟡 Medium — Relevant to PAD deployment strategies but abstract not available for detailed assessment"
+        }
+      ]
+    },
     {
       "date": "2026-08-10",
       "papers": [
@@ -3078,54 +3116,58 @@
   ],
   "weeklyTldr": {
     "dateRange": "28 Jul – 3 Aug 2026",
-    "summary": "NEMSIS data quality: 99.5% of EMS records represent unique patient-care episodes, only 0.5% involve multi-unit documentation\nVirtual EDs may be under-identifying family violence presentations — only 0.012% of 173,936 virtual ED presentations in Victoria were coded as FDSV\nSingle-dose gentamicin carries higher AKI risk in CKD patients (30.9% vs 13.4%) — be cautious in this population\nSTART-AI triage model reaches 90% AUROC for admission prediction, with blood tests and clinical notes driving most predictive power\nVaccine-preventable diseases are re-emerging post-COVID — EDs need heightened awareness for diphtheria, measles, and other VPDs",
+    "summary": "NEMSIS data quality validated — 99.5% of records represent unique patient-care episodes, supporting database research reliability\nPublic-access defibrillation in urban Yokohama shows location-based deployment patterns — study published but abstract not available\nVirtual ED detects minimal FDSV presentations (0.012%), suggesting under-detection in virtual care settings\nSingle-dose aminoglycosides carry higher AKI risk in CKD patients — consider renal function before ED administration",
     "highlights": [
       {
-        "text": "NEMSIS data quality: 99.5% of EMS records represent unique patient-care episodes, only 0.5% involve multi-unit documentation",
+        "text": "NEMSIS data quality validated — 99.5% of records represent unique patient-care episodes, supporting database research reliability",
         "id": "10.1080/10903127.2026.2711920"
       },
       {
-        "text": "Virtual EDs may be under-identifying family violence presentations — only 0.012% of 173,936 virtual ED presentations in Victoria were coded as FDSV",
+        "text": "Public-access defibrillation in urban Yokohama shows location-based deployment patterns — study published but abstract not available",
+        "id": "10.1016/j.resplu.2026.101432"
+      },
+      {
+        "text": "Virtual ED detects minimal FDSV presentations (0.012%), suggesting under-detection in virtual care settings",
         "id": "42538126"
       },
       {
-        "text": "Single-dose gentamicin carries higher AKI risk in CKD patients (30.9% vs 13.4%) — be cautious in this population",
+        "text": "Single-dose aminoglycosides carry higher AKI risk in CKD patients — consider renal function before ED administration",
         "id": "42538121"
       }
     ],
     "topPicks": [
       {
-        "id": "42538121",
-        "title": "The Safety of Single Aminoglycoside Dose in Emergency Departments (SAD-ED) Among Patients With and Without Chronic Kidney Disease: A Retrospective Cohort Study",
-        "authors": "Grace Lau, Charles Xin, Roy Kadira, et al.",
-        "journal": "Emergency Medicine Australasia",
-        "summary": "Retrospective cohort across four Australian hospitals — single-dose aminoglycosides caused AKI in 30.9% of CKD patients vs 13.4% without CKD (OR 2.88)",
-        "relevance": "🟢 High transferability — gentamicin is commonly given in ED/prehospital settings and CKD patients are at substantially higher risk",
-        "pmid": "42538121",
-        "doi": "10.1111/1742-6723.70318",
-        "featuredReason": "Direct clinical impact — gentamicin is commonly used and this study quantifies the real AKI risk in CKD patients, a population paramedics encounter regularly"
-      },
-      {
-        "id": "42538126",
-        "title": "Family, Domestic and Sexual Violence Presentations to a Virtual Emergency Department: A Retrospective Cohort Study",
-        "authors": "Eleanor R. Johnson, Kristina Edvardsson, Jennifer Hutton, et al.",
-        "journal": "Emergency Medicine Australasia",
-        "summary": "Retrospective cohort of Victoria's Virtual ED — only 21 FDSV presentations identified among 173,936 visits (0.012%), suggesting significant under-detection",
-        "relevance": "🟢 High transferability — virtual EDs are expanding, and paramedics need awareness that FDSV presentations may be missed in telehealth settings",
-        "pmid": "42538126",
-        "doi": "10.1111/1742-6723.70316",
-        "featuredReason": "Important safety signal — virtual EDs are expanding but may be systematically missing FDSV presentations; paramedics need to be aware of this detection gap"
-      },
-      {
         "id": "42522152",
         "title": "The Sydney Triage to Admission Risk Tool With Artificial Intelligence (START-AI) to Support Decision Making in Emergency Departments: Model Explainability and Feature Importance Analysis",
         "authors": "Michael Dinh, Elizabeth Corbett, Thuy Truc Ngo, et al.",
         "journal": "Emergency Medicine Australasia",
-        "summary": "Model explainability analysis of START-AI — AUROC improved from 0.78 to 0.90 with AI features, driven primarily by blood test results, triage comments, and clinical notes",
-        "relevance": "🟢 High transferability — Australian-developed tool with strong validation results; AI triage support is coming to pre-hospital care and this shows what features matter most",
+        "summary": "Model explainability analysis found triage comments, case notes, blood tests (lactate, CRP), and CT orders drive admission prediction — vital signs contributed less",
+        "relevance": "🟢 High transferability — Australian-developed tool for ED admission prediction; insights about predictive features could inform future prehospital risk stratification",
         "pmid": "42522152",
         "doi": "10.1111/1742-6723.70285",
-        "featuredReason": "Future of triage — Australian AI tool achieving 90% prediction accuracy shows what's coming and validates that clinical documentation (not just vitals) drives decision support"
+        "featuredReason": "Australian-developed AI triage tool with strong performance (AUROC 0.90). Findings about which clinical features predict admission could inform future prehospital decision support tools for transport decisions and hospital notification."
+      },
+      {
+        "id": "42538133",
+        "title": "Vaccine Preventable Diseases in the Emergency Department",
+        "authors": "Daphne Cohen, Emefa Kporku",
+        "journal": "Emergency Medicine Australasia",
+        "summary": "Editorial discusses re-emerging vaccine-preventable diseases in Australasia due to declining coverage post-COVID, with implications for ED recognition and public health response",
+        "relevance": "🟢 High transferability — Australasian context; paramedics are frontline in recognising VPDs and supporting public health responses",
+        "pmid": "42538133",
+        "doi": "10.1111/1742-6723.70317",
+        "featuredReason": "Australasian focus on re-emerging VPDs. With declining immunisation coverage, paramedics are frontline in recognising diphtheria, measles and other diseases we haven't seen routinely in years. Early recognition protects crews and supports public health responses."
+      },
+      {
+        "id": "10.1080/10903127.2026.2711920",
+        "title": "The estimated prevalence of multiple record encounters in the National Emergency Medical Services Information System",
+        "authors": "Sriram Ramgopal, Jake Toy, Rebecca E. Cash, et al.",
+        "journal": "Prehospital Emergency Care",
+        "summary": "Retrospective analysis of 36.8M NEMSIS records found 99.5% represent unique patient-care episodes, validating the database for large-scale EMS research despite potential multi-unit documentation concerns",
+        "relevance": "🟡 Medium transferability — Validates data quality for research but doesn't change on-road practice",
+        "pmid": "",
+        "doi": "10.1080/10903127.2026.2711920",
+        "featuredReason": "Validates NEMSIS data quality, supporting confidence in large-scale prehospital database research that informs practice. Good for understanding the limitations and reliability of the evidence base we rely on."
       }
     ]
   }
