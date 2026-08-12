@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-08-11T21:20:52Z",
-  "lastUpdatedSydney": "2026-08-12 07:20 AEST",
-  "lastUpdatedDate": "2026-08-12",
+  "lastUpdated": "2026-08-12T21:20:02Z",
+  "lastUpdatedSydney": "2026-08-13 07:20 AEST",
+  "lastUpdatedDate": "2026-08-13",
   "featuredPapers": [
     {
       "id": "10.1016/j.resplu.2026.101422",
@@ -971,19 +971,19 @@
   ],
   "funFact": {
     "category": "weird",
-    "fact": "In 2010, a man in Serbia survived being impaled through the chest by a 1.5-metre fence post. The post entered through his back and exited through his neck. Surgeons removed it in a 5-hour operation. He was back at work within months. Sometimes the human body just refuses to die."
+    "fact": "Your eyes have a separate immune system. If your body's main immune system discovers your eyes exist, it can attack them as foreign tissue. This is why eye injuries that breach the globe can trigger sympathetic ophthalmia — the immune system suddenly realises there's something in the socket and attacks both eyes."
   },
   "tldr": {
     "date": "2026-08-12",
     "paperCount": 1,
-    "summary": "• A manikin study finds no clinically relevant oxygen accumulation at defibrillation sites, challenging the ERC guideline requiring oxygen device removal before defibrillation\n• Removing oxygen devices made no difference to ambient oxygen concentrations\n• This could simplify CPR workflow if the guideline is revised",
+    "summary": "• Manikin study challenges ERC guideline to remove oxygen devices 1m before defibrillation — found no clinically relevant oxygen accumulation at defibrillation sites.\n• Removing oxygen-delivery devices did not lower oxygen concentrations compared with leaving them near the patient's head.\n• This routine safety practice drilled into all paramedics may be unnecessary.",
     "highlights": [
       {
         "id": "10.1186/s13049-026-01669-3",
         "pmid": "",
         "doi": "10.1186/s13049-026-01669-3",
         "title": "Ambient oxygen enrichment during CPR: an overestimated risk?",
-        "note": "Challenges the ERC guideline requiring oxygen device removal before defib — no oxygen accumulation found"
+        "note": "Challenges a core cardiac arrest safety practice — removing oxygen before defibrillation may be unnecessary"
       }
     ]
   },
