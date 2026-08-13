@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-08-12T21:20:02Z",
-  "lastUpdatedSydney": "2026-08-13 07:20 AEST",
-  "lastUpdatedDate": "2026-08-13",
+  "lastUpdated": "2026-08-13T21:20:12Z",
+  "lastUpdatedSydney": "2026-08-14 07:20 AEST",
+  "lastUpdatedDate": "2026-08-14",
   "featuredPapers": [
     {
       "id": "10.1016/j.resplu.2026.101422",
@@ -48,15 +48,15 @@
       "featuredReason": "Paediatric OHCA is directly relevant to Australian paramedic practice; Singapore provides a useful regional comparator with similar urban EMS systems."
     },
     {
-      "id": "10.1016/j.resplu.2026.101427",
-      "title": "Impact of calcium administration on survival and neurologic outcomes in adults with in-hospital cardiac arrest",
-      "journal": "Resuscitation Plus",
-      "date": "2026-08-09",
-      "pmid": "",
-      "doi": "10.1016/j.resplu.2026.101427",
-      "summary": "Retrospective cohort study of 599 in-hospital cardiac arrest patients testing whether calcium administration improves outcomes — calcium was associated with significantly lower rates of sustained ROSC, survival to discharge, and favourable neuro outcomes.",
-      "relevance": "🟡 Medium — In-hospital context limits direct prehospital applicability, but findings support current guideline recommendations against routine calcium use during undifferentiated cardiac arrest.",
-      "featuredReason": "In-hospital context limits direct prehospital applicability, but findings support current guideline recommendations against routine calcium use during undifferentiated cardiac arrest."
+      "id": "42307216",
+      "title": "Ketamine Versus Propofol for Sedation in Acute Psychiatric Emergencies During Aeromedical Retrieval: A Randomized Clinical Trial",
+      "journal": "Prehospital Emergency Care",
+      "date": "2026-07-27",
+      "pmid": "42307216",
+      "doi": "10.1080/10903127.2026.2690178",
+      "summary": "In this RCT of 170 patients, ketamine was associated with fewer adverse events compared to propofol when used for sedation during aeromedical retrieval of patients experiencing acute psychiatric agitation.",
+      "relevance": "🟢 High",
+      "featuredReason": "Selected for clinical relevance to prehospital practice."
     }
   ],
   "funFacts": [
@@ -971,19 +971,19 @@
   ],
   "funFact": {
     "category": "weird",
-    "fact": "Your eyes have a separate immune system. If your body's main immune system discovers your eyes exist, it can attack them as foreign tissue. This is why eye injuries that breach the globe can trigger sympathetic ophthalmia — the immune system suddenly realises there's something in the socket and attacks both eyes."
+    "fact": "In the 1700s, patients were sometimes submerged in horse manure as a treatment for various ailments — the thinking being that the warmth and 'vapours' were therapeutic. It was neither warm enough nor vapoury enough to actually help. But they tried."
   },
   "tldr": {
-    "date": "2026-08-12",
+    "date": "2026-08-13",
     "paperCount": 1,
-    "summary": "• Manikin study challenges ERC guideline to remove oxygen devices 1m before defibrillation — found no clinically relevant oxygen accumulation at defibrillation sites.\n• Removing oxygen-delivery devices did not lower oxygen concentrations compared with leaving them near the patient's head.\n• This routine safety practice drilled into all paramedics may be unnecessary.",
+    "summary": "A manikin study challenges the ERC guideline requiring oxygen device removal before defibrillation, finding no reduction in ambient oxygen levels when devices are moved 1m away.",
     "highlights": [
       {
         "id": "10.1186/s13049-026-01669-3",
         "pmid": "",
         "doi": "10.1186/s13049-026-01669-3",
-        "title": "Ambient oxygen enrichment during CPR: an overestimated risk?",
-        "note": "Challenges a core cardiac arrest safety practice — removing oxygen before defibrillation may be unnecessary"
+        "title": "Ambient oxygen enrichment during cardiopulmonary resuscitation",
+        "note": "Finds that removing oxygen devices before defibrillation doesn't reduce ambient oxygen — the fire risk may be overestimated, potentially simplifying cardiac arrest workflows."
       }
     ]
   },
