@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-08-13T21:20:12Z",
-  "lastUpdatedSydney": "2026-08-14 07:20 AEST",
-  "lastUpdatedDate": "2026-08-14",
+  "lastUpdated": "2026-08-14T21:20:21Z",
+  "lastUpdatedSydney": "2026-08-15 07:20 AEST",
+  "lastUpdatedDate": "2026-08-15",
   "featuredPapers": [
     {
       "id": "10.1016/j.resplu.2026.101422",
@@ -37,17 +37,6 @@
       "featuredReason": "Directly challenges current ERC guideline (followed by Australian services) requiring oxygen device removal before defibrillation; could simplify CPR workflow if adopted."
     },
     {
-      "id": "10.1016/j.resplu.2026.101425",
-      "title": "Incidence, aetiologies and survival outcomes of paediatric out-of-hospital cardiac arrest in Singapore",
-      "journal": "Resuscitation Plus",
-      "date": "2026-08-10",
-      "pmid": "",
-      "doi": "10.1016/j.resplu.2026.101425",
-      "summary": "Abstract not yet available (ahead-of-print). Observational study reporting incidence, aetiologies and survival outcomes of paediatric out-of-hospital cardiac arrest in Singapore.",
-      "relevance": "🟢 High — Paediatric OHCA is directly relevant to Australian paramedic practice; Singapore provides a useful regional comparator with similar urban EMS systems.",
-      "featuredReason": "Paediatric OHCA is directly relevant to Australian paramedic practice; Singapore provides a useful regional comparator with similar urban EMS systems."
-    },
-    {
       "id": "42307216",
       "title": "Ketamine Versus Propofol for Sedation in Acute Psychiatric Emergencies During Aeromedical Retrieval: A Randomized Clinical Trial",
       "journal": "Prehospital Emergency Care",
@@ -55,6 +44,17 @@
       "pmid": "42307216",
       "doi": "10.1080/10903127.2026.2690178",
       "summary": "In this RCT of 170 patients, ketamine was associated with fewer adverse events compared to propofol when used for sedation during aeromedical retrieval of patients experiencing acute psychiatric agitation.",
+      "relevance": "🟢 High",
+      "featuredReason": "Selected for clinical relevance to prehospital practice."
+    },
+    {
+      "id": "41996547",
+      "title": "Intranasal Versus Intramuscular Midazolam in Pediatric Seizure Control: A Systematic Review and Meta-Analysis",
+      "journal": "Prehospital Emergency Care",
+      "date": "2026-05-06",
+      "pmid": "41996547",
+      "doi": "10.1080/10903127.2026.2658592",
+      "summary": "Meta-analysis testing whether intranasal or intramuscular midazolam works better for paediatric seizures without cannula access — intramuscular midazolam was associated with faster seizure termination and less need for rescue therapy, especially in the prehospital setting.",
       "relevance": "🟢 High",
       "featuredReason": "Selected for clinical relevance to prehospital practice."
     }
@@ -970,20 +970,20 @@
     }
   ],
   "funFact": {
-    "category": "weird",
-    "fact": "In the 1700s, patients were sometimes submerged in horse manure as a treatment for various ailments — the thinking being that the warmth and 'vapours' were therapeutic. It was neither warm enough nor vapoury enough to actually help. But they tried."
+    "category": "pharmacology",
+    "fact": "Adrenaline's been thrown into cardiac arrests since 1906, but it didn't become standard CPR gear until the 1960s — meaning for over fifty years, we just sort of... hoped for the best."
   },
   "tldr": {
-    "date": "2026-08-13",
+    "date": "2026-08-15",
     "paperCount": 1,
-    "summary": "A manikin study challenges the ERC guideline requiring oxygen device removal before defibrillation, finding no reduction in ambient oxygen levels when devices are moved 1m away.",
+    "summary": "• Manikin study finds no oxygen accumulation at defibrillation sites\n• Removing oxygen devices before shock doesn't reduce fire risk\n• Challenges current ERC guideline to move oxygen sources 1m away",
     "highlights": [
       {
         "id": "10.1186/s13049-026-01669-3",
         "pmid": "",
         "doi": "10.1186/s13049-026-01669-3",
-        "title": "Ambient oxygen enrichment during cardiopulmonary resuscitation",
-        "note": "Finds that removing oxygen devices before defibrillation doesn't reduce ambient oxygen — the fire risk may be overestimated, potentially simplifying cardiac arrest workflows."
+        "title": "Ambient oxygen enrichment during CPR",
+        "note": "Found oxygen concentrations stayed at normal ambient levels (21.6%) during CPR regardless of oxygen device placement, suggesting the fire safety guideline may be unnecessary"
       }
     ]
   },
