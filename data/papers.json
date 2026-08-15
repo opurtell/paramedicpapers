@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-08-14T21:20:21Z",
-  "lastUpdatedSydney": "2026-08-15 07:20 AEST",
-  "lastUpdatedDate": "2026-08-15",
+  "lastUpdated": "2026-08-15T21:20:30Z",
+  "lastUpdatedSydney": "2026-08-16 07:20 AEST",
+  "lastUpdatedDate": "2026-08-16",
   "featuredPapers": [
     {
       "id": "10.1016/j.resplu.2026.101422",
@@ -970,24 +970,69 @@
     }
   ],
   "funFact": {
-    "category": "pharmacology",
-    "fact": "Adrenaline's been thrown into cardiac arrests since 1906, but it didn't become standard CPR gear until the 1960s — meaning for over fifty years, we just sort of... hoped for the best."
+    "category": "cardiac",
+    "fact": "VF is the most common initial rhythm in out-of-hospital cardiac arrest — and survival drops roughly 10% for every single minute defibrillation is delayed. Every minute. Not exaggerating."
   },
   "tldr": {
-    "date": "2026-08-15",
-    "paperCount": 1,
-    "summary": "• Manikin study finds no oxygen accumulation at defibrillation sites\n• Removing oxygen devices before shock doesn't reduce fire risk\n• Challenges current ERC guideline to move oxygen sources 1m away",
+    "date": "2026-08-16",
+    "paperCount": 4,
+    "summary": "• Prehospital NEWS outperforms Shock Index for trauma mortality prediction (AUROC 0.87-0.96 vs 0.48-0.79)\n• Whole blood shows consistent physiologic benefits in hemorrhagic shock, particularly for high-risk and penetrating trauma\n• Hyperoxemia common (24.5%) — intubation and long transports are key predictors\n• Malaysian OHCA registry shows low AED deployment (7.1%) despite bystander CPR in 43.5% of cases",
     "highlights": [
       {
-        "id": "10.1186/s13049-026-01669-3",
+        "id": "10.1016/j.injury.2026.113598",
         "pmid": "",
-        "doi": "10.1186/s13049-026-01669-3",
-        "title": "Ambient oxygen enrichment during CPR",
-        "note": "Found oxygen concentrations stayed at normal ambient levels (21.6%) during CPR regardless of oxygen device placement, suggesting the fire safety guideline may be unnecessary"
+        "doi": "10.1016/j.injury.2026.113598",
+        "title": "Prehospital NEWS outperforms Shock Index for trauma triage",
+        "note": "Large systematic review (22 studies, up to 1.4M patients) shows NEWS has excellent mortality prediction accuracy."
       }
     ]
   },
   "dailyUpdates": [
+    {
+      "date": "2026-08-16",
+      "papers": [
+        {
+          "id": "10.1016/j.injury.2026.113598",
+          "title": "Prehospital national early warning score outperforms shock index in predicting mortality and resource utilisation in adult trauma: A systematic review",
+          "journal": "Injury",
+          "date": "2026-08-16",
+          "pmid": "",
+          "doi": "10.1016/j.injury.2026.113598",
+          "summary": "Systematic review of 22 studies (184 to 1.4M patients) found prehospital NEWS showed excellent discrimination for short-term mortality (AUROC 0.87-0.96) and reliably predicted transfusion needs, outperforming Shock Index.",
+          "relevance": "🟢 High — Directly relevant to prehospital trauma triage, large evidence base across diverse EMS systems with clear clinical application."
+        },
+        {
+          "id": "10.1016/j.jss.2026.07.026",
+          "title": "Prehospital Whole Blood Administration in Adults With Hemorrhagic Shock and Its Association With Shock Physiology and Clinical Outcomes: A Systematic Review",
+          "journal": "Journal of Surgical Research",
+          "date": "2026-08-16",
+          "pmid": "",
+          "doi": "10.1016/j.jss.2026.07.026",
+          "summary": "Systematic review of 13 studies found prehospital whole blood consistently improved shock physiology (greater SI reduction, higher shock reversal rates) and showed potential survival benefit in high-risk and penetrating trauma patients, though overall mortality benefit was not uniform.",
+          "relevance": "🟢 High — Directly relevant to prehospital blood product protocols, growing evidence base with clear physiologic advantages over component therapy."
+        },
+        {
+          "id": "10.1016/j.ajem.2026.08.007",
+          "title": "Independent predictors of hyperoxemia following prehospital oxygen therapy: A prospective cohort study",
+          "journal": "The American Journal of Emergency Medicine",
+          "date": "2026-08-16",
+          "pmid": "",
+          "doi": "10.1016/j.ajem.2026.08.007",
+          "summary": "Prospective cohort of 245 patients found 24.5% had hyperoxemia (PaO₂ >120 mmHg), with intubation (OR 38.89) and transport duration ≥24 min (OR 13.74) as independent predictors.",
+          "relevance": "🟢 High — Directly relevant to daily paramedic practice, clear actionable findings about oxygen titration and reassessment during transport."
+        },
+        {
+          "id": "10.1016/j.resplu.2026.101435",
+          "title": "Establishment of an out-of-hospital cardiac arrest registry in Penang, Malaysia",
+          "journal": "Resuscitation Plus",
+          "date": "2026-08-16",
+          "pmid": "",
+          "doi": "10.1016/j.resplu.2026.101435",
+          "summary": "Descriptive analysis of 5,087 OHCA cases showed 16.3% received EMS resuscitation attempts, with only 1.3% 30-day survival despite bystander CPR in 43.5% of cases, and AED deployment in only 7.1%.",
+          "relevance": "🟡 Medium — Valuable registry data but from Malaysia with different EMS system and longer response times (median 21 min), though low AED deployment findings are broadly relevant."
+        }
+      ]
+    },
     {
       "date": "2026-08-12",
       "papers": [
