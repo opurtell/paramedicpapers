@@ -1,19 +1,8 @@
 {
-  "lastUpdated": "2026-08-16T21:20:40Z",
-  "lastUpdatedSydney": "2026-08-17 07:20 AEST",
-  "lastUpdatedDate": "2026-08-17",
+  "lastUpdated": "2026-08-17T21:20:51Z",
+  "lastUpdatedSydney": "2026-08-18 07:20 AEST",
+  "lastUpdatedDate": "2026-08-18",
   "featuredPapers": [
-    {
-      "id": "10.1016/j.resplu.2026.101422",
-      "title": "Bag size for manual ventilation during cardiopulmonary resuscitation in adult cardiac arrest: a systematic review",
-      "journal": "Resuscitation Plus",
-      "date": "2026-08-09",
-      "pmid": "",
-      "doi": "10.1016/j.resplu.2026.101422",
-      "summary": "Systematic review testing whether smaller self-inflating bags improve CPR outcomes — they found limited very-low-certainty evidence suggesting smaller bags (450-700mL) were associated with lower survival with favourable neuro outcomes compared to standard adult bags (1000-1685mL).",
-      "relevance": "🟢 High — Directly relevant to prehospital CPR practice — bag valve choice is a standard clinical decision and these findings challenge the assumption that smaller bags are safer for airway protection during CPR.",
-      "featuredReason": "Directly relevant to prehospital CPR practice — bag valve choice is a standard clinical decision and these findings challenge the assumption that smaller bags are safer for airway protection during CPR."
-    },
     {
       "id": "10.1080/10903127.2026.2674263",
       "title": "Use of double sequential external defibrillation in the United States before and after the DOSE VF randomized clinical trial",
@@ -24,6 +13,28 @@
       "summary": "Nationwide observational study examined trends in DSED use for refractory VF before and after publication of the DOSE VF trial.",
       "relevance": "🟢 High",
       "featuredReason": "Selected for clinical relevance to prehospital practice."
+    },
+    {
+      "id": "10.1186/s13049-026-01674-6",
+      "title": "Clinical outcomes and opportunities for improvement across modified trauma quality improvement cohorts: a registry-based cohort study",
+      "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+      "date": "2026-08-18",
+      "pmid": "",
+      "doi": "10.1186/s13049-026-01674-6",
+      "summary": "Registry-based cohort study of 8,298 trauma patients found that blunt multisystem cohorts had the highest opportunities-for-improvement rates (10.6% with TBI, 16.9% without) across multiple quality domains including potentially preventable deaths and clinical judgement errors.",
+      "relevance": "🟡 Medium — Scandinavian registry data; patterns may differ in Australian systems. Descriptive study identifies problems but doesn't test interventions.",
+      "featuredReason": "Scandinavian registry data; patterns may differ in Australian systems. Descriptive study identifies problems but doesn't test interventions."
+    },
+    {
+      "id": "10.1016/j.resplu.2026.101422",
+      "title": "Bag size for manual ventilation during cardiopulmonary resuscitation in adult cardiac arrest: a systematic review",
+      "journal": "Resuscitation Plus",
+      "date": "2026-08-09",
+      "pmid": "",
+      "doi": "10.1016/j.resplu.2026.101422",
+      "summary": "Systematic review testing whether smaller self-inflating bags improve CPR outcomes — they found limited very-low-certainty evidence suggesting smaller bags (450-700mL) were associated with lower survival with favourable neuro outcomes compared to standard adult bags (1000-1685mL).",
+      "relevance": "🟢 High — Directly relevant to prehospital CPR practice — bag valve choice is a standard clinical decision and these findings challenge the assumption that smaller bags are safer for airway protection during CPR.",
+      "featuredReason": "Directly relevant to prehospital CPR practice — bag valve choice is a standard clinical decision and these findings challenge the assumption that smaller bags are safer for airway protection during CPR."
     },
     {
       "id": "42307216",
@@ -44,17 +55,6 @@
       "pmid": "41996547",
       "doi": "10.1080/10903127.2026.2658592",
       "summary": "Meta-analysis testing whether intranasal or intramuscular midazolam works better for paediatric seizures without cannula access — intramuscular midazolam was associated with faster seizure termination and less need for rescue therapy, especially in the prehospital setting.",
-      "relevance": "🟢 High",
-      "featuredReason": "Selected for clinical relevance to prehospital practice."
-    },
-    {
-      "id": "41967757",
-      "title": "Healthcare costs of expedited transport compared with standard care following out-of-hospital cardiac arrest: results from the EVIDENCE randomised controlled trial",
-      "journal": "Resuscitation",
-      "date": "2026-04-30",
-      "pmid": "41967757",
-      "doi": "10.1016/j.resuscitation.2026.111083",
-      "summary": "Greater Sydney costing analysis of expedited OHCA transport for possible ECPR versus standard care — overall health system costs were comparable, with higher costs when patients arrived during ECPR business hours.",
       "relevance": "🟢 High",
       "featuredReason": "Selected for clinical relevance to prehospital practice."
     }
@@ -970,16 +970,59 @@
     }
   ],
   "funFact": {
-    "category": "history",
-    "fact": "The first recorded mouth-to-mouth was around 800 BC — the biblical Elisha breathing life back into a child. Modern CPR didn't come together until 1960. So for about 2,800 years, we just... didn't have a plan."
+    "category": "anatomy",
+    "fact": "Your body contains roughly 96,000 kilometres of blood vessels. That's enough to wrap around the Earth more than twice. You're basically a walking tube map."
   },
   "tldr": {
     "date": "2026-08-17",
-    "paperCount": 0,
-    "summary": "No new papers today.",
-    "highlights": []
+    "paperCount": 3,
+    "summary": "• Porcine model suggests pre-arrest glycemic state may affect defibrillation requirements, but animal research limits direct clinical application\n• Nordic trauma registry shows high opportunity-for-improvement rates in blunt multisystem patients, but Scandinavian patterns may differ in Australian systems\n• Scoping review reveals gender disparities in Nordic EMS — women report higher work demands, violence concerns, and mental health issues",
+    "highlights": [
+      {
+        "id": "10.1016/j.resplu.2026.101434",
+        "pmid": "",
+        "doi": "10.1016/j.resplu.2026.101434",
+        "title": "Impact of pre-arrest glycemic state on defibrillation requirements",
+        "note": "Porcine model finds lower pre-arrest glycemia associated with more shocks and longer CPR — intriguing mechanistic insight"
+      }
+    ]
   },
   "dailyUpdates": [
+    {
+      "date": "2026-08-18",
+      "papers": [
+        {
+          "id": "10.1016/j.resplu.2026.101434",
+          "title": "Impact of pre-arrest glycemic state induced by prolonged fasting on defibrillation requirements: a prospective porcine model of ventricular fibrillation cardiac arrest",
+          "journal": "Resuscitation Plus",
+          "date": "2026-08-18",
+          "pmid": "",
+          "doi": "10.1016/j.resplu.2026.101434",
+          "summary": "Porcine model of ventricular fibrillation cardiac arrest found that prolonged fasting-induced lower pre-arrest glycemia was associated with increased defibrillation requirements (median 2 vs 1 shock) and longer CPR duration, despite similar sustained ROSC rates.",
+          "relevance": "🟡 Medium — Animal model provides mechanistic insight but can't be directly applied to human resuscitation practice. Glycemic state is not routinely assessed in cardiac arrest."
+        },
+        {
+          "id": "10.1186/s13049-026-01674-6",
+          "title": "Clinical outcomes and opportunities for improvement across modified trauma quality improvement cohorts: a registry-based cohort study",
+          "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+          "date": "2026-08-18",
+          "pmid": "",
+          "doi": "10.1186/s13049-026-01674-6",
+          "summary": "Registry-based cohort study of 8,298 trauma patients found that blunt multisystem cohorts had the highest opportunities-for-improvement rates (10.6% with TBI, 16.9% without) across multiple quality domains including potentially preventable deaths and clinical judgement errors.",
+          "relevance": "🟡 Medium — Scandinavian registry data; patterns may differ in Australian systems. Descriptive study identifies problems but doesn't test interventions."
+        },
+        {
+          "id": "10.1186/s13049-026-01677-3",
+          "title": "Fitting in or standing out: a scoping review of gender-related findings in Nordic EMS through an organizational socialization lens",
+          "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+          "date": "2026-08-18",
+          "pmid": "",
+          "doi": "10.1186/s13049-026-01677-3",
+          "summary": "Scoping review of gender-related findings in Nordic EMS found women reported higher physical and psychosocial work demands, greater concerns about violence, and higher levels of mental health problems and sleep disturbances compared to male colleagues.",
+          "relevance": "🟡 Medium — Nordic context with different workforce structures and regulations. Themes of workplace strain and violence are relevant but findings may not directly translate to Australian services."
+        }
+      ]
+    },
     {
       "date": "2026-08-16",
       "papers": [
