@@ -1,8 +1,41 @@
 {
-  "lastUpdated": "2026-08-17T21:20:51Z",
-  "lastUpdatedSydney": "2026-08-18 07:20 AEST",
-  "lastUpdatedDate": "2026-08-18",
+  "lastUpdated": "2026-08-18T21:20:00Z",
+  "lastUpdatedSydney": "2026-08-19 07:20 AEST",
+  "lastUpdatedDate": "2026-08-19",
   "featuredPapers": [
+    {
+      "id": "10.1016/j.resplu.2026.101429",
+      "title": "Incidence and impact of loss of pulsatility on outcomes after extracorporeal cardiopulmonary resuscitation – A retrospective cohort study",
+      "journal": "Resuscitation Plus",
+      "date": "2026-08-18",
+      "pmid": "",
+      "doi": "10.1016/j.resplu.2026.101429",
+      "summary": "Retrospective cohort of 221 ECPR patients found loss of pulsatility (zero pulse pressure) occurred in 49% of cases and was associated with significantly higher in-hospital mortality (74% vs 48%), with each additional hour of non-pulsatility increasing mortality risk by 17%",
+      "relevance": "🟡 Medium transferability — Highly specialized ECMO center study with limited direct prehospital relevance, though useful for understanding ECPR prognostication",
+      "featuredReason": "Highly specialized ECMO center study with limited direct prehospital relevance, though useful for understanding ECPR prognostication"
+    },
+    {
+      "id": "10.1186/s13049-026-01672-8",
+      "title": "Non-urgent emergency department utilization in adults: a systematic review of associated factors across diverse health systems",
+      "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+      "date": "2026-08-18",
+      "pmid": "",
+      "doi": "10.1186/s13049-026-01672-8",
+      "summary": "Systematic review of 32 studies across 21 countries identified factors associated with non-urgent ED utilisation, with frequent prior ED visits (aOR up to 82) and patient perception of non-serious illness (aOR up to 21) being the strongest predictors",
+      "relevance": "🟡 Medium transferability — Provides operational context for understanding ED utilisation patterns, though in-hospital focus",
+      "featuredReason": "Provides operational context for understanding ED utilisation patterns, though in-hospital focus"
+    },
+    {
+      "id": "10.1186/s13049-026-01673-7",
+      "title": "Effect of an app-guided advanced cardiac life support algorithm on teamwork, non-technical skills, and workload in simulated in-hospital cardiac arrest: a randomized controlled feasibility trial",
+      "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+      "date": "2026-08-18",
+      "pmid": "",
+      "doi": "10.1186/s13049-026-01673-7",
+      "summary": "Randomized simulation trial of 40 teams testing the 'CPR Leader' app during in-hospital cardiac arrest found no meaningful improvement in team performance, non-technical skills, or ALS algorithm adherence compared to control",
+      "relevance": "🟡 Medium transferability — Simulation-based in-hospital study shows mobile decision support tools may not deliver expected benefits, but limited prehospital transferability",
+      "featuredReason": "Simulation-based in-hospital study shows mobile decision support tools may not deliver expected benefits, but limited prehospital transferability"
+    },
     {
       "id": "10.1080/10903127.2026.2674263",
       "title": "Use of double sequential external defibrillation in the United States before and after the DOSE VF randomized clinical trial",
@@ -24,39 +57,6 @@
       "summary": "Registry-based cohort study of 8,298 trauma patients found that blunt multisystem cohorts had the highest opportunities-for-improvement rates (10.6% with TBI, 16.9% without) across multiple quality domains including potentially preventable deaths and clinical judgement errors.",
       "relevance": "🟡 Medium — Scandinavian registry data; patterns may differ in Australian systems. Descriptive study identifies problems but doesn't test interventions.",
       "featuredReason": "Scandinavian registry data; patterns may differ in Australian systems. Descriptive study identifies problems but doesn't test interventions."
-    },
-    {
-      "id": "10.1016/j.resplu.2026.101422",
-      "title": "Bag size for manual ventilation during cardiopulmonary resuscitation in adult cardiac arrest: a systematic review",
-      "journal": "Resuscitation Plus",
-      "date": "2026-08-09",
-      "pmid": "",
-      "doi": "10.1016/j.resplu.2026.101422",
-      "summary": "Systematic review testing whether smaller self-inflating bags improve CPR outcomes — they found limited very-low-certainty evidence suggesting smaller bags (450-700mL) were associated with lower survival with favourable neuro outcomes compared to standard adult bags (1000-1685mL).",
-      "relevance": "🟢 High — Directly relevant to prehospital CPR practice — bag valve choice is a standard clinical decision and these findings challenge the assumption that smaller bags are safer for airway protection during CPR.",
-      "featuredReason": "Directly relevant to prehospital CPR practice — bag valve choice is a standard clinical decision and these findings challenge the assumption that smaller bags are safer for airway protection during CPR."
-    },
-    {
-      "id": "42307216",
-      "title": "Ketamine Versus Propofol for Sedation in Acute Psychiatric Emergencies During Aeromedical Retrieval: A Randomized Clinical Trial",
-      "journal": "Prehospital Emergency Care",
-      "date": "2026-07-27",
-      "pmid": "42307216",
-      "doi": "10.1080/10903127.2026.2690178",
-      "summary": "In this RCT of 170 patients, ketamine was associated with fewer adverse events compared to propofol when used for sedation during aeromedical retrieval of patients experiencing acute psychiatric agitation.",
-      "relevance": "🟢 High",
-      "featuredReason": "Selected for clinical relevance to prehospital practice."
-    },
-    {
-      "id": "41996547",
-      "title": "Intranasal Versus Intramuscular Midazolam in Pediatric Seizure Control: A Systematic Review and Meta-Analysis",
-      "journal": "Prehospital Emergency Care",
-      "date": "2026-05-06",
-      "pmid": "41996547",
-      "doi": "10.1080/10903127.2026.2658592",
-      "summary": "Meta-analysis testing whether intranasal or intramuscular midazolam works better for paediatric seizures without cannula access — intramuscular midazolam was associated with faster seizure termination and less need for rescue therapy, especially in the prehospital setting.",
-      "relevance": "🟢 High",
-      "featuredReason": "Selected for clinical relevance to prehospital practice."
     }
   ],
   "funFacts": [
@@ -970,22 +970,14 @@
     }
   ],
   "funFact": {
-    "category": "anatomy",
-    "fact": "Your body contains roughly 96,000 kilometres of blood vessels. That's enough to wrap around the Earth more than twice. You're basically a walking tube map."
+    "category": "pharmacology",
+    "fact": "Atropine got the boot from the cardiac arrest algorithm in 2010 after evidence showed it did precisely nothing for PEA or asystole. Still lifesaving for bradycardia and organophosphate poisoning though — just don't reach for it in a flatline."
   },
   "tldr": {
-    "date": "2026-08-17",
-    "paperCount": 3,
-    "summary": "• Porcine model suggests pre-arrest glycemic state may affect defibrillation requirements, but animal research limits direct clinical application\n• Nordic trauma registry shows high opportunity-for-improvement rates in blunt multisystem patients, but Scandinavian patterns may differ in Australian systems\n• Scoping review reveals gender disparities in Nordic EMS — women report higher work demands, violence concerns, and mental health issues",
-    "highlights": [
-      {
-        "id": "10.1016/j.resplu.2026.101434",
-        "pmid": "",
-        "doi": "10.1016/j.resplu.2026.101434",
-        "title": "Impact of pre-arrest glycemic state on defibrillation requirements",
-        "note": "Porcine model finds lower pre-arrest glycemia associated with more shocks and longer CPR — intriguing mechanistic insight"
-      }
-    ]
+    "date": "2026-08-19",
+    "paperCount": 0,
+    "summary": "No new papers today.",
+    "highlights": []
   },
   "dailyUpdates": [
     {
@@ -1020,6 +1012,56 @@
           "doi": "10.1186/s13049-026-01677-3",
           "summary": "Scoping review of gender-related findings in Nordic EMS found women reported higher physical and psychosocial work demands, greater concerns about violence, and higher levels of mental health problems and sleep disturbances compared to male colleagues.",
           "relevance": "🟡 Medium — Nordic context with different workforce structures and regulations. Themes of workplace strain and violence are relevant but findings may not directly translate to Australian services."
+        },
+        {
+          "id": "10.1080/10903127.2026.2713129",
+          "title": "Patterns of Online Medical Direction Utilization in an Urban EMS System: A Retrospective Analysis of 9,944 Consultations",
+          "journal": "Prehospital Emergency Care",
+          "date": "2026-08-18",
+          "pmid": "",
+          "doi": "10.1080/10903127.2026.2713129",
+          "summary": "Retrospective analysis of 9,944 online medical direction consultations from 2016-2024 found OLMD is primarily used for patient refusals (65%) with 97% physician approval, and overall ~93% agreement between paramedic requests and physician decisions",
+          "relevance": "🟢 High transferability — Large real-world EMS dataset directly applicable to OLMD practice patterns and protocol refinement"
+        },
+        {
+          "id": "10.1016/j.resplu.2026.101429",
+          "title": "Incidence and impact of loss of pulsatility on outcomes after extracorporeal cardiopulmonary resuscitation – A retrospective cohort study",
+          "journal": "Resuscitation Plus",
+          "date": "2026-08-18",
+          "pmid": "",
+          "doi": "10.1016/j.resplu.2026.101429",
+          "summary": "Retrospective cohort of 221 ECPR patients found loss of pulsatility (zero pulse pressure) occurred in 49% of cases and was associated with significantly higher in-hospital mortality (74% vs 48%), with each additional hour of non-pulsatility increasing mortality risk by 17%",
+          "relevance": "🟡 Medium transferability — Highly specialized ECMO center study with limited direct prehospital relevance, though useful for understanding ECPR prognostication"
+        },
+        {
+          "id": "10.1186/s13049-026-01672-8",
+          "title": "Non-urgent emergency department utilization in adults: a systematic review of associated factors across diverse health systems",
+          "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+          "date": "2026-08-18",
+          "pmid": "",
+          "doi": "10.1186/s13049-026-01672-8",
+          "summary": "Systematic review of 32 studies across 21 countries identified factors associated with non-urgent ED utilisation, with frequent prior ED visits (aOR up to 82) and patient perception of non-serious illness (aOR up to 21) being the strongest predictors",
+          "relevance": "🟡 Medium transferability — Provides operational context for understanding ED utilisation patterns, though in-hospital focus"
+        },
+        {
+          "id": "10.1186/s13049-026-01673-7",
+          "title": "Effect of an app-guided advanced cardiac life support algorithm on teamwork, non-technical skills, and workload in simulated in-hospital cardiac arrest: a randomized controlled feasibility trial",
+          "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+          "date": "2026-08-18",
+          "pmid": "",
+          "doi": "10.1186/s13049-026-01673-7",
+          "summary": "Randomized simulation trial of 40 teams testing the 'CPR Leader' app during in-hospital cardiac arrest found no meaningful improvement in team performance, non-technical skills, or ALS algorithm adherence compared to control",
+          "relevance": "🟡 Medium transferability — Simulation-based in-hospital study shows mobile decision support tools may not deliver expected benefits, but limited prehospital transferability"
+        },
+        {
+          "id": "10.1016/j.resplu.2026.101433",
+          "title": "Distribution of visual attention amongst clinicians using an augmented reality-based decision support system during simulated cardiac arrest – A descriptive study",
+          "journal": "Resuscitation Plus",
+          "date": "2026-08-18",
+          "pmid": "",
+          "doi": "10.1016/j.resplu.2026.101433",
+          "summary": "Secondary analysis of a pediatric cardiac arrest simulation trial found AR-based decision support captured 42-59% of visual attention with distinct role-specific fixation patterns among team leaders and medication nurses",
+          "relevance": "🟡 Medium transferability — Small simulation study (9 sessions) provides insight into how AR cognitive aids might affect attention, though pediatric in-hospital setting limits direct relevance"
         }
       ]
     },
@@ -3195,59 +3237,55 @@
     }
   ],
   "weeklyTldr": {
-    "dateRange": "28 Jul – 3 Aug 2026",
-    "summary": "NEMSIS data quality validated — 99.5% of records represent unique patient-care episodes, supporting database research reliability\nPublic-access defibrillation in urban Yokohama shows location-based deployment patterns — study published but abstract not available\nVirtual ED detects minimal FDSV presentations (0.012%), suggesting under-detection in virtual care settings\nSingle-dose aminoglycosides carry higher AKI risk in CKD patients — consider renal function before ED administration",
+    "dateRange": "11 Aug – 17 Aug 2026",
+    "summary": "Online medical direction (OLMD) shows strong alignment between paramedic clinical judgment and physician decision-making in an urban US EMS system with 9,944 consultations over 8 years\nLoss of pulsatility after extracorporeal CPR is associated with significantly higher mortality (74% vs 48%) - each additional hour without pulsatility increases mortality risk by 17%\nSystematic review of 32 studies identifies key drivers of non-urgent ED utilisation: prior ED visits and patient perception of illness severity are the strongest predictors",
     "highlights": [
       {
-        "text": "NEMSIS data quality validated — 99.5% of records represent unique patient-care episodes, supporting database research reliability",
-        "id": "10.1080/10903127.2026.2711920"
+        "text": "Online medical direction (OLMD) shows strong alignment between paramedic clinical judgment and physician decision-making in an urban US EMS system with 9,944 consultations over 8 years",
+        "id": "10.1080/10903127.2026.2713129"
       },
       {
-        "text": "Public-access defibrillation in urban Yokohama shows location-based deployment patterns — study published but abstract not available",
-        "id": "10.1016/j.resplu.2026.101432"
+        "text": "Loss of pulsatility after extracorporeal CPR is associated with significantly higher mortality (74% vs 48%) - each additional hour without pulsatility increases mortality risk by 17%",
+        "id": "10.1016/j.resplu.2026.101429"
       },
       {
-        "text": "Virtual ED detects minimal FDSV presentations (0.012%), suggesting under-detection in virtual care settings",
-        "id": "42538126"
-      },
-      {
-        "text": "Single-dose aminoglycosides carry higher AKI risk in CKD patients — consider renal function before ED administration",
-        "id": "42538121"
+        "text": "Systematic review of 32 studies identifies key drivers of non-urgent ED utilisation: prior ED visits and patient perception of illness severity are the strongest predictors",
+        "id": "10.1186/s13049-026-01672-8"
       }
     ],
     "topPicks": [
       {
-        "id": "42522152",
-        "title": "The Sydney Triage to Admission Risk Tool With Artificial Intelligence (START-AI) to Support Decision Making in Emergency Departments: Model Explainability and Feature Importance Analysis",
-        "authors": "Michael Dinh, Elizabeth Corbett, Thuy Truc Ngo, et al.",
-        "journal": "Emergency Medicine Australasia",
-        "summary": "Model explainability analysis found triage comments, case notes, blood tests (lactate, CRP), and CT orders drive admission prediction — vital signs contributed less",
-        "relevance": "🟢 High transferability — Australian-developed tool for ED admission prediction; insights about predictive features could inform future prehospital risk stratification",
-        "pmid": "42522152",
-        "doi": "10.1111/1742-6723.70285",
-        "featuredReason": "Australian-developed AI triage tool with strong performance (AUROC 0.90). Findings about which clinical features predict admission could inform future prehospital decision support tools for transport decisions and hospital notification."
-      },
-      {
-        "id": "42538133",
-        "title": "Vaccine Preventable Diseases in the Emergency Department",
-        "authors": "Daphne Cohen, Emefa Kporku",
-        "journal": "Emergency Medicine Australasia",
-        "summary": "Editorial discusses re-emerging vaccine-preventable diseases in Australasia due to declining coverage post-COVID, with implications for ED recognition and public health response",
-        "relevance": "🟢 High transferability — Australasian context; paramedics are frontline in recognising VPDs and supporting public health responses",
-        "pmid": "42538133",
-        "doi": "10.1111/1742-6723.70317",
-        "featuredReason": "Australasian focus on re-emerging VPDs. With declining immunisation coverage, paramedics are frontline in recognising diphtheria, measles and other diseases we haven't seen routinely in years. Early recognition protects crews and supports public health responses."
-      },
-      {
-        "id": "10.1080/10903127.2026.2711920",
-        "title": "The estimated prevalence of multiple record encounters in the National Emergency Medical Services Information System",
-        "authors": "Sriram Ramgopal, Jake Toy, Rebecca E. Cash, et al.",
+        "id": "10.1080/10903127.2026.2713129",
+        "title": "Patterns of Online Medical Direction Utilization in an Urban EMS System: A Retrospective Analysis of 9,944 Consultations",
+        "authors": "Russell Baker, Fran Soljacic, Tyler Snow, et al.",
         "journal": "Prehospital Emergency Care",
-        "summary": "Retrospective analysis of 36.8M NEMSIS records found 99.5% represent unique patient-care episodes, validating the database for large-scale EMS research despite potential multi-unit documentation concerns",
-        "relevance": "🟡 Medium transferability — Validates data quality for research but doesn't change on-road practice",
+        "summary": "Retrospective analysis of 9,944 online medical direction consultations from 2016-2024 found OLMD is primarily used for patient refusals (65%) with 97% physician approval, and overall ~93% agreement between paramedic requests and physician decisions",
+        "relevance": "🟢 High transferability — Large real-world EMS dataset directly applicable to OLMD practice patterns and protocol refinement",
         "pmid": "",
-        "doi": "10.1080/10903127.2026.2711920",
-        "featuredReason": "Validates NEMSIS data quality, supporting confidence in large-scale prehospital database research that informs practice. Good for understanding the limitations and reliability of the evidence base we rely on."
+        "doi": "10.1080/10903127.2026.2713129",
+        "featuredReason": "Large real-world EMS dataset (9,944 consultations) showing physician agreement with paramedic clinical judgment in ~93% of OLMD requests — validates paramedic decision-making and provides data for protocol refinement"
+      },
+      {
+        "id": "10.1016/j.resplu.2026.101429",
+        "title": "Incidence and impact of loss of pulsatility on outcomes after extracorporeal cardiopulmonary resuscitation – A retrospective cohort study",
+        "authors": "Vinodh Bhagyalakshmi Nanjayya, Alistair Nichol, David M. Kaye, et al.",
+        "journal": "Resuscitation Plus",
+        "summary": "Retrospective cohort of 221 ECPR patients found loss of pulsatility (zero pulse pressure) occurred in 49% of cases and was associated with significantly higher in-hospital mortality (74% vs 48%), with each additional hour of non-pulsatility increasing mortality risk by 17%",
+        "relevance": "🟡 Medium transferability — Highly specialized ECMO center study with limited direct prehospital relevance, though useful for understanding ECPR prognostication",
+        "pmid": "",
+        "doi": "10.1016/j.resplu.2026.101429",
+        "featuredReason": "First large ECPR study (n=221) to quantify loss of pulsatility as a strong mortality predictor (74% vs 48%) with clear dose-response relationship — useful prognostication context for ECPR systems"
+      },
+      {
+        "id": "10.1186/s13049-026-01672-8",
+        "title": "Non-urgent emergency department utilization in adults: a systematic review of associated factors across diverse health systems",
+        "authors": "Ehsan Zarei, Mehdi Safari, Mohammad Sadegh Nematollahi",
+        "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+        "summary": "Systematic review of 32 studies across 21 countries identified factors associated with non-urgent ED utilisation, with frequent prior ED visits (aOR up to 82) and patient perception of non-serious illness (aOR up to 21) being the strongest predictors",
+        "relevance": "🟡 Medium transferability — Provides operational context for understanding ED utilisation patterns, though in-hospital focus",
+        "pmid": "",
+        "doi": "10.1186/s13049-026-01672-8",
+        "featuredReason": "Comprehensive systematic review (32 studies, 21 countries) synthesising evidence on non-urgent ED utilisation factors — operational insight useful for understanding ED workload patterns"
       }
     ]
   }
