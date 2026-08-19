@@ -1,8 +1,30 @@
 {
-  "lastUpdated": "2026-08-18T21:20:00Z",
-  "lastUpdatedSydney": "2026-08-19 07:20 AEST",
-  "lastUpdatedDate": "2026-08-19",
+  "lastUpdated": "2026-08-19T21:20:10Z",
+  "lastUpdatedSydney": "2026-08-20 07:20 AEST",
+  "lastUpdatedDate": "2026-08-20",
   "featuredPapers": [
+    {
+      "id": "10.1016/j.annemergmed.2025.09.019",
+      "title": "Intranasal Versus Subcutaneous Ketamine for the Treatment of Acute Traumatic Pain in the Emergency Department: A Randomized Clinical Trial",
+      "journal": "Annals of Emergency Medicine",
+      "date": "2026-08-20",
+      "pmid": "",
+      "doi": "10.1016/j.annemergmed.2025.09.019",
+      "summary": "RCT testing whether intranasal ketamine is non-inferior to subcutaneous for acute traumatic pain — both routes provided equivalent analgesia with minimal clinically important differences, though minor adverse events were more common with subcutaneous administration.",
+      "relevance": "🟢 High — Directly relevant to prehospital analgesia; IN route already used by many Australian services, confirms efficacy versus SC.",
+      "featuredReason": "Directly relevant to prehospital analgesia; IN route already used by many Australian services, confirms efficacy versus SC."
+    },
+    {
+      "id": "10.1080/10903127.2026.2717533",
+      "title": "The use of Capnometry in Prehospital Intubation and Association with 30-Day Mortality: A Nationwide Registry Study",
+      "journal": "Prehospital Emergency Care",
+      "date": "2026-08-20",
+      "pmid": "",
+      "doi": "10.1080/10903127.2026.2717533",
+      "summary": "Nationwide registry study examining capnometry use during prehospital intubation and its association with 30-day mortality.",
+      "relevance": "🟢 High — Directly relevant to Australian prehospital intubation practice; could inform guideline decisions on capnography/capnometry use.",
+      "featuredReason": "Directly relevant to Australian prehospital intubation practice; could inform guideline decisions on capnography/capnometry use."
+    },
     {
       "id": "10.1016/j.resplu.2026.101429",
       "title": "Incidence and impact of loss of pulsatility on outcomes after extracorporeal cardiopulmonary resuscitation – A retrospective cohort study",
@@ -35,28 +57,6 @@
       "summary": "Randomized simulation trial of 40 teams testing the 'CPR Leader' app during in-hospital cardiac arrest found no meaningful improvement in team performance, non-technical skills, or ALS algorithm adherence compared to control",
       "relevance": "🟡 Medium transferability — Simulation-based in-hospital study shows mobile decision support tools may not deliver expected benefits, but limited prehospital transferability",
       "featuredReason": "Simulation-based in-hospital study shows mobile decision support tools may not deliver expected benefits, but limited prehospital transferability"
-    },
-    {
-      "id": "10.1080/10903127.2026.2674263",
-      "title": "Use of double sequential external defibrillation in the United States before and after the DOSE VF randomized clinical trial",
-      "journal": "Prehospital Emergency Care",
-      "date": "2026-05-18",
-      "pmid": "",
-      "doi": "10.1080/10903127.2026.2674263",
-      "summary": "Nationwide observational study examined trends in DSED use for refractory VF before and after publication of the DOSE VF trial.",
-      "relevance": "🟢 High",
-      "featuredReason": "Selected for clinical relevance to prehospital practice."
-    },
-    {
-      "id": "10.1186/s13049-026-01674-6",
-      "title": "Clinical outcomes and opportunities for improvement across modified trauma quality improvement cohorts: a registry-based cohort study",
-      "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
-      "date": "2026-08-18",
-      "pmid": "",
-      "doi": "10.1186/s13049-026-01674-6",
-      "summary": "Registry-based cohort study of 8,298 trauma patients found that blunt multisystem cohorts had the highest opportunities-for-improvement rates (10.6% with TBI, 16.9% without) across multiple quality domains including potentially preventable deaths and clinical judgement errors.",
-      "relevance": "🟡 Medium — Scandinavian registry data; patterns may differ in Australian systems. Descriptive study identifies problems but doesn't test interventions.",
-      "featuredReason": "Scandinavian registry data; patterns may differ in Australian systems. Descriptive study identifies problems but doesn't test interventions."
     }
   ],
   "funFacts": [
@@ -970,16 +970,86 @@
     }
   ],
   "funFact": {
-    "category": "pharmacology",
-    "fact": "Atropine got the boot from the cardiac arrest algorithm in 2010 after evidence showed it did precisely nothing for PEA or asystole. Still lifesaving for bradycardia and organophosphate poisoning though — just don't reach for it in a flatline."
+    "category": "resuscitation",
+    "fact": "The LUCAS device hammers away at exactly 102 compressions per minute and 5 cm depth, every single time. No fatigue, no drift, no arguments about whether you're pushing hard enough. The machine doesn't have an ego."
   },
   "tldr": {
-    "date": "2026-08-19",
-    "paperCount": 0,
-    "summary": "No new papers today.",
-    "highlights": []
+    "date": "2026-08-20",
+    "paperCount": 5,
+    "summary": "• RCT shows intranasal and subcutaneous ketamine provide equivalent analgesia for acute traumatic pain\n• Norwegian trauma registry finds persistent 15% undertriage, driven by non-compliance with activation criteria for low-energy falls\n• Nationwide registry study examining capnometry use during prehospital intubation and 30-day mortality\n• Scoping review maps medical screening practices for psychiatric ED presentations\n• Physician-supervised medical students can deliver effective infant BLS training with sustained knowledge retention at 12 months",
+    "highlights": [
+      {
+        "id": "10.1016/j.annemergmed.2025.09.019",
+        "pmid": "",
+        "doi": "10.1016/j.annemergmed.2025.09.019",
+        "title": "Intranasal Versus Subcutaneous Ketamine for Acute Traumatic Pain",
+        "note": "Confirms IN ketamine is equivalent to SC for analgesia; useful prehospital data despite ED setting"
+      },
+      {
+        "id": "10.1080/10903127.2026.2717533",
+        "pmid": "",
+        "doi": "10.1080/10903127.2026.2717533",
+        "title": "Capnometry in Prehospital Intubation and 30-Day Mortality",
+        "note": "Large nationwide registry on capnometry use and outcomes; could inform prehospital intubation practice"
+      }
+    ]
   },
   "dailyUpdates": [
+    {
+      "date": "2026-08-20",
+      "papers": [
+        {
+          "id": "10.1016/j.annemergmed.2025.09.019",
+          "title": "Intranasal Versus Subcutaneous Ketamine for the Treatment of Acute Traumatic Pain in the Emergency Department: A Randomized Clinical Trial",
+          "journal": "Annals of Emergency Medicine",
+          "date": "2026-08-20",
+          "pmid": "",
+          "doi": "10.1016/j.annemergmed.2025.09.019",
+          "summary": "RCT testing whether intranasal ketamine is non-inferior to subcutaneous for acute traumatic pain — both routes provided equivalent analgesia with minimal clinically important differences, though minor adverse events were more common with subcutaneous administration.",
+          "relevance": "🟢 High — Directly relevant to prehospital analgesia; IN route already used by many Australian services, confirms efficacy versus SC."
+        },
+        {
+          "id": "10.1186/s13049-026-01675-5",
+          "title": "Trauma undertriage at a University Hospital in North Norway: the need to look beyond mechanism of injury",
+          "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+          "date": "2026-08-20",
+          "pmid": "",
+          "doi": "10.1186/s13049-026-01675-5",
+          "summary": "Retrospective registry study assessing trauma undertriage using ISS ≥16 and NISS ≥16 as reference — found 15% undertriage (above the recommended <5%), with 63% of undertriaged patients meeting national criteria but not receiving trauma team activation, mostly low-energy falls.",
+          "relevance": "🟢 High — Relevant to Australian paramedics triaging trauma patients; low-energy falls are common presentations and this highlights risks of undertriage."
+        },
+        {
+          "id": "10.1080/10903127.2026.2717533",
+          "title": "The use of Capnometry in Prehospital Intubation and Association with 30-Day Mortality: A Nationwide Registry Study",
+          "journal": "Prehospital Emergency Care",
+          "date": "2026-08-20",
+          "pmid": "",
+          "doi": "10.1080/10903127.2026.2717533",
+          "summary": "Nationwide registry study examining capnometry use during prehospital intubation and its association with 30-day mortality.",
+          "relevance": "🟢 High — Directly relevant to Australian prehospital intubation practice; could inform guideline decisions on capnography/capnometry use."
+        },
+        {
+          "id": "10.1016/j.annemergmed.2026.04.001",
+          "title": "Medical Screening of Adult Psychiatric Patients Presenting to the Emergency Department",
+          "journal": "Annals of Emergency Medicine",
+          "date": "2026-08-20",
+          "pmid": "",
+          "doi": "10.1016/j.annemergmed.2026.04.001",
+          "summary": "Scoping review mapping medical screening practices for adult psychiatric patients presenting to ED — identified 8 themes (laboratory testing, history taking, vital signs, physical examination, diagnostic imaging, screening tools, ECG, system-level factors), with society recommendations discouraging routine lab testing.",
+          "relevance": "🟡 Medium — Prehospital clinicians frequently manage psychiatric presentations; findings on unnecessary testing patterns are relevant but ED-focused."
+        },
+        {
+          "id": "10.1016/j.resplu.2026.101436",
+          "title": "Can physician-supervised medical students expand access to infant basic life support training? A prospective quasi-experimental study on long-term knowledge retention among caregivers",
+          "journal": "Resuscitation Plus",
+          "date": "2026-08-20",
+          "pmid": "",
+          "doi": "10.1016/j.resplu.2026.101436",
+          "summary": "Quasi-experimental study testing whether physician-supervised medical students can deliver infant BLS training to caregivers — knowledge scores improved significantly after training and were sustained at 12 months, with no difference between physician and student-led groups.",
+          "relevance": "🟡 Medium — Model for expanding community BLS training capacity; relevant to paramedic outreach programs though not clinical practice."
+        }
+      ]
+    },
     {
       "date": "2026-08-18",
       "papers": [
