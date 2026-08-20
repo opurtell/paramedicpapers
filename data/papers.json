@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-08-19T21:20:10Z",
-  "lastUpdatedSydney": "2026-08-20 07:20 AEST",
-  "lastUpdatedDate": "2026-08-20",
+  "lastUpdated": "2026-08-20T21:20:19Z",
+  "lastUpdatedSydney": "2026-08-21 07:20 AEST",
+  "lastUpdatedDate": "2026-08-21",
   "featuredPapers": [
     {
       "id": "10.1016/j.annemergmed.2025.09.019",
@@ -970,31 +970,39 @@
     }
   ],
   "funFact": {
-    "category": "resuscitation",
-    "fact": "The LUCAS device hammers away at exactly 102 compressions per minute and 5 cm depth, every single time. No fatigue, no drift, no arguments about whether you're pushing hard enough. The machine doesn't have an ego."
+    "category": "pathophysiology",
+    "fact": "Tension pneumothorax doesn't just collapse a lung — the mediastinum shifts and kinks the vena cava, which is what actually kills the patient. The collapsed lung is almost a sideshow compared to obliterating venous return."
   },
   "tldr": {
-    "date": "2026-08-20",
-    "paperCount": 5,
-    "summary": "• RCT shows intranasal and subcutaneous ketamine provide equivalent analgesia for acute traumatic pain\n• Norwegian trauma registry finds persistent 15% undertriage, driven by non-compliance with activation criteria for low-energy falls\n• Nationwide registry study examining capnometry use during prehospital intubation and 30-day mortality\n• Scoping review maps medical screening practices for psychiatric ED presentations\n• Physician-supervised medical students can deliver effective infant BLS training with sustained knowledge retention at 12 months",
+    "date": "2026-08-21",
+    "paperCount": 1,
+    "summary": "• Light day for new research\n• Consensus definitions for diagnostic excellence and missed diagnostic opportunities in EDs published\n• Trauma resuscitation study (whole blood vs components) published but abstract not yet available",
     "highlights": [
       {
-        "id": "10.1016/j.annemergmed.2025.09.019",
+        "id": "10.1016/j.annemergmed.2026.04.004",
         "pmid": "",
-        "doi": "10.1016/j.annemergmed.2025.09.019",
-        "title": "Intranasal Versus Subcutaneous Ketamine for Acute Traumatic Pain",
-        "note": "Confirms IN ketamine is equivalent to SC for analgesia; useful prehospital data despite ED setting"
-      },
-      {
-        "id": "10.1080/10903127.2026.2717533",
-        "pmid": "",
-        "doi": "10.1080/10903127.2026.2717533",
-        "title": "Capnometry in Prehospital Intubation and 30-Day Mortality",
-        "note": "Large nationwide registry on capnometry use and outcomes; could inform prehospital intubation practice"
+        "doi": "10.1016/j.annemergmed.2026.04.004",
+        "title": "Defining Diagnostic Excellence and Missed Diagnostic Opportunity for the Emergency Department Setting",
+        "note": "Provides standardised definitions for diagnostic excellence and missed diagnostic opportunities using RAND/UCLA consensus method — relevant for paramedic handover communication and diagnostic practice"
       }
     ]
   },
   "dailyUpdates": [
+    {
+      "date": "2026-08-21",
+      "papers": [
+        {
+          "id": "10.1016/j.annemergmed.2026.04.004",
+          "title": "Defining Diagnostic Excellence and Missed Diagnostic Opportunity for the Emergency Department Setting",
+          "journal": "Annals of Emergency Medicine",
+          "date": "2026-08-21",
+          "pmid": "",
+          "doi": "10.1016/j.annemergmed.2026.04.004",
+          "summary": "Consensus study using a modified RAND/UCLA panel method to define diagnostic excellence and missed diagnostic opportunity in emergency departments — diagnostic excellence is accurate, timely, evidence-based, and patient-centered communication of a diagnosis based on available information, while a missed diagnostic opportunity is a measurable divergence from optimal practice that may lead to inaccurate/delayed explanations or communication failures.",
+          "relevance": "🟡 Medium — Relevant concepts for paramedic diagnostic practice and handover communication, but ED-focused definitions rather than prehospital-specific"
+        }
+      ]
+    },
     {
       "date": "2026-08-20",
       "papers": [
