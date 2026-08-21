@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-08-20T21:20:19Z",
-  "lastUpdatedSydney": "2026-08-21 07:20 AEST",
-  "lastUpdatedDate": "2026-08-21",
+  "lastUpdated": "2026-08-21T21:20:29Z",
+  "lastUpdatedSydney": "2026-08-22 07:20 AEST",
+  "lastUpdatedDate": "2026-08-22",
   "featuredPapers": [
     {
       "id": "10.1016/j.annemergmed.2025.09.019",
@@ -970,22 +970,14 @@
     }
   ],
   "funFact": {
-    "category": "pathophysiology",
-    "fact": "Tension pneumothorax doesn't just collapse a lung — the mediastinum shifts and kinks the vena cava, which is what actually kills the patient. The collapsed lung is almost a sideshow compared to obliterating venous return."
+    "category": "pharmacology",
+    "fact": "Glucagon treats severe beta-blocker overdose by sneaking in the back door — it activates adenylate cyclase through its own receptor, completely bypassing the blocked beta receptors. It's the pharmacological equivalent of going around the obstacle."
   },
   "tldr": {
-    "date": "2026-08-21",
-    "paperCount": 1,
-    "summary": "• Light day for new research\n• Consensus definitions for diagnostic excellence and missed diagnostic opportunities in EDs published\n• Trauma resuscitation study (whole blood vs components) published but abstract not yet available",
-    "highlights": [
-      {
-        "id": "10.1016/j.annemergmed.2026.04.004",
-        "pmid": "",
-        "doi": "10.1016/j.annemergmed.2026.04.004",
-        "title": "Defining Diagnostic Excellence and Missed Diagnostic Opportunity for the Emergency Department Setting",
-        "note": "Provides standardised definitions for diagnostic excellence and missed diagnostic opportunities using RAND/UCLA consensus method — relevant for paramedic handover communication and diagnostic practice"
-      }
-    ]
+    "date": "2026-08-22",
+    "paperCount": 0,
+    "summary": "No new papers today.",
+    "highlights": []
   },
   "dailyUpdates": [
     {
