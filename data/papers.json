@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-08-21T21:20:29Z",
-  "lastUpdatedSydney": "2026-08-22 07:20 AEST",
-  "lastUpdatedDate": "2026-08-22",
+  "lastUpdated": "2026-08-22T21:20:38Z",
+  "lastUpdatedSydney": "2026-08-23 07:20 AEST",
+  "lastUpdatedDate": "2026-08-23",
   "featuredPapers": [
     {
       "id": "10.1016/j.annemergmed.2025.09.019",
@@ -26,37 +26,37 @@
       "featuredReason": "Directly relevant to Australian prehospital intubation practice; could inform guideline decisions on capnography/capnometry use."
     },
     {
-      "id": "10.1016/j.resplu.2026.101429",
-      "title": "Incidence and impact of loss of pulsatility on outcomes after extracorporeal cardiopulmonary resuscitation – A retrospective cohort study",
-      "journal": "Resuscitation Plus",
-      "date": "2026-08-18",
+      "id": "10.1080/10903127.2026.2674263",
+      "title": "Use of double sequential external defibrillation in the United States before and after the DOSE VF randomized clinical trial",
+      "journal": "Prehospital Emergency Care",
+      "date": "2026-05-18",
       "pmid": "",
-      "doi": "10.1016/j.resplu.2026.101429",
-      "summary": "Retrospective cohort of 221 ECPR patients found loss of pulsatility (zero pulse pressure) occurred in 49% of cases and was associated with significantly higher in-hospital mortality (74% vs 48%), with each additional hour of non-pulsatility increasing mortality risk by 17%",
-      "relevance": "🟡 Medium transferability — Highly specialized ECMO center study with limited direct prehospital relevance, though useful for understanding ECPR prognostication",
-      "featuredReason": "Highly specialized ECMO center study with limited direct prehospital relevance, though useful for understanding ECPR prognostication"
+      "doi": "10.1080/10903127.2026.2674263",
+      "summary": "Nationwide observational study examined trends in DSED use for refractory VF before and after publication of the DOSE VF trial.",
+      "relevance": "🟢 High",
+      "featuredReason": "Selected for clinical relevance to prehospital practice."
     },
     {
-      "id": "10.1186/s13049-026-01672-8",
-      "title": "Non-urgent emergency department utilization in adults: a systematic review of associated factors across diverse health systems",
-      "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
-      "date": "2026-08-18",
+      "id": "10.1016/j.resuscitation.2026.111187",
+      "title": "Paramedic-assessed quality of bystander CPR is associated with survival in out-of-hospital cardiac arrest",
+      "journal": "Resuscitation",
+      "date": "2026-08-23",
       "pmid": "",
-      "doi": "10.1186/s13049-026-01672-8",
-      "summary": "Systematic review of 32 studies across 21 countries identified factors associated with non-urgent ED utilisation, with frequent prior ED visits (aOR up to 82) and patient perception of non-serious illness (aOR up to 21) being the strongest predictors",
-      "relevance": "🟡 Medium transferability — Provides operational context for understanding ED utilisation patterns, though in-hospital focus",
-      "featuredReason": "Provides operational context for understanding ED utilisation patterns, though in-hospital focus"
+      "doi": "10.1016/j.resuscitation.2026.111187",
+      "summary": "NSW registry study (n=17,715) found any bystander CPR increased 30-day survival odds by 70%, but good-quality bystander CPR more than tripled odds (aOR 2.62) while poor-quality CPR showed no benefit.",
+      "relevance": "🟢 High — Large Australian registry with direct relevance to dispatch-assisted CPR quality measurement and dispatcher coaching.",
+      "featuredReason": "Large Australian registry with direct relevance to dispatch-assisted CPR quality measurement and dispatcher coaching."
     },
     {
-      "id": "10.1186/s13049-026-01673-7",
-      "title": "Effect of an app-guided advanced cardiac life support algorithm on teamwork, non-technical skills, and workload in simulated in-hospital cardiac arrest: a randomized controlled feasibility trial",
-      "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
-      "date": "2026-08-18",
+      "id": "10.1016/j.resuscitation.2026.111147",
+      "title": "Estimated survival gains from pulselessness-detection technologies in unwitnessed out-of-hospital cardiac arrest in Western Australia: a simulation study",
+      "journal": "Resuscitation",
+      "date": "2026-08-23",
       "pmid": "",
-      "doi": "10.1186/s13049-026-01673-7",
-      "summary": "Randomized simulation trial of 40 teams testing the 'CPR Leader' app during in-hospital cardiac arrest found no meaningful improvement in team performance, non-technical skills, or ALS algorithm adherence compared to control",
-      "relevance": "🟡 Medium transferability — Simulation-based in-hospital study shows mobile decision support tools may not deliver expected benefits, but limited prehospital transferability",
-      "featuredReason": "Simulation-based in-hospital study shows mobile decision support tools may not deliver expected benefits, but limited prehospital transferability"
+      "doi": "10.1016/j.resuscitation.2026.111147",
+      "summary": "WA simulation modelling across 11,450 OHCA cases estimated wearable pulselessness-detection could double 30-day survival among unwitnessed arrests (0.5% to 1.1%) with 10% device uptake and 80% sensitivity.",
+      "relevance": "🟢 High — Australian regional research quantifying potential survival gains from a technology entering paramedic practice.",
+      "featuredReason": "Australian regional research quantifying potential survival gains from a technology entering paramedic practice."
     }
   ],
   "funFacts": [
@@ -970,16 +970,73 @@
     }
   ],
   "funFact": {
-    "category": "pharmacology",
-    "fact": "Glucagon treats severe beta-blocker overdose by sneaking in the back door — it activates adenylate cyclase through its own receptor, completely bypassing the blocked beta receptors. It's the pharmacological equivalent of going around the obstacle."
+    "category": "anatomy",
+    "fact": "The cricothyroid membrane is roughly 10mm tall and 9mm wide in adults — just enough for a 6mm tube. It's the narrowest window into the airway, but when you're in a 'can't intubate, can't oxygenate' nightmare, it's the only window that matters."
   },
   "tldr": {
-    "date": "2026-08-22",
-    "paperCount": 0,
-    "summary": "No new papers today.",
-    "highlights": []
+    "date": "2026-08-23",
+    "paperCount": 3,
+    "summary": "• NSW registry: good-quality bystander CPR triples 30-day survival odds (aOR 2.62) vs no benefit from poor-quality CPR\n• WA modelling: wearable pulselessness detection could double unwitnessed OHCA survival with 10% uptake\n• NZ DSD experience: no survival benefit observed, lower ROSC likely reflects confounding by indication",
+    "highlights": [
+      {
+        "id": "10.1016/j.resuscitation.2026.111187",
+        "pmid": "",
+        "doi": "10.1016/j.resuscitation.2026.111187",
+        "title": "Paramedic-assessed quality of bystander CPR is associated with survival",
+        "note": "17,715 NSW OHCA cases prove quality matters more than just doing CPR"
+      },
+      {
+        "id": "10.1016/j.resuscitation.2026.111147",
+        "pmid": "",
+        "doi": "10.1016/j.resuscitation.2026.111147",
+        "title": "Wearable pulselessness detection for unwitnessed OHCA",
+        "note": "Modelling shows even 10% uptake could double survival from 0.5% to 1.1%"
+      },
+      {
+        "id": "10.1016/j.resuscitation.2026.111138",
+        "pmid": "",
+        "doi": "10.1016/j.resuscitation.2026.111138",
+        "title": "DSD implementation in New Zealand EMS",
+        "note": "Real-world data shows no benefit, but confounding likely"
+      }
+    ]
   },
   "dailyUpdates": [
+    {
+      "date": "2026-08-23",
+      "papers": [
+        {
+          "id": "10.1016/j.resuscitation.2026.111187",
+          "title": "Paramedic-assessed quality of bystander CPR is associated with survival in out-of-hospital cardiac arrest",
+          "journal": "Resuscitation",
+          "date": "2026-08-23",
+          "pmid": "",
+          "doi": "10.1016/j.resuscitation.2026.111187",
+          "summary": "NSW registry study (n=17,715) found any bystander CPR increased 30-day survival odds by 70%, but good-quality bystander CPR more than tripled odds (aOR 2.62) while poor-quality CPR showed no benefit.",
+          "relevance": "🟢 High — Large Australian registry with direct relevance to dispatch-assisted CPR quality measurement and dispatcher coaching."
+        },
+        {
+          "id": "10.1016/j.resuscitation.2026.111147",
+          "title": "Estimated survival gains from pulselessness-detection technologies in unwitnessed out-of-hospital cardiac arrest in Western Australia: a simulation study",
+          "journal": "Resuscitation",
+          "date": "2026-08-23",
+          "pmid": "",
+          "doi": "10.1016/j.resuscitation.2026.111147",
+          "summary": "WA simulation modelling across 11,450 OHCA cases estimated wearable pulselessness-detection could double 30-day survival among unwitnessed arrests (0.5% to 1.1%) with 10% device uptake and 80% sensitivity.",
+          "relevance": "🟢 High — Australian regional research quantifying potential survival gains from a technology entering paramedic practice."
+        },
+        {
+          "id": "10.1016/j.resuscitation.2026.111138",
+          "title": "Implementation of double sequential defibrillation (DSD): an Aotearoa New Zealand observational study",
+          "journal": "Resuscitation",
+          "date": "2026-08-23",
+          "pmid": "",
+          "doi": "10.1016/j.resuscitation.2026.111138",
+          "summary": "NZ EMS observational study (n=1,401) found no survival benefit after DSD implementation for refractory VF/VT, with lower ROSC odds in DSD patients likely reflecting confounding by indication.",
+          "relevance": "🟡 Medium — Australasian context relevant to services using DSD, but findings may be confounded and timing guidance remains unclear."
+        }
+      ]
+    },
     {
       "date": "2026-08-21",
       "papers": [
