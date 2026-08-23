@@ -436,6 +436,10 @@ a.act { color: var(--accent); }
   .today-item .paper-foot { padding-top: 10px; border-top: 1px solid var(--hair); }
   .wide-btn { margin-top: 4px; }
 
+  /* Fun fact now closes out the home feed inside the reading column; cap its
+     width so the dark panel doesn't stretch across the whole column. */
+  #fun-fact-panel { max-width: 560px; }
+
   /* Feed: filter bar + card grid with full-width day rules. */
   #page-feed { padding-top: 24px; gap: 18px; }
   .chip-divider { width: 1px; background: var(--line); margin: 0 4px; }
