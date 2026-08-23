@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-08-22T21:20:38Z",
-  "lastUpdatedSydney": "2026-08-23 07:20 AEST",
+  "lastUpdated": "2026-08-23T12:44:53Z",
+  "lastUpdatedSydney": "2026-08-23 22:44 AEST",
   "lastUpdatedDate": "2026-08-23",
   "featuredPapers": [
     {
@@ -983,21 +983,21 @@
         "pmid": "",
         "doi": "10.1016/j.resuscitation.2026.111187",
         "title": "Paramedic-assessed quality of bystander CPR is associated with survival",
-        "note": "17,715 NSW OHCA cases prove quality matters more than just doing CPR"
+        "note": "NSW registry study (n=17,715): any bystander CPR raised 30-day survival odds by 70%, but good-quality CPR more than tripled them (aOR 2.62) while poor-quality CPR showed no benefit."
       },
       {
         "id": "10.1016/j.resuscitation.2026.111147",
         "pmid": "",
         "doi": "10.1016/j.resuscitation.2026.111147",
         "title": "Wearable pulselessness detection for unwitnessed OHCA",
-        "note": "Modelling shows even 10% uptake could double survival from 0.5% to 1.1%"
+        "note": "WA simulation modelling (11,450 OHCA cases): wearable pulselessness detection could double 30-day survival for unwitnessed arrests (0.5% → 1.1%) at just 10% uptake and 80% sensitivity."
       },
       {
         "id": "10.1016/j.resuscitation.2026.111138",
         "pmid": "",
         "doi": "10.1016/j.resuscitation.2026.111138",
         "title": "DSD implementation in New Zealand EMS",
-        "note": "Real-world data shows no benefit, but confounding likely"
+        "note": "NZ EMS observational study (n=1,401): no survival benefit after DSD implementation for refractory VF/VT; lower ROSC odds in DSD patients likely reflect confounding by indication."
       }
     ]
   },
