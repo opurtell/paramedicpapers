@@ -25,15 +25,21 @@ npx serve .
 
 ## Updating Data
 
-Replace `data/papers.json` with fresh data. The site loads this file client-side — no build step needed.
+`data/papers.json` is **built**, not hand-edited: `scripts/update-paramedic-dashboard.py`
+(see `~/.hermes/paramedic/scripts/`) converts `references/paramedic-paper-log.json`
+into it, then commits and pushes. The nightly cron (`daily-dashboard-push.sh`) reruns
+this with the LLM-written daily TLDR. There is no build step for the front-end itself.
 
 The JSON schema:
 
 ```json
 {
-  "lastUpdated": "ISO-8601 timestamp",
+  "lastUpdated": "ISO-8601 UTC timestamp",
+  "lastUpdatedSydney": "human-readable Sydney time",
+  "lastUpdatedDate": "YYYY-MM-DD (Sydney)",
   "featuredPapers": [ ... ],
   "funFacts": [ { "fact": "..." } ],
+  "funFact": { "category": "...", "fact": "..." },
   "dailyUpdates": [
     {
       "date": "YYYY-MM-DD",
@@ -44,6 +50,10 @@ The JSON schema:
   "weeklyTldr": { ... }
 }
 ```
+
+`funFact` is today's server-picked fact (Sydney day-of-year rotation, chosen at
+each dashboard push so it changes with the nightly update). The front-end prefers
+it and falls back to client-side rotation over `funFacts` for older cached data.
 
 ### Paper object
 
@@ -153,6 +163,37 @@ layer live at the bottom of `css/style.css`):
 Both layouts drive the same view state and the same DOM. `syncLayout()` in
 `js/app.js` re-parents the search box and the refresh/last-updated pair when the
 breakpoint flips, rather than duplicating those nodes and their ids.
+
+### Home layout
+
+Mobile stack order (the `.home-rail` / `.home-main` wrappers are
+`display: contents` below 960px, so this is the DOM order):
+
+1. Today's TLDR panel
+2. This week's TLDR panel
+3. "Today's newest" paper list
+4. **Open full feed** button
+5. Fun fact panel (dark) — a closer, not the opener
+
+On desktop the same nodes become: left reading column (papers → button → fun
+fact, the fact capped at `max-width: 560px`) and right sticky rail (the two
+TLDR panels). The fun fact lives in the reading column, below the button.
+
+## Deploying UI changes
+
+The site is live at `https://opurtell.github.io/paramedicpapers/` (GitHub Pages,
+`main` branch). The nightly data push only ever commits `data/papers.json` —
+**any change to `index.html`, `css/`, or `js/` must be committed and pushed
+manually**:
+
+```bash
+cd ~/.hermes/paramedic/dashboard
+git add index.html css/ js/ && git commit -m "..." && git push
+```
+
+Bump the cache-bust query strings when `style.css` or `app.js` change:
+`css/style.css?v=N` / `js/app.js?v=N` in `index.html`. GitHub Pages deploys
+within a minute or two of push.
 
 ## License
 
