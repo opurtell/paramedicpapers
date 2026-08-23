@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=4">
+  <link rel="stylesheet" href="css/style.css?v=5">
   <link rel="icon" type="image/png" sizes="32x32" href="icon-32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="icon-16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
@@ -69,13 +69,6 @@
            mobile stacking order is unchanged; on desktop they become the
            sticky right rail and the left reading column. -->
       <div class="home-rail">
-      <article class="panel panel-dark" id="fun-fact-panel">
-        <div class="panel-kicker panel-kicker-invert">Fun fact of the day</div>
-        <p class="fact-headline" id="fun-fact-headline"></p>
-        <div class="collapse" id="fun-fact-body" hidden></div>
-        <button class="link-btn link-btn-invert" id="fun-fact-toggle" type="button" aria-expanded="false">Read more</button>
-      </article>
-
       <article class="panel" id="daily-tldr-panel">
         <div class="panel-head">
           <span class="panel-kicker panel-kicker-accent">Today's TLDR</span>
@@ -104,6 +97,15 @@
       <div class="today-list" id="today-list"></div>
 
       <button class="wide-btn" id="btn-open-feed" type="button">Open full feed</button>
+
+      <!-- Fun fact lives below the home feed — a nice-to-have closer, not
+           the opening act. Dark panel, kicker, and JS refs unchanged. -->
+      <article class="panel panel-dark" id="fun-fact-panel">
+        <div class="panel-kicker panel-kicker-invert">Fun fact of the day</div>
+        <p class="fact-headline" id="fun-fact-headline"></p>
+        <div class="collapse" id="fun-fact-body" hidden></div>
+        <button class="link-btn link-btn-invert" id="fun-fact-toggle" type="button" aria-expanded="false">Read more</button>
+      </article>
       </div>
     </section>
 
@@ -168,6 +170,6 @@
     <button class="tab" data-tab="saved" type="button"><span class="ico ico-saved" aria-hidden="true"></span>Saved</button>
   </nav>
 
-  <script src="js/app.js?v=7"></script>
+  <script src="js/app.js?v=8"></script>
 </body>
 </html>

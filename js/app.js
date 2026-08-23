@@ -129,8 +129,10 @@
     if (state.data) renderToday();
   }
 
-  /* TLDR and fun-fact panels start expanded on desktop (the rail has the
-     room) and collapsed on mobile. The +/− toggles stay live either way. */
+  /* TLDR panels start expanded on desktop (the rail has the room) and
+     collapsed on mobile. The fun-fact panel follows the same rule — expanded
+     on desktop, collapsed with a Read-more toggle on mobile. The +/− toggles
+     stay live either way. */
   function applyPanelDefaults() {
     var wide = isWide();
     [['daily-tldr-toggle', 'daily-tldr-body'],
