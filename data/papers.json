@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-08-23T12:44:53Z",
-  "lastUpdatedSydney": "2026-08-23 22:44 AEST",
-  "lastUpdatedDate": "2026-08-23",
+  "lastUpdated": "2026-08-23T21:20:48Z",
+  "lastUpdatedSydney": "2026-08-24 07:20 AEST",
+  "lastUpdatedDate": "2026-08-24",
   "featuredPapers": [
     {
       "id": "10.1016/j.annemergmed.2025.09.019",
@@ -970,38 +970,56 @@
     }
   ],
   "funFact": {
-    "category": "anatomy",
-    "fact": "The cricothyroid membrane is roughly 10mm tall and 9mm wide in adults — just enough for a 6mm tube. It's the narrowest window into the airway, but when you're in a 'can't intubate, can't oxygenate' nightmare, it's the only window that matters."
+    "category": "EMS",
+    "fact": "The earliest ambulance service on record was run by the Order of St John during the First Crusade in 1099 — carts dragging wounded knights to treatment tents. Nearly a thousand years later, we've upgraded from carts, but the job's the same."
   },
   "tldr": {
-    "date": "2026-08-23",
-    "paperCount": 3,
-    "summary": "• NSW registry: good-quality bystander CPR triples 30-day survival odds (aOR 2.62) vs no benefit from poor-quality CPR\n• WA modelling: wearable pulselessness detection could double unwitnessed OHCA survival with 10% uptake\n• NZ DSD experience: no survival benefit observed, lower ROSC likely reflects confounding by indication",
+    "date": "2026-08-24",
+    "paperCount": 2,
+    "summary": "• Two new ACEP consensus guidelines on unscheduled procedural sedation — Part 1 (principles/oversight) and Part 2 (clinical practice)\n• US-focused but may influence local sedation protocols\n• Other papers were ahead-of-print without abstracts or technical modelling work",
     "highlights": [
       {
-        "id": "10.1016/j.resuscitation.2026.111187",
+        "id": "10.1016/j.annemergmed.2026.06.038",
         "pmid": "",
-        "doi": "10.1016/j.resuscitation.2026.111187",
-        "title": "Paramedic-assessed quality of bystander CPR is associated with survival",
-        "note": "NSW registry study (n=17,715): any bystander CPR raised 30-day survival odds by 70%, but good-quality CPR more than tripled them (aOR 2.62) while poor-quality CPR showed no benefit."
+        "doi": "10.1016/j.annemergmed.2026.06.038",
+        "title": "Unscheduled Procedural Sedation Multidisciplinary Delphi Consensus Guidelines, Part 1",
+        "note": "Multidisciplinary Delphi consensus covering principles, oversight, and quality monitoring for unscheduled procedural sedation."
       },
       {
-        "id": "10.1016/j.resuscitation.2026.111147",
+        "id": "10.1016/j.annemergmed.2026.06.039",
         "pmid": "",
-        "doi": "10.1016/j.resuscitation.2026.111147",
-        "title": "Wearable pulselessness detection for unwitnessed OHCA",
-        "note": "WA simulation modelling (11,450 OHCA cases): wearable pulselessness detection could double 30-day survival for unwitnessed arrests (0.5% → 1.1%) at just 10% uptake and 80% sensitivity."
-      },
-      {
-        "id": "10.1016/j.resuscitation.2026.111138",
-        "pmid": "",
-        "doi": "10.1016/j.resuscitation.2026.111138",
-        "title": "DSD implementation in New Zealand EMS",
-        "note": "NZ EMS observational study (n=1,401): no survival benefit after DSD implementation for refractory VF/VT; lower ROSC odds in DSD patients likely reflect confounding by indication."
+        "doi": "10.1016/j.annemergmed.2026.06.039",
+        "title": "Unscheduled Procedural Sedation Multidisciplinary Delphi Consensus Guidelines, Part 2",
+        "note": "Multidisciplinary Delphi consensus covering clinical practice for unscheduled procedural sedation."
       }
     ]
   },
   "dailyUpdates": [
+    {
+      "date": "2026-08-24",
+      "papers": [
+        {
+          "id": "10.1016/j.annemergmed.2026.06.038",
+          "title": "Unscheduled Procedural Sedation Multidisciplinary Delphi Consensus Guidelines, Part 1: Principles, Oversight, and Quality Monitoring",
+          "journal": "Annals of Emergency Medicine",
+          "date": "2026-08-24",
+          "pmid": "",
+          "doi": "10.1016/j.annemergmed.2026.06.038",
+          "summary": "Multidisciplinary Delphi consensus guidelines covering principles, oversight, and quality monitoring for unscheduled procedural sedation.",
+          "relevance": "🔴 Low — ACEP policy document — US-focused, but offers a framework Australian services may reference when reviewing sedation protocols."
+        },
+        {
+          "id": "10.1016/j.annemergmed.2026.06.039",
+          "title": "Unscheduled Procedural Sedation Multidisciplinary Delphi Consensus Guidelines, Part 2: Clinical Practice",
+          "journal": "Annals of Emergency Medicine",
+          "date": "2026-08-24",
+          "pmid": "",
+          "doi": "10.1016/j.annemergmed.2026.06.039",
+          "summary": "Multidisciplinary Delphi consensus guidelines covering clinical practice for unscheduled procedural sedation.",
+          "relevance": "🔴 Low — ACEP policy document — US-focused, but clinical practice elements may inform local protocol development."
+        }
+      ]
+    },
     {
       "date": "2026-08-23",
       "papers": [
