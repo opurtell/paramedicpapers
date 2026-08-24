@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+     xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+     xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Paramedic Papers Daily</title>
+    <link>https://opurtell.github.io/paramedicpapers/</link>
+    <language>en-au</language>
+    <copyright>© 2026 Oscar Purtell</copyright>
+    <description>A short daily audio roundup of the latest paramedic and prehospital research, delivered each Sydney morning.</description>
+    <itunes:author>Oscar Purtell</itunes:author>
+    <itunes:summary>A short daily audio roundup of the latest paramedic and prehospital research, delivered each Sydney morning.</itunes:summary>
+    <itunes:type>episodic</itunes:type>
+    <itunes:owner>
+      <itunes:name>Oscar Purtell</itunes:name>
+      <itunes:email>opurtellai@gmail.com</itunes:email>
+    </itunes:owner>
+    <itunes:image href="https://opurtell.github.io/paramedicpapers/icon-512.png"/>
+    <itunes:category text="Health &amp; Fitness">
+      <itunes:category text="Medicine"/>
+    </itunes:category>
+    <itunes:explicit>false</itunes:explicit>
+    <item>
+      <title>Paramedic Papers Daily — 25 August 2026</title>
+      <description>7 papers: CPR inequality in deprived areas; EMS equipment speeds ED rhythm analysis; kidney biomarkers; lactate in pediatric arrest; ECG abnormalities predict shockable rhythm; magnesium for headaches; MRI brain injury profiles</description>
+      <pubDate>Tue, 25 Aug 2026 07:36:32 +1000</pubDate>
+      <guid isPermaLink="true">https://opurtell.github.io/paramedicpapers/audio/ep-2026-08-25.mp3</guid>
+      <enclosure url="https://opurtell.github.io/paramedicpapers/audio/ep-2026-08-25.mp3" length="1386381" type="audio/mpeg"/>
+      <itunes:duration>346</itunes:duration>
+      <itunes:summary>7 papers: CPR inequality in deprived areas; EMS equipment speeds ED rhythm analysis; kidney biomarkers; lactate in pediatric arrest; ECG abnormalities predict shockable rhythm; magnesium for headaches; MRI brain injury profiles</itunes:summary>
+    </item>
+  </channel>
+</rss>
