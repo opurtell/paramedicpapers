@@ -30,6 +30,10 @@
 
 * { box-sizing: border-box; }
 
+/* The hidden attribute must always win, including over display:flex/grid
+   rules (fixes empty-states and panels that set a display value). */
+[hidden] { display: none !important; }
+
 html, body {
   margin: 0;
   background: var(--bg);
@@ -479,3 +483,105 @@ a.act { color: var(--accent); }
 @media (min-width: 960px) and (max-width: 1180px) {
   .masthead .search-wrap { width: 320px; }
 }
+
+/* ── podcast ─────────────────────────────────────────── */
+
+/* Slim latest-episode strip at the top of Home. Same surface treatment as
+   the TLDR panels but one quiet row: play button, kicker + title, duration,
+   link to the tab. Hairline progress bar along the bottom edge. */
+.podcast-strip {
+  position: relative;
+  display: flex;
+  flex-direction: row;   /* override .panel's column */
+  align-items: center;
+  gap: 12px;
+  padding: 10px 14px;
+  overflow: hidden;
+}
+/* [hidden] must win over the flex display above (same pattern as .page[hidden]). */
+.podcast-strip[hidden] { display: none; }
+.podcast-strip .panel-kicker { font-size: 9px; }
+.ep-play {
+  flex: none;
+  width: 36px; height: 36px;
+  border-radius: 50%;
+  border: 1px solid var(--line-2);
+  background: var(--surface);
+  color: var(--ink-2);
+  display: grid; place-items: center;
+  cursor: pointer;
+}
+.ep-play:hover { background: #F4F2ED; }
+.ep-play.is-on { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+.strip-text { display: flex; flex-direction: column; min-width: 0; }
+.strip-title {
+  font-size: 13.5px; font-weight: 500; color: var(--ink);
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.strip-dur { margin-left: auto; font-family: var(--mono); font-size: 11px; color: var(--muted); white-space: nowrap; }
+.strip-link {
+  font-family: var(--mono); font-size: 10.5px; letter-spacing: .03em;
+  color: var(--accent); cursor: pointer; white-space: nowrap;
+}
+.strip-link:hover { color: #1F4480; }
+.strip-progress {
+  position: absolute; left: 0; bottom: 0; height: 2px;
+  width: 0; background: var(--accent);
+  opacity: .55;
+  transition: width .25s linear;
+}
+/* On the desktop Home grid the strip spans both columns in its own row;
+   the reading column and rail move down to row 2 (they're pinned to
+   row 1 by the original rules). */
+@media (min-width: 960px) {
+  .podcast-strip { grid-column: 1 / -1; grid-row: 1; padding: 12px 18px; }
+  .home-main, .home-rail { grid-row: 2; }
+}
+
+/* Episode rows (podcast tab) */
+.ep-row {
+  display: flex; align-items: center; gap: 12px;
+  padding: 13px 0;
+  border-bottom: 1px solid var(--hair);
+}
+.ep-row:last-child { border-bottom: none; }
+.ep-row .ep-play { width: 40px; height: 40px; }
+.ep-meta { display: flex; flex-direction: column; gap: 3px; min-width: 0; flex: 1; }
+.ep-date {
+  font-family: var(--mono); font-size: 10px; letter-spacing: .08em;
+  text-transform: uppercase; color: var(--muted);
+}
+.ep-name { font-size: 14.5px; font-weight: 500; color: var(--ink); }
+.ep-desc {
+  font-size: 13px; line-height: 1.45; color: var(--ink-3);
+  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.ep-len { font-family: var(--mono); font-size: 11px; color: var(--muted); white-space: nowrap; }
+
+/* Subscribe panel */
+.sub-row { display: flex; align-items: center; gap: 10px; margin-top: 2px; flex-wrap: wrap; }
+.sub-url {
+  font-family: var(--mono); font-size: 11.5px; color: var(--ink-2);
+  padding: 7px 10px; background: var(--hair); border-radius: 8px;
+  word-break: break-all;
+}
+.sub-hint { font-size: 12.5px; color: var(--muted); }
+
+/* Podcast tab icon — geometric, 1.5px stroke, matches the ico-* set. */
+.ico-podcast { position: relative; width: 20px; height: 24px; }
+.ico-podcast::before {
+  /* speaker cone */
+  content: ""; position: absolute; left: 1px; top: 8px;
+  width: 8px; height: 8px; background: currentColor;
+}
+.ico-podcast::after {
+  /* sound waves */
+  content: ""; position: absolute; right: 1px; top: 6px;
+  width: 7px; height: 12px;
+  border: 1.5px solid currentColor; border-left: none; border-radius: 0 6px 6px 0;
+}
+
+/* Active-state feedback on the tab icons, consistent with the others */
+.tab.is-on .ico-podcast::before { background: var(--accent); }
+.nav-item.is-on .ico-podcast::before { background: var(--accent); }

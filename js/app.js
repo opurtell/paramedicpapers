@@ -22,6 +22,8 @@
     pinned: '',
     highRelOnly: false,
     savedOnly: false,
+    episodes: [],
+    playDate: null,
     saved: loadSaved()
   };
 
@@ -34,6 +36,7 @@
     bindHome();
     bindFeed();
     bindWeekly();
+    bindPodcast();
     $('btn-refresh').addEventListener('click', refresh);
     window.addEventListener('hashchange', function () { setTab(tabFromHash(), true); });
     DESKTOP.addEventListener('change', syncLayout);
@@ -48,6 +51,16 @@
     }
     renderAll();
     setTab(tabFromHash(), true);
+
+    /* Podcast episodes are independent of papers.json — a missing or failed
+       episodes.json must never break the paper dashboard. */
+    loadEpisodes().then(function (eps) {
+      state.episodes = eps;
+      renderPodcastStrip();
+      renderEpisodes();
+    }).catch(function (err) {
+      console.warn('No podcast episodes:', err && err.message);
+    });
   }
 
   async function loadData(bust) {
@@ -66,6 +79,11 @@
     try {
       state.data = await loadData(true);
       renderAll();
+      loadEpisodes().then(function (eps) {
+        state.episodes = eps;
+        renderPodcastStrip();
+        renderEpisodes();
+      }).catch(function () {});
     } catch (err) {
       console.error('Refresh failed:', err);
     } finally {
@@ -75,11 +93,11 @@
 
   /* ── navigation ─────────────────────────────────────── */
 
-  var TABS = ['home', 'feed', 'weekly', 'saved'];
-  var TITLES = { home: 'Paramedic Papers', feed: 'Research feed', weekly: 'Weekly', saved: 'Saved' };
+  var TABS = ['home', 'feed', 'weekly', 'podcast', 'saved'];
+  var TITLES = { home: 'Paramedic Papers', feed: 'Research feed', weekly: 'Weekly', podcast: 'Podcast', saved: 'Saved' };
   /* On desktop the sidebar carries the wordmark, so the content header
      names the view instead of the app. */
-  var TITLES_WIDE = { home: 'Today', feed: 'Research feed', weekly: 'Weekly digest', saved: 'Saved papers' };
+  var TITLES_WIDE = { home: 'Today', feed: 'Research feed', weekly: 'Weekly digest', podcast: 'Podcast', saved: 'Saved papers' };
 
   function tabFromHash() {
     var h = (location.hash || '').replace('#', '');
@@ -163,6 +181,8 @@
     renderFeed();
     renderWeeklyPicks();
     renderSaved();
+    renderPodcastStrip();
+    renderEpisodes();
     renderSidebar();
     applyPanelDefaults();
   }
@@ -208,6 +228,8 @@
       text = allPapers().length + ' papers · ' + d.dailyUpdates.length + ' scans';
     } else if (state.tab === 'weekly') {
       text = (d.weeklyTldr && d.weeklyTldr.dateRange) || 'This week';
+    } else if (state.tab === 'podcast') {
+      text = state.episodes.length ? state.episodes.length + ' episodes' : 'Daily audio roundup';
     } else {
       text = savedPapers().length + ' papers kept';
     }
@@ -465,6 +487,132 @@
     $('saved-list').innerHTML = list.map(cardHTML).join('');
     bindActs($('saved-list'));
     if (state.tab === 'saved') renderKicker();
+  }
+
+  /* ── podcast ────────────────────────────────────────── */
+
+  /* One shared Audio element for the whole app: starting an episode from
+     anywhere stops whatever was playing (single-player invariant). */
+  var audioEl = null;
+  function getAudio() {
+    if (!audioEl) {
+      audioEl = new Audio();
+      ['play', 'pause', 'ended', 'timeupdate'].forEach(function (ev) {
+        audioEl.addEventListener(ev, syncPlayerUi);
+      });
+    }
+    return audioEl;
+  }
+
+  function playEpisode(ep) {
+    var a = getAudio();
+    if (state.playDate === ep.date) {
+      if (a.paused) a.play(); else a.pause();
+      return;
+    }
+    a.src = 'audio/' + ep.file;
+    state.playDate = ep.date;
+    a.play();
+    syncPlayerUi();
+  }
+
+  /* Reflect audio state onto every play button ([data-ep-play]) and the
+     strip's progress bar. Called from audio events and after renders. */
+  function syncPlayerUi() {
+    var a = getAudio();
+    var playing = !a.paused && !a.ended && a.src;
+    document.querySelectorAll('[data-ep-play]').forEach(function (btn) {
+      var on = playing && btn.getAttribute('data-ep-play') === state.playDate;
+      btn.classList.toggle('is-on', on);
+      var p = btn.querySelector('.ply'), s = btn.querySelector('.pse');
+      if (p && s) { p.style.display = on ? 'none' : ''; s.style.display = on ? '' : 'none'; }
+    });
+    var bar = $('strip-progress');
+    if (bar) bar.style.width = (a.duration ? (a.currentTime / a.duration) * 100 : 0) + '%';
+  }
+
+  async function loadEpisodes() {
+    var resp = await fetch('data/episodes.json?t=' + Date.now(), { cache: 'no-cache' });
+    if (!resp.ok) throw new Error('episodes.json not available');
+    var d = await resp.json();
+    return d.episodes || [];
+  }
+
+  /* Latest episode at the top of Home. Pure render — listeners live in
+     bindPodcast() so refreshes can't stack duplicates. */
+  function renderPodcastStrip() {
+    var strip = $('podcast-strip');
+    if (!strip) return;
+    if (!state.episodes.length) { strip.hidden = true; return; }
+    var ep = state.episodes[0];
+    strip.hidden = false;
+    $('strip-title').textContent = ep.title;
+    $('strip-dur').textContent = fmtDur(ep.durationSec);
+    var btn = $('strip-play');
+    btn.setAttribute('data-ep-play', ep.date);
+    btn.setAttribute('aria-label', 'Play ' + ep.title);
+    syncPlayerUi();
+  }
+
+  /* Full episode list on the Podcast tab. */
+  function renderEpisodes() {
+    var list = $('episode-list');
+    if (!list) return;
+    $('episode-count').textContent = state.episodes.length || '';
+    $('episodes-empty').hidden = !!state.episodes.length;
+    list.innerHTML = state.episodes.map(function (ep) {
+      return '<div class="ep-row">' +
+        '<button class="ep-play" data-ep-play="' + esc(ep.date) + '" type="button" aria-label="Play ' + esc(ep.title) + '">' +
+          playIconSVG() +
+        '</button>' +
+        '<div class="ep-meta">' +
+          '<span class="ep-date">' + esc(ep.date) + '</span>' +
+          '<span class="ep-name">' + esc(ep.title) + '</span>' +
+          '<span class="ep-desc">' + esc(ep.description) + '</span>' +
+        '</div>' +
+        '<span class="ep-len">' + fmtDur(ep.durationSec) + '</span>' +
+      '</div>';
+    }).join('');
+    list.querySelectorAll('[data-ep-play]').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var d = btn.getAttribute('data-ep-play');
+        var ep = state.episodes.filter(function (e) { return e.date === d; })[0];
+        if (ep) playEpisode(ep);
+      });
+    });
+    syncPlayerUi();
+  }
+
+  function playIconSVG() {
+    return '<svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">' +
+      '<path class="ply" d="M8 5v14l11-7z"/>' +
+      '<path class="pse" d="M6 5h4v14H6zM14 5h4v14h-4z" style="display:none"/></svg>';
+  }
+
+  function fmtDur(s) { return Math.max(1, Math.round(s / 60)) + ' min'; }
+
+  /* Static listeners, bound once. */
+  function bindPodcast() {
+    $('strip-play').addEventListener('click', function () {
+      if (state.episodes.length) playEpisode(state.episodes[0]);
+    });
+    $('strip-open').addEventListener('click', function () { setTab('podcast'); });
+    $('strip-open').addEventListener('keydown', function (e) {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); setTab('podcast'); }
+    });
+    $('btn-copy-feed').addEventListener('click', function () {
+      var url = $('feed-url').textContent.trim();
+      var btn = $('btn-copy-feed');
+      var done = function () {
+        btn.textContent = 'Copied ✓';
+        setTimeout(function () { btn.textContent = 'Copy feed URL'; }, 1500);
+      };
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(url).then(done, function () { window.prompt('Copy this URL:', url); });
+      } else {
+        window.prompt('Copy this URL:', url);
+      }
+    });
   }
 
   /* ── card builders ──────────────────────────────────── */
