@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-08-23T21:20:48Z",
-  "lastUpdatedSydney": "2026-08-24 07:20 AEST",
-  "lastUpdatedDate": "2026-08-24",
+  "lastUpdated": "2026-08-24T21:20:58Z",
+  "lastUpdatedSydney": "2026-08-25 07:20 AEST",
+  "lastUpdatedDate": "2026-08-25",
   "featuredPapers": [
     {
       "id": "10.1016/j.annemergmed.2025.09.019",
@@ -15,17 +15,6 @@
       "featuredReason": "Directly relevant to prehospital analgesia; IN route already used by many Australian services, confirms efficacy versus SC."
     },
     {
-      "id": "10.1080/10903127.2026.2717533",
-      "title": "The use of Capnometry in Prehospital Intubation and Association with 30-Day Mortality: A Nationwide Registry Study",
-      "journal": "Prehospital Emergency Care",
-      "date": "2026-08-20",
-      "pmid": "",
-      "doi": "10.1080/10903127.2026.2717533",
-      "summary": "Nationwide registry study examining capnometry use during prehospital intubation and its association with 30-day mortality.",
-      "relevance": "🟢 High — Directly relevant to Australian prehospital intubation practice; could inform guideline decisions on capnography/capnometry use.",
-      "featuredReason": "Directly relevant to Australian prehospital intubation practice; could inform guideline decisions on capnography/capnometry use."
-    },
-    {
       "id": "10.1080/10903127.2026.2674263",
       "title": "Use of double sequential external defibrillation in the United States before and after the DOSE VF randomized clinical trial",
       "journal": "Prehospital Emergency Care",
@@ -37,6 +26,28 @@
       "featuredReason": "Selected for clinical relevance to prehospital practice."
     },
     {
+      "id": "10.1016/j.resuscitation.2026.111162",
+      "title": "Health inequalities in out-of-hospital cardiac arrest incidence and bystander cardiopulmonary resuscitation rates in England 2018–23",
+      "journal": "Resuscitation",
+      "date": "2026-08-25",
+      "pmid": "",
+      "doi": "10.1016/j.resuscitation.2026.111162",
+      "summary": "Retrospective analysis of 165,701 OHCA patients in England 2018–23 found 23.6% of postcode districts remain high-risk (higher OHCA incidence, lower bystander CPR rates), with urban deprived areas showing 71.2% BCPR versus 79.1% in low-risk areas, though ROSC and survival were slightly higher in high-risk areas.",
+      "relevance": "🟢 High — OHCA epidemiology and CPR inequality — findings generalizable to Australian contexts with socioeconomic disparities",
+      "featuredReason": "OHCA epidemiology and CPR inequality — findings generalizable to Australian contexts with socioeconomic disparities"
+    },
+    {
+      "id": "10.1016/j.annemergmed.2026.04.011",
+      "title": "Emergency Medical Services Equipment Use in the Emergency Department and Time to Care for Those With Out-of-Hospital Cardiac Arrest",
+      "journal": "Annals of Emergency Medicine",
+      "date": "2026-08-25",
+      "pmid": "",
+      "doi": "10.1016/j.annemergmed.2026.04.011",
+      "summary": "Video review study of 223 OHCA patients found using EMS equipment for initial ED rhythm analysis reduced median time to first rhythm analysis by 143 seconds and first defibrillation by 131.5 seconds compared with ED equipment.",
+      "relevance": "🟢 High — Operational protocol with direct application to Australian practice — we often transfer OHCA patients with our defibrillators attached",
+      "featuredReason": "Operational protocol with direct application to Australian practice — we often transfer OHCA patients with our defibrillators attached"
+    },
+    {
       "id": "10.1016/j.resuscitation.2026.111187",
       "title": "Paramedic-assessed quality of bystander CPR is associated with survival in out-of-hospital cardiac arrest",
       "journal": "Resuscitation",
@@ -46,17 +57,6 @@
       "summary": "NSW registry study (n=17,715) found any bystander CPR increased 30-day survival odds by 70%, but good-quality bystander CPR more than tripled odds (aOR 2.62) while poor-quality CPR showed no benefit.",
       "relevance": "🟢 High — Large Australian registry with direct relevance to dispatch-assisted CPR quality measurement and dispatcher coaching.",
       "featuredReason": "Large Australian registry with direct relevance to dispatch-assisted CPR quality measurement and dispatcher coaching."
-    },
-    {
-      "id": "10.1016/j.resuscitation.2026.111147",
-      "title": "Estimated survival gains from pulselessness-detection technologies in unwitnessed out-of-hospital cardiac arrest in Western Australia: a simulation study",
-      "journal": "Resuscitation",
-      "date": "2026-08-23",
-      "pmid": "",
-      "doi": "10.1016/j.resuscitation.2026.111147",
-      "summary": "WA simulation modelling across 11,450 OHCA cases estimated wearable pulselessness-detection could double 30-day survival among unwitnessed arrests (0.5% to 1.1%) with 10% device uptake and 80% sensitivity.",
-      "relevance": "🟢 High — Australian regional research quantifying potential survival gains from a technology entering paramedic practice.",
-      "featuredReason": "Australian regional research quantifying potential survival gains from a technology entering paramedic practice."
     }
   ],
   "funFacts": [
@@ -970,31 +970,141 @@
     }
   ],
   "funFact": {
-    "category": "EMS",
-    "fact": "The earliest ambulance service on record was run by the Order of St John during the First Crusade in 1099 — carts dragging wounded knights to treatment tents. Nearly a thousand years later, we've upgraded from carts, but the job's the same."
+    "category": "pharmacology",
+    "fact": "Naloxone wears off in 30 to 90 minutes — shorter than most opioids. So your freshly reversed patient can drift back into respiratory depression while you're busy feeling like a hero. Observation isn't optional."
   },
   "tldr": {
-    "date": "2026-08-24",
-    "paperCount": 2,
-    "summary": "• Two new ACEP consensus guidelines on unscheduled procedural sedation — Part 1 (principles/oversight) and Part 2 (clinical practice)\n• US-focused but may influence local sedation protocols\n• Other papers were ahead-of-print without abstracts or technical modelling work",
+    "date": "2026-08-25",
+    "paperCount": 7,
+    "summary": "• OHCA research dominates today — persistent CPR inequality in deprived urban areas, prehospital equipment shaves 2+ minutes off ED rhythm analysis, biomarkers advance neuroprognostication after cardiac arrest (lactate in kids, kidney-specific markers in adults). Trauma resuscitation questions continue with whole blood versus components under scrutiny and a device safety warning for the SPEAR® needle decompression tool.",
     "highlights": [
       {
-        "id": "10.1016/j.annemergmed.2026.06.038",
+        "id": "10.1016/j.resuscitation.2026.111162",
         "pmid": "",
-        "doi": "10.1016/j.annemergmed.2026.06.038",
-        "title": "Unscheduled Procedural Sedation Multidisciplinary Delphi Consensus Guidelines, Part 1",
-        "note": "Multidisciplinary Delphi consensus covering principles, oversight, and quality monitoring for unscheduled procedural sedation."
+        "doi": "10.1016/j.resuscitation.2026.111162",
+        "title": "Health inequalities in out-of-hospital cardiac arrest incidence and bystander cardiopulmonary resuscitation rates in England 2018–23",
+        "note": "Retrospective analysis of 165,701 OHCA patients found 23.6% of postcode districts remain high-risk, with urban deprived areas showing 71.2% BCPR versus 79.1% in low-risk areas."
       },
       {
-        "id": "10.1016/j.annemergmed.2026.06.039",
+        "id": "10.1016/j.annemergmed.2026.04.011",
         "pmid": "",
-        "doi": "10.1016/j.annemergmed.2026.06.039",
-        "title": "Unscheduled Procedural Sedation Multidisciplinary Delphi Consensus Guidelines, Part 2",
-        "note": "Multidisciplinary Delphi consensus covering clinical practice for unscheduled procedural sedation."
+        "doi": "10.1016/j.annemergmed.2026.04.011",
+        "title": "Emergency Medical Services Equipment Use in the Emergency Department and Time to Care for Those With Out-of-Hospital Cardiac Arrest",
+        "note": "Video review found using EMS equipment for initial ED rhythm analysis reduced median time by 143 seconds for first rhythm analysis and 131.5 seconds for first defibrillation."
+      },
+      {
+        "id": "10.1016/j.resuscitation.2026.111163",
+        "pmid": "",
+        "doi": "10.1016/j.resuscitation.2026.111163",
+        "title": "Prognostic performance of plasma and urinary biomarkers of kidney injury and function after out-of-hospital cardiac arrest",
+        "note": "Kidney-specific biomarkers (plasma and urinary NGAL and KIM-1, cystatin C) were superior to serum creatinine for early AKI detection and prediction of poor neurological outcomes at discharge."
+      },
+      {
+        "id": "10.1016/j.resuscitation.2026.111178",
+        "pmid": "",
+        "doi": "10.1016/j.resuscitation.2026.111178",
+        "title": "Association of serum lactate with outcome after pediatric out-of-hospital cardiac arrest: a secondary analysis of the THAPCA trial",
+        "note": "Higher lactate within 6 hours of ROSC was associated with unfavorable 12-month neurobehavioral outcomes (median 7.8 vs 3.1 mmol/L), with each 1 mmol/L increase increasing odds of unfavorable outcome by 40%."
+      },
+      {
+        "id": "10.1016/j.resuscitation.2026.111227",
+        "pmid": "",
+        "doi": "10.1016/j.resuscitation.2026.111227",
+        "title": "Association between preexisting electrocardiographic abnormalities and shockable initial rhythm in out-of-hospital cardiac arrest",
+        "note": "Prehospital ECG abnormalities (pathological Q-waves, LVH, AF, conduction delays, LBBB) were associated with higher odds of shockable initial rhythm in bystander-witnessed arrests."
+      },
+      {
+        "id": "10.1016/j.annemergmed.2026.03.029",
+        "pmid": "",
+        "doi": "10.1016/j.annemergmed.2026.03.029",
+        "title": "Intravenous Magnesium Sulfate for Acute Nontraumatic Headache in the Emergency Department",
+        "note": "RCT found IV magnesium sulfate plus paracetamol achieved more frequent treatment success (78.9% vs 65.1%) but pain score differences were below clinical importance thresholds."
+      },
+      {
+        "id": "10.1016/j.resuscitation.2026.111153",
+        "pmid": "",
+        "doi": "10.1016/j.resuscitation.2026.111153",
+        "title": "MRI-based quantitative profiling of hypoxic-ischemic brain injury in postanoxic status epilepticus and other EEG patterns",
+        "note": "Postanoxic status epilepticus exhibited more favorable hypoxic-ischemic brain injury profiles (higher whole-brain ADC values) compared with generalized periodic discharges or malignant EEG patterns."
       }
     ]
   },
   "dailyUpdates": [
+    {
+      "date": "2026-08-25",
+      "papers": [
+        {
+          "id": "10.1016/j.resuscitation.2026.111162",
+          "title": "Health inequalities in out-of-hospital cardiac arrest incidence and bystander cardiopulmonary resuscitation rates in England 2018–23",
+          "journal": "Resuscitation",
+          "date": "2026-08-25",
+          "pmid": "",
+          "doi": "10.1016/j.resuscitation.2026.111162",
+          "summary": "Retrospective analysis of 165,701 OHCA patients in England 2018–23 found 23.6% of postcode districts remain high-risk (higher OHCA incidence, lower bystander CPR rates), with urban deprived areas showing 71.2% BCPR versus 79.1% in low-risk areas, though ROSC and survival were slightly higher in high-risk areas.",
+          "relevance": "🟢 High — OHCA epidemiology and CPR inequality — findings generalizable to Australian contexts with socioeconomic disparities"
+        },
+        {
+          "id": "10.1016/j.annemergmed.2026.04.011",
+          "title": "Emergency Medical Services Equipment Use in the Emergency Department and Time to Care for Those With Out-of-Hospital Cardiac Arrest",
+          "journal": "Annals of Emergency Medicine",
+          "date": "2026-08-25",
+          "pmid": "",
+          "doi": "10.1016/j.annemergmed.2026.04.011",
+          "summary": "Video review study of 223 OHCA patients found using EMS equipment for initial ED rhythm analysis reduced median time to first rhythm analysis by 143 seconds and first defibrillation by 131.5 seconds compared with ED equipment.",
+          "relevance": "🟢 High — Operational protocol with direct application to Australian practice — we often transfer OHCA patients with our defibrillators attached"
+        },
+        {
+          "id": "10.1016/j.resuscitation.2026.111163",
+          "title": "Prognostic performance of plasma and urinary biomarkers of kidney injury and function after out-of-hospital cardiac arrest",
+          "journal": "Resuscitation",
+          "date": "2026-08-25",
+          "pmid": "",
+          "doi": "10.1016/j.resuscitation.2026.111163",
+          "summary": "Prospective study of 82 comatose OHCA patients found kidney-specific biomarkers (plasma and urinary NGAL and KIM-1, cystatin C) were superior to serum creatinine for early AKI detection and prediction of poor neurological outcomes at discharge.",
+          "relevance": "🟡 Medium — Hospital-based biomarker research — relevant for post-arrest care but not prehospital decision-making"
+        },
+        {
+          "id": "10.1016/j.resuscitation.2026.111178",
+          "title": "Association of serum lactate with outcome after pediatric out-of-hospital cardiac arrest: a secondary analysis of the Therapeutic Hypothermia After Pediatric Cardiac Arrest (THAPCA) trial",
+          "journal": "Resuscitation",
+          "date": "2026-08-25",
+          "pmid": "",
+          "doi": "10.1016/j.resuscitation.2026.111178",
+          "summary": "Secondary analysis of 213 pediatric OHCA patients found higher lactate within 6 hours of ROSC was associated with unfavorable 12-month neurobehavioral outcomes (median 7.8 vs 3.1 mmol/L), with each 1 mmol/L increase increasing odds of unfavorable outcome by 40%.",
+          "relevance": "🟡 Medium — Pediatric OHCA prognostication — limited direct prehospital application but valuable for understanding long-term outcomes"
+        },
+        {
+          "id": "10.1016/j.resuscitation.2026.111227",
+          "title": "Association between preexisting electrocardiographic abnormalities and shockable initial rhythm in out-of-hospital cardiac arrest",
+          "journal": "Resuscitation",
+          "date": "2026-08-25",
+          "pmid": "",
+          "doi": "10.1016/j.resuscitation.2026.111227",
+          "summary": "Danish registry study of 22,516 first OHCA patients found prehospital ECG abnormalities (pathological Q-waves, LVH, AF, conduction delays, LBBB) were associated with higher odds of shockable initial rhythm in bystander-witnessed arrests.",
+          "relevance": "🟡 Medium — Retrospective hospital-based analysis — predictive value of historical ECGs but not actionable at roadside"
+        },
+        {
+          "id": "10.1016/j.annemergmed.2026.03.029",
+          "title": "Intravenous Magnesium Sulfate for Acute Nontraumatic Headache in the Emergency Department",
+          "journal": "Annals of Emergency Medicine",
+          "date": "2026-08-25",
+          "pmid": "",
+          "doi": "10.1016/j.annemergmed.2026.03.029",
+          "summary": "RCT of 1,028 ED patients with acute nontraumatic headache found IV magnesium sulfate plus paracetamol achieved more frequent treatment success (78.9% vs 65.1%) but pain score differences were below clinical importance thresholds, with less rescue analgesia needed but more mild side effects.",
+          "relevance": "🟡 Medium — ED-based analgesia trial — magnesium showed statistical but not clinically meaningful benefit for prehospital use"
+        },
+        {
+          "id": "10.1016/j.resuscitation.2026.111153",
+          "title": "MRI-based quantitative profiling of hypoxic-ischemic brain injury in postanoxic status epilepticus and other EEG patterns",
+          "journal": "Resuscitation",
+          "date": "2026-08-25",
+          "pmid": "",
+          "doi": "10.1016/j.resuscitation.2026.111153",
+          "summary": "Two-center study of 192 postanoxic patients using quantitative MRI found postanoxic status epilepticus exhibited more favorable hypoxic-ischemic brain injury profiles (higher whole-brain ADC values) compared with generalized periodic discharges or malignant EEG patterns.",
+          "relevance": "🟡 Medium — Advanced neuroprognostication research — hospital-based MRI study not applicable to prehospital care"
+        }
+      ]
+    },
     {
       "date": "2026-08-24",
       "papers": [
