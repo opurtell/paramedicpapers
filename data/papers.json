@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-08-24T21:20:58Z",
-  "lastUpdatedSydney": "2026-08-25 07:20 AEST",
-  "lastUpdatedDate": "2026-08-25",
+  "lastUpdated": "2026-08-25T21:20:08Z",
+  "lastUpdatedSydney": "2026-08-26 07:20 AEST",
+  "lastUpdatedDate": "2026-08-26",
   "featuredPapers": [
     {
       "id": "10.1016/j.annemergmed.2025.09.019",
@@ -26,6 +26,17 @@
       "featuredReason": "Selected for clinical relevance to prehospital practice."
     },
     {
+      "id": "10.1016/j.resplu.2026.101447",
+      "title": "Wearable saving lives: a case report",
+      "journal": "Resuscitation Plus",
+      "date": "2026-08-26",
+      "pmid": "",
+      "doi": "10.1016/j.resplu.2026.101447",
+      "summary": "Case report demonstrating that smartwatch fall detection can serve as a digital witness in unwitnessed out-of-hospital cardiac arrest, triggering alerts that enabled timely CPR initiation and resulted in favourable neurological recovery.",
+      "relevance": "🟢 High — Commercial wearable technology is widely available in the community, and EMS personnel increasingly encounter patients with smartwatches triggering alerts — understanding this workflow improves response coordination and outcomes.",
+      "featuredReason": "Commercial wearable technology is widely available in the community, and EMS personnel increasingly encounter patients with smartwatches triggering alerts — understanding this workflow improves response coordination and outcomes."
+    },
+    {
       "id": "10.1016/j.resuscitation.2026.111162",
       "title": "Health inequalities in out-of-hospital cardiac arrest incidence and bystander cardiopulmonary resuscitation rates in England 2018–23",
       "journal": "Resuscitation",
@@ -46,17 +57,6 @@
       "summary": "Video review study of 223 OHCA patients found using EMS equipment for initial ED rhythm analysis reduced median time to first rhythm analysis by 143 seconds and first defibrillation by 131.5 seconds compared with ED equipment.",
       "relevance": "🟢 High — Operational protocol with direct application to Australian practice — we often transfer OHCA patients with our defibrillators attached",
       "featuredReason": "Operational protocol with direct application to Australian practice — we often transfer OHCA patients with our defibrillators attached"
-    },
-    {
-      "id": "10.1016/j.resuscitation.2026.111187",
-      "title": "Paramedic-assessed quality of bystander CPR is associated with survival in out-of-hospital cardiac arrest",
-      "journal": "Resuscitation",
-      "date": "2026-08-23",
-      "pmid": "",
-      "doi": "10.1016/j.resuscitation.2026.111187",
-      "summary": "NSW registry study (n=17,715) found any bystander CPR increased 30-day survival odds by 70%, but good-quality bystander CPR more than tripled odds (aOR 2.62) while poor-quality CPR showed no benefit.",
-      "relevance": "🟢 High — Large Australian registry with direct relevance to dispatch-assisted CPR quality measurement and dispatcher coaching.",
-      "featuredReason": "Large Australian registry with direct relevance to dispatch-assisted CPR quality measurement and dispatcher coaching."
     }
   ],
   "funFacts": [
@@ -970,66 +970,56 @@
     }
   ],
   "funFact": {
-    "category": "pharmacology",
-    "fact": "Naloxone wears off in 30 to 90 minutes — shorter than most opioids. So your freshly reversed patient can drift back into respiratory depression while you're busy feeling like a hero. Observation isn't optional."
+    "category": "pathophysiology",
+    "fact": "Kussmaul breathing — those deep, desperate, rapid respirations in DKA — is your patient literally trying to breathe their way out of a metabolic acidosis by blowing off CO2. Respiratory compensation for a metabolic catastrophe."
   },
   "tldr": {
-    "date": "2026-08-25",
-    "paperCount": 7,
-    "summary": "• OHCA research dominates today — persistent CPR inequality in deprived urban areas, prehospital equipment shaves 2+ minutes off ED rhythm analysis, biomarkers advance neuroprognostication after cardiac arrest (lactate in kids, kidney-specific markers in adults). Trauma resuscitation questions continue with whole blood versus components under scrutiny and a device safety warning for the SPEAR® needle decompression tool.",
+    "date": "2026-08-26",
+    "paperCount": 2,
+    "summary": "Workplace violence study identifies three key drivers for ambulance personnel: behavioural competence, emotional coping, and situational unpredictability. Smartwatch fall detection demonstrates potential as digital witness in unwitnessed OHCA, enabling timely CPR and favourable neurological outcomes.",
     "highlights": [
       {
-        "id": "10.1016/j.resuscitation.2026.111162",
+        "id": "10.1016/j.resplu.2026.101447",
         "pmid": "",
-        "doi": "10.1016/j.resuscitation.2026.111162",
-        "title": "Health inequalities in out-of-hospital cardiac arrest incidence and bystander cardiopulmonary resuscitation rates in England 2018–23",
-        "note": "Retrospective analysis of 165,701 OHCA patients found 23.6% of postcode districts remain high-risk, with urban deprived areas showing 71.2% BCPR versus 79.1% in low-risk areas."
+        "doi": "10.1016/j.resplu.2026.101447",
+        "title": "Wearable saving lives: a case report",
+        "note": "Smartwatch fall detection triggered automated alerts in unwitnessed OHCA, enabling timely CPR initiation and favourable neurological recovery."
       },
       {
-        "id": "10.1016/j.annemergmed.2026.04.011",
+        "id": "10.1186/s13049-026-01680-8",
         "pmid": "",
-        "doi": "10.1016/j.annemergmed.2026.04.011",
-        "title": "Emergency Medical Services Equipment Use in the Emergency Department and Time to Care for Those With Out-of-Hospital Cardiac Arrest",
-        "note": "Video review found using EMS equipment for initial ED rhythm analysis reduced median time by 143 seconds for first rhythm analysis and 131.5 seconds for first defibrillation."
-      },
-      {
-        "id": "10.1016/j.resuscitation.2026.111163",
-        "pmid": "",
-        "doi": "10.1016/j.resuscitation.2026.111163",
-        "title": "Prognostic performance of plasma and urinary biomarkers of kidney injury and function after out-of-hospital cardiac arrest",
-        "note": "Kidney-specific biomarkers (plasma and urinary NGAL and KIM-1, cystatin C) were superior to serum creatinine for early AKI detection and prediction of poor neurological outcomes at discharge."
-      },
-      {
-        "id": "10.1016/j.resuscitation.2026.111178",
-        "pmid": "",
-        "doi": "10.1016/j.resuscitation.2026.111178",
-        "title": "Association of serum lactate with outcome after pediatric out-of-hospital cardiac arrest: a secondary analysis of the THAPCA trial",
-        "note": "Higher lactate within 6 hours of ROSC was associated with unfavorable 12-month neurobehavioral outcomes (median 7.8 vs 3.1 mmol/L), with each 1 mmol/L increase increasing odds of unfavorable outcome by 40%."
-      },
-      {
-        "id": "10.1016/j.resuscitation.2026.111227",
-        "pmid": "",
-        "doi": "10.1016/j.resuscitation.2026.111227",
-        "title": "Association between preexisting electrocardiographic abnormalities and shockable initial rhythm in out-of-hospital cardiac arrest",
-        "note": "Prehospital ECG abnormalities (pathological Q-waves, LVH, AF, conduction delays, LBBB) were associated with higher odds of shockable initial rhythm in bystander-witnessed arrests."
-      },
-      {
-        "id": "10.1016/j.annemergmed.2026.03.029",
-        "pmid": "",
-        "doi": "10.1016/j.annemergmed.2026.03.029",
-        "title": "Intravenous Magnesium Sulfate for Acute Nontraumatic Headache in the Emergency Department",
-        "note": "RCT found IV magnesium sulfate plus paracetamol achieved more frequent treatment success (78.9% vs 65.1%) but pain score differences were below clinical importance thresholds."
-      },
-      {
-        "id": "10.1016/j.resuscitation.2026.111153",
-        "pmid": "",
-        "doi": "10.1016/j.resuscitation.2026.111153",
-        "title": "MRI-based quantitative profiling of hypoxic-ischemic brain injury in postanoxic status epilepticus and other EEG patterns",
-        "note": "Postanoxic status epilepticus exhibited more favorable hypoxic-ischemic brain injury profiles (higher whole-brain ADC values) compared with generalized periodic discharges or malignant EEG patterns."
+        "doi": "10.1186/s13049-026-01680-8",
+        "title": "Workplace violence from the ambulance personnel's perspective, a qualitative study",
+        "note": "Three themes driving workplace violence: personnel lack of competence/willingness to adapt, inability to cope with emotional responses to provocation, and limited control in unpredictable situations."
       }
     ]
   },
   "dailyUpdates": [
+    {
+      "date": "2026-08-26",
+      "papers": [
+        {
+          "id": "10.1016/j.resplu.2026.101447",
+          "title": "Wearable saving lives: a case report",
+          "journal": "Resuscitation Plus",
+          "date": "2026-08-26",
+          "pmid": "",
+          "doi": "10.1016/j.resplu.2026.101447",
+          "summary": "Case report demonstrating that smartwatch fall detection can serve as a digital witness in unwitnessed out-of-hospital cardiac arrest, triggering alerts that enabled timely CPR initiation and resulted in favourable neurological recovery.",
+          "relevance": "🟢 High — Commercial wearable technology is widely available in the community, and EMS personnel increasingly encounter patients with smartwatches triggering alerts — understanding this workflow improves response coordination and outcomes."
+        },
+        {
+          "id": "10.1186/s13049-026-01680-8",
+          "title": "Workplace violence from the ambulance personnel's perspective, a qualitative study",
+          "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+          "date": "2026-08-26",
+          "pmid": "",
+          "doi": "10.1186/s13049-026-01680-8",
+          "summary": "Qualitative study with Swedish ambulance personnel identified three themes driving workplace violence: personnel lack of competence and willingness to adapt, inability to cope with emotional responses to provocation, and limited control in unpredictable situations involving intoxicated or unpredictable patients.",
+          "relevance": "🟡 Medium — Swedish ambulance service context differs from Australian models in staffing, scope of practice, and patient demographics, though the themes of situational control and emotional coping translate broadly to prehospital work."
+        }
+      ]
+    },
     {
       "date": "2026-08-25",
       "papers": [
@@ -1102,6 +1092,126 @@
           "doi": "10.1016/j.resuscitation.2026.111153",
           "summary": "Two-center study of 192 postanoxic patients using quantitative MRI found postanoxic status epilepticus exhibited more favorable hypoxic-ischemic brain injury profiles (higher whole-brain ADC values) compared with generalized periodic discharges or malignant EEG patterns.",
           "relevance": "🟡 Medium — Advanced neuroprognostication research — hospital-based MRI study not applicable to prehospital care"
+        },
+        {
+          "id": "10.1080/10903127.2026.2719960",
+          "title": "Identifying Quality Indicators for Prehospital Care Following Out-of-Hospital Cardiac Arrest: A Focused Scoping Review",
+          "journal": "Prehospital Emergency Care",
+          "date": "2026-08-25",
+          "pmid": "",
+          "doi": "10.1080/10903127.2026.2719960",
+          "summary": "Scoping review identified 16 potential quality indicators for prehospital post-ROSC care across five domains, highlighting a major evidence gap since only two existing studies listed formal indicators.",
+          "relevance": "🟢 High transferability — Directly addresses prehospital practice gap — quality indicators could standardise post-ROSC care and benchmark performance"
+        },
+        {
+          "id": "10.1016/j.resplu.2026.101444",
+          "title": "PRECEPT-OHCA: prehospital evaluation of confidence and practice in the treatment of out-of-hospital cardiac arrest across Australia, the United Kingdom, and New Zealand: a cross-sectional study protocol",
+          "journal": "Resuscitation Plus",
+          "date": "2026-08-25",
+          "pmid": "",
+          "doi": "10.1016/j.resplu.2026.101444",
+          "summary": "Cross-sectional survey protocol will assess paramedic confidence in identifying OHCA reversible causes across Australia, UK and New Zealand, evaluating equipment availability and perceived barriers.",
+          "relevance": "🟢 High transferability — Australian context with direct relevance to paramedic practice — findings could inform training and equipment decisions"
+        },
+        {
+          "id": "42618180",
+          "title": "Whole Blood Versus Component Therapy for Out-of-Hospital Trauma Resuscitation",
+          "journal": "Annals of Emergency Medicine",
+          "date": "2026-08-25",
+          "pmid": "42618180",
+          "doi": "10.1016/j.annemergmed.2026.07.013",
+          "summary": "Review compared whole blood versus component therapy for out-of-hospital trauma resuscitation — direct clinical relevance for prehospital blood product protocols.",
+          "relevance": "🟢 High transferability — Directly addresses a key prehospital clinical question — blood product selection affects trauma resuscitation protocols"
+        },
+        {
+          "id": "10.1080/10903127.2026.2717529",
+          "title": "Research and Knowledge Translation Priorities for the Prehospital Care of Older Adults: A Modified Delphi Study",
+          "journal": "Prehospital Emergency Care",
+          "date": "2026-08-25",
+          "pmid": "",
+          "doi": "10.1080/10903127.2026.2717529",
+          "summary": "Modified Delphi study identified five high-priority research themes for older adult prehospital care, with falls assessment, prevention, and clinician training ranking highest across research and knowledge translation domains.",
+          "relevance": "🟢 High transferability — Older adults represent growing EMS demographic — findings should guide research and practice priorities for this population"
+        },
+        {
+          "id": "42586298",
+          "title": "Device safety during dual defibrillation requires implementation frameworks, not just post-use testing",
+          "journal": "Resuscitation",
+          "date": "2026-08-25",
+          "pmid": "42586298",
+          "doi": "10.1016/j.resuscitation.2026.111252",
+          "summary": "Commentary argued dual defibrillation safety requires implementation frameworks and training protocols, not just post-use device testing, due to risks of electrical arcing and device damage.",
+          "relevance": "🟢 High transferability — Directly addresses resuscitation practice — dual defibrillation requires structured safety protocols beyond device checks"
+        },
+        {
+          "id": "10.1080/10903127.2026.2721454",
+          "title": "Post-ROSC Signs of Life Are Not Pre-ROSC Prognostic Markers",
+          "journal": "Prehospital Emergency Care",
+          "date": "2026-08-25",
+          "pmid": "",
+          "doi": "10.1080/10903127.2026.2721454",
+          "summary": "Letter to Editor argued post-ROSC signs of life should not be used as pre-ROSC prognostic markers, emphasising that clinical signs after ROSC do not predict outcomes during arrest.",
+          "relevance": "🟢 High transferability — Clarifies prognostication timing — important for transport and continuation-of-resuscitation decisions"
+        },
+        {
+          "id": "10.1186/s13049-026-01679-1",
+          "title": "Endotracheal intubation practices, success rates and adverse events in four Dutch emergency departments: a multicentre retrospective study",
+          "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+          "date": "2026-08-25",
+          "pmid": "",
+          "doi": "10.1186/s13049-026-01679-1",
+          "summary": "Retrospective study of 1,250 ED intubations showed 93.8% first-pass success with videolaryngoscopy as primary technique, with hypotension and desaturation as most common adverse events.",
+          "relevance": "🟡 Medium transferability — ED setting differs from prehospital, but videolaryngoscopy success rates and complication patterns are informative for airway protocols"
+        },
+        {
+          "id": "10.1016/j.resplu.2026.101445",
+          "title": "RescQ™: Study protocol for a feasibility pilot of structured support for bystanders/lay-rescuers following out-of-hospital cardiac arrest",
+          "journal": "Resuscitation Plus",
+          "date": "2026-08-25",
+          "pmid": "",
+          "doi": "10.1016/j.resplu.2026.101445",
+          "summary": "Feasibility pilot protocol tested structured support pathway for bystanders involved in OHCA, including digital resources and psychological screening via liaison officers.",
+          "relevance": "🟡 Medium transferability — Interesting model for supporting bystanders but still in protocol phase — paramedics could participate in referral pathways"
+        },
+        {
+          "id": "10.1080/10903127.2026.2719010",
+          "title": "Trends in CAPCE-accredited Emergency Medical Services Continuing Education Over the Past Decade",
+          "journal": "Prehospital Emergency Care",
+          "date": "2026-08-25",
+          "pmid": "",
+          "doi": "10.1080/10903127.2026.2719010",
+          "summary": "Retrospective analysis of 19.3 million CE completions showed post-pandemic shift to online formats, with asynchronous distributive learning increasing 209% and interactive gaming courses increasing 915%.",
+          "relevance": "🟡 Medium transferability — US-focused but reflects broader education trends — online CE formats are becoming dominant globally"
+        },
+        {
+          "id": "42276290",
+          "title": "No witness, no problem? The potential survival benefit of wearable-based cardiac arrest detection",
+          "journal": "Resuscitation",
+          "date": "2026-08-25",
+          "pmid": "42276290",
+          "doi": "10.1016/j.resuscitation.2026.111171",
+          "summary": "Commentary discussed potential survival benefits of wearable-based cardiac arrest detection for unwitnessed arrests, arguing earlier detection could improve response times.",
+          "relevance": "🟡 Medium transferability — Emerging technology not yet adopted in practice — promising but requires validation and integration with dispatch systems"
+        },
+        {
+          "id": "42586304",
+          "title": "Coronary stenosis or acute occlusion? Endpoint choice in AI-based coronary triage after cardiac arrest",
+          "journal": "Resuscitation",
+          "date": "2026-08-25",
+          "pmid": "42586304",
+          "doi": "10.1016/j.resuscitation.2026.111258",
+          "summary": "Study examined endpoint choice in AI-based coronary triage after cardiac arrest, comparing coronary stenosis versus acute occlusion detection.",
+          "relevance": "🟡 Medium transferability — AI tools may support post-arrest decision-making but not immediately actionable for prehospital clinicians"
+        },
+        {
+          "id": "10.1080/10903127.2026.2724039",
+          "title": "Harm Reduction on Campus: A National Survey of Collegiate-based EMS Agencies",
+          "journal": "Prehospital Emergency Care",
+          "date": "2026-08-25",
+          "pmid": "",
+          "doi": "10.1080/10903127.2026.2724039",
+          "summary": "National survey examined harm reduction programs in collegiate-based EMS agencies, assessing naloxone distribution, overdose response, and substance use support services.",
+          "relevance": "🟡 Medium transferability — US campus-specific context but harm reduction principles applicable to community paramedicine models"
         }
       ]
     },
@@ -3492,55 +3602,55 @@
     }
   ],
   "weeklyTldr": {
-    "dateRange": "11 Aug – 17 Aug 2026",
-    "summary": "Online medical direction (OLMD) shows strong alignment between paramedic clinical judgment and physician decision-making in an urban US EMS system with 9,944 consultations over 8 years\nLoss of pulsatility after extracorporeal CPR is associated with significantly higher mortality (74% vs 48%) - each additional hour without pulsatility increases mortality risk by 17%\nSystematic review of 32 studies identifies key drivers of non-urgent ED utilisation: prior ED visits and patient perception of illness severity are the strongest predictors",
+    "dateRange": "18–25 August 2026",
+    "summary": "New quality indicators proposed for prehospital post-ROSC care — addresses major evidence gap\nAustralian-led survey will benchmark paramedic confidence in identifying OHCA reversible causes\nDelphi study identifies falls assessment and prevention as top priorities for older adult prehospital care",
     "highlights": [
       {
-        "text": "Online medical direction (OLMD) shows strong alignment between paramedic clinical judgment and physician decision-making in an urban US EMS system with 9,944 consultations over 8 years",
-        "id": "10.1080/10903127.2026.2713129"
+        "text": "New quality indicators proposed for prehospital post-ROSC care — addresses major evidence gap",
+        "id": "10.1080/10903127.2026.2719960"
       },
       {
-        "text": "Loss of pulsatility after extracorporeal CPR is associated with significantly higher mortality (74% vs 48%) - each additional hour without pulsatility increases mortality risk by 17%",
-        "id": "10.1016/j.resplu.2026.101429"
+        "text": "Australian-led survey will benchmark paramedic confidence in identifying OHCA reversible causes",
+        "id": "10.1016/j.resplu.2026.101444"
       },
       {
-        "text": "Systematic review of 32 studies identifies key drivers of non-urgent ED utilisation: prior ED visits and patient perception of illness severity are the strongest predictors",
-        "id": "10.1186/s13049-026-01672-8"
+        "text": "Delphi study identifies falls assessment and prevention as top priorities for older adult prehospital care",
+        "id": "10.1080/10903127.2026.2717529"
       }
     ],
     "topPicks": [
       {
-        "id": "10.1080/10903127.2026.2713129",
-        "title": "Patterns of Online Medical Direction Utilization in an Urban EMS System: A Retrospective Analysis of 9,944 Consultations",
-        "authors": "Russell Baker, Fran Soljacic, Tyler Snow, et al.",
+        "id": "10.1080/10903127.2026.2719960",
+        "title": "Identifying Quality Indicators for Prehospital Care Following Out-of-Hospital Cardiac Arrest: A Focused Scoping Review",
+        "authors": "Petrus Malherbe, Eric Bustos, Will Dunn, et al.",
         "journal": "Prehospital Emergency Care",
-        "summary": "Retrospective analysis of 9,944 online medical direction consultations from 2016-2024 found OLMD is primarily used for patient refusals (65%) with 97% physician approval, and overall ~93% agreement between paramedic requests and physician decisions",
-        "relevance": "🟢 High transferability — Large real-world EMS dataset directly applicable to OLMD practice patterns and protocol refinement",
+        "summary": "Scoping review identified 16 potential quality indicators for prehospital post-ROSC care across five domains, highlighting a major evidence gap since only two existing studies listed formal indicators.",
+        "relevance": "🟢 High transferability — Directly addresses prehospital practice gap — quality indicators could standardise post-ROSC care and benchmark performance",
         "pmid": "",
-        "doi": "10.1080/10903127.2026.2713129",
-        "featuredReason": "Large real-world EMS dataset (9,944 consultations) showing physician agreement with paramedic clinical judgment in ~93% of OLMD requests — validates paramedic decision-making and provides data for protocol refinement"
+        "doi": "10.1080/10903127.2026.2719960",
+        "featuredReason": "First systematic attempt to identify quality indicators for prehospital post-ROSC care — a critical evidence gap that directly affects every paramedic managing cardiac arrest"
       },
       {
-        "id": "10.1016/j.resplu.2026.101429",
-        "title": "Incidence and impact of loss of pulsatility on outcomes after extracorporeal cardiopulmonary resuscitation – A retrospective cohort study",
-        "authors": "Vinodh Bhagyalakshmi Nanjayya, Alistair Nichol, David M. Kaye, et al.",
+        "id": "10.1016/j.resplu.2026.101444",
+        "title": "PRECEPT-OHCA: prehospital evaluation of confidence and practice in the treatment of out-of-hospital cardiac arrest across Australia, the United Kingdom, and New Zealand: a cross-sectional study protocol",
+        "authors": "Salman Naeem, Stewart Ashcroft-Quinn, Alison Brown, et al.",
         "journal": "Resuscitation Plus",
-        "summary": "Retrospective cohort of 221 ECPR patients found loss of pulsatility (zero pulse pressure) occurred in 49% of cases and was associated with significantly higher in-hospital mortality (74% vs 48%), with each additional hour of non-pulsatility increasing mortality risk by 17%",
-        "relevance": "🟡 Medium transferability — Highly specialized ECMO center study with limited direct prehospital relevance, though useful for understanding ECPR prognostication",
+        "summary": "Cross-sectional survey protocol will assess paramedic confidence in identifying OHCA reversible causes across Australia, UK and New Zealand, evaluating equipment availability and perceived barriers.",
+        "relevance": "🟢 High transferability — Australian context with direct relevance to paramedic practice — findings could inform training and equipment decisions",
         "pmid": "",
-        "doi": "10.1016/j.resplu.2026.101429",
-        "featuredReason": "First large ECPR study (n=221) to quantify loss of pulsatility as a strong mortality predictor (74% vs 48%) with clear dose-response relationship — useful prognostication context for ECPR systems"
+        "doi": "10.1016/j.resplu.2026.101444",
+        "featuredReason": "Australian-led survey will benchmark paramedic confidence in identifying OHCA reversible causes, with findings likely to influence training and protocol development across ANZ"
       },
       {
-        "id": "10.1186/s13049-026-01672-8",
-        "title": "Non-urgent emergency department utilization in adults: a systematic review of associated factors across diverse health systems",
-        "authors": "Ehsan Zarei, Mehdi Safari, Mohammad Sadegh Nematollahi",
-        "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
-        "summary": "Systematic review of 32 studies across 21 countries identified factors associated with non-urgent ED utilisation, with frequent prior ED visits (aOR up to 82) and patient perception of non-serious illness (aOR up to 21) being the strongest predictors",
-        "relevance": "🟡 Medium transferability — Provides operational context for understanding ED utilisation patterns, though in-hospital focus",
+        "id": "10.1080/10903127.2026.2717529",
+        "title": "Research and Knowledge Translation Priorities for the Prehospital Care of Older Adults: A Modified Delphi Study",
+        "authors": "Maia Dorsett, Rebecca Cash, Rana Barghout, et al.",
+        "journal": "Prehospital Emergency Care",
+        "summary": "Modified Delphi study identified five high-priority research themes for older adult prehospital care, with falls assessment, prevention, and clinician training ranking highest across research and knowledge translation domains.",
+        "relevance": "🟢 High transferability — Older adults represent growing EMS demographic — findings should guide research and practice priorities for this population",
         "pmid": "",
-        "doi": "10.1186/s13049-026-01672-8",
-        "featuredReason": "Comprehensive systematic review (32 studies, 21 countries) synthesising evidence on non-urgent ED utilisation factors — operational insight useful for understanding ED workload patterns"
+        "doi": "10.1080/10903127.2026.2717529",
+        "featuredReason": "Delphi study identified clear priorities for older adult prehospital care, with falls assessment and prevention ranking highest — directly relevant to growing patient demographic"
       }
     ]
   }
