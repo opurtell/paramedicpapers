@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-08-25T21:20:08Z",
-  "lastUpdatedSydney": "2026-08-26 07:20 AEST",
-  "lastUpdatedDate": "2026-08-26",
+  "lastUpdated": "2026-08-26T21:20:17Z",
+  "lastUpdatedSydney": "2026-08-27 07:20 AEST",
+  "lastUpdatedDate": "2026-08-27",
   "featuredPapers": [
     {
       "id": "10.1016/j.annemergmed.2025.09.019",
@@ -970,31 +970,39 @@
     }
   ],
   "funFact": {
-    "category": "pathophysiology",
-    "fact": "Kussmaul breathing — those deep, desperate, rapid respirations in DKA — is your patient literally trying to breathe their way out of a metabolic acidosis by blowing off CO2. Respiratory compensation for a metabolic catastrophe."
+    "category": "cardiac",
+    "fact": "At normal heart rates, the QT interval should be less than half the R-R interval. A corrected QT over 500ms? That's your ticket to torsades de pointes — a rhythm as dangerous as it sounds."
   },
   "tldr": {
-    "date": "2026-08-26",
-    "paperCount": 2,
-    "summary": "Workplace violence study identifies three key drivers for ambulance personnel: behavioural competence, emotional coping, and situational unpredictability. Smartwatch fall detection demonstrates potential as digital witness in unwitnessed OHCA, enabling timely CPR and favourable neurological outcomes.",
+    "date": "2026-08-27",
+    "paperCount": 1,
+    "summary": "Light day — only one paper with a full abstract available. A solid RCT from Tunisia adds to the evidence that IM midazolam is non-inferior to IV clonazepam for prehospital seizures, supporting its use when IV access would delay treatment.",
     "highlights": [
       {
-        "id": "10.1016/j.resplu.2026.101447",
+        "id": "10.1016/j.seizure.2026.08.007",
         "pmid": "",
-        "doi": "10.1016/j.resplu.2026.101447",
-        "title": "Wearable saving lives: a case report",
-        "note": "Smartwatch fall detection triggered automated alerts in unwitnessed OHCA, enabling timely CPR initiation and favourable neurological recovery."
-      },
-      {
-        "id": "10.1186/s13049-026-01680-8",
-        "pmid": "",
-        "doi": "10.1186/s13049-026-01680-8",
-        "title": "Workplace violence from the ambulance personnel's perspective, a qualitative study",
-        "note": "Three themes driving workplace violence: personnel lack of competence/willingness to adapt, inability to cope with emotional responses to provocation, and limited control in unpredictable situations."
+        "doi": "10.1016/j.seizure.2026.08.007",
+        "title": "Intramuscular midazolam versus intravenous clonazepam for prehospital seizures",
+        "note": "IM midazolam achieved 75% treatment success vs 62.5% for IV clonazepam, confirming non-inferiority (95% CI -10.0 to +33.4)."
       }
     ]
   },
   "dailyUpdates": [
+    {
+      "date": "2026-08-27",
+      "papers": [
+        {
+          "id": "10.1016/j.seizure.2026.08.007",
+          "title": "Intramuscular midazolam versus intravenous clonazepam for prehospital treatment of generalized tonic-clonic seizures: A randomized double-blind non-inferiority trial",
+          "journal": "Seizure: European Journal of Epilepsy",
+          "date": "2026-08-27",
+          "pmid": "",
+          "doi": "10.1016/j.seizure.2026.08.007",
+          "summary": "Randomised double-blind non-inferiority trial testing whether IM midazolam is non-inferior to IV clonazepam for prehospital seizures — it was, with 75% treatment success for IM midazolam versus 62.5% for IV clonazepam (risk difference +12.5 percentage points; 95% CI -10.0 to +33.4).",
+          "relevance": "🟢 High — Directly relevant to prehospital seizure management — IM midazolam is widely used in Australia and this RCT supports its use when IV access would delay treatment."
+        }
+      ]
+    },
     {
       "date": "2026-08-26",
       "papers": [
