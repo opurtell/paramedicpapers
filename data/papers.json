@@ -1,8 +1,30 @@
 {
-  "lastUpdated": "2026-08-26T21:20:17Z",
-  "lastUpdatedSydney": "2026-08-27 07:20 AEST",
-  "lastUpdatedDate": "2026-08-27",
+  "lastUpdated": "2026-08-27T21:20:27Z",
+  "lastUpdatedSydney": "2026-08-28 07:20 AEST",
+  "lastUpdatedDate": "2026-08-28",
   "featuredPapers": [
+    {
+      "id": "10.1016/j.resplu.2026.101455",
+      "title": "Distribution of clinically identified reversible causes in emergency department and out-of-hospital cardiac arrest: a retrospective cohort study",
+      "journal": "Resuscitation Plus",
+      "date": "2026-08-28",
+      "pmid": "",
+      "doi": "10.1016/j.resplu.2026.101455",
+      "summary": "Retrospective cohort study comparing reversible causes in ED vs. out-of-hospital cardiac arrest — hypoxia was the most common cause overall but occurred less frequently in ED arrests (46.6% vs 57.2%), while hypovolemia (33.1% vs 23.2%) and cardiac tamponade (2.9% vs 0.6%) were significantly more common in ED.",
+      "relevance": "🟢 High — Directly applicable to cardiac arrest resuscitation (CMG 4) — reinforces the 5Hs and 5Ts framework and shows ED arrests have a different cause profile that may inform transport decisions and pre-arrival preparation.",
+      "featuredReason": "Directly applicable to cardiac arrest resuscitation (CMG 4) — reinforces the 5Hs and 5Ts framework and shows ED arrests have a different cause profile that may inform transport decisions and pre-arrival preparation."
+    },
+    {
+      "id": "10.1016/j.resplu.2026.101448",
+      "title": "Feasibility and acceptability of pediatric expert teleconsultation during critical ambulance transports: a pilot randomized controlled simulation trial",
+      "journal": "Resuscitation Plus",
+      "date": "2026-08-28",
+      "pmid": "",
+      "doi": "10.1016/j.resplu.2026.101448",
+      "summary": "Simulated RCT testing teleconsultation for paediatric ambulance transports — paramedics found it acceptable (TUS 5.8/7) and experienced less frustration (p=0.03) with 94% attempting physician contact, though physicians reported higher workload (p=0.01) and 92% connected in ≤2 attempts.",
+      "relevance": "🟡 Medium — Operational innovation with potential relevance to regional/remote paediatric retrievals, but requires significant technology infrastructure and physician on-call availability — Australian implementation would need local validation.",
+      "featuredReason": "Operational innovation with potential relevance to regional/remote paediatric retrievals, but requires significant technology infrastructure and physician on-call availability — Australian implementation would need local validation."
+    },
     {
       "id": "10.1016/j.annemergmed.2025.09.019",
       "title": "Intranasal Versus Subcutaneous Ketamine for the Treatment of Acute Traumatic Pain in the Emergency Department: A Randomized Clinical Trial",
@@ -35,28 +57,6 @@
       "summary": "Case report demonstrating that smartwatch fall detection can serve as a digital witness in unwitnessed out-of-hospital cardiac arrest, triggering alerts that enabled timely CPR initiation and resulted in favourable neurological recovery.",
       "relevance": "🟢 High — Commercial wearable technology is widely available in the community, and EMS personnel increasingly encounter patients with smartwatches triggering alerts — understanding this workflow improves response coordination and outcomes.",
       "featuredReason": "Commercial wearable technology is widely available in the community, and EMS personnel increasingly encounter patients with smartwatches triggering alerts — understanding this workflow improves response coordination and outcomes."
-    },
-    {
-      "id": "10.1016/j.resuscitation.2026.111162",
-      "title": "Health inequalities in out-of-hospital cardiac arrest incidence and bystander cardiopulmonary resuscitation rates in England 2018–23",
-      "journal": "Resuscitation",
-      "date": "2026-08-25",
-      "pmid": "",
-      "doi": "10.1016/j.resuscitation.2026.111162",
-      "summary": "Retrospective analysis of 165,701 OHCA patients in England 2018–23 found 23.6% of postcode districts remain high-risk (higher OHCA incidence, lower bystander CPR rates), with urban deprived areas showing 71.2% BCPR versus 79.1% in low-risk areas, though ROSC and survival were slightly higher in high-risk areas.",
-      "relevance": "🟢 High — OHCA epidemiology and CPR inequality — findings generalizable to Australian contexts with socioeconomic disparities",
-      "featuredReason": "OHCA epidemiology and CPR inequality — findings generalizable to Australian contexts with socioeconomic disparities"
-    },
-    {
-      "id": "10.1016/j.annemergmed.2026.04.011",
-      "title": "Emergency Medical Services Equipment Use in the Emergency Department and Time to Care for Those With Out-of-Hospital Cardiac Arrest",
-      "journal": "Annals of Emergency Medicine",
-      "date": "2026-08-25",
-      "pmid": "",
-      "doi": "10.1016/j.annemergmed.2026.04.011",
-      "summary": "Video review study of 223 OHCA patients found using EMS equipment for initial ED rhythm analysis reduced median time to first rhythm analysis by 143 seconds and first defibrillation by 131.5 seconds compared with ED equipment.",
-      "relevance": "🟢 High — Operational protocol with direct application to Australian practice — we often transfer OHCA patients with our defibrillators attached",
-      "featuredReason": "Operational protocol with direct application to Australian practice — we often transfer OHCA patients with our defibrillators attached"
     }
   ],
   "funFacts": [
@@ -970,24 +970,56 @@
     }
   ],
   "funFact": {
-    "category": "cardiac",
-    "fact": "At normal heart rates, the QT interval should be less than half the R-R interval. A corrected QT over 500ms? That's your ticket to torsades de pointes — a rhythm as dangerous as it sounds."
+    "category": "EMS",
+    "fact": "Modern paramedicine traces its roots to Freedom House in Pittsburgh, 1967 — where unemployed Black men and women were trained as America's first paramedics. They were so good that the city's white establishment tried to shut them down. They didn't succeed."
   },
   "tldr": {
-    "date": "2026-08-27",
-    "paperCount": 1,
-    "summary": "Light day — only one paper with a full abstract available. A solid RCT from Tunisia adds to the evidence that IM midazolam is non-inferior to IV clonazepam for prehospital seizures, supporting its use when IV access would delay treatment.",
+    "date": "2026-08-28",
+    "paperCount": 2,
+    "summary": "• Cardiac arrest reversible causes differ between ED and prehospital settings — hypovolemia and tamponade more common in ED arrests, while hypoxia dominates prehospital arrests.\n• Teleconsultation for paediatric transports showed good paramedic acceptance in simulations but increased physician workload.",
     "highlights": [
       {
-        "id": "10.1016/j.seizure.2026.08.007",
+        "id": "10.1016/j.resplu.2026.101455",
         "pmid": "",
-        "doi": "10.1016/j.seizure.2026.08.007",
-        "title": "Intramuscular midazolam versus intravenous clonazepam for prehospital seizures",
-        "note": "IM midazolam achieved 75% treatment success vs 62.5% for IV clonazepam, confirming non-inferiority (95% CI -10.0 to +33.4)."
+        "doi": "10.1016/j.resplu.2026.101455",
+        "title": "Distribution of clinically identified reversible causes in ED vs. out-of-hospital cardiac arrest",
+        "note": "Hypoxia was the most common cause overall but occurred less frequently in ED arrests (46.6% vs 57.2%), while hypovolemia (33.1% vs 23.2%) and cardiac tamponade (2.9% vs 0.6%) were significantly more common in ED."
+      },
+      {
+        "id": "10.1016/j.resplu.2026.101448",
+        "pmid": "",
+        "doi": "10.1016/j.resplu.2026.101448",
+        "title": "Feasibility of pediatric expert teleconsultation during ambulance transports",
+        "note": "Paramedics found teleconsultation acceptable (TUS 5.8/7) with less frustration (p=0.03) and 94% attempting physician contact, though physicians experienced higher workload (p=0.01)."
       }
     ]
   },
   "dailyUpdates": [
+    {
+      "date": "2026-08-28",
+      "papers": [
+        {
+          "id": "10.1016/j.resplu.2026.101455",
+          "title": "Distribution of clinically identified reversible causes in emergency department and out-of-hospital cardiac arrest: a retrospective cohort study",
+          "journal": "Resuscitation Plus",
+          "date": "2026-08-28",
+          "pmid": "",
+          "doi": "10.1016/j.resplu.2026.101455",
+          "summary": "Retrospective cohort study comparing reversible causes in ED vs. out-of-hospital cardiac arrest — hypoxia was the most common cause overall but occurred less frequently in ED arrests (46.6% vs 57.2%), while hypovolemia (33.1% vs 23.2%) and cardiac tamponade (2.9% vs 0.6%) were significantly more common in ED.",
+          "relevance": "🟢 High — Directly applicable to cardiac arrest resuscitation (CMG 4) — reinforces the 5Hs and 5Ts framework and shows ED arrests have a different cause profile that may inform transport decisions and pre-arrival preparation."
+        },
+        {
+          "id": "10.1016/j.resplu.2026.101448",
+          "title": "Feasibility and acceptability of pediatric expert teleconsultation during critical ambulance transports: a pilot randomized controlled simulation trial",
+          "journal": "Resuscitation Plus",
+          "date": "2026-08-28",
+          "pmid": "",
+          "doi": "10.1016/j.resplu.2026.101448",
+          "summary": "Simulated RCT testing teleconsultation for paediatric ambulance transports — paramedics found it acceptable (TUS 5.8/7) and experienced less frustration (p=0.03) with 94% attempting physician contact, though physicians reported higher workload (p=0.01) and 92% connected in ≤2 attempts.",
+          "relevance": "🟡 Medium — Operational innovation with potential relevance to regional/remote paediatric retrievals, but requires significant technology infrastructure and physician on-call availability — Australian implementation would need local validation."
+        }
+      ]
+    },
     {
       "date": "2026-08-27",
       "papers": [
