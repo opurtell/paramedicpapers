@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-08-27T21:20:27Z",
-  "lastUpdatedSydney": "2026-08-28 07:20 AEST",
-  "lastUpdatedDate": "2026-08-28",
+  "lastUpdated": "2026-08-28T21:20:37Z",
+  "lastUpdatedSydney": "2026-08-29 07:20 AEST",
+  "lastUpdatedDate": "2026-08-29",
   "featuredPapers": [
     {
       "id": "10.1016/j.resplu.2026.101455",
@@ -26,17 +26,6 @@
       "featuredReason": "Operational innovation with potential relevance to regional/remote paediatric retrievals, but requires significant technology infrastructure and physician on-call availability — Australian implementation would need local validation."
     },
     {
-      "id": "10.1016/j.annemergmed.2025.09.019",
-      "title": "Intranasal Versus Subcutaneous Ketamine for the Treatment of Acute Traumatic Pain in the Emergency Department: A Randomized Clinical Trial",
-      "journal": "Annals of Emergency Medicine",
-      "date": "2026-08-20",
-      "pmid": "",
-      "doi": "10.1016/j.annemergmed.2025.09.019",
-      "summary": "RCT testing whether intranasal ketamine is non-inferior to subcutaneous for acute traumatic pain — both routes provided equivalent analgesia with minimal clinically important differences, though minor adverse events were more common with subcutaneous administration.",
-      "relevance": "🟢 High — Directly relevant to prehospital analgesia; IN route already used by many Australian services, confirms efficacy versus SC.",
-      "featuredReason": "Directly relevant to prehospital analgesia; IN route already used by many Australian services, confirms efficacy versus SC."
-    },
-    {
       "id": "10.1080/10903127.2026.2674263",
       "title": "Use of double sequential external defibrillation in the United States before and after the DOSE VF randomized clinical trial",
       "journal": "Prehospital Emergency Care",
@@ -46,6 +35,17 @@
       "summary": "Nationwide observational study examined trends in DSED use for refractory VF before and after publication of the DOSE VF trial.",
       "relevance": "🟢 High",
       "featuredReason": "Selected for clinical relevance to prehospital practice."
+    },
+    {
+      "id": "10.1016/j.resplu.2026.101454",
+      "title": "Practice variability of epinephrine administration in pediatric out-of-hospital cardiac arrest in the United States",
+      "journal": "Resuscitation Plus",
+      "date": "2026-08-29",
+      "pmid": "",
+      "doi": "10.1016/j.resplu.2026.101454",
+      "summary": "Retrospective analysis of US NEMSIS data found adrenaline was administered in only 60% of paediatric out-of-hospital cardiac arrests, with longer scene times, advanced airway attempts, and defibrillation associated with higher odds of administration, while public settings and female sex correlated with lower odds.",
+      "relevance": "🟢 High — Adrenaline is carried by ACTAS (AP scope) and paediatric cardiac arrest is within our scope—US practice patterns are directly relevant despite jurisdictional differences.",
+      "featuredReason": "Adrenaline is carried by ACTAS (AP scope) and paediatric cardiac arrest is within our scope—US practice patterns are directly relevant despite jurisdictional differences."
     },
     {
       "id": "10.1016/j.resplu.2026.101447",
@@ -970,31 +970,107 @@
     }
   ],
   "funFact": {
-    "category": "EMS",
-    "fact": "Modern paramedicine traces its roots to Freedom House in Pittsburgh, 1967 — where unemployed Black men and women were trained as America's first paramedics. They were so good that the city's white establishment tried to shut them down. They didn't succeed."
+    "category": "pharmacology",
+    "fact": "Intranasal fentanyl hits effective plasma levels in under 10 minutes without needing a cannula. For paediatric and burns patients — where getting access is its own special hell — it's a genuine game-changer."
   },
   "tldr": {
-    "date": "2026-08-28",
-    "paperCount": 2,
-    "summary": "• Cardiac arrest reversible causes differ between ED and prehospital settings — hypovolemia and tamponade more common in ED arrests, while hypoxia dominates prehospital arrests.\n• Teleconsultation for paediatric transports showed good paramedic acceptance in simulations but increased physician workload.",
+    "date": "2026-08-29",
+    "paperCount": 5,
+    "summary": "Today's research centres on paediatric prehospital care: US data shows only 60% of paediatric OHCA patients receive adrenaline, with longer scene times and advanced interventions correlating with administration. Strong models (AUC 0.906) can predict prehospital blood transfusion need after motor vehicle trauma—interesting epidemiology though blood products aren't carried by ACTAS. A Swiss HEMS study shows good diagnostic accuracy (κ=0.64) and 92.2% survival in paediatric trauma. Community paramedics proved feasible and acceptable for paediatric concussion follow-up in an MIH model. An Australian ED study found indirect ICU admissions (ward→ICU within 24h) occur at 11.3% of ED-to-ICU transfers with concerning 12.8% mortality, highlighting deterioration recognition gaps.",
     "highlights": [
       {
-        "id": "10.1016/j.resplu.2026.101455",
+        "id": "10.1016/j.resplu.2026.101454",
         "pmid": "",
-        "doi": "10.1016/j.resplu.2026.101455",
-        "title": "Distribution of clinically identified reversible causes in ED vs. out-of-hospital cardiac arrest",
-        "note": "Hypoxia was the most common cause overall but occurred less frequently in ED arrests (46.6% vs 57.2%), while hypovolemia (33.1% vs 23.2%) and cardiac tamponade (2.9% vs 0.6%) were significantly more common in ED."
+        "doi": "10.1016/j.resplu.2026.101454",
+        "title": "Practice variability of epinephrine administration in pediatric out-of-hospital cardiac arrest",
+        "note": "Adrenaline was administered in only 60% of paediatric OHCA cases; longer scene times, advanced airway attempts, and defibrillation correlated with higher administration odds."
       },
       {
-        "id": "10.1016/j.resplu.2026.101448",
+        "id": "10.1080/10903127.2026.2713132",
         "pmid": "",
-        "doi": "10.1016/j.resplu.2026.101448",
-        "title": "Feasibility of pediatric expert teleconsultation during ambulance transports",
-        "note": "Paramedics found teleconsultation acceptable (TUS 5.8/7) with less frustration (p=0.03) and 94% attempting physician contact, though physicians experienced higher workload (p=0.01)."
+        "doi": "10.1080/10903127.2026.2713132",
+        "title": "Predicting Prehospital Blood Transfusion After Motor Vehicle Trauma",
+        "note": "Machine learning models achieved AUC 0.906 for predicting PHBT after MVC, identifying physiologic measures and shock designation as key predictors."
+      },
+      {
+        "id": "10.1186/s13049-026-01685-3",
+        "pmid": "",
+        "doi": "10.1186/s13049-026-01685-3",
+        "title": "Diagnostic accuracy, characteristics and survival of children with trauma in HEMS",
+        "note": "Swiss HEMS showed moderate diagnostic accuracy (κ=0.64) in 282 paediatric trauma patients, with polytrauma underdiagnosed and overall survival of 92.2%."
+      },
+      {
+        "id": "10.1080/10903127.2026.2680993",
+        "pmid": "",
+        "doi": "10.1080/10903127.2026.2680993",
+        "title": "Feasibility and Acceptability of Mobilizing Community Paramedics for Pediatric Concussion",
+        "note": "MIH program using CPs for paediatric concussion follow-up was feasible and acceptable, with 19% enrolment and improvement in PCSS scores."
+      },
+      {
+        "id": "10.1111/1742-6723.70337",
+        "pmid": "",
+        "doi": "10.1111/1742-6723.70337",
+        "title": "Indirect ICU Admissions From an Australian Emergency Department",
+        "note": "Indirect ICU admissions comprised 11.3% of ED-to-ICU transfers with circulatory insufficiency as the most common reason and hospital mortality of 12.8%."
       }
     ]
   },
   "dailyUpdates": [
+    {
+      "date": "2026-08-29",
+      "papers": [
+        {
+          "id": "10.1016/j.resplu.2026.101454",
+          "title": "Practice variability of epinephrine administration in pediatric out-of-hospital cardiac arrest in the United States",
+          "journal": "Resuscitation Plus",
+          "date": "2026-08-29",
+          "pmid": "",
+          "doi": "10.1016/j.resplu.2026.101454",
+          "summary": "Retrospective analysis of US NEMSIS data found adrenaline was administered in only 60% of paediatric out-of-hospital cardiac arrests, with longer scene times, advanced airway attempts, and defibrillation associated with higher odds of administration, while public settings and female sex correlated with lower odds.",
+          "relevance": "🟢 High — Adrenaline is carried by ACTAS (AP scope) and paediatric cardiac arrest is within our scope—US practice patterns are directly relevant despite jurisdictional differences."
+        },
+        {
+          "id": "10.1080/10903127.2026.2713132",
+          "title": "Predicting Prehospital Blood Transfusion After Motor Vehicle Trauma",
+          "journal": "Prehospital Emergency Care",
+          "date": "2026-08-29",
+          "pmid": "",
+          "doi": "10.1080/10903127.2026.2713132",
+          "summary": "Machine learning models using NEMSIS data achieved strong discrimination (AUC 0.906) for predicting prehospital blood transfusion after motor vehicle trauma, identifying physiologic measures and shock designation as key predictors.",
+          "relevance": "🟡 Medium — Predictive models and epidemiology are relevant for trauma service planning, but blood products are not carried by ACTAS—would require guideline/infrastructure change to implement."
+        },
+        {
+          "id": "10.1186/s13049-026-01685-3",
+          "title": "Diagnostic accuracy, characteristics and survival of children with trauma in HEMS: a retrospective multi-centre observational study",
+          "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+          "date": "2026-08-29",
+          "pmid": "",
+          "doi": "10.1186/s13049-026-01685-3",
+          "summary": "Multi-centre Swiss HEMS study of 282 paediatric trauma patients found moderate diagnostic accuracy between prehospital and in-hospital diagnoses (Cohen's κ=0.64), with polytrauma underdiagnosed and extremity/pelvic injuries overdiagnosed, and overall survival of 92.2%.",
+          "relevance": "🟡 Medium — Paediatric trauma management is within ACTAS scope (CMG 39 Major Trauma), but this is physician-staffed HEMS—diagnostic patterns and survival benchmarks are useful context despite model differences."
+        },
+        {
+          "id": "10.1080/10903127.2026.2680993",
+          "title": "Feasibility and Acceptability of Mobilizing Community Paramedics to Provide the Standard of Care for Pediatric Concussion: Mobile Integrated Health Programming for Pediatric Patients",
+          "journal": "Prehospital Emergency Care",
+          "date": "2026-08-29",
+          "pmid": "",
+          "doi": "10.1080/10903127.2026.2680993",
+          "summary": "Experimental mixed-methods study demonstrated that a Mobile Integrated Health program using community paramedics for paediatric concussion follow-up was feasible and acceptable, with 19% patient enrolment and improvement in Post-Concussion Symptoms Scale scores.",
+          "relevance": "🟡 Medium — MIH and community paramedic models are conceptually relevant to Australian services, though ACTAS doesn't have a formal CP tier—the feasibility and satisfaction data inform potential program development."
+        },
+        {
+          "id": "10.1111/1742-6723.70337",
+          "title": "Indirect ICU Admissions From an Australian Emergency Department: Risk Factors and Outcomes",
+          "journal": "Emergency Medicine Australasia",
+          "date": "2026-08-29",
+          "pmid": "",
+          "doi": "10.1111/1742-6723.70337",
+          "summary": "Australian observational study found indirect ICU admissions (ED admission to non-critical care ward requiring ICU transfer within 24 hours) accounted for 11.3% of ED-to-ICU admissions, with circulatory insufficiency as the most common reason and hospital mortality of 12.8%.",
+          "relevance": "🟢 High — Australian study directly relevant to local practice—indirect ICU admissions reflect missed deterioration recognition after handover, which has implications for paramedic documentation and communication."
+        }
+      ]
+    },
     {
       "date": "2026-08-28",
       "papers": [
