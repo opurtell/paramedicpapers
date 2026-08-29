@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-08-28T21:20:37Z",
-  "lastUpdatedSydney": "2026-08-29 07:20 AEST",
-  "lastUpdatedDate": "2026-08-29",
+  "lastUpdated": "2026-08-29T21:20:47Z",
+  "lastUpdatedSydney": "2026-08-30 07:20 AEST",
+  "lastUpdatedDate": "2026-08-30",
   "featuredPapers": [
     {
       "id": "10.1016/j.resplu.2026.101455",
@@ -970,52 +970,39 @@
     }
   ],
   "funFact": {
-    "category": "pharmacology",
-    "fact": "Intranasal fentanyl hits effective plasma levels in under 10 minutes without needing a cannula. For paediatric and burns patients — where getting access is its own special hell — it's a genuine game-changer."
+    "category": "pathophysiology",
+    "fact": "Neurogenic shock from a spinal cord injury above T6 gives you hypotension with bradycardia — the mirror opposite of hypovolaemic shock. Your patient's blood pressure is in the basement but their heart's barely trying. Sympathetic tone: gone."
   },
   "tldr": {
-    "date": "2026-08-29",
-    "paperCount": 5,
-    "summary": "Today's research centres on paediatric prehospital care: US data shows only 60% of paediatric OHCA patients receive adrenaline, with longer scene times and advanced interventions correlating with administration. Strong models (AUC 0.906) can predict prehospital blood transfusion need after motor vehicle trauma—interesting epidemiology though blood products aren't carried by ACTAS. A Swiss HEMS study shows good diagnostic accuracy (κ=0.64) and 92.2% survival in paediatric trauma. Community paramedics proved feasible and acceptable for paediatric concussion follow-up in an MIH model. An Australian ED study found indirect ICU admissions (ward→ICU within 24h) occur at 11.3% of ED-to-ICU transfers with concerning 12.8% mortality, highlighting deterioration recognition gaps.",
+    "date": "2026-08-30",
+    "paperCount": 1,
+    "summary": "Light day — only one paper with an abstract worth reporting. Scandinavian trauma registry compared blunt vs penetrating physiology, finding penetrating trauma patients present younger, more often male, and with higher shock rates. Blood product findings don't translate to ACTAS formulary, but early shock recognition data is useful.",
     "highlights": [
       {
-        "id": "10.1016/j.resplu.2026.101454",
+        "id": "10.1186/s13049-026-01683-5",
         "pmid": "",
-        "doi": "10.1016/j.resplu.2026.101454",
-        "title": "Practice variability of epinephrine administration in pediatric out-of-hospital cardiac arrest",
-        "note": "Adrenaline was administered in only 60% of paediatric OHCA cases; longer scene times, advanced airway attempts, and defibrillation correlated with higher administration odds."
-      },
-      {
-        "id": "10.1080/10903127.2026.2713132",
-        "pmid": "",
-        "doi": "10.1080/10903127.2026.2713132",
-        "title": "Predicting Prehospital Blood Transfusion After Motor Vehicle Trauma",
-        "note": "Machine learning models achieved AUC 0.906 for predicting PHBT after MVC, identifying physiologic measures and shock designation as key predictors."
-      },
-      {
-        "id": "10.1186/s13049-026-01685-3",
-        "pmid": "",
-        "doi": "10.1186/s13049-026-01685-3",
-        "title": "Diagnostic accuracy, characteristics and survival of children with trauma in HEMS",
-        "note": "Swiss HEMS showed moderate diagnostic accuracy (κ=0.64) in 282 paediatric trauma patients, with polytrauma underdiagnosed and overall survival of 92.2%."
-      },
-      {
-        "id": "10.1080/10903127.2026.2680993",
-        "pmid": "",
-        "doi": "10.1080/10903127.2026.2680993",
-        "title": "Feasibility and Acceptability of Mobilizing Community Paramedics for Pediatric Concussion",
-        "note": "MIH program using CPs for paediatric concussion follow-up was feasible and acceptable, with 19% enrolment and improvement in PCSS scores."
-      },
-      {
-        "id": "10.1111/1742-6723.70337",
-        "pmid": "",
-        "doi": "10.1111/1742-6723.70337",
-        "title": "Indirect ICU Admissions From an Australian Emergency Department",
-        "note": "Indirect ICU admissions comprised 11.3% of ED-to-ICU transfers with circulatory insufficiency as the most common reason and hospital mortality of 12.8%."
+        "doi": "10.1186/s13049-026-01683-5",
+        "title": "Blunt versus penetrating trauma: differences in early physiology, coagulopathy, and outcomes",
+        "note": "Swedish registry of 2,193 trauma patients found penetrating trauma patients were younger (median 34 vs 49 years), more often male (78% vs 66%), more frequently in shock (5.9% vs 2.2%), and more likely to require emergency surgery (53% vs 30%) and early blood transfusion (20% vs 4.5%)."
       }
     ]
   },
   "dailyUpdates": [
+    {
+      "date": "2026-08-30",
+      "papers": [
+        {
+          "id": "10.1186/s13049-026-01683-5",
+          "title": "Blunt versus penetrating trauma: differences in early physiology, coagulopathy, and outcomes in a Scandinavian trauma centre",
+          "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+          "date": "2026-08-30",
+          "pmid": "",
+          "doi": "10.1186/s13049-026-01683-5",
+          "summary": "This Swedish registry of 2,193 trauma patients (353 penetrating) found penetrating trauma patients were younger (median 34 vs 49 years), more often male (78% vs 66%), more frequently in shock on arrival (5.9% vs 2.2%), and more likely to require emergency surgery (53% vs 30%) and early blood transfusion (20% vs 4.5%).",
+          "relevance": "🟡 Medium — CMG 14 Shock and CMG 39 Major Trauma are relevant AP scope, but the paper focuses heavily on blood products (not carried by ACTAS) and hospital-based outcomes — early shock recognition is useful, transfusion findings don't translate"
+        }
+      ]
+    },
     {
       "date": "2026-08-29",
       "papers": [
