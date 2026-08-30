@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-08-29T21:20:47Z",
-  "lastUpdatedSydney": "2026-08-30 07:20 AEST",
-  "lastUpdatedDate": "2026-08-30",
+  "lastUpdated": "2026-08-30T21:20:56Z",
+  "lastUpdatedSydney": "2026-08-31 07:20 AEST",
+  "lastUpdatedDate": "2026-08-31",
   "featuredPapers": [
     {
       "id": "10.1016/j.resplu.2026.101455",
@@ -48,15 +48,15 @@
       "featuredReason": "Adrenaline is carried by ACTAS (AP scope) and paediatric cardiac arrest is within our scope—US practice patterns are directly relevant despite jurisdictional differences."
     },
     {
-      "id": "10.1016/j.resplu.2026.101447",
-      "title": "Wearable saving lives: a case report",
-      "journal": "Resuscitation Plus",
-      "date": "2026-08-26",
+      "id": "10.1016/j.annemergmed.2025.09.019",
+      "title": "Intranasal Versus Subcutaneous Ketamine for the Treatment of Acute Traumatic Pain in the Emergency Department: A Randomized Clinical Trial",
+      "journal": "Annals of Emergency Medicine",
+      "date": "2026-08-20",
       "pmid": "",
-      "doi": "10.1016/j.resplu.2026.101447",
-      "summary": "Case report demonstrating that smartwatch fall detection can serve as a digital witness in unwitnessed out-of-hospital cardiac arrest, triggering alerts that enabled timely CPR initiation and resulted in favourable neurological recovery.",
-      "relevance": "🟢 High — Commercial wearable technology is widely available in the community, and EMS personnel increasingly encounter patients with smartwatches triggering alerts — understanding this workflow improves response coordination and outcomes.",
-      "featuredReason": "Commercial wearable technology is widely available in the community, and EMS personnel increasingly encounter patients with smartwatches triggering alerts — understanding this workflow improves response coordination and outcomes."
+      "doi": "10.1016/j.annemergmed.2025.09.019",
+      "summary": "RCT testing whether intranasal ketamine is non-inferior to subcutaneous for acute traumatic pain — both routes provided equivalent analgesia with minimal clinically important differences, though minor adverse events were more common with subcutaneous administration.",
+      "relevance": "🟢 High — Directly relevant to prehospital analgesia; IN route already used by many Australian services, confirms efficacy versus SC.",
+      "featuredReason": "Directly relevant to prehospital analgesia; IN route already used by many Australian services, confirms efficacy versus SC."
     }
   ],
   "funFacts": [
@@ -970,22 +970,14 @@
     }
   ],
   "funFact": {
-    "category": "pathophysiology",
-    "fact": "Neurogenic shock from a spinal cord injury above T6 gives you hypotension with bradycardia — the mirror opposite of hypovolaemic shock. Your patient's blood pressure is in the basement but their heart's barely trying. Sympathetic tone: gone."
+    "category": "anatomy",
+    "fact": "The right main bronchus is wider, shorter, and more vertical than the left — which is why ETTs and aspirated vomit both seem to prefer it. The right lung takes the hit more often than the left. No one said anatomy was fair."
   },
   "tldr": {
-    "date": "2026-08-30",
-    "paperCount": 1,
-    "summary": "Light day — only one paper with an abstract worth reporting. Scandinavian trauma registry compared blunt vs penetrating physiology, finding penetrating trauma patients present younger, more often male, and with higher shock rates. Blood product findings don't translate to ACTAS formulary, but early shock recognition data is useful.",
-    "highlights": [
-      {
-        "id": "10.1186/s13049-026-01683-5",
-        "pmid": "",
-        "doi": "10.1186/s13049-026-01683-5",
-        "title": "Blunt versus penetrating trauma: differences in early physiology, coagulopathy, and outcomes",
-        "note": "Swedish registry of 2,193 trauma patients found penetrating trauma patients were younger (median 34 vs 49 years), more often male (78% vs 66%), more frequently in shock (5.9% vs 2.2%), and more likely to require emergency surgery (53% vs 30%) and early blood transfusion (20% vs 4.5%)."
-      }
-    ]
+    "date": "2026-08-31",
+    "paperCount": 0,
+    "summary": "No new papers today.",
+    "highlights": []
   },
   "dailyUpdates": [
     {
