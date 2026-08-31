@@ -21,6 +21,15 @@
     </itunes:category>
     <itunes:explicit>false</itunes:explicit>
     <item>
+      <title>Paramedic Papers Daily — 1 September 2026</title>
+      <description>1 paper: SPEAR device safety warning</description>
+      <pubDate>Tue, 01 Sep 2026 07:32:26 +1000</pubDate>
+      <guid isPermaLink="true">https://opurtell.github.io/paramedicpapers/audio/ep-2026-09-01.mp3</guid>
+      <enclosure url="https://opurtell.github.io/paramedicpapers/audio/ep-2026-09-01.mp3" length="207117" type="audio/mpeg"/>
+      <itunes:duration>51</itunes:duration>
+      <itunes:summary>1 paper: SPEAR device safety warning</itunes:summary>
+    </item>
+    <item>
       <title>Paramedic Papers Daily — 30 August 2026</title>
       <description>1 paper: blunt vs penetrating trauma physiology</description>
       <pubDate>Sun, 30 Aug 2026 07:32:12 +1000</pubDate>
