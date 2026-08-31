@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-08-30T21:20:56Z",
-  "lastUpdatedSydney": "2026-08-31 07:20 AEST",
-  "lastUpdatedDate": "2026-08-31",
+  "lastUpdated": "2026-08-31T21:20:33Z",
+  "lastUpdatedSydney": "2026-09-01 07:20 AEST",
+  "lastUpdatedDate": "2026-09-01",
   "featuredPapers": [
     {
       "id": "10.1016/j.resplu.2026.101455",
@@ -970,16 +970,39 @@
     }
   ],
   "funFact": {
-    "category": "anatomy",
-    "fact": "The right main bronchus is wider, shorter, and more vertical than the left — which is why ETTs and aspirated vomit both seem to prefer it. The right lung takes the hit more often than the left. No one said anatomy was fair."
+    "category": "resuscitation",
+    "fact": "Targeted Temperature Management (the artist formerly known as therapeutic hypothermia) was inspired by cases from the 1950s, but it took until the 2002 HACA trial to convince everyone that cooling dead-ish patients actually worked."
   },
   "tldr": {
-    "date": "2026-08-31",
-    "paperCount": 0,
-    "summary": "No new papers today.",
-    "highlights": []
+    "date": "2026-09-01",
+    "paperCount": 1,
+    "summary": "• Quiet research day today with no new abstracts available — 4 ahead-of-print papers found, only one potentially relevant (SPEAR safety warning).",
+    "highlights": [
+      {
+        "id": "42618185",
+        "pmid": "42618185",
+        "doi": "10.1016/j.annemergmed.2026.04.010",
+        "title": "Potential Risks With the SPEAR, a New Device Marketed for Out-of-Hospital Needle Decompression of the Chest",
+        "note": "Safety warning about potential risks with the SPEAR device for needle decompression"
+      }
+    ]
   },
   "dailyUpdates": [
+    {
+      "date": "2026-09-01",
+      "papers": [
+        {
+          "id": "42618185",
+          "title": "Potential Risks With the SPEAR®, a New Device Marketed for Out-of-Hospital Needle Decompression of the Chest",
+          "journal": "Annals of Emergency Medicine",
+          "date": "2026-09-01",
+          "pmid": "42618185",
+          "doi": "10.1016/j.annemergmed.2026.04.010",
+          "summary": "Safety warning about potential risks with the SPEAR® device marketed for out-of-hospital needle decompression of the chest. Abstract not yet available (ahead-of-print).",
+          "relevance": "🔴 Low — ACTAS does not use SPEAR for needle decompression, but safety alerts on new devices are worth noting even if we don't carry the equipment"
+        }
+      ]
+    },
     {
       "date": "2026-08-30",
       "papers": [
