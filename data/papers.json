@@ -1,29 +1,18 @@
 {
-  "lastUpdated": "2026-08-31T21:20:33Z",
-  "lastUpdatedSydney": "2026-09-01 07:20 AEST",
-  "lastUpdatedDate": "2026-09-01",
+  "lastUpdated": "2026-09-01T21:20:44Z",
+  "lastUpdatedSydney": "2026-09-02 07:20 AEST",
+  "lastUpdatedDate": "2026-09-02",
   "featuredPapers": [
     {
-      "id": "10.1016/j.resplu.2026.101455",
-      "title": "Distribution of clinically identified reversible causes in emergency department and out-of-hospital cardiac arrest: a retrospective cohort study",
-      "journal": "Resuscitation Plus",
-      "date": "2026-08-28",
+      "id": "10.1080/10903127.2026.2717758",
+      "title": "Effect of Body Position on Chest Compression Quality During CPR in an Obesity Simulation Model: A Randomized Crossover Trial",
+      "journal": "Prehospital Emergency Care",
+      "date": "2026-09-01",
       "pmid": "",
-      "doi": "10.1016/j.resplu.2026.101455",
-      "summary": "Retrospective cohort study comparing reversible causes in ED vs. out-of-hospital cardiac arrest — hypoxia was the most common cause overall but occurred less frequently in ED arrests (46.6% vs 57.2%), while hypovolemia (33.1% vs 23.2%) and cardiac tamponade (2.9% vs 0.6%) were significantly more common in ED.",
-      "relevance": "🟢 High — Directly applicable to cardiac arrest resuscitation (CMG 4) — reinforces the 5Hs and 5Ts framework and shows ED arrests have a different cause profile that may inform transport decisions and pre-arrival preparation.",
-      "featuredReason": "Directly applicable to cardiac arrest resuscitation (CMG 4) — reinforces the 5Hs and 5Ts framework and shows ED arrests have a different cause profile that may inform transport decisions and pre-arrival preparation."
-    },
-    {
-      "id": "10.1016/j.resplu.2026.101448",
-      "title": "Feasibility and acceptability of pediatric expert teleconsultation during critical ambulance transports: a pilot randomized controlled simulation trial",
-      "journal": "Resuscitation Plus",
-      "date": "2026-08-28",
-      "pmid": "",
-      "doi": "10.1016/j.resplu.2026.101448",
-      "summary": "Simulated RCT testing teleconsultation for paediatric ambulance transports — paramedics found it acceptable (TUS 5.8/7) and experienced less frustration (p=0.03) with 94% attempting physician contact, though physicians reported higher workload (p=0.01) and 92% connected in ≤2 attempts.",
-      "relevance": "🟡 Medium — Operational innovation with potential relevance to regional/remote paediatric retrievals, but requires significant technology infrastructure and physician on-call availability — Australian implementation would need local validation.",
-      "featuredReason": "Operational innovation with potential relevance to regional/remote paediatric retrievals, but requires significant technology infrastructure and physician on-call availability — Australian implementation would need local validation."
+      "doi": "10.1080/10903127.2026.2717758",
+      "summary": "Randomised crossover simulation trial testing whether 10cm elevation of paramedics improves chest compression quality in obese manikins — it didn't, obesity still impaired compression depth by ~18mm despite increased rescuer effort",
+      "relevance": "🟢 High transferability — Directly relevant to cardiac arrest care (CMG 4), practical ergonomic finding that doesn't require equipment change",
+      "featuredReason": "Directly relevant to cardiac arrest care (CMG 4), practical ergonomic finding that doesn't require equipment change"
     },
     {
       "id": "10.1080/10903127.2026.2674263",
@@ -37,6 +26,17 @@
       "featuredReason": "Selected for clinical relevance to prehospital practice."
     },
     {
+      "id": "10.1016/j.resuscitation.2026.111216",
+      "title": "Racial and ethnic differences in bystander cardiopulmonary resuscitation for opioid-associated out-of-hospital cardiac arrests",
+      "journal": "Resuscitation",
+      "date": "2026-09-02",
+      "pmid": "",
+      "doi": "10.1016/j.resuscitation.2026.111216",
+      "summary": "Retrospective cohort study using NEMSIS data (n=19,612) found Black patients with opioid-associated OHCA had significantly lower odds of receiving bystander CPR than White patients (AOR 0.70, 95% CI 0.63-0.77), with Hispanic patients also less likely (AOR 0.82).",
+      "relevance": "🟡 Medium — US-specific dataset and racial categories, but core message about bCPR disparities in opioid-associated arrests is relevant to Australian public health messaging and overdose response awareness.",
+      "featuredReason": "US-specific dataset and racial categories, but core message about bCPR disparities in opioid-associated arrests is relevant to Australian public health messaging and overdose response awareness."
+    },
+    {
       "id": "10.1016/j.resplu.2026.101454",
       "title": "Practice variability of epinephrine administration in pediatric out-of-hospital cardiac arrest in the United States",
       "journal": "Resuscitation Plus",
@@ -48,15 +48,15 @@
       "featuredReason": "Adrenaline is carried by ACTAS (AP scope) and paediatric cardiac arrest is within our scope—US practice patterns are directly relevant despite jurisdictional differences."
     },
     {
-      "id": "10.1016/j.annemergmed.2025.09.019",
-      "title": "Intranasal Versus Subcutaneous Ketamine for the Treatment of Acute Traumatic Pain in the Emergency Department: A Randomized Clinical Trial",
-      "journal": "Annals of Emergency Medicine",
-      "date": "2026-08-20",
+      "id": "10.1016/j.resplu.2026.101455",
+      "title": "Distribution of clinically identified reversible causes in emergency department and out-of-hospital cardiac arrest: a retrospective cohort study",
+      "journal": "Resuscitation Plus",
+      "date": "2026-08-28",
       "pmid": "",
-      "doi": "10.1016/j.annemergmed.2025.09.019",
-      "summary": "RCT testing whether intranasal ketamine is non-inferior to subcutaneous for acute traumatic pain — both routes provided equivalent analgesia with minimal clinically important differences, though minor adverse events were more common with subcutaneous administration.",
-      "relevance": "🟢 High — Directly relevant to prehospital analgesia; IN route already used by many Australian services, confirms efficacy versus SC.",
-      "featuredReason": "Directly relevant to prehospital analgesia; IN route already used by many Australian services, confirms efficacy versus SC."
+      "doi": "10.1016/j.resplu.2026.101455",
+      "summary": "Retrospective cohort study comparing reversible causes in ED vs. out-of-hospital cardiac arrest — hypoxia was the most common cause overall but occurred less frequently in ED arrests (46.6% vs 57.2%), while hypovolemia (33.1% vs 23.2%) and cardiac tamponade (2.9% vs 0.6%) were significantly more common in ED.",
+      "relevance": "🟢 High — Directly applicable to cardiac arrest resuscitation (CMG 4) — reinforces the 5Hs and 5Ts framework and shows ED arrests have a different cause profile that may inform transport decisions and pre-arrival preparation.",
+      "featuredReason": "Directly applicable to cardiac arrest resuscitation (CMG 4) — reinforces the 5Hs and 5Ts framework and shows ED arrests have a different cause profile that may inform transport decisions and pre-arrival preparation."
     }
   ],
   "funFacts": [
@@ -970,24 +970,56 @@
     }
   ],
   "funFact": {
-    "category": "resuscitation",
-    "fact": "Targeted Temperature Management (the artist formerly known as therapeutic hypothermia) was inspired by cases from the 1950s, but it took until the 2002 HACA trial to convince everyone that cooling dead-ish patients actually worked."
+    "category": "pharmacology",
+    "fact": "Amiodarone is about 37% iodine by weight — roughly 75mg of iodine per 200mg dose. A single loading dose can trigger both hyper- and hypothyroidism. It's an antiarrhythmic that moonlights as an endocrine wrecking ball."
   },
   "tldr": {
-    "date": "2026-09-01",
-    "paperCount": 1,
-    "summary": "• Quiet research day today with no new abstracts available — 4 ahead-of-print papers found, only one potentially relevant (SPEAR safety warning).",
+    "date": "2026-09-02",
+    "paperCount": 2,
+    "summary": "US data shows significant racial disparities in bystander CPR for opioid-associated cardiac arrests, with Black patients 30% less likely to receive CPR than White patients.\n• Narrative review supports safety of RhD-positive blood transfusion in haemorrhagic shock for females of childbearing potential — HDFN risk estimated under 0.1%.",
     "highlights": [
       {
-        "id": "42618185",
-        "pmid": "42618185",
-        "doi": "10.1016/j.annemergmed.2026.04.010",
-        "title": "Potential Risks With the SPEAR, a New Device Marketed for Out-of-Hospital Needle Decompression of the Chest",
-        "note": "Safety warning about potential risks with the SPEAR device for needle decompression"
+        "id": "10.1016/j.resuscitation.2026.111216",
+        "pmid": "",
+        "doi": "10.1016/j.resuscitation.2026.111216",
+        "title": "Racial and ethnic differences in bystander CPR for opioid-associated OHCA",
+        "note": "Black patients with opioid-associated OHCA had 30% lower odds of receiving bystander CPR than White patients (AOR 0.70, 95% CI 0.63-0.77) in US NEMSIS data (n=19,612)."
+      },
+      {
+        "id": "10.1080/10903127.2026.2701877",
+        "pmid": "",
+        "doi": "10.1080/10903127.2026.2701877",
+        "title": "RhD-Positive Transfusion in Females of Childbearing Potential",
+        "note": "Modeling studies estimate fetal death due to anti-D-mediated HDFN would occur in fewer than 0.1% of females of childbearing potential exposed to RhD-positive blood products in trauma."
       }
     ]
   },
   "dailyUpdates": [
+    {
+      "date": "2026-09-02",
+      "papers": [
+        {
+          "id": "10.1016/j.resuscitation.2026.111216",
+          "title": "Racial and ethnic differences in bystander cardiopulmonary resuscitation for opioid-associated out-of-hospital cardiac arrests",
+          "journal": "Resuscitation",
+          "date": "2026-09-02",
+          "pmid": "",
+          "doi": "10.1016/j.resuscitation.2026.111216",
+          "summary": "Retrospective cohort study using NEMSIS data (n=19,612) found Black patients with opioid-associated OHCA had significantly lower odds of receiving bystander CPR than White patients (AOR 0.70, 95% CI 0.63-0.77), with Hispanic patients also less likely (AOR 0.82).",
+          "relevance": "🟡 Medium — US-specific dataset and racial categories, but core message about bCPR disparities in opioid-associated arrests is relevant to Australian public health messaging and overdose response awareness."
+        },
+        {
+          "id": "10.1080/10903127.2026.2701877",
+          "title": "RhD-Positive Transfusion in Females of Childbearing Potential in Hemorrhagic Shock: Risk, Reality, and Policy",
+          "journal": "Prehospital Emergency Care",
+          "date": "2026-09-02",
+          "pmid": "",
+          "doi": "10.1080/10903127.2026.2701877",
+          "summary": "Narrative review synthesising evidence on D-alloimmunization and HDFN risk found modeling studies estimate fetal death due to anti-D-mediated HDFN would occur in fewer than 0.1% of females of childbearing potential exposed to RhD-positive blood products in trauma, supporting prehospital RhD-positive transfusion when RhD-negative unavailable.",
+          "relevance": "🟡 Medium — Directly relevant to haemorrhagic shock management but ACTAS does not carry blood products — would require guideline change and formulary expansion to adopt."
+        }
+      ]
+    },
     {
       "date": "2026-09-01",
       "papers": [
@@ -1000,6 +1032,66 @@
           "doi": "10.1016/j.annemergmed.2026.04.010",
           "summary": "Safety warning about potential risks with the SPEAR® device marketed for out-of-hospital needle decompression of the chest. Abstract not yet available (ahead-of-print).",
           "relevance": "🔴 Low — ACTAS does not use SPEAR for needle decompression, but safety alerts on new devices are worth noting even if we don't carry the equipment"
+        },
+        {
+          "id": "10.1080/10903127.2026.2717758",
+          "title": "Effect of Body Position on Chest Compression Quality During CPR in an Obesity Simulation Model: A Randomized Crossover Trial",
+          "journal": "Prehospital Emergency Care",
+          "date": "2026-09-01",
+          "pmid": "",
+          "doi": "10.1080/10903127.2026.2717758",
+          "summary": "Randomised crossover simulation trial testing whether 10cm elevation of paramedics improves chest compression quality in obese manikins — it didn't, obesity still impaired compression depth by ~18mm despite increased rescuer effort",
+          "relevance": "🟢 High transferability — Directly relevant to cardiac arrest care (CMG 4), practical ergonomic finding that doesn't require equipment change"
+        },
+        {
+          "id": "10.1080/10903127.2026.2726541",
+          "title": "Prehospital Blood Transfusion for Medical Causes of Hemorrhage: A Case Series",
+          "journal": "Prehospital Emergency Care",
+          "date": "2026-09-01",
+          "pmid": "",
+          "doi": "10.1080/10903127.2026.2726541",
+          "summary": "Retrospective observational study of prehospital whole blood for non-traumatic haemorrhagic shock across two US systems — GI bleeding (49%) and unspecified shock (43%) were the main indications, vitals improved (HR 102→96, SBP 83→106)",
+          "relevance": "🟡 Medium transferability — Not in the ACTAS formulary — blood products are not carried, would require guideline change to adopt"
+        },
+        {
+          "id": "10.1080/10903127.2026.2725890",
+          "title": "Between Hemorrhage and Harm: Complications of the Abdominal Aortic and Junctional Tourniquet-Stabilized",
+          "journal": "Prehospital Emergency Care",
+          "date": "2026-09-01",
+          "pmid": "",
+          "doi": "10.1080/10903127.2026.2725890",
+          "summary": "Case report of a patient with AAJT-S placed prehospital for pelvic gunshot wounds who suffered cardiac arrest upon device removal and developed metabolic acidosis, compartment syndrome, rhabdomyolysis, renal and liver infarcts, pulmonary emboli, and stroke",
+          "relevance": "🟡 Medium transferability — Cautionary finding for junctional tourniquet use — AAJT-S isn't specified as ACTAS equipment, but principles apply to non-compressible torso haemorrhage management"
+        },
+        {
+          "id": "10.1080/10903127.2026.2725214",
+          "title": "Rate of future hemolytic disease of the fetus and newborn following the prehospital transfusion of RhD-positive blood products to females of childbearing potential in the United States of America",
+          "journal": "Prehospital Emergency Care",
+          "date": "2026-09-01",
+          "pmid": "",
+          "doi": "10.1080/10903127.2026.2725214",
+          "summary": "In silico simulation modelling future haemolytic disease of the fetus and newborn risk in 957 US females of childbearing potential who received prehospital RhD-positive blood — annual HDFN risk ranged 0.214–0.294% across regions",
+          "relevance": "🟡 Medium transferability — Not in the ACTAS formulary — blood products are not carried, but important safety consideration if ACTAS ever adopts prehospital blood"
+        },
+        {
+          "id": "10.1186/s13049-026-01682-6",
+          "title": "Population-based implementation of a mobile emergency medical service platform in Hiroshima, Japan",
+          "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+          "date": "2026-09-01",
+          "pmid": "",
+          "doi": "10.1186/s13049-026-01682-6",
+          "summary": "Population-based descriptive study of a Japanese mobile EMS app capturing 147,213 transport cases over 15 months — 90% were emergency transports, OCR used in 74% of cases, hospital acceptance on first request in 66% with median 5.2 min negotiation time",
+          "relevance": "🟡 Medium transferability — Operational innovation relevant to digitising prehospital data and hospital coordination, but Japanese system context differs from ACTAS"
+        },
+        {
+          "id": "10.1080/10903127.2026.2724534",
+          "title": "Public Acceptance, Trust, and Self-Efficacy Related to Drone-Assisted Emergency Medical Response in Louisiana",
+          "journal": "Prehospital Emergency Care",
+          "date": "2026-09-01",
+          "pmid": "",
+          "doi": "10.1080/10903127.2026.2724534",
+          "summary": "Cross-sectional survey of 586 Louisiana adults on drone-assisted emergency response — high acceptance (mean 4.1/5), trust (3.8), and self-efficacy (4.0), with telecommunicator guidance significantly increasing self-efficacy for both family and stranger scenarios",
+          "relevance": "🟡 Medium transferability — Forward-looking innovation relevant to future service models, but ACTAS doesn't currently use drones for medical delivery"
         }
       ]
     },
@@ -3720,55 +3812,63 @@
     }
   ],
   "weeklyTldr": {
-    "dateRange": "18–25 August 2026",
-    "summary": "New quality indicators proposed for prehospital post-ROSC care — addresses major evidence gap\nAustralian-led survey will benchmark paramedic confidence in identifying OHCA reversible causes\nDelphi study identifies falls assessment and prevention as top priorities for older adult prehospital care",
+    "dateRange": "25 Aug – 01 September 2026",
+    "summary": "Obesity significantly impairs CPR chest compression quality in simulation — a 10cm height elevation for rescuers doesn't fix the biomechanical problem\nPrehospital blood transfusion for non-traumatic haemorrhage (mostly GI bleeds) improves vital signs — but blood products aren't carried by ACTAS\nCase report describes serious complications from the Abdominal Aortic Junctional Tourniquet (AAJT-S) including cardiac arrest, metabolic acidosis, compartment syndrome, renal and liver infarcts, pulmonary emboli, and stroke\nRhD-positive prehospital blood transfusion in females of childbearing potential carries a 0.21–0.29% annual risk of future haemolytic disease of the fetus and newborn\nJapanese mobile EMS app demonstrates operational benefits: 90% emergency transport capture, OCR used in 74% of cases, first-request hospital acceptance achieved in 66% of cases",
     "highlights": [
       {
-        "text": "New quality indicators proposed for prehospital post-ROSC care — addresses major evidence gap",
-        "id": "10.1080/10903127.2026.2719960"
+        "text": "Obesity significantly impairs CPR chest compression quality in simulation — a 10cm height elevation for rescuers doesn't fix the biomechanical problem",
+        "id": "10.1080/10903127.2026.2717758"
       },
       {
-        "text": "Australian-led survey will benchmark paramedic confidence in identifying OHCA reversible causes",
-        "id": "10.1016/j.resplu.2026.101444"
+        "text": "Prehospital blood transfusion for non-traumatic haemorrhage (mostly GI bleeds) improves vital signs — but blood products aren't carried by ACTAS",
+        "id": "10.1080/10903127.2026.2726541"
       },
       {
-        "text": "Delphi study identifies falls assessment and prevention as top priorities for older adult prehospital care",
-        "id": "10.1080/10903127.2026.2717529"
+        "text": "Case report describes serious complications from the Abdominal Aortic Junctional Tourniquet (AAJT-S) including cardiac arrest, metabolic acidosis, compartment syndrome, renal and liver infarcts, pulmonary emboli, and stroke",
+        "id": "10.1080/10903127.2026.2725890"
+      },
+      {
+        "text": "RhD-positive prehospital blood transfusion in females of childbearing potential carries a 0.21–0.29% annual risk of future haemolytic disease of the fetus and newborn",
+        "id": "10.1080/10903127.2026.2725214"
+      },
+      {
+        "text": "Japanese mobile EMS app demonstrates operational benefits: 90% emergency transport capture, OCR used in 74% of cases, first-request hospital acceptance achieved in 66% of cases",
+        "id": "10.1186/s13049-026-01682-6"
       }
     ],
     "topPicks": [
       {
-        "id": "10.1080/10903127.2026.2719960",
-        "title": "Identifying Quality Indicators for Prehospital Care Following Out-of-Hospital Cardiac Arrest: A Focused Scoping Review",
-        "authors": "Petrus Malherbe, Eric Bustos, Will Dunn, et al.",
+        "id": "10.1080/10903127.2026.2717758",
+        "title": "Effect of Body Position on Chest Compression Quality During CPR in an Obesity Simulation Model: A Randomized Crossover Trial",
+        "authors": "Aleksander Mickiewicz, Michał Czapla, Łukasz Lewandowski, et al.",
         "journal": "Prehospital Emergency Care",
-        "summary": "Scoping review identified 16 potential quality indicators for prehospital post-ROSC care across five domains, highlighting a major evidence gap since only two existing studies listed formal indicators.",
-        "relevance": "🟢 High transferability — Directly addresses prehospital practice gap — quality indicators could standardise post-ROSC care and benchmark performance",
+        "summary": "Randomised crossover simulation trial testing whether 10cm elevation of paramedics improves chest compression quality in obese manikins — it didn't, obesity still impaired compression depth by ~18mm despite increased rescuer effort",
+        "relevance": "🟢 High transferability — Directly relevant to cardiac arrest care (CMG 4), practical ergonomic finding that doesn't require equipment change",
         "pmid": "",
-        "doi": "10.1080/10903127.2026.2719960",
-        "featuredReason": "First systematic attempt to identify quality indicators for prehospital post-ROSC care — a critical evidence gap that directly affects every paramedic managing cardiac arrest"
+        "doi": "10.1080/10903127.2026.2717758",
+        "featuredReason": "Every paramedic does CPR, and this study shows a simple ergonomic intervention (standing on a 10cm pad) doesn't solve the obesity biomechanics problem. Good to know before you waste time trying it, and reinforces the need for mechanical CPR or alternative positioning strategies in obese patients."
       },
       {
-        "id": "10.1016/j.resplu.2026.101444",
-        "title": "PRECEPT-OHCA: prehospital evaluation of confidence and practice in the treatment of out-of-hospital cardiac arrest across Australia, the United Kingdom, and New Zealand: a cross-sectional study protocol",
-        "authors": "Salman Naeem, Stewart Ashcroft-Quinn, Alison Brown, et al.",
-        "journal": "Resuscitation Plus",
-        "summary": "Cross-sectional survey protocol will assess paramedic confidence in identifying OHCA reversible causes across Australia, UK and New Zealand, evaluating equipment availability and perceived barriers.",
-        "relevance": "🟢 High transferability — Australian context with direct relevance to paramedic practice — findings could inform training and equipment decisions",
+        "id": "10.1080/10903127.2026.2725890",
+        "title": "Between Hemorrhage and Harm: Complications of the Abdominal Aortic and Junctional Tourniquet-Stabilized",
+        "authors": "Grant Gerstner, Julie Rizzo, Charles Kieffer, et al.",
+        "journal": "Prehospital Emergency Care",
+        "summary": "Case report of a patient with AAJT-S placed prehospital for pelvic gunshot wounds who suffered cardiac arrest upon device removal and developed metabolic acidosis, compartment syndrome, rhabdomyolysis, renal and liver infarcts, pulmonary emboli, and stroke",
+        "relevance": "🟡 Medium transferability — Cautionary finding for junctional tourniquet use — AAJT-S isn't specified as ACTAS equipment, but principles apply to non-compressible torso haemorrhage management",
         "pmid": "",
-        "doi": "10.1016/j.resplu.2026.101444",
-        "featuredReason": "Australian-led survey will benchmark paramedic confidence in identifying OHCA reversible causes, with findings likely to influence training and protocol development across ANZ"
+        "doi": "10.1080/10903127.2026.2725890",
+        "featuredReason": "Critical safety warning for junctional tourniquet use. AAJT-S complications were severe (cardiac arrest, metabolic acidosis, compartment syndrome, multi-organ infarcts, PE, stroke). If you or your service is considering junctional tourniquets for non-compressible torso haemorrhage, this case report demands careful risk-benefit assessment."
       },
       {
-        "id": "10.1080/10903127.2026.2717529",
-        "title": "Research and Knowledge Translation Priorities for the Prehospital Care of Older Adults: A Modified Delphi Study",
-        "authors": "Maia Dorsett, Rebecca Cash, Rana Barghout, et al.",
+        "id": "10.1080/10903127.2026.2726541",
+        "title": "Prehospital Blood Transfusion for Medical Causes of Hemorrhage: A Case Series",
+        "authors": "Angela, P Cornelius*, Jeffrey Siegler, Melissa Kroll, et al.",
         "journal": "Prehospital Emergency Care",
-        "summary": "Modified Delphi study identified five high-priority research themes for older adult prehospital care, with falls assessment, prevention, and clinician training ranking highest across research and knowledge translation domains.",
-        "relevance": "🟢 High transferability — Older adults represent growing EMS demographic — findings should guide research and practice priorities for this population",
+        "summary": "Retrospective observational study of prehospital whole blood for non-traumatic haemorrhagic shock across two US systems — GI bleeding (49%) and unspecified shock (43%) were the main indications, vitals improved (HR 102→96, SBP 83→106)",
+        "relevance": "🟡 Medium transferability — Not in the ACTAS formulary — blood products are not carried, would require guideline change to adopt",
         "pmid": "",
-        "doi": "10.1080/10903127.2026.2717529",
-        "featuredReason": "Delphi study identified clear priorities for older adult prehospital care, with falls assessment and prevention ranking highest — directly relevant to growing patient demographic"
+        "doi": "10.1080/10903127.2026.2726541",
+        "featuredReason": "Emerging practice data — as more services consider prehospital blood products, this study shows it's not just for trauma. GI bleeds and unspecified medical shock accounted for 93% of non-traumatic use in two US systems. Good prep if ACTAS ever expands to carry blood, though that would require formulary change."
       }
     ]
   }
