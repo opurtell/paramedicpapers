@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-09-01T21:20:44Z",
-  "lastUpdatedSydney": "2026-09-02 07:20 AEST",
-  "lastUpdatedDate": "2026-09-02",
+  "lastUpdated": "2026-09-02T21:20:55Z",
+  "lastUpdatedSydney": "2026-09-03 07:20 AEST",
+  "lastUpdatedDate": "2026-09-03",
   "featuredPapers": [
     {
       "id": "10.1080/10903127.2026.2717758",
@@ -26,37 +26,37 @@
       "featuredReason": "Selected for clinical relevance to prehospital practice."
     },
     {
-      "id": "10.1016/j.resuscitation.2026.111216",
-      "title": "Racial and ethnic differences in bystander cardiopulmonary resuscitation for opioid-associated out-of-hospital cardiac arrests",
+      "id": "10.1016/j.resuscitation.2026.111262",
+      "title": "Evaluating the effect of a regional training initiative on bystander cardiopulmonary resuscitation rates after out-of-hospital cardiac arrest",
       "journal": "Resuscitation",
-      "date": "2026-09-02",
+      "date": "2026-09-03",
       "pmid": "",
-      "doi": "10.1016/j.resuscitation.2026.111216",
-      "summary": "Retrospective cohort study using NEMSIS data (n=19,612) found Black patients with opioid-associated OHCA had significantly lower odds of receiving bystander CPR than White patients (AOR 0.70, 95% CI 0.63-0.77), with Hispanic patients also less likely (AOR 0.82).",
-      "relevance": "🟡 Medium — US-specific dataset and racial categories, but core message about bCPR disparities in opioid-associated arrests is relevant to Australian public health messaging and overdose response awareness.",
-      "featuredReason": "US-specific dataset and racial categories, but core message about bCPR disparities in opioid-associated arrests is relevant to Australian public health messaging and overdose response awareness."
+      "doi": "10.1016/j.resuscitation.2026.111262",
+      "summary": "Difference-in-differences evaluation of a year-long community hands-only CPR training initiative across 20,414 OHCAs — overall bystander CPR rates rose from 37.4% to 42.5% but the adjusted intervention effect wasn't significant (+2.94 pp, 95% CI −0.95 to 6.83); only public-location arrests showed a significant increase (+8.59 pp), with no effect at home and no detectable survival or neurological benefit.",
+      "relevance": "🟢 High — Bystander CPR education underpins Australian community resuscitation strategy and ambulance-led CPR awareness campaigns — the public-but-not-home signal is directly relevant to how we target training effort.",
+      "featuredReason": "Bystander CPR education underpins Australian community resuscitation strategy and ambulance-led CPR awareness campaigns — the public-but-not-home signal is directly relevant to how we target training effort."
     },
     {
-      "id": "10.1016/j.resplu.2026.101454",
-      "title": "Practice variability of epinephrine administration in pediatric out-of-hospital cardiac arrest in the United States",
-      "journal": "Resuscitation Plus",
-      "date": "2026-08-29",
+      "id": "10.1016/j.resuscitation.2026.111261",
+      "title": "Transoesophageal echocardiography during cardiopulmonary resuscitation for cardiac arrest: a scoping review",
+      "journal": "Resuscitation",
+      "date": "2026-09-03",
       "pmid": "",
-      "doi": "10.1016/j.resplu.2026.101454",
-      "summary": "Retrospective analysis of US NEMSIS data found adrenaline was administered in only 60% of paediatric out-of-hospital cardiac arrests, with longer scene times, advanced airway attempts, and defibrillation associated with higher odds of administration, while public settings and female sex correlated with lower odds.",
-      "relevance": "🟢 High — Adrenaline is carried by ACTAS (AP scope) and paediatric cardiac arrest is within our scope—US practice patterns are directly relevant despite jurisdictional differences.",
-      "featuredReason": "Adrenaline is carried by ACTAS (AP scope) and paediatric cardiac arrest is within our scope—US practice patterns are directly relevant despite jurisdictional differences."
+      "doi": "10.1016/j.resuscitation.2026.111261",
+      "summary": "Scoping review of 22 studies (1,254 patients, 84% OHCA) mapping intra-arrest transoesophageal echocardiography — insertion succeeded in 80–100% of cases and TEE changed management in 31–48% of patients, but the two randomised trials found no difference in ROSC, survival, or favourable neurological outcome versus conventional CPR.",
+      "relevance": "🔴 Low — TEE is an in-hospital, physician-level tool with no prehospital role in ACTAS — interesting for where resuscitation science is heading, but nothing changes on the road, and no patient-centred benefit has been shown.",
+      "featuredReason": "TEE is an in-hospital, physician-level tool with no prehospital role in ACTAS — interesting for where resuscitation science is heading, but nothing changes on the road, and no patient-centred benefit has been shown."
     },
     {
-      "id": "10.1016/j.resplu.2026.101455",
-      "title": "Distribution of clinically identified reversible causes in emergency department and out-of-hospital cardiac arrest: a retrospective cohort study",
-      "journal": "Resuscitation Plus",
-      "date": "2026-08-28",
+      "id": "10.1016/j.resuscitation.2026.111276",
+      "title": "Prehospital emergency cricothyroidotomy in Denmark: a nationwide cohort study, 2016–2023",
+      "journal": "Resuscitation",
+      "date": "2026-09-03",
       "pmid": "",
-      "doi": "10.1016/j.resplu.2026.101455",
-      "summary": "Retrospective cohort study comparing reversible causes in ED vs. out-of-hospital cardiac arrest — hypoxia was the most common cause overall but occurred less frequently in ED arrests (46.6% vs 57.2%), while hypovolemia (33.1% vs 23.2%) and cardiac tamponade (2.9% vs 0.6%) were significantly more common in ED.",
-      "relevance": "🟢 High — Directly applicable to cardiac arrest resuscitation (CMG 4) — reinforces the 5Hs and 5Ts framework and shows ED arrests have a different cause profile that may inform transport decisions and pre-arrival preparation.",
-      "featuredReason": "Directly applicable to cardiac arrest resuscitation (CMG 4) — reinforces the 5Hs and 5Ts framework and shows ED arrests have a different cause profile that may inform transport decisions and pre-arrival preparation."
+      "doi": "10.1016/j.resuscitation.2026.111276",
+      "summary": "Nationwide Danish cohort of all 71 prehospital emergency cricothyroidotomies over 2016–2023 — overall procedural success 87.3% (83.3% in OHCA), aspiration and oropharyngeal bleeding the commonest indications, but the procedure was rare (0.12% of 39,885 OHCAs) and OHCA outcomes were poor (ROSC 25%, 30-day survival 4.5%, 1-year survival 2.3%).",
+      "relevance": "🟡 Medium — A failed-airway rescue skill relevant to ACTAS but ICP-only (CMG 3B intubation algorithm incl. surgical airway), and the data come from a physician-staffed system, so case mix and operator context differ from ours.",
+      "featuredReason": "A failed-airway rescue skill relevant to ACTAS but ICP-only (CMG 3B intubation algorithm incl. surgical airway), and the data come from a physician-staffed system, so case mix and operator context differ from ours."
     }
   ],
   "funFacts": [
@@ -970,31 +970,90 @@
     }
   ],
   "funFact": {
-    "category": "pharmacology",
-    "fact": "Amiodarone is about 37% iodine by weight — roughly 75mg of iodine per 200mg dose. A single loading dose can trigger both hyper- and hypothyroidism. It's an antiarrhythmic that moonlights as an endocrine wrecking ball."
+    "category": "EMS",
+    "fact": "The Star of Life on ambulances was designed by the US National Highway Traffic Safety Administration in 1973. The six points represent detection, reporting, response, on-scene care, care in transit, and transfer to definitive care — the full journey from disaster to survival."
   },
   "tldr": {
-    "date": "2026-09-02",
-    "paperCount": 2,
-    "summary": "US data shows significant racial disparities in bystander CPR for opioid-associated cardiac arrests, with Black patients 30% less likely to receive CPR than White patients.\n• Narrative review supports safety of RhD-positive blood transfusion in haemorrhagic shock for females of childbearing potential — HDFN risk estimated under 0.1%.",
+    "date": "2026-09-03",
+    "paperCount": 4,
+    "summary": "• Resuscitation-heavy day: a 20,414-patient evaluation of a community hands-only CPR training initiative found bystander CPR only increased significantly for public-location arrests (+8.59 pp), not at home, with no survival benefit\n• Scoping review of intra-arrest transoesophageal echo (22 studies, 1,254 patients): feasible and changes management in 31–48% of cases, but two RCTs show no ROSC, survival, or neurological benefit\n• Danish nationwide cohort: prehospital cricothyroidotomy is rare (0.12% of OHCAs) but 87.3% procedural success, with poor OHCA survival (30-day 4.5%)\n• Australian flag: Nepean Hospital ED's 4-year ultrasound archiving program archived 7,281 studies with zero data loss — a QA/logbook template relevant to ambulance ultrasound programs",
     "highlights": [
       {
-        "id": "10.1016/j.resuscitation.2026.111216",
+        "id": "10.1016/j.resuscitation.2026.111262",
         "pmid": "",
-        "doi": "10.1016/j.resuscitation.2026.111216",
-        "title": "Racial and ethnic differences in bystander CPR for opioid-associated OHCA",
-        "note": "Black patients with opioid-associated OHCA had 30% lower odds of receiving bystander CPR than White patients (AOR 0.70, 95% CI 0.63-0.77) in US NEMSIS data (n=19,612)."
+        "doi": "10.1016/j.resuscitation.2026.111262",
+        "title": "Regional training initiative and bystander CPR rates after OHCA",
+        "note": "Difference-in-differences across 20,414 OHCAs: overall bystander CPR rose 37.4%→42.5% but the adjusted intervention effect wasn't significant (+2.94 pp); only public-location arrests saw a significant +8.59 pp increase, with no survival or neurological benefit."
       },
       {
-        "id": "10.1080/10903127.2026.2701877",
+        "id": "10.1016/j.resuscitation.2026.111261",
         "pmid": "",
-        "doi": "10.1080/10903127.2026.2701877",
-        "title": "RhD-Positive Transfusion in Females of Childbearing Potential",
-        "note": "Modeling studies estimate fetal death due to anti-D-mediated HDFN would occur in fewer than 0.1% of females of childbearing potential exposed to RhD-positive blood products in trauma."
+        "doi": "10.1016/j.resuscitation.2026.111261",
+        "title": "Transoesophageal echo during CPR: scoping review",
+        "note": "22 studies (1,254 patients, 84% OHCA): TEE insertion succeeded 80–100% of the time and changed management in 31–48% of patients, but the two RCTs found no difference in ROSC, survival, or favourable neurological outcome vs conventional CPR."
+      },
+      {
+        "id": "10.1016/j.resuscitation.2026.111276",
+        "pmid": "",
+        "doi": "10.1016/j.resuscitation.2026.111276",
+        "title": "Prehospital cricothyroidotomy in Denmark, 2016–2023",
+        "note": "All 71 Danish cases nationwide: 87.3% procedural success (83.3% in OHCA), main indications aspiration and oropharyngeal bleeding; just 0.12% of OHCAs needed one, with poor outcomes (ROSC 25%, 30-day survival 4.5%, 1-year 2.3%)."
+      },
+      {
+        "id": "10.1111/1742-6723.70342",
+        "pmid": "",
+        "doi": "10.1111/1742-6723.70342",
+        "title": "ED ultrasound archiving at an Australian tertiary centre",
+        "note": "Nepean Hospital ED archived 7,281 ultrasound studies across 15 modalities over 4 years with no failures or data loss; automated trainee logbooks save ~2 h/week per trainee and clinician time, not software, is the dominant cost."
       }
     ]
   },
   "dailyUpdates": [
+    {
+      "date": "2026-09-03",
+      "papers": [
+        {
+          "id": "10.1016/j.resuscitation.2026.111262",
+          "title": "Evaluating the effect of a regional training initiative on bystander cardiopulmonary resuscitation rates after out-of-hospital cardiac arrest",
+          "journal": "Resuscitation",
+          "date": "2026-09-03",
+          "pmid": "",
+          "doi": "10.1016/j.resuscitation.2026.111262",
+          "summary": "Difference-in-differences evaluation of a year-long community hands-only CPR training initiative across 20,414 OHCAs — overall bystander CPR rates rose from 37.4% to 42.5% but the adjusted intervention effect wasn't significant (+2.94 pp, 95% CI −0.95 to 6.83); only public-location arrests showed a significant increase (+8.59 pp), with no effect at home and no detectable survival or neurological benefit.",
+          "relevance": "🟢 High — Bystander CPR education underpins Australian community resuscitation strategy and ambulance-led CPR awareness campaigns — the public-but-not-home signal is directly relevant to how we target training effort."
+        },
+        {
+          "id": "10.1016/j.resuscitation.2026.111261",
+          "title": "Transoesophageal echocardiography during cardiopulmonary resuscitation for cardiac arrest: a scoping review",
+          "journal": "Resuscitation",
+          "date": "2026-09-03",
+          "pmid": "",
+          "doi": "10.1016/j.resuscitation.2026.111261",
+          "summary": "Scoping review of 22 studies (1,254 patients, 84% OHCA) mapping intra-arrest transoesophageal echocardiography — insertion succeeded in 80–100% of cases and TEE changed management in 31–48% of patients, but the two randomised trials found no difference in ROSC, survival, or favourable neurological outcome versus conventional CPR.",
+          "relevance": "🔴 Low — TEE is an in-hospital, physician-level tool with no prehospital role in ACTAS — interesting for where resuscitation science is heading, but nothing changes on the road, and no patient-centred benefit has been shown."
+        },
+        {
+          "id": "10.1016/j.resuscitation.2026.111276",
+          "title": "Prehospital emergency cricothyroidotomy in Denmark: a nationwide cohort study, 2016–2023",
+          "journal": "Resuscitation",
+          "date": "2026-09-03",
+          "pmid": "",
+          "doi": "10.1016/j.resuscitation.2026.111276",
+          "summary": "Nationwide Danish cohort of all 71 prehospital emergency cricothyroidotomies over 2016–2023 — overall procedural success 87.3% (83.3% in OHCA), aspiration and oropharyngeal bleeding the commonest indications, but the procedure was rare (0.12% of 39,885 OHCAs) and OHCA outcomes were poor (ROSC 25%, 30-day survival 4.5%, 1-year survival 2.3%).",
+          "relevance": "🟡 Medium — A failed-airway rescue skill relevant to ACTAS but ICP-only (CMG 3B intubation algorithm incl. surgical airway), and the data come from a physician-staffed system, so case mix and operator context differ from ours."
+        },
+        {
+          "id": "10.1111/1742-6723.70342",
+          "title": "Ultrasound Archiving in the Emergency Department: Implementation, Governance and 4‐Year Outcomes at an Australian Tertiary Emergency Department",
+          "journal": "Emergency Medicine Australasia",
+          "date": "2026-09-03",
+          "pmid": "",
+          "doi": "10.1111/1742-6723.70342",
+          "summary": "Four-year implementation study of a middleware ED ultrasound archiving and QA workflow at Nepean Hospital — 7,281 studies archived across 15 modalities with zero data loss or failures, automated trainee logbooks saving each trainee ~2 h/week, and clinician time (not software) the dominant recurring cost.",
+          "relevance": "🟡 Medium — ED-based governance, not prehospital, but the archiving/QA/logbook template is directly relevant to any Australian ambulance service building an ultrasound QA or training program."
+        }
+      ]
+    },
     {
       "date": "2026-09-02",
       "papers": [
