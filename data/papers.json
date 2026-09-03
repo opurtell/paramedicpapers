@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-09-02T21:20:55Z",
-  "lastUpdatedSydney": "2026-09-03 07:20 AEST",
-  "lastUpdatedDate": "2026-09-03",
+  "lastUpdated": "2026-09-03T21:20:05Z",
+  "lastUpdatedSydney": "2026-09-04 07:20 AEST",
+  "lastUpdatedDate": "2026-09-04",
   "featuredPapers": [
     {
       "id": "10.1080/10903127.2026.2717758",
@@ -26,6 +26,17 @@
       "featuredReason": "Selected for clinical relevance to prehospital practice."
     },
     {
+      "id": "42687715",
+      "title": "Criteria for Safe Hospital Discharge in Bronchiolitis: A Systematic Review",
+      "journal": "Emergency Medicine Australasia",
+      "date": "2026-09-04",
+      "pmid": "42687715",
+      "doi": "10.1111/1742-6723.70339",
+      "summary": "Systematic review for the binational guideline update on discharge criteria for infants under 12 months with bronchiolitis — two retrospective studies (N=2,697) found structured discharge criteria significantly shortened length of stay with no difference in readmissions (low-to-very-low certainty), and informed the 2025 Australasian Bronchiolitis Guideline covering clinical stability, oxygen saturation/support, feeding, caregiver confidence, social factors and follow-up.",
+      "relevance": "🟡 Medium — hospital ED/inpatient decision-making rather than on-road practice, but directly Australasian and shapes the pathway for infants we transport",
+      "featuredReason": "hospital ED/inpatient decision-making rather than on-road practice, but directly Australasian and shapes the pathway for infants we transport"
+    },
+    {
       "id": "10.1016/j.resuscitation.2026.111262",
       "title": "Evaluating the effect of a regional training initiative on bystander cardiopulmonary resuscitation rates after out-of-hospital cardiac arrest",
       "journal": "Resuscitation",
@@ -46,17 +57,6 @@
       "summary": "Scoping review of 22 studies (1,254 patients, 84% OHCA) mapping intra-arrest transoesophageal echocardiography — insertion succeeded in 80–100% of cases and TEE changed management in 31–48% of patients, but the two randomised trials found no difference in ROSC, survival, or favourable neurological outcome versus conventional CPR.",
       "relevance": "🔴 Low — TEE is an in-hospital, physician-level tool with no prehospital role in ACTAS — interesting for where resuscitation science is heading, but nothing changes on the road, and no patient-centred benefit has been shown.",
       "featuredReason": "TEE is an in-hospital, physician-level tool with no prehospital role in ACTAS — interesting for where resuscitation science is heading, but nothing changes on the road, and no patient-centred benefit has been shown."
-    },
-    {
-      "id": "10.1016/j.resuscitation.2026.111276",
-      "title": "Prehospital emergency cricothyroidotomy in Denmark: a nationwide cohort study, 2016–2023",
-      "journal": "Resuscitation",
-      "date": "2026-09-03",
-      "pmid": "",
-      "doi": "10.1016/j.resuscitation.2026.111276",
-      "summary": "Nationwide Danish cohort of all 71 prehospital emergency cricothyroidotomies over 2016–2023 — overall procedural success 87.3% (83.3% in OHCA), aspiration and oropharyngeal bleeding the commonest indications, but the procedure was rare (0.12% of 39,885 OHCAs) and OHCA outcomes were poor (ROSC 25%, 30-day survival 4.5%, 1-year survival 2.3%).",
-      "relevance": "🟡 Medium — A failed-airway rescue skill relevant to ACTAS but ICP-only (CMG 3B intubation algorithm incl. surgical airway), and the data come from a physician-staffed system, so case mix and operator context differ from ours.",
-      "featuredReason": "A failed-airway rescue skill relevant to ACTAS but ICP-only (CMG 3B intubation algorithm incl. surgical airway), and the data come from a physician-staffed system, so case mix and operator context differ from ours."
     }
   ],
   "funFacts": [
@@ -970,45 +970,39 @@
     }
   ],
   "funFact": {
-    "category": "EMS",
-    "fact": "The Star of Life on ambulances was designed by the US National Highway Traffic Safety Administration in 1973. The six points represent detection, reporting, response, on-scene care, care in transit, and transfer to definitive care — the full journey from disaster to survival."
+    "category": "pathophysiology",
+    "fact": "In anaphylaxis, massive vasodilation can expand vascular capacity by up to 30%. The patient hasn't lost blood — their pipes just got dramatically bigger. That's why adrenaline (a vasoconstrictor) is the answer, not just drowning them in fluids."
   },
   "tldr": {
-    "date": "2026-09-03",
-    "paperCount": 4,
-    "summary": "• Resuscitation-heavy day: a 20,414-patient evaluation of a community hands-only CPR training initiative found bystander CPR only increased significantly for public-location arrests (+8.59 pp), not at home, with no survival benefit\n• Scoping review of intra-arrest transoesophageal echo (22 studies, 1,254 patients): feasible and changes management in 31–48% of cases, but two RCTs show no ROSC, survival, or neurological benefit\n• Danish nationwide cohort: prehospital cricothyroidotomy is rare (0.12% of OHCAs) but 87.3% procedural success, with poor OHCA survival (30-day 4.5%)\n• Australian flag: Nepean Hospital ED's 4-year ultrasound archiving program archived 7,281 studies with zero data loss — a QA/logbook template relevant to ambulance ultrasound programs",
+    "date": "2026-09-04",
+    "paperCount": 1,
+    "summary": "Quiet clinical day — 10 of 11 new papers were ahead-of-print or non-EMS items with no reportable findings. The exception: an Australasian systematic review informing the 2025 bronchiolitis guideline update found structured discharge criteria for infants significantly shortened length of stay with no difference in readmissions.",
     "highlights": [
       {
-        "id": "10.1016/j.resuscitation.2026.111262",
-        "pmid": "",
-        "doi": "10.1016/j.resuscitation.2026.111262",
-        "title": "Regional training initiative and bystander CPR rates after OHCA",
-        "note": "Difference-in-differences across 20,414 OHCAs: overall bystander CPR rose 37.4%→42.5% but the adjusted intervention effect wasn't significant (+2.94 pp); only public-location arrests saw a significant +8.59 pp increase, with no survival or neurological benefit."
-      },
-      {
-        "id": "10.1016/j.resuscitation.2026.111261",
-        "pmid": "",
-        "doi": "10.1016/j.resuscitation.2026.111261",
-        "title": "Transoesophageal echo during CPR: scoping review",
-        "note": "22 studies (1,254 patients, 84% OHCA): TEE insertion succeeded 80–100% of the time and changed management in 31–48% of patients, but the two RCTs found no difference in ROSC, survival, or favourable neurological outcome vs conventional CPR."
-      },
-      {
-        "id": "10.1016/j.resuscitation.2026.111276",
-        "pmid": "",
-        "doi": "10.1016/j.resuscitation.2026.111276",
-        "title": "Prehospital cricothyroidotomy in Denmark, 2016–2023",
-        "note": "All 71 Danish cases nationwide: 87.3% procedural success (83.3% in OHCA), main indications aspiration and oropharyngeal bleeding; just 0.12% of OHCAs needed one, with poor outcomes (ROSC 25%, 30-day survival 4.5%, 1-year 2.3%)."
-      },
-      {
-        "id": "10.1111/1742-6723.70342",
-        "pmid": "",
-        "doi": "10.1111/1742-6723.70342",
-        "title": "ED ultrasound archiving at an Australian tertiary centre",
-        "note": "Nepean Hospital ED archived 7,281 ultrasound studies across 15 modalities over 4 years with no failures or data loss; automated trainee logbooks save ~2 h/week per trainee and clinician time, not software, is the dominant cost."
+        "id": "42687715",
+        "pmid": "42687715",
+        "doi": "10.1111/1742-6723.70339",
+        "title": "Criteria for Safe Hospital Discharge in Bronchiolitis: A Systematic Review",
+        "note": "Review informing the 2025 Australasian Bronchiolitis Guideline: two retrospective studies (N=2,697) showed structured discharge criteria significantly reduced infant length of stay with no significant difference in readmissions (low-to-very-low certainty evidence), with new prescriptive criteria covering stability, oxygen saturation/support, feeding, caregiver confidence, social factors and follow-up."
       }
     ]
   },
   "dailyUpdates": [
+    {
+      "date": "2026-09-04",
+      "papers": [
+        {
+          "id": "42687715",
+          "title": "Criteria for Safe Hospital Discharge in Bronchiolitis: A Systematic Review",
+          "journal": "Emergency Medicine Australasia",
+          "date": "2026-09-04",
+          "pmid": "42687715",
+          "doi": "10.1111/1742-6723.70339",
+          "summary": "Systematic review for the binational guideline update on discharge criteria for infants under 12 months with bronchiolitis — two retrospective studies (N=2,697) found structured discharge criteria significantly shortened length of stay with no difference in readmissions (low-to-very-low certainty), and informed the 2025 Australasian Bronchiolitis Guideline covering clinical stability, oxygen saturation/support, feeding, caregiver confidence, social factors and follow-up.",
+          "relevance": "🟡 Medium — hospital ED/inpatient decision-making rather than on-road practice, but directly Australasian and shapes the pathway for infants we transport"
+        }
+      ]
+    },
     {
       "date": "2026-09-03",
       "papers": [
