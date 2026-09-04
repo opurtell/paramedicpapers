@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-09-03T21:20:05Z",
-  "lastUpdatedSydney": "2026-09-04 07:20 AEST",
-  "lastUpdatedDate": "2026-09-04",
+  "lastUpdated": "2026-09-04T21:20:16Z",
+  "lastUpdatedSydney": "2026-09-05 07:20 AEST",
+  "lastUpdatedDate": "2026-09-05",
   "featuredPapers": [
     {
       "id": "10.1080/10903127.2026.2717758",
@@ -970,24 +970,56 @@
     }
   ],
   "funFact": {
-    "category": "pathophysiology",
-    "fact": "In anaphylaxis, massive vasodilation can expand vascular capacity by up to 30%. The patient hasn't lost blood — their pipes just got dramatically bigger. That's why adrenaline (a vasoconstrictor) is the answer, not just drowning them in fluids."
+    "category": "cardiac",
+    "fact": "Wellens' syndrome — biphasic or deeply inverted T waves in V2-V3 — means critical proximal LAD stenosis. These patients need the cath lab urgently. Putting them on a stress test can literally kill them. Don't."
   },
   "tldr": {
-    "date": "2026-09-04",
-    "paperCount": 1,
-    "summary": "Quiet clinical day — 10 of 11 new papers were ahead-of-print or non-EMS items with no reportable findings. The exception: an Australasian systematic review informing the 2025 bronchiolitis guideline update found structured discharge criteria for infants significantly shortened length of stay with no difference in readmissions.",
+    "date": "2026-09-05",
+    "paperCount": 2,
+    "summary": "Quiet-ish day: a Norwegian qualitative study on how primary care doctors decide to call out to trauma alarms on sparse dispatch information, and an Oslo sepsis study that failed to replicate the SENECA phenotypes, finding eight stable subgroups instead. Nothing practice-changing for ACTAS road practice.",
     "highlights": [
       {
-        "id": "42687715",
-        "pmid": "42687715",
-        "doi": "10.1111/1742-6723.70339",
-        "title": "Criteria for Safe Hospital Discharge in Bronchiolitis: A Systematic Review",
-        "note": "Review informing the 2025 Australasian Bronchiolitis Guideline: two retrospective studies (N=2,697) showed structured discharge criteria significantly reduced infant length of stay with no significant difference in readmissions (low-to-very-low certainty evidence), with new prescriptive criteria covering stability, oxygen saturation/support, feeding, caregiver confidence, social factors and follow-up."
+        "id": "10.1186/s13049-026-01691-5",
+        "pmid": "",
+        "doi": "10.1186/s13049-026-01691-5",
+        "title": "Acute trauma alarms in Norway — factors influencing primary care doctors' decision to call out",
+        "note": "Qualitative interview study of 20 Norwegian primary care doctors: despite limited EMCC voice-message information, it remained decisive in whether they called out to trauma, with experienced doctors using recognition-primed cues and weighing severity against distance and concurrent incidents."
+      },
+      {
+        "id": "10.1186/s13049-026-01688-0",
+        "pmid": "",
+        "doi": "10.1186/s13049-026-01688-0",
+        "title": "Eight stable subgroups of sepsis in the ED with consensus clustering",
+        "note": "Retrospective study of 953 Oslo ED sepsis admissions failed to replicate the four SENECA phenotypes, finding eight stable subgroups instead; only 49% of SENECA-criteria patients fulfilled Sepsis-3, highlighting sepsis heterogeneity and cohort-definition problems."
       }
     ]
   },
   "dailyUpdates": [
+    {
+      "date": "2026-09-05",
+      "papers": [
+        {
+          "id": "10.1186/s13049-026-01691-5",
+          "title": "Acute trauma alarms in Norway - a qualitative study of factors influencing primary care doctors’ decision to call out",
+          "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+          "date": "2026-09-05",
+          "pmid": "",
+          "doi": "10.1186/s13049-026-01691-5",
+          "summary": "Qualitative interview study of 20 Norwegian primary care doctors on how they decide whether to call out to acute trauma alarms from limited EMCC voice messages — despite the sparse information it remained a decisive factor, with experienced doctors using recognition-primed cues and weighing severity against travel distance and the risk of concurrent incidents.",
+          "relevance": "🟡 Medium — Useful operational insight into call-out decisions under information scarcity, but it reflects Norway's doctor-response model rather than the ACTAS paramedic-first system"
+        },
+        {
+          "id": "10.1186/s13049-026-01688-0",
+          "title": "Discovery of eight stable subgroups of sepsis in the emergency department with consensus clustering",
+          "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+          "date": "2026-09-05",
+          "pmid": "",
+          "doi": "10.1186/s13049-026-01688-0",
+          "summary": "Retrospective consensus clustering of 953 ED sepsis admissions at Oslo University Hospital could not replicate the four SENECA phenotypes, instead finding eight stable subgroups with more granular characteristics — and only 49% of patients meeting SENECA inclusion criteria fulfilled Sepsis-3, underlining sepsis heterogeneity and cohort-definition problems.",
+          "relevance": "🔴 Low — Retrospective ED phenotyping with no immediate prehospital application, though it reinforces why ACTAS sepsis recognition (CMG 38) leans on simple bedside criteria like qSOFA"
+        }
+      ]
+    },
     {
       "date": "2026-09-04",
       "papers": [
