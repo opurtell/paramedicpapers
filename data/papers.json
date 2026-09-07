@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-09-06T21:20:37Z",
-  "lastUpdatedSydney": "2026-09-07 07:20 AEST",
-  "lastUpdatedDate": "2026-09-07",
+  "lastUpdated": "2026-09-07T21:20:48Z",
+  "lastUpdatedSydney": "2026-09-08 07:20 AEST",
+  "lastUpdatedDate": "2026-09-08",
   "featuredPapers": [
     {
       "id": "10.1080/10903127.2026.2717758",
@@ -37,26 +37,26 @@
       "featuredReason": "hospital ED/inpatient decision-making rather than on-road practice, but directly Australasian and shapes the pathway for infants we transport"
     },
     {
-      "id": "10.1016/j.resuscitation.2026.111262",
-      "title": "Evaluating the effect of a regional training initiative on bystander cardiopulmonary resuscitation rates after out-of-hospital cardiac arrest",
-      "journal": "Resuscitation",
-      "date": "2026-09-03",
+      "id": "10.1016/j.annemergmed.2025.09.019",
+      "title": "Intranasal Versus Subcutaneous Ketamine for the Treatment of Acute Traumatic Pain in the Emergency Department: A Randomized Clinical Trial",
+      "journal": "Annals of Emergency Medicine",
+      "date": "2026-08-20",
       "pmid": "",
-      "doi": "10.1016/j.resuscitation.2026.111262",
-      "summary": "Difference-in-differences evaluation of a year-long community hands-only CPR training initiative across 20,414 OHCAs — overall bystander CPR rates rose from 37.4% to 42.5% but the adjusted intervention effect wasn't significant (+2.94 pp, 95% CI −0.95 to 6.83); only public-location arrests showed a significant increase (+8.59 pp), with no effect at home and no detectable survival or neurological benefit.",
-      "relevance": "🟢 High — Bystander CPR education underpins Australian community resuscitation strategy and ambulance-led CPR awareness campaigns — the public-but-not-home signal is directly relevant to how we target training effort.",
-      "featuredReason": "Bystander CPR education underpins Australian community resuscitation strategy and ambulance-led CPR awareness campaigns — the public-but-not-home signal is directly relevant to how we target training effort."
+      "doi": "10.1016/j.annemergmed.2025.09.019",
+      "summary": "RCT testing whether intranasal ketamine is non-inferior to subcutaneous for acute traumatic pain — both routes provided equivalent analgesia with minimal clinically important differences, though minor adverse events were more common with subcutaneous administration.",
+      "relevance": "🟢 High — Directly relevant to prehospital analgesia; IN route already used by many Australian services, confirms efficacy versus SC.",
+      "featuredReason": "Directly relevant to prehospital analgesia; IN route already used by many Australian services, confirms efficacy versus SC."
     },
     {
-      "id": "10.1016/j.resuscitation.2026.111261",
-      "title": "Transoesophageal echocardiography during cardiopulmonary resuscitation for cardiac arrest: a scoping review",
-      "journal": "Resuscitation",
-      "date": "2026-09-03",
+      "id": "10.1016/j.resplu.2026.101422",
+      "title": "Bag size for manual ventilation during cardiopulmonary resuscitation in adult cardiac arrest: a systematic review",
+      "journal": "Resuscitation Plus",
+      "date": "2026-08-09",
       "pmid": "",
-      "doi": "10.1016/j.resuscitation.2026.111261",
-      "summary": "Scoping review of 22 studies (1,254 patients, 84% OHCA) mapping intra-arrest transoesophageal echocardiography — insertion succeeded in 80–100% of cases and TEE changed management in 31–48% of patients, but the two randomised trials found no difference in ROSC, survival, or favourable neurological outcome versus conventional CPR.",
-      "relevance": "🔴 Low — TEE is an in-hospital, physician-level tool with no prehospital role in ACTAS — interesting for where resuscitation science is heading, but nothing changes on the road, and no patient-centred benefit has been shown.",
-      "featuredReason": "TEE is an in-hospital, physician-level tool with no prehospital role in ACTAS — interesting for where resuscitation science is heading, but nothing changes on the road, and no patient-centred benefit has been shown."
+      "doi": "10.1016/j.resplu.2026.101422",
+      "summary": "Systematic review testing whether smaller self-inflating bags improve CPR outcomes — they found limited very-low-certainty evidence suggesting smaller bags (450-700mL) were associated with lower survival with favourable neuro outcomes compared to standard adult bags (1000-1685mL).",
+      "relevance": "🟢 High — Directly relevant to prehospital CPR practice — bag valve choice is a standard clinical decision and these findings challenge the assumption that smaller bags are safer for airway protection during CPR.",
+      "featuredReason": "Directly relevant to prehospital CPR practice — bag valve choice is a standard clinical decision and these findings challenge the assumption that smaller bags are safer for airway protection during CPR."
     }
   ],
   "funFacts": [
@@ -970,11 +970,11 @@
     }
   ],
   "funFact": {
-    "category": "anatomy",
-    "fact": "Epidural space: fat, veins, lymphatics — target for epidurals. Subarachnoid space: cerebrospinal fluid — target for spinals. The difference between them is one membrane: the dura mater. One membrane. Two completely different procedures."
+    "category": "resuscitation",
+    "fact": "PARAMEDIC2 showed adrenaline boosted survival to discharge from 2.3% to 3.2% in OHCA — a modest but statistically significant improvement. Survivors had higher rates of severe neurological impairment. We're saving more people, but not all of them are getting back the person they were."
   },
   "tldr": {
-    "date": "2026-09-07",
+    "date": "2026-09-08",
     "paperCount": 0,
     "summary": "No new papers today.",
     "highlights": []
