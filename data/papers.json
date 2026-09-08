@@ -1,8 +1,19 @@
 {
-  "lastUpdated": "2026-09-07T21:20:48Z",
-  "lastUpdatedSydney": "2026-09-08 07:20 AEST",
-  "lastUpdatedDate": "2026-09-08",
+  "lastUpdated": "2026-09-08T21:20:59Z",
+  "lastUpdatedSydney": "2026-09-09 07:20 AEST",
+  "lastUpdatedDate": "2026-09-09",
   "featuredPapers": [
+    {
+      "id": "10.1016/j.resplu.2026.101475",
+      "title": "Accuracy of ventilation feedback devices compared with a reference standard during asynchronous ventilation with continuous chest compressions in a simulated cardiac arrest: a prospective non-randomized cross-over study",
+      "journal": "Resuscitation Plus",
+      "date": "2026-09-08",
+      "pmid": "",
+      "doi": "10.1016/j.resplu.2026.101475",
+      "summary": "Simulation cross-over study of two commercial ventilation feedback devices used during continuous compressions with asynchronous ventilations — both were clinically inaccurate, one displaying 111 breaths/min when the true rate was 12 and underestimating tidal volume by up to 440 mL in reversed airflow.",
+      "relevance": "🟡 Medium transferability — cautionary tale for relying on feedback displays during asynchronous CPR",
+      "featuredReason": "cautionary tale for relying on feedback displays during asynchronous CPR"
+    },
     {
       "id": "10.1080/10903127.2026.2717758",
       "title": "Effect of Body Position on Chest Compression Quality During CPR in an Obesity Simulation Model: A Randomized Crossover Trial",
@@ -26,37 +37,26 @@
       "featuredReason": "Selected for clinical relevance to prehospital practice."
     },
     {
-      "id": "42687715",
-      "title": "Criteria for Safe Hospital Discharge in Bronchiolitis: A Systematic Review",
-      "journal": "Emergency Medicine Australasia",
-      "date": "2026-09-04",
-      "pmid": "42687715",
-      "doi": "10.1111/1742-6723.70339",
-      "summary": "Systematic review for the binational guideline update on discharge criteria for infants under 12 months with bronchiolitis — two retrospective studies (N=2,697) found structured discharge criteria significantly shortened length of stay with no difference in readmissions (low-to-very-low certainty), and informed the 2025 Australasian Bronchiolitis Guideline covering clinical stability, oxygen saturation/support, feeding, caregiver confidence, social factors and follow-up.",
-      "relevance": "🟡 Medium — hospital ED/inpatient decision-making rather than on-road practice, but directly Australasian and shapes the pathway for infants we transport",
-      "featuredReason": "hospital ED/inpatient decision-making rather than on-road practice, but directly Australasian and shapes the pathway for infants we transport"
+      "id": "10.1186/s13049-026-01689-z",
+      "title": "When prehospital resuscitation attempts are unsuccessful: care for the relatives following termination of treatment in out-of-hospital cardiac arrest",
+      "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+      "date": "2026-09-08",
+      "pmid": "",
+      "doi": "10.1186/s13049-026-01689-z",
+      "summary": "Interviews with 15 relatives present at unsuccessful out-of-hospital resuscitations showed their needs shift across three phases — dispatch guidance, help-or-withdraw during resus, then compassionate unhurried communication when efforts stop.",
+      "relevance": "🟢 High transferability — death notification and family care are core AP work, directly actionable with no new kit",
+      "featuredReason": "death notification and family care are core AP work, directly actionable with no new kit"
     },
     {
-      "id": "10.1016/j.annemergmed.2025.09.019",
-      "title": "Intranasal Versus Subcutaneous Ketamine for the Treatment of Acute Traumatic Pain in the Emergency Department: A Randomized Clinical Trial",
-      "journal": "Annals of Emergency Medicine",
-      "date": "2026-08-20",
+      "id": "10.1186/s13049-026-01667-5",
+      "title": "Association between fentanyl use and mortality during prehospital emergency anaesthesia in traumatic brain injury – a retrospective cohort study",
+      "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+      "date": "2026-09-08",
       "pmid": "",
-      "doi": "10.1016/j.annemergmed.2025.09.019",
-      "summary": "RCT testing whether intranasal ketamine is non-inferior to subcutaneous for acute traumatic pain — both routes provided equivalent analgesia with minimal clinically important differences, though minor adverse events were more common with subcutaneous administration.",
-      "relevance": "🟢 High — Directly relevant to prehospital analgesia; IN route already used by many Australian services, confirms efficacy versus SC.",
-      "featuredReason": "Directly relevant to prehospital analgesia; IN route already used by many Australian services, confirms efficacy versus SC."
-    },
-    {
-      "id": "10.1016/j.resplu.2026.101422",
-      "title": "Bag size for manual ventilation during cardiopulmonary resuscitation in adult cardiac arrest: a systematic review",
-      "journal": "Resuscitation Plus",
-      "date": "2026-08-09",
-      "pmid": "",
-      "doi": "10.1016/j.resplu.2026.101422",
-      "summary": "Systematic review testing whether smaller self-inflating bags improve CPR outcomes — they found limited very-low-certainty evidence suggesting smaller bags (450-700mL) were associated with lower survival with favourable neuro outcomes compared to standard adult bags (1000-1685mL).",
-      "relevance": "🟢 High — Directly relevant to prehospital CPR practice — bag valve choice is a standard clinical decision and these findings challenge the assumption that smaller bags are safer for airway protection during CPR.",
-      "featuredReason": "Directly relevant to prehospital CPR practice — bag valve choice is a standard clinical decision and these findings challenge the assumption that smaller bags are safer for airway protection during CPR."
+      "doi": "10.1186/s13049-026-01667-5",
+      "summary": "In 423 TBI patients intubated by a Finnish HEMS unit, fentanyl as an anaesthetic adjuvant was associated with lower mortality (OR 0.38), though selection bias can't be excluded.",
+      "relevance": "🟡 Medium transferability — fentanyl is on the ACTAS formulary but prehospital anaesthesia is ICP-only, and the data is confounded",
+      "featuredReason": "fentanyl is on the ACTAS formulary but prehospital anaesthesia is ICP-only, and the data is confounded"
     }
   ],
   "funFacts": [
@@ -970,16 +970,141 @@
     }
   ],
   "funFact": {
-    "category": "resuscitation",
-    "fact": "PARAMEDIC2 showed adrenaline boosted survival to discharge from 2.3% to 3.2% in OHCA — a modest but statistically significant improvement. Survivors had higher rates of severe neurological impairment. We're saving more people, but not all of them are getting back the person they were."
+    "category": "EMS",
+    "fact": "Urban Australian ambulance response averages 8 to 10 minutes. In rural and remote areas, it can blow past 30 minutes — which is why community first-responder programs aren't a nice-to-have, they're essential."
   },
   "tldr": {
-    "date": "2026-09-08",
+    "date": "2026-09-09",
     "paperCount": 0,
     "summary": "No new papers today.",
     "highlights": []
   },
   "dailyUpdates": [
+    {
+      "date": "2026-09-08",
+      "papers": [
+        {
+          "id": "10.1186/s13049-026-01689-z",
+          "title": "When prehospital resuscitation attempts are unsuccessful: care for the relatives following termination of treatment in out-of-hospital cardiac arrest",
+          "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+          "date": "2026-09-08",
+          "pmid": "",
+          "doi": "10.1186/s13049-026-01689-z",
+          "summary": "Interviews with 15 relatives present at unsuccessful out-of-hospital resuscitations showed their needs shift across three phases — dispatch guidance, help-or-withdraw during resus, then compassionate unhurried communication when efforts stop.",
+          "relevance": "🟢 High transferability — death notification and family care are core AP work, directly actionable with no new kit"
+        },
+        {
+          "id": "10.1016/j.resplu.2026.101468",
+          "title": "Assessing accessibility to the extracorporeal cardiopulmonary resuscitation pathway for out-of-hospital cardiac arrests in London",
+          "journal": "Resuscitation Plus",
+          "date": "2026-09-08",
+          "pmid": "",
+          "doi": "10.1016/j.resplu.2026.101468",
+          "summary": "Geospatial analysis of five years of London Ambulance Service OHCA data — of 776 patients meeting ECPR eligibility criteria, only 3% could reach an ECMO-capable centre within the 45-minute target, and stretching it to 60 minutes would lift access by 217%.",
+          "relevance": "🟡 Medium transferability — no prehospital ECPR pathway in the ACT, but a sobering look at how eligibility on paper rarely equals access in practice"
+        },
+        {
+          "id": "10.1186/s13049-026-01667-5",
+          "title": "Association between fentanyl use and mortality during prehospital emergency anaesthesia in traumatic brain injury – a retrospective cohort study",
+          "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+          "date": "2026-09-08",
+          "pmid": "",
+          "doi": "10.1186/s13049-026-01667-5",
+          "summary": "In 423 TBI patients intubated by a Finnish HEMS unit, fentanyl as an anaesthetic adjuvant was associated with lower mortality (OR 0.38), though selection bias can't be excluded.",
+          "relevance": "🟡 Medium transferability — fentanyl is on the ACTAS formulary but prehospital anaesthesia is ICP-only, and the data is confounded"
+        },
+        {
+          "id": "10.1016/j.resplu.2026.101462",
+          "title": "Coronary angiography and reperfusion therapy following out-of-hospital cardiac arrest in women",
+          "journal": "Resuscitation Plus",
+          "date": "2026-09-08",
+          "pmid": "",
+          "doi": "10.1016/j.resplu.2026.101462",
+          "summary": "Nationwide Swedish cohort of 8,641 post-OHCA admissions — women were less likely to undergo coronary angiography and PCI than men, yet intervention rates were even once angiographic findings were accounted for, and a third of angiographed women without shockable rhythm or ST elevation had significant coronary disease.",
+          "relevance": "🟡 Medium transferability — in-hospital post-ROSC care, but a useful reminder that OHCA without ST elevation can still mean obstructive disease"
+        },
+        {
+          "id": "42702892",
+          "title": "Access Block and Ambulance Ramping: The Canaries of the Healthcare System",
+          "journal": "Emergency Medicine Australasia",
+          "date": "2026-09-08",
+          "pmid": "42702892",
+          "doi": "10.1111/1742-6723.70327",
+          "summary": "A mixed-methods Queensland study of six years of ambulance and hospital records found access block is largely a hospital discharge ('back door') problem, with recommendations spanning discharge metrics, primary care support and prehospital flow.",
+          "relevance": "🟢 High transferability — the best local evidence yet on what drives the ramping every crew experiences"
+        },
+        {
+          "id": "10.1080/10903127.2026.2723329",
+          "title": "Predicting the Prehospital Blood Transfusion Need in a Large Metropolitan Center",
+          "journal": "Prehospital Emergency Care",
+          "date": "2026-09-08",
+          "pmid": "",
+          "doi": "10.1080/10903127.2026.2723329",
+          "summary": "Retrospective cohort of 25,473 EMS-transported trauma patients in Los Angeles County — of those meeting prehospital blood transfusion criteria, 52% received blood within four hours, with SBP <90 mmHg and HR ≥110 bpm the best predictors of emergent transfusion.",
+          "relevance": "🟡 Medium transferability — blood products aren't in the extracted ACTAS formulary (QAS, AV, SJWA and NSWA carry them)"
+        },
+        {
+          "id": "10.1016/j.resplu.2026.101475",
+          "title": "Accuracy of ventilation feedback devices compared with a reference standard during asynchronous ventilation with continuous chest compressions in a simulated cardiac arrest: a prospective non-randomized cross-over study",
+          "journal": "Resuscitation Plus",
+          "date": "2026-09-08",
+          "pmid": "",
+          "doi": "10.1016/j.resplu.2026.101475",
+          "summary": "Simulation cross-over study of two commercial ventilation feedback devices used during continuous compressions with asynchronous ventilations — both were clinically inaccurate, one displaying 111 breaths/min when the true rate was 12 and underestimating tidal volume by up to 440 mL in reversed airflow.",
+          "relevance": "🟡 Medium transferability — cautionary tale for relying on feedback displays during asynchronous CPR"
+        },
+        {
+          "id": "10.1186/s13049-026-01678-2",
+          "title": "Prognostic value of admission ionized calcium and acidosis in severely injured trauma patients",
+          "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+          "date": "2026-09-08",
+          "pmid": "",
+          "doi": "10.1186/s13049-026-01678-2",
+          "summary": "Multicentre trauma-registry cohort of 977 severely injured patients — admission hypocalcaemia was independently associated with hospital mortality and trauma-induced coagulopathy, while apparently elevated ionised calcium mostly reflected profound acidosis.",
+          "relevance": "🟡 Medium transferability — no prehospital ionised calcium testing, but good context for calcium shifts during major-trauma resus"
+        },
+        {
+          "id": "10.1016/j.resplu.2026.101461",
+          "title": "Temporal trends in chest compression quality during a metronome-guided CPR simulation: a secondary analysis of the RITMICO study",
+          "journal": "Resuscitation Plus",
+          "date": "2026-09-08",
+          "pmid": "",
+          "doi": "10.1016/j.resplu.2026.101461",
+          "summary": "Secondary analysis of 477 volunteers in prolonged manikin CPR — compression depth and chest recoil decayed within minutes, and a double-click metronome with separate compression and release cues preserved quality significantly longer than a standard metronome.",
+          "relevance": "🟡 Medium transferability — manikin study, but recoil decay is a real field problem and metronome cues are available on most defibrillators"
+        },
+        {
+          "id": "10.1186/s13049-026-01693-3",
+          "title": "Changes in LVOT velocity–time integral during whole blood donation: implications for early detection of hypovolemia in spontaneously breathing patients",
+          "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+          "date": "2026-09-08",
+          "pmid": "",
+          "doi": "10.1186/s13049-026-01693-3",
+          "summary": "Prospective study measuring LVOT VTI in 63 volunteers before and after donating about 6–7 mL/kg of blood — VTI fell 11.5% on average but with marked inter-individual variability, so it can't reliably flag mild hypovolaemia on its own.",
+          "relevance": "🟡 Medium transferability — prehospital ultrasound isn't in the ACTAS skills corpus"
+        },
+        {
+          "id": "10.1186/s13049-026-01687-1",
+          "title": "The association of annual and daily volume with in-hospital mortality in Dutch and Danish Emergency Departments",
+          "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+          "date": "2026-09-08",
+          "pmid": "",
+          "doi": "10.1186/s13049-026-01687-1",
+          "summary": "Cohort of 724,256 ED presentations across Dutch and Danish hospitals — annual ED volume had no association with in-hospital mortality, while mortality was lower on busier days, driven by excess deaths on quiet ones.",
+          "relevance": "🔴 Low transferability — in-hospital systems finding with no direct road application"
+        },
+        {
+          "id": "42692462",
+          "title": "Using Sydney Triage to Admission Risk Tool With Artificial Intelligence (START-AI) to Predict Inpatient Admitting Specialty for Emergency Department Patients: Single Centre Deep Learning Analysis",
+          "journal": "Emergency Medicine Australasia",
+          "date": "2026-09-08",
+          "pmid": "42692462",
+          "doi": "10.1111/1742-6723.70341",
+          "summary": "Sydney single-centre deep learning study of 40,054 admitted ED patients — a fine-tuned clinical language model predicted the inpatient admitting specialty from triage notes with AUROC 0.97, though precision was a moderate 0.71.",
+          "relevance": "🟡 Medium transferability — ED-facing rather than prehospital, but shows where Australian AI triage is heading"
+        }
+      ]
+    },
     {
       "date": "2026-09-05",
       "papers": [
@@ -3882,63 +4007,57 @@
     }
   ],
   "weeklyTldr": {
-    "dateRange": "25 Aug – 01 September 2026",
-    "summary": "Obesity significantly impairs CPR chest compression quality in simulation — a 10cm height elevation for rescuers doesn't fix the biomechanical problem\nPrehospital blood transfusion for non-traumatic haemorrhage (mostly GI bleeds) improves vital signs — but blood products aren't carried by ACTAS\nCase report describes serious complications from the Abdominal Aortic Junctional Tourniquet (AAJT-S) including cardiac arrest, metabolic acidosis, compartment syndrome, renal and liver infarcts, pulmonary emboli, and stroke\nRhD-positive prehospital blood transfusion in females of childbearing potential carries a 0.21–0.29% annual risk of future haemolytic disease of the fetus and newborn\nJapanese mobile EMS app demonstrates operational benefits: 90% emergency transport capture, OCR used in 74% of cases, first-request hospital acceptance achieved in 66% of cases",
+    "dateRange": "1 – 8 Sep 2026",
+    "summary": "Fentanyl as a prehospital anaesthesia adjuvant in TBI was associated with lower mortality — retrospective, but supportive of a drug ACTAS already carries\nLondon's prehospital ECPR pathway got just 3% of eligible arrests to an ECMO centre in time — access, not eligibility, is the bottleneck\nVentilation feedback devices displayed wildly wrong rates and volumes during continuous-compression CPR — don't trust the display asynchronously\nAdmission hypocalcaemia predicts death and coagulopathy in major trauma, while 'high' calcium is usually just acidosis\nQueensland ramping evidence points firmly at the hospital back door — discharge flow, primary care and prehospital flow, not more ambulance bays",
     "highlights": [
       {
-        "text": "Obesity significantly impairs CPR chest compression quality in simulation — a 10cm height elevation for rescuers doesn't fix the biomechanical problem",
-        "id": "10.1080/10903127.2026.2717758"
+        "text": "Fentanyl as a prehospital anaesthesia adjuvant in TBI was associated with lower mortality — retrospective, but supportive of a drug ACTAS already carries",
+        "id": "10.1186/s13049-026-01667-5"
       },
       {
-        "text": "Prehospital blood transfusion for non-traumatic haemorrhage (mostly GI bleeds) improves vital signs — but blood products aren't carried by ACTAS",
-        "id": "10.1080/10903127.2026.2726541"
+        "text": "London's prehospital ECPR pathway got just 3% of eligible arrests to an ECMO centre in time — access, not eligibility, is the bottleneck",
+        "id": "10.1016/j.resplu.2026.101468"
       },
       {
-        "text": "Case report describes serious complications from the Abdominal Aortic Junctional Tourniquet (AAJT-S) including cardiac arrest, metabolic acidosis, compartment syndrome, renal and liver infarcts, pulmonary emboli, and stroke",
-        "id": "10.1080/10903127.2026.2725890"
+        "text": "Ventilation feedback devices displayed wildly wrong rates and volumes during continuous-compression CPR — don't trust the display asynchronously",
+        "id": "10.1016/j.resplu.2026.101475"
       },
       {
-        "text": "RhD-positive prehospital blood transfusion in females of childbearing potential carries a 0.21–0.29% annual risk of future haemolytic disease of the fetus and newborn",
-        "id": "10.1080/10903127.2026.2725214"
-      },
-      {
-        "text": "Japanese mobile EMS app demonstrates operational benefits: 90% emergency transport capture, OCR used in 74% of cases, first-request hospital acceptance achieved in 66% of cases",
-        "id": "10.1186/s13049-026-01682-6"
+        "text": "Queensland ramping evidence points firmly at the hospital back door — discharge flow, primary care and prehospital flow, not more ambulance bays",
+        "id": "42702892"
       }
     ],
     "topPicks": [
       {
-        "id": "10.1080/10903127.2026.2717758",
-        "title": "Effect of Body Position on Chest Compression Quality During CPR in an Obesity Simulation Model: A Randomized Crossover Trial",
-        "authors": "Aleksander Mickiewicz, Michał Czapla, Łukasz Lewandowski, et al.",
-        "journal": "Prehospital Emergency Care",
-        "summary": "Randomised crossover simulation trial testing whether 10cm elevation of paramedics improves chest compression quality in obese manikins — it didn't, obesity still impaired compression depth by ~18mm despite increased rescuer effort",
-        "relevance": "🟢 High transferability — Directly relevant to cardiac arrest care (CMG 4), practical ergonomic finding that doesn't require equipment change",
+        "id": "10.1186/s13049-026-01689-z",
+        "title": "When prehospital resuscitation attempts are unsuccessful: care for the relatives following termination of treatment in out-of-hospital cardiac arrest",
+        "authors": "Alexander Skovbo, Christina Louise Jørck, et al.",
+        "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+        "summary": "Interviews with 15 relatives present at unsuccessful out-of-hospital resuscitations showed their needs shift across three phases — dispatch guidance, help-or-withdraw during resus, then compassionate unhurried communication when efforts stop.",
+        "relevance": "🟢 High transferability — death notification and family care are core AP work, directly actionable with no new kit",
         "pmid": "",
-        "doi": "10.1080/10903127.2026.2717758",
-        "featuredReason": "Every paramedic does CPR, and this study shows a simple ergonomic intervention (standing on a 10cm pad) doesn't solve the obesity biomechanics problem. Good to know before you waste time trying it, and reinforces the need for mechanical CPR or alternative positioning strategies in obese patients."
+        "doi": "10.1186/s13049-026-01689-z",
+        "featuredReason": "Nearly two in three OHCAs end at the scene, and how paramedics communicate through termination stays with families. Practical, humane, and usable on the very next shift."
       },
       {
-        "id": "10.1080/10903127.2026.2725890",
-        "title": "Between Hemorrhage and Harm: Complications of the Abdominal Aortic and Junctional Tourniquet-Stabilized",
-        "authors": "Grant Gerstner, Julie Rizzo, Charles Kieffer, et al.",
-        "journal": "Prehospital Emergency Care",
-        "summary": "Case report of a patient with AAJT-S placed prehospital for pelvic gunshot wounds who suffered cardiac arrest upon device removal and developed metabolic acidosis, compartment syndrome, rhabdomyolysis, renal and liver infarcts, pulmonary emboli, and stroke",
-        "relevance": "🟡 Medium transferability — Cautionary finding for junctional tourniquet use — AAJT-S isn't specified as ACTAS equipment, but principles apply to non-compressible torso haemorrhage management",
-        "pmid": "",
-        "doi": "10.1080/10903127.2026.2725890",
-        "featuredReason": "Critical safety warning for junctional tourniquet use. AAJT-S complications were severe (cardiac arrest, metabolic acidosis, compartment syndrome, multi-organ infarcts, PE, stroke). If you or your service is considering junctional tourniquets for non-compressible torso haemorrhage, this case report demands careful risk-benefit assessment."
+        "id": "10.1186/s13049-026-01667-5",
+        "title": "Association between fentanyl use and mortality during prehospital emergency anaesthesia in traumatic brain injury – a retrospective cohort study",
+        "authors": "Juri Laamanen, Jussi Pirneskoski, et al.",
+        "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+        "summary": "In 423 TBI patients intubated by a Finnish HEMS unit, fentanyl as an anaesthetic adjuvant was associated with lower mortality (OR 0.38), though selection bias can't be excluded.",
+        "relevance": "🟡 Medium transferability — fentanyl is on the ACTAS formulary but prehospital anaesthesia is ICP-only, and the data is confounded",
+        "featuredReason": "A mortality signal for a drug already carried, in the highest-stakes patient group — worth watching even though retrospective design caps how far the finding travels."
       },
       {
-        "id": "10.1080/10903127.2026.2726541",
-        "title": "Prehospital Blood Transfusion for Medical Causes of Hemorrhage: A Case Series",
-        "authors": "Angela, P Cornelius*, Jeffrey Siegler, Melissa Kroll, et al.",
-        "journal": "Prehospital Emergency Care",
-        "summary": "Retrospective observational study of prehospital whole blood for non-traumatic haemorrhagic shock across two US systems — GI bleeding (49%) and unspecified shock (43%) were the main indications, vitals improved (HR 102→96, SBP 83→106)",
-        "relevance": "🟡 Medium transferability — Not in the ACTAS formulary — blood products are not carried, would require guideline change to adopt",
-        "pmid": "",
-        "doi": "10.1080/10903127.2026.2726541",
-        "featuredReason": "Emerging practice data — as more services consider prehospital blood products, this study shows it's not just for trauma. GI bleeds and unspecified medical shock accounted for 93% of non-traumatic use in two US systems. Good prep if ACTAS ever expands to carry blood, though that would require formulary change."
+        "id": "42702892",
+        "title": "Access Block and Ambulance Ramping: The Canaries of the Healthcare System",
+        "authors": "Justin Boyle, Andrew Staib, Clair Sullivan, et al.",
+        "journal": "Emergency Medicine Australasia",
+        "summary": "A mixed-methods Queensland study of six years of ambulance and hospital records found access block is largely a hospital discharge ('back door') problem, with recommendations spanning discharge metrics, primary care support and prehospital flow.",
+        "relevance": "🟢 High transferability — the best local evidence yet on what drives the ramping every crew experiences",
+        "pmid": "42702892",
+        "doi": "10.1111/1742-6723.70327",
+        "featuredReason": "Ramping is a daily reality, and this is the strongest Australian synthesis of what actually drives it — the fix lives at the hospital back door, not in more ambulance bays."
       }
     ]
   }
