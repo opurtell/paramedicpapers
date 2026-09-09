@@ -21,6 +21,15 @@
     </itunes:category>
     <itunes:explicit>false</itunes:explicit>
     <item>
+      <title>Paramedic Papers Daily — 10 September 2026</title>
+      <description>2 papers: German registry finds only 20.5% of OHCA meets eCPR eligibility; RCT finds immersive VR adds nothing to CPR training over manikin sim</description>
+      <pubDate>Thu, 10 Sep 2026 07:38:11 +1000</pubDate>
+      <guid isPermaLink="true">https://opurtell.github.io/paramedicpapers/audio/ep-2026-09-10.mp3</guid>
+      <enclosure url="https://opurtell.github.io/paramedicpapers/audio/ep-2026-09-10.mp3" length="783501" type="audio/mpeg"/>
+      <itunes:duration>195</itunes:duration>
+      <itunes:summary>2 papers: German registry finds only 20.5% of OHCA meets eCPR eligibility; RCT finds immersive VR adds nothing to CPR training over manikin sim</itunes:summary>
+    </item>
+    <item>
       <title>Paramedic Papers Daily — 5 September 2026</title>
       <description>2 papers: Norwegian trauma call-out decisions under sparse dispatch info; Oslo sepsis study finds 8 subgroups, fails to replicate SENECA phenotypes</description>
       <pubDate>Sat, 05 Sep 2026 07:34:27 +1000</pubDate>
