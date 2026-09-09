@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-09-08T21:20:59Z",
-  "lastUpdatedSydney": "2026-09-09 07:20 AEST",
-  "lastUpdatedDate": "2026-09-09",
+  "lastUpdated": "2026-09-09T21:20:09Z",
+  "lastUpdatedSydney": "2026-09-10 07:20 AEST",
+  "lastUpdatedDate": "2026-09-10",
   "featuredPapers": [
     {
       "id": "10.1016/j.resplu.2026.101475",
@@ -13,17 +13,6 @@
       "summary": "Simulation cross-over study of two commercial ventilation feedback devices used during continuous compressions with asynchronous ventilations — both were clinically inaccurate, one displaying 111 breaths/min when the true rate was 12 and underestimating tidal volume by up to 440 mL in reversed airflow.",
       "relevance": "🟡 Medium transferability — cautionary tale for relying on feedback displays during asynchronous CPR",
       "featuredReason": "cautionary tale for relying on feedback displays during asynchronous CPR"
-    },
-    {
-      "id": "10.1080/10903127.2026.2717758",
-      "title": "Effect of Body Position on Chest Compression Quality During CPR in an Obesity Simulation Model: A Randomized Crossover Trial",
-      "journal": "Prehospital Emergency Care",
-      "date": "2026-09-01",
-      "pmid": "",
-      "doi": "10.1080/10903127.2026.2717758",
-      "summary": "Randomised crossover simulation trial testing whether 10cm elevation of paramedics improves chest compression quality in obese manikins — it didn't, obesity still impaired compression depth by ~18mm despite increased rescuer effort",
-      "relevance": "🟢 High transferability — Directly relevant to cardiac arrest care (CMG 4), practical ergonomic finding that doesn't require equipment change",
-      "featuredReason": "Directly relevant to cardiac arrest care (CMG 4), practical ergonomic finding that doesn't require equipment change"
     },
     {
       "id": "10.1080/10903127.2026.2674263",
@@ -57,6 +46,17 @@
       "summary": "In 423 TBI patients intubated by a Finnish HEMS unit, fentanyl as an anaesthetic adjuvant was associated with lower mortality (OR 0.38), though selection bias can't be excluded.",
       "relevance": "🟡 Medium transferability — fentanyl is on the ACTAS formulary but prehospital anaesthesia is ICP-only, and the data is confounded",
       "featuredReason": "fentanyl is on the ACTAS formulary but prehospital anaesthesia is ICP-only, and the data is confounded"
+    },
+    {
+      "id": "10.1016/j.resplu.2026.101462",
+      "title": "Coronary angiography and reperfusion therapy following out-of-hospital cardiac arrest in women",
+      "journal": "Resuscitation Plus",
+      "date": "2026-09-08",
+      "pmid": "",
+      "doi": "10.1016/j.resplu.2026.101462",
+      "summary": "Nationwide Swedish cohort of 8,641 post-OHCA admissions — women were less likely to undergo coronary angiography and PCI than men, yet intervention rates were even once angiographic findings were accounted for, and a third of angiographed women without shockable rhythm or ST elevation had significant coronary disease.",
+      "relevance": "🟡 Medium transferability — in-hospital post-ROSC care, but a useful reminder that OHCA without ST elevation can still mean obstructive disease",
+      "featuredReason": "in-hospital post-ROSC care, but a useful reminder that OHCA without ST elevation can still mean obstructive disease"
     }
   ],
   "funFacts": [
@@ -970,16 +970,56 @@
     }
   ],
   "funFact": {
-    "category": "EMS",
-    "fact": "Urban Australian ambulance response averages 8 to 10 minutes. In rural and remote areas, it can blow past 30 minutes — which is why community first-responder programs aren't a nice-to-have, they're essential."
+    "category": "pharmacology",
+    "fact": "Ketamine is a dissociative anaesthetic that preserves respiratory drive and gag reflex at typical doses — making it one of the safest RSI induction agents in the prehospital toolbox. It keeps breathing while everything else stops."
   },
   "tldr": {
-    "date": "2026-09-09",
-    "paperCount": 0,
-    "summary": "No new papers today.",
-    "highlights": []
+    "date": "2026-09-10",
+    "paperCount": 2,
+    "summary": "• German registry modelling of 1,696 OHCA cases found only 20.5% would meet local eCPR eligibility criteria (8.8% by modified ELSO) — a reality check for intra-arrest transport pathway planning\n• RCT of 246 nursing students found immersive VR added no measurable benefit to CPR training over manikin-only simulation, with a third reporting dizziness from headsets\n• Rest of today's haul was commentary, corrections and aerospace engineering papers that slipped the keyword filter",
+    "highlights": [
+      {
+        "id": "10.1186/s13049-026-01681-7",
+        "pmid": "",
+        "doi": "10.1186/s13049-026-01681-7",
+        "title": "Modelling eCPR eligibility after OHCA — 10-year German registry analysis",
+        "note": "Of 1,696 analysed arrests, only 348 (20.5%) met local eCPR eligibility criteria at ambulance arrival and 149 (8.8%) met stricter modified ELSO criteria; the study modelled whether intra-arrest transport strategies could meet a 60-minute low-flow target."
+      },
+      {
+        "id": "10.1016/j.nedt.2026.107379",
+        "pmid": "",
+        "doi": "10.1016/j.nedt.2026.107379",
+        "title": "Immersive VR for CPR training in nursing students — RCT",
+        "note": "RCT of 246 students found no significant difference in self-confidence or CPR group performance between IVR-plus-manikin and manikin-only training, though students rated VR higher for satisfaction and usability; 33.6% reported dizziness and 19% headaches from headset use."
+      }
+    ]
   },
   "dailyUpdates": [
+    {
+      "date": "2026-09-10",
+      "papers": [
+        {
+          "id": "10.1186/s13049-026-01681-7",
+          "title": "Modelling eCPR eligibility after out-of-hospital cardiac arrest: a 10-year retrospective temporospatial analysis from a mixed urban-rural region in Germany",
+          "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+          "date": "2026-09-10",
+          "pmid": "",
+          "doi": "10.1186/s13049-026-01681-7",
+          "summary": "Ten-year German registry study modelling eCPR eligibility after OHCA in a mixed urban-rural region — of 1,696 analysed arrests, only 348 (20.5%) met local eligibility criteria at ambulance arrival and just 149 (8.8%) met the stricter modified ELSO definition, with the study also testing whether hypothetical intra-arrest transport strategies could meet a 60-minute low-flow target.",
+          "relevance": "🟡 Medium — Directly maps to CMG 4/4A cardiac arrest care and the intra-arrest transport debate, but eCPR isn't an ACTAS capability — useful benchmark for OHCA system design rather than practice change"
+        },
+        {
+          "id": "10.1016/j.nedt.2026.107379",
+          "title": "Effectiveness of immersive virtual reality in undergraduate nursing students for cardiopulmonary resuscitation training: A randomized controlled trial",
+          "journal": "Nurse Education Today",
+          "date": "2026-09-10",
+          "pmid": "",
+          "doi": "10.1016/j.nedt.2026.107379",
+          "summary": "RCT of 246 undergraduate nursing students testing immersive VR plus manikin simulation against manikin simulation alone for CPR group training — no significant difference in self-confidence or CPR group performance after cluster adjustment, though students rated VR higher on satisfaction and usability, and 33.6% reported dizziness and 19% headaches from headsets.",
+          "relevance": "🟡 Medium — Nursing-student education data, but directly relevant to ambulance service CPR training programs weighing up VR — the headline is hands-on sim alone did just as well"
+        }
+      ]
+    },
     {
       "date": "2026-09-08",
       "papers": [
