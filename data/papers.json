@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-09-09T21:20:09Z",
-  "lastUpdatedSydney": "2026-09-10 07:20 AEST",
-  "lastUpdatedDate": "2026-09-10",
+  "lastUpdated": "2026-09-10T21:20:21Z",
+  "lastUpdatedSydney": "2026-09-11 07:20 AEST",
+  "lastUpdatedDate": "2026-09-11",
   "featuredPapers": [
     {
       "id": "10.1016/j.resplu.2026.101475",
@@ -970,31 +970,39 @@
     }
   ],
   "funFact": {
-    "category": "pharmacology",
-    "fact": "Ketamine is a dissociative anaesthetic that preserves respiratory drive and gag reflex at typical doses — making it one of the safest RSI induction agents in the prehospital toolbox. It keeps breathing while everything else stops."
+    "category": "pathophysiology",
+    "fact": "In hypovolaemic shock, the body throws skin, kidneys, and gut under the bus to keep the heart and brain perfused. By the time hypotension shows up, the patient's already lost 30 to 40% of their blood volume. The map is not the territory."
   },
   "tldr": {
-    "date": "2026-09-10",
-    "paperCount": 2,
-    "summary": "• German registry modelling of 1,696 OHCA cases found only 20.5% would meet local eCPR eligibility criteria (8.8% by modified ELSO) — a reality check for intra-arrest transport pathway planning\n• RCT of 246 nursing students found immersive VR added no measurable benefit to CPR training over manikin-only simulation, with a third reporting dizziness from headsets\n• Rest of today's haul was commentary, corrections and aerospace engineering papers that slipped the keyword filter",
+    "date": "2026-09-11",
+    "paperCount": 1,
+    "summary": "• Quiet day for paramedic-relevant research — one new study of note\n• Rwandan pilot of multimodal mass casualty training (video modules + half-day simulation) showed knowledge and confidence gains that persisted at 6 months\n• Rest of the crop is ahead-of-print Resuscitation commentary on cardiac arrest care, abstracts still to come",
     "highlights": [
       {
-        "id": "10.1186/s13049-026-01681-7",
+        "id": "10.1016/j.afjem.2026.101003",
         "pmid": "",
-        "doi": "10.1186/s13049-026-01681-7",
-        "title": "Modelling eCPR eligibility after OHCA — 10-year German registry analysis",
-        "note": "Of 1,696 analysed arrests, only 348 (20.5%) met local eCPR eligibility criteria at ambulance arrival and 149 (8.8%) met stricter modified ELSO criteria; the study modelled whether intra-arrest transport strategies could meet a 60-minute low-flow target."
-      },
-      {
-        "id": "10.1016/j.nedt.2026.107379",
-        "pmid": "",
-        "doi": "10.1016/j.nedt.2026.107379",
-        "title": "Immersive VR for CPR training in nursing students — RCT",
-        "note": "RCT of 246 students found no significant difference in self-confidence or CPR group performance between IVR-plus-manikin and manikin-only training, though students rated VR higher for satisfaction and usability; 33.6% reported dizziness and 19% headaches from headset use."
+        "doi": "10.1016/j.afjem.2026.101003",
+        "title": "Mass casualty training for prehospital and emergency providers in Kigali, Rwanda",
+        "note": "Two-part MCI curriculum (asynchronous video modules + half-day simulation) for 41 providers in Kigali: mean knowledge scores rose significantly after training and stayed above baseline at 3- and 6-month follow-up, with significant confidence gains across key MCI skills."
       }
     ]
   },
   "dailyUpdates": [
+    {
+      "date": "2026-09-11",
+      "papers": [
+        {
+          "id": "10.1016/j.afjem.2026.101003",
+          "title": "Mass casualty training for prehospital and emergency providers in Kigali, Rwanda: a quasi-experimental pre–post educational study",
+          "journal": "African Journal of Emergency Medicine",
+          "date": "2026-09-11",
+          "pmid": "",
+          "doi": "10.1016/j.afjem.2026.101003",
+          "summary": "Quasi-experimental pre–post study of a two-part mass casualty training curriculum (asynchronous video modules plus a half-day simulation) for 41 emergency providers and community first responders in Kigali — mean knowledge scores rose significantly after training and remained above baseline at 3- and 6-month follow-up, with significant confidence gains across key MCI skills.",
+          "relevance": "🟡 Medium — the multimodal video-plus-simulation MCI training model transfers readily to Australian ambulance MCI preparedness, but this is a small pilot in an LMIC setting measuring knowledge and confidence, not patient or system outcomes."
+        }
+      ]
+    },
     {
       "date": "2026-09-10",
       "papers": [
