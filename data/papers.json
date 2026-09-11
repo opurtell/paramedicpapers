@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-09-10T21:20:21Z",
-  "lastUpdatedSydney": "2026-09-11 07:20 AEST",
-  "lastUpdatedDate": "2026-09-11",
+  "lastUpdated": "2026-09-11T21:20:31Z",
+  "lastUpdatedSydney": "2026-09-12 07:20 AEST",
+  "lastUpdatedDate": "2026-09-12",
   "featuredPapers": [
     {
       "id": "10.1016/j.resplu.2026.101475",
@@ -26,6 +26,17 @@
       "featuredReason": "Selected for clinical relevance to prehospital practice."
     },
     {
+      "id": "10.1080/10903127.2026.2731488",
+      "title": "2026 Systematic Review of Evidence-Based Guidelines for Prehospital Care",
+      "journal": "Prehospital Emergency Care",
+      "date": "2026-09-12",
+      "pmid": "",
+      "doi": "10.1080/10903127.2026.2731488",
+      "summary": "The 2026 update of the systematic review appraising evidence-based guidelines for prehospital care — abstract not yet available (ahead-of-print), but this recurring review is the reference map of what guideline-level evidence exists in prehospital practice.",
+      "relevance": "🔴 Low — Abstract not available and it's a guidelines roundup rather than a single adoptable intervention — flagged for the reading list.",
+      "featuredReason": "Abstract not available and it's a guidelines roundup rather than a single adoptable intervention — flagged for the reading list."
+    },
+    {
       "id": "10.1186/s13049-026-01689-z",
       "title": "When prehospital resuscitation attempts are unsuccessful: care for the relatives following termination of treatment in out-of-hospital cardiac arrest",
       "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
@@ -46,17 +57,6 @@
       "summary": "In 423 TBI patients intubated by a Finnish HEMS unit, fentanyl as an anaesthetic adjuvant was associated with lower mortality (OR 0.38), though selection bias can't be excluded.",
       "relevance": "🟡 Medium transferability — fentanyl is on the ACTAS formulary but prehospital anaesthesia is ICP-only, and the data is confounded",
       "featuredReason": "fentanyl is on the ACTAS formulary but prehospital anaesthesia is ICP-only, and the data is confounded"
-    },
-    {
-      "id": "10.1016/j.resplu.2026.101462",
-      "title": "Coronary angiography and reperfusion therapy following out-of-hospital cardiac arrest in women",
-      "journal": "Resuscitation Plus",
-      "date": "2026-09-08",
-      "pmid": "",
-      "doi": "10.1016/j.resplu.2026.101462",
-      "summary": "Nationwide Swedish cohort of 8,641 post-OHCA admissions — women were less likely to undergo coronary angiography and PCI than men, yet intervention rates were even once angiographic findings were accounted for, and a third of angiographed women without shockable rhythm or ST elevation had significant coronary disease.",
-      "relevance": "🟡 Medium transferability — in-hospital post-ROSC care, but a useful reminder that OHCA without ST elevation can still mean obstructive disease",
-      "featuredReason": "in-hospital post-ROSC care, but a useful reminder that OHCA without ST elevation can still mean obstructive disease"
     }
   ],
   "funFacts": [
@@ -970,24 +970,73 @@
     }
   ],
   "funFact": {
-    "category": "pathophysiology",
-    "fact": "In hypovolaemic shock, the body throws skin, kidneys, and gut under the bus to keep the heart and brain perfused. By the time hypotension shows up, the patient's already lost 30 to 40% of their blood volume. The map is not the territory."
+    "category": "cardiac",
+    "fact": "Sgarbossa criteria help you spot an MI hiding behind a LBBB — because standard STEMI criteria are basically useless when the conduction system's already doing its own thing. Concordant ST changes or wildly discordant STE >5mm are your clues."
   },
   "tldr": {
-    "date": "2026-09-11",
-    "paperCount": 1,
-    "summary": "• Quiet day for paramedic-relevant research — one new study of note\n• Rwandan pilot of multimodal mass casualty training (video modules + half-day simulation) showed knowledge and confidence gains that persisted at 6 months\n• Rest of the crop is ahead-of-print Resuscitation commentary on cardiac arrest care, abstracts still to come",
+    "date": "2026-09-12",
+    "paperCount": 3,
+    "summary": "A paediatric-flavoured day: a US national dataset study found only 73% of paediatric cases given weight-based medications had a documented weight, and two major guideline publications (the 2026 prehospital evidence-based guideline systematic review and consensus guidelines for prehospital paediatric transfusion) landed ahead-of-print without abstracts. The rest of the haul was Resuscitation commentaries and a couple of aerospace papers that slipped through the net — no practice-changing evidence today.",
     "highlights": [
       {
-        "id": "10.1016/j.afjem.2026.101003",
+        "id": "10.1080/10903127.2026.2731488",
         "pmid": "",
-        "doi": "10.1016/j.afjem.2026.101003",
-        "title": "Mass casualty training for prehospital and emergency providers in Kigali, Rwanda",
-        "note": "Two-part MCI curriculum (asynchronous video modules + half-day simulation) for 41 providers in Kigali: mean knowledge scores rose significantly after training and stayed above baseline at 3- and 6-month follow-up, with significant confidence gains across key MCI skills."
+        "doi": "10.1080/10903127.2026.2731488",
+        "title": "2026 Systematic Review of Evidence-Based Guidelines for Prehospital Care",
+        "note": "The 2026 update of the recurring systematic review appraising evidence-based guidelines for prehospital care — abstract not yet available (ahead-of-print), flagged as the reference map of guideline-level prehospital evidence."
+      },
+      {
+        "id": "10.1080/10903127.2026.2719957",
+        "pmid": "",
+        "doi": "10.1080/10903127.2026.2719957",
+        "title": "Documentation of Weight in Pediatric 9-1-1 Responses with Administration of Weight-Based Medications",
+        "note": "Across 57,378 US paediatric responses where weight-based medications were given, 73.1% had a documented weight; documentation was less likely for adolescents (OR 0.87), Black patients (OR 0.72) and lower-acuity cases (OR 0.59), and more likely with ALS crews (OR 2.02)."
+      },
+      {
+        "id": "10.1080/10903127.2026.2729895",
+        "pmid": "",
+        "doi": "10.1080/10903127.2026.2729895",
+        "title": "Consensus Guidelines for Prehospital Transfusion in Children: A Modified Delphi Study",
+        "note": "Modified Delphi consensus guidelines for prehospital blood transfusion in children — abstract not yet available (ahead-of-print); blood products are not in the extracted ACTAS formulary."
       }
     ]
   },
   "dailyUpdates": [
+    {
+      "date": "2026-09-12",
+      "papers": [
+        {
+          "id": "10.1080/10903127.2026.2731488",
+          "title": "2026 Systematic Review of Evidence-Based Guidelines for Prehospital Care",
+          "journal": "Prehospital Emergency Care",
+          "date": "2026-09-12",
+          "pmid": "",
+          "doi": "10.1080/10903127.2026.2731488",
+          "summary": "The 2026 update of the systematic review appraising evidence-based guidelines for prehospital care — abstract not yet available (ahead-of-print), but this recurring review is the reference map of what guideline-level evidence exists in prehospital practice.",
+          "relevance": "🔴 Low — Abstract not available and it's a guidelines roundup rather than a single adoptable intervention — flagged for the reading list."
+        },
+        {
+          "id": "10.1080/10903127.2026.2719957",
+          "title": "Documentation of Weight in Pediatric 9-1-1 Responses with Administration of Weight-Based Medications",
+          "journal": "Prehospital Emergency Care",
+          "date": "2026-09-12",
+          "pmid": "",
+          "doi": "10.1080/10903127.2026.2719957",
+          "summary": "Analysis of 57,378 US paediatric 9-1-1 responses where weight-based medications were given found 73.1% had a documented weight (or length-based estimate), with documentation less likely for adolescents (OR 0.87), Black patients (OR 0.72) and lower-acuity cases (OR 0.59), and more likely with advanced life support crews (OR 2.02).",
+          "relevance": "🟡 Medium — Weight-based paediatric dosing is core AP practice under the ACTAS CMGs, so the document-the-weight habit transfers — but this is a US documentation/QI study, so the numbers are local to their system."
+        },
+        {
+          "id": "10.1080/10903127.2026.2729895",
+          "title": "Consensus Guidelines for Prehospital Transfusion in Children: A Modified Delphi Study",
+          "journal": "Prehospital Emergency Care",
+          "date": "2026-09-12",
+          "pmid": "",
+          "doi": "10.1080/10903127.2026.2729895",
+          "summary": "Modified Delphi consensus guidelines for prehospital blood transfusion in children — abstract not yet available (ahead-of-print).",
+          "relevance": "🔴 Low — No abstract yet, and blood products aren't in the extracted ACTAS formulary — would need a guideline change to adopt; worth noting QAS and other services run prehospital blood programs."
+        }
+      ]
+    },
     {
       "date": "2026-09-11",
       "papers": [
