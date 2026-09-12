@@ -1,19 +1,8 @@
 {
-  "lastUpdated": "2026-09-11T21:20:31Z",
-  "lastUpdatedSydney": "2026-09-12 07:20 AEST",
-  "lastUpdatedDate": "2026-09-12",
+  "lastUpdated": "2026-09-12T21:20:42Z",
+  "lastUpdatedSydney": "2026-09-13 07:20 AEST",
+  "lastUpdatedDate": "2026-09-13",
   "featuredPapers": [
-    {
-      "id": "10.1016/j.resplu.2026.101475",
-      "title": "Accuracy of ventilation feedback devices compared with a reference standard during asynchronous ventilation with continuous chest compressions in a simulated cardiac arrest: a prospective non-randomized cross-over study",
-      "journal": "Resuscitation Plus",
-      "date": "2026-09-08",
-      "pmid": "",
-      "doi": "10.1016/j.resplu.2026.101475",
-      "summary": "Simulation cross-over study of two commercial ventilation feedback devices used during continuous compressions with asynchronous ventilations — both were clinically inaccurate, one displaying 111 breaths/min when the true rate was 12 and underestimating tidal volume by up to 440 mL in reversed airflow.",
-      "relevance": "🟡 Medium transferability — cautionary tale for relying on feedback displays during asynchronous CPR",
-      "featuredReason": "cautionary tale for relying on feedback displays during asynchronous CPR"
-    },
     {
       "id": "10.1080/10903127.2026.2674263",
       "title": "Use of double sequential external defibrillation in the United States before and after the DOSE VF randomized clinical trial",
@@ -37,26 +26,37 @@
       "featuredReason": "Abstract not available and it's a guidelines roundup rather than a single adoptable intervention — flagged for the reading list."
     },
     {
-      "id": "10.1186/s13049-026-01689-z",
-      "title": "When prehospital resuscitation attempts are unsuccessful: care for the relatives following termination of treatment in out-of-hospital cardiac arrest",
-      "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+      "id": "10.1016/j.resplu.2026.101475",
+      "title": "Accuracy of ventilation feedback devices compared with a reference standard during asynchronous ventilation with continuous chest compressions in a simulated cardiac arrest: a prospective non-randomized cross-over study",
+      "journal": "Resuscitation Plus",
       "date": "2026-09-08",
       "pmid": "",
-      "doi": "10.1186/s13049-026-01689-z",
-      "summary": "Interviews with 15 relatives present at unsuccessful out-of-hospital resuscitations showed their needs shift across three phases — dispatch guidance, help-or-withdraw during resus, then compassionate unhurried communication when efforts stop.",
-      "relevance": "🟢 High transferability — death notification and family care are core AP work, directly actionable with no new kit",
-      "featuredReason": "death notification and family care are core AP work, directly actionable with no new kit"
+      "doi": "10.1016/j.resplu.2026.101475",
+      "summary": "Simulation cross-over study of two commercial ventilation feedback devices used during continuous compressions with asynchronous ventilations — both were clinically inaccurate, one displaying 111 breaths/min when the true rate was 12 and underestimating tidal volume by up to 440 mL in reversed airflow.",
+      "relevance": "🟡 Medium transferability — cautionary tale for relying on feedback displays during asynchronous CPR",
+      "featuredReason": "cautionary tale for relying on feedback displays during asynchronous CPR"
     },
     {
-      "id": "10.1186/s13049-026-01667-5",
-      "title": "Association between fentanyl use and mortality during prehospital emergency anaesthesia in traumatic brain injury – a retrospective cohort study",
-      "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
-      "date": "2026-09-08",
+      "id": "10.1080/10903127.2026.2717758",
+      "title": "Effect of Body Position on Chest Compression Quality During CPR in an Obesity Simulation Model: A Randomized Crossover Trial",
+      "journal": "Prehospital Emergency Care",
+      "date": "2026-09-01",
       "pmid": "",
-      "doi": "10.1186/s13049-026-01667-5",
-      "summary": "In 423 TBI patients intubated by a Finnish HEMS unit, fentanyl as an anaesthetic adjuvant was associated with lower mortality (OR 0.38), though selection bias can't be excluded.",
-      "relevance": "🟡 Medium transferability — fentanyl is on the ACTAS formulary but prehospital anaesthesia is ICP-only, and the data is confounded",
-      "featuredReason": "fentanyl is on the ACTAS formulary but prehospital anaesthesia is ICP-only, and the data is confounded"
+      "doi": "10.1080/10903127.2026.2717758",
+      "summary": "Randomised crossover simulation trial testing whether 10cm elevation of paramedics improves chest compression quality in obese manikins — it didn't, obesity still impaired compression depth by ~18mm despite increased rescuer effort",
+      "relevance": "🟢 High transferability — Directly relevant to cardiac arrest care (CMG 4), practical ergonomic finding that doesn't require equipment change",
+      "featuredReason": "Directly relevant to cardiac arrest care (CMG 4), practical ergonomic finding that doesn't require equipment change"
+    },
+    {
+      "id": "10.1016/j.annemergmed.2025.09.019",
+      "title": "Intranasal Versus Subcutaneous Ketamine for the Treatment of Acute Traumatic Pain in the Emergency Department: A Randomized Clinical Trial",
+      "journal": "Annals of Emergency Medicine",
+      "date": "2026-08-20",
+      "pmid": "",
+      "doi": "10.1016/j.annemergmed.2025.09.019",
+      "summary": "RCT testing whether intranasal ketamine is non-inferior to subcutaneous for acute traumatic pain — both routes provided equivalent analgesia with minimal clinically important differences, though minor adverse events were more common with subcutaneous administration.",
+      "relevance": "🟢 High — Directly relevant to prehospital analgesia; IN route already used by many Australian services, confirms efficacy versus SC.",
+      "featuredReason": "Directly relevant to prehospital analgesia; IN route already used by many Australian services, confirms efficacy versus SC."
     }
   ],
   "funFacts": [
@@ -970,38 +970,39 @@
     }
   ],
   "funFact": {
-    "category": "cardiac",
-    "fact": "Sgarbossa criteria help you spot an MI hiding behind a LBBB — because standard STEMI criteria are basically useless when the conduction system's already doing its own thing. Concordant ST changes or wildly discordant STE >5mm are your clues."
+    "category": "EMS",
+    "fact": "HEMS cruises at 120 to 150 knots and can slash transport times dramatically — but the benefit is real only for time-critical cases where ground transport would exceed 30 minutes. Otherwise you've just got a very expensive, very noisy ambulance."
   },
   "tldr": {
-    "date": "2026-09-12",
-    "paperCount": 3,
-    "summary": "A paediatric-flavoured day: a US national dataset study found only 73% of paediatric cases given weight-based medications had a documented weight, and two major guideline publications (the 2026 prehospital evidence-based guideline systematic review and consensus guidelines for prehospital paediatric transfusion) landed ahead-of-print without abstracts. The rest of the haul was Resuscitation commentaries and a couple of aerospace papers that slipped through the net — no practice-changing evidence today.",
+    "date": "2026-09-13",
+    "paperCount": 1,
+    "summary": "• Quiet day: one trauma study worth a look.\n• French prehospital data estimate ~1 in 5 severe trauma patients would qualify for prehospital blood transfusion (ABC ≥2 plus >20 min prehospital intervention).\n• Another data point in the prehospital blood debate — QAS, AV, SJWA and NSWA already carry blood; ACTAS doesn't. Everything else today was ahead-of-print without abstracts.",
     "highlights": [
       {
-        "id": "10.1080/10903127.2026.2731488",
+        "id": "10.1016/j.injury.2026.113689",
         "pmid": "",
-        "doi": "10.1080/10903127.2026.2731488",
-        "title": "2026 Systematic Review of Evidence-Based Guidelines for Prehospital Care",
-        "note": "The 2026 update of the recurring systematic review appraising evidence-based guidelines for prehospital care — abstract not yet available (ahead-of-print), flagged as the reference map of guideline-level prehospital evidence."
-      },
-      {
-        "id": "10.1080/10903127.2026.2719957",
-        "pmid": "",
-        "doi": "10.1080/10903127.2026.2719957",
-        "title": "Documentation of Weight in Pediatric 9-1-1 Responses with Administration of Weight-Based Medications",
-        "note": "Across 57,378 US paediatric responses where weight-based medications were given, 73.1% had a documented weight; documentation was less likely for adolescents (OR 0.87), Black patients (OR 0.72) and lower-acuity cases (OR 0.59), and more likely with ALS crews (OR 2.02)."
-      },
-      {
-        "id": "10.1080/10903127.2026.2729895",
-        "pmid": "",
-        "doi": "10.1080/10903127.2026.2729895",
-        "title": "Consensus Guidelines for Prehospital Transfusion in Children: A Modified Delphi Study",
-        "note": "Modified Delphi consensus guidelines for prehospital blood transfusion in children — abstract not yet available (ahead-of-print); blood products are not in the extracted ACTAS formulary."
+        "doi": "10.1016/j.injury.2026.113689",
+        "title": "Prehospital transfusion requirements in severe trauma",
+        "note": "French multicentre retrospective study applying the ABC score across four Paris-region prehospital services: 27 of 139 severe trauma patients (19.7%) met ABC ≥2 with prehospital intervention >20 min, median total prehospital time 79 min; only 67% of eligible patients received TXA and 5 arrested prehospital — authors argue prehospital transfusion should not remain a rarity."
       }
     ]
   },
   "dailyUpdates": [
+    {
+      "date": "2026-09-13",
+      "papers": [
+        {
+          "id": "10.1016/j.injury.2026.113689",
+          "title": "Prehospital transfusion requirements in severe trauma: A multicenter, retrospective estimate of requirements",
+          "journal": "Injury",
+          "date": "2026-09-13",
+          "pmid": "",
+          "doi": "10.1016/j.injury.2026.113689",
+          "summary": "Multicentre French retrospective study applying the ABC score across four Paris-region prehospital services to estimate demand for prehospital blood — 27 of 139 severe trauma patients (19.7%) met ABC ≥2 with prehospital intervention time >20 min and median total prehospital time of 79 min, only 67% of those eligible received TXA, and 5 arrested prehospital, leading the authors to argue prehospital transfusion should not remain a rarity.",
+          "relevance": "🟡 Medium — Blood products and TXA are not in the extracted ACTAS formulary — adoption would need a guideline change — though QAS, AV, SJWA and NSWA already carry blood products."
+        }
+      ]
+    },
     {
       "date": "2026-09-12",
       "papers": [
