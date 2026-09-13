@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-09-12T21:20:42Z",
-  "lastUpdatedSydney": "2026-09-13 07:20 AEST",
-  "lastUpdatedDate": "2026-09-13",
+  "lastUpdated": "2026-09-13T21:20:53Z",
+  "lastUpdatedSydney": "2026-09-14 07:20 AEST",
+  "lastUpdatedDate": "2026-09-14",
   "featuredPapers": [
     {
       "id": "10.1080/10903127.2026.2674263",
@@ -970,22 +970,14 @@
     }
   ],
   "funFact": {
-    "category": "EMS",
-    "fact": "HEMS cruises at 120 to 150 knots and can slash transport times dramatically — but the benefit is real only for time-critical cases where ground transport would exceed 30 minutes. Otherwise you've just got a very expensive, very noisy ambulance."
+    "category": "pharmacology",
+    "fact": "Adrenaline 1:1000 is 1mg per mL (for IM use). Adrenaline 1:10000 is 0.1mg per mL (for IV). Mix them up and you can cause a fatal intracerebral haemorrhage. This is not a drug that forgives carelessness."
   },
   "tldr": {
-    "date": "2026-09-13",
-    "paperCount": 1,
-    "summary": "• Quiet day: one trauma study worth a look.\n• French prehospital data estimate ~1 in 5 severe trauma patients would qualify for prehospital blood transfusion (ABC ≥2 plus >20 min prehospital intervention).\n• Another data point in the prehospital blood debate — QAS, AV, SJWA and NSWA already carry blood; ACTAS doesn't. Everything else today was ahead-of-print without abstracts.",
-    "highlights": [
-      {
-        "id": "10.1016/j.injury.2026.113689",
-        "pmid": "",
-        "doi": "10.1016/j.injury.2026.113689",
-        "title": "Prehospital transfusion requirements in severe trauma",
-        "note": "French multicentre retrospective study applying the ABC score across four Paris-region prehospital services: 27 of 139 severe trauma patients (19.7%) met ABC ≥2 with prehospital intervention >20 min, median total prehospital time 79 min; only 67% of eligible patients received TXA and 5 arrested prehospital — authors argue prehospital transfusion should not remain a rarity."
-      }
-    ]
+    "date": "2026-09-14",
+    "paperCount": 0,
+    "summary": "No new papers today.",
+    "highlights": []
   },
   "dailyUpdates": [
     {
