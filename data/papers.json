@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-09-13T21:20:53Z",
-  "lastUpdatedSydney": "2026-09-14 07:20 AEST",
-  "lastUpdatedDate": "2026-09-14",
+  "lastUpdated": "2026-09-14T21:20:04Z",
+  "lastUpdatedSydney": "2026-09-15 07:20 AEST",
+  "lastUpdatedDate": "2026-09-15",
   "featuredPapers": [
     {
       "id": "10.1080/10903127.2026.2674263",
@@ -970,16 +970,39 @@
     }
   ],
   "funFact": {
-    "category": "pharmacology",
-    "fact": "Adrenaline 1:1000 is 1mg per mL (for IM use). Adrenaline 1:10000 is 0.1mg per mL (for IV). Mix them up and you can cause a fatal intracerebral haemorrhage. This is not a drug that forgives carelessness."
+    "category": "pathophysiology",
+    "fact": "Cushing's triad — hypertension, bradycardia, irregular breathing — is your brain's last-ditch alarm bell before herniation. If you spot it, you're already late to the party. Like, really late."
   },
   "tldr": {
-    "date": "2026-09-14",
-    "paperCount": 0,
-    "summary": "No new papers today.",
-    "highlights": []
+    "date": "2026-09-15",
+    "paperCount": 1,
+    "summary": "A thin day — mostly ahead-of-print Resuscitation editorials and corrections.\n• The one substantive find: an ex vivo whole-blood study showing gelatin 4% and HES 130/0.42 both impair clot formation while a balanced crystalloid stays haemostatically neutral.\n• Supports rather than challenges crystalloid-first prehospital fluid practice; ACTAS carries no colloids anyway.",
+    "highlights": [
+      {
+        "id": "10.1186/s13049-026-01690-6",
+        "pmid": "",
+        "doi": "10.1186/s13049-026-01690-6",
+        "title": "Gelatin 4% and HES (130/0.42) impair clot formation in ex vivo whole blood",
+        "note": "Ex vivo human whole-blood model: graded dilution with gelatin 4% and HES 130/0.42 produced a clearly hypocoagulable ROTEM profile (prolonged clotting/clot formation times, reduced alpha-angle and MCF, worst with HES) while the balanced crystalloid alone stayed haemostatically neutral — and mixing crystalloid with colloid worsened coagulopathy further."
+      }
+    ]
   },
   "dailyUpdates": [
+    {
+      "date": "2026-09-15",
+      "papers": [
+        {
+          "id": "10.1186/s13049-026-01690-6",
+          "title": "Gelatin 4% and hydroxyethyl starch (130/0.42) impair clot formation in a human ex vivo whole-blood resuscitation model",
+          "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+          "date": "2026-09-15",
+          "pmid": "",
+          "doi": "10.1186/s13049-026-01690-6",
+          "summary": "Ex vivo human whole-blood model testing graded dilution with gelatin 4%, HES 130/0.42 and a balanced crystalloid — both colloids produced a clearly hypocoagulable ROTEM profile (prolonged clotting and clot formation times, reduced alpha-angle and maximum clot firmness, worst with HES) while the crystalloid alone stayed haemostatically neutral, and combining crystalloid with colloid dilution worsened the coagulopathy further.",
+          "relevance": "🟡 Medium — ex vivo lab findings, not clinical outcome data; ACTAS carries no colloids anyway, so it confirms current crystalloid-first fluid practice (CMG 14/39) rather than changing it."
+        }
+      ]
+    },
     {
       "date": "2026-09-13",
       "papers": [
