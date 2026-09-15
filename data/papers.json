@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-09-14T21:20:04Z",
-  "lastUpdatedSydney": "2026-09-15 07:20 AEST",
-  "lastUpdatedDate": "2026-09-15",
+  "lastUpdated": "2026-09-15T21:20:15Z",
+  "lastUpdatedSydney": "2026-09-16 07:20 AEST",
+  "lastUpdatedDate": "2026-09-16",
   "featuredPapers": [
     {
       "id": "10.1080/10903127.2026.2674263",
@@ -15,6 +15,39 @@
       "featuredReason": "Selected for clinical relevance to prehospital practice."
     },
     {
+      "id": "10.1080/10903127.2026.2731188",
+      "title": "Cardiopulmonary resuscitation quality during the transition in care from paramedic services to emergency department teams",
+      "journal": "Prehospital Emergency Care",
+      "date": "2026-09-15",
+      "pmid": "",
+      "doi": "10.1080/10903127.2026.2731188",
+      "summary": "Observational study of 35 OHCA transfers tracking CPR quality across the paramedic-to-ED handover — chest compression fraction (89–92%) and rate stayed guideline-compliant in every interval with no deterioration at transition, though compression depth was significantly deeper during paramedic intervals.",
+      "relevance": "🟢 High transferability — direct evidence on paramedic-delivered CPR at handover, mapping to CMG 4 and everyday AP practice",
+      "featuredReason": "direct evidence on paramedic-delivered CPR at handover, mapping to CMG 4 and everyday AP practice"
+    },
+    {
+      "id": "42728228",
+      "title": "High‐Flow Nasal Oxygen Versus Conventional Oxygen Therapy and Non‐Invasive Ventilation for Acute Respiratory Failure in the Emergency Department: A Systematic Review and Meta‐Analysis",
+      "journal": "Emergency Medicine Australasia",
+      "date": "2026-09-15",
+      "pmid": "42728228",
+      "doi": "10.1111/1742-6723.70350",
+      "summary": "Systematic review and meta-analysis of 17 RCTs (1,955 patients) comparing high-flow nasal oxygen with conventional oxygen and NIV for acute respiratory failure in the ED — HFNO reduced intubation versus conventional oxygen (RR 0.61) but not versus NIV, with no clear benefit over either in COPD or acute heart failure.",
+      "relevance": "🟡 Medium transferability — ED-based and HFNO isn't carried prehospital, but it shapes expectations for the respiratory distress patients we hand over on CPAP",
+      "featuredReason": "ED-based and HFNO isn't carried prehospital, but it shapes expectations for the respiratory distress patients we hand over on CPAP"
+    },
+    {
+      "id": "10.1186/s13049-026-01696-0",
+      "title": "Early clinical predictors of amputation in frostbite: injury depth and extent for admission risk stratification",
+      "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+      "date": "2026-09-15",
+      "pmid": "",
+      "doi": "10.1186/s13049-026-01696-0",
+      "summary": "Retrospective cohort of 128 frostbite admissions in eastern Turkey — injury depth drove amputation risk (81.5% of third-degree injuries required amputation vs 1.6% of first/second-degree), and combining degree with %TBSA predicted amputation at admission (AUC 0.948), while inflammatory markers added nothing after adjustment.",
+      "relevance": "🟡 Medium transferability — field-usable depth-and-extent assessment for exposure incidents, though genuine frostbite is rare around the ACT",
+      "featuredReason": "field-usable depth-and-extent assessment for exposure incidents, though genuine frostbite is rare around the ACT"
+    },
+    {
       "id": "10.1080/10903127.2026.2731488",
       "title": "2026 Systematic Review of Evidence-Based Guidelines for Prehospital Care",
       "journal": "Prehospital Emergency Care",
@@ -24,39 +57,6 @@
       "summary": "The 2026 update of the systematic review appraising evidence-based guidelines for prehospital care — abstract not yet available (ahead-of-print), but this recurring review is the reference map of what guideline-level evidence exists in prehospital practice.",
       "relevance": "🔴 Low — Abstract not available and it's a guidelines roundup rather than a single adoptable intervention — flagged for the reading list.",
       "featuredReason": "Abstract not available and it's a guidelines roundup rather than a single adoptable intervention — flagged for the reading list."
-    },
-    {
-      "id": "10.1016/j.resplu.2026.101475",
-      "title": "Accuracy of ventilation feedback devices compared with a reference standard during asynchronous ventilation with continuous chest compressions in a simulated cardiac arrest: a prospective non-randomized cross-over study",
-      "journal": "Resuscitation Plus",
-      "date": "2026-09-08",
-      "pmid": "",
-      "doi": "10.1016/j.resplu.2026.101475",
-      "summary": "Simulation cross-over study of two commercial ventilation feedback devices used during continuous compressions with asynchronous ventilations — both were clinically inaccurate, one displaying 111 breaths/min when the true rate was 12 and underestimating tidal volume by up to 440 mL in reversed airflow.",
-      "relevance": "🟡 Medium transferability — cautionary tale for relying on feedback displays during asynchronous CPR",
-      "featuredReason": "cautionary tale for relying on feedback displays during asynchronous CPR"
-    },
-    {
-      "id": "10.1080/10903127.2026.2717758",
-      "title": "Effect of Body Position on Chest Compression Quality During CPR in an Obesity Simulation Model: A Randomized Crossover Trial",
-      "journal": "Prehospital Emergency Care",
-      "date": "2026-09-01",
-      "pmid": "",
-      "doi": "10.1080/10903127.2026.2717758",
-      "summary": "Randomised crossover simulation trial testing whether 10cm elevation of paramedics improves chest compression quality in obese manikins — it didn't, obesity still impaired compression depth by ~18mm despite increased rescuer effort",
-      "relevance": "🟢 High transferability — Directly relevant to cardiac arrest care (CMG 4), practical ergonomic finding that doesn't require equipment change",
-      "featuredReason": "Directly relevant to cardiac arrest care (CMG 4), practical ergonomic finding that doesn't require equipment change"
-    },
-    {
-      "id": "10.1016/j.annemergmed.2025.09.019",
-      "title": "Intranasal Versus Subcutaneous Ketamine for the Treatment of Acute Traumatic Pain in the Emergency Department: A Randomized Clinical Trial",
-      "journal": "Annals of Emergency Medicine",
-      "date": "2026-08-20",
-      "pmid": "",
-      "doi": "10.1016/j.annemergmed.2025.09.019",
-      "summary": "RCT testing whether intranasal ketamine is non-inferior to subcutaneous for acute traumatic pain — both routes provided equivalent analgesia with minimal clinically important differences, though minor adverse events were more common with subcutaneous administration.",
-      "relevance": "🟢 High — Directly relevant to prehospital analgesia; IN route already used by many Australian services, confirms efficacy versus SC.",
-      "featuredReason": "Directly relevant to prehospital analgesia; IN route already used by many Australian services, confirms efficacy versus SC."
     }
   ],
   "funFacts": [
@@ -970,24 +970,56 @@
     }
   ],
   "funFact": {
-    "category": "pathophysiology",
-    "fact": "Cushing's triad — hypertension, bradycardia, irregular breathing — is your brain's last-ditch alarm bell before herniation. If you spot it, you're already late to the party. Like, really late."
+    "category": "anatomy",
+    "fact": "In cardiac arrest, the femoral pulse is your go-to — central pulses persist longer than peripheral ones. Palpate at the midpoint of the inguinal ligament. If you can't feel it, they don't have one."
   },
   "tldr": {
-    "date": "2026-09-15",
-    "paperCount": 1,
-    "summary": "A thin day — mostly ahead-of-print Resuscitation editorials and corrections.\n• The one substantive find: an ex vivo whole-blood study showing gelatin 4% and HES 130/0.42 both impair clot formation while a balanced crystalloid stays haemostatically neutral.\n• Supports rather than challenges crystalloid-first prehospital fluid practice; ACTAS carries no colloids anyway.",
+    "date": "2026-09-16",
+    "paperCount": 2,
+    "summary": "Quiet day: a 401-respondent European survey maps what EMS clinicians want from AI voice assistants — documentation, knowledge access, hospital pre-notification — though it's requirements work, not outcome data. The resuscitation slot goes to a porcine ECPR study where mild hypercapnia raised cerebral glucose and lowered caspase-8 expression without improving brain tissue oxygen. Several ahead-of-print papers (including a prehospital antibiotics-in-sepsis study, squarely in ACTAS AP scope) still lack abstracts and should resurface once indexed.",
     "highlights": [
       {
-        "id": "10.1186/s13049-026-01690-6",
+        "id": "10.1186/s13049-026-01695-1",
         "pmid": "",
-        "doi": "10.1186/s13049-026-01690-6",
-        "title": "Gelatin 4% and HES (130/0.42) impair clot formation in ex vivo whole blood",
-        "note": "Ex vivo human whole-blood model: graded dilution with gelatin 4% and HES 130/0.42 produced a clearly hypocoagulable ROTEM profile (prolonged clotting/clot formation times, reduced alpha-angle and MCF, worst with HES) while the balanced crystalloid alone stayed haemostatically neutral — and mixing crystalloid with colloid worsened coagulopathy further."
+        "doi": "10.1186/s13049-026-01695-1",
+        "title": "AI voice assistance systems in EMS: multinational survey",
+        "note": "Survey of 401 EMS clinicians in Germany, Norway and Switzerland on AI voice-assistant design for prehospital care — respondents were technically proficient and already used digital tools mainly for documentation, knowledge access, hospital pre-notification and occupancy checks; the study maps requirements and implementation obstacles rather than testing outcomes."
+      },
+      {
+        "id": "10.1016/j.resplu.2026.101480",
+        "pmid": "",
+        "doi": "10.1016/j.resplu.2026.101480",
+        "title": "Mild hypercapnia in a porcine ECPR model",
+        "note": "In 12 pigs with refractory VF cardiac arrest treated with ECPR, mild hypercapnia (PaCO2 50-55 mmHg) was associated with higher cerebral glucose (p=0.01) and lower caspase-8 expression, but no significant difference in brain tissue oxygen tension (49.9 vs 36.4 mmHg, p=0.13), intracranial pressure, EEG activity or serum brain-injury biomarkers versus normocapnia."
       }
     ]
   },
   "dailyUpdates": [
+    {
+      "date": "2026-09-16",
+      "papers": [
+        {
+          "id": "10.1186/s13049-026-01695-1",
+          "title": "A multinational cross-sectional survey on the use of AI-based voice assistance systems in emergency medical services",
+          "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+          "date": "2026-09-16",
+          "pmid": "",
+          "doi": "10.1186/s13049-026-01695-1",
+          "summary": "Multinational survey of 401 EMS clinicians in Germany, Norway and Switzerland exploring how AI-based voice assistance systems could be designed for prehospital care — respondents were technically proficient and already using digital tools mainly for documentation, knowledge access, hospital pre-notification and occupancy checks, with the study mapping requirements, expectations and implementation obstacles rather than testing clinical outcomes.",
+          "relevance": "🟡 Medium — Acceptance/requirements survey only; no outcome data and no such system deployed in ACTAS, but it speaks directly to documentation and clinical-support workflows ACTAS shares."
+        },
+        {
+          "id": "10.1016/j.resplu.2026.101480",
+          "title": "Effects of systemic mild hypercapnia on brain function in a refractory cardiac arrest model treated with extracorporeal cardiopulmonary resuscitation",
+          "journal": "Resuscitation Plus",
+          "date": "2026-09-16",
+          "pmid": "",
+          "doi": "10.1016/j.resplu.2026.101480",
+          "summary": "Porcine refractory-VF arrest model (n=12) testing mild hypercapnia (PaCO2 50-55 mmHg) during ECPR — the hypercapnia group showed higher cerebral glucose (p=0.01) and lower caspase-8 expression, but no significant difference in brain tissue oxygen tension (49.9 vs 36.4 mmHg, p=0.13), intracranial pressure, EEG activity or serum brain-injury biomarkers.",
+          "relevance": "🔴 Low — Animal lab model with molecular surrogate endpoints; ECPR is an ECMO-centre therapy well outside ACTAS prehospital scope."
+        }
+      ]
+    },
     {
       "date": "2026-09-15",
       "papers": [
@@ -1000,6 +1032,76 @@
           "doi": "10.1186/s13049-026-01690-6",
           "summary": "Ex vivo human whole-blood model testing graded dilution with gelatin 4%, HES 130/0.42 and a balanced crystalloid — both colloids produced a clearly hypocoagulable ROTEM profile (prolonged clotting and clot formation times, reduced alpha-angle and maximum clot firmness, worst with HES) while the crystalloid alone stayed haemostatically neutral, and combining crystalloid with colloid dilution worsened the coagulopathy further.",
           "relevance": "🟡 Medium — ex vivo lab findings, not clinical outcome data; ACTAS carries no colloids anyway, so it confirms current crystalloid-first fluid practice (CMG 14/39) rather than changing it."
+        },
+        {
+          "id": "10.1080/10903127.2026.2731188",
+          "title": "Cardiopulmonary resuscitation quality during the transition in care from paramedic services to emergency department teams",
+          "journal": "Prehospital Emergency Care",
+          "date": "2026-09-15",
+          "pmid": "",
+          "doi": "10.1080/10903127.2026.2731188",
+          "summary": "Observational study of 35 OHCA transfers tracking CPR quality across the paramedic-to-ED handover — chest compression fraction (89–92%) and rate stayed guideline-compliant in every interval with no deterioration at transition, though compression depth was significantly deeper during paramedic intervals.",
+          "relevance": "🟢 High transferability — direct evidence on paramedic-delivered CPR at handover, mapping to CMG 4 and everyday AP practice"
+        },
+        {
+          "id": "42728228",
+          "title": "High‐Flow Nasal Oxygen Versus Conventional Oxygen Therapy and Non‐Invasive Ventilation for Acute Respiratory Failure in the Emergency Department: A Systematic Review and Meta‐Analysis",
+          "journal": "Emergency Medicine Australasia",
+          "date": "2026-09-15",
+          "pmid": "42728228",
+          "doi": "10.1111/1742-6723.70350",
+          "summary": "Systematic review and meta-analysis of 17 RCTs (1,955 patients) comparing high-flow nasal oxygen with conventional oxygen and NIV for acute respiratory failure in the ED — HFNO reduced intubation versus conventional oxygen (RR 0.61) but not versus NIV, with no clear benefit over either in COPD or acute heart failure.",
+          "relevance": "🟡 Medium transferability — ED-based and HFNO isn't carried prehospital, but it shapes expectations for the respiratory distress patients we hand over on CPAP"
+        },
+        {
+          "id": "42722385",
+          "title": "Local Anaesthetic Dosing and Toxicity Knowledge in Australian Emergency Departments: A Multicentre Cross‐Sectional Survey",
+          "journal": "Emergency Medicine Australasia",
+          "date": "2026-09-15",
+          "pmid": "42722385",
+          "doi": "10.1111/1742-6723.70352",
+          "summary": "Multicentre survey of 114 emergency clinicians across three Queensland EDs — fewer than half correctly identified the recommended maximum dose for any of four local anaesthetics, 21.9% couldn't recall any features of LAST, and only 10.5% could state the lipid emulsion dosing regimen.",
+          "relevance": "🟡 Medium transferability — awareness-level for paramedics: lignocaine is ICP-only in ACTAS and lipid emulsion isn't carried, so management stays hospital-side"
+        },
+        {
+          "id": "42716535",
+          "title": "Toxicological and Clinical Characteristics of Fatal Cases in the Emerging Drugs Network of Australia—Victoria (EDNAV) Clinical Registry 2020–2025",
+          "journal": "Emergency Medicine Australasia",
+          "date": "2026-09-15",
+          "pmid": "42716535",
+          "doi": "10.1111/1742-6723.70347",
+          "summary": "Case series of 46 deaths in Victoria's EDNAV toxicosurveillance registry (2020–2025) — 67% had out-of-hospital cardiac arrest, 91% were polysubstance with mixed stimulant–sedative patterns most common (methamphetamine 54%, heroin 52%), and hypoxic brain injury was the most frequent terminal complication.",
+          "relevance": "🟢 High transferability — Australian data on arrests paramedics actually attend; reinforces that naloxone alone won't reverse mixed overdoses"
+        },
+        {
+          "id": "42728236",
+          "title": "Embedded Low‐Acuity Pathway in the Emergency Department: An Alternative to Stand‐Alone Urgent Care Services",
+          "journal": "Emergency Medicine Australasia",
+          "date": "2026-09-15",
+          "pmid": "42728236",
+          "doi": "10.1111/1742-6723.70348",
+          "summary": "Quasi-experimental study of an embedded ultra-low acuity pathway at Dubbo Base Hospital (n=4,798) — pathway availability halved did-not-wait rates (14.2%→6.9%), lifted seen-on-time and treatment performance, and cut mean ED length of stay by 51.7 minutes.",
+          "relevance": "🟡 Medium transferability — system redesign rather than clinical care, but directly relevant to where low-acuity patients could be directed instead of transported"
+        },
+        {
+          "id": "10.1186/s13049-026-01696-0",
+          "title": "Early clinical predictors of amputation in frostbite: injury depth and extent for admission risk stratification",
+          "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+          "date": "2026-09-15",
+          "pmid": "",
+          "doi": "10.1186/s13049-026-01696-0",
+          "summary": "Retrospective cohort of 128 frostbite admissions in eastern Turkey — injury depth drove amputation risk (81.5% of third-degree injuries required amputation vs 1.6% of first/second-degree), and combining degree with %TBSA predicted amputation at admission (AUC 0.948), while inflammatory markers added nothing after adjustment.",
+          "relevance": "🟡 Medium transferability — field-usable depth-and-extent assessment for exposure incidents, though genuine frostbite is rare around the ACT"
+        },
+        {
+          "id": "42710898",
+          "title": "Paediatric Procedural Sedation and Analgesia in Emergency Departments: A Delphi Consensus Study",
+          "journal": "Emergency Medicine Australasia",
+          "date": "2026-09-15",
+          "pmid": "42710898",
+          "doi": "10.1111/1742-6723.70344",
+          "summary": "Two-round Delphi consensus of 28 paediatric emergency clinicians from 23 Spanish centres — strong agreement on monitoring standards, staffing and safety requirements for paediatric procedural sedation, with ketamine the preferred agent for painful procedures.",
+          "relevance": "🟡 Medium transferability — ketamine is in the ACTAS formulary and the safety principles carry over, but this is ED procedural sedation, not prehospital protocol"
         }
       ]
     },
@@ -4120,57 +4222,59 @@
     }
   ],
   "weeklyTldr": {
-    "dateRange": "1 – 8 Sep 2026",
-    "summary": "Fentanyl as a prehospital anaesthesia adjuvant in TBI was associated with lower mortality — retrospective, but supportive of a drug ACTAS already carries\nLondon's prehospital ECPR pathway got just 3% of eligible arrests to an ECMO centre in time — access, not eligibility, is the bottleneck\nVentilation feedback devices displayed wildly wrong rates and volumes during continuous-compression CPR — don't trust the display asynchronously\nAdmission hypocalcaemia predicts death and coagulopathy in major trauma, while 'high' calcium is usually just acidosis\nQueensland ramping evidence points firmly at the hospital back door — discharge flow, primary care and prehospital flow, not more ambulance bays",
+    "dateRange": "8 – 15 Sep 2026",
+    "summary": "Handover doesn't wreck CPR quality — compression fraction and rate held at guideline targets through the paramedic-to-ED transition in a 35-case observational study\nMost Victorian illicit-drug deaths happen out of hospital: 67% of 46 fatal EDNAV registry cases arrested prehospital, with near-universal polysubstance exposure (91%)\nHFNO cut intubation rates versus conventional oxygen but not versus NIV in ED respiratory failure — no clear edge in COPD or acute heart failure\nFewer than half of surveyed Queensland ED clinicians could recall maximum local anaesthetic doses, and only 10.5% knew the lipid emulsion regimen for LAST\nDubbo's embedded ultra-low acuity pathway halved did-not-wait rates (14.2%→6.9%) and cut ED length of stay by ~52 minutes",
     "highlights": [
       {
-        "text": "Fentanyl as a prehospital anaesthesia adjuvant in TBI was associated with lower mortality — retrospective, but supportive of a drug ACTAS already carries",
-        "id": "10.1186/s13049-026-01667-5"
+        "text": "Handover doesn't wreck CPR quality — compression fraction and rate held at guideline targets through the paramedic-to-ED transition in a 35-case observational study",
+        "id": "10.1080/10903127.2026.2731188"
       },
       {
-        "text": "London's prehospital ECPR pathway got just 3% of eligible arrests to an ECMO centre in time — access, not eligibility, is the bottleneck",
-        "id": "10.1016/j.resplu.2026.101468"
+        "text": "Most Victorian illicit-drug deaths happen out of hospital: 67% of 46 fatal EDNAV registry cases arrested prehospital, with near-universal polysubstance exposure (91%)",
+        "id": "42716535"
       },
       {
-        "text": "Ventilation feedback devices displayed wildly wrong rates and volumes during continuous-compression CPR — don't trust the display asynchronously",
-        "id": "10.1016/j.resplu.2026.101475"
+        "text": "HFNO cut intubation rates versus conventional oxygen but not versus NIV in ED respiratory failure — no clear edge in COPD or acute heart failure",
+        "id": "42728228"
       },
       {
-        "text": "Queensland ramping evidence points firmly at the hospital back door — discharge flow, primary care and prehospital flow, not more ambulance bays",
-        "id": "42702892"
+        "text": "Dubbo's embedded ultra-low acuity pathway halved did-not-wait rates (14.2%→6.9%) and cut ED length of stay by ~52 minutes",
+        "id": "42728236"
       }
     ],
     "topPicks": [
       {
-        "id": "10.1186/s13049-026-01689-z",
-        "title": "When prehospital resuscitation attempts are unsuccessful: care for the relatives following termination of treatment in out-of-hospital cardiac arrest",
-        "authors": "Alexander Skovbo, Christina Louise Jørck, et al.",
-        "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
-        "summary": "Interviews with 15 relatives present at unsuccessful out-of-hospital resuscitations showed their needs shift across three phases — dispatch guidance, help-or-withdraw during resus, then compassionate unhurried communication when efforts stop.",
-        "relevance": "🟢 High transferability — death notification and family care are core AP work, directly actionable with no new kit",
+        "id": "10.1080/10903127.2026.2731188",
+        "title": "Cardiopulmonary resuscitation quality during the transition in care from paramedic services to emergency department teams",
+        "authors": "Victoria Myers, Ian R Drennan, Steve Lin, et al.",
+        "journal": "Prehospital Emergency Care",
+        "summary": "Observational study of 35 OHCA transfers tracking CPR quality across the paramedic-to-ED handover — chest compression fraction (89–92%) and rate stayed guideline-compliant in every interval with no deterioration at transition, though compression depth was significantly deeper during paramedic intervals.",
+        "relevance": "🟢 High transferability — direct evidence on paramedic-delivered CPR at handover, mapping to CMG 4 and everyday AP practice",
         "pmid": "",
-        "doi": "10.1186/s13049-026-01689-z",
-        "featuredReason": "Nearly two in three OHCAs end at the scene, and how paramedics communicate through termination stays with families. Practical, humane, and usable on the very next shift."
+        "doi": "10.1080/10903127.2026.2731188",
+        "featuredReason": "Rare direct evidence that resuscitation quality survives the paramedic-to-ED handover — reassuring for crews, and the deeper prehospital compressions are a conversation starter at every handover."
       },
       {
-        "id": "10.1186/s13049-026-01667-5",
-        "title": "Association between fentanyl use and mortality during prehospital emergency anaesthesia in traumatic brain injury – a retrospective cohort study",
-        "authors": "Juri Laamanen, Jussi Pirneskoski, et al.",
-        "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
-        "summary": "In 423 TBI patients intubated by a Finnish HEMS unit, fentanyl as an anaesthetic adjuvant was associated with lower mortality (OR 0.38), though selection bias can't be excluded.",
-        "relevance": "🟡 Medium transferability — fentanyl is on the ACTAS formulary but prehospital anaesthesia is ICP-only, and the data is confounded",
-        "featuredReason": "A mortality signal for a drug already carried, in the highest-stakes patient group — worth watching even though retrospective design caps how far the finding travels."
-      },
-      {
-        "id": "42702892",
-        "title": "Access Block and Ambulance Ramping: The Canaries of the Healthcare System",
-        "authors": "Justin Boyle, Andrew Staib, Clair Sullivan, et al.",
+        "id": "42716535",
+        "title": "Toxicological and Clinical Characteristics of Fatal Cases in the Emerging Drugs Network of Australia—Victoria (EDNAV) Clinical Registry 2020–2025",
+        "authors": "James White, Sarah J. Hampton, Shaun Greene",
         "journal": "Emergency Medicine Australasia",
-        "summary": "A mixed-methods Queensland study of six years of ambulance and hospital records found access block is largely a hospital discharge ('back door') problem, with recommendations spanning discharge metrics, primary care support and prehospital flow.",
-        "relevance": "🟢 High transferability — the best local evidence yet on what drives the ramping every crew experiences",
-        "pmid": "42702892",
-        "doi": "10.1111/1742-6723.70327",
-        "featuredReason": "Ramping is a daily reality, and this is the strongest Australian synthesis of what actually drives it — the fix lives at the hospital back door, not in more ambulance bays."
+        "summary": "Case series of 46 deaths in Victoria's EDNAV toxicosurveillance registry (2020–2025) — 67% had out-of-hospital cardiac arrest, 91% were polysubstance with mixed stimulant–sedative patterns most common (methamphetamine 54%, heroin 52%), and hypoxic brain injury was the most frequent terminal complication.",
+        "relevance": "🟢 High transferability — Australian data on the arrests paramedics actually attend; naloxone alone won't reverse mixed overdoses",
+        "pmid": "42716535",
+        "doi": "10.1111/1742-6723.70347",
+        "featuredReason": "Two-thirds of these deaths arrested before reaching hospital — the overdose patients paramedics meet first are the ones most likely to die, and most carried a mix of stimulants and sedatives that naloxone alone won't fix."
+      },
+      {
+        "id": "42728228",
+        "title": "High‐Flow Nasal Oxygen Versus Conventional Oxygen Therapy and Non‐Invasive Ventilation for Acute Respiratory Failure in the Emergency Department: A Systematic Review and Meta‐Analysis",
+        "authors": "Rupert Phillips, Adrianna Klejnotowska, Harry Claxton, et al.",
+        "journal": "Emergency Medicine Australasia",
+        "summary": "Systematic review and meta-analysis of 17 RCTs (1,955 patients) comparing high-flow nasal oxygen with conventional oxygen and NIV for acute respiratory failure in the ED — HFNO reduced intubation versus conventional oxygen (RR 0.61) but not versus NIV, with no clear benefit over either in COPD or acute heart failure.",
+        "relevance": "🟡 Medium transferability — ED-based evidence on the respiratory distress patients we hand over on CPAP",
+        "pmid": "42728228",
+        "doi": "10.1111/1742-6723.70350",
+        "featuredReason": "Practice-shaping meta-analysis from an Australian journal clarifying exactly where HFNO sits against CPAP and NIV — useful context for every severe respiratory distress handover."
       }
     ]
   }
