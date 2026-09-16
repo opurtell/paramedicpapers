@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-09-15T21:20:15Z",
-  "lastUpdatedSydney": "2026-09-16 07:20 AEST",
-  "lastUpdatedDate": "2026-09-16",
+  "lastUpdated": "2026-09-16T21:20:26Z",
+  "lastUpdatedSydney": "2026-09-17 07:20 AEST",
+  "lastUpdatedDate": "2026-09-17",
   "featuredPapers": [
     {
       "id": "10.1080/10903127.2026.2674263",
@@ -13,6 +13,17 @@
       "summary": "Nationwide observational study examined trends in DSED use for refractory VF before and after publication of the DOSE VF trial.",
       "relevance": "🟢 High",
       "featuredReason": "Selected for clinical relevance to prehospital practice."
+    },
+    {
+      "id": "10.1016/j.resplu.2026.101479",
+      "title": "Standing chest compressions: simulation-based development and evaluation of a clinically applicable height adjustment approach",
+      "journal": "Resuscitation Plus",
+      "date": "2026-09-17",
+      "pmid": "",
+      "doi": "10.1016/j.resplu.2026.101479",
+      "summary": "Simulation study with 30 participants compressing at seven working heights found knee-height bed or stretcher position gave the best compressions (52.7 mm mean depth, 80.6% correct depth), with positions 15–20 cm above knee height significantly worse.",
+      "relevance": "🟢 High — zero-cost CPR quality tweak applicable to any stretcher job, though manikin data with a small sample.",
+      "featuredReason": "zero-cost CPR quality tweak applicable to any stretcher job, though manikin data with a small sample."
     },
     {
       "id": "10.1080/10903127.2026.2731188",
@@ -46,17 +57,6 @@
       "summary": "Retrospective cohort of 128 frostbite admissions in eastern Turkey — injury depth drove amputation risk (81.5% of third-degree injuries required amputation vs 1.6% of first/second-degree), and combining degree with %TBSA predicted amputation at admission (AUC 0.948), while inflammatory markers added nothing after adjustment.",
       "relevance": "🟡 Medium transferability — field-usable depth-and-extent assessment for exposure incidents, though genuine frostbite is rare around the ACT",
       "featuredReason": "field-usable depth-and-extent assessment for exposure incidents, though genuine frostbite is rare around the ACT"
-    },
-    {
-      "id": "10.1080/10903127.2026.2731488",
-      "title": "2026 Systematic Review of Evidence-Based Guidelines for Prehospital Care",
-      "journal": "Prehospital Emergency Care",
-      "date": "2026-09-12",
-      "pmid": "",
-      "doi": "10.1080/10903127.2026.2731488",
-      "summary": "The 2026 update of the systematic review appraising evidence-based guidelines for prehospital care — abstract not yet available (ahead-of-print), but this recurring review is the reference map of what guideline-level evidence exists in prehospital practice.",
-      "relevance": "🔴 Low — Abstract not available and it's a guidelines roundup rather than a single adoptable intervention — flagged for the reading list.",
-      "featuredReason": "Abstract not available and it's a guidelines roundup rather than a single adoptable intervention — flagged for the reading list."
     }
   ],
   "funFacts": [
@@ -970,31 +970,90 @@
     }
   ],
   "funFact": {
-    "category": "anatomy",
-    "fact": "In cardiac arrest, the femoral pulse is your go-to — central pulses persist longer than peripheral ones. Palpate at the midpoint of the inguinal ligament. If you can't feel it, they don't have one."
+    "category": "resuscitation",
+    "fact": "Cardiac arrest has three phases: electrical (0 to 4 min, defib works best), circulatory (4 to 10 min, do CPR first then defib), and metabolic (>10 min, prognosis tanks). Timing isn't everything — it's the only thing."
   },
   "tldr": {
-    "date": "2026-09-16",
-    "paperCount": 2,
-    "summary": "Quiet day: a 401-respondent European survey maps what EMS clinicians want from AI voice assistants — documentation, knowledge access, hospital pre-notification — though it's requirements work, not outcome data. The resuscitation slot goes to a porcine ECPR study where mild hypercapnia raised cerebral glucose and lowered caspase-8 expression without improving brain tissue oxygen. Several ahead-of-print papers (including a prehospital antibiotics-in-sepsis study, squarely in ACTAS AP scope) still lack abstracts and should resurface once indexed.",
+    "date": "2026-09-17",
+    "paperCount": 4,
+    "summary": "• Preclinical traumatic-arrest data add to the case against crystalloid-only resuscitation — whole blood beat every alternative in a rat TCA model\n• General-purpose LLMs confirmed unreliable for prehospital ECG cath-lab activation; the standard machine algorithm still wins\n• Practical wins: set the stretcher to knee height for standing compressions, and structured hot debriefs validated in two Australian EDs",
     "highlights": [
       {
-        "id": "10.1186/s13049-026-01695-1",
+        "id": "10.1016/j.resplu.2026.101477",
         "pmid": "",
-        "doi": "10.1186/s13049-026-01695-1",
-        "title": "AI voice assistance systems in EMS: multinational survey",
-        "note": "Survey of 401 EMS clinicians in Germany, Norway and Switzerland on AI voice-assistant design for prehospital care — respondents were technically proficient and already used digital tools mainly for documentation, knowledge access, hospital pre-notification and occupancy checks; the study maps requirements and implementation obstacles rather than testing outcomes."
+        "doi": "10.1016/j.resplu.2026.101477",
+        "title": "Fluid strategies in rat traumatic cardiac arrest",
+        "note": "In a rat TCA model (30% haemorrhage + asphyxia), 96-hour survival after ROSC was 90% with whole blood, 80% with HES, 60% with Ringer's and 30% with normal saline — crystalloids prolonged survival without improving haemodynamics."
       },
       {
-        "id": "10.1016/j.resplu.2026.101480",
+        "id": "10.1016/j.hrtlng.2026.102956",
         "pmid": "",
-        "doi": "10.1016/j.resplu.2026.101480",
-        "title": "Mild hypercapnia in a porcine ECPR model",
-        "note": "In 12 pigs with refractory VF cardiac arrest treated with ECPR, mild hypercapnia (PaCO2 50-55 mmHg) was associated with higher cerebral glucose (p=0.01) and lower caspase-8 expression, but no significant difference in brain tissue oxygen tension (49.9 vs 36.4 mmHg, p=0.13), intracranial pressure, EEG activity or serum brain-injury biomarkers versus normocapnia."
+        "doi": "10.1016/j.hrtlng.2026.102956",
+        "title": "LLMs unreliable for prehospital ECG cath-lab activation",
+        "note": "Across 615 prehospital ECGs, the best LLM (Gemini) hit 95.3% sensitivity but only 9.4% specificity, and the standard ECG machine algorithm (67.7% sensitivity, 64.2% specificity) outperformed all three LLMs."
+      },
+      {
+        "id": "10.1016/j.resplu.2026.101479",
+        "pmid": "",
+        "doi": "10.1016/j.resplu.2026.101479",
+        "title": "Standing chest compressions — knee height is best",
+        "note": "Simulation study of 30 rescuers found knee-height bed/stretcher position gave the deepest compressions (52.7 mm mean, 80.6% correct depth), with 15–20 cm above knee height significantly worse."
+      },
+      {
+        "id": "10.1111/1742-6723.70349",
+        "pmid": "",
+        "doi": "10.1111/1742-6723.70349",
+        "title": "Structured hot debrief tool in Australian EDs",
+        "note": "Across 46 hot debriefs in two metropolitan Australian EDs, 98% of attendees rated them psychologically safe and 59 of 60 found them useful, with themes including medication dosing in rare events and staff safety during behavioural emergencies."
       }
     ]
   },
   "dailyUpdates": [
+    {
+      "date": "2026-09-17",
+      "papers": [
+        {
+          "id": "10.1016/j.resplu.2026.101477",
+          "title": "Comparative efficacy of fluid resuscitation strategies in a rat model of traumatic cardiac arrest",
+          "journal": "Resuscitation Plus",
+          "date": "2026-09-17",
+          "pmid": "",
+          "doi": "10.1016/j.resplu.2026.101477",
+          "summary": "Rat model of traumatic cardiac arrest (30% haemorrhage plus asphyxia) comparing four fluids after ROSC found 96-hour survival of 90% with whole blood, 80% with HES, 60% with lactated Ringer's and just 30% with normal saline — crystalloids prolonged survival without improving haemodynamics.",
+          "relevance": "🟡 Medium — preclinical rat data only, and whole blood isn't carried by ACTAS (QAS, AV, SJWA and NSWA all carry it), but the anti-crystalloid signal lines up with clinical TCA practice."
+        },
+        {
+          "id": "10.1016/j.hrtlng.2026.102956",
+          "title": "Large language models fail to reliably predict emergent catheterization laboratory activation from prehospital electrocardiograms",
+          "journal": "Heart & Lung",
+          "date": "2026-09-17",
+          "pmid": "",
+          "doi": "10.1016/j.hrtlng.2026.102956",
+          "summary": "Retrospective test of three multimodal LLMs against real cardiology cath-lab activation decisions on 615 prehospital ECGs found the best (Gemini, 95.3% sensitivity) had 9.4% specificity, and the standard ECG machine algorithm beat all three LLMs overall — general-purpose LLMs aren't reliable for STEMI pathway activation.",
+          "relevance": "🟢 High — prehospital 12-lead interpretation is core AP scope; a solid caution against using an LLM chatbot as an ECG second opinion."
+        },
+        {
+          "id": "10.1016/j.resplu.2026.101479",
+          "title": "Standing chest compressions: simulation-based development and evaluation of a clinically applicable height adjustment approach",
+          "journal": "Resuscitation Plus",
+          "date": "2026-09-17",
+          "pmid": "",
+          "doi": "10.1016/j.resplu.2026.101479",
+          "summary": "Simulation study with 30 participants compressing at seven working heights found knee-height bed or stretcher position gave the best compressions (52.7 mm mean depth, 80.6% correct depth), with positions 15–20 cm above knee height significantly worse.",
+          "relevance": "🟢 High — zero-cost CPR quality tweak applicable to any stretcher job, though manikin data with a small sample."
+        },
+        {
+          "id": "10.1111/1742-6723.70349",
+          "title": "Implementation of a Structured Hot Debrief Tool in a Metropolitan ED: A Quality Improvement Study",
+          "journal": "Emergency Medicine Australasia",
+          "date": "2026-09-17",
+          "pmid": "",
+          "doi": "10.1111/1742-6723.70349",
+          "summary": "Multi-site Australian quality improvement study of a structured hot debrief tool after critical events (46 debriefs across two metropolitan EDs) found 98% of attendees rated it psychologically safe and 59 of 60 found it useful, with themes surfacing system issues like medication dosing in rare events and staff safety during behavioural emergencies.",
+          "relevance": "🟢 High — Australian setting and the model transfers directly to post-incident hot debriefs in ambulance crews."
+        }
+      ]
+    },
     {
       "date": "2026-09-16",
       "papers": [
