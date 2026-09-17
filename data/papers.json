@@ -1,8 +1,19 @@
 {
-  "lastUpdated": "2026-09-16T21:20:26Z",
-  "lastUpdatedSydney": "2026-09-17 07:20 AEST",
-  "lastUpdatedDate": "2026-09-17",
+  "lastUpdated": "2026-09-17T21:20:37Z",
+  "lastUpdatedSydney": "2026-09-18 07:20 AEST",
+  "lastUpdatedDate": "2026-09-18",
   "featuredPapers": [
+    {
+      "id": "10.1016/j.resuscitation.2026.111288",
+      "title": "Selection bias introduced in a randomized clinical trial due to employee instigated deletion of newborn resuscitation videos",
+      "journal": "Resuscitation",
+      "date": "2026-09-18",
+      "pmid": "",
+      "doi": "10.1016/j.resuscitation.2026.111288",
+      "summary": "Norwegian analysis of the NeoBeat RCT testing whether anonymous staff deletion of resuscitation videos introduced selection bias — after the anonymous opt-out, enrolled newborns had significantly higher Apgar scores, shorter ventilation and fewer admissions, and the trial was terminated halfway without power to conclude on its outcomes.",
+      "relevance": "🟡 Medium — methodological finding on a neonatal resuscitation RCT rather than a practice change; useful caution for interpreting newborn resus evidence (CMG 5B context).",
+      "featuredReason": "methodological finding on a neonatal resuscitation RCT rather than a practice change; useful caution for interpreting newborn resus evidence (CMG 5B context)."
+    },
     {
       "id": "10.1080/10903127.2026.2674263",
       "title": "Use of double sequential external defibrillation in the United States before and after the DOSE VF randomized clinical trial",
@@ -13,6 +24,17 @@
       "summary": "Nationwide observational study examined trends in DSED use for refractory VF before and after publication of the DOSE VF trial.",
       "relevance": "🟢 High",
       "featuredReason": "Selected for clinical relevance to prehospital practice."
+    },
+    {
+      "id": "10.1016/j.resuscitation.2026.111287",
+      "title": "Trends in the incidence and outcomes of cardiopulmonary resuscitation-induced consciousness in out-of-hospital cardiac arrest: a retrospective study",
+      "journal": "Resuscitation",
+      "date": "2026-09-18",
+      "pmid": "",
+      "doi": "10.1016/j.resuscitation.2026.111287",
+      "summary": "Ambulance Victoria registry study of 43,402 adult OHCA cases (2008–2024) identifying CPR-induced consciousness — 1,438 patients (3.3%), with annual incidence rising (IRR 1.083, 95% CI 1.07–1.10) across all arrest rhythms, and CPRIC associated with improved survival to hospital discharge.",
+      "relevance": "🟢 High — Australian (VACAR) prehospital cardiac arrest data within AP scope (CMG 4); directly relevant to crews running arrests.",
+      "featuredReason": "Australian (VACAR) prehospital cardiac arrest data within AP scope (CMG 4); directly relevant to crews running arrests."
     },
     {
       "id": "10.1016/j.resplu.2026.101479",
@@ -35,28 +57,6 @@
       "summary": "Observational study of 35 OHCA transfers tracking CPR quality across the paramedic-to-ED handover — chest compression fraction (89–92%) and rate stayed guideline-compliant in every interval with no deterioration at transition, though compression depth was significantly deeper during paramedic intervals.",
       "relevance": "🟢 High transferability — direct evidence on paramedic-delivered CPR at handover, mapping to CMG 4 and everyday AP practice",
       "featuredReason": "direct evidence on paramedic-delivered CPR at handover, mapping to CMG 4 and everyday AP practice"
-    },
-    {
-      "id": "42728228",
-      "title": "High‐Flow Nasal Oxygen Versus Conventional Oxygen Therapy and Non‐Invasive Ventilation for Acute Respiratory Failure in the Emergency Department: A Systematic Review and Meta‐Analysis",
-      "journal": "Emergency Medicine Australasia",
-      "date": "2026-09-15",
-      "pmid": "42728228",
-      "doi": "10.1111/1742-6723.70350",
-      "summary": "Systematic review and meta-analysis of 17 RCTs (1,955 patients) comparing high-flow nasal oxygen with conventional oxygen and NIV for acute respiratory failure in the ED — HFNO reduced intubation versus conventional oxygen (RR 0.61) but not versus NIV, with no clear benefit over either in COPD or acute heart failure.",
-      "relevance": "🟡 Medium transferability — ED-based and HFNO isn't carried prehospital, but it shapes expectations for the respiratory distress patients we hand over on CPAP",
-      "featuredReason": "ED-based and HFNO isn't carried prehospital, but it shapes expectations for the respiratory distress patients we hand over on CPAP"
-    },
-    {
-      "id": "10.1186/s13049-026-01696-0",
-      "title": "Early clinical predictors of amputation in frostbite: injury depth and extent for admission risk stratification",
-      "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
-      "date": "2026-09-15",
-      "pmid": "",
-      "doi": "10.1186/s13049-026-01696-0",
-      "summary": "Retrospective cohort of 128 frostbite admissions in eastern Turkey — injury depth drove amputation risk (81.5% of third-degree injuries required amputation vs 1.6% of first/second-degree), and combining degree with %TBSA predicted amputation at admission (AUC 0.948), while inflammatory markers added nothing after adjustment.",
-      "relevance": "🟡 Medium transferability — field-usable depth-and-extent assessment for exposure incidents, though genuine frostbite is rare around the ACT",
-      "featuredReason": "field-usable depth-and-extent assessment for exposure incidents, though genuine frostbite is rare around the ACT"
     }
   ],
   "funFacts": [
@@ -970,45 +970,73 @@
     }
   ],
   "funFact": {
-    "category": "resuscitation",
-    "fact": "Cardiac arrest has three phases: electrical (0 to 4 min, defib works best), circulatory (4 to 10 min, do CPR first then defib), and metabolic (>10 min, prognosis tanks). Timing isn't everything — it's the only thing."
+    "category": "pharmacology",
+    "fact": "GTN doesn't 'open blocked arteries' — it works mostly by venodilation, dropping preload and reducing the heart's workload. It's not fixing the problem, it's making the problem more survivable until someone with a catheter can."
   },
   "tldr": {
-    "date": "2026-09-17",
-    "paperCount": 4,
-    "summary": "• Preclinical traumatic-arrest data add to the case against crystalloid-only resuscitation — whole blood beat every alternative in a rat TCA model\n• General-purpose LLMs confirmed unreliable for prehospital ECG cath-lab activation; the standard machine algorithm still wins\n• Practical wins: set the stretcher to knee height for standing compressions, and structured hot debriefs validated in two Australian EDs",
+    "date": "2026-09-18",
+    "paperCount": 3,
+    "summary": "• Ambulance Victoria registry data: CPR-induced consciousness in 3.3% of 43,402 OHCA cases, incidence rising annually since 2008, and associated with better survival — a marker of favourable physiology, not a reason to stop.\n• Norwegian NeoBeat newborn resuscitation RCT compromised: anonymous staff video deletions introduced selection bias, and the trial terminated halfway without power to conclude.\n• US EMS data shows sickle cell pain badly under-treated prehospital — only 13.5% of 10,023 encounters got analgesia, with scene contact time ≥20 min the strongest driver of treatment.",
     "highlights": [
       {
-        "id": "10.1016/j.resplu.2026.101477",
+        "id": "10.1016/j.resuscitation.2026.111287",
         "pmid": "",
-        "doi": "10.1016/j.resplu.2026.101477",
-        "title": "Fluid strategies in rat traumatic cardiac arrest",
-        "note": "In a rat TCA model (30% haemorrhage + asphyxia), 96-hour survival after ROSC was 90% with whole blood, 80% with HES, 60% with Ringer's and 30% with normal saline — crystalloids prolonged survival without improving haemodynamics."
+        "doi": "10.1016/j.resuscitation.2026.111287",
+        "title": "CPR-induced consciousness in OHCA: 16-year Victorian registry trends",
+        "note": "Of 43,402 adult OHCA cases (2008–2024), 1,438 (3.3%) showed CPRIC; annual incidence rose (IRR 1.083, 95% CI 1.07–1.10) across all rhythms, and CPRIC was associated with improved survival to hospital discharge."
       },
       {
-        "id": "10.1016/j.hrtlng.2026.102956",
+        "id": "10.1016/j.resuscitation.2026.111288",
         "pmid": "",
-        "doi": "10.1016/j.hrtlng.2026.102956",
-        "title": "LLMs unreliable for prehospital ECG cath-lab activation",
-        "note": "Across 615 prehospital ECGs, the best LLM (Gemini) hit 95.3% sensitivity but only 9.4% specificity, and the standard ECG machine algorithm (67.7% sensitivity, 64.2% specificity) outperformed all three LLMs."
+        "doi": "10.1016/j.resuscitation.2026.111288",
+        "title": "NeoBeat newborn RCT compromised by anonymous video deletions",
+        "note": "After an anonymous video-deletion opt-out was introduced mid-trial, enrolled newborns showed significantly higher Apgar scores, shorter ventilation and fewer admissions — systematic selection bias, and the trial was terminated halfway without power to conclude on its outcomes."
       },
       {
-        "id": "10.1016/j.resplu.2026.101479",
+        "id": "10.1016/j.ajem.2026.09.020",
         "pmid": "",
-        "doi": "10.1016/j.resplu.2026.101479",
-        "title": "Standing chest compressions — knee height is best",
-        "note": "Simulation study of 30 rescuers found knee-height bed/stretcher position gave the deepest compressions (52.7 mm mean, 80.6% correct depth), with 15–20 cm above knee height significantly worse."
-      },
-      {
-        "id": "10.1111/1742-6723.70349",
-        "pmid": "",
-        "doi": "10.1111/1742-6723.70349",
-        "title": "Structured hot debrief tool in Australian EDs",
-        "note": "Across 46 hot debriefs in two metropolitan Australian EDs, 98% of attendees rated them psychologically safe and 59 of 60 found them useful, with themes including medication dosing in rare events and staff safety during behavioural emergencies."
+        "doi": "10.1016/j.ajem.2026.09.020",
+        "title": "US prehospital sickle cell pain: low analgesia rates nationwide",
+        "note": "Among 10,023 US 9-1-1 ALS encounters for SCD complications (2023), pain scales were documented in 73% but only 13.5% received any analgesia (11.7% opioids); for pain ≥7/10, contact time ≥20 min was associated with ~5× more IV access and ~10× more analgesia/opioids."
       }
     ]
   },
   "dailyUpdates": [
+    {
+      "date": "2026-09-18",
+      "papers": [
+        {
+          "id": "10.1016/j.resuscitation.2026.111287",
+          "title": "Trends in the incidence and outcomes of cardiopulmonary resuscitation-induced consciousness in out-of-hospital cardiac arrest: a retrospective study",
+          "journal": "Resuscitation",
+          "date": "2026-09-18",
+          "pmid": "",
+          "doi": "10.1016/j.resuscitation.2026.111287",
+          "summary": "Ambulance Victoria registry study of 43,402 adult OHCA cases (2008–2024) identifying CPR-induced consciousness — 1,438 patients (3.3%), with annual incidence rising (IRR 1.083, 95% CI 1.07–1.10) across all arrest rhythms, and CPRIC associated with improved survival to hospital discharge.",
+          "relevance": "🟢 High — Australian (VACAR) prehospital cardiac arrest data within AP scope (CMG 4); directly relevant to crews running arrests."
+        },
+        {
+          "id": "10.1016/j.resuscitation.2026.111288",
+          "title": "Selection bias introduced in a randomized clinical trial due to employee instigated deletion of newborn resuscitation videos",
+          "journal": "Resuscitation",
+          "date": "2026-09-18",
+          "pmid": "",
+          "doi": "10.1016/j.resuscitation.2026.111288",
+          "summary": "Norwegian analysis of the NeoBeat RCT testing whether anonymous staff deletion of resuscitation videos introduced selection bias — after the anonymous opt-out, enrolled newborns had significantly higher Apgar scores, shorter ventilation and fewer admissions, and the trial was terminated halfway without power to conclude on its outcomes.",
+          "relevance": "🟡 Medium — methodological finding on a neonatal resuscitation RCT rather than a practice change; useful caution for interpreting newborn resus evidence (CMG 5B context)."
+        },
+        {
+          "id": "10.1016/j.ajem.2026.09.020",
+          "title": "Prehospital management of pain associated with acute complications of Sickle Cell Disease: a preliminary nationwide cross-sectional study",
+          "journal": "The American Journal of Emergency Medicine",
+          "date": "2026-09-18",
+          "pmid": "",
+          "doi": "10.1016/j.ajem.2026.09.020",
+          "summary": "US nationwide cross-section of 10,023 9-1-1 ALS encounters for sickle cell disease complications in 2023 — pain scores documented in 73% but only 13.5% received any analgesia (11.7% opioids), and among patients scoring ≥7/10, contact times ≥20 min were associated with roughly five-fold more IV access and ten-fold more analgesia/opioid administration.",
+          "relevance": "🟡 Medium — US administrative data and associations, not causation, but vaso-occlusive pain undertreatment maps onto ACTAS pain management (CMG 2) where fentanyl IN and methoxyflurane are in scope."
+        }
+      ]
+    },
     {
       "date": "2026-09-17",
       "papers": [
