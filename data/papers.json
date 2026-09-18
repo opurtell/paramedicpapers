@@ -1,8 +1,19 @@
 {
-  "lastUpdated": "2026-09-17T21:20:37Z",
-  "lastUpdatedSydney": "2026-09-18 07:20 AEST",
-  "lastUpdatedDate": "2026-09-18",
+  "lastUpdated": "2026-09-18T21:20:48Z",
+  "lastUpdatedSydney": "2026-09-19 07:20 AEST",
+  "lastUpdatedDate": "2026-09-19",
   "featuredPapers": [
+    {
+      "id": "10.1016/j.annemergmed.2026.03.030",
+      "title": "Systematic Review of Pediatric Ketamine in Emergency Department Procedural Sedation: Frequency and Predictors of Adverse Events",
+      "journal": "Annals of Emergency Medicine",
+      "date": "2026-09-19",
+      "pmid": "",
+      "doi": "10.1016/j.annemergmed.2026.03.030",
+      "summary": "Systematic review of 20 studies covering 67,871 children having IV ketamine procedural sedation in EDs — no deaths or permanent adverse outcomes, sentinel events pooled at about 1 in 11,558 sedations, serious adverse events 0.34%, with age ≥10, upper respiratory infection and opioid co-administration modest predictors while ASA status and benzodiazepine co-administration were not.",
+      "relevance": "🟡 Medium — ED-based procedural sedation rather than prehospital practice, but reassuring safety data for a heavily used AP formulary drug",
+      "featuredReason": "ED-based procedural sedation rather than prehospital practice, but reassuring safety data for a heavily used AP formulary drug"
+    },
     {
       "id": "10.1016/j.resuscitation.2026.111288",
       "title": "Selection bias introduced in a randomized clinical trial due to employee instigated deletion of newborn resuscitation videos",
@@ -26,37 +37,26 @@
       "featuredReason": "Selected for clinical relevance to prehospital practice."
     },
     {
-      "id": "10.1016/j.resuscitation.2026.111287",
-      "title": "Trends in the incidence and outcomes of cardiopulmonary resuscitation-induced consciousness in out-of-hospital cardiac arrest: a retrospective study",
-      "journal": "Resuscitation",
-      "date": "2026-09-18",
-      "pmid": "",
-      "doi": "10.1016/j.resuscitation.2026.111287",
-      "summary": "Ambulance Victoria registry study of 43,402 adult OHCA cases (2008–2024) identifying CPR-induced consciousness — 1,438 patients (3.3%), with annual incidence rising (IRR 1.083, 95% CI 1.07–1.10) across all arrest rhythms, and CPRIC associated with improved survival to hospital discharge.",
-      "relevance": "🟢 High — Australian (VACAR) prehospital cardiac arrest data within AP scope (CMG 4); directly relevant to crews running arrests.",
-      "featuredReason": "Australian (VACAR) prehospital cardiac arrest data within AP scope (CMG 4); directly relevant to crews running arrests."
-    },
-    {
-      "id": "10.1016/j.resplu.2026.101479",
-      "title": "Standing chest compressions: simulation-based development and evaluation of a clinically applicable height adjustment approach",
+      "id": "10.1016/j.resplu.2026.101474",
+      "title": "Implementation gap in prehospital termination-of-resuscitation policies for out-of-hospital cardiac arrest with do-not-attempt-cardiopulmonary-resuscitation wishes in Japan: a nationwide survey",
       "journal": "Resuscitation Plus",
-      "date": "2026-09-17",
+      "date": "2026-09-19",
       "pmid": "",
-      "doi": "10.1016/j.resplu.2026.101479",
-      "summary": "Simulation study with 30 participants compressing at seven working heights found knee-height bed or stretcher position gave the best compressions (52.7 mm mean depth, 80.6% correct depth), with positions 15–20 cm above knee height significantly worse.",
-      "relevance": "🟢 High — zero-cost CPR quality tweak applicable to any stretcher job, though manikin data with a small sample.",
-      "featuredReason": "zero-cost CPR quality tweak applicable to any stretcher job, though manikin data with a small sample."
+      "doi": "10.1016/j.resplu.2026.101474",
+      "summary": "Nationwide Japanese survey of 561 fire departments — 47% had a prehospital termination-of-resuscitation policy for OHCA with DNACPR wishes, yet 52% of departments with evaluable data applied it to zero cases during 2024 despite encountering eligible patients, and departments with a policy transported far fewer arrests with ongoing CPR (46% vs 82%).",
+      "relevance": "🟡 Medium — Japanese DNACPR legislation limits direct transfer, but the policy-versus-practice implementation gap applies to any TOR guideline including ours under CMG 4",
+      "featuredReason": "Japanese DNACPR legislation limits direct transfer, but the policy-versus-practice implementation gap applies to any TOR guideline including ours under CMG 4"
     },
     {
-      "id": "10.1080/10903127.2026.2731188",
-      "title": "Cardiopulmonary resuscitation quality during the transition in care from paramedic services to emergency department teams",
-      "journal": "Prehospital Emergency Care",
-      "date": "2026-09-15",
+      "id": "10.1016/j.resplu.2026.101482",
+      "title": "Association between destination hospital level and outcomes in out-of-hospital cardiac arrest patients under a dispatch-guided transport system: a population-based study in Nagoya, Japan",
+      "journal": "Resuscitation Plus",
+      "date": "2026-09-19",
       "pmid": "",
-      "doi": "10.1080/10903127.2026.2731188",
-      "summary": "Observational study of 35 OHCA transfers tracking CPR quality across the paramedic-to-ED handover — chest compression fraction (89–92%) and rate stayed guideline-compliant in every interval with no deterioration at transition, though compression depth was significantly deeper during paramedic intervals.",
-      "relevance": "🟢 High transferability — direct evidence on paramedic-delivered CPR at handover, mapping to CMG 4 and everyday AP practice",
-      "featuredReason": "direct evidence on paramedic-delivered CPR at handover, mapping to CMG 4 and everyday AP practice"
+      "doi": "10.1016/j.resplu.2026.101482",
+      "summary": "Population-based cohort of 12,663 OHCA transports in Nagoya under a dispatch-guided destination system — transport to critical care medical centres showed no association with favourable one-month neurological outcomes overall, was linked to lower one-month survival in non-shockable rhythms (OR 0.66), and only refractory shockable rhythms showed a possible survival edge (19.7% vs 3.3%, imprecise estimate).",
+      "relevance": "🟡 Medium — Japanese dispatch-guided destination system differs from ACT transport pathways; findings are largely null and the refractory VF signal is hypothesis-generating only",
+      "featuredReason": "Japanese dispatch-guided destination system differs from ACT transport pathways; findings are largely null and the refractory VF signal is hypothesis-generating only"
     }
   ],
   "funFacts": [
@@ -970,38 +970,107 @@
     }
   ],
   "funFact": {
-    "category": "pharmacology",
-    "fact": "GTN doesn't 'open blocked arteries' — it works mostly by venodilation, dropping preload and reducing the heart's workload. It's not fixing the problem, it's making the problem more survivable until someone with a catheter can."
+    "category": "EMS",
+    "fact": "UK paramedic practitioners trained in alternate care pathways can safely manage many patients without transport — cutting ED burden by up to 50% in some trials. Turns out not everyone needs a hospital. They just need someone who knows what they're doing."
   },
   "tldr": {
-    "date": "2026-09-18",
-    "paperCount": 3,
-    "summary": "• Ambulance Victoria registry data: CPR-induced consciousness in 3.3% of 43,402 OHCA cases, incidence rising annually since 2008, and associated with better survival — a marker of favourable physiology, not a reason to stop.\n• Norwegian NeoBeat newborn resuscitation RCT compromised: anonymous staff video deletions introduced selection bias, and the trial terminated halfway without power to conclude.\n• US EMS data shows sickle cell pain badly under-treated prehospital — only 13.5% of 10,023 encounters got analgesia, with scene contact time ≥20 min the strongest driver of treatment.",
+    "date": "2026-09-19",
+    "paperCount": 5,
+    "summary": "End-of-life direction friction dominates today: a Danish study found 15.7% of suspected-OHCA dispatches involved patients with hospital-issued DNAR orders invisible to dispatchers and crews, and a Japanese survey found half of departments with a termination-of-resuscitation policy applied it to zero cases in a year.\n• Nagoya data on transport destination after arrest were largely null, a 67,871-child systematic review reinforced IV ketamine sedation safety, and US ED boarding for older adults keeps worsening (mean 343 min in 2022, ~501 min with dementia).",
     "highlights": [
       {
-        "id": "10.1016/j.resuscitation.2026.111287",
+        "id": "10.1016/j.resuscitation.2026.111224",
         "pmid": "",
-        "doi": "10.1016/j.resuscitation.2026.111287",
-        "title": "CPR-induced consciousness in OHCA: 16-year Victorian registry trends",
-        "note": "Of 43,402 adult OHCA cases (2008–2024), 1,438 (3.3%) showed CPRIC; annual incidence rose (IRR 1.083, 95% CI 1.07–1.10) across all rhythms, and CPRIC was associated with improved survival to hospital discharge."
+        "doi": "10.1016/j.resuscitation.2026.111224",
+        "title": "Lights and sirens to patients with a hospital DNAR order (Southern Denmark)",
+        "note": "In 15.7% of 1,695 suspected-OHCA dispatches the patient had a physician-issued hospital DNAR order inaccessible to dispatchers and crews; one-day mortality was 90.6% in that group."
       },
       {
-        "id": "10.1016/j.resuscitation.2026.111288",
+        "id": "10.1016/j.resplu.2026.101474",
         "pmid": "",
-        "doi": "10.1016/j.resuscitation.2026.111288",
-        "title": "NeoBeat newborn RCT compromised by anonymous video deletions",
-        "note": "After an anonymous video-deletion opt-out was introduced mid-trial, enrolled newborns showed significantly higher Apgar scores, shorter ventilation and fewer admissions — systematic selection bias, and the trial was terminated halfway without power to conclude on its outcomes."
+        "doi": "10.1016/j.resplu.2026.101474",
+        "title": "Implementation gap in prehospital TOR policies for DNACPR wishes (Japan)",
+        "note": "47% of 561 fire departments had a TOR policy for OHCA with DNACPR wishes, but 52% of departments with evaluable data applied it to zero cases in 2024; policy departments transported fewer ongoing-CPR arrests (46% vs 82%)."
       },
       {
-        "id": "10.1016/j.ajem.2026.09.020",
+        "id": "10.1016/j.resplu.2026.101482",
         "pmid": "",
-        "doi": "10.1016/j.ajem.2026.09.020",
-        "title": "US prehospital sickle cell pain: low analgesia rates nationwide",
-        "note": "Among 10,023 US 9-1-1 ALS encounters for SCD complications (2023), pain scales were documented in 73% but only 13.5% received any analgesia (11.7% opioids); for pain ≥7/10, contact time ≥20 min was associated with ~5× more IV access and ~10× more analgesia/opioids."
+        "doi": "10.1016/j.resplu.2026.101482",
+        "title": "Destination hospital level and OHCA outcomes in Nagoya",
+        "note": "Across 12,663 OHCA transports, critical care centre destination showed no neurological outcome benefit overall, lower one-month survival in non-shockable rhythms (OR 0.66), and a possible imprecise edge in refractory shockable rhythm (19.7% vs 3.3%)."
+      },
+      {
+        "id": "10.1016/j.annemergmed.2026.03.030",
+        "pmid": "",
+        "doi": "10.1016/j.annemergmed.2026.03.030",
+        "title": "Systematic review of paediatric IV ketamine sedation safety (67,871 children)",
+        "note": "No deaths or permanent harm across 20 studies; sentinel events ~1 in 11,558 sedations, serious adverse events 0.34%, predicted modestly by age ≥10, URI and opioid co-administration."
+      },
+      {
+        "id": "10.1016/j.annemergmed.2026.03.011",
+        "pmid": "",
+        "doi": "10.1016/j.annemergmed.2026.03.011",
+        "title": "ED boarding for older adults in the US (2015–2022)",
+        "note": "85% of 4.45 million older-adult admissions boarded ≥2 hours; mean boarding rose from 138 minutes (2018) to 343 minutes (2022), ~501 minutes with Alzheimer's-related dementia."
       }
     ]
   },
   "dailyUpdates": [
+    {
+      "date": "2026-09-19",
+      "papers": [
+        {
+          "id": "10.1016/j.resuscitation.2026.111224",
+          "title": "Emergency response with lights and sirens to patients with a suspected out-of-hospital cardiac arrest and a do-not-attempt-resuscitation order in the hospital record: a one-year observational study",
+          "journal": "Resuscitation",
+          "date": "2026-09-19",
+          "pmid": "",
+          "doi": "10.1016/j.resuscitation.2026.111224",
+          "summary": "One-year regional study of 1,695 lights-and-sirens dispatches for suspected OHCA in Southern Denmark — 15.7% involved a patient with a physician-issued hospital DNAR order that dispatchers and crews couldn't access, one-day mortality was 90.6% in that group, and the authors call for DNAR orders to be visible to emergency dispatch and prehospital providers.",
+          "relevance": "🟡 Medium — Danish register and dispatch infrastructure differs, but the ethics and resource cost of resuscitating patients with documented DNAR orders is a system gap crews here will recognise"
+        },
+        {
+          "id": "10.1016/j.resplu.2026.101474",
+          "title": "Implementation gap in prehospital termination-of-resuscitation policies for out-of-hospital cardiac arrest with do-not-attempt-cardiopulmonary-resuscitation wishes in Japan: a nationwide survey",
+          "journal": "Resuscitation Plus",
+          "date": "2026-09-19",
+          "pmid": "",
+          "doi": "10.1016/j.resplu.2026.101474",
+          "summary": "Nationwide Japanese survey of 561 fire departments — 47% had a prehospital termination-of-resuscitation policy for OHCA with DNACPR wishes, yet 52% of departments with evaluable data applied it to zero cases during 2024 despite encountering eligible patients, and departments with a policy transported far fewer arrests with ongoing CPR (46% vs 82%).",
+          "relevance": "🟡 Medium — Japanese DNACPR legislation limits direct transfer, but the policy-versus-practice implementation gap applies to any TOR guideline including ours under CMG 4"
+        },
+        {
+          "id": "10.1016/j.resplu.2026.101482",
+          "title": "Association between destination hospital level and outcomes in out-of-hospital cardiac arrest patients under a dispatch-guided transport system: a population-based study in Nagoya, Japan",
+          "journal": "Resuscitation Plus",
+          "date": "2026-09-19",
+          "pmid": "",
+          "doi": "10.1016/j.resplu.2026.101482",
+          "summary": "Population-based cohort of 12,663 OHCA transports in Nagoya under a dispatch-guided destination system — transport to critical care medical centres showed no association with favourable one-month neurological outcomes overall, was linked to lower one-month survival in non-shockable rhythms (OR 0.66), and only refractory shockable rhythms showed a possible survival edge (19.7% vs 3.3%, imprecise estimate).",
+          "relevance": "🟡 Medium — Japanese dispatch-guided destination system differs from ACT transport pathways; findings are largely null and the refractory VF signal is hypothesis-generating only"
+        },
+        {
+          "id": "10.1016/j.annemergmed.2026.03.030",
+          "title": "Systematic Review of Pediatric Ketamine in Emergency Department Procedural Sedation: Frequency and Predictors of Adverse Events",
+          "journal": "Annals of Emergency Medicine",
+          "date": "2026-09-19",
+          "pmid": "",
+          "doi": "10.1016/j.annemergmed.2026.03.030",
+          "summary": "Systematic review of 20 studies covering 67,871 children having IV ketamine procedural sedation in EDs — no deaths or permanent adverse outcomes, sentinel events pooled at about 1 in 11,558 sedations, serious adverse events 0.34%, with age ≥10, upper respiratory infection and opioid co-administration modest predictors while ASA status and benzodiazepine co-administration were not.",
+          "relevance": "🟡 Medium — ED-based procedural sedation rather than prehospital practice, but reassuring safety data for a heavily used AP formulary drug"
+        },
+        {
+          "id": "10.1016/j.annemergmed.2026.03.011",
+          "title": "Emergency Department Boarding for Older Adults: The Impact of Geography, Temporal Trends, and Dementia Status",
+          "journal": "Annals of Emergency Medicine",
+          "date": "2026-09-19",
+          "pmid": "",
+          "doi": "10.1016/j.annemergmed.2026.03.011",
+          "summary": "US national survey analysis of 4.45 million admissions of adults aged ≥65 (2015–2022) — 85% boarded ≥2 hours in the ED, mean boarding time rose from 138 minutes in 2018 to 343 minutes in 2022 and roughly 501 minutes for patients with Alzheimer's-related dementia, with the worst growth in metropolitan areas and among those ≥75.",
+          "relevance": "🟡 Medium — US access-block data we can't act on directly, but the off-stretcher delays it describes are familiar at Canberra Hospital"
+        }
+      ]
+    },
     {
       "date": "2026-09-18",
       "papers": [
