@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-09-18T21:20:48Z",
-  "lastUpdatedSydney": "2026-09-19 07:20 AEST",
-  "lastUpdatedDate": "2026-09-19",
+  "lastUpdated": "2026-09-19T21:20:59Z",
+  "lastUpdatedSydney": "2026-09-20 07:20 AEST",
+  "lastUpdatedDate": "2026-09-20",
   "featuredPapers": [
     {
       "id": "10.1016/j.annemergmed.2026.03.030",
@@ -970,52 +970,56 @@
     }
   ],
   "funFact": {
-    "category": "EMS",
-    "fact": "UK paramedic practitioners trained in alternate care pathways can safely manage many patients without transport — cutting ED burden by up to 50% in some trials. Turns out not everyone needs a hospital. They just need someone who knows what they're doing."
+    "category": "pathophysiology",
+    "fact": "At high altitude, hypoxia triggers cerebral vasodilation, which increases intracranial pressure. Diamox works by inducing a metabolic acidosis that forces you to breathe harder. It's hacky, but it works."
   },
   "tldr": {
-    "date": "2026-09-19",
-    "paperCount": 5,
-    "summary": "End-of-life direction friction dominates today: a Danish study found 15.7% of suspected-OHCA dispatches involved patients with hospital-issued DNAR orders invisible to dispatchers and crews, and a Japanese survey found half of departments with a termination-of-resuscitation policy applied it to zero cases in a year.\n• Nagoya data on transport destination after arrest were largely null, a 67,871-child systematic review reinforced IV ketamine sedation safety, and US ED boarding for older adults keeps worsening (mean 343 min in 2022, ~501 min with dementia).",
+    "date": "2026-09-20",
+    "paperCount": 2,
+    "summary": "A thin day — two methodology papers with limited on-road application. A Canadian feasibility cohort found multi-domain post-arrest prognostication data collection only partly achievable (early biomarkers and imaging yes, full six-month battery no), while a Spanish study validated a citizen BLS-knowledge scale.",
     "highlights": [
       {
-        "id": "10.1016/j.resuscitation.2026.111224",
+        "id": "10.1016/j.resplu.2026.101478",
         "pmid": "",
-        "doi": "10.1016/j.resuscitation.2026.111224",
-        "title": "Lights and sirens to patients with a hospital DNAR order (Southern Denmark)",
-        "note": "In 15.7% of 1,695 suspected-OHCA dispatches the patient had a physician-issued hospital DNAR order inaccessible to dispatchers and crews; one-day mortality was 90.6% in that group."
+        "doi": "10.1016/j.resplu.2026.101478",
+        "title": "Feasibility of multi-domain data acquisition after cardiac arrest (Canada)",
+        "note": "In 30 post-arrest adults, day-1 biomarker sampling (97%) and CT/MRI were feasible, but serial transcranial Doppler (77%), day-7 biomarkers (71%) and the complete six-month multidomain battery (33%) fell short; remote or proxy-assisted follow-up improved outcome ascertainment."
       },
       {
-        "id": "10.1016/j.resplu.2026.101474",
+        "id": "10.1016/j.resplu.2026.101481",
         "pmid": "",
-        "doi": "10.1016/j.resplu.2026.101474",
-        "title": "Implementation gap in prehospital TOR policies for DNACPR wishes (Japan)",
-        "note": "47% of 561 fire departments had a TOR policy for OHCA with DNACPR wishes, but 52% of departments with evaluable data applied it to zero cases in 2024; policy departments transported fewer ongoing-CPR arrests (46% vs 82%)."
-      },
-      {
-        "id": "10.1016/j.resplu.2026.101482",
-        "pmid": "",
-        "doi": "10.1016/j.resplu.2026.101482",
-        "title": "Destination hospital level and OHCA outcomes in Nagoya",
-        "note": "Across 12,663 OHCA transports, critical care centre destination showed no neurological outcome benefit overall, lower one-month survival in non-shockable rhythms (OR 0.66), and a possible imprecise edge in refractory shockable rhythm (19.7% vs 3.3%)."
-      },
-      {
-        "id": "10.1016/j.annemergmed.2026.03.030",
-        "pmid": "",
-        "doi": "10.1016/j.annemergmed.2026.03.030",
-        "title": "Systematic review of paediatric IV ketamine sedation safety (67,871 children)",
-        "note": "No deaths or permanent harm across 20 studies; sentinel events ~1 in 11,558 sedations, serious adverse events 0.34%, predicted modestly by age ≥10, URI and opioid co-administration."
-      },
-      {
-        "id": "10.1016/j.annemergmed.2026.03.011",
-        "pmid": "",
-        "doi": "10.1016/j.annemergmed.2026.03.011",
-        "title": "ED boarding for older adults in the US (2015–2022)",
-        "note": "85% of 4.45 million older-adult admissions boarded ≥2 hours; mean boarding rose from 138 minutes (2018) to 343 minutes (2022), ~501 minutes with Alzheimer's-related dementia."
+        "doi": "10.1016/j.resplu.2026.101481",
+        "title": "CONOCES-BLS scale adapted for citizens (Spain)",
+        "note": "Delphi adaptation and pilot of a citizen BLS-knowledge scale showed high content validity (expert agreement above 0.90 on every item, Krippendorff coefficients 0.91–1.0) and adequate internal consistency (Cronbach's alpha 0.82)."
       }
     ]
   },
   "dailyUpdates": [
+    {
+      "date": "2026-09-20",
+      "papers": [
+        {
+          "id": "10.1016/j.resplu.2026.101478",
+          "title": "Feasibility of multi-domain data acquisition in patients at risk for hypoxic-ischemic brain injury following cardiac arrest: a prospective cohort study",
+          "journal": "Resuscitation Plus",
+          "date": "2026-09-20",
+          "pmid": "",
+          "doi": "10.1016/j.resplu.2026.101478",
+          "summary": "Canadian prospective feasibility study testing whether multi-domain prognostication data (biomarkers, transcranial Doppler, EEG, neuroimaging, six-month outcomes) can be collected in 30 adults after cardiac arrest — day-1 biomarkers (97%) and CT/MRI were feasible, but serial transcranial Doppler (77%), day-7 biomarker sampling (71%) and the complete six-month multidomain battery (33%) fell short, with remote or proxy-assisted follow-up improving outcome ascertainment.",
+          "relevance": "🔴 Low — ICU-phase prognostication research methods, nothing actionable prehospital"
+        },
+        {
+          "id": "10.1016/j.resplu.2026.101481",
+          "title": "Adaptation of the CONOCES-BLS scale to citizens: evidence of content validity and preliminary psychometric evaluation",
+          "journal": "Resuscitation Plus",
+          "date": "2026-09-20",
+          "pmid": "",
+          "doi": "10.1016/j.resplu.2026.101481",
+          "summary": "Spanish methodological study adapting the CONOCES-BLS knowledge scale for adult laypersons via Delphi expert consensus and pilot testing — content validity was strong (expert agreement above 0.90 on every item, Krippendorff coefficients 0.91–1.0) and internal consistency adequate (Cronbach's alpha 0.82), supporting its use for assessing community BLS knowledge pending further psychometric work.",
+          "relevance": "🔴 Low — citizen-BLS education instrument, community training relevance only"
+        }
+      ]
+    },
     {
       "date": "2026-09-19",
       "papers": [
