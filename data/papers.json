@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-09-19T21:20:59Z",
-  "lastUpdatedSydney": "2026-09-20 07:20 AEST",
-  "lastUpdatedDate": "2026-09-20",
+  "lastUpdated": "2026-09-20T21:20:10Z",
+  "lastUpdatedSydney": "2026-09-21 07:20 AEST",
+  "lastUpdatedDate": "2026-09-21",
   "featuredPapers": [
     {
       "id": "10.1016/j.annemergmed.2026.03.030",
@@ -970,29 +970,14 @@
     }
   ],
   "funFact": {
-    "category": "pathophysiology",
-    "fact": "At high altitude, hypoxia triggers cerebral vasodilation, which increases intracranial pressure. Diamox works by inducing a metabolic acidosis that forces you to breathe harder. It's hacky, but it works."
+    "category": "cardiac",
+    "fact": "The LAD supplies roughly half the left ventricle's myocardium. Occlusion proximal to the first septal branch is why anterior STEMIs carry such brutal mortality — that's an enormous chunk of heart muscle starving."
   },
   "tldr": {
-    "date": "2026-09-20",
-    "paperCount": 2,
-    "summary": "A thin day — two methodology papers with limited on-road application. A Canadian feasibility cohort found multi-domain post-arrest prognostication data collection only partly achievable (early biomarkers and imaging yes, full six-month battery no), while a Spanish study validated a citizen BLS-knowledge scale.",
-    "highlights": [
-      {
-        "id": "10.1016/j.resplu.2026.101478",
-        "pmid": "",
-        "doi": "10.1016/j.resplu.2026.101478",
-        "title": "Feasibility of multi-domain data acquisition after cardiac arrest (Canada)",
-        "note": "In 30 post-arrest adults, day-1 biomarker sampling (97%) and CT/MRI were feasible, but serial transcranial Doppler (77%), day-7 biomarkers (71%) and the complete six-month multidomain battery (33%) fell short; remote or proxy-assisted follow-up improved outcome ascertainment."
-      },
-      {
-        "id": "10.1016/j.resplu.2026.101481",
-        "pmid": "",
-        "doi": "10.1016/j.resplu.2026.101481",
-        "title": "CONOCES-BLS scale adapted for citizens (Spain)",
-        "note": "Delphi adaptation and pilot of a citizen BLS-knowledge scale showed high content validity (expert agreement above 0.90 on every item, Krippendorff coefficients 0.91–1.0) and adequate internal consistency (Cronbach's alpha 0.82)."
-      }
-    ]
+    "date": "2026-09-21",
+    "paperCount": 0,
+    "summary": "No new papers today.",
+    "highlights": []
   },
   "dailyUpdates": [
     {
