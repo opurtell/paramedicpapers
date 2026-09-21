@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-09-20T21:20:10Z",
-  "lastUpdatedSydney": "2026-09-21 07:20 AEST",
-  "lastUpdatedDate": "2026-09-21",
+  "lastUpdated": "2026-09-21T21:20:21Z",
+  "lastUpdatedSydney": "2026-09-22 07:20 AEST",
+  "lastUpdatedDate": "2026-09-22",
   "featuredPapers": [
     {
       "id": "10.1016/j.annemergmed.2026.03.030",
@@ -37,6 +37,17 @@
       "featuredReason": "Selected for clinical relevance to prehospital practice."
     },
     {
+      "id": "10.1080/10903127.2026.2733964",
+      "title": "Association Between Early Prehospital Administration Antibiotic and 28-Day Mortality in Sepsis",
+      "journal": "Prehospital Emergency Care",
+      "date": "2026-09-22",
+      "pmid": "",
+      "doi": "10.1080/10903127.2026.2733964",
+      "summary": "Thai observational cohort of 364 adults with suspected sepsis testing prehospital antibiotics — prehospital administration was associated with lower adjusted 28-day mortality (ARR 8.9%, 95% CI 0.8–17.1; aOR 0.51) and antibiotics ~125 minutes sooner, but scene times ran 8.5 minutes longer.",
+      "relevance": "🟡 Medium — Single-centre Thai observational design with residual confounding likely; ACTAS CMG 38 (Sepsis) has no prehospital antibiotic step — ceftriaxone is scoped to suspected meningococcal disease (CMG 38A) only, so adoption would need a guideline change.",
+      "featuredReason": "Single-centre Thai observational design with residual confounding likely; ACTAS CMG 38 (Sepsis) has no prehospital antibiotic step — ceftriaxone is scoped to suspected meningococcal disease (CMG 38A) only, so adoption would need a guideline change."
+    },
+    {
       "id": "10.1016/j.resplu.2026.101474",
       "title": "Implementation gap in prehospital termination-of-resuscitation policies for out-of-hospital cardiac arrest with do-not-attempt-cardiopulmonary-resuscitation wishes in Japan: a nationwide survey",
       "journal": "Resuscitation Plus",
@@ -46,17 +57,6 @@
       "summary": "Nationwide Japanese survey of 561 fire departments — 47% had a prehospital termination-of-resuscitation policy for OHCA with DNACPR wishes, yet 52% of departments with evaluable data applied it to zero cases during 2024 despite encountering eligible patients, and departments with a policy transported far fewer arrests with ongoing CPR (46% vs 82%).",
       "relevance": "🟡 Medium — Japanese DNACPR legislation limits direct transfer, but the policy-versus-practice implementation gap applies to any TOR guideline including ours under CMG 4",
       "featuredReason": "Japanese DNACPR legislation limits direct transfer, but the policy-versus-practice implementation gap applies to any TOR guideline including ours under CMG 4"
-    },
-    {
-      "id": "10.1016/j.resplu.2026.101482",
-      "title": "Association between destination hospital level and outcomes in out-of-hospital cardiac arrest patients under a dispatch-guided transport system: a population-based study in Nagoya, Japan",
-      "journal": "Resuscitation Plus",
-      "date": "2026-09-19",
-      "pmid": "",
-      "doi": "10.1016/j.resplu.2026.101482",
-      "summary": "Population-based cohort of 12,663 OHCA transports in Nagoya under a dispatch-guided destination system — transport to critical care medical centres showed no association with favourable one-month neurological outcomes overall, was linked to lower one-month survival in non-shockable rhythms (OR 0.66), and only refractory shockable rhythms showed a possible survival edge (19.7% vs 3.3%, imprecise estimate).",
-      "relevance": "🟡 Medium — Japanese dispatch-guided destination system differs from ACT transport pathways; findings are largely null and the refractory VF signal is hypothesis-generating only",
-      "featuredReason": "Japanese dispatch-guided destination system differs from ACT transport pathways; findings are largely null and the refractory VF signal is hypothesis-generating only"
     }
   ],
   "funFacts": [
@@ -970,16 +970,39 @@
     }
   ],
   "funFact": {
-    "category": "cardiac",
-    "fact": "The LAD supplies roughly half the left ventricle's myocardium. Occlusion proximal to the first septal branch is why anterior STEMIs carry such brutal mortality — that's an enormous chunk of heart muscle starving."
+    "category": "pharmacology",
+    "fact": "Metaraminol is a pure alpha-agonist vasopressor that doesn't need a central line — you can run it through a peripheral cannula. But its slower onset means you'd better anticipate the blood pressure drop, not chase it."
   },
   "tldr": {
-    "date": "2026-09-21",
-    "paperCount": 0,
-    "summary": "No new papers today.",
-    "highlights": []
+    "date": "2026-09-22",
+    "paperCount": 1,
+    "summary": "A quiet sweep dominated by corrigenda, commentaries and keyword false-positives — one substantive paper: a Thai observational cohort associating prehospital antibiotics with lower 28-day mortality in suspected sepsis (adjusted ARR 8.9%, aOR 0.51) at the cost of ~8.5 extra minutes on scene. Single-centre observational, and ACTAS CMG 38 has no antibiotic step, so nothing practice-changing locally yet.",
+    "highlights": [
+      {
+        "id": "10.1080/10903127.2026.2733964",
+        "pmid": "",
+        "doi": "10.1080/10903127.2026.2733964",
+        "title": "Prehospital antibiotics and 28-day mortality in sepsis",
+        "note": "Thai observational cohort of 364 adults with suspected sepsis: prehospital antibiotics were associated with lower adjusted 28-day mortality (ARR 8.9%, 95% CI 0.8–17.1; aOR 0.51) and antibiotics ~125 minutes sooner, but scene times ran 8.5 minutes longer."
+      }
+    ]
   },
   "dailyUpdates": [
+    {
+      "date": "2026-09-22",
+      "papers": [
+        {
+          "id": "10.1080/10903127.2026.2733964",
+          "title": "Association Between Early Prehospital Administration Antibiotic and 28-Day Mortality in Sepsis",
+          "journal": "Prehospital Emergency Care",
+          "date": "2026-09-22",
+          "pmid": "",
+          "doi": "10.1080/10903127.2026.2733964",
+          "summary": "Thai observational cohort of 364 adults with suspected sepsis testing prehospital antibiotics — prehospital administration was associated with lower adjusted 28-day mortality (ARR 8.9%, 95% CI 0.8–17.1; aOR 0.51) and antibiotics ~125 minutes sooner, but scene times ran 8.5 minutes longer.",
+          "relevance": "🟡 Medium — Single-centre Thai observational design with residual confounding likely; ACTAS CMG 38 (Sepsis) has no prehospital antibiotic step — ceftriaxone is scoped to suspected meningococcal disease (CMG 38A) only, so adoption would need a guideline change."
+        }
+      ]
+    },
     {
       "date": "2026-09-20",
       "papers": [
