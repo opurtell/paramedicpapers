@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-09-21T21:20:21Z",
-  "lastUpdatedSydney": "2026-09-22 07:20 AEST",
-  "lastUpdatedDate": "2026-09-22",
+  "lastUpdated": "2026-09-22T21:20:31Z",
+  "lastUpdatedSydney": "2026-09-23 07:20 AEST",
+  "lastUpdatedDate": "2026-09-23",
   "featuredPapers": [
     {
       "id": "10.1016/j.annemergmed.2026.03.030",
@@ -13,17 +13,6 @@
       "summary": "Systematic review of 20 studies covering 67,871 children having IV ketamine procedural sedation in EDs — no deaths or permanent adverse outcomes, sentinel events pooled at about 1 in 11,558 sedations, serious adverse events 0.34%, with age ≥10, upper respiratory infection and opioid co-administration modest predictors while ASA status and benzodiazepine co-administration were not.",
       "relevance": "🟡 Medium — ED-based procedural sedation rather than prehospital practice, but reassuring safety data for a heavily used AP formulary drug",
       "featuredReason": "ED-based procedural sedation rather than prehospital practice, but reassuring safety data for a heavily used AP formulary drug"
-    },
-    {
-      "id": "10.1016/j.resuscitation.2026.111288",
-      "title": "Selection bias introduced in a randomized clinical trial due to employee instigated deletion of newborn resuscitation videos",
-      "journal": "Resuscitation",
-      "date": "2026-09-18",
-      "pmid": "",
-      "doi": "10.1016/j.resuscitation.2026.111288",
-      "summary": "Norwegian analysis of the NeoBeat RCT testing whether anonymous staff deletion of resuscitation videos introduced selection bias — after the anonymous opt-out, enrolled newborns had significantly higher Apgar scores, shorter ventilation and fewer admissions, and the trial was terminated halfway without power to conclude on its outcomes.",
-      "relevance": "🟡 Medium — methodological finding on a neonatal resuscitation RCT rather than a practice change; useful caution for interpreting newborn resus evidence (CMG 5B context).",
-      "featuredReason": "methodological finding on a neonatal resuscitation RCT rather than a practice change; useful caution for interpreting newborn resus evidence (CMG 5B context)."
     },
     {
       "id": "10.1080/10903127.2026.2674263",
@@ -48,15 +37,26 @@
       "featuredReason": "Single-centre Thai observational design with residual confounding likely; ACTAS CMG 38 (Sepsis) has no prehospital antibiotic step — ceftriaxone is scoped to suspected meningococcal disease (CMG 38A) only, so adoption would need a guideline change."
     },
     {
-      "id": "10.1016/j.resplu.2026.101474",
-      "title": "Implementation gap in prehospital termination-of-resuscitation policies for out-of-hospital cardiac arrest with do-not-attempt-cardiopulmonary-resuscitation wishes in Japan: a nationwide survey",
+      "id": "10.1016/j.resplu.2026.101486",
+      "title": "Prehospital management and outcomes of traumatic cardiac arrest in older adults: a French nationwide registry study",
       "journal": "Resuscitation Plus",
-      "date": "2026-09-19",
+      "date": "2026-09-22",
       "pmid": "",
-      "doi": "10.1016/j.resplu.2026.101474",
-      "summary": "Nationwide Japanese survey of 561 fire departments — 47% had a prehospital termination-of-resuscitation policy for OHCA with DNACPR wishes, yet 52% of departments with evaluable data applied it to zero cases during 2024 despite encountering eligible patients, and departments with a policy transported far fewer arrests with ongoing CPR (46% vs 82%).",
-      "relevance": "🟡 Medium — Japanese DNACPR legislation limits direct transfer, but the policy-versus-practice implementation gap applies to any TOR guideline including ours under CMG 4",
-      "featuredReason": "Japanese DNACPR legislation limits direct transfer, but the policy-versus-practice implementation gap applies to any TOR guideline including ours under CMG 4"
+      "doi": "10.1016/j.resplu.2026.101486",
+      "summary": "French national registry study of 5,595 traumatic cardiac arrests comparing older (≥65) with younger adults — older patients achieved ROSC more often (22.5% vs 18.6%) but 30-day survival was lower (0.5% vs 1.2%), leading the authors to argue age alone shouldn't preclude resuscitation though a concurrent medical cause should be sought",
+      "relevance": "🟡 Medium transferability — haemorrhage control and chest-injury care are AP scope (CMG 17), but the interventions studied — prehospital fluid resuscitation and thoracostomy — sit beyond ACTAS practice; the age-based prognosis message transfers, the techniques don't",
+      "featuredReason": "haemorrhage control and chest-injury care are AP scope (CMG 17), but the interventions studied — prehospital fluid resuscitation and thoracostomy — sit beyond ACTAS practice; the age-based prognosis message transfers, the techniques don't"
+    },
+    {
+      "id": "10.1080/10903127.2026.2733969",
+      "title": "Practice Patterns and Performance of Pediatric Air Medical Tracheal Intubation: A National Multisite Cohort Study",
+      "journal": "Prehospital Emergency Care",
+      "date": "2026-09-22",
+      "pmid": "",
+      "doi": "10.1080/10903127.2026.2733969",
+      "summary": "US national cohort of 1,040 paediatric air medical intubations — 86.5% first-pass success overall but only 69.1% in infants under 1, with ketamine the commonest induction agent and substantial site-to-site variation",
+      "relevance": "🟡 Medium transferability — RSI is ICP-only at ACTAS and infants aren't intubated prehospital here; etomidate isn't carried and rocuronium isn't either, so the drug mix is overseas practice — but the infant first-pass numbers are a sharp caution for any advanced paediatric airway pathway",
+      "featuredReason": "RSI is ICP-only at ACTAS and infants aren't intubated prehospital here; etomidate isn't carried and rocuronium isn't either, so the drug mix is overseas practice — but the infant first-pass numbers are a sharp caution for any advanced paediatric airway pathway"
     }
   ],
   "funFacts": [
@@ -970,22 +970,14 @@
     }
   ],
   "funFact": {
-    "category": "pharmacology",
-    "fact": "Metaraminol is a pure alpha-agonist vasopressor that doesn't need a central line — you can run it through a peripheral cannula. But its slower onset means you'd better anticipate the blood pressure drop, not chase it."
+    "category": "anatomy",
+    "fact": "C3, 4, 5 keeps the diaphragm alive. A spinal cord injury above C3 paralyses the diaphragm entirely — these patients are immediately ventilator-dependent. It's one of the few injuries where the first seconds truly determine everything."
   },
   "tldr": {
-    "date": "2026-09-22",
-    "paperCount": 1,
-    "summary": "A quiet sweep dominated by corrigenda, commentaries and keyword false-positives — one substantive paper: a Thai observational cohort associating prehospital antibiotics with lower 28-day mortality in suspected sepsis (adjusted ARR 8.9%, aOR 0.51) at the cost of ~8.5 extra minutes on scene. Single-centre observational, and ACTAS CMG 38 has no antibiotic step, so nothing practice-changing locally yet.",
-    "highlights": [
-      {
-        "id": "10.1080/10903127.2026.2733964",
-        "pmid": "",
-        "doi": "10.1080/10903127.2026.2733964",
-        "title": "Prehospital antibiotics and 28-day mortality in sepsis",
-        "note": "Thai observational cohort of 364 adults with suspected sepsis: prehospital antibiotics were associated with lower adjusted 28-day mortality (ARR 8.9%, 95% CI 0.8–17.1; aOR 0.51) and antibiotics ~125 minutes sooner, but scene times ran 8.5 minutes longer."
-      }
-    ]
+    "date": "2026-09-23",
+    "paperCount": 0,
+    "summary": "No new papers today.",
+    "highlights": []
   },
   "dailyUpdates": [
     {
@@ -1000,6 +992,176 @@
           "doi": "10.1080/10903127.2026.2733964",
           "summary": "Thai observational cohort of 364 adults with suspected sepsis testing prehospital antibiotics — prehospital administration was associated with lower adjusted 28-day mortality (ARR 8.9%, 95% CI 0.8–17.1; aOR 0.51) and antibiotics ~125 minutes sooner, but scene times ran 8.5 minutes longer.",
           "relevance": "🟡 Medium — Single-centre Thai observational design with residual confounding likely; ACTAS CMG 38 (Sepsis) has no prehospital antibiotic step — ceftriaxone is scoped to suspected meningococcal disease (CMG 38A) only, so adoption would need a guideline change."
+        },
+        {
+          "id": "10.1016/j.resplu.2026.101486",
+          "title": "Prehospital management and outcomes of traumatic cardiac arrest in older adults: a French nationwide registry study",
+          "journal": "Resuscitation Plus",
+          "date": "2026-09-22",
+          "pmid": "",
+          "doi": "10.1016/j.resplu.2026.101486",
+          "summary": "French national registry study of 5,595 traumatic cardiac arrests comparing older (≥65) with younger adults — older patients achieved ROSC more often (22.5% vs 18.6%) but 30-day survival was lower (0.5% vs 1.2%), leading the authors to argue age alone shouldn't preclude resuscitation though a concurrent medical cause should be sought",
+          "relevance": "🟡 Medium transferability — haemorrhage control and chest-injury care are AP scope (CMG 17), but the interventions studied — prehospital fluid resuscitation and thoracostomy — sit beyond ACTAS practice; the age-based prognosis message transfers, the techniques don't"
+        },
+        {
+          "id": "10.1016/j.resplu.2026.101485",
+          "title": "Association of a smartphone-based CPR assistance system with prehospital outcomes in out-of-hospital cardiac arrest: a pre–post observational study in Bangkok",
+          "journal": "Resuscitation Plus",
+          "date": "2026-09-22",
+          "pmid": "",
+          "doi": "10.1016/j.resplu.2026.101485",
+          "summary": "Before–after study of 615 OHCA patients after the MySOS smartphone bystander-CPR app launched in Bangkok — post-implementation ROSC probability rose ~6 percentage points, but 24-hour and discharge survival showed no significant improvement",
+          "relevance": "🟡 Medium transferability — app-based bystander alerting isn't part of ACTAS's extracted pathways — relevant to local OHCA system debates rather than on-road practice, and the authors themselves caution the association isn't causal"
+        },
+        {
+          "id": "10.1016/j.resplu.2026.101484",
+          "title": "Differences in the rates of bystander cardiopulmonary resuscitation for out-of-hospital cardiac arrest resulting in favourable neurological outcomes according to the regional deprivation index",
+          "journal": "Resuscitation Plus",
+          "date": "2026-09-22",
+          "pmid": "",
+          "doi": "10.1016/j.resplu.2026.101484",
+          "summary": "Analysis of 184,727 Korean OHCA cases found bystander CPR rates were lowest in the most deprived regions, yet its association with good neurological outcome was strongest there (aOR 1.56 vs 1.31–1.34 in better-off regions)",
+          "relevance": "🟡 Medium transferability — pure epidemiology with no practice change for ACTAS, but a useful equity lens for Australian community CPR programs targeting disadvantaged suburbs"
+        },
+        {
+          "id": "10.1016/j.resplu.2026.101483",
+          "title": "In-hospital cardiac arrest in a resource-limited emergency department in Somalia: Outcomes and priorities for resuscitation system development",
+          "journal": "Resuscitation Plus",
+          "date": "2026-09-22",
+          "pmid": "",
+          "doi": "10.1016/j.resplu.2026.101483",
+          "summary": "Prospective study of 240 in-hospital arrests in a Mogadishu ED — ROSC 5.8%, survival past 24 hours 1.3%, with CPR initiation documented in only 15% of cases, underlining system gaps rather than treatment questions",
+          "relevance": "🔴 Low transferability — resource-limited hospital setting with a trauma-dominated case mix — little transfers to a well-resourced two-tier ambulance service"
+        },
+        {
+          "id": "10.1080/10903127.2026.2733966",
+          "title": "A Causal Model for Prehospital Blood Transfusion and Mortality in Traumatic Hemorrhagic Shock",
+          "journal": "Prehospital Emergency Care",
+          "date": "2026-09-22",
+          "pmid": "",
+          "doi": "10.1080/10903127.2026.2733966",
+          "summary": "Methodology paper building an expert-refined causal model for prehospital blood transfusion trials in traumatic haemorrhagic shock — maps confounders (system times, training, units available) and mediators so future studies can actually isolate a treatment effect against crystalloid",
+          "relevance": "🟡 Medium transferability — blood products aren't in the extracted ACTAS formulary — would need a guideline change to adopt; QAS, AV, SJWA and NSWA already run prehospital blood programs, so how this evidence matures matters interstate"
+        },
+        {
+          "id": "10.1080/10903127.2026.2727591",
+          "title": "Prehospital Whole Blood Transfusion During Medically Directed Rescue of an Entrapped Trauma Patient: A Case Report",
+          "journal": "Prehospital Emergency Care",
+          "date": "2026-09-22",
+          "pmid": "",
+          "doi": "10.1080/10903127.2026.2727591",
+          "summary": "Case report of an entrapped trauma patient after a motor vehicle collision receiving advanced airway management, finger thoracostomies and multiple units of low-titre O-positive whole blood during a prolonged multi-agency extrication — the blood came via the regional prehospital program supporting a physician response team",
+          "relevance": "🟡 Medium transferability — whole blood isn't carried by ACTAS (it is by QAS, AV, SJWA and NSWA); the extended-extrication field-care picture is worth reading for major-incident planning"
+        },
+        {
+          "id": "10.1080/10903127.2026.2733969",
+          "title": "Practice Patterns and Performance of Pediatric Air Medical Tracheal Intubation: A National Multisite Cohort Study",
+          "journal": "Prehospital Emergency Care",
+          "date": "2026-09-22",
+          "pmid": "",
+          "doi": "10.1080/10903127.2026.2733969",
+          "summary": "US national cohort of 1,040 paediatric air medical intubations — 86.5% first-pass success overall but only 69.1% in infants under 1, with ketamine the commonest induction agent and substantial site-to-site variation",
+          "relevance": "🟡 Medium transferability — RSI is ICP-only at ACTAS and infants aren't intubated prehospital here; etomidate isn't carried and rocuronium isn't either, so the drug mix is overseas practice — but the infant first-pass numbers are a sharp caution for any advanced paediatric airway pathway"
+        },
+        {
+          "id": "42754264",
+          "title": "Efficacy and Safety of Ventilator Assisted Preoxygenation for Intubation in Two Australian Emergency Departments: A Retrospective Cohort Study",
+          "journal": "Emergency Medicine Australasia",
+          "date": "2026-09-22",
+          "pmid": "42754264",
+          "doi": "10.1111/1742-6723.70345",
+          "summary": "Australian retrospective cohort of 116 patients intubated with ventilator-assisted preoxygenation (VAPOX) in two EDs — 78% achieved first-pass success without hypoxaemia, but half had at least one complication and 36% became hypotensive after intubation",
+          "relevance": "🟢 High transferability — Australian data directly relevant to preoxygenation before intubation (CMG 3B, ICP-only) — VAPOX is an ED ventilator setup, but the oxygenation physiology and complication profile inform how ICPs prep a physiologically difficult airway"
+        },
+        {
+          "id": "10.1016/j.resplu.2026.101487",
+          "title": "Quantification of blood-based neurovascular unit biomarkers: an analytical platform comparison study",
+          "journal": "Resuscitation Plus",
+          "date": "2026-09-22",
+          "pmid": "",
+          "doi": "10.1016/j.resplu.2026.101487",
+          "summary": "Platform-comparison study of post-arrest HIBI biomarkers (GFAP, Nf-L, tau, UCH-L1) — lab-grade analyser results correlated highly with each other, but the point-of-care i-STAT agreed poorly, so prognostication thresholds can't be shared across devices",
+          "relevance": "🟡 Medium transferability — prognostication happens hospital-side after ACTAS transports ROSC patients (CMG 4A) — useful background on why biomarker numbers aren't portable, not road-practice changing"
+        },
+        {
+          "id": "10.1016/j.annemergmed.2026.04.009",
+          "title": "SGLT-2 Use and Hypoglycemic Ketoacidosis",
+          "journal": "Annals of Emergency Medicine",
+          "date": "2026-09-22",
+          "pmid": "",
+          "doi": "10.1016/j.annemergmed.2026.04.009",
+          "summary": "Case report of severe hypoglycaemic ketoacidosis in an SGLT2 inhibitor user requiring insulin — a reminder these agents can produce ketosis with atypical glucose readings that muddle the diabetic-emergencies picture",
+          "relevance": "🟢 High transferability — no new drug or skill needed — pure recognition: a growing number of patients are on SGLT2 inhibitors, and a BGL that doesn't fit the picture (CMG 10) deserves a second look"
+        },
+        {
+          "id": "10.1080/10903127.2026.2728128",
+          "title": "Medical Management of Aortic Emergencies in Critical Care Transport",
+          "journal": "Prehospital Emergency Care",
+          "date": "2026-09-22",
+          "pmid": "",
+          "doi": "10.1080/10903127.2026.2728128",
+          "summary": "Cohort of 1,530 aortic emergencies in US critical care transport — esmolol, labetalol and nicardipine strategies hit HR/BP targets at similar rates, with esmolol alone showing the highest hypotension incidence (9.3%) and labetalol alone the lowest (2.1%)",
+          "relevance": "🔴 Low transferability — critical-care transport scope built on infusions; beta-blockers aren't in the extracted ACTAS formulary (only QAS carries them interstate) — background awareness only"
+        },
+        {
+          "id": "10.1080/10903127.2026.2728131",
+          "title": "Management of Patients with Medetomidine Withdrawal During Interfacility Transfer",
+          "journal": "Prehospital Emergency Care",
+          "date": "2026-09-22",
+          "pmid": "",
+          "doi": "10.1080/10903127.2026.2728131",
+          "summary": "Cohort of 100 interfacility transfers on dexmedetomidine infusions for medetomidine withdrawal — transports were largely uncomplicated but profound hypertension was common (39%), reflecting the growing US opioid-supply adulterant problem",
+          "relevance": "🔴 Low transferability — dexmedetomidine isn't carried by ACTAS and medetomidine adulteration is a US drug-supply phenomenon — relevant only if such an infused patient ever moves through ACT interfacility transfer"
+        },
+        {
+          "id": "42750219",
+          "title": "Intranasal Dexmedetomidine for Paediatric Procedural Sedation in the Emergency Department: A Single‐Centre Retrospective Observational Cohort Study",
+          "journal": "Emergency Medicine Australasia",
+          "date": "2026-09-22",
+          "pmid": "42750219",
+          "doi": "10.1111/1742-6723.70346",
+          "summary": "Townsville cohort of 114 children given intranasal dexmedetomidine for ED procedural sedation — effective as a sole agent in 78%, adverse events in 13% (mostly mild bradycardia), but ED stays ran long at a median 395 minutes",
+          "relevance": "🔴 Low transferability — intranasal dexmedetomidine isn't in the ACTAS formulary and procedural sedation stays in ED hands — interesting Australian evidence should a scope debate ever arrive"
+        },
+        {
+          "id": "10.1080/10903127.2026.2719958",
+          "title": "Redesigning 9-1-1 Paramedic Pathways: Evaluation of the IMPACC Model of Care",
+          "journal": "Prehospital Emergency Care",
+          "date": "2026-09-22",
+          "pmid": "",
+          "doi": "10.1080/10903127.2026.2719958",
+          "summary": "Evaluation of 7,382 encounters under Toronto's IMPACC model, which lets specially trained paramedics redirect lower-acuity 911 callers — activated encounters had transport rates of 36% vs 82% for others (still 43% vs 79% after matching) but added roughly 24 minutes on scene, with 4% re-contact at 72 hours",
+          "relevance": "🟡 Medium transferability — treat-and-refer isn't in ACTAS's extracted model — but if the ACT ever debates widening paramedic-led pathways for low-acuity triple-zero callers, this is the strongest implementation evidence yet, warts and all"
+        },
+        {
+          "id": "10.1080/10903127.2026.2735429",
+          "title": "Differences in EMS Calls, Delays, and Payer Types in U.S. Southern Border Counties and Non-Border Counties",
+          "journal": "Prehospital Emergency Care",
+          "date": "2026-09-22",
+          "pmid": "",
+          "doi": "10.1080/10903127.2026.2735429",
+          "summary": "Comparison of 421,877 EMS encounters in US border versus matched non-border counties — border areas carried more severe trauma and environmental exposures (25.5% vs 8.2%) alongside larger response and scene delays",
+          "relevance": "🔴 Low transferability — US border-specific system pressures with no Australian analogue — descriptive interest only"
+        },
+        {
+          "id": "10.1111/1742-6723.70343",
+          "title": "Medicolegal Statements by Emergency Clinicians: ‘A How’ to Guide",
+          "journal": "Emergency Medicine Australasia",
+          "date": "2026-09-22",
+          "pmid": "",
+          "doi": "10.1111/1742-6723.70343",
+          "summary": "Practical guide on the statement types Australian emergency clinicians may be asked to provide for police, coroners and criminal proceedings — they're statements of fact rather than opinion, and structure and clarity matter",
+          "relevance": "🟢 High transferability — directly useful for Australian paramedics — medicolegal statements are a real part of the job, and Michael Eburn writes from deep ambulance-law knowledge"
+        },
+        {
+          "id": "42755198",
+          "title": "The Once‐Conventional 48‐h Elective Cardioversion Threshold for “Recent‐Onset” Atrial Fibrillation Is No Longer Recommended",
+          "journal": "Emergency Medicine Australasia",
+          "date": "2026-09-22",
+          "pmid": "42755198",
+          "doi": "10.1111/1742-6723.70351",
+          "summary": "EMA commentary arguing the once-conventional 48-hour elective cardioversion threshold for recent-onset atrial fibrillation is no longer supported",
+          "relevance": "🟡 Medium transferability — cardioversion is AP scope, but this is an ED-practice argument rather than a prehospital study — worth tracking where Australian EDs land before any guideline ripple reaches ambulance CMGs"
         }
       ]
     },
@@ -4390,59 +4552,55 @@
     }
   ],
   "weeklyTldr": {
-    "dateRange": "8 – 15 Sep 2026",
-    "summary": "Handover doesn't wreck CPR quality — compression fraction and rate held at guideline targets through the paramedic-to-ED transition in a 35-case observational study\nMost Victorian illicit-drug deaths happen out of hospital: 67% of 46 fatal EDNAV registry cases arrested prehospital, with near-universal polysubstance exposure (91%)\nHFNO cut intubation rates versus conventional oxygen but not versus NIV in ED respiratory failure — no clear edge in COPD or acute heart failure\nFewer than half of surveyed Queensland ED clinicians could recall maximum local anaesthetic doses, and only 10.5% knew the lipid emulsion regimen for LAST\nDubbo's embedded ultra-low acuity pathway halved did-not-wait rates (14.2%→6.9%) and cut ED length of stay by ~52 minutes",
+    "dateRange": "15–22 September 2026",
+    "summary": "Older adults with traumatic cardiac arrest achieve ROSC more often than younger patients but rarely survive to 30 days (0.5%) — age alone shouldn't stop resuscitation, but look hard for a medical cause\nBystander CPR pays off most in the most disadvantaged regions, exactly where it's delivered least (Korean registry, 184,727 cases)\nBangkok's smartphone bystander-CPR app lifted ROSC rates but didn't move 24-hour or discharge survival\nAustralian ED data on ventilator-assisted preoxygenation: hypoxia-free first-pass intubation in 78%, but half of patients had a complication\nDon't miss the EMA guide on writing medicolegal statements — facts only, structure matters",
     "highlights": [
       {
-        "text": "Handover doesn't wreck CPR quality — compression fraction and rate held at guideline targets through the paramedic-to-ED transition in a 35-case observational study",
-        "id": "10.1080/10903127.2026.2731188"
+        "text": "Older adults with traumatic cardiac arrest achieve ROSC more often than younger patients but rarely survive to 30 days (0.5%) — age alone shouldn't stop resuscitation, but look hard for a medical cause",
+        "id": "10.1016/j.resplu.2026.101486"
       },
       {
-        "text": "Most Victorian illicit-drug deaths happen out of hospital: 67% of 46 fatal EDNAV registry cases arrested prehospital, with near-universal polysubstance exposure (91%)",
-        "id": "42716535"
+        "text": "Bystander CPR pays off most in the most disadvantaged regions, exactly where it's delivered least (Korean registry, 184,727 cases)",
+        "id": "10.1016/j.resplu.2026.101484"
       },
       {
-        "text": "HFNO cut intubation rates versus conventional oxygen but not versus NIV in ED respiratory failure — no clear edge in COPD or acute heart failure",
-        "id": "42728228"
-      },
-      {
-        "text": "Dubbo's embedded ultra-low acuity pathway halved did-not-wait rates (14.2%→6.9%) and cut ED length of stay by ~52 minutes",
-        "id": "42728236"
+        "text": "Australian ED data on ventilator-assisted preoxygenation: hypoxia-free first-pass intubation in 78%, but half of patients had a complication",
+        "id": "42754264"
       }
     ],
     "topPicks": [
       {
-        "id": "10.1080/10903127.2026.2731188",
-        "title": "Cardiopulmonary resuscitation quality during the transition in care from paramedic services to emergency department teams",
-        "authors": "Victoria Myers, Ian R Drennan, Steve Lin, et al.",
-        "journal": "Prehospital Emergency Care",
-        "summary": "Observational study of 35 OHCA transfers tracking CPR quality across the paramedic-to-ED handover — chest compression fraction (89–92%) and rate stayed guideline-compliant in every interval with no deterioration at transition, though compression depth was significantly deeper during paramedic intervals.",
-        "relevance": "🟢 High transferability — direct evidence on paramedic-delivered CPR at handover, mapping to CMG 4 and everyday AP practice",
+        "id": "10.1016/j.resplu.2026.101486",
+        "title": "Prehospital management and outcomes of traumatic cardiac arrest in older adults: a French nationwide registry study",
+        "authors": "Axel Benhamed, Baptiste Morcel, Jean-Stephane David, et al.",
+        "journal": "Resuscitation Plus",
+        "summary": "French national registry study of 5,595 traumatic cardiac arrests comparing older (≥65) with younger adults — older patients achieved ROSC more often (22.5% vs 18.6%) but 30-day survival was lower (0.5% vs 1.2%), leading the authors to argue age alone shouldn't preclude resuscitation though a concurrent medical cause should be sought",
+        "relevance": "🟡 Medium transferability — haemorrhage control and chest-injury care are AP scope (CMG 17), but the interventions studied — prehospital fluid resuscitation and thoracostomy — sit beyond ACTAS practice; the age-based prognosis message transfers, the techniques don't",
         "pmid": "",
-        "doi": "10.1080/10903127.2026.2731188",
-        "featuredReason": "Rare direct evidence that resuscitation quality survives the paramedic-to-ED handover — reassuring for crews, and the deeper prehospital compressions are a conversation starter at every handover."
+        "doi": "10.1016/j.resplu.2026.101486",
+        "featuredReason": "The largest registry look yet at how age changes traumatic arrest — ROSC is commoner than you'd think, 30-day survival is sobering. The takeaway for crews: don't write the older patient off, but hunt hard for a medical cause of the arrest."
       },
       {
-        "id": "42716535",
-        "title": "Toxicological and Clinical Characteristics of Fatal Cases in the Emerging Drugs Network of Australia—Victoria (EDNAV) Clinical Registry 2020–2025",
-        "authors": "James White, Sarah J. Hampton, Shaun Greene",
+        "id": "10.1111/1742-6723.70343",
+        "title": "Medicolegal Statements by Emergency Clinicians: ‘A How’ to Guide",
+        "authors": "Anne‐Maree Kelly, Michael Eburn",
         "journal": "Emergency Medicine Australasia",
-        "summary": "Case series of 46 deaths in Victoria's EDNAV toxicosurveillance registry (2020–2025) — 67% had out-of-hospital cardiac arrest, 91% were polysubstance with mixed stimulant–sedative patterns most common (methamphetamine 54%, heroin 52%), and hypoxic brain injury was the most frequent terminal complication.",
-        "relevance": "🟢 High transferability — Australian data on the arrests paramedics actually attend; naloxone alone won't reverse mixed overdoses",
-        "pmid": "42716535",
-        "doi": "10.1111/1742-6723.70347",
-        "featuredReason": "Two-thirds of these deaths arrested before reaching hospital — the overdose patients paramedics meet first are the ones most likely to die, and most carried a mix of stimulants and sedatives that naloxone alone won't fix."
+        "summary": "Practical guide on the statement types Australian emergency clinicians may be asked to provide for police, coroners and criminal proceedings — they're statements of fact rather than opinion, and structure and clarity matter",
+        "relevance": "🟢 High transferability — directly useful for Australian paramedics — medicolegal statements are a real part of the job, and Michael Eburn writes from deep ambulance-law knowledge",
+        "pmid": "",
+        "doi": "10.1111/1742-6723.70343",
+        "featuredReason": "Writing statements for the coroner or police is a real, under-taught part of paramedic work. Short, practical, and written with the Australian legal context in mind."
       },
       {
-        "id": "42728228",
-        "title": "High‐Flow Nasal Oxygen Versus Conventional Oxygen Therapy and Non‐Invasive Ventilation for Acute Respiratory Failure in the Emergency Department: A Systematic Review and Meta‐Analysis",
-        "authors": "Rupert Phillips, Adrianna Klejnotowska, Harry Claxton, et al.",
-        "journal": "Emergency Medicine Australasia",
-        "summary": "Systematic review and meta-analysis of 17 RCTs (1,955 patients) comparing high-flow nasal oxygen with conventional oxygen and NIV for acute respiratory failure in the ED — HFNO reduced intubation versus conventional oxygen (RR 0.61) but not versus NIV, with no clear benefit over either in COPD or acute heart failure.",
-        "relevance": "🟡 Medium transferability — ED-based evidence on the respiratory distress patients we hand over on CPAP",
-        "pmid": "42728228",
-        "doi": "10.1111/1742-6723.70350",
-        "featuredReason": "Practice-shaping meta-analysis from an Australian journal clarifying exactly where HFNO sits against CPAP and NIV — useful context for every severe respiratory distress handover."
+        "id": "10.1080/10903127.2026.2719958",
+        "title": "Redesigning 9-1-1 Paramedic Pathways: Evaluation of the IMPACC Model of Care",
+        "authors": "Walter Tavares, Yousif Saad, Doris Xu, et al.",
+        "journal": "Prehospital Emergency Care",
+        "summary": "Evaluation of 7,382 encounters under Toronto's IMPACC model, which lets specially trained paramedics redirect lower-acuity 911 callers — activated encounters had transport rates of 36% vs 82% for others (still 43% vs 79% after matching) but added roughly 24 minutes on scene, with 4% re-contact at 72 hours",
+        "relevance": "🟡 Medium transferability — treat-and-refer isn't in ACTAS's extracted model — but if the ACT ever debates widening paramedic-led pathways for low-acuity triple-zero callers, this is the strongest implementation evidence yet, warts and all",
+        "pmid": "",
+        "doi": "10.1080/10903127.2026.2719958",
+        "featuredReason": "The best-described treat-and-refer model yet — real transport savings but a genuine scene-time cost, and honest about paramedic-level variation. The clearest evidence base available if Australian services ever debate widening paramedic disposition options."
       }
     ]
   }
