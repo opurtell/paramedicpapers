@@ -1,18 +1,18 @@
 {
-  "lastUpdated": "2026-09-22T21:20:31Z",
-  "lastUpdatedSydney": "2026-09-23 07:20 AEST",
-  "lastUpdatedDate": "2026-09-23",
+  "lastUpdated": "2026-09-23T21:20:42Z",
+  "lastUpdatedSydney": "2026-09-24 07:20 AEST",
+  "lastUpdatedDate": "2026-09-24",
   "featuredPapers": [
     {
-      "id": "10.1016/j.annemergmed.2026.03.030",
-      "title": "Systematic Review of Pediatric Ketamine in Emergency Department Procedural Sedation: Frequency and Predictors of Adverse Events",
-      "journal": "Annals of Emergency Medicine",
-      "date": "2026-09-19",
+      "id": "10.1016/j.resuscitation.2026.111305",
+      "title": "Barriers to dispatcher-assisted CPR are associated with delayed bystander CPR and worse outcomes in out-of-hospital cardiac arrest: a retrospective cohort study",
+      "journal": "Resuscitation",
+      "date": "2026-09-24",
       "pmid": "",
-      "doi": "10.1016/j.annemergmed.2026.03.030",
-      "summary": "Systematic review of 20 studies covering 67,871 children having IV ketamine procedural sedation in EDs — no deaths or permanent adverse outcomes, sentinel events pooled at about 1 in 11,558 sedations, serious adverse events 0.34%, with age ≥10, upper respiratory infection and opioid co-administration modest predictors while ASA status and benzodiazepine co-administration were not.",
-      "relevance": "🟡 Medium — ED-based procedural sedation rather than prehospital practice, but reassuring safety data for a heavily used AP formulary drug",
-      "featuredReason": "ED-based procedural sedation rather than prehospital practice, but reassuring safety data for a heavily used AP formulary drug"
+      "doi": "10.1016/j.resuscitation.2026.111305",
+      "summary": "Retrospective cohort of 3,263 transcribed Swedish 112 calls linked to the national cardiac arrest registry quantified barriers to dispatcher-assisted CPR after the dispatcher recognised arrest — 43.7% of calls hit at least one barrier (commonest: inability to move the patient), bystander CPR reached 85% in barrier-free calls but stayed below 50% with three or more, and any barrier was associated with lower ROSC (adjusted RR 0.89) and 30-day survival (adjusted RR 0.57).",
+      "relevance": "🟢 High — no new drugs or skills, pure call-handling and bystander CPR quality improvement any Australian service, ACTAS included, can act on in dispatch protocols",
+      "featuredReason": "no new drugs or skills, pure call-handling and bystander CPR quality improvement any Australian service, ACTAS included, can act on in dispatch protocols"
     },
     {
       "id": "10.1080/10903127.2026.2674263",
@@ -970,16 +970,73 @@
     }
   ],
   "funFact": {
-    "category": "anatomy",
-    "fact": "C3, 4, 5 keeps the diaphragm alive. A spinal cord injury above C3 paralyses the diaphragm entirely — these patients are immediately ventilator-dependent. It's one of the few injuries where the first seconds truly determine everything."
+    "category": "resuscitation",
+    "fact": "The log roll was gospel for spinal immobilisation for decades — but recent evidence says manual in-line stabilisation with a scoop stretcher actually causes less spinal movement. Sometimes the thing we've done forever is the wrong thing."
   },
   "tldr": {
-    "date": "2026-09-23",
-    "paperCount": 0,
-    "summary": "No new papers today.",
-    "highlights": []
+    "date": "2026-09-24",
+    "paperCount": 3,
+    "summary": "• Swedish 3,263-call analysis: barriers to dispatcher-assisted CPR after arrest recognition are common (43.7% of calls) and linked to delayed bystander CPR, lower ROSC (adj RR 0.89) and roughly half the 30-day survival (adj RR 0.57)\n• Night-time human-supervised drone AED delivery matched daytime flight times with zero safety incidents across 24 flights, though pilots reported higher cognitive workload after dark\n• Qualitative needs assessment in Hawassa, Ethiopia: governance and accountability gaps — not just resources — leave prehospital care functioning as interfacility transport",
+    "highlights": [
+      {
+        "id": "10.1016/j.resuscitation.2026.111305",
+        "pmid": "",
+        "doi": "10.1016/j.resuscitation.2026.111305",
+        "title": "Barriers to dispatcher-assisted CPR delay bystander CPR and worsen OHCA outcomes",
+        "note": "Retrospective cohort of 3,263 transcribed Swedish 112 calls: 43.7% had ≥1 barrier to DA-CPR after dispatcher recognition (commonest: inability to move the patient); bystander CPR reached 85% in barrier-free calls but stayed below 50% with ≥3 barriers, and any barrier was associated with lower ROSC (adj RR 0.89) and 30-day survival (adj RR 0.57)."
+      },
+      {
+        "id": "10.1016/j.resplu.2026.101457",
+        "pmid": "",
+        "doi": "10.1016/j.resplu.2026.101457",
+        "title": "Nighttime drone-delivered AEDs: feasibility study",
+        "note": "24 controlled drone flights delivering a 480 g CellAED over 877 m: all completed without safety incidents, night flight times matched day (mean ~140 s vs ~136 s, p=0.43), but pilots reported markedly higher cognitive workload and environmental complexity during nighttime operations."
+      },
+      {
+        "id": "10.1016/j.surg.2026.110564",
+        "pmid": "",
+        "doi": "10.1016/j.surg.2026.110564",
+        "title": "Governance gaps in prehospital care: Hawassa, Ethiopia",
+        "note": "Qualitative needs assessment (15 interviews with EMS and health bureau leaders, WHO assessment tool) identified six recurring barriers — infrastructure, medicines/equipment, communication, community perceptions, workforce, and governance as the cross-cutting barrier — leaving services functioning as interfacility transport rather than true prehospital care."
+      }
+    ]
   },
   "dailyUpdates": [
+    {
+      "date": "2026-09-24",
+      "papers": [
+        {
+          "id": "10.1016/j.resuscitation.2026.111305",
+          "title": "Barriers to dispatcher-assisted CPR are associated with delayed bystander CPR and worse outcomes in out-of-hospital cardiac arrest: a retrospective cohort study",
+          "journal": "Resuscitation",
+          "date": "2026-09-24",
+          "pmid": "",
+          "doi": "10.1016/j.resuscitation.2026.111305",
+          "summary": "Retrospective cohort of 3,263 transcribed Swedish 112 calls linked to the national cardiac arrest registry quantified barriers to dispatcher-assisted CPR after the dispatcher recognised arrest — 43.7% of calls hit at least one barrier (commonest: inability to move the patient), bystander CPR reached 85% in barrier-free calls but stayed below 50% with three or more, and any barrier was associated with lower ROSC (adjusted RR 0.89) and 30-day survival (adjusted RR 0.57).",
+          "relevance": "🟢 High — no new drugs or skills, pure call-handling and bystander CPR quality improvement any Australian service, ACTAS included, can act on in dispatch protocols"
+        },
+        {
+          "id": "10.1016/j.resplu.2026.101457",
+          "title": "Nighttime human-supervised drone-delivered automated external defibrillators: a quasi-experimental mixed-methods feasibility study",
+          "journal": "Resuscitation Plus",
+          "date": "2026-09-24",
+          "pmid": "",
+          "doi": "10.1016/j.resplu.2026.101457",
+          "summary": "Quasi-experimental mixed-methods study of 24 human-supervised drone flights delivering a 480 g CellAED over 877 m in a semi-urban area — all flights completed without safety incidents and night flight times matched day (mean ~140 s vs ~136 s, p=0.43), though pilots reported markedly higher cognitive workload and environmental complexity after dark.",
+          "relevance": "🟡 Medium — promising OHCA response tech but only proven under controlled early-night, open-area conditions; not an ACTAS capability, would be a system-level procurement and regulatory step"
+        },
+        {
+          "id": "10.1016/j.surg.2026.110564",
+          "title": "When ambulances are not enough: An interview-based needs assessment of governance and accountability gaps in prehospital emergency care in Hawassa, Ethiopia",
+          "journal": "Surgery",
+          "date": "2026-09-24",
+          "pmid": "",
+          "doi": "10.1016/j.surg.2026.110564",
+          "summary": "Qualitative needs assessment using the WHO prehospital assessment tool across 15 interviews with EMS and health bureau leaders in Hawassa, Ethiopia identified six recurring barriers — infrastructure, medicines/equipment, communication, community perceptions, workforce and, cutting across all of them, unclear governance and accountability — leaving services functioning as interfacility transport rather than true prehospital care.",
+          "relevance": "🔴 Low — valuable LMIC systems insight but nothing applicable to ACTAS operations or an established governance structure"
+        }
+      ]
+    },
     {
       "date": "2026-09-22",
       "papers": [
