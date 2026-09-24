@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-09-23T21:20:42Z",
-  "lastUpdatedSydney": "2026-09-24 07:20 AEST",
-  "lastUpdatedDate": "2026-09-24",
+  "lastUpdated": "2026-09-24T21:20:53Z",
+  "lastUpdatedSydney": "2026-09-25 07:20 AEST",
+  "lastUpdatedDate": "2026-09-25",
   "featuredPapers": [
     {
       "id": "10.1016/j.resuscitation.2026.111305",
@@ -26,6 +26,28 @@
       "featuredReason": "Selected for clinical relevance to prehospital practice."
     },
     {
+      "id": "10.1016/j.resuscitation.2026.111306",
+      "title": "Association between the first post-resuscitation partial pressure of arterial carbon dioxide and neurologic outcomes in children with out-of-hospital cardiac arrest: a multicenter retrospective cohort study",
+      "journal": "Resuscitation",
+      "date": "2026-09-25",
+      "pmid": "",
+      "doi": "10.1016/j.resuscitation.2026.111306",
+      "summary": "Japanese multicentre registry study of 215 paediatric OHCA patients testing whether the first post-ROSC PaCO2 category predicts 30-day outcomes — no clear association with favourable neurologic outcome or survival for either hypocapnia (aOR 0.83) or hypercapnia (aOR 1.46), though estimates were imprecise with wide confidence intervals.",
+      "relevance": "🟡 Medium — Post-ROSC ventilation and monitoring are within ACTAS scope (CMG 4A), but this is a small retrospective cohort that can't settle the target — hypothesis-generating only.",
+      "featuredReason": "Post-ROSC ventilation and monitoring are within ACTAS scope (CMG 4A), but this is a small retrospective cohort that can't settle the target — hypothesis-generating only."
+    },
+    {
+      "id": "10.1016/j.resplu.2026.101491",
+      "title": "Supraglottic airway versus endotracheal intubation in out-of-hospital cardiac arrest: a systematic review and meta-analysis",
+      "journal": "Resuscitation Plus",
+      "date": "2026-09-25",
+      "pmid": "",
+      "doi": "10.1016/j.resplu.2026.101491",
+      "summary": "Systematic review and meta-analysis comparing supraglottic airway devices with endotracheal intubation in out-of-hospital cardiac arrest. Abstract not yet available (ahead-of-print).",
+      "relevance": "🔴 Low — Title-only rating — findings can't be assessed without the abstract, though the topic is core ACTAS territory: LMA Supreme is AP scope (CSM A09) and intubation is ICP-only (CMG 3B).",
+      "featuredReason": "Title-only rating — findings can't be assessed without the abstract, though the topic is core ACTAS territory: LMA Supreme is AP scope (CSM A09) and intubation is ICP-only (CMG 3B)."
+    },
+    {
       "id": "10.1080/10903127.2026.2733964",
       "title": "Association Between Early Prehospital Administration Antibiotic and 28-Day Mortality in Sepsis",
       "journal": "Prehospital Emergency Care",
@@ -35,28 +57,6 @@
       "summary": "Thai observational cohort of 364 adults with suspected sepsis testing prehospital antibiotics — prehospital administration was associated with lower adjusted 28-day mortality (ARR 8.9%, 95% CI 0.8–17.1; aOR 0.51) and antibiotics ~125 minutes sooner, but scene times ran 8.5 minutes longer.",
       "relevance": "🟡 Medium — Single-centre Thai observational design with residual confounding likely; ACTAS CMG 38 (Sepsis) has no prehospital antibiotic step — ceftriaxone is scoped to suspected meningococcal disease (CMG 38A) only, so adoption would need a guideline change.",
       "featuredReason": "Single-centre Thai observational design with residual confounding likely; ACTAS CMG 38 (Sepsis) has no prehospital antibiotic step — ceftriaxone is scoped to suspected meningococcal disease (CMG 38A) only, so adoption would need a guideline change."
-    },
-    {
-      "id": "10.1016/j.resplu.2026.101486",
-      "title": "Prehospital management and outcomes of traumatic cardiac arrest in older adults: a French nationwide registry study",
-      "journal": "Resuscitation Plus",
-      "date": "2026-09-22",
-      "pmid": "",
-      "doi": "10.1016/j.resplu.2026.101486",
-      "summary": "French national registry study of 5,595 traumatic cardiac arrests comparing older (≥65) with younger adults — older patients achieved ROSC more often (22.5% vs 18.6%) but 30-day survival was lower (0.5% vs 1.2%), leading the authors to argue age alone shouldn't preclude resuscitation though a concurrent medical cause should be sought",
-      "relevance": "🟡 Medium transferability — haemorrhage control and chest-injury care are AP scope (CMG 17), but the interventions studied — prehospital fluid resuscitation and thoracostomy — sit beyond ACTAS practice; the age-based prognosis message transfers, the techniques don't",
-      "featuredReason": "haemorrhage control and chest-injury care are AP scope (CMG 17), but the interventions studied — prehospital fluid resuscitation and thoracostomy — sit beyond ACTAS practice; the age-based prognosis message transfers, the techniques don't"
-    },
-    {
-      "id": "10.1080/10903127.2026.2733969",
-      "title": "Practice Patterns and Performance of Pediatric Air Medical Tracheal Intubation: A National Multisite Cohort Study",
-      "journal": "Prehospital Emergency Care",
-      "date": "2026-09-22",
-      "pmid": "",
-      "doi": "10.1080/10903127.2026.2733969",
-      "summary": "US national cohort of 1,040 paediatric air medical intubations — 86.5% first-pass success overall but only 69.1% in infants under 1, with ketamine the commonest induction agent and substantial site-to-site variation",
-      "relevance": "🟡 Medium transferability — RSI is ICP-only at ACTAS and infants aren't intubated prehospital here; etomidate isn't carried and rocuronium isn't either, so the drug mix is overseas practice — but the infant first-pass numbers are a sharp caution for any advanced paediatric airway pathway",
-      "featuredReason": "RSI is ICP-only at ACTAS and infants aren't intubated prehospital here; etomidate isn't carried and rocuronium isn't either, so the drug mix is overseas practice — but the infant first-pass numbers are a sharp caution for any advanced paediatric airway pathway"
     }
   ],
   "funFacts": [
@@ -970,38 +970,124 @@
     }
   ],
   "funFact": {
-    "category": "resuscitation",
-    "fact": "The log roll was gospel for spinal immobilisation for decades — but recent evidence says manual in-line stabilisation with a scoop stretcher actually causes less spinal movement. Sometimes the thing we've done forever is the wrong thing."
+    "category": "pathophysiology",
+    "fact": "Crush injury releases myoglobin into circulation, which clogs renal tubules like mud in a pipe. The crush syndrome triad — hypovolaemia, hyperkalaemia, myoglobinuria — is why you hammer these patients with fluids early. The kidneys won't thank you if you wait."
   },
   "tldr": {
-    "date": "2026-09-24",
-    "paperCount": 3,
-    "summary": "• Swedish 3,263-call analysis: barriers to dispatcher-assisted CPR after arrest recognition are common (43.7% of calls) and linked to delayed bystander CPR, lower ROSC (adj RR 0.89) and roughly half the 30-day survival (adj RR 0.57)\n• Night-time human-supervised drone AED delivery matched daytime flight times with zero safety incidents across 24 flights, though pilots reported higher cognitive workload after dark\n• Qualitative needs assessment in Hawassa, Ethiopia: governance and accountability gaps — not just resources — leave prehospital care functioning as interfacility transport",
+    "date": "2026-09-25",
+    "paperCount": 6,
+    "summary": "• Post-arrest care dominated today: two studies probed ventilatory targets after paediatric OHCA and airway strategy in adult OHCA, pulse oximetry during CPR showed a modest ROSC signal, and a paediatric post-arrest prognostic score validated well with caveats.\n• On the operational side, a Scottish modelling study puts a cost-effectiveness case behind drone AED networks for rural response.\n• Nothing practice-changing, but the supraglottic-versus-intubation meta-analysis is worth watching once its abstract lands.",
     "highlights": [
       {
-        "id": "10.1016/j.resuscitation.2026.111305",
+        "id": "10.1016/j.resuscitation.2026.111306",
         "pmid": "",
-        "doi": "10.1016/j.resuscitation.2026.111305",
-        "title": "Barriers to dispatcher-assisted CPR delay bystander CPR and worsen OHCA outcomes",
-        "note": "Retrospective cohort of 3,263 transcribed Swedish 112 calls: 43.7% had ≥1 barrier to DA-CPR after dispatcher recognition (commonest: inability to move the patient); bystander CPR reached 85% in barrier-free calls but stayed below 50% with ≥3 barriers, and any barrier was associated with lower ROSC (adj RR 0.89) and 30-day survival (adj RR 0.57)."
+        "doi": "10.1016/j.resuscitation.2026.111306",
+        "title": "First post-ROSC PaCO2 and neurologic outcomes in paediatric OHCA",
+        "note": "Japanese multicentre study of 215 paediatric OHCA patients found no clear association between the first post-ROSC PaCO2 category (hypo-, normo-, hypercapnia) and 30-day neurologic outcome or survival, though estimates were imprecise."
       },
       {
-        "id": "10.1016/j.resplu.2026.101457",
+        "id": "10.1016/j.resplu.2026.101491",
         "pmid": "",
-        "doi": "10.1016/j.resplu.2026.101457",
-        "title": "Nighttime drone-delivered AEDs: feasibility study",
-        "note": "24 controlled drone flights delivering a 480 g CellAED over 877 m: all completed without safety incidents, night flight times matched day (mean ~140 s vs ~136 s, p=0.43), but pilots reported markedly higher cognitive workload and environmental complexity during nighttime operations."
+        "doi": "10.1016/j.resplu.2026.101491",
+        "title": "Supraglottic airway versus endotracheal intubation in OHCA: systematic review",
+        "note": "Systematic review and meta-analysis comparing supraglottic airways with endotracheal intubation in OHCA; abstract not yet available (ahead-of-print)."
       },
       {
-        "id": "10.1016/j.surg.2026.110564",
+        "id": "10.1016/j.resuscitation.2026.111215",
         "pmid": "",
-        "doi": "10.1016/j.surg.2026.110564",
-        "title": "Governance gaps in prehospital care: Hawassa, Ethiopia",
-        "note": "Qualitative needs assessment (15 interviews with EMS and health bureau leaders, WHO assessment tool) identified six recurring barriers — infrastructure, medicines/equipment, communication, community perceptions, workforce, and governance as the cross-cutting barrier — leaving services functioning as interfacility transport rather than true prehospital care."
+        "doi": "10.1016/j.resuscitation.2026.111215",
+        "title": "SpO2 during out-of-hospital CPR, CPR quality and ROSC",
+        "note": "In 98 OHCAs, higher event-average SpO2 during CPR was associated with sustained ROSC (aOR 1.05, AUC 0.77, cutpoint ~71%) and survival to admission, but not neurological intact survival; cycle-average SpO2 did not track compression quality metrics."
+      },
+      {
+        "id": "10.1016/j.ajem.2026.09.034",
+        "pmid": "",
+        "doi": "10.1016/j.ajem.2026.09.034",
+        "title": "Calcium during prehospital trauma blood-product resuscitation: meta-analysis",
+        "note": "Meta-analysis of calcium supplementation during prehospital blood-product trauma resuscitation; abstract not yet available (ahead-of-print)."
+      },
+      {
+        "id": "10.1016/j.resplu.2026.101489",
+        "pmid": "",
+        "doi": "10.1016/j.resplu.2026.101489",
+        "title": "rCAST score validation in infants and young children after cardiac arrest",
+        "note": "External validation in 75 infants and young children showed good discrimination for unfavourable neurologic outcome (AUC 0.947) and mortality (AUC 0.857), with no favourable outcomes in the high-severity group — but authors caution against clinical decision-making use given favourable outcomes in some low-score patients."
+      },
+      {
+        "id": "10.1016/j.ress.2026.113470",
+        "pmid": "",
+        "doi": "10.1016/j.ress.2026.113470",
+        "title": "Bayesian drone AED network design: cardiac arrest in Scotland",
+        "note": "Bayesian optimisation of drone station placement using Scottish OHCA data found drone-assisted AED delivery is likely cost-effective and could significantly improve response coverage in rural and urban areas with long ambulance response times."
       }
     ]
   },
   "dailyUpdates": [
+    {
+      "date": "2026-09-25",
+      "papers": [
+        {
+          "id": "10.1016/j.resuscitation.2026.111306",
+          "title": "Association between the first post-resuscitation partial pressure of arterial carbon dioxide and neurologic outcomes in children with out-of-hospital cardiac arrest: a multicenter retrospective cohort study",
+          "journal": "Resuscitation",
+          "date": "2026-09-25",
+          "pmid": "",
+          "doi": "10.1016/j.resuscitation.2026.111306",
+          "summary": "Japanese multicentre registry study of 215 paediatric OHCA patients testing whether the first post-ROSC PaCO2 category predicts 30-day outcomes — no clear association with favourable neurologic outcome or survival for either hypocapnia (aOR 0.83) or hypercapnia (aOR 1.46), though estimates were imprecise with wide confidence intervals.",
+          "relevance": "🟡 Medium — Post-ROSC ventilation and monitoring are within ACTAS scope (CMG 4A), but this is a small retrospective cohort that can't settle the target — hypothesis-generating only."
+        },
+        {
+          "id": "10.1016/j.resplu.2026.101491",
+          "title": "Supraglottic airway versus endotracheal intubation in out-of-hospital cardiac arrest: a systematic review and meta-analysis",
+          "journal": "Resuscitation Plus",
+          "date": "2026-09-25",
+          "pmid": "",
+          "doi": "10.1016/j.resplu.2026.101491",
+          "summary": "Systematic review and meta-analysis comparing supraglottic airway devices with endotracheal intubation in out-of-hospital cardiac arrest. Abstract not yet available (ahead-of-print).",
+          "relevance": "🔴 Low — Title-only rating — findings can't be assessed without the abstract, though the topic is core ACTAS territory: LMA Supreme is AP scope (CSM A09) and intubation is ICP-only (CMG 3B)."
+        },
+        {
+          "id": "10.1016/j.resuscitation.2026.111215",
+          "title": "Associations between pulsed oxygen saturation during out-of-hospital cardiopulmonary resuscitation, cardiopulmonary resuscitation quality and return of spontaneous circulation",
+          "journal": "Resuscitation",
+          "date": "2026-09-25",
+          "pmid": "",
+          "doi": "10.1016/j.resuscitation.2026.111215",
+          "summary": "Study of 98 OHCAs asking whether pulse oximetry readings during CPR relate to outcomes — higher event-average SpO2 was associated with sustained ROSC (aOR 1.05, AUC 0.77, cutpoint ~71%) and survival to admission, but not neurological intact survival, and cycle-average SpO2 did not track compression quality metrics.",
+          "relevance": "🟡 Medium — AP-scope monitoring (CMG 4), but a small observational series and pulse oximetry during arrest is of dubious reliability — interesting signal, don't change practice."
+        },
+        {
+          "id": "10.1016/j.ajem.2026.09.034",
+          "title": "Calcium during prehospital trauma blood-product resuscitation: A meta-analysis",
+          "journal": "The American Journal of Emergency Medicine",
+          "date": "2026-09-25",
+          "pmid": "",
+          "doi": "10.1016/j.ajem.2026.09.034",
+          "summary": "Meta-analysis of calcium supplementation during prehospital blood-product trauma resuscitation. Abstract not yet available (ahead-of-print).",
+          "relevance": "🔴 Low — Title-only rating, and calcium's relevance here sits with blood-product resuscitation — blood products are not in the extracted ACTAS formulary, so adoption would need a prehospital blood program."
+        },
+        {
+          "id": "10.1016/j.resplu.2026.101489",
+          "title": "Prognostic utility of the revised post-cardiac arrest syndrome for therapeutic hypothermia score in pediatric patients with post-cardiac arrest syndrome",
+          "journal": "Resuscitation Plus",
+          "date": "2026-09-25",
+          "pmid": "",
+          "doi": "10.1016/j.resplu.2026.101489",
+          "summary": "External validation of the rCAST post-cardiac arrest prognostic score in 75 infants and young children after targeted temperature management — good discrimination (AUC 0.947 for unfavourable neurologic outcome, 0.857 for mortality) with no favourable outcomes in the high-severity group, but 76% of low-score patients did well and the authors caution against using it for clinical decisions.",
+          "relevance": "🟡 Medium — Solid prognostication data but it's a PICU tool — useful context for post-ROSC handover conversations rather than road decisions."
+        },
+        {
+          "id": "10.1016/j.ress.2026.113470",
+          "title": "A Bayesian learning approach for drone coverage network: A case study on cardiac arrest in Scotland",
+          "journal": "Reliability Engineering & System Safety",
+          "date": "2026-09-25",
+          "pmid": "",
+          "doi": "10.1016/j.ress.2026.113470",
+          "summary": "Bayesian optimisation of a drone-assisted AED delivery network using geographically referenced Scottish cardiac arrest data — station placement driven by OHCA survival probability and existing EMS coverage, with cost-effectiveness analysis suggesting drone AED delivery is cost-effective and could meaningfully improve response coverage in rural areas with long ambulance response times.",
+          "relevance": "🟡 Medium — Modelling study from Scotland — the rural-coverage logic translates to Australian contexts, but there's no local feasibility or trial data here."
+        }
+      ]
+    },
     {
       "date": "2026-09-24",
       "papers": [
