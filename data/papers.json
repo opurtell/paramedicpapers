@@ -1,8 +1,19 @@
 {
-  "lastUpdated": "2026-09-24T21:20:53Z",
-  "lastUpdatedSydney": "2026-09-25 07:20 AEST",
-  "lastUpdatedDate": "2026-09-25",
+  "lastUpdated": "2026-09-25T21:20:04Z",
+  "lastUpdatedSydney": "2026-09-26 07:20 AEST",
+  "lastUpdatedDate": "2026-09-26",
   "featuredPapers": [
+    {
+      "id": "10.1016/j.resuscitation.2026.111311",
+      "title": "Structured diagnostic strategies for psychological problems in cardiac arrest survivors: an important knowledge gap",
+      "journal": "Resuscitation",
+      "date": "2026-09-26",
+      "pmid": "",
+      "doi": "10.1016/j.resuscitation.2026.111311",
+      "summary": "Systematic review of structured identification and assessment of psychological, emotional or cognitive problems in cardiac arrest survivors — of 1,605 records screened, none met eligibility, so there is no evidence base for which screening instruments, thresholds, timing or referral pathways should be used.",
+      "relevance": "🟡 Medium — survivor follow-up sits mostly in hospital and rehab services rather than ACTAS road practice, but useful for post-ROSC handover and referral conversations",
+      "featuredReason": "survivor follow-up sits mostly in hospital and rehab services rather than ACTAS road practice, but useful for post-ROSC handover and referral conversations"
+    },
     {
       "id": "10.1016/j.resuscitation.2026.111305",
       "title": "Barriers to dispatcher-assisted CPR are associated with delayed bystander CPR and worse outcomes in out-of-hospital cardiac arrest: a retrospective cohort study",
@@ -46,17 +57,6 @@
       "summary": "Systematic review and meta-analysis comparing supraglottic airway devices with endotracheal intubation in out-of-hospital cardiac arrest. Abstract not yet available (ahead-of-print).",
       "relevance": "🔴 Low — Title-only rating — findings can't be assessed without the abstract, though the topic is core ACTAS territory: LMA Supreme is AP scope (CSM A09) and intubation is ICP-only (CMG 3B).",
       "featuredReason": "Title-only rating — findings can't be assessed without the abstract, though the topic is core ACTAS territory: LMA Supreme is AP scope (CSM A09) and intubation is ICP-only (CMG 3B)."
-    },
-    {
-      "id": "10.1080/10903127.2026.2733964",
-      "title": "Association Between Early Prehospital Administration Antibiotic and 28-Day Mortality in Sepsis",
-      "journal": "Prehospital Emergency Care",
-      "date": "2026-09-22",
-      "pmid": "",
-      "doi": "10.1080/10903127.2026.2733964",
-      "summary": "Thai observational cohort of 364 adults with suspected sepsis testing prehospital antibiotics — prehospital administration was associated with lower adjusted 28-day mortality (ARR 8.9%, 95% CI 0.8–17.1; aOR 0.51) and antibiotics ~125 minutes sooner, but scene times ran 8.5 minutes longer.",
-      "relevance": "🟡 Medium — Single-centre Thai observational design with residual confounding likely; ACTAS CMG 38 (Sepsis) has no prehospital antibiotic step — ceftriaxone is scoped to suspected meningococcal disease (CMG 38A) only, so adoption would need a guideline change.",
-      "featuredReason": "Single-centre Thai observational design with residual confounding likely; ACTAS CMG 38 (Sepsis) has no prehospital antibiotic step — ceftriaxone is scoped to suspected meningococcal disease (CMG 38A) only, so adoption would need a guideline change."
     }
   ],
   "funFacts": [
@@ -970,59 +970,73 @@
     }
   ],
   "funFact": {
-    "category": "pathophysiology",
-    "fact": "Crush injury releases myoglobin into circulation, which clogs renal tubules like mud in a pipe. The crush syndrome triad — hypovolaemia, hyperkalaemia, myoglobinuria — is why you hammer these patients with fluids early. The kidneys won't thank you if you wait."
+    "category": "pharmacology",
+    "fact": "Ondansetron revolutionised antiemetics because it blocks 5-HT3 receptors without the sedation or dystonic reactions of older drugs like metoclopramide. No one misses watching a patient's eyes roll back after an anti-nausea injection."
   },
   "tldr": {
-    "date": "2026-09-25",
-    "paperCount": 6,
-    "summary": "• Post-arrest care dominated today: two studies probed ventilatory targets after paediatric OHCA and airway strategy in adult OHCA, pulse oximetry during CPR showed a modest ROSC signal, and a paediatric post-arrest prognostic score validated well with caveats.\n• On the operational side, a Scottish modelling study puts a cost-effectiveness case behind drone AED networks for rural response.\n• Nothing practice-changing, but the supraglottic-versus-intubation meta-analysis is worth watching once its abstract lands.",
+    "date": "2026-09-26",
+    "paperCount": 3,
+    "summary": "Thin prehospital day, but the headline is a Prehospital Emergency Care report that a pit-crew CPR education initiative for EMS clinicians improved neurologically intact survival after OHCA — abstract still ahead-of-print, so hold fire until it lands.\n• Pit-crew CPR education initiative associated with improved neurologically intact OHCA survival (abstract ahead-of-print — findings unverified).\n• Systematic review of post-arrest psychological screening found zero eligible studies among 1,605 records — a stark evidence gap.\n• Neonatal simulation study: real-time respiratory function monitor feedback lifted tidal volumes in target range (62.3%→80.3%) and cut mask leak; repetition without feedback added little.",
     "highlights": [
       {
-        "id": "10.1016/j.resuscitation.2026.111306",
+        "id": "10.1080/10903127.2026.2739421",
         "pmid": "",
-        "doi": "10.1016/j.resuscitation.2026.111306",
-        "title": "First post-ROSC PaCO2 and neurologic outcomes in paediatric OHCA",
-        "note": "Japanese multicentre study of 215 paediatric OHCA patients found no clear association between the first post-ROSC PaCO2 category (hypo-, normo-, hypercapnia) and 30-day neurologic outcome or survival, though estimates were imprecise."
+        "doi": "10.1080/10903127.2026.2739421",
+        "title": "Pit-crew CPR education initiative improves neurologically intact survival",
+        "note": "EMS pit-crew CPR educational initiative associated with improved neurologically intact survival after OHCA — abstract ahead-of-print, so study design and effect size not yet verifiable."
       },
       {
-        "id": "10.1016/j.resplu.2026.101491",
+        "id": "10.1016/j.resuscitation.2026.111311",
         "pmid": "",
-        "doi": "10.1016/j.resplu.2026.101491",
-        "title": "Supraglottic airway versus endotracheal intubation in OHCA: systematic review",
-        "note": "Systematic review and meta-analysis comparing supraglottic airways with endotracheal intubation in OHCA; abstract not yet available (ahead-of-print)."
+        "doi": "10.1016/j.resuscitation.2026.111311",
+        "title": "No evidence base for structured psychological screening after cardiac arrest",
+        "note": "Systematic review screening 1,605 records found none met eligibility — no comparative evidence on which screening instruments, thresholds, timing or referral pathways improve outcomes for cardiac arrest survivors."
       },
       {
-        "id": "10.1016/j.resuscitation.2026.111215",
+        "id": "10.1016/j.resplu.2026.101497",
         "pmid": "",
-        "doi": "10.1016/j.resuscitation.2026.111215",
-        "title": "SpO2 during out-of-hospital CPR, CPR quality and ROSC",
-        "note": "In 98 OHCAs, higher event-average SpO2 during CPR was associated with sustained ROSC (aOR 1.05, AUC 0.77, cutpoint ~71%) and survival to admission, but not neurological intact survival; cycle-average SpO2 did not track compression quality metrics."
-      },
-      {
-        "id": "10.1016/j.ajem.2026.09.034",
-        "pmid": "",
-        "doi": "10.1016/j.ajem.2026.09.034",
-        "title": "Calcium during prehospital trauma blood-product resuscitation: meta-analysis",
-        "note": "Meta-analysis of calcium supplementation during prehospital blood-product trauma resuscitation; abstract not yet available (ahead-of-print)."
-      },
-      {
-        "id": "10.1016/j.resplu.2026.101489",
-        "pmid": "",
-        "doi": "10.1016/j.resplu.2026.101489",
-        "title": "rCAST score validation in infants and young children after cardiac arrest",
-        "note": "External validation in 75 infants and young children showed good discrimination for unfavourable neurologic outcome (AUC 0.947) and mortality (AUC 0.857), with no favourable outcomes in the high-severity group — but authors caution against clinical decision-making use given favourable outcomes in some low-score patients."
-      },
-      {
-        "id": "10.1016/j.ress.2026.113470",
-        "pmid": "",
-        "doi": "10.1016/j.ress.2026.113470",
-        "title": "Bayesian drone AED network design: cardiac arrest in Scotland",
-        "note": "Bayesian optimisation of drone station placement using Scottish OHCA data found drone-assisted AED delivery is likely cost-effective and could significantly improve response coverage in rural and urban areas with long ambulance response times."
+        "doi": "10.1016/j.resplu.2026.101497",
+        "title": "Respiratory function monitor feedback improves neonatal mask ventilation",
+        "note": "Neonatology fellows' simulated face mask ventilation with real-time RFM feedback raised tidal volumes in target range from 62.3% to 80.3% and cut mask leak across T-piece, self-inflating and flow-inflating bags; extra sessions without feedback added little."
       }
     ]
   },
   "dailyUpdates": [
+    {
+      "date": "2026-09-26",
+      "papers": [
+        {
+          "id": "10.1080/10903127.2026.2739421",
+          "title": "A Robust Educational Initiative for EMS Clinicians Focusing on Pit-Crew CPR Improves Neurologically Intact Survival",
+          "journal": "Prehospital Emergency Care",
+          "date": "2026-09-26",
+          "pmid": "",
+          "doi": "10.1080/10903127.2026.2739421",
+          "summary": "Report of an EMS pit-crew CPR educational initiative associated with improved neurologically intact survival after out-of-hospital cardiac arrest — abstract not yet available (ahead-of-print), so the study design and effect size can't be verified yet.",
+          "relevance": "🔴 Low — no abstract to verify findings; revisit when published, as pit-crew CPR maps directly onto ACTAS arrest practice"
+        },
+        {
+          "id": "10.1016/j.resuscitation.2026.111311",
+          "title": "Structured diagnostic strategies for psychological problems in cardiac arrest survivors: an important knowledge gap",
+          "journal": "Resuscitation",
+          "date": "2026-09-26",
+          "pmid": "",
+          "doi": "10.1016/j.resuscitation.2026.111311",
+          "summary": "Systematic review of structured identification and assessment of psychological, emotional or cognitive problems in cardiac arrest survivors — of 1,605 records screened, none met eligibility, so there is no evidence base for which screening instruments, thresholds, timing or referral pathways should be used.",
+          "relevance": "🟡 Medium — survivor follow-up sits mostly in hospital and rehab services rather than ACTAS road practice, but useful for post-ROSC handover and referral conversations"
+        },
+        {
+          "id": "10.1016/j.resplu.2026.101497",
+          "title": "Low-dose, high-frequency simulation with respiratory function monitor feedback enhances face mask ventilation across neonatal resuscitation devices: A prospective study in neonatology fellows",
+          "journal": "Resuscitation Plus",
+          "date": "2026-09-26",
+          "pmid": "",
+          "doi": "10.1016/j.resplu.2026.101497",
+          "summary": "Prospective simulation study in neonatology fellows testing low-dose, high-frequency face mask ventilation practice with real-time respiratory function monitor feedback across T-piece, self-inflating and flow-inflating bags — feedback lifted tidal volumes in target range from 62.3% to 80.3% and cut mask leak on every device, while extra sessions without feedback added little.",
+          "relevance": "🟡 Medium — respiratory function monitors aren't carried on ambulances, but the training lesson (real-time feedback beats repetition alone for BMV) transfers to CMG 5B neonate resus drills"
+        }
+      ]
+    },
     {
       "date": "2026-09-25",
       "papers": [
