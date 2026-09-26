@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-09-25T21:20:04Z",
-  "lastUpdatedSydney": "2026-09-26 07:20 AEST",
-  "lastUpdatedDate": "2026-09-26",
+  "lastUpdated": "2026-09-26T21:20:15Z",
+  "lastUpdatedSydney": "2026-09-27 07:20 AEST",
+  "lastUpdatedDate": "2026-09-27",
   "featuredPapers": [
     {
       "id": "10.1016/j.resuscitation.2026.111311",
@@ -37,6 +37,17 @@
       "featuredReason": "Selected for clinical relevance to prehospital practice."
     },
     {
+      "id": "10.1016/j.resuscitation.2026.111225",
+      "title": "Incidence, outcomes, and temporal trends of pediatric in-hospital cardiac arrest in Japan: a nationwide study",
+      "journal": "Resuscitation",
+      "date": "2026-09-27",
+      "pmid": "",
+      "doi": "10.1016/j.resuscitation.2026.111225",
+      "summary": "Nationwide Japanese administrative data (2011–2022, 7.1M paediatric admissions) testing whether paediatric in-hospital arrest incidence and outcomes are changing — incidence fell from 1.03 to 0.86 per 1000 admissions while survival to discharge rose from 25.8% to 29.6%, with adrenaline given in 71% and intubation in 62% of arrests.",
+      "relevance": "🟡 Medium — in-hospital data, not prehospital, but useful outcome benchmarks for paediatric arrests transported to ED; code-based ascertainment means authors call for registry validation",
+      "featuredReason": "in-hospital data, not prehospital, but useful outcome benchmarks for paediatric arrests transported to ED; code-based ascertainment means authors call for registry validation"
+    },
+    {
       "id": "10.1016/j.resuscitation.2026.111306",
       "title": "Association between the first post-resuscitation partial pressure of arterial carbon dioxide and neurologic outcomes in children with out-of-hospital cardiac arrest: a multicenter retrospective cohort study",
       "journal": "Resuscitation",
@@ -46,17 +57,6 @@
       "summary": "Japanese multicentre registry study of 215 paediatric OHCA patients testing whether the first post-ROSC PaCO2 category predicts 30-day outcomes — no clear association with favourable neurologic outcome or survival for either hypocapnia (aOR 0.83) or hypercapnia (aOR 1.46), though estimates were imprecise with wide confidence intervals.",
       "relevance": "🟡 Medium — Post-ROSC ventilation and monitoring are within ACTAS scope (CMG 4A), but this is a small retrospective cohort that can't settle the target — hypothesis-generating only.",
       "featuredReason": "Post-ROSC ventilation and monitoring are within ACTAS scope (CMG 4A), but this is a small retrospective cohort that can't settle the target — hypothesis-generating only."
-    },
-    {
-      "id": "10.1016/j.resplu.2026.101491",
-      "title": "Supraglottic airway versus endotracheal intubation in out-of-hospital cardiac arrest: a systematic review and meta-analysis",
-      "journal": "Resuscitation Plus",
-      "date": "2026-09-25",
-      "pmid": "",
-      "doi": "10.1016/j.resplu.2026.101491",
-      "summary": "Systematic review and meta-analysis comparing supraglottic airway devices with endotracheal intubation in out-of-hospital cardiac arrest. Abstract not yet available (ahead-of-print).",
-      "relevance": "🔴 Low — Title-only rating — findings can't be assessed without the abstract, though the topic is core ACTAS territory: LMA Supreme is AP scope (CSM A09) and intubation is ICP-only (CMG 3B).",
-      "featuredReason": "Title-only rating — findings can't be assessed without the abstract, though the topic is core ACTAS territory: LMA Supreme is AP scope (CSM A09) and intubation is ICP-only (CMG 3B)."
     }
   ],
   "funFacts": [
@@ -970,38 +970,56 @@
     }
   ],
   "funFact": {
-    "category": "pharmacology",
-    "fact": "Ondansetron revolutionised antiemetics because it blocks 5-HT3 receptors without the sedation or dystonic reactions of older drugs like metoclopramide. No one misses watching a patient's eyes roll back after an anti-nausea injection."
+    "category": "EMS",
+    "fact": "Since 2018, Australian paramedics have been nationally regulated under the Paramedicine Board of Australia — making paramedicine a formally recognised health profession. We're not just 'ambulance drivers' anymore. We were never just ambulance drivers."
   },
   "tldr": {
-    "date": "2026-09-26",
-    "paperCount": 3,
-    "summary": "Thin prehospital day, but the headline is a Prehospital Emergency Care report that a pit-crew CPR education initiative for EMS clinicians improved neurologically intact survival after OHCA — abstract still ahead-of-print, so hold fire until it lands.\n• Pit-crew CPR education initiative associated with improved neurologically intact OHCA survival (abstract ahead-of-print — findings unverified).\n• Systematic review of post-arrest psychological screening found zero eligible studies among 1,605 records — a stark evidence gap.\n• Neonatal simulation study: real-time respiratory function monitor feedback lifted tidal volumes in target range (62.3%→80.3%) and cut mask leak; repetition without feedback added little.",
+    "date": "2026-09-27",
+    "paperCount": 2,
+    "summary": "• Cardiac-arrest-heavy sweep: Japanese nationwide data (2011–2022) show paediatric in-hospital arrest incidence falling (1.03 → 0.86 per 1000 admissions) while survival to discharge climbed from 25.8% to 29.6%\n• Greece ran the first national school CPR championship under the Kids Save Lives banner — 196 schools, 432 students, CPR quality scores of 95.7–96.3% (88.2% in special-needs schools), 99% endorsement\n• Lean day otherwise: most catches are ahead-of-print with no abstracts yet (paediatric OHCA witness status, SGA vs BVM in BLS, sex differences post-arrest), plus two ERC 2025 guideline corrigenda",
     "highlights": [
       {
-        "id": "10.1080/10903127.2026.2739421",
+        "id": "10.1016/j.resuscitation.2026.111225",
         "pmid": "",
-        "doi": "10.1080/10903127.2026.2739421",
-        "title": "Pit-crew CPR education initiative improves neurologically intact survival",
-        "note": "EMS pit-crew CPR educational initiative associated with improved neurologically intact survival after OHCA — abstract ahead-of-print, so study design and effect size not yet verifiable."
+        "doi": "10.1016/j.resuscitation.2026.111225",
+        "title": "Paediatric in-hospital cardiac arrest in Japan: nationwide trends",
+        "note": "Nationwide Japanese administrative data (7.1M paediatric admissions, 2011–2022): IHCA incidence fell from 1.03 to 0.86 per 1000 admissions while survival to discharge rose from 25.8% to 29.6%; adrenaline was given on 71% of arrest days and intubation on 62%, and the authors flag code-based ascertainment as a limitation."
       },
       {
-        "id": "10.1016/j.resuscitation.2026.111311",
+        "id": "10.1016/j.resplu.2026.101495",
         "pmid": "",
-        "doi": "10.1016/j.resuscitation.2026.111311",
-        "title": "No evidence base for structured psychological screening after cardiac arrest",
-        "note": "Systematic review screening 1,605 records found none met eligibility — no comparative evidence on which screening instruments, thresholds, timing or referral pathways improve outcomes for cardiac arrest survivors."
-      },
-      {
-        "id": "10.1016/j.resplu.2026.101497",
-        "pmid": "",
-        "doi": "10.1016/j.resplu.2026.101497",
-        "title": "Respiratory function monitor feedback improves neonatal mask ventilation",
-        "note": "Neonatology fellows' simulated face mask ventilation with real-time RFM feedback raised tidal volumes in target range from 62.3% to 80.3% and cut mask leak across T-piece, self-inflating and flow-inflating bags; extra sessions without feedback added little."
+        "doi": "10.1016/j.resplu.2026.101495",
+        "title": "Greece's first national CPR championship (Kids Save Lives)",
+        "note": "196 schools and 432 students competed using QCPR objective metrics, with mean BLS scores of 95.7–96.3% (88.2% in special-needs schools); 197 survey respondents gave 99% endorsement as effective, repeatable training with 100% supporting mandatory school CPR education."
       }
     ]
   },
   "dailyUpdates": [
+    {
+      "date": "2026-09-27",
+      "papers": [
+        {
+          "id": "10.1016/j.resuscitation.2026.111225",
+          "title": "Incidence, outcomes, and temporal trends of pediatric in-hospital cardiac arrest in Japan: a nationwide study",
+          "journal": "Resuscitation",
+          "date": "2026-09-27",
+          "pmid": "",
+          "doi": "10.1016/j.resuscitation.2026.111225",
+          "summary": "Nationwide Japanese administrative data (2011–2022, 7.1M paediatric admissions) testing whether paediatric in-hospital arrest incidence and outcomes are changing — incidence fell from 1.03 to 0.86 per 1000 admissions while survival to discharge rose from 25.8% to 29.6%, with adrenaline given in 71% and intubation in 62% of arrests.",
+          "relevance": "🟡 Medium — in-hospital data, not prehospital, but useful outcome benchmarks for paediatric arrests transported to ED; code-based ascertainment means authors call for registry validation"
+        },
+        {
+          "id": "10.1016/j.resplu.2026.101495",
+          "title": "Designing and implementing the first national CPR championship in Greece: the “KIDS SAVE LIVES – TA PAIDIA SOZOUN ZOES” experience",
+          "journal": "Resuscitation Plus",
+          "date": "2026-09-27",
+          "pmid": "",
+          "doi": "10.1016/j.resplu.2026.101495",
+          "summary": "Description and evaluation of Greece's first national school CPR championship (Kids Save Lives) — 196 schools and 432 students competed with QCPR-measured BLS skills, scoring 95.7–96.3% on average (88.2% in special-needs schools), and 99% of the 197 surveyed participants endorsed it as effective training worth repeating.",
+          "relevance": "🟡 Medium — community BLS education rather than paramedic practice, but the QCPR-competition model is a cheap, proven template for local school CPR engagement"
+        }
+      ]
+    },
     {
       "date": "2026-09-26",
       "papers": [
