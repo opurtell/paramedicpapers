@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-09-27T21:20:26Z",
-  "lastUpdatedSydney": "2026-09-28 07:20 AEST",
-  "lastUpdatedDate": "2026-09-28",
+  "lastUpdated": "2026-09-28T21:20:37Z",
+  "lastUpdatedSydney": "2026-09-29 07:20 AEST",
+  "lastUpdatedDate": "2026-09-29",
   "featuredPapers": [
     {
       "id": "10.1016/j.resplu.2026.101488",
@@ -26,17 +26,6 @@
       "featuredReason": "survivor follow-up sits mostly in hospital and rehab services rather than ACTAS road practice, but useful for post-ROSC handover and referral conversations"
     },
     {
-      "id": "10.1016/j.resuscitation.2026.111305",
-      "title": "Barriers to dispatcher-assisted CPR are associated with delayed bystander CPR and worse outcomes in out-of-hospital cardiac arrest: a retrospective cohort study",
-      "journal": "Resuscitation",
-      "date": "2026-09-24",
-      "pmid": "",
-      "doi": "10.1016/j.resuscitation.2026.111305",
-      "summary": "Retrospective cohort of 3,263 transcribed Swedish 112 calls linked to the national cardiac arrest registry quantified barriers to dispatcher-assisted CPR after the dispatcher recognised arrest — 43.7% of calls hit at least one barrier (commonest: inability to move the patient), bystander CPR reached 85% in barrier-free calls but stayed below 50% with three or more, and any barrier was associated with lower ROSC (adjusted RR 0.89) and 30-day survival (adjusted RR 0.57).",
-      "relevance": "🟢 High — no new drugs or skills, pure call-handling and bystander CPR quality improvement any Australian service, ACTAS included, can act on in dispatch protocols",
-      "featuredReason": "no new drugs or skills, pure call-handling and bystander CPR quality improvement any Australian service, ACTAS included, can act on in dispatch protocols"
-    },
-    {
       "id": "10.1080/10903127.2026.2674263",
       "title": "Use of double sequential external defibrillation in the United States before and after the DOSE VF randomized clinical trial",
       "journal": "Prehospital Emergency Care",
@@ -57,6 +46,17 @@
       "summary": "Nationwide Japanese administrative data (2011–2022, 7.1M paediatric admissions) testing whether paediatric in-hospital arrest incidence and outcomes are changing — incidence fell from 1.03 to 0.86 per 1000 admissions while survival to discharge rose from 25.8% to 29.6%, with adrenaline given in 71% and intubation in 62% of arrests.",
       "relevance": "🟡 Medium — in-hospital data, not prehospital, but useful outcome benchmarks for paediatric arrests transported to ED; code-based ascertainment means authors call for registry validation",
       "featuredReason": "in-hospital data, not prehospital, but useful outcome benchmarks for paediatric arrests transported to ED; code-based ascertainment means authors call for registry validation"
+    },
+    {
+      "id": "10.1016/j.resuscitation.2026.111306",
+      "title": "Association between the first post-resuscitation partial pressure of arterial carbon dioxide and neurologic outcomes in children with out-of-hospital cardiac arrest: a multicenter retrospective cohort study",
+      "journal": "Resuscitation",
+      "date": "2026-09-25",
+      "pmid": "",
+      "doi": "10.1016/j.resuscitation.2026.111306",
+      "summary": "Japanese multicentre registry study of 215 paediatric OHCA patients testing whether the first post-ROSC PaCO2 category predicts 30-day outcomes — no clear association with favourable neurologic outcome or survival for either hypocapnia (aOR 0.83) or hypercapnia (aOR 1.46), though estimates were imprecise with wide confidence intervals.",
+      "relevance": "🟡 Medium — Post-ROSC ventilation and monitoring are within ACTAS scope (CMG 4A), but this is a small retrospective cohort that can't settle the target — hypothesis-generating only.",
+      "featuredReason": "Post-ROSC ventilation and monitoring are within ACTAS scope (CMG 4A), but this is a small retrospective cohort that can't settle the target — hypothesis-generating only."
     }
   ],
   "funFacts": [
@@ -970,24 +970,39 @@
     }
   ],
   "funFact": {
-    "category": "cardiac",
-    "fact": "The P-wave looks like one simple bump, but the left atrium depolarises slightly after the right. A notched or wide P-wave ('P mitrale') suggests left atrial enlargement — usually from mitral valve disease. The ECG sees things your eyes can't."
+    "category": "pharmacology",
+    "fact": "Sodium bicarb in TCA overdose alkalinises the serum, which reduces the fraction of free drug that binds to cardiac sodium channels. The wide QRS narrows within minutes. It's one of those rare antidotes that works so dramatically you can almost watch it happen."
   },
   "tldr": {
-    "date": "2026-09-28",
+    "date": "2026-09-29",
     "paperCount": 1,
-    "summary": "• Quiet pipeline day — most hits were ahead-of-print stubs and two ERC guideline corrigenda with no abstracts to assess.\n• The one usable paper: a neonatal simulation study showing a two-handed mask hold keeps facemask leak near zero during neonatal PPV (2.5% vs 27% median leak one-handed before training).\n• Technique is squarely in AP scope under CMG 5B Neonate Resuscitation — no equipment or formulary change needed, just technique reinforcement.",
+    "summary": "• Light day: one registry analysis stood out — among OHCA patients with angiographically confirmed obstructive coronary disease as the arrest cause, women and men received similar care with similar 30-day survival (66.2% vs 61.5%) and neurological outcomes, suggesting reported sex disparities in OHCA may narrow once aetiology is objectively confirmed.\n• The rest of today's haul was ahead-of-print items without abstracts, two ERC 2025 guideline corrigenda, and a couple of aerospace false-positives.",
     "highlights": [
       {
-        "id": "10.1016/j.resplu.2026.101488",
+        "id": "10.1016/j.resplu.2026.101490",
         "pmid": "",
-        "doi": "10.1016/j.resplu.2026.101488",
-        "title": "Two-handed neonatal mask ventilation simulation training",
-        "note": "Before-and-after simulation study in 40 clinicians: two-handed hold cut median facemask leak to 2.5% vs 27% one-handed before training, leak was low with both holds after training, and preference for two-handed PPV rose from 27% to 50%."
+        "doi": "10.1016/j.resplu.2026.101490",
+        "title": "Sex differences in OHCA with angiographically confirmed obstructive CAD",
+        "note": "Post hoc registry analysis (n=580, 15.3% women): when obstructive CAD was angiographically confirmed as the OHCA cause, PCI use, procedural success, TTM and ECPR were similar between sexes; 30-day survival 66.2% (women) vs 61.5% (men), p=0.33; favourable neurological outcome 55.1% vs 53.8%, p=0.82; female sex not independently associated with 30-day survival (aOR 0.75, NS)."
       }
     ]
   },
   "dailyUpdates": [
+    {
+      "date": "2026-09-29",
+      "papers": [
+        {
+          "id": "10.1016/j.resplu.2026.101490",
+          "title": "Sex differences in management and outcomes after out-of-hospital cardiac arrest with angiographically confirmed obstructive coronary artery disease",
+          "journal": "Resuscitation Plus",
+          "date": "2026-09-29",
+          "pmid": "",
+          "doi": "10.1016/j.resplu.2026.101490",
+          "summary": "Post hoc analysis of a prospective European OHCA registry (2012–2023) testing whether sex-based differences in care persist when obstructive CAD is angiographically confirmed as the arrest cause — among 580 patients (15.3% women), PCI use, procedural success, targeted temperature management and ECPR were similar between sexes, 30-day survival was 66.2% in women vs 61.5% in men (p=0.33), favourable neurological outcome 55.1% vs 53.8% (p=0.82), and female sex was not independently associated with 30-day survival (adjusted OR 0.75, not significant).",
+          "relevance": "🟡 Medium — Registry data on in-hospital post-ROSC care rather than a prehospital intervention — useful context for the post-arrest pathways ACTAS feeds into (CMG 4 Cardiac Arrest: Adult, CMG 16 Suspected ACS), but nothing changes on the road tomorrow."
+        }
+      ]
+    },
     {
       "date": "2026-09-28",
       "papers": [
