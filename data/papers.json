@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-09-29T21:20:48Z",
-  "lastUpdatedSydney": "2026-09-30 07:20 AEST",
-  "lastUpdatedDate": "2026-09-30",
+  "lastUpdated": "2026-09-30T21:20:59Z",
+  "lastUpdatedSydney": "2026-10-01 07:20 AEST",
+  "lastUpdatedDate": "2026-10-01",
   "featuredPapers": [
     {
       "id": "10.1016/j.resplu.2026.101488",
@@ -13,17 +13,6 @@
       "summary": "Before-and-after simulation study of a respiratory-function-monitor-guided two-handed neonatal PPV training package in 40 clinicians — the two-handed hold cut median facemask leak to 2.5% vs 27% one-handed before training, leak was low with both holds after training, and preference for two-handed ventilation rose from 27% to 50%.",
       "relevance": "🟢 High — Two-handed mask hold for neonatal ventilation sits squarely in AP scope (CMG 5B Neonate Resuscitation), needs no equipment or formulary change; manikin-based evidence, but the technique takeaway is immediate.",
       "featuredReason": "Two-handed mask hold for neonatal ventilation sits squarely in AP scope (CMG 5B Neonate Resuscitation), needs no equipment or formulary change; manikin-based evidence, but the technique takeaway is immediate."
-    },
-    {
-      "id": "10.1016/j.resuscitation.2026.111311",
-      "title": "Structured diagnostic strategies for psychological problems in cardiac arrest survivors: an important knowledge gap",
-      "journal": "Resuscitation",
-      "date": "2026-09-26",
-      "pmid": "",
-      "doi": "10.1016/j.resuscitation.2026.111311",
-      "summary": "Systematic review of structured identification and assessment of psychological, emotional or cognitive problems in cardiac arrest survivors — of 1,605 records screened, none met eligibility, so there is no evidence base for which screening instruments, thresholds, timing or referral pathways should be used.",
-      "relevance": "🟡 Medium — survivor follow-up sits mostly in hospital and rehab services rather than ACTAS road practice, but useful for post-ROSC handover and referral conversations",
-      "featuredReason": "survivor follow-up sits mostly in hospital and rehab services rather than ACTAS road practice, but useful for post-ROSC handover and referral conversations"
     },
     {
       "id": "10.1080/10903127.2026.2674263",
@@ -57,6 +46,17 @@
       "summary": "Healthy-volunteer crossover study — NRB plus nasal cannula at 15–25 L/min each produced expired oxygen of 68–75% versus 85% for flush-rate NRB, so the portable-cylinder workaround is inferior when supply allows flush rate.",
       "relevance": "🟢 High transferability — uses only kit in ACTAS scope (NRB, nasal cannula, oxygen) and applies from AP airway care through ICP pre-RSI",
       "featuredReason": "uses only kit in ACTAS scope (NRB, nasal cannula, oxygen) and applies from AP airway care through ICP pre-RSI"
+    },
+    {
+      "id": "42776990",
+      "title": "Repeat 9-1-1 Calls and Clinical Outcomes of Children After Non-Transport by Emergency Medical Services",
+      "journal": "Prehospital Emergency Care",
+      "date": "2026-09-29",
+      "pmid": "42776990",
+      "doi": "10.1080/10903127.2026.2737688",
+      "summary": "US retrospective study of 1.85 million paediatric ambulance calls (40% not transported) — only 1% of non-transported children re-called and were transported within 72 hours and deaths were rare (0.1% dead on scene at re-call), with under-5s, neurologic impressions and disadvantaged areas over-represented among re-calls.",
+      "relevance": "🟢 High transferability — no formulary or skill dependency, speaks directly to the leave-at-home decision every AP makes; US follow-up access differences mean exact percentages won't transplant",
+      "featuredReason": "no formulary or skill dependency, speaks directly to the leave-at-home decision every AP makes; US follow-up access differences mean exact percentages won't transplant"
     }
   ],
   "funFacts": [
@@ -970,24 +970,39 @@
     }
   ],
   "funFact": {
-    "category": "pathophysiology",
-    "fact": "The Fick principle says cardiac output equals oxygen consumption divided by the arteriovenous oxygen difference. Translation: the only levers for boosting oxygen delivery are heart rate and stroke volume. That's it. Two dials."
+    "category": "anatomy",
+    "fact": "The radial nerve runs through the spiral groove of the humerus — so mid-shaft fractures commonly nail it, causing wrist drop. Always test wrist extension before and after you splint. Miss this and you'll hear about it from the orthopods."
   },
   "tldr": {
-    "date": "2026-09-30",
+    "date": "2026-10-01",
     "paperCount": 1,
-    "summary": "Quiet day — most hits were ahead-of-print titles still awaiting abstracts. The one fully readable study externally validated the PIHCA and GO-FAR 2 pre-arrest scores in 501 Swedish in-hospital cardiac arrests: comparable discrimination for survival with favourable neurological outcome and adequate calibration for both. Several paediatric prehospital papers (drug dosing deviations, EMS-vs-ED asthma agreement) are worth a second look once abstracts land.",
+    "summary": "• Light day: 10 papers surfaced, all ahead-of-print with no abstracts, so everything was triaged on titles alone\n• Only pick: a systematic review/meta-analysis of prehospital whole blood in traumatic haemorrhagic shock (Injury) — not carried by ACTAS, though QAS, AV, SJWA and NSWA all run prehospital blood\n• Everything else was commentaries, corrigenda or off-topic aerospace engineering",
     "highlights": [
       {
-        "id": "10.1016/j.resplu.2026.101493",
+        "id": "10.1016/j.injury.2026.113732",
         "pmid": "",
-        "doi": "10.1016/j.resplu.2026.101493",
-        "title": "Validation of PIHCA and GO-FAR 2 prearrest prediction scores",
-        "note": "External validation in 501 Swedish in-hospital cardiac arrests (28% favourable neurological survival) found PIHCA and GO-FAR 2 performed comparably — AUROC 0.73 vs 0.70 (difference not significant) — with adequate calibration for both."
+        "doi": "10.1016/j.injury.2026.113732",
+        "title": "Prehospital whole blood transfusion in traumatic hemorrhagic shock: a systematic review and meta-analysis",
+        "note": "Systematic review and meta-analysis of prehospital whole blood in traumatic haemorrhagic shock — abstract not yet available (ahead-of-print), findings unassessed; whole blood is not in the extracted ACTAS formulary though QAS, AV, SJWA and NSWA carry it."
       }
     ]
   },
   "dailyUpdates": [
+    {
+      "date": "2026-10-01",
+      "papers": [
+        {
+          "id": "10.1016/j.injury.2026.113732",
+          "title": "Prehospital whole blood transfusion in traumatic hemorrhagic shock: a systematic review and meta-analysis",
+          "journal": "Injury",
+          "date": "2026-10-01",
+          "pmid": "",
+          "doi": "10.1016/j.injury.2026.113732",
+          "summary": "Systematic review and meta-analysis of prehospital whole blood transfusion in traumatic haemorrhagic shock; abstract not yet available (ahead-of-print), so no findings can be reported yet.",
+          "relevance": "🔴 Low — whole blood is not in the extracted ACTAS formulary (would need a guideline change to adopt) and with no abstract the findings can't yet be assessed; QAS, AV, SJWA and NSWA do carry prehospital blood."
+        }
+      ]
+    },
     {
       "date": "2026-09-30",
       "papers": [
