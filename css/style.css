@@ -201,6 +201,24 @@ main { padding-bottom: calc(var(--tabbar-h) + env(safe-area-inset-bottom)); }
   text-transform: uppercase; color: var(--muted);
 }
 .act.is-saved { color: var(--warm); }
+.act-ep { color: var(--accent); }
+
+/* Details toggle / episode link row, and the structured fields it opens */
+.paper-extra { display: flex; align-items: center; gap: 14px; }
+.facts { display: flex; flex-direction: column; gap: 6px; margin: 0; }
+.facts div { display: grid; grid-template-columns: 58px 1fr; gap: 8px; }
+.facts dt {
+  font-family: var(--mono); font-size: 9.5px; letter-spacing: .09em;
+  text-transform: uppercase; color: var(--muted); padding-top: 2px;
+}
+.facts dd { margin: 0; font-size: 13px; line-height: 1.45; color: var(--ink-2); text-wrap: pretty; }
+.facts-wrap { padding: 10px 12px; background: var(--hair); border-radius: 10px; }
+.today-detail .facts { margin-top: 6px; }
+
+/* Bottom-line badge */
+.tag-bl { background: var(--hair); color: var(--ink-3); }
+.tag-bl.bl-practice-changing { background: var(--warm-tint); color: var(--warm); }
+.tag-bl.bl-supports { background: var(--accent-lo); color: var(--accent); }
 a.act { color: var(--accent); }
 
 /* ── feed controls ────────────────────────────────────── */
@@ -223,6 +241,19 @@ a.act { color: var(--accent); }
   font-family: var(--mono); font-size: 10.5px; letter-spacing: .08em; text-transform: uppercase;
 }
 .chip.is-on { background: var(--accent); border-color: var(--accent); color: #FFFFFF; }
+.topic-select {
+  -webkit-appearance: none; appearance: none; max-width: 100%;
+  padding-right: 26px;
+  background-image: linear-gradient(45deg, transparent 50%, currentColor 50%),
+                    linear-gradient(135deg, currentColor 50%, transparent 50%);
+  background-position: calc(100% - 13px) 50%, calc(100% - 9px) 50%;
+  background-size: 4px 4px; background-repeat: no-repeat;
+}
+.chip.topic-select.is-on {
+  background-color: var(--accent);
+  background-image: linear-gradient(45deg, transparent 50%, currentColor 50%),
+                    linear-gradient(135deg, currentColor 50%, transparent 50%);
+}
 .result-count { margin-left: auto; font-family: var(--mono); font-size: 10.5px; color: var(--muted); }
 
 .day-head { display: flex; align-items: baseline; gap: 9px; padding: 6px 0 10px; }
@@ -545,10 +576,27 @@ a.act { color: var(--accent); }
 
 /* Episode rows (podcast tab) */
 .ep-row {
-  display: flex; align-items: center; gap: 12px;
   padding: 13px 0;
   border-bottom: 1px solid var(--hair);
 }
+.ep-row { scroll-margin-top: 110px; }  /* clear the sticky header on #episode= links */
+.ep-main { display: flex; align-items: center; gap: 12px; }
+.ep-notes-btn { margin-top: 4px; }
+.ep-notes { padding: 10px 0 2px 52px; display: flex; flex-direction: column; gap: 10px; }
+.ep-papers { margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 6px; }
+.ep-papers li { font-size: 13.5px; line-height: 1.4; color: var(--ink-2); }
+.ep-paper {
+  display: inline; /* inline-block would hang the list number on the last line */
+  background: none; border: 0; padding: 0; cursor: pointer; text-align: left;
+  font: inherit; color: var(--accent);
+}
+.ep-paper:hover { text-decoration: underline; }
+.ep-journal { font-family: var(--mono); font-size: 10.5px; color: var(--muted); margin-left: 4px; }
+.ep-transcript {
+  display: flex; flex-direction: column; gap: 9px;
+  padding: 12px 14px; background: var(--hair); border-radius: 10px;
+}
+.ep-transcript p { font-size: 13.5px; line-height: 1.55; color: var(--ink-2); text-wrap: pretty; }
 .ep-row:last-child { border-bottom: none; }
 .ep-row .ep-play { width: 40px; height: 40px; }
 .ep-meta { display: flex; flex-direction: column; gap: 3px; min-width: 0; flex: 1; }

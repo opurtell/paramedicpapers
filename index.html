@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=9">
+  <link rel="stylesheet" href="css/style.css?v=10">
   <link rel="icon" type="image/png" sizes="32x32" href="icon-32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="icon-16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
@@ -140,6 +140,7 @@
           <span class="chip-divider" aria-hidden="true"></span>
           <button class="chip" data-filter="high" type="button" aria-pressed="false">High rel</button>
           <button class="chip" data-filter="saved" type="button" aria-pressed="false">Saved</button>
+          <select class="chip topic-select" id="topic-filter" aria-label="Filter by topic" hidden></select>
         </div>
         <span class="result-count" id="result-count"></span>
       </div>
@@ -233,6 +234,6 @@
     <button class="tab" data-tab="saved" type="button"><span class="ico ico-saved" aria-hidden="true"></span>Saved</button>
   </nav>
 
-  <script src="js/app.js?v=11"></script>
+  <script src="js/app.js?v=12"></script>
 </body>
 </html>

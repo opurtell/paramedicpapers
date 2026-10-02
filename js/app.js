@@ -25,6 +25,7 @@
     pinned: '',
     highRelOnly: false,
     savedOnly: false,
+    topic: '',
     episodes: [],
     playDate: null,
     rate: loadRate(),
@@ -46,6 +47,7 @@
     $('btn-refresh').addEventListener('click', refresh);
     window.addEventListener('hashchange', function () {
       if (paperFromHash()) { openPaperLink(); return; }
+      if (episodeFromHash()) { openEpisodeLink(); return; }
       setTab(tabFromHash(), true);
     });
     DESKTOP.addEventListener('change', syncLayout);
@@ -67,6 +69,8 @@
       state.episodes = eps;
       renderPodcastStrip();
       renderEpisodes();
+      renderPaperLists();
+      if (episodeFromHash()) openEpisodeLink();
     }).catch(function (err) {
       console.warn('No podcast episodes:', err && err.message);
     });
@@ -92,6 +96,7 @@
         state.episodes = eps;
         renderPodcastStrip();
         renderEpisodes();
+        renderPaperLists();
       }).catch(function () {});
     } catch (err) {
       console.error('Refresh failed:', err);
@@ -125,6 +130,22 @@
     $('search-input').value = '';
     renderFeed();
     setTab('feed', true);
+  }
+
+  /* Episode links from the RSS show notes: #episode=YYYY-MM-DD opens the
+     Podcast tab with that episode's notes expanded. */
+  function episodeFromHash() {
+    var m = /^#episode=(\d{4}-\d{2}-\d{2})$/.exec(location.hash || '');
+    return m ? m[1] : '';
+  }
+
+  function openEpisodeLink() {
+    var date = episodeFromHash();
+    setTab('podcast', true);
+    var row = document.querySelector('.ep-row[data-ep="' + date + '"]');
+    if (!row) return;  /* episodes not loaded yet — init calls this again */
+    toggleNotes(row, true);
+    row.scrollIntoView({ block: 'start' });
   }
 
   function paperLink(id) {
@@ -210,6 +231,7 @@
     renderDailyTldr();
     renderWeeklyTldr();
     renderToday();
+    renderTopicFilter();
     renderFeed();
     renderWeeklyPicks();
     renderSaved();
@@ -460,8 +482,11 @@
       '<div class="today-expand" data-expand>' +
         (p.summary ? '<p class="paper-summary">' + esc(p.summary) + '</p>' : '') +
         (p.relevance ? '<p class="today-detail">' + esc(p.relevance) + '</p>' : '') +
+        (hasFacts(p) ? '<div class="today-detail">' + factsHTML(p) + '</div>' : '') +
         '<span class="today-chev" aria-hidden="true"></span>' +
       '</div>' +
+      /* Desktop hides the tap-to-expand detail, so it gets the Details toggle. */
+      extraHTML(p, isWide()) +
       footHTML(p);
   }
 
@@ -475,12 +500,29 @@
     });
   }
 
+  /* Topic filter: only topics present in the data (structured triage
+     fields exist from 2 Oct 2026; older papers have none). Hidden until
+     there are at least two topics to choose between. */
+  function renderTopicFilter() {
+    var counts = {};
+    allPapers().forEach(function (p) { if (p.topic) counts[p.topic] = (counts[p.topic] || 0) + 1; });
+    var topics = Object.keys(counts).sort();
+    var sel = $('topic-filter');
+    sel.hidden = topics.length < 2;
+    sel.innerHTML = '<option value="">All topics</option>' + topics.map(function (t) {
+      return '<option value="' + esc(t) + '"' + (t === state.topic ? ' selected' : '') + '>' +
+        esc(t) + ' (' + counts[t] + ')</option>';
+    }).join('');
+    sel.classList.toggle('is-on', !!state.topic);
+  }
+
   function renderFeed() {
     var term = state.query.trim().toLowerCase();
     var list = allPapers().filter(function (p) {
       if (term && !matches(p, term)) return false;
       if (state.highRelOnly && relLevel(p.relevance) !== 'High') return false;
       if (state.savedOnly && !isSaved(p.id)) return false;
+      if (state.topic && p.topic !== state.topic) return false;
       return true;
     });
     $('result-count').textContent = list.length + ' result' + (list.length === 1 ? '' : 's');
@@ -534,6 +576,7 @@
         (p.summary ? '<p class="paper-summary">' + esc(p.summary) + '</p>' : '') +
         (why ? '<div class="why"><span class="why-kicker">Why it\'s picked</span>' +
                '<span class="why-text">' + esc(why) + '</span></div>' : '') +
+        extraHTML(p, true) +
         footHTML(p) +
       '</article>';
     }).join('');
@@ -707,18 +750,30 @@
     $('episode-count').textContent = state.episodes.length || '';
     $('episodes-empty').hidden = !!state.episodes.length;
     list.innerHTML = state.episodes.map(function (ep) {
-      return '<div class="ep-row">' +
-        '<button class="ep-play" data-ep-play="' + esc(ep.date) + '" type="button" aria-label="Play ' + esc(ep.title) + '">' +
-          playIconSVG() +
-        '</button>' +
-        '<div class="ep-meta">' +
-          '<span class="ep-date">' + esc(ep.date) + '</span>' +
-          '<span class="ep-name">' + esc(ep.title) + '</span>' +
-          '<span class="ep-desc">' + esc(ep.description) + '</span>' +
+      var hasNotes = (ep.papers && ep.papers.length) || ep.transcript;
+      return '<div class="ep-row" data-ep="' + esc(ep.date) + '">' +
+        '<div class="ep-main">' +
+          '<button class="ep-play" data-ep-play="' + esc(ep.date) + '" type="button" aria-label="Play ' + esc(ep.title) + '">' +
+            playIconSVG() +
+          '</button>' +
+          '<div class="ep-meta">' +
+            '<span class="ep-date">' + esc(ep.date) + (ep.kind === 'archive' ? ' · From the archive' : '') + '</span>' +
+            '<span class="ep-name">' + esc(ep.title) + '</span>' +
+            '<span class="ep-desc">' + esc(ep.description) + '</span>' +
+            (hasNotes ? '<button class="link-btn ep-notes-btn" data-notes type="button" aria-expanded="false">Show notes</button>' : '') +
+          '</div>' +
+          '<span class="ep-len">' + epLenLabel(ep) + '</span>' +
         '</div>' +
-        '<span class="ep-len">' + epLenLabel(ep) + '</span>' +
+        (hasNotes ? '<div class="ep-notes" hidden>' + notesHTML(ep) + '</div>' : '') +
       '</div>';
     }).join('');
+    list.querySelectorAll('[data-notes]').forEach(function (btn) {
+      btn.addEventListener('click', function () { toggleNotes(btn.closest('.ep-row')); });
+    });
+    list.querySelectorAll('[data-transcript]').forEach(function (btn) {
+      btn.addEventListener('click', function () { loadTranscript(btn); });
+    });
+    bindPaperLinks(list);
     list.querySelectorAll('[data-ep-play]').forEach(function (btn) {
       btn.addEventListener('click', function () {
         var d = btn.getAttribute('data-ep-play');
@@ -727,6 +782,70 @@
       });
     });
     syncPlayerUi();
+  }
+
+  /* Show notes: the papers covered (linking into the feed when the paper is
+     on the dashboard) and the transcript, fetched on demand. */
+  function notesHTML(ep) {
+    var out = '';
+    if (ep.papers && ep.papers.length) {
+      out += '<ol class="ep-papers">' + ep.papers.map(function (pp) {
+        var onSite = pp.id && paperById(pp.id);
+        var label = esc(pp.title) + (pp.journal ? ' <span class="ep-journal">' + esc(pp.journal) + '</span>' : '');
+        if (onSite) return '<li><button class="ep-paper" data-paper-link="' + esc(pp.id) + '" type="button">' + label + '</button></li>';
+        var href = externalHref(pp);
+        return '<li>' + (href !== '#' ? '<a href="' + esc(href) + '" target="_blank" rel="noopener">' + label + '</a>' : label) + '</li>';
+      }).join('') + '</ol>';
+    }
+    if (ep.transcript) {
+      out += '<button class="link-btn" data-transcript="' + esc(ep.transcript) + '" type="button">Read transcript</button>' +
+        '<div class="ep-transcript" hidden></div>';
+    }
+    return out;
+  }
+
+  function toggleNotes(row, open) {
+    var notes = row && row.querySelector('.ep-notes');
+    var btn = row && row.querySelector('[data-notes]');
+    if (!notes) return;
+    var show = open === undefined ? notes.hidden : open;
+    notes.hidden = !show;
+    btn.textContent = show ? 'Hide notes' : 'Show notes';
+    btn.setAttribute('aria-expanded', String(show));
+  }
+
+  function loadTranscript(btn) {
+    var box = btn.nextElementSibling;
+    if (!box.hidden) { box.hidden = true; btn.textContent = 'Read transcript'; return; }
+    btn.textContent = 'Loading…';
+    fetch('audio/' + btn.getAttribute('data-transcript'))
+      .then(function (r) { if (!r.ok) throw new Error(r.status); return r.text(); })
+      .then(function (text) {
+        box.innerHTML = text.trim().split(/\n\s*\n/).map(function (para) {
+          return '<p>' + esc(para) + '</p>';
+        }).join('');
+        box.hidden = false;
+        btn.textContent = 'Hide transcript';
+      })
+      .catch(function () { btn.textContent = 'Transcript unavailable'; });
+  }
+
+  /* Paper buttons inside show notes open the paper in the feed. */
+  function bindPaperLinks(root) {
+    root.querySelectorAll('[data-paper-link]').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        location.hash = 'paper=' + encodeURIComponent(btn.getAttribute('data-paper-link'));
+      });
+    });
+  }
+
+  /* paper id → newest episode that covered it */
+  function episodeForPaper(id) {
+    for (var i = 0; i < state.episodes.length; i++) {
+      var ps = state.episodes[i].papers || [];
+      for (var j = 0; j < ps.length; j++) if (ps[j].id === id) return state.episodes[i];
+    }
+    return null;
   }
 
   function playIconSVG() {
@@ -848,7 +967,36 @@
     return tagsHTML(p) +
       '<h3 class="paper-title">' + titleLinkHTML(p) + '</h3>' +
       (p.summary ? '<p class="paper-summary">' + esc(p.summary) + '</p>' : '') +
+      extraHTML(p, true) +
       footHTML(p);
+  }
+
+  /* Structured triage fields (papers from 2 Oct 2026 on). */
+  function hasFacts(p) { return !!(p.design || p.finding || p.caveat); }
+
+  function factsHTML(p) {
+    var rows = [];
+    if (p.design || p.n) rows.push(['Design', [p.design, p.n].filter(Boolean).join(' · ')]);
+    if (p.finding) rows.push(['Found', p.finding]);
+    if (p.caveat) rows.push(['Caveat', p.caveat]);
+    return '<dl class="facts">' + rows.map(function (r) {
+      return '<div><dt>' + r[0] + '</dt><dd>' + esc(r[1]) + '</dd></div>';
+    }).join('') + '</dl>';
+  }
+
+  /* Row between summary and footer: a Details toggle for the structured
+     fields (cards only; Home cards show them on tap) and a play button when
+     an episode covered the paper. Empty when neither applies. */
+  function extraHTML(p, withFacts) {
+    var ep = episodeForPaper(p.id);
+    var facts = withFacts && hasFacts(p);
+    if (!facts && !ep) return '';
+    return '<div class="paper-extra">' +
+      (facts ? '<button class="act" data-details type="button" aria-expanded="false">Details</button>' : '') +
+      (ep ? '<button class="act act-ep" data-episode="' + esc(ep.date) + '" type="button">▶ Episode · ' +
+            esc(shortDate(new Date(ep.date + 'T00:00:00'))) + '</button>' : '') +
+      '</div>' +
+      (facts ? '<div class="facts-wrap" hidden>' + factsHTML(p) + '</div>' : '');
   }
 
   /* topic / studyType are optional — rendered only when the backend supplies them. */
@@ -856,6 +1004,7 @@
     var out = '<div class="tagrow">';
     if (p.topic) out += '<span class="tag">' + esc(p.topic) + '</span>';
     if (p.studyType) out += '<span class="tag tag-outline">' + esc(p.studyType) + '</span>';
+    if (p.bottomLine) out += '<span class="tag tag-bl bl-' + esc(p.bottomLine.split(' ')[0].toLowerCase()) + '">' + esc(p.bottomLine) + '</span>';
     var lvl = relLevel(p.relevance);
     if (lvl) out += '<span class="rel' + (lvl === 'High' ? ' rel-high' : '') + '">' + lvl + ' rel</span>';
     return out + '</div>';
@@ -869,7 +1018,11 @@
 
   function footHTML(p) {
     var meta = esc(p.journal || '');
-    if (p.date) meta += ' · ' + shortDate(new Date(p.date + 'T00:00:00'));
+    /* Publication date when known (Crossref/PubMed; may be month-only),
+       otherwise the date we found it. */
+    var pub = pubLabel(p.pubDate);
+    if (pub) meta += ' · ' + pub;
+    else if (p.date) meta += ' · ' + shortDate(new Date(p.date + 'T00:00:00'));
     var saved = isSaved(p.id);
     var links = '';
     if (p.pmid) links += '<a class="act" href="https://pubmed.ncbi.nlm.nih.gov/' + encodeURIComponent(p.pmid) + '/" target="_blank" rel="noopener">PubMed</a>';
@@ -896,6 +1049,28 @@
     root.querySelectorAll('[data-share]').forEach(function (btn) {
       btn.addEventListener('click', function () { sharePaper(btn.getAttribute('data-share'), btn); });
     });
+    root.querySelectorAll('[data-details]').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var box = btn.parentNode.nextElementSibling;
+        box.hidden = !box.hidden;
+        btn.textContent = box.hidden ? 'Details' : 'Hide details';
+        btn.setAttribute('aria-expanded', String(!box.hidden));
+      });
+    });
+    root.querySelectorAll('[data-episode]').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var d = btn.getAttribute('data-episode');
+        var ep = state.episodes.filter(function (e) { return e.date === d; })[0];
+        if (ep) playEpisode(ep);
+      });
+    });
+  }
+
+  /* Re-render every paper list (after episodes load, so cards gain their
+     episode buttons). */
+  function renderPaperLists() {
+    if (!state.data) return;
+    renderToday(); renderFeed(); renderWeeklyPicks(); renderSaved();
   }
 
   /* ── saved ──────────────────────────────────────────── */
@@ -969,7 +1144,12 @@
         renderFeed();
       });
     });
-    /* Desktop-only feed filters; not persisted. */
+    $('topic-filter').addEventListener('change', function (e) {
+      state.topic = e.target.value;
+      e.target.classList.toggle('is-on', !!state.topic);
+      renderFeed();
+    });
+    /* High-rel / Saved filters; not persisted. */
     document.querySelectorAll('.chip[data-filter]').forEach(function (chip) {
       chip.addEventListener('click', function () {
         var key = chip.getAttribute('data-filter') === 'high' ? 'highRelOnly' : 'savedOnly';
@@ -1000,7 +1180,8 @@
     return allPapers().filter(function (p) { return p.id === id; })[0] || null;
   }
   function matches(p, term) {
-    return [p.title, p.journal, p.summary, p.relevance, p.topic, p.studyType]
+    return [p.title, p.journal, p.summary, p.relevance, p.topic, p.studyType,
+            p.shortTitle, p.design, p.finding, p.caveat, p.bottomLine]
       .map(function (v) { return v || ''; }).join(' ')
       .toLowerCase().indexOf(term) !== -1;
   }
@@ -1055,6 +1236,16 @@
   function longDate(d) {
     return d.toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
   }
+  /* "2026-09-29" → "29 Sept 2026"; "2026-10" → "Oct 2026"; else ''. */
+  function pubLabel(s) {
+    if (!s) return '';
+    var m = /^(\d{4})-(\d{2})(?:-(\d{2}))?$/.exec(s);
+    if (!m) return '';
+    var d = new Date(+m[1], +m[2] - 1, +(m[3] || 1));
+    return d.toLocaleDateString('en-GB', m[3] ? { day: 'numeric', month: 'short', year: 'numeric' }
+                                              : { month: 'short', year: 'numeric' });
+  }
+
   function shortDate(d) {
     return d.toLocaleDateString('en-GB', { day: 'numeric', month: 'short' });
   }
