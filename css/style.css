@@ -72,8 +72,32 @@ button { font-family: inherit; }
   background: var(--surface); color: var(--ink-3); cursor: pointer;
 }
 .icon-btn:hover { background: #F4F2ED; }
+.icon-btn .hi { width: 17px; height: 17px; }
 .icon-btn.spinning svg { animation: spin .8s linear infinite; }
 @keyframes spin { to { transform: rotate(360deg); } }
+
+/* ── icons (Hugeicons sprite in index.html) ───────────── */
+.hi {
+  width: 1em; height: 1em; flex: none; display: inline-block; vertical-align: middle;
+  fill: none; stroke: currentColor; stroke-width: 1.5;
+  stroke-linecap: round; stroke-linejoin: round;
+}
+.hi-solid { fill: currentColor; }
+/* Inline glyphs inside text buttons and links */
+.link-btn, .act, .strip-link, .bullet-link, #podcast-subscribe .panel-kicker {
+  display: inline-flex; align-items: center; gap: 5px;
+}
+.link-btn .hi, .act .hi, .strip-link .hi { width: 13px; height: 13px; }
+.bullet-link .hi { width: 11px; height: 11px; }
+.panel-kicker .hi { width: 12px; height: 12px; }
+.act .hi-solid { width: 10px; height: 10px; }
+a.act .hi { width: 11px; height: 11px; }
+.act.is-saved .hi { fill: currentColor; }
+.sign-btn { display: grid; place-items: center; }
+.sign-btn .hi { width: 18px; height: 18px; }
+.ep-play .hi { width: 16px; height: 16px; }
+.player-btn { display: grid; place-items: center; }
+.player-btn .hi { width: 19px; height: 19px; }
 
 /* ── page shell ───────────────────────────────────────── */
 main { padding-bottom: calc(var(--tabbar-h) + env(safe-area-inset-bottom)); }
@@ -222,8 +246,13 @@ main { padding-bottom: calc(var(--tabbar-h) + env(safe-area-inset-bottom)); }
 a.act { color: var(--accent); }
 
 /* ── feed controls ────────────────────────────────────── */
+.search-wrap { position: relative; }
+.search-ico {
+  position: absolute; left: 13px; top: 50%; transform: translateY(-50%);
+  width: 17px; height: 17px; color: var(--muted); pointer-events: none;
+}
 #search-input {
-  width: 100%; padding: 12px 14px; font-family: inherit; font-size: 14px;
+  width: 100%; padding: 12px 14px 12px 38px; font-family: inherit; font-size: 14px;
   color: var(--ink); background: var(--surface);
   border: 1px solid var(--line-2); border-radius: 11px;
 }
@@ -294,10 +323,7 @@ a.act { color: var(--accent); }
 }
 .empty-state h2 { font-size: 18px; }
 .empty-state p { font-size: 13.5px; line-height: 1.5; color: var(--muted); max-width: 230px; text-wrap: pretty; }
-.bookmark-mark {
-  width: 26px; height: 34px; border: 1.5px solid #C7CBD0; border-radius: 3px;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 78%, 0 100%);
-}
+.empty-ico { width: 36px; height: 36px; color: #C7CBD0; }
 
 /* ── wide button ──────────────────────────────────────── */
 .wide-btn {
@@ -323,21 +349,7 @@ a.act { color: var(--accent); }
 }
 .tab.is-on { color: var(--accent); }
 .ico { width: 24px; height: 24px; display: block; }
-.ico-home { border: 1.5px solid currentColor; border-radius: 6px; }
-.tab.is-on .ico-home { border-width: 2px; }
-.ico-feed { display: flex; flex-direction: column; justify-content: center; gap: 4px; }
-.ico-feed i { display: block; height: 2px; background: currentColor; border-radius: 1px; }
-.tab.is-on .ico-feed i { height: 2.5px; }
-.ico-weekly {
-  width: 20px; height: 20px;
-  border: 1.5px solid currentColor; border-radius: 3px; transform: rotate(45deg);
-}
-.tab.is-on .ico-weekly { border-width: 2px; }
-.ico-saved {
-  width: 18px; height: 24px; border: 1.5px solid currentColor; border-radius: 2px;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 76%, 0 100%);
-}
-.tab.is-on .ico-saved { background: currentColor; }
+.tab.is-on .ico, .nav-item.is-on .ico { stroke-width: 2; }
 
 /* ── wider screens: centre the column ─────────────────── */
 @media (min-width: 620px) {
@@ -389,10 +401,6 @@ a.act { color: var(--accent); }
   .nav-item:hover { background: #F4F2ED; }
   .nav-item.is-on { background: var(--accent-lo); color: var(--accent); font-weight: 500; }
   .nav-item .ico { width: 20px; height: 20px; flex: none; }
-  .nav-item .ico-home { border-width: 2px; border-radius: 5px; }
-  .nav-item .ico-feed i { height: 2px; }
-  .nav-item .ico-weekly { border-width: 2px; border-radius: 4px; transform: rotate(45deg) scale(.75); }
-  .nav-item .ico-saved { width: 15px; height: 20px; margin-inline: 2.5px; border-width: 2px; background: none; }
   .nav-pill {
     margin-left: auto; font-family: var(--mono); font-size: 9.5px; letter-spacing: .06em;
     padding: 2px 6px; border-radius: 5px; color: var(--muted); background: var(--hair);
@@ -431,7 +439,7 @@ a.act { color: var(--accent); }
   .masthead h1 { font-size: 25px; }
   .masthead .kicker { margin-top: 7px; }
   .masthead .search-wrap { display: flex; align-items: center; gap: 10px; width: 420px; flex: none; }
-  #search-input { padding: 11px 14px; }
+  #search-input { padding: 11px 14px 11px 38px; }
   .masthead #search-input { flex: 1; width: auto; min-width: 0; }
   .kbd-hint {
     display: block; font-family: var(--mono); font-size: 10.5px; letter-spacing: .06em;
@@ -678,20 +686,3 @@ body.has-player main {
 }
 .sub-hint { font-size: 12.5px; color: var(--muted); }
 
-/* Podcast tab icon — geometric, 1.5px stroke, matches the ico-* set. */
-.ico-podcast { position: relative; width: 20px; height: 24px; }
-.ico-podcast::before {
-  /* speaker cone */
-  content: ""; position: absolute; left: 1px; top: 8px;
-  width: 8px; height: 8px; background: currentColor;
-}
-.ico-podcast::after {
-  /* sound waves */
-  content: ""; position: absolute; right: 1px; top: 6px;
-  width: 7px; height: 12px;
-  border: 1.5px solid currentColor; border-left: none; border-radius: 0 6px 6px 0;
-}
-
-/* Active-state feedback on the tab icons, consistent with the others */
-.tab.is-on .ico-podcast::before { background: var(--accent); }
-.nav-item.is-on .ico-podcast::before { background: var(--accent); }

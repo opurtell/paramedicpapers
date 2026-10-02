@@ -210,7 +210,7 @@
      ['weekly-tldr-toggle-home', 'weekly-tldr-body-home']].forEach(function (pair) {
       var btn = $(pair[0]), body = $(pair[1]);
       body.hidden = !wide;
-      btn.textContent = wide ? '−' : '+';
+      btn.innerHTML = ico(wide ? 'minus' : 'plus');
       btn.setAttribute('aria-expanded', String(wide));
     });
 
@@ -426,8 +426,8 @@
       if (it.ref) {
         var p = paperById(it.ref);
         if (p) {
-          link = '<button class="bullet-link" data-ref="' + esc(it.ref) + '">↗ ' +
-            esc(p.journal || 'View study') + '</button>';
+          link = '<button class="bullet-link" data-ref="' + esc(it.ref) + '">' +
+            esc(p.journal || 'View study') + ico('arrow') + '</button>';
         }
       }
       return '<div class="bullet' + (weekly ? ' is-weekly' : '') + '">' +
@@ -849,9 +849,14 @@
   }
 
   function playIconSVG() {
-    return '<svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">' +
-      '<path class="ply" d="M8 5v14l11-7z"/>' +
-      '<path class="pse" d="M6 5h4v14H6zM14 5h4v14h-4z" style="display:none"/></svg>';
+    return '<svg class="hi hi-solid" aria-hidden="true">' +
+      '<use class="ply" href="#hi-play"/>' +
+      '<use class="pse" href="#hi-pause" style="display:none"/></svg>';
+  }
+
+  /* Hugeicons glyph from the sprite at the top of index.html. */
+  function ico(name, cls) {
+    return '<svg class="hi' + (cls ? ' ' + cls : '') + '" aria-hidden="true"><use href="#hi-' + name + '"/></svg>';
   }
 
   function fmtDur(s) { return Math.max(1, Math.round(s / 60)) + ' min'; }
@@ -872,7 +877,7 @@
     });
     $('btn-copy-feed').addEventListener('click', function () {
       var btn = $('btn-copy-feed');
-      copyText($('feed-url').textContent.trim(), function () { flash(btn, 'Copied ✓'); });
+      copyText($('feed-url').textContent.trim(), function () { flash(btn, 'Copied'); });
     });
 
     $('player-play').addEventListener('click', function () {
@@ -928,10 +933,11 @@
   }
 
   function flash(btn, text) {
-    var orig = btn.getAttribute('data-label') || btn.textContent;
+    var el = btn.querySelector('.lbl') || btn;  /* keep the icon beside the label */
+    var orig = btn.getAttribute('data-label') || el.textContent;
     btn.setAttribute('data-label', orig);
-    btn.textContent = text;
-    setTimeout(function () { btn.textContent = orig; }, 1500);
+    el.textContent = text;
+    setTimeout(function () { el.textContent = orig; }, 1500);
   }
 
   /* Native share sheet where there is one (phones), else copy the link. */
@@ -993,7 +999,7 @@
     if (!facts && !ep) return '';
     return '<div class="paper-extra">' +
       (facts ? '<button class="act" data-details type="button" aria-expanded="false">Details</button>' : '') +
-      (ep ? '<button class="act act-ep" data-episode="' + esc(ep.date) + '" type="button">▶ Episode · ' +
+      (ep ? '<button class="act act-ep" data-episode="' + esc(ep.date) + '" type="button">' + ico('play', 'hi-solid') + 'Episode · ' +
             esc(shortDate(new Date(ep.date + 'T00:00:00'))) + '</button>' : '') +
       '</div>' +
       (facts ? '<div class="facts-wrap" hidden>' + factsHTML(p) + '</div>' : '');
@@ -1025,14 +1031,14 @@
     else if (p.date) meta += ' · ' + shortDate(new Date(p.date + 'T00:00:00'));
     var saved = isSaved(p.id);
     var links = '';
-    if (p.pmid) links += '<a class="act" href="https://pubmed.ncbi.nlm.nih.gov/' + encodeURIComponent(p.pmid) + '/" target="_blank" rel="noopener">PubMed</a>';
-    if (p.doi) links += '<a class="act" href="https://doi.org/' + encodeURIComponent(p.doi) + '" target="_blank" rel="noopener">DOI</a>';
+    if (p.pmid) links += '<a class="act" href="https://pubmed.ncbi.nlm.nih.gov/' + encodeURIComponent(p.pmid) + '/" target="_blank" rel="noopener">PubMed' + ico('arrow') + '</a>';
+    if (p.doi) links += '<a class="act" href="https://doi.org/' + encodeURIComponent(p.doi) + '" target="_blank" rel="noopener">DOI' + ico('arrow') + '</a>';
     return '<div class="paper-foot">' +
       '<span class="paper-meta">' + meta + '</span>' +
       '<span class="paper-acts">' + links +
-        '<button class="act" data-share="' + esc(p.id) + '" type="button">Share</button>' +
-        '<button class="act' + (saved ? ' is-saved' : '') + '" data-save="' + esc(p.id) + '" type="button">' +
-          (saved ? 'Saved' : 'Save') +
+        '<button class="act" data-share="' + esc(p.id) + '" type="button">' + ico('share') + '<span class="lbl">Share</span></button>' +
+        '<button class="act' + (saved ? ' is-saved' : '') + '" data-save="' + esc(p.id) + '" type="button" aria-pressed="' + saved + '">' +
+          ico('saved') + '<span class="lbl">' + (saved ? 'Saved' : 'Save') + '</span>' +
         '</button>' +
       '</span></div>';
   }
@@ -1100,20 +1106,20 @@
 
   function bindHome() {
     collapser('fun-fact-toggle', 'fun-fact-body', 'Read more', 'Close');
-    collapser('daily-tldr-toggle', 'daily-tldr-body', '+', '−');
-    collapser('weekly-tldr-toggle-home', 'weekly-tldr-body-home', '+', '−');
+    collapser('daily-tldr-toggle', 'daily-tldr-body', ico('plus'), ico('minus'));
+    collapser('weekly-tldr-toggle-home', 'weekly-tldr-body-home', ico('plus'), ico('minus'));
     $('btn-open-feed').addEventListener('click', function () { setTab('feed'); });
     $('btn-see-week').addEventListener('click', function () { setTab('weekly'); });
   }
 
   function bindSaved() {
     $('btn-copy-citations').addEventListener('click', function () {
-      copyText(citationList(), function () { flash($('btn-copy-citations'), 'Copied ✓'); });
+      copyText(citationList(), function () { flash($('btn-copy-citations'), 'Copied'); });
     });
   }
 
   function bindWeekly() {
-    collapser('weekly-tldr-toggle', 'weekly-tldr-body', '+', '−');
+    collapser('weekly-tldr-toggle', 'weekly-tldr-body', ico('plus'), ico('minus'));
   }
 
   function collapser(btnId, bodyId, closedLabel, openLabel) {
@@ -1122,7 +1128,7 @@
     btn.addEventListener('click', function () {
       var open = body.hidden;
       body.hidden = !open;
-      btn.textContent = open ? openLabel : closedLabel;
+      btn.innerHTML = open ? openLabel : closedLabel;  /* labels are trusted markup */
       btn.setAttribute('aria-expanded', String(open));
     });
   }
