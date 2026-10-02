@@ -7,6 +7,9 @@
   'use strict';
 
   var SAVED_KEY = 'pp:saved';
+  var POS_KEY = 'pp:pos';    /* episode date -> seconds listened */
+  var RATE_KEY = 'pp:rate';
+  var RATES = [1, 1.25, 1.5];
 
   /* Matches the desktop layer in css/style.css. Above it the sidebar takes
      over navigation, search lives in the header and the Feed gains two
@@ -24,6 +27,8 @@
     savedOnly: false,
     episodes: [],
     playDate: null,
+    rate: loadRate(),
+    positions: loadJSON(POS_KEY),
     saved: loadSaved()
   };
 
@@ -37,8 +42,12 @@
     bindFeed();
     bindWeekly();
     bindPodcast();
+    bindSaved();
     $('btn-refresh').addEventListener('click', refresh);
-    window.addEventListener('hashchange', function () { setTab(tabFromHash(), true); });
+    window.addEventListener('hashchange', function () {
+      if (paperFromHash()) { openPaperLink(); return; }
+      setTab(tabFromHash(), true);
+    });
     DESKTOP.addEventListener('change', syncLayout);
     syncLayout();
 
@@ -50,7 +59,7 @@
       return;
     }
     renderAll();
-    setTab(tabFromHash(), true);
+    if (paperFromHash()) openPaperLink(); else setTab(tabFromHash(), true);
 
     /* Podcast episodes are independent of papers.json — a missing or failed
        episodes.json must never break the paper dashboard. */
@@ -98,6 +107,29 @@
   /* On desktop the sidebar carries the wordmark, so the content header
      names the view instead of the app. */
   var TITLES_WIDE = { home: 'Today', feed: 'Research feed', weekly: 'Weekly digest', podcast: 'Podcast', saved: 'Saved papers' };
+
+  /* Shareable paper links: #paper=<encoded id> opens the feed with that
+     paper pinned at the top. */
+  function paperFromHash() {
+    var m = /^#paper=(.+)$/.exec(location.hash || '');
+    if (!m) return '';
+    try { return decodeURIComponent(m[1]); } catch (e) { return ''; }
+  }
+
+  function openPaperLink() {
+    var id = paperFromHash();
+    if (!id || !paperById(id)) { setTab('feed', true); return; }
+    state.pinned = id;
+    state.pinnedFrom = 'link';
+    state.query = '';
+    $('search-input').value = '';
+    renderFeed();
+    setTab('feed', true);
+  }
+
+  function paperLink(id) {
+    return location.origin + location.pathname + '#paper=' + encodeURIComponent(id);
+  }
 
   function tabFromHash() {
     var h = (location.hash || '').replace('#', '');
@@ -251,13 +283,25 @@
       fact = facts[dayOfYear % facts.length];
     }
     var text = fact.fact || '';
-    var split = text.indexOf('. ');
+    var split = sentenceEnd(text);
     var head = split > 40 ? text.slice(0, split + 1) : text;
-    var rest = split > 40 ? text.slice(split + 2) : '';
+    var rest = split > 40 ? text.slice(split + 1).trim() : '';
 
     $('fun-fact-headline').textContent = head;
     $('fun-fact-body').textContent = rest;
     $('fun-fact-toggle').hidden = !rest;
+  }
+
+  /* Index of the full stop ending the first sentence, or -1. Skips
+     abbreviations ("e.g.", "vs.", "Dr.") and full stops not followed by a
+     capital, so the headline isn't cut mid-sentence. */
+  var ABBREVS = /(?:\b(?:e\.g|i\.e|vs|etc|approx|Dr|Mr|Mrs|Ms|St|No|Fig|cf|al)|\b[A-Z])$/;
+  function sentenceEnd(text) {
+    var re = /\.\s+(?=["'‘“(]?[A-Z0-9])/g, m;
+    while ((m = re.exec(text))) {
+      if (!ABBREVS.test(text.slice(0, m.index))) return m.index;
+    }
+    return -1;
   }
 
   /* Daily TLDR — lead is the first summary line, expanded bullets are
@@ -376,6 +420,7 @@
     root.querySelectorAll('.bullet-link').forEach(function (el) {
       el.addEventListener('click', function () {
         state.pinned = el.getAttribute('data-ref');
+        state.pinnedFrom = 'tldr';
         state.query = '';
         $('search-input').value = '';
         renderFeed();
@@ -443,7 +488,9 @@
     /* pinned card, if a TLDR bullet sent us here */
     var pin = state.pinned ? paperById(state.pinned) : null;
     $('pinned-slot').innerHTML = pin ? (
-      '<div class="pin-head"><span class="label">From the TLDR</span><span class="rule"></span>' +
+      '<div class="pin-head"><span class="label">' +
+        (state.pinnedFrom === 'link' ? 'Shared paper' : 'From the TLDR') +
+        '</span><span class="rule"></span>' +
       '<button class="act" id="clear-pin" type="button">Clear</button></div>' +
       '<article class="paper-card is-pinned">' + cardInnerHTML(pin) + '</article>'
     ) : '';
@@ -496,6 +543,7 @@
   function renderSaved() {
     var list = savedPapers();
     $('saved-empty').hidden = list.length > 0;
+    $('saved-tools').hidden = list.length === 0;
     $('saved-list').innerHTML = list.map(cardHTML).join('');
     bindActs($('saved-list'));
     if (state.tab === 'saved') renderKicker();
@@ -506,14 +554,37 @@
   /* One shared Audio element for the whole app: starting an episode from
      anywhere stops whatever was playing (single-player invariant). */
   var audioEl = null;
+  var lastSave = 0;
   function getAudio() {
     if (!audioEl) {
       audioEl = new Audio();
-      ['play', 'pause', 'ended', 'timeupdate'].forEach(function (ev) {
+      ['play', 'pause', 'ended', 'timeupdate', 'loadedmetadata'].forEach(function (ev) {
         audioEl.addEventListener(ev, syncPlayerUi);
+      });
+      audioEl.addEventListener('timeupdate', function () {
+        if (Date.now() - lastSave > 5000) savePosition();
+      });
+      audioEl.addEventListener('pause', function () { savePosition(); renderEpisodes(); });
+      audioEl.addEventListener('ended', function () {
+        delete state.positions[state.playDate];
+        persistJSON(POS_KEY, state.positions);
+        renderEpisodes();
       });
     }
     return audioEl;
+  }
+
+  /* Listening position per episode, so a half-played episode resumes. */
+  function savePosition() {
+    var a = audioEl;
+    if (!a || !state.playDate || !a.duration) return;
+    lastSave = Date.now();
+    if (a.currentTime > 5 && a.currentTime < a.duration - 10) {
+      state.positions[state.playDate] = Math.floor(a.currentTime);
+    } else if (a.currentTime >= a.duration - 10) {
+      delete state.positions[state.playDate];
+    }
+    persistJSON(POS_KEY, state.positions);
   }
 
   function playEpisode(ep) {
@@ -522,10 +593,57 @@
       if (a.paused) a.play(); else a.pause();
       return;
     }
+    savePosition();
     a.src = 'audio/' + ep.file;
+    a.defaultPlaybackRate = a.playbackRate = state.rate;
     state.playDate = ep.date;
+    var resume = state.positions[ep.date] || 0;
+    if (resume) {
+      a.addEventListener('loadedmetadata', function seek() {
+        a.removeEventListener('loadedmetadata', seek);
+        if (resume < a.duration - 10) a.currentTime = resume;
+      });
+    }
     a.play();
+    /* "Paramedic Papers Daily — 2 October 2026" → "2 October 2026": the
+       bar is narrow on phones and the show name adds nothing there. */
+    $('player-title').textContent = ep.title.replace(/^.*—\s*/, '') || ep.title;
+    $('player').hidden = false;
+    document.body.classList.add('has-player');
+    setMediaSession(ep);
     syncPlayerUi();
+  }
+
+  /* Lock-screen / headphone / car controls. */
+  function setMediaSession(ep) {
+    if (!('mediaSession' in navigator)) return;
+    var icon = new URL('icon-512.png', location.href).href;
+    navigator.mediaSession.metadata = new MediaMetadata({
+      title: ep.title, artist: 'Paramedic Papers Daily', album: 'Paramedic Papers',
+      artwork: [{ src: icon, sizes: '512x512', type: 'image/png' }]
+    });
+    var a = getAudio();
+    var handlers = {
+      play: function () { a.play(); },
+      pause: function () { a.pause(); },
+      seekbackward: function (d) { skip(-((d && d.seekOffset) || 15)); },
+      seekforward: function (d) { skip((d && d.seekOffset) || 30); },
+      seekto: function (d) { if (d && d.seekTime != null) a.currentTime = d.seekTime; }
+    };
+    Object.keys(handlers).forEach(function (k) {
+      try { navigator.mediaSession.setActionHandler(k, handlers[k]); } catch (e) {}
+    });
+  }
+
+  function skip(sec) {
+    var a = getAudio();
+    if (!a.duration) return;
+    a.currentTime = Math.max(0, Math.min(a.duration - 0.5, a.currentTime + sec));
+  }
+
+  function fmtClock(s) {
+    s = Math.max(0, Math.floor(s || 0));
+    return Math.floor(s / 60) + ':' + (s % 60 < 10 ? '0' : '') + (s % 60);
   }
 
   /* Reflect audio state onto every play button ([data-ep-play]) and the
@@ -541,6 +659,22 @@
     });
     var bar = $('strip-progress');
     if (bar) bar.style.width = (a.duration ? (a.currentTime / a.duration) * 100 : 0) + '%';
+
+    $('player-play').setAttribute('data-ep-play', state.playDate || '');
+    var seek = $('player-seek');
+    if (a.duration && !seek.matches(':active')) {
+      seek.max = Math.floor(a.duration);
+      seek.value = Math.floor(a.currentTime);
+      seek.style.setProperty('--pct', (a.currentTime / a.duration * 100) + '%');
+    }
+    $('player-time').textContent = fmtClock(a.currentTime) + ' / ' + fmtClock(a.duration);
+    if ('mediaSession' in navigator && a.duration && navigator.mediaSession.setPositionState) {
+      try {
+        navigator.mediaSession.setPositionState({
+          duration: a.duration, playbackRate: a.playbackRate, position: Math.min(a.currentTime, a.duration)
+        });
+      } catch (e) {}
+    }
   }
 
   async function loadEpisodes() {
@@ -582,7 +716,7 @@
           '<span class="ep-name">' + esc(ep.title) + '</span>' +
           '<span class="ep-desc">' + esc(ep.description) + '</span>' +
         '</div>' +
-        '<span class="ep-len">' + fmtDur(ep.durationSec) + '</span>' +
+        '<span class="ep-len">' + epLenLabel(ep) + '</span>' +
       '</div>';
     }).join('');
     list.querySelectorAll('[data-ep-play]').forEach(function (btn) {
@@ -603,6 +737,11 @@
 
   function fmtDur(s) { return Math.max(1, Math.round(s / 60)) + ' min'; }
 
+  function epLenLabel(ep) {
+    var pos = state.positions[ep.date];
+    return pos ? fmtDur(ep.durationSec - pos) + ' left' : fmtDur(ep.durationSec);
+  }
+
   /* Static listeners, bound once. */
   function bindPodcast() {
     $('strip-play').addEventListener('click', function () {
@@ -613,18 +752,92 @@
       if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); setTab('podcast'); }
     });
     $('btn-copy-feed').addEventListener('click', function () {
-      var url = $('feed-url').textContent.trim();
       var btn = $('btn-copy-feed');
-      var done = function () {
-        btn.textContent = 'Copied ✓';
-        setTimeout(function () { btn.textContent = 'Copy feed URL'; }, 1500);
-      };
-      if (navigator.clipboard && navigator.clipboard.writeText) {
-        navigator.clipboard.writeText(url).then(done, function () { window.prompt('Copy this URL:', url); });
-      } else {
-        window.prompt('Copy this URL:', url);
-      }
+      copyText($('feed-url').textContent.trim(), function () { flash(btn, 'Copied ✓'); });
     });
+
+    $('player-play').addEventListener('click', function () {
+      var a = getAudio();
+      if (!a.src) return;
+      if (a.paused) a.play(); else a.pause();
+    });
+    $('player-back').addEventListener('click', function () { skip(-15); });
+    $('player-fwd').addEventListener('click', function () { skip(30); });
+    $('player-seek').addEventListener('input', function (e) {
+      var a = getAudio();
+      if (a.duration) a.currentTime = Number(e.target.value);
+    });
+    $('player-rate').addEventListener('click', function () {
+      state.rate = RATES[(RATES.indexOf(state.rate) + 1) % RATES.length];
+      try { localStorage.setItem(RATE_KEY, String(state.rate)); } catch (e) {}
+      var a = getAudio();
+      a.defaultPlaybackRate = a.playbackRate = state.rate;
+      renderRate();
+    });
+    renderRate();
+  }
+
+  function renderRate() {
+    $('player-rate').textContent = state.rate + '×';
+  }
+
+  function loadRate() {
+    var r = 1;
+    try { r = Number(localStorage.getItem(RATE_KEY)) || 1; } catch (e) {}
+    return RATES.indexOf(r) !== -1 ? r : 1;
+  }
+
+  /* ── clipboard / share ──────────────────────────────── */
+
+  function copyText(text, done) {
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(done, function () { legacyCopy(text, done); });
+    } else {
+      legacyCopy(text, done);
+    }
+  }
+
+  function legacyCopy(text, done) {
+    var ta = document.createElement('textarea');
+    ta.value = text;
+    ta.setAttribute('readonly', '');
+    ta.style.position = 'fixed'; ta.style.opacity = '0';
+    document.body.appendChild(ta);
+    ta.select();
+    try { if (document.execCommand('copy')) done(); } catch (e) {}
+    document.body.removeChild(ta);
+  }
+
+  function flash(btn, text) {
+    var orig = btn.getAttribute('data-label') || btn.textContent;
+    btn.setAttribute('data-label', orig);
+    btn.textContent = text;
+    setTimeout(function () { btn.textContent = orig; }, 1500);
+  }
+
+  /* Native share sheet where there is one (phones), else copy the link. */
+  function sharePaper(id, btn) {
+    var p = paperById(id);
+    if (!p) return;
+    var url = paperLink(id);
+    if (navigator.share) {
+      navigator.share({ title: p.title, text: p.title + ' (' + (p.journal || 'paper') + ')', url: url })
+        .catch(function () {});
+    } else {
+      copyText(url, function () { flash(btn, 'Link copied'); });
+    }
+  }
+
+  /* Saved papers as a numbered plain-text reference list. */
+  function citationList() {
+    return savedPapers().map(function (p, i) {
+      var parts = [p.title.replace(/\.$/, '') + '.'];
+      if (p.journal) parts.push(p.journal + '.');
+      if (p.date) parts.push(p.date.slice(0, 4) + '.');
+      if (p.doi) parts.push('https://doi.org/' + p.doi);
+      else if (p.pmid) parts.push('https://pubmed.ncbi.nlm.nih.gov/' + p.pmid + '/');
+      return (i + 1) + '. ' + parts.join(' ');
+    }).join('\n');
   }
 
   /* ── card builders ──────────────────────────────────── */
@@ -664,6 +877,7 @@
     return '<div class="paper-foot">' +
       '<span class="paper-meta">' + meta + '</span>' +
       '<span class="paper-acts">' + links +
+        '<button class="act" data-share="' + esc(p.id) + '" type="button">Share</button>' +
         '<button class="act' + (saved ? ' is-saved' : '') + '" data-save="' + esc(p.id) + '" type="button">' +
           (saved ? 'Saved' : 'Save') +
         '</button>' +
@@ -679,13 +893,20 @@
     root.querySelectorAll('[data-save]').forEach(function (btn) {
       btn.addEventListener('click', function () { toggleSave(btn.getAttribute('data-save')); });
     });
+    root.querySelectorAll('[data-share]').forEach(function (btn) {
+      btn.addEventListener('click', function () { sharePaper(btn.getAttribute('data-share'), btn); });
+    });
   }
 
   /* ── saved ──────────────────────────────────────────── */
 
-  function loadSaved() {
-    try { return JSON.parse(localStorage.getItem(SAVED_KEY)) || {}; }
+  function loadSaved() { return loadJSON(SAVED_KEY); }
+  function loadJSON(key) {
+    try { return JSON.parse(localStorage.getItem(key)) || {}; }
     catch (e) { return {}; }
+  }
+  function persistJSON(key, value) {
+    try { localStorage.setItem(key, JSON.stringify(value)); } catch (e) {}
   }
   function persistSaved() {
     try { localStorage.setItem(SAVED_KEY, JSON.stringify(state.saved)); } catch (e) {}
@@ -708,6 +929,12 @@
     collapser('weekly-tldr-toggle-home', 'weekly-tldr-body-home', '+', '−');
     $('btn-open-feed').addEventListener('click', function () { setTab('feed'); });
     $('btn-see-week').addEventListener('click', function () { setTab('weekly'); });
+  }
+
+  function bindSaved() {
+    $('btn-copy-citations').addEventListener('click', function () {
+      copyText(citationList(), function () { flash($('btn-copy-citations'), 'Copied ✓'); });
+    });
   }
 
   function bindWeekly() {
@@ -773,7 +1000,8 @@
     return allPapers().filter(function (p) { return p.id === id; })[0] || null;
   }
   function matches(p, term) {
-    return ((p.title || '') + ' ' + (p.journal || '') + ' ' + (p.summary || '') + ' ' + (p.relevance || ''))
+    return [p.title, p.journal, p.summary, p.relevance, p.topic, p.studyType]
+      .map(function (v) { return v || ''; }).join(' ')
       .toLowerCase().indexOf(term) !== -1;
   }
   function externalHref(p) {
@@ -835,6 +1063,7 @@
   function esc(str) {
     var div = document.createElement('div');
     div.textContent = str == null ? '' : str;
-    return div.innerHTML;
+    /* innerHTML escapes & < > but not quotes, and esc() also fills attributes. */
+    return div.innerHTML.replace(/"/g, '&quot;').replace(/'/g, '&#39;');
   }
 })();
