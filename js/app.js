@@ -637,7 +637,7 @@
       return;
     }
     savePosition();
-    a.src = 'audio/' + ep.file;
+    a.src = ep.url || 'audio/' + ep.file;  /* audio lives on R2 (audio.paramedicpapers.com) */
     a.defaultPlaybackRate = a.playbackRate = state.rate;
     state.playDate = ep.date;
     var resume = state.positions[ep.date] || 0;
@@ -798,7 +798,7 @@
       }).join('') + '</ol>';
     }
     if (ep.transcript) {
-      out += '<button class="link-btn" data-transcript="' + esc(ep.transcript) + '" type="button">Read transcript</button>' +
+      out += '<button class="link-btn" data-transcript="' + esc(ep.transcriptUrl || 'audio/' + ep.transcript) + '" type="button">Read transcript</button>' +
         '<div class="ep-transcript" hidden></div>';
     }
     return out;
@@ -818,7 +818,7 @@
     var box = btn.nextElementSibling;
     if (!box.hidden) { box.hidden = true; btn.textContent = 'Read transcript'; return; }
     btn.textContent = 'Loading…';
-    fetch('audio/' + btn.getAttribute('data-transcript'))
+    fetch(btn.getAttribute('data-transcript'))
       .then(function (r) { if (!r.ok) throw new Error(r.status); return r.text(); })
       .then(function (text) {
         box.innerHTML = text.trim().split(/\n\s*\n/).map(function (para) {
