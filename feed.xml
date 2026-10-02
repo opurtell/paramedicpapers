@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0"
      xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
-     xmlns:atom="http://www.w3.org/2005/Atom">
+     xmlns:atom="http://www.w3.org/2005/Atom"
+     xmlns:content="http://purl.org/rss/1.0/modules/content/"
+     xmlns:podcast="https://podcastindex.org/namespace/1.0">
   <channel>
     <title>Paramedic Papers Daily</title>
     <link>https://opurtell.github.io/paramedicpapers/</link>
+    <atom:link href="https://opurtell.github.io/paramedicpapers/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en-au</language>
     <copyright>© 2026 Oscar Purtell</copyright>
     <description>A short daily audio roundup of the latest paramedic and prehospital research, delivered each Sydney morning.</description>
@@ -21,274 +24,395 @@
     </itunes:category>
     <itunes:explicit>false</itunes:explicit>
     <item>
+      <title>Paramedic Papers Daily — 3 October 2026</title>
+      <link>https://opurtell.github.io/paramedicpapers/#episode=2026-10-03</link>
+      <description>11 papers: chest-pain risk-score conveyance; First Nations stroke gaps; OHCA cost-effectiveness; paediatric dosing errors; trauma vasopressors; methoxyflurane; crew size; paediatric asthma agreement; stroke delay; geriatric direct admission; US trauma disparities</description>
+      <content:encoded><![CDATA[<p>11 papers: chest-pain risk-score conveyance; First Nations stroke gaps; OHCA cost-effectiveness; paediatric dosing errors; trauma vasopressors; methoxyflurane; crew size; paediatric asthma agreement; stroke delay; geriatric direct admission; US trauma disparities</p><p>Papers in this episode:</p><ul><li><a href="https://doi.org/10.1136/heartjnl-2026-328924">Risk-score-guided conveyance safe in chest pain <em>(Heart)</em></a></li><li><a href="https://doi.org/10.5694/mja2.70303">Stroke care gaps for First Nations patients <em>(The Medical Journal of Australia)</em></a></li><li><a href="https://doi.org/10.1080/10903127.2026.2741269">What OHCA care is worth paying for <em>(Prehospital Emergency Care)</em></a></li><li><a href="https://doi.org/10.1080/10903127.2026.2740143">Nearly half of paediatric doses off-protocol <em>(Prehospital Emergency Care)</em></a></li><li><a href="https://doi.org/10.1097/MEJ.0000000000001379">Prehospital vasopressors in trauma unproven <em>(European Journal of Emergency Medicine)</em></a></li><li><a href="https://doi.org/10.1080/17581869.2026.2736033">Methoxyflurane feasibility confirmed in Canada <em>(Pain Management)</em></a></li><li><a href="https://doi.org/10.20408/jti.2025.0230">Bigger crews work faster, don't save more <em>(Journal of Trauma and Injury)</em></a></li><li><a href="https://doi.org/10.1080/10903127.2026.2717525">EMS and ED disagree on paediatric asthma signs <em>(Prehospital Emergency Care)</em></a></li><li><a href="https://doi.org/10.1159/ced/accag027">Two-thirds of stroke patients delay seeking care <em>(Cerebrovascular Diseases)</em></a></li><li><a href="https://doi.org/10.1186/s12877-026-08370-1">Direct geriatric admission depends on geography <em>(BMC Geriatrics)</em></a></li><li><a href="https://doi.org/10.1001/jamasurg.2026.4509">US racial gaps in trauma interventions <em>(JAMA Surgery)</em></a></li></ul><p><a href="https://opurtell.github.io/paramedicpapers/#episode=2026-10-03">Show notes and transcript</a></p>]]></content:encoded>
+      <pubDate>Sat, 03 Oct 2026 07:38:34 +1000</pubDate>
+      <guid isPermaLink="true">https://opurtell.github.io/paramedicpapers/audio/ep-2026-10-03.mp3</guid>
+      <enclosure url="https://opurtell.github.io/paramedicpapers/audio/ep-2026-10-03.mp3" length="3074156" type="audio/mpeg"/>
+      <itunes:duration>768</itunes:duration>
+      <itunes:summary>11 papers: chest-pain risk-score conveyance; First Nations stroke gaps; OHCA cost-effectiveness; paediatric dosing errors; trauma vasopressors; methoxyflurane; crew size; paediatric asthma agreement; stroke delay; geriatric direct admission; US trauma disparities</itunes:summary>
+      <itunes:image href="https://opurtell.github.io/paramedicpapers/icon-512.png"/>
+      <itunes:episodeType>full</itunes:episodeType>
+      <podcast:transcript url="https://opurtell.github.io/paramedicpapers/audio/ep-2026-10-03.txt" type="text/plain" language="en-au"/>
+    </item>
+    <item>
       <title>Paramedic Papers Daily — 2 October 2026</title>
+      <link>https://opurtell.github.io/paramedicpapers/#episode=2026-10-02</link>
       <description>3 papers: early adrenaline + early airway in OHCA (Korean registry); language barriers shift blunt trauma care (US EMS data); NAEMSP position statement on EMS clinician mental health</description>
+      <content:encoded><![CDATA[<p>3 papers: early adrenaline + early airway in OHCA (Korean registry); language barriers shift blunt trauma care (US EMS data); NAEMSP position statement on EMS clinician mental health</p><p>Papers in this episode:</p><ul><li><a href="https://doi.org/10.1016/j.jemermed.2026.08.017">The Benefit of Early Advanced Airway Management Depends on Prehospital Epinephrine Timing in Out-of-Hospital Cardiac Arrest: A Nationwide Cohort Study <em>(The Journal of Emergency Medicine)</em></a></li><li><a href="https://doi.org/10.1016/j.jss.2026.08.054">Differences in Prehospital Assessment by Language Barrier Among Blunt Trauma Patients: A National Emergency Medical Services Study <em>(Journal of Surgical Research)</em></a></li><li><a href="https://doi.org/10.1080/10903127.2026.2740139">Supporting Mental Health in EMS Clinicians: A NAEMSP Position Statement and Resource Document <em>(Prehospital Emergency Care)</em></a></li></ul><p><a href="https://opurtell.github.io/paramedicpapers/#episode=2026-10-02">Show notes and transcript</a></p>]]></content:encoded>
       <pubDate>Fri, 02 Oct 2026 07:33:12 +1000</pubDate>
       <guid isPermaLink="true">https://opurtell.github.io/paramedicpapers/audio/ep-2026-10-02.mp3</guid>
       <enclosure url="https://opurtell.github.io/paramedicpapers/audio/ep-2026-10-02.mp3" length="828525" type="audio/mpeg"/>
       <itunes:duration>207</itunes:duration>
       <itunes:summary>3 papers: early adrenaline + early airway in OHCA (Korean registry); language barriers shift blunt trauma care (US EMS data); NAEMSP position statement on EMS clinician mental health</itunes:summary>
+      <itunes:image href="https://opurtell.github.io/paramedicpapers/icon-512.png"/>
+      <itunes:episodeType>full</itunes:episodeType>
     </item>
     <item>
       <title>Paramedic Papers Daily — 1 October 2026</title>
+      <link>https://opurtell.github.io/paramedicpapers/#episode=2026-10-01</link>
       <description>1 paper: prehospital whole blood in traumatic haemorrhagic shock — systematic review/meta-analysis (Injury, ahead-of-print)</description>
+      <content:encoded><![CDATA[<p>1 paper: prehospital whole blood in traumatic haemorrhagic shock — systematic review/meta-analysis (Injury, ahead-of-print)</p><p>Papers in this episode:</p><ul><li><a href="https://doi.org/10.1016/j.injury.2026.113732">Prehospital whole blood transfusion in traumatic hemorrhagic shock: a systematic review and meta-analysis <em>(Injury)</em></a></li></ul><p><a href="https://opurtell.github.io/paramedicpapers/#episode=2026-10-01">Show notes and transcript</a></p>]]></content:encoded>
       <pubDate>Thu, 01 Oct 2026 07:33:26 +1000</pubDate>
       <guid isPermaLink="true">https://opurtell.github.io/paramedicpapers/audio/ep-2026-10-01.mp3</guid>
       <enclosure url="https://opurtell.github.io/paramedicpapers/audio/ep-2026-10-01.mp3" length="412749" type="audio/mpeg"/>
       <itunes:duration>103</itunes:duration>
       <itunes:summary>1 paper: prehospital whole blood in traumatic haemorrhagic shock — systematic review/meta-analysis (Injury, ahead-of-print)</itunes:summary>
+      <itunes:image href="https://opurtell.github.io/paramedicpapers/icon-512.png"/>
+      <itunes:episodeType>full</itunes:episodeType>
     </item>
     <item>
       <title>Paramedic Papers Daily — 30 September 2026</title>
+      <link>https://opurtell.github.io/paramedicpapers/#episode=2026-09-30</link>
       <description>1 paper: PIHCA vs GO-FAR 2 pre-arrest scores validated in 501 Swedish in-hospital cardiac arrests — comparable performance</description>
+      <content:encoded><![CDATA[<p>1 paper: PIHCA vs GO-FAR 2 pre-arrest scores validated in 501 Swedish in-hospital cardiac arrests — comparable performance</p><p>Papers in this episode:</p><ul><li><a href="https://doi.org/10.1016/j.resplu.2026.101493">Validation and comparison of two prearrest prediction scores for in-hospital cardiac arrest survival <em>(Resuscitation Plus)</em></a></li></ul><p><a href="https://opurtell.github.io/paramedicpapers/#episode=2026-09-30">Show notes and transcript</a></p>]]></content:encoded>
       <pubDate>Wed, 30 Sep 2026 07:35:33 +1000</pubDate>
       <guid isPermaLink="true">https://opurtell.github.io/paramedicpapers/audio/ep-2026-09-30.mp3</guid>
       <enclosure url="https://opurtell.github.io/paramedicpapers/audio/ep-2026-09-30.mp3" length="564525" type="audio/mpeg"/>
       <itunes:duration>141</itunes:duration>
       <itunes:summary>1 paper: PIHCA vs GO-FAR 2 pre-arrest scores validated in 501 Swedish in-hospital cardiac arrests — comparable performance</itunes:summary>
+      <itunes:image href="https://opurtell.github.io/paramedicpapers/icon-512.png"/>
+      <itunes:episodeType>full</itunes:episodeType>
     </item>
     <item>
       <title>Paramedic Papers Daily — 29 September 2026</title>
+      <link>https://opurtell.github.io/paramedicpapers/#episode=2026-09-29</link>
       <description>1 paper: sex differences in OHCA vanish when obstructive CAD is angiographically confirmed (Resuscitation Plus registry, n=580)</description>
+      <content:encoded><![CDATA[<p>1 paper: sex differences in OHCA vanish when obstructive CAD is angiographically confirmed (Resuscitation Plus registry, n=580)</p><p>Papers in this episode:</p><ul><li><a href="https://doi.org/10.1016/j.resplu.2026.101490">Sex differences in management and outcomes after out-of-hospital cardiac arrest with angiographically confirmed obstructive coronary artery disease <em>(Resuscitation Plus)</em></a></li><li><a href="https://doi.org/10.1080/10903127.2026.2739424">Prehospital Minithoracostomy versus Chest Drainage for Emergency Pleural Decompression in Major Trauma <em>(Prehospital Emergency Care)</em></a></li><li><a href="https://doi.org/10.1080/10903127.2026.2739419">Combined NRB and Nasal Cannula Oxygen Delivery Is Inferior to Flush Rate NRB for Emergency Preoxygenation <em>(Prehospital Emergency Care)</em></a></li><li><a href="https://doi.org/10.1111/1742-6723.70355">Postresuscitation Out‐of‐Hospital Cardiac Arrest Presentations to Australia's First Dedicated Cardiac Hospital: A Retrospective Audit of Outcomes and Emergency Department Access Factors <em>(Emergency Medicine Australasia)</em></a></li><li><a href="https://doi.org/10.1080/10903127.2026.2737688">Repeat 9-1-1 Calls and Clinical Outcomes of Children After Non-Transport by Emergency Medical Services <em>(Prehospital Emergency Care)</em></a></li><li><a href="https://doi.org/10.1111/1742-6723.70356">Co‐Design of a Theory‐Informed, Multicomponent, Intervention for Diagnostic Stewardship in a Major‐Referral Emergency Department: A Qualitative Descriptive Study <em>(Emergency Medicine Australasia)</em></a></li><li><a href="https://doi.org/10.1111/1742-6723.70353">Artificial Intelligence Triage of Urgent Versus Non‐Urgent CT Brain Findings to Support Expedited Emergency Department Disposition: A Retrospective Validation Study <em>(Emergency Medicine Australasia)</em></a></li></ul><p><a href="https://opurtell.github.io/paramedicpapers/#episode=2026-09-29">Show notes and transcript</a></p>]]></content:encoded>
       <pubDate>Tue, 29 Sep 2026 07:35:49 +1000</pubDate>
       <guid isPermaLink="true">https://opurtell.github.io/paramedicpapers/audio/ep-2026-09-29.mp3</guid>
       <enclosure url="https://opurtell.github.io/paramedicpapers/audio/ep-2026-09-29.mp3" length="634797" type="audio/mpeg"/>
       <itunes:duration>158</itunes:duration>
       <itunes:summary>1 paper: sex differences in OHCA vanish when obstructive CAD is angiographically confirmed (Resuscitation Plus registry, n=580)</itunes:summary>
+      <itunes:image href="https://opurtell.github.io/paramedicpapers/icon-512.png"/>
+      <itunes:episodeType>full</itunes:episodeType>
     </item>
     <item>
       <title>Paramedic Papers Daily — 28 September 2026</title>
+      <link>https://opurtell.github.io/paramedicpapers/#episode=2026-09-28</link>
       <description>1 paper: two-handed neonatal mask hold cuts facemask leak (27% to 2.5%) in simulation</description>
+      <content:encoded><![CDATA[<p>1 paper: two-handed neonatal mask hold cuts facemask leak (27% to 2.5%) in simulation</p><p>Papers in this episode:</p><ul><li><a href="https://doi.org/10.1016/j.resplu.2026.101488">It takes two: development of simulation training for two-handed neonatal mask ventilation integrating a respiratory function monitor; a non-randomised before-and-after simulation study <em>(Resuscitation Plus)</em></a></li></ul><p><a href="https://opurtell.github.io/paramedicpapers/#episode=2026-09-28">Show notes and transcript</a></p>]]></content:encoded>
       <pubDate>Mon, 28 Sep 2026 07:33:17 +1000</pubDate>
       <guid isPermaLink="true">https://opurtell.github.io/paramedicpapers/audio/ep-2026-09-28.mp3</guid>
       <enclosure url="https://opurtell.github.io/paramedicpapers/audio/ep-2026-09-28.mp3" length="463437" type="audio/mpeg"/>
       <itunes:duration>115</itunes:duration>
       <itunes:summary>1 paper: two-handed neonatal mask hold cuts facemask leak (27% to 2.5%) in simulation</itunes:summary>
+      <itunes:image href="https://opurtell.github.io/paramedicpapers/icon-512.png"/>
+      <itunes:episodeType>full</itunes:episodeType>
     </item>
     <item>
       <title>Paramedic Papers Daily — 27 September 2026</title>
+      <link>https://opurtell.github.io/paramedicpapers/#episode=2026-09-27</link>
       <description>2 papers: paediatric IHCA trends in Japan (survival up to ~30%); Greece's first national school CPR championship (95%+ quality scores)</description>
+      <content:encoded><![CDATA[<p>2 papers: paediatric IHCA trends in Japan (survival up to ~30%); Greece's first national school CPR championship (95%+ quality scores)</p><p>Papers in this episode:</p><ul><li><a href="https://doi.org/10.1016/j.resuscitation.2026.111225">Incidence, outcomes, and temporal trends of pediatric in-hospital cardiac arrest in Japan: a nationwide study <em>(Resuscitation)</em></a></li><li><a href="https://doi.org/10.1016/j.resplu.2026.101495">Designing and implementing the first national CPR championship in Greece: the “KIDS SAVE LIVES – TA PAIDIA SOZOUN ZOES” experience <em>(Resuscitation Plus)</em></a></li></ul><p><a href="https://opurtell.github.io/paramedicpapers/#episode=2026-09-27">Show notes and transcript</a></p>]]></content:encoded>
       <pubDate>Sun, 27 Sep 2026 07:33:21 +1000</pubDate>
       <guid isPermaLink="true">https://opurtell.github.io/paramedicpapers/audio/ep-2026-09-27.mp3</guid>
       <enclosure url="https://opurtell.github.io/paramedicpapers/audio/ep-2026-09-27.mp3" length="656205" type="audio/mpeg"/>
       <itunes:duration>163</itunes:duration>
       <itunes:summary>2 papers: paediatric IHCA trends in Japan (survival up to ~30%); Greece's first national school CPR championship (95%+ quality scores)</itunes:summary>
+      <itunes:image href="https://opurtell.github.io/paramedicpapers/icon-512.png"/>
+      <itunes:episodeType>full</itunes:episodeType>
     </item>
     <item>
       <title>Paramedic Papers Daily — 26 September 2026</title>
+      <link>https://opurtell.github.io/paramedicpapers/#episode=2026-09-26</link>
       <description>3 papers: pit-crew CPR education and intact survival (ahead-of-print); zero studies on post-arrest psychological screening; RFM feedback beats repetition in neonatal mask ventilation</description>
+      <content:encoded><![CDATA[<p>3 papers: pit-crew CPR education and intact survival (ahead-of-print); zero studies on post-arrest psychological screening; RFM feedback beats repetition in neonatal mask ventilation</p><p>Papers in this episode:</p><ul><li><a href="https://doi.org/10.1080/10903127.2026.2739421">A Robust Educational Initiative for EMS Clinicians Focusing on Pit-Crew CPR Improves Neurologically Intact Survival <em>(Prehospital Emergency Care)</em></a></li><li><a href="https://doi.org/10.1016/j.resuscitation.2026.111311">Structured diagnostic strategies for psychological problems in cardiac arrest survivors: an important knowledge gap <em>(Resuscitation)</em></a></li><li><a href="https://doi.org/10.1016/j.resplu.2026.101497">Low-dose, high-frequency simulation with respiratory function monitor feedback enhances face mask ventilation across neonatal resuscitation devices: A prospective study in neonatology fellows <em>(Resuscitation Plus)</em></a></li></ul><p><a href="https://opurtell.github.io/paramedicpapers/#episode=2026-09-26">Show notes and transcript</a></p>]]></content:encoded>
       <pubDate>Sat, 26 Sep 2026 07:36:22 +1000</pubDate>
       <guid isPermaLink="true">https://opurtell.github.io/paramedicpapers/audio/ep-2026-09-26.mp3</guid>
       <enclosure url="https://opurtell.github.io/paramedicpapers/audio/ep-2026-09-26.mp3" length="718317" type="audio/mpeg"/>
       <itunes:duration>179</itunes:duration>
       <itunes:summary>3 papers: pit-crew CPR education and intact survival (ahead-of-print); zero studies on post-arrest psychological screening; RFM feedback beats repetition in neonatal mask ventilation</itunes:summary>
+      <itunes:image href="https://opurtell.github.io/paramedicpapers/icon-512.png"/>
+      <itunes:episodeType>full</itunes:episodeType>
     </item>
     <item>
       <title>Paramedic Papers Daily — 25 September 2026</title>
+      <link>https://opurtell.github.io/paramedicpapers/#episode=2026-09-25</link>
       <description>6 papers: post-ROSC CO2 in paediatric OHCA; supraglottic vs intubation meta-analysis; SpO2 during CPR; calcium in blood-product resus; rCAST validation in children; drone AED cost-effectiveness in Scotland</description>
+      <content:encoded><![CDATA[<p>6 papers: post-ROSC CO2 in paediatric OHCA; supraglottic vs intubation meta-analysis; SpO2 during CPR; calcium in blood-product resus; rCAST validation in children; drone AED cost-effectiveness in Scotland</p><p>Papers in this episode:</p><ul><li><a href="https://doi.org/10.1016/j.resuscitation.2026.111306">Association between the first post-resuscitation partial pressure of arterial carbon dioxide and neurologic outcomes in children with out-of-hospital cardiac arrest: a multicenter retrospective cohort study <em>(Resuscitation)</em></a></li><li><a href="https://doi.org/10.1016/j.resplu.2026.101491">Supraglottic airway versus endotracheal intubation in out-of-hospital cardiac arrest: a systematic review and meta-analysis <em>(Resuscitation Plus)</em></a></li><li><a href="https://doi.org/10.1016/j.resuscitation.2026.111215">Associations between pulsed oxygen saturation during out-of-hospital cardiopulmonary resuscitation, cardiopulmonary resuscitation quality and return of spontaneous circulation <em>(Resuscitation)</em></a></li><li><a href="https://doi.org/10.1016/j.ajem.2026.09.034">Calcium during prehospital trauma blood-product resuscitation: A meta-analysis <em>(The American Journal of Emergency Medicine)</em></a></li><li><a href="https://doi.org/10.1016/j.resplu.2026.101489">Prognostic utility of the revised post-cardiac arrest syndrome for therapeutic hypothermia score in pediatric patients with post-cardiac arrest syndrome <em>(Resuscitation Plus)</em></a></li><li><a href="https://doi.org/10.1016/j.ress.2026.113470">A Bayesian learning approach for drone coverage network: A case study on cardiac arrest in Scotland <em>(Reliability Engineering &amp; System Safety)</em></a></li></ul><p><a href="https://opurtell.github.io/paramedicpapers/#episode=2026-09-25">Show notes and transcript</a></p>]]></content:encoded>
       <pubDate>Fri, 25 Sep 2026 07:36:16 +1000</pubDate>
       <guid isPermaLink="true">https://opurtell.github.io/paramedicpapers/audio/ep-2026-09-25.mp3</guid>
       <enclosure url="https://opurtell.github.io/paramedicpapers/audio/ep-2026-09-25.mp3" length="1132077" type="audio/mpeg"/>
       <itunes:duration>282</itunes:duration>
       <itunes:summary>6 papers: post-ROSC CO2 in paediatric OHCA; supraglottic vs intubation meta-analysis; SpO2 during CPR; calcium in blood-product resus; rCAST validation in children; drone AED cost-effectiveness in Scotland</itunes:summary>
+      <itunes:image href="https://opurtell.github.io/paramedicpapers/icon-512.png"/>
+      <itunes:episodeType>full</itunes:episodeType>
     </item>
     <item>
       <title>Paramedic Papers Daily — 24 September 2026</title>
+      <link>https://opurtell.github.io/paramedicpapers/#episode=2026-09-24</link>
       <description>3 papers: dispatcher-assisted CPR barriers halve survival; night drone AED deliveries match daytime; Ethiopia governance gaps leave care as transport</description>
+      <content:encoded><![CDATA[<p>3 papers: dispatcher-assisted CPR barriers halve survival; night drone AED deliveries match daytime; Ethiopia governance gaps leave care as transport</p><p>Papers in this episode:</p><ul><li><a href="https://doi.org/10.1016/j.resuscitation.2026.111305">Barriers to dispatcher-assisted CPR are associated with delayed bystander CPR and worse outcomes in out-of-hospital cardiac arrest: a retrospective cohort study <em>(Resuscitation)</em></a></li><li><a href="https://doi.org/10.1016/j.resplu.2026.101457">Nighttime human-supervised drone-delivered automated external defibrillators: a quasi-experimental mixed-methods feasibility study <em>(Resuscitation Plus)</em></a></li><li><a href="https://doi.org/10.1016/j.surg.2026.110564">When ambulances are not enough: An interview-based needs assessment of governance and accountability gaps in prehospital emergency care in Hawassa, Ethiopia <em>(Surgery)</em></a></li></ul><p><a href="https://opurtell.github.io/paramedicpapers/#episode=2026-09-24">Show notes and transcript</a></p>]]></content:encoded>
       <pubDate>Thu, 24 Sep 2026 07:34:48 +1000</pubDate>
       <guid isPermaLink="true">https://opurtell.github.io/paramedicpapers/audio/ep-2026-09-24.mp3</guid>
       <enclosure url="https://opurtell.github.io/paramedicpapers/audio/ep-2026-09-24.mp3" length="865773" type="audio/mpeg"/>
       <itunes:duration>216</itunes:duration>
       <itunes:summary>3 papers: dispatcher-assisted CPR barriers halve survival; night drone AED deliveries match daytime; Ethiopia governance gaps leave care as transport</itunes:summary>
+      <itunes:image href="https://opurtell.github.io/paramedicpapers/icon-512.png"/>
+      <itunes:episodeType>full</itunes:episodeType>
     </item>
     <item>
       <title>Paramedic Papers Daily — 22 September 2026</title>
+      <link>https://opurtell.github.io/paramedicpapers/#episode=2026-09-22</link>
       <description>1 paper: prehospital antibiotics in sepsis — lower adjusted 28-day mortality (Thai cohort), ~8.5 min longer on scene</description>
+      <content:encoded><![CDATA[<p>1 paper: prehospital antibiotics in sepsis — lower adjusted 28-day mortality (Thai cohort), ~8.5 min longer on scene</p><p>Papers in this episode:</p><ul><li><a href="https://doi.org/10.1080/10903127.2026.2733964">Association Between Early Prehospital Administration Antibiotic and 28-Day Mortality in Sepsis <em>(Prehospital Emergency Care)</em></a></li><li><a href="https://doi.org/10.1016/j.resplu.2026.101486">Prehospital management and outcomes of traumatic cardiac arrest in older adults: a French nationwide registry study <em>(Resuscitation Plus)</em></a></li><li><a href="https://doi.org/10.1016/j.resplu.2026.101485">Association of a smartphone-based CPR assistance system with prehospital outcomes in out-of-hospital cardiac arrest: a pre–post observational study in Bangkok <em>(Resuscitation Plus)</em></a></li><li><a href="https://doi.org/10.1016/j.resplu.2026.101484">Differences in the rates of bystander cardiopulmonary resuscitation for out-of-hospital cardiac arrest resulting in favourable neurological outcomes according to the regional deprivation index <em>(Resuscitation Plus)</em></a></li><li><a href="https://doi.org/10.1016/j.resplu.2026.101483">In-hospital cardiac arrest in a resource-limited emergency department in Somalia: Outcomes and priorities for resuscitation system development <em>(Resuscitation Plus)</em></a></li><li><a href="https://doi.org/10.1080/10903127.2026.2733966">A Causal Model for Prehospital Blood Transfusion and Mortality in Traumatic Hemorrhagic Shock <em>(Prehospital Emergency Care)</em></a></li><li><a href="https://doi.org/10.1080/10903127.2026.2727591">Prehospital Whole Blood Transfusion During Medically Directed Rescue of an Entrapped Trauma Patient: A Case Report <em>(Prehospital Emergency Care)</em></a></li><li><a href="https://doi.org/10.1080/10903127.2026.2733969">Practice Patterns and Performance of Pediatric Air Medical Tracheal Intubation: A National Multisite Cohort Study <em>(Prehospital Emergency Care)</em></a></li><li><a href="https://doi.org/10.1111/1742-6723.70345">Efficacy and Safety of Ventilator Assisted Preoxygenation for Intubation in Two Australian Emergency Departments: A Retrospective Cohort Study <em>(Emergency Medicine Australasia)</em></a></li><li><a href="https://doi.org/10.1016/j.resplu.2026.101487">Quantification of blood-based neurovascular unit biomarkers: an analytical platform comparison study <em>(Resuscitation Plus)</em></a></li><li><a href="https://doi.org/10.1016/j.annemergmed.2026.04.009">SGLT-2 Use and Hypoglycemic Ketoacidosis <em>(Annals of Emergency Medicine)</em></a></li><li><a href="https://doi.org/10.1080/10903127.2026.2728128">Medical Management of Aortic Emergencies in Critical Care Transport <em>(Prehospital Emergency Care)</em></a></li><li><a href="https://doi.org/10.1080/10903127.2026.2728131">Management of Patients with Medetomidine Withdrawal During Interfacility Transfer <em>(Prehospital Emergency Care)</em></a></li><li><a href="https://doi.org/10.1111/1742-6723.70346">Intranasal Dexmedetomidine for Paediatric Procedural Sedation in the Emergency Department: A Single‐Centre Retrospective Observational Cohort Study <em>(Emergency Medicine Australasia)</em></a></li><li><a href="https://doi.org/10.1080/10903127.2026.2719958">Redesigning 9-1-1 Paramedic Pathways: Evaluation of the IMPACC Model of Care <em>(Prehospital Emergency Care)</em></a></li><li><a href="https://doi.org/10.1080/10903127.2026.2735429">Differences in EMS Calls, Delays, and Payer Types in U.S. Southern Border Counties and Non-Border Counties <em>(Prehospital Emergency Care)</em></a></li><li><a href="https://doi.org/10.1111/1742-6723.70343">Medicolegal Statements by Emergency Clinicians: ‘A How’ to Guide <em>(Emergency Medicine Australasia)</em></a></li><li><a href="https://doi.org/10.1111/1742-6723.70351">The Once‐Conventional 48‐h Elective Cardioversion Threshold for “Recent‐Onset” Atrial Fibrillation Is No Longer Recommended <em>(Emergency Medicine Australasia)</em></a></li></ul><p><a href="https://opurtell.github.io/paramedicpapers/#episode=2026-09-22">Show notes and transcript</a></p>]]></content:encoded>
       <pubDate>Tue, 22 Sep 2026 07:32:45 +1000</pubDate>
       <guid isPermaLink="true">https://opurtell.github.io/paramedicpapers/audio/ep-2026-09-22.mp3</guid>
       <enclosure url="https://opurtell.github.io/paramedicpapers/audio/ep-2026-09-22.mp3" length="376941" type="audio/mpeg"/>
       <itunes:duration>94</itunes:duration>
       <itunes:summary>1 paper: prehospital antibiotics in sepsis — lower adjusted 28-day mortality (Thai cohort), ~8.5 min longer on scene</itunes:summary>
+      <itunes:image href="https://opurtell.github.io/paramedicpapers/icon-512.png"/>
+      <itunes:episodeType>full</itunes:episodeType>
     </item>
     <item>
       <title>Paramedic Papers Daily — 20 September 2026</title>
+      <link>https://opurtell.github.io/paramedicpapers/#episode=2026-09-20</link>
       <description>2 papers: Canadian feasibility of multi-domain post-arrest prognostication data; Spanish CONOCES-BLS citizen knowledge scale</description>
+      <content:encoded><![CDATA[<p>2 papers: Canadian feasibility of multi-domain post-arrest prognostication data; Spanish CONOCES-BLS citizen knowledge scale</p><p>Papers in this episode:</p><ul><li><a href="https://doi.org/10.1016/j.resplu.2026.101478">Feasibility of multi-domain data acquisition in patients at risk for hypoxic-ischemic brain injury following cardiac arrest: a prospective cohort study <em>(Resuscitation Plus)</em></a></li><li><a href="https://doi.org/10.1016/j.resplu.2026.101481">Adaptation of the CONOCES-BLS scale to citizens: evidence of content validity and preliminary psychometric evaluation <em>(Resuscitation Plus)</em></a></li></ul><p><a href="https://opurtell.github.io/paramedicpapers/#episode=2026-09-20">Show notes and transcript</a></p>]]></content:encoded>
       <pubDate>Sun, 20 Sep 2026 07:34:25 +1000</pubDate>
       <guid isPermaLink="true">https://opurtell.github.io/paramedicpapers/audio/ep-2026-09-20.mp3</guid>
       <enclosure url="https://opurtell.github.io/paramedicpapers/audio/ep-2026-09-20.mp3" length="594573" type="audio/mpeg"/>
       <itunes:duration>148</itunes:duration>
       <itunes:summary>2 papers: Canadian feasibility of multi-domain post-arrest prognostication data; Spanish CONOCES-BLS citizen knowledge scale</itunes:summary>
+      <itunes:image href="https://opurtell.github.io/paramedicpapers/icon-512.png"/>
+      <itunes:episodeType>full</itunes:episodeType>
     </item>
     <item>
       <title>Paramedic Papers Daily — 19 September 2026</title>
+      <link>https://opurtell.github.io/paramedicpapers/#episode=2026-09-19</link>
       <description>5 papers: invisible DNAR orders in OHCA dispatch; TOR policy implementation gap; Nagoya arrest destination null; paediatric IV ketamine safety; ED boarding of older adults</description>
+      <content:encoded><![CDATA[<p>5 papers: invisible DNAR orders in OHCA dispatch; TOR policy implementation gap; Nagoya arrest destination null; paediatric IV ketamine safety; ED boarding of older adults</p><p>Papers in this episode:</p><ul><li><a href="https://doi.org/10.1016/j.resuscitation.2026.111224">Emergency response with lights and sirens to patients with a suspected out-of-hospital cardiac arrest and a do-not-attempt-resuscitation order in the hospital record: a one-year observational study <em>(Resuscitation)</em></a></li><li><a href="https://doi.org/10.1016/j.resplu.2026.101474">Implementation gap in prehospital termination-of-resuscitation policies for out-of-hospital cardiac arrest with do-not-attempt-cardiopulmonary-resuscitation wishes in Japan: a nationwide survey <em>(Resuscitation Plus)</em></a></li><li><a href="https://doi.org/10.1016/j.resplu.2026.101482">Association between destination hospital level and outcomes in out-of-hospital cardiac arrest patients under a dispatch-guided transport system: a population-based study in Nagoya, Japan <em>(Resuscitation Plus)</em></a></li><li><a href="https://doi.org/10.1016/j.annemergmed.2026.03.030">Systematic Review of Pediatric Ketamine in Emergency Department Procedural Sedation: Frequency and Predictors of Adverse Events <em>(Annals of Emergency Medicine)</em></a></li><li><a href="https://doi.org/10.1016/j.annemergmed.2026.03.011">Emergency Department Boarding for Older Adults: The Impact of Geography, Temporal Trends, and Dementia Status <em>(Annals of Emergency Medicine)</em></a></li></ul><p><a href="https://opurtell.github.io/paramedicpapers/#episode=2026-09-19">Show notes and transcript</a></p>]]></content:encoded>
       <pubDate>Sat, 19 Sep 2026 07:38:01 +1000</pubDate>
       <guid isPermaLink="true">https://opurtell.github.io/paramedicpapers/audio/ep-2026-09-19.mp3</guid>
       <enclosure url="https://opurtell.github.io/paramedicpapers/audio/ep-2026-09-19.mp3" length="1023405" type="audio/mpeg"/>
       <itunes:duration>255</itunes:duration>
       <itunes:summary>5 papers: invisible DNAR orders in OHCA dispatch; TOR policy implementation gap; Nagoya arrest destination null; paediatric IV ketamine safety; ED boarding of older adults</itunes:summary>
+      <itunes:image href="https://opurtell.github.io/paramedicpapers/icon-512.png"/>
+      <itunes:episodeType>full</itunes:episodeType>
     </item>
     <item>
       <title>Paramedic Papers Daily — 18 September 2026</title>
+      <link>https://opurtell.github.io/paramedicpapers/#episode=2026-09-18</link>
       <description>3 papers: CPR-induced consciousness in 43k Victorian arrests, rising and linked to survival; Norwegian newborn resus RCT compromised by anonymous video deletions; US sickle cell pain — only 13.5% got prehospital analgesia</description>
+      <content:encoded><![CDATA[<p>3 papers: CPR-induced consciousness in 43k Victorian arrests, rising and linked to survival; Norwegian newborn resus RCT compromised by anonymous video deletions; US sickle cell pain — only 13.5% got prehospital analgesia</p><p>Papers in this episode:</p><ul><li><a href="https://doi.org/10.1016/j.resuscitation.2026.111287">Trends in the incidence and outcomes of cardiopulmonary resuscitation-induced consciousness in out-of-hospital cardiac arrest: a retrospective study <em>(Resuscitation)</em></a></li><li><a href="https://doi.org/10.1016/j.resuscitation.2026.111288">Selection bias introduced in a randomized clinical trial due to employee instigated deletion of newborn resuscitation videos <em>(Resuscitation)</em></a></li><li><a href="https://doi.org/10.1016/j.ajem.2026.09.020">Prehospital management of pain associated with acute complications of Sickle Cell Disease: a preliminary nationwide cross-sectional study <em>(The American Journal of Emergency Medicine)</em></a></li></ul><p><a href="https://opurtell.github.io/paramedicpapers/#episode=2026-09-18">Show notes and transcript</a></p>]]></content:encoded>
       <pubDate>Fri, 18 Sep 2026 07:34:17 +1000</pubDate>
       <guid isPermaLink="true">https://opurtell.github.io/paramedicpapers/audio/ep-2026-09-18.mp3</guid>
       <enclosure url="https://opurtell.github.io/paramedicpapers/audio/ep-2026-09-18.mp3" length="849933" type="audio/mpeg"/>
       <itunes:duration>212</itunes:duration>
       <itunes:summary>3 papers: CPR-induced consciousness in 43k Victorian arrests, rising and linked to survival; Norwegian newborn resus RCT compromised by anonymous video deletions; US sickle cell pain — only 13.5% got prehospital analgesia</itunes:summary>
+      <itunes:image href="https://opurtell.github.io/paramedicpapers/icon-512.png"/>
+      <itunes:episodeType>full</itunes:episodeType>
     </item>
     <item>
       <title>Paramedic Papers Daily — 17 September 2026</title>
+      <link>https://opurtell.github.io/paramedicpapers/#episode=2026-09-17</link>
       <description>4 papers: whole blood beats crystalloids in rat traumatic arrest; LLMs unreliable for prehospital ECG cath-lab activation; knee-height stretcher best for standing compressions; structured hot debriefs validated in two Australian EDs</description>
+      <content:encoded><![CDATA[<p>4 papers: whole blood beats crystalloids in rat traumatic arrest; LLMs unreliable for prehospital ECG cath-lab activation; knee-height stretcher best for standing compressions; structured hot debriefs validated in two Australian EDs</p><p>Papers in this episode:</p><ul><li><a href="https://doi.org/10.1016/j.resplu.2026.101477">Comparative efficacy of fluid resuscitation strategies in a rat model of traumatic cardiac arrest <em>(Resuscitation Plus)</em></a></li><li><a href="https://doi.org/10.1016/j.hrtlng.2026.102956">Large language models fail to reliably predict emergent catheterization laboratory activation from prehospital electrocardiograms <em>(Heart &amp; Lung)</em></a></li><li><a href="https://doi.org/10.1016/j.resplu.2026.101479">Standing chest compressions: simulation-based development and evaluation of a clinically applicable height adjustment approach <em>(Resuscitation Plus)</em></a></li><li><a href="https://doi.org/10.1111/1742-6723.70349">Implementation of a Structured Hot Debrief Tool in a Metropolitan ED: A Quality Improvement Study <em>(Emergency Medicine Australasia)</em></a></li></ul><p><a href="https://opurtell.github.io/paramedicpapers/#episode=2026-09-17">Show notes and transcript</a></p>]]></content:encoded>
       <pubDate>Thu, 17 Sep 2026 07:33:55 +1000</pubDate>
       <guid isPermaLink="true">https://opurtell.github.io/paramedicpapers/audio/ep-2026-09-17.mp3</guid>
       <enclosure url="https://opurtell.github.io/paramedicpapers/audio/ep-2026-09-17.mp3" length="816525" type="audio/mpeg"/>
       <itunes:duration>204</itunes:duration>
       <itunes:summary>4 papers: whole blood beats crystalloids in rat traumatic arrest; LLMs unreliable for prehospital ECG cath-lab activation; knee-height stretcher best for standing compressions; structured hot debriefs validated in two Australian EDs</itunes:summary>
+      <itunes:image href="https://opurtell.github.io/paramedicpapers/icon-512.png"/>
+      <itunes:episodeType>full</itunes:episodeType>
     </item>
     <item>
       <title>Paramedic Papers Daily — 16 September 2026</title>
+      <link>https://opurtell.github.io/paramedicpapers/#episode=2026-09-16</link>
       <description>2 papers: AI voice assistants in EMS survey (Scand J Trauma); mild hypercapnia in porcine ECPR (Resuscitation Plus)</description>
+      <content:encoded><![CDATA[<p>2 papers: AI voice assistants in EMS survey (Scand J Trauma); mild hypercapnia in porcine ECPR (Resuscitation Plus)</p><p>Papers in this episode:</p><ul><li><a href="https://doi.org/10.1186/s13049-026-01695-1">A multinational cross-sectional survey on the use of AI-based voice assistance systems in emergency medical services <em>(Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine)</em></a></li><li><a href="https://doi.org/10.1016/j.resplu.2026.101480">Effects of systemic mild hypercapnia on brain function in a refractory cardiac arrest model treated with extracorporeal cardiopulmonary resuscitation <em>(Resuscitation Plus)</em></a></li></ul><p><a href="https://opurtell.github.io/paramedicpapers/#episode=2026-09-16">Show notes and transcript</a></p>]]></content:encoded>
       <pubDate>Wed, 16 Sep 2026 07:33:48 +1000</pubDate>
       <guid isPermaLink="true">https://opurtell.github.io/paramedicpapers/audio/ep-2026-09-16.mp3</guid>
       <enclosure url="https://opurtell.github.io/paramedicpapers/audio/ep-2026-09-16.mp3" length="644013" type="audio/mpeg"/>
       <itunes:duration>160</itunes:duration>
       <itunes:summary>2 papers: AI voice assistants in EMS survey (Scand J Trauma); mild hypercapnia in porcine ECPR (Resuscitation Plus)</itunes:summary>
+      <itunes:image href="https://opurtell.github.io/paramedicpapers/icon-512.png"/>
+      <itunes:episodeType>full</itunes:episodeType>
     </item>
     <item>
       <title>Paramedic Papers Daily — 15 September 2026</title>
+      <link>https://opurtell.github.io/paramedicpapers/#episode=2026-09-15</link>
       <description>1 paper: colloids (gelatin 4%, HES) impair clotting ex vivo while balanced crystalloid stays neutral — backs crystalloid-first practice</description>
+      <content:encoded><![CDATA[<p>1 paper: colloids (gelatin 4%, HES) impair clotting ex vivo while balanced crystalloid stays neutral — backs crystalloid-first practice</p><p>Papers in this episode:</p><ul><li><a href="https://doi.org/10.1186/s13049-026-01690-6">Gelatin 4% and hydroxyethyl starch (130/0.42) impair clot formation in a human ex vivo whole-blood resuscitation model <em>(Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine)</em></a></li><li><a href="https://doi.org/10.1080/10903127.2026.2731188">Cardiopulmonary resuscitation quality during the transition in care from paramedic services to emergency department teams <em>(Prehospital Emergency Care)</em></a></li><li><a href="https://doi.org/10.1111/1742-6723.70350">High‐Flow Nasal Oxygen Versus Conventional Oxygen Therapy and Non‐Invasive Ventilation for Acute Respiratory Failure in the Emergency Department: A Systematic Review and Meta‐Analysis <em>(Emergency Medicine Australasia)</em></a></li><li><a href="https://doi.org/10.1111/1742-6723.70352">Local Anaesthetic Dosing and Toxicity Knowledge in Australian Emergency Departments: A Multicentre Cross‐Sectional Survey <em>(Emergency Medicine Australasia)</em></a></li><li><a href="https://doi.org/10.1111/1742-6723.70347">Toxicological and Clinical Characteristics of Fatal Cases in the Emerging Drugs Network of Australia—Victoria (EDNAV) Clinical Registry 2020–2025 <em>(Emergency Medicine Australasia)</em></a></li><li><a href="https://doi.org/10.1111/1742-6723.70348">Embedded Low‐Acuity Pathway in the Emergency Department: An Alternative to Stand‐Alone Urgent Care Services <em>(Emergency Medicine Australasia)</em></a></li><li><a href="https://doi.org/10.1186/s13049-026-01696-0">Early clinical predictors of amputation in frostbite: injury depth and extent for admission risk stratification <em>(Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine)</em></a></li><li><a href="https://doi.org/10.1111/1742-6723.70344">Paediatric Procedural Sedation and Analgesia in Emergency Departments: A Delphi Consensus Study <em>(Emergency Medicine Australasia)</em></a></li></ul><p><a href="https://opurtell.github.io/paramedicpapers/#episode=2026-09-15">Show notes and transcript</a></p>]]></content:encoded>
       <pubDate>Tue, 15 Sep 2026 07:33:05 +1000</pubDate>
       <guid isPermaLink="true">https://opurtell.github.io/paramedicpapers/audio/ep-2026-09-15.mp3</guid>
       <enclosure url="https://opurtell.github.io/paramedicpapers/audio/ep-2026-09-15.mp3" length="455277" type="audio/mpeg"/>
       <itunes:duration>113</itunes:duration>
       <itunes:summary>1 paper: colloids (gelatin 4%, HES) impair clotting ex vivo while balanced crystalloid stays neutral — backs crystalloid-first practice</itunes:summary>
+      <itunes:image href="https://opurtell.github.io/paramedicpapers/icon-512.png"/>
+      <itunes:episodeType>full</itunes:episodeType>
     </item>
     <item>
       <title>Paramedic Papers Daily — 13 September 2026</title>
+      <link>https://opurtell.github.io/paramedicpapers/#episode=2026-09-13</link>
       <description>1 paper: French prehospital data — nearly 1 in 5 severe trauma patients would qualify for prehospital blood transfusion (ABC ≥2 + &gt;20 min intervention)</description>
+      <content:encoded><![CDATA[<p>1 paper: French prehospital data — nearly 1 in 5 severe trauma patients would qualify for prehospital blood transfusion (ABC ≥2 + &gt;20 min intervention)</p><p>Papers in this episode:</p><ul><li><a href="https://doi.org/10.1016/j.injury.2026.113689">Prehospital transfusion requirements in severe trauma: A multicenter, retrospective estimate of requirements <em>(Injury)</em></a></li></ul><p><a href="https://opurtell.github.io/paramedicpapers/#episode=2026-09-13">Show notes and transcript</a></p>]]></content:encoded>
       <pubDate>Sun, 13 Sep 2026 07:33:42 +1000</pubDate>
       <guid isPermaLink="true">https://opurtell.github.io/paramedicpapers/audio/ep-2026-09-13.mp3</guid>
       <enclosure url="https://opurtell.github.io/paramedicpapers/audio/ep-2026-09-13.mp3" length="450957" type="audio/mpeg"/>
       <itunes:duration>112</itunes:duration>
       <itunes:summary>1 paper: French prehospital data — nearly 1 in 5 severe trauma patients would qualify for prehospital blood transfusion (ABC ≥2 + &gt;20 min intervention)</itunes:summary>
+      <itunes:image href="https://opurtell.github.io/paramedicpapers/icon-512.png"/>
+      <itunes:episodeType>full</itunes:episodeType>
     </item>
     <item>
       <title>Paramedic Papers Daily — 12 September 2026</title>
+      <link>https://opurtell.github.io/paramedicpapers/#episode=2026-09-12</link>
       <description>3 papers: paediatric weight documentation 73%; consensus guidelines for prehospital paediatric transfusion; 2026 prehospital evidence-based guideline systematic review</description>
+      <content:encoded><![CDATA[<p>3 papers: paediatric weight documentation 73%; consensus guidelines for prehospital paediatric transfusion; 2026 prehospital evidence-based guideline systematic review</p><p>Papers in this episode:</p><ul><li><a href="https://doi.org/10.1080/10903127.2026.2731488">2026 Systematic Review of Evidence-Based Guidelines for Prehospital Care <em>(Prehospital Emergency Care)</em></a></li><li><a href="https://doi.org/10.1080/10903127.2026.2719957">Documentation of Weight in Pediatric 9-1-1 Responses with Administration of Weight-Based Medications <em>(Prehospital Emergency Care)</em></a></li><li><a href="https://doi.org/10.1080/10903127.2026.2729895">Consensus Guidelines for Prehospital Transfusion in Children: A Modified Delphi Study <em>(Prehospital Emergency Care)</em></a></li></ul><p><a href="https://opurtell.github.io/paramedicpapers/#episode=2026-09-12">Show notes and transcript</a></p>]]></content:encoded>
       <pubDate>Sat, 12 Sep 2026 07:35:09 +1000</pubDate>
       <guid isPermaLink="true">https://opurtell.github.io/paramedicpapers/audio/ep-2026-09-12.mp3</guid>
       <enclosure url="https://opurtell.github.io/paramedicpapers/audio/ep-2026-09-12.mp3" length="793197" type="audio/mpeg"/>
       <itunes:duration>198</itunes:duration>
       <itunes:summary>3 papers: paediatric weight documentation 73%; consensus guidelines for prehospital paediatric transfusion; 2026 prehospital evidence-based guideline systematic review</itunes:summary>
+      <itunes:image href="https://opurtell.github.io/paramedicpapers/icon-512.png"/>
+      <itunes:episodeType>full</itunes:episodeType>
     </item>
     <item>
       <title>Paramedic Papers Daily — 11 September 2026</title>
+      <link>https://opurtell.github.io/paramedicpapers/#episode=2026-09-11</link>
       <description>1 paper: Rwandan pilot of video-plus-simulation mass casualty training — knowledge and confidence gains held at six months</description>
+      <content:encoded><![CDATA[<p>1 paper: Rwandan pilot of video-plus-simulation mass casualty training — knowledge and confidence gains held at six months</p><p>Papers in this episode:</p><ul><li><a href="https://doi.org/10.1016/j.afjem.2026.101003">Mass casualty training for prehospital and emergency providers in Kigali, Rwanda: a quasi-experimental pre–post educational study <em>(African Journal of Emergency Medicine)</em></a></li></ul><p><a href="https://opurtell.github.io/paramedicpapers/#episode=2026-09-11">Show notes and transcript</a></p>]]></content:encoded>
       <pubDate>Fri, 11 Sep 2026 07:33:51 +1000</pubDate>
       <guid isPermaLink="true">https://opurtell.github.io/paramedicpapers/audio/ep-2026-09-11.mp3</guid>
       <enclosure url="https://opurtell.github.io/paramedicpapers/audio/ep-2026-09-11.mp3" length="422253" type="audio/mpeg"/>
       <itunes:duration>105</itunes:duration>
       <itunes:summary>1 paper: Rwandan pilot of video-plus-simulation mass casualty training — knowledge and confidence gains held at six months</itunes:summary>
+      <itunes:image href="https://opurtell.github.io/paramedicpapers/icon-512.png"/>
+      <itunes:episodeType>full</itunes:episodeType>
     </item>
     <item>
       <title>Paramedic Papers Daily — 10 September 2026</title>
+      <link>https://opurtell.github.io/paramedicpapers/#episode=2026-09-10</link>
       <description>2 papers: German registry finds only 20.5% of OHCA meets eCPR eligibility; RCT finds immersive VR adds nothing to CPR training over manikin sim</description>
+      <content:encoded><![CDATA[<p>2 papers: German registry finds only 20.5% of OHCA meets eCPR eligibility; RCT finds immersive VR adds nothing to CPR training over manikin sim</p><p>Papers in this episode:</p><ul><li><a href="https://doi.org/10.1186/s13049-026-01681-7">Modelling eCPR eligibility after out-of-hospital cardiac arrest: a 10-year retrospective temporospatial analysis from a mixed urban-rural region in Germany <em>(Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine)</em></a></li><li><a href="https://doi.org/10.1016/j.nedt.2026.107379">Effectiveness of immersive virtual reality in undergraduate nursing students for cardiopulmonary resuscitation training: A randomized controlled trial <em>(Nurse Education Today)</em></a></li></ul><p><a href="https://opurtell.github.io/paramedicpapers/#episode=2026-09-10">Show notes and transcript</a></p>]]></content:encoded>
       <pubDate>Thu, 10 Sep 2026 07:38:11 +1000</pubDate>
       <guid isPermaLink="true">https://opurtell.github.io/paramedicpapers/audio/ep-2026-09-10.mp3</guid>
       <enclosure url="https://opurtell.github.io/paramedicpapers/audio/ep-2026-09-10.mp3" length="783501" type="audio/mpeg"/>
       <itunes:duration>195</itunes:duration>
       <itunes:summary>2 papers: German registry finds only 20.5% of OHCA meets eCPR eligibility; RCT finds immersive VR adds nothing to CPR training over manikin sim</itunes:summary>
+      <itunes:image href="https://opurtell.github.io/paramedicpapers/icon-512.png"/>
+      <itunes:episodeType>full</itunes:episodeType>
     </item>
     <item>
       <title>Paramedic Papers Daily — 5 September 2026</title>
+      <link>https://opurtell.github.io/paramedicpapers/#episode=2026-09-05</link>
       <description>2 papers: Norwegian trauma call-out decisions under sparse dispatch info; Oslo sepsis study finds 8 subgroups, fails to replicate SENECA phenotypes</description>
+      <content:encoded><![CDATA[<p>2 papers: Norwegian trauma call-out decisions under sparse dispatch info; Oslo sepsis study finds 8 subgroups, fails to replicate SENECA phenotypes</p><p>Papers in this episode:</p><ul><li><a href="https://doi.org/10.1186/s13049-026-01691-5">Acute trauma alarms in Norway - a qualitative study of factors influencing primary care doctors’ decision to call out <em>(Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine)</em></a></li><li><a href="https://doi.org/10.1186/s13049-026-01688-0">Discovery of eight stable subgroups of sepsis in the emergency department with consensus clustering <em>(Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine)</em></a></li></ul><p><a href="https://opurtell.github.io/paramedicpapers/#episode=2026-09-05">Show notes and transcript</a></p>]]></content:encoded>
       <pubDate>Sat, 05 Sep 2026 07:34:27 +1000</pubDate>
       <guid isPermaLink="true">https://opurtell.github.io/paramedicpapers/audio/ep-2026-09-05.mp3</guid>
       <enclosure url="https://opurtell.github.io/paramedicpapers/audio/ep-2026-09-05.mp3" length="708045" type="audio/mpeg"/>
       <itunes:duration>176</itunes:duration>
       <itunes:summary>2 papers: Norwegian trauma call-out decisions under sparse dispatch info; Oslo sepsis study finds 8 subgroups, fails to replicate SENECA phenotypes</itunes:summary>
+      <itunes:image href="https://opurtell.github.io/paramedicpapers/icon-512.png"/>
+      <itunes:episodeType>full</itunes:episodeType>
     </item>
     <item>
       <title>Paramedic Papers Daily — 4 September 2026</title>
+      <link>https://opurtell.github.io/paramedicpapers/#episode=2026-09-04</link>
       <description>1 paper: Australasian bronchiolitis discharge criteria review — shorter stays, no extra readmissions, now in the 2025 guideline</description>
+      <content:encoded><![CDATA[<p>1 paper: Australasian bronchiolitis discharge criteria review — shorter stays, no extra readmissions, now in the 2025 guideline</p><p>Papers in this episode:</p><ul><li><a href="https://doi.org/10.1111/1742-6723.70339">Criteria for Safe Hospital Discharge in Bronchiolitis: A Systematic Review <em>(Emergency Medicine Australasia)</em></a></li></ul><p><a href="https://opurtell.github.io/paramedicpapers/#episode=2026-09-04">Show notes and transcript</a></p>]]></content:encoded>
       <pubDate>Fri, 04 Sep 2026 07:32:51 +1000</pubDate>
       <guid isPermaLink="true">https://opurtell.github.io/paramedicpapers/audio/ep-2026-09-04.mp3</guid>
       <enclosure url="https://opurtell.github.io/paramedicpapers/audio/ep-2026-09-04.mp3" length="457773" type="audio/mpeg"/>
       <itunes:duration>114</itunes:duration>
       <itunes:summary>1 paper: Australasian bronchiolitis discharge criteria review — shorter stays, no extra readmissions, now in the 2025 guideline</itunes:summary>
+      <itunes:image href="https://opurtell.github.io/paramedicpapers/icon-512.png"/>
+      <itunes:episodeType>full</itunes:episodeType>
     </item>
     <item>
       <title>Paramedic Papers Daily — 3 September 2026</title>
+      <link>https://opurtell.github.io/paramedicpapers/#episode=2026-09-03</link>
       <description>4 papers: community CPR training lifts public-location bystander rates only; intra-arrest TEE feasible but no RCT benefit; Danish prehospital cricothyroidotomy rare with poor OHCA survival; Nepean ED ultrasound archiving, 4 years zero data loss</description>
+      <content:encoded><![CDATA[<p>4 papers: community CPR training lifts public-location bystander rates only; intra-arrest TEE feasible but no RCT benefit; Danish prehospital cricothyroidotomy rare with poor OHCA survival; Nepean ED ultrasound archiving, 4 years zero data loss</p><p>Papers in this episode:</p><ul><li><a href="https://doi.org/10.1016/j.resuscitation.2026.111262">Evaluating the effect of a regional training initiative on bystander cardiopulmonary resuscitation rates after out-of-hospital cardiac arrest <em>(Resuscitation)</em></a></li><li><a href="https://doi.org/10.1016/j.resuscitation.2026.111261">Transoesophageal echocardiography during cardiopulmonary resuscitation for cardiac arrest: a scoping review <em>(Resuscitation)</em></a></li><li><a href="https://doi.org/10.1016/j.resuscitation.2026.111276">Prehospital emergency cricothyroidotomy in Denmark: a nationwide cohort study, 2016–2023 <em>(Resuscitation)</em></a></li><li><a href="https://doi.org/10.1111/1742-6723.70342">Ultrasound Archiving in the Emergency Department: Implementation, Governance and 4‐Year Outcomes at an Australian Tertiary Emergency Department <em>(Emergency Medicine Australasia)</em></a></li></ul><p><a href="https://opurtell.github.io/paramedicpapers/#episode=2026-09-03">Show notes and transcript</a></p>]]></content:encoded>
       <pubDate>Thu, 03 Sep 2026 07:36:52 +1000</pubDate>
       <guid isPermaLink="true">https://opurtell.github.io/paramedicpapers/audio/ep-2026-09-03.mp3</guid>
       <enclosure url="https://opurtell.github.io/paramedicpapers/audio/ep-2026-09-03.mp3" length="1119885" type="audio/mpeg"/>
       <itunes:duration>279</itunes:duration>
       <itunes:summary>4 papers: community CPR training lifts public-location bystander rates only; intra-arrest TEE feasible but no RCT benefit; Danish prehospital cricothyroidotomy rare with poor OHCA survival; Nepean ED ultrasound archiving, 4 years zero data loss</itunes:summary>
+      <itunes:image href="https://opurtell.github.io/paramedicpapers/icon-512.png"/>
+      <itunes:episodeType>full</itunes:episodeType>
     </item>
     <item>
       <title>Paramedic Papers Daily — 2 September 2026</title>
+      <link>https://opurtell.github.io/paramedicpapers/#episode=2026-09-02</link>
       <description>Racial disparities in bystander CPR for opioid-associated OHCA; Safety of RhD-positive blood transfusion in females of childbearing potential</description>
+      <content:encoded><![CDATA[<p>Racial disparities in bystander CPR for opioid-associated OHCA; Safety of RhD-positive blood transfusion in females of childbearing potential</p><p>Papers in this episode:</p><ul><li><a href="https://doi.org/10.1016/j.resuscitation.2026.111216">Racial and ethnic differences in bystander cardiopulmonary resuscitation for opioid-associated out-of-hospital cardiac arrests <em>(Resuscitation)</em></a></li><li><a href="https://doi.org/10.1080/10903127.2026.2701877">RhD-Positive Transfusion in Females of Childbearing Potential in Hemorrhagic Shock: Risk, Reality, and Policy <em>(Prehospital Emergency Care)</em></a></li></ul><p><a href="https://opurtell.github.io/paramedicpapers/#episode=2026-09-02">Show notes and transcript</a></p>]]></content:encoded>
       <pubDate>Wed, 02 Sep 2026 07:36:41 +1000</pubDate>
       <guid isPermaLink="true">https://opurtell.github.io/paramedicpapers/audio/ep-2026-09-02.mp3</guid>
       <enclosure url="https://opurtell.github.io/paramedicpapers/audio/ep-2026-09-02.mp3" length="963405" type="audio/mpeg"/>
       <itunes:duration>240</itunes:duration>
       <itunes:summary>Racial disparities in bystander CPR for opioid-associated OHCA; Safety of RhD-positive blood transfusion in females of childbearing potential</itunes:summary>
+      <itunes:image href="https://opurtell.github.io/paramedicpapers/icon-512.png"/>
+      <itunes:episodeType>full</itunes:episodeType>
     </item>
     <item>
       <title>Paramedic Papers Daily — 1 September 2026</title>
+      <link>https://opurtell.github.io/paramedicpapers/#episode=2026-09-01</link>
       <description>1 paper: SPEAR device safety warning</description>
+      <content:encoded><![CDATA[<p>1 paper: SPEAR device safety warning</p><p>Papers in this episode:</p><ul><li><a href="https://doi.org/10.1016/j.annemergmed.2026.04.010">Potential Risks With the SPEAR®, a New Device Marketed for Out-of-Hospital Needle Decompression of the Chest <em>(Annals of Emergency Medicine)</em></a></li><li><a href="https://doi.org/10.1080/10903127.2026.2717758">Effect of Body Position on Chest Compression Quality During CPR in an Obesity Simulation Model: A Randomized Crossover Trial <em>(Prehospital Emergency Care)</em></a></li><li><a href="https://doi.org/10.1080/10903127.2026.2726541">Prehospital Blood Transfusion for Medical Causes of Hemorrhage: A Case Series <em>(Prehospital Emergency Care)</em></a></li><li><a href="https://doi.org/10.1080/10903127.2026.2725890">Between Hemorrhage and Harm: Complications of the Abdominal Aortic and Junctional Tourniquet-Stabilized <em>(Prehospital Emergency Care)</em></a></li><li><a href="https://doi.org/10.1080/10903127.2026.2725214">Rate of future hemolytic disease of the fetus and newborn following the prehospital transfusion of RhD-positive blood products to females of childbearing potential in the United States of America <em>(Prehospital Emergency Care)</em></a></li><li><a href="https://doi.org/10.1186/s13049-026-01682-6">Population-based implementation of a mobile emergency medical service platform in Hiroshima, Japan <em>(Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine)</em></a></li><li><a href="https://doi.org/10.1080/10903127.2026.2724534">Public Acceptance, Trust, and Self-Efficacy Related to Drone-Assisted Emergency Medical Response in Louisiana <em>(Prehospital Emergency Care)</em></a></li></ul><p><a href="https://opurtell.github.io/paramedicpapers/#episode=2026-09-01">Show notes and transcript</a></p>]]></content:encoded>
       <pubDate>Tue, 01 Sep 2026 07:32:26 +1000</pubDate>
       <guid isPermaLink="true">https://opurtell.github.io/paramedicpapers/audio/ep-2026-09-01.mp3</guid>
       <enclosure url="https://opurtell.github.io/paramedicpapers/audio/ep-2026-09-01.mp3" length="207117" type="audio/mpeg"/>
       <itunes:duration>51</itunes:duration>
       <itunes:summary>1 paper: SPEAR device safety warning</itunes:summary>
+      <itunes:image href="https://opurtell.github.io/paramedicpapers/icon-512.png"/>
+      <itunes:episodeType>full</itunes:episodeType>
     </item>
     <item>
       <title>Paramedic Papers Daily — 30 August 2026</title>
+      <link>https://opurtell.github.io/paramedicpapers/#episode=2026-08-30</link>
       <description>1 paper: blunt vs penetrating trauma physiology</description>
+      <content:encoded><![CDATA[<p>1 paper: blunt vs penetrating trauma physiology</p><p>Papers in this episode:</p><ul><li><a href="https://doi.org/10.1186/s13049-026-01683-5">Blunt versus penetrating trauma: differences in early physiology, coagulopathy, and outcomes in a Scandinavian trauma centre <em>(Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine)</em></a></li></ul><p><a href="https://opurtell.github.io/paramedicpapers/#episode=2026-08-30">Show notes and transcript</a></p>]]></content:encoded>
       <pubDate>Sun, 30 Aug 2026 07:32:12 +1000</pubDate>
       <guid isPermaLink="true">https://opurtell.github.io/paramedicpapers/audio/ep-2026-08-30.mp3</guid>
       <enclosure url="https://opurtell.github.io/paramedicpapers/audio/ep-2026-08-30.mp3" length="276621" type="audio/mpeg"/>
       <itunes:duration>69</itunes:duration>
       <itunes:summary>1 paper: blunt vs penetrating trauma physiology</itunes:summary>
+      <itunes:image href="https://opurtell.github.io/paramedicpapers/icon-512.png"/>
+      <itunes:episodeType>full</itunes:episodeType>
     </item>
     <item>
       <title>Paramedic Papers Daily — 29 August 2026</title>
+      <link>https://opurtell.github.io/paramedicpapers/#episode=2026-08-29</link>
       <description>5 papers: Paediatric OHCA adrenaline variation; Blood transfusion prediction; Swiss HEMS trauma outcomes; Paediatric concussion MIH; Indirect ICU admissions mortality</description>
+      <content:encoded><![CDATA[<p>5 papers: Paediatric OHCA adrenaline variation; Blood transfusion prediction; Swiss HEMS trauma outcomes; Paediatric concussion MIH; Indirect ICU admissions mortality</p><p>Papers in this episode:</p><ul><li><a href="https://doi.org/10.1016/j.resplu.2026.101454">Practice variability of epinephrine administration in pediatric out-of-hospital cardiac arrest in the United States <em>(Resuscitation Plus)</em></a></li><li><a href="https://doi.org/10.1080/10903127.2026.2713132">Predicting Prehospital Blood Transfusion After Motor Vehicle Trauma <em>(Prehospital Emergency Care)</em></a></li><li><a href="https://doi.org/10.1186/s13049-026-01685-3">Diagnostic accuracy, characteristics and survival of children with trauma in HEMS: a retrospective multi-centre observational study <em>(Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine)</em></a></li><li><a href="https://doi.org/10.1080/10903127.2026.2680993">Feasibility and Acceptability of Mobilizing Community Paramedics to Provide the Standard of Care for Pediatric Concussion: Mobile Integrated Health Programming for Pediatric Patients <em>(Prehospital Emergency Care)</em></a></li><li><a href="https://doi.org/10.1111/1742-6723.70337">Indirect ICU Admissions From an Australian Emergency Department: Risk Factors and Outcomes <em>(Emergency Medicine Australasia)</em></a></li></ul><p><a href="https://opurtell.github.io/paramedicpapers/#episode=2026-08-29">Show notes and transcript</a></p>]]></content:encoded>
       <pubDate>Sat, 29 Aug 2026 07:35:47 +1000</pubDate>
       <guid isPermaLink="true">https://opurtell.github.io/paramedicpapers/audio/ep-2026-08-29.mp3</guid>
       <enclosure url="https://opurtell.github.io/paramedicpapers/audio/ep-2026-08-29.mp3" length="1081773" type="audio/mpeg"/>
       <itunes:duration>270</itunes:duration>
       <itunes:summary>5 papers: Paediatric OHCA adrenaline variation; Blood transfusion prediction; Swiss HEMS trauma outcomes; Paediatric concussion MIH; Indirect ICU admissions mortality</itunes:summary>
+      <itunes:image href="https://opurtell.github.io/paramedicpapers/icon-512.png"/>
+      <itunes:episodeType>full</itunes:episodeType>
     </item>
     <item>
       <title>Paramedic Papers Daily — 28 August 2026</title>
+      <link>https://opurtell.github.io/paramedicpapers/#episode=2026-08-28</link>
       <description>ED vs prehospital cardiac arrest causes; teleconsultation for paediatric transports</description>
+      <content:encoded><![CDATA[<p>ED vs prehospital cardiac arrest causes; teleconsultation for paediatric transports</p><p>Papers in this episode:</p><ul><li><a href="https://doi.org/10.1016/j.resplu.2026.101455">Distribution of clinically identified reversible causes in emergency department and out-of-hospital cardiac arrest: a retrospective cohort study <em>(Resuscitation Plus)</em></a></li><li><a href="https://doi.org/10.1016/j.resplu.2026.101448">Feasibility and acceptability of pediatric expert teleconsultation during critical ambulance transports: a pilot randomized controlled simulation trial <em>(Resuscitation Plus)</em></a></li></ul><p><a href="https://opurtell.github.io/paramedicpapers/#episode=2026-08-28">Show notes and transcript</a></p>]]></content:encoded>
       <pubDate>Fri, 28 Aug 2026 07:34:13 +1000</pubDate>
       <guid isPermaLink="true">https://opurtell.github.io/paramedicpapers/audio/ep-2026-08-28.mp3</guid>
       <enclosure url="https://opurtell.github.io/paramedicpapers/audio/ep-2026-08-28.mp3" length="658317" type="audio/mpeg"/>
       <itunes:duration>164</itunes:duration>
       <itunes:summary>ED vs prehospital cardiac arrest causes; teleconsultation for paediatric transports</itunes:summary>
+      <itunes:image href="https://opurtell.github.io/paramedicpapers/icon-512.png"/>
+      <itunes:episodeType>full</itunes:episodeType>
     </item>
     <item>
       <title>Paramedic Papers Daily — 27 August 2026</title>
+      <link>https://opurtell.github.io/paramedicpapers/#episode=2026-08-27</link>
       <description>IM midazolam non-inferior to IV clonazepam for prehospital seizures</description>
+      <content:encoded><![CDATA[<p>IM midazolam non-inferior to IV clonazepam for prehospital seizures</p><p>Papers in this episode:</p><ul><li><a href="https://doi.org/10.1016/j.seizure.2026.08.007">Intramuscular midazolam versus intravenous clonazepam for prehospital treatment of generalized tonic-clonic seizures: A randomized double-blind non-inferiority trial <em>(Seizure: European Journal of Epilepsy)</em></a></li></ul><p><a href="https://opurtell.github.io/paramedicpapers/#episode=2026-08-27">Show notes and transcript</a></p>]]></content:encoded>
       <pubDate>Thu, 27 Aug 2026 07:32:44 +1000</pubDate>
       <guid isPermaLink="true">https://opurtell.github.io/paramedicpapers/audio/ep-2026-08-27.mp3</guid>
       <enclosure url="https://opurtell.github.io/paramedicpapers/audio/ep-2026-08-27.mp3" length="349869" type="audio/mpeg"/>
       <itunes:duration>87</itunes:duration>
       <itunes:summary>IM midazolam non-inferior to IV clonazepam for prehospital seizures</itunes:summary>
-    </item>
-    <item>
-      <title>Paramedic Papers Daily — 26 August 2026</title>
-      <description>2 papers: Smartwatch fall detection in OHCA; Workplace violence drivers for ambulance personnel</description>
-      <pubDate>Wed, 26 Aug 2026 07:32:22 +1000</pubDate>
-      <guid isPermaLink="true">https://opurtell.github.io/paramedicpapers/audio/ep-2026-08-26.mp3</guid>
-      <enclosure url="https://opurtell.github.io/paramedicpapers/audio/ep-2026-08-26.mp3" length="367437" type="audio/mpeg"/>
-      <itunes:duration>91</itunes:duration>
-      <itunes:summary>2 papers: Smartwatch fall detection in OHCA; Workplace violence drivers for ambulance personnel</itunes:summary>
+      <itunes:image href="https://opurtell.github.io/paramedicpapers/icon-512.png"/>
+      <itunes:episodeType>full</itunes:episodeType>
     </item>
   </channel>
 </rss>
