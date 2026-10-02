@@ -198,7 +198,7 @@
     $('nav-count-saved').textContent = savedCount;
     $('nav-count-saved').hidden = savedCount === 0;
 
-    var todayCount = days.length ? (days[0].papers || []).length : 0;
+    var todayCount = days.length && isToday(days[0].date) ? (days[0].papers || []).length : 0;
     $('scan-today').textContent = todayCount + ' new';
     $('scan-week').textContent = weekPaperCount(days);
     $('scan-total').textContent = days.length;
@@ -264,6 +264,10 @@
      tldr.highlights, each linking to its paper card via highlight.id. */
   function renderDailyTldr() {
     var t = state.data.tldr;
+    /* The TLDR is from the latest scan, which on a quiet day (or before the
+       morning run) is not today's — say which day it covers. */
+    $('daily-tldr-kicker').textContent = (t && t.date && !isToday(t.date))
+      ? 'Latest TLDR · ' + dayLabel(t.date) : "Today's TLDR";
     if (!t || !t.summary) {
       $('daily-tldr-lead').textContent = 'TLDR not yet available for today.';
       $('daily-tldr-body').innerHTML = '';
@@ -383,9 +387,17 @@
   function renderToday() {
     var day = (state.data.dailyUpdates || [])[0];
     var papers = day ? day.papers : [];
-    /* The desktop section head carries the scan date alongside the count. */
-    $('today-count').textContent = papers.length + ' new today' +
-      (isWide() && day ? ' · ' + dayLabel(day.date).replace('Today · ', '') : '');
+    var fresh = day && isToday(day.date);
+    /* No scan today (quiet day, or the morning run hasn't happened yet):
+       keep showing the latest scan, labelled with its date. */
+    $('today-head').textContent = fresh || !day ? "Today's newest" : 'Latest scan';
+    if (fresh || !day) {
+      /* The desktop section head carries the scan date alongside the count. */
+      $('today-count').textContent = papers.length + ' new today' +
+        (isWide() && day ? ' · ' + dayLabel(day.date).replace('Today · ', '') : '');
+    } else {
+      $('today-count').textContent = 'None new today · ' + dayLabel(day.date);
+    }
     $('today-list').innerHTML = papers.map(function (p) {
       return '<article class="today-item" data-today-id="' + esc(p.id) + '">' +
         todayCardInnerHTML(p) + '</article>';
@@ -770,13 +782,18 @@
     return '#';
   }
 
-  /* Relevance is collapsed to High / Med / Low, from the same
-     emoji-or-word indicator the previous build parsed. */
+  /* Relevance is collapsed to High / Med / Low from the leading emoji, or
+     failing that the leading word. Never search the whole text: reasons
+     like "🟡 Medium — … low-acuity patients" mention other levels. */
   function relLevel(text) {
     if (!text) return '';
-    var t = String(text).toLowerCase();
-    if (text.indexOf('🟢') !== -1 || t.indexOf('high') !== -1) return 'High';
-    if (text.indexOf('🔴') !== -1 || t.indexOf('low') !== -1 || t.indexOf('indirect') !== -1) return 'Low';
+    var s = String(text);
+    if (s.indexOf('🟢') !== -1) return 'High';
+    if (s.indexOf('🟡') !== -1) return 'Med';
+    if (s.indexOf('🔴') !== -1) return 'Low';
+    var first = s.trim().split(/[^A-Za-z]+/)[0].toLowerCase();
+    if (first === 'high') return 'High';
+    if (first === 'low' || first === 'indirect') return 'Low';
     return 'Med';
   }
   function relRank(text) {
@@ -793,6 +810,11 @@
   /* ── formatting ─────────────────────────────────────── */
 
   var DAYS = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+
+  /* Scan dates are Sydney dates; compared with the reader's local date. */
+  function isToday(date) {
+    return new Date(date + 'T00:00:00').toDateString() === new Date().toDateString();
+  }
 
   function dayLabel(date) {
     var d = new Date(date + 'T00:00:00');
