@@ -181,8 +181,9 @@ TLDR panels). The fun fact lives in the reading column, below the button.
 
 ## Deploying UI changes
 
-The site is live at `https://opurtell.github.io/paramedicpapers/` (GitHub Pages,
-`main` branch). The nightly data push only ever commits `data/papers.json` —
+The site is live at `https://paramedicpapers.com/` (GitHub Pages, `main`
+branch, custom domain via `CNAME`; episode audio is served from Cloudflare R2
+at `https://audio.paramedicpapers.com`, not from this repo). The nightly data push only ever commits `data/papers.json` —
 **any change to `index.html`, `css/`, or `js/` must be committed and pushed
 manually**:
 
