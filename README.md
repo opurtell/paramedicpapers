@@ -1,4 +1,4 @@
-# Paramedic Research Updates
+# Paramedic Papers
 
 A static dashboard displaying daily curated paramedic and prehospital research paper summaries. Designed for working paramedics to quickly scan the latest evidence.
 
