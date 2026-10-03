@@ -18,11 +18,25 @@
       <itunes:name>Oscar Purtell</itunes:name>
       <itunes:email>opurtellai@gmail.com</itunes:email>
     </itunes:owner>
-    <itunes:image href="https://paramedicpapers.com/icon-512.png"/>
+    <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
     <itunes:category text="Health &amp; Fitness">
       <itunes:category text="Medicine"/>
     </itunes:category>
     <itunes:explicit>false</itunes:explicit>
+    <item>
+      <title>Paramedic Papers Daily — 4 October 2026</title>
+      <link>https://paramedicpapers.com/#episode=2026-10-04</link>
+      <description>3 papers: TRiM peer support training feasible for first responders; Shift-worker nutrition evidence: thin for responders; Anaphylaxis knowledge gaps in prehospital crews</description>
+      <content:encoded><![CDATA[<p>3 papers: TRiM peer support training feasible for first responders; Shift-worker nutrition evidence: thin for responders; Anaphylaxis knowledge gaps in prehospital crews</p><p>Papers in this episode:</p><ul><li><a href="https://doi.org/10.1002/jts.70130">TRiM peer support training feasible for first responders <em>(Journal of Traumatic Stress)</em></a></li><li><a href="https://doi.org/10.1111/jhn.70340">Shift-worker nutrition evidence: thin for responders <em>(Journal of Human Nutrition and Dietetics)</em></a></li><li><a href="https://doi.org/10.18502/ijaai.v25is11.22483">Anaphylaxis knowledge gaps in prehospital crews <em>(Iranian Journal of Allergy, Asthma, and Immunology)</em></a></li></ul><p><a href="https://paramedicpapers.com/#episode=2026-10-04">Show notes and transcript</a></p>]]></content:encoded>
+      <pubDate>Sun, 04 Oct 2026 07:33:58 +1100</pubDate>
+      <guid isPermaLink="false">https://audio.paramedicpapers.com/ep-2026-10-04.mp3</guid>
+      <enclosure url="https://audio.paramedicpapers.com/ep-2026-10-04.mp3" length="833420" type="audio/mpeg"/>
+      <itunes:duration>208</itunes:duration>
+      <itunes:summary>3 papers: TRiM peer support training feasible for first responders; Shift-worker nutrition evidence: thin for responders; Anaphylaxis knowledge gaps in prehospital crews</itunes:summary>
+      <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
+      <itunes:episodeType>full</itunes:episodeType>
+      <podcast:transcript url="https://audio.paramedicpapers.com/ep-2026-10-04.txt" type="text/plain" language="en-au"/>
+    </item>
     <item>
       <title>Paramedic Papers Daily — 3 October 2026</title>
       <link>https://paramedicpapers.com/#episode=2026-10-03</link>
@@ -33,7 +47,7 @@
       <enclosure url="https://audio.paramedicpapers.com/ep-2026-10-03.mp3" length="3074156" type="audio/mpeg"/>
       <itunes:duration>768</itunes:duration>
       <itunes:summary>11 papers: chest-pain risk-score conveyance; First Nations stroke gaps; OHCA cost-effectiveness; paediatric dosing errors; trauma vasopressors; methoxyflurane; crew size; paediatric asthma agreement; stroke delay; geriatric direct admission; US trauma disparities</itunes:summary>
-      <itunes:image href="https://paramedicpapers.com/icon-512.png"/>
+      <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
       <itunes:episodeType>full</itunes:episodeType>
       <podcast:transcript url="https://audio.paramedicpapers.com/ep-2026-10-03.txt" type="text/plain" language="en-au"/>
     </item>
@@ -47,7 +61,7 @@
       <enclosure url="https://audio.paramedicpapers.com/ep-2026-10-02.mp3" length="828525" type="audio/mpeg"/>
       <itunes:duration>207</itunes:duration>
       <itunes:summary>3 papers: early adrenaline + early airway in OHCA (Korean registry); language barriers shift blunt trauma care (US EMS data); NAEMSP position statement on EMS clinician mental health</itunes:summary>
-      <itunes:image href="https://paramedicpapers.com/icon-512.png"/>
+      <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
       <itunes:episodeType>full</itunes:episodeType>
     </item>
     <item>
@@ -60,7 +74,7 @@
       <enclosure url="https://audio.paramedicpapers.com/ep-2026-10-01.mp3" length="412749" type="audio/mpeg"/>
       <itunes:duration>103</itunes:duration>
       <itunes:summary>1 paper: prehospital whole blood in traumatic haemorrhagic shock — systematic review/meta-analysis (Injury, ahead-of-print)</itunes:summary>
-      <itunes:image href="https://paramedicpapers.com/icon-512.png"/>
+      <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
       <itunes:episodeType>full</itunes:episodeType>
     </item>
     <item>
@@ -73,7 +87,7 @@
       <enclosure url="https://audio.paramedicpapers.com/ep-2026-09-30.mp3" length="564525" type="audio/mpeg"/>
       <itunes:duration>141</itunes:duration>
       <itunes:summary>1 paper: PIHCA vs GO-FAR 2 pre-arrest scores validated in 501 Swedish in-hospital cardiac arrests — comparable performance</itunes:summary>
-      <itunes:image href="https://paramedicpapers.com/icon-512.png"/>
+      <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
       <itunes:episodeType>full</itunes:episodeType>
     </item>
     <item>
@@ -86,7 +100,7 @@
       <enclosure url="https://audio.paramedicpapers.com/ep-2026-09-29.mp3" length="634797" type="audio/mpeg"/>
       <itunes:duration>158</itunes:duration>
       <itunes:summary>1 paper: sex differences in OHCA vanish when obstructive CAD is angiographically confirmed (Resuscitation Plus registry, n=580)</itunes:summary>
-      <itunes:image href="https://paramedicpapers.com/icon-512.png"/>
+      <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
       <itunes:episodeType>full</itunes:episodeType>
     </item>
     <item>
@@ -99,7 +113,7 @@
       <enclosure url="https://audio.paramedicpapers.com/ep-2026-09-28.mp3" length="463437" type="audio/mpeg"/>
       <itunes:duration>115</itunes:duration>
       <itunes:summary>1 paper: two-handed neonatal mask hold cuts facemask leak (27% to 2.5%) in simulation</itunes:summary>
-      <itunes:image href="https://paramedicpapers.com/icon-512.png"/>
+      <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
       <itunes:episodeType>full</itunes:episodeType>
     </item>
     <item>
@@ -112,7 +126,7 @@
       <enclosure url="https://audio.paramedicpapers.com/ep-2026-09-27.mp3" length="656205" type="audio/mpeg"/>
       <itunes:duration>163</itunes:duration>
       <itunes:summary>2 papers: paediatric IHCA trends in Japan (survival up to ~30%); Greece's first national school CPR championship (95%+ quality scores)</itunes:summary>
-      <itunes:image href="https://paramedicpapers.com/icon-512.png"/>
+      <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
       <itunes:episodeType>full</itunes:episodeType>
     </item>
     <item>
@@ -125,7 +139,7 @@
       <enclosure url="https://audio.paramedicpapers.com/ep-2026-09-26.mp3" length="718317" type="audio/mpeg"/>
       <itunes:duration>179</itunes:duration>
       <itunes:summary>3 papers: pit-crew CPR education and intact survival (ahead-of-print); zero studies on post-arrest psychological screening; RFM feedback beats repetition in neonatal mask ventilation</itunes:summary>
-      <itunes:image href="https://paramedicpapers.com/icon-512.png"/>
+      <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
       <itunes:episodeType>full</itunes:episodeType>
     </item>
     <item>
@@ -138,7 +152,7 @@
       <enclosure url="https://audio.paramedicpapers.com/ep-2026-09-25.mp3" length="1132077" type="audio/mpeg"/>
       <itunes:duration>282</itunes:duration>
       <itunes:summary>6 papers: post-ROSC CO2 in paediatric OHCA; supraglottic vs intubation meta-analysis; SpO2 during CPR; calcium in blood-product resus; rCAST validation in children; drone AED cost-effectiveness in Scotland</itunes:summary>
-      <itunes:image href="https://paramedicpapers.com/icon-512.png"/>
+      <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
       <itunes:episodeType>full</itunes:episodeType>
     </item>
     <item>
@@ -151,7 +165,7 @@
       <enclosure url="https://audio.paramedicpapers.com/ep-2026-09-24.mp3" length="865773" type="audio/mpeg"/>
       <itunes:duration>216</itunes:duration>
       <itunes:summary>3 papers: dispatcher-assisted CPR barriers halve survival; night drone AED deliveries match daytime; Ethiopia governance gaps leave care as transport</itunes:summary>
-      <itunes:image href="https://paramedicpapers.com/icon-512.png"/>
+      <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
       <itunes:episodeType>full</itunes:episodeType>
     </item>
     <item>
@@ -164,7 +178,7 @@
       <enclosure url="https://audio.paramedicpapers.com/ep-2026-09-22.mp3" length="376941" type="audio/mpeg"/>
       <itunes:duration>94</itunes:duration>
       <itunes:summary>1 paper: prehospital antibiotics in sepsis — lower adjusted 28-day mortality (Thai cohort), ~8.5 min longer on scene</itunes:summary>
-      <itunes:image href="https://paramedicpapers.com/icon-512.png"/>
+      <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
       <itunes:episodeType>full</itunes:episodeType>
     </item>
     <item>
@@ -177,7 +191,7 @@
       <enclosure url="https://audio.paramedicpapers.com/ep-2026-09-20.mp3" length="594573" type="audio/mpeg"/>
       <itunes:duration>148</itunes:duration>
       <itunes:summary>2 papers: Canadian feasibility of multi-domain post-arrest prognostication data; Spanish CONOCES-BLS citizen knowledge scale</itunes:summary>
-      <itunes:image href="https://paramedicpapers.com/icon-512.png"/>
+      <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
       <itunes:episodeType>full</itunes:episodeType>
     </item>
     <item>
@@ -190,7 +204,7 @@
       <enclosure url="https://audio.paramedicpapers.com/ep-2026-09-19.mp3" length="1023405" type="audio/mpeg"/>
       <itunes:duration>255</itunes:duration>
       <itunes:summary>5 papers: invisible DNAR orders in OHCA dispatch; TOR policy implementation gap; Nagoya arrest destination null; paediatric IV ketamine safety; ED boarding of older adults</itunes:summary>
-      <itunes:image href="https://paramedicpapers.com/icon-512.png"/>
+      <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
       <itunes:episodeType>full</itunes:episodeType>
     </item>
     <item>
@@ -203,7 +217,7 @@
       <enclosure url="https://audio.paramedicpapers.com/ep-2026-09-18.mp3" length="849933" type="audio/mpeg"/>
       <itunes:duration>212</itunes:duration>
       <itunes:summary>3 papers: CPR-induced consciousness in 43k Victorian arrests, rising and linked to survival; Norwegian newborn resus RCT compromised by anonymous video deletions; US sickle cell pain — only 13.5% got prehospital analgesia</itunes:summary>
-      <itunes:image href="https://paramedicpapers.com/icon-512.png"/>
+      <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
       <itunes:episodeType>full</itunes:episodeType>
     </item>
     <item>
@@ -216,7 +230,7 @@
       <enclosure url="https://audio.paramedicpapers.com/ep-2026-09-17.mp3" length="816525" type="audio/mpeg"/>
       <itunes:duration>204</itunes:duration>
       <itunes:summary>4 papers: whole blood beats crystalloids in rat traumatic arrest; LLMs unreliable for prehospital ECG cath-lab activation; knee-height stretcher best for standing compressions; structured hot debriefs validated in two Australian EDs</itunes:summary>
-      <itunes:image href="https://paramedicpapers.com/icon-512.png"/>
+      <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
       <itunes:episodeType>full</itunes:episodeType>
     </item>
     <item>
@@ -229,7 +243,7 @@
       <enclosure url="https://audio.paramedicpapers.com/ep-2026-09-16.mp3" length="644013" type="audio/mpeg"/>
       <itunes:duration>160</itunes:duration>
       <itunes:summary>2 papers: AI voice assistants in EMS survey (Scand J Trauma); mild hypercapnia in porcine ECPR (Resuscitation Plus)</itunes:summary>
-      <itunes:image href="https://paramedicpapers.com/icon-512.png"/>
+      <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
       <itunes:episodeType>full</itunes:episodeType>
     </item>
     <item>
@@ -242,7 +256,7 @@
       <enclosure url="https://audio.paramedicpapers.com/ep-2026-09-15.mp3" length="455277" type="audio/mpeg"/>
       <itunes:duration>113</itunes:duration>
       <itunes:summary>1 paper: colloids (gelatin 4%, HES) impair clotting ex vivo while balanced crystalloid stays neutral — backs crystalloid-first practice</itunes:summary>
-      <itunes:image href="https://paramedicpapers.com/icon-512.png"/>
+      <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
       <itunes:episodeType>full</itunes:episodeType>
     </item>
     <item>
@@ -255,7 +269,7 @@
       <enclosure url="https://audio.paramedicpapers.com/ep-2026-09-13.mp3" length="450957" type="audio/mpeg"/>
       <itunes:duration>112</itunes:duration>
       <itunes:summary>1 paper: French prehospital data — nearly 1 in 5 severe trauma patients would qualify for prehospital blood transfusion (ABC ≥2 + &gt;20 min intervention)</itunes:summary>
-      <itunes:image href="https://paramedicpapers.com/icon-512.png"/>
+      <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
       <itunes:episodeType>full</itunes:episodeType>
     </item>
     <item>
@@ -268,7 +282,7 @@
       <enclosure url="https://audio.paramedicpapers.com/ep-2026-09-12.mp3" length="793197" type="audio/mpeg"/>
       <itunes:duration>198</itunes:duration>
       <itunes:summary>3 papers: paediatric weight documentation 73%; consensus guidelines for prehospital paediatric transfusion; 2026 prehospital evidence-based guideline systematic review</itunes:summary>
-      <itunes:image href="https://paramedicpapers.com/icon-512.png"/>
+      <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
       <itunes:episodeType>full</itunes:episodeType>
     </item>
     <item>
@@ -281,7 +295,7 @@
       <enclosure url="https://audio.paramedicpapers.com/ep-2026-09-11.mp3" length="422253" type="audio/mpeg"/>
       <itunes:duration>105</itunes:duration>
       <itunes:summary>1 paper: Rwandan pilot of video-plus-simulation mass casualty training — knowledge and confidence gains held at six months</itunes:summary>
-      <itunes:image href="https://paramedicpapers.com/icon-512.png"/>
+      <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
       <itunes:episodeType>full</itunes:episodeType>
     </item>
     <item>
@@ -294,7 +308,7 @@
       <enclosure url="https://audio.paramedicpapers.com/ep-2026-09-10.mp3" length="783501" type="audio/mpeg"/>
       <itunes:duration>195</itunes:duration>
       <itunes:summary>2 papers: German registry finds only 20.5% of OHCA meets eCPR eligibility; RCT finds immersive VR adds nothing to CPR training over manikin sim</itunes:summary>
-      <itunes:image href="https://paramedicpapers.com/icon-512.png"/>
+      <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
       <itunes:episodeType>full</itunes:episodeType>
     </item>
     <item>
@@ -307,7 +321,7 @@
       <enclosure url="https://audio.paramedicpapers.com/ep-2026-09-05.mp3" length="708045" type="audio/mpeg"/>
       <itunes:duration>176</itunes:duration>
       <itunes:summary>2 papers: Norwegian trauma call-out decisions under sparse dispatch info; Oslo sepsis study finds 8 subgroups, fails to replicate SENECA phenotypes</itunes:summary>
-      <itunes:image href="https://paramedicpapers.com/icon-512.png"/>
+      <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
       <itunes:episodeType>full</itunes:episodeType>
     </item>
     <item>
@@ -320,7 +334,7 @@
       <enclosure url="https://audio.paramedicpapers.com/ep-2026-09-04.mp3" length="457773" type="audio/mpeg"/>
       <itunes:duration>114</itunes:duration>
       <itunes:summary>1 paper: Australasian bronchiolitis discharge criteria review — shorter stays, no extra readmissions, now in the 2025 guideline</itunes:summary>
-      <itunes:image href="https://paramedicpapers.com/icon-512.png"/>
+      <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
       <itunes:episodeType>full</itunes:episodeType>
     </item>
     <item>
@@ -333,7 +347,7 @@
       <enclosure url="https://audio.paramedicpapers.com/ep-2026-09-03.mp3" length="1119885" type="audio/mpeg"/>
       <itunes:duration>279</itunes:duration>
       <itunes:summary>4 papers: community CPR training lifts public-location bystander rates only; intra-arrest TEE feasible but no RCT benefit; Danish prehospital cricothyroidotomy rare with poor OHCA survival; Nepean ED ultrasound archiving, 4 years zero data loss</itunes:summary>
-      <itunes:image href="https://paramedicpapers.com/icon-512.png"/>
+      <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
       <itunes:episodeType>full</itunes:episodeType>
     </item>
     <item>
@@ -346,7 +360,7 @@
       <enclosure url="https://audio.paramedicpapers.com/ep-2026-09-02.mp3" length="963405" type="audio/mpeg"/>
       <itunes:duration>240</itunes:duration>
       <itunes:summary>Racial disparities in bystander CPR for opioid-associated OHCA; Safety of RhD-positive blood transfusion in females of childbearing potential</itunes:summary>
-      <itunes:image href="https://paramedicpapers.com/icon-512.png"/>
+      <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
       <itunes:episodeType>full</itunes:episodeType>
     </item>
     <item>
@@ -359,7 +373,7 @@
       <enclosure url="https://audio.paramedicpapers.com/ep-2026-09-01.mp3" length="207117" type="audio/mpeg"/>
       <itunes:duration>51</itunes:duration>
       <itunes:summary>1 paper: SPEAR device safety warning</itunes:summary>
-      <itunes:image href="https://paramedicpapers.com/icon-512.png"/>
+      <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
       <itunes:episodeType>full</itunes:episodeType>
     </item>
     <item>
@@ -372,7 +386,7 @@
       <enclosure url="https://audio.paramedicpapers.com/ep-2026-08-30.mp3" length="276621" type="audio/mpeg"/>
       <itunes:duration>69</itunes:duration>
       <itunes:summary>1 paper: blunt vs penetrating trauma physiology</itunes:summary>
-      <itunes:image href="https://paramedicpapers.com/icon-512.png"/>
+      <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
       <itunes:episodeType>full</itunes:episodeType>
     </item>
     <item>
@@ -385,7 +399,7 @@
       <enclosure url="https://audio.paramedicpapers.com/ep-2026-08-29.mp3" length="1081773" type="audio/mpeg"/>
       <itunes:duration>270</itunes:duration>
       <itunes:summary>5 papers: Paediatric OHCA adrenaline variation; Blood transfusion prediction; Swiss HEMS trauma outcomes; Paediatric concussion MIH; Indirect ICU admissions mortality</itunes:summary>
-      <itunes:image href="https://paramedicpapers.com/icon-512.png"/>
+      <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
       <itunes:episodeType>full</itunes:episodeType>
     </item>
     <item>
@@ -398,20 +412,7 @@
       <enclosure url="https://audio.paramedicpapers.com/ep-2026-08-28.mp3" length="658317" type="audio/mpeg"/>
       <itunes:duration>164</itunes:duration>
       <itunes:summary>ED vs prehospital cardiac arrest causes; teleconsultation for paediatric transports</itunes:summary>
-      <itunes:image href="https://paramedicpapers.com/icon-512.png"/>
-      <itunes:episodeType>full</itunes:episodeType>
-    </item>
-    <item>
-      <title>Paramedic Papers Daily — 27 August 2026</title>
-      <link>https://paramedicpapers.com/#episode=2026-08-27</link>
-      <description>IM midazolam non-inferior to IV clonazepam for prehospital seizures</description>
-      <content:encoded><![CDATA[<p>IM midazolam non-inferior to IV clonazepam for prehospital seizures</p><p>Papers in this episode:</p><ul><li><a href="https://doi.org/10.1016/j.seizure.2026.08.007">Intramuscular midazolam versus intravenous clonazepam for prehospital treatment of generalized tonic-clonic seizures: A randomized double-blind non-inferiority trial <em>(Seizure: European Journal of Epilepsy)</em></a></li></ul><p><a href="https://paramedicpapers.com/#episode=2026-08-27">Show notes and transcript</a></p>]]></content:encoded>
-      <pubDate>Thu, 27 Aug 2026 07:32:44 +1000</pubDate>
-      <guid isPermaLink="false">https://opurtell.github.io/paramedicpapers/audio/ep-2026-08-27.mp3</guid>
-      <enclosure url="https://audio.paramedicpapers.com/ep-2026-08-27.mp3" length="349869" type="audio/mpeg"/>
-      <itunes:duration>87</itunes:duration>
-      <itunes:summary>IM midazolam non-inferior to IV clonazepam for prehospital seizures</itunes:summary>
-      <itunes:image href="https://paramedicpapers.com/icon-512.png"/>
+      <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
       <itunes:episodeType>full</itunes:episodeType>
     </item>
   </channel>
