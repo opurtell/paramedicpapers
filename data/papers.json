@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-10-03T10:22:34Z",
-  "lastUpdatedSydney": "2026-10-03 20:22 AEST",
-  "lastUpdatedDate": "2026-10-03",
+  "lastUpdated": "2026-10-03T20:20:55Z",
+  "lastUpdatedSydney": "2026-10-04 07:20 AEST",
+  "lastUpdatedDate": "2026-10-04",
   "featuredPapers": [
     {
       "id": "42809516",
@@ -1013,105 +1013,103 @@
     }
   ],
   "funFact": {
-    "category": "pharmacology",
-    "fact": "Midazolam is water-soluble at acidic pH but turns lipophilic at body pH — so it crosses the blood-brain barrier almost instantly after injection. That's why it's the fastest benzodiazepine for stopping seizures. Chemistry doing the heavy lifting."
+    "category": "EMS",
+    "fact": "The word 'ambulance' comes from the Latin 'ambulare' — to walk or move. The earliest documented ambulance was a horse-drawn wagon used by Spanish forces during the siege of Malaga in the 1480s. We've been moving the wounded for over 500 years."
   },
   "tldr": {
-    "date": "2026-10-03",
-    "paperCount": 11,
-    "summary": "Headline is a Dutch RCT showing a prehospital risk score can safely guide conveyance decisions in undifferentiated chest pain, cutting ED presentations and costs — alongside Australian linked data exposing gaps in stroke care for First Nations patients, and a sobering US registry finding that nearly half of paediatric prehospital drug doses stray from protocol.",
+    "date": "2026-10-04",
+    "paperCount": 3,
+    "summary": "A quiet clinical day — the interesting work is in occupational health: TRiM peer-support training looks feasible for first responders, and a systematic review of shift-worker nutrition finds the evidence base is thin for ambulance crews specifically.",
     "highlights": [
       {
-        "id": "42810856",
-        "pmid": "42810856",
-        "doi": "10.1136/heartjnl-2026-328924",
-        "title": "Risk-score-guided conveyance safe in chest pain",
-        "journal": "Heart",
-        "note": "PreHEART-guided conveyance non-inferior for 3-day unexpected serious adverse events (win ratio 1.01, 95% CI 0.89–1.16); non-conveyance rose to 34.6% vs 24.5%, 30-day emergency presentations fell (RR 0.88), costs −€345, and no deaths within 3 days among 1526 non-conveyed patients"
+        "id": "42811627",
+        "pmid": "42811627",
+        "doi": "10.1002/jts.70130",
+        "title": "TRiM peer support training feasible for first responders",
+        "journal": "Journal of Traumatic Stress",
+        "note": "90–94% rated the training highly relevant; significant pre-to-post improvements in perceived capability, referral knowledge, risk evaluation and boundary clarity (d = 0.60–1.37); formal TRiM use was minimal at both follow-ups"
       },
       {
-        "id": "42806575",
-        "pmid": "42806575",
-        "doi": "10.5694/mja2.70303",
-        "title": "Stroke care gaps for First Nations patients",
-        "journal": "The Medical Journal of Australia",
-        "note": "Age-standardised EMS attendance incidence 343 vs 144 per 100,000 person-years (IRR 2.38); paramedic stroke assessment 58.2% vs 67.3%; conveyance to thrombectomy-capable hospitals 24.4% vs 32.7%; adjusted 30- and 90-day mortality similar (HR 0.81 and 0.81)"
+        "id": "42820931",
+        "pmid": "42820931",
+        "doi": "10.1111/jhn.70340",
+        "title": "Shift-worker nutrition evidence: thin for responders",
+        "journal": "Journal of Human Nutrition and Dietetics",
+        "note": "Most included studies were crossover RCTs (49%) or observational (33%); 40% involved nursing and healthcare professionals and only 9% first responders such as firefighters and police"
       },
       {
-        "id": "42809516",
-        "pmid": "42809516",
-        "doi": "10.1080/10903127.2026.2741269",
-        "title": "What OHCA care is worth paying for",
-        "journal": "Prehospital Emergency Care",
-        "note": "Early defibrillation and EMT-delivered ALS cost-effective (ICERs £11,407–US$56,700 per QALY); prehospital ECPR more cost-effective than in-hospital ECPR (AU$27,323–44,000 per QALY); termination-of-resuscitation strategies cost-effective (US$110,554 saved per QALY lost in one estimate)"
-      },
-      {
-        "id": "42809474",
-        "pmid": "42809474",
-        "doi": "10.1080/10903127.2026.2740143",
-        "title": "Nearly half of paediatric doses off-protocol",
-        "journal": "Prehospital Emergency Care",
-        "note": "46.4% of doses deviated ≥20% from recommended (79.9% underdoses); deviation was highest for ondansetron (85.3%) and via the intranasal route (69.7%); weight-estimation error was not associated"
-      },
-      {
-        "id": "42808211",
-        "pmid": "42808211",
-        "doi": "10.1097/MEJ.0000000000001379",
-        "title": "Prehospital vasopressors in trauma unproven",
-        "journal": "European Journal of Emergency Medicine",
-        "note": "Associations with mortality were mixed; one military study found significantly lower adjusted survival with vasopressors (aOR 0.32, 95% CI 0.18–0.56), and one study linked them to massive transfusion (aOR 4.97) and trauma-induced coagulopathy (aOR 3.05)"
-      },
-      {
-        "id": "42817920",
-        "pmid": "42817920",
-        "doi": "10.1080/17581869.2026.2736033",
-        "title": "Methoxyflurane feasibility confirmed in Canada",
-        "journal": "Pain Management",
-        "note": "Protocol compliance 95%; median NRS pain 8/10 pre-treatment to 5/10 post-treatment; side effects in 23%, mostly mild, with no serious methoxyflurane-related adverse events"
-      },
-      {
-        "id": "42813214",
-        "pmid": "42813214",
-        "doi": "10.20408/jti.2025.0230",
-        "title": "Bigger crews work faster, don't save more",
-        "journal": "Journal of Trauma and Injury",
-        "note": "≥3-person crews: IV access in hypotensive patients aOR 1.47 (95% CI 1.31–1.66), scene time ≤10 min aOR 1.09, advanced airway borderline (aOR 1.13); survival to discharge unchanged after adjustment (aOR 1.00)"
-      },
-      {
-        "id": "42808699",
-        "pmid": "42808699",
-        "doi": "10.1080/10903127.2026.2717525",
-        "title": "EMS and ED disagree on paediatric asthma signs",
-        "journal": "Prehospital Emergency Care",
-        "note": "Slight agreement for suprasternal retractions (κ 0.01–0.20), fair for tachypnoea and accessory muscle use (κ 0.21–0.40), and poor agreement (ICC 0–0.50) for breathlessness, work of breathing, hypoxia and wheeze characteristics"
-      },
-      {
-        "id": "42809487",
-        "pmid": "42809487",
-        "doi": "10.1159/ced/accag027",
-        "title": "Two-thirds of stroke patients delay seeking care",
-        "journal": "Cerebrovascular Diseases",
-        "note": "Pooled prehospital delay incidence 67.7% (95% CI 59.2–75.6%); 65.0% at the 2-hour cut-off and 77.2% at 3 hours"
-      },
-      {
-        "id": "42823763",
-        "pmid": "42823763",
-        "doi": "10.1186/s12877-026-08370-1",
-        "title": "Direct geriatric admission depends on geography",
-        "journal": "BMC Geriatrics",
-        "note": "603 patients (7%) directly admitted to geriatric units; crude conveyance rates ranged 4–21% across service areas, with supply-side factors (proximity, ownership, bed numbers) explaining most between-area variation"
-      },
-      {
-        "id": "42814427",
-        "pmid": "42814427",
-        "doi": "10.1001/jamasurg.2026.4509",
-        "title": "US racial gaps in trauma interventions",
-        "journal": "JAMA Surgery",
-        "note": "Prehospital intubation 7.9% in White vs 4.0% in Black patients; prehospital blood 4.4% in patients of other race vs 2.3% in Black patients; socially disadvantaged neighbourhoods were less likely to receive prehospital interventions"
+        "id": "42825914",
+        "pmid": "42825914",
+        "doi": "10.18502/ijaai.v25is11.22483",
+        "title": "Anaphylaxis knowledge gaps in prehospital crews",
+        "journal": "Iranian Journal of Allergy, Asthma, and Immunology",
+        "note": "52.2% identified all three diagnostic criteria, 81.7% recognised adrenaline as first-line, 81.1% knew the intramuscular route, but only 52.2% knew correct patient positioning and 50.6% auto-injector use"
       }
     ]
   },
   "dailyUpdates": [
+    {
+      "date": "2026-10-04",
+      "papers": [
+        {
+          "id": "42811627",
+          "title": "Assessing the feasibility and acceptability of training first responder peer supporters in trauma risk management (TRiM)",
+          "journal": "Journal of Traumatic Stress",
+          "date": "2026-10-04",
+          "pmid": "42811627",
+          "doi": "10.1002/jts.70130",
+          "summary": "Feasibility and acceptability study of training fire-service peer supporters in TRiM found the 3-day course was well received with significant gains in capability and referral knowledge, but formal TRiM procedure use was minimal at 2- and 6-month follow-up.",
+          "relevance": "🟡 Medium — Structured peer-support programs like TRiM are already used across Australian emergency services, so the training model fits — but this is a small single-service feasibility study with little evidence of real-world use afterwards.",
+          "pubDate": "2026-09-29",
+          "topic": "Workforce & wellbeing",
+          "studyType": "Other",
+          "design": "Single-service feasibility and acceptability study with pre/post surveys and follow-up",
+          "n": "21 first responders who completed training (27 registered)",
+          "finding": "90–94% rated the training highly relevant; significant pre-to-post improvements in perceived capability, referral knowledge, risk evaluation and boundary clarity (d = 0.60–1.37); formal TRiM use was minimal at both follow-ups",
+          "caveat": "Small sample in a single fire service (not ambulance), and limited post-training implementation — the program wasn't actually used much after training",
+          "bottomLine": "Hypothesis-generating",
+          "shortTitle": "TRiM peer support training feasible for first responders"
+        },
+        {
+          "id": "42820931",
+          "title": "A Systematic Review of Nutrition Interventions for Shift Workers, With Subgroup Analysis of First Responder Populations",
+          "journal": "Journal of Human Nutrition and Dietetics",
+          "date": "2026-10-04",
+          "pmid": "42820931",
+          "doi": "10.1111/jhn.70340",
+          "summary": "Systematic review of nutrition interventions for shift workers, with a pre-specified first-responder subgroup, found 43 eligible studies but most involved nurses and healthcare workers, with only a small minority in first-responder populations.",
+          "relevance": "🟢 High — Shift work and its links to chronic disease are universal in Australian ambulance work, and dietary interventions don't depend on how a health system is organised.",
+          "pubDate": "2026-10",
+          "topic": "Workforce & wellbeing",
+          "studyType": "Systematic review",
+          "design": "Systematic review (PROSPERO-registered) with narrative synthesis and first-responder subgroup analysis",
+          "n": "43 studies from 6,909 screened articles",
+          "finding": "Most included studies were crossover RCTs (49%) or observational (33%); 40% involved nursing and healthcare professionals and only 9% first responders such as firefighters and police",
+          "caveat": "Few first-responder studies and much of the evidence is observational, so conclusions for ambulance crews are indirect",
+          "bottomLine": "Context only",
+          "shortTitle": "Shift-worker nutrition evidence: thin for responders"
+        },
+        {
+          "id": "42825914",
+          "title": "Assessment of Prehospital Emergency Personnel's Knowledge in Pediatric Anaphylaxis Management",
+          "journal": "Iranian Journal of Allergy, Asthma, and Immunology",
+          "date": "2026-10-04",
+          "pmid": "42825914",
+          "doi": "10.18502/ijaai.v25is11.22483",
+          "summary": "Cross-sectional survey of 322 prehospital personnel found only about half could identify all three paediatric anaphylaxis diagnostic criteria or use an adrenaline auto-injector correctly, though 82% recognised adrenaline as first-line treatment.",
+          "relevance": "🟡 Medium — Adrenaline for anaphylaxis is universal Australian ambulance practice, so the clinical content is squarely in scope, but the knowledge gaps come from a different EMS and training system.",
+          "pubDate": "2026-08-12",
+          "topic": "Paediatrics",
+          "studyType": "Cross-sectional",
+          "design": "Descriptive cross-sectional survey (21-item questionnaire)",
+          "n": "322 prehospital personnel (214 paramedics, 73 EMTs, 35 physicians)",
+          "finding": "52.2% identified all three diagnostic criteria, 81.7% recognised adrenaline as first-line, 81.1% knew the intramuscular route, but only 52.2% knew correct patient positioning and 50.6% auto-injector use",
+          "caveat": "Self-reported survey in a single country's EMS with no link to actual patient outcomes",
+          "bottomLine": "Context only",
+          "shortTitle": "Anaphylaxis knowledge gaps in prehospital crews"
+        }
+      ]
+    },
     {
       "date": "2026-10-03",
       "papers": [
