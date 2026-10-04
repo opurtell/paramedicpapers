@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-10-03T20:20:55Z",
-  "lastUpdatedSydney": "2026-10-04 07:20 AEST",
-  "lastUpdatedDate": "2026-10-04",
+  "lastUpdated": "2026-10-04T20:20:55Z",
+  "lastUpdatedSydney": "2026-10-05 07:20 AEST",
+  "lastUpdatedDate": "2026-10-05",
   "featuredPapers": [
     {
       "id": "42809516",
@@ -1013,41 +1013,76 @@
     }
   ],
   "funFact": {
-    "category": "EMS",
-    "fact": "The word 'ambulance' comes from the Latin 'ambulare' — to walk or move. The earliest documented ambulance was a horse-drawn wagon used by Spanish forces during the siege of Malaga in the 1480s. We've been moving the wounded for over 500 years."
+    "category": "pathophysiology",
+    "fact": "Sepsis triggers a cytokine storm that causes vasodilation AND capillary leak simultaneously. Fluid pours into the interstitial space — 'third spacing.' The patient looks swollen but is dry on the inside. It's a cruel trick."
   },
   "tldr": {
-    "date": "2026-10-04",
-    "paperCount": 3,
-    "summary": "A quiet clinical day — the interesting work is in occupational health: TRiM peer-support training looks feasible for first responders, and a systematic review of shift-worker nutrition finds the evidence base is thin for ambulance crews specifically.",
+    "date": "2026-10-05",
+    "paperCount": 2,
+    "summary": "A quiet clinical day: a Chinese RCT found a 6-week online stroke education program roughly tripled stroke knowledge, warning-sign awareness and EMS-seeking intent among high-risk residents (aOR ~3.3-3.8), while an Iranian qualitative study mapped how environment, cognition and team stress combine to degrade CPR performance.",
     "highlights": [
       {
-        "id": "42811627",
-        "pmid": "42811627",
-        "doi": "10.1002/jts.70130",
-        "title": "TRiM peer support training feasible for first responders",
-        "journal": "Journal of Traumatic Stress",
-        "note": "90–94% rated the training highly relevant; significant pre-to-post improvements in perceived capability, referral knowledge, risk evaluation and boundary clarity (d = 0.60–1.37); formal TRiM use was minimal at both follow-ups"
+        "id": "42829765",
+        "pmid": "42829765",
+        "doi": "10.4103/jehp.jehp_187_26",
+        "title": "Online stroke education boosts EMS-seeking",
+        "journal": "Journal of Education and Health Promotion",
+        "note": "Versus control, the intervention group showed greater gains in warning-sign awareness (aOR 3.78, 95% CI 1.41-8.13), stroke knowledge (aOR 3.68, 95% CI 1.52-8.94) and EMS-seeking (aOR 3.33, 95% CI 1.44-7.69)"
       },
       {
-        "id": "42820931",
-        "pmid": "42820931",
-        "doi": "10.1111/jhn.70340",
-        "title": "Shift-worker nutrition evidence: thin for responders",
-        "journal": "Journal of Human Nutrition and Dietetics",
-        "note": "Most included studies were crossover RCTs (49%) or observational (33%); 40% involved nursing and healthcare professionals and only 9% first responders such as firefighters and police"
-      },
-      {
-        "id": "42825914",
-        "pmid": "42825914",
-        "doi": "10.18502/ijaai.v25is11.22483",
-        "title": "Anaphylaxis knowledge gaps in prehospital crews",
-        "journal": "Iranian Journal of Allergy, Asthma, and Immunology",
-        "note": "52.2% identified all three diagnostic criteria, 81.7% recognised adrenaline as first-line, 81.1% knew the intramuscular route, but only 52.2% knew correct patient positioning and 50.6% auto-injector use"
+        "id": "10.1186/s12873-026-01806-2",
+        "pmid": "",
+        "doi": "10.1186/s12873-026-01806-2",
+        "title": "What actually degrades CPR performance",
+        "journal": "BMC Emergency Medicine",
+        "note": "A nested four-layer model: physical and environmental threats trigger cognitive and motivational barriers, which interact with psychological and ethical stressors and extend to socio-cognitive challenges beyond the hospital"
       }
     ]
   },
   "dailyUpdates": [
+    {
+      "date": "2026-10-05",
+      "papers": [
+        {
+          "id": "42829765",
+          "title": "Effects of an online stroke education program on enhancing knowledge, awareness of stroke warning signs, and emergency medical services seeking among high-risk residents in Huanggang City, China",
+          "journal": "Journal of Education and Health Promotion",
+          "date": "2026-10-05",
+          "pmid": "42829765",
+          "doi": "10.4103/jehp.jehp_187_26",
+          "summary": "RCT in 106 high-risk residents in Huanggang, China testing a 6-week online stroke education program against usual health education — it significantly improved stroke knowledge, warning-sign awareness and EMS-seeking intent.",
+          "relevance": "🟡 Medium — Anything that shortens prehospital stroke delay matters to EMS activation, but this ran through Chinese primary care and measured self-reported intent rather than real emergency calls.",
+          "pubDate": "2026-08-31",
+          "topic": "Stroke & neuro",
+          "studyType": "RCT",
+          "design": "Randomised controlled trial",
+          "n": "106 high-risk residents (53 per group)",
+          "finding": "Versus control, the intervention group showed greater gains in warning-sign awareness (aOR 3.78, 95% CI 1.41-8.13), stroke knowledge (aOR 3.68, 95% CI 1.52-8.94) and EMS-seeking (aOR 3.33, 95% CI 1.44-7.69)",
+          "caveat": "Small single-city sample with interview-based self-report outcomes measuring intent, not actual emergency calls or door-to-treatment times",
+          "bottomLine": "Hypothesis-generating",
+          "shortTitle": "Online stroke education boosts EMS-seeking"
+        },
+        {
+          "id": "10.1186/s12873-026-01806-2",
+          "title": "Contextual and perceptual challenges in cardiopulmonary resuscitation: a qualitative study",
+          "journal": "BMC Emergency Medicine",
+          "date": "2026-10-05",
+          "pmid": "",
+          "doi": "10.1186/s12873-026-01806-2",
+          "summary": "Qualitative interviews with 21 resuscitation team members in Kermanshah, Iran building a model of how environmental threats, cognitive and motivational barriers, psychological stressors and socio-cultural factors interact to compromise CPR performance.",
+          "relevance": "🔴 Low — In-hospital ED resuscitation teams in a very different health system — the multilevel-barriers model will feel familiar to anyone who has run an arrest, but nothing here speaks to prehospital crews specifically.",
+          "pubDate": "2026-10-03",
+          "topic": "Cardiac arrest",
+          "studyType": "Qualitative",
+          "design": "Qualitative (conventional content analysis, COREQ-reported)",
+          "n": "21 resuscitation team members",
+          "finding": "A nested four-layer model: physical and environmental threats trigger cognitive and motivational barriers, which interact with psychological and ethical stressors and extend to socio-cognitive challenges beyond the hospital",
+          "caveat": "Single city, ED nurses and supervisors only, and the themes were never tested against patient outcomes",
+          "bottomLine": "Context only",
+          "shortTitle": "What actually degrades CPR performance"
+        }
+      ]
+    },
     {
       "date": "2026-10-04",
       "papers": [
