@@ -24,6 +24,20 @@
     </itunes:category>
     <itunes:explicit>false</itunes:explicit>
     <item>
+      <title>Paramedic Papers Daily — 5 October 2026</title>
+      <link>https://paramedicpapers.com/#episode=2026-10-05</link>
+      <description>2 papers: Online stroke education boosts EMS-seeking; What actually degrades CPR performance</description>
+      <content:encoded><![CDATA[<p>2 papers: Online stroke education boosts EMS-seeking; What actually degrades CPR performance</p><p>Papers in this episode:</p><ul><li><a href="https://doi.org/10.4103/jehp.jehp_187_26">Online stroke education boosts EMS-seeking <em>(Journal of Education and Health Promotion)</em></a></li><li><a href="https://doi.org/10.1186/s12873-026-01806-2">What actually degrades CPR performance <em>(BMC Emergency Medicine)</em></a></li></ul><p><a href="https://paramedicpapers.com/#episode=2026-10-05">Show notes and transcript</a></p>]]></content:encoded>
+      <pubDate>Mon, 05 Oct 2026 07:32:49 +1100</pubDate>
+      <guid isPermaLink="false">https://audio.paramedicpapers.com/ep-2026-10-05.mp3</guid>
+      <enclosure url="https://audio.paramedicpapers.com/ep-2026-10-05.mp3" length="698444" type="audio/mpeg"/>
+      <itunes:duration>174</itunes:duration>
+      <itunes:summary>2 papers: Online stroke education boosts EMS-seeking; What actually degrades CPR performance</itunes:summary>
+      <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
+      <itunes:episodeType>full</itunes:episodeType>
+      <podcast:transcript url="https://audio.paramedicpapers.com/ep-2026-10-05.txt" type="text/plain" language="en-au"/>
+    </item>
+    <item>
       <title>Paramedic Papers Daily — 4 October 2026</title>
       <link>https://paramedicpapers.com/#episode=2026-10-04</link>
       <description>3 papers: TRiM peer support training feasible for first responders; Shift-worker nutrition evidence: thin for responders; Anaphylaxis knowledge gaps in prehospital crews</description>
@@ -399,19 +413,6 @@
       <enclosure url="https://audio.paramedicpapers.com/ep-2026-08-29.mp3" length="1081773" type="audio/mpeg"/>
       <itunes:duration>270</itunes:duration>
       <itunes:summary>5 papers: Paediatric OHCA adrenaline variation; Blood transfusion prediction; Swiss HEMS trauma outcomes; Paediatric concussion MIH; Indirect ICU admissions mortality</itunes:summary>
-      <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
-      <itunes:episodeType>full</itunes:episodeType>
-    </item>
-    <item>
-      <title>Paramedic Papers Daily — 28 August 2026</title>
-      <link>https://paramedicpapers.com/#episode=2026-08-28</link>
-      <description>ED vs prehospital cardiac arrest causes; teleconsultation for paediatric transports</description>
-      <content:encoded><![CDATA[<p>ED vs prehospital cardiac arrest causes; teleconsultation for paediatric transports</p><p>Papers in this episode:</p><ul><li><a href="https://doi.org/10.1016/j.resplu.2026.101455">Distribution of clinically identified reversible causes in emergency department and out-of-hospital cardiac arrest: a retrospective cohort study <em>(Resuscitation Plus)</em></a></li><li><a href="https://doi.org/10.1016/j.resplu.2026.101448">Feasibility and acceptability of pediatric expert teleconsultation during critical ambulance transports: a pilot randomized controlled simulation trial <em>(Resuscitation Plus)</em></a></li></ul><p><a href="https://paramedicpapers.com/#episode=2026-08-28">Show notes and transcript</a></p>]]></content:encoded>
-      <pubDate>Fri, 28 Aug 2026 07:34:13 +1000</pubDate>
-      <guid isPermaLink="false">https://opurtell.github.io/paramedicpapers/audio/ep-2026-08-28.mp3</guid>
-      <enclosure url="https://audio.paramedicpapers.com/ep-2026-08-28.mp3" length="658317" type="audio/mpeg"/>
-      <itunes:duration>164</itunes:duration>
-      <itunes:summary>ED vs prehospital cardiac arrest causes; teleconsultation for paediatric transports</itunes:summary>
       <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
       <itunes:episodeType>full</itunes:episodeType>
     </item>
