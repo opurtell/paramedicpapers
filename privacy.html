@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#FBFAF8">
+  <title>Privacy — Paramedic Papers</title>
+  <meta name="description" content="What Paramedic Papers stores about you, where, and how to export or delete it.">
+  <link rel="canonical" href="https://paramedicpapers.com/privacy.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="icon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="icon-16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <style>
+    /* Tokens copied from css/style.css; this page stands alone. */
+    :root {
+      --bg: #FBFAF8; --surface: #FFFFFF; --ink: #14171A; --ink-2: #2A2E33; --ink-3: #5A6067;
+      --muted: #8A9097; --line: #EAE8E3; --accent: #2F5FA8; --warm: #C2562F; --warm-tint: #FAF0EA;
+      --sans: 'IBM Plex Sans', system-ui, -apple-system, sans-serif;
+      --serif: Newsreader, Georgia, serif;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; background: var(--bg); color: var(--ink); }
+    body { font: 16px/1.6 var(--sans); -webkit-font-smoothing: antialiased; }
+    main { max-width: 680px; margin: 0 auto; padding: 32px 16px 64px; }
+    .back { font-size: 14px; color: var(--accent); text-decoration: none; }
+    .back:hover { text-decoration: underline; }
+    h1 { font: 500 36px/1.15 var(--serif); margin: 20px 0 6px; letter-spacing: -0.01em; }
+    .updated { color: var(--muted); font-size: 14px; margin: 0 0 28px; }
+    h2 { font: 500 22px/1.3 var(--serif); margin: 36px 0 8px; padding-top: 20px; border-top: 1px solid var(--line); }
+    p, li { color: var(--ink-2); }
+    ul { padding-left: 20px; }
+    li { margin: 6px 0; }
+    a { color: var(--accent); }
+    .callout { background: var(--warm-tint); border-left: 3px solid var(--warm); padding: 14px 16px; margin: 24px 0; border-radius: 0 6px 6px 0; }
+    .callout strong { color: var(--warm); }
+    footer { margin-top: 48px; color: var(--muted); font-size: 14px; }
+  </style>
+</head>
+<body>
+<main>
+  <a class="back" href="./">← Paramedic Papers</a>
+  <h1>Privacy</h1>
+  <p class="updated">Last updated 5 October 2026</p>
+
+  <p>Paramedic Papers is a free, non-commercial project run by one Australian
+  paramedic. This page explains, in plain English, what the site stores about
+  you, where it's kept, and how to get it back or delete it. Nothing is sold or
+  shared with anyone, and there's no advertising or analytics.</p>
+
+  <h2>Reading the site and podcast</h2>
+  <ul>
+    <li>No account is needed. Papers you save and your playback speed are kept
+      in your own browser (local storage) and never sent to us.</li>
+    <li>Fonts load from Google Fonts. Episode audio comes from
+      <code>audio.paramedicpapers.com</code>, which is served by Cloudflare. Like any web
+      host, they see your IP address when your browser fetches a file.</li>
+  </ul>
+
+  <h2>The PD brief email</h2>
+  <ul>
+    <li>When you sign up we store your email address, the name you give (if
+      any), and when you signed up. Cloudflare sends you a verification email,
+      and the brief is sent through Cloudflare's email service.</li>
+    <li>Every issue has an unsubscribe link. Unsubscribing removes your
+      address from the mailing list.</li>
+  </ul>
+
+  <h2>CPD tracking (when you sign in)</h2>
+  <p>To keep a CPD record you sign in with Google or Microsoft. We only ask
+  them for your name, email address and an account ID. We never see your
+  password and get no access to your mail, files or contacts.</p>
+  <p>What's stored:</p>
+  <ul>
+    <li>Your name, email address and sign-in provider ID.</li>
+    <li>Your CPD entries, learning goals and reflections, and your hours targets.</li>
+    <li>Your quiz attempts and scores.</li>
+    <li>A sign-in session cookie. It's the only cookie the site sets.</li>
+  </ul>
+  <p>It's stored in a Cloudflare D1 database in the Oceania region, with
+  nightly backups in Cloudflare R2 storage. Cloudflare also keeps short-lived
+  request logs for a few days so errors can be diagnosed.</p>
+
+  <div class="callout">
+    <strong>Don't enter patient-identifying information.</strong> Reflections
+    should be about what you learned and how it changes your practice. Leave out
+    names, dates of birth, URNs, incident numbers, addresses, and any detail that
+    could identify a patient.
+  </div>
+
+  <h2>Your record, your responsibility</h2>
+  <ul>
+    <li>The Paramedicine Board of Australia can audit your CPD, and you are
+      responsible for keeping your own records. Export your portfolio at the end
+      of each registration year (30 November) and keep it for 5 years. Don't rely on
+      this site as your only copy.</li>
+    <li>You can download all your data (CSV, a printable portfolio, or the
+      full JSON) at any time from the Account page.</li>
+    <li>Your CPD data is kept until you delete it. Deleting your account from
+      the Account page removes your entries, goals, reflections and quiz
+      attempts straight away. Backup copies age out within 30 days.</li>
+  </ul>
+
+  <h2>Contact</h2>
+  <p>Questions, or want something removed? Email
+  <a href="mailto:newsletter@paramedicpapers.com">newsletter@paramedicpapers.com</a>.
+  It reaches me directly.</p>
+
+  <footer>Paramedic Papers · <a href="./">paramedicpapers.com</a></footer>
+</main>
+</body>
+</html>
