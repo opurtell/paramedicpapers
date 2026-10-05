@@ -1,0 +1,408 @@
+{
+ "date": "2026-10-05",
+ "start": "2026-09-28",
+ "span": "28 Sep – 5 Oct 2026",
+ "next": "2026-10-06",
+ "subject": "PD brief 28 Sep – 5 Oct 2026: 29 papers, 3 to dig into",
+ "synthesis": {
+  "intro": "These 8 days leaned heavily on trauma and cardiac arrest, with two systematic reviews questioning prehospital trauma interventions (whole blood, vasopressors) and a strong paediatric thread running through the papers. Stroke and workforce wellbeing also featured, including Australian data on First Nations stroke care gaps.",
+  "discussion": "If a large review found no survival benefit from a trauma intervention you use regularly, what evidence would convince you to keep doing it — or stop?",
+  "lessons": [
+   {
+    "text": "Training makes one- and two-handed neonatal mask holds similarly effective, but the two-handed hold started with far less leak before training — worth considering your default hold on neonatal jobs.",
+    "ids": [
+     "10.1016/j.resplu.2026.101488"
+    ]
+   },
+   {
+    "text": "A large review found no clear mortality benefit from prehospital whole blood, though it may reduce 24-hour red cell use — a useful reality check when discussing blood products with receiving teams.",
+    "ids": [
+     "10.1016/j.injury.2026.113732"
+    ]
+   },
+   {
+    "text": "Nearly half of paediatric medication doses in one registry deviated at least 20% from recommended, mostly underdoses, with intranasal and ondansetron routes worst — a prompt to double-check paediatric doses at handover or during a quiet moment.",
+    "ids": [
+     "42809474"
+    ]
+   },
+   {
+    "text": "Methoxyflurane was feasible and well tolerated in trauma patients with severe pain, supporting its place in prehospital pain management.",
+    "ids": [
+     "42817920"
+    ]
+   },
+   {
+    "text": "A pragmatic trial suggests risk-score-guided conveyance in undifferentiated chest pain can be safe, with more patients left at home and fewer 30-day ED presentations — relevant to growing interest in judged non-conveyance in Australia.",
+    "ids": [
+     "42810856"
+    ]
+   }
+  ],
+  "deep_dives": [
+   {
+    "topic": "Prehospital trauma interventions under scrutiny",
+    "why": "Two reviews this period question interventions many crews assume are beneficial — prehospital whole blood and trauma vasopressors — and a third suggests minithoracostomy may be simpler and safer than chest drainage at scene.",
+    "ids": [
+     "10.1016/j.injury.2026.113732",
+     "42808211",
+     "42782255"
+    ],
+    "questions": [
+     "How much of your confidence in prehospital blood or vasopressors rests on evidence versus plausibility and system investment?",
+     "When allocation in the minithoracostomy study was by clinician judgment, what does that tell you about how these decisions are actually made at scene?"
+    ],
+    "ideas": "It might be worth comparing how the whole blood review and the vasopressor review weigh certainty of evidence, and where each sits against your local guideline on trauma haemorrhage. One angle is discussing as a crew what would need to be proven before either intervention changed your practice."
+   },
+   {
+    "topic": "Paediatric assessment and dosing reliability",
+    "why": "Three paediatric papers this period converge on a theme: our assessment findings, drug doses and even airway technique may be less consistent with hospital colleagues and protocols than we assume.",
+    "ids": [
+     "42808699",
+     "42809474",
+     "10.1016/j.resplu.2026.101488"
+    ],
+    "questions": [
+     "Which paediatric assessment findings do you find hardest to communicate clearly at handover, and why might ED disagree with your documentation?",
+     "What makes intranasal dosing prone to deviation, and how do you verify doses when the maths is under time pressure?"
+    ],
+    "ideas": "One angle is comparing the dosing deviation findings against how your service records and audits paediatric administrations. It could also be worth discussing how training shaped mask-hold preferences in the ventilation study and what that implies for skills that fade between paediatric jobs."
+   },
+   {
+    "topic": "Stroke delay and equitable access",
+    "why": "Australian data shows First Nations patients receive paramedic stroke assessment less often and reach thrombectomy-capable hospitals less often, while a large review confirms most stroke patients delay calling for help.",
+    "ids": [
+     "42806575",
+     "42809487",
+     "42829765"
+    ],
+    "questions": [
+     "What in your own practice might explain lower documented stroke assessment rates for some patient groups?",
+     "How does public delay before calling Triple Zero change what we can realistically achieve on scene?"
+    ],
+    "ideas": "It might be worth comparing the proportion of patients delaying beyond two hours in the review against the time windows your local stroke pathway assumes. One angle is considering how community education, like the small RCT on online stroke training, might complement rather than replace what crews reinforce at the doorstep."
+   }
+  ]
+ },
+ "papers": [
+  {
+   "id": "10.1016/j.resplu.2026.101488",
+   "title": "Two-handed neonatal mask ventilation training",
+   "topic": "Paediatrics",
+   "journal": "Resuscitation Plus",
+   "design": "Non-randomised before-and-after simulation study",
+   "n": "40 clinicians on a term manikin",
+   "bottomLine": "Hypothesis-generating",
+   "finding": "Two-handed hold had lower mask leak before training (median 2.5% vs 27% one-handed, p<0.01); after training leak was low with both holds (2% vs 6%); preference for two-handed rose from 27% to 50%.",
+   "url": "https://doi.org/10.1016/j.resplu.2026.101488"
+  },
+  {
+   "id": "10.1016/j.resplu.2026.101490",
+   "title": "No sex differences in OHCA with confirmed CAD",
+   "topic": "Cardiac arrest",
+   "journal": "Resuscitation Plus",
+   "design": "Post hoc analysis of a prospective European OHCA registry",
+   "n": "580 adults with OHCA and angiographically confirmed obstructive CAD (15.3% women)",
+   "bottomLine": "Context only",
+   "finding": "30-day survival 66.2% (women) vs 61.5% (men), p=0.33; favourable neurological outcome 55.1% vs 53.8%, p=0.82; sex not associated with 30-day survival (adjusted OR 0.75, 95% CI 0.39–1.41).",
+   "url": "https://doi.org/10.1016/j.resplu.2026.101490"
+  },
+  {
+   "id": "42782255",
+   "title": "Prehospital minithoracostomy vs chest drain",
+   "topic": "Trauma",
+   "journal": "Prehospital Emergency Care",
+   "design": "Retrospective physician-led HEMS cohort with Bayesian analysis",
+   "n": "94 major trauma adults (66 minithoracostomy, 28 chest drainage)",
+   "bottomLine": "Hypothesis-generating",
+   "finding": "Posterior median scene-time difference −5.9 minutes (95% CrI −13.8 to 1.7); recorded complications 0/50 evaluable minithoracostomy vs 6/10 evaluable chest drainage (risk difference −58.7 percentage points, 95% CrI −83.9 to −29.3); no clear survival differences at 1, 30 or 90 days.",
+   "url": "https://doi.org/10.1080/10903127.2026.2739424"
+  },
+  {
+   "id": "42784740",
+   "title": "NRB + nasal cannula inferior to flush-rate preoxygenation",
+   "topic": "Airway & ventilation",
+   "journal": "Prehospital Emergency Care",
+   "design": "Experimental crossover study in healthy volunteers",
+   "n": "30 healthy volunteers",
+   "bottomLine": "Supports current practice",
+   "finding": "Mean FeO2: flush-rate NRB 85% vs 68% (NRB + nasal cannula at 15 L/min each) and 75% (at 25 L/min each); differences of 16% (95% CI 13–20%) and 10% (95% CI 6–14%), both failing non-inferiority.",
+   "url": "https://doi.org/10.1080/10903127.2026.2739419"
+  },
+  {
+   "id": "42772891",
+   "title": "Post-OHCA outcomes at Victorian Heart Hospital",
+   "topic": "Cardiac arrest",
+   "journal": "Emergency Medicine Australasia",
+   "design": "Retrospective audit of a dedicated cardiac hospital ED",
+   "n": "121 post-OHCA presentations",
+   "bottomLine": "Context only",
+   "finding": "Survival to discharge 50.4%; 30-day survival 40.0%; shockable rhythms 61.2%, prehospital ROSC 92.6%; shockable rhythm (OR 3.46), cardiac aetiology (OR 3.40) and prehospital ROSC (OR 9.23) associated with survival; 24.0% needed interhospital transfer.",
+   "url": "https://doi.org/10.1111/1742-6723.70355"
+  },
+  {
+   "id": "42776990",
+   "title": "Paediatric non-transport re-call rates low",
+   "topic": "Paediatrics",
+   "journal": "Prehospital Emergency Care",
+   "design": "Retrospective cross-sectional study of EMS data",
+   "n": "1,849,925 paediatric 9-1-1 calls (732,525 not transported)",
+   "bottomLine": "Context only",
+   "finding": "1% of non-transported children had a repeat 9-1-1 call with transport within 72 hours; 11 (0.1%) deaths on scene at re-call; of 1,001 with hospital-linked data, 89% ED discharge, 16% hospitalised, 0.2% died.",
+   "url": "https://doi.org/10.1080/10903127.2026.2737688"
+  },
+  {
+   "id": "42802326",
+   "title": "Co-design of urine culture stewardship in ED",
+   "topic": "Operations & systems",
+   "journal": "Emergency Medicine Australasia",
+   "design": "Qualitative descriptive study using co-design workshops",
+   "n": "35 emergency physicians across 7 workshops",
+   "bottomLine": "Context only",
+   "finding": "Culture, complexity and efficiency drove low-value urine cultures; education, nudges, clinical champions and audit/feedback were selected as intervention components, with workflow inefficiency and credibility of change seen as challenges.",
+   "url": "https://doi.org/10.1111/1742-6723.70356"
+  },
+  {
+   "id": "42773090",
+   "title": "AI triage of ED CT brain scans",
+   "topic": "Stroke & neuro",
+   "journal": "Emergency Medicine Australasia",
+   "design": "Retrospective validation study of an AI model",
+   "n": "3,424 adult non-contrast ED CT brain scans",
+   "bottomLine": "Hypothesis-generating",
+   "finding": "AI sensitivity 85.4% (95% CI 80.0–89.0%), specificity 69.1%, NPV 98.3%; post hoc re-adjudication gave sensitivity 94.3% and NPV 99.4%; ~64% of encounters potentially eligible for expedited disposition; no false negative required urgent intervention at index visit.",
+   "url": "https://doi.org/10.1111/1742-6723.70353"
+  },
+  {
+   "id": "10.1016/j.resplu.2026.101493",
+   "title": "PIHCA vs GO-FAR 2 for IHCA prediction",
+   "topic": "Cardiac arrest",
+   "journal": "Resuscitation Plus",
+   "design": "External validation using Swedish Registry of Cardiopulmonary Resuscitation data across three hospitals",
+   "n": "501 adult in-hospital cardiac arrests",
+   "bottomLine": "Context only",
+   "finding": "28% survived with favourable neurological outcome; AUROC 0.73 (95% CI 0.67–0.78) for PIHCA vs 0.70 (95% CI 0.65–0.75) for GO-FAR 2, difference not significant; calibration adequate for both",
+   "url": "https://doi.org/10.1016/j.resplu.2026.101493"
+  },
+  {
+   "id": "10.1016/j.injury.2026.113732",
+   "title": "Prehospital whole blood no mortality benefit",
+   "topic": "Trauma",
+   "journal": "Injury",
+   "design": "Systematic review and meta-analysis (random-effects) of RCTs and comparative cohorts",
+   "n": "4,040 adult trauma patients (1,558 whole blood; 2,482 standard care) across 6 studies",
+   "bottomLine": "Supports current practice",
+   "finding": "No significant reduction in 24-hour mortality (RR 1.00, P=0.98) or 28/30-day mortality (RR 1.09, P=0.30); reduced 24-hour red cell requirements (MD -0.97, P=0.03) lost significance on sensitivity analysis",
+   "url": "https://doi.org/10.1016/j.injury.2026.113732"
+  },
+  {
+   "id": "10.1016/j.jemermed.2026.08.017",
+   "title": "Early adrenaline + early airway in OHCA",
+   "topic": "Cardiac arrest",
+   "journal": "The Journal of Emergency Medicine",
+   "design": "Retrospective national registry cohort (Korea OHCA Registry)",
+   "n": "20,662 adults with OHCA receiving prehospital adrenaline and advanced airway management",
+   "bottomLine": "Hypothesis-generating",
+   "finding": "Early adrenaline (≤10 min) + early airway (≤6 min) vs late/late: good neurological recovery aOR 2.44 (95% CI 1.93–3.08), survival to discharge aOR 2.18 (95% CI 1.87–2.55); early airway with late adrenaline no benefit (aOR 0.99); interaction attenuated in sensitivity analyses",
+   "url": "https://doi.org/10.1016/j.jemermed.2026.08.017"
+  },
+  {
+   "id": "10.1016/j.jss.2026.08.054",
+   "title": "Language barriers change trauma assessment",
+   "topic": "Trauma",
+   "journal": "Journal of Surgical Research",
+   "design": "Retrospective national EMS dataset analysis (ImageTrend, 2022–2023)",
+   "n": "1,220,982 blunt trauma EMS activations (24,857 with documented language barrier)",
+   "bottomLine": "Context only",
+   "finding": "Language-barrier patients more often treated and transported (80.3% vs 75.1%) but less likely to have pain scores documented (60.6% vs 63.6%), with slightly more GCS 3–8 presentations",
+   "url": "https://doi.org/10.1016/j.jss.2026.08.054"
+  },
+  {
+   "id": "10.1080/10903127.2026.2740139",
+   "title": "NAEMSP statement on EMS mental health",
+   "topic": "Workforce & wellbeing",
+   "journal": "Prehospital Emergency Care",
+   "design": "Position statement and resource document",
+   "n": "Not reported",
+   "bottomLine": "Context only",
+   "finding": "NAEMSP recommends organisational recognition of EMS clinician mental health, education inclusion, multi-faceted confidential support, quality improvement, and legislative advocacy",
+   "url": "https://doi.org/10.1080/10903127.2026.2740139"
+  },
+  {
+   "id": "42810856",
+   "title": "Risk-score-guided conveyance safe in chest pain",
+   "topic": "Operations & systems",
+   "journal": "Heart",
+   "design": "Pragmatic randomised open-label blinded-endpoint non-inferiority trial",
+   "n": "5170 adults with undifferentiated chest pain",
+   "bottomLine": "Hypothesis-generating",
+   "finding": "PreHEART-guided conveyance non-inferior for 3-day unexpected serious adverse events (win ratio 1.01, 95% CI 0.89–1.16); non-conveyance rose to 34.6% vs 24.5%, 30-day emergency presentations fell (RR 0.88), costs −€345, and no deaths within 3 days among 1526 non-conveyed patients",
+   "url": "https://doi.org/10.1136/heartjnl-2026-328924"
+  },
+  {
+   "id": "42806575",
+   "title": "Stroke care gaps for First Nations patients",
+   "topic": "Stroke & neuro",
+   "journal": "The Medical Journal of Australia",
+   "design": "Retrospective population-based data-linkage cohort",
+   "n": "32,163 EMS-attended stroke/TIA patients (287 First Nations)",
+   "bottomLine": "Context only",
+   "finding": "Age-standardised EMS attendance incidence 343 vs 144 per 100,000 person-years (IRR 2.38); paramedic stroke assessment 58.2% vs 67.3%; conveyance to thrombectomy-capable hospitals 24.4% vs 32.7%; adjusted 30- and 90-day mortality similar (HR 0.81 and 0.81)",
+   "url": "https://doi.org/10.5694/mja2.70303"
+  },
+  {
+   "id": "42809516",
+   "title": "What OHCA care is worth paying for",
+   "topic": "Cardiac arrest",
+   "journal": "Prehospital Emergency Care",
+   "design": "Systematic review of economic evaluations",
+   "n": "10 economic evaluations",
+   "bottomLine": "Context only",
+   "finding": "Early defibrillation and EMT-delivered ALS cost-effective (ICERs £11,407–US$56,700 per QALY); prehospital ECPR more cost-effective than in-hospital ECPR (AU$27,323–44,000 per QALY); termination-of-resuscitation strategies cost-effective (US$110,554 saved per QALY lost in one estimate)",
+   "url": "https://doi.org/10.1080/10903127.2026.2741269"
+  },
+  {
+   "id": "42809474",
+   "title": "Nearly half of paediatric doses off-protocol",
+   "topic": "Paediatrics",
+   "journal": "Prehospital Emergency Care",
+   "design": "Retrospective quality-improvement registry cohort",
+   "n": "386 medication administrations in 240 children across nine agencies",
+   "bottomLine": "Hypothesis-generating",
+   "finding": "46.4% of doses deviated ≥20% from recommended (79.9% underdoses); deviation was highest for ondansetron (85.3%) and via the intranasal route (69.7%); weight-estimation error was not associated",
+   "url": "https://doi.org/10.1080/10903127.2026.2740143"
+  },
+  {
+   "id": "42808211",
+   "title": "Prehospital vasopressors in trauma unproven",
+   "topic": "Trauma",
+   "journal": "European Journal of Emergency Medicine",
+   "design": "Systematic review of observational studies",
+   "n": "5 retrospective studies, 31,849 patients (1443 received vasopressors)",
+   "bottomLine": "Hypothesis-generating",
+   "finding": "Associations with mortality were mixed; one military study found significantly lower adjusted survival with vasopressors (aOR 0.32, 95% CI 0.18–0.56), and one study linked them to massive transfusion (aOR 4.97) and trauma-induced coagulopathy (aOR 3.05)",
+   "url": "https://doi.org/10.1097/MEJ.0000000000001379"
+  },
+  {
+   "id": "42817920",
+   "title": "Methoxyflurane feasibility confirmed in Canada",
+   "topic": "Pain & sedation",
+   "journal": "Pain Management",
+   "design": "Single-centre prospective observational feasibility study",
+   "n": "97 adult trauma patients (92 treated)",
+   "bottomLine": "Supports current practice",
+   "finding": "Protocol compliance 95%; median NRS pain 8/10 pre-treatment to 5/10 post-treatment; side effects in 23%, mostly mild, with no serious methoxyflurane-related adverse events",
+   "url": "https://doi.org/10.1080/17581869.2026.2736033"
+  },
+  {
+   "id": "42813214",
+   "title": "Bigger crews work faster, don't save more",
+   "topic": "Operations & systems",
+   "journal": "Journal of Trauma and Injury",
+   "design": "Retrospective nationwide registry cohort",
+   "n": "78,203 adults with field-classified severe trauma",
+   "bottomLine": "Context only",
+   "finding": "≥3-person crews: IV access in hypotensive patients aOR 1.47 (95% CI 1.31–1.66), scene time ≤10 min aOR 1.09, advanced airway borderline (aOR 1.13); survival to discharge unchanged after adjustment (aOR 1.00)",
+   "url": "https://doi.org/10.20408/jti.2025.0230"
+  },
+  {
+   "id": "42808699",
+   "title": "EMS and ED disagree on paediatric asthma signs",
+   "topic": "Paediatrics",
+   "journal": "Prehospital Emergency Care",
+   "design": "Prospective observational agreement study",
+   "n": "295 children aged 2–18 at five paediatric EDs",
+   "bottomLine": "Context only",
+   "finding": "Slight agreement for suprasternal retractions (κ 0.01–0.20), fair for tachypnoea and accessory muscle use (κ 0.21–0.40), and poor agreement (ICC 0–0.50) for breathlessness, work of breathing, hypoxia and wheeze characteristics",
+   "url": "https://doi.org/10.1080/10903127.2026.2717525"
+  },
+  {
+   "id": "42809487",
+   "title": "Two-thirds of stroke patients delay seeking care",
+   "topic": "Stroke & neuro",
+   "journal": "Cerebrovascular Diseases",
+   "design": "Systematic review and meta-analysis",
+   "n": "27 studies, 266,336 patients across 14 countries",
+   "bottomLine": "Context only",
+   "finding": "Pooled prehospital delay incidence 67.7% (95% CI 59.2–75.6%); 65.0% at the 2-hour cut-off and 77.2% at 3 hours",
+   "url": "https://doi.org/10.1159/ced/accag027"
+  },
+  {
+   "id": "42823763",
+   "title": "Direct geriatric admission depends on geography",
+   "topic": "Older people",
+   "journal": "BMC Geriatrics",
+   "design": "Cross-sectional register-based study",
+   "n": "8208 patients aged ≥65, Stockholm 2017–2019",
+   "bottomLine": "Context only",
+   "finding": "603 patients (7%) directly admitted to geriatric units; crude conveyance rates ranged 4–21% across service areas, with supply-side factors (proximity, ownership, bed numbers) explaining most between-area variation",
+   "url": "https://doi.org/10.1186/s12877-026-08370-1"
+  },
+  {
+   "id": "42814427",
+   "title": "US racial gaps in trauma interventions",
+   "topic": "Trauma",
+   "journal": "JAMA Surgery",
+   "design": "Retrospective registry cohort",
+   "n": "18,280 injured adults (ISS >9), 2017–2021",
+   "bottomLine": "Context only",
+   "finding": "Prehospital intubation 7.9% in White vs 4.0% in Black patients; prehospital blood 4.4% in patients of other race vs 2.3% in Black patients; socially disadvantaged neighbourhoods were less likely to receive prehospital interventions",
+   "url": "https://doi.org/10.1001/jamasurg.2026.4509"
+  },
+  {
+   "id": "42811627",
+   "title": "TRiM peer support training feasible for first responders",
+   "topic": "Workforce & wellbeing",
+   "journal": "Journal of Traumatic Stress",
+   "design": "Single-service feasibility and acceptability study with pre/post surveys and follow-up",
+   "n": "21 first responders who completed training (27 registered)",
+   "bottomLine": "Hypothesis-generating",
+   "finding": "90–94% rated the training highly relevant; significant pre-to-post improvements in perceived capability, referral knowledge, risk evaluation and boundary clarity (d = 0.60–1.37); formal TRiM use was minimal at both follow-ups",
+   "url": "https://doi.org/10.1002/jts.70130"
+  },
+  {
+   "id": "42820931",
+   "title": "Shift-worker nutrition evidence: thin for responders",
+   "topic": "Workforce & wellbeing",
+   "journal": "Journal of Human Nutrition and Dietetics",
+   "design": "Systematic review (PROSPERO-registered) with narrative synthesis and first-responder subgroup analysis",
+   "n": "43 studies from 6,909 screened articles",
+   "bottomLine": "Context only",
+   "finding": "Most included studies were crossover RCTs (49%) or observational (33%); 40% involved nursing and healthcare professionals and only 9% first responders such as firefighters and police",
+   "url": "https://doi.org/10.1111/jhn.70340"
+  },
+  {
+   "id": "42825914",
+   "title": "Anaphylaxis knowledge gaps in prehospital crews",
+   "topic": "Paediatrics",
+   "journal": "Iranian Journal of Allergy, Asthma, and Immunology",
+   "design": "Descriptive cross-sectional survey (21-item questionnaire)",
+   "n": "322 prehospital personnel (214 paramedics, 73 EMTs, 35 physicians)",
+   "bottomLine": "Context only",
+   "finding": "52.2% identified all three diagnostic criteria, 81.7% recognised adrenaline as first-line, 81.1% knew the intramuscular route, but only 52.2% knew correct patient positioning and 50.6% auto-injector use",
+   "url": "https://doi.org/10.18502/ijaai.v25is11.22483"
+  },
+  {
+   "id": "42829765",
+   "title": "Online stroke education boosts EMS-seeking",
+   "topic": "Stroke & neuro",
+   "journal": "Journal of Education and Health Promotion",
+   "design": "Randomised controlled trial",
+   "n": "106 high-risk residents (53 per group)",
+   "bottomLine": "Hypothesis-generating",
+   "finding": "Versus control, the intervention group showed greater gains in warning-sign awareness (aOR 3.78, 95% CI 1.41-8.13), stroke knowledge (aOR 3.68, 95% CI 1.52-8.94) and EMS-seeking (aOR 3.33, 95% CI 1.44-7.69)",
+   "url": "https://doi.org/10.4103/jehp.jehp_187_26"
+  },
+  {
+   "id": "10.1186/s12873-026-01806-2",
+   "title": "What actually degrades CPR performance",
+   "topic": "Cardiac arrest",
+   "journal": "BMC Emergency Medicine",
+   "design": "Qualitative (conventional content analysis, COREQ-reported)",
+   "n": "21 resuscitation team members",
+   "bottomLine": "Context only",
+   "finding": "A nested four-layer model: physical and environmental threats trigger cognitive and motivational barriers, which interact with psychological and ethical stressors and extend to socio-cognitive challenges beyond the hospital",
+   "url": "https://doi.org/10.1186/s12873-026-01806-2"
+  }
+ ]
+}
