@@ -36,9 +36,41 @@
 
   var $ = function (id) { return document.getElementById(id); };
 
+  /* CPD tracker beta (js/cpd.js). Visiting /#cpd-beta turns it on for this
+     browser; until then the menu, tabs and sidebar are unchanged. Phase 4
+     of cpd/plan removes the flag. */
+  var BETA_KEY = 'pp:cpd-beta';
+  var cpdBeta = readBeta();
+  function readBeta() {
+    try {
+      if (location.hash === '#cpd-beta') {
+        localStorage.setItem(BETA_KEY, '1');
+        history.replaceState(null, '', location.pathname + location.search + '#cpd');
+      }
+      return localStorage.getItem(BETA_KEY) === '1';
+    } catch (e) { return location.hash === '#cpd-beta'; }
+  }
+
+  /* Hooks js/cpd.js fills in; app.js calls them if present. */
+  var hooks = { openMenu: null, kicker: null, onShow: null, onRender: [] };
+
+  /* The small surface js/cpd.js uses, so it doesn't reach into this file. */
+  window.PP = {
+    state: state,
+    beta: function () { return cpdBeta; },
+    setTab: function (t, silent) { setTab(t, silent); },
+    esc: function (s) { return esc(s); },
+    ico: function (n, c) { return ico(n, c); },
+    isWide: isWide,
+    savedCount: function () { return savedPapers().length; },
+    hooks: hooks,
+    renderKicker: function () { renderKicker(); }
+  };
+
   document.addEventListener('DOMContentLoaded', init);
 
   async function init() {
+    if (cpdBeta) enableMoreTab();
     bindTabs();
     bindHome();
     bindFeed();
@@ -129,11 +161,25 @@
   /* Sub-views: full pages that belong to a tab. The tab stays highlighted
      and the header shows a back button to it. */
   var PARENT = { brief: 'weekly' };
-  var VIEWS = TABS.concat(Object.keys(PARENT));
-  var TITLES = { home: 'Paramedic Papers', feed: 'Research feed', weekly: 'Weekly', podcast: 'Podcast', saved: 'Saved', brief: 'PD brief' };
+  /* Views reached from the mobile "More" menu (CPD beta). While one shows,
+     the More tab is highlighted; they're top-level, so no back button. */
+  var MENU = { saved: 1, cpd: 1, account: 1 };
+  var BETA_VIEWS = ['cpd', 'account'];
+  var VIEWS = TABS.concat(Object.keys(PARENT), BETA_VIEWS);
+  var TITLES = { home: 'Paramedic Papers', feed: 'Research feed', weekly: 'Weekly', podcast: 'Podcast', saved: 'Saved', brief: 'PD brief', cpd: 'CPD', account: 'Account' };
   /* On desktop the sidebar carries the wordmark, so the content header
      names the view instead of the app. */
-  var TITLES_WIDE = { home: 'Today', feed: 'Research feed', weekly: 'Weekly digest', podcast: 'Podcast', saved: 'Saved papers', brief: 'PD brief' };
+  var TITLES_WIDE = { home: 'Today', feed: 'Research feed', weekly: 'Weekly digest', podcast: 'Podcast', saved: 'Saved papers', brief: 'PD brief', cpd: 'CPD tracker', account: 'Account' };
+
+  /* Beta: the 5th mobile tab becomes "More", which opens the menu sheet
+     (js/cpd.js); the sidebar gains CPD and the account chip. */
+  function enableMoreTab() {
+    var tab = document.querySelector('.tabbar [data-tab="saved"]');
+    tab.setAttribute('data-tab', 'more');
+    tab.setAttribute('aria-haspopup', 'dialog');
+    tab.innerHTML = ico('menu', 'ico') + 'More';
+    document.querySelectorAll('[data-cpd-beta]').forEach(function (el) { el.hidden = false; });
+  }
 
   /* Shareable paper links: #paper=<encoded id> opens the feed with that
      paper pinned at the top. */
@@ -174,8 +220,10 @@
     return location.origin + location.pathname + '#paper=' + encodeURIComponent(id);
   }
 
+  /* "#account?login=failed&reason=…" → "account" (js/cpd.js reads the rest). */
   function tabFromHash() {
-    var h = (location.hash || '').replace('#', '');
+    var h = (location.hash || '').replace('#', '').split('?')[0];
+    if (BETA_VIEWS.indexOf(h) !== -1 && !cpdBeta) return 'home';
     return VIEWS.indexOf(h) !== -1 ? h : 'home';
   }
 
@@ -187,17 +235,21 @@
   }
 
   function setTab(tab, silent) {
+    if (tab === 'more') { if (hooks.openMenu) hooks.openMenu(); return; }
     state.tab = tab;
     VIEWS.forEach(function (t) { $('page-' + t).hidden = (t !== tab); });
     var navTab = PARENT[tab] || tab;
+    var inMenu = !!(cpdBeta && MENU[tab]);
     document.querySelectorAll('[data-tab]').forEach(function (btn) {
-      btn.classList.toggle('is-on', btn.getAttribute('data-tab') === navTab);
+      var t = btn.getAttribute('data-tab');
+      btn.classList.toggle('is-on', t === navTab || (t === 'more' && inMenu));
     });
     $('btn-back').hidden = !PARENT[tab];
     $('page-title').textContent = (isWide() ? TITLES_WIDE : TITLES)[tab];
     renderKicker();
     if (!silent) location.hash = tab;
     window.scrollTo(0, 0);
+    if (hooks.onShow) hooks.onShow(tab);
   }
 
   /* ── desktop / mobile layout swap ───────────────────── */
@@ -270,6 +322,7 @@
      relative to the newest scan rather than today, so the numbers stay
      meaningful when a scan has not run for a day or two. */
   function renderSidebar() {
+    hooks.onRender.forEach(function (fn) { fn(); });
     var days = state.data.dailyUpdates || [];
     var savedCount = savedPapers().length;
 
@@ -311,6 +364,8 @@
       text = state.brief ? state.brief.span : 'The email, online';
     } else if (state.tab === 'podcast') {
       text = state.episodes.length ? state.episodes.length + ' episodes' : 'Daily audio roundup';
+    } else if (hooks.kicker && (state.tab === 'cpd' || state.tab === 'account')) {
+      text = hooks.kicker(state.tab);
     } else {
       text = savedPapers().length + ' papers kept';
     }
