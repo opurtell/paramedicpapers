@@ -626,11 +626,16 @@
         return '<h4 class="brief-topic">' + esc(topic) + '</h4>' + groups[topic].map(function (p) {
           var meta = [p.journal, p.design, p.n].filter(Boolean).join(' · ');
           var bl = p.bottomLine ? '<span class="tag tag-bl bl-' + esc(p.bottomLine.split(' ')[0].toLowerCase()) + '">' + esc(p.bottomLine) + '</span>' : '';
+          var links = '';
+          if (p.pmid) links += '<a class="act" href="https://pubmed.ncbi.nlm.nih.gov/' + encodeURIComponent(p.pmid) + '/" target="_blank" rel="noopener">PubMed' + ico('arrow') + '</a>';
+          if (p.doi) links += '<a class="act" href="https://doi.org/' + encodeURIComponent(p.doi) + '" target="_blank" rel="noopener">DOI' + ico('arrow') + '</a>';
           return '<div class="brief-paper">' +
-            '<a class="brief-paper-title" href="#paper=' + encodeURIComponent(p.id) + '">' + esc(p.title) + '</a>' +
+            '<a class="brief-paper-title" href="#paper=' + encodeURIComponent(p.id) + '">' + esc(p.title) +
+              ' <span class="brief-go">' + ico('feed') + 'Feed</span></a>' +
             '<p class="brief-meta">' + esc(meta) + '</p>' +
             (bl ? '<div>' + bl + '</div>' : '') +
-            '<p class="brief-finding">' + esc(p.finding) + '</p></div>';
+            '<p class="brief-finding">' + esc(p.finding) + '</p>' +
+            (links ? '<p class="brief-links">' + links + '</p>' : '') + '</div>';
         }).join('');
       }).join('') + '</section>';
 
