@@ -494,37 +494,9 @@
     }
     $('today-list').innerHTML = papers.map(function (p) {
       return '<article class="today-item" data-today-id="' + esc(p.id) + '">' +
-        todayCardInnerHTML(p) + '</article>';
+        cardInnerHTML(p) + '</article>';
     }).join('');
     bindActs($('today-list'));
-    bindTodayExpand($('today-list'));
-  }
-
-  /* Home cards are compact: summary is line-clamped, tapping the body
-     expands it to reveal the full summary and full relevance detail.
-     Title link and action buttons are outside the tappable area. */
-  function todayCardInnerHTML(p) {
-    return tagsHTML(p) +
-      '<h3 class="paper-title">' + titleLinkHTML(p) + '</h3>' +
-      '<div class="today-expand" data-expand>' +
-        (p.summary ? '<p class="paper-summary">' + esc(p.summary) + '</p>' : '') +
-        (p.relevance ? '<p class="today-detail">' + esc(p.relevance) + '</p>' : '') +
-        (hasFacts(p) ? '<div class="today-detail">' + factsHTML(p) + '</div>' : '') +
-        '<span class="today-chev" aria-hidden="true"></span>' +
-      '</div>' +
-      /* Desktop hides the tap-to-expand detail, so it gets the Details toggle. */
-      extraHTML(p, isWide()) +
-      footHTML(p);
-  }
-
-  function bindTodayExpand(root) {
-    root.querySelectorAll('[data-expand]').forEach(function (el) {
-      el.addEventListener('click', function () {
-        var card = el.closest('.today-item');
-        if (!card) return;
-        card.classList.toggle('is-expanded');
-      });
-    });
   }
 
   /* Topic filter: only topics present in the data (structured triage
@@ -687,10 +659,10 @@
           tagsHTML(p) +
         '</div>' +
         '<h3 class="paper-title">' + titleLinkHTML(p) + '</h3>' +
-        (p.summary ? '<p class="paper-summary">' + esc(p.summary) + '</p>' : '') +
+        (p.summary ? '<p class="paper-summary" data-expand>' + esc(p.summary) + '</p>' : '') +
         (why ? '<div class="why"><span class="why-kicker">Why it\'s picked</span>' +
                '<span class="why-text">' + esc(why) + '</span></div>' : '') +
-        extraHTML(p, true) +
+        extraHTML(p) +
         footHTML(p) +
       '</article>';
     }).join('');
@@ -1083,33 +1055,47 @@
 
   function cardHTML(p) { return '<article class="paper-card">' + cardInnerHTML(p) + '</article>'; }
 
+  /* One card for Home and Feed at every width. A card has a single
+     expanded state: the Details button and a tap on the summary both
+     toggle it. Expanded = full summary (only Home on mobile clamps it)
+     plus the details panel (Design / Found / Caveat / Relevance).
+     Nothing in the panel appears anywhere else on the card. */
   function cardInnerHTML(p) {
     return tagsHTML(p) +
       '<h3 class="paper-title">' + titleLinkHTML(p) + '</h3>' +
-      (p.summary ? '<p class="paper-summary">' + esc(p.summary) + '</p>' : '') +
-      extraHTML(p, true) +
+      (p.summary ? '<p class="paper-summary" data-expand>' + esc(p.summary) + '</p>' : '') +
+      extraHTML(p) +
       footHTML(p);
   }
 
   /* Structured triage fields (papers from 2 Oct 2026 on). */
-  function hasFacts(p) { return !!(p.design || p.finding || p.caveat); }
+  function hasFacts(p) { return !!(p.design || p.finding || p.caveat || relevanceText(p)); }
+
+  /* Relevance minus its rating prefix ("🟢 High — "); the rating is
+     already the "High rel" tag. */
+  function relevanceText(p) {
+    var t = String(p.relevance || '').replace(
+      /^\s*(?:[🟢🟡🔴]\s*)?(?:(?:High|Medium|Med|Moderate|Low|Indirect)(?:\s+(?:transferability|relevance))?)?\s*(?:[—–:-]\s*|$)/iu, '').trim();
+    return t.charAt(0).toUpperCase() + t.slice(1);
+  }
 
   function factsHTML(p) {
     var rows = [];
     if (p.design || p.n) rows.push(['Design', [p.design, p.n].filter(Boolean).join(' · ')]);
     if (p.finding) rows.push(['Found', p.finding]);
     if (p.caveat) rows.push(['Caveat', p.caveat]);
+    var rel = relevanceText(p);
+    if (rel) rows.push(['Relevance', rel]);
     return '<dl class="facts">' + rows.map(function (r) {
       return '<div><dt>' + r[0] + '</dt><dd>' + esc(r[1]) + '</dd></div>';
     }).join('') + '</dl>';
   }
 
-  /* Row between summary and footer: a Details toggle for the structured
-     fields (cards only; Home cards show them on tap) and a play button when
-     an episode covered the paper. Empty when neither applies. */
-  function extraHTML(p, withFacts) {
+  /* Row between summary and footer: the Details toggle and a play button
+     when an episode covered the paper. Empty when neither applies. */
+  function extraHTML(p) {
     var ep = episodeForPaper(p.id);
-    var facts = withFacts && hasFacts(p);
+    var facts = hasFacts(p);
     if (!facts && !ep) return '';
     return '<div class="paper-extra">' +
       (facts ? '<button class="act" data-details type="button" aria-expanded="false">Details</button>' : '') +
@@ -1157,6 +1143,18 @@
       '</span></div>';
   }
 
+  function toggleCard(card) {
+    if (!card) return;
+    var open = card.classList.toggle('is-expanded');
+    var box = card.querySelector('.facts-wrap');
+    var btn = card.querySelector('[data-details]');
+    if (box) box.hidden = !open;
+    if (btn) {
+      btn.textContent = open ? 'Hide details' : 'Details';
+      btn.setAttribute('aria-expanded', String(open));
+    }
+  }
+
   function dayHeadHTML(label, n) {
     return '<div class="day-head"><span class="label">' + esc(label) + '</span>' +
       '<span class="rule"></span><span class="n">' + n + ' paper' + (n === 1 ? '' : 's') + '</span></div>';
@@ -1170,11 +1168,13 @@
       btn.addEventListener('click', function () { sharePaper(btn.getAttribute('data-share'), btn); });
     });
     root.querySelectorAll('[data-details]').forEach(function (btn) {
-      btn.addEventListener('click', function () {
-        var box = btn.parentNode.nextElementSibling;
-        box.hidden = !box.hidden;
-        btn.textContent = box.hidden ? 'Details' : 'Hide details';
-        btn.setAttribute('aria-expanded', String(!box.hidden));
+      btn.addEventListener('click', function () { toggleCard(btn.closest('article')); });
+    });
+    root.querySelectorAll('[data-expand]').forEach(function (el) {
+      el.addEventListener('click', function () {
+        /* Don't hijack a text selection. */
+        if (String(window.getSelection && window.getSelection()).length) return;
+        toggleCard(el.closest('article'));
       });
     });
     root.querySelectorAll('[data-episode]').forEach(function (btn) {
