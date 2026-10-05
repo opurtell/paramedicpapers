@@ -64,6 +64,9 @@ button { font-family: inherit; }
   text-transform: uppercase; color: var(--muted); margin-top: 6px;
 }
 .masthead-actions { display: flex; align-items: center; gap: 10px; }
+.title-wrap { display: flex; align-items: center; gap: 12px; min-width: 0; }
+.back-btn[hidden] { display: none; }
+.back-btn .hi { width: 19px; height: 19px; stroke-width: 1.8; }
 .updated { font-family: var(--mono); font-size: 10.5px; color: var(--muted); }
 .icon-btn {
   display: grid; place-items: center;
@@ -355,6 +358,63 @@ a.act { color: var(--accent); }
   text-transform: uppercase; color: var(--accent); white-space: nowrap;
 }
 .newsletter-banner:hover .newsletter-cta { text-decoration: underline; }
+
+/* ── PD brief: Weekly-tab card + #brief view ──────────── */
+.brief-card {
+  display: flex; flex-direction: column; gap: 7px;
+  padding: 16px 18px; border-radius: 16px;
+  background: var(--accent-lo); border: 1px solid #D6E2F5; color: var(--ink);
+}
+.brief-card[hidden] { display: none; }
+.brief-card:hover { color: var(--ink); border-color: var(--accent-in); }
+.brief-card-title { font-family: var(--serif); font-size: 21px; font-weight: 600; line-height: 1.2; }
+.brief-card-lead {
+  font-size: 14px; line-height: 1.5; color: var(--ink-2); text-wrap: pretty;
+  display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;
+}
+.brief-card-go {
+  display: inline-flex; align-items: center; gap: 5px; margin-top: 2px;
+  font-family: var(--mono); font-size: 10.5px; letter-spacing: .1em;
+  text-transform: uppercase; color: var(--accent);
+}
+.brief-card-go .hi { width: 13px; height: 13px; }
+
+#brief-body { display: flex; flex-direction: column; gap: 22px; max-width: 680px; }
+.brief-head { display: flex; flex-direction: column; gap: 6px; }
+.brief-title { font-size: 27px; line-height: 1.15; }
+.brief-sub { font-family: var(--mono); font-size: 10.5px; letter-spacing: .06em; color: var(--muted); }
+.brief-intro { font-family: var(--serif); font-size: 18px; line-height: 1.45; color: var(--ink); margin-top: 6px; text-wrap: pretty; }
+.brief-sec { display: flex; flex-direction: column; gap: 12px; }
+.brief-sec h3 { font-size: 19px; padding-bottom: 7px; border-bottom: 1px solid var(--line); }
+.brief-sec p, .brief-sec li { font-size: 14.5px; line-height: 1.55; color: var(--ink-2); text-wrap: pretty; }
+.brief-lessons { margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 12px; }
+.brief-lessons li::marker { font-family: var(--mono); font-size: 12px; color: var(--accent); }
+.brief-refs { margin-top: 3px; }
+.brief-sec .brief-refs, .brief-ref { font-size: 13px; }
+.brief-sep { color: var(--muted-2); }
+.brief-dive {
+  display: flex; flex-direction: column; gap: 7px;
+  background: var(--surface); border: 1px solid var(--line); border-left: 3px solid var(--accent);
+  border-radius: 12px; padding: 14px 16px;
+}
+.brief-dive h4 { font-family: var(--serif); font-size: 17px; font-weight: 600; margin: 0; }
+.brief-dive ul { margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 4px; }
+.brief-sec .brief-label {
+  font-family: var(--mono); font-size: 10px; letter-spacing: .1em;
+  text-transform: uppercase; color: var(--muted); margin-top: 4px;
+}
+.brief-refs .brief-label { margin-right: 4px; }
+.brief-sec .brief-discuss { font-family: var(--serif); font-size: 17px; font-style: italic; color: var(--ink); }
+.brief-topic {
+  font-family: var(--mono); font-size: 10.5px; font-weight: 400; letter-spacing: .1em;
+  text-transform: uppercase; color: var(--accent); margin: 8px 0 0;
+}
+.brief-paper { display: flex; flex-direction: column; gap: 4px; padding: 10px 0; border-bottom: 1px solid var(--hair); }
+.brief-paper-title { font-family: var(--serif); font-size: 16.5px; font-weight: 600; line-height: 1.3; color: var(--ink); }
+.brief-paper-title:hover { color: var(--accent); }
+.brief-sec .brief-meta { font-size: 12px; color: var(--muted); }
+.brief-sec .brief-finding { font-size: 13.5px; }
+.brief-fine { font-size: 12px; color: var(--muted); }
 
 /* ── tab bar (iOS-standard 49px + safe area) ──────────── */
 .tabbar {

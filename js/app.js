@@ -27,6 +27,7 @@
     savedOnly: false,
     topic: '',
     episodes: [],
+    brief: null,
     playDate: null,
     rate: loadRate(),
     positions: loadJSON(POS_KEY),
@@ -45,6 +46,7 @@
     bindPodcast();
     bindSaved();
     $('btn-refresh').addEventListener('click', refresh);
+    $('btn-back').addEventListener('click', function () { setTab(PARENT[state.tab] || 'home'); });
     window.addEventListener('hashchange', function () {
       if (paperFromHash()) { openPaperLink(); return; }
       if (episodeFromHash()) { openEpisodeLink(); return; }
@@ -74,6 +76,15 @@
     }).catch(function (err) {
       console.warn('No podcast episodes:', err && err.message);
     });
+
+    /* The PD brief is optional too: no file, no card. */
+    loadBrief().then(function (b) {
+      state.brief = b;
+      renderBrief();
+    }).catch(function (err) {
+      console.warn('No PD brief:', err && err.message);
+      renderBrief();
+    });
   }
 
   async function loadData(bust) {
@@ -83,6 +94,12 @@
     var url = 'data/papers.json?t=' + Date.now();
     var resp = await fetch(url, { cache: 'no-cache' });
     if (!resp.ok) throw new Error('Failed to load papers.json');
+    return resp.json();
+  }
+
+  async function loadBrief() {
+    var resp = await fetch('data/pd-brief.json?t=' + Date.now(), { cache: 'no-cache' });
+    if (!resp.ok) throw new Error('pd-brief.json ' + resp.status);
     return resp.json();
   }
 
@@ -98,6 +115,7 @@
         renderEpisodes();
         renderPaperLists();
       }).catch(function () {});
+      loadBrief().then(function (b) { state.brief = b; renderBrief(); }).catch(function () {});
     } catch (err) {
       console.error('Refresh failed:', err);
     } finally {
@@ -108,10 +126,14 @@
   /* ── navigation ─────────────────────────────────────── */
 
   var TABS = ['home', 'feed', 'weekly', 'podcast', 'saved'];
-  var TITLES = { home: 'Paramedic Papers', feed: 'Research feed', weekly: 'Weekly', podcast: 'Podcast', saved: 'Saved' };
+  /* Sub-views: full pages that belong to a tab. The tab stays highlighted
+     and the header shows a back button to it. */
+  var PARENT = { brief: 'weekly' };
+  var VIEWS = TABS.concat(Object.keys(PARENT));
+  var TITLES = { home: 'Paramedic Papers', feed: 'Research feed', weekly: 'Weekly', podcast: 'Podcast', saved: 'Saved', brief: 'PD brief' };
   /* On desktop the sidebar carries the wordmark, so the content header
      names the view instead of the app. */
-  var TITLES_WIDE = { home: 'Today', feed: 'Research feed', weekly: 'Weekly digest', podcast: 'Podcast', saved: 'Saved papers' };
+  var TITLES_WIDE = { home: 'Today', feed: 'Research feed', weekly: 'Weekly digest', podcast: 'Podcast', saved: 'Saved papers', brief: 'PD brief' };
 
   /* Shareable paper links: #paper=<encoded id> opens the feed with that
      paper pinned at the top. */
@@ -154,7 +176,7 @@
 
   function tabFromHash() {
     var h = (location.hash || '').replace('#', '');
-    return TABS.indexOf(h) !== -1 ? h : 'home';
+    return VIEWS.indexOf(h) !== -1 ? h : 'home';
   }
 
   /* Binds both the mobile tab bar and the desktop sidebar nav. */
@@ -166,10 +188,12 @@
 
   function setTab(tab, silent) {
     state.tab = tab;
-    TABS.forEach(function (t) { $('page-' + t).hidden = (t !== tab); });
+    VIEWS.forEach(function (t) { $('page-' + t).hidden = (t !== tab); });
+    var navTab = PARENT[tab] || tab;
     document.querySelectorAll('[data-tab]').forEach(function (btn) {
-      btn.classList.toggle('is-on', btn.getAttribute('data-tab') === tab);
+      btn.classList.toggle('is-on', btn.getAttribute('data-tab') === navTab);
     });
+    $('btn-back').hidden = !PARENT[tab];
     $('page-title').textContent = (isWide() ? TITLES_WIDE : TITLES)[tab];
     renderKicker();
     if (!silent) location.hash = tab;
@@ -283,6 +307,8 @@
       text = allPapers().length + ' papers · ' + d.dailyUpdates.length + ' scans';
     } else if (state.tab === 'weekly') {
       text = (d.weeklyTldr && d.weeklyTldr.dateRange) || 'This week';
+    } else if (state.tab === 'brief') {
+      text = state.brief ? state.brief.span : 'The email, online';
     } else if (state.tab === 'podcast') {
       text = state.episodes.length ? state.episodes.length + ' episodes' : 'Daily audio roundup';
     } else {
@@ -560,6 +586,93 @@
     $('feed-list').innerHTML = html;
     $('feed-empty').hidden = !!(html || pin);
     bindActs($('feed-list'));
+  }
+
+  /* ── PD brief (the newsletter, online) ──────────────── */
+
+  /* Weekly-tab card + the #brief view, from data/pd-brief.json: the latest
+     issue as sent, with each paper's fields copied in so this view doesn't
+     depend on papers.json. Paper links open the paper in the feed. */
+  function renderBrief() {
+    var b = state.brief;
+    $('brief-card').hidden = !b;
+    if (state.tab === 'brief') renderKicker();
+    if (!b) {
+      $('brief-body').innerHTML = '<p class="empty">The PD brief isn’t available right now. ' +
+        '<a href="https://join.paramedicpapers.com">Get it by email</a>.</p>';
+      return;
+    }
+    var s = b.synthesis;
+    $('brief-card-title').textContent = b.span;
+    $('brief-card-lead').textContent = s ? s.intro : b.papers.length + ' papers from these 8 days, with their bottom lines.';
+
+    var byId = {};
+    b.papers.forEach(function (p) { byId[p.id] = p; });
+    function refs(ids) {
+      return (ids || []).filter(function (id) { return byId[id]; }).map(function (id) {
+        return '<a class="brief-ref" href="#paper=' + encodeURIComponent(id) + '">' + esc(byId[id].title) + '</a>';
+      }).join('<span class="brief-sep"> · </span>');
+    }
+
+    var out = '<header class="brief-head">' +
+      '<p class="panel-kicker panel-kicker-accent">Paramedic Papers · PD brief</p>' +
+      '<h2 class="brief-title">' + esc(b.span) + '</h2>' +
+      '<p class="brief-sub">' + b.papers.length + ' papers this period · next brief ' + esc(dayLabel(b.next)) + '</p>' +
+      (s ? '<p class="brief-intro">' + esc(s.intro) + '</p>' : '') +
+      '</header>';
+
+    if (s) {
+      out += '<section class="brief-sec"><h3>Lessons learnt</h3><ol class="brief-lessons">' +
+        s.lessons.map(function (x) {
+          return '<li><p>' + esc(x.text) + '</p><p class="brief-refs">' + refs(x.ids) + '</p></li>';
+        }).join('') + '</ol></section>';
+
+      out += '<section class="brief-sec"><h3>Worth a deeper look</h3>' +
+        s.deep_dives.map(function (d) {
+          return '<article class="brief-dive">' +
+            '<h4>' + esc(d.topic) + '</h4>' +
+            '<p>' + esc(d.why) + '</p>' +
+            '<p class="brief-refs"><span class="brief-label">Read</span> ' + refs(d.ids) + '</p>' +
+            '<p class="brief-label">Questions to explore</p>' +
+            '<ul>' + d.questions.map(function (q) { return '<li>' + esc(q) + '</li>'; }).join('') + '</ul>' +
+            '<p class="brief-label">Ideas for your PD time</p><p>' + esc(d.ideas) + '</p>' +
+            '</article>';
+        }).join('') + '</section>';
+
+      out += '<section class="brief-sec"><h3>Crew discussion</h3>' +
+        '<p class="brief-discuss">' + esc(s.discussion) + '</p></section>';
+    }
+
+    var BL = ['Practice-changing', 'Supports current practice', 'Hypothesis-generating', 'Context only'];
+    var groups = {};
+    b.papers.slice().sort(function (a, c) {
+      var ia = BL.indexOf(a.bottomLine), ic = BL.indexOf(c.bottomLine);
+      return (ia < 0 ? 9 : ia) - (ic < 0 ? 9 : ic);
+    }).forEach(function (p) { (groups[p.topic] = groups[p.topic] || []).push(p); });
+    out += '<section class="brief-sec"><h3>All papers this period</h3>' +
+      Object.keys(groups).sort().map(function (topic) {
+        return '<h4 class="brief-topic">' + esc(topic) + '</h4>' + groups[topic].map(function (p) {
+          var meta = [p.journal, p.design, p.n].filter(Boolean).join(' · ');
+          var bl = p.bottomLine ? '<span class="tag tag-bl bl-' + esc(p.bottomLine.split(' ')[0].toLowerCase()) + '">' + esc(p.bottomLine) + '</span>' : '';
+          return '<div class="brief-paper">' +
+            '<a class="brief-paper-title" href="#paper=' + encodeURIComponent(p.id) + '">' + esc(p.title) + '</a>' +
+            '<p class="brief-meta">' + esc(meta) + '</p>' +
+            (bl ? '<div>' + bl + '</div>' : '') +
+            '<p class="brief-finding">' + esc(p.finding) + '</p></div>';
+        }).join('');
+      }).join('') + '</section>';
+
+    out += '<a class="newsletter-banner" href="https://join.paramedicpapers.com">' +
+      '<span><b>Get the next one by email</b> — the PD brief lands every 8 days. Next: ' + esc(dayLabel(b.next)) + '.</span>' +
+      '<span class="newsletter-cta">Sign up ' + ico('arrow') + '</span></a>' +
+      '<p class="brief-fine">Summaries are AI-assisted — check the paper before acting on it.</p>';
+    $('brief-body').innerHTML = out;
+  }
+
+  function dayLabel(iso) {
+    var m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(iso || '');
+    if (!m) return '';
+    return new Date(+m[1], m[2] - 1, +m[3]).toLocaleDateString('en-AU', { weekday: 'short', day: 'numeric', month: 'short' });
   }
 
   function renderWeeklyPicks() {
