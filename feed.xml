@@ -24,6 +24,20 @@
     </itunes:category>
     <itunes:explicit>false</itunes:explicit>
     <item>
+      <title>Paramedic Papers Daily — 6 October 2026</title>
+      <link>https://paramedicpapers.com/#episode=2026-10-06</link>
+      <description>2 papers: Stroke triage tools: cost-effective, hard to sustain; How rare is a prehospital birth? Very</description>
+      <content:encoded><![CDATA[<p>2 papers: Stroke triage tools: cost-effective, hard to sustain; How rare is a prehospital birth? Very</p><p>Papers in this episode:</p><ul><li><a href="https://doi.org/10.1111/jep.70634">Stroke triage tools: cost-effective, hard to sustain <em>(Journal of Evaluation in Clinical Practice)</em></a></li><li><a href="https://doi.org/10.1111/aas.70351">How rare is a prehospital birth? Very <em>(Acta Anaesthesiologica Scandinavica)</em></a></li></ul><p><a href="https://paramedicpapers.com/#episode=2026-10-06">Show notes and transcript</a></p>]]></content:encoded>
+      <pubDate>Tue, 06 Oct 2026 07:33:06 +1100</pubDate>
+      <guid isPermaLink="false">https://audio.paramedicpapers.com/ep-2026-10-06.mp3</guid>
+      <enclosure url="https://audio.paramedicpapers.com/ep-2026-10-06.mp3" length="620972" type="audio/mpeg"/>
+      <itunes:duration>155</itunes:duration>
+      <itunes:summary>2 papers: Stroke triage tools: cost-effective, hard to sustain; How rare is a prehospital birth? Very</itunes:summary>
+      <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
+      <itunes:episodeType>full</itunes:episodeType>
+      <podcast:transcript url="https://audio.paramedicpapers.com/ep-2026-10-06.txt" type="text/plain" language="en-au"/>
+    </item>
+    <item>
       <title>Paramedic Papers Daily — 5 October 2026</title>
       <link>https://paramedicpapers.com/#episode=2026-10-05</link>
       <description>2 papers: Online stroke education boosts EMS-seeking; What actually degrades CPR performance</description>
@@ -400,19 +414,6 @@
       <enclosure url="https://audio.paramedicpapers.com/ep-2026-08-30.mp3" length="276621" type="audio/mpeg"/>
       <itunes:duration>69</itunes:duration>
       <itunes:summary>1 paper: blunt vs penetrating trauma physiology</itunes:summary>
-      <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
-      <itunes:episodeType>full</itunes:episodeType>
-    </item>
-    <item>
-      <title>Paramedic Papers Daily — 29 August 2026</title>
-      <link>https://paramedicpapers.com/#episode=2026-08-29</link>
-      <description>5 papers: Paediatric OHCA adrenaline variation; Blood transfusion prediction; Swiss HEMS trauma outcomes; Paediatric concussion MIH; Indirect ICU admissions mortality</description>
-      <content:encoded><![CDATA[<p>5 papers: Paediatric OHCA adrenaline variation; Blood transfusion prediction; Swiss HEMS trauma outcomes; Paediatric concussion MIH; Indirect ICU admissions mortality</p><p>Papers in this episode:</p><ul><li><a href="https://doi.org/10.1016/j.resplu.2026.101454">Practice variability of epinephrine administration in pediatric out-of-hospital cardiac arrest in the United States <em>(Resuscitation Plus)</em></a></li><li><a href="https://doi.org/10.1080/10903127.2026.2713132">Predicting Prehospital Blood Transfusion After Motor Vehicle Trauma <em>(Prehospital Emergency Care)</em></a></li><li><a href="https://doi.org/10.1186/s13049-026-01685-3">Diagnostic accuracy, characteristics and survival of children with trauma in HEMS: a retrospective multi-centre observational study <em>(Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine)</em></a></li><li><a href="https://doi.org/10.1080/10903127.2026.2680993">Feasibility and Acceptability of Mobilizing Community Paramedics to Provide the Standard of Care for Pediatric Concussion: Mobile Integrated Health Programming for Pediatric Patients <em>(Prehospital Emergency Care)</em></a></li><li><a href="https://doi.org/10.1111/1742-6723.70337">Indirect ICU Admissions From an Australian Emergency Department: Risk Factors and Outcomes <em>(Emergency Medicine Australasia)</em></a></li></ul><p><a href="https://paramedicpapers.com/#episode=2026-08-29">Show notes and transcript</a></p>]]></content:encoded>
-      <pubDate>Sat, 29 Aug 2026 07:35:47 +1000</pubDate>
-      <guid isPermaLink="false">https://opurtell.github.io/paramedicpapers/audio/ep-2026-08-29.mp3</guid>
-      <enclosure url="https://audio.paramedicpapers.com/ep-2026-08-29.mp3" length="1081773" type="audio/mpeg"/>
-      <itunes:duration>270</itunes:duration>
-      <itunes:summary>5 papers: Paediatric OHCA adrenaline variation; Blood transfusion prediction; Swiss HEMS trauma outcomes; Paediatric concussion MIH; Indirect ICU admissions mortality</itunes:summary>
       <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
       <itunes:episodeType>full</itunes:episodeType>
     </item>
