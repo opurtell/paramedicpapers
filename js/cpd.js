@@ -1,8 +1,8 @@
 /* ============================================================
    Paramedic Papers — CPD tracker (beta)
    Sign-in, the "More" menu, the CPD tab, manual PD entries, learning
-   goals, exports, the Account page, and "Log PD" on paper cards
-   (phase 2). Talks to the API Worker at
+   goals, exports, the Account page, "Log PD" on paper cards
+   (phase 2) and the PD quiz (phase 3). Talks to the API Worker at
    api.paramedicpapers.com (repo: cpd/, plan: cpd/plan/phase-1).
    Uses only window.PP from app.js. Does nothing until /#cpd-beta has
    been visited in this browser.
@@ -69,6 +69,8 @@
   PP.hooks.openMenu = openMenu;
   PP.hooks.kicker = kicker;
   PP.hooks.onShow = function (tab) {
+    if (tab !== 'quiz') pauseClock();
+    if (tab === 'quiz') showQuiz();
     if (tab === 'cpd' || tab === 'account') render();
     if (tab === 'cpd' && st.user && !st.entries && !st.loading) loadYear();
   };
@@ -83,6 +85,10 @@
       if (e.key === 'Escape' && st.sheet) closeSheet(true);
     });
     boot();
+    loadQuizIndex();
+  });
+  document.addEventListener('visibilitychange', function () {
+    if (document.hidden) pauseClock(); else resumeClock();
   });
 
   function boot() {
@@ -95,6 +101,7 @@
       render();
       resumePaper();
       loadLogged();
+      loadAttempts();
       return loadYear();
     }).catch(function (err) {
       st.checked = true;
@@ -128,7 +135,7 @@
         err.status = r.status;
         err.field = data.field;
         err.data = data;
-        if (r.status === 401) { st.user = null; st.entries = st.summary = st.goals = null; dropLogged(); }
+        if (r.status === 401) { st.user = null; st.entries = st.summary = st.goals = null; qz.attempts = null; dropLogged(); }
         throw err;
       });
     }, function (e) {
@@ -209,6 +216,10 @@
   }
 
   function kicker(tab) {
+    if (tab === 'quiz') {
+      var q = qz.id && qz.quizzes[qz.id];
+      return q ? q.span : qz.id === 'all' ? 'Past quizzes' : 'Every 8 days';
+    }
     if (tab === 'account') return st.user ? 'Signed in with ' + (PROVIDER_NAMES[st.user.provider] || st.user.provider) : 'Not signed in';
     return 'Registration year ' + yearLabel(st.year);
   }
@@ -238,6 +249,8 @@
     var tab = PP.state.tab;
     if (tab === 'cpd') renderCpd();
     if (tab === 'account') renderAccount();
+    if (tab === 'quiz') renderQuiz();
+    renderQuizCard();
     PP.renderKicker();
   }
 
@@ -765,7 +778,7 @@
   }
 
   function checkPII() {
-    var form = $('entry-form') || $('paper-form');
+    var form = $('entry-form') || $('paper-form') || $('quiz-form');
     if (!form) return;
     var text = Array.prototype.map.call(form.querySelectorAll('input:not([type]), input[name], textarea'), function (f) {
       return f.type === 'date' || f.type === 'checkbox' ? '' : f.value;
@@ -1298,6 +1311,506 @@
     });
   }
 
+  /* ── PD quiz (plan phase 3) ─────────────────────────── */
+
+  /* greg publishes a quiz with each PD brief: data/quizzes/<id>.json
+     (answers included; it's self-directed CPD) and data/quizzes/index.json.
+     Anyone can take it. Signed in, the attempt is logged as CPD once; the
+     API grades from the same file. A run (answers, time, the log form) is
+     kept in sessionStorage so it survives the sign-in round trip. */
+  var QUIZ_KEY = 'pp:quiz:';   /* + quiz id */
+  var QUIZ_MIN = 5, QUIZ_MAX = 60;
+  var SEGMENT_MAX = 900;       /* one timing stretch counts at most 15 min (a sleeping laptop) */
+  var LETTERS = 'ABCD';
+
+  var qz = {
+    index: null,      /* [{ id, span, count, est_minutes }], newest first */
+    quizzes: {},      /* id → quiz */
+    attempts: null,   /* quiz_id → { score, total, entry_id }, signed in only */
+    id: null,         /* quiz on screen, or 'all' for the list */
+    error: '',
+    run: null,        /* { id, pos (-1 = intro), answers, seconds, done, v (log form), saving, error, saved } */
+    goals: null,
+    clock: null       /* performance.now() when the current timing stretch began */
+  };
+
+  function loadQuizIndex() {
+    return fetch('data/quizzes/index.json?t=' + Date.now(), { cache: 'no-cache' }).then(function (r) {
+      if (!r.ok) throw new Error('index.json ' + r.status);
+      return r.json();
+    }).then(function (d) {
+      qz.index = (d && d.quizzes) || [];
+    }).catch(function () {
+      qz.index = [];
+    }).then(function () {
+      renderQuizCard();
+      if (PP.state.tab === 'quiz') showQuiz();
+    });
+  }
+
+  function loadQuizFile(id) {
+    if (qz.quizzes[id]) return Promise.resolve(qz.quizzes[id]);
+    return fetch('data/quizzes/' + encodeURIComponent(id) + '.json?t=' + Date.now(), { cache: 'no-cache' }).then(function (r) {
+      if (!r.ok) throw new Error('That quiz isn’t available.');
+      return r.json();
+    }).then(function (q) {
+      qz.quizzes[id] = q;
+      return q;
+    });
+  }
+
+  function loadAttempts() {
+    if (!st.user) return Promise.resolve();
+    return api('/api/quiz/attempts').then(function (r) {
+      var map = {};
+      r.attempts.forEach(function (a) { map[a.quiz_id] = a; });
+      qz.attempts = map;
+      renderQuizCard();
+      if (PP.state.tab === 'quiz') renderQuiz();
+    }).catch(function (err) {
+      /* Still let them try to save: a retake answers 409 with the first result. */
+      if (err.status === 401) return;
+      qz.attempts = qz.attempts || {};
+      if (PP.state.tab === 'quiz') renderQuiz();
+    });
+  }
+
+  /* A logged attempt whose CPD entry still exists. */
+  function attemptFor(id) {
+    var a = st.user && qz.attempts && qz.attempts[id];
+    return a && a.entry_id ? a : null;
+  }
+
+  function quizIdFromHash() {
+    var m = /^#quiz=([\w-]+)$/.exec(location.hash || '');
+    return m ? m[1] : '';
+  }
+
+  /* onShow('quiz'), and again once the index arrives. */
+  function showQuiz() {
+    var want = quizIdFromHash() || (qz.index && qz.index[0] ? qz.index[0].id : '');
+    if (want === 'all' || !want) { pauseClock(); qz.id = want || null; qz.error = ''; renderQuiz(); return; }
+    if (qz.run && qz.run.id === want) { qz.id = want; renderQuiz(); resumeClock(); return; }
+    pauseClock();
+    qz.id = want; qz.run = null; qz.error = '';
+    renderQuiz();
+    loadQuizFile(want).then(function (quiz) {
+      if (qz.id !== want) return;
+      qz.run = restoreRun(quiz);
+      renderQuiz();
+      resumeClock();
+    }).catch(function (err) {
+      if (qz.id !== want) return;
+      qz.error = err.message;
+      renderQuiz();
+    });
+  }
+
+  /* ── run state ── */
+
+  function defaultGoal(quiz) {
+    /* "Stroke & neuro" → "stroke", so the list reads cleanly. */
+    var t = [];
+    quiz.questions.forEach(function (x) {
+      var s = String(x.topic || '').split(/\s*[&(]/)[0].trim().toLowerCase();
+      if (s && s !== 'other' && t.indexOf(s) === -1) t.push(s);
+    });
+    t = t.slice(0, 5);
+    var list = t.length > 1 ? t.slice(0, -1).join(', ') + ' and ' + t[t.length - 1] : (t[0] || 'prehospital care');
+    return 'Update my knowledge of recent prehospital research on ' + list + '.';
+  }
+
+  function newRun(quiz) {
+    return {
+      id: quiz.id, pos: -1, answers: [], seconds: 0, done: false,
+      v: { minutes: QUIZ_MIN, group: false, with_whom: '', learning_goal: defaultGoal(quiz), goal_id: '',
+        reflection_learned: '', reflection_practice: '', reflection_next: '' }
+    };
+  }
+
+  function restoreRun(quiz) {
+    var r;
+    try { r = JSON.parse(sessionStorage.getItem(QUIZ_KEY + quiz.id) || 'null'); } catch (e) { r = null; }
+    var n = quiz.questions.length;
+    if (!r || r.id !== quiz.id || !Array.isArray(r.answers) || r.answers.length > n || !r.v) return newRun(quiz);
+    r.pos = Math.max(-1, Math.min(n - 1, +r.pos || 0));
+    r.seconds = +r.seconds || 0;
+    r.done = !!r.done && r.answers.length === n;
+    return r;
+  }
+
+  function saveRun() {
+    var r = qz.run;
+    if (!r) return;
+    try {
+      sessionStorage.setItem(QUIZ_KEY + r.id, JSON.stringify({ id: r.id, pos: r.pos, answers: r.answers, seconds: Math.round(r.seconds), done: r.done, v: r.v }));
+    } catch (e) {}
+  }
+
+  /* The timer runs while a question is on screen and the tab is visible. */
+  function tickClock() {
+    if (qz.clock == null || !qz.run) return;
+    var now = performance.now();
+    qz.run.seconds += Math.min(SEGMENT_MAX, (now - qz.clock) / 1000);
+    qz.clock = now;
+  }
+  function resumeClock() {
+    var r = qz.run;
+    if (r && r.pos >= 0 && !r.done && !document.hidden && PP.state.tab === 'quiz' && qz.clock == null) qz.clock = performance.now();
+  }
+  function pauseClock() {
+    if (qz.clock == null) return;
+    tickClock();
+    qz.clock = null;
+    saveRun();
+  }
+
+  /* Actual time, rounded up to the next 5 minutes, 5 min – 1 h (as the API does). */
+  function quizMinutes(seconds) {
+    return Math.min(QUIZ_MAX, Math.max(QUIZ_MIN, Math.ceil(seconds / 60 / 5) * 5));
+  }
+
+  /* ── Weekly-tab card ── */
+
+  function renderQuizCard() {
+    var slot = $('quiz-slot');
+    if (!slot) return;
+    var q = qz.index && qz.index[0];
+    slot.hidden = !q;
+    if (!q) { slot.innerHTML = ''; return; }
+    var a = attemptFor(q.id);
+    slot.innerHTML =
+      '<a class="brief-card quiz-card" href="#quiz">' +
+        '<span class="panel-kicker panel-kicker-accent">' + ico('quiz') + 'PD quiz · ' + esc(q.span) + '</span>' +
+        '<span class="brief-card-title">' + q.count + ' questions on this period’s papers</span>' +
+        '<span class="brief-card-lead">' + (a
+          ? '<span class="quiz-done">' + ico('check') + 'Done · ' + a.score + '/' + a.total + '</span> Logged to your CPD.'
+          : 'About ' + esc(q.est_minutes) + ' minutes. Each answer comes with why. Signed in, it’s logged as CPD.') + '</span>' +
+        '<span class="brief-card-go">' + (a ? 'Review it' : 'Take the quiz') + ico('arrow') + '</span>' +
+      '</a>' +
+      (qz.index.length > 1 ? '<a class="quiz-past-link" href="#quiz=all">Past quizzes ' + ico('chev-right') + '</a>' : '');
+  }
+
+  /* ── quiz view ── */
+
+  function renderQuiz() {
+    var root = $('quiz-body');
+    if (!root) return;
+    PP.renderKicker();
+    if (!qz.index) { root.innerHTML = loadingHTML(); return; }
+    if (qz.id === 'all') { renderQuizList(root); return; }
+    if (!qz.id) {
+      root.innerHTML = '<div class="empty-state">' + ico('quiz', 'empty-ico') + '<h2>No quiz yet</h2><p>A short quiz comes with each PD brief, every 8 days.</p></div>';
+      return;
+    }
+    if (qz.error) {
+      root.innerHTML = '<div class="empty-state"><h2>Quiz unavailable</h2><p>' + esc(qz.error) + '</p></div>' +
+        (qz.index.length ? '<p class="quiz-foot"><a href="#quiz=all">All quizzes</a></p>' : '');
+      return;
+    }
+    var quiz = qz.quizzes[qz.id], r = qz.run;
+    if (!quiz || !r) { root.innerHTML = loadingHTML(); return; }
+    if (r.done) renderResults(root, quiz, r);
+    else if (r.pos < 0) renderIntro(root, quiz);
+    else renderQuestion(root, quiz, r);
+  }
+
+  function renderQuizList(root) {
+    root.innerHTML =
+      '<div class="section-head"><h2>Past quizzes</h2><span class="muted-flag">' + qz.index.length + '</span></div>' +
+      (qz.index.length ? '<div class="quiz-list">' + qz.index.map(function (q) {
+        var a = attemptFor(q.id);
+        return '<a class="quiz-row" href="#quiz=' + esc(q.id) + '">' +
+          '<span class="quiz-row-main"><span class="quiz-row-title">' + esc(q.span) + '</span>' +
+          '<span class="entry-meta">' + q.count + ' questions · about ' + esc(q.est_minutes) + ' min</span></span>' +
+          (a ? '<span class="pill pill-met">' + ico('check') + a.score + '/' + a.total + '</span>' : '') +
+          ico('chev-right', 'entry-chev') + '</a>';
+      }).join('') + '</div>' : '<p class="empty">No quizzes yet.</p>');
+  }
+
+  function quizHeadHTML(quiz, sub) {
+    return '<header class="brief-head">' +
+      '<p class="panel-kicker panel-kicker-accent">' + ico('quiz') + 'PD quiz</p>' +
+      '<h2 class="brief-title">' + esc(quiz.span) + '</h2>' +
+      '<p class="brief-sub">' + esc(sub) + '</p></header>';
+  }
+
+  function renderIntro(root, quiz) {
+    var a = attemptFor(quiz.id);
+    root.innerHTML =
+      quizHeadHTML(quiz, quiz.questions.length + ' questions · about ' + quiz.est_minutes + ' min') +
+      '<p class="quiz-lead">One question per paper from this period’s PD brief. Each answer shows why, with a link to the paper.</p>' +
+      (a ? '<p class="notice">' + ico('check') + ' You’ve logged this quiz: ' + a.score + '/' + a.total + '. A retake isn’t logged again.</p>' : '') +
+      '<button class="btn btn-primary btn-add" data-quiz-start type="button">' + (a ? 'Take it again' : 'Start') + '</button>' +
+      '<p class="fine">Your time is counted while a question is on screen, for your CPD log.' +
+        (qz.index.length > 1 ? ' <a href="#quiz=all">Past quizzes</a>' : '') + '</p>';
+    root.querySelector('[data-quiz-start]').addEventListener('click', function () {
+      var r = qz.run;
+      r.pos = 0; r.answers = []; r.seconds = 0; r.done = false;
+      saveRun();
+      resumeClock();
+      renderQuiz();
+      focusQuestion();
+    });
+  }
+
+  function dotsHTML(quiz, r) {
+    return '<ol class="quiz-dots" aria-label="Question ' + (r.pos + 1) + ' of ' + quiz.questions.length + '">' +
+      quiz.questions.map(function (x, i) {
+        var a = r.answers[i];
+        var cls = a == null ? (i === r.pos ? 'is-now' : '') : (a === x.answer ? 'is-right' : 'is-wrong');
+        return '<li class="' + cls + '"' + (i === r.pos ? ' aria-current="step"' : '') + '></li>';
+      }).join('') + '</ol>';
+  }
+
+  function renderQuestion(root, quiz, r) {
+    var q = quiz.questions[r.pos], picked = r.answers[r.pos], answered = picked != null;
+    var last = r.pos === quiz.questions.length - 1;
+    var right = answered && picked === q.answer;
+    root.innerHTML =
+      '<div class="quiz-top">' + dotsHTML(quiz, r) + '<span class="quiz-count">' + (r.pos + 1) + ' / ' + quiz.questions.length + '</span></div>' +
+      '<p class="quiz-paper">' + esc(q.topic) + ' · ' + esc(q.short_title) + '</p>' +
+      '<h2 class="quiz-q" id="quiz-q" tabindex="-1">' + esc(q.question) + '</h2>' +
+      '<div class="quiz-opts" role="group" aria-labelledby="quiz-q">' +
+        q.options.map(function (o, j) {
+          var cls = !answered ? '' : j === q.answer ? ' is-right' : j === picked ? ' is-wrong' : ' is-dim';
+          var mark = !answered ? '' : j === q.answer ? ico('check') + '<span class="sr-only">Correct answer</span>'
+            : j === picked ? ico('x') + '<span class="sr-only">Your answer, wrong</span>' : '';
+          return '<button class="quiz-opt' + cls + '" data-opt="' + j + '" type="button"' + (answered ? ' disabled' : '') + '>' +
+            '<span class="quiz-letter" aria-hidden="true">' + LETTERS[j] + '</span>' +
+            '<span class="quiz-opt-text">' + esc(o) + '</span>' +
+            '<span class="quiz-mark">' + mark + '</span></button>';
+        }).join('') +
+      '</div>' +
+      (answered
+        ? '<div class="quiz-why" role="status">' +
+            '<p class="quiz-verdict ' + (right ? 'is-right' : 'is-wrong') + '" id="quiz-verdict" tabindex="-1">' +
+              ico(right ? 'check' : 'x') + (right ? 'Correct' : 'Not quite. It’s ' + LETTERS[q.answer] + '.') + '</p>' +
+            '<p>' + esc(q.explanation) + '</p>' +
+            '<a class="quiz-read" href="#paper=' + esc(encodeURIComponent(q.paper_id)) + '">' + ico('feed') + 'Read the paper</a>' +
+          '</div>' +
+          '<div class="quiz-nav"><span class="spacer"></span><button class="btn btn-primary" data-quiz-next type="button">' + (last ? 'See results' : 'Next') + ico('chev-right') + '</button></div>'
+        : '');
+
+    root.querySelectorAll('[data-opt]').forEach(function (b) {
+      b.addEventListener('click', function () {
+        if (r.answers[r.pos] != null) return;
+        tickClock();
+        r.answers[r.pos] = +b.getAttribute('data-opt');
+        saveRun();
+        renderQuiz();
+        var v = $('quiz-verdict');
+        if (v) v.focus({ preventScroll: true });
+      });
+    });
+    var next = root.querySelector('[data-quiz-next]');
+    if (next) next.addEventListener('click', function () {
+      tickClock();
+      if (last) {
+        pauseClock();
+        r.done = true;
+        r.v.minutes = quizMinutes(r.seconds);
+        r.saved = null; r.error = '';
+      } else {
+        r.pos++;
+      }
+      saveRun();
+      renderQuiz();
+      window.scrollTo(0, 0);
+      if (!last) focusQuestion();
+    });
+  }
+
+  function focusQuestion() {
+    var h = $('quiz-q');
+    if (h) h.focus({ preventScroll: true });
+  }
+
+  function score(quiz, r) {
+    return r.answers.reduce(function (n, a, i) { return n + (a === quiz.questions[i].answer ? 1 : 0); }, 0);
+  }
+
+  function renderResults(root, quiz, r) {
+    var n = quiz.questions.length, s = score(quiz, r);
+    var recap = quiz.questions.map(function (q, i) {
+      var a = r.answers[i], ok = a === q.answer;
+      return '<li class="' + (ok ? 'is-right' : 'is-wrong') + '">' +
+        '<span class="quiz-recap-mark">' + ico(ok ? 'check' : 'x') + '<span class="sr-only">' + (ok ? 'Right' : 'Wrong') + '</span></span>' +
+        '<div><p class="quiz-recap-q">' + esc(q.question) + '</p>' +
+        (ok ? '' : '<p class="quiz-recap-a">You said ' + LETTERS[a] + ': ' + esc(q.options[a]) + '</p>') +
+        '<p class="quiz-recap-a"><b>' + LETTERS[q.answer] + ': ' + esc(q.options[q.answer]) + '</b></p>' +
+        '<p class="quiz-recap-why">' + esc(q.explanation) + ' <a href="#paper=' + esc(encodeURIComponent(q.paper_id)) + '">Read the paper</a></p></div></li>';
+    }).join('');
+    root.innerHTML =
+      quizHeadHTML(quiz, 'Your result') +
+      '<div class="quiz-score"><span class="quiz-score-n">' + s + '<span>/' + n + '</span></span>' +
+        '<span class="quiz-score-line">' + esc(scoreLine(s, n)) + '</span></div>' +
+      '<details class="quiz-recap"><summary>Your answers</summary><ol>' + recap + '</ol></details>' +
+      '<div id="quiz-log">' + logBlockHTML(quiz, r, s) + '</div>' +
+      '<div class="quiz-nav"><button class="btn" data-quiz-again type="button">Try again</button>' +
+        (qz.index.length > 1 ? '<a class="link-btn" href="#quiz=all">Past quizzes</a>' : '') + '</div>';
+    root.querySelector('[data-quiz-again]').addEventListener('click', function () {
+      r.pos = 0; r.answers = []; r.seconds = 0; r.done = false; r.saved = null; r.error = '';
+      saveRun();
+      resumeClock();
+      renderQuiz();
+      window.scrollTo(0, 0);
+      focusQuestion();
+    });
+    bindLogBlock(quiz, r);
+  }
+
+  function scoreLine(s, n) {
+    if (s === n) return 'All of them. Nicely done.';
+    if (s >= n * 0.75) return 'Solid. The recap shows the ones that got away.';
+    if (s >= n * 0.5) return 'Over half. The explanations are worth a look.';
+    return 'A tough set. The explanations and papers are the useful part.';
+  }
+
+  /* The log-to-CPD block under the results. */
+  function logBlockHTML(quiz, r, s) {
+    var a = attemptFor(quiz.id);
+    if (a) {
+      return '<article class="panel quiz-logged">' +
+        '<span class="done-ico">' + ico('check') + '</span>' +
+        '<div><h3>' + (r.saved ? 'Saved to your CPD log' : 'Already in your CPD log') + '</h3>' +
+        '<p class="panel-lead">' + (r.saved
+          ? 'Logged · ' + esc(dur(r.saved.minutes)) + ', score ' + a.score + '/' + a.total + '.'
+          : 'Logged with your first result, ' + a.score + '/' + a.total + '. Retakes aren’t logged again.') + '</p>' +
+        '<button class="btn" data-go-cpd type="button">Open CPD</button></div></article>';
+    }
+    if (!st.checked) return loadingHTML();
+    if (st.apiDown && !st.user) return downHTML();
+    if (!st.user) return signInHTML('Sign in to save this to your CPD log', '#quiz=' + quiz.id);
+    if (!qz.attempts) return loadingHTML();
+
+    var v = r.v;
+    var goals = (qz.goals || []).filter(function (g) { return g.status === 'active' || g.id === v.goal_id; });
+    return '<article class="panel">' +
+      '<span class="panel-kicker panel-kicker-accent">' + ico('log') + 'Log to my CPD</span>' +
+      '<form class="form" id="quiz-form" novalidate>' +
+        '<div class="field"><span class="label">Time spent</span><div class="stepper">' +
+          '<span class="step"><button type="button" data-qstep="-5" aria-label="5 minutes less"' + (v.minutes <= QUIZ_MIN ? ' disabled' : '') + '>' + ico('minus') + '</button>' +
+          '<output aria-live="polite">' + esc(dur(v.minutes)) + '</output>' +
+          '<button type="button" data-qstep="5" aria-label="5 minutes more"' + (v.minutes >= QUIZ_MAX ? ' disabled' : '') + '>' + ico('plus') + '</button></span>' +
+        '</div></div>' +
+        '<p class="hint">From the timer, rounded up to 5 minutes. Quiz time only; reflection doesn’t count toward the 30 hours.</p>' +
+        '<label class="switch-row"><input type="checkbox" name="group" role="switch"' + (v.group ? ' checked' : '') + '>' +
+          '<span class="switch" aria-hidden="true"></span><span><b>Done as a group?</b>' +
+          '<span class="hint">With other practitioners, it counts toward your 8 interactive hours.</span></span></label>' +
+        (v.group ? field('Who with? <span class="opt">roles, not names</span>', '<input name="with_whom" maxlength="200" value="' + esc(v.with_whom) + '" placeholder="e.g. station PD session, crew partner">') : '') +
+        '<fieldset><legend>Learning goal</legend>' +
+          '<textarea name="learning_goal" rows="2" maxlength="4000" aria-label="Learning goal">' + esc(v.learning_goal) + '</textarea>' +
+          (goals.length ? '<label class="field"><span class="label">Link to one of my goals <span class="opt">optional</span></span>' +
+            '<select name="goal_id"><option value="">None</option>' + goals.map(function (g) {
+              return '<option value="' + esc(g.id) + '"' + (g.id === v.goal_id ? ' selected' : '') + '>' + esc(g.text) + '</option>';
+            }).join('') + '</select></label>' : '') +
+        '</fieldset>' +
+        '<fieldset><legend>Reflection <span class="opt">needed for a complete entry</span></legend>' +
+          field('Which answer surprised you?', '<textarea name="reflection_learned" rows="2" maxlength="4000">' + esc(v.reflection_learned) + '</textarea>') +
+          field('Does it change anything you do?', '<textarea name="reflection_practice" rows="2" maxlength="4000">' + esc(v.reflection_practice) + '</textarea>') +
+          field('Anything to follow up? <span class="opt">optional</span>', '<textarea name="reflection_next" rows="2" maxlength="4000">' + esc(v.reflection_next) + '</textarea>') +
+        '</fieldset>' +
+        '<p class="notice notice-warn" id="pii-warn" hidden>That looks like it might identify a patient (a name, date of birth or record number). Please remove it.</p>' +
+        '<p class="fine">Don’t include patient-identifying details.</p>' +
+        (r.error ? '<p class="notice notice-warn" role="alert">' + esc(r.error) + '</p>' : '') +
+        '<button class="btn btn-primary btn-add" type="submit"' + (r.saving ? ' disabled' : '') + '>' + (r.saving ? 'Saving…' : 'Save to my CPD log · ' + s + '/' + quiz.questions.length) + '</button>' +
+      '</form></article>';
+  }
+
+  function bindLogBlock(quiz, r) {
+    var box = $('quiz-log');
+    var go = box.querySelector('[data-go-cpd]');
+    if (go) go.addEventListener('click', function () {
+      var y = cpdYear(todayISO());
+      if (st.year !== y) { st.year = y; st.summary = st.entries = st.goals = null; loadYear(); }
+      PP.setTab('cpd');
+    });
+    var form = $('quiz-form');
+    if (!form) return;
+    if (!qz.goals) {
+      goalsFor(cpdYear(todayISO())).then(function (g) {
+        qz.goals = g;
+        if (g.length && qz.run === r && $('quiz-form')) rerenderLog(quiz, r);
+      }).catch(function () {});
+    }
+    form.querySelectorAll('[data-qstep]').forEach(function (b) {
+      b.addEventListener('click', function () {
+        collectQuiz(r);
+        var d = +b.getAttribute('data-qstep');
+        r.v.minutes = Math.max(QUIZ_MIN, Math.min(QUIZ_MAX, r.v.minutes + d));
+        saveRun();
+        rerenderLog(quiz, r);
+        var again = $('quiz-form').querySelector('[data-qstep="' + d + '"]');
+        if (again && !again.disabled) again.focus();
+      });
+    });
+    var group = form.querySelector('[name="group"]');
+    group.addEventListener('change', function () {
+      collectQuiz(r);
+      saveRun();
+      rerenderLog(quiz, r);
+      if (r.v.group) $('quiz-form').querySelector('[name="with_whom"]').focus();
+    });
+    form.addEventListener('input', function () { collectQuiz(r); saveRun(); checkPII(); });
+    form.addEventListener('change', function (e) { if (e.target.name === 'goal_id') { collectQuiz(r); saveRun(); } });
+    form.addEventListener('submit', function (e) { e.preventDefault(); saveQuiz(quiz, r); });
+    checkPII();
+  }
+
+  function rerenderLog(quiz, r) {
+    $('quiz-log').innerHTML = logBlockHTML(quiz, r, score(quiz, r));
+    bindLogBlock(quiz, r);
+  }
+
+  function collectQuiz(r) {
+    var form = $('quiz-form'), v = r.v;
+    ['with_whom', 'learning_goal', 'goal_id', 'reflection_learned', 'reflection_practice', 'reflection_next'].forEach(function (n) {
+      var f = form.querySelector('[name="' + n + '"]');
+      if (f) v[n] = f.value;
+    });
+    v.group = form.querySelector('[name="group"]').checked;
+  }
+
+  function saveQuiz(quiz, r) {
+    collectQuiz(r);
+    var v = r.v;
+    if (v.group && !v.with_whom.trim()) {
+      r.error = 'Say who you did it with (roles, not names). That’s your audit evidence.';
+      rerenderLog(quiz, r);
+      return;
+    }
+    r.saving = true; r.error = '';
+    rerenderLog(quiz, r);
+    var goal = v.goal_id ? (qz.goals || []).filter(function (g) { return g.id === v.goal_id; })[0] : null;
+    api('/api/quiz/' + encodeURIComponent(quiz.id) + '/attempt', { method: 'POST', body: {
+      answers: r.answers, seconds: v.minutes * 60, group: !!v.group, with_whom: v.group ? v.with_whom : null,
+      learning_goal: v.learning_goal || (goal ? goal.text : ''), goal_id: v.goal_id || null,
+      reflection_learned: v.reflection_learned, reflection_practice: v.reflection_practice, reflection_next: v.reflection_next
+    } }).then(function (res) {
+      qz.attempts = qz.attempts || {};
+      qz.attempts[quiz.id] = { quiz_id: quiz.id, score: res.score, total: res.total, entry_id: res.entry_id };
+      r.saving = false;
+      r.saved = res;
+      saveRun();
+      if (res.cpd_year === st.year || !st.entries) loadYear();
+      renderQuizCard();
+      if (qz.run === r) rerenderLog(quiz, r);
+    }).catch(function (err) {
+      r.saving = false;
+      if (err.status === 409 && err.data && err.data.entry_id) {
+        qz.attempts = qz.attempts || {};
+        qz.attempts[quiz.id] = { quiz_id: quiz.id, score: err.data.score, total: err.data.total, entry_id: err.data.entry_id };
+        renderQuizCard();
+      } else if (err.status === 401) {
+        render();
+      } else {
+        r.error = err.message;
+      }
+      if (qz.run === r && $('quiz-log')) rerenderLog(quiz, r);
+    });
+  }
+
   /* ── Account view ───────────────────────────────────── */
 
   function renderAccount() {
@@ -1355,7 +1868,7 @@
     });
     $('btn-signout').addEventListener('click', function () {
       api('/auth/logout', { method: 'POST' }).catch(function () {}).then(function () {
-        st.user = null; st.summary = st.entries = st.goals = null;
+        st.user = null; st.summary = st.entries = st.goals = null; qz.attempts = null;
         dropLogged();
         render();
       });

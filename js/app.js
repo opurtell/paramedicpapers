@@ -163,16 +163,17 @@
   var TABS = ['home', 'feed', 'weekly', 'podcast', 'saved'];
   /* Sub-views: full pages that belong to a tab. The tab stays highlighted
      and the header shows a back button to it. */
-  var PARENT = { brief: 'weekly' };
+  var PARENT = { brief: 'weekly', quiz: 'weekly' };
   /* Views reached from the mobile "More" menu (CPD beta). While one shows,
      the More tab is highlighted; they're top-level, so no back button. */
   var MENU = { saved: 1, cpd: 1, account: 1 };
-  var BETA_VIEWS = ['cpd', 'account'];
-  var VIEWS = TABS.concat(Object.keys(PARENT), BETA_VIEWS);
-  var TITLES = { home: 'Paramedic Papers', feed: 'Research feed', weekly: 'Weekly', podcast: 'Podcast', saved: 'Saved', brief: 'PD brief', cpd: 'CPD', account: 'Account' };
+  /* Beta-only views; the PD quiz (#quiz, #quiz=<id>) ships with them. */
+  var BETA_VIEWS = ['cpd', 'account', 'quiz'];
+  var VIEWS = TABS.concat(Object.keys(PARENT), BETA_VIEWS.filter(function (v) { return !PARENT[v]; }));
+  var TITLES = { home: 'Paramedic Papers', feed: 'Research feed', weekly: 'Weekly', podcast: 'Podcast', saved: 'Saved', brief: 'PD brief', quiz: 'PD quiz', cpd: 'CPD', account: 'Account' };
   /* On desktop the sidebar carries the wordmark, so the content header
      names the view instead of the app. */
-  var TITLES_WIDE = { home: 'Today', feed: 'Research feed', weekly: 'Weekly digest', podcast: 'Podcast', saved: 'Saved papers', brief: 'PD brief', cpd: 'CPD tracker', account: 'Account' };
+  var TITLES_WIDE = { home: 'Today', feed: 'Research feed', weekly: 'Weekly digest', podcast: 'Podcast', saved: 'Saved papers', brief: 'PD brief', quiz: 'PD quiz', cpd: 'CPD tracker', account: 'Account' };
 
   /* Beta: the 5th mobile tab becomes "More", which opens the menu sheet
      (js/cpd.js); the sidebar gains CPD and the account chip. */
@@ -223,9 +224,10 @@
     return location.origin + location.pathname + '#paper=' + encodeURIComponent(id);
   }
 
-  /* "#account?login=failed&reason=…" → "account" (js/cpd.js reads the rest). */
+  /* "#account?login=failed&reason=…" → "account", "#quiz=2026-10-14" →
+     "quiz" (js/cpd.js reads the rest). */
   function tabFromHash() {
-    var h = (location.hash || '').replace('#', '').split('?')[0];
+    var h = (location.hash || '').replace('#', '').split('?')[0].split('=')[0];
     if (BETA_VIEWS.indexOf(h) !== -1 && !cpdBeta) return 'home';
     return VIEWS.indexOf(h) !== -1 ? h : 'home';
   }
@@ -367,7 +369,7 @@
       text = state.brief ? state.brief.span : 'The email, online';
     } else if (state.tab === 'podcast') {
       text = state.episodes.length ? state.episodes.length + ' episodes' : 'Daily audio roundup';
-    } else if (hooks.kicker && (state.tab === 'cpd' || state.tab === 'account')) {
+    } else if (hooks.kicker && (state.tab === 'cpd' || state.tab === 'account' || state.tab === 'quiz')) {
       text = hooks.kicker(state.tab);
     } else {
       text = savedPapers().length + ' papers kept';
