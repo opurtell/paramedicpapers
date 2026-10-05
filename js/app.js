@@ -52,7 +52,7 @@
   }
 
   /* Hooks js/cpd.js fills in; app.js calls them if present. */
-  var hooks = { openMenu: null, kicker: null, onShow: null, onRender: [] };
+  var hooks = { openMenu: null, kicker: null, onShow: null, onRender: [], paperAct: null, logPaper: null };
 
   /* The small surface js/cpd.js uses, so it doesn't reach into this file. */
   window.PP = {
@@ -63,6 +63,9 @@
     ico: function (n, c) { return ico(n, c); },
     isWide: isWide,
     savedCount: function () { return savedPapers().length; },
+    paperById: function (id) { return paperById(id); },
+    hasData: function () { return !!state.data; },
+    renderPapers: function () { renderPaperLists(); },
     hooks: hooks,
     renderKicker: function () { renderKicker(); }
   };
@@ -1200,6 +1203,8 @@
         '<button class="act' + (saved ? ' is-saved' : '') + '" data-save="' + esc(p.id) + '" type="button" aria-pressed="' + saved + '">' +
           ico('saved') + '<span class="lbl">' + (saved ? 'Saved' : 'Save') + '</span>' +
         '</button>' +
+        /* "Log PD" (js/cpd.js, beta only). */
+        (hooks.paperAct ? hooks.paperAct(p) : '') +
       '</span></div>';
   }
 
@@ -1229,6 +1234,9 @@
     });
     root.querySelectorAll('[data-details]').forEach(function (btn) {
       btn.addEventListener('click', function () { toggleCard(btn.closest('article')); });
+    });
+    root.querySelectorAll('[data-log]').forEach(function (btn) {
+      btn.addEventListener('click', function () { if (hooks.logPaper) hooks.logPaper(btn.getAttribute('data-log')); });
     });
     root.querySelectorAll('[data-expand]').forEach(function (el) {
       el.addEventListener('click', function () {

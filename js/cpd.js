@@ -1,7 +1,8 @@
 /* ============================================================
    Paramedic Papers — CPD tracker (beta)
    Sign-in, the "More" menu, the CPD tab, manual PD entries, learning
-   goals, exports and the Account page. Talks to the API Worker at
+   goals, exports, the Account page, and "Log PD" on paper cards
+   (phase 2). Talks to the API Worker at
    api.paramedicpapers.com (repo: cpd/, plan: cpd/plan/phase-1).
    Uses only window.PP from app.js. Does nothing until /#cpd-beta has
    been visited in this browser.
@@ -16,6 +17,8 @@
   var API = (location.hostname === 'localhost' || location.hostname === '127.0.0.1')
     ? 'http://localhost:8787' : 'https://api.paramedicpapers.com';
   var DRAFT_KEY = 'pp:cpd-draft';
+  var PAPER_DRAFT_KEY = 'pp:cpd-paper:';   /* + paper id */
+  var RESUME_KEY = 'pp:cpd-resume';        /* paper id to reopen after sign-in */
 
   /* Copied from cpd/src/cpd.js — keep the two in step. */
   var ACTIVITY_TYPES = {
@@ -53,7 +56,8 @@
     filter: 'all',       /* all | interactive | reflect */
     showTable: false,
     deleting: false,
-    sheet: null          /* { type: 'menu' | 'entry' | 'goal', … } */
+    logged: null,        /* { paper_id: [{ id, minutes, activity_type }] } for the card badges */
+    sheet: null          /* { type: 'menu' | 'entry' | 'goal' | 'paper' | 'signin', … } */
   };
 
   var $ = function (id) { return document.getElementById(id); };
@@ -69,6 +73,9 @@
     if (tab === 'cpd' && st.user && !st.entries && !st.loading) loadYear();
   };
   PP.hooks.onRender.push(renderChrome);
+  PP.hooks.onRender.push(resumePaper);
+  PP.hooks.paperAct = paperActHTML;
+  PP.hooks.logPaper = logPaper;
 
   document.addEventListener('DOMContentLoaded', function () {
     $('sheet-backdrop').addEventListener('click', function () { closeSheet(true); });
@@ -86,6 +93,8 @@
       st.checked = true;
       st.apiDown = false;
       render();
+      resumePaper();
+      loadLogged();
       return loadYear();
     }).catch(function (err) {
       st.checked = true;
@@ -118,7 +127,8 @@
         var err = new Error(data.error || ('HTTP ' + r.status));
         err.status = r.status;
         err.field = data.field;
-        if (r.status === 401) { st.user = null; st.entries = st.summary = st.goals = null; }
+        err.data = data;
+        if (r.status === 401) { st.user = null; st.entries = st.summary = st.goals = null; dropLogged(); }
         throw err;
       });
     }, function (e) {
@@ -249,6 +259,7 @@
   function closeSheet(soft) {
     if (!st.sheet) return;
     if (!soft && st.sheet.type === 'entry') clearDraft();
+    if (!soft && st.sheet.type === 'paper') clearPaperDraft(st.sheet.paperId);
     st.sheet = null;
     $('sheet').hidden = true;
     $('sheet').innerHTML = '';
@@ -290,9 +301,10 @@
 
   /* ── shared bits ────────────────────────────────────── */
 
-  function signInHTML(lead) {
+  function signInHTML(lead, returnHash) {
+    var back = returnHash || '#' + (PP.state.tab || 'cpd');
     var buttons = st.providers.map(function (p) {
-      return '<a class="btn btn-provider" href="' + esc(API + '/auth/' + p + '?return=' + encodeURIComponent('#' + (PP.state.tab || 'cpd'))) + '">' +
+      return '<a class="btn btn-provider" href="' + esc(API + '/auth/' + p + '?return=' + encodeURIComponent(back)) + '">' +
         providerLogo(p) + 'Continue with ' + esc(PROVIDER_NAMES[p] || p) + '</a>';
     }).join('');
     return '<article class="panel signin">' +
@@ -549,11 +561,12 @@
 
   function entryRowHTML(e) {
     var type = ACTIVITY_TYPES[e.activity_type];
+    var paper = e.kind === 'paper';
     return '<button class="entry-row" data-entry="' + esc(e.id) + '" type="button">' +
       '<span class="entry-date">' + esc(niceDate(e.date)) + '</span>' +
       '<span class="entry-main">' +
-        '<span class="entry-title">' + esc(e.title) + '</span>' +
-        '<span class="entry-meta">' + esc(type ? type.label : e.activity_type) + ' · ' + dur(e.minutes) + '</span>' +
+        '<span class="entry-title">' + (paper ? ico('log', 'entry-ico') + '<span class="sr-only">Paper: </span>' : '') + esc(e.title) + '</span>' +
+        '<span class="entry-meta">' + esc(type ? type.label : e.activity_type) + (paper && e.paper_journal ? ' · ' + esc(e.paper_journal) : '') + ' · ' + dur(e.minutes) + '</span>' +
         '<span class="entry-tags">' +
           (e.interactive ? '<span class="pill pill-inter">Interactive</span>' : '') +
           (e.complete ? '' : '<span class="pill pill-warn">Needs reflection</span>') +
@@ -602,6 +615,7 @@
   function openEntry(id) {
     var existing = id ? st.entries.filter(function (e) { return e.id === id; })[0] : null;
     if (id && !existing) return;
+    if (existing && existing.kind === 'paper') { openPaper(existing.paper_id, existing.id); return; }
     var draft = readDraft();
     var restored = !!(draft && (draft.id || null) === (id || null) && draft.v);
     var v = restored ? draft.v : (existing ? {
@@ -751,7 +765,7 @@
   }
 
   function checkPII() {
-    var form = $('entry-form');
+    var form = $('entry-form') || $('paper-form');
     if (!form) return;
     var text = Array.prototype.map.call(form.querySelectorAll('input:not([type]), input[name], textarea'), function (f) {
       return f.type === 'date' || f.type === 'checkbox' ? '' : f.value;
@@ -802,6 +816,424 @@
     api('/api/entries/' + encodeURIComponent(s.id), { method: 'DELETE' })
       .then(function () { closeSheet(false); return loadYear(); })
       .catch(function (err) { s.error = err.message; s.confirmDelete = false; renderEntrySheet(); });
+  }
+
+  /* ── paper diary: "Log PD" on paper cards (plan phase 2) ── */
+
+  /* Typical reading time for the whole paper, by study type: an estimate
+     to start the stepper from, not a rule. Summary + abstract is 10 min. */
+  var READ_SUMMARY = 10;
+  var READ_MINUTES = {
+    'Case series': 20, 'Guideline / statement': 20, 'Other': 20,
+    'RCT': 30, 'Cohort': 30, 'Registry': 30, 'Case-control': 30, 'Cross-sectional': 30,
+    'Qualitative': 30, 'Simulation': 30, 'Modelling': 30,
+    'Systematic review': 45
+  };
+  var READ_MAX = 180;
+
+  function fullMinutes(p) { return (p && READ_MINUTES[p.studyType]) || 30; }
+
+  function loadLogged() {
+    if (!st.user) return Promise.resolve();
+    return api('/api/entries?paper_ids=1').then(function (r) {
+      var map = {};
+      r.papers.forEach(function (x) { (map[x.paper_id] = map[x.paper_id] || []).push(x); });
+      st.logged = map;
+      PP.renderPapers();
+    }).catch(function () {});
+  }
+
+  function dropLogged() {
+    if (!st.logged) return;
+    st.logged = null;
+    PP.renderPapers();
+  }
+
+  /* The reading entry first: that's the one the card's button opens. */
+  function loggedFor(paperId) {
+    var list = (st.logged && st.logged[paperId]) || [];
+    return list.slice().sort(function (a, b) { return (a.activity_type === 'reading' ? 0 : 1) - (b.activity_type === 'reading' ? 0 : 1); });
+  }
+
+  /* The card button, after Save (app.js footHTML). */
+  function paperActHTML(p) {
+    var list = loggedFor(p.id);
+    var mins = list.reduce(function (n, x) { return n + x.minutes; }, 0);
+    return '<button class="act act-log' + (list.length ? ' is-logged' : '') + '" data-log="' + esc(p.id) + '" type="button"' +
+      (list.length ? ' aria-label="Logged as PD, ' + esc(dur(mins)) + '. Edit"' : '') + '>' +
+      ico('log') + '<span class="lbl">' + (list.length ? 'Logged · ' + esc(dur(mins)) : 'Log PD') + '</span></button>';
+  }
+
+  function logPaper(paperId) {
+    if (!st.user) { openPaperSignIn(paperId); return; }
+    var first = loggedFor(paperId)[0];
+    openPaper(paperId, first ? first.id : null);
+  }
+
+  function openPaperSignIn(paperId, note) {
+    openSheet({ type: 'signin', paperId: paperId }, '');
+    var el = $('sheet');
+    el.innerHTML =
+      '<div class="sheet-grip" aria-hidden="true"></div>' +
+      '<div class="sheet-head"><h2 id="sheet-title" class="sr-only">Sign in</h2><span></span>' +
+        '<button class="icon-btn" data-close type="button" aria-label="Close">' + ico('plus', 'rot45') + '</button></div>' +
+      (note ? '<p class="notice notice-warn" role="alert">' + esc(note) + '</p>' : '') +
+      (!st.checked ? loadingHTML() : st.apiDown ? downHTML() : signInHTML('Log this paper toward your 30 CPD hours', '#paper=' + encodeURIComponent(paperId)));
+    el.querySelectorAll('[data-close]').forEach(function (b) { b.addEventListener('click', function () { closeSheet(true); }); });
+    el.querySelectorAll('.btn-provider').forEach(function (a) {
+      a.addEventListener('click', function () { try { sessionStorage.setItem(RESUME_KEY, paperId); } catch (e) {} });
+    });
+  }
+
+  /* Back from sign-in: reopen the paper sheet once both the user and
+     papers.json are loaded (either can arrive first). */
+  function resumePaper() {
+    var id;
+    try { id = sessionStorage.getItem(RESUME_KEY); } catch (e) { return; }
+    if (!id || !st.user || !PP.hasData()) return;
+    try { sessionStorage.removeItem(RESUME_KEY); } catch (e) {}
+    if (!st.logged) {
+      loadLogged().then(function () { logPaper(id); });
+      return;
+    }
+    logPaper(id);
+  }
+
+  function readPaperDraft(paperId) {
+    try { return JSON.parse(sessionStorage.getItem(PAPER_DRAFT_KEY + paperId) || 'null'); } catch (e) { return null; }
+  }
+  function writePaperDraft(paperId, d) {
+    try { sessionStorage.setItem(PAPER_DRAFT_KEY + paperId, JSON.stringify(d)); } catch (e) {}
+  }
+  function clearPaperDraft(paperId) {
+    try { sessionStorage.removeItem(PAPER_DRAFT_KEY + paperId); } catch (e) {}
+  }
+
+  /* The year's goals for the dropdown (the CPD tab may be showing another year). */
+  function goalsFor(year) {
+    if (st.year === year && st.goals) return Promise.resolve(st.goals);
+    return api('/api/goals?year=' + year).then(function (r) { return r.goals; });
+  }
+
+  /* entryId null → a new entry. opts.discussed starts it as journal club;
+     opts.notice shows a line at the top. */
+  function openPaper(paperId, entryId, opts) {
+    opts = opts || {};
+    var p = PP.paperById(paperId);
+    var cached = entryId && st.entries ? st.entries.filter(function (e) { return e.id === entryId; })[0] : null;
+    var getEntry = !entryId ? Promise.resolve(null) : cached ? Promise.resolve(cached) : api('/api/entries/' + encodeURIComponent(entryId));
+    openSheet({ type: 'paper', paperId: paperId, loading: true }, '<div class="sheet-grip" aria-hidden="true"></div>' + loadingHTML());
+    getEntry.then(function (e) {
+      if (!p && !e) throw new Error('That paper is no longer on the dashboard.');
+      var date = e ? e.date : todayISO();
+      return goalsFor(cpdYear(date)).then(function (goals) { return { e: e, goals: goals }; });
+    }).then(function (r) {
+      if (!st.sheet || st.sheet.paperId !== paperId) return;
+      var e = r.e;
+      var draft = readPaperDraft(paperId);
+      var restored = !!(draft && (draft.entryId || null) === (entryId || null) && draft.v);
+      var v = restored ? draft.v : e ? {
+        read: e.minutes === READ_SUMMARY ? 'summary' : e.minutes === fullMinutes(p) ? 'full' : '', minutes: e.minutes, date: e.date, interactive: e.interactive, with_whom: e.with_whom || '',
+        learning_goal: e.learning_goal || '', goal_id: e.goal_id || '',
+        reflection_learned: e.reflection_learned || '', reflection_practice: e.reflection_practice || '',
+        reflection_next: e.reflection_next || ''
+      } : {
+        read: 'summary', minutes: READ_SUMMARY, date: todayISO(), interactive: !!opts.discussed, with_whom: '',
+        learning_goal: (p && p.learningGoal) || '', goal_id: '',
+        reflection_learned: '', reflection_practice: '', reflection_next: ''
+      };
+      if (!restored) clearPaperDraft(paperId);
+      st.sheet = {
+        type: 'paper', paperId: paperId, entryId: entryId, entry: e, p: p, goals: r.goals,
+        v: v, restored: restored, notice: opts.notice || '', error: ''
+      };
+      renderPaperSheet();
+    }).catch(function (err) {
+      if (!st.sheet || st.sheet.paperId !== paperId) return;
+      if (err.status === 401) { openPaperSignIn(paperId, 'You’ve been signed out. Sign in again to log this paper.'); return; }
+      $('sheet').innerHTML = '<div class="sheet-grip" aria-hidden="true"></div><p class="notice notice-warn" role="alert">' + esc(err.message) + '</p>' +
+        '<div class="sheet-actions"><span class="spacer"></span><button class="btn" data-close type="button">Close</button></div>';
+      $('sheet').querySelector('[data-close]').addEventListener('click', function () { closeSheet(true); });
+    });
+  }
+
+  function paperHeadHTML(s) {
+    var p = s.p, e = s.entry;
+    var title = (p && (p.shortTitle || p.title)) || (e && e.title) || '';
+    var journal = (p && p.journal) || (e && e.paper_journal) || '';
+    var doi = (p && p.doi) || (e && e.paper_doi) || '';
+    var when = p && p.date ? niceDate(p.date, true) : '';
+    return '<div class="paper-sheet-head">' +
+      '<span class="panel-kicker panel-kicker-accent">' + (s.entryId ? 'Edit PD · paper' : 'Log PD · paper') + '</span>' +
+      '<h2 id="sheet-title">' + esc(title) + '</h2>' +
+      '<p class="paper-sheet-meta">' + esc([journal, when].filter(Boolean).join(' · ')) +
+        (doi ? ' · <a href="https://doi.org/' + esc(encodeURIComponent(doi).replace(/%2F/g, '/')) + '" target="_blank" rel="noopener">DOI</a>' : '') +
+        (s.entryId && p ? ' · <a href="#paper=' + esc(encodeURIComponent(p.id)) + '" data-close-soft>Read on the dashboard</a>' : '') +
+      '</p></div>';
+  }
+
+  function renderPaperSheet(focusName) {
+    var s = st.sheet, v = s.v, p = s.p;
+    var full = fullMinutes(p);
+    var suggested = p && p.learningGoal && v.learning_goal.trim() === p.learningGoal;
+    var activeGoals = s.goals.filter(function (g) { return g.status === 'active' || g.id === v.goal_id; });
+    var linked = v.goal_id ? activeGoals.filter(function (g) { return g.id === v.goal_id; })[0] : null;
+    var canSaveGoal = v.learning_goal.trim() && !activeGoals.some(function (g) { return g.text.trim() === v.learning_goal.trim(); });
+    var lim = { min: (+todayISO().slice(0, 4) - 6) + '-12-01', max: addDays(todayISO(), 1) };
+    var others = s.entryId ? loggedFor(s.paperId).filter(function (x) { return x.id !== s.entryId; }) : [];
+    var hasDiscussion = others.some(function (x) { return x.activity_type === 'journal_club'; });
+    var ph = placeholders(p);
+
+    if (s.done) { renderPaperDone(); return; }
+
+    $('sheet').innerHTML =
+      '<div class="sheet-grip" aria-hidden="true"></div>' +
+      '<div class="sheet-head sheet-head-top">' + paperHeadHTML(s) +
+        '<button class="icon-btn" data-close type="button" aria-label="Close">' + ico('plus', 'rot45') + '</button></div>' +
+      (s.notice ? '<p class="notice">' + esc(s.notice) + '</p>' : '') +
+      (s.restored ? '<p class="notice">Draft restored. <button class="link-inline" data-discard type="button">Discard it</button></p>' : '') +
+      '<form class="form" id="paper-form" novalidate>' +
+        '<fieldset><legend>How did you read it?</legend><div class="chips">' +
+          [['summary', 'Summary + abstract', READ_SUMMARY], ['full', 'Full paper', full]].map(function (o) {
+            var on = v.read === o[0];
+            return '<button class="chip' + (on ? ' is-on' : '') + '" data-read="' + o[0] + '" type="button" aria-pressed="' + on + '">' + o[1] + ' · ' + dur(o[2]) + '</button>';
+          }).join('') + '</div></fieldset>' +
+        '<div class="form-row">' +
+          '<div class="field"><span class="label">Reading time</span><div class="stepper">' +
+            '<span class="step"><button type="button" data-pstep="-5" aria-label="5 minutes less"' + (v.minutes <= 5 ? ' disabled' : '') + '>' + ico('minus') + '</button>' +
+            '<output aria-live="polite">' + esc(dur(v.minutes)) + '</output>' +
+            '<button type="button" data-pstep="5" aria-label="5 minutes more"' + (v.minutes >= READ_MAX ? ' disabled' : '') + '>' + ico('plus') + '</button></span>' +
+          '</div></div>' +
+          field('Date', '<input type="date" name="date" required value="' + esc(v.date) + '" min="' + lim.min + '" max="' + lim.max + '">') +
+        '</div>' +
+        '<p class="hint">Reading time only. Reflection doesn’t count toward the 30 hours.</p>' +
+        '<label class="switch-row"><input type="checkbox" name="interactive" role="switch"' + (v.interactive ? ' checked' : '') + '>' +
+          '<span class="switch" aria-hidden="true"></span><span><b>Discussed it with other practitioners?</b>' +
+          '<span class="hint">Logs it as journal club, which counts toward your 8 interactive hours.</span></span></label>' +
+        (v.interactive ? field('Who with? <span class="opt">roles, not names</span>', '<input name="with_whom" maxlength="200" value="' + esc(v.with_whom) + '" placeholder="e.g. crew partner, station journal club">') : '') +
+        '<fieldset><legend>Learning goal' + (suggested ? ' <span class="pill pill-inter">Suggested</span>' : '') + '</legend>' +
+          '<textarea name="learning_goal" rows="2" maxlength="4000" aria-label="Learning goal" placeholder="What did you want to get better at?">' + esc(v.learning_goal) + '</textarea>' +
+          (activeGoals.length ? '<label class="field"><span class="label">Link to one of my goals <span class="opt">optional</span></span>' +
+            '<select name="goal_id"><option value="">None</option>' + activeGoals.map(function (g) {
+              return '<option value="' + esc(g.id) + '"' + (g.id === v.goal_id ? ' selected' : '') + '>' + esc(g.text) + '</option>';
+            }).join('') + '</select></label>' : '') +
+          (canSaveGoal && !linked ? '<button class="link-btn" data-save-goal type="button"' + (s.savingGoal ? ' disabled' : '') + '>' + ico('plus') + 'Save as a goal for ' + esc(yearLabel(cpdYear(v.date))) + '</button>' : '') +
+        '</fieldset>' +
+        '<fieldset><legend>Reflection <span class="opt">needed for a complete entry</span></legend>' +
+          field('What did I learn?', '<textarea name="reflection_learned" rows="3" maxlength="4000" placeholder="' + esc(ph.learned) + '">' + esc(v.reflection_learned) + '</textarea>') +
+          field('How will this change or confirm my practice?', '<textarea name="reflection_practice" rows="3" maxlength="4000" placeholder="' + esc(ph.practice) + '">' + esc(v.reflection_practice) + '</textarea>') +
+          field('Anything to follow up? <span class="opt">optional</span>', '<textarea name="reflection_next" rows="2" maxlength="4000" placeholder="' + esc(ph.next) + '">' + esc(v.reflection_next) + '</textarea>') +
+        '</fieldset>' +
+        '<p class="notice notice-warn" id="pii-warn" hidden>That looks like it might identify a patient (a name, date of birth or record number). Please remove it.</p>' +
+        '<p class="fine">Don’t include patient-identifying details.</p>' +
+        (s.entryId && !v.interactive && !hasDiscussion
+          ? '<p class="fine">Discussed it later at journal club or with your crew? <button class="link-inline" data-log-discussion type="button">Log that separately</button></p>' : '') +
+        (s.error ? '<p class="notice notice-warn" role="alert">' + esc(s.error) + '</p>' : '') +
+        '<div class="sheet-actions">' +
+          (s.entryId ? (s.confirmDelete
+            ? '<button class="btn btn-danger" data-delete-yes type="button">Delete this entry</button><button class="btn" data-delete-no type="button">Keep</button>'
+            : '<button class="btn btn-quiet" data-delete type="button">Delete</button>') : '') +
+          (s.confirmDelete ? '' :
+            '<span class="spacer"></span>' +
+            '<button class="btn" data-close type="button">Cancel</button>' +
+            '<button class="btn btn-primary" type="submit"' + (s.saving ? ' disabled' : '') + '>' + (s.saving ? 'Saving…' : 'Save') + '</button>') +
+        '</div>' +
+      '</form>';
+
+    bindPaperSheet();
+    checkPII();
+    if (focusName) {
+      var f = $('sheet').querySelector('[name="' + focusName + '"]');
+      if (f) f.focus();
+    }
+  }
+
+  /* Static hints from the paper's own fields; no extra LLM call. */
+  function placeholders(p) {
+    p = p || {};
+    var clip = function (t, n) { t = String(t); return t.length > n ? t.slice(0, n - 1).replace(/\s+\S*$/, '') + '…' : t; };
+    return {
+      learned: p.design ? 'e.g. what a ' + clip(p.design.charAt(0).toLowerCase() + p.design.slice(1), 70) + ' found, and how far you trust it'
+        : 'e.g. the main finding, and how far you trust it',
+      practice: p.bottomLine ? 'e.g. what a “' + p.bottomLine.toLowerCase() + '” result means for your patients'
+        : 'e.g. whether it changes or confirms what you do on scene',
+      next: p.caveat ? 'e.g. whether the caveat matters where you work: ' + clip(p.caveat.charAt(0).toLowerCase() + p.caveat.slice(1), 80)
+        : 'e.g. the full paper, or what your guideline says'
+    };
+  }
+
+  function bindPaperSheet() {
+    var el = $('sheet'), s = st.sheet, form = $('paper-form');
+    el.querySelectorAll('[data-close]').forEach(function (b) { b.addEventListener('click', function () { closeSheet(false); }); });
+    el.querySelectorAll('[data-close-soft]').forEach(function (a) { a.addEventListener('click', function () { closeSheet(true); }); });
+    var discard = el.querySelector('[data-discard]');
+    if (discard) discard.addEventListener('click', function () { clearPaperDraft(s.paperId); closeSheet(false); openPaper(s.paperId, s.entryId); });
+
+    el.querySelectorAll('[data-read]').forEach(function (b) {
+      b.addEventListener('click', function () {
+        collectPaper();
+        s.v.read = b.getAttribute('data-read');
+        s.v.minutes = s.v.read === 'full' ? fullMinutes(s.p) : READ_SUMMARY;
+        savePaperDraft();
+        renderPaperSheet();
+      });
+    });
+    el.querySelectorAll('[data-pstep]').forEach(function (b) {
+      b.addEventListener('click', function () {
+        collectPaper();
+        var d = +b.getAttribute('data-pstep');
+        s.v.minutes = Math.max(5, Math.min(READ_MAX, s.v.minutes + d));
+        s.v.read = '';
+        savePaperDraft();
+        renderPaperSheet();
+        var again = $('sheet').querySelector('[data-pstep="' + d + '"]');
+        if (again && !again.disabled) again.focus();
+      });
+    });
+    var inter = form.querySelector('[name="interactive"]');
+    inter.addEventListener('change', function () { collectPaper(); savePaperDraft(); renderPaperSheet(inter.checked ? 'with_whom' : null); });
+    var goalSel = form.querySelector('[name="goal_id"]');
+    if (goalSel) goalSel.addEventListener('change', function () { collectPaper(); savePaperDraft(); renderPaperSheet(); });
+    var date = form.querySelector('[name="date"]');
+    date.addEventListener('change', function () {
+      /* A date in another registration year: that year's goals. */
+      collectPaper();
+      var y = cpdYear(s.v.date || todayISO());
+      goalsFor(y).then(function (g) {
+        if (st.sheet !== s) return;
+        s.goals = g;
+        if (s.v.goal_id && !g.some(function (x) { return x.id === s.v.goal_id; })) s.v.goal_id = '';
+        renderPaperSheet();
+      }).catch(function () {});
+    });
+    var saveGoal = el.querySelector('[data-save-goal]');
+    if (saveGoal) saveGoal.addEventListener('click', function () {
+      collectPaper();
+      s.savingGoal = true;
+      renderPaperSheet();
+      var year = cpdYear(s.v.date || todayISO());
+      api('/api/goals', { method: 'POST', body: { text: s.v.learning_goal.trim().slice(0, 300), cpd_year: year } }).then(function (g) {
+        s.savingGoal = false;
+        s.goals = s.goals.concat([g]);
+        if (st.year === year && st.goals && st.goals !== s.goals) st.goals = st.goals.concat([g]);
+        s.v.goal_id = g.id;
+        savePaperDraft();
+        if (st.sheet === s) renderPaperSheet();
+      }).catch(function (err) {
+        s.savingGoal = false;
+        s.error = err.message;
+        if (st.sheet === s) renderPaperSheet();
+      });
+    });
+    var disc = el.querySelector('[data-log-discussion]');
+    if (disc) disc.addEventListener('click', function () { closeSheet(true); openPaper(s.paperId, null, { discussed: true }); });
+
+    form.addEventListener('input', function () { collectPaper(); savePaperDraft(); checkPII(); });
+    form.addEventListener('submit', function (e) { e.preventDefault(); savePaper(); });
+
+    var del = el.querySelector('[data-delete]');
+    if (del) del.addEventListener('click', function () { collectPaper(); s.confirmDelete = true; renderPaperSheet(); });
+    var no = el.querySelector('[data-delete-no]');
+    if (no) no.addEventListener('click', function () { s.confirmDelete = false; renderPaperSheet(); });
+    var yes = el.querySelector('[data-delete-yes]');
+    if (yes) yes.addEventListener('click', deletePaperEntry);
+  }
+
+  function collectPaper() {
+    var form = $('paper-form'), v = st.sheet.v;
+    ['date', 'with_whom', 'learning_goal', 'goal_id', 'reflection_learned', 'reflection_practice', 'reflection_next'].forEach(function (n) {
+      var f = form.querySelector('[name="' + n + '"]');
+      if (f) v[n] = f.value;
+    });
+    v.interactive = form.querySelector('[name="interactive"]').checked;
+  }
+
+  function savePaperDraft() {
+    var s = st.sheet;
+    if (s && s.type === 'paper') writePaperDraft(s.paperId, { entryId: s.entryId || null, v: s.v });
+  }
+
+  function savePaper() {
+    var s = st.sheet;
+    collectPaper();
+    var v = s.v, p = s.p || {}, e = s.entry;
+    var problem = !v.date ? 'Add the date.'
+      : (v.interactive && !v.with_whom.trim()) ? 'Say who you discussed it with (roles, not names). That’s your audit evidence.'
+      : '';
+    if (problem) { s.error = problem; renderPaperSheet(); return; }
+
+    var body = {
+      activity_type: v.interactive ? 'journal_club' : 'reading',
+      date: v.date, minutes: v.minutes, interactive: !!v.interactive, with_whom: v.interactive ? v.with_whom : null,
+      learning_goal: v.learning_goal, goal_id: v.goal_id || null,
+      reflection_learned: v.reflection_learned, reflection_practice: v.reflection_practice, reflection_next: v.reflection_next
+    };
+    /* A non-paper activity type set elsewhere stays as it is. */
+    if (e && e.activity_type !== 'reading' && e.activity_type !== 'journal_club') delete body.activity_type;
+    if (!s.entryId) {
+      /* Evidence snapshot: the portfolio still reads right if the paper
+         ever leaves the dashboard. */
+      body.kind = 'paper';
+      body.paper_id = s.paperId;
+      body.title = String(p.title || p.shortTitle || s.paperId).slice(0, 200);
+      body.paper_doi = p.doi || null;
+      body.paper_journal = p.journal || null;
+    }
+    s.saving = true; s.error = '';
+    renderPaperSheet();
+    api(s.entryId ? '/api/entries/' + encodeURIComponent(s.entryId) : '/api/entries', { method: s.entryId ? 'PATCH' : 'POST', body: body })
+      .then(function (saved) {
+        clearPaperDraft(s.paperId);
+        loadLogged();
+        if (saved.cpd_year === st.year || !st.entries) loadYear();
+        if (st.sheet !== s) return;
+        s.saving = false;
+        s.done = saved;
+        renderPaperDone();
+      })
+      .catch(function (err) {
+        if (st.sheet !== s) return;
+        s.saving = false;
+        if (err.status === 409 && err.data && err.data.existing_id && !s.entryId) {
+          clearPaperDraft(s.paperId);
+          openPaper(s.paperId, err.data.existing_id, { notice: 'You’ve already logged this paper' + (v.interactive ? ' as journal club' : '') + '. Here’s that entry.' });
+          return;
+        }
+        if (err.status === 401) { render(); openPaperSignIn(s.paperId, 'You’ve been signed out. Your draft is kept: sign in again to save it.'); return; }
+        s.error = err.message;
+        renderPaperSheet();
+      });
+  }
+
+  function renderPaperDone() {
+    var s = st.sheet, e = s.done;
+    $('sheet').innerHTML =
+      '<div class="sheet-grip" aria-hidden="true"></div>' +
+      '<div class="paper-done">' +
+        '<span class="done-ico">' + ico('check') + '</span>' +
+        '<h2 id="sheet-title">' + (s.entryId ? 'Saved' : 'Logged') + ' · ' + esc(dur(e.minutes)) + '</h2>' +
+        '<p class="panel-lead">' + (e.complete
+          ? 'It counts toward ' + esc(yearLabel(e.cpd_year)) + (e.interactive ? ', including your interactive hours.' : '.')
+          : 'Saved. Add a reflection later to complete it. It’s listed under “Needs reflection” on your CPD tab.') + '</p>' +
+      '</div>' +
+      '<div class="sheet-actions"><span class="spacer"></span>' +
+        '<button class="btn" data-go-cpd type="button">Open CPD</button>' +
+        '<button class="btn btn-primary" data-close type="button" autofocus>Done</button></div>';
+    var el = $('sheet');
+    el.querySelector('[data-close]').addEventListener('click', function () { closeSheet(true); });
+    el.querySelector('[data-close]').focus();
+    el.querySelector('[data-go-cpd]').addEventListener('click', function () {
+      closeSheet(true);
+      if (st.year !== e.cpd_year) { st.year = e.cpd_year; st.summary = st.entries = st.goals = null; loadYear(); }
+      PP.setTab('cpd');
+    });
+  }
+
+  function deletePaperEntry() {
+    var s = st.sheet;
+    api('/api/entries/' + encodeURIComponent(s.entryId), { method: 'DELETE' })
+      .then(function () { closeSheet(false); loadLogged(); return loadYear(); })
+      .catch(function (err) { s.error = err.message; s.confirmDelete = false; renderPaperSheet(); });
   }
 
   /* ── goal sheet ─────────────────────────────────────── */
@@ -924,6 +1356,7 @@
     $('btn-signout').addEventListener('click', function () {
       api('/auth/logout', { method: 'POST' }).catch(function () {}).then(function () {
         st.user = null; st.summary = st.entries = st.goals = null;
+        dropLogged();
         render();
       });
     });
@@ -938,6 +1371,7 @@
         api('/api/me', { method: 'DELETE', body: { confirm: 'DELETE' } }).then(function () {
           clearDraft();
           st.user = null; st.summary = st.entries = st.goals = null; st.deleting = false;
+          dropLogged();
           render();
         }).catch(function (err) {
           $('delete-error').textContent = err.message;
