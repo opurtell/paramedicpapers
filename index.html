@@ -23,7 +23,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=18">
+  <link rel="stylesheet" href="css/style.css?v=19">
   <link rel="icon" type="image/png" sizes="32x32" href="icon-32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="icon-16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
@@ -80,7 +80,7 @@
       <button class="nav-item" data-tab="weekly" type="button"><svg class="hi ico" aria-hidden="true"><use href="#hi-weekly"/></svg>Weekly</button>
       <button class="nav-item" data-tab="podcast" type="button"><svg class="hi ico" aria-hidden="true"><use href="#hi-podcast"/></svg>Podcast</button>
       <button class="nav-item" data-tab="saved" type="button"><svg class="hi ico" aria-hidden="true"><use href="#hi-saved"/></svg>Saved<span class="nav-pill nav-pill-warm" id="nav-count-saved" hidden></span></button>
-      <button class="nav-item" data-tab="cpd" data-cpd-beta type="button" hidden><svg class="hi ico" aria-hidden="true"><use href="#hi-cpd"/></svg>CPD<span class="nav-pill" id="nav-cpd-hours" hidden></span></button>
+      <button class="nav-item" data-tab="cpd" data-cpd type="button" hidden><svg class="hi ico" aria-hidden="true"><use href="#hi-cpd"/></svg>CPD<span class="nav-pill" id="nav-cpd-hours" hidden></span></button>
     </nav>
 
     <div class="scan-window">
@@ -92,8 +92,8 @@
       </div>
     </div>
 
-    <!-- Account chip (CPD beta): avatar initial + name, or "Sign in". -->
-    <button class="account-chip" id="account-chip" data-tab="account" data-cpd-beta type="button" hidden>
+    <!-- Account chip (CPD tracker): avatar initial + name, or "Sign in". -->
+    <button class="account-chip" id="account-chip" data-tab="account" data-cpd type="button" hidden>
       <span class="avatar" id="account-chip-avatar" aria-hidden="true"><svg class="hi" aria-hidden="true"><use href="#hi-user"/></svg></span>
       <span class="account-chip-text"><span class="account-chip-name" id="account-chip-name">Sign in</span><span class="account-chip-sub" id="account-chip-sub">Track your CPD</span></span>
     </button>
@@ -145,6 +145,8 @@
            mobile stacking order is unchanged; on desktop they become the
            sticky right rail and the left reading column. -->
       <div class="home-rail">
+      <!-- CPD tracker launch card: signed-out visitors only, dismissible (js/cpd.js). -->
+      <div class="cpd-promo" id="cpd-promo" hidden></div>
       <article class="panel" id="daily-tldr-panel">
         <div class="panel-head">
           <span class="panel-kicker panel-kicker-accent" id="daily-tldr-kicker">Today's TLDR</span>
@@ -218,7 +220,7 @@
     <section class="page" id="page-weekly" hidden>
       <!-- Latest PD brief (data/pd-brief.json, pushed by greg's
            send-newsletter.py). Hidden until that file loads. -->
-      <!-- PD quiz (beta; js/cpd.js fills it from data/quizzes/index.json). -->
+      <!-- PD quiz (js/cpd.js fills it from data/quizzes/index.json). -->
       <div class="quiz-slot" id="quiz-slot" hidden></div>
       <a class="brief-card" id="brief-card" href="#brief" hidden>
         <span class="panel-kicker panel-kicker-accent">PD brief · the email, online</span>
@@ -283,17 +285,17 @@
       </div>
     </section>
 
-    <!-- ── PD QUIZ (beta; sub-view of Weekly, #quiz / #quiz=<id>; js/cpd.js) ── -->
+    <!-- ── PD QUIZ (sub-view of Weekly, #quiz / #quiz=<id>; js/cpd.js) ── -->
     <section class="page" id="page-quiz" hidden>
       <div id="quiz-body"></div>
     </section>
 
-    <!-- ── CPD (beta; js/cpd.js) ─────────────────────────────── -->
+    <!-- ── CPD (js/cpd.js) ──────────────────────────────────── -->
     <section class="page" id="page-cpd" hidden>
       <div id="cpd-body"></div>
     </section>
 
-    <!-- ── ACCOUNT (beta; js/cpd.js) ───────────────────────── -->
+    <!-- ── ACCOUNT (js/cpd.js) ──────────────────────────────── -->
     <section class="page" id="page-account" hidden>
       <div id="account-body"></div>
     </section>
@@ -333,7 +335,7 @@
   <div class="sheet-backdrop" id="sheet-backdrop" hidden></div>
   <div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="sheet-title" hidden></div>
 
-  <script src="js/app.js?v=21"></script>
-  <script src="js/cpd.js?v=4"></script>
+  <script src="js/app.js?v=22"></script>
+  <script src="js/cpd.js?v=5"></script>
 </body>
 </html>

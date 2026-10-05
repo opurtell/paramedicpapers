@@ -36,20 +36,12 @@
 
   var $ = function (id) { return document.getElementById(id); };
 
-  /* CPD tracker beta (js/cpd.js). Visiting /#cpd-beta turns it on for this
-     browser; until then the menu, tabs and sidebar are unchanged. Phase 4
-     of cpd/plan removes the flag. */
-  var BETA_KEY = 'pp:cpd-beta';
-  var cpdBeta = readBeta();
-  function readBeta() {
-    try {
-      if (location.hash === '#cpd-beta') {
-        localStorage.setItem(BETA_KEY, '1');
-        history.replaceState(null, '', location.pathname + location.search + '#cpd');
-      }
-      return localStorage.getItem(BETA_KEY) === '1';
-    } catch (e) { return location.hash === '#cpd-beta'; }
+  /* The CPD tracker (js/cpd.js) was behind /#cpd-beta until it launched
+     (cpd/plan phase 4, Oct 2026). Old beta links land on the CPD tab. */
+  if (location.hash === '#cpd-beta') {
+    try { history.replaceState(null, '', location.pathname + location.search + '#cpd'); } catch (e) {}
   }
+  try { localStorage.removeItem('pp:cpd-beta'); } catch (e) {}
 
   /* Hooks js/cpd.js fills in; app.js calls them if present. */
   var hooks = { openMenu: null, kicker: null, onShow: null, onRender: [], paperAct: null, logPaper: null };
@@ -57,7 +49,6 @@
   /* The small surface js/cpd.js uses, so it doesn't reach into this file. */
   window.PP = {
     state: state,
-    beta: function () { return cpdBeta; },
     setTab: function (t, silent) { setTab(t, silent); },
     esc: function (s) { return esc(s); },
     ico: function (n, c) { return ico(n, c); },
@@ -73,7 +64,7 @@
   document.addEventListener('DOMContentLoaded', init);
 
   async function init() {
-    if (cpdBeta) enableMoreTab();
+    enableMoreTab();
     bindTabs();
     bindHome();
     bindFeed();
@@ -164,25 +155,25 @@
   /* Sub-views: full pages that belong to a tab. The tab stays highlighted
      and the header shows a back button to it. */
   var PARENT = { brief: 'weekly', quiz: 'weekly' };
-  /* Views reached from the mobile "More" menu (CPD beta). While one shows,
-     the More tab is highlighted; they're top-level, so no back button. */
+  /* Views reached from the mobile "More" menu. While one shows, the More
+     tab is highlighted; they're top-level, so no back button. */
   var MENU = { saved: 1, cpd: 1, account: 1 };
-  /* Beta-only views; the PD quiz (#quiz, #quiz=<id>) ships with them. */
-  var BETA_VIEWS = ['cpd', 'account', 'quiz'];
-  var VIEWS = TABS.concat(Object.keys(PARENT), BETA_VIEWS.filter(function (v) { return !PARENT[v]; }));
+  var VIEWS = TABS.concat(Object.keys(PARENT), ['cpd', 'account']);
   var TITLES = { home: 'Paramedic Papers', feed: 'Research feed', weekly: 'Weekly', podcast: 'Podcast', saved: 'Saved', brief: 'PD brief', quiz: 'PD quiz', cpd: 'CPD', account: 'Account' };
   /* On desktop the sidebar carries the wordmark, so the content header
      names the view instead of the app. */
   var TITLES_WIDE = { home: 'Today', feed: 'Research feed', weekly: 'Weekly digest', podcast: 'Podcast', saved: 'Saved papers', brief: 'PD brief', quiz: 'PD quiz', cpd: 'CPD tracker', account: 'Account' };
 
-  /* Beta: the 5th mobile tab becomes "More", which opens the menu sheet
-     (js/cpd.js); the sidebar gains CPD and the account chip. */
+  /* The 5th mobile tab becomes "More", which opens the menu sheet
+     (js/cpd.js); the sidebar gains CPD and the account chip. Done here
+     rather than in the HTML so the site keeps a Saved tab if cpd.js
+     fails to load. */
   function enableMoreTab() {
     var tab = document.querySelector('.tabbar [data-tab="saved"]');
     tab.setAttribute('data-tab', 'more');
     tab.setAttribute('aria-haspopup', 'dialog');
     tab.innerHTML = ico('menu', 'ico') + 'More';
-    document.querySelectorAll('[data-cpd-beta]').forEach(function (el) { el.hidden = false; });
+    document.querySelectorAll('[data-cpd]').forEach(function (el) { el.hidden = false; });
   }
 
   /* Shareable paper links: #paper=<encoded id> opens the feed with that
@@ -228,7 +219,6 @@
      "quiz" (js/cpd.js reads the rest). */
   function tabFromHash() {
     var h = (location.hash || '').replace('#', '').split('?')[0].split('=')[0];
-    if (BETA_VIEWS.indexOf(h) !== -1 && !cpdBeta) return 'home';
     return VIEWS.indexOf(h) !== -1 ? h : 'home';
   }
 
@@ -240,11 +230,14 @@
   }
 
   function setTab(tab, silent) {
-    if (tab === 'more') { if (hooks.openMenu) hooks.openMenu(); return; }
+    if (tab === 'more') {
+      if (hooks.openMenu) { hooks.openMenu(); return; }
+      tab = 'saved';  /* cpd.js didn't load: More falls back to Saved */
+    }
     state.tab = tab;
     VIEWS.forEach(function (t) { $('page-' + t).hidden = (t !== tab); });
     var navTab = PARENT[tab] || tab;
-    var inMenu = !!(cpdBeta && MENU[tab]);
+    var inMenu = !!MENU[tab];
     document.querySelectorAll('[data-tab]').forEach(function (btn) {
       var t = btn.getAttribute('data-tab');
       btn.classList.toggle('is-on', t === navTab || (t === 'more' && inMenu));
@@ -1205,7 +1198,7 @@
         '<button class="act' + (saved ? ' is-saved' : '') + '" data-save="' + esc(p.id) + '" type="button" aria-pressed="' + saved + '">' +
           ico('saved') + '<span class="lbl">' + (saved ? 'Saved' : 'Save') + '</span>' +
         '</button>' +
-        /* "Log PD" (js/cpd.js, beta only). */
+        /* "Log PD" (js/cpd.js). */
         (hooks.paperAct ? hooks.paperAct(p) : '') +
       '</span></div>';
   }

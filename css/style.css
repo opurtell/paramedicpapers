@@ -765,8 +765,8 @@ body.has-player main {
 
 
 /* ==========================================================
-   CPD tracker (beta, js/cpd.js): More menu, sheets, CPD and
-   Account views, sidebar account chip.
+   CPD tracker (js/cpd.js): More menu, sheets, CPD and
+   Account views, sidebar account chip, home launch card.
    ========================================================== */
 
 .sr-only {
@@ -1031,7 +1031,7 @@ body.has-sheet { overflow: hidden; }
 .act-log { display: inline-flex; align-items: center; gap: 4px; }
 /* Five actions don't fit beside the journal on a phone: let the actions
    drop to their own line instead of squeezing the meta. Only when Log PD
-   is there, so the public (non-beta) card is unchanged. */
+   is there, so a card without it is unchanged. */
 .paper-foot:has(.act-log) { flex-wrap: wrap; row-gap: 6px; }
 .paper-foot:has(.act-log) .paper-meta { flex: 1 1 150px; min-width: 0; }
 .paper-foot:has(.act-log) .paper-acts { flex-wrap: wrap; justify-content: flex-end; row-gap: 6px; }
@@ -1051,7 +1051,7 @@ body.has-sheet { overflow: hidden; }
 .done-ico .hi { width: 22px; height: 22px; stroke-width: 2; }
 .entry-title .entry-ico { width: 14px; height: 14px; color: var(--accent); vertical-align: -2px; margin-right: 5px; }
 
-/* ── PD quiz (beta; js/cpd.js, plan phase 3) ──────────── */
+/* ── PD quiz (js/cpd.js, plan phase 3) ───────────────── */
 .quiz-slot { display: flex; flex-direction: column; gap: 6px; }
 .quiz-card .panel-kicker { display: inline-flex; align-items: center; gap: 5px; }
 .quiz-done { display: inline-flex; align-items: center; gap: 4px; font-weight: 600; color: var(--good); }
@@ -1157,3 +1157,27 @@ body.has-sheet { overflow: hidden; }
 .quiz-row:hover { background: #F9F8F5; color: var(--ink); }
 .quiz-row-main { flex: 1; display: flex; flex-direction: column; gap: 2px; min-width: 0; }
 .quiz-row-title { font-family: var(--serif); font-size: 17px; font-weight: 600; }
+
+/* ── CPD launch card on Home (signed out, dismissible) ── */
+.cpd-promo {
+  display: flex; align-items: center; gap: 4px;
+  padding: 4px 6px 4px 14px; border-radius: 12px;
+  background: var(--accent-lo); border: 1px solid #D6E2F5;
+}
+.cpd-promo[hidden] { display: none; }
+.cpd-promo-link {
+  flex: 1; min-width: 0; display: flex; align-items: center; gap: 9px;
+  min-height: 40px; font-size: 13.5px; line-height: 1.35; color: var(--ink); text-decoration: none;
+}
+.cpd-promo-link:hover { color: var(--accent); }
+.cpd-promo-link .hi { width: 13px; height: 13px; color: var(--accent); }
+.cpd-promo-new {
+  flex: none; font-family: var(--mono); font-size: 10px; letter-spacing: .12em;
+  text-transform: uppercase; color: var(--accent);
+}
+.cpd-promo-close {
+  flex: none; display: grid; place-items: center; width: 36px; height: 36px;
+  background: none; border: 0; border-radius: 8px; cursor: pointer; color: var(--muted);
+}
+.cpd-promo-close:hover { color: var(--ink); background: rgba(20,23,26,.05); }
+.cpd-promo-close .hi { width: 16px; height: 16px; }

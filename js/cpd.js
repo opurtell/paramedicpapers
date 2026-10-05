@@ -1,24 +1,25 @@
 /* ============================================================
-   Paramedic Papers — CPD tracker (beta)
+   Paramedic Papers — CPD tracker
    Sign-in, the "More" menu, the CPD tab, manual PD entries, learning
    goals, exports, the Account page, "Log PD" on paper cards
    (phase 2) and the PD quiz (phase 3). Talks to the API Worker at
    api.paramedicpapers.com (repo: cpd/, plan: cpd/plan/phase-1).
-   Uses only window.PP from app.js. Does nothing until /#cpd-beta has
-   been visited in this browser.
+   Uses only window.PP from app.js. Behind /#cpd-beta until the
+   launch (plan phase 4, Oct 2026).
    ============================================================ */
 
 (function () {
   'use strict';
 
   var PP = window.PP;
-  if (!PP || !PP.beta()) return;
+  if (!PP) return;
 
   var API = (location.hostname === 'localhost' || location.hostname === '127.0.0.1')
     ? 'http://localhost:8787' : 'https://api.paramedicpapers.com';
   var DRAFT_KEY = 'pp:cpd-draft';
   var PAPER_DRAFT_KEY = 'pp:cpd-paper:';   /* + paper id */
   var RESUME_KEY = 'pp:cpd-resume';        /* paper id to reopen after sign-in */
+  var PROMO_KEY = 'pp:cpd-promo-closed';   /* the home launch card was dismissed */
 
   /* Copied from cpd/src/cpd.js — keep the two in step. */
   var ACTIVITY_TYPES = {
@@ -251,7 +252,30 @@
     if (tab === 'account') renderAccount();
     if (tab === 'quiz') renderQuiz();
     renderQuizCard();
+    renderPromo();
     PP.renderKicker();
+  }
+
+  /* Home: a one-line launch card for signed-out visitors, until dismissed.
+     Waits for /api/me so signed-in users never see it flash. */
+  function renderPromo() {
+    var el = $('cpd-promo');
+    if (!el) return;
+    var closed = false;
+    try { closed = localStorage.getItem(PROMO_KEY) === '1'; } catch (e) {}
+    var show = st.checked && !st.user && !st.apiDown && !closed;
+    el.hidden = !show;
+    if (!show) { el.innerHTML = ''; return; }
+    if (el.firstChild) return;
+    el.innerHTML =
+      '<a class="cpd-promo-link" href="#cpd"><span class="cpd-promo-new">New</span>' +
+        '<span>Track your CPD hours, log papers, and take the PD quiz</span>' + ico('arrow') + '</a>' +
+      '<button class="cpd-promo-close" type="button" aria-label="Dismiss">' + ico('x') + '</button>';
+    el.querySelector('.cpd-promo-close').addEventListener('click', function () {
+      try { localStorage.setItem(PROMO_KEY, '1'); } catch (e) {}
+      el.hidden = true;
+      el.innerHTML = '';
+    });
   }
 
   /* ── sheets (menu, entry form, goal form) ───────────── */
@@ -321,7 +345,7 @@
         providerLogo(p) + 'Continue with ' + esc(PROVIDER_NAMES[p] || p) + '</a>';
     }).join('');
     return '<article class="panel signin">' +
-      '<span class="panel-kicker panel-kicker-accent">CPD tracker · beta</span>' +
+      '<span class="panel-kicker panel-kicker-accent">CPD tracker</span>' +
       '<h2 class="signin-title">' + esc(lead) + '</h2>' +
       '<p class="panel-lead">Log your PD as you go, see your hours against the Paramedicine Board’s 30 h (8 h interactive), and export a portfolio you can hand to an auditor. Free, no ads.</p>' +
       loginErrorHTML() +
@@ -1482,7 +1506,7 @@
     slot.innerHTML =
       '<a class="brief-card quiz-card" href="#quiz">' +
         '<span class="panel-kicker panel-kicker-accent">' + ico('quiz') + 'PD quiz · ' + esc(q.span) + '</span>' +
-        '<span class="brief-card-title">' + q.count + ' questions on this period’s papers</span>' +
+        '<span class="brief-card-title">' + esc(q.count) + ' questions on this period’s papers</span>' +
         '<span class="brief-card-lead">' + (a
           ? '<span class="quiz-done">' + ico('check') + 'Done · ' + a.score + '/' + a.total + '</span> Logged to your CPD.'
           : 'About ' + esc(q.est_minutes) + ' minutes. Each answer comes with why. Signed in, it’s logged as CPD.') + '</span>' +
@@ -1538,7 +1562,7 @@
   function renderIntro(root, quiz) {
     var a = attemptFor(quiz.id);
     root.innerHTML =
-      quizHeadHTML(quiz, quiz.questions.length + ' questions · about ' + quiz.est_minutes + ' min') +
+      quizHeadHTML(quiz, quiz.questions.length + ' questions · about ' + quiz.est_minutes + ' min') +  /* esc'd in quizHeadHTML */
       '<p class="quiz-lead">One question per paper from this period’s PD brief. Each answer shows why, with a link to the paper.</p>' +
       (a ? '<p class="notice">' + ico('check') + ' You’ve logged this quiz: ' + a.score + '/' + a.total + '. A retake isn’t logged again.</p>' : '') +
       '<button class="btn btn-primary btn-add" data-quiz-start type="button">' + (a ? 'Take it again' : 'Start') + '</button>' +
