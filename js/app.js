@@ -192,7 +192,8 @@
       $('sidebar-foot').appendChild(acts);
       row.appendChild(search);
     } else {
-      feed.insertBefore(search, feed.firstChild);
+      // Below the newsletter banner, which stays first on the feed page.
+      feed.insertBefore(search, feed.querySelector('.newsletter-banner').nextSibling);
       row.appendChild(acts);
     }
     applyPanelDefaults();

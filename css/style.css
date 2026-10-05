@@ -334,6 +334,28 @@ a.act { color: var(--accent); }
 }
 .wide-btn:hover { background: #F4F2ED; }
 
+/* ── newsletter sign-up links ─────────────────────────── */
+.newsletter-link {
+  display: inline-flex; align-items: center; justify-content: center; gap: 5px;
+  margin-top: -6px; padding: 4px 0; text-align: center;
+  font-size: 13px; color: var(--accent);
+}
+.newsletter-link .hi, .newsletter-cta .hi { width: 13px; height: 13px; }
+.newsletter-link:hover { text-decoration: underline; }
+.newsletter-banner {
+  display: flex; align-items: center; justify-content: space-between; gap: 14px;
+  padding: 12px 16px; border-radius: 12px;
+  background: var(--accent-lo); color: var(--ink-2);
+  font-size: 13.5px; line-height: 1.45;
+}
+.newsletter-banner b { color: var(--ink); font-weight: 600; }
+.newsletter-cta {
+  display: inline-flex; align-items: center; gap: 5px; flex: none;
+  font-family: var(--mono); font-size: 10.5px; letter-spacing: .1em;
+  text-transform: uppercase; color: var(--accent); white-space: nowrap;
+}
+.newsletter-banner:hover .newsletter-cta { text-decoration: underline; }
+
 /* ── tab bar (iOS-standard 49px + safe area) ──────────── */
 .tabbar {
   position: fixed; left: 0; right: 0; bottom: 0; z-index: 30;
