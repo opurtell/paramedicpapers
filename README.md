@@ -137,12 +137,34 @@ The Saved tab persists to `localStorage` under the key `pp:saved`. The value is 
 
 Keys are paper `id`s. This shape must not be changed to an array — `JSON.stringify` drops string-keyed properties on arrays, which would break persistence.
 
+## CPD tracker (`js/cpd.js`)
+
+Sign-in, the CPD log, goals, exports, **Log PD** on paper cards and the PD
+quiz. All personal data goes to the API Worker at
+`https://api.paramedicpapers.com` (code in the sibling `cpd/` folder, not in
+this public repo); `js/cpd.js` only talks to it with `credentials: 'include'`.
+On `localhost` it uses `http://localhost:8787` (`npm run dev` in `cpd/`).
+
+- Views: `#cpd`, `#account` (reached from the mobile **More** tab or the
+  sidebar), `#quiz` / `#quiz=<date>` / `#quiz=all` (sub-view of Weekly).
+  `#account?login=failed&reason=…` is where a failed sign-in lands.
+- `app.js` exposes a small `window.PP` surface and `PP.hooks`; `cpd.js` uses
+  nothing else. If `cpd.js` fails to load, the More tab falls back to Saved.
+- Home shows a dismissible launch card to signed-out visitors
+  (`pp:cpd-promo-closed`). Other `localStorage` keys: `pp:cpd-draft`,
+  `pp:cpd-paper:<id>`, `pp:cpd-resume`.
+- `privacy.html`: what the tracker stores, backups (30 days), export/delete.
+- Data pushed by greg: `learningGoal` on each paper in `papers.json`,
+  `data/quiz.json` (latest), `data/quizzes/<date>.json` + `index.json`.
+- Until the launch (Oct 2026) the tracker was behind `/#cpd-beta`; that hash
+  now redirects to `#cpd`.
+
 ## Architecture
 
 - **Vanilla HTML/CSS/JS** — no frameworks, no build step
 - Client-side rendering from `papers.json`
-- Four views: Home, Feed, Weekly, Saved
-- View state in the URL hash (`#home`, `#feed`, `#weekly`, `#saved`)
+- Views: Home, Feed, Weekly (+ PD brief, PD quiz), Podcast, Saved, CPD, Account
+- View state in the URL hash (`#home`, `#feed`, `#weekly`, `#podcast`, `#saved`, `#cpd`, …)
 - Client-side full-text search across title, journal, and summary
 - Save/Remove on every card, persisted to `localStorage`
 - TLDR bullets link to their paper card (switches to Feed with the paper pinned)
