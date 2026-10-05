@@ -423,7 +423,7 @@
     var now = cpdYear(todayISO());
     var left = st.year === now ? daysLeft(st.year) : 0;
     return '<div class="year-bar">' +
-      '<button class="icon-btn" data-year="-1" type="button" aria-label="Previous year"' + (st.year <= now - 5 ? ' disabled' : '') + '>' + ico('chev-left') + '</button>' +
+      '<button class="icon-btn" data-year="-1" type="button" aria-label="Previous year"' + (st.year <= now - 6 ? ' disabled' : '') + '>' + ico('chev-left') + '</button>' +
       '<div class="year-text"><span class="year-range">1 Dec ' + (st.year - 1) + ' – 30 Nov ' + st.year + '</span>' +
       '<span class="year-sub">' + (st.year === now ? left + ' days left' : (st.year < now ? 'Past year' : 'Next year')) + '</span></div>' +
       '<button class="icon-btn" data-year="1" type="button" aria-label="Next year"' + (st.year >= now ? ' disabled' : '') + '>' + ico('chev-right') + '</button>' +
