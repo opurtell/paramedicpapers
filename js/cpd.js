@@ -301,6 +301,10 @@
       '<p class="panel-lead">Log your PD as you go, see your hours against the Paramedicine Board’s 30 h (8 h interactive), and export a portfolio you can hand to an auditor. Free, no ads.</p>' +
       loginErrorHTML() +
       '<div class="signin-btns">' + buttons + '</div>' +
+      /* Microsoft's "Need admin approval" page doesn't always send people
+         back here, so warn before they try (plan README, decision 4). */
+      (st.providers.indexOf('microsoft') !== -1
+        ? '<p class="hint">Work or health service Microsoft accounts are often blocked from outside apps. If yours is, use a personal Microsoft or Google account.</p>' : '') +
       '<p class="fine">We keep your name, email and what you log — nothing else. <a href="privacy.html">Privacy</a></p>' +
       '</article>';
   }
