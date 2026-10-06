@@ -1,0 +1,120 @@
+{
+ "id": "2026-10-06",
+ "span": "29 Sep – 6 Oct 2026",
+ "created": "2026-10-06T00:01:38Z",
+ "est_minutes": 10,
+ "questions": [
+  {
+   "paper_id": "42784740",
+   "short_title": "NRB + nasal cannula inferior to flush-rate preoxygenation",
+   "topic": "Airway & ventilation",
+   "question": "How did combined NRB plus nasal cannula preoxygenation (25 L/min each) compare with flush-rate NRB?",
+   "options": [
+    "It was inferior to flush rate",
+    "It matched flush rate at 15 L/min",
+    "It was equivalent to flush rate",
+    "It outperformed flush rate"
+   ],
+   "answer": 0,
+   "explanation": "Expired oxygen reached 75% versus 85% with flush-rate NRB, a difference that failed the non-inferiority margin. The findings come from healthy volunteers, so real emergency patients may differ."
+  },
+  {
+   "paper_id": "42772891",
+   "short_title": "Post-OHCA outcomes at Victorian Heart Hospital",
+   "topic": "Cardiac arrest",
+   "question": "A colleague says the 50.4% survival to discharge at the dedicated cardiac hospital proves post-arrest patients do better there than under usual state-wide pathways. What's the best response?",
+   "options": [
+    "The survival figure matches national averages, so triage practices can stay unchanged",
+    "The cohort was small and highly selected, so the figure isn't comparable to population-based OHCA outcomes",
+    "Survival dropped sharply because a quarter of patients needed interhospital transfer for cardiac causes",
+    "The benefit only applies to patients with non-shockable rhythms"
+   ],
+   "answer": 1,
+   "explanation": "The high survival came from a small, single tertiary cohort with favourable features like 92.6% prehospital ROSC and mostly shockable rhythms. The authors specifically warn against reading it as superiority over population-based outcomes, and transfers were mostly for non-cardiac causes."
+  },
+  {
+   "paper_id": "42776990",
+   "short_title": "Paediatric non-transport re-call rates low",
+   "topic": "Paediatrics",
+   "question": "Among US children not transported after a paediatric 9-1-1 call, what proportion had a repeat call with transport to ED within 72 hours?",
+   "options": [
+    "About 40%",
+    "About 11%",
+    "About 16%",
+    "About 1%"
+   ],
+   "answer": 3,
+   "explanation": "Only 1% of non-transported children were re-called and transported within 72 hours, and hospitalisation or death at re-call was rare. The data are retrospective US records with only one third hospital-linked, so they don't directly reflect Australian practice."
+  },
+  {
+   "paper_id": "42806575",
+   "short_title": "Stroke care gaps for First Nations patients",
+   "topic": "Stroke & neuro",
+   "question": "According to the linked-data study of EMS-attended stroke and TIA patients, where was the main disparity in care for First Nations patients?",
+   "options": [
+    "Adjusted 30- and 90-day mortality was clearly higher",
+    "They were less likely to be transported to hospital at all",
+    "Paramedics were less likely to perform a stroke assessment",
+    "Stroke or TIA was less often identified at the emergency call"
+   ],
+   "answer": 2,
+   "explanation": "Call-taker identification rates were comparable, but First Nations patients received a paramedic stroke assessment less often (58.2% vs 67.3%) and were taken less often to thrombectomy-capable hospitals. Adjusted mortality was actually similar, and the Victorian data with only 287 First Nations patients limit precision and generalisability."
+  },
+  {
+   "paper_id": "42809516",
+   "short_title": "What OHCA care is worth paying for",
+   "topic": "Cardiac arrest",
+   "question": "According to this systematic review of economic evaluations, which prehospital OHCA strategy was found to be more cost-effective than its alternative?",
+   "options": [
+    "Delivering ECPR in the prehospital setting rather than waiting until arrival in hospital",
+    "Early defibrillation rather than EMT-delivered ALS",
+    "Paramedic-led ALS rather than emergency physician-led ALS",
+    "Transporting every arrest patient rather than applying termination-of-resuscitation rules"
+   ],
+   "answer": 0,
+   "explanation": "Prehospital ECPR came out more cost-effective than in-hospital ECPR strategies, with ICERs of AU$27,323 to $44,000 per QALY. Keep in mind the studies spanned different health systems and funding models, so the results don't transfer neatly to any one context."
+  },
+  {
+   "paper_id": "42809474",
+   "short_title": "Nearly half of paediatric doses off-protocol",
+   "topic": "Paediatrics",
+   "question": "What pattern of off-protocol paediatric drug dosing did the registry study find?",
+   "options": [
+    "Mostly underdoses, worst with ondansetron and intranasal doses",
+    "Mostly overdoses driven by weight estimation error",
+    "Evenly split over and underdoses across all routes",
+    "Mostly underdoses confined to intramuscular fentanyl"
+   ],
+   "answer": 0,
+   "explanation": "Of the 46.4% of doses deviating at least 20% from protocol, 79.9% were underdoses, with ondansetron and the intranasal route the biggest drivers. Weight estimation error showed no association, and registry flags may capture deliberate titration within permitted ranges."
+  },
+  {
+   "paper_id": "42817920",
+   "short_title": "Methoxyflurane feasibility confirmed in Canada",
+   "topic": "Pain & sedation",
+   "question": "A colleague cites the Canadian methoxyflurane feasibility study as proof the drug causes large pain reductions in trauma patients. What is the main problem with that claim?",
+   "options": [
+    "Protocol compliance was too low for the results to be reliable",
+    "Pain scores were only documented in about half of treated patients",
+    "The study had no comparator arm, so the improvement can't be attributed to methoxyflurane alone",
+    "Most patients had severe side effects that inflated their reported pain scores"
+   ],
+   "answer": 2,
+   "explanation": "It was a single-arm feasibility study with no control group, so natural pain course or other care could explain the fall from 8/10 to 5/10. Compliance was actually high at 95%, side effects were mostly mild, and pain scores were documented in 90% of treated patients."
+  },
+  {
+   "paper_id": "42809487",
+   "short_title": "Two-thirds of stroke patients delay seeking care",
+   "topic": "Stroke & neuro",
+   "question": "In the pooled analysis of prehospital delay before ischaemic stroke care, roughly what proportion of patients delayed seeking help?",
+   "options": [
+    "About 1 in 4",
+    "About 9 in 10",
+    "About 1 in 3",
+    "About 2 in 3"
+   ],
+   "answer": 3,
+   "explanation": "The pooled incidence of prehospital delay was 67.7%, so about two-thirds of patients delayed. The evidence was low certainty and dominated by Asian studies with inconsistent definitions of delay, so apply the figure with caution locally."
+  }
+ ]
+}
