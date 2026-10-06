@@ -23,7 +23,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=19">
+  <link rel="stylesheet" href="css/style.css?v=20">
   <link rel="icon" type="image/png" sizes="32x32" href="icon-32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="icon-16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
@@ -220,14 +220,17 @@
     <section class="page" id="page-weekly" hidden>
       <!-- Latest PD brief (data/pd-brief.json, pushed by greg's
            send-newsletter.py). Hidden until that file loads. -->
-      <!-- PD quiz (js/cpd.js fills it from data/quizzes/index.json). -->
-      <div class="quiz-slot" id="quiz-slot" hidden></div>
-      <a class="brief-card" id="brief-card" href="#brief" hidden>
-        <span class="panel-kicker panel-kicker-accent">PD brief · the email, online</span>
-        <span class="brief-card-title" id="brief-card-title"></span>
-        <span class="brief-card-lead" id="brief-card-lead"></span>
-        <span class="brief-card-go">Read the latest issue <svg class="hi" aria-hidden="true"><use href="#hi-arrow"/></svg></span>
-      </a>
+      <!-- The quiz belongs to the brief, so it sits under it, inset
+           (js/cpd.js fills it from data/quizzes/index.json). -->
+      <div class="brief-group">
+        <a class="brief-card" id="brief-card" href="#brief" hidden>
+          <span class="panel-kicker panel-kicker-accent">PD brief · the email, online</span>
+          <span class="brief-card-title" id="brief-card-title"></span>
+          <span class="brief-card-lead" id="brief-card-lead"></span>
+          <span class="brief-card-go">Read the latest issue <svg class="hi" aria-hidden="true"><use href="#hi-arrow"/></svg></span>
+        </a>
+        <div class="quiz-slot" id="quiz-slot" hidden></div>
+      </div>
       <article class="panel">
         <div class="panel-head">
           <span class="panel-kicker panel-kicker-accent">Week's TLDR</span>
@@ -336,6 +339,6 @@
   <div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="sheet-title" hidden></div>
 
   <script src="js/app.js?v=22"></script>
-  <script src="js/cpd.js?v=5"></script>
+  <script src="js/cpd.js?v=6"></script>
 </body>
 </html>

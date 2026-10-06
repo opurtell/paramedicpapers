@@ -1052,7 +1052,23 @@ body.has-sheet { overflow: hidden; }
 .entry-title .entry-ico { width: 14px; height: 14px; color: var(--accent); vertical-align: -2px; margin-right: 5px; }
 
 /* ── PD quiz (js/cpd.js, plan phase 3) ───────────────── */
-.quiz-slot { display: flex; flex-direction: column; gap: 6px; }
+.brief-group { display: flex; flex-direction: column; }
+.brief-group:has(> [hidden]:first-child + [hidden]) { display: none; }
+/* Inset under the brief card, joined to it by an elbow line. */
+.quiz-slot {
+  position: relative; display: flex; flex-direction: column; gap: 6px;
+  margin: 8px 0 0 26px;
+}
+.quiz-slot[hidden] { display: none; }
+.quiz-slot::before {
+  content: ""; position: absolute; left: -15px; top: -9px; width: 15px; height: 40px;
+  border-left: 2px solid var(--accent-in); border-bottom: 2px solid var(--accent-in);
+  border-bottom-left-radius: 9px;
+}
+.brief-card[hidden] + .quiz-slot { margin: 0; }
+.brief-card[hidden] + .quiz-slot::before { content: none; }
+.quiz-card { padding: 13px 16px; background: var(--surface); border-color: #D6E2F5; }
+.quiz-card .brief-card-title { font-size: 17px; }
 .quiz-card .panel-kicker { display: inline-flex; align-items: center; gap: 5px; }
 .quiz-done { display: inline-flex; align-items: center; gap: 4px; font-weight: 600; color: var(--good); }
 .quiz-done .hi { width: 14px; height: 14px; stroke-width: 2.2; }

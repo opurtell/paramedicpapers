@@ -1505,8 +1505,8 @@
     var a = attemptFor(q.id);
     slot.innerHTML =
       '<a class="brief-card quiz-card" href="#quiz">' +
-        '<span class="panel-kicker panel-kicker-accent">' + ico('quiz') + 'PD quiz · ' + esc(q.span) + '</span>' +
-        '<span class="brief-card-title">' + esc(q.count) + ' questions on this period’s papers</span>' +
+        '<span class="panel-kicker panel-kicker-accent">' + ico('quiz') + 'Quiz on this brief · ' + esc(q.span) + '</span>' +
+        '<span class="brief-card-title">' + esc(q.count) + ' questions on the brief’s papers</span>' +
         '<span class="brief-card-lead">' + (a
           ? '<span class="quiz-done">' + ico('check') + 'Done · ' + a.score + '/' + a.total + '</span> Logged to your CPD.'
           : 'About ' + esc(q.est_minutes) + ' minutes. Each answer comes with why. Signed in, it’s logged as CPD.') + '</span>' +
