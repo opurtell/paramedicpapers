@@ -24,6 +24,20 @@
     </itunes:category>
     <itunes:explicit>false</itunes:explicit>
     <item>
+      <title>Paramedic Papers Daily — 7 October 2026</title>
+      <link>https://paramedicpapers.com/#episode=2026-10-07</link>
+      <description>4 papers: Cancer markedly raises OHCA risk; Prehospital RSI: what makes it hard; EMS dashboards: thin crisis evidence; On-site CT slashes event transports</description>
+      <content:encoded><![CDATA[<p>4 papers: Cancer markedly raises OHCA risk; Prehospital RSI: what makes it hard; EMS dashboards: thin crisis evidence; On-site CT slashes event transports</p><p>Papers in this episode:</p><ul><li><a href="https://doi.org/10.1016/j.jacadv.2026.103293">Cancer markedly raises OHCA risk <em>(JACC. Advances)</em></a></li><li><a href="https://doi.org/10.4102/hsag.v31i0.3281">Prehospital RSI: what makes it hard <em>(Health SA = SA Gesondheid)</em></a></li><li><a href="https://doi.org/10.22037/aaem.v14i1.3096">EMS dashboards: thin crisis evidence <em>(Archives of Academic Emergency Medicine)</em></a></li><li><a href="https://doi.org/10.1186/s12873-026-01785-4">On-site CT slashes event transports <em>(BMC Emergency Medicine)</em></a></li></ul><p><a href="https://paramedicpapers.com/#episode=2026-10-07">Show notes and transcript</a></p>]]></content:encoded>
+      <pubDate>Wed, 07 Oct 2026 07:35:59 +1100</pubDate>
+      <guid isPermaLink="false">https://audio.paramedicpapers.com/ep-2026-10-07.mp3</guid>
+      <enclosure url="https://audio.paramedicpapers.com/ep-2026-10-07.mp3" length="1073804" type="audio/mpeg"/>
+      <itunes:duration>268</itunes:duration>
+      <itunes:summary>4 papers: Cancer markedly raises OHCA risk; Prehospital RSI: what makes it hard; EMS dashboards: thin crisis evidence; On-site CT slashes event transports</itunes:summary>
+      <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
+      <itunes:episodeType>full</itunes:episodeType>
+      <podcast:transcript url="https://audio.paramedicpapers.com/ep-2026-10-07.txt" type="text/plain" language="en-au"/>
+    </item>
+    <item>
       <title>Paramedic Papers Daily — 6 October 2026</title>
       <link>https://paramedicpapers.com/#episode=2026-10-06</link>
       <description>2 papers: Stroke triage tools: cost-effective, hard to sustain; How rare is a prehospital birth? Very</description>
@@ -401,19 +415,6 @@
       <enclosure url="https://audio.paramedicpapers.com/ep-2026-09-01.mp3" length="207117" type="audio/mpeg"/>
       <itunes:duration>51</itunes:duration>
       <itunes:summary>1 paper: SPEAR device safety warning</itunes:summary>
-      <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
-      <itunes:episodeType>full</itunes:episodeType>
-    </item>
-    <item>
-      <title>Paramedic Papers Daily — 30 August 2026</title>
-      <link>https://paramedicpapers.com/#episode=2026-08-30</link>
-      <description>1 paper: blunt vs penetrating trauma physiology</description>
-      <content:encoded><![CDATA[<p>1 paper: blunt vs penetrating trauma physiology</p><p>Papers in this episode:</p><ul><li><a href="https://doi.org/10.1186/s13049-026-01683-5">Blunt versus penetrating trauma: differences in early physiology, coagulopathy, and outcomes in a Scandinavian trauma centre <em>(Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine)</em></a></li></ul><p><a href="https://paramedicpapers.com/#episode=2026-08-30">Show notes and transcript</a></p>]]></content:encoded>
-      <pubDate>Sun, 30 Aug 2026 07:32:12 +1000</pubDate>
-      <guid isPermaLink="false">https://opurtell.github.io/paramedicpapers/audio/ep-2026-08-30.mp3</guid>
-      <enclosure url="https://audio.paramedicpapers.com/ep-2026-08-30.mp3" length="276621" type="audio/mpeg"/>
-      <itunes:duration>69</itunes:duration>
-      <itunes:summary>1 paper: blunt vs penetrating trauma physiology</itunes:summary>
       <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
       <itunes:episodeType>full</itunes:episodeType>
     </item>
