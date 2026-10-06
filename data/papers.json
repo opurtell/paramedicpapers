@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-10-06T02:54:11Z",
-  "lastUpdatedSydney": "2026-10-06 13:54 AEST",
-  "lastUpdatedDate": "2026-10-06",
+  "lastUpdated": "2026-10-06T20:20:55Z",
+  "lastUpdatedSydney": "2026-10-07 07:20 AEDT",
+  "lastUpdatedDate": "2026-10-07",
   "featuredPapers": [
     {
       "id": "42809516",
@@ -1018,33 +1018,134 @@
     }
   ],
   "funFact": {
-    "category": "cardiac",
-    "fact": "Atrial fibrillation lets blood pool in the left atrial appendage, where it clots. The CHA2DS2-VASc score decides who needs anticoagulation — score 2 or more for men, 3 or more for women. Miss this and you're one embolic stroke away from a very bad day."
+    "category": "pharmacology",
+    "fact": "Ipratropium is an anticholinergic bronchodilator derived from atropine, but tweaked so it barely absorbs systemically. It relaxes airways without the tachycardia, dry mouth, and blurred vision. Pharmacology at its cleverest."
   },
   "tldr": {
-    "date": "2026-10-06",
-    "paperCount": 2,
-    "summary": "A quiet clinical day: a systematic review finds prehospital stroke triage tools generally cost-effective but hard to sustain, and a Danish cohort quantifies just how rarely crews attend an actual prehospital birth.",
+    "date": "2026-10-07",
+    "paperCount": 4,
+    "summary": "A quiet day for actionable evidence — the standout is a Swedish registry of nearly 4.5 million people showing cancer carries a 55% higher hazard of out-of-hospital cardiac arrest, strongest in the first year after diagnosis.",
     "highlights": [
       {
-        "id": "42829971",
-        "pmid": "42829971",
-        "doi": "10.1111/jep.70634",
-        "title": "Stroke triage tools: cost-effective, hard to sustain",
-        "journal": "Journal of Evaluation in Clinical Practice",
-        "note": "Of 6,491 screened studies, 31 were included (14 mobile stroke units, 13 telemedicine); positive cost-effectiveness was reported in 11 studies, but evidence on sustained implementation was limited and barriers included innovation complexity, role delineation, workflow compatibility, IT infrastructure and costs"
+        "id": "42832921",
+        "pmid": "42832921",
+        "doi": "10.1016/j.jacadv.2026.103293",
+        "title": "Cancer markedly raises OHCA risk",
+        "journal": "JACC. Advances",
+        "note": "55% higher hazard of OHCA with cancer (adjusted HR 1.55, 95% CI 1.50–1.60); roughly 6-fold short-term hazard with lung and neurological cancers, strongest within the first year after diagnosis"
       },
       {
-        "id": "42831496",
-        "pmid": "42831496",
-        "doi": "10.1111/aas.70351",
-        "title": "How rare is a prehospital birth? Very",
-        "journal": "Acta Anaesthesiologica Scandinavica",
-        "note": "3,543 dispatches (0.31%) were childbirth-related; ambulance staff assisted 310 out-of-hospital deliveries (0.03% of all missions) and performed delaying obstetric manoeuvres in 10 further complex cases"
+        "id": "42835989",
+        "pmid": "42835989",
+        "doi": "10.4102/hsag.v31i0.3281",
+        "title": "Prehospital RSI: what makes it hard",
+        "journal": "Health SA = SA Gesondheid",
+        "note": "Three themes: system-driven administrative demands and procedural complexity, resource and workforce constraints, and communication-related challenges and information gaps affecting clinical decision-making"
+      },
+      {
+        "id": "10.1186/s12873-026-01785-4",
+        "pmid": "",
+        "doi": "10.1186/s12873-026-01785-4",
+        "title": "On-site CT slashes event transports",
+        "journal": "BMC Emergency Medicine",
+        "note": "429 of 498 (86%) discharged on-site after imaging; 52 (10%) required hospital transport; 429 EMS transports and ~22,737 minutes of EMS deployment time avoided versus the pre-CT period"
+      },
+      {
+        "id": "42835713",
+        "pmid": "42835713",
+        "doi": "10.22037/aaem.v14i1.3096",
+        "title": "EMS dashboards: thin crisis evidence",
+        "journal": "Archives of Academic Emergency Medicine",
+        "note": "KPIs mapped to the Donabedian structure/process/outcome model with time-based indicators most frequent; 8 of 26 studies (31%) reported dashboards, all in routine operations, and only one study addressed crisis conditions (without a dashboard)"
       }
     ]
   },
   "dailyUpdates": [
+    {
+      "date": "2026-10-07",
+      "papers": [
+        {
+          "id": "42832921",
+          "title": "Increased Out-of-Hospital Cardiac Arrest Risk in Cancer: Evidence From 800,000 Patients and 3.7 Million Controls",
+          "journal": "JACC. Advances",
+          "date": "2026-10-07",
+          "pmid": "42832921",
+          "doi": "10.1016/j.jacadv.2026.103293",
+          "summary": "Swedish matched cohort of ~800,000 cancer patients and 3.7 million controls found cancer carried a 55% higher hazard of out-of-hospital cardiac arrest (aHR 1.55), with the greatest short-term excess in lung and neurological cancers.",
+          "relevance": "🟢 High — Built on national registers and it's epidemiological context rather than a treatment question, so it applies wherever Australian paramedics attend cardiac arrest.",
+          "pubDate": "2026-10-05",
+          "topic": "Cardiac arrest",
+          "studyType": "Cohort",
+          "design": "Population-based matched cohort",
+          "n": "~800,000 adults with cancer and 3.7 million matched controls",
+          "finding": "55% higher hazard of OHCA with cancer (adjusted HR 1.55, 95% CI 1.50–1.60); roughly 6-fold short-term hazard with lung and neurological cancers, strongest within the first year after diagnosis",
+          "caveat": "Register-based — no detail on arrest circumstances, resuscitation quality, or functional outcomes",
+          "bottomLine": "Context only",
+          "shortTitle": "Cancer markedly raises OHCA risk",
+          "learningGoal": "Recognise which cancer patients face heightened risk of out-of-hospital cardiac arrest, particularly around the time of diagnosis."
+        },
+        {
+          "id": "42835989",
+          "title": "Experiences of emergency care practitioners on pre-hospital rapid sequence intubation in South Africa",
+          "journal": "Health SA = SA Gesondheid",
+          "date": "2026-10-07",
+          "pmid": "42835989",
+          "doi": "10.4102/hsag.v31i0.3281",
+          "summary": "Qualitative focus-group study of 39 South African emergency care practitioners found pre-hospital RSI is hampered by system-driven administrative demands, resource and workforce constraints, and communication gaps affecting clinical decision-making.",
+          "relevance": "🟡 Medium — Drug-assisted intubation is an intensive care paramedic skill in most Australian services, and the human-factors themes are recognisable everywhere, but the resource-constrained South African setting limits direct comparison.",
+          "pubDate": "2026-09-29",
+          "topic": "Airway & ventilation",
+          "studyType": "Qualitative",
+          "design": "Descriptive qualitative (six focus groups)",
+          "n": "39 emergency care practitioners",
+          "finding": "Three themes: system-driven administrative demands and procedural complexity, resource and workforce constraints, and communication-related challenges and information gaps affecting clinical decision-making",
+          "caveat": "Single-country qualitative study — experiences may not generalise to better-resourced systems",
+          "bottomLine": "Context only",
+          "shortTitle": "Prehospital RSI: what makes it hard",
+          "learningGoal": "Understand how system demands, resource limits and communication gaps shape safe delivery of prehospital RSI in Australian practice."
+        },
+        {
+          "id": "10.1186/s12873-026-01785-4",
+          "title": "Impact of on-site mobile CT imaging on prehospital patient management during the Munich Oktoberfest: a retrospective observational before–after study at a mass gathering",
+          "journal": "BMC Emergency Medicine",
+          "date": "2026-10-07",
+          "pmid": "",
+          "doi": "10.1186/s12873-026-01785-4",
+          "summary": "Retrospective before–after study at the Munich Oktoberfest found an on-site mobile CT led to 429 of 498 imaged patients (86%) being treated and discharged on-site, avoiding an estimated 22,737 minutes of EMS deployment time.",
+          "relevance": "🔴 Low — On-site CT is an in-hospital tool deployed within a physician-staffed European mass-gathering medical model — nothing comparable operates in Australian ambulance practice.",
+          "pubDate": "2026-10-06",
+          "topic": "Operations & systems",
+          "studyType": "Cohort",
+          "design": "Retrospective observational before–after",
+          "n": "498 patients imaged on-site",
+          "finding": "429 of 498 (86%) discharged on-site after imaging; 52 (10%) required hospital transport; 429 EMS transports and ~22,737 minutes of EMS deployment time avoided versus the pre-CT period",
+          "caveat": "Retrospective design with a historical (2015–2019) comparator — case-mix and event differences could explain part of the effect",
+          "bottomLine": "Context only",
+          "shortTitle": "On-site CT slashes event transports",
+          "learningGoal": "Understand how on-site advanced imaging at mass gatherings can reduce unnecessary hospital transports and resource demands."
+        },
+        {
+          "id": "42835713",
+          "title": "Performance Indicators in Emergency Medical Services: A Scoping Review of Dashboard Applications in the Context of Crisis Management",
+          "journal": "Archives of Academic Emergency Medicine",
+          "date": "2026-10-07",
+          "pmid": "42835713",
+          "doi": "10.22037/aaem.v14i1.3096",
+          "summary": "Scoping review of 26 studies found EMS performance dashboards are used almost exclusively for routine operations — only one study addressed crisis conditions and it used no dashboard.",
+          "relevance": "🟡 Medium — Dashboard maturity varies across Australian services and the review shows the crisis-management evidence base is essentially empty, so this informs system-design discussions rather than current practice.",
+          "pubDate": "2026-09-07",
+          "topic": "Operations & systems",
+          "studyType": "Systematic review",
+          "design": "Scoping review (PRISMA-ScR)",
+          "n": "26 studies",
+          "finding": "KPIs mapped to the Donabedian structure/process/outcome model with time-based indicators most frequent; 8 of 26 studies (31%) reported dashboards, all in routine operations, and only one study addressed crisis conditions (without a dashboard)",
+          "caveat": "Scoping review without formal quality appraisal, drawing on a thin and largely non-crisis literature",
+          "bottomLine": "Context only",
+          "shortTitle": "EMS dashboards: thin crisis evidence",
+          "learningGoal": "Understand how performance dashboards in ambulance systems could support decision-making during major incidents and crises."
+        }
+      ]
+    },
     {
       "date": "2026-10-06",
       "papers": [
