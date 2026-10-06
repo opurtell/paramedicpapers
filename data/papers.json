@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-10-05T20:20:55Z",
-  "lastUpdatedSydney": "2026-10-06 07:20 AEST",
+  "lastUpdated": "2026-10-06T02:54:11Z",
+  "lastUpdatedSydney": "2026-10-06 13:54 AEST",
   "lastUpdatedDate": "2026-10-06",
   "featuredPapers": [
     {
@@ -46,26 +46,6 @@
       "learningGoal": "Update my approach to paediatric medication dosing, particularly intranasal and antiemetic administration, to reduce underdosing."
     },
     {
-      "id": "10.1016/j.resplu.2026.101488",
-      "title": "It takes two: development of simulation training for two-handed neonatal mask ventilation integrating a respiratory function monitor; a non-randomised before-and-after simulation study",
-      "journal": "Resuscitation Plus",
-      "date": "2026-09-28",
-      "pmid": "",
-      "doi": "10.1016/j.resplu.2026.101488",
-      "summary": "Before-and-after simulation study of a respiratory-function-monitor-guided two-handed neonatal PPV training package in 40 clinicians — the two-handed hold cut median facemask leak to 2.5% vs 27% one-handed before training, leak was low with both holds after training, and preference for two-handed ventilation rose from 27% to 50%.",
-      "relevance": "🟢 High — Two-handed mask hold for neonatal ventilation sits squarely in AP scope (CMG 5B Neonate Resuscitation), needs no equipment or formulary change; manikin-based evidence, but the technique takeaway is immediate.",
-      "featuredReason": "Two-handed mask hold for neonatal ventilation sits squarely in AP scope (CMG 5B Neonate Resuscitation), needs no equipment or formulary change; manikin-based evidence, but the technique takeaway is immediate.",
-      "topic": "Paediatrics",
-      "studyType": "Simulation",
-      "design": "Non-randomised before-and-after simulation study",
-      "n": "40 clinicians on a term manikin",
-      "finding": "Two-handed hold had lower mask leak before training (median 2.5% vs 27% one-handed, p<0.01); after training leak was low with both holds (2% vs 6%); preference for two-handed rose from 27% to 50%.",
-      "caveat": "Simulation on a manikin with non-randomised before-and-after design; clinician participants, not paramedics.",
-      "bottomLine": "Hypothesis-generating",
-      "shortTitle": "Two-handed neonatal mask ventilation training",
-      "learningGoal": "Refine my two-handed mask hold technique for neonatal resuscitation to minimise leak during ventilation."
-    },
-    {
       "id": "10.1080/10903127.2026.2674263",
       "title": "Use of double sequential external defibrillation in the United States before and after the DOSE VF randomized clinical trial",
       "journal": "Prehospital Emergency Care",
@@ -105,6 +85,26 @@
       "bottomLine": "Context only",
       "shortTitle": "EMS and ED disagree on paediatric asthma signs",
       "learningGoal": "Improve the reliability of my paediatric asthma severity assessment findings when handing over to receiving clinicians."
+    },
+    {
+      "id": "10.1016/j.resplu.2026.101488",
+      "title": "It takes two: development of simulation training for two-handed neonatal mask ventilation integrating a respiratory function monitor; a non-randomised before-and-after simulation study",
+      "journal": "Resuscitation Plus",
+      "date": "2026-09-28",
+      "pmid": "",
+      "doi": "10.1016/j.resplu.2026.101488",
+      "summary": "Before-and-after simulation study of a respiratory-function-monitor-guided two-handed neonatal PPV training package in 40 clinicians — the two-handed hold cut median facemask leak to 2.5% vs 27% one-handed before training, leak was low with both holds after training, and preference for two-handed ventilation rose from 27% to 50%.",
+      "relevance": "🟢 High — Two-handed mask hold for neonatal ventilation sits squarely in AP scope (CMG 5B Neonate Resuscitation), needs no equipment or formulary change; manikin-based evidence, but the technique takeaway is immediate.",
+      "featuredReason": "Two-handed mask hold for neonatal ventilation sits squarely in AP scope (CMG 5B Neonate Resuscitation), needs no equipment or formulary change; manikin-based evidence, but the technique takeaway is immediate.",
+      "topic": "Paediatrics",
+      "studyType": "Simulation",
+      "design": "Non-randomised before-and-after simulation study",
+      "n": "40 clinicians on a term manikin",
+      "finding": "Two-handed hold had lower mask leak before training (median 2.5% vs 27% one-handed, p<0.01); after training leak was low with both holds (2% vs 6%); preference for two-handed rose from 27% to 50%.",
+      "caveat": "Simulation on a manikin with non-randomised before-and-after design; clinician participants, not paramedics.",
+      "bottomLine": "Hypothesis-generating",
+      "shortTitle": "Two-handed neonatal mask ventilation training",
+      "learningGoal": "Refine my two-handed mask hold technique for neonatal resuscitation to minimise leak during ventilation."
     }
   ],
   "funFacts": [
@@ -1065,7 +1065,8 @@
           "finding": "Of 6,491 screened studies, 31 were included (14 mobile stroke units, 13 telemedicine); positive cost-effectiveness was reported in 11 studies, but evidence on sustained implementation was limited and barriers included innovation complexity, role delineation, workflow compatibility, IT infrastructure and costs",
           "caveat": "Narrative synthesis of heterogeneous study designs; only 13 of 31 studies reported health economic outcomes",
           "bottomLine": "Context only",
-          "shortTitle": "Stroke triage tools: cost-effective, hard to sustain"
+          "shortTitle": "Stroke triage tools: cost-effective, hard to sustain",
+          "learningGoal": "Understand the system factors that shape sustainable and cost-effective prehospital stroke triage."
         },
         {
           "id": "42831496",
@@ -1084,7 +1085,68 @@
           "finding": "3,543 dispatches (0.31%) were childbirth-related; ambulance staff assisted 310 out-of-hospital deliveries (0.03% of all missions) and performed delaying obstetric manoeuvres in 10 further complex cases",
           "caveat": "Single Danish region with manual record review; no maternal or neonatal outcomes beyond the EMS encounter",
           "bottomLine": "Context only",
-          "shortTitle": "How rare is a prehospital birth? Very"
+          "shortTitle": "How rare is a prehospital birth? Very",
+          "learningGoal": "Strengthen my readiness to manage an imminent prehospital birth given how rarely I attend one."
+        },
+        {
+          "id": "10.1177/27536386261492212",
+          "title": "‘These people don’t float into hospital’: Australian paramedic perspectives on pre-hospital neck of femur fracture care",
+          "journal": "Paramedicine",
+          "date": "2026-10-06",
+          "pmid": "",
+          "doi": "10.1177/27536386261492212",
+          "summary": "Australian exploratory qualitative study running eight online focus groups with 21 registered paramedics on suspected neck of femur fracture care — participants described managing these patients through diagnostic uncertainty, tacit knowledge, peer learning and contextual judgement in the absence of dedicated prehospital guidance, and called for clearer evidence-informed direction covering movement, dignity, communication and analgesia.",
+          "relevance": "🟢 High — Australian paramedics, Australian context, and suspected NOF fractures are a weekly presentation — the identified uncertainty and the call for dedicated guidance are directly actionable for any Australian service writing clinical practice guidelines",
+          "pubDate": "2026-09-29",
+          "topic": "Trauma",
+          "studyType": "Qualitative",
+          "design": "Exploratory qualitative study — eight online focus groups with 21 registered paramedics, framework-method analysis",
+          "n": "21 registered paramedics across 8 focus groups",
+          "finding": "Four themes: balancing rapid assessment with diagnostic uncertainty; managing immediate care amid competing priorities; the strengths and limits of the existing knowledge base; and a call for clearer, evidence-informed guidance — participants relied on tacit knowledge, peer learning and accumulated experience",
+          "caveat": "Qualitative perspectives from a self-selected survey sample; no patient outcomes measured",
+          "bottomLine": "Context only",
+          "shortTitle": "NOF fracture care runs on tacit knowledge",
+          "learningGoal": "Understand how tacit knowledge and evidence gaps shape my assessment and care decisions for suspected neck of femur fractures."
+        },
+        {
+          "id": "10.1136/openhrt-2026-004412",
+          "title": "Cardiac warning symptoms in paediatric out-of-hospital ventricular fibrillation cardiac arrest survivors",
+          "journal": "Open Heart",
+          "date": "2026-10-06",
+          "pmid": "",
+          "doi": "10.1136/openhrt-2026-004412",
+          "summary": "UK single-centre review of 58 consecutive paediatric out-of-hospital VF arrest survivors without a pre-existing diagnosis found 50.9% had reported cardiac symptoms beforehand — syncope in 23.6%, half the arrests during exertion — and of 13 children with prior syncope only three had sought medical attention and none had follow-up arranged, pointing to missed opportunities to diagnose inherited cardiac conditions before arrest.",
+          "relevance": "🟢 High — red-flag symptoms in children — exertional syncope in particular — are exactly what paramedics screen for, and this quantifies how often those warning signs slip through before a devastating presentation",
+          "pubDate": "2026-07",
+          "topic": "Cardiac arrest",
+          "studyType": "Case series",
+          "design": "Single-centre retrospective review of consecutive paediatric OHCA survivors at a UK tertiary referral centre (1996–2025)",
+          "n": "58 survivors of paediatric OHCA aged 0–18",
+          "finding": "50.9% had prior cardiac symptoms (syncope 23.6%); 50% of arrests occurred on exertion; 72.4% were later diagnosed with an inherited cardiac condition, most commonly hypertrophic cardiomyopathy; of 13 children with prior syncope only three sought medical attention and none had follow-up arranged",
+          "caveat": "Single tertiary centre, survivors only (so no data on children who died at first presentation), and symptom history via retrospective record review",
+          "bottomLine": "Practice prompt",
+          "shortTitle": "Paediatric OHCA: half had warning symptoms",
+          "learningGoal": "Strengthen my recognition of warning symptoms and exertional syncope as red flags for inherited cardiac conditions in children."
+        },
+        {
+          "id": "42832705",
+          "title": "Design, Facilitation, and Evaluation of Tabletop Exercises for Prehospital Mass Casualty Preparedness: Scoping Review",
+          "journal": "Interactive Journal of Medical Research",
+          "date": "2026-10-06",
+          "pmid": "42832705",
+          "doi": "10.2196/96228",
+          "summary": "Scoping review of 13 studies from 9 countries on tabletop exercises for prehospital mass casualty preparedness — it built a preliminary three-tier 'TTX Design Spectrum' typology and classified outcomes with the Kirkpatrick model (plus an applied-learning level), finding evaluation focused on participant learning with less assessment of applied performance or system outcomes.",
+          "relevance": "🟡 Medium — tabletop exercises are standard MCI preparedness across Australian services, so the design-and-evaluation framing is useful for anyone running them — but it won't change road practice",
+          "pubDate": "2026-10-05",
+          "topic": "Education & preparedness",
+          "studyType": "Scoping review",
+          "design": "Scoping review (PRISMA-ScR) of prehospital MCI tabletop exercises 2015–2026, outcomes classified by Kirkpatrick model",
+          "n": "13 studies from 9 countries",
+          "finding": "A preliminary three-tier 'TTX Design Spectrum' typology; most evaluation sat at Kirkpatrick levels 1–2 (participant learning), with an added level 2+ (applied learning) category — little assessment of applied performance or system outcomes",
+          "caveat": "Scoping review of a small, heterogeneous literature; no outcome-effectiveness conclusions possible",
+          "bottomLine": "Context only",
+          "shortTitle": "Tabletop MCI exercises: how they're run and measured",
+          "learningGoal": "Understand how exercise design and evaluation depth shape prehospital mass casualty preparedness in Australian services."
         }
       ]
     },
@@ -8305,86 +8367,93 @@
     }
   ],
   "weeklyTldr": {
-    "dateRange": "22 – 29 September 2026",
-    "summary": "Minithoracostomy matched chest drainage on scene time and had fewer recorded complications in a physician-led HEMS cohort — hypothesis-generating, not practice-changing.\nFlush-rate NRB remains the preoxygenation standard — adding a nasal cannula at 15–25 L/min was clearly inferior in healthy volunteers.\nAustralian audit of the Victorian Heart Hospital cardiac ED: 50.4% survival to discharge in a selected post-ROSC cohort, with a 24% interhospital transfer rate.\nOnly 1% of non-transported children re-called within 72 hours across 1.85 million US paediatric ambulance calls — deaths after non-transport were rare.",
+    "dateRange": "29 Sep – 6 Oct 2026",
+    "summary": "PreHEART-guided non-conveyance for chest pain was non-inferior to usual care in a 5170-patient RCT, with fewer 30-day ED presentations and lower costs\nVictorian linked data show First Nations stroke patients received less paramedic stroke assessment and less often reached thrombectomy-capable hospitals\nNearly half of prehospital paediatric medication doses deviated at least 20% from protocol — mostly underdoses, driven by ondansetron and the intranasal route\nHalf of paediatric OHCA survivors had cardiac warning symptoms before their arrest, and most children with prior syncope never got follow-up\nAustralian paramedics report managing suspected neck of femur fractures on tacit knowledge and experience, with no dedicated prehospital guidance",
     "highlights": [
       {
-        "text": "Minithoracostomy matched chest drainage on scene time and had fewer recorded complications in a physician-led HEMS cohort — hypothesis-generating, not practice-changing.",
-        "id": "42782255"
+        "text": "PreHEART-guided non-conveyance for chest pain was non-inferior to usual care in a 5170-patient RCT, with fewer 30-day ED presentations and lower costs",
+        "id": "42810856"
       },
       {
-        "text": "Flush-rate NRB remains the preoxygenation standard — adding a nasal cannula at 15–25 L/min was clearly inferior in healthy volunteers.",
-        "id": "42784740"
+        "text": "Victorian linked data show First Nations stroke patients received less paramedic stroke assessment and less often reached thrombectomy-capable hospitals",
+        "id": "42806575"
       },
       {
-        "text": "Australian audit of the Victorian Heart Hospital cardiac ED: 50.4% survival to discharge in a selected post-ROSC cohort, with a 24% interhospital transfer rate.",
-        "id": "42772891"
+        "text": "Nearly half of prehospital paediatric medication doses deviated at least 20% from protocol — mostly underdoses, driven by ondansetron and the intranasal route",
+        "id": "42809474"
       },
       {
-        "text": "Only 1% of non-transported children re-called within 72 hours across 1.85 million US paediatric ambulance calls — deaths after non-transport were rare.",
-        "id": "42776990"
+        "text": "Half of paediatric OHCA survivors had cardiac warning symptoms before their arrest, and most children with prior syncope never got follow-up",
+        "id": "10.1136/openhrt-2026-004412"
+      },
+      {
+        "text": "Australian paramedics report managing suspected neck of femur fractures on tacit knowledge and experience, with no dedicated prehospital guidance",
+        "id": "10.1177/27536386261492212"
       }
     ],
     "topPicks": [
       {
-        "id": "42782255",
-        "title": "Prehospital Minithoracostomy versus Chest Drainage for Emergency Pleural Decompression in Major Trauma",
-        "authors": "Serena Tomasino, Daniele Orso, Maria Grandesso, et al.",
-        "journal": "Prehospital Emergency Care",
-        "summary": "Retrospective physician-led HEMS cohort (94 trauma patients) comparing prehospital minithoracostomy with chest drainage — minithoracostomy carried no meaningful scene-time penalty and fewer recorded complications, but non-random allocation and few events make it hypothesis-generating only.",
-        "relevance": "🟡 Medium transferability — surgical pleural decompression isn't in the extracted ACTAS guidelines (CMG 17 covers needle decompression, ICP-flagged); would need a guideline change to adopt",
-        "pmid": "42782255",
-        "doi": "10.1080/10903127.2026.2739424",
-        "featuredReason": "Tension pneumothorax decompression is a problem crews face with far fewer tools than physician-led HEMS — this is the first direct head-to-head of the two techniques and it's honest about its limits.",
-        "topic": "Trauma",
-        "studyType": "Cohort",
-        "design": "Retrospective physician-led HEMS cohort with Bayesian analysis",
-        "n": "94 major trauma adults (66 minithoracostomy, 28 chest drainage)",
-        "finding": "Posterior median scene-time difference −5.9 minutes (95% CrI −13.8 to 1.7); recorded complications 0/50 evaluable minithoracostomy vs 6/10 evaluable chest drainage (risk difference −58.7 percentage points, 95% CrI −83.9 to −29.3); no clear survival differences at 1, 30 or 90 days.",
-        "caveat": "Non-randomised allocation by clinical judgment, complication ascertainment differed between groups, and very few events.",
+        "id": "42810856",
+        "title": "PreHEART score for emergency medical services triage of chest pain: a randomised trial",
+        "authors": "Sagel DC, Vlaar PJ, Wang D, et al.",
+        "journal": "Heart",
+        "summary": "A Dutch pragmatic RCT testing whether a prehospital risk score could guide ambulance conveyance in 5170 adults with undifferentiated chest pain — it was non-inferior to usual care for 3-day serious adverse events while increasing non-conveyance, cutting 30-day ED presentations and lowering costs.",
+        "relevance": "🟡 Medium transferability — non-conveyance pathways exist across Australian services, but validated chest-pain decision tools aren't routine on Australian ambulances",
+        "pmid": "42810856",
+        "doi": "10.1136/heartjnl-2026-328924",
+        "featuredReason": "The strongest evidence yet that structured keep-at-home pathways for chest pain can be safe: risk-score-guided conveyance matched usual care for serious adverse events, lifted non-conveyance from 24.5% to 34.6%, and reduced 30-day ED presentations and costs.",
+        "pubDate": "2026-09-29",
+        "topic": "Operations & systems",
+        "studyType": "RCT",
+        "design": "Pragmatic randomised open-label blinded-endpoint non-inferiority trial",
+        "n": "5170 adults with undifferentiated chest pain",
+        "finding": "PreHEART-guided conveyance non-inferior for 3-day unexpected serious adverse events (win ratio 1.01, 95% CI 0.89–1.16); non-conveyance rose to 34.6% vs 24.5%, 30-day emergency presentations fell (RR 0.88), costs −€345, and no deaths within 3 days among 1526 non-conveyed patients",
+        "caveat": "Open-label trial in a Dutch EMS system with its own consult-and-convey structure; the signals for increased ACS detection in women were nominal and didn't survive multiplicity correction",
         "bottomLine": "Hypothesis-generating",
-        "shortTitle": "Prehospital minithoracostomy vs chest drain",
-        "learningGoal": "Weigh the benefits and limitations of finger thoracostomy compared with chest drainage for traumatic pleural decompression in my practice."
+        "shortTitle": "Risk-score-guided conveyance safe in chest pain",
+        "learningGoal": "Weigh the safety of risk-score-guided non-conveyance when triaging adults with undifferentiated chest pain."
       },
       {
-        "id": "42784740",
-        "title": "Combined NRB and Nasal Cannula Oxygen Delivery Is Inferior to Flush Rate NRB for Emergency Preoxygenation",
-        "authors": "Andrew M. Pearson, Eli R. Haddorff, Alec J. Bunting, et al.",
-        "journal": "Prehospital Emergency Care",
-        "summary": "Healthy-volunteer crossover study — NRB plus nasal cannula at 15–25 L/min each produced expired oxygen of 68–75% versus 85% for flush-rate NRB, so the portable-cylinder workaround is inferior when supply allows flush rate.",
-        "relevance": "🟢 High transferability — uses only kit in ACTAS scope (NRB, nasal cannula, oxygen) and applies from AP airway care through ICP pre-RSI",
-        "pmid": "42784740",
-        "doi": "10.1080/10903127.2026.2739419",
-        "featuredReason": "Directly informs how you manage limited oxygen supply away from the vehicle: the popular NRB-plus-nasal-cannula combo costs 10–16 points of expired oxygen versus flush rate.",
-        "topic": "Airway & ventilation",
-        "studyType": "Other",
-        "design": "Experimental crossover study in healthy volunteers",
-        "n": "30 healthy volunteers",
-        "finding": "Mean FeO2: flush-rate NRB 85% vs 68% (NRB + nasal cannula at 15 L/min each) and 75% (at 25 L/min each); differences of 16% (95% CI 13–20%) and 10% (95% CI 6–14%), both failing non-inferiority.",
-        "caveat": "Healthy volunteers in a controlled setting, not patients requiring emergency airway management.",
-        "bottomLine": "Supports current practice",
-        "shortTitle": "NRB + nasal cannula inferior to flush-rate preoxygenation",
-        "learningGoal": "Refine my preoxygenation technique for emergency airway management by weighing flush-rate oxygen against combined delivery methods."
-      },
-      {
-        "id": "42772891",
-        "title": "Postresuscitation Out‐of‐Hospital Cardiac Arrest Presentations to Australia's First Dedicated Cardiac Hospital: A Retrospective Audit of Outcomes and Emergency Department Access Factors",
-        "authors": "Thenul Munasinghe, Kaylie Shaw, Claire Charteris, et al.",
-        "journal": "Emergency Medicine Australasia",
-        "summary": "Audit of 121 post-arrest patients at the Victorian Heart Hospital — 50.4% survived to discharge with 92.6% prehospital ROSC and 61.2% shockable rhythms, and 24% needed interhospital transfer, mostly for non-cardiac causes.",
-        "relevance": "🟢 High transferability — Australian post-ROSC outcomes data relevant to CMG 4A transport and destination decisions, though ACT has no dedicated cardiac hospital equivalent",
-        "pmid": "42772891",
-        "doi": "10.1111/1742-6723.70355",
-        "featuredReason": "Fifty per cent survival in a selected cohort plus a 24% interhospital transfer rate keeps the destination-after-ROSC question alive — a system issue paramedic routing decisions feed directly.",
-        "topic": "Cardiac arrest",
+        "id": "42806575",
+        "title": "Epidemiology and Quality of Care for Aboriginal and Torres Strait Islander Peoples Treated by Emergency Medical Services for Stroke in Victoria, Australia: Retrospective Analysis of Linked Data",
+        "authors": "Menezes C, Nehme Z, Burchill LJ, et al.",
+        "journal": "The Medical Journal of Australia",
+        "summary": "Victorian linked-data study of 32,163 EMS-attended stroke/TIA patients found First Nations patients had more than double the age-standardised incidence of EMS attendance, were less likely to receive a paramedic stroke assessment (58.2% vs 67.3%) and less often taken to thrombectomy-capable hospitals, though adjusted mortality was similar.",
+        "relevance": "🟢 High transferability — Australian population-based data on a disparity every service can act on — paramedic stroke assessment rates are the part most directly in crews' hands",
+        "pmid": "42806575",
+        "doi": "10.5694/mja2.70303",
+        "featuredReason": "Australian population-level data on an equity gap crews can directly influence: First Nations patients were less likely to get a paramedic stroke assessment or reach a thrombectomy-capable hospital, despite similar adjusted mortality.",
+        "pubDate": "2026-10",
+        "topic": "Stroke & neuro",
         "studyType": "Cohort",
-        "design": "Retrospective audit of a dedicated cardiac hospital ED",
-        "n": "121 post-OHCA presentations",
-        "finding": "Survival to discharge 50.4%; 30-day survival 40.0%; shockable rhythms 61.2%, prehospital ROSC 92.6%; shockable rhythm (OR 3.46), cardiac aetiology (OR 3.40) and prehospital ROSC (OR 9.23) associated with survival; 24.0% needed interhospital transfer.",
-        "caveat": "Small, single highly selected tertiary cohort not comparable to population-based OHCA outcomes.",
+        "design": "Retrospective population-based data-linkage cohort",
+        "n": "32,163 EMS-attended stroke/TIA patients (287 First Nations)",
+        "finding": "Age-standardised EMS attendance incidence 343 vs 144 per 100,000 person-years (IRR 2.38); paramedic stroke assessment 58.2% vs 67.3%; conveyance to thrombectomy-capable hospitals 24.4% vs 32.7%; adjusted 30- and 90-day mortality similar (HR 0.81 and 0.81)",
+        "caveat": "Victorian data from 2015–2019 with only 287 First Nations patients, limiting precision and generalisability interstate",
         "bottomLine": "Context only",
-        "shortTitle": "Post-OHCA outcomes at Victorian Heart Hospital",
-        "learningGoal": "Understand how interhospital transfer pathways shape outcomes for post-arrest patients needing specialist cardiac care."
+        "shortTitle": "Stroke care gaps for First Nations patients",
+        "learningGoal": "Understand the barriers contributing to inequitable prehospital stroke assessment and destination decisions for First Nations patients."
+      },
+      {
+        "id": "42809474",
+        "title": "Deviations From Recommended Drug Dosing in the Prehospital Treatment of Pediatric Patients",
+        "authors": "Spigner MF, Butterbaugh MW, Genthe NA, et al.",
+        "journal": "Prehospital Emergency Care",
+        "summary": "US quality-registry cohort of 386 prehospital paediatric medication administrations found 46.4% deviated at least 20% from protocolised dosing — mostly underdoses — with ondansetron (aOR 36.9) and the intranasal route (aOR 7.3) the biggest drivers.",
+        "relevance": "🟢 High transferability — weight-based paediatric dosing and intranasal drug delivery are standard Australian practice, so the error patterns translate directly to our trucks",
+        "pmid": "42809474",
+        "doi": "10.1080/10903127.2026.2740143",
+        "featuredReason": "An immediate practice prompt: nearly half of paediatric doses deviated from protocol, overwhelmingly underdoses, with ondansetron and the intranasal route the worst offenders — worth a second look at weight-based calculations and IN technique.",
+        "pubDate": "2026-09-29",
+        "topic": "Paediatrics",
+        "studyType": "Cohort",
+        "design": "Retrospective quality-improvement registry cohort",
+        "n": "386 medication administrations in 240 children across nine agencies",
+        "finding": "46.4% of doses deviated ≥20% from recommended (79.9% underdoses); deviation was highest for ondansetron (85.3%) and via the intranasal route (69.7%); weight-estimation error was not associated",
+        "caveat": "Single US metropolitan system with uniform protocols, and registry-flagged deviations may capture deliberate titration within permitted ranges",
+        "bottomLine": "Hypothesis-generating",
+        "shortTitle": "Nearly half of paediatric doses off-protocol",
+        "learningGoal": "Update my approach to paediatric medication dosing, particularly intranasal and antiemetic administration, to reduce underdosing."
       }
     ]
   }
