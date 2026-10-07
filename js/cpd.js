@@ -711,7 +711,7 @@
             return '<button class="chip' + (on ? ' is-on' : '') + '" data-type="' + t + '" type="button" aria-pressed="' + on + '"' + (s.kind !== 'manual' ? ' disabled' : '') + '>' + esc(ACTIVITY_TYPES[t].label) + '</button>';
           }).join('') + '</div></fieldset>' +
         (v.activity_type === 'media' && s.kind === 'manual' && podcastNames()
-          ? '<p class="hint">Listening to ' + esc(podcastNames()) + '? <button class="link-inline" data-pick-podcast type="button">Pick the episode from the list instead</button>.</p>' : '') +
+          ? '<p class="hint">Listening to ' + esc(/^\d/.test(podcastNames()) ? 'one of our ' + podcastNames() : podcastNames()) + '? <button class="link-inline" data-pick-podcast type="button">Pick the episode from the list instead</button>.</p>' : '') +
         field('Title', '<input name="title" maxlength="200" required value="' + esc(v.title) + '" placeholder="' +
           (v.activity_type === 'media' ? 'e.g. Podcast name: episode title' : 'e.g. Station journal club: paediatric sepsis') + '">') +
         field('Short summary <span class="opt">optional</span>', '<textarea name="summary" rows="2" maxlength="4000" placeholder="' +
@@ -1604,9 +1604,12 @@
     bindAddSheet(el);
   }
 
+  /* "The Resus Room" for one or two listed podcasts; a count once the list is long. */
   function podcastNames() {
     var idx = PP.podcasts && PP.podcasts.cachedIndex ? PP.podcasts.cachedIndex() : null;
-    return idx && idx.length ? idx.map(function (p) { return p.name; }).join(', ') : '';
+    if (!idx || !idx.length) return '';
+    return idx.length <= 2 ? idx.map(function (p) { return p.name; }).join(' or ')
+      : idx.length + ' emergency and prehospital podcasts';
   }
 
   function bindAddSheet(el) {

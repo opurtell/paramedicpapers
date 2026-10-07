@@ -24,6 +24,7 @@
     id: null,         /* podcast on screen, or null for the list */
     error: '',
     q: '',
+    region: '',       /* list filter: '' | 'anz' | 'intl' */
     topic: '',
     year: '',
     shown: PAGE,
@@ -227,9 +228,16 @@
       root.innerHTML = pz.indexError ? '<p class="empty">' + esc(pz.indexError) + '</p>' : '<p class="empty">Loading podcasts…</p>';
       return;
     }
-    var list = pz.index.slice().sort(function (a, b) { return (b.latest || '').localeCompare(a.latest || ''); });
+    var anzCount = pz.index.filter(isANZ).length;
+    var list = pz.index.filter(function (p) {
+      return !pz.region || (pz.region === 'anz') === isANZ(p);
+    }).sort(function (a, b) { return (b.latest || '').localeCompare(a.latest || ''); });
     root.innerHTML =
-      '<p class="pods-intro">Pick a podcast, find the episode you listened to, and log it as CPD with the listening time and a suggested learning goal filled in.</p>' +
+      '<p class="pods-intro">Pick a podcast, find the episode you listened to, and log it as CPD with the listening time filled in.</p>' +
+      (anzCount && anzCount < pz.index.length ? '<div class="chips pods-chips" role="group" aria-label="Region">' +
+        chip('region', '', 'All ' + pz.index.length, !pz.region) +
+        chip('region', 'anz', 'Australia & NZ ' + anzCount, pz.region === 'anz') +
+        chip('region', 'intl', 'International ' + (pz.index.length - anzCount), pz.region === 'intl') + '</div>' : '') +
       '<div class="pods-list">' + list.map(function (p) {
         var logged = PP.hooks.podcastLogged ? PP.hooks.podcastLogged(p.id) : 0;
         return '<a class="panel pods-card" href="#podcasts=' + esc(p.id) + '">' +
@@ -245,6 +253,9 @@
       '<p class="fine pods-foot">Not listed? <a href="#cpd" data-add-podcast>Add it from CPD → Add</a> · ' +
         '<a href="' + SUGGEST + '">Suggest a podcast</a></p>' +
       '<p class="fine">Episode details from each podcast’s public feed; listen in your podcast app.</p>';
+    root.querySelectorAll('[data-chip="region"]').forEach(function (b) {
+      b.addEventListener('click', function () { pz.region = b.getAttribute('data-val'); renderList(root); });
+    });
     var add = root.querySelector('[data-add-podcast]');
     if (add) add.addEventListener('click', function (e) {
       if (!PP.hooks.openAdd) return;
@@ -252,6 +263,11 @@
       PP.setTab('cpd');
       PP.hooks.openAdd('podcast');
     });
+  }
+
+  /* Catalogue region: "AU", "NZ" or "AU/NZ" count as Australia & NZ. */
+  function isANZ(p) {
+    return /^(AU|NZ)(\/(AU|NZ))?$/.test(p.region || '');
   }
 
   function filtered(p) {
