@@ -13,6 +13,9 @@
   <link rel="icon" type="image/png" sizes="32x32" href="icon-32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="icon-16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <script>
+    try { if (localStorage.getItem('pp:theme') === 'dark') document.documentElement.setAttribute('data-theme', 'dark'); } catch (e) {}
+  </script>
   <style>
     /* Tokens copied from css/style.css; this page stands alone. */
     :root {
@@ -20,6 +23,11 @@
       --muted: #8A9097; --line: #EAE8E3; --accent: #2F5FA8; --warm: #C2562F; --warm-tint: #FAF0EA;
       --sans: 'IBM Plex Sans', system-ui, -apple-system, sans-serif;
       --serif: Newsreader, Georgia, serif;
+    }
+    :root[data-theme="dark"] {
+      --bg: #121417; --surface: #1A1D21; --ink: #ECEDEE; --ink-2: #D3D6D9; --ink-3: #A3A9B0;
+      --muted: #858C94; --line: #2A2E33; --accent: #7DA2E3; --warm: #E07A52; --warm-tint: #2C1F18;
+      color-scheme: dark;
     }
     * { box-sizing: border-box; }
     html, body { margin: 0; background: var(--bg); color: var(--ink); }
