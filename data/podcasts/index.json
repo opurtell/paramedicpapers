@@ -1,0 +1,14 @@
+[
+ {
+  "id": "resus-room",
+  "name": "The Resus Room",
+  "publisher": "Simon, Rob & James",
+  "focus": "UK emergency and prehospital evidence, papers of the month",
+  "region": "UK",
+  "site": "https://www.theresusroom.co.uk",
+  "art": "data/podcasts/art/resus-room.jpg",
+  "episodes": 289,
+  "latest": "2026-10-01",
+  "updated": "2026-10-07"
+ }
+]
