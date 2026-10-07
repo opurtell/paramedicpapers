@@ -1042,8 +1042,8 @@ body.has-sheet { overflow: hidden; }
 .paper-sheet-head h2 { font-size: 20px; line-height: 1.25; text-wrap: balance; }
 .paper-sheet-meta { margin: 0; font-family: var(--mono); font-size: 10.5px; letter-spacing: .04em; color: var(--muted); }
 .paper-sheet-meta a { color: var(--accent); }
-#paper-form .link-btn { align-self: flex-start; }
-#paper-form legend .pill { vertical-align: 2px; margin-left: 4px; }
+#paper-form .link-btn, #episode-form .link-btn { align-self: flex-start; }
+#paper-form legend .pill, #episode-form legend .pill { vertical-align: 2px; margin-left: 4px; }
 .paper-done { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 8px; padding: 12px 0 8px; }
 .paper-done h2 { font-size: 22px; }
 .paper-done .panel-lead { max-width: 380px; }
@@ -1197,3 +1197,72 @@ body.has-sheet { overflow: hidden; }
 }
 .cpd-promo-close:hover { color: var(--ink); background: rgba(20,23,26,.05); }
 .cpd-promo-close .hi { width: 16px; height: 16px; }
+
+/* ── Other podcasts as CPD (js/podcasts.js, plan phase 5) ── */
+.pods-promo { gap: 8px; }
+.pods-promo .panel-kicker { display: inline-flex; align-items: center; gap: 5px; }
+.pods-go { align-self: flex-start; display: inline-flex; align-items: center; gap: 6px; }
+.pods-go .hi { width: 14px; height: 14px; }
+.pods-stats { display: inline-flex; align-items: center; gap: 5px; font-size: 13px; color: var(--good); font-weight: 500; }
+.pods-stats .hi { width: 14px; height: 14px; stroke-width: 2.2; }
+#podcasts-body { display: flex; flex-direction: column; gap: 14px; }
+@media (min-width: 960px) { #podcasts-body { max-width: 760px; width: 100%; } }
+.pods-intro { font-size: 14px; line-height: 1.55; color: var(--ink-2); }
+.pods-list { display: flex; flex-direction: column; gap: 10px; }
+.pods-card { flex-direction: row; align-items: center; gap: 14px; color: inherit; text-decoration: none; }
+.pods-card:hover { border-color: var(--accent-in); }
+.pods-art { width: 64px; height: 64px; flex: none; border-radius: 10px; object-fit: cover; background: var(--hair); }
+.pods-art-lg { width: 84px; height: 84px; }
+.pods-art-none { display: grid; place-items: center; color: var(--muted); }
+.pods-art-none .hi { width: 28px; height: 28px; }
+.pods-card-main { display: flex; flex-direction: column; gap: 3px; min-width: 0; flex: 1; }
+.pods-card-name { font-family: var(--serif); font-size: 18px; font-weight: 600; color: var(--ink); }
+.pods-card-pub { font-size: 13px; color: var(--ink-3); margin: 0; }
+.pods-card-focus { font-size: 13px; line-height: 1.45; color: var(--ink-2); }
+.pods-card-meta { font-family: var(--mono); font-size: 10.5px; color: var(--muted); }
+.pods-region {
+  display: inline-block; margin-left: 4px; padding: 0 6px; border: 1px solid var(--line-2); border-radius: 99px;
+  font-family: var(--mono); font-size: 9.5px; letter-spacing: .08em; color: var(--muted); vertical-align: 1px;
+}
+.pods-logged { display: inline-flex; align-items: center; gap: 3px; color: var(--good); }
+.pods-logged .hi { width: 11px; height: 11px; stroke-width: 2.2; }
+.pods-chev { width: 16px; height: 16px; color: var(--muted); flex: none; }
+.pods-foot { margin-top: 2px; }
+.pods-head { display: flex; gap: 14px; align-items: flex-start; }
+.pods-head-main { display: flex; flex-direction: column; gap: 4px; min-width: 0; align-items: flex-start; }
+.pods-all { margin-bottom: 2px; }
+.pods-title { font-size: 24px; line-height: 1.15; }
+.pods-search input {
+  width: 100%; padding: 12px 14px 12px 38px; font-family: inherit; font-size: 15px;
+  color: var(--ink); background: var(--surface); border: 1px solid var(--line-2); border-radius: 11px;
+}
+.pods-search input:focus { outline: none; border-color: var(--accent); }
+.pods-chips { margin-top: -4px; }
+.pods-eps { display: flex; flex-direction: column; }
+.pods-ep {
+  display: flex; flex-direction: column; gap: 4px; padding: 13px 0; border-bottom: 1px solid var(--hair);
+  scroll-margin-top: 110px; transition: background-color .6s;
+}
+.pods-ep:last-child { border-bottom: 0; }
+.pods-ep.is-hot { background: var(--accent-lo); border-radius: 10px; padding-inline: 10px; margin-inline: -10px; }
+.pods-ep .ep-date { margin: 0; }
+.pods-ep-title { font-family: var(--sans); font-size: 15px; font-weight: 500; line-height: 1.35; color: var(--ink); }
+.pods-ep b, .pick-title b { background: var(--warm-tint); color: var(--ink); font-weight: 600; border-radius: 2px; }
+.pods-notes {
+  margin: 0; font-size: 13px; line-height: 1.5; color: var(--ink-3); cursor: pointer;
+  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+}
+.pods-notes.is-open { -webkit-line-clamp: unset; overflow: visible; }
+.pods-ep-foot { display: flex; align-items: center; gap: 14px; margin-top: 2px; }
+.pods-ep-act { margin-left: auto; }
+.pods-more { align-self: center; margin-top: 6px; }
+
+/* Add PD → Podcast episode → Pick from our list (js/cpd.js) */
+.sheet-add .menu-list { margin-top: 4px; }
+.pick-list { display: flex; flex-direction: column; max-height: 52vh; overflow-y: auto; margin-top: 10px; }
+.pick-row {
+  display: flex; flex-direction: column; gap: 3px; text-align: left; cursor: pointer;
+  background: none; border: 0; border-bottom: 1px solid var(--hair); padding: 11px 4px; font: inherit; color: inherit;
+}
+.pick-row:hover { background: var(--accent-lo); }
+.pick-title { font-size: 14.5px; font-weight: 500; color: var(--ink); line-height: 1.35; }

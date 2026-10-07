@@ -2,7 +2,8 @@
    Paramedic Papers — CPD tracker
    Sign-in, the "More" menu, the CPD tab, manual PD entries, learning
    goals, exports, the Account page, "Log PD" on paper cards
-   (phase 2) and the PD quiz (phase 3). Talks to the API Worker at
+   (phase 2), the PD quiz (phase 3) and Log PD on other podcasts'
+   episodes (phase 5; js/podcasts.js browses). Talks to the API Worker at
    api.paramedicpapers.com (repo: cpd/, plan: cpd/plan/phase-1).
    Uses only window.PP from app.js. Behind /#cpd-beta until the
    launch (plan phase 4, Oct 2026).
@@ -20,6 +21,8 @@
   var PAPER_DRAFT_KEY = 'pp:cpd-paper:';   /* + paper id */
   var RESUME_KEY = 'pp:cpd-resume';        /* paper id to reopen after sign-in */
   var PROMO_KEY = 'pp:cpd-promo-closed';   /* the home launch card was dismissed */
+  var EPISODE_DRAFT_KEY = 'pp:cpd-episode:';  /* + episode id (phase 5) */
+  var EP_RESUME_KEY = 'pp:cpd-resume-ep';     /* { p: podcast id, e: episode id } to reopen after sign-in */
 
   /* Copied from cpd/src/cpd.js — keep the two in step. */
   var ACTIVITY_TYPES = {
@@ -58,7 +61,8 @@
     showTable: false,
     deleting: false,
     logged: null,        /* { paper_id: [{ id, minutes, activity_type }] } for the card badges */
-    sheet: null          /* { type: 'menu' | 'entry' | 'goal' | 'paper' | 'signin', … } */
+    loggedEps: null,     /* { episode_id: { id, minutes, podcast_id, cpd_year } } for the episode rows */
+    sheet: null          /* { type: 'menu' | 'entry' | 'goal' | 'paper' | 'episode' | 'add' | 'signin', … } */
   };
 
   var $ = function (id) { return document.getElementById(id); };
@@ -79,6 +83,11 @@
   PP.hooks.onRender.push(resumePaper);
   PP.hooks.paperAct = paperActHTML;
   PP.hooks.logPaper = logPaper;
+  PP.hooks.logEpisode = logEpisode;
+  PP.hooks.episodeAct = episodeActHTML;
+  PP.hooks.podcastLogged = podcastLogged;
+  PP.hooks.podcastStats = podcastStats;
+  PP.hooks.openAdd = openAdd;
 
   document.addEventListener('DOMContentLoaded', function () {
     $('sheet-backdrop').addEventListener('click', function () { closeSheet(true); });
@@ -101,7 +110,9 @@
       st.apiDown = false;
       render();
       resumePaper();
+      resumeEpisode();
       loadLogged();
+      loadLoggedEps();
       loadAttempts();
       return loadYear();
     }).catch(function (err) {
@@ -136,7 +147,7 @@
         err.status = r.status;
         err.field = data.field;
         err.data = data;
-        if (r.status === 401) { st.user = null; st.entries = st.summary = st.goals = null; qz.attempts = null; dropLogged(); }
+        if (r.status === 401) { st.user = null; st.entries = st.summary = st.goals = null; qz.attempts = null; dropLogged(); st.loggedEps = null; }
         throw err;
       });
     }, function (e) {
@@ -297,6 +308,7 @@
     if (!st.sheet) return;
     if (!soft && st.sheet.type === 'entry') clearDraft();
     if (!soft && st.sheet.type === 'paper') clearPaperDraft(st.sheet.paperId);
+    if (!soft && st.sheet.type === 'episode') clearEpisodeDraft(st.sheet.eid);
     st.sheet = null;
     $('sheet').hidden = true;
     $('sheet').innerHTML = '';
@@ -404,7 +416,7 @@
       exportHTML();
 
     bindYearBar(root);
-    $('cpd-add').addEventListener('click', function () { openEntry(null); });
+    $('cpd-add').addEventListener('click', function () { openAdd('choose'); });
     bindChart(root);
     root.querySelectorAll('[data-goal]').forEach(function (b) {
       b.addEventListener('click', function () { openGoal(b.getAttribute('data-goal')); });
@@ -598,12 +610,16 @@
 
   function entryRowHTML(e) {
     var type = ACTIVITY_TYPES[e.activity_type];
-    var paper = e.kind === 'paper';
+    var paper = e.kind === 'paper', pod = e.kind === 'podcast';
+    var meta = pod
+      ? [e.podcast_name || 'Podcast', e.episode_date ? 'released ' + niceDate(e.episode_date, true) : ''].filter(Boolean).join(' · ')
+      : (type ? type.label : e.activity_type) + (paper && e.paper_journal ? ' · ' + e.paper_journal : '');
     return '<button class="entry-row" data-entry="' + esc(e.id) + '" type="button">' +
       '<span class="entry-date">' + esc(niceDate(e.date)) + '</span>' +
       '<span class="entry-main">' +
-        '<span class="entry-title">' + (paper ? ico('log', 'entry-ico') + '<span class="sr-only">Paper: </span>' : '') + esc(e.title) + '</span>' +
-        '<span class="entry-meta">' + esc(type ? type.label : e.activity_type) + (paper && e.paper_journal ? ' · ' + esc(e.paper_journal) : '') + ' · ' + dur(e.minutes) + '</span>' +
+        '<span class="entry-title">' + (paper ? ico('log', 'entry-ico') + '<span class="sr-only">Paper: </span>' : '') +
+          (pod ? ico('podcast', 'entry-ico') + '<span class="sr-only">Podcast: </span>' : '') + esc(e.title) + '</span>' +
+        '<span class="entry-meta">' + esc(meta) + ' · ' + dur(e.minutes) + '</span>' +
         '<span class="entry-tags">' +
           (e.interactive ? '<span class="pill pill-inter">Interactive</span>' : '') +
           (e.complete ? '' : '<span class="pill pill-warn">Needs reflection</span>') +
@@ -649,10 +665,16 @@
     try { sessionStorage.removeItem(DRAFT_KEY); } catch (e) {}
   }
 
-  function openEntry(id) {
+  /* preset (new entries only): fields to start from, e.g. { activity_type: 'media' }. */
+  function openEntry(id, preset) {
+    if (!st.goals) {
+      if (st.user) loadYear().then(function () { if (st.goals) openEntry(id, preset); });
+      return;
+    }
     var existing = id ? st.entries.filter(function (e) { return e.id === id; })[0] : null;
     if (id && !existing) return;
     if (existing && existing.kind === 'paper') { openPaper(existing.paper_id, existing.id); return; }
+    if (existing && existing.kind === 'podcast') { openEpisodeEntry(existing); return; }
     var draft = readDraft();
     var restored = !!(draft && (draft.id || null) === (id || null) && draft.v);
     var v = restored ? draft.v : (existing ? {
@@ -661,7 +683,7 @@
       with_whom: existing.with_whom || '', goal_id: existing.goal_id || '', learning_goal: existing.learning_goal || '',
       reflection_learned: existing.reflection_learned || '', reflection_practice: existing.reflection_practice || '',
       reflection_next: existing.reflection_next || ''
-    } : blankEntry());
+    } : Object.assign(blankEntry(), preset || {}));
     if (!restored) clearDraft();
     openSheet({ type: 'entry', id: id, v: v, kind: existing ? existing.kind : 'manual', restored: restored, error: '' }, '');
     renderEntrySheet();
@@ -688,8 +710,12 @@
             var on = v.activity_type === t;
             return '<button class="chip' + (on ? ' is-on' : '') + '" data-type="' + t + '" type="button" aria-pressed="' + on + '"' + (s.kind !== 'manual' ? ' disabled' : '') + '>' + esc(ACTIVITY_TYPES[t].label) + '</button>';
           }).join('') + '</div></fieldset>' +
-        field('Title', '<input name="title" maxlength="200" required value="' + esc(v.title) + '" placeholder="e.g. Station journal club: paediatric sepsis">') +
-        field('Short summary <span class="opt">optional</span>', '<textarea name="summary" rows="2" maxlength="4000" placeholder="What it covered">' + esc(v.summary) + '</textarea>') +
+        (v.activity_type === 'media' && s.kind === 'manual' && podcastNames()
+          ? '<p class="hint">Listening to ' + esc(podcastNames()) + '? <button class="link-inline" data-pick-podcast type="button">Pick the episode from the list instead</button>.</p>' : '') +
+        field('Title', '<input name="title" maxlength="200" required value="' + esc(v.title) + '" placeholder="' +
+          (v.activity_type === 'media' ? 'e.g. Podcast name: episode title' : 'e.g. Station journal club: paediatric sepsis') + '">') +
+        field('Short summary <span class="opt">optional</span>', '<textarea name="summary" rows="2" maxlength="4000" placeholder="' +
+          (v.activity_type === 'media' ? 'e.g. podcast name, episode and length, what it covered' : 'What it covered') + '">' + esc(v.summary) + '</textarea>') +
         '<div class="form-row">' +
           field('Date', '<input type="date" name="date" required value="' + esc(v.date) + '" min="' + lim.min + '" max="' + lim.max + '">') +
           '<div class="field"><span class="label">Time spent</span><div class="stepper">' +
@@ -747,6 +773,8 @@
     el.querySelectorAll('[data-close]').forEach(function (b) { b.addEventListener('click', function () { closeSheet(false); }); });
     var discard = el.querySelector('[data-discard]');
     if (discard) discard.addEventListener('click', function () { clearDraft(); var id = s.id; closeSheet(false); openEntry(id); });
+    var pick = el.querySelector('[data-pick-podcast]');
+    if (pick) pick.addEventListener('click', function () { closeSheet(false); openAdd('pick'); });
 
     el.querySelectorAll('[data-type]').forEach(function (b) {
       b.addEventListener('click', function () {
@@ -802,7 +830,7 @@
   }
 
   function checkPII() {
-    var form = $('entry-form') || $('paper-form') || $('quiz-form');
+    var form = $('entry-form') || $('paper-form') || $('episode-form') || $('quiz-form');
     if (!form) return;
     var text = Array.prototype.map.call(form.querySelectorAll('input:not([type]), input[name], textarea'), function (f) {
       return f.type === 'date' || f.type === 'checkbox' ? '' : f.value;
@@ -1012,11 +1040,7 @@
   function renderPaperSheet(focusName) {
     var s = st.sheet, v = s.v, p = s.p;
     var full = fullMinutes(p);
-    var suggested = p && p.learningGoal && v.learning_goal.trim() === p.learningGoal;
-    var activeGoals = s.goals.filter(function (g) { return g.status === 'active' || g.id === v.goal_id; });
-    var linked = v.goal_id ? activeGoals.filter(function (g) { return g.id === v.goal_id; })[0] : null;
-    var canSaveGoal = v.learning_goal.trim() && !activeGoals.some(function (g) { return g.text.trim() === v.learning_goal.trim(); });
-    var lim = { min: (+todayISO().slice(0, 4) - 6) + '-12-01', max: addDays(todayISO(), 1) };
+    var lim = dateLimits();
     var others = s.entryId ? loggedFor(s.paperId).filter(function (x) { return x.id !== s.entryId; }) : [];
     var hasDiscussion = others.some(function (x) { return x.activity_type === 'journal_club'; });
     var ph = placeholders(p);
@@ -1048,33 +1072,12 @@
           '<span class="switch" aria-hidden="true"></span><span><b>Discussed it with other practitioners?</b>' +
           '<span class="hint">Logs it as journal club, which counts toward your 8 interactive hours.</span></span></label>' +
         (v.interactive ? field('Who with? <span class="opt">roles, not names</span>', '<input name="with_whom" maxlength="200" value="' + esc(v.with_whom) + '" placeholder="e.g. crew partner, station journal club">') : '') +
-        '<fieldset><legend>Learning goal' + (suggested ? ' <span class="pill pill-inter">Suggested</span>' : '') + '</legend>' +
-          '<textarea name="learning_goal" rows="2" maxlength="4000" aria-label="Learning goal" placeholder="What did you want to get better at?">' + esc(v.learning_goal) + '</textarea>' +
-          (activeGoals.length ? '<label class="field"><span class="label">Link to one of my goals <span class="opt">optional</span></span>' +
-            '<select name="goal_id"><option value="">None</option>' + activeGoals.map(function (g) {
-              return '<option value="' + esc(g.id) + '"' + (g.id === v.goal_id ? ' selected' : '') + '>' + esc(g.text) + '</option>';
-            }).join('') + '</select></label>' : '') +
-          (canSaveGoal && !linked ? '<button class="link-btn" data-save-goal type="button"' + (s.savingGoal ? ' disabled' : '') + '>' + ico('plus') + 'Save as a goal for ' + esc(yearLabel(cpdYear(v.date))) + '</button>' : '') +
-        '</fieldset>' +
-        '<fieldset><legend>Reflection <span class="opt">needed for a complete entry</span></legend>' +
-          field('What did I learn?', '<textarea name="reflection_learned" rows="3" maxlength="4000" placeholder="' + esc(ph.learned) + '">' + esc(v.reflection_learned) + '</textarea>') +
-          field('How will this change or confirm my practice?', '<textarea name="reflection_practice" rows="3" maxlength="4000" placeholder="' + esc(ph.practice) + '">' + esc(v.reflection_practice) + '</textarea>') +
-          field('Anything to follow up? <span class="opt">optional</span>', '<textarea name="reflection_next" rows="2" maxlength="4000" placeholder="' + esc(ph.next) + '">' + esc(v.reflection_next) + '</textarea>') +
-        '</fieldset>' +
-        '<p class="notice notice-warn" id="pii-warn" hidden>That looks like it might identify a patient (a name, date of birth or record number). Please remove it.</p>' +
-        '<p class="fine">Don’t include patient-identifying details.</p>' +
+        goalBlockHTML(s, p && p.learningGoal) +
+        reflectionHTML(v, ph) +
         (s.entryId && !v.interactive && !hasDiscussion
           ? '<p class="fine">Discussed it later at journal club or with your crew? <button class="link-inline" data-log-discussion type="button">Log that separately</button></p>' : '') +
         (s.error ? '<p class="notice notice-warn" role="alert">' + esc(s.error) + '</p>' : '') +
-        '<div class="sheet-actions">' +
-          (s.entryId ? (s.confirmDelete
-            ? '<button class="btn btn-danger" data-delete-yes type="button">Delete this entry</button><button class="btn" data-delete-no type="button">Keep</button>'
-            : '<button class="btn btn-quiet" data-delete type="button">Delete</button>') : '') +
-          (s.confirmDelete ? '' :
-            '<span class="spacer"></span>' +
-            '<button class="btn" data-close type="button">Cancel</button>' +
-            '<button class="btn btn-primary" type="submit"' + (s.saving ? ' disabled' : '') + '>' + (s.saving ? 'Saving…' : 'Save') + '</button>') +
-        '</div>' +
+        sheetActionsHTML(s, !!s.entryId) +
       '</form>';
 
     bindPaperSheet();
@@ -1129,51 +1132,14 @@
     });
     var inter = form.querySelector('[name="interactive"]');
     inter.addEventListener('change', function () { collectPaper(); savePaperDraft(); renderPaperSheet(inter.checked ? 'with_whom' : null); });
-    var goalSel = form.querySelector('[name="goal_id"]');
-    if (goalSel) goalSel.addEventListener('change', function () { collectPaper(); savePaperDraft(); renderPaperSheet(); });
-    var date = form.querySelector('[name="date"]');
-    date.addEventListener('change', function () {
-      /* A date in another registration year: that year's goals. */
-      collectPaper();
-      var y = cpdYear(s.v.date || todayISO());
-      goalsFor(y).then(function (g) {
-        if (st.sheet !== s) return;
-        s.goals = g;
-        if (s.v.goal_id && !g.some(function (x) { return x.id === s.v.goal_id; })) s.v.goal_id = '';
-        renderPaperSheet();
-      }).catch(function () {});
-    });
-    var saveGoal = el.querySelector('[data-save-goal]');
-    if (saveGoal) saveGoal.addEventListener('click', function () {
-      collectPaper();
-      s.savingGoal = true;
-      renderPaperSheet();
-      var year = cpdYear(s.v.date || todayISO());
-      api('/api/goals', { method: 'POST', body: { text: s.v.learning_goal.trim().slice(0, 300), cpd_year: year } }).then(function (g) {
-        s.savingGoal = false;
-        s.goals = s.goals.concat([g]);
-        if (st.year === year && st.goals && st.goals !== s.goals) st.goals = st.goals.concat([g]);
-        s.v.goal_id = g.id;
-        savePaperDraft();
-        if (st.sheet === s) renderPaperSheet();
-      }).catch(function (err) {
-        s.savingGoal = false;
-        s.error = err.message;
-        if (st.sheet === s) renderPaperSheet();
-      });
-    });
+    bindGoalBlock(s, form, { collect: collectPaper, saveDraft: savePaperDraft, render: renderPaperSheet });
     var disc = el.querySelector('[data-log-discussion]');
     if (disc) disc.addEventListener('click', function () { closeSheet(true); openPaper(s.paperId, null, { discussed: true }); });
 
     form.addEventListener('input', function () { collectPaper(); savePaperDraft(); checkPII(); });
     form.addEventListener('submit', function (e) { e.preventDefault(); savePaper(); });
 
-    var del = el.querySelector('[data-delete]');
-    if (del) del.addEventListener('click', function () { collectPaper(); s.confirmDelete = true; renderPaperSheet(); });
-    var no = el.querySelector('[data-delete-no]');
-    if (no) no.addEventListener('click', function () { s.confirmDelete = false; renderPaperSheet(); });
-    var yes = el.querySelector('[data-delete-yes]');
-    if (yes) yes.addEventListener('click', deletePaperEntry);
+    bindSheetActions(el, s, { collect: collectPaper, render: renderPaperSheet, remove: deletePaperEntry });
   }
 
   function collectPaper() {
@@ -1271,6 +1237,552 @@
     api('/api/entries/' + encodeURIComponent(s.entryId), { method: 'DELETE' })
       .then(function () { closeSheet(false); loadLogged(); return loadYear(); })
       .catch(function (err) { s.error = err.message; s.confirmDelete = false; renderPaperSheet(); });
+  }
+
+  /* ── other podcasts: "Log PD" on an episode (plan phase 5) ── */
+
+  /* js/podcasts.js browses data/podcasts/; this logs. A podcast entry is
+     always non-interactive media (one per episode); a later discussion is
+     a separate manual entry. The entry keeps a snapshot of the podcast
+     name, title, release date and link, so it reads right if the episode
+     leaves the list. */
+  var EP_MAX = 600;
+
+  function epMinutes(ep, half) {
+    var whole = ep && ep.durationSec ? Math.ceil(ep.durationSec / 300) * 5 : 30;
+    var m = half ? Math.ceil(whole / 10) * 5 : whole;
+    return Math.max(5, Math.min(EP_MAX, m));
+  }
+
+  function loadLoggedEps() {
+    if (!st.user) return Promise.resolve();
+    return api('/api/entries?episode_ids=1').then(function (r) {
+      var map = {};
+      r.episodes.forEach(function (x) { map[x.episode_id] = x; });
+      st.loggedEps = map;
+      if (PP.podcasts) PP.podcasts.render();
+    }).catch(function () {});
+  }
+
+  function episodeActHTML(p, ep) {
+    var x = st.loggedEps && st.loggedEps[ep.eid];
+    return '<button class="act act-log' + (x ? ' is-logged' : '') + '" data-log-ep="' + esc(ep.eid) + '" type="button"' +
+      (x ? ' aria-label="Logged as PD, ' + esc(dur(x.minutes)) + '. Edit"' : '') + '>' +
+      ico(x ? 'check' : 'log') + '<span class="lbl">' + (x ? 'Logged · ' + esc(dur(x.minutes)) : 'Log PD') + '</span></button>';
+  }
+
+  function podcastLogged(podcastId) {
+    if (!st.loggedEps) return 0;
+    return Object.keys(st.loggedEps).filter(function (k) { return st.loggedEps[k].podcast_id === podcastId; }).length;
+  }
+
+  /* The Podcast tab's panel: this registration year's episodes. */
+  function podcastStats() {
+    if (!st.loggedEps) return null;
+    var y = cpdYear(todayISO()), n = 0, min = 0;
+    Object.keys(st.loggedEps).forEach(function (k) {
+      var x = st.loggedEps[k];
+      if (x.cpd_year === y) { n++; min += x.minutes; }
+    });
+    return { count: n, time: dur(min) };
+  }
+
+  function logEpisode(p, ep) {
+    if (!st.user) { openEpisodeSignIn(p.id, ep.eid); return; }
+    var x = st.loggedEps && st.loggedEps[ep.eid];
+    openEpisode(p, ep, x ? x.id : null);
+  }
+
+  function epHash(podcastId, eid) {
+    return '#podcasts=' + encodeURIComponent(podcastId) + (eid ? '&ep=' + encodeURIComponent(eid) : '');
+  }
+
+  function openEpisodeSignIn(podcastId, eid, note) {
+    openSheet({ type: 'signin', eid: eid }, '');
+    var el = $('sheet');
+    el.innerHTML =
+      '<div class="sheet-grip" aria-hidden="true"></div>' +
+      '<div class="sheet-head"><h2 id="sheet-title" class="sr-only">Sign in</h2><span></span>' +
+        '<button class="icon-btn" data-close type="button" aria-label="Close">' + ico('plus', 'rot45') + '</button></div>' +
+      (note ? '<p class="notice notice-warn" role="alert">' + esc(note) + '</p>' : '') +
+      (!st.checked ? loadingHTML() : st.apiDown ? downHTML() : signInHTML('Log this episode toward your 30 CPD hours', epHash(podcastId, eid)));
+    el.querySelectorAll('[data-close]').forEach(function (b) { b.addEventListener('click', function () { closeSheet(true); }); });
+    el.querySelectorAll('.btn-provider').forEach(function (a) {
+      a.addEventListener('click', function () { try { sessionStorage.setItem(EP_RESUME_KEY, JSON.stringify({ p: podcastId, e: eid })); } catch (e) {} });
+    });
+  }
+
+  /* Back from sign-in: reopen the episode sheet. */
+  function resumeEpisode() {
+    var r;
+    try { r = JSON.parse(sessionStorage.getItem(EP_RESUME_KEY) || 'null'); } catch (e) { return; }
+    if (!r || !st.user || !PP.podcasts) return;
+    try { sessionStorage.removeItem(EP_RESUME_KEY); } catch (e) {}
+    Promise.all([loadLoggedEps(), PP.podcasts.load(r.p)]).then(function (res) {
+      var p = res[1];
+      var ep = p.episodes.filter(function (x) { return x.eid === r.e; })[0];
+      if (ep) logEpisode(p, ep);
+    }).catch(function () {});
+  }
+
+  function readEpisodeDraft(eid) {
+    try { return JSON.parse(sessionStorage.getItem(EPISODE_DRAFT_KEY + eid) || 'null'); } catch (e) { return null; }
+  }
+  function writeEpisodeDraft(eid, d) {
+    try { sessionStorage.setItem(EPISODE_DRAFT_KEY + eid, JSON.stringify(d)); } catch (e) {}
+  }
+  function clearEpisodeDraft(eid) {
+    try { sessionStorage.removeItem(EPISODE_DRAFT_KEY + eid); } catch (e) {}
+  }
+
+  /* From the CPD tab: the episode from the public file, or, if it has
+     left the list, the entry's own snapshot. */
+  function openEpisodeEntry(e) {
+    var snap = {
+      p: { id: e.podcast_id, name: e.podcast_name || e.podcast_id },
+      ep: { eid: e.episode_id, title: e.title, date: e.episode_date, link: e.episode_url, durationSec: null, goal: null, gone: true }
+    };
+    var load = PP.podcasts ? PP.podcasts.load(e.podcast_id) : Promise.reject(new Error('no podcasts.js'));
+    load.then(function (p) {
+      var ep = p.episodes.filter(function (x) { return x.eid === e.episode_id; })[0];
+      return ep ? { p: p, ep: ep } : snap;
+    }, function () { return snap; }).then(function (r) { openEpisode(r.p, r.ep, e.id); });
+  }
+
+  /* entryId null → a new entry. opts.notice shows a line at the top. */
+  function openEpisode(p, ep, entryId, opts) {
+    opts = opts || {};
+    var cached = entryId && st.entries ? st.entries.filter(function (e) { return e.id === entryId; })[0] : null;
+    var getEntry = !entryId ? Promise.resolve(null) : cached ? Promise.resolve(cached) : api('/api/entries/' + encodeURIComponent(entryId));
+    openSheet({ type: 'episode', eid: ep.eid, loading: true }, '<div class="sheet-grip" aria-hidden="true"></div>' + loadingHTML());
+    getEntry.then(function (e) {
+      return goalsFor(cpdYear(e ? e.date : todayISO())).then(function (goals) { return { e: e, goals: goals }; });
+    }).then(function (r) {
+      if (!st.sheet || st.sheet.eid !== ep.eid) return;
+      var e = r.e;
+      var draft = readEpisodeDraft(ep.eid);
+      var restored = !!(draft && (draft.entryId || null) === (entryId || null) && draft.v);
+      var v = restored ? draft.v : e ? {
+        listen: e.minutes === epMinutes(ep) && ep.durationSec ? 'whole' : '', minutes: e.minutes, date: e.date,
+        learning_goal: e.learning_goal || '', goal_id: e.goal_id || '',
+        reflection_learned: e.reflection_learned || '', reflection_practice: e.reflection_practice || '',
+        reflection_next: e.reflection_next || ''
+      } : {
+        listen: 'whole', minutes: epMinutes(ep), date: todayISO(),
+        learning_goal: ep.goal || '', goal_id: '',
+        reflection_learned: '', reflection_practice: '', reflection_next: ''
+      };
+      if (!restored) clearEpisodeDraft(ep.eid);
+      st.sheet = {
+        type: 'episode', eid: ep.eid, p: p, ep: ep, entryId: entryId, entry: e, goals: r.goals,
+        v: v, restored: restored, notice: opts.notice || '', error: ''
+      };
+      renderEpisodeSheet();
+    }).catch(function (err) {
+      if (!st.sheet || st.sheet.eid !== ep.eid) return;
+      if (err.status === 401) { openEpisodeSignIn(p.id, ep.eid, 'You’ve been signed out. Sign in again to log this episode.'); return; }
+      $('sheet').innerHTML = '<div class="sheet-grip" aria-hidden="true"></div><p class="notice notice-warn" role="alert">' + esc(err.message) + '</p>' +
+        '<div class="sheet-actions"><span class="spacer"></span><button class="btn" data-close type="button">Close</button></div>';
+      $('sheet').querySelector('[data-close]').addEventListener('click', function () { closeSheet(true); });
+    });
+  }
+
+  function episodeHeadHTML(s) {
+    var p = s.p, ep = s.ep;
+    var meta = [p.name, ep.date ? 'released ' + niceDate(ep.date, true) : '', ep.durationSec ? dur(Math.round(ep.durationSec / 60)) : '']
+      .filter(Boolean).join(' · ');
+    return '<div class="paper-sheet-head">' +
+      '<span class="panel-kicker panel-kicker-accent">' + (s.entryId ? 'Edit PD · podcast' : 'Log PD · podcast') + '</span>' +
+      '<h2 id="sheet-title">' + esc(ep.title) + '</h2>' +
+      '<p class="paper-sheet-meta">' + esc(meta) +
+        (ep.link ? ' · <a href="' + esc(ep.link) + '" target="_blank" rel="noopener">Episode page ↗</a>' : '') +
+        (s.entryId && !ep.gone ? ' · <a href="' + esc(epHash(p.id, ep.eid)) + '" data-close-soft>Open in the list</a>' : '') +
+      '</p></div>';
+  }
+
+  /* Static hints from the episode title; no extra LLM call. "Pupillary
+     Reflex; Roadside to Resus" → "pupillary reflex". Dated titles
+     ("October 2026; papers of the month") get general hints. */
+  function episodePlaceholders(ep) {
+    var t = String(ep.title || '').split(/;|:| [-–—] /)[0].trim();
+    var topic = /\d|papers of the month|episode|\b(january|february|march|april|may|june|july|august|september|october|november|december)\b/i.test(t) || t.length > 60
+      ? '' : t.charAt(0) + t.slice(1).toLowerCase();
+    topic = topic.charAt(0).toLowerCase() + topic.slice(1);
+    return {
+      learned: topic ? 'e.g. the key points on ' + topic + ', and how far you trust them' : 'e.g. the one or two points that stood out, and how far you trust them',
+      practice: topic ? 'e.g. what you’ll do differently with ' + topic : 'e.g. whether it changes or confirms what you do on scene',
+      next: 'e.g. the papers behind it, or what your guideline says'
+    };
+  }
+
+  function renderEpisodeSheet(focusName) {
+    var s = st.sheet, v = s.v, ep = s.ep;
+    if (s.done) { renderPaperDone(); return; }
+    var lim = dateLimits();
+    var chips = ep.durationSec ? [['whole', 'Whole episode', epMinutes(ep)], ['half', 'Half', epMinutes(ep, true)]] : [];
+
+    $('sheet').innerHTML =
+      '<div class="sheet-grip" aria-hidden="true"></div>' +
+      '<div class="sheet-head sheet-head-top">' + episodeHeadHTML(s) +
+        '<button class="icon-btn" data-close type="button" aria-label="Close">' + ico('plus', 'rot45') + '</button></div>' +
+      (s.notice ? '<p class="notice">' + esc(s.notice) + '</p>' : '') +
+      (s.restored ? '<p class="notice">Draft restored. <button class="link-inline" data-discard type="button">Discard it</button></p>' : '') +
+      '<form class="form" id="episode-form" novalidate>' +
+        (chips.length ? '<fieldset><legend>How much did you listen to?</legend><div class="chips">' +
+          chips.map(function (o) {
+            var on = v.listen === o[0];
+            return '<button class="chip' + (on ? ' is-on' : '') + '" data-listen="' + o[0] + '" type="button" aria-pressed="' + on + '">' + o[1] + ' · ' + dur(o[2]) + '</button>';
+          }).join('') + '</div></fieldset>' : '') +
+        '<div class="form-row">' +
+          '<div class="field"><span class="label">Listening time</span><div class="stepper">' +
+            '<span class="step"><button type="button" data-estep="-5" aria-label="5 minutes less"' + (v.minutes <= 5 ? ' disabled' : '') + '>' + ico('minus') + '</button>' +
+            '<output aria-live="polite">' + esc(dur(v.minutes)) + '</output>' +
+            '<button type="button" data-estep="5" aria-label="5 minutes more"' + (v.minutes >= EP_MAX ? ' disabled' : '') + '>' + ico('plus') + '</button></span>' +
+          '</div></div>' +
+          field('Date listened', '<input type="date" name="date" required value="' + esc(v.date) + '" min="' + lim.min + '" max="' + lim.max + '">') +
+        '</div>' +
+        '<p class="hint">Count the time you actually listened. Reflection doesn’t count toward the 30 hours.</p>' +
+        '<p class="fine">Discussed it with colleagues afterwards? <button class="link-inline" data-log-discussion type="button">Log that separately</button> as journal club or a case review.</p>' +
+        goalBlockHTML(s, ep.goal) +
+        reflectionHTML(v, episodePlaceholders(ep)) +
+        (s.error ? '<p class="notice notice-warn" role="alert">' + esc(s.error) + '</p>' : '') +
+        sheetActionsHTML(s, !!s.entryId) +
+      '</form>';
+
+    bindEpisodeSheet();
+    checkPII();
+    if (focusName) {
+      var f = $('sheet').querySelector('[name="' + focusName + '"]');
+      if (f) f.focus();
+    }
+  }
+
+  function bindEpisodeSheet() {
+    var el = $('sheet'), s = st.sheet, form = $('episode-form');
+    el.querySelectorAll('[data-close]').forEach(function (b) { b.addEventListener('click', function () { closeSheet(false); }); });
+    el.querySelectorAll('[data-close-soft]').forEach(function (a) { a.addEventListener('click', function () { closeSheet(true); }); });
+    var discard = el.querySelector('[data-discard]');
+    if (discard) discard.addEventListener('click', function () { clearEpisodeDraft(s.eid); closeSheet(false); openEpisode(s.p, s.ep, s.entryId); });
+
+    el.querySelectorAll('[data-listen]').forEach(function (b) {
+      b.addEventListener('click', function () {
+        collectEpisode();
+        s.v.listen = b.getAttribute('data-listen');
+        s.v.minutes = epMinutes(s.ep, s.v.listen === 'half');
+        saveEpisodeDraft();
+        renderEpisodeSheet();
+      });
+    });
+    el.querySelectorAll('[data-estep]').forEach(function (b) {
+      b.addEventListener('click', function () {
+        collectEpisode();
+        var d = +b.getAttribute('data-estep');
+        s.v.minutes = Math.max(5, Math.min(EP_MAX, s.v.minutes + d));
+        s.v.listen = '';
+        saveEpisodeDraft();
+        renderEpisodeSheet();
+        var again = $('sheet').querySelector('[data-estep="' + d + '"]');
+        if (again && !again.disabled) again.focus();
+      });
+    });
+    bindGoalBlock(s, form, { collect: collectEpisode, saveDraft: saveEpisodeDraft, render: renderEpisodeSheet });
+    var disc = el.querySelector('[data-log-discussion]');
+    if (disc) disc.addEventListener('click', function () {
+      collectEpisode();
+      saveEpisodeDraft();
+      closeSheet(true);
+      openEntry(null, { activity_type: 'journal_club', interactive: true, title: ('Discussion: ' + s.ep.title).slice(0, 200) });
+    });
+
+    form.addEventListener('input', function () { collectEpisode(); saveEpisodeDraft(); checkPII(); });
+    form.addEventListener('submit', function (e) { e.preventDefault(); saveEpisode(); });
+    bindSheetActions(el, s, { collect: collectEpisode, render: renderEpisodeSheet, remove: deleteEpisodeEntry });
+  }
+
+  function collectEpisode() {
+    var form = $('episode-form'), v = st.sheet.v;
+    ['date', 'learning_goal', 'goal_id', 'reflection_learned', 'reflection_practice', 'reflection_next'].forEach(function (n) {
+      var f = form.querySelector('[name="' + n + '"]');
+      if (f) v[n] = f.value;
+    });
+  }
+
+  function saveEpisodeDraft() {
+    var s = st.sheet;
+    if (s && s.type === 'episode') writeEpisodeDraft(s.eid, { entryId: s.entryId || null, v: s.v });
+  }
+
+  function saveEpisode() {
+    var s = st.sheet;
+    collectEpisode();
+    var v = s.v, p = s.p, ep = s.ep;
+    if (!v.date) { s.error = 'Add the date you listened.'; renderEpisodeSheet(); return; }
+    var body = {
+      activity_type: 'media', interactive: false,
+      date: v.date, minutes: v.minutes,
+      learning_goal: v.learning_goal, goal_id: v.goal_id || null,
+      reflection_learned: v.reflection_learned, reflection_practice: v.reflection_practice, reflection_next: v.reflection_next
+    };
+    if (!s.entryId) {
+      body.kind = 'podcast';
+      body.podcast_id = p.id;
+      body.episode_id = ep.eid;
+      body.title = String(ep.title || '').slice(0, 200);
+      body.podcast_name = p.name || null;
+      body.episode_url = ep.link || null;
+      body.episode_date = ep.date || null;
+    }
+    s.saving = true; s.error = '';
+    renderEpisodeSheet();
+    api(s.entryId ? '/api/entries/' + encodeURIComponent(s.entryId) : '/api/entries', { method: s.entryId ? 'PATCH' : 'POST', body: body })
+      .then(function (saved) {
+        clearEpisodeDraft(s.eid);
+        loadLoggedEps();
+        if (saved.cpd_year === st.year || !st.entries) loadYear();
+        if (st.sheet !== s) return;
+        s.saving = false;
+        s.done = saved;
+        renderPaperDone();
+      })
+      .catch(function (err) {
+        if (st.sheet !== s) return;
+        s.saving = false;
+        if (err.status === 409 && err.data && err.data.existing_id && !s.entryId) {
+          clearEpisodeDraft(s.eid);
+          openEpisode(p, ep, err.data.existing_id, { notice: 'You’ve already logged this episode. Here’s that entry.' });
+          return;
+        }
+        if (err.status === 401) { render(); openEpisodeSignIn(p.id, ep.eid, 'You’ve been signed out. Your draft is kept: sign in again to save it.'); return; }
+        s.error = err.message;
+        renderEpisodeSheet();
+      });
+  }
+
+  function deleteEpisodeEntry() {
+    var s = st.sheet;
+    api('/api/entries/' + encodeURIComponent(s.entryId), { method: 'DELETE' })
+      .then(function () { closeSheet(false); loadLoggedEps(); return loadYear(); })
+      .catch(function (err) { s.error = err.message; s.confirmDelete = false; renderEpisodeSheet(); });
+  }
+
+  /* ── Add PD: podcast episode or other activity (plan phase 5, D4) ── */
+
+  /* step: 'choose' (the Add button), 'podcast' (pick from list / by hand),
+     'pick' (the inline podcast + episode search). */
+  function openAdd(step) {
+    if (!st.user) return;   /* the CPD tab shows the sign-in panel */
+    if (!st.goals) { loadYear().then(function () { if (st.goals) openAdd(step); }); return; }
+    openSheet({ type: 'add', step: step || 'choose', q: '', podcast: null }, '');
+    renderAddSheet();
+  }
+
+  function addOption(key, title, sub) {
+    return '<button class="menu-item" data-add="' + key + '" type="button">' +
+      '<span class="menu-text"><span class="menu-title">' + esc(title) + '</span><span class="menu-sub">' + esc(sub) + '</span></span>' +
+      ico('chev-right', 'menu-chev') + '</button>';
+  }
+
+  function renderAddSheet() {
+    var s = st.sheet, el = $('sheet');
+    var head = function (title) {
+      return '<div class="sheet-grip" aria-hidden="true"></div>' +
+        '<div class="sheet-head"><h2 id="sheet-title">' + esc(title) + '</h2>' +
+        '<button class="icon-btn" data-close type="button" aria-label="Close">' + ico('plus', 'rot45') + '</button></div>';
+    };
+    if (s.step === 'choose') {
+      el.innerHTML = head('Add PD') + '<nav class="menu-list" aria-label="Kind of PD">' +
+        addOption('podcast', 'Podcast episode', 'From our list, or enter one by hand') +
+        addOption('other', 'Other activity', 'Journal club, sim, course, case review…') + '</nav>';
+    } else if (s.step === 'podcast') {
+      el.innerHTML = head('Podcast episode') + '<nav class="menu-list" aria-label="Find the episode">' +
+        addOption('pick', 'Pick from our list', podcastNames() || 'Emergency and prehospital podcasts') +
+        addOption('hand', 'Enter by hand', 'Any other podcast or video') + '</nav>';
+    } else {
+      renderPicker(el, head);
+      return;
+    }
+    bindAddSheet(el);
+  }
+
+  function podcastNames() {
+    var idx = PP.podcasts && PP.podcasts.cachedIndex ? PP.podcasts.cachedIndex() : null;
+    return idx && idx.length ? idx.map(function (p) { return p.name; }).join(', ') : '';
+  }
+
+  function bindAddSheet(el) {
+    var s = st.sheet;
+    el.querySelectorAll('[data-close]').forEach(function (b) { b.addEventListener('click', function () { closeSheet(true); }); });
+    el.querySelectorAll('[data-add]').forEach(function (b) {
+      b.addEventListener('click', function () {
+        var k = b.getAttribute('data-add');
+        if (k.indexOf('pod:') === 0) return;   /* renderPicker binds these */
+        if (k === 'other') { closeSheet(true); openEntry(null); return; }
+        if (k === 'hand') { closeSheet(true); openEntry(null, { activity_type: 'media' }); return; }
+        s.step = k;
+        renderAddSheet();
+      });
+    });
+  }
+
+  /* The same data as #podcasts, inside the sheet so the reader stays on
+     the CPD tab. One podcast in the list → straight to its episodes. */
+  function renderPicker(el, head) {
+    var s = st.sheet;
+    if (!PP.podcasts) { el.innerHTML = head('Pick an episode') + '<p class="empty">The podcast list isn’t available right now.</p>'; bindAddSheet(el); return; }
+    if (!s.index) {
+      el.innerHTML = head('Pick an episode') + loadingHTML();
+      bindAddSheet(el);
+      PP.podcasts.loadIndex().then(function (idx) {
+        if (st.sheet !== s) return;
+        s.index = idx;
+        if (idx.length === 1) return PP.podcasts.load(idx[0].id).then(function (p) { s.podcast = p; });
+      }).catch(function () { s.index = []; }).then(function () { if (st.sheet === s) renderAddSheet(); });
+      return;
+    }
+    if (!s.podcast) {
+      el.innerHTML = head('Which podcast?') + (s.index.length ? '<nav class="menu-list">' + s.index.map(function (p) {
+        return addOption('pod:' + p.id, p.name, p.focus || '');
+      }).join('') + '</nav>' : '<p class="empty">The podcast list isn’t available right now.</p>');
+      bindAddSheet(el);
+      el.querySelectorAll('[data-add^="pod:"]').forEach(function (b) {
+        b.addEventListener('click', function () {
+          PP.podcasts.load(b.getAttribute('data-add').slice(4)).then(function (p) {
+            if (st.sheet !== s) return;
+            s.podcast = p;
+            renderAddSheet();
+          });
+        });
+      });
+      return;
+    }
+    var p = s.podcast;
+    el.innerHTML = head(p.name) +
+      '<div class="search-wrap pods-search">' + ico('search', 'search-ico') +
+        '<input id="pick-q" type="search" placeholder="Search episodes, e.g. pupils" aria-label="Search episodes" value="' + esc(s.q) + '" autocomplete="off" autofocus>' +
+      '</div>' +
+      '<div class="pick-list" id="pick-list"></div>' +
+      '<p class="fine">Not there? <button class="link-inline" data-add="hand" type="button">Enter it by hand</button></p>';
+    bindAddSheet(el);
+    var q = $('pick-q'), t = null;
+    q.addEventListener('input', function () { clearTimeout(t); t = setTimeout(function () { s.q = q.value; renderPickList(); }, 150); });
+    renderPickList();
+    q.focus();
+  }
+
+  function renderPickList() {
+    var s = st.sheet, p = s.podcast, box = $('pick-list');
+    if (!box) return;
+    var list = p.episodes.filter(function (e) { return !s.q || PP.podcasts.matches(e, s.q); }).slice(0, 25);
+    box.innerHTML = list.length ? list.map(function (e) {
+      var x = st.loggedEps && st.loggedEps[e.eid];
+      return '<button class="pick-row" data-pick="' + esc(e.eid) + '" type="button">' +
+        '<span class="ep-date">' + esc(niceDate(e.date, true)) + (e.durationSec ? ' · ' + esc(dur(Math.round(e.durationSec / 60))) : '') +
+          (x ? ' · <span class="pods-logged">' + ico('check') + 'Logged</span>' : '') + '</span>' +
+        '<span class="pick-title">' + esc(e.title) + '</span></button>';
+    }).join('') : '<p class="empty">No episodes match.</p>';
+    box.querySelectorAll('[data-pick]').forEach(function (b) {
+      b.addEventListener('click', function () {
+        var ep = p.episodes.filter(function (e) { return e.eid === b.getAttribute('data-pick'); })[0];
+        closeSheet(true);
+        logEpisode(p, ep);
+      });
+    });
+  }
+
+  /* ── shared pieces of the Log PD sheets (paper, episode) ── */
+
+  /* Same bounds as the API: from 1 Dec six years ago to tomorrow. */
+  function dateLimits() {
+    return { min: (+todayISO().slice(0, 4) - 6) + '-12-01', max: addDays(todayISO(), 1) };
+  }
+
+  /* Learning goal: pre-filled suggestion (tagged while unchanged), a link
+     to one of the year's goals, and "Save as a goal". s.goals holds the
+     goals of the entry date's year. */
+  function goalBlockHTML(s, suggestion) {
+    var v = s.v;
+    var suggested = suggestion && v.learning_goal.trim() === suggestion;
+    var activeGoals = s.goals.filter(function (g) { return g.status === 'active' || g.id === v.goal_id; });
+    var linked = v.goal_id ? activeGoals.filter(function (g) { return g.id === v.goal_id; })[0] : null;
+    var canSaveGoal = v.learning_goal.trim() && !activeGoals.some(function (g) { return g.text.trim() === v.learning_goal.trim(); });
+    return '<fieldset><legend>Learning goal' + (suggested ? ' <span class="pill pill-inter">Suggested</span>' : '') + '</legend>' +
+      '<textarea name="learning_goal" rows="2" maxlength="4000" aria-label="Learning goal" placeholder="What did you want to get better at?">' + esc(v.learning_goal) + '</textarea>' +
+      (activeGoals.length ? '<label class="field"><span class="label">Link to one of my goals <span class="opt">optional</span></span>' +
+        '<select name="goal_id"><option value="">None</option>' + activeGoals.map(function (g) {
+          return '<option value="' + esc(g.id) + '"' + (g.id === v.goal_id ? ' selected' : '') + '>' + esc(g.text) + '</option>';
+        }).join('') + '</select></label>' : '') +
+      (canSaveGoal && !linked ? '<button class="link-btn" data-save-goal type="button"' + (s.savingGoal ? ' disabled' : '') + '>' + ico('plus') + 'Save as a goal for ' + esc(yearLabel(cpdYear(v.date))) + '</button>' : '') +
+      '</fieldset>';
+  }
+
+  /* The three reflection prompts, with static placeholder hints. */
+  function reflectionHTML(v, ph) {
+    return '<fieldset><legend>Reflection <span class="opt">needed for a complete entry</span></legend>' +
+        field('What did I learn?', '<textarea name="reflection_learned" rows="3" maxlength="4000" placeholder="' + esc(ph.learned) + '">' + esc(v.reflection_learned) + '</textarea>') +
+        field('How will this change or confirm my practice?', '<textarea name="reflection_practice" rows="3" maxlength="4000" placeholder="' + esc(ph.practice) + '">' + esc(v.reflection_practice) + '</textarea>') +
+        field('Anything to follow up? <span class="opt">optional</span>', '<textarea name="reflection_next" rows="2" maxlength="4000" placeholder="' + esc(ph.next) + '">' + esc(v.reflection_next) + '</textarea>') +
+      '</fieldset>' +
+      '<p class="notice notice-warn" id="pii-warn" hidden>That looks like it might identify a patient (a name, date of birth or record number). Please remove it.</p>' +
+      '<p class="fine">Don’t include patient-identifying details.</p>';
+  }
+
+  function sheetActionsHTML(s, existing) {
+    return '<div class="sheet-actions">' +
+      (existing ? (s.confirmDelete
+        ? '<button class="btn btn-danger" data-delete-yes type="button">Delete this entry</button><button class="btn" data-delete-no type="button">Keep</button>'
+        : '<button class="btn btn-quiet" data-delete type="button">Delete</button>') : '') +
+      (s.confirmDelete ? '' :
+        '<span class="spacer"></span>' +
+        '<button class="btn" data-close type="button">Cancel</button>' +
+        '<button class="btn btn-primary" type="submit"' + (s.saving ? ' disabled' : '') + '>' + (s.saving ? 'Saving…' : 'Save') + '</button>') +
+      '</div>';
+  }
+
+  /* ctl: { collect, saveDraft, render } for the sheet in st.sheet === s. */
+  function bindGoalBlock(s, form, ctl) {
+    var goalSel = form.querySelector('[name="goal_id"]');
+    if (goalSel) goalSel.addEventListener('change', function () { ctl.collect(); ctl.saveDraft(); ctl.render(); });
+    var date = form.querySelector('[name="date"]');
+    date.addEventListener('change', function () {
+      /* A date in another registration year: that year's goals. */
+      ctl.collect();
+      var y = cpdYear(s.v.date || todayISO());
+      goalsFor(y).then(function (g) {
+        if (st.sheet !== s) return;
+        s.goals = g;
+        if (s.v.goal_id && !g.some(function (x) { return x.id === s.v.goal_id; })) s.v.goal_id = '';
+        ctl.render();
+      }).catch(function () {});
+    });
+    var saveGoal = form.querySelector('[data-save-goal]');
+    if (saveGoal) saveGoal.addEventListener('click', function () {
+      ctl.collect();
+      s.savingGoal = true;
+      ctl.render();
+      var year = cpdYear(s.v.date || todayISO());
+      api('/api/goals', { method: 'POST', body: { text: s.v.learning_goal.trim().slice(0, 300), cpd_year: year } }).then(function (g) {
+        s.savingGoal = false;
+        s.goals = s.goals.concat([g]);
+        if (st.year === year && st.goals && st.goals !== s.goals) st.goals = st.goals.concat([g]);
+        s.v.goal_id = g.id;
+        ctl.saveDraft();
+        if (st.sheet === s) ctl.render();
+      }).catch(function (err) {
+        s.savingGoal = false;
+        s.error = err.message;
+        if (st.sheet === s) ctl.render();
+      });
+    });
+  }
+
+  /* ctl: { collect, render, remove } */
+  function bindSheetActions(el, s, ctl) {
+    var del = el.querySelector('[data-delete]');
+    if (del) del.addEventListener('click', function () { ctl.collect(); s.confirmDelete = true; ctl.render(); });
+    var no = el.querySelector('[data-delete-no]');
+    if (no) no.addEventListener('click', function () { s.confirmDelete = false; ctl.render(); });
+    var yes = el.querySelector('[data-delete-yes]');
+    if (yes) yes.addEventListener('click', ctl.remove);
   }
 
   /* ── goal sheet ─────────────────────────────────────── */

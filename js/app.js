@@ -44,7 +44,11 @@
   try { localStorage.removeItem('pp:cpd-beta'); } catch (e) {}
 
   /* Hooks js/cpd.js fills in; app.js calls them if present. */
-  var hooks = { openMenu: null, kicker: null, onShow: null, onRender: [], paperAct: null, logPaper: null };
+  var hooks = {
+    openMenu: null, kicker: null, onShow: null, onRender: [], paperAct: null, logPaper: null,
+    /* Other podcasts for CPD (phase 5): js/podcasts.js browses, js/cpd.js logs. */
+    podcastsKicker: null, logEpisode: null, episodeAct: null, podcastLogged: null, podcastStats: null, openAdd: null
+  };
 
   /* The small surface js/cpd.js uses, so it doesn't reach into this file. */
   window.PP = {
@@ -154,15 +158,15 @@
   var TABS = ['home', 'feed', 'weekly', 'podcast', 'saved'];
   /* Sub-views: full pages that belong to a tab. The tab stays highlighted
      and the header shows a back button to it. */
-  var PARENT = { brief: 'weekly', quiz: 'weekly' };
+  var PARENT = { brief: 'weekly', quiz: 'weekly', podcasts: 'podcast' };
   /* Views reached from the mobile "More" menu. While one shows, the More
      tab is highlighted; they're top-level, so no back button. */
   var MENU = { saved: 1, cpd: 1, account: 1 };
   var VIEWS = TABS.concat(Object.keys(PARENT), ['cpd', 'account']);
-  var TITLES = { home: 'Paramedic Papers', feed: 'Research feed', weekly: 'Weekly', podcast: 'Podcast', saved: 'Saved', brief: 'PD brief', quiz: 'PD quiz', cpd: 'CPD', account: 'Account' };
+  var TITLES = { home: 'Paramedic Papers', feed: 'Research feed', weekly: 'Weekly', podcast: 'Podcast', saved: 'Saved', brief: 'PD brief', quiz: 'PD quiz', podcasts: 'Podcasts for CPD', cpd: 'CPD', account: 'Account' };
   /* On desktop the sidebar carries the wordmark, so the content header
      names the view instead of the app. */
-  var TITLES_WIDE = { home: 'Today', feed: 'Research feed', weekly: 'Weekly digest', podcast: 'Podcast', saved: 'Saved papers', brief: 'PD brief', quiz: 'PD quiz', cpd: 'CPD tracker', account: 'Account' };
+  var TITLES_WIDE = { home: 'Today', feed: 'Research feed', weekly: 'Weekly digest', podcast: 'Podcast', saved: 'Saved papers', brief: 'PD brief', quiz: 'PD quiz', podcasts: 'Podcasts for CPD', cpd: 'CPD tracker', account: 'Account' };
 
   /* The 5th mobile tab becomes "More", which opens the menu sheet
      (js/cpd.js); the sidebar gains CPD and the account chip. Done here
@@ -362,6 +366,8 @@
       text = state.brief ? state.brief.span : 'The email, online';
     } else if (state.tab === 'podcast') {
       text = state.episodes.length ? state.episodes.length + ' episodes' : 'Daily audio roundup';
+    } else if (state.tab === 'podcasts') {
+      text = hooks.podcastsKicker ? hooks.podcastsKicker() : 'Log them as CPD';
     } else if (hooks.kicker && (state.tab === 'cpd' || state.tab === 'account' || state.tab === 'quiz')) {
       text = hooks.kicker(state.tab);
     } else {
