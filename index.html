@@ -23,7 +23,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=21">
+  <link rel="stylesheet" href="css/style.css?v=22">
   <link rel="icon" type="image/png" sizes="32x32" href="icon-32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="icon-16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
@@ -256,20 +256,36 @@
 
     <!-- ── PODCAST ────────────────────────────────────────── -->
     <section class="page" id="page-podcast" hidden>
-      <article class="panel" id="podcast-subscribe">
-        <div class="panel-kicker panel-kicker-accent"><svg class="hi" aria-hidden="true"><use href="#hi-rss"/></svg>Subscribe</div>
-        <p class="panel-lead">New episode every morning.</p>
-        <div class="sub-row">
-          <code class="sub-url" id="feed-url">https://paramedicpapers.com/feed.xml</code>
-          <button class="link-btn" id="btn-copy-feed" type="button"><svg class="hi" aria-hidden="true"><use href="#hi-copy"/></svg><span class="lbl">Copy feed URL</span></button>
+      <!-- Latest episode first (js/app.js renderPodcastStrip fills it). -->
+      <article class="panel ep-latest" id="ep-latest" hidden>
+        <span class="panel-kicker panel-kicker-accent">Latest episode</span>
+        <div class="ep-main">
+          <button class="ep-play" id="latest-play" type="button" aria-label="Play latest episode">
+            <svg class="hi hi-solid" aria-hidden="true"><use class="ply" href="#hi-play"/><use class="pse" href="#hi-pause" style="display:none"/></svg>
+          </button>
+          <div class="ep-meta">
+            <span class="ep-date" id="latest-date"></span>
+            <span class="ep-name" id="latest-title"></span>
+            <span class="ep-desc" id="latest-desc"></span>
+          </div>
+          <span class="ep-len" id="latest-len"></span>
         </div>
-        <p class="sub-hint">Add by URL in Pocket Casts, Overcast, or any podcast app.</p>
+        <span class="strip-progress" id="latest-progress"></span>
       </article>
 
       <!-- Other podcasts as CPD (js/podcasts.js fills it; cpd/plan phase 5). -->
       <article class="panel pods-promo" id="podcasts-promo">
         <span class="panel-kicker panel-kicker-accent">Log other podcasts as CPD</span>
         <a class="btn pods-go" href="#podcasts">Browse podcasts</a>
+      </article>
+
+      <article class="panel sub-panel" id="podcast-subscribe">
+        <div class="panel-kicker panel-kicker-accent"><svg class="hi" aria-hidden="true"><use href="#hi-rss"/></svg>Subscribe</div>
+        <div class="sub-row">
+          <code class="sub-url" id="feed-url">https://paramedicpapers.com/feed.xml</code>
+          <button class="link-btn" id="btn-copy-feed" type="button"><svg class="hi" aria-hidden="true"><use href="#hi-copy"/></svg><span class="lbl">Copy</span></button>
+        </div>
+        <p class="sub-hint">Add by URL in Pocket Casts, Overcast, or any podcast app.</p>
       </article>
 
       <div class="section-head">
@@ -351,7 +367,7 @@
   <div class="sheet-backdrop" id="sheet-backdrop" hidden></div>
   <div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="sheet-title" hidden></div>
 
-  <script src="js/app.js?v=23"></script>
+  <script src="js/app.js?v=24"></script>
   <script src="js/cpd.js?v=7"></script>
   <script src="js/podcasts.js?v=1"></script>
 </body>

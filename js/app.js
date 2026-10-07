@@ -852,6 +852,8 @@
     });
     var bar = $('strip-progress');
     if (bar) bar.style.width = (a.duration ? (a.currentTime / a.duration) * 100 : 0) + '%';
+    var lbar = $('latest-progress'), latest = state.episodes[0];
+    if (lbar) lbar.style.width = (latest && state.playDate === latest.date && a.duration ? (a.currentTime / a.duration) * 100 : 0) + '%';
 
     $('player-play').setAttribute('data-ep-play', state.playDate || '');
     var seek = $('player-seek');
@@ -893,12 +895,29 @@
     syncPlayerUi();
   }
 
+  /* Latest episode in its own box at the top of the Podcast tab. */
+  function renderLatestEpisode() {
+    var box = $('ep-latest');
+    if (!box) return;
+    if (!state.episodes.length) { box.hidden = true; return; }
+    var ep = state.episodes[0];
+    box.hidden = false;
+    $('latest-date').textContent = ep.date + (ep.kind === 'archive' ? ' · From the archive' : '');
+    $('latest-title').textContent = ep.title;
+    $('latest-desc').textContent = ep.description || '';
+    $('latest-len').textContent = epLenLabel(ep);
+    var btn = $('latest-play');
+    btn.setAttribute('data-ep-play', ep.date);
+    btn.setAttribute('aria-label', 'Play ' + ep.title);
+  }
+
   /* Full episode list on the Podcast tab. */
   function renderEpisodes() {
     var list = $('episode-list');
     if (!list) return;
     $('episode-count').textContent = state.episodes.length || '';
     $('episodes-empty').hidden = !!state.episodes.length;
+    renderLatestEpisode();
     list.innerHTML = state.episodes.map(function (ep) {
       var hasNotes = (ep.papers && ep.papers.length) || ep.transcript;
       return '<div class="ep-row" data-ep="' + esc(ep.date) + '">' +
@@ -1019,6 +1038,9 @@
   /* Static listeners, bound once. */
   function bindPodcast() {
     $('strip-play').addEventListener('click', function () {
+      if (state.episodes.length) playEpisode(state.episodes[0]);
+    });
+    $('latest-play').addEventListener('click', function () {
       if (state.episodes.length) playEpisode(state.episodes[0]);
     });
     $('strip-open').addEventListener('click', function () { setTab('podcast'); });
