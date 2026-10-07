@@ -43,8 +43,8 @@
   /* Bar colours, validated with the dataviz palette checker (both pass on
      the light surface; the lighter one is below 3:1, so the chart has a
      legend, tooltips and a table view). */
-  var C_INTERACTIVE = '#2F5FA8';
-  var C_OTHER = '#6F93D8';
+  var C_INTERACTIVE = 'var(--accent)';
+  var C_OTHER = 'var(--chart-2)';
 
   var st = {
     checked: false,      /* /api/me has answered (or failed) */
@@ -528,8 +528,8 @@
 
   function barPath(x, y, w, h, roundTop, color) {
     var r = Math.min(4, h, w / 2);
-    if (!roundTop) return '<rect x="' + x + '" y="' + y + '" width="' + w + '" height="' + h + '" fill="' + color + '"/>';
-    return '<path fill="' + color + '" d="M' + x + ',' + (y + h) + 'V' + (y + r) + 'Q' + x + ',' + y + ' ' + (x + r) + ',' + y +
+    if (!roundTop) return '<rect x="' + x + '" y="' + y + '" width="' + w + '" height="' + h + '" style="fill:' + color + '"/>';
+    return '<path style="fill:' + color + '" d="M' + x + ',' + (y + h) + 'V' + (y + r) + 'Q' + x + ',' + y + ' ' + (x + r) + ',' + y +
       'H' + (x + w - r) + 'Q' + (x + w) + ',' + y + ' ' + (x + w) + ',' + (y + r) + 'V' + (y + h) + 'Z"/>';
   }
 

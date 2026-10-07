@@ -76,6 +76,7 @@
     bindPodcast();
     bindSaved();
     $('btn-refresh').addEventListener('click', refresh);
+    bindTheme();
     $('btn-back').addEventListener('click', function () { setTab(PARENT[state.tab] || 'home'); });
     window.addEventListener('hashchange', function () {
       if (paperFromHash()) { openPaperLink(); return; }
@@ -131,6 +132,35 @@
     var resp = await fetch('data/pd-brief.json?t=' + Date.now(), { cache: 'no-cache' });
     if (!resp.ok) throw new Error('pd-brief.json ' + resp.status);
     return resp.json();
+  }
+
+  /* ── theme (light default; dark is opt-in, remembered per device) ── */
+  var THEME_KEY = 'pp:theme';
+
+  function bindTheme() {
+    var dark = document.documentElement.getAttribute('data-theme') === 'dark';
+    applyTheme(dark);
+    $('btn-theme').addEventListener('click', function () {
+      dark = !dark;
+      applyTheme(dark);
+      try {
+        if (dark) localStorage.setItem(THEME_KEY, 'dark');
+        else localStorage.removeItem(THEME_KEY);
+      } catch (e) {}
+    });
+  }
+
+  function applyTheme(dark) {
+    var root = document.documentElement;
+    if (dark) root.setAttribute('data-theme', 'dark');
+    else root.removeAttribute('data-theme');
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', dark ? '#121417' : '#FBFAF8');
+    var btn = $('btn-theme');
+    var label = dark ? 'Light mode' : 'Dark mode';
+    btn.setAttribute('aria-pressed', String(dark));
+    btn.setAttribute('aria-label', label);
+    btn.title = label;
+    btn.querySelector('use').setAttribute('href', dark ? '#hi-sun' : '#hi-moon');
   }
 
   async function refresh() {
