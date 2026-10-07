@@ -571,16 +571,26 @@
     var day = (state.data.dailyUpdates || [])[0];
     var papers = day ? day.papers : [];
     var fresh = day && isToday(day.date);
-    /* No scan today (quiet day, or the morning run hasn't happened yet):
-       keep showing the latest scan, labelled with its date. */
-    $('today-head').textContent = fresh || !day ? "Today's newest" : 'Latest scan';
+    $('today-head').textContent = fresh || !day ? "Today's newest" : 'Latest papers';
     if (fresh || !day) {
       /* The desktop section head carries the scan date alongside the count. */
       $('today-count').textContent = papers.length + ' new today' +
         (isWide() && day ? ' · ' + dayLabel(day.date).replace('Today · ', '') : '');
-    } else {
-      $('today-count').textContent = 'None new today · ' + dayLabel(day.date);
+      return renderTodayList(papers);
     }
+    /* Nothing from today: either today's scan found none, or it hasn't run
+       yet (daily at 07:00 Canberra, on the site by ~07:30). Today's push
+       stamps tldr.date and lastUpdatedDate even when it finds nothing. */
+    var t = state.data.tldr || {};
+    var scanned = isToday(t.date) || isToday(state.data.lastUpdatedDate);
+    var found = papers.length + ' found ' + (isYesterday(day.date) ? 'yesterday, ' : '') + dayLabel(day.date);
+    var status = scanned ? "today's scan found none new"
+      : sydneyHour() < 9 ? "today's scan due ~7:30 am" : "today's scan hasn't run yet";
+    $('today-count').textContent = found + ' · ' + status;
+    renderTodayList(papers);
+  }
+
+  function renderTodayList(papers) {
     $('today-list').innerHTML = papers.map(function (p) {
       return '<article class="today-item" data-today-id="' + esc(p.id) + '">' +
         cardInnerHTML(p) + '</article>';
@@ -1461,15 +1471,24 @@
 
   var DAYS = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 
-  /* Scan dates are Sydney dates; compared with the reader's local date. */
-  function isToday(date) {
-    return new Date(date + 'T00:00:00').toDateString() === new Date().toDateString();
+  /* Scan dates are Canberra (Sydney time) dates, so "today" is too,
+     wherever the reader is. */
+  function sydneyNow(opts) {
+    return new Intl.DateTimeFormat('en-CA', Object.assign({ timeZone: 'Australia/Sydney' }, opts))
+      .format(new Date());
+  }
+  function sydneyToday() { return sydneyNow({ year: 'numeric', month: '2-digit', day: '2-digit' }); }
+  function sydneyHour() { return +sydneyNow({ hour: 'numeric', hourCycle: 'h23' }); }
+  function isToday(date) { return !!date && date === sydneyToday(); }
+  function isYesterday(date) {
+    var d = new Date(sydneyToday() + 'T00:00:00Z');
+    d.setUTCDate(d.getUTCDate() - 1);
+    return date === d.toISOString().slice(0, 10);
   }
 
   function dayLabel(date) {
     var d = new Date(date + 'T00:00:00');
-    var today = new Date();
-    var same = d.toDateString() === today.toDateString();
+    var same = isToday(date);
     var label = DAYS[d.getDay()].slice(0, 3) + ' ' + d.getDate() + ' ' +
       d.toLocaleDateString('en-GB', { month: 'short' });
     return same ? 'Today · ' + label : label;
