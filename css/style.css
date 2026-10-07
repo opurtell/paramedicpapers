@@ -1336,8 +1336,11 @@ body.has-sheet { overflow: hidden; }
 .pods-ep:last-child { border-bottom: 0; }
 .pods-ep.is-hot { background: var(--accent-lo); border-radius: 10px; padding-inline: 10px; margin-inline: -10px; }
 .pods-ep .ep-date { margin: 0; }
+.pods-ep-pod { align-self: flex-start; font-size: 12px; font-weight: 600; color: var(--accent); text-decoration: none; }
+.pods-ep-pod:hover { text-decoration: underline; }
+.pods-list-results { display: flex; flex-direction: column; gap: 10px; }
 .pods-ep-title { font-family: var(--sans); font-size: 15px; font-weight: 500; line-height: 1.35; color: var(--ink); }
-.pods-ep b, .pick-title b { background: var(--warm-tint); color: var(--ink); font-weight: 600; border-radius: 2px; }
+.pods-ep b, .pods-card b, .pick-title b { background: var(--warm-tint); color: var(--ink); font-weight: 600; border-radius: 2px; }
 .pods-notes {
   margin: 0; font-size: 13px; line-height: 1.5; color: var(--ink-3); cursor: pointer;
   display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
