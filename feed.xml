@@ -24,6 +24,20 @@
     </itunes:category>
     <itunes:explicit>false</itunes:explicit>
     <item>
+      <title>Paramedic Papers Daily — 8 October 2026</title>
+      <link>https://paramedicpapers.com/#episode=2026-10-08</link>
+      <description>4 papers: amiodarone after non-shockable-to-shockable conversion; long resuscitations don't rule out good recovery; family CPR vs strangers' CPR; bystander AEDs underused</description>
+      <content:encoded><![CDATA[<p>4 papers: amiodarone after non-shockable-to-shockable conversion; long resuscitations don't rule out good recovery; family CPR vs strangers' CPR; bystander AEDs underused</p><p>Papers in this episode:</p><ul><li><a href="https://doi.org/10.1016/j.resuscitation.2026.111349">Amiodarone after non-shockable-to-shockable conversion <em>(Resuscitation)</em></a></li><li><a href="https://doi.org/10.1016/j.resuscitation.2026.111342">Long resuscitations don't rule out good recovery <em>(Resuscitation)</em></a></li><li><a href="https://doi.org/10.1016/j.resplu.2026.101516">Family CPR helps — but strangers' CPR helps more <em>(Resuscitation Plus)</em></a></li><li><a href="https://doi.org/10.1080/10903127.2026.2743854">Bystander AEDs work — when someone actually grabs one <em>(Prehospital Emergency Care)</em></a></li></ul><p><a href="https://paramedicpapers.com/#episode=2026-10-08">Show notes and transcript</a></p>]]></content:encoded>
+      <pubDate>Thu, 08 Oct 2026 07:33:56 +1100</pubDate>
+      <guid isPermaLink="false">https://audio.paramedicpapers.com/ep-2026-10-08.mp3</guid>
+      <enclosure url="https://audio.paramedicpapers.com/ep-2026-10-08.mp3" length="987692" type="audio/mpeg"/>
+      <itunes:duration>246</itunes:duration>
+      <itunes:summary>4 papers: amiodarone after non-shockable-to-shockable conversion; long resuscitations don't rule out good recovery; family CPR vs strangers' CPR; bystander AEDs underused</itunes:summary>
+      <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
+      <itunes:episodeType>full</itunes:episodeType>
+      <podcast:transcript url="https://audio.paramedicpapers.com/ep-2026-10-08.txt" type="text/plain" language="en-au"/>
+    </item>
+    <item>
       <title>Paramedic Papers Daily — 7 October 2026</title>
       <link>https://paramedicpapers.com/#episode=2026-10-07</link>
       <description>4 papers: Cancer markedly raises OHCA risk; Prehospital RSI: what makes it hard; EMS dashboards: thin crisis evidence; On-site CT slashes event transports</description>
@@ -402,19 +416,6 @@
       <enclosure url="https://audio.paramedicpapers.com/ep-2026-09-02.mp3" length="963405" type="audio/mpeg"/>
       <itunes:duration>240</itunes:duration>
       <itunes:summary>Racial disparities in bystander CPR for opioid-associated OHCA; Safety of RhD-positive blood transfusion in females of childbearing potential</itunes:summary>
-      <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
-      <itunes:episodeType>full</itunes:episodeType>
-    </item>
-    <item>
-      <title>Paramedic Papers Daily — 1 September 2026</title>
-      <link>https://paramedicpapers.com/#episode=2026-09-01</link>
-      <description>1 paper: SPEAR device safety warning</description>
-      <content:encoded><![CDATA[<p>1 paper: SPEAR device safety warning</p><p>Papers in this episode:</p><ul><li><a href="https://doi.org/10.1016/j.annemergmed.2026.04.010">Potential Risks With the SPEAR®, a New Device Marketed for Out-of-Hospital Needle Decompression of the Chest <em>(Annals of Emergency Medicine)</em></a></li><li><a href="https://doi.org/10.1080/10903127.2026.2717758">Effect of Body Position on Chest Compression Quality During CPR in an Obesity Simulation Model: A Randomized Crossover Trial <em>(Prehospital Emergency Care)</em></a></li><li><a href="https://doi.org/10.1080/10903127.2026.2726541">Prehospital Blood Transfusion for Medical Causes of Hemorrhage: A Case Series <em>(Prehospital Emergency Care)</em></a></li><li><a href="https://doi.org/10.1080/10903127.2026.2725890">Between Hemorrhage and Harm: Complications of the Abdominal Aortic and Junctional Tourniquet-Stabilized <em>(Prehospital Emergency Care)</em></a></li><li><a href="https://doi.org/10.1080/10903127.2026.2725214">Rate of future hemolytic disease of the fetus and newborn following the prehospital transfusion of RhD-positive blood products to females of childbearing potential in the United States of America <em>(Prehospital Emergency Care)</em></a></li><li><a href="https://doi.org/10.1186/s13049-026-01682-6">Population-based implementation of a mobile emergency medical service platform in Hiroshima, Japan <em>(Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine)</em></a></li><li><a href="https://doi.org/10.1080/10903127.2026.2724534">Public Acceptance, Trust, and Self-Efficacy Related to Drone-Assisted Emergency Medical Response in Louisiana <em>(Prehospital Emergency Care)</em></a></li></ul><p><a href="https://paramedicpapers.com/#episode=2026-09-01">Show notes and transcript</a></p>]]></content:encoded>
-      <pubDate>Tue, 01 Sep 2026 07:32:26 +1000</pubDate>
-      <guid isPermaLink="false">https://opurtell.github.io/paramedicpapers/audio/ep-2026-09-01.mp3</guid>
-      <enclosure url="https://audio.paramedicpapers.com/ep-2026-09-01.mp3" length="207117" type="audio/mpeg"/>
-      <itunes:duration>51</itunes:duration>
-      <itunes:summary>1 paper: SPEAR device safety warning</itunes:summary>
       <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
       <itunes:episodeType>full</itunes:episodeType>
     </item>
