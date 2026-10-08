@@ -7,8 +7,8 @@
   <title>Paramedic Papers — Daily Prehospital Research Scan</title>
   <meta name="description" content="Daily curated scan of the latest paramedic and prehospital research papers, with a short morning podcast.">
   <link rel="canonical" href="https://paramedicpapers.com/">
-  <!-- Link previews (Open Graph / Twitter). Paper and episode links are
-       #fragments, so every share uses this one card. -->
+  <!-- Link previews (Open Graph / Twitter) for the dashboard. Shared paper
+       links point at /papers/<key>/, which carries its own card. -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Paramedic Papers">
   <meta property="og:title" content="Paramedic Papers — Daily Prehospital Research Scan">
@@ -20,10 +20,11 @@
   <meta property="og:image:alt" content="Paramedic Papers: a pencil wrapped by a snake, the rod-of-Asclepius logo">
   <meta property="og:locale" content="en_AU">
   <meta name="twitter:card" content="summary_large_image">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=24">
+  <!-- Self-hosted fonts (css/fonts.css); the two text faces are preloaded. -->
+  <link rel="preload" href="/fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/ibm-plex-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/fonts.css?v=1">
+  <link rel="stylesheet" href="css/style.css?v=25">
   <!-- Apply a saved dark-theme choice before first paint (light is default). -->
   <script>
     try {
@@ -40,6 +41,41 @@
   <link rel="alternate" type="application/rss+xml" title="Paramedic Papers Daily" href="feed.xml">
   <!-- Cloudflare Web Analytics: cookie-free visit counts -->
   <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "b5089c3ad1824aacba91453de2c1b9c8"}'></script>
+  <!-- Structured data for search engines. The nightly build keeps
+       dateModified current (between the SEO:LD markers). -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://paramedicpapers.com/#organization",
+        "name": "Paramedic Papers",
+        "url": "https://paramedicpapers.com/",
+        "logo": "https://paramedicpapers.com/icon-512.png",
+        "founder": { "@type": "Person", "name": "Oscar Purtell" }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://paramedicpapers.com/#website",
+        "name": "Paramedic Papers",
+        "alternateName": "Paramedic Papers — Daily Prehospital Research Scan",
+        "url": "https://paramedicpapers.com/",
+        "description": "Daily plain-English summaries of new paramedic and prehospital research, with Australian practice context and a short morning podcast.",
+        "inLanguage": "en-AU",
+        "publisher": { "@id": "https://paramedicpapers.com/#organization" }
+      },
+      {
+        "@type": "PodcastSeries",
+        "@id": "https://paramedicpapers.com/#podcast",
+        "name": "Paramedic Papers Daily",
+        "url": "https://paramedicpapers.com/episodes/",
+        "webFeed": "https://paramedicpapers.com/feed.xml",
+        "author": { "@type": "Person", "name": "Oscar Purtell" }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
@@ -168,7 +204,7 @@
           <span class="panel-kicker panel-kicker-accent" id="daily-tldr-kicker">Today's TLDR</span>
           <button class="sign-btn" id="daily-tldr-toggle" type="button" aria-expanded="false" aria-label="Expand today's TLDR"><svg class="hi" aria-hidden="true"><use href="#hi-plus"/></svg></button>
         </div>
-        <p class="panel-lead" id="daily-tldr-lead"></p>
+        <p class="panel-lead" id="daily-tldr-lead"><!-- SEO:TLDR:START --><!-- SEO:TLDR:END --></p>
         <div class="collapse bullets" id="daily-tldr-body" hidden></div>
       </article>
 
@@ -188,7 +224,9 @@
         <h2 id="today-head">Today's newest</h2>
         <span class="count-flag" id="today-count"></span>
       </div>
-      <div class="today-list" id="today-list"></div>
+      <!-- The nightly build fills both marker blocks with today's content so it
+           is in the HTML; app.js replaces it with the same content on load. -->
+      <div class="today-list" id="today-list"><!-- SEO:TODAY:START --><!-- SEO:TODAY:END --></div>
 
       <button class="wide-btn" id="btn-open-feed" type="button">Open full feed</button>
       <a class="newsletter-link" href="https://join.paramedicpapers.com">Get the PD brief by email, every 8 days <svg class="hi" aria-hidden="true"><use href="#hi-arrow"/></svg></a>
@@ -346,6 +384,20 @@
       <div id="account-body"></div>
     </section>
 
+    <!-- Site footer, under every view. Its links are also what lets search
+         engines reach the static pages from the dashboard. -->
+    <footer class="site-foot">
+      <p class="site-tagline">Paramedic Papers: daily plain-English summaries of new paramedic and prehospital research, with Australian practice context.</p>
+      <nav class="site-foot-links" aria-label="Site">
+        <a href="/topics/">Papers by topic</a>
+        <a href="/daily/">Daily scans</a>
+        <a href="/episodes/">Podcast episodes</a>
+        <a href="/about.html">About</a>
+        <a href="/privacy.html">Privacy</a>
+        <a href="/feed.xml">RSS</a>
+      </nav>
+    </footer>
+
   </main>
 
   <!-- Now-playing bar. Shown once an episode has been started; sits above
@@ -381,8 +433,18 @@
   <div class="sheet-backdrop" id="sheet-backdrop" hidden></div>
   <div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="sheet-title" hidden></div>
 
-  <script src="js/app.js?v=26"></script>
-  <script src="js/cpd.js?v=9"></script>
-  <script src="js/podcasts.js?v=3"></script>
+  <!-- Without JS the dashboard can't draw; the static pages still work. -->
+  <noscript>
+    <div class="noscript-msg">
+      <p>The dashboard needs JavaScript. Every paper is also on its own page:</p>
+      <p><a href="/topics/">Papers by topic</a> · <a href="/daily/">Daily scans</a> · <a href="/episodes/">Podcast episodes</a> · <a href="/about.html">About</a></p>
+    </div>
+  </noscript>
+
+  <!-- defer keeps the order (cpd.js and podcasts.js rely on app.js's
+       window.PP); all three start from DOMContentLoaded as before. -->
+  <script defer src="js/app.js?v=27"></script>
+  <script defer src="js/cpd.js?v=10"></script>
+  <script defer src="js/podcasts.js?v=4"></script>
 </body>
 </html>
