@@ -245,8 +245,23 @@
     row.scrollIntoView({ block: 'start' });
   }
 
+  /* Shared links point at the paper's static page (built nightly by the
+     pipeline's build_static_pages.py), which has its own link preview and
+     can be found by search engines. The key MUST match paper_key() there:
+     the PMID, else "doi-" + the DOI, else "id-" + the id, lowercased with
+     every run of other characters turned into one "-". */
+  function slugPart(s) {
+    return String(s).toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+  }
+  function paperKey(p) {
+    if (/^\d+$/.test(p.pmid || '')) return p.pmid;
+    if (p.doi) return 'doi-' + slugPart(p.doi);
+    return 'id-' + slugPart(p.id);
+  }
   function paperLink(id) {
-    return location.origin + location.pathname + '#paper=' + encodeURIComponent(id);
+    var p = paperById(id);
+    if (!p) return location.origin + location.pathname + '#paper=' + encodeURIComponent(id);
+    return location.origin + '/papers/' + paperKey(p) + '/';
   }
 
   /* "#account?login=failed&reason=…" → "account", "#quiz=2026-10-14" →

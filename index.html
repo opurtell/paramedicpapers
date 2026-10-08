@@ -7,8 +7,8 @@
   <title>Paramedic Papers — Daily Prehospital Research Scan</title>
   <meta name="description" content="Daily curated scan of the latest paramedic and prehospital research papers, with a short morning podcast.">
   <link rel="canonical" href="https://paramedicpapers.com/">
-  <!-- Link previews (Open Graph / Twitter). Paper and episode links are
-       #fragments, so every share uses this one card. -->
+  <!-- Link previews (Open Graph / Twitter) for the dashboard. Shared paper
+       links point at /papers/<key>/, which carries its own card. -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Paramedic Papers">
   <meta property="og:title" content="Paramedic Papers — Daily Prehospital Research Scan">
@@ -20,10 +20,11 @@
   <meta property="og:image:alt" content="Paramedic Papers: a pencil wrapped by a snake, the rod-of-Asclepius logo">
   <meta property="og:locale" content="en_AU">
   <meta name="twitter:card" content="summary_large_image">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=24">
+  <!-- Self-hosted fonts (css/fonts.css); the two text faces are preloaded. -->
+  <link rel="preload" href="/fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/ibm-plex-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/fonts.css?v=1">
+  <link rel="stylesheet" href="css/style.css?v=25">
   <!-- Apply a saved dark-theme choice before first paint (light is default). -->
   <script>
     try {
@@ -40,6 +41,40 @@
   <link rel="alternate" type="application/rss+xml" title="Paramedic Papers Daily" href="feed.xml">
   <!-- Cloudflare Web Analytics: cookie-free visit counts -->
   <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "b5089c3ad1824aacba91453de2c1b9c8"}'></script>
+  <!-- Structured data for search engines (hand-written, not generated). -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://paramedicpapers.com/#organization",
+        "name": "Paramedic Papers",
+        "url": "https://paramedicpapers.com/",
+        "logo": "https://paramedicpapers.com/icon-512.png",
+        "founder": { "@type": "Person", "name": "Oscar Purtell" }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://paramedicpapers.com/#website",
+        "name": "Paramedic Papers",
+        "alternateName": "Paramedic Papers — Daily Prehospital Research Scan",
+        "url": "https://paramedicpapers.com/",
+        "description": "Daily plain-English summaries of new paramedic and prehospital research, with Australian practice context and a short morning podcast.",
+        "inLanguage": "en-AU",
+        "publisher": { "@id": "https://paramedicpapers.com/#organization" }
+      },
+      {
+        "@type": "PodcastSeries",
+        "@id": "https://paramedicpapers.com/#podcast",
+        "name": "Paramedic Papers Daily",
+        "url": "https://paramedicpapers.com/episodes/",
+        "webFeed": "https://paramedicpapers.com/feed.xml",
+        "author": { "@type": "Person", "name": "Oscar Purtell" }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
@@ -168,7 +203,7 @@
           <span class="panel-kicker panel-kicker-accent" id="daily-tldr-kicker">Today's TLDR</span>
           <button class="sign-btn" id="daily-tldr-toggle" type="button" aria-expanded="false" aria-label="Expand today's TLDR"><svg class="hi" aria-hidden="true"><use href="#hi-plus"/></svg></button>
         </div>
-        <p class="panel-lead" id="daily-tldr-lead"></p>
+        <p class="panel-lead" id="daily-tldr-lead"><!-- SEO:TLDR:START -->A cardiac arrest-heavy day: German registry data suggest amiodarone pays off when a non-shockable rhythm converts to shockable, Danish data show long resuscitations don&#x27;t preclude good recovery, and bystander CPR/AED studies keep underlining that the community is our best crew.<!-- SEO:TLDR:END --></p>
         <div class="collapse bullets" id="daily-tldr-body" hidden></div>
       </article>
 
@@ -188,7 +223,9 @@
         <h2 id="today-head">Today's newest</h2>
         <span class="count-flag" id="today-count"></span>
       </div>
-      <div class="today-list" id="today-list"></div>
+      <!-- The nightly build fills both marker blocks with today's content so it
+           is in the HTML; app.js replaces it with the same content on load. -->
+      <div class="today-list" id="today-list"><!-- SEO:TODAY:START --><article class="today-item"><h3 class="paper-title"><a href="/papers/42838501/">Amiodarone After Conversion From a Non-shockable to a Shockable Rhythm in Out-of-Hospital Cardiac Arrest A Propensity Score-Matched Analysis from the German Resuscitation Registry</a></h3><p class="paper-summary">German Resuscitation Registry propensity-matched cohort testing whether amiodarone helps OHCA patients whose initial non-shockable rhythm converts to shockable — it was associated with better 24-hour and survival-to-discharge, though not clearly better neurological outcome.</p></article><article class="today-item"><h3 class="paper-title"><a href="/papers/42838497/">Time to Return of Spontaneous Circulation and Long-Term Outcomes in Bystander-Witnessed Out-of-Hospital Cardiac Arrest Survivors</a></h3><p class="paper-summary">Danish national registry study of bystander-witnessed OHCA survivors asking whether longer time-to-ROSC means worse long-term outcomes — anoxic brain damage rose with time, but long-term survival, return to work and nursing-home admission did not, showing prolonged resuscitation doesn&#x27;t preclude good recovery.</p></article><article class="today-item"><h3 class="paper-title"><a href="/papers/doi-10-1016-j-resplu-2026-101516/">Association Between Family Member Bystander CPR and Survival for Out-of-Hospital Cardiac Arrest</a></h3><p class="paper-summary">US CARES registry cohort of 824,960 OHCAs comparing family-member vs non-family bystander CPR — both beat no bystander CPR, but bystanders outside the family achieved notably higher survival.</p></article><article class="today-item"><h3 class="paper-title"><a href="/papers/42837514/">Bystander AED effectiveness despite low utilisation in OHCA</a></h3><p class="paper-summary">Korean multicentre OHCA registry analysis estimating bystander AED effectiveness against a no-defibrillation reference — AED application was associated with outcomes comparable to or better than EMS shocks, but was applied in only a fraction of eligible cases, especially at home.</p></article><article class="today-item"><h3 class="paper-title"><a href="/papers/42838865/">Global Rate of Bystander Cardiopulmonary Resuscitation in Out-of-Hospital Cardiac Arrest: A Systematic Review and Meta-Analysis</a></h3><p class="paper-summary">Systematic review and meta-analysis of 229 studies quantifying global bystander CPR rates in OHCA — just under a third of patients get bystander CPR, with arrests at home 28% less likely to receive it than public-location arrests.</p></article><article class="today-item"><h3 class="paper-title"><a href="/papers/42838724/">Mean arterial pressure for children in US emergency department and prehospital settings</a></h3><p class="paper-summary">Large US observational study deriving and validating age-specific mean arterial pressure centile curves in prehospital, ED and critical-care datasets — lower age-adjusted MAP tracked with mortality and greater vasoactive and fluid use, though the curves fitted neonates in the EMS sample poorly.</p></article><article class="today-item"><h3 class="paper-title"><a href="/papers/doi-10-1016-j-resplu-2026-101512/">Strategies for Defibrillation during Out-of-Hospital Cardiac Arrest – Protocol for a Randomised Clinical Trial</a></h3><p class="paper-summary">Protocol for a multinational 3-arm RCT testing whether anterior-posterior pad placement or double sequential defibrillation beats standard anterior-lateral defibrillation for 30-day survival in shockable OHCA — no results yet, with 320 of a planned 909 patients enrolled.</p></article><!-- SEO:TODAY:END --></div>
 
       <button class="wide-btn" id="btn-open-feed" type="button">Open full feed</button>
       <a class="newsletter-link" href="https://join.paramedicpapers.com">Get the PD brief by email, every 8 days <svg class="hi" aria-hidden="true"><use href="#hi-arrow"/></svg></a>
@@ -346,6 +383,20 @@
       <div id="account-body"></div>
     </section>
 
+    <!-- Site footer, under every view. Its links are also what lets search
+         engines reach the static pages from the dashboard. -->
+    <footer class="site-foot">
+      <p class="site-tagline">Paramedic Papers: daily plain-English summaries of new paramedic and prehospital research, with Australian practice context.</p>
+      <nav class="site-foot-links" aria-label="Site">
+        <a href="/topics/">Papers by topic</a>
+        <a href="/daily/">Daily scans</a>
+        <a href="/episodes/">Podcast episodes</a>
+        <a href="/about.html">About</a>
+        <a href="/privacy.html">Privacy</a>
+        <a href="/feed.xml">RSS</a>
+      </nav>
+    </footer>
+
   </main>
 
   <!-- Now-playing bar. Shown once an episode has been started; sits above
@@ -381,8 +432,18 @@
   <div class="sheet-backdrop" id="sheet-backdrop" hidden></div>
   <div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="sheet-title" hidden></div>
 
-  <script src="js/app.js?v=26"></script>
-  <script src="js/cpd.js?v=9"></script>
-  <script src="js/podcasts.js?v=3"></script>
+  <!-- Without JS the dashboard can't draw; the static pages still work. -->
+  <noscript>
+    <div class="noscript-msg">
+      <p>The dashboard needs JavaScript. Every paper is also on its own page:</p>
+      <p><a href="/topics/">Papers by topic</a> · <a href="/daily/">Daily scans</a> · <a href="/episodes/">Podcast episodes</a> · <a href="/about.html">About</a></p>
+    </div>
+  </noscript>
+
+  <!-- defer keeps the order (cpd.js and podcasts.js rely on app.js's
+       window.PP); all three start from DOMContentLoaded as before. -->
+  <script defer src="js/app.js?v=27"></script>
+  <script defer src="js/cpd.js?v=10"></script>
+  <script defer src="js/podcasts.js?v=4"></script>
 </body>
 </html>

@@ -127,6 +127,23 @@ Used as a fallback for the Weekly tab's "Editor's picks" when `weeklyTldr.topPic
 |-------------------|----------|-------------|
 | `featuredReason`  | No       | Why this paper is highlighted |
 
+## Static pages (generated — don't hand-edit)
+
+`papers/`, `topics/`, `daily/`, `episodes/` and `sitemap.xml` are written by
+the pipeline's `build_static_pages.py` from `data/papers.json` and
+`data/episodes.json`. They give every paper, topic, daily scan and episode a
+crawlable URL (`/papers/<key>/`, `/topics/<slug>/`, `/daily/YYYY-MM-DD/`,
+`/episodes/YYYY-MM-DD/`). Each run rebuilds those folders in full and deletes
+anything it no longer produces, so edits there are lost; change the generator
+instead.
+
+- Styling: `css/static.css` (standalone; tokens copied from `style.css`) and
+  `css/fonts.css`. Bump `STATIC_CSS_V` / `FONTS_CSS_V` in the generator when
+  either changes.
+- Paper keys: `paperKey()` in `js/app.js` and `paper_key()` in the generator
+  must stay identical. Share links use it.
+- `404.html` and `about.html` are hand-written and use the same layout.
+
 ## Saved papers (client-side)
 
 The Saved tab persists to `localStorage` under the key `pp:saved`. The value is an **object map** (not an array):
