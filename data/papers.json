@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-10-08T20:20:55Z",
-  "lastUpdatedSydney": "2026-10-09 07:20 AEDT",
-  "lastUpdatedDate": "2026-10-09",
+  "lastUpdated": "2026-10-09T20:20:55Z",
+  "lastUpdatedSydney": "2026-10-10 07:20 AEDT",
+  "lastUpdatedDate": "2026-10-10",
   "featuredPapers": [
     {
       "id": "10.1016/j.resplu.2026.101512",
@@ -1020,89 +1020,218 @@
     }
   ],
   "funFact": {
-    "category": "pathophysiology",
-    "fact": "The lethal triad of trauma — hypothermia, acidosis, coagulopathy — is a vicious cycle where each worsens the others. Warm fluids, early haemorrhage control, damage control surgery. Break the triangle or the patient breaks."
+    "category": "pharmacology",
+    "fact": "Magnesium sulphate — not a benzo — is first-line for eclamptic seizures. It antagonises calcium at NMDA receptors and causes cerebral vasodilation. It halves seizure risk compared to diazepam. In eclampsia, reach for the magnesium."
   },
   "tldr": {
-    "date": "2026-10-09",
-    "paperCount": 9,
-    "summary": "Resuscitation and cardiac care dominate today: a Victorian registry found only 60% of paramedic-suspected STEMIs were confirmed at discharge, and a 320,000-patient Japanese registry suggests rising bystander CPR in the very old isn't translating into better neurological outcomes.",
+    "date": "2026-10-10",
+    "paperCount": 7,
+    "summary": "Cardiac arrest leads the day: a 97,439-patient US analysis links impedance threshold devices to better prehospital ROSC but worse survival to discharge, and Aus-ROC publishes the first paediatric OHCA epidemiology report for Australia and New Zealand.",
     "highlights": [
       {
-        "id": "42841835",
-        "pmid": "42841835",
-        "doi": "10.1016/j.annemergmed.2026.07.027",
-        "title": "Only 60% of paramedic-suspected STEMI confirmed",
-        "journal": "Annals of Emergency Medicine",
-        "note": "STEMI confirmed in 4,330/7,205 (60.1%); non-ST-elevation ACS or other coronary syndromes 11.4%; other cardiac 10.5%; noncardiac 8.5%; coronary angiography 67.1%, PCI 44.4%; 30-day mortality 6.5% and 17.5% over median 2.8 years follow-up"
+        "id": "42849561",
+        "pmid": "42849561",
+        "doi": "10.1016/j.resuscitation.2026.111340",
+        "title": "ITDs in OHCA: early wins, late losses",
+        "journal": "Resuscitation",
+        "note": "ITD-only: ROSC 26.7% vs 23.8% (aOR 1.09) but survival to discharge 23.9% vs 32.0% (aOR 0.68), with worse neurological outcomes; ITD+ACD showed more extreme versions of both trends"
       },
       {
-        "id": "10.1016/j.resplu.2026.101525",
+        "id": "10.1016/j.resuscitation.2026.111347",
         "pmid": "",
-        "doi": "10.1016/j.resplu.2026.101525",
-        "title": "Bystander CPR up but outcomes flat in the very old",
-        "journal": "Resuscitation Plus",
-        "note": "Bystander CPR increased significantly in all age and bystander-relationship strata (all p<0.001) but remained ~50% in family-witnessed arrests; CPC 1–2 at 1 month improved only in the 65–74 group with non-family bystanders; in those ≥90 bystander CPR reached ~80% while CPC 1–2 stayed flat at ~1%"
+        "doi": "10.1016/j.resuscitation.2026.111347",
+        "title": "Paediatric OHCA in Australia and NZ: Aus-ROC report",
+        "journal": "Resuscitation",
+        "note": "Not yet available — abstract to come"
       },
       {
-        "id": "10.1016/j.resplu.2026.101523",
+        "id": "42849295",
+        "pmid": "42849295",
+        "doi": "10.1016/j.hrtlng.2026.102970",
+        "title": "Unwitnessed arrests: mostly women, mostly at home",
+        "journal": "Heart & Lung",
+        "note": "Female sex and home location most consistently associated with unwitnessed arrest; limited evidence for arrests at night or during sleep, low socioeconomic status, type I diabetes and psychiatric illness"
+      },
+      {
+        "id": "10.1111/1742-6723.70361",
         "pmid": "",
-        "doi": "10.1016/j.resplu.2026.101523",
-        "title": "CPR injuries common after long arrests",
-        "journal": "Resuscitation Plus",
-        "note": "58/136 (43%) sustained injuries, 23 (16.9%) clinically significant; CPR >20 minutes associated with injury (OR 2.45, 95% CI 1.15–5.23); mortality higher in injured patients (70% vs 43%)"
-      },
-      {
-        "id": "42841411",
-        "pmid": "42841411",
-        "doi": "10.1080/15563650.2026.2738599",
-        "title": "Ice-water immersion wins for drug hyperthermia",
-        "journal": "Clinical Toxicology",
-        "note": "Ice-water immersion cooled at 0.169 ± 0.027 °C/min and cold-water immersion at 0.162 ± 0.037 °C/min — the fastest modalities; ice-water-soaked sheets/towels 0.121 ± 0.030 °C/min; meta-analysis confirmed immersion beats passive cooling"
-      },
-      {
-        "id": "10.1016/j.resplu.2026.101524",
-        "pmid": "",
-        "doi": "10.1016/j.resplu.2026.101524",
-        "title": "Video laryngoscopy edges out direct in kids",
-        "journal": "Resuscitation Plus",
-        "note": "First-pass success 72.2% vs 69.0% with direct laryngoscopy (RR 1.11, 95% CI 1.06–1.16); severe intubation-associated events 7.7% vs 11.8% (RR 0.76, 95% CI 0.62–0.93); overall success and desaturation similar; no survival or cardiac arrest data"
-      },
-      {
-        "id": "10.1111/1742-6723.70362",
-        "pmid": "",
-        "doi": "10.1111/1742-6723.70362",
-        "title": "Sepsis intubations: haemodynamic trouble common",
+        "doi": "10.1111/1742-6723.70361",
+        "title": "Redirecting non-urgent patients to primary care looks safe",
         "journal": "Emergency Medicine Australasia",
-        "note": "2.5% of all ED intubations were for sepsis; haemodynamic complications 27.9% and peri-intubation cardiac arrest 4.6%; waveform capnography 87.5% vs 94.1% in non-sepsis (p<0.001); laryngoscopic view and first-pass success comparable to non-sepsis"
+        "note": "Return rate 9.7%, hospitalisation 1.7%, mortality 0.07%; studies reporting zero hospitalisations and deaths used the richest set of implementation components around triage and documentation"
       },
       {
-        "id": "42841901",
-        "pmid": "42841901",
-        "doi": "10.14744/tjtes.2026.25267",
-        "title": "Field fluids before ROSC in crush arrests",
-        "journal": "Ulusal Travma Ve Acil Cerrahi Dergisi = Turkish Journal of Trauma & Emergency Surgery",
-        "note": "ROSC in 10/37 (27.0%), all of whom had received pre-hospital fluids (mean 1,540 ± 611 mL; p=0.010); fluid recipients had higher pH and lower lactate, potassium, and base excess on arrival"
+        "id": "42847919",
+        "pmid": "42847919",
+        "doi": "10.1111/apa.70791",
+        "title": "Paramedics feel weakest in neonatal and paediatric mental health",
+        "journal": "Acta Paediatrica (Oslo, Norway",
+        "note": "Self-rated competence 2.92 (paediatric) and 2.04 (neonatal); paediatric behavioural and mental health emergencies lowest at 1.30; simulation and clinical placement opportunities limited, especially in neonatal care"
       },
       {
-        "id": "42843619",
-        "pmid": "42843619",
-        "doi": "10.1016/j.jjcc.2026.10.001",
-        "title": "12-lead transmission lags equipment availability",
-        "journal": "Journal of Cardiology",
-        "note": "545/588 (92.7%) had at least partial recording equipment but only 57 (9.7%) routinely recorded and transmitted; ACS/chest pain protocols (OR 2.89) and routine recording (OR 2.88) predicted transmission adoption; uptake higher where only one PCI-capable hospital existed (46% vs 30%)"
+        "id": "42852847",
+        "pmid": "42852847",
+        "doi": "10.1027/0227-5910/a001074",
+        "title": "Building a prehospital suicidal-ideation policy from scratch",
+        "journal": "Crisis",
+        "note": "Five improvement domains identified: standardised terminology, evidence-based risk assessment, disposition decision support, safety planning protocols, and law-enforcement collaboration; no validated prehospital suicide screening instruments were found"
       },
       {
-        "id": "42844935",
-        "pmid": "42844935",
-        "doi": "10.1002/smi.70233",
-        "title": "Little evidence for call handler wellbeing programs",
-        "journal": "Stress and Health",
-        "note": "Interventions fell into four categories — psychoeducation/resilience training, residential recovery, organisational wellbeing initiatives, and multicomponent programs — but there was limited evidence of effectiveness for health, wellbeing, or stress outcomes; most studies assessed mental health only and samples mixed call handlers with first responders"
+        "id": "42850620",
+        "pmid": "42850620",
+        "doi": "10.1186/s13054-026-06196-2",
+        "title": "Priority transport in multi-patient crashes: sicker, not harmed",
+        "journal": "Critical Care",
+        "note": "Priority transport associated with a 2.2-point adjusted risk difference for death/critical-severe injury (peak 6.4 points at 5-minute scene times, minimum 1.4 points at ~32 minutes), consistent with severity-dependent selection"
       }
     ]
   },
   "dailyUpdates": [
+    {
+      "date": "2026-10-10",
+      "papers": [
+        {
+          "id": "42849561",
+          "title": "Outcomes Following Impedance Threshold Device Use During Out-of-Hospital Cardiac Arrest",
+          "journal": "Resuscitation",
+          "date": "2026-10-10",
+          "pmid": "42849561",
+          "doi": "10.1016/j.resuscitation.2026.111340",
+          "summary": "A 97,439-patient US national EMS sample found impedance threshold device use was associated with better prehospital ROSC (aOR 1.09) but lower survival to discharge (23.9% vs 32.0%, aOR 0.68), with even more extreme trends when combined with active compression-decompression.",
+          "relevance": "🟡 Medium — Impedance threshold devices aren't carried by every Australian service, so this informs the device debate more than day-to-day practice — but the questions apply wherever they are used.",
+          "pubDate": "2026-10",
+          "topic": "Cardiac arrest",
+          "studyType": "Registry",
+          "design": "Retrospective national EMS registry analysis",
+          "n": "97,439 adults with non-traumatic OHCA",
+          "finding": "ITD-only: ROSC 26.7% vs 23.8% (aOR 1.09) but survival to discharge 23.9% vs 32.0% (aOR 0.68), with worse neurological outcomes; ITD+ACD showed more extreme versions of both trends",
+          "caveat": "Only 23.3% of patients had disposition outcomes available, and device use was not randomised",
+          "bottomLine": "Hypothesis-generating",
+          "shortTitle": "ITDs in OHCA: early wins, late losses",
+          "learningGoal": "Weigh the risks and benefits of impedance threshold devices during out-of-hospital cardiac arrest resuscitation."
+        },
+        {
+          "id": "10.1016/j.resuscitation.2026.111347",
+          "title": "The Epidemiology of Paediatric Out-of-Hospital Cardiac Arrest in Australia and New Zealand: A Report from The Australasian Resuscitation Outcomes Consortium Epistry (Aus-ROC)",
+          "journal": "Resuscitation",
+          "date": "2026-10-10",
+          "pmid": "",
+          "doi": "10.1016/j.resuscitation.2026.111347",
+          "summary": "First Australasian epidemiology report on paediatric OHCA from the Aus-ROC Epistry registry, describing incidence, characteristics and outcomes across Australia and New Zealand — abstract not yet available, so no numbers to quote yet.",
+          "relevance": "🟢 High — Australian and New Zealand registry data describing our own population — no translation needed.",
+          "pubDate": "2026-10",
+          "topic": "Paediatrics",
+          "studyType": "Registry",
+          "design": "National registry epidemiology report",
+          "n": "Not reported — abstract not yet available",
+          "finding": "Not yet available — abstract to come",
+          "caveat": "Abstract not yet available",
+          "bottomLine": "Context only",
+          "shortTitle": "Paediatric OHCA in Australia and NZ: Aus-ROC report",
+          "learningGoal": "Understand the epidemiology of paediatric out-of-hospital cardiac arrest in Australia to inform my resuscitation practice."
+        },
+        {
+          "id": "42849295",
+          "title": "Determinants of unwitnessed out-of-hospital cardiac arrest: a systematic review (HL-D-26-00618)",
+          "journal": "Heart & Lung",
+          "date": "2026-10-10",
+          "pmid": "42849295",
+          "doi": "10.1016/j.hrtlng.2026.102970",
+          "summary": "A systematic review of 22 studies (210,028 people) found female sex and arrest at home were the most consistent determinants of unwitnessed OHCA, with weaker, mostly unadjusted evidence for night or sleep arrests, deprivation and psychiatric illness.",
+          "relevance": "🟢 High — The determinants are population and household factors, not features of a particular EMS system, so the pattern travels directly to Australian communities.",
+          "pubDate": "2026-10-08",
+          "topic": "Cardiac arrest",
+          "studyType": "Systematic review",
+          "design": "Systematic review",
+          "n": "22 studies, 210,028 adults",
+          "finding": "Female sex and home location most consistently associated with unwitnessed arrest; limited evidence for arrests at night or during sleep, low socioeconomic status, type I diabetes and psychiatric illness",
+          "caveat": "Much of the included evidence came from unadjusted analyses with heterogeneous definitions of witnessed status",
+          "bottomLine": "Context only",
+          "shortTitle": "Unwitnessed arrests: mostly women, mostly at home",
+          "learningGoal": "Recognise which patients are most likely to sustain an unwitnessed cardiac arrest and how this shapes response priorities."
+        },
+        {
+          "id": "10.1111/1742-6723.70361",
+          "title": "The Safety and Interventions for Redirecting Non‐Urgent Patients From Emergency Departments to Primary Care Services: A Scoping Review",
+          "journal": "Emergency Medicine Australasia",
+          "date": "2026-10-10",
+          "pmid": "",
+          "doi": "10.1111/1742-6723.70361",
+          "summary": "A scoping review of nine studies found redirecting non-urgent ED patients to primary care appeared safe — 9.7% return rate, 1.7% hospitalisation and 0.07% mortality — with triage, vital signs and documentation the commonest safeguards.",
+          "relevance": "🟢 High — Published in an Australasian journal and directly relevant to the referral and alternate-pathway models Australian ambulances are expanding into.",
+          "pubDate": "2026-10",
+          "topic": "Operations & systems",
+          "studyType": "Systematic review",
+          "design": "Scoping review",
+          "n": "9 studies (8 observational, 1 RCT)",
+          "finding": "Return rate 9.7%, hospitalisation 1.7%, mortality 0.07%; studies reporting zero hospitalisations and deaths used the richest set of implementation components around triage and documentation",
+          "caveat": "Scoping review of mostly observational studies with heterogeneous redirection models and short follow-up",
+          "bottomLine": "Supports current practice",
+          "shortTitle": "Redirecting non-urgent patients to primary care looks safe",
+          "learningGoal": "Understand how triage safeguards and documentation support safe redirection of non-urgent patients to primary care."
+        },
+        {
+          "id": "42847919",
+          "title": "Finnish Paramedics' Self-Assessed Competence in Paediatric and Neonatal Care: A Nationwide Survey of Education, Training and Development Needs",
+          "journal": "Acta Paediatrica (Oslo, Norway",
+          "date": "2026-10-10",
+          "pmid": "42847919",
+          "doi": "10.1111/apa.70791",
+          "summary": "A survey of 253 Finnish paramedic graduates found moderate self-rated paediatric competence (mean 2.92/5) but low neonatal competence (2.04), with paediatric mental health emergencies rated lowest (1.30) and limited simulation or placement opportunities reported.",
+          "relevance": "🟡 Medium — A different education system, but the pattern — minimal paediatric and neonatal case volume, weakest in mental health presentations — will feel familiar to educators here.",
+          "pubDate": "2026-10-08",
+          "topic": "Education & training",
+          "studyType": "Cross-sectional",
+          "design": "Cross-sectional survey",
+          "n": "253 paramedics",
+          "finding": "Self-rated competence 2.92 (paediatric) and 2.04 (neonatal); paediatric behavioural and mental health emergencies lowest at 1.30; simulation and clinical placement opportunities limited, especially in neonatal care",
+          "caveat": "Self-assessed competence in a single country's graduates, recruited via social media",
+          "bottomLine": "Context only",
+          "shortTitle": "Paramedics feel weakest in neonatal and paediatric mental health",
+          "learningGoal": "Understand how limited paediatric and neonatal clinical exposure shapes my competence in behavioural and mental health emergencies."
+        },
+        {
+          "id": "42852847",
+          "title": "The Evaluation and Management of Patients With Suicidal Ideation or Behavior by Emergency Medical Services",
+          "journal": "Crisis",
+          "date": "2026-10-10",
+          "pmid": "42852847",
+          "doi": "10.1027/0227-5910/a001074",
+          "summary": "A Los Angeles County EMS quality improvement committee developed a comprehensive prehospital policy for suicidal ideation and behaviour after identifying gaps in standardised terminology, risk assessment, disposition support and safety planning.",
+          "relevance": "🟡 Medium — The US legal and law-enforcement context differs, but the core problems — no validated prehospital suicide risk screening tools and inconsistent disposition decisions — are universal.",
+          "pubDate": "2026-10-09",
+          "topic": "Mental health (patients)",
+          "studyType": "Other",
+          "design": "Quality improvement initiative report",
+          "n": "Single county EMS system; clinician and ED survey samples not reported",
+          "finding": "Five improvement domains identified: standardised terminology, evidence-based risk assessment, disposition decision support, safety planning protocols, and law-enforcement collaboration; no validated prehospital suicide screening instruments were found",
+          "caveat": "Single US county system with no evaluation of the policy's effectiveness yet",
+          "bottomLine": "Context only",
+          "shortTitle": "Building a prehospital suicidal-ideation policy from scratch",
+          "learningGoal": "Understand the system factors that shape safe prehospital assessment and disposition of patients with suicidal ideation."
+        },
+        {
+          "id": "42850620",
+          "title": "Prehospital transport prioritization and time-varying selection bias in traffic-related multi-patient incidents: a nationwide retrospective cohort study",
+          "journal": "Critical Care",
+          "date": "2026-10-10",
+          "pmid": "42850620",
+          "doi": "10.1186/s13054-026-06196-2",
+          "summary": "Across 143,130 patients in Japanese traffic multi-patient incidents, priority (first-out) transport carried a 2.2-point adjusted risk difference for death or severe injury that peaked at 6.4 points with short scene times — a severity-selection signature rather than evidence of harm from early transport.",
+          "relevance": "🟡 Medium — Japan's fire-based EMS differs in staffing and trauma system design, but the triage-and-transport-priority dilemma in multi-patient incidents is the same on any Australian road.",
+          "pubDate": "2026-08-04",
+          "topic": "Operations & systems",
+          "studyType": "Cohort",
+          "design": "Nationwide retrospective cohort with doubly robust (AIPW) analysis",
+          "n": "143,130 patients from 13.8 million EMS records",
+          "finding": "Priority transport associated with a 2.2-point adjusted risk difference for death/critical-severe injury (peak 6.4 points at 5-minute scene times, minimum 1.4 points at ~32 minutes), consistent with severity-dependent selection",
+          "caveat": "Retrospective administrative data with likely residual confounding by unmeasured injury severity",
+          "bottomLine": "Context only",
+          "shortTitle": "Priority transport in multi-patient crashes: sicker, not harmed",
+          "learningGoal": "Understand how transport prioritisation in multi-patient incidents reflects severity selection rather than causation."
+        }
+      ]
+    },
     {
       "date": "2026-10-09",
       "papers": [
