@@ -24,6 +24,20 @@
     </itunes:category>
     <itunes:explicit>false</itunes:explicit>
     <item>
+      <title>Paramedic Papers Daily — 11 October 2026</title>
+      <link>https://paramedicpapers.com/episodes/2026-10-11/</link>
+      <description>4 papers: Prehospital TXA helps fibrinolytic shutdown; Opioid OHCA outcomes similar to other arrests; Three post-ROSC lab phenotypes predict outcome; Prehospital variables can't pick pelvic binder benefit</description>
+      <content:encoded><![CDATA[<p>4 papers: Prehospital TXA helps fibrinolytic shutdown; Opioid OHCA outcomes similar to other arrests; Three post-ROSC lab phenotypes predict outcome; Prehospital variables can't pick pelvic binder benefit</p><p>Papers in this episode:</p><ul><li><a href="https://doi.org/10.1097/TA.0000000000005092">Prehospital TXA helps fibrinolytic shutdown <em>(The Journal of Trauma and Acute Care Surgery)</em></a></li><li><a href="https://doi.org/10.1016/j.resuscitation.2026.111352">Opioid OHCA outcomes similar to other arrests <em>(Resuscitation)</em></a></li><li><a href="https://doi.org/10.1016/j.resuscitation.2026.111351">Three post-ROSC lab phenotypes predict outcome <em>(Resuscitation)</em></a></li><li><a href="https://doi.org/10.1177/00031348261494137">Prehospital variables can't pick pelvic binder benefit <em>(The American Surgeon)</em></a></li></ul><p><a href="https://paramedicpapers.com/episodes/2026-10-11/">Show notes and transcript</a></p>]]></content:encoded>
+      <pubDate>Sun, 11 Oct 2026 07:33:21 +1100</pubDate>
+      <guid isPermaLink="false">https://audio.paramedicpapers.com/ep-2026-10-11.mp3</guid>
+      <enclosure url="https://audio.paramedicpapers.com/ep-2026-10-11.mp3" length="1008812" type="audio/mpeg"/>
+      <itunes:duration>252</itunes:duration>
+      <itunes:summary>4 papers: Prehospital TXA helps fibrinolytic shutdown; Opioid OHCA outcomes similar to other arrests; Three post-ROSC lab phenotypes predict outcome; Prehospital variables can't pick pelvic binder benefit</itunes:summary>
+      <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
+      <itunes:episodeType>full</itunes:episodeType>
+      <podcast:transcript url="https://audio.paramedicpapers.com/ep-2026-10-11.txt" type="text/plain" language="en-au"/>
+    </item>
+    <item>
       <title>Paramedic Papers Daily — 10 October 2026</title>
       <link>https://paramedicpapers.com/episodes/2026-10-10/</link>
       <description>4 papers: ITDs in OHCA: early wins, late losses; Paediatric OHCA in Australia and NZ: Aus-ROC report; Unwitnessed arrests: mostly women, mostly at home; Redirecting non-urgent patients to primary care looks safe</description>
@@ -405,19 +419,6 @@
       <enclosure url="https://audio.paramedicpapers.com/ep-2026-09-05.mp3" length="708045" type="audio/mpeg"/>
       <itunes:duration>176</itunes:duration>
       <itunes:summary>2 papers: Norwegian trauma call-out decisions under sparse dispatch info; Oslo sepsis study finds 8 subgroups, fails to replicate SENECA phenotypes</itunes:summary>
-      <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
-      <itunes:episodeType>full</itunes:episodeType>
-    </item>
-    <item>
-      <title>Paramedic Papers Daily — 4 September 2026</title>
-      <link>https://paramedicpapers.com/episodes/2026-09-04/</link>
-      <description>1 paper: Australasian bronchiolitis discharge criteria review — shorter stays, no extra readmissions, now in the 2025 guideline</description>
-      <content:encoded><![CDATA[<p>1 paper: Australasian bronchiolitis discharge criteria review — shorter stays, no extra readmissions, now in the 2025 guideline</p><p>Papers in this episode:</p><ul><li><a href="https://doi.org/10.1111/1742-6723.70339">Criteria for Safe Hospital Discharge in Bronchiolitis: A Systematic Review <em>(Emergency Medicine Australasia)</em></a></li></ul><p><a href="https://paramedicpapers.com/episodes/2026-09-04/">Show notes and transcript</a></p>]]></content:encoded>
-      <pubDate>Fri, 04 Sep 2026 07:32:51 +1000</pubDate>
-      <guid isPermaLink="false">https://opurtell.github.io/paramedicpapers/audio/ep-2026-09-04.mp3</guid>
-      <enclosure url="https://audio.paramedicpapers.com/ep-2026-09-04.mp3" length="457773" type="audio/mpeg"/>
-      <itunes:duration>114</itunes:duration>
-      <itunes:summary>1 paper: Australasian bronchiolitis discharge criteria review — shorter stays, no extra readmissions, now in the 2025 guideline</itunes:summary>
       <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
       <itunes:episodeType>full</itunes:episodeType>
     </item>
