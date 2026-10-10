@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-10-09T20:20:55Z",
-  "lastUpdatedSydney": "2026-10-10 07:20 AEDT",
-  "lastUpdatedDate": "2026-10-10",
+  "lastUpdated": "2026-10-10T20:20:55Z",
+  "lastUpdatedSydney": "2026-10-11 07:20 AEDT",
+  "lastUpdatedDate": "2026-10-11",
   "featuredPapers": [
     {
       "id": "10.1016/j.resplu.2026.101512",
@@ -1020,73 +1020,162 @@
     }
   ],
   "funFact": {
-    "category": "pharmacology",
-    "fact": "Magnesium sulphate — not a benzo — is first-line for eclamptic seizures. It antagonises calcium at NMDA receptors and causes cerebral vasodilation. It halves seizure risk compared to diazepam. In eclampsia, reach for the magnesium."
+    "category": "EMS",
+    "fact": "NSW flight and rescue paramedics train in aeromedical retrieval, winch operations, and wilderness medicine. NSW aeromedical services alone respond to over 7,000 missions a year. Most of those jobs don't have a road in sight."
   },
   "tldr": {
-    "date": "2026-10-10",
-    "paperCount": 7,
-    "summary": "Cardiac arrest leads the day: a 97,439-patient US analysis links impedance threshold devices to better prehospital ROSC but worse survival to discharge, and Aus-ROC publishes the first paediatric OHCA epidemiology report for Australia and New Zealand.",
+    "date": "2026-10-11",
+    "paperCount": 5,
+    "summary": "Trauma dominates today: pooled prehospital TXA trial data shows a survival benefit in fibrinolytic shutdown, while imaging data confirms prehospital variables can't reliably pick which pelvic fractures a binder will help.",
     "highlights": [
       {
-        "id": "42849561",
-        "pmid": "42849561",
-        "doi": "10.1016/j.resuscitation.2026.111340",
-        "title": "ITDs in OHCA: early wins, late losses",
+        "id": "42853261",
+        "pmid": "42853261",
+        "doi": "10.1097/TA.0000000000005092",
+        "title": "Prehospital TXA helps fibrinolytic shutdown",
+        "journal": "The Journal of Trauma and Acute Care Surgery",
+        "note": "30-day mortality 14.5% with fibrinolytic shutdown vs 6.5% physiological fibrinolysis; TXA in shutdown patients was associated with lower risk of death (HR 0.32, 95% CI 0.11–0.91); hyperfibrinolysis independently predicted death (HR 2.87, 95% CI 1.10–7.53)"
+      },
+      {
+        "id": "42855034",
+        "pmid": "42855034",
+        "doi": "10.1016/j.resuscitation.2026.111352",
+        "title": "Opioid OHCA outcomes similar to other arrests",
         "journal": "Resuscitation",
-        "note": "ITD-only: ROSC 26.7% vs 23.8% (aOR 1.09) but survival to discharge 23.9% vs 32.0% (aOR 0.68), with worse neurological outcomes; ITD+ACD showed more extreme versions of both trends"
+        "note": "No association between opioid-associated OHCA and favourable neurological outcome (OR 1.02, 95% CI 0.77–1.35), but significant interactions for sex (p=0.032), initial rhythm (p=0.024) and bystander-witnessed status (p<0.001)"
       },
       {
-        "id": "10.1016/j.resuscitation.2026.111347",
-        "pmid": "",
-        "doi": "10.1016/j.resuscitation.2026.111347",
-        "title": "Paediatric OHCA in Australia and NZ: Aus-ROC report",
+        "id": "42855036",
+        "pmid": "42855036",
+        "doi": "10.1016/j.resuscitation.2026.111351",
+        "title": "Three post-ROSC lab phenotypes predict outcome",
         "journal": "Resuscitation",
-        "note": "Not yet available — abstract to come"
+        "note": "Multi-organ dysfunction phenotype had higher odds of poor neurological recovery versus homeostatic (aOR 0.50, 95% CI 0.30–0.78) and immune-dysregulated (aOR 0.46, 95% CI 0.26–0.78) phenotypes, with mortality differences persisting to 3 years"
       },
       {
-        "id": "42849295",
-        "pmid": "42849295",
-        "doi": "10.1016/j.hrtlng.2026.102970",
-        "title": "Unwitnessed arrests: mostly women, mostly at home",
-        "journal": "Heart & Lung",
-        "note": "Female sex and home location most consistently associated with unwitnessed arrest; limited evidence for arrests at night or during sleep, low socioeconomic status, type I diabetes and psychiatric illness"
+        "id": "42856048",
+        "pmid": "42856048",
+        "doi": "10.1177/00031348261494137",
+        "title": "Prehospital variables can't pick pelvic binder benefit",
+        "journal": "The American Surgeon",
+        "note": "Binder application would be favourable in only 17% (95% CI 13–22%), neutral in 28% and potentially unfavourable in 56%; the best-performing variable (ISS) reached just AUC 0.65, all others below 0.60"
       },
       {
-        "id": "10.1111/1742-6723.70361",
-        "pmid": "",
-        "doi": "10.1111/1742-6723.70361",
-        "title": "Redirecting non-urgent patients to primary care looks safe",
-        "journal": "Emergency Medicine Australasia",
-        "note": "Return rate 9.7%, hospitalisation 1.7%, mortality 0.07%; studies reporting zero hospitalisations and deaths used the richest set of implementation components around triage and documentation"
-      },
-      {
-        "id": "42847919",
-        "pmid": "42847919",
-        "doi": "10.1111/apa.70791",
-        "title": "Paramedics feel weakest in neonatal and paediatric mental health",
-        "journal": "Acta Paediatrica (Oslo, Norway",
-        "note": "Self-rated competence 2.92 (paediatric) and 2.04 (neonatal); paediatric behavioural and mental health emergencies lowest at 1.30; simulation and clinical placement opportunities limited, especially in neonatal care"
-      },
-      {
-        "id": "42852847",
-        "pmid": "42852847",
-        "doi": "10.1027/0227-5910/a001074",
-        "title": "Building a prehospital suicidal-ideation policy from scratch",
-        "journal": "Crisis",
-        "note": "Five improvement domains identified: standardised terminology, evidence-based risk assessment, disposition decision support, safety planning protocols, and law-enforcement collaboration; no validated prehospital suicide screening instruments were found"
-      },
-      {
-        "id": "42850620",
-        "pmid": "42850620",
-        "doi": "10.1186/s13054-026-06196-2",
-        "title": "Priority transport in multi-patient crashes: sicker, not harmed",
-        "journal": "Critical Care",
-        "note": "Priority transport associated with a 2.2-point adjusted risk difference for death/critical-severe injury (peak 6.4 points at 5-minute scene times, minimum 1.4 points at ~32 minutes), consistent with severity-dependent selection"
+        "id": "42853283",
+        "pmid": "42853283",
+        "doi": "10.1007/s00068-026-03346-7",
+        "title": "Italian HEMS trauma mortality predictors",
+        "journal": "European Journal of Trauma and Emergency Surgery",
+        "note": "In-hospital mortality 3.4%; independently associated with RTS <4 (OR 5.19, 95% CI 1.64–17.04), RTS 4–<7 (OR 2.36), older age (OR 1.03 per year), tracheal intubation and prehospital CPR"
       }
     ]
   },
   "dailyUpdates": [
+    {
+      "date": "2026-10-11",
+      "papers": [
+        {
+          "id": "42853261",
+          "title": "Survival benefit of prehospital TXA in fibrinolytic shutdown: Insights from two prospective trauma trials",
+          "journal": "The Journal of Trauma and Acute Care Surgery",
+          "date": "2026-10-11",
+          "pmid": "42853261",
+          "doi": "10.1097/TA.0000000000005092",
+          "summary": "Pooled analysis of two prospective prehospital TXA trials found fibrinolytic shutdown carried 14.5% 30-day mortality versus 6.5% with physiological fibrinolysis, and shutdown patients randomised to TXA had about a third the risk of death.",
+          "relevance": "🟢 High — Prehospital TXA for major trauma is carried by nearly all Australian ambulance services, so this speaks directly to current practice — even though the fibrinolysis testing itself stays an in-hospital tool for now.",
+          "pubDate": "2026-10-09",
+          "topic": "Trauma",
+          "studyType": "Other",
+          "design": "Pooled analysis of two prospective prehospital TXA RCTs",
+          "n": "1,249 trauma patients",
+          "finding": "30-day mortality 14.5% with fibrinolytic shutdown vs 6.5% physiological fibrinolysis; TXA in shutdown patients was associated with lower risk of death (HR 0.32, 95% CI 0.11–0.91); hyperfibrinolysis independently predicted death (HR 2.87, 95% CI 1.10–7.53)",
+          "caveat": "Subgroup analysis of pooled trials, with the TEG fibrinolysis phenotype measured on hospital arrival rather than prehospital",
+          "bottomLine": "Hypothesis-generating",
+          "shortTitle": "Prehospital TXA helps fibrinolytic shutdown",
+          "learningGoal": "Weigh the evidence for giving TXA prehospital to trauma patients with suspected fibrinolytic shutdown."
+        },
+        {
+          "id": "42855034",
+          "title": "Opioid-Associated vs Undifferentiated Out-of-Hospital Cardiac Arrest: Examining differences in outcomes and the relationship with Utstein variables",
+          "journal": "Resuscitation",
+          "date": "2026-10-11",
+          "pmid": "42855034",
+          "doi": "10.1016/j.resuscitation.2026.111352",
+          "summary": "Analysis of 10,786 EMS-treated OHCAs in a Canadian registry found opioid-associated arrests had similar outcomes to undifferentiated arrests (OR 1.02), but Utstein variables like initial rhythm and witnessed status predicted outcome differently in the opioid group.",
+          "relevance": "🟢 High — Opioid-toxicity arrests are a growing part of the Australian OHCA caseload and this is a large EMS-treated registry rather than an in-hospital cohort.",
+          "pubDate": "2026-10",
+          "topic": "Cardiac arrest",
+          "studyType": "Registry",
+          "design": "Retrospective registry cohort with toxicological case classification",
+          "n": "10,786 EMS-treated OHCA (1,349 opioid-associated)",
+          "finding": "No association between opioid-associated OHCA and favourable neurological outcome (OR 1.02, 95% CI 0.77–1.35), but significant interactions for sex (p=0.032), initial rhythm (p=0.024) and bystander-witnessed status (p<0.001)",
+          "caveat": "Opioid classification relied on post-mortem toxicology and death certificates, so misclassification is likely",
+          "bottomLine": "Context only",
+          "shortTitle": "Opioid OHCA outcomes similar to other arrests",
+          "learningGoal": "Understand how patient context in opioid-associated cardiac arrest shapes the prognostic value of Utstein variables."
+        },
+        {
+          "id": "42855036",
+          "title": "Early Post-ROSC Laboratory Phenotypes and Clinical Outcomes after Out-of-Hospital Cardiac Arrest: A 10-Year National Cohort Study",
+          "journal": "Resuscitation",
+          "date": "2026-10-11",
+          "pmid": "42855036",
+          "doi": "10.1016/j.resuscitation.2026.111351",
+          "summary": "Latent class analysis of 14 laboratory values drawn within six hours of ROSC in 1,514 resuscitated OHCA patients identified three phenotypes, with the multi-organ dysfunction group at roughly double the odds of poor neurological recovery compared with the others.",
+          "relevance": "🟡 Medium — Phenotyping depends on in-hospital bloods taken within six hours of ROSC, so this shapes post-arrest care pathways and handover conversations more than anything done roadside.",
+          "pubDate": "2026-10",
+          "topic": "Cardiac arrest",
+          "studyType": "Registry",
+          "design": "Retrospective national registry cohort with latent class analysis",
+          "n": "1,514 resuscitated adults with presumed cardiac OHCA",
+          "finding": "Multi-organ dysfunction phenotype had higher odds of poor neurological recovery versus homeostatic (aOR 0.50, 95% CI 0.30–0.78) and immune-dysregulated (aOR 0.46, 95% CI 0.26–0.78) phenotypes, with mortality differences persisting to 3 years",
+          "caveat": "Exploratory derivation study from a single country's database, awaiting external validation before guiding therapy",
+          "bottomLine": "Hypothesis-generating",
+          "shortTitle": "Three post-ROSC lab phenotypes predict outcome",
+          "learningGoal": "Recognise how early post-ROSC laboratory patterns may identify cardiac arrest patients at risk of poor neurological recovery."
+        },
+        {
+          "id": "42856048",
+          "title": "Prehospital Variables Do Not Reliably Identify Pelvic Fracture Morphologies Amenable to Pelvic Binder Application: A Retrospective Imaging Review",
+          "journal": "The American Surgeon",
+          "date": "2026-10-11",
+          "pmid": "42856048",
+          "doi": "10.1177/00031348261494137",
+          "summary": "Blinded imaging review of 298 CT-confirmed pelvic ring injuries found binder application would be potentially mechanically unfavourable in 56% of cases, and no prehospital variable (hypotension, shock index, mechanism, GCS) discriminated favourable morphology well.",
+          "relevance": "🟢 High — Pelvic binders are near-universal across Australian services and the empiric-application decision comes up on every major trauma job.",
+          "pubDate": "2026-10-10",
+          "topic": "Trauma",
+          "studyType": "Cross-sectional",
+          "design": "Retrospective imaging review at a tertiary trauma centre",
+          "n": "298 adults with CT-confirmed pelvic ring injury",
+          "finding": "Binder application would be favourable in only 17% (95% CI 13–22%), neutral in 28% and potentially unfavourable in 56%; the best-performing variable (ISS) reached just AUC 0.65, all others below 0.60",
+          "caveat": "Single-centre surgeon-classified imaging review, and binder position on CT may not reflect how it sat in the field",
+          "bottomLine": "Context only",
+          "shortTitle": "Prehospital variables can't pick pelvic binder benefit",
+          "learningGoal": "Strengthen my judgement on when prehospital pelvic binder application is likely to benefit or harm pelvic ring injuries."
+        },
+        {
+          "id": "42853283",
+          "title": "Prehospital severity and in-hospital mortality in trauma patients managed by the Friuli-Venezia Giulia helicopter emergency medical service: a 6-year retrospective cohort study",
+          "journal": "European Journal of Trauma and Emergency Surgery",
+          "date": "2026-10-11",
+          "pmid": "42853283",
+          "doi": "10.1007/s00068-026-03346-7",
+          "summary": "Six-year Italian HEMS cohort of 3,152 transported trauma patients found 3.4% in-hospital mortality, independently predicted by older age, lower Revised Trauma Score, intubation and prehospital CPR — the last two acting mainly as severity markers.",
+          "relevance": "🔴 Low — Physician-staffed HEMS model with dispatch, crewing and transport thresholds quite different from Australian road and rotary-wing services.",
+          "pubDate": "2026-10-09",
+          "topic": "Trauma",
+          "studyType": "Cohort",
+          "design": "Retrospective observational cohort",
+          "n": "3,143 HEMS-managed trauma patients with outcome data",
+          "finding": "In-hospital mortality 3.4%; independently associated with RTS <4 (OR 5.19, 95% CI 1.64–17.04), RTS 4–<7 (OR 2.36), older age (OR 1.03 per year), tracheal intubation and prehospital CPR",
+          "caveat": "Single-region HEMS cohort with internal-only model validation and residual severity confounding around intubation and CPR",
+          "bottomLine": "Context only",
+          "shortTitle": "Italian HEMS trauma mortality predictors",
+          "learningGoal": "Strengthen my judgement on how prehospital physiological severity and age predict trauma mortality in Australian practice."
+        }
+      ]
+    },
     {
       "date": "2026-10-10",
       "papers": [
