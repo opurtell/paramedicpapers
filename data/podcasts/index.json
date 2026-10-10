@@ -1,5 +1,17 @@
 [
  {
+  "id": "prehospital-care-podcast",
+  "name": "Pre-Hospital Care Podcast",
+  "publisher": "Eoin Walker",
+  "focus": "Prehospital clinical topics and recent evidence",
+  "region": "Ireland",
+  "site": "https://podcasters.spotify.com/pod/show/phcp",
+  "art": "data/podcasts/art/prehospital-care-podcast.jpg",
+  "episodes": 391,
+  "latest": "2026-10-08",
+  "updated": "2026-10-10"
+ },
+ {
   "id": "av-clinical-conversations",
   "name": "Clinical Conversations",
   "publisher": "Ambulance Victoria Office of the Medical Director",
@@ -44,18 +56,6 @@
   "site": "https://podcasters.spotify.com/pod/show/takeaim830",
   "art": "data/podcasts/art/out-local.jpg",
   "episodes": 3,
-  "latest": "2026-10-05",
-  "updated": "2026-10-08"
- },
- {
-  "id": "prehospital-care-podcast",
-  "name": "Pre-Hospital Care Podcast",
-  "publisher": "Eoin Walker",
-  "focus": "Prehospital clinical topics and recent evidence",
-  "region": "Ireland",
-  "site": "https://podcasters.spotify.com/pod/show/phcp",
-  "art": "data/podcasts/art/prehospital-care-podcast.jpg",
-  "episodes": 390,
   "latest": "2026-10-05",
   "updated": "2026-10-08"
  },
