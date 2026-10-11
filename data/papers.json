@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-10-10T20:20:55Z",
-  "lastUpdatedSydney": "2026-10-11 07:20 AEDT",
-  "lastUpdatedDate": "2026-10-11",
+  "lastUpdated": "2026-10-11T20:20:55Z",
+  "lastUpdatedSydney": "2026-10-12 07:20 AEDT",
+  "lastUpdatedDate": "2026-10-12",
   "featuredPapers": [
     {
       "id": "10.1016/j.resplu.2026.101512",
@@ -1020,57 +1020,78 @@
     }
   ],
   "funFact": {
-    "category": "EMS",
-    "fact": "NSW flight and rescue paramedics train in aeromedical retrieval, winch operations, and wilderness medicine. NSW aeromedical services alone respond to over 7,000 missions a year. Most of those jobs don't have a road in sight."
+    "category": "cardiac",
+    "fact": "Brugada syndrome is a sodium channelopathy that causes VF in young, otherwise perfectly healthy people. The ECG shows a pseudo-RBBB pattern with coved ST elevation in V1-V3. It's one of the reasons young people drop dead with no warning."
   },
   "tldr": {
-    "date": "2026-10-11",
-    "paperCount": 5,
-    "summary": "Trauma dominates today: pooled prehospital TXA trial data shows a survival benefit in fibrinolytic shutdown, while imaging data confirms prehospital variables can't reliably pick which pelvic fractures a binder will help.",
+    "date": "2026-10-12",
+    "paperCount": 2,
+    "summary": "A quiet day. The most interesting find: eight no-equipment bedside observations beat NEWS at spotting patients who die within 24 hours — a reminder that hands-on assessment still outperforms the numbers.",
     "highlights": [
       {
-        "id": "42853261",
-        "pmid": "42853261",
-        "doi": "10.1097/TA.0000000000005092",
-        "title": "Prehospital TXA helps fibrinolytic shutdown",
-        "journal": "The Journal of Trauma and Acute Care Surgery",
-        "note": "30-day mortality 14.5% with fibrinolytic shutdown vs 6.5% physiological fibrinolysis; TXA in shutdown patients was associated with lower risk of death (HR 0.32, 95% CI 0.11–0.91); hyperfibrinolysis independently predicted death (HR 2.87, 95% CI 1.10–7.53)"
+        "id": "10.1016/j.resplu.2026.101529",
+        "pmid": "",
+        "doi": "10.1016/j.resplu.2026.101529",
+        "title": "Bedside observations beat NEWS for spotting deterioration",
+        "journal": "Resuscitation Plus",
+        "note": "Eight equipment-free observations predicted death within 24 hours — jaundice, supplemental oxygen need, capillary refill time, cold skin, distressed breathing, altered mentation, dry skin and cyanosis — and a model of all eight beat NEWS (AUC 0.790 vs 0.707, p < 0.0001)"
       },
       {
-        "id": "42855034",
-        "pmid": "42855034",
-        "doi": "10.1016/j.resuscitation.2026.111352",
-        "title": "Opioid OHCA outcomes similar to other arrests",
-        "journal": "Resuscitation",
-        "note": "No association between opioid-associated OHCA and favourable neurological outcome (OR 1.02, 95% CI 0.77–1.35), but significant interactions for sex (p=0.032), initial rhythm (p=0.024) and bystander-witnessed status (p<0.001)"
-      },
-      {
-        "id": "42855036",
-        "pmid": "42855036",
-        "doi": "10.1016/j.resuscitation.2026.111351",
-        "title": "Three post-ROSC lab phenotypes predict outcome",
-        "journal": "Resuscitation",
-        "note": "Multi-organ dysfunction phenotype had higher odds of poor neurological recovery versus homeostatic (aOR 0.50, 95% CI 0.30–0.78) and immune-dysregulated (aOR 0.46, 95% CI 0.26–0.78) phenotypes, with mortality differences persisting to 3 years"
-      },
-      {
-        "id": "42856048",
-        "pmid": "42856048",
-        "doi": "10.1177/00031348261494137",
-        "title": "Prehospital variables can't pick pelvic binder benefit",
-        "journal": "The American Surgeon",
-        "note": "Binder application would be favourable in only 17% (95% CI 13–22%), neutral in 28% and potentially unfavourable in 56%; the best-performing variable (ISS) reached just AUC 0.65, all others below 0.60"
-      },
-      {
-        "id": "42853283",
-        "pmid": "42853283",
-        "doi": "10.1007/s00068-026-03346-7",
-        "title": "Italian HEMS trauma mortality predictors",
-        "journal": "European Journal of Trauma and Emergency Surgery",
-        "note": "In-hospital mortality 3.4%; independently associated with RTS <4 (OR 5.19, 95% CI 1.64–17.04), RTS 4–<7 (OR 2.36), older age (OR 1.03 per year), tracheal intubation and prehospital CPR"
+        "id": "10.1186/s12873-026-01782-7",
+        "pmid": "",
+        "doi": "10.1186/s12873-026-01782-7",
+        "title": "Stable penetrating chest trauma: surgery increasingly avoided",
+        "journal": "BMC Emergency Medicine",
+        "note": "Initial non-operative management in 78% of patients; failure rates low and unchanged between periods (8.5% vs 6.5%), with hospital length of stay dropping from 7.6 to 5.2 days after mid-2020"
       }
     ]
   },
   "dailyUpdates": [
+    {
+      "date": "2026-10-12",
+      "papers": [
+        {
+          "id": "10.1016/j.resplu.2026.101529",
+          "title": "Changes in vital signs of hospitalized patients may not identify the need to escalate care as well as other bedside observations",
+          "journal": "Resuscitation Plus",
+          "date": "2026-10-12",
+          "pmid": "",
+          "doi": "10.1016/j.resplu.2026.101529",
+          "summary": "Retrospective analysis of 4,581 rapid response team callouts testing whether eight equipment-free bedside observations identify dying patients better than NEWS — a model built from them outperformed NEWS for predicting death within 24 hours (AUC 0.790 vs 0.707).",
+          "relevance": "🟡 Medium — In-hospital rapid response data, but the observation set — capillary refill, skin temperature, cyanosis, mentation, work of breathing — is the prehospital sick-patient assessment paramedics already do without a monitor.",
+          "pubDate": "2026-10",
+          "topic": "Operations & systems",
+          "studyType": "Cohort",
+          "design": "Retrospective analysis of prospectively collected data on rapid response team arrivals",
+          "n": "4,581 adults in general medical, surgical or intermediate care units at a 450-bed US regional centre",
+          "finding": "Eight equipment-free observations predicted death within 24 hours — jaundice, supplemental oxygen need, capillary refill time, cold skin, distressed breathing, altered mentation, dry skin and cyanosis — and a model of all eight beat NEWS (AUC 0.790 vs 0.707, p < 0.0001)",
+          "caveat": "Single US centre, retrospective design, and 24-hour death is a narrow surrogate for 'needs escalation'",
+          "bottomLine": "Hypothesis-generating",
+          "shortTitle": "Bedside observations beat NEWS for spotting deterioration",
+          "learningGoal": "Strengthen my recognition of equipment-free bedside signs that signal clinical deterioration beyond standard vital sign scores."
+        },
+        {
+          "id": "10.1186/s12873-026-01782-7",
+          "title": "Management of hemodynamically stable penetrating chest trauma without cardiac injury in Marseille",
+          "journal": "BMC Emergency Medicine",
+          "date": "2026-10-12",
+          "pmid": "",
+          "doi": "10.1186/s12873-026-01782-7",
+          "summary": "Ten-year retrospective review of 268 haemodynamically stable penetrating chest injuries in Marseille, where non-operative management was attempted in 78% and failed in fewer than 9%, with hospital stay falling from 7.6 to 5.2 days in the recent period.",
+          "relevance": "🔴 Low — The management decision sits entirely in-hospital — this is context on where stable penetrating chest injuries end up, not a prehospital scope question.",
+          "pubDate": "2026-10-11",
+          "topic": "Trauma",
+          "studyType": "Cohort",
+          "design": "Retrospective multicentre cohort",
+          "n": "268 haemodynamically stable patients with penetrating chest trauma sparing the cardiac box",
+          "finding": "Initial non-operative management in 78% of patients; failure rates low and unchanged between periods (8.5% vs 6.5%), with hospital length of stay dropping from 7.6 to 5.2 days after mid-2020",
+          "caveat": "Retrospective single-city cohort dominated by stab wounds (86%), so selection criteria for non-operative management aren't transferable to other settings",
+          "bottomLine": "Context only",
+          "shortTitle": "Stable penetrating chest trauma: surgery increasingly avoided",
+          "learningGoal": "Weigh the safety and limits of non-operative management for stable penetrating chest trauma in the Australian prehospital context."
+        }
+      ]
+    },
     {
       "date": "2026-10-11",
       "papers": [
