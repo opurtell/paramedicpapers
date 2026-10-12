@@ -1,5 +1,41 @@
 [
  {
+  "id": "sydney-hems",
+  "name": "Greater Sydney Area HEMS",
+  "publisher": "NSW Ambulance Aeromedical",
+  "focus": "Retrieval and prehospital medicine case debriefs",
+  "region": "AU",
+  "site": "https://samuelbulford.podbean.com",
+  "art": "data/podcasts/art/sydney-hems.jpg",
+  "episodes": 32,
+  "latest": "2026-10-12",
+  "updated": "2026-10-12"
+ },
+ {
+  "id": "ecritcare",
+  "name": "eCritCare",
+  "publisher": "Dr Swapnil Pawar & Dr Jose Chacko",
+  "focus": "Critical care trials and evidence, one topic per episode",
+  "region": "AU",
+  "site": "http://ecritcarepodcast.libsyn.com/website",
+  "art": "data/podcasts/art/ecritcare.jpg",
+  "episodes": 101,
+  "latest": "2026-10-11",
+  "updated": "2026-10-12"
+ },
+ {
+  "id": "emcrit",
+  "name": "EMCrit",
+  "publisher": "Dr Scott Weingart",
+  "focus": "Resuscitation and emergency critical care",
+  "region": "US",
+  "site": "https://emcrit.org",
+  "art": "data/podcasts/art/emcrit.jpg",
+  "episodes": 160,
+  "latest": "2026-10-11",
+  "updated": "2026-10-12"
+ },
+ {
   "id": "prehospital-care-podcast",
   "name": "Pre-Hospital Care Podcast",
   "publisher": "Eoin Walker",
@@ -33,18 +69,6 @@
   "art": "data/podcasts/art/ems-20-20.jpg",
   "episodes": 259,
   "latest": "2026-10-07",
-  "updated": "2026-10-08"
- },
- {
-  "id": "ecritcare",
-  "name": "eCritCare",
-  "publisher": "Dr Swapnil Pawar & Dr Jose Chacko",
-  "focus": "Critical care trials and evidence, one topic per episode",
-  "region": "AU",
-  "site": "http://ecritcarepodcast.libsyn.com/website",
-  "art": "data/podcasts/art/ecritcare.jpg",
-  "episodes": 100,
-  "latest": "2026-10-06",
   "updated": "2026-10-08"
  },
  {
@@ -192,18 +216,6 @@
   "updated": "2026-10-08"
  },
  {
-  "id": "emcrit",
-  "name": "EMCrit",
-  "publisher": "Dr Scott Weingart",
-  "focus": "Resuscitation and emergency critical care",
-  "region": "US",
-  "site": "https://emcrit.org",
-  "art": "data/podcasts/art/emcrit.jpg",
-  "episodes": 159,
-  "latest": "2026-09-05",
-  "updated": "2026-10-08"
- },
- {
   "id": "neuro-resus",
   "name": "Neuro Resus",
   "publisher": "Dr Oliver Flower",
@@ -213,18 +225,6 @@
   "art": "data/podcasts/art/neuro-resus.jpg",
   "episodes": 465,
   "latest": "2026-09-04",
-  "updated": "2026-10-08"
- },
- {
-  "id": "sydney-hems",
-  "name": "Greater Sydney Area HEMS",
-  "publisher": "NSW Ambulance Aeromedical",
-  "focus": "Retrieval and prehospital medicine case debriefs",
-  "region": "AU",
-  "site": "https://samuelbulford.podbean.com",
-  "art": "data/podcasts/art/sydney-hems.jpg",
-  "episodes": 31,
-  "latest": "2026-08-05",
   "updated": "2026-10-08"
  },
  {
