@@ -83,11 +83,14 @@ it and falls back to client-side rotation over `funFacts` for older cached data.
       "pmid": "PMID",
       "doi": "DOI",
       "title": "short title",
-      "note": "why it matters"
+      "note": "one-sentence summary of the paper's findings"
     }
   ]
 }
 ```
+
+One highlight per paper found that day (each renders as a dot point under the
+headline). `note` summarises findings, not significance commentary.
 
 Each `highlights[].id` **must** match a paper `id` in `dailyUpdates`. That is what makes a TLDR bullet link to its paper card.
 
@@ -157,9 +160,12 @@ Keys are paper `id`s. This shape must not be changed to an array — `JSON.strin
 ## CPD tracker (`js/cpd.js`)
 
 Sign-in, the CPD log, goals, exports, **Log PD** on paper cards and the PD
-quiz. All personal data goes to the API Worker at
-`https://api.paramedicpapers.com` (code in the sibling `cpd/` folder, not in
-this public repo); `js/cpd.js` only talks to it with `credentials: 'include'`.
+quiz. All personal data goes to the API Worker — same-origin at
+`https://paramedicpapers.com/api/*` (Cloudflare worker route; previously
+`https://api.paramedicpapers.com`, which the ACTGov work Wi-Fi filter blocks
+— see `references/work-wifi-fix.md`; that host still works and is the
+fallback). `js/cpd.js` talks to it with `credentials: 'include'`, now
+same-origin.
 On `localhost` it uses `http://localhost:8787` (`npm run dev` in `cpd/`).
 
 - Views: `#cpd`, `#account` (reached from the mobile **More** tab or the
@@ -222,7 +228,9 @@ TLDR panels). The fun fact lives in the reading column, below the button.
 
 The site is live at `https://paramedicpapers.com/` (GitHub Pages, `main`
 branch, custom domain via `CNAME`; episode audio is served from Cloudflare R2
-at `https://audio.paramedicpapers.com`, not from this repo). The nightly data push only ever commits `data/papers.json` —
+at `https://paramedicpapers.com/audio/*` (worker route → R2; previously
+`https://audio.paramedicpapers.com`, which still serves the same bucket —
+old feed GUIDs point there on purpose). The nightly data push only ever commits `data/papers.json` —
 **any change to `index.html`, `css/`, or `js/` must be committed and pushed
 manually**:
 
