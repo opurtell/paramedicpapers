@@ -24,6 +24,20 @@
     </itunes:category>
     <itunes:explicit>false</itunes:explicit>
     <item>
+      <title>Paramedic Papers Daily — 13 October 2026</title>
+      <link>https://paramedicpapers.com/episodes/2026-10-13/</link>
+      <description>3 papers: Lactate drives prehospital mSOFA risk; Who calls an ambulance for low-acuity problems; What makes an ambulance driver competent</description>
+      <content:encoded><![CDATA[<p>3 papers: Lactate drives prehospital mSOFA risk; Who calls an ambulance for low-acuity problems; What makes an ambulance driver competent</p><p>Papers in this episode:</p><ul><li><a href="https://doi.org/10.1093/qjmed/hcag287">Lactate drives prehospital mSOFA risk <em>(QJM)</em></a></li><li><a href="https://doi.org/10.1080/10903127.2026.2747036">Who calls an ambulance for low-acuity problems <em>(Prehospital Emergency Care)</em></a></li><li><a href="https://doi.org/10.1177/27536386261496253">What makes an ambulance driver competent <em>(Paramedicine)</em></a></li></ul><p><a href="https://paramedicpapers.com/episodes/2026-10-13/">Show notes and transcript</a></p>]]></content:encoded>
+      <pubDate>Tue, 13 Oct 2026 07:33:10 +1100</pubDate>
+      <guid isPermaLink="false">https://audio.paramedicpapers.com/ep-2026-10-13.mp3</guid>
+      <enclosure url="https://audio.paramedicpapers.com/ep-2026-10-13.mp3" length="883052" type="audio/mpeg"/>
+      <itunes:duration>220</itunes:duration>
+      <itunes:summary>3 papers: Lactate drives prehospital mSOFA risk; Who calls an ambulance for low-acuity problems; What makes an ambulance driver competent</itunes:summary>
+      <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
+      <itunes:episodeType>full</itunes:episodeType>
+      <podcast:transcript url="https://audio.paramedicpapers.com/ep-2026-10-13.txt" type="text/plain" language="en-au"/>
+    </item>
+    <item>
       <title>Paramedic Papers Daily — 12 October 2026</title>
       <link>https://paramedicpapers.com/episodes/2026-10-12/</link>
       <description>2 papers: Bedside observations beat NEWS for spotting deterioration; Stable penetrating chest trauma: surgery increasingly avoided</description>
@@ -407,19 +421,6 @@
       <enclosure url="https://audio.paramedicpapers.com/ep-2026-09-11.mp3" length="422253" type="audio/mpeg"/>
       <itunes:duration>105</itunes:duration>
       <itunes:summary>1 paper: Rwandan pilot of video-plus-simulation mass casualty training — knowledge and confidence gains held at six months</itunes:summary>
-      <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
-      <itunes:episodeType>full</itunes:episodeType>
-    </item>
-    <item>
-      <title>Paramedic Papers Daily — 10 September 2026</title>
-      <link>https://paramedicpapers.com/episodes/2026-09-10/</link>
-      <description>2 papers: German registry finds only 20.5% of OHCA meets eCPR eligibility; RCT finds immersive VR adds nothing to CPR training over manikin sim</description>
-      <content:encoded><![CDATA[<p>2 papers: German registry finds only 20.5% of OHCA meets eCPR eligibility; RCT finds immersive VR adds nothing to CPR training over manikin sim</p><p>Papers in this episode:</p><ul><li><a href="https://doi.org/10.1186/s13049-026-01681-7">Modelling eCPR eligibility after out-of-hospital cardiac arrest: a 10-year retrospective temporospatial analysis from a mixed urban-rural region in Germany <em>(Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine)</em></a></li><li><a href="https://doi.org/10.1016/j.nedt.2026.107379">Effectiveness of immersive virtual reality in undergraduate nursing students for cardiopulmonary resuscitation training: A randomized controlled trial <em>(Nurse Education Today)</em></a></li></ul><p><a href="https://paramedicpapers.com/episodes/2026-09-10/">Show notes and transcript</a></p>]]></content:encoded>
-      <pubDate>Thu, 10 Sep 2026 07:38:11 +1000</pubDate>
-      <guid isPermaLink="false">https://opurtell.github.io/paramedicpapers/audio/ep-2026-09-10.mp3</guid>
-      <enclosure url="https://audio.paramedicpapers.com/ep-2026-09-10.mp3" length="783501" type="audio/mpeg"/>
-      <itunes:duration>195</itunes:duration>
-      <itunes:summary>2 papers: German registry finds only 20.5% of OHCA meets eCPR eligibility; RCT finds immersive VR adds nothing to CPR training over manikin sim</itunes:summary>
       <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
       <itunes:episodeType>full</itunes:episodeType>
     </item>
