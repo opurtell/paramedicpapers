@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#FBFAF8">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Site Stats — Paramedic Papers</title>
+  <link rel="stylesheet" href="/css/fonts.css?v=1">
+  <link rel="icon" type="image/png" sizes="32x32" href="icon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="icon-16.png">
+  <script>
+    try { if (localStorage.getItem('pp:theme') === 'dark') document.documentElement.setAttribute('data-theme', 'dark'); } catch (e) {}
+  </script>
+  <style>
+    /* Tokens copied from css/style.css; this page stands alone. Owner-only:
+       the API (/api/admin/analytics) checks the signed-in email server-side,
+       so this file holds nothing private. Not linked, not in the sitemap. */
+    :root {
+      --bg: #FBFAF8; --surface: #FFFFFF; --ink: #14171A; --ink-2: #2A2E33; --ink-3: #5A6067;
+      --muted: #8A9097; --line: #EAE8E3; --accent: #2F5FA8; --accent-2: #9DB5DC; --warm: #C2562F; --warm-tint: #FAF0EA;
+      --up: #2E7D4F; --down: #B3412A;
+      --sans: 'IBM Plex Sans', system-ui, -apple-system, sans-serif;
+      --serif: Newsreader, Georgia, serif;
+    }
+    :root[data-theme="dark"] {
+      --bg: #121417; --surface: #1A1D21; --ink: #ECEDEE; --ink-2: #D3D6D9; --ink-3: #A3A9B0;
+      --muted: #858C94; --line: #2A2E33; --accent: #7DA2E3; --accent-2: #3E5680; --warm: #E07A52; --warm-tint: #2C1F18;
+      --up: #6CC08F; --down: #E8836A;
+      color-scheme: dark;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; background: var(--bg); color: var(--ink); }
+    body { font: 16px/1.5 var(--sans); -webkit-font-smoothing: antialiased; }
+    main { max-width: 960px; margin: 0 auto; padding: 32px 16px 64px; }
+    .back { font-size: 14px; color: var(--accent); text-decoration: none; }
+    .back:hover { text-decoration: underline; }
+    h1 { font: 500 36px/1.15 var(--serif); margin: 20px 0 6px; letter-spacing: -0.01em; }
+    .sub { color: var(--muted); font-size: 14px; margin: 0 0 20px; }
+    h2 { font: 500 20px/1.3 var(--serif); margin: 0 0 12px; }
+    .bar { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 20px; }
+    .seg { display: inline-flex; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; background: var(--surface); }
+    .seg button { font: inherit; font-size: 14px; border: 0; background: none; color: var(--ink-3); padding: 6px 12px; cursor: pointer; }
+    .seg button + button { border-left: 1px solid var(--line); }
+    .seg button[aria-pressed="true"] { background: var(--accent); color: #fff; }
+    .bar .note { color: var(--muted); font-size: 13px; margin-left: auto; }
+    .kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; margin-bottom: 16px; }
+    .card { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 16px; min-width: 0; }
+    .kpi .label { color: var(--muted); font-size: 13px; }
+    .kpi .value { font: 500 30px/1.2 var(--serif); margin: 4px 0 2px; font-variant-numeric: tabular-nums; }
+    .kpi .delta { font-size: 13px; color: var(--muted); }
+    .delta.up { color: var(--up); } .delta.down { color: var(--down); }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 12px; margin-top: 12px; }
+    .chart { width: 100%; height: 200px; display: block; }
+    .chart text { fill: var(--muted); font: 11px var(--sans); }
+    .legend { display: flex; gap: 16px; font-size: 13px; color: var(--ink-3); margin-top: 8px; }
+    .legend i { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 6px; vertical-align: -1px; }
+    .rows { list-style: none; margin: 0; padding: 0; }
+    .rows li { position: relative; display: flex; justify-content: space-between; gap: 12px; padding: 6px 8px; font-size: 14px; border-radius: 4px; }
+    .rows li + li { margin-top: 2px; }
+    .rows .fill { position: absolute; inset: 0 auto 0 0; background: var(--accent); opacity: .12; border-radius: 4px; }
+    .rows .k { position: relative; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: var(--ink-2); }
+    .rows .v { position: relative; color: var(--ink-3); font-variant-numeric: tabular-nums; white-space: nowrap; }
+    .empty { color: var(--muted); font-size: 14px; }
+    .msg { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 24px; color: var(--ink-2); }
+    .msg a { color: var(--accent); }
+    .tip { position: fixed; pointer-events: none; background: var(--ink); color: var(--bg); font-size: 12px; padding: 6px 8px; border-radius: 6px; white-space: nowrap; z-index: 5; }
+    footer { margin-top: 32px; color: var(--muted); font-size: 13px; }
+  </style>
+</head>
+<body>
+<main>
+  <a class="back" href="/">← Paramedic Papers</a>
+  <h1>Site stats</h1>
+  <p class="sub" id="sub">Checking your sign-in…</p>
+  <div id="root"></div>
+  <footer>Cloudflare Web Analytics counts visits without cookies. It doesn't record who people are, so it has no unique visitors or age/gender. Countries, devices, browsers and referrers are the demographics available. Bots are excluded.</footer>
+</main>
+<div class="tip" id="tip" hidden></div>
+<script>
+(function () {
+  'use strict';
+  var API = (location.hostname === 'localhost' || location.hostname === '127.0.0.1')
+    ? 'http://localhost:8787' : 'https://api.paramedicpapers.com';
+  var root = document.getElementById('root'), sub = document.getElementById('sub'), tip = document.getElementById('tip');
+  var days = 30;
+  try { days = +localStorage.getItem('pp:stats-days') || 30; } catch (e) {}
+
+  function esc(s) { return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) { return '&#' + c.charCodeAt(0) + ';'; }); }
+  function n(x) { return (x || 0).toLocaleString('en-AU'); }
+  function get(path) {
+    return fetch(API + path, { credentials: 'include' }).then(function (r) {
+      return r.json().catch(function () { return {}; }).then(function (d) {
+        if (r.ok) return d;
+        var e = new Error(d.error || 'HTTP ' + r.status); e.status = r.status; throw e;
+      });
+    });
+  }
+  function msg(html) { root.innerHTML = '<div class="msg">' + html + '</div>'; }
+
+  function load() {
+    sub.textContent = 'Loading…';
+    get('/api/admin/analytics?days=' + days).then(render, function (e) {
+      sub.textContent = '';
+      if (e.status === 401) msg('Sign in first, on the <a href="/#account">Account</a> page, then come back.');
+      else if (e.status === 403) msg('This page is only available to the site owner.');
+      else if (e.status === 404) msg('The analytics endpoint isn’t deployed on the API yet.');
+      else msg('Couldn’t load stats: ' + esc(e.message));
+    });
+  }
+
+  function delta(cur, prev) {
+    if (!prev) return '<span class="delta">no earlier data</span>';
+    var p = Math.round((cur - prev) / prev * 100);
+    var cls = p > 0 ? 'up' : p < 0 ? 'down' : '';
+    return '<span class="delta ' + cls + '">' + (p > 0 ? '▲ ' : p < 0 ? '▼ ' : '') + Math.abs(p) + '% vs previous ' + days + ' d</span>';
+  }
+
+  function kpi(label, value, extra) {
+    return '<div class="card kpi"><div class="label">' + label + '</div><div class="value">' + value + '</div>' + (extra || '') + '</div>';
+  }
+
+  function list(title, rows, note) {
+    var max = rows.reduce(function (m, r) { return Math.max(m, r.visits); }, 0) || 1;
+    var body = rows.length ? '<ul class="rows">' + rows.map(function (r) {
+      return '<li><span class="fill" style="width:' + (r.visits / max * 100).toFixed(1) + '%"></span>' +
+        '<span class="k" title="' + esc(r.key) + '">' + esc(r.key || '(none)') + '</span>' +
+        '<span class="v">' + n(r.visits) + '</span></li>';
+    }).join('') + '</ul>' : '<p class="empty">No data in this range.</p>';
+    return '<section class="card"><h2>' + title + '</h2>' + (note ? '<p class="sub" style="margin:-6px 0 10px">' + note + '</p>' : '') + body + '</section>';
+  }
+
+  /* Daily bars: page views (light) behind visits (accent). */
+  function chart(daily) {
+    if (!daily.length) return '<p class="empty">No data in this range.</p>';
+    var W = Math.max(280, root.clientWidth - 34), H = 200, pad = { l: 36, r: 4, t: 8, b: 22 };
+    var max = daily.reduce(function (m, d) { return Math.max(m, d.pageviews, d.visits); }, 0) || 1;
+    var step = Math.pow(10, Math.floor(Math.log10(max)));
+    var top = Math.ceil(max / step) * step; if (top / step < 3) { step /= 2; top = Math.ceil(max / step) * step; }
+    var iw = W - pad.l - pad.r, ih = H - pad.t - pad.b, bw = iw / daily.length, gap = Math.min(2, bw * 0.2);
+    var y = function (v) { return pad.t + ih - v / top * ih; };
+    var s = '';
+    for (var v = 0; v <= top; v += step) {
+      s += '<line x1="' + pad.l + '" x2="' + (W - pad.r) + '" y1="' + y(v) + '" y2="' + y(v) + '" stroke="var(--line)"/>' +
+        '<text x="' + (pad.l - 6) + '" y="' + (y(v) + 4) + '" text-anchor="end">' + n(v) + '</text>';
+    }
+    var every = Math.ceil(daily.length / Math.max(3, Math.floor(iw / 70)));
+    daily.forEach(function (d, i) {
+      var x = pad.l + i * bw + gap / 2, w = Math.max(1, bw - gap);
+      s += '<g data-i="' + i + '"><rect x="' + x + '" y="' + pad.t + '" width="' + w + '" height="' + ih + '" fill="transparent"/>' +
+        '<rect x="' + x + '" y="' + y(d.pageviews) + '" width="' + w + '" height="' + (pad.t + ih - y(d.pageviews)) + '" fill="var(--accent-2)" rx="1"/>' +
+        '<rect x="' + x + '" y="' + y(d.visits) + '" width="' + w + '" height="' + (pad.t + ih - y(d.visits)) + '" fill="var(--accent)" rx="1"/></g>';
+      if (i % every === 0) {
+        var dt = new Date(d.date + 'T00:00:00');
+        s += '<text x="' + (x + w / 2) + '" y="' + (H - 6) + '" text-anchor="middle">' + dt.getDate() + ' ' + dt.toLocaleString('en-AU', { month: 'short' }) + '</text>';
+      }
+    });
+    return '<svg class="chart" viewBox="0 0 ' + W + ' ' + H + '" role="img" aria-label="Daily visits and page views">' + s + '</svg>' +
+      '<div class="legend"><span><i style="background:var(--accent)"></i>Visits</span><span><i style="background:var(--accent-2)"></i>Page views</span></div>';
+  }
+
+  var last, resizeT;
+  addEventListener('resize', function () { clearTimeout(resizeT); resizeT = setTimeout(function () { if (last) render(last); }, 150); });
+
+  function render(d) {
+    last = d;
+    var t = d.totals || {}, p = d.previous || {};
+    sub.textContent = d.range ? 'Last ' + d.range.days + ' days · ' + d.range.from.slice(0, 10) + ' to ' + d.range.to.slice(0, 10) : '';
+    var perVisit = t.visits ? (t.pageviews / t.visits).toFixed(1) : '–';
+    var daysWithData = (d.daily || []).length || 1;
+    root.innerHTML =
+      '<div class="bar"><div class="seg" role="group" aria-label="Date range">' +
+        [7, 30, 90, 180].map(function (k) { return '<button type="button" data-days="' + k + '" aria-pressed="' + (k === days) + '">' + k + ' d</button>'; }).join('') +
+      '</div><span class="note">Times in UTC</span></div>' +
+      '<div class="kpis">' +
+        kpi('Visits', n(t.visits), delta(t.visits, p.visits)) +
+        kpi('Page views', n(t.pageviews), delta(t.pageviews, p.pageviews)) +
+        kpi('Avg visits / day', n(Math.round((t.visits || 0) / daysWithData))) +
+        kpi('Pages / visit', perVisit) +
+      '</div>' +
+      '<section class="card"><h2>Daily traffic</h2>' + chart(d.daily || []) + '</section>' +
+      '<div class="grid">' +
+        list('Top pages', d.pages || []) +
+        list('Countries', d.countries || []) +
+        list('Referrers', d.referrers || [], 'Sites that sent visitors. (none) means direct or app.') +
+        list('Devices', d.devices || []) +
+        list('Browsers', d.browsers || []) +
+        list('Operating systems', d.os || []) +
+      '</div>';
+    root.querySelectorAll('[data-days]').forEach(function (b) {
+      b.addEventListener('click', function () {
+        days = +b.getAttribute('data-days');
+        try { localStorage.setItem('pp:stats-days', days); } catch (e) {}
+        load();
+      });
+    });
+    var svg = root.querySelector('.chart');
+    if (svg) {
+      svg.addEventListener('mousemove', function (e) {
+        var g = e.target.closest('[data-i]');
+        if (!g) { tip.hidden = true; return; }
+        var row = d.daily[+g.getAttribute('data-i')];
+        tip.textContent = row.date + ' · ' + n(row.visits) + ' visits · ' + n(row.pageviews) + ' views';
+        tip.hidden = false;
+        tip.style.left = Math.min(e.clientX + 12, innerWidth - tip.offsetWidth - 8) + 'px';
+        tip.style.top = (e.clientY - 36) + 'px';
+      });
+      svg.addEventListener('mouseleave', function () { tip.hidden = true; });
+    }
+  }
+
+  load();
+})();
+</script>
+</body>
+</html>
