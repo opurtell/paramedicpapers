@@ -4,9 +4,7 @@
    goals, exports, the Account page, "Log PD" on paper cards
    (phase 2), the PD quiz (phase 3) and Log PD on other podcasts'
    episodes (phase 5; js/podcasts.js browses). Talks to the API Worker at
-   the API worker, same-origin at paramedicpapers.com/api (repo: cpd/, plan:
-   cpd/plan/phase-1). Previously https://api.paramedicpapers.com — blocked by
-   the ACTGov work Wi-Fi filter; see references/work-wifi-fix.md.
+   api.paramedicpapers.com (repo: cpd/, plan: cpd/plan/phase-1).
    Uses only window.PP from app.js. Behind /#cpd-beta until the
    launch (plan phase 4, Oct 2026).
    ============================================================ */
@@ -18,7 +16,7 @@
   if (!PP) return;
 
   var API = (location.hostname === 'localhost' || location.hostname === '127.0.0.1')
-    ? 'http://localhost:8787' : '';  /* same-origin: /api on paramedicpapers.com (ACTGov Wi-Fi blocks the api. subdomain) */
+    ? 'http://localhost:8787' : 'https://api.paramedicpapers.com';
   var DRAFT_KEY = 'pp:cpd-draft';
   var PAPER_DRAFT_KEY = 'pp:cpd-paper:';   /* + paper id */
   var RESUME_KEY = 'pp:cpd-resume';        /* paper id to reopen after sign-in */
