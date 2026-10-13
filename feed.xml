@@ -24,6 +24,20 @@
     </itunes:category>
     <itunes:explicit>false</itunes:explicit>
     <item>
+      <title>Paramedic Papers Daily — 14 October 2026</title>
+      <link>https://paramedicpapers.com/episodes/2026-10-14/</link>
+      <description>2 papers: Mechanical vs manual BVM in adult CPR; Community paramedic referrals cut ambulance use</description>
+      <content:encoded><![CDATA[<p>2 papers: Mechanical vs manual BVM in adult CPR; Community paramedic referrals cut ambulance use</p><p>Papers in this episode:</p><ul><li><a href="https://doi.org/10.1016/j.resuscitation.2026.111345">Mechanical vs manual BVM in adult CPR <em>(Resuscitation)</em></a></li><li><a href="https://doi.org/10.1177/19427891261496776">Community paramedic referrals cut ambulance use <em>(Population Health Management)</em></a></li></ul><p><a href="https://paramedicpapers.com/episodes/2026-10-14/">Show notes and transcript</a></p>]]></content:encoded>
+      <pubDate>Wed, 14 Oct 2026 07:32:58 +1100</pubDate>
+      <guid isPermaLink="false">https://audio.paramedicpapers.com/ep-2026-10-14.mp3</guid>
+      <enclosure url="https://audio.paramedicpapers.com/ep-2026-10-14.mp3" length="566060" type="audio/mpeg"/>
+      <itunes:duration>141</itunes:duration>
+      <itunes:summary>2 papers: Mechanical vs manual BVM in adult CPR; Community paramedic referrals cut ambulance use</itunes:summary>
+      <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
+      <itunes:episodeType>full</itunes:episodeType>
+      <podcast:transcript url="https://audio.paramedicpapers.com/ep-2026-10-14.txt" type="text/plain" language="en-au"/>
+    </item>
+    <item>
       <title>Paramedic Papers Daily — 13 October 2026</title>
       <link>https://paramedicpapers.com/episodes/2026-10-13/</link>
       <description>3 papers: Lactate drives prehospital mSOFA risk; Who calls an ambulance for low-acuity problems; What makes an ambulance driver competent</description>
@@ -408,19 +422,6 @@
       <enclosure url="https://audio.paramedicpapers.com/ep-2026-09-12.mp3" length="793197" type="audio/mpeg"/>
       <itunes:duration>198</itunes:duration>
       <itunes:summary>3 papers: paediatric weight documentation 73%; consensus guidelines for prehospital paediatric transfusion; 2026 prehospital evidence-based guideline systematic review</itunes:summary>
-      <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
-      <itunes:episodeType>full</itunes:episodeType>
-    </item>
-    <item>
-      <title>Paramedic Papers Daily — 11 September 2026</title>
-      <link>https://paramedicpapers.com/episodes/2026-09-11/</link>
-      <description>1 paper: Rwandan pilot of video-plus-simulation mass casualty training — knowledge and confidence gains held at six months</description>
-      <content:encoded><![CDATA[<p>1 paper: Rwandan pilot of video-plus-simulation mass casualty training — knowledge and confidence gains held at six months</p><p>Papers in this episode:</p><ul><li><a href="https://doi.org/10.1016/j.afjem.2026.101003">Mass casualty training for prehospital and emergency providers in Kigali, Rwanda: a quasi-experimental pre–post educational study <em>(African Journal of Emergency Medicine)</em></a></li></ul><p><a href="https://paramedicpapers.com/episodes/2026-09-11/">Show notes and transcript</a></p>]]></content:encoded>
-      <pubDate>Fri, 11 Sep 2026 07:33:51 +1000</pubDate>
-      <guid isPermaLink="false">https://opurtell.github.io/paramedicpapers/audio/ep-2026-09-11.mp3</guid>
-      <enclosure url="https://audio.paramedicpapers.com/ep-2026-09-11.mp3" length="422253" type="audio/mpeg"/>
-      <itunes:duration>105</itunes:duration>
-      <itunes:summary>1 paper: Rwandan pilot of video-plus-simulation mass casualty training — knowledge and confidence gains held at six months</itunes:summary>
       <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
       <itunes:episodeType>full</itunes:episodeType>
     </item>
