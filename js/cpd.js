@@ -2,8 +2,9 @@
    Paramedic Papers — CPD tracker
    Sign-in, the "More" menu, the CPD tab, manual PD entries, learning
    goals, exports, the Account page, "Log PD" on paper cards
-   (phase 2), the PD quiz (phase 3) and Log PD on other podcasts'
-   episodes (phase 5; js/podcasts.js browses). Talks to the API Worker at
+   (phase 2), the PD quiz (phase 3), Log PD on other podcasts'
+   episodes (phase 5; js/podcasts.js browses) and saved papers that
+   follow the account (phase 6). Talks to the API Worker at
    api.paramedicpapers.com (repo: cpd/, plan: cpd/plan/phase-1).
    Uses only window.PP from app.js. Behind /#cpd-beta until the
    launch (plan phase 4, Oct 2026).
@@ -23,6 +24,9 @@
   var PROMO_KEY = 'pp:cpd-promo-closed';   /* the home launch card was dismissed */
   var EPISODE_DRAFT_KEY = 'pp:cpd-episode:';  /* + episode id (phase 5) */
   var EP_RESUME_KEY = 'pp:cpd-resume-ep';     /* { p: podcast id, e: episode id } to reopen after sign-in */
+  var SAVED_BASE_KEY = 'pp:saved-base';       /* { user, ids }: the saved list this device last agreed with the account */
+  var SAVED_SYNC_DELAY = 1000;                /* ms; a burst of Save taps goes as one request */
+  var SAVED_STALE = 5 * 60 * 1000;            /* re-sync when the tab comes back after this long */
 
   /* Copied from cpd/src/cpd.js — keep the two in step. */
   var ACTIVITY_TYPES = {
@@ -62,6 +66,7 @@
     deleting: false,
     logged: null,        /* { paper_id: [{ id, minutes, activity_type }] } for the card badges */
     loggedEps: null,     /* { episode_id: { id, minutes, podcast_id, cpd_year } } for the episode rows */
+    savedSync: '',       /* '' (not yet) | 'ok' | 'failed' */
     sheet: null          /* { type: 'menu' | 'entry' | 'goal' | 'paper' | 'episode' | 'add' | 'signin', … } */
   };
 
@@ -88,6 +93,8 @@
   PP.hooks.podcastLogged = podcastLogged;
   PP.hooks.podcastStats = podcastStats;
   PP.hooks.openAdd = openAdd;
+  PP.hooks.savedChanged = savedChanged;
+  PP.hooks.savedStatus = savedStatus;
 
   document.addEventListener('DOMContentLoaded', function () {
     $('sheet-backdrop').addEventListener('click', function () { closeSheet(true); });
@@ -97,8 +104,12 @@
     boot();
     loadQuizIndex();
   });
+  var hiddenAt = 0;
   document.addEventListener('visibilitychange', function () {
-    if (document.hidden) pauseClock(); else resumeClock();
+    if (document.hidden) { pauseClock(); hiddenAt = Date.now(); return; }
+    resumeClock();
+    if (hiddenAt && Date.now() - hiddenAt > SAVED_STALE) syncSaved();
+    hiddenAt = 0;
   });
 
   function boot() {
@@ -114,6 +125,7 @@
       loadLogged();
       loadLoggedEps();
       loadAttempts();
+      syncSaved();
       return loadYear();
     }).catch(function (err) {
       st.checked = true;
@@ -180,6 +192,124 @@
 
   function refreshSummary() {
     return api('/api/summary?year=' + st.year).then(function (s) { st.summary = s; });
+  }
+
+  /* ── saved papers that follow the account (phase 6) ── */
+
+  /* localStorage (pp:saved, owned by app.js) stays what the page reads;
+     signed out, nothing here runs. Signed in, each sync is a three-way
+     merge: what changed on this device since the last sync (local vs
+     pp:saved-base) goes to the account, then the account's list comes back
+     as the new local list and base. With no base (first sign-in here,
+     cleared storage, another account) the local list is added, never
+     replaced. A failed sync leaves the base alone, so the next one sends
+     the same changes. Plan: cpd/plan/phase-6-saved-sync.md. */
+
+  var savedTimer = null, savedBusy = false, savedAgain = false;
+
+  function savedChanged() {
+    if (!st.user) return;
+    clearTimeout(savedTimer);
+    savedTimer = setTimeout(syncSaved, SAVED_SYNC_DELAY);
+  }
+
+  function readSavedBase() {
+    try {
+      var b = JSON.parse(localStorage.getItem(SAVED_BASE_KEY));
+      return b && st.user && b.user === st.user.id && Array.isArray(b.ids) ? b.ids : null;
+    } catch (e) { return null; }
+  }
+  function writeSavedBase(ids) {
+    try { localStorage.setItem(SAVED_BASE_KEY, JSON.stringify({ user: st.user.id, ids: ids })); } catch (e) {}
+  }
+  function dropSavedBase() {
+    clearTimeout(savedTimer);
+    st.savedSync = '';
+    try { localStorage.removeItem(SAVED_BASE_KEY); } catch (e) {}
+  }
+  function minus(a, b) {
+    var drop = {};
+    b.forEach(function (x) { drop[x] = 1; });
+    return a.filter(function (x) { return !drop[x]; });
+  }
+
+  function syncSaved() {
+    if (!st.user || !PP.savedIds) return;
+    if (savedBusy) { savedAgain = true; return; }
+    clearTimeout(savedTimer);
+    savedBusy = true;
+    var user = st.user.id;
+    var local = PP.savedIds(), base = readSavedBase();
+    var add = base ? minus(local, base) : local;
+    var remove = base ? minus(base, local) : [];
+    var req = add.length || remove.length
+      ? api('/api/saved', { method: 'POST', body: { add: add, remove: remove } })
+      : api('/api/saved');
+    req.then(function (r) {
+      if (!st.user || st.user.id !== user) return;
+      /* Taps while the request was out are kept on top of the account's
+         list and go up with the next sync. */
+      var now = PP.savedIds();
+      var during = minus(now, local), undone = minus(local, now);
+      var merged = minus(r.saved, undone).concat(minus(during, r.saved));
+      writeSavedBase(r.saved);
+      PP.setSaved(merged);
+      st.savedSync = 'ok';
+      if (during.length || undone.length) savedAgain = true;
+      if (!base && add.length) {
+        toast(add.length === 1 ? 'Your saved paper is now in your account.' : 'Your ' + add.length + ' saved papers are now in your account.');
+      }
+    }, function () {
+      if (st.user) st.savedSync = 'failed';
+    }).then(function () {
+      savedBusy = false;
+      if (PP.renderSavedStatus) PP.renderSavedStatus();
+      if (savedAgain) { savedAgain = false; savedChanged(); }
+    });
+  }
+
+  /* The line at the top of the Saved tab. */
+  function savedStatus(el) {
+    var html = '';
+    if (st.user) {
+      html = st.savedSync === 'ok' ? ico('check') + 'Synced to your account.'
+        : st.savedSync === 'failed' ? 'Saved on this device. Not synced yet.'
+        : 'Syncing…';
+    } else if (st.checked) {
+      html = 'Saved on this device.' + (st.apiDown ? ''
+        : ' <button class="link-inline" type="button" data-saved-signin>Sign in</button> to keep them on all your devices.');
+    }
+    el.innerHTML = html;
+    el.hidden = !html;
+    var b = el.querySelector('[data-saved-signin]');
+    if (b) b.addEventListener('click', openSavedSignIn);
+  }
+
+  function openSavedSignIn() {
+    openSheet({ type: 'signin' }, '');
+    var el = $('sheet');
+    el.innerHTML =
+      '<div class="sheet-grip" aria-hidden="true"></div>' +
+      '<div class="sheet-head"><h2 id="sheet-title" class="sr-only">Sign in</h2><span></span>' +
+        '<button class="icon-btn" data-close type="button" aria-label="Close">' + ico('plus', 'rot45') + '</button></div>' +
+      signInHTML('Keep your saved papers on every device', '#saved');
+    el.querySelectorAll('[data-close]').forEach(function (b) { b.addEventListener('click', function () { closeSheet(true); }); });
+  }
+
+  var toastTimer = null;
+  function toast(text) {
+    var el = $('pp-toast');
+    if (!el) {
+      el = document.createElement('div');
+      el.id = 'pp-toast';
+      el.className = 'toast';
+      el.setAttribute('role', 'status');
+      document.body.appendChild(el);
+    }
+    el.textContent = text;
+    el.classList.add('is-on');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function () { el.classList.remove('is-on'); }, 4000);
   }
 
   /* ── dates and numbers ──────────────────────────────── */
@@ -265,6 +395,7 @@
     renderQuizCard();
     renderPromo();
     PP.renderKicker();
+    if (PP.renderSavedStatus) PP.renderSavedStatus();
   }
 
   /* Home: a one-line launch card for signed-out visitors, until dismissed.
@@ -366,7 +497,7 @@
          back here, so warn before they try (plan README, decision 4). */
       (st.providers.indexOf('microsoft') !== -1
         ? '<p class="hint">Work or health service Microsoft accounts are often blocked from outside apps. If yours is, use a personal Microsoft or Google account.</p>' : '') +
-      '<p class="fine">We keep your name, email and what you log — nothing else. <a href="privacy.html">Privacy</a></p>' +
+      '<p class="fine">We keep your name, email, what you log and the papers you save — nothing else. <a href="privacy.html">Privacy</a></p>' +
       '</article>';
   }
 
@@ -2376,7 +2507,7 @@
       '<article class="panel">' +
         '<span class="panel-kicker">Your data</span>' +
         '<a class="btn" href="' + esc(API + '/api/export.json') + '">' + ico('download') + 'Download all my data (JSON)</a>' +
-        '<p class="hint">Everything you’ve logged, every year. Signing in with ' + esc(PROVIDER_NAMES[u.provider === 'google' ? 'microsoft' : 'google']) + ' would create a separate account.</p>' +
+        '<p class="hint">Everything you’ve logged, every year, and your saved papers (' + PP.savedIds().length + ' synced to this account). Signing in with ' + esc(PROVIDER_NAMES[u.provider === 'google' ? 'microsoft' : 'google']) + ' would create a separate account.</p>' +
         '<button class="btn" id="btn-signout" type="button">Sign out</button>' +
       '</article>' +
 
@@ -2409,6 +2540,7 @@
       api('/auth/logout', { method: 'POST' }).catch(function () {}).then(function () {
         st.user = null; st.summary = st.entries = st.goals = null; qz.attempts = null;
         dropLogged();
+        dropSavedBase();
         render();
       });
     });
@@ -2424,6 +2556,7 @@
           clearDraft();
           st.user = null; st.summary = st.entries = st.goals = null; st.deleting = false;
           dropLogged();
+          dropSavedBase();
           render();
         }).catch(function (err) {
           $('delete-error').textContent = err.message;

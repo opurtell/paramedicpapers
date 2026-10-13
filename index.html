@@ -24,7 +24,7 @@
   <link rel="preload" href="/fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/fonts/ibm-plex-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="css/fonts.css?v=1">
-  <link rel="stylesheet" href="css/style.css?v=25">
+  <link rel="stylesheet" href="css/style.css?v=26">
   <!-- Apply a saved dark-theme choice before first paint (light is default). -->
   <script>
     try {
@@ -357,6 +357,7 @@
 
     <!-- ── SAVED ──────────────────────────────────────────── -->
     <section class="page" id="page-saved" hidden>
+      <p class="saved-sync fine" id="saved-sync" role="status" hidden></p>
       <div class="saved-tools" id="saved-tools" hidden>
         <button class="link-btn" id="btn-copy-citations" type="button"><svg class="hi" aria-hidden="true"><use href="#hi-copy"/></svg><span class="lbl">Copy citation list</span></button>
       </div>
@@ -442,8 +443,8 @@
 
   <!-- defer keeps the order (cpd.js and podcasts.js rely on app.js's
        window.PP); all three start from DOMContentLoaded as before. -->
-  <script defer src="js/app.js?v=27"></script>
-  <script defer src="js/cpd.js?v=12"></script>
+  <script defer src="js/app.js?v=28"></script>
+  <script defer src="js/cpd.js?v=13"></script>
   <script defer src="js/podcasts.js?v=4"></script>
 </body>
 </html>

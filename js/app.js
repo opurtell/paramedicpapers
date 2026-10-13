@@ -47,7 +47,9 @@
   var hooks = {
     openMenu: null, kicker: null, onShow: null, onRender: [], paperAct: null, logPaper: null,
     /* Other podcasts for CPD (phase 5): js/podcasts.js browses, js/cpd.js logs. */
-    podcastsKicker: null, logEpisode: null, episodeAct: null, podcastLogged: null, podcastStats: null, openAdd: null
+    podcastsKicker: null, logEpisode: null, episodeAct: null, podcastLogged: null, podcastStats: null, openAdd: null,
+    /* Saved papers that follow an account (cpd/plan phase 6): js/cpd.js syncs. */
+    savedChanged: null, savedStatus: null
   };
 
   /* The small surface js/cpd.js uses, so it doesn't reach into this file. */
@@ -58,6 +60,9 @@
     ico: function (n, c) { return ico(n, c); },
     isWide: isWide,
     savedCount: function () { return savedPapers().length; },
+    savedIds: function () { return Object.keys(state.saved); },
+    setSaved: function (ids) { setSaved(ids); },
+    renderSavedStatus: function () { renderSavedStatus(); },
     paperById: function (id) { return paperById(id); },
     hasData: function () { return !!state.data; },
     renderPapers: function () { renderPaperLists(); },
@@ -794,7 +799,15 @@
     $('saved-tools').hidden = list.length === 0;
     $('saved-list').innerHTML = list.map(cardHTML).join('');
     bindActs($('saved-list'));
+    renderSavedStatus();
     if (state.tab === 'saved') renderKicker();
+  }
+  /* "Synced to your account" / "Sign in to keep them on all your devices";
+     js/cpd.js fills it. Without cpd.js the line stays hidden. */
+  function renderSavedStatus() {
+    var el = $('saved-sync');
+    if (!el) return;
+    if (hooks.savedStatus) hooks.savedStatus(el); else el.hidden = true;
   }
 
   /* ── podcast ────────────────────────────────────────── */
@@ -1356,7 +1369,20 @@
   function toggleSave(id) {
     if (state.saved[id]) delete state.saved[id]; else state.saved[id] = true;
     persistSaved();
-    renderToday(); renderFeed(); renderWeeklyPicks(); renderSaved(); renderSidebar();
+    renderSavedLists();
+    if (hooks.savedChanged) hooks.savedChanged(id, !!state.saved[id]);
+  }
+  /* Replace the whole list (js/cpd.js, after syncing with the account). */
+  function setSaved(ids) {
+    var next = {};
+    ids.forEach(function (id) { next[id] = true; });
+    state.saved = next;
+    persistSaved();
+    renderSavedLists();
+  }
+  function renderSavedLists() {
+    if (state.data) { renderToday(); renderFeed(); renderWeeklyPicks(); renderSaved(); renderSidebar(); }
+    else renderSavedStatus();
   }
   function savedPapers() {
     return allPapers().filter(function (p) { return isSaved(p.id); });
@@ -1375,6 +1401,10 @@
   function bindSaved() {
     $('btn-copy-citations').addEventListener('click', function () {
       copyText(citationList(), function () { flash($('btn-copy-citations'), 'Copied'); });
+    });
+    /* Another tab saved or unsaved something. */
+    window.addEventListener('storage', function (e) {
+      if (e.key === SAVED_KEY) { state.saved = loadSaved(); renderSavedLists(); }
     });
   }
 

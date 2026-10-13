@@ -845,6 +845,24 @@ body.has-player main {
 
 /* Saved: export link above the list */
 .saved-tools { display: flex; justify-content: flex-end; }
+/* Saved: sync status (cpd/plan phase 6) */
+.saved-sync { display: flex; align-items: center; flex-wrap: wrap; gap: 0 4px; margin-bottom: 4px; }
+.saved-sync .hi { width: 14px; height: 14px; stroke-width: 2.2; color: var(--good); margin-right: 2px; }
+
+/* One-line confirmation above the tab bar (js/cpd.js toast()) */
+.toast {
+  position: fixed; left: 50%; z-index: 40;
+  bottom: calc(var(--tabbar-h) + env(safe-area-inset-bottom) + 16px);
+  max-width: calc(100vw - 32px); width: max-content;
+  padding: 10px 16px; border-radius: 12px;
+  background: var(--ink); color: var(--bg); font-size: 14px; line-height: 1.4;
+  box-shadow: 0 6px 20px rgba(var(--shadow-rgb),.18);
+  opacity: 0; transform: translate(-50%, 8px); pointer-events: none;
+  transition: opacity .2s, transform .2s;
+}
+.toast.is-on { opacity: 1; transform: translate(-50%, 0); }
+@media (min-width: 960px) { .toast { bottom: 24px; left: calc(50% + var(--sidebar-w) / 2); } }
+@media (prefers-reduced-motion: reduce) { .toast { transition: none; } }
 
 /* Subscribe panel */
 .sub-panel { gap: 7px; padding: 12px 18px; }
