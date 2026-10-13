@@ -1,49 +1,28 @@
 {
-  "lastUpdated": "2026-10-12T20:20:55Z",
-  "lastUpdatedSydney": "2026-10-13 07:20 AEDT",
-  "lastUpdatedDate": "2026-10-13",
+  "lastUpdated": "2026-10-13T20:20:55Z",
+  "lastUpdatedSydney": "2026-10-14 07:20 AEDT",
+  "lastUpdatedDate": "2026-10-14",
   "featuredPapers": [
     {
-      "id": "42841835",
-      "title": "Final Diagnoses and Outcomes After Paramedic-Suspected ST-Segment Elevation Myocardial Infarction",
-      "journal": "Annals of Emergency Medicine",
-      "date": "2026-10-09",
-      "pmid": "42841835",
-      "doi": "10.1016/j.annemergmed.2026.07.027",
-      "summary": "A retrospective Victorian statewide ambulance registry cohort (2020–25) followed up paramedic-suspected STEMI presentations and found STEMI confirmed in only 60% of those with a recorded discharge diagnosis, with 30-day mortality of 6.5%.",
-      "relevance": "🟢 High — Prehospital STEMI pathways are standard practice nationally, and this is local data — it speaks directly to how well those pathways sort true STEMI from mimics.",
-      "featuredReason": "Prehospital STEMI pathways are standard practice nationally, and this is local data — it speaks directly to how well those pathways sort true STEMI from mimics.",
-      "pubDate": "2026-10",
-      "topic": "Cardiac (non-arrest)",
-      "studyType": "Registry",
-      "design": "Retrospective statewide registry cohort",
-      "n": "7,205 suspected STEMI visits with a recorded discharge diagnosis (of 8,077)",
-      "finding": "STEMI confirmed in 4,330/7,205 (60.1%); non-ST-elevation ACS or other coronary syndromes 11.4%; other cardiac 10.5%; noncardiac 8.5%; coronary angiography 67.1%, PCI 44.4%; 30-day mortality 6.5% and 17.5% over median 2.8 years follow-up",
-      "caveat": "Retrospective registry design relying on coded discharge diagnoses, and 10.8% of visits had no recorded diagnosis at all",
-      "bottomLine": "Context only",
-      "shortTitle": "Only 60% of paramedic-suspected STEMI confirmed",
-      "learningGoal": "Strengthen my judgement in recognising STEMI mimics when prehospital ECG findings do not confirm the working diagnosis."
-    },
-    {
-      "id": "10.1016/j.resplu.2026.101524",
-      "title": "Video laryngoscopy versus direct laryngoscopy for pediatric emergency tracheal intubation: a systematic review and meta-analysis",
-      "journal": "Resuscitation Plus",
-      "date": "2026-10-09",
+      "id": "10.1016/j.resuscitation.2026.111345",
+      "title": "Mechanical versus manual bag-valve ventilation during cardiopulmonary resuscitation in adults with cardiac arrest: A systematic review and Bayesian meta-analysis",
+      "journal": "Resuscitation",
+      "date": "2026-10-14",
       "pmid": "",
-      "doi": "10.1016/j.resplu.2026.101524",
-      "summary": "A systematic review and meta-analysis of 18 studies (17 observational, 1 RCT) found video laryngoscopy for paediatric emergency intubation was associated with higher first-pass success (RR 1.11) and fewer severe adverse events (RR 0.76), on very low certainty evidence.",
-      "relevance": "🟡 Medium — Paediatric intubation is an intensive care paramedic skill in most services, and nearly all these data come from ED and ICU operators rather than the road.",
-      "featuredReason": "Paediatric intubation is an intensive care paramedic skill in most services, and nearly all these data come from ED and ICU operators rather than the road.",
+      "doi": "10.1016/j.resuscitation.2026.111345",
+      "summary": "Systematic review and Bayesian meta-analysis comparing mechanical versus manual bag-valve ventilation during adult CPR — abstract not yet available, so no pooled findings to report yet.",
+      "relevance": "🟢 High — Bag-valve ventilation during cardiac arrest is universal prehospital practice, so whichever way the pooled evidence falls it speaks directly to everyday resuscitation care.",
+      "featuredReason": "Bag-valve ventilation during cardiac arrest is universal prehospital practice, so whichever way the pooled evidence falls it speaks directly to everyday resuscitation care.",
       "pubDate": "2026-10",
       "topic": "Airway & ventilation",
       "studyType": "Systematic review",
-      "design": "Systematic review and meta-analysis (PROSPERO-registered, GRADE)",
-      "n": "18 studies (17 observational, 1 RCT) in paediatric acute care",
-      "finding": "First-pass success 72.2% vs 69.0% with direct laryngoscopy (RR 1.11, 95% CI 1.06–1.16); severe intubation-associated events 7.7% vs 11.8% (RR 0.76, 95% CI 0.62–0.93); overall success and desaturation similar; no survival or cardiac arrest data",
-      "caveat": "Very low certainty evidence dominated by observational studies, with no data on survival or cardiac arrest",
+      "design": "Systematic review and Bayesian meta-analysis",
+      "n": "Not reported",
+      "finding": "Abstract not yet available",
+      "caveat": "No abstract yet — study details and pooled effect sizes can't be appraised",
       "bottomLine": "Hypothesis-generating",
-      "shortTitle": "Video laryngoscopy edges out direct in kids",
-      "learningGoal": "Weigh the benefits and limitations of video laryngoscopy over direct laryngoscopy for paediatric emergency intubation in my practice."
+      "shortTitle": "Mechanical vs manual BVM in adult CPR",
+      "learningGoal": "Weigh the benefits and risks of mechanical versus manual bag-valve ventilation when managing adult cardiac arrest."
     },
     {
       "id": "10.1016/j.resplu.2026.101512",
@@ -85,6 +64,26 @@
       "bottomLine": "Context only",
       "shortTitle": "DSED use rising but still low after DOSE VF",
       "learningGoal": "Weigh the emerging evidence for double sequential defibrillation in refractory ventricular fibrillation cardiac arrest."
+    },
+    {
+      "id": "10.1136/bmjopen-2026-122263",
+      "title": "Impact of prehospital olanzapine for methamphetamine intoxication on patient and system-level outcomes: a population-based retrospective cohort study",
+      "journal": "BMJ Open",
+      "date": "2026-10-13",
+      "pmid": "",
+      "doi": "10.1136/bmjopen-2026-122263",
+      "summary": "Population-based Winnipeg cohort evaluating a 2018 policy letting paramedics give olanzapine for methamphetamine intoxication — treated patients were far more likely to be transported to ED (aOR 11.83) and seen by a doctor, and less likely to leave before being seen (aOR 0.56).",
+      "relevance": "🟢 High — Olanzapine for agitation is carried by all seven Australian ambulance services and methamphetamine presentations are a daily reality, so the system-level findings translate directly.",
+      "featuredReason": "Olanzapine for agitation is carried by all seven Australian ambulance services and methamphetamine presentations are a daily reality, so the system-level findings translate directly.",
+      "topic": "Toxicology",
+      "studyType": "Cohort",
+      "design": "Retrospective pre-post population-based cohort (inverse probability of treatment weighting)",
+      "n": "1,041 individuals with methamphetamine-related contacts, 222 given prehospital olanzapine",
+      "finding": "Olanzapine recipients more likely to be transported to ED (aOR 11.83, 95% CI 3.19–43.80) and less likely to leave ED without being seen (aOR 0.56, 95% CI 0.32–0.97)",
+      "caveat": "Retrospective pre-post design with confounding by indication — the sickest patients were presumably the ones treated",
+      "bottomLine": "Hypothesis-generating",
+      "shortTitle": "Prehospital olanzapine for meth toxicity",
+      "learningGoal": "Weigh the benefits and risks of prehospital olanzapine for methamphetamine intoxication and its impact on transport decisions."
     },
     {
       "id": "42855034",
@@ -1019,41 +1018,78 @@
     }
   ],
   "funFact": {
-    "category": "pharmacology",
-    "fact": "Adenosine's half-life is under 10 seconds — by the time you've finished pushing it, your body's already destroyed it. Hence the 'push, flush, pray' technique we all know and love."
+    "category": "pathophysiology",
+    "fact": "Spinal shock wipes out all cord function below the lesion — flaccid paralysis, areflexia, nothing. Reflexes crawl back within 24 to 72 hours. The return of the bulbocavernosus reflex is the official 'spinal shock is over' signal."
   },
   "tldr": {
-    "date": "2026-10-13",
-    "paperCount": 3,
-    "summary": "A quiet clinical day — the standout is a Spanish study of 12,212 prehospital patients showing lactate is the dominant driver of the mSOFA score's mortality prediction, plus US data on who actually calls an ambulance for low-acuity problems.",
+    "date": "2026-10-14",
+    "paperCount": 2,
+    "summary": "Thin day. The standout is a Bayesian meta-analysis in Resuscitation on mechanical versus manual bag-valve ventilation during adult CPR — a core-practice question, though the abstract isn't out yet. Alongside it, US data showing community paramedic referrals from primary care medical homes cut ambulance transports, ED visits and admissions.",
     "highlights": [
       {
-        "id": "42861714",
-        "pmid": "42861714",
-        "doi": "10.1093/qjmed/hcag287",
-        "title": "Lactate drives prehospital mSOFA risk",
-        "journal": "QJM",
-        "note": "Cohort mortality was 5.0%; the decision tree's first split was lactate at 3.8 mmol/L, followed by SaFi, GCS and creatinine (order depending on lactate level)"
-      },
-      {
-        "id": "42861967",
-        "pmid": "42861967",
-        "doi": "10.1080/10903127.2026.2747036",
-        "title": "Who calls an ambulance for low-acuity problems",
-        "journal": "Prehospital Emergency Care",
-        "note": "3,232 of 41,761 discharged low-acuity patients (7.7%) arrived by EMS; nighttime presentation (aOR 1.63) and mental health diagnosis (aOR 1.76) also raised the odds"
-      },
-      {
-        "id": "10.1177/27536386261496253",
+        "id": "10.1016/j.resuscitation.2026.111345",
         "pmid": "",
-        "doi": "10.1177/27536386261496253",
-        "title": "What makes an ambulance driver competent",
-        "journal": "Paramedicine",
-        "note": "Seven competency domains identified: technical driving; safety and risk management; cognitive and decision-making; communication and teamwork; stress and emotional management; professional and personal attributes; and work ability and fitness"
+        "doi": "10.1016/j.resuscitation.2026.111345",
+        "title": "Mechanical vs manual BVM in adult CPR",
+        "journal": "Resuscitation",
+        "note": "Abstract not yet available"
+      },
+      {
+        "id": "42864955",
+        "pmid": "42864955",
+        "doi": "10.1177/19427891261496776",
+        "title": "Community paramedic referrals cut ambulance use",
+        "journal": "Population Health Management",
+        "note": "43% fewer 911 ambulance transports, 46% fewer ED visits and 42% fewer hospital admissions in the six months post-program versus six months before"
       }
     ]
   },
   "dailyUpdates": [
+    {
+      "date": "2026-10-14",
+      "papers": [
+        {
+          "id": "10.1016/j.resuscitation.2026.111345",
+          "title": "Mechanical versus manual bag-valve ventilation during cardiopulmonary resuscitation in adults with cardiac arrest: A systematic review and Bayesian meta-analysis",
+          "journal": "Resuscitation",
+          "date": "2026-10-14",
+          "pmid": "",
+          "doi": "10.1016/j.resuscitation.2026.111345",
+          "summary": "Systematic review and Bayesian meta-analysis comparing mechanical versus manual bag-valve ventilation during adult CPR — abstract not yet available, so no pooled findings to report yet.",
+          "relevance": "🟢 High — Bag-valve ventilation during cardiac arrest is universal prehospital practice, so whichever way the pooled evidence falls it speaks directly to everyday resuscitation care.",
+          "pubDate": "2026-10",
+          "topic": "Airway & ventilation",
+          "studyType": "Systematic review",
+          "design": "Systematic review and Bayesian meta-analysis",
+          "n": "Not reported",
+          "finding": "Abstract not yet available",
+          "caveat": "No abstract yet — study details and pooled effect sizes can't be appraised",
+          "bottomLine": "Hypothesis-generating",
+          "shortTitle": "Mechanical vs manual BVM in adult CPR",
+          "learningGoal": "Weigh the benefits and risks of mechanical versus manual bag-valve ventilation when managing adult cardiac arrest."
+        },
+        {
+          "id": "42864955",
+          "title": "Community Paramedics Address Health Inequities Within EMS Through Mobile Integrated Healthcare (MIH) Program Referrals from a \"Medical Home\"",
+          "journal": "Population Health Management",
+          "date": "2026-10-14",
+          "pmid": "42864955",
+          "doi": "10.1177/19427891261496776",
+          "summary": "Chicago fire-department community paramedics running a 4-visit referral program from primary care medical homes across hypertension, diabetes, asthma/COPD and heart failure pathways — 68 graduates saw 911 ambulance transports down 43%, ED visits down 46% and admissions down 42% at six months.",
+          "relevance": "🟡 Medium — Community paramedicine is growing across Australia, but this US model sits inside a fire-department and health-system funding structure that doesn't map cleanly onto Australian ambulance services.",
+          "pubDate": "2026-10-12",
+          "topic": "Operations & systems",
+          "studyType": "Cohort",
+          "design": "Before-and-after cohort",
+          "n": "68 program graduates (321 community paramedic visits)",
+          "finding": "43% fewer 911 ambulance transports, 46% fewer ED visits and 42% fewer hospital admissions in the six months post-program versus six months before",
+          "caveat": "Before-and-after design with no control group — regression to the mean likely inflates the reductions",
+          "bottomLine": "Context only",
+          "shortTitle": "Community paramedic referrals cut ambulance use",
+          "learningGoal": "Understand how community paramedicine and primary care referral pathways can reduce avoidable ambulance use."
+        }
+      ]
+    },
     {
       "date": "2026-10-13",
       "papers": [
@@ -1116,6 +1152,82 @@
           "bottomLine": "Context only",
           "shortTitle": "What makes an ambulance driver competent",
           "learningGoal": "Understand how driver competency domains shape safe and effective emergency responses in the Australian paramedic workforce."
+        },
+        {
+          "id": "10.1136/bmjopen-2026-122263",
+          "title": "Impact of prehospital olanzapine for methamphetamine intoxication on patient and system-level outcomes: a population-based retrospective cohort study",
+          "journal": "BMJ Open",
+          "date": "2026-10-13",
+          "pmid": "",
+          "doi": "10.1136/bmjopen-2026-122263",
+          "summary": "Population-based Winnipeg cohort evaluating a 2018 policy letting paramedics give olanzapine for methamphetamine intoxication — treated patients were far more likely to be transported to ED (aOR 11.83) and seen by a doctor, and less likely to leave before being seen (aOR 0.56).",
+          "relevance": "🟢 High — Olanzapine for agitation is carried by all seven Australian ambulance services and methamphetamine presentations are a daily reality, so the system-level findings translate directly.",
+          "topic": "Toxicology",
+          "studyType": "Cohort",
+          "design": "Retrospective pre-post population-based cohort (inverse probability of treatment weighting)",
+          "n": "1,041 individuals with methamphetamine-related contacts, 222 given prehospital olanzapine",
+          "finding": "Olanzapine recipients more likely to be transported to ED (aOR 11.83, 95% CI 3.19–43.80) and less likely to leave ED without being seen (aOR 0.56, 95% CI 0.32–0.97)",
+          "caveat": "Retrospective pre-post design with confounding by indication — the sickest patients were presumably the ones treated",
+          "bottomLine": "Hypothesis-generating",
+          "shortTitle": "Prehospital olanzapine for meth toxicity",
+          "learningGoal": "Weigh the benefits and risks of prehospital olanzapine for methamphetamine intoxication and its impact on transport decisions."
+        },
+        {
+          "id": "10.3390/healthcare14203367",
+          "title": "Comparison of Pulse Palpation and Paramedic-Performed Doppler Ultrasonography for Assessing Distal Circulation After Tourniquet Application: A Randomized Crossover Study",
+          "journal": "Healthcare",
+          "date": "2026-10-13",
+          "pmid": "",
+          "doi": "10.3390/healthcare14203367",
+          "summary": "Randomised crossover study of 41 practising paramedics assessing distal circulation after tourniquet application found paramedic-performed Doppler ultrasonography beat pulse palpation on sensitivity (88.9% vs 66.7%) and accuracy (90.2% vs 78.0%) against an assessor-Doppler reference.",
+          "relevance": "🟡 Medium — Tourniquets are standard kit Australia-wide, but handheld Doppler isn't routine prehospital equipment, so this describes a possible adjunct rather than current practice.",
+          "topic": "Trauma",
+          "studyType": "Simulation",
+          "design": "Prospective randomised crossover",
+          "n": "41 actively practising paramedics, upper-extremity tourniquet application",
+          "finding": "Pulse palpation sensitivity 66.7%, specificity 87.0%, accuracy 78.0%; paramedic Doppler sensitivity 88.9%, specificity 91.3%, accuracy 90.2%",
+          "caveat": "Laboratory-style setup on healthy volunteers with a simulated injury model — not bleeding patients in the field",
+          "bottomLine": "Hypothesis-generating",
+          "shortTitle": "Doppler beats pulse check after tourniquet",
+          "learningGoal": "Weigh pulse palpation against handheld Doppler for confirming distal circulation after tourniquet application in trauma care."
+        },
+        {
+          "id": "10.3390/safety12050133",
+          "title": "Injury Ambulance Attendances Among Child Visitors to Queensland, Australia: A Descriptive Study, 2009–2018",
+          "journal": "Safety",
+          "date": "2026-10-13",
+          "pmid": "",
+          "doi": "10.3390/safety12050133",
+          "summary": "Descriptive study of 3,802 Queensland Ambulance Service attendances for injuries in child visitors aged ≤15 (2009–18) found interstate visitors accounted for 85.8% of cases, with falls and transport incidents the leading mechanisms and burns third in 0–4-year-olds.",
+          "relevance": "🟡 Medium — Australian ambulance data, but descriptive tourism-injury epidemiology that informs prevention messaging rather than clinical practice.",
+          "topic": "Paediatrics",
+          "studyType": "Cohort",
+          "design": "Retrospective descriptive geospatial analysis of ambulance records",
+          "n": "3,802 ambulance attendances, non-Queensland residents ≤15 years, 2009–2018",
+          "finding": "Interstate visitors 85.8% of cases; falls and transport incidents leading mechanisms; burns third-leading mechanism for interstate visitors aged 0–4; coastal locations most common",
+          "caveat": "Purely descriptive with a decade-old ending date (2018) — pick-up location used as a proxy for injury location",
+          "bottomLine": "Context only",
+          "shortTitle": "Child visitor injuries in Queensland",
+          "learningGoal": "Understand how travel and unfamiliar environments shape paediatric injury patterns at tourist destinations."
+        },
+        {
+          "id": "10.4103/tjem.tjem_47_26",
+          "title": "Paramedic attitudinal profiles regarding pediatric pain management: A latent class analysis in a standardized emergency medical services system",
+          "journal": "Turkish Journal of Emergency Medicine",
+          "date": "2026-10-13",
+          "pmid": "",
+          "doi": "10.4103/tjem.tjem_47_26",
+          "summary": "Cross-sectional survey of 129 paramedics in a standardised Turkish EMS system used latent class analysis to identify two paediatric analgesia attitudinal profiles — proactive/system-oriented (57.4%) and conservative/low-engagement (42.6%) — unrelated to age, sex or experience.",
+          "relevance": "🟡 Medium — Paediatric analgesia is a universal weak spot and the attitudinal split will feel familiar, but self-reported attitudes in a different system limit direct transfer.",
+          "topic": "Pain & sedation",
+          "studyType": "Cross-sectional",
+          "design": "Prospective cross-sectional survey with latent class analysis",
+          "n": "129 paramedics",
+          "finding": "Two profiles: proactive/system-oriented (57.4%, higher endorsement of dosing apps, analgesia algorithms, post-analgesia monitoring and non-pharmacologic adjuncts) vs conservative/low-engagement (42.6%); profile membership not associated with demographics or experience",
+          "caveat": "Self-reported attitudes only — whether profiles translate into actual analgesia delivery is unvalidated",
+          "bottomLine": "Hypothesis-generating",
+          "shortTitle": "Two paramedic attitudes to paediatric pain",
+          "learningGoal": "Recognise how my own attitudes towards paediatric analgesia shape my assessment and treatment decisions."
         }
       ]
     },
@@ -9151,93 +9263,93 @@
     }
   ],
   "weeklyTldr": {
-    "dateRange": "29 Sep – 6 Oct 2026",
-    "summary": "PreHEART-guided non-conveyance for chest pain was non-inferior to usual care in a 5170-patient RCT, with fewer 30-day ED presentations and lower costs\nVictorian linked data show First Nations stroke patients received less paramedic stroke assessment and less often reached thrombectomy-capable hospitals\nNearly half of prehospital paediatric medication doses deviated at least 20% from protocol — mostly underdoses, driven by ondansetron and the intranasal route\nHalf of paediatric OHCA survivors had cardiac warning symptoms before their arrest, and most children with prior syncope never got follow-up\nAustralian paramedics report managing suspected neck of femur fractures on tacit knowledge and experience, with no dedicated prehospital guidance",
+    "dateRange": "6–13 Oct 2026",
+    "summary": "Ice-water and cold-water immersion were the fastest cooling methods for drug-induced hyperthermia (~0.16–0.17 °C/min), clearly superior to passive cooling — directly actionable prehospital\nDanish registry: longer time-to-ROSC meant more anoxic brain damage, but among 30-day survivors, 5-year survival and return to work didn’t differ — a long resuscitation doesn’t preclude a good recovery\nPrehospital TXA in trauma patients with fibrinolytic shutdown was associated with about a third the risk of death (HR 0.32) — hypothesis-generating subgroup analysis\nPrehospital olanzapine for methamphetamine intoxication got patients transported and seen by a doctor more often — olanzapine is carried by all seven Australian ambulance services\nVictorian registry data: STEMI was confirmed in only 60% of paramedic-suspected STEMI presentations",
     "highlights": [
       {
-        "text": "PreHEART-guided non-conveyance for chest pain was non-inferior to usual care in a 5170-patient RCT, with fewer 30-day ED presentations and lower costs",
-        "id": "42810856"
+        "text": "Ice-water and cold-water immersion were the fastest cooling methods for drug-induced hyperthermia (~0.16–0.17 °C/min), clearly superior to passive cooling — directly actionable prehospital",
+        "id": "42841411"
       },
       {
-        "text": "Victorian linked data show First Nations stroke patients received less paramedic stroke assessment and less often reached thrombectomy-capable hospitals",
-        "id": "42806575"
+        "text": "Danish registry: longer time-to-ROSC meant more anoxic brain damage, but among 30-day survivors, 5-year survival and return to work didn’t differ — a long resuscitation doesn’t preclude a good recovery",
+        "id": "42838497"
       },
       {
-        "text": "Nearly half of prehospital paediatric medication doses deviated at least 20% from protocol — mostly underdoses, driven by ondansetron and the intranasal route",
-        "id": "42809474"
+        "text": "Prehospital TXA in trauma patients with fibrinolytic shutdown was associated with about a third the risk of death (HR 0.32) — hypothesis-generating subgroup analysis",
+        "id": "42853261"
       },
       {
-        "text": "Half of paediatric OHCA survivors had cardiac warning symptoms before their arrest, and most children with prior syncope never got follow-up",
-        "id": "10.1136/openhrt-2026-004412"
+        "text": "Prehospital olanzapine for methamphetamine intoxication got patients transported and seen by a doctor more often — olanzapine is carried by all seven Australian ambulance services",
+        "id": "10.1136/bmjopen-2026-122263"
       },
       {
-        "text": "Australian paramedics report managing suspected neck of femur fractures on tacit knowledge and experience, with no dedicated prehospital guidance",
-        "id": "10.1177/27536386261492212"
+        "text": "Victorian registry data: STEMI was confirmed in only 60% of paramedic-suspected STEMI presentations",
+        "id": "42841835"
       }
     ],
     "topPicks": [
       {
-        "id": "42810856",
-        "title": "PreHEART score for emergency medical services triage of chest pain: a randomised trial",
-        "authors": "Sagel DC, Vlaar PJ, Wang D, et al.",
-        "journal": "Heart",
-        "summary": "A Dutch pragmatic RCT testing whether a prehospital risk score could guide ambulance conveyance in 5170 adults with undifferentiated chest pain — it was non-inferior to usual care for 3-day serious adverse events while increasing non-conveyance, cutting 30-day ED presentations and lowering costs.",
-        "relevance": "🟡 Medium transferability — non-conveyance pathways exist across Australian services, but validated chest-pain decision tools aren't routine on Australian ambulances",
-        "pmid": "42810856",
-        "doi": "10.1136/heartjnl-2026-328924",
-        "featuredReason": "The strongest evidence yet that structured keep-at-home pathways for chest pain can be safe: risk-score-guided conveyance matched usual care for serious adverse events, lifted non-conveyance from 24.5% to 34.6%, and reduced 30-day ED presentations and costs.",
-        "pubDate": "2026-09-29",
-        "topic": "Operations & systems",
-        "studyType": "RCT",
-        "design": "Pragmatic randomised open-label blinded-endpoint non-inferiority trial",
-        "n": "5170 adults with undifferentiated chest pain",
-        "finding": "PreHEART-guided conveyance non-inferior for 3-day unexpected serious adverse events (win ratio 1.01, 95% CI 0.89–1.16); non-conveyance rose to 34.6% vs 24.5%, 30-day emergency presentations fell (RR 0.88), costs −€345, and no deaths within 3 days among 1526 non-conveyed patients",
-        "caveat": "Open-label trial in a Dutch EMS system with its own consult-and-convey structure; the signals for increased ACS detection in women were nominal and didn't survive multiplicity correction",
-        "bottomLine": "Hypothesis-generating",
-        "shortTitle": "Risk-score-guided conveyance safe in chest pain",
-        "learningGoal": "Weigh the safety of risk-score-guided non-conveyance when triaging adults with undifferentiated chest pain."
+        "id": "42841411",
+        "title": "Comparison of cooling methods for drug-induced hyperthermia in a pre-hospital and emergency department setting: a systematic review",
+        "authors": "van Dijken GD, Muradin I, den Haan C, et al.",
+        "journal": "Clinical Toxicology",
+        "summary": "A systematic review of 71 studies (1,932 patients) comparing cooling methods for drug-induced hyperthermia found ice-water and cold-water immersion fastest at ~0.16–0.17 °C/min and clearly superior to passive cooling.",
+        "relevance": "🟢 High transferability — stimulant toxicity and heat illness are everyday presentations across Australia, and aggressive active cooling is achievable prehospital",
+        "pmid": "42841411",
+        "doi": "10.1080/15563650.2026.2738599",
+        "featuredReason": "The most immediately actionable paper of the week: when a hyperthermic stimulant patient needs cooling now, immersion wins — roughly 0.16–0.17 °C/min, clearly ahead of every passive method.",
+        "pubDate": "2026-10-07",
+        "topic": "Toxicology",
+        "studyType": "Systematic review",
+        "design": "Systematic review with meta-analysis (GRADE)",
+        "n": "71 studies, 1,932 patients, 12 cooling modalities",
+        "finding": "Ice-water immersion cooled at 0.169 ± 0.027 °C/min and cold-water immersion at 0.162 ± 0.037 °C/min — the fastest modalities; ice-water-soaked sheets/towels 0.121 ± 0.030 °C/min; meta-analysis confirmed immersion beats passive cooling",
+        "caveat": "Many included studies cover exercise-induced rather than drug-induced hyperthermia, and practicality varies by setting",
+        "bottomLine": "Supports current practice",
+        "shortTitle": "Ice-water immersion wins for drug hyperthermia",
+        "learningGoal": "Weigh the practicality of immersion cooling for drug-induced hyperthermia in my prehospital practice."
       },
       {
-        "id": "42806575",
-        "title": "Epidemiology and Quality of Care for Aboriginal and Torres Strait Islander Peoples Treated by Emergency Medical Services for Stroke in Victoria, Australia: Retrospective Analysis of Linked Data",
-        "authors": "Menezes C, Nehme Z, Burchill LJ, et al.",
-        "journal": "The Medical Journal of Australia",
-        "summary": "Victorian linked-data study of 32,163 EMS-attended stroke/TIA patients found First Nations patients had more than double the age-standardised incidence of EMS attendance, were less likely to receive a paramedic stroke assessment (58.2% vs 67.3%) and less often taken to thrombectomy-capable hospitals, though adjusted mortality was similar.",
-        "relevance": "🟢 High transferability — Australian population-based data on a disparity every service can act on — paramedic stroke assessment rates are the part most directly in crews' hands",
-        "pmid": "42806575",
-        "doi": "10.5694/mja2.70303",
-        "featuredReason": "Australian population-level data on an equity gap crews can directly influence: First Nations patients were less likely to get a paramedic stroke assessment or reach a thrombectomy-capable hospital, despite similar adjusted mortality.",
+        "id": "42838497",
+        "title": "Time to Return of Spontaneous Circulation and Long-Term Outcomes in Bystander-Witnessed Out-of-Hospital Cardiac Arrest Survivors",
+        "authors": "Oxwall A, Würtz Yazdanfard PD, Nørskov A, et al.",
+        "journal": "Resuscitation",
+        "summary": "A Danish national registry study of bystander-witnessed OHCA survivors found anoxic brain damage rose with time-to-ROSC, but long-term survival, return to work and nursing-home admission did not — prolonged resuscitation doesn't preclude good recovery.",
+        "relevance": "🟢 High transferability — speaks straight to the on-scene decision of how long to work an arrest, a question on every crew in the country",
+        "pmid": "42838497",
+        "doi": "10.1016/j.resuscitation.2026.111342",
+        "featuredReason": "Directly answers the question every crew asks: among survivors, working the arrest longer didn't cost long-term survival or independence — only anoxic brain injury risk rose with time.",
         "pubDate": "2026-10",
-        "topic": "Stroke & neuro",
-        "studyType": "Cohort",
-        "design": "Retrospective population-based data-linkage cohort",
-        "n": "32,163 EMS-attended stroke/TIA patients (287 First Nations)",
-        "finding": "Age-standardised EMS attendance incidence 343 vs 144 per 100,000 person-years (IRR 2.38); paramedic stroke assessment 58.2% vs 67.3%; conveyance to thrombectomy-capable hospitals 24.4% vs 32.7%; adjusted 30- and 90-day mortality similar (HR 0.81 and 0.81)",
-        "caveat": "Victorian data from 2015–2019 with only 287 First Nations patients, limiting precision and generalisability interstate",
-        "bottomLine": "Context only",
-        "shortTitle": "Stroke care gaps for First Nations patients",
-        "learningGoal": "Understand the barriers contributing to inequitable prehospital stroke assessment and destination decisions for First Nations patients."
+        "topic": "Cardiac arrest",
+        "studyType": "Registry",
+        "design": "National registry cohort, stratified by time-to-ROSC",
+        "n": "2,583 bystander-witnessed OHCA survivors (median age 65, median time-to-ROSC 14 min)",
+        "finding": "Anoxic brain damage increased with time-to-ROSC (0.3%, 1.8% and 3.2% for 0-10, 11-18 and >18 min; adjusted HR 9.98 for >18 min vs 0-10 min), but 5-year survival (~79%), return to work (~60%) and nursing-home admission did not differ between groups",
+        "caveat": "Only patients surviving at least 30 days were included — early deaths are excluded, so this says nothing about whether longer efforts save more people overall",
+        "bottomLine": "Supports current practice",
+        "shortTitle": "Long resuscitations don't rule out good recovery",
+        "learningGoal": "Strengthen my judgement on when prolonged resuscitation efforts remain worthwhile before declaring futility in cardiac arrest."
       },
       {
-        "id": "42809474",
-        "title": "Deviations From Recommended Drug Dosing in the Prehospital Treatment of Pediatric Patients",
-        "authors": "Spigner MF, Butterbaugh MW, Genthe NA, et al.",
-        "journal": "Prehospital Emergency Care",
-        "summary": "US quality-registry cohort of 386 prehospital paediatric medication administrations found 46.4% deviated at least 20% from protocolised dosing — mostly underdoses — with ondansetron (aOR 36.9) and the intranasal route (aOR 7.3) the biggest drivers.",
-        "relevance": "🟢 High transferability — weight-based paediatric dosing and intranasal drug delivery are standard Australian practice, so the error patterns translate directly to our trucks",
-        "pmid": "42809474",
-        "doi": "10.1080/10903127.2026.2740143",
-        "featuredReason": "An immediate practice prompt: nearly half of paediatric doses deviated from protocol, overwhelmingly underdoses, with ondansetron and the intranasal route the worst offenders — worth a second look at weight-based calculations and IN technique.",
-        "pubDate": "2026-09-29",
-        "topic": "Paediatrics",
-        "studyType": "Cohort",
-        "design": "Retrospective quality-improvement registry cohort",
-        "n": "386 medication administrations in 240 children across nine agencies",
-        "finding": "46.4% of doses deviated ≥20% from recommended (79.9% underdoses); deviation was highest for ondansetron (85.3%) and via the intranasal route (69.7%); weight-estimation error was not associated",
-        "caveat": "Single US metropolitan system with uniform protocols, and registry-flagged deviations may capture deliberate titration within permitted ranges",
+        "id": "42853261",
+        "title": "Survival benefit of prehospital TXA in fibrinolytic shutdown: Insights from two prospective trauma trials",
+        "authors": "Kenny JE, Brito AM, Benchiba-Charron M, et al.",
+        "journal": "The Journal of Trauma and Acute Care Surgery",
+        "summary": "Pooled analysis of two prospective prehospital TXA trials found fibrinolytic shutdown carried 14.5% 30-day mortality versus 6.5% with physiological fibrinolysis, and shutdown patients randomised to TXA had about a third the risk of death (HR 0.32).",
+        "relevance": "🟢 High transferability — prehospital TXA for major trauma is carried by nearly all Australian ambulance services, so this speaks directly to current practice",
+        "pmid": "42853261",
+        "doi": "10.1097/TA.0000000000005092",
+        "featuredReason": "A mechanism-level hint at who benefits most from a drug nearly every Australian service carries: TXA showed about a third the mortality risk in fibrinolytic shutdown — hypothesis-generating, but worth watching.",
+        "pubDate": "2026-10-09",
+        "topic": "Trauma",
+        "studyType": "Other",
+        "design": "Pooled analysis of two prospective prehospital TXA RCTs",
+        "n": "1,249 trauma patients",
+        "finding": "30-day mortality 14.5% with fibrinolytic shutdown vs 6.5% physiological fibrinolysis; TXA in shutdown patients was associated with lower risk of death (HR 0.32, 95% CI 0.11–0.91); hyperfibrinolysis independently predicted death (HR 2.87, 95% CI 1.10–7.53)",
+        "caveat": "Subgroup analysis of pooled trials, with the TEG fibrinolysis phenotype measured on hospital arrival rather than prehospital",
         "bottomLine": "Hypothesis-generating",
-        "shortTitle": "Nearly half of paediatric doses off-protocol",
-        "learningGoal": "Update my approach to paediatric medication dosing, particularly intranasal and antiemetic administration, to reduce underdosing."
+        "shortTitle": "Prehospital TXA helps fibrinolytic shutdown",
+        "learningGoal": "Weigh the evidence for giving TXA prehospital to trauma patients with suspected fibrinolytic shutdown."
       }
     ]
   }
