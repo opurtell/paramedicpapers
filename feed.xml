@@ -24,6 +24,20 @@
     </itunes:category>
     <itunes:explicit>false</itunes:explicit>
     <item>
+      <title>Paramedic Papers Daily — 15 October 2026</title>
+      <link>https://paramedicpapers.com/episodes/2026-10-15/</link>
+      <description>4 papers: NAEMSP guidance on older adults after low-acuity falls; dispatcher CPR and survival in shockable OHCA; EMS sepsis suspicion speeds ED antibiotics; cardiogenic shock prehospital recognition and routing</description>
+      <content:encoded><![CDATA[<p>4 papers: NAEMSP guidance on older adults after low-acuity falls; dispatcher CPR and survival in shockable OHCA; EMS sepsis suspicion speeds ED antibiotics; cardiogenic shock prehospital recognition and routing</p><p>Papers in this episode:</p><ul><li><a href="https://doi.org/10.1080/10903127.2026.2748380">NAEMSP guidance: older adults after low-acuity falls <em>(Prehospital Emergency Care)</em></a></li><li><a href="https://doi.org/10.1556/2060.2026.00960">Dispatcher CPR and survival in shockable OHCA <em>(Physiology International)</em></a></li><li><a href="https://doi.org/10.1007/s00508-026-02842-5">EMS sepsis suspicion speeds up ED antibiotics <em>(Wiener Klinische Wochenschrift)</em></a></li><li><a href="https://doi.org/10.15420/usc.2025.16">Cardiogenic shock: prehospital recognition and routing <em>(US Cardiology)</em></a></li></ul><p><a href="https://paramedicpapers.com/episodes/2026-10-15/">Show notes and transcript</a></p>]]></content:encoded>
+      <pubDate>Thu, 15 Oct 2026 07:32:55 +1100</pubDate>
+      <guid isPermaLink="false">https://audio.paramedicpapers.com/ep-2026-10-15.mp3</guid>
+      <enclosure url="https://audio.paramedicpapers.com/ep-2026-10-15.mp3" length="1145324" type="audio/mpeg"/>
+      <itunes:duration>286</itunes:duration>
+      <itunes:summary>4 papers: NAEMSP guidance on older adults after low-acuity falls; dispatcher CPR and survival in shockable OHCA; EMS sepsis suspicion speeds ED antibiotics; cardiogenic shock prehospital recognition and routing</itunes:summary>
+      <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
+      <itunes:episodeType>full</itunes:episodeType>
+      <podcast:transcript url="https://audio.paramedicpapers.com/ep-2026-10-15.txt" type="text/plain" language="en-au"/>
+    </item>
+    <item>
       <title>Paramedic Papers Daily — 14 October 2026</title>
       <link>https://paramedicpapers.com/episodes/2026-10-14/</link>
       <description>2 papers: Mechanical vs manual BVM in adult CPR; Community paramedic referrals cut ambulance use</description>
@@ -409,19 +423,6 @@
       <enclosure url="https://audio.paramedicpapers.com/ep-2026-09-13.mp3" length="450957" type="audio/mpeg"/>
       <itunes:duration>112</itunes:duration>
       <itunes:summary>1 paper: French prehospital data — nearly 1 in 5 severe trauma patients would qualify for prehospital blood transfusion (ABC ≥2 + &gt;20 min intervention)</itunes:summary>
-      <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
-      <itunes:episodeType>full</itunes:episodeType>
-    </item>
-    <item>
-      <title>Paramedic Papers Daily — 12 September 2026</title>
-      <link>https://paramedicpapers.com/episodes/2026-09-12/</link>
-      <description>3 papers: paediatric weight documentation 73%; consensus guidelines for prehospital paediatric transfusion; 2026 prehospital evidence-based guideline systematic review</description>
-      <content:encoded><![CDATA[<p>3 papers: paediatric weight documentation 73%; consensus guidelines for prehospital paediatric transfusion; 2026 prehospital evidence-based guideline systematic review</p><p>Papers in this episode:</p><ul><li><a href="https://doi.org/10.1080/10903127.2026.2731488">2026 Systematic Review of Evidence-Based Guidelines for Prehospital Care <em>(Prehospital Emergency Care)</em></a></li><li><a href="https://doi.org/10.1080/10903127.2026.2719957">Documentation of Weight in Pediatric 9-1-1 Responses with Administration of Weight-Based Medications <em>(Prehospital Emergency Care)</em></a></li><li><a href="https://doi.org/10.1080/10903127.2026.2729895">Consensus Guidelines for Prehospital Transfusion in Children: A Modified Delphi Study <em>(Prehospital Emergency Care)</em></a></li></ul><p><a href="https://paramedicpapers.com/episodes/2026-09-12/">Show notes and transcript</a></p>]]></content:encoded>
-      <pubDate>Sat, 12 Sep 2026 07:35:09 +1000</pubDate>
-      <guid isPermaLink="false">https://opurtell.github.io/paramedicpapers/audio/ep-2026-09-12.mp3</guid>
-      <enclosure url="https://audio.paramedicpapers.com/ep-2026-09-12.mp3" length="793197" type="audio/mpeg"/>
-      <itunes:duration>198</itunes:duration>
-      <itunes:summary>3 papers: paediatric weight documentation 73%; consensus guidelines for prehospital paediatric transfusion; 2026 prehospital evidence-based guideline systematic review</itunes:summary>
       <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
       <itunes:episodeType>full</itunes:episodeType>
     </item>
