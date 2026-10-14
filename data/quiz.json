@@ -1,120 +1,120 @@
 {
- "id": "2026-10-06",
- "span": "29 Sep – 6 Oct 2026",
- "created": "2026-10-06T00:01:38Z",
+ "id": "2026-10-14",
+ "span": "7 – 14 Oct 2026",
+ "created": "2026-10-14T00:01:49Z",
  "est_minutes": 10,
  "questions": [
   {
-   "paper_id": "42784740",
-   "short_title": "NRB + nasal cannula inferior to flush-rate preoxygenation",
-   "topic": "Airway & ventilation",
-   "question": "How did combined NRB plus nasal cannula preoxygenation (25 L/min each) compare with flush-rate NRB?",
-   "options": [
-    "It was inferior to flush rate",
-    "It matched flush rate at 15 L/min",
-    "It was equivalent to flush rate",
-    "It outperformed flush rate"
-   ],
-   "answer": 0,
-   "explanation": "Expired oxygen reached 75% versus 85% with flush-rate NRB, a difference that failed the non-inferiority margin. The findings come from healthy volunteers, so real emergency patients may differ."
-  },
-  {
-   "paper_id": "42772891",
-   "short_title": "Post-OHCA outcomes at Victorian Heart Hospital",
+   "paper_id": "42832921",
+   "short_title": "Cancer markedly raises OHCA risk",
    "topic": "Cardiac arrest",
-   "question": "A colleague says the 50.4% survival to discharge at the dedicated cardiac hospital proves post-arrest patients do better there than under usual state-wide pathways. What's the best response?",
+   "question": "In this cohort study, when was the excess hazard of out-of-hospital cardiac arrest in cancer patients greatest?",
    "options": [
-    "The survival figure matches national averages, so triage practices can stay unchanged",
-    "The cohort was small and highly selected, so the figure isn't comparable to population-based OHCA outcomes",
-    "Survival dropped sharply because a quarter of patients needed interhospital transfer for cardiac causes",
-    "The benefit only applies to patients with non-shockable rhythms"
+    "Uniformly across the entire follow-up period",
+    "Within the first year after cancer diagnosis",
+    "Only once metastatic disease developed",
+    "Between 1 and 5 years after diagnosis"
    ],
    "answer": 1,
-   "explanation": "The high survival came from a small, single tertiary cohort with favourable features like 92.6% prehospital ROSC and mostly shockable rhythms. The authors specifically warn against reading it as superiority over population-based outcomes, and transfers were mostly for non-cardiac causes."
+   "explanation": "The hazard was strongest in the first year after diagnosis, with lung and neurological cancers showing roughly 6-fold short-term excess, though risk stayed elevated over longer follow-up. As a register-based study, it can't explain why arrests occurred, so treat this as context rather than a change to practice."
   },
   {
-   "paper_id": "42776990",
-   "short_title": "Paediatric non-transport re-call rates low",
-   "topic": "Paediatrics",
-   "question": "Among US children not transported after a paediatric 9-1-1 call, what proportion had a repeat call with transport to ED within 72 hours?",
-   "options": [
-    "About 40%",
-    "About 11%",
-    "About 16%",
-    "About 1%"
-   ],
-   "answer": 3,
-   "explanation": "Only 1% of non-transported children were re-called and transported within 72 hours, and hospitalisation or death at re-call was rare. The data are retrospective US records with only one third hospital-linked, so they don't directly reflect Australian practice."
-  },
-  {
-   "paper_id": "42806575",
-   "short_title": "Stroke care gaps for First Nations patients",
-   "topic": "Stroke & neuro",
-   "question": "According to the linked-data study of EMS-attended stroke and TIA patients, where was the main disparity in care for First Nations patients?",
-   "options": [
-    "Adjusted 30- and 90-day mortality was clearly higher",
-    "They were less likely to be transported to hospital at all",
-    "Paramedics were less likely to perform a stroke assessment",
-    "Stroke or TIA was less often identified at the emergency call"
-   ],
-   "answer": 2,
-   "explanation": "Call-taker identification rates were comparable, but First Nations patients received a paramedic stroke assessment less often (58.2% vs 67.3%) and were taken less often to thrombectomy-capable hospitals. Adjusted mortality was actually similar, and the Victorian data with only 287 First Nations patients limit precision and generalisability."
-  },
-  {
-   "paper_id": "42809516",
-   "short_title": "What OHCA care is worth paying for",
+   "paper_id": "42838501",
+   "short_title": "Amiodarone after non-shockable-to-shockable conversion",
    "topic": "Cardiac arrest",
-   "question": "According to this systematic review of economic evaluations, which prehospital OHCA strategy was found to be more cost-effective than its alternative?",
+   "question": "In this registry study of OHCA patients whose initial non-shockable rhythm converted to shockable, what did amiodarone show for neurological outcome at discharge?",
    "options": [
-    "Delivering ECPR in the prehospital setting rather than waiting until arrival in hospital",
-    "Early defibrillation rather than EMT-delivered ALS",
-    "Paramedic-led ALS rather than emergency physician-led ALS",
-    "Transporting every arrest patient rather than applying termination-of-resuscitation rules"
+    "Improved neurological outcome only in patients who survived to 24 hours",
+    "No statistically significant difference, though the trend favoured amiodarone",
+    "A statistically significant worsening of neurological outcome",
+    "A statistically significant improvement in favourable neurological outcome"
    ],
-   "answer": 0,
-   "explanation": "Prehospital ECPR came out more cost-effective than in-hospital ECPR strategies, with ICERs of AU$27,323 to $44,000 per QALY. Keep in mind the studies spanned different health systems and funding models, so the results don't transfer neatly to any one context."
+   "answer": 1,
+   "explanation": "Favourable neurological outcome was 3.7% vs 2.9%, which didn't reach statistical significance. This is retrospective registry data with residual confounding, so the survival benefit remains an association rather than proof."
   },
   {
-   "paper_id": "42809474",
-   "short_title": "Nearly half of paediatric doses off-protocol",
-   "topic": "Paediatrics",
-   "question": "What pattern of off-protocol paediatric drug dosing did the registry study find?",
+   "paper_id": "42841835",
+   "short_title": "Only 60% of paramedic-suspected STEMI confirmed",
+   "topic": "Cardiac (non-arrest)",
+   "question": "Among visits with a recorded discharge diagnosis, which diagnosis group carried a higher risk of death during follow-up than confirmed STEMI?",
    "options": [
-    "Mostly underdoses, worst with ondansetron and intranasal doses",
-    "Mostly overdoses driven by weight estimation error",
-    "Evenly split over and underdoses across all routes",
-    "Mostly underdoses confined to intramuscular fentanyl"
-   ],
-   "answer": 0,
-   "explanation": "Of the 46.4% of doses deviating at least 20% from protocol, 79.9% were underdoses, with ondansetron and the intranasal route the biggest drivers. Weight estimation error showed no association, and registry flags may capture deliberate titration within permitted ranges."
-  },
-  {
-   "paper_id": "42817920",
-   "short_title": "Methoxyflurane feasibility confirmed in Canada",
-   "topic": "Pain & sedation",
-   "question": "A colleague cites the Canadian methoxyflurane feasibility study as proof the drug causes large pain reductions in trauma patients. What is the main problem with that claim?",
-   "options": [
-    "Protocol compliance was too low for the results to be reliable",
-    "Pain scores were only documented in about half of treated patients",
-    "The study had no comparator arm, so the improvement can't be attributed to methoxyflurane alone",
-    "Most patients had severe side effects that inflated their reported pain scores"
+    "NSTE-ACS or other coronary syndromes",
+    "Other cardiac diagnoses",
+    "Noncardiac diagnoses",
+    "Symptom-based diagnoses"
    ],
    "answer": 2,
-   "explanation": "It was a single-arm feasibility study with no control group, so natural pain course or other care could explain the fall from 8/10 to 5/10. Compliance was actually high at 95%, side effects were mostly mild, and pain scores were documented in 90% of treated patients."
+   "explanation": "Noncardiac diagnoses had higher adjusted mortality during follow-up (HR 1.75) than confirmed STEMI, while the other groups did not differ materially. The data are retrospective registry coded diagnoses, so treat these comparisons as descriptive context."
   },
   {
-   "paper_id": "42809487",
-   "short_title": "Two-thirds of stroke patients delay seeking care",
-   "topic": "Stroke & neuro",
-   "question": "In the pooled analysis of prehospital delay before ischaemic stroke care, roughly what proportion of patients delayed seeking help?",
+   "paper_id": "42841411",
+   "short_title": "Ice-water immersion wins for drug hyperthermia",
+   "topic": "Toxicology",
+   "question": "For a hyperthermic patient with suspected amfetamine toxicity, which cooling method did the review identify as most practical when immersion isn't feasible?",
    "options": [
-    "About 1 in 4",
-    "About 9 in 10",
-    "About 1 in 3",
-    "About 2 in 3"
+    "Passive cooling in shade with fanning",
+    "Room temperature water immersion at 0.089 ± 0.020 °C/min",
+    "Ice packs applied to the groin and axillae",
+    "Ice water-soaked sheets or towels, which cooled at 0.121 ± 0.030 °C/min"
    ],
    "answer": 3,
-   "explanation": "The pooled incidence of prehospital delay was 67.7%, so about two-thirds of patients delayed. The evidence was low certainty and dominated by Asian studies with inconsistent definitions of delay, so apply the figure with caution locally."
+   "explanation": "Ice water-soaked sheets or towels were the fastest non-immersion option and are feasible in most pre-hospital and ED settings while allowing monitoring. The evidence is limited because many included studies involved exercise-induced rather than drug-induced hyperthermia."
+  },
+  {
+   "paper_id": "42844935",
+   "short_title": "Little evidence for call handler wellbeing programs",
+   "topic": "Workforce & wellbeing",
+   "question": "What did this systematic review conclude about interventions aimed at supporting emergency call handlers' wellbeing and job satisfaction?",
+   "options": [
+    "Moderate evidence for residential recovery programs only",
+    "Limited evidence of effectiveness, with no role-specific programs validated",
+    "Clear evidence that multicomponent programs reduce stress",
+    "Strong evidence that resilience training improves wellbeing"
+   ],
+   "answer": 1,
+   "explanation": "Across 12 studies in four intervention categories, there was limited evidence any intervention improved health, wellbeing or stress outcomes. Most studies measured mental health only, mixed call handlers with first responders, and varied in quality, so no call handler-specific program has been validated."
+  },
+  {
+   "paper_id": "10.1016/j.resuscitation.2026.111347",
+   "short_title": "Paediatric OHCA in Australia and NZ: Aus-ROC report",
+   "topic": "Paediatrics",
+   "question": "In this Australasian registry of paediatric out-of-hospital cardiac arrest, what proportion of EMS-attended cases received bystander CPR, and how did bystander defibrillation compare?",
+   "options": [
+    "About 63% received bystander CPR but only 1.6% got bystander defibrillation",
+    "About 40% received bystander CPR and 1.6% got bystander defibrillation",
+    "About 63% received bystander CPR and about half got bystander defibrillation",
+    "About 75% received bystander CPR and about 60% got bystander defibrillation"
+   ],
+   "answer": 0,
+   "explanation": "Bystander CPR was provided in 62.7% of EMS-attended cases, yet bystander defibrillation was rare at 1.6%. Cases were mostly unwitnessed and occurred in private residences, which helps explain the low defibrillation rate."
+  },
+  {
+   "paper_id": "10.1111/1742-6723.70361",
+   "short_title": "Redirecting non-urgent patients to primary care looks safe",
+   "topic": "Operations & systems",
+   "question": "In the scoping review of redirecting non-urgent ED patients to primary care, what distinguished the studies that reported zero hospitalisations and deaths?",
+   "options": [
+    "They only redirected patients under 40 with normal vital signs",
+    "They all followed patients for at least 30 days after redirection",
+    "They were the only studies that randomised patients to redirection",
+    "They used a richer set of implementation components around triage and documentation"
+   ],
+   "answer": 3,
+   "explanation": "The studies with no hospitalisations or deaths included the fullest range of implementation components, such as triage, vital signs and documentation. Overall safety numbers were reassuring, but the evidence was mostly observational with heterogeneous models and short follow-up."
+  },
+  {
+   "paper_id": "42853261",
+   "short_title": "Prehospital TXA helps fibrinolytic shutdown",
+   "topic": "Trauma",
+   "question": "In this pooled analysis of prehospital TXA trials, which patient group appeared to benefit most from TXA?",
+   "options": [
+    "Patients with hyperfibrinolysis (LY30 above 3%)",
+    "Patients with traumatic brain injury regardless of fibrinolysis status",
+    "Patients with physiological fibrinolysis (LY30 0.9–3%)",
+    "Patients with fibrinolytic shutdown (LY30 below 0.9%)"
+   ],
+   "answer": 3,
+   "explanation": "Shutdown patients given TXA had roughly a third the risk of death (HR 0.32). Treat this as hypothesis-generating only: the fibrinolysis phenotypes were measured on hospital arrival, not prehospital, and this was a subgroup analysis of pooled trials."
   }
  ]
 }
