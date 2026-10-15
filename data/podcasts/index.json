@@ -1,5 +1,29 @@
 [
  {
+  "id": "ems-20-20",
+  "name": "EMS 20/20",
+  "publisher": "Spencer Oliver & Christopher Pfingsten",
+  "focus": "Real calls from real responders and the lessons in them",
+  "region": "US",
+  "site": "https://longpausemedia.com/podcasts/ems-20-20",
+  "art": "data/podcasts/art/ems-20-20.jpg",
+  "episodes": 260,
+  "latest": "2026-10-14",
+  "updated": "2026-10-15"
+ },
+ {
+  "id": "pec-podcast",
+  "name": "Prehospital Emergency Care Podcast",
+  "publisher": "Prehospital Emergency Care journal",
+  "focus": "Papers from the journal Prehospital Emergency Care",
+  "region": "US",
+  "site": "https://pecpodcast.libsyn.com",
+  "art": "data/podcasts/art/pec-podcast.jpg",
+  "episodes": 100,
+  "latest": "2026-10-13",
+  "updated": "2026-10-15"
+ },
+ {
   "id": "sydney-hems",
   "name": "Greater Sydney Area HEMS",
   "publisher": "NSW Ambulance Aeromedical",
@@ -56,18 +80,6 @@
   "site": "https://podcasters.spotify.com/pod/show/av-medical-directorate",
   "art": "data/podcasts/art/av-clinical-conversations.jpg",
   "episodes": 50,
-  "latest": "2026-10-07",
-  "updated": "2026-10-08"
- },
- {
-  "id": "ems-20-20",
-  "name": "EMS 20/20",
-  "publisher": "Spencer Oliver & Christopher Pfingsten",
-  "focus": "Real calls from real responders and the lessons in them",
-  "region": "US",
-  "site": "https://longpausemedia.com/podcasts/ems-20-20",
-  "art": "data/podcasts/art/ems-20-20.jpg",
-  "episodes": 259,
   "latest": "2026-10-07",
   "updated": "2026-10-08"
  },
@@ -237,18 +249,6 @@
   "art": "data/podcasts/art/critical-clinician.jpg",
   "episodes": 35,
   "latest": "2026-07-29",
-  "updated": "2026-10-08"
- },
- {
-  "id": "pec-podcast",
-  "name": "Prehospital Emergency Care Podcast",
-  "publisher": "Prehospital Emergency Care journal",
-  "focus": "Papers from the journal Prehospital Emergency Care",
-  "region": "US",
-  "site": "https://pecpodcast.libsyn.com",
-  "art": "data/podcasts/art/pec-podcast.jpg",
-  "episodes": 99,
-  "latest": "2026-07-05",
   "updated": "2026-10-08"
  },
  {
