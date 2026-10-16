@@ -1,5 +1,17 @@
 [
  {
+  "id": "ecritcare",
+  "name": "eCritCare",
+  "publisher": "Dr Swapnil Pawar & Dr Jose Chacko",
+  "focus": "Critical care trials and evidence, one topic per episode",
+  "region": "AU",
+  "site": "http://ecritcarepodcast.libsyn.com/website",
+  "art": "data/podcasts/art/ecritcare.jpg",
+  "episodes": 102,
+  "latest": "2026-10-15",
+  "updated": "2026-10-16"
+ },
+ {
   "id": "ems-20-20",
   "name": "EMS 20/20",
   "publisher": "Spencer Oliver & Christopher Pfingsten",
@@ -46,18 +58,6 @@
   "episodes": 392,
   "latest": "2026-10-12",
   "updated": "2026-10-13"
- },
- {
-  "id": "ecritcare",
-  "name": "eCritCare",
-  "publisher": "Dr Swapnil Pawar & Dr Jose Chacko",
-  "focus": "Critical care trials and evidence, one topic per episode",
-  "region": "AU",
-  "site": "http://ecritcarepodcast.libsyn.com/website",
-  "art": "data/podcasts/art/ecritcare.jpg",
-  "episodes": 101,
-  "latest": "2026-10-11",
-  "updated": "2026-10-12"
  },
  {
   "id": "emcrit",
