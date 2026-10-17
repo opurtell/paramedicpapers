@@ -1,5 +1,17 @@
 [
  {
+  "id": "st-emlyns",
+  "name": "St Emlyn's",
+  "publisher": "St Emlyn's",
+  "focus": "Emergency medicine evidence, education and critical appraisal",
+  "region": "UK",
+  "site": "https://www.stemlynspodcast.org",
+  "art": "data/podcasts/art/st-emlyns.jpg",
+  "episodes": 301,
+  "latest": "2026-10-17",
+  "updated": "2026-10-17"
+ },
+ {
   "id": "ecritcare",
   "name": "eCritCare",
   "publisher": "Dr Swapnil Pawar & Dr Jose Chacko",
@@ -117,18 +129,6 @@
   "art": "data/podcasts/art/rebel-cast.jpg",
   "episodes": 49,
   "latest": "2026-10-05",
-  "updated": "2026-10-08"
- },
- {
-  "id": "st-emlyns",
-  "name": "St Emlyn's",
-  "publisher": "St Emlyn's",
-  "focus": "Emergency medicine evidence, education and critical appraisal",
-  "region": "UK",
-  "site": "https://www.stemlynspodcast.org",
-  "art": "data/podcasts/art/st-emlyns.jpg",
-  "episodes": 300,
-  "latest": "2026-10-03",
   "updated": "2026-10-08"
  },
  {
