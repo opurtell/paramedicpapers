@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-10-16T20:20:55Z",
-  "lastUpdatedSydney": "2026-10-17 07:20 AEDT",
-  "lastUpdatedDate": "2026-10-17",
+  "lastUpdated": "2026-10-17T20:20:55Z",
+  "lastUpdatedSydney": "2026-10-18 07:20 AEDT",
+  "lastUpdatedDate": "2026-10-18",
   "featuredPapers": [
     {
       "id": "10.1016/j.resuscitation.2026.111345",
@@ -1019,97 +1019,50 @@
     }
   ],
   "funFact": {
-    "category": "pharmacology",
-    "fact": "Calcium chloride packs three times more elemental calcium per gram than calcium gluconate. For hyperkalaemia-induced arrhythmias, it's the one you want — but it needs a central or big-bore peripheral line. Tissue extravasation is not pretty."
+    "category": "EMS",
+    "fact": "The 'golden hour' was coined by R Adams Cowley in the 1960s — the idea that trauma patients do best if they reach definitive care within 60 minutes. Modern evidence says it's more like 'golden minutes' for the actively bleeding. The clock starts before you arrive."
   },
   "tldr": {
-    "date": "2026-10-17",
-    "paperCount": 10,
-    "summary": "Prehospital diagnostics and bystander response dominate: a point-of-care GFAP blood test detected intracranial haemorrhage in comatose patients with 97% sensitivity, and Japanese registry data reaffirm that every minute of delay to bystander CPR costs neurological outcome.",
+    "date": "2026-10-18",
+    "paperCount": 1,
+    "summary": "A quiet day: one large physician-staffed HEMS registry adds to the prehospital airway debate — in medical cardiac arrest, starting with a supraglottic airway then intubating performed no worse than intubation by the helicopter crew first-up.",
     "highlights": [
       {
-        "id": "42879151",
-        "pmid": "42879151",
-        "doi": "10.1001/jamanetworkopen.2026.39337",
-        "title": "POC GFAP for brain haemorrhage in coma",
-        "journal": "JAMA Network Open",
-        "note": "POC GFAP detected ICH with 97.0% sensitivity (95% CI 84.2–99.9%) and AUC 0.94; ICH was present in 51% of patients and 30-day survival was 46%."
-      },
-      {
-        "id": "10.1016/j.resplu.2026.101531",
+        "id": "10.1186/s13049-026-01713-2",
         "pmid": "",
-        "doi": "10.1016/j.resplu.2026.101531",
-        "title": "Every minute counts: early bystander CPR",
-        "journal": "Resuscitation Plus",
-        "note": "Overall bystander CPR was stable (58.7% vs 58.6%), but early initiation fell during the pandemic (aHR 0.96); CPR started at 0–3 min carried aOR 3.27 for favourable neurological outcome at 1 month versus >10 min."
-      },
-      {
-        "id": "42876952",
-        "pmid": "42876952",
-        "doi": "10.1002/ams2.70168",
-        "title": "Commotio cordis outcomes hinge on fast AED",
-        "journal": "Acute Medicine & Surgery",
-        "note": "Among 15 commotio cordis cases, AED pads were applied in 93%, shocks in 87%, and 80% achieved favourable neurological outcome; among the other 15 external-cause cases, shocks were rare (7%) and just 7% had favourable outcomes."
-      },
-      {
-        "id": "42882053",
-        "pmid": "42882053",
-        "doi": "10.3390/jcm15197591",
-        "title": "Prehospital qSOFA adds a little prognostic signal",
-        "journal": "Journal of Clinical Medicine",
-        "note": "Within ED triage strata, a prehospital qSOFA ≥2 roughly doubled the odds of 30-day death (aOR 2.06 triage-negative, 1.84 triage-positive), but added only 0.007 AUC beyond arrival vitals and labs."
-      },
-      {
-        "id": "42881556",
-        "pmid": "42881556",
-        "doi": "10.15441/ceem.26.182",
-        "title": "Prehospital ACS risk stratification: the evidence",
-        "journal": "Clinical and Experimental Emergency Medicine",
-        "note": "Biomarker-integrated pathways (HEART-derived approaches with point-of-care troponin) showed the strongest evidence for safe prehospital risk assessment; ECG transmission remains foundational for STEMI activation and AI decision-support lacks prospective outcome-based validation."
-      },
-      {
-        "id": "42879234",
-        "pmid": "42879234",
-        "doi": "10.1037/ser0001094",
-        "title": "Burnout linked to suicidal risk in EMS",
-        "journal": "Psychological Services",
-        "note": "Higher scores on anxiety, depression and all burnout domains corresponded with higher suicidal risk on the SBQ-R, with elevated risk among gender-diverse respondents."
-      },
-      {
-        "id": "10.1186/s12873-026-01814-2",
-        "pmid": "",
-        "doi": "10.1186/s12873-026-01814-2",
-        "title": "TeamSTEPPS training shows no measurable gain",
-        "journal": "BMC Emergency Medicine",
-        "note": "No statistically significant changes in any teamwork or patient-safety dimension at 4 or 12 months; error reporting scored lowest (mean 2.56) at baseline."
-      },
-      {
-        "id": "42881748",
-        "pmid": "42881748",
-        "doi": "10.3390/healthcare14193309",
-        "title": "Paramedics strained by end-of-life care gaps",
-        "journal": "Healthcare",
-        "note": "54% 'always/often' lacked symptom-control medicines, 88% lacked access to advance care planning documentation, 67% reported inadequate pre-registration end-of-life education and only 28% felt very or extremely competent."
-      },
-      {
-        "id": "42878817",
-        "pmid": "42878817",
-        "doi": "10.1007/s00508-026-02846-1",
-        "title": "Most physician-unit dispatches are overtriage",
-        "journal": "Wiener Klinische Wochenschrift",
-        "note": "76.1% of dispatches were retrospectively classified as overtriage (38% with no patient contact); priority level showed no association with appropriateness."
-      },
-      {
-        "id": "10.1016/j.resplu.2026.101532",
-        "pmid": "",
-        "doi": "10.1016/j.resplu.2026.101532",
-        "title": "Heel-of-foot compressions beat ball-of-foot",
-        "journal": "Resuscitation Plus",
-        "note": "Heel technique gave greater mean depth (54.2 vs 51.6 mm) and more adequate-depth compressions (81.8% vs 72.7%); rate, recoil and exertion were comparable and orientation didn't matter."
+        "doi": "10.1186/s13049-026-01713-2",
+        "title": "Airway strategy and survival in Polish HEMS",
+        "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+        "note": "HEMS-performed intubation was the most common strategy (49.8%); sequential supraglottic-to-intubation did not differ significantly from HEMS-performed intubation in non-traumatic cardiac arrest; 32.9% were not alive at hospital handover"
       }
     ]
   },
   "dailyUpdates": [
+    {
+      "date": "2026-10-18",
+      "papers": [
+        {
+          "id": "10.1186/s13049-026-01713-2",
+          "title": "Advanced airway management practice patterns and short-term survival in Poland’s national physician-staffed helicopter emergency medical service, 2020–2024: a retrospective observational study",
+          "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+          "date": "2026-10-18",
+          "pmid": "",
+          "doi": "10.1186/s13049-026-01713-2",
+          "summary": "A retrospective analysis of Poland's national physician-staffed HEMS registry tested airway strategies in 8,980 intubated adults against survival to hospital handover — HEMS-performed intubation was most common (49.8%), and in non-traumatic cardiac arrest a sequential supraglottic-airway-then-intubation strategy showed no significant difference from HEMS-performed intubation, while some other strategies carried higher unadjusted odds of not being alive at handover.",
+          "relevance": "🟡 Medium — Delivered by a physician-staffed HEMS crew, a model Australian services don't run — but the questions it speaks to (intubation vs supraglottic first, and who performs the intubation) sit squarely in the intensive care paramedic skill set across Australia.",
+          "pubDate": "2026-10-16",
+          "topic": "Airway & ventilation",
+          "studyType": "Registry",
+          "design": "Retrospective national HEMS registry cohort",
+          "n": "8,980 adults requiring advanced airway management",
+          "finding": "HEMS-performed intubation was the most common strategy (49.8%); sequential supraglottic-to-intubation did not differ significantly from HEMS-performed intubation in non-traumatic cardiac arrest; 32.9% were not alive at hospital handover",
+          "caveat": "Univariate analyses only, so strategy effects are confounded by patient severity, and the physician-staffed setting limits direct comparison with paramedic-only systems",
+          "bottomLine": "Hypothesis-generating",
+          "shortTitle": "Airway strategy and survival in Polish HEMS",
+          "learningGoal": "Weigh a sequential supraglottic airway approach against primary intubation when managing advanced airways in out-of-hospital cardiac arrest."
+        }
+      ]
+    },
     {
       "date": "2026-10-17",
       "papers": [
