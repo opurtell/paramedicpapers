@@ -24,6 +24,20 @@
     </itunes:category>
     <itunes:explicit>false</itunes:explicit>
     <item>
+      <title>Paramedic Papers Daily — 18 October 2026</title>
+      <link>https://paramedicpapers.com/episodes/2026-10-18/</link>
+      <description>1 paper: Airway strategy and survival in Polish HEMS</description>
+      <content:encoded><![CDATA[<p>1 paper: Airway strategy and survival in Polish HEMS</p><p>Papers in this episode:</p><ul><li><a href="https://doi.org/10.1186/s13049-026-01713-2">Airway strategy and survival in Polish HEMS <em>(Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine)</em></a></li></ul><p><a href="https://paramedicpapers.com/episodes/2026-10-18/">Show notes and transcript</a></p>]]></content:encoded>
+      <pubDate>Sun, 18 Oct 2026 07:33:13 +1100</pubDate>
+      <guid isPermaLink="false">https://audio.paramedicpapers.com/ep-2026-10-18.mp3</guid>
+      <enclosure url="https://audio.paramedicpapers.com/ep-2026-10-18.mp3" length="536684" type="audio/mpeg"/>
+      <itunes:duration>134</itunes:duration>
+      <itunes:summary>1 paper: Airway strategy and survival in Polish HEMS</itunes:summary>
+      <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
+      <itunes:episodeType>full</itunes:episodeType>
+      <podcast:transcript url="https://audio.paramedicpapers.com/ep-2026-10-18.txt" type="text/plain" language="en-au"/>
+    </item>
+    <item>
       <title>Paramedic Papers Daily — 17 October 2026</title>
       <link>https://paramedicpapers.com/episodes/2026-10-17/</link>
       <description>4 papers: POC GFAP for brain haemorrhage in coma; Every minute counts: early bystander CPR; Commotio cordis outcomes hinge on fast AED; Prehospital qSOFA adds a little prognostic signal</description>
@@ -412,19 +426,6 @@
       <enclosure url="https://audio.paramedicpapers.com/ep-2026-09-17.mp3" length="816525" type="audio/mpeg"/>
       <itunes:duration>204</itunes:duration>
       <itunes:summary>4 papers: whole blood beats crystalloids in rat traumatic arrest; LLMs unreliable for prehospital ECG cath-lab activation; knee-height stretcher best for standing compressions; structured hot debriefs validated in two Australian EDs</itunes:summary>
-      <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
-      <itunes:episodeType>full</itunes:episodeType>
-    </item>
-    <item>
-      <title>Paramedic Papers Daily — 16 September 2026</title>
-      <link>https://paramedicpapers.com/episodes/2026-09-16/</link>
-      <description>2 papers: AI voice assistants in EMS survey (Scand J Trauma); mild hypercapnia in porcine ECPR (Resuscitation Plus)</description>
-      <content:encoded><![CDATA[<p>2 papers: AI voice assistants in EMS survey (Scand J Trauma); mild hypercapnia in porcine ECPR (Resuscitation Plus)</p><p>Papers in this episode:</p><ul><li><a href="https://doi.org/10.1186/s13049-026-01695-1">A multinational cross-sectional survey on the use of AI-based voice assistance systems in emergency medical services <em>(Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine)</em></a></li><li><a href="https://doi.org/10.1016/j.resplu.2026.101480">Effects of systemic mild hypercapnia on brain function in a refractory cardiac arrest model treated with extracorporeal cardiopulmonary resuscitation <em>(Resuscitation Plus)</em></a></li></ul><p><a href="https://paramedicpapers.com/episodes/2026-09-16/">Show notes and transcript</a></p>]]></content:encoded>
-      <pubDate>Wed, 16 Sep 2026 07:33:48 +1000</pubDate>
-      <guid isPermaLink="false">https://opurtell.github.io/paramedicpapers/audio/ep-2026-09-16.mp3</guid>
-      <enclosure url="https://audio.paramedicpapers.com/ep-2026-09-16.mp3" length="644013" type="audio/mpeg"/>
-      <itunes:duration>160</itunes:duration>
-      <itunes:summary>2 papers: AI voice assistants in EMS survey (Scand J Trauma); mild hypercapnia in porcine ECPR (Resuscitation Plus)</itunes:summary>
       <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
       <itunes:episodeType>full</itunes:episodeType>
     </item>
