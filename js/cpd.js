@@ -154,7 +154,7 @@
     }
     return fetch(API + path, init).then(function (r) {
       return r.json().catch(function () { return {}; }).then(function (data) {
-        if (r.ok) return data;
+        if (r.ok) { trackAction(path, init.method, opts.body); return data; }
         var err = new Error(data.error || ('HTTP ' + r.status));
         err.status = r.status;
         err.field = data.field;
@@ -168,6 +168,16 @@
       err.status = 0;
       throw err;
     });
+  }
+
+  /* Counts finished actions for the owner's usage stats (js/track.js).
+     Only the kind of action is sent, never what was written. */
+  function trackAction(path, method, body) {
+    if (!window.ppTrack || method === 'GET') return;
+    if (path === '/api/entries' && method === 'POST') window.ppTrack('cpd_logged', (body && body.kind) || '');
+    else if (/^\/api\/quiz\/[^/]+\/attempt$/.test(path)) window.ppTrack('quiz_completed', decodeURIComponent(path.split('/')[3]));
+    else if (path === '/api/saved' && body && body.add && body.add.length) window.ppTrack('paper_saved', '');
+    else if (path === '/api/goals' && method === 'POST') window.ppTrack('goal_set', '');
   }
 
   function loadYear() {

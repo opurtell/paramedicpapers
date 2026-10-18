@@ -46,12 +46,13 @@
   </style>
   <!-- Cloudflare Web Analytics: cookie-free visit counts -->
   <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "767370751000434aad7703e82270a359"}'></script>
+  <script defer src="/js/track.js?v=1"></script>
 </head>
 <body>
 <main>
   <a class="back" href="./">← Paramedic Papers</a>
   <h1>Privacy</h1>
-  <p class="updated">Last updated 14 October 2026</p>
+  <p class="updated">Last updated 18 October 2026</p>
 
   <p>Paramedic Papers is a free, non-commercial project run by one Australian
   paramedic. This page explains, in plain English, what the site stores about
@@ -70,6 +71,22 @@
       how many people use the site, which pages, from which countries and on
       what kind of device. It sets no cookies, doesn't track you across sites
       and doesn't record who you are.</li>
+    <li>To see whether people come back, the site also keeps a random ID in your
+      browser's local storage (not a cookie). With it, the site's own server
+      counts which days the ID was seen, which pages and papers were opened,
+      episodes played, and when a CPD entry, quiz or saved paper is completed.
+      Only the kind of action is recorded, never what you write. The ID isn't
+      linked to your name, email or account, isn't shared with anyone, and
+      is kept for about 13 months. Signed-in use is counted the same way,
+      against a scrambled (one-way hashed) form of your account ID, so the
+      usage counts don't hold your account ID; deleting your account deletes them.</li>
+    <li>This counting is off if your browser sends Global Privacy Control or
+      Do Not Track. You can also turn it off here:
+      <span id="track-pref">(needs JavaScript)</span></li>
+    <li>Podcast downloads from the feed go through OP3
+      (<a href="https://op3.dev">op3.dev</a>), an open, non-profit podcast
+      download counter, before reaching the audio file. It sees your IP address
+      and podcast app, like the audio host does, and publishes only totals.</li>
     <li>The list of other podcasts you can log as CPD comes from each
       podcast's public feed. We serve the episode details and artwork from this
       site, so browsing the list sends nothing to the podcast hosts.</li>
@@ -99,6 +116,8 @@
     <li>For podcast episodes you log: the podcast's name, the episode title,
       its release date and a link to its page, alongside your other CPD data.</li>
     <li>A sign-in session cookie. It's the only cookie the site sets.</li>
+    <li>Which days you used the site, counted against a one-way hash of your
+      account ID (see "Reading the site" above).</li>
   </ul>
   <p>It's stored in a Cloudflare D1 database in the Oceania region, with
   nightly backups in Cloudflare R2 storage. Cloudflare also keeps short-lived
@@ -131,5 +150,25 @@
 
   <footer>Paramedic Papers · <a href="./">paramedicpapers.com</a> · <a href="about.html">About</a></footer>
 </main>
+<script>
+(function () {
+  var el = document.getElementById('track-pref');
+  if (!el) return;
+  function draw() {
+    var t = window.ppTracking;
+    if (!t) { el.textContent = '(usage counting isn\u2019t running on this page)'; return; }
+    if (navigator.globalPrivacyControl || navigator.doNotTrack === '1') {
+      el.innerHTML = 'usage counting is <strong>off</strong>: your browser sends Global Privacy Control or Do Not Track.';
+      return;
+    }
+    var off = t.optedOut();
+    el.innerHTML = 'usage counting is <strong>' + (off ? 'off' : 'on') + '</strong> in this browser. ' +
+      '<button type="button" style="font:inherit;color:var(--accent);background:none;border:0;padding:0;text-decoration:underline;cursor:pointer">' +
+      (off ? 'Turn it on' : 'Turn it off') + '</button>';
+    el.querySelector('button').addEventListener('click', function () { t.setOptOut(!off); draw(); });
+  }
+  addEventListener('DOMContentLoaded', draw);
+})();
+</script>
 </body>
 </html>
