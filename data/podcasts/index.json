@@ -7,9 +7,33 @@
   "region": "UK",
   "site": "https://www.stemlynspodcast.org",
   "art": "data/podcasts/art/st-emlyns.jpg",
-  "episodes": 301,
+  "episodes": 302,
   "latest": "2026-10-17",
-  "updated": "2026-10-17"
+  "updated": "2026-10-18"
+ },
+ {
+  "id": "sgem",
+  "name": "The Skeptics' Guide to EM",
+  "publisher": "Dr Ken Milne",
+  "focus": "Critical appraisal of recent emergency medicine papers",
+  "region": "Canada",
+  "site": "https://thesgem.com",
+  "art": "data/podcasts/art/sgem.jpg",
+  "episodes": 109,
+  "latest": "2026-10-17",
+  "updated": "2026-10-18"
+ },
+ {
+  "id": "prehospital-care-podcast",
+  "name": "Pre-Hospital Care Podcast",
+  "publisher": "Eoin Walker",
+  "focus": "Prehospital clinical topics and recent evidence",
+  "region": "Ireland",
+  "site": "https://podcasters.spotify.com/pod/show/phcp",
+  "art": "data/podcasts/art/prehospital-care-podcast.jpg",
+  "episodes": 393,
+  "latest": "2026-10-16",
+  "updated": "2026-10-18"
  },
  {
   "id": "ecritcare",
@@ -58,18 +82,6 @@
   "episodes": 32,
   "latest": "2026-10-12",
   "updated": "2026-10-12"
- },
- {
-  "id": "prehospital-care-podcast",
-  "name": "Pre-Hospital Care Podcast",
-  "publisher": "Eoin Walker",
-  "focus": "Prehospital clinical topics and recent evidence",
-  "region": "Ireland",
-  "site": "https://podcasters.spotify.com/pod/show/phcp",
-  "art": "data/podcasts/art/prehospital-care-podcast.jpg",
-  "episodes": 392,
-  "latest": "2026-10-12",
-  "updated": "2026-10-13"
  },
  {
   "id": "emcrit",
@@ -129,18 +141,6 @@
   "art": "data/podcasts/art/rebel-cast.jpg",
   "episodes": 49,
   "latest": "2026-10-05",
-  "updated": "2026-10-08"
- },
- {
-  "id": "sgem",
-  "name": "The Skeptics' Guide to EM",
-  "publisher": "Dr Ken Milne",
-  "focus": "Critical appraisal of recent emergency medicine papers",
-  "region": "Canada",
-  "site": "https://thesgem.com",
-  "art": "data/podcasts/art/sgem.jpg",
-  "episodes": 108,
-  "latest": "2026-10-03",
   "updated": "2026-10-08"
  },
  {
