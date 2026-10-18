@@ -875,6 +875,10 @@ body.has-player main {
 }
 .sub-row .link-btn { flex: none; }
 .sub-hint { font-size: 12px; color: var(--muted); }
+.sub-apps { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 3px; }
+.sub-app { flex: 1 1 150px; min-height: 44px; }
+.hi-brand { fill: currentColor; stroke: none; }
+.sub-app .hi-brand { width: 18px; height: 18px; }
 
 /* Latest episode, top of the Podcast tab: an ep-row in its own panel with
    a bigger play button, the full description and a progress hairline. */
