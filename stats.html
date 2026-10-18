@@ -65,6 +65,16 @@
     .msg { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 24px; color: var(--ink-2); }
     .msg a { color: var(--accent); }
     .tip { position: fixed; pointer-events: none; background: var(--ink); color: var(--bg); font-size: 12px; padding: 6px 8px; border-radius: 6px; white-space: nowrap; z-index: 5; }
+    .section-h { font: 500 26px/1.2 var(--serif); margin: 40px 0 4px; }
+    .tbl-wrap { overflow-x: auto; }
+    table.tbl { border-collapse: collapse; width: 100%; font-size: 13px; font-variant-numeric: tabular-nums; }
+    .tbl th, .tbl td { padding: 6px 8px; text-align: right; white-space: nowrap; border-bottom: 1px solid var(--line); }
+    .tbl th:first-child, .tbl td:first-child { text-align: left; }
+    .tbl th { color: var(--muted); font-weight: 500; }
+    .tbl td.heat { position: relative; }
+    .tbl td.heat span { position: relative; }
+    .tbl td.heat::before { content: ''; position: absolute; inset: 2px; border-radius: 3px; background: var(--accent); opacity: var(--a, 0); }
+    .card p.sub a, .msg a { color: var(--accent); }
     footer { margin-top: 32px; color: var(--muted); font-size: 13px; }
   </style>
 </head>
@@ -77,6 +87,7 @@
     <button type="button" data-days="7">7 d</button><button type="button" data-days="30">30 d</button><button type="button" data-days="90">90 d</button><button type="button" data-days="180">180 d</button>
   </div><span class="note">Times in UTC</span></div>
   <div id="root"></div>
+  <div id="usage"></div>
   <footer>Cloudflare Web Analytics counts visits without cookies. It doesn't record who people are, so it has no unique visitors or age/gender. Countries, devices, browsers and referrers are the demographics available. Bots are excluded.</footer>
 </main>
 <div class="tip" id="tip" hidden></div>
@@ -86,6 +97,8 @@
   var API = (location.hostname === 'localhost' || location.hostname === '127.0.0.1')
     ? 'http://localhost:8787' : 'https://api.paramedicpapers.com';
   var root = document.getElementById('root'), sub = document.getElementById('sub'), tip = document.getElementById('tip');
+  var usage = document.getElementById('usage');
+  var OP3_SHOW = 'https://op3.dev/show/09fa3693-e2ac-527c-9d1c-f68df149b888';  /* podcast:guid of /feed.xml */
   var RANGES = [7, 30, 90, 180], days = 30;
   try { days = +localStorage.getItem('pp:stats-days') || 30; } catch (e) {}
   if (RANGES.indexOf(days) < 0) days = 30;
@@ -121,6 +134,7 @@
       else if (e.status === 404) msg('The analytics endpoint isn’t deployed on the API yet.');
       else msg('Couldn’t load stats: ' + esc(e.message));
     });
+    loadUsage();
   }
 
   function delta(cur, prev, noCompare) {
@@ -145,8 +159,10 @@
     return '<section class="card"><h2>' + title + '</h2>' + (note ? '<p class="sub" style="margin:-6px 0 10px">' + note + '</p>' : '') + body + '</section>';
   }
 
-  /* Daily bars: page views (light) behind visits (accent). */
-  function chart(daily) {
+  /* Daily bars: page views (light) behind visits (accent). labels: legend
+     names for [visits, pageviews]; a null second label hides that series. */
+  function chart(daily, labels) {
+    labels = labels || ['Visits', 'Page views'];
     if (!daily.length) return '<p class="empty">No data in this range.</p>';
     var W = Math.max(280, root.clientWidth - 34), H = 200, pad = { l: 36, r: 4, t: 8, b: 22 };
     var max = daily.reduce(function (m, d) { return Math.max(m, d.pageviews, d.visits); }, 0) || 1;
@@ -170,12 +186,31 @@
         s += '<text x="' + (x + w / 2) + '" y="' + (H - 6) + '" text-anchor="middle">' + dt.getDate() + ' ' + dt.toLocaleString('en-AU', { month: 'short' }) + '</text>';
       }
     });
-    return '<svg class="chart" viewBox="0 0 ' + W + ' ' + H + '" role="img" aria-label="Daily visits and page views">' + s + '</svg>' +
-      '<div class="legend"><span><i style="background:var(--accent)"></i>Visits</span><span><i style="background:var(--accent-2)"></i>Page views</span></div>';
+    return '<svg class="chart" viewBox="0 0 ' + W + ' ' + H + '" role="img" aria-label="Daily ' + esc(labels.filter(Boolean).join(' and ').toLowerCase()) + '">' + s + '</svg>' +
+      '<div class="legend"><span><i style="background:var(--accent)"></i>' + labels[0] + '</span>' +
+      (labels[1] ? '<span><i style="background:var(--accent-2)"></i>' + labels[1] + '</span>' : '') + '</div>';
   }
 
   var last, resizeT;
-  addEventListener('resize', function () { clearTimeout(resizeT); resizeT = setTimeout(function () { if (last) render(last); }, 150); });
+  var lastUsage;
+  addEventListener('resize', function () {
+    clearTimeout(resizeT);
+    resizeT = setTimeout(function () { if (last) render(last); if (lastUsage) renderUsage(lastUsage); }, 150);
+  });
+
+  /* Hover tooltip for a .chart; fmt(row) gives its text. */
+  function bindTip(svg, rows, fmt) {
+    if (!svg) return;
+    svg.addEventListener('mousemove', function (e) {
+      var g = e.target.closest('[data-i]');
+      if (!g) { tip.hidden = true; return; }
+      tip.textContent = fmt(rows[+g.getAttribute('data-i')]);
+      tip.hidden = false;
+      tip.style.left = Math.min(e.clientX + 12, innerWidth - tip.offsetWidth - 8) + 'px';
+      tip.style.top = (e.clientY - 36) + 'px';
+    });
+    svg.addEventListener('mouseleave', function () { tip.hidden = true; });
+  }
 
   function render(d) {
     last = d;
@@ -199,19 +234,110 @@
         list('Browsers', d.browsers || []) +
         list('Operating systems', d.os || []) +
       '</div>';
-    var svg = root.querySelector('.chart');
-    if (svg) {
-      svg.addEventListener('mousemove', function (e) {
-        var g = e.target.closest('[data-i]');
-        if (!g) { tip.hidden = true; return; }
-        var row = d.daily[+g.getAttribute('data-i')];
-        tip.textContent = row.date + ' · ' + n(row.visits) + ' visits · ' + n(row.pageviews) + ' views';
-        tip.hidden = false;
-        tip.style.left = Math.min(e.clientX + 12, innerWidth - tip.offsetWidth - 8) + 'px';
-        tip.style.top = (e.clientY - 36) + 'px';
-      });
-      svg.addEventListener('mouseleave', function () { tip.hidden = true; });
-    }
+    bindTip(root.querySelector('.chart'), d.daily, function (row) {
+      return row.date + ' · ' + n(row.visits) + ' visits · ' + n(row.pageviews) + ' views';
+    });
+  }
+
+  /* ── First-party usage (/api/admin/usage, fed by js/track.js) ── */
+
+  var ACTIONS = {
+    pageview: 'Viewed a page', view: 'Opened a dashboard view', paper_open: 'Opened a paper',
+    episode_play: 'Played an episode', episode_complete: 'Finished an episode', cpd_logged: 'Logged CPD',
+    quiz_completed: 'Completed a quiz', paper_saved: 'Saved a paper', goal_set: 'Set a learning goal',
+    signin_start: 'Started sign-in'
+  };
+  var titles = null;  /* paper id -> title, from data/papers.json */
+
+  function loadUsage() {
+    usage.innerHTML = '';
+    var want = days;
+    var papers = titles ? Promise.resolve() : fetch('/data/papers.json').then(function (r) { return r.json(); })
+      .then(function (data) { titles = {}; collectTitles(data); }).catch(function () { titles = {}; });
+    Promise.all([get('/api/admin/usage?days=' + days), papers]).then(function (res) {
+      if (want === days) renderUsage(res[0]);
+    }, function (e) {
+      if (want !== days || e.status === 401 || e.status === 403) return;  /* the main section already says why */
+      lastUsage = null;
+      usage.innerHTML = '<h2 class="section-h">Audience and retention</h2><div class="msg">' +
+        (e.status === 404 ? 'First-party usage tracking isn’t deployed on the API yet. Steps: <code>todo/README.md</code> in the pipeline repo.'
+          : 'Couldn’t load usage: ' + esc(e.message)) + '</div>';
+    });
+  }
+
+  function collectTitles(o) {
+    if (Array.isArray(o)) { o.forEach(collectTitles); return; }
+    if (!o || typeof o !== 'object') return;
+    if (o.id != null && typeof o.title === 'string') titles[String(o.id)] = o.title;
+    Object.keys(o).forEach(function (k) { if (o[k] && typeof o[k] === 'object') collectTitles(o[k]); });
+  }
+
+  function pct(a, b) { return b ? Math.round(a / b * 100) + '%' : '–'; }
+
+  /* cohorts: [{cohort, size, counts}] → heat table of % still active per period. */
+  function cohortTable(rows, unit, fmtCohort) {
+    if (!rows.length) return '<p class="empty">No data yet.</p>';
+    var cols = rows.reduce(function (m, r) { return Math.max(m, r.counts.length); }, 0);
+    var h = '<tr><th>First seen</th><th>People</th>';
+    for (var i = 1; i < cols; i++) h += '<th>' + unit + ' ' + i + '</th>';
+    var body = rows.map(function (r) {
+      var tds = '<td>' + esc(fmtCohort(r.cohort)) + '</td><td>' + n(r.size) + '</td>';
+      for (var i = 1; i < cols; i++) {
+        if (i >= r.counts.length) { tds += '<td></td>'; continue; }
+        var f = r.size ? r.counts[i] / r.size : 0;
+        tds += '<td class="heat" style="--a:' + (0.08 + f * 0.6).toFixed(2) + '" title="' + n(r.counts[i]) + ' of ' + n(r.size) + '"><span>' + pct(r.counts[i], r.size) + '</span></td>';
+      }
+      return '<tr>' + tds + '</tr>';
+    }).join('');
+    return '<div class="tbl-wrap"><table class="tbl"><thead>' + h + '</tr></thead><tbody>' + body + '</tbody></table></div>';
+  }
+
+  function monthlyTable(rows) {
+    if (!rows.length) return '<p class="empty">The first snapshot is written by the API’s daily job.</p>';
+    var cols = [['visitors', 'Unique visitors'], ['new_visitors', 'New'], ['cf_visits', 'Visits (CF)'], ['cf_pageviews', 'Page views (CF)'],
+      ['active_users', 'Signed-in active'], ['new_users', 'New accounts'], ['ev_episode_play', 'Episode plays'],
+      ['ev_paper_open', 'Papers opened'], ['ev_cpd_logged', 'CPD logs'], ['ev_quiz_completed', 'Quizzes']];
+    return '<div class="tbl-wrap"><table class="tbl"><thead><tr><th>Month</th>' +
+      cols.map(function (c) { return '<th>' + c[1] + '</th>'; }).join('') + '</tr></thead><tbody>' +
+      rows.slice().reverse().map(function (r) {
+        return '<tr><td>' + esc(r.month) + '</td>' + cols.map(function (c) { return '<td>' + (r[c[0]] == null ? '–' : n(r[c[0]])) + '</td>'; }).join('') + '</tr>';
+      }).join('') + '</tbody></table></div>';
+  }
+
+  function renderUsage(u) {
+    lastUsage = u;
+    var v = u.visitors || {}, us = u.users || {}, t = u.top || {}, ret = u.retention || {};
+    var short = function (d) { var dt = new Date(d + 'T00:00:00'); return dt.getDate() + ' ' + dt.toLocaleString('en-AU', { month: 'short' }) + ' ' + dt.getFullYear(); };
+    var daily = (v.daily || []).map(function (r) { return { date: r.date, visits: r.visitors, pageviews: 0 }; });
+    usage.innerHTML =
+      '<h2 class="section-h">Audience and retention</h2>' +
+      '<p class="sub">Counted by the site itself: one anonymous ID per browser, so these are people (browsers), not visits. Last ' + u.range.days + ' days unless noted.</p>' +
+      '<div class="kpis">' +
+        kpi('Unique visitors', n(v.unique), '<span class="delta">' + n(v.new) + ' new · ' + n(v.returning) + ' returning</span>') +
+        kpi('Returning share', pct(v.returning, v.unique), '<span class="delta">of visitors in range</span>') +
+        kpi('Weekly / monthly active', n(v.wau) + ' / ' + n(v.mau), '<span class="delta">stickiness ' + pct(v.wau, v.mau) + '</span>') +
+        kpi('Signed-in users', n(us.active), '<span class="delta">active of ' + n(us.total) + ' · ' + n(us.new) + ' new</span>') +
+      '</div>' +
+      '<section class="card"><h2>Daily unique visitors</h2>' + chart(daily, ['Unique visitors', null]) + '</section>' +
+      '<section class="card" style="margin-top:12px"><h2>Visitor retention, by week first seen</h2>' +
+        '<p class="sub" style="margin:-6px 0 10px">Share of each week’s new visitors who came back in later weeks.</p>' +
+        cohortTable(ret.visitorsWeekly || [], 'Wk', function (c) { return 'w/c ' + short(c); }) + '</section>' +
+      '<section class="card" style="margin-top:12px"><h2>Signed-in retention, by month first active</h2>' +
+        cohortTable(ret.usersMonthly || [], 'Mo', function (c) { return c; }) + '</section>' +
+      '<div class="grid">' +
+        list('What people did', (u.actions || []).map(function (a) {
+          return { key: (ACTIONS[a.name] || a.name) + ' (' + n(a.events) + '×)', visits: a.people };
+        }), 'People who did it at least once; total times in brackets.') +
+        list('Most-opened papers', (t.papers || []).map(function (r) { return { key: (titles && titles[r.key]) || r.key, visits: r.visits }; })) +
+        list('Most-played episodes (on site)', t.episodes || [], 'Podcast-app downloads: <a href="' + OP3_SHOW + '" target="_blank" rel="noopener">OP3</a>.') +
+        list('CPD logged, by kind', t.cpd || []) +
+        list('Dashboard views', t.views || []) +
+        list('Pages (first-party)', t.pages || []) +
+      '</div>' +
+      '<section class="card" style="margin-top:12px"><h2>Month by month</h2>' +
+        '<p class="sub" style="margin:-6px 0 10px">Saved daily by the API so history outlasts Cloudflare’s 6 months. The current month is to date.</p>' +
+        monthlyTable(u.monthly || []) + '</section>';
+    bindTip(usage.querySelector('.chart'), daily, function (row) { return row.date + ' · ' + n(row.visits) + ' unique visitors'; });
   }
 
   load();

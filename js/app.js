@@ -826,7 +826,13 @@
         if (Date.now() - lastSave > 5000) savePosition();
       });
       audioEl.addEventListener('pause', function () { savePosition(); renderEpisodes(); });
+      /* Usage stats (js/track.js): first play of each episode per page load, and finishes. */
+      var counted = {};
+      audioEl.addEventListener('play', function () {
+        if (window.ppTrack && state.playDate && !counted[state.playDate]) { counted[state.playDate] = 1; window.ppTrack('episode_play', state.playDate); }
+      });
       audioEl.addEventListener('ended', function () {
+        if (window.ppTrack && state.playDate) window.ppTrack('episode_complete', state.playDate);
         delete state.positions[state.playDate];
         persistJSON(POS_KEY, state.positions);
         renderEpisodes();
