@@ -73,6 +73,9 @@
   <a class="back" href="/">← Paramedic Papers</a>
   <h1>Site stats</h1>
   <p class="sub" id="sub">Checking your sign-in…</p>
+  <div class="bar"><div class="seg" id="range" role="group" aria-label="Date range">
+    <button type="button" data-days="7">7 d</button><button type="button" data-days="30">30 d</button><button type="button" data-days="90">90 d</button><button type="button" data-days="180">180 d</button>
+  </div><span class="note">Times in UTC</span></div>
   <div id="root"></div>
   <footer>Cloudflare Web Analytics counts visits without cookies. It doesn't record who people are, so it has no unique visitors or age/gender. Countries, devices, browsers and referrers are the demographics available. Bots are excluded.</footer>
 </main>
@@ -83,8 +86,18 @@
   var API = (location.hostname === 'localhost' || location.hostname === '127.0.0.1')
     ? 'http://localhost:8787' : 'https://api.paramedicpapers.com';
   var root = document.getElementById('root'), sub = document.getElementById('sub'), tip = document.getElementById('tip');
-  var days = 30;
+  var RANGES = [7, 30, 90, 180], days = 30;
   try { days = +localStorage.getItem('pp:stats-days') || 30; } catch (e) {}
+  if (RANGES.indexOf(days) < 0) days = 30;
+  var rangeBtns = document.querySelectorAll('#range [data-days]');
+  // Wired once, outside render(), so the range can still be changed after a failed load.
+  rangeBtns.forEach(function (b) {
+    b.addEventListener('click', function () {
+      days = +b.getAttribute('data-days');
+      try { localStorage.setItem('pp:stats-days', days); } catch (e) {}
+      load();
+    });
+  });
 
   function esc(s) { return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) { return '&#' + c.charCodeAt(0) + ';'; }); }
   function n(x) { return (x || 0).toLocaleString('en-AU'); }
@@ -100,6 +113,7 @@
 
   function load() {
     sub.textContent = 'Loading…';
+    rangeBtns.forEach(function (b) { b.setAttribute('aria-pressed', String(+b.getAttribute('data-days') === days)); });
     get('/api/admin/analytics?days=' + days).then(render, function (e) {
       sub.textContent = '';
       if (e.status === 401) msg('Sign in first, on the <a href="/#account">Account</a> page, then come back.');
@@ -109,7 +123,8 @@
     });
   }
 
-  function delta(cur, prev) {
+  function delta(cur, prev, noCompare) {
+    if (noCompare) return '<span class="delta">no comparison for this range</span>';
     if (!prev) return '<span class="delta">no earlier data</span>';
     var p = Math.round((cur - prev) / prev * 100);
     var cls = p > 0 ? 'up' : p < 0 ? 'down' : '';
@@ -164,17 +179,14 @@
 
   function render(d) {
     last = d;
-    var t = d.totals || {}, p = d.previous || {};
+    var t = d.totals || {}, p = d.previous || {}, noCompare = d.previous === null;
     sub.textContent = d.range ? 'Last ' + d.range.days + ' days · ' + d.range.from.slice(0, 10) + ' to ' + d.range.to.slice(0, 10) : '';
     var perVisit = t.visits ? (t.pageviews / t.visits).toFixed(1) : '–';
     var daysWithData = (d.daily || []).length || 1;
     root.innerHTML =
-      '<div class="bar"><div class="seg" role="group" aria-label="Date range">' +
-        [7, 30, 90, 180].map(function (k) { return '<button type="button" data-days="' + k + '" aria-pressed="' + (k === days) + '">' + k + ' d</button>'; }).join('') +
-      '</div><span class="note">Times in UTC</span></div>' +
       '<div class="kpis">' +
-        kpi('Visits', n(t.visits), delta(t.visits, p.visits)) +
-        kpi('Page views', n(t.pageviews), delta(t.pageviews, p.pageviews)) +
+        kpi('Visits', n(t.visits), delta(t.visits, p.visits, noCompare)) +
+        kpi('Page views', n(t.pageviews), delta(t.pageviews, p.pageviews, noCompare)) +
         kpi('Avg visits / day', n(Math.round((t.visits || 0) / daysWithData))) +
         kpi('Pages / visit', perVisit) +
       '</div>' +
@@ -187,13 +199,6 @@
         list('Browsers', d.browsers || []) +
         list('Operating systems', d.os || []) +
       '</div>';
-    root.querySelectorAll('[data-days]').forEach(function (b) {
-      b.addEventListener('click', function () {
-        days = +b.getAttribute('data-days');
-        try { localStorage.setItem('pp:stats-days', days); } catch (e) {}
-        load();
-      });
-    });
     var svg = root.querySelector('.chart');
     if (svg) {
       svg.addEventListener('mousemove', function (e) {
