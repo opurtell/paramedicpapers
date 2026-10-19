@@ -147,6 +147,27 @@ instead.
   must stay identical. Share links use it.
 - `404.html` and `about.html` are hand-written and use the same layout.
 
+## Link page (`links.html`, `js/links.js`)
+
+Hand-written bio-link page for Instagram (`paramedicpapers.com/links.html`). It never
+loads `papers.json`; static links work with JS off, and `js/links.js` fills two
+sections from small files. Plan: `_notes/paramedicpapers/instagram-plan.md` §3a.
+
+- `data/links.json` (written by the publisher):
+  `{ "updated": "YYYY-MM-DD", "episode": { "date", "title", "page" },
+  "latest": [ { "key", "title", "topic", "finding" } ] }`. `key` is the paper's
+  `paperKey()` (PMID, else `doi-<slug>`, else `id-<slug>`), linking to `/papers/<key>/`.
+  Only the first 4 `latest` items show.
+- `data/instagram.json`: `{ "updated", "posts": [ { "date", "hook", "permalink",
+  "cover" } ] }`, newest first; the first 12 show as a grid. `cover` is a permanent
+  540 px thumbnail URL; if it fails, the `hook` text shows instead.
+- `<!-- LINKS:LATEST:START --><!-- LINKS:LATEST:END -->` in `links.html` is
+  for `build_static_pages.py` to fill with the same `.study` links (no-JS latest
+  studies); until then a "See today's studies" link shows. The checked-in JSON files
+  are samples.
+- Instagram's in-app browser (`Instagram`/`FBAN`/`FBAV` in the user agent) gets an
+  "Open in your browser to sign in" note above the quiz and CPD links.
+
 ## Saved papers (client-side)
 
 The Saved tab persists to `localStorage` under the key `pp:saved`. The value is an **object map** (not an array):

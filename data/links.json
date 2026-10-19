@@ -1,0 +1,9 @@
+{
+  "updated": "2026-10-19",
+  "episode": { "date": "2026-10-19", "title": "Paramedic Papers Daily — 19 October 2026", "page": "/episodes/2026-10-19/" },
+  "latest": [
+    { "key": "42886574", "title": "Five scene findings flag kids needing blood", "topic": "Trauma", "finding": "Altered GCS, penetrating mechanism and age-adjusted hypotension led; a three-tier tree captured 36.8% of early transfusions in 3.3% of children." },
+    { "key": "doi-10-1080-10903127-2026-2751025", "title": "Fall-alarm calls without lights and sirens", "topic": "Operations", "finding": "Lights-and-siren response fell from 98% to 12% of calls; 0.2% later needed an upgrade." },
+    { "key": "42893205", "title": "Mobile ECPR team cannulates on scene", "topic": "Cardiac arrest", "finding": "Pilot protocol aiming to cut collapse-to-flow by at least 15 minutes." }
+  ]
+}
