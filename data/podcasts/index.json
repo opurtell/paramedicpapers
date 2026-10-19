@@ -1,5 +1,29 @@
 [
  {
+  "id": "resus-room",
+  "name": "The Resus Room",
+  "publisher": "Simon, Rob & James",
+  "focus": "UK emergency and prehospital evidence, papers of the month",
+  "region": "UK",
+  "site": "https://www.theresusroom.co.uk",
+  "art": "data/podcasts/art/resus-room.jpg",
+  "episodes": 290,
+  "latest": "2026-10-19",
+  "updated": "2026-10-19"
+ },
+ {
+  "id": "core-em",
+  "name": "Core EM",
+  "publisher": "Core EM",
+  "focus": "Core emergency medicine topics, concise and practical",
+  "region": "US",
+  "site": "https://coreem.net",
+  "art": "data/podcasts/art/core-em.jpg",
+  "episodes": 233,
+  "latest": "2026-10-19",
+  "updated": "2026-10-19"
+ },
+ {
   "id": "st-emlyns",
   "name": "St Emlyn's",
   "publisher": "St Emlyn's",
@@ -7,9 +31,9 @@
   "region": "UK",
   "site": "https://www.stemlynspodcast.org",
   "art": "data/podcasts/art/st-emlyns.jpg",
-  "episodes": 302,
+  "episodes": 328,
   "latest": "2026-10-17",
-  "updated": "2026-10-18"
+  "updated": "2026-10-19"
  },
  {
   "id": "sgem",
@@ -55,9 +79,9 @@
   "region": "US",
   "site": "https://longpausemedia.com/podcasts/ems-20-20",
   "art": "data/podcasts/art/ems-20-20.jpg",
-  "episodes": 260,
-  "latest": "2026-10-14",
-  "updated": "2026-10-15"
+  "episodes": 261,
+  "latest": "2026-10-15",
+  "updated": "2026-10-19"
  },
  {
   "id": "pec-podcast",
@@ -144,18 +168,6 @@
   "updated": "2026-10-08"
  },
  {
-  "id": "resus-room",
-  "name": "The Resus Room",
-  "publisher": "Simon, Rob & James",
-  "focus": "UK emergency and prehospital evidence, papers of the month",
-  "region": "UK",
-  "site": "https://www.theresusroom.co.uk",
-  "art": "data/podcasts/art/resus-room.jpg",
-  "episodes": 289,
-  "latest": "2026-10-01",
-  "updated": "2026-10-08"
- },
- {
   "id": "acp",
   "name": "The Australasian College of Paramedicine",
   "publisher": "Australasian College of Paramedicine",
@@ -189,18 +201,6 @@
   "art": "data/podcasts/art/critical-care-reviews.jpg",
   "episodes": 100,
   "latest": "2026-09-29",
-  "updated": "2026-10-08"
- },
- {
-  "id": "core-em",
-  "name": "Core EM",
-  "publisher": "Core EM",
-  "focus": "Core emergency medicine topics, concise and practical",
-  "region": "US",
-  "site": "https://coreem.net",
-  "art": "data/podcasts/art/core-em.jpg",
-  "episodes": 232,
-  "latest": "2026-09-24",
   "updated": "2026-10-08"
  },
  {
