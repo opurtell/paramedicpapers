@@ -25,6 +25,20 @@
     <itunes:explicit>false</itunes:explicit>
     <podcast:guid>09fa3693-e2ac-527c-9d1c-f68df149b888</podcast:guid>
     <item>
+      <title>Paramedic Papers Daily — 20 October 2026</title>
+      <link>https://paramedicpapers.com/episodes/2026-10-20/</link>
+      <description>4 papers: Predicting outcomes in PEA cardiac arrest; Drone AI for mass-casualty triage; Australian alcohol harms keep rising; Interprofessional simulation shapes student identity</description>
+      <content:encoded><![CDATA[<p>4 papers: Predicting outcomes in PEA cardiac arrest; Drone AI for mass-casualty triage; Australian alcohol harms keep rising; Interprofessional simulation shapes student identity</p><p>Papers in this episode:</p><ul><li><a href="https://doi.org/10.1016/j.resplu.2026.101508">Predicting outcomes in PEA cardiac arrest <em>(Resuscitation Plus)</em></a></li><li><a href="https://doi.org/10.1017/s1049023x26109121">Drone AI for mass-casualty triage <em>(Prehospital and Disaster Medicine)</em></a></li><li><a href="https://doi.org/10.1111/dar.70261">Australian alcohol harms keep rising <em>(Drug and Alcohol Review)</em></a></li><li><a href="https://doi.org/10.1177/27536386261501047">Interprofessional simulation shapes student identity <em>(Paramedicine)</em></a></li></ul><p><a href="https://paramedicpapers.com/episodes/2026-10-20/">Show notes and transcript</a></p>]]></content:encoded>
+      <pubDate>Tue, 20 Oct 2026 08:04:11 +1100</pubDate>
+      <guid isPermaLink="false">https://audio.paramedicpapers.com/ep-2026-10-20.mp3</guid>
+      <enclosure url="https://op3.dev/e/audio.paramedicpapers.com/ep-2026-10-20.mp3" length="1217708" type="audio/mpeg"/>
+      <itunes:duration>304</itunes:duration>
+      <itunes:summary>4 papers: Predicting outcomes in PEA cardiac arrest; Drone AI for mass-casualty triage; Australian alcohol harms keep rising; Interprofessional simulation shapes student identity</itunes:summary>
+      <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
+      <itunes:episodeType>full</itunes:episodeType>
+      <podcast:transcript url="https://audio.paramedicpapers.com/ep-2026-10-20.txt" type="text/plain" language="en-au"/>
+    </item>
+    <item>
       <title>Paramedic Papers Daily — 19 October 2026</title>
       <link>https://paramedicpapers.com/episodes/2026-10-19/</link>
       <description>4 papers: Five scene findings flag kids needing blood; Ditch lights and sirens for fall-alarm calls; Why patients decline hypoglycaemia call-back programs; Mobile ECPR team cannulates on scene</description>
@@ -415,19 +429,6 @@
       <enclosure url="https://op3.dev/e/audio.paramedicpapers.com/ep-2026-09-19.mp3" length="1023405" type="audio/mpeg"/>
       <itunes:duration>255</itunes:duration>
       <itunes:summary>5 papers: invisible DNAR orders in OHCA dispatch; TOR policy implementation gap; Nagoya arrest destination null; paediatric IV ketamine safety; ED boarding of older adults</itunes:summary>
-      <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
-      <itunes:episodeType>full</itunes:episodeType>
-    </item>
-    <item>
-      <title>Paramedic Papers Daily — 18 September 2026</title>
-      <link>https://paramedicpapers.com/episodes/2026-09-18/</link>
-      <description>3 papers: CPR-induced consciousness in 43k Victorian arrests, rising and linked to survival; Norwegian newborn resus RCT compromised by anonymous video deletions; US sickle cell pain — only 13.5% got prehospital analgesia</description>
-      <content:encoded><![CDATA[<p>3 papers: CPR-induced consciousness in 43k Victorian arrests, rising and linked to survival; Norwegian newborn resus RCT compromised by anonymous video deletions; US sickle cell pain — only 13.5% got prehospital analgesia</p><p>Papers in this episode:</p><ul><li><a href="https://doi.org/10.1016/j.resuscitation.2026.111287">Trends in the incidence and outcomes of cardiopulmonary resuscitation-induced consciousness in out-of-hospital cardiac arrest: a retrospective study <em>(Resuscitation)</em></a></li><li><a href="https://doi.org/10.1016/j.resuscitation.2026.111288">Selection bias introduced in a randomized clinical trial due to employee instigated deletion of newborn resuscitation videos <em>(Resuscitation)</em></a></li><li><a href="https://doi.org/10.1016/j.ajem.2026.09.020">Prehospital management of pain associated with acute complications of Sickle Cell Disease: a preliminary nationwide cross-sectional study <em>(The American Journal of Emergency Medicine)</em></a></li></ul><p><a href="https://paramedicpapers.com/episodes/2026-09-18/">Show notes and transcript</a></p>]]></content:encoded>
-      <pubDate>Fri, 18 Sep 2026 07:34:17 +1000</pubDate>
-      <guid isPermaLink="false">https://opurtell.github.io/paramedicpapers/audio/ep-2026-09-18.mp3</guid>
-      <enclosure url="https://op3.dev/e/audio.paramedicpapers.com/ep-2026-09-18.mp3" length="849933" type="audio/mpeg"/>
-      <itunes:duration>212</itunes:duration>
-      <itunes:summary>3 papers: CPR-induced consciousness in 43k Victorian arrests, rising and linked to survival; Norwegian newborn resus RCT compromised by anonymous video deletions; US sickle cell pain — only 13.5% got prehospital analgesia</itunes:summary>
       <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
       <itunes:episodeType>full</itunes:episodeType>
     </item>
