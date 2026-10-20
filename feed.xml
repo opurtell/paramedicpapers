@@ -25,6 +25,20 @@
     <itunes:explicit>false</itunes:explicit>
     <podcast:guid>09fa3693-e2ac-527c-9d1c-f68df149b888</podcast:guid>
     <item>
+      <title>Paramedic Papers Daily — 21 October 2026</title>
+      <link>https://paramedicpapers.com/episodes/2026-10-21/</link>
+      <description>3 papers: Feedback device lifts paediatric ventilation quality; TBI in first responders needs occupational pathways; Joint training lifts behavioural emergency confidence</description>
+      <content:encoded><![CDATA[<p>3 papers: Feedback device lifts paediatric ventilation quality; TBI in first responders needs occupational pathways; Joint training lifts behavioural emergency confidence</p><p>Papers in this episode:</p><ul><li><a href="https://doi.org/10.1542/peds.2026-077291">Feedback device lifts paediatric ventilation quality <em>(Pediatrics)</em></a></li><li><a href="https://doi.org/10.1097/HTR.0000000000001227">TBI in first responders needs occupational pathways <em>(The Journal of Head Trauma Rehabilitation)</em></a></li><li><a href="https://doi.org/10.1186/s12909-026-10646-4">Joint training lifts behavioural emergency confidence <em>(BMC Medical Education)</em></a></li></ul><p><a href="https://paramedicpapers.com/episodes/2026-10-21/">Show notes and transcript</a></p>]]></content:encoded>
+      <pubDate>Wed, 21 Oct 2026 07:32:59 +1100</pubDate>
+      <guid isPermaLink="false">https://audio.paramedicpapers.com/ep-2026-10-21.mp3</guid>
+      <enclosure url="https://op3.dev/e/audio.paramedicpapers.com/ep-2026-10-21.mp3" length="921548" type="audio/mpeg"/>
+      <itunes:duration>230</itunes:duration>
+      <itunes:summary>3 papers: Feedback device lifts paediatric ventilation quality; TBI in first responders needs occupational pathways; Joint training lifts behavioural emergency confidence</itunes:summary>
+      <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
+      <itunes:episodeType>full</itunes:episodeType>
+      <podcast:transcript url="https://audio.paramedicpapers.com/ep-2026-10-21.txt" type="text/plain" language="en-au"/>
+    </item>
+    <item>
       <title>Paramedic Papers Daily — 20 October 2026</title>
       <link>https://paramedicpapers.com/episodes/2026-10-20/</link>
       <description>4 papers: Predicting outcomes in PEA cardiac arrest; Drone AI for mass-casualty triage; Australian alcohol harms keep rising; Interprofessional simulation shapes student identity</description>
@@ -416,19 +430,6 @@
       <enclosure url="https://op3.dev/e/audio.paramedicpapers.com/ep-2026-09-20.mp3" length="594573" type="audio/mpeg"/>
       <itunes:duration>148</itunes:duration>
       <itunes:summary>2 papers: Canadian feasibility of multi-domain post-arrest prognostication data; Spanish CONOCES-BLS citizen knowledge scale</itunes:summary>
-      <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
-      <itunes:episodeType>full</itunes:episodeType>
-    </item>
-    <item>
-      <title>Paramedic Papers Daily — 19 September 2026</title>
-      <link>https://paramedicpapers.com/episodes/2026-09-19/</link>
-      <description>5 papers: invisible DNAR orders in OHCA dispatch; TOR policy implementation gap; Nagoya arrest destination null; paediatric IV ketamine safety; ED boarding of older adults</description>
-      <content:encoded><![CDATA[<p>5 papers: invisible DNAR orders in OHCA dispatch; TOR policy implementation gap; Nagoya arrest destination null; paediatric IV ketamine safety; ED boarding of older adults</p><p>Papers in this episode:</p><ul><li><a href="https://doi.org/10.1016/j.resuscitation.2026.111224">Emergency response with lights and sirens to patients with a suspected out-of-hospital cardiac arrest and a do-not-attempt-resuscitation order in the hospital record: a one-year observational study <em>(Resuscitation)</em></a></li><li><a href="https://doi.org/10.1016/j.resplu.2026.101474">Implementation gap in prehospital termination-of-resuscitation policies for out-of-hospital cardiac arrest with do-not-attempt-cardiopulmonary-resuscitation wishes in Japan: a nationwide survey <em>(Resuscitation Plus)</em></a></li><li><a href="https://doi.org/10.1016/j.resplu.2026.101482">Association between destination hospital level and outcomes in out-of-hospital cardiac arrest patients under a dispatch-guided transport system: a population-based study in Nagoya, Japan <em>(Resuscitation Plus)</em></a></li><li><a href="https://doi.org/10.1016/j.annemergmed.2026.03.030">Systematic Review of Pediatric Ketamine in Emergency Department Procedural Sedation: Frequency and Predictors of Adverse Events <em>(Annals of Emergency Medicine)</em></a></li><li><a href="https://doi.org/10.1016/j.annemergmed.2026.03.011">Emergency Department Boarding for Older Adults: The Impact of Geography, Temporal Trends, and Dementia Status <em>(Annals of Emergency Medicine)</em></a></li></ul><p><a href="https://paramedicpapers.com/episodes/2026-09-19/">Show notes and transcript</a></p>]]></content:encoded>
-      <pubDate>Sat, 19 Sep 2026 07:38:01 +1000</pubDate>
-      <guid isPermaLink="false">https://opurtell.github.io/paramedicpapers/audio/ep-2026-09-19.mp3</guid>
-      <enclosure url="https://op3.dev/e/audio.paramedicpapers.com/ep-2026-09-19.mp3" length="1023405" type="audio/mpeg"/>
-      <itunes:duration>255</itunes:duration>
-      <itunes:summary>5 papers: invisible DNAR orders in OHCA dispatch; TOR policy implementation gap; Nagoya arrest destination null; paediatric IV ketamine safety; ED boarding of older adults</itunes:summary>
       <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
       <itunes:episodeType>full</itunes:episodeType>
     </item>
