@@ -1,16 +1,28 @@
 {
- "updated": "2026-10-18",
+ "updated": "2026-10-19",
  "latest": [
   {
-   "key": "doi-10-1186-s13049-026-01713-2",
-   "title": "Airway strategy and survival in Polish HEMS",
-   "topic": "Airway & ventilation",
-   "finding": "HEMS-performed intubation was the most common strategy (49.8%); sequential supraglottic-to-intubation did not differ significantly from HEMS-performed intubation in non-traumatic cardiac arrest; 32.9% were not alive at hospital handover"
+   "key": "42886574",
+   "title": "Five scene findings flag kids needing blood",
+   "topic": "Paediatrics",
+   "finding": "All five predictors independently predicted blood within 4 h of ED arrival; low/intermediate/high CART tiers had 1.2%/6.1%/36.7% transfusion rates, and the high-risk tier captured 36.8% of all early transfusions"
+  },
+  {
+   "key": "doi-10-1080-10903127-2026-2751025",
+   "title": "Decreasing response phase lights and siren use through modification",
+   "topic": "Operations & systems",
+   "finding": "L&S response fell from 98% to 12% of calls and total response-phase L&S hours from 172 to 24 per month (−86%); 4 post-change calls (0.2%) needed L&S transport, only 1 requiring advanced interventions"
+  },
+  {
+   "key": "42892872",
+   "title": "Why patients decline hypoglycaemia call-back programs",
+   "topic": "Operations & systems",
+   "finding": "Non-participation reasons: time constraints 56%, perceived lack of benefit 25%, privacy concerns or discomfort with home visits 25%"
   }
  ],
  "episode": {
-  "date": "2026-10-18",
-  "title": "Paramedic Papers Daily — 18 October 2026",
-  "page": "/episodes/2026-10-18/"
+  "date": "2026-10-19",
+  "title": "Paramedic Papers Daily — 19 October 2026",
+  "page": "/episodes/2026-10-19/"
  }
 }
