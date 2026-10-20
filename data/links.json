@@ -1,28 +1,34 @@
 {
- "updated": "2026-10-16",
+ "updated": "2026-10-17",
  "latest": [
   {
-   "key": "42874196",
-   "title": "Signs of life in traumatic OHCA",
+   "key": "42879151",
+   "title": "POC GFAP for brain haemorrhage in coma",
+   "topic": "Stroke & neuro",
+   "finding": "POC GFAP detected ICH with 97.0% sensitivity (95% CI 84.2–99.9%) and AUC 0.94; ICH was present in 51% of patients and 30-day survival was 46%."
+  },
+  {
+   "key": "doi-10-1016-j-resplu-2026-101531",
+   "title": "Every minute counts: early bystander CPR",
    "topic": "Cardiac arrest",
-   "finding": "4.8% survived beyond the ED; 25% where cardiac activity and spontaneous respiration were both present at scene, 8.5% with cardiac activity alone, and none among the 318 patients (68.8%) with no signs of life"
+   "finding": "Overall bystander CPR was stable (58.7% vs 58.6%), but early initiation fell during the pandemic (aHR 0.96); CPR started at 0–3 min carried aOR 3.27 for favourable neurological outcome at 1 month versus >10 min."
   },
   {
-   "key": "42872019",
-   "title": "Prehospital pain assessment happens too rarely",
-   "topic": "Pain & sedation",
-   "finding": "Prehospital pain was assessed and documented in only 22.5–46.7% of patients; pain-management interventions were associated with reduced pain intensity but could not be pooled"
+   "key": "42876952",
+   "title": "Commotio cordis outcomes hinge on fast AED",
+   "topic": "Cardiac arrest",
+   "finding": "Among 15 commotio cordis cases, AED pads were applied in 93%, shocks in 87%, and 80% achieved favourable neurological outcome; among the other 15 external-cause cases, shocks were rare (7%) and just 7% had favourable outcomes."
   },
   {
-   "key": "42869598",
-   "title": "One in five transports: brief stay, no intervention",
-   "topic": "Operations & systems",
-   "finding": "15.1% of patients were non-conveyed; among the 84.9% transported, 19.1% had a ≤6-hour stay with no documented procedure, medication or imaging, and short-term mortality was 0.4% versus 1.3% for stays over six hours"
+   "key": "42882053",
+   "title": "Prehospital qSOFA adds a little prognostic signal",
+   "topic": "Sepsis & infection",
+   "finding": "Within ED triage strata, a prehospital qSOFA ≥2 roughly doubled the odds of 30-day death (aOR 2.06 triage-negative, 1.84 triage-positive), but added only 0.007 AUC beyond arrival vitals and labs."
   }
  ],
  "episode": {
-  "date": "2026-10-16",
-  "title": "Paramedic Papers Daily — 16 October 2026",
-  "page": "/episodes/2026-10-16/"
+  "date": "2026-10-17",
+  "title": "Paramedic Papers Daily — 17 October 2026",
+  "page": "/episodes/2026-10-17/"
  }
 }
