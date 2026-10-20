@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-10-19T21:01:04Z",
-  "lastUpdatedSydney": "2026-10-20 08:01 AEDT",
-  "lastUpdatedDate": "2026-10-20",
+  "lastUpdated": "2026-10-20T20:20:43Z",
+  "lastUpdatedSydney": "2026-10-21 07:20 AEDT",
+  "lastUpdatedDate": "2026-10-21",
   "featuredPapers": [
     {
       "id": "42894810",
@@ -1019,49 +1019,106 @@
     }
   ],
   "funFact": {
-    "category": "cardiac",
-    "fact": "De Winter T-waves — upsloping ST depression with tall peaked T waves across V1-V6 — are a STEMI equivalent for acute proximal LAD occlusion. They show up in about 2% of LAD occlusions and get missed all the time."
+    "category": "pharmacology",
+    "fact": "Tranexamic acid stops clots from breaking down by blocking plasminogen-to-plasmin conversion. The CRASH-2 trial showed it saves lives in trauma haemorrhage — but only if given within 3 hours. After that, the benefit vanishes. The clock is merciless."
   },
   "tldr": {
-    "date": "2026-10-20",
-    "paperCount": 4,
-    "summary": "A 442,630-patient Japanese registry shows which prehospital factors predict good neurological outcomes in PEA cardiac arrest — and that their meaning depends on the presumed cause. Also: a drone-AI mass-casualty triage system, and new evidence that Australia's alcohol-related harms keep climbing.",
+    "date": "2026-10-21",
+    "paperCount": 3,
+    "summary": "A simulation study found a ventilation feedback device lifted guideline-adherent paediatric tidal volumes from 16% to 87% of breaths; plus a consensus statement on underrecognised TBI in first responders.",
     "highlights": [
       {
-        "id": "42894810",
-        "pmid": "42894810",
-        "doi": "10.1016/j.resplu.2026.101508",
-        "title": "Predicting outcomes in PEA cardiac arrest",
-        "journal": "Resuscitation Plus",
-        "note": "Witnessed arrest (RR 1.65) and prehospital ROSC (RR 23.31) predicted favourable neurological outcome at 1 month; rhythm conversion predicted good outcome in cardiac PEA but poor outcome in non-cardiac PEA (RR 0.73); apparent harm from adrenaline and advanced airway management attenuated after time-dependent adjustment"
+        "id": "42896864",
+        "pmid": "42896864",
+        "doi": "10.1542/peds.2026-077291",
+        "title": "Feedback device lifts paediatric ventilation quality",
+        "journal": "Pediatrics",
+        "note": "Guideline-recommended tidal volume in 87% of breaths with feedback vs 16.2% without; rate adherence 88.6% vs 65%; mask leak <30% in 88.4% vs 80%"
       },
       {
-        "id": "10.1017/s1049023x26109121",
+        "id": "42897715",
+        "pmid": "42897715",
+        "doi": "10.1097/HTR.0000000000001227",
+        "title": "TBI in first responders needs occupational pathways",
+        "journal": "The Journal of Head Trauma Rehabilitation",
+        "note": "Substantial TBI burden in law enforcement, fire and EMS with persistent gaps in diagnosis, rehabilitation and duty-readiness; 28 recommendations spanning recognition, early assessment, return to duty and organisational policy"
+      },
+      {
+        "id": "10.1186/s12909-026-10646-4",
         "pmid": "",
-        "doi": "10.1017/s1049023x26109121",
-        "title": "Drone AI for mass-casualty triage",
-        "journal": "Prehospital and Disaster Medicine",
-        "note": "The system measured four vital signs from drone imagery via video PPG, thermal imaging and neural networks, generated triage decision support, and transmitted casualty location, vitals and triage category to response teams and dispatch"
-      },
-      {
-        "id": "42894483",
-        "pmid": "42894483",
-        "doi": "10.1111/dar.70261",
-        "title": "Australian alcohol harms keep rising",
-        "journal": "Drug and Alcohol Review",
-        "note": "Survey and wastewater consumption measures declined from 2010 while rates of most alcohol-related harms, including ambulance attendances, increased substantially"
-      },
-      {
-        "id": "10.1177/27536386261501047",
-        "pmid": "",
-        "doi": "10.1177/27536386261501047",
-        "title": "Interprofessional simulation shapes student identity",
-        "journal": "Paramedicine",
-        "note": "Two themes emerged — Negotiating Professional Authority and Preparing for Collaborative Practice — with students reporting the simulation reshaped how they enacted the paramedic role, particularly around advocacy, handover and assertive communication"
+        "doi": "10.1186/s12909-026-10646-4",
+        "title": "Joint training lifts behavioural emergency confidence",
+        "journal": "BMC Medical Education",
+        "note": "Self-efficacy rose from 3.16 to 3.54 (mean difference 0.39, 95% CI 0.34–0.44, dz 0.76) and cognition from 3.81 to 3.95; behavioural-emergency stigma rose slightly and substance-use stigma was unchanged"
       }
     ]
   },
   "dailyUpdates": [
+    {
+      "date": "2026-10-21",
+      "papers": [
+        {
+          "id": "42896864",
+          "title": "Prehospital Pediatric Ventilation Quality Following Use of a Feedback Device: A Randomized Study",
+          "journal": "Pediatrics",
+          "date": "2026-10-21",
+          "pmid": "42896864",
+          "doi": "10.1542/peds.2026-077291",
+          "summary": "Randomised crossover simulation study with 123 EMS clinicians testing a ventilation feedback device on a paediatric manikin — guideline-adherent tidal volumes jumped from 16.2% to 87% of breaths with feedback, and rate adherence from 65% to 88.6%.",
+          "relevance": "🟢 High — Bag-mask ventilation of children is core practice on every Australian ambulance and the age-based guideline targets are the same ones used here — the only real catch is that it was done on a manikin rather than patients.",
+          "pubDate": "2026-10-20",
+          "topic": "Paediatrics",
+          "studyType": "Simulation",
+          "design": "Randomised crossover simulation study",
+          "n": "123 EMS clinicians across 5 agencies",
+          "finding": "Guideline-recommended tidal volume in 87% of breaths with feedback vs 16.2% without; rate adherence 88.6% vs 65%; mask leak <30% in 88.4% vs 80%",
+          "caveat": "Manikin simulation of a 3-year-old at 5 US agencies — no patient outcomes, and real paediatric airways are less forgiving",
+          "bottomLine": "Hypothesis-generating",
+          "shortTitle": "Feedback device lifts paediatric ventilation quality",
+          "learningGoal": "Refine my paediatric bag-mask ventilation technique to deliver guideline-consistent tidal volumes and rates in prehospital care."
+        },
+        {
+          "id": "42897715",
+          "title": "Traumatic Brain Injury in First Responders: From Hidden Burden to Occupational Health Action",
+          "journal": "The Journal of Head Trauma Rehabilitation",
+          "date": "2026-10-21",
+          "pmid": "42897715",
+          "doi": "10.1097/HTR.0000000000001227",
+          "summary": "Introduction to a themed issue on TBI in first responders, finding a substantial but underrecognised burden with no consistent pathways for recognition, rehabilitation or return to duty, and presenting a 28-recommendation multidisciplinary consensus statement.",
+          "relevance": "🟡 Medium — Return-to-duty and occupational health structures differ across Australian services, but the underrecognition of frontline TBI and its overlap with mental health is just as live a gap here.",
+          "pubDate": "2026-10-20",
+          "topic": "Workforce & wellbeing",
+          "studyType": "Guideline / statement",
+          "design": "Consensus statement / thematic review",
+          "n": "28 consensus recommendations across a multidisciplinary group",
+          "finding": "Substantial TBI burden in law enforcement, fire and EMS with persistent gaps in diagnosis, rehabilitation and duty-readiness; 28 recommendations spanning recognition, early assessment, return to duty and organisational policy",
+          "caveat": "Narrative synthesis of a themed issue — the authors concede first responder-specific evidence remains limited",
+          "bottomLine": "Context only",
+          "shortTitle": "TBI in first responders needs occupational pathways",
+          "learningGoal": "Understand how occupational traumatic brain injury in paramedics affects recognition, return to duty and organisational support."
+        },
+        {
+          "id": "10.1186/s12909-026-10646-4",
+          "title": "Interprofessional continuing education for prehospital behavioral emergency response: a city-wide pre-post study in Taiwan",
+          "journal": "BMC Medical Education",
+          "date": "2026-10-21",
+          "pmid": "",
+          "doi": "10.1186/s12909-026-10646-4",
+          "summary": "City-wide single-group pre-post evaluation of a 4-hour interprofessional behavioural-emergency course in Taiwan — self-efficacy rose from 3.16 to 3.54 (dz 0.76) and cognition improved in the 395 paired attendees, but stigma scores did not improve.",
+          "relevance": "🟡 Medium — Training paramedics alongside police, fire and mental health clinicians speaks directly to Australian co-response and joint-training debates, though this ran in a different EMS system with no control group.",
+          "pubDate": "2026-10-19",
+          "topic": "Education & training",
+          "studyType": "Cohort",
+          "design": "Single-group pre-post study",
+          "n": "750 attendees, 395 in the paired analysis",
+          "finding": "Self-efficacy rose from 3.16 to 3.54 (mean difference 0.39, 95% CI 0.34–0.44, dz 0.76) and cognition from 3.81 to 3.95; behavioural-emergency stigma rose slightly and substance-use stigma was unchanged",
+          "caveat": "Uncontrolled single-group design with anonymous demographic linkage and immediate self-reported outcomes only",
+          "bottomLine": "Context only",
+          "shortTitle": "Joint training lifts behavioural emergency confidence",
+          "learningGoal": "Strengthen my interprofessional collaboration when managing behavioural emergencies alongside mental health clinicians."
+        }
+      ]
+    },
     {
       "date": "2026-10-20",
       "papers": [
@@ -1144,6 +1201,61 @@
           "bottomLine": "Context only",
           "shortTitle": "Interprofessional simulation shapes student identity",
           "learningGoal": "Understand how interprofessional learning shapes my role identity, advocacy and assertiveness during handover and collaborative practice."
+        },
+        {
+          "id": "10.1007/s40615-026-03238-x",
+          "title": "Race, Gender, and Survival: a Scoping Review of Disparities in ICU Post-Resuscitation Care and Neurological Outcomes Following Out-of-Hospital Cardiac Arrest",
+          "journal": "Journal of Racial and Ethnic Health Disparities",
+          "date": "2026-10-20",
+          "pmid": "",
+          "doi": "10.1007/s40615-026-03238-x",
+          "summary": "Scoping review of 15 studies found Black women in the US received less bystander CPR, slower emergency response, less ICU intervention and more early DNR/withdrawal decisions after OHCA, with the disparities compounding across the chain of survival.",
+          "relevance": "🟡 Medium — The equity mechanics — bystander CPR gaps and treatment-withdrawal patterns — are a useful mirror for any service auditing its own outcomes data, though the US race-specific findings don't transfer directly to Australian population groups.",
+          "learningGoal": "Recognise how patient demographics may shape resuscitation care and withdrawal decisions in my own practice."
+        },
+        {
+          "id": "10.1136/tsaco-2026-002403",
+          "title": "Establishing a regional prehospital whole blood program in a border community: the Trauma Regional Advisory Council-V initiative in the Rio Grande Valley of Texas",
+          "journal": "Trauma Surgery &amp; Acute Care Open",
+          "date": "2026-10-20",
+          "pmid": "",
+          "doi": "10.1136/tsaco-2026-002403",
+          "summary": "Implementation report describing how four Texas border counties built a regional prehospital whole blood program across eight domains — governance, MOUs, rotation systems, provider credentialing and grant-funded equipment for rural agencies.",
+          "relevance": "🟡 Medium — Prehospital blood is carried by three of seven Australian services and not ACTAS, so this is a playbook for services considering it rather than practice guidance for crews who don't carry blood.",
+          "learningGoal": "Understand the governance and system factors needed to build regional prehospital blood programs across jurisdictions."
+        },
+        {
+          "id": "10.1186/s12245-026-01403-x",
+          "title": "EMS response time and patient outcomes in high-acuity emergency responses: a Danish matched cohort study",
+          "journal": "International Journal of Emergency Medicine",
+          "date": "2026-10-20",
+          "pmid": "",
+          "doi": "10.1186/s12245-026-01403-x",
+          "summary": "Danish matched cohort of 171,708 highest-priority (A-level) responses in Region Zealand tested whether EMS response times affect outcomes — mortality did not rise with longer response times, and the longest-quartile group had lower 30-day (OR 0.87) and 2-day (OR 0.82) mortality than the shortest quartiles.",
+          "relevance": "🟡 Medium — Response-time policy is core business for every Australian service, but this is a Danish single-region registry with matching that can't remove case-mix confounding — and the counterintuitive direction screams residual confounding, so treat it as debate fuel, not a target change.",
+          "learningGoal": "Understand how response time intervals relate to patient outcomes in high-acuity cases to inform my triage and dispatch judgement."
+        },
+        {
+          "id": "10.1136/tsaco-2026-002508",
+          "title": "Challenges of turning prehospital prediction of trauma-induced coagulopathy into early administration of tranexamic acid",
+          "journal": "Trauma Surgery &amp; Acute Care Open",
+          "date": "2026-10-20",
+          "pmid": "",
+          "doi": "10.1136/tsaco-2026-002508",
+          "summary": "Editorial using a prehospital machine-learning risk model for trauma-induced coagulopathy found medium- and higher-risk patients still frequently miss tranexamic acid within the 1-hour window, arguing better risk stratification should close the evidence-to-practice gap.",
+          "relevance": "🟡 Medium — The TXA-in-trauma message travels, but with a twist for Australia: six of seven harvested services carry TXA and ACTAS doesn't, so for local crews this is recognition-and-destination thinking rather than a drug decision — and it's an editorial, not new data.",
+          "learningGoal": "Strengthen my judgement on identifying trauma patients who benefit from early tranexamic acid before arrival at hospital."
+        },
+        {
+          "id": "10.5811/westjem.20766",
+          "title": "Emergency Department Operational Measures Associated with EMS Redirection Activation and Duration",
+          "journal": "Western Journal of Emergency Medicine",
+          "date": "2026-10-20",
+          "pmid": "",
+          "doi": "10.5811/westjem.20766",
+          "summary": "Single-centre New York study over 392 days found EMS ambulance redirection activated on 63.8% of days, with ED visit volume associated with activation and door-to-room time associated with both activation and cumulative duration — but boarding and admissions were not.",
+          "relevance": "🟡 Medium — Hospital redirect is a live access issue for Australian crews, though US central redirection mechanics differ from local hospital-bypass arrangements.",
+          "learningGoal": "Understand how emergency department crowding measures relate to ambulance redirection decisions and my handover practice."
         }
       ]
     },
@@ -10070,93 +10182,84 @@
     }
   ],
   "weeklyTldr": {
-    "dateRange": "6–13 Oct 2026",
-    "summary": "Ice-water and cold-water immersion were the fastest cooling methods for drug-induced hyperthermia (~0.16–0.17 °C/min), clearly superior to passive cooling — directly actionable prehospital\nDanish registry: longer time-to-ROSC meant more anoxic brain damage, but among 30-day survivors, 5-year survival and return to work didn’t differ — a long resuscitation doesn’t preclude a good recovery\nPrehospital TXA in trauma patients with fibrinolytic shutdown was associated with about a third the risk of death (HR 0.32) — hypothesis-generating subgroup analysis\nPrehospital olanzapine for methamphetamine intoxication got patients transported and seen by a doctor more often — olanzapine is carried by all seven Australian ambulance services\nVictorian registry data: STEMI was confirmed in only 60% of paramedic-suspected STEMI presentations",
+    "dateRange": "14 – 20 Oct 2026",
+    "summary": "EMS response times and mortality: 171,708 highest-priority Danish responses showed no mortality increase with longer response times — the longest-quartile group actually had lower 30-day mortality (OR 0.87)\nEarly bystander CPR timing matters more than headline rates: in 56,082 Japanese witnessed OHCAs, CPR started at 0–3 minutes carried 3.3 times the odds of good neurological outcome versus >10 minutes\nMedical-alert (PERS) activations don't need lights and sirens: non-emergency dispatch cut response-phase L&S hours by 86%, with only 0.2% of calls needing an upgrade\nDispatcher CPR still running at ambulance arrival marked shockable-OHCA survivors (30-day survival 54.6% vs 7.1% crew-initiated) — heavily confounded, but a loud endorsement of call-taker coaching\nA prehospital ML risk model for trauma coagulopathy flagged that medium/high-risk patients still miss the 1-hour TXA window — six of seven Australian services carry TXA; ACTAS doesn't",
     "highlights": [
       {
-        "text": "Ice-water and cold-water immersion were the fastest cooling methods for drug-induced hyperthermia (~0.16–0.17 °C/min), clearly superior to passive cooling — directly actionable prehospital",
-        "id": "42841411"
+        "text": "EMS response times and mortality: 171,708 highest-priority Danish responses showed no mortality increase with longer response times — the longest-quartile group actually had lower 30-day mortality (OR 0.87)",
+        "id": "10.1186/s12245-026-01403-x"
       },
       {
-        "text": "Danish registry: longer time-to-ROSC meant more anoxic brain damage, but among 30-day survivors, 5-year survival and return to work didn’t differ — a long resuscitation doesn’t preclude a good recovery",
-        "id": "42838497"
+        "text": "Early bystander CPR timing matters more than headline rates: in 56,082 Japanese witnessed OHCAs, CPR started at 0–3 minutes carried 3.3 times the odds of good neurological outcome versus >10 minutes",
+        "id": "10.1016/j.resplu.2026.101531"
       },
       {
-        "text": "Prehospital TXA in trauma patients with fibrinolytic shutdown was associated with about a third the risk of death (HR 0.32) — hypothesis-generating subgroup analysis",
-        "id": "42853261"
+        "text": "Medical-alert (PERS) activations don't need lights and sirens: non-emergency dispatch cut response-phase L&S hours by 86%, with only 0.2% of calls needing an upgrade",
+        "id": "10.1080/10903127.2026.2751025"
       },
       {
-        "text": "Prehospital olanzapine for methamphetamine intoxication got patients transported and seen by a doctor more often — olanzapine is carried by all seven Australian ambulance services",
-        "id": "10.1136/bmjopen-2026-122263"
+        "text": "Dispatcher CPR still running at ambulance arrival marked shockable-OHCA survivors (30-day survival 54.6% vs 7.1% crew-initiated) — heavily confounded, but a loud endorsement of call-taker coaching",
+        "id": "42867902"
       },
       {
-        "text": "Victorian registry data: STEMI was confirmed in only 60% of paramedic-suspected STEMI presentations",
-        "id": "42841835"
+        "text": "A prehospital ML risk model for trauma coagulopathy flagged that medium/high-risk patients still miss the 1-hour TXA window — six of seven Australian services carry TXA; ACTAS doesn't",
+        "id": "10.1136/tsaco-2026-002508"
       }
     ],
     "topPicks": [
       {
-        "id": "42841411",
-        "title": "Comparison of cooling methods for drug-induced hyperthermia in a pre-hospital and emergency department setting: a systematic review",
-        "authors": "van Dijken GD, Muradin I, den Haan C, et al.",
-        "journal": "Clinical Toxicology",
-        "summary": "A systematic review of 71 studies (1,932 patients) comparing cooling methods for drug-induced hyperthermia found ice-water and cold-water immersion fastest at ~0.16–0.17 °C/min and clearly superior to passive cooling.",
-        "relevance": "🟢 High transferability — stimulant toxicity and heat illness are everyday presentations across Australia, and aggressive active cooling is achievable prehospital",
-        "pmid": "42841411",
-        "doi": "10.1080/15563650.2026.2738599",
-        "featuredReason": "The most immediately actionable paper of the week: when a hyperthermic stimulant patient needs cooling now, immersion wins — roughly 0.16–0.17 °C/min, clearly ahead of every passive method.",
-        "pubDate": "2026-10-07",
-        "topic": "Toxicology",
-        "studyType": "Systematic review",
-        "design": "Systematic review with meta-analysis (GRADE)",
-        "n": "71 studies, 1,932 patients, 12 cooling modalities",
-        "finding": "Ice-water immersion cooled at 0.169 ± 0.027 °C/min and cold-water immersion at 0.162 ± 0.037 °C/min — the fastest modalities; ice-water-soaked sheets/towels 0.121 ± 0.030 °C/min; meta-analysis confirmed immersion beats passive cooling",
-        "caveat": "Many included studies cover exercise-induced rather than drug-induced hyperthermia, and practicality varies by setting",
-        "bottomLine": "Supports current practice",
-        "shortTitle": "Ice-water immersion wins for drug hyperthermia",
-        "learningGoal": "Weigh the practicality of immersion cooling for drug-induced hyperthermia in my prehospital practice."
+        "id": "10.1080/10903127.2026.2751025",
+        "title": "Decreasing response phase lights and siren use through modification of dispatch priority response for 9-1-1 responses to personal emergency response system activations: an interventional study",
+        "authors": "Boland LL, Jin D, Duren JL, et al.",
+        "journal": "Prehospital Emergency Care",
+        "summary": "Before-after study re-dispatching medical-alert (PERS) activations to non-lights-and-siren response cut L&S responses from 98% to 12% of calls and response-phase L&S hours by 86%, with only 0.2% of calls needing an upgrade to L&S transport.",
+        "relevance": "🟢 High transferability — PERS/fall-alarm activations are a universal low-acuity call type and response-mode policy is a direct operational lever for any Australian dispatch centre.",
+        "pmid": "",
+        "doi": "10.1080/10903127.2026.2751025",
+        "featuredReason": "The most actionable result of the week: an 86% cut in lights-and-siren hours for medical-alert calls with essentially no observed downside — a policy lever most services could pull tomorrow.",
+        "pubDate": "2026-10-16",
+        "topic": "Operations & systems",
+        "studyType": "Cohort",
+        "design": "Retrospective pre-post interventional analysis with interrupted time series",
+        "n": "3,262 PERS activations (1,634 pre, 1,628 post)",
+        "finding": "L&S response fell from 98% to 12% of calls and total response-phase L&S hours from 172 to 24 per month (−86%); 4 post-change calls (0.2%) needed L&S transport, only 1 requiring advanced interventions",
+        "caveat": "Single-agency before-after design with no concurrent control, and the very low acuity of these calls makes harm hard to detect.",
+        "bottomLine": "Hypothesis-generating",
+        "shortTitle": "Ditch lights and sirens for fall-alarm calls",
+        "learningGoal": "Understand how dispatch triage for personal emergency response activations can reduce lights and siren risk without compromising patient safety."
       },
       {
-        "id": "42838497",
-        "title": "Time to Return of Spontaneous Circulation and Long-Term Outcomes in Bystander-Witnessed Out-of-Hospital Cardiac Arrest Survivors",
-        "authors": "Oxwall A, Würtz Yazdanfard PD, Nørskov A, et al.",
-        "journal": "Resuscitation",
-        "summary": "A Danish national registry study of bystander-witnessed OHCA survivors found anoxic brain damage rose with time-to-ROSC, but long-term survival, return to work and nursing-home admission did not — prolonged resuscitation doesn't preclude good recovery.",
-        "relevance": "🟢 High transferability — speaks straight to the on-scene decision of how long to work an arrest, a question on every crew in the country",
-        "pmid": "42838497",
-        "doi": "10.1016/j.resuscitation.2026.111342",
-        "featuredReason": "Directly answers the question every crew asks: among survivors, working the arrest longer didn't cost long-term survival or independence — only anoxic brain injury risk rose with time.",
+        "id": "10.1016/j.resplu.2026.101531",
+        "title": "Decreased Early Bystander CPR Initiation Despite Stable Overall Rates: A Nationwide Time-to-Event Analysis During the COVID-19 Pandemic",
+        "authors": "Mutalov B, Shimamoto T, Okada Y, et al.",
+        "journal": "Resuscitation Plus",
+        "summary": "Time-to-event analysis of 56,082 layperson-witnessed non-traumatic OHCAs in the All-Japan Utstein registry found overall bystander CPR rates held stable through the pandemic while initiation within 10 minutes fell, and CPR started at 0–3 minutes carried aOR 3.27 for favourable neurological outcome at 1 month versus >10 minutes.",
+        "relevance": "🟢 High transferability — bystander CPR timing is the front of the chain of survival everywhere in Australia, and one of the world's largest OHCA registries makes the timing–outcome gradient about as travel-worthy as observational data gets.",
+        "pmid": "",
+        "doi": "10.1016/j.resplu.2026.101531",
+        "featuredReason": "Early minutes matter more than headline rates — exactly the message community CPR campaigns should carry, backed by 56,000+ witnessed arrests.",
         "pubDate": "2026-10",
         "topic": "Cardiac arrest",
         "studyType": "Registry",
-        "design": "National registry cohort, stratified by time-to-ROSC",
-        "n": "2,583 bystander-witnessed OHCA survivors (median age 65, median time-to-ROSC 14 min)",
-        "finding": "Anoxic brain damage increased with time-to-ROSC (0.3%, 1.8% and 3.2% for 0-10, 11-18 and >18 min; adjusted HR 9.98 for >18 min vs 0-10 min), but 5-year survival (~79%), return to work (~60%) and nursing-home admission did not differ between groups",
-        "caveat": "Only patients surviving at least 30 days were included — early deaths are excluded, so this says nothing about whether longer efforts save more people overall",
+        "design": "Retrospective nationwide registry cohort with time-to-event analysis",
+        "n": "56,082 layperson-witnessed non-traumatic OHCAs",
+        "finding": "Overall bystander CPR was stable (58.7% vs 58.6%), but early initiation fell during the pandemic (aHR 0.96); CPR started at 0–3 min carried aOR 3.27 for favourable neurological outcome at 1 month versus >10 min.",
+        "caveat": "Pandemic-era comparison; the timing–outcome link is associative and residual confounding (dispatch, case mix) can't be excluded.",
         "bottomLine": "Supports current practice",
-        "shortTitle": "Long resuscitations don't rule out good recovery",
-        "learningGoal": "Strengthen my judgement on when prolonged resuscitation efforts remain worthwhile before declaring futility in cardiac arrest."
+        "shortTitle": "Every minute counts: early bystander CPR",
+        "learningGoal": "Strengthen my dispatch coaching techniques so bystanders start CPR earlier in out-of-hospital cardiac arrest."
       },
       {
-        "id": "42853261",
-        "title": "Survival benefit of prehospital TXA in fibrinolytic shutdown: Insights from two prospective trauma trials",
-        "authors": "Kenny JE, Brito AM, Benchiba-Charron M, et al.",
-        "journal": "The Journal of Trauma and Acute Care Surgery",
-        "summary": "Pooled analysis of two prospective prehospital TXA trials found fibrinolytic shutdown carried 14.5% 30-day mortality versus 6.5% with physiological fibrinolysis, and shutdown patients randomised to TXA had about a third the risk of death (HR 0.32).",
-        "relevance": "🟢 High transferability — prehospital TXA for major trauma is carried by nearly all Australian ambulance services, so this speaks directly to current practice",
-        "pmid": "42853261",
-        "doi": "10.1097/TA.0000000000005092",
-        "featuredReason": "A mechanism-level hint at who benefits most from a drug nearly every Australian service carries: TXA showed about a third the mortality risk in fibrinolytic shutdown — hypothesis-generating, but worth watching.",
-        "pubDate": "2026-10-09",
-        "topic": "Trauma",
-        "studyType": "Other",
-        "design": "Pooled analysis of two prospective prehospital TXA RCTs",
-        "n": "1,249 trauma patients",
-        "finding": "30-day mortality 14.5% with fibrinolytic shutdown vs 6.5% physiological fibrinolysis; TXA in shutdown patients was associated with lower risk of death (HR 0.32, 95% CI 0.11–0.91); hyperfibrinolysis independently predicted death (HR 2.87, 95% CI 1.10–7.53)",
-        "caveat": "Subgroup analysis of pooled trials, with the TEG fibrinolysis phenotype measured on hospital arrival rather than prehospital",
-        "bottomLine": "Hypothesis-generating",
-        "shortTitle": "Prehospital TXA helps fibrinolytic shutdown",
-        "learningGoal": "Weigh the evidence for giving TXA prehospital to trauma patients with suspected fibrinolytic shutdown."
+        "id": "10.1186/s12245-026-01403-x",
+        "title": "EMS response time and patient outcomes in high-acuity emergency responses: a Danish matched cohort study",
+        "authors": "Bitzer K, Thiele-Nygaard AE, Blomberg SNF, et al.",
+        "journal": "International Journal of Emergency Medicine",
+        "summary": "Danish matched cohort of 171,708 highest-priority responses found mortality did not rise with longer response times, with the longest-quartile group having lower 30-day (OR 0.87) and 2-day (OR 0.82) mortality than the shortest quartiles.",
+        "relevance": "🟡 Medium transferability — response-time policy is core business for every Australian service, but the counterintuitive direction screams residual confounding, so treat it as debate fuel rather than a target change.",
+        "pmid": "",
+        "doi": "10.1186/s12245-026-01403-x",
+        "featuredReason": "This will get quoted in every response-time target debate — worth reading as much for the confounding as the headline.",
+        "learningGoal": "Understand how response time intervals relate to patient outcomes in high-acuity cases to inform my triage and dispatch judgement."
       }
     ]
   }

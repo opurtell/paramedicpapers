@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://paramedicpapers.com/</loc>
-    <lastmod>2026-10-20</lastmod>
+    <lastmod>2026-10-21</lastmod>
   </url>
   <url>
     <loc>https://paramedicpapers.com/about.html</loc>
@@ -11,12 +11,16 @@
     <loc>https://paramedicpapers.com/privacy.html</loc>
   </url>
   <url>
-    <loc>https://paramedicpapers.com/topics/</loc>
+    <loc>https://paramedicpapers.com/links.html</loc>
     <lastmod>2026-10-20</lastmod>
   </url>
   <url>
+    <loc>https://paramedicpapers.com/topics/</loc>
+    <lastmod>2026-10-21</lastmod>
+  </url>
+  <url>
     <loc>https://paramedicpapers.com/daily/</loc>
-    <lastmod>2026-10-20</lastmod>
+    <lastmod>2026-10-21</lastmod>
   </url>
   <url>
     <loc>https://paramedicpapers.com/episodes/</loc>
@@ -36,7 +40,7 @@
   </url>
   <url>
     <loc>https://paramedicpapers.com/topics/education-and-training/</loc>
-    <lastmod>2026-10-20</lastmod>
+    <lastmod>2026-10-21</lastmod>
   </url>
   <url>
     <loc>https://paramedicpapers.com/topics/mental-health-patients/</loc>
@@ -56,7 +60,7 @@
   </url>
   <url>
     <loc>https://paramedicpapers.com/topics/paediatrics/</loc>
-    <lastmod>2026-10-19</lastmod>
+    <lastmod>2026-10-21</lastmod>
   </url>
   <url>
     <loc>https://paramedicpapers.com/topics/pain-and-sedation/</loc>
@@ -84,7 +88,11 @@
   </url>
   <url>
     <loc>https://paramedicpapers.com/topics/workforce-and-wellbeing/</loc>
-    <lastmod>2026-10-17</lastmod>
+    <lastmod>2026-10-21</lastmod>
+  </url>
+  <url>
+    <loc>https://paramedicpapers.com/daily/2026-10-21/</loc>
+    <lastmod>2026-10-21</lastmod>
   </url>
   <url>
     <loc>https://paramedicpapers.com/daily/2026-10-20/</loc>
@@ -595,11 +603,43 @@
     <lastmod>2026-09-19</lastmod>
   </url>
   <url>
+    <loc>https://paramedicpapers.com/papers/doi-10-1186-s12909-026-10646-4/</loc>
+    <lastmod>2026-10-21</lastmod>
+  </url>
+  <url>
+    <loc>https://paramedicpapers.com/papers/42897715/</loc>
+    <lastmod>2026-10-21</lastmod>
+  </url>
+  <url>
+    <loc>https://paramedicpapers.com/papers/42896864/</loc>
+    <lastmod>2026-10-21</lastmod>
+  </url>
+  <url>
+    <loc>https://paramedicpapers.com/papers/doi-10-5811-westjem-20766/</loc>
+    <lastmod>2026-10-20</lastmod>
+  </url>
+  <url>
+    <loc>https://paramedicpapers.com/papers/doi-10-1186-s12245-026-01403-x/</loc>
+    <lastmod>2026-10-20</lastmod>
+  </url>
+  <url>
     <loc>https://paramedicpapers.com/papers/doi-10-1177-27536386261501047/</loc>
     <lastmod>2026-10-20</lastmod>
   </url>
   <url>
+    <loc>https://paramedicpapers.com/papers/doi-10-1136-tsaco-2026-002508/</loc>
+    <lastmod>2026-10-20</lastmod>
+  </url>
+  <url>
+    <loc>https://paramedicpapers.com/papers/doi-10-1136-tsaco-2026-002403/</loc>
+    <lastmod>2026-10-20</lastmod>
+  </url>
+  <url>
     <loc>https://paramedicpapers.com/papers/doi-10-1017-s1049023x26109121/</loc>
+    <lastmod>2026-10-20</lastmod>
+  </url>
+  <url>
+    <loc>https://paramedicpapers.com/papers/doi-10-1007-s40615-026-03238-x/</loc>
     <lastmod>2026-10-20</lastmod>
   </url>
   <url>
