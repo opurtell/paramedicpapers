@@ -1,28 +1,28 @@
 {
- "updated": "2026-10-15",
+ "updated": "2026-10-16",
  "latest": [
   {
-   "key": "42867902",
-   "title": "Dispatcher CPR and survival in shockable OHCA",
+   "key": "42874196",
+   "title": "Signs of life in traumatic OHCA",
    "topic": "Cardiac arrest",
-   "finding": "DA-CPR ongoing at arrival vs crew-initiated: ROSC 92.0% vs 12.4%, hospital admission with sustained circulation 90.8% vs 11.7%, 30-day survival 54.6% vs 7.1%, one-year survival 45.8% vs 6.2% (all P < 0.001)"
+   "finding": "4.8% survived beyond the ED; 25% where cardiac activity and spontaneous respiration were both present at scene, 8.5% with cardiac activity alone, and none among the 318 patients (68.8%) with no signs of life"
   },
   {
-   "key": "42867521",
-   "title": "EMS sepsis suspicion speeds up ED antibiotics",
-   "topic": "Sepsis & infection",
-   "finding": "EMS-suspected sepsis: 63.3% antibiotics within 1 h of ED arrival vs 19.2% (aOR 5.77, 95% CI 2.14–16.4); median time to antibiotics 32.0 vs 124.5 min"
+   "key": "42872019",
+   "title": "Prehospital pain assessment happens too rarely",
+   "topic": "Pain & sedation",
+   "finding": "Prehospital pain was assessed and documented in only 22.5–46.7% of patients; pain-management interventions were associated with reduced pain intensity but could not be pooled"
   },
   {
-   "key": "42866104",
-   "title": "Cardiogenic shock: prehospital recognition and routing",
-   "topic": "Cardiac (non-arrest)",
-   "finding": "Emphasises early prehospital/ED identification and immediate transfer to a cardiogenic shock centre; no new outcome data"
+   "key": "42869598",
+   "title": "One in five transports: brief stay, no intervention",
+   "topic": "Operations & systems",
+   "finding": "15.1% of patients were non-conveyed; among the 84.9% transported, 19.1% had a ≤6-hour stay with no documented procedure, medication or imaging, and short-term mortality was 0.4% versus 1.3% for stays over six hours"
   }
  ],
  "episode": {
-  "date": "2026-10-15",
-  "title": "Paramedic Papers Daily — 15 October 2026",
-  "page": "/episodes/2026-10-15/"
+  "date": "2026-10-16",
+  "title": "Paramedic Papers Daily — 16 October 2026",
+  "page": "/episodes/2026-10-16/"
  }
 }
