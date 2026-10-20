@@ -1,28 +1,34 @@
 {
- "updated": "2026-10-19",
+ "updated": "2026-10-20",
  "latest": [
   {
-   "key": "42886574",
-   "title": "Five scene findings flag kids needing blood",
-   "topic": "Paediatrics",
-   "finding": "All five predictors independently predicted blood within 4 h of ED arrival; low/intermediate/high CART tiers had 1.2%/6.1%/36.7% transfusion rates, and the high-risk tier captured 36.8% of all early transfusions"
+   "key": "42894810",
+   "title": "Predicting outcomes in PEA cardiac arrest",
+   "topic": "Cardiac arrest",
+   "finding": "Witnessed arrest (RR 1.65) and prehospital ROSC (RR 23.31) predicted favourable neurological outcome at 1 month; rhythm conversion predicted good outcome in cardiac PEA but poor outcome in non-cardiac PEA (RR 0.73); apparent harm from adrenaline and advanced airway management attenuated after time-dependent adjustment"
   },
   {
-   "key": "doi-10-1080-10903127-2026-2751025",
-   "title": "Decreasing response phase lights and siren use through modification",
+   "key": "doi-10-1017-s1049023x26109121",
+   "title": "Drone AI for mass-casualty triage",
    "topic": "Operations & systems",
-   "finding": "L&S response fell from 98% to 12% of calls and total response-phase L&S hours from 172 to 24 per month (−86%); 4 post-change calls (0.2%) needed L&S transport, only 1 requiring advanced interventions"
+   "finding": "The system measured four vital signs from drone imagery via video PPG, thermal imaging and neural networks, generated triage decision support, and transmitted casualty location, vitals and triage category to response teams and dispatch"
   },
   {
-   "key": "42892872",
-   "title": "Why patients decline hypoglycaemia call-back programs",
+   "key": "42894483",
+   "title": "Australian alcohol harms keep rising",
    "topic": "Operations & systems",
-   "finding": "Non-participation reasons: time constraints 56%, perceived lack of benefit 25%, privacy concerns or discomfort with home visits 25%"
+   "finding": "Survey and wastewater consumption measures declined from 2010 while rates of most alcohol-related harms, including ambulance attendances, increased substantially"
+  },
+  {
+   "key": "doi-10-1177-27536386261501047",
+   "title": "Interprofessional simulation shapes student identity",
+   "topic": "Education & training",
+   "finding": "Two themes emerged — Negotiating Professional Authority and Preparing for Collaborative Practice — with students reporting the simulation reshaped how they enacted the paramedic role, particularly around advocacy, handover and assertive communication"
   }
  ],
  "episode": {
-  "date": "2026-10-19",
-  "title": "Paramedic Papers Daily — 19 October 2026",
-  "page": "/episodes/2026-10-19/"
+  "date": "2026-10-20",
+  "title": "Paramedic Papers Daily — 20 October 2026",
+  "page": "/episodes/2026-10-20/"
  }
 }
