@@ -1,34 +1,16 @@
 {
- "updated": "2026-10-17",
+ "updated": "2026-10-18",
  "latest": [
   {
-   "key": "42879151",
-   "title": "POC GFAP for brain haemorrhage in coma",
-   "topic": "Stroke & neuro",
-   "finding": "POC GFAP detected ICH with 97.0% sensitivity (95% CI 84.2–99.9%) and AUC 0.94; ICH was present in 51% of patients and 30-day survival was 46%."
-  },
-  {
-   "key": "doi-10-1016-j-resplu-2026-101531",
-   "title": "Every minute counts: early bystander CPR",
-   "topic": "Cardiac arrest",
-   "finding": "Overall bystander CPR was stable (58.7% vs 58.6%), but early initiation fell during the pandemic (aHR 0.96); CPR started at 0–3 min carried aOR 3.27 for favourable neurological outcome at 1 month versus >10 min."
-  },
-  {
-   "key": "42876952",
-   "title": "Commotio cordis outcomes hinge on fast AED",
-   "topic": "Cardiac arrest",
-   "finding": "Among 15 commotio cordis cases, AED pads were applied in 93%, shocks in 87%, and 80% achieved favourable neurological outcome; among the other 15 external-cause cases, shocks were rare (7%) and just 7% had favourable outcomes."
-  },
-  {
-   "key": "42882053",
-   "title": "Prehospital qSOFA adds a little prognostic signal",
-   "topic": "Sepsis & infection",
-   "finding": "Within ED triage strata, a prehospital qSOFA ≥2 roughly doubled the odds of 30-day death (aOR 2.06 triage-negative, 1.84 triage-positive), but added only 0.007 AUC beyond arrival vitals and labs."
+   "key": "doi-10-1186-s13049-026-01713-2",
+   "title": "Airway strategy and survival in Polish HEMS",
+   "topic": "Airway & ventilation",
+   "finding": "HEMS-performed intubation was the most common strategy (49.8%); sequential supraglottic-to-intubation did not differ significantly from HEMS-performed intubation in non-traumatic cardiac arrest; 32.9% were not alive at hospital handover"
   }
  ],
  "episode": {
-  "date": "2026-10-17",
-  "title": "Paramedic Papers Daily — 17 October 2026",
-  "page": "/episodes/2026-10-17/"
+  "date": "2026-10-18",
+  "title": "Paramedic Papers Daily — 18 October 2026",
+  "page": "/episodes/2026-10-18/"
  }
 }
