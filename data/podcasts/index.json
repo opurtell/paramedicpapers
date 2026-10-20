@@ -12,6 +12,18 @@
   "updated": "2026-10-19"
  },
  {
+  "id": "prehospital-care-podcast",
+  "name": "Pre-Hospital Care Podcast",
+  "publisher": "Eoin Walker",
+  "focus": "Prehospital clinical topics and recent evidence",
+  "region": "Ireland",
+  "site": "https://podcasters.spotify.com/pod/show/phcp",
+  "art": "data/podcasts/art/prehospital-care-podcast.jpg",
+  "episodes": 394,
+  "latest": "2026-10-19",
+  "updated": "2026-10-20"
+ },
+ {
   "id": "core-em",
   "name": "Core EM",
   "publisher": "Core EM",
@@ -22,6 +34,18 @@
   "episodes": 233,
   "latest": "2026-10-19",
   "updated": "2026-10-19"
+ },
+ {
+  "id": "emcrit",
+  "name": "EMCrit",
+  "publisher": "Dr Scott Weingart",
+  "focus": "Resuscitation and emergency critical care",
+  "region": "US",
+  "site": "https://emcrit.org",
+  "art": "data/podcasts/art/emcrit.jpg",
+  "episodes": 161,
+  "latest": "2026-10-18",
+  "updated": "2026-10-20"
  },
  {
   "id": "st-emlyns",
@@ -45,18 +69,6 @@
   "art": "data/podcasts/art/sgem.jpg",
   "episodes": 109,
   "latest": "2026-10-17",
-  "updated": "2026-10-18"
- },
- {
-  "id": "prehospital-care-podcast",
-  "name": "Pre-Hospital Care Podcast",
-  "publisher": "Eoin Walker",
-  "focus": "Prehospital clinical topics and recent evidence",
-  "region": "Ireland",
-  "site": "https://podcasters.spotify.com/pod/show/phcp",
-  "art": "data/podcasts/art/prehospital-care-podcast.jpg",
-  "episodes": 393,
-  "latest": "2026-10-16",
   "updated": "2026-10-18"
  },
  {
@@ -105,18 +117,6 @@
   "art": "data/podcasts/art/sydney-hems.jpg",
   "episodes": 32,
   "latest": "2026-10-12",
-  "updated": "2026-10-12"
- },
- {
-  "id": "emcrit",
-  "name": "EMCrit",
-  "publisher": "Dr Scott Weingart",
-  "focus": "Resuscitation and emergency critical care",
-  "region": "US",
-  "site": "https://emcrit.org",
-  "art": "data/podcasts/art/emcrit.jpg",
-  "episodes": 160,
-  "latest": "2026-10-11",
   "updated": "2026-10-12"
  },
  {
