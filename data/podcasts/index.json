@@ -1,5 +1,41 @@
 [
  {
+  "id": "sydney-hems",
+  "name": "Greater Sydney Area HEMS",
+  "publisher": "NSW Ambulance Aeromedical",
+  "focus": "Retrieval and prehospital medicine case debriefs",
+  "region": "AU",
+  "site": "https://samuelbulford.podbean.com",
+  "art": "data/podcasts/art/sydney-hems.jpg",
+  "episodes": 33,
+  "latest": "2026-10-21",
+  "updated": "2026-10-21"
+ },
+ {
+  "id": "out-local",
+  "name": "Out Local",
+  "publisher": "Aaron McNeill & Michael Wann",
+  "focus": "Paramedic practitioner cases, workup and extended-care decisions",
+  "region": "AU",
+  "site": "https://podcasters.spotify.com/pod/show/takeaim830",
+  "art": "data/podcasts/art/out-local.jpg",
+  "episodes": 4,
+  "latest": "2026-10-20",
+  "updated": "2026-10-21"
+ },
+ {
+  "id": "em-cases",
+  "name": "Emergency Medicine Cases",
+  "publisher": "Dr Anton Helman",
+  "focus": "Case-based emergency medicine with expert panels",
+  "region": "Canada",
+  "site": "https://emergencymedicinecases.com",
+  "art": "data/podcasts/art/em-cases.jpg",
+  "episodes": 405,
+  "latest": "2026-10-20",
+  "updated": "2026-10-21"
+ },
+ {
   "id": "resus-room",
   "name": "The Resus Room",
   "publisher": "Simon, Rob & James",
@@ -108,18 +144,6 @@
   "updated": "2026-10-15"
  },
  {
-  "id": "sydney-hems",
-  "name": "Greater Sydney Area HEMS",
-  "publisher": "NSW Ambulance Aeromedical",
-  "focus": "Retrieval and prehospital medicine case debriefs",
-  "region": "AU",
-  "site": "https://samuelbulford.podbean.com",
-  "art": "data/podcasts/art/sydney-hems.jpg",
-  "episodes": 32,
-  "latest": "2026-10-12",
-  "updated": "2026-10-12"
- },
- {
   "id": "av-clinical-conversations",
   "name": "Clinical Conversations",
   "publisher": "Ambulance Victoria Office of the Medical Director",
@@ -129,18 +153,6 @@
   "art": "data/podcasts/art/av-clinical-conversations.jpg",
   "episodes": 50,
   "latest": "2026-10-07",
-  "updated": "2026-10-08"
- },
- {
-  "id": "out-local",
-  "name": "Out Local",
-  "publisher": "Aaron McNeill & Michael Wann",
-  "focus": "Paramedic practitioner cases, workup and extended-care decisions",
-  "region": "AU",
-  "site": "https://podcasters.spotify.com/pod/show/takeaim830",
-  "art": "data/podcasts/art/out-local.jpg",
-  "episodes": 3,
-  "latest": "2026-10-05",
   "updated": "2026-10-08"
  },
  {
@@ -177,18 +189,6 @@
   "art": "data/podcasts/art/acp.jpg",
   "episodes": 79,
   "latest": "2026-10-01",
-  "updated": "2026-10-08"
- },
- {
-  "id": "em-cases",
-  "name": "Emergency Medicine Cases",
-  "publisher": "Dr Anton Helman",
-  "focus": "Case-based emergency medicine with expert panels",
-  "region": "Canada",
-  "site": "https://emergencymedicinecases.com",
-  "art": "data/podcasts/art/em-cases.jpg",
-  "episodes": 404,
-  "latest": "2026-09-29",
   "updated": "2026-10-08"
  },
  {
