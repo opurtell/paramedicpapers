@@ -1,34 +1,28 @@
 {
- "updated": "2026-10-20",
+ "updated": "2026-10-21",
  "latest": [
   {
-   "key": "42894810",
-   "title": "Predicting outcomes in PEA cardiac arrest",
-   "topic": "Cardiac arrest",
-   "finding": "Witnessed arrest (RR 1.65) and prehospital ROSC (RR 23.31) predicted favourable neurological outcome at 1 month; rhythm conversion predicted good outcome in cardiac PEA but poor outcome in non-cardiac PEA (RR 0.73); apparent harm from adrenaline and advanced airway management attenuated after time-dependent adjustment"
+   "key": "42896864",
+   "title": "Feedback device lifts paediatric ventilation quality",
+   "topic": "Paediatrics",
+   "finding": "Guideline-recommended tidal volume in 87% of breaths with feedback vs 16.2% without; rate adherence 88.6% vs 65%; mask leak <30% in 88.4% vs 80%"
   },
   {
-   "key": "doi-10-1017-s1049023x26109121",
-   "title": "Drone AI for mass-casualty triage",
-   "topic": "Operations & systems",
-   "finding": "The system measured four vital signs from drone imagery via video PPG, thermal imaging and neural networks, generated triage decision support, and transmitted casualty location, vitals and triage category to response teams and dispatch"
+   "key": "42897715",
+   "title": "TBI in first responders needs occupational pathways",
+   "topic": "Workforce & wellbeing",
+   "finding": "Substantial TBI burden in law enforcement, fire and EMS with persistent gaps in diagnosis, rehabilitation and duty-readiness; 28 recommendations spanning recognition, early assessment, return to duty and organisational policy"
   },
   {
-   "key": "42894483",
-   "title": "Australian alcohol harms keep rising",
-   "topic": "Operations & systems",
-   "finding": "Survey and wastewater consumption measures declined from 2010 while rates of most alcohol-related harms, including ambulance attendances, increased substantially"
-  },
-  {
-   "key": "doi-10-1177-27536386261501047",
-   "title": "Interprofessional simulation shapes student identity",
+   "key": "doi-10-1186-s12909-026-10646-4",
+   "title": "Joint training lifts behavioural emergency confidence",
    "topic": "Education & training",
-   "finding": "Two themes emerged — Negotiating Professional Authority and Preparing for Collaborative Practice — with students reporting the simulation reshaped how they enacted the paramedic role, particularly around advocacy, handover and assertive communication"
+   "finding": "Self-efficacy rose from 3.16 to 3.54 (mean difference 0.39, 95% CI 0.34–0.44, dz 0.76) and cognition from 3.81 to 3.95; behavioural-emergency stigma rose slightly and substance-use stigma was unchanged"
   }
  ],
  "episode": {
-  "date": "2026-10-20",
-  "title": "Paramedic Papers Daily — 20 October 2026",
-  "page": "/episodes/2026-10-20/"
+  "date": "2026-10-21",
+  "title": "Paramedic Papers Daily — 21 October 2026",
+  "page": "/episodes/2026-10-21/"
  }
 }
