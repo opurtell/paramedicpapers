@@ -708,7 +708,7 @@
     var out = '<header class="brief-head">' +
       '<p class="panel-kicker panel-kicker-accent">Paramedic Papers · PD brief</p>' +
       '<h2 class="brief-title">' + esc(b.span) + '</h2>' +
-      '<p class="brief-sub">' + b.papers.length + ' papers this period · next brief ' + esc(dayLabel(b.next)) + '</p>' +
+      '<p class="brief-sub">' + b.papers.length + ' papers this period · next issue ' + esc(dayLabel(b.next)) + '</p>' +
       (s ? '<p class="brief-intro">' + esc(s.intro) + '</p>' : '') +
       '</header>';
 
@@ -759,7 +759,7 @@
       }).join('') + '</section>';
 
     out += '<a class="newsletter-banner" href="https://join.paramedicpapers.com">' +
-      '<span><b>Get the next one by email</b> — the PD brief lands every 8 days. Next: ' + esc(dayLabel(b.next)) + '.</span>' +
+      '<span><b>Get the next one by email</b> — the PD brief lands on your PD day, every 8 days. Pick your block when you sign up.</span>' +
       '<span class="newsletter-cta">Sign up ' + ico('arrow') + '</span></a>' +
       '<p class="brief-fine">Summaries are AI-assisted — check the paper before acting on it.</p>';
     $('brief-body').innerHTML = out;
