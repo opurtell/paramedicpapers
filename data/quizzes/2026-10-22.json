@@ -1,0 +1,120 @@
+{
+ "id": "2026-10-22",
+ "span": "15 – 22 Oct 2026",
+ "created": "2026-10-22T00:01:26Z",
+ "est_minutes": 10,
+ "questions": [
+  {
+   "paper_id": "10.1080/10903127.2026.2748380",
+   "short_title": "NAEMSP guidance: older adults after low-acuity falls",
+   "topic": "Older people",
+   "question": "The NAEMSP position statement says 'lift assist' calls involving older adults should be framed how?",
+   "options": [
+    "As routine encounters needing no assessment",
+    "As patient encounters warranting full assessment",
+    "As uniformly low-acuity minor traumas",
+    "As responses only worth tracking at dispatch"
+   ],
+   "answer": 1,
+   "explanation": "The statement recommends treating these calls as patient encounters warranting assessment for underlying medical causes, injuries and safety, not as minor events. It acknowledges a system-level bias toward underassessment, though the abstract-only caveat means detailed recommendations still can't be fully checked."
+  },
+  {
+   "paper_id": "42867902",
+   "short_title": "Dispatcher CPR and survival in shockable OHCA",
+   "topic": "Cardiac arrest",
+   "question": "The huge survival gap between dispatcher-assisted CPR ongoing at arrival and crew-initiated CPR (30-day survival 54.6% vs 7.1%) should be interpreted mainly as what?",
+   "options": [
+    "Evidence that crew-initiated CPR is harmful",
+    "A marker that bystanders had already started CPR early, not a like-for-like comparison",
+    "Proof that dispatcher instructions directly cause a near eight-fold survival benefit",
+    "Evidence that crews arrive too slowly in shockable arrests"
+   ],
+   "answer": 1,
+   "explanation": "DA-CPR still running when the crew arrives tells you the bystander started CPR early, which also selects for better-prognosis arrests. The authors flag massive confounding by indication, so this is an association, not a causal effect."
+  },
+  {
+   "paper_id": "42872019",
+   "short_title": "Prehospital pain assessment happens too rarely",
+   "topic": "Pain & sedation",
+   "question": "Across the studies in this systematic review, how often was pain assessed and documented in the prehospital setting?",
+   "options": [
+    "In 46.7% to 60% of patients",
+    "In 22.5% to 46.7% of patients",
+    "In more than 50% of patients, matching recommended standards",
+    "In up to 22.5% of patients, with some studies under 10%"
+   ],
+   "answer": 1,
+   "explanation": "The review found pain was assessed and documented in only 22.5% to 46.7% of patients, well below recommended standards. Keep in mind the eight studies were heterogeneous and could not be quantitatively pooled."
+  },
+  {
+   "paper_id": "10.1016/j.amj.2026.09.007",
+   "short_title": "Delays in NSW paediatric trauma retrieval",
+   "topic": "Paediatrics",
+   "question": "After stabilising the patient at the referring hospital, how often did the specialist paediatric retrieval team take more than 10 minutes to depart?",
+   "options": [
+    "In 55% of missions",
+    "In 80% of missions",
+    "In about half of missions",
+    "In 30% of missions"
+   ],
+   "answer": 1,
+   "explanation": "Teams took over 10 minutes to leave in 80% of missions, suggesting a consistent delay at the referring hospital once the patient was ready. The data are retrospective, from a single service, and include no patient outcomes, so the clinical impact of these delays is unknown."
+  },
+  {
+   "paper_id": "10.1016/j.resplu.2026.101531",
+   "short_title": "Every minute counts: early bystander CPR",
+   "topic": "Cardiac arrest",
+   "question": "A national registry analysis of bystander CPR during the pandemic found overall CPR rates stayed stable. What did the time-to-event analysis reveal that the headline rates missed?",
+   "options": [
+    "Bystander CPR rates rose sharply for witnessed arrests",
+    "Early initiation within 10 minutes fell modestly during the pandemic",
+    "CPR quality, not timing, worsened during the pandemic",
+    "Delay to CPR made no difference to neurological outcomes"
+   ],
+   "answer": 1,
+   "explanation": "Overall rates were nearly identical (58.7% vs 58.6%), but early starts slipped (aHR 0.96), and CPR begun at 0–3 minutes carried much better odds of favourable neurological outcome than starts after 10 minutes. The timing link is associative, so confounding like dispatch delays can't be ruled out."
+  },
+  {
+   "paper_id": "42882053",
+   "short_title": "Prehospital qSOFA adds a little prognostic signal",
+   "topic": "Sepsis & infection",
+   "question": "A prehospital qSOFA of 2 or more in a suspected infection patient was associated with worse 30-day mortality, but what did the study find about how much it added to what's already known at ED arrival?",
+   "options": [
+    "It was only useful in patients who screened negative at ED triage",
+    "It added almost nothing to a model using arrival vitals and labs",
+    "It predicted mortality as accurately as the arrival vitals and labs combined",
+    "It reclassified most patients into different triage categories"
+   ],
+   "answer": 1,
+   "explanation": "The prehospital qSOFA stayed associated with death even after adjusting for arrival data, but changed the AUC by only 0.007. It's hypothesis-generating: a single Turkish centre with 58% of eligible patients excluded means serious selection bias, so no change to disposition decisions."
+  },
+  {
+   "paper_id": "42881556",
+   "short_title": "Prehospital ACS risk stratification: the evidence",
+   "topic": "Cardiac (non-arrest)",
+   "question": "According to this review, which prehospital ACS risk stratification approach had the strongest evidence for safe field risk assessment?",
+   "options": [
+    "HEART-derived pathways combined with point-of-care troponin testing",
+    "AI-assisted ECG interpretation tools",
+    "Provider gestalt without any structured tool",
+    "Biomarker-free clinical decision rules used on their own"
+   ],
+   "answer": 0,
+   "explanation": "HEART-derived approaches with point-of-care troponin showed the strongest evidence for safe prehospital risk assessment and reduced healthcare use. AI ECG tools looked promising but haven't been prospectively validated for outcomes, and the review was narrative rather than systematic."
+  },
+  {
+   "paper_id": "42879234",
+   "short_title": "Burnout linked to suicidal risk in EMS",
+   "topic": "Workforce & wellbeing",
+   "question": "In this cross-sectional survey of EMS professionals, how were burnout, anxiety and depression related to suicidal risk?",
+   "options": [
+    "Each was linked to lower suicidal risk when social support was high",
+    "Higher scores on each of these tracked with higher suicidal risk",
+    "Only depression was linked to suicidal risk",
+    "Burnout was linked to risk, but anxiety and depression were not"
+   ],
+   "answer": 1,
+   "explanation": "Scores on all burnout domains and the anxiety and depression subscales each corresponded with higher suicidal risk, with elevated risk among gender-diverse respondents. Because the survey was cross-sectional and self-selected, these are associations only and can't show causation."
+  }
+ ]
+}
