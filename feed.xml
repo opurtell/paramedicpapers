@@ -25,6 +25,20 @@
     <itunes:explicit>false</itunes:explicit>
     <podcast:guid>09fa3693-e2ac-527c-9d1c-f68df149b888</podcast:guid>
     <item>
+      <title>Paramedic Papers Daily — 23 October 2026</title>
+      <link>https://paramedicpapers.com/episodes/2026-10-23/</link>
+      <description>4 papers: Infant carry slings rarely linked to OHCA; No unique GCS 8 threshold for intubation; Paediatric deterioration in the field poorly defined; Paediatric care coordinators linked to fewer EMS errors</description>
+      <content:encoded><![CDATA[<p>4 papers: Infant carry slings rarely linked to OHCA; No unique GCS 8 threshold for intubation; Paediatric deterioration in the field poorly defined; Paediatric care coordinators linked to fewer EMS errors</p><p>Papers in this episode:</p><ul><li><a href="https://doi.org/10.1016/j.resplu.2026.101536">Infant carry slings rarely linked to OHCA <em>(Resuscitation Plus)</em></a></li><li><a href="https://doi.org/10.1186/s13049-026-01715-0">No unique GCS 8 threshold for intubation <em>(Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine)</em></a></li><li><a href="https://doi.org/10.1177/27536386261496803">Paediatric deterioration in the field poorly defined <em>(Paramedicine)</em></a></li><li><a href="https://doi.org/10.1080/10903127.2026.2752064">Paediatric care coordinators linked to fewer EMS errors <em>(Prehospital Emergency Care)</em></a></li></ul><p><a href="https://paramedicpapers.com/episodes/2026-10-23/">Show notes and transcript</a></p>]]></content:encoded>
+      <pubDate>Fri, 23 Oct 2026 07:33:29 +1100</pubDate>
+      <guid isPermaLink="false">https://audio.paramedicpapers.com/ep-2026-10-23.mp3</guid>
+      <enclosure url="https://op3.dev/e/audio.paramedicpapers.com/ep-2026-10-23.mp3" length="1132940" type="audio/mpeg"/>
+      <itunes:duration>283</itunes:duration>
+      <itunes:summary>4 papers: Infant carry slings rarely linked to OHCA; No unique GCS 8 threshold for intubation; Paediatric deterioration in the field poorly defined; Paediatric care coordinators linked to fewer EMS errors</itunes:summary>
+      <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
+      <itunes:episodeType>full</itunes:episodeType>
+      <podcast:transcript url="https://audio.paramedicpapers.com/ep-2026-10-23.txt" type="text/plain" language="en-au"/>
+    </item>
+    <item>
       <title>Paramedic Papers Daily — 22 October 2026</title>
       <link>https://paramedicpapers.com/episodes/2026-10-22/</link>
       <description>4 papers: Dispatcher training + volunteer app lifts bystander CPR; Real-time feedback tidies BVM ventilation in arrest; Fatigue common a year after cardiac arrest; Keep pulse checks under 5 seconds</description>
@@ -101,8 +115,8 @@
       <content:encoded><![CDATA[<p>4 papers: POC GFAP for brain haemorrhage in coma; Every minute counts: early bystander CPR; Commotio cordis outcomes hinge on fast AED; Prehospital qSOFA adds a little prognostic signal</p><p>Papers in this episode:</p><ul><li><a href="https://doi.org/10.1001/jamanetworkopen.2026.39337">POC GFAP for brain haemorrhage in coma <em>(JAMA Network Open)</em></a></li><li><a href="https://doi.org/10.1016/j.resplu.2026.101531">Every minute counts: early bystander CPR <em>(Resuscitation Plus)</em></a></li><li><a href="https://doi.org/10.1002/ams2.70168">Commotio cordis outcomes hinge on fast AED <em>(Acute Medicine &amp; Surgery)</em></a></li><li><a href="https://doi.org/10.3390/jcm15197591">Prehospital qSOFA adds a little prognostic signal <em>(Journal of Clinical Medicine)</em></a></li></ul><p><a href="https://paramedicpapers.com/episodes/2026-10-17/">Show notes and transcript</a></p>]]></content:encoded>
       <pubDate>Sat, 17 Oct 2026 07:34:30 +1100</pubDate>
       <guid isPermaLink="false">https://audio.paramedicpapers.com/ep-2026-10-17.mp3</guid>
-      <enclosure url="https://op3.dev/e/audio.paramedicpapers.com/ep-2026-10-17.mp3" length="1419020" type="audio/mpeg"/>
-      <itunes:duration>354</itunes:duration>
+      <enclosure url="https://op3.dev/e/audio.paramedicpapers.com/ep-2026-10-17.mp3" length="1241229" type="audio/mpeg"/>
+      <itunes:duration>310</itunes:duration>
       <itunes:summary>4 papers: POC GFAP for brain haemorrhage in coma; Every minute counts: early bystander CPR; Commotio cordis outcomes hinge on fast AED; Prehospital qSOFA adds a little prognostic signal</itunes:summary>
       <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
       <itunes:episodeType>full</itunes:episodeType>
@@ -418,19 +432,6 @@
       <enclosure url="https://op3.dev/e/audio.paramedicpapers.com/ep-2026-09-24.mp3" length="865773" type="audio/mpeg"/>
       <itunes:duration>216</itunes:duration>
       <itunes:summary>3 papers: dispatcher-assisted CPR barriers halve survival; night drone AED deliveries match daytime; Ethiopia governance gaps leave care as transport</itunes:summary>
-      <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
-      <itunes:episodeType>full</itunes:episodeType>
-    </item>
-    <item>
-      <title>Paramedic Papers Daily — 22 September 2026</title>
-      <link>https://paramedicpapers.com/episodes/2026-09-22/</link>
-      <description>1 paper: prehospital antibiotics in sepsis — lower adjusted 28-day mortality (Thai cohort), ~8.5 min longer on scene</description>
-      <content:encoded><![CDATA[<p>1 paper: prehospital antibiotics in sepsis — lower adjusted 28-day mortality (Thai cohort), ~8.5 min longer on scene</p><p>Papers in this episode:</p><ul><li><a href="https://doi.org/10.1080/10903127.2026.2733964">Association Between Early Prehospital Administration Antibiotic and 28-Day Mortality in Sepsis <em>(Prehospital Emergency Care)</em></a></li><li><a href="https://doi.org/10.1016/j.resplu.2026.101486">Prehospital management and outcomes of traumatic cardiac arrest in older adults: a French nationwide registry study <em>(Resuscitation Plus)</em></a></li><li><a href="https://doi.org/10.1016/j.resplu.2026.101485">Association of a smartphone-based CPR assistance system with prehospital outcomes in out-of-hospital cardiac arrest: a pre–post observational study in Bangkok <em>(Resuscitation Plus)</em></a></li><li><a href="https://doi.org/10.1016/j.resplu.2026.101484">Differences in the rates of bystander cardiopulmonary resuscitation for out-of-hospital cardiac arrest resulting in favourable neurological outcomes according to the regional deprivation index <em>(Resuscitation Plus)</em></a></li><li><a href="https://doi.org/10.1016/j.resplu.2026.101483">In-hospital cardiac arrest in a resource-limited emergency department in Somalia: Outcomes and priorities for resuscitation system development <em>(Resuscitation Plus)</em></a></li><li><a href="https://doi.org/10.1080/10903127.2026.2733966">A Causal Model for Prehospital Blood Transfusion and Mortality in Traumatic Hemorrhagic Shock <em>(Prehospital Emergency Care)</em></a></li><li><a href="https://doi.org/10.1080/10903127.2026.2727591">Prehospital Whole Blood Transfusion During Medically Directed Rescue of an Entrapped Trauma Patient: A Case Report <em>(Prehospital Emergency Care)</em></a></li><li><a href="https://doi.org/10.1080/10903127.2026.2733969">Practice Patterns and Performance of Pediatric Air Medical Tracheal Intubation: A National Multisite Cohort Study <em>(Prehospital Emergency Care)</em></a></li><li><a href="https://doi.org/10.1111/1742-6723.70345">Efficacy and Safety of Ventilator Assisted Preoxygenation for Intubation in Two Australian Emergency Departments: A Retrospective Cohort Study <em>(Emergency Medicine Australasia)</em></a></li><li><a href="https://doi.org/10.1016/j.resplu.2026.101487">Quantification of blood-based neurovascular unit biomarkers: an analytical platform comparison study <em>(Resuscitation Plus)</em></a></li><li><a href="https://doi.org/10.1016/j.annemergmed.2026.04.009">SGLT-2 Use and Hypoglycemic Ketoacidosis <em>(Annals of Emergency Medicine)</em></a></li><li><a href="https://doi.org/10.1080/10903127.2026.2728128">Medical Management of Aortic Emergencies in Critical Care Transport <em>(Prehospital Emergency Care)</em></a></li><li><a href="https://doi.org/10.1080/10903127.2026.2728131">Management of Patients with Medetomidine Withdrawal During Interfacility Transfer <em>(Prehospital Emergency Care)</em></a></li><li><a href="https://doi.org/10.1111/1742-6723.70346">Intranasal Dexmedetomidine for Paediatric Procedural Sedation in the Emergency Department: A Single‐Centre Retrospective Observational Cohort Study <em>(Emergency Medicine Australasia)</em></a></li><li><a href="https://doi.org/10.1080/10903127.2026.2719958">Redesigning 9-1-1 Paramedic Pathways: Evaluation of the IMPACC Model of Care <em>(Prehospital Emergency Care)</em></a></li><li><a href="https://doi.org/10.1080/10903127.2026.2735429">Differences in EMS Calls, Delays, and Payer Types in U.S. Southern Border Counties and Non-Border Counties <em>(Prehospital Emergency Care)</em></a></li><li><a href="https://doi.org/10.1111/1742-6723.70343">Medicolegal Statements by Emergency Clinicians: ‘A How’ to Guide <em>(Emergency Medicine Australasia)</em></a></li><li><a href="https://doi.org/10.1111/1742-6723.70351">The Once‐Conventional 48‐h Elective Cardioversion Threshold for “Recent‐Onset” Atrial Fibrillation Is No Longer Recommended <em>(Emergency Medicine Australasia)</em></a></li></ul><p><a href="https://paramedicpapers.com/episodes/2026-09-22/">Show notes and transcript</a></p>]]></content:encoded>
-      <pubDate>Tue, 22 Sep 2026 07:32:45 +1000</pubDate>
-      <guid isPermaLink="false">https://opurtell.github.io/paramedicpapers/audio/ep-2026-09-22.mp3</guid>
-      <enclosure url="https://op3.dev/e/audio.paramedicpapers.com/ep-2026-09-22.mp3" length="376941" type="audio/mpeg"/>
-      <itunes:duration>94</itunes:duration>
-      <itunes:summary>1 paper: prehospital antibiotics in sepsis — lower adjusted 28-day mortality (Thai cohort), ~8.5 min longer on scene</itunes:summary>
       <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
       <itunes:episodeType>full</itunes:episodeType>
     </item>
