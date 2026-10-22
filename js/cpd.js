@@ -370,7 +370,7 @@
   function kicker(tab) {
     if (tab === 'quiz') {
       var q = qz.id && qz.quizzes[qz.id];
-      return q ? q.span : qz.id === 'all' ? 'Past quizzes' : 'Every 8 days';
+      return q ? q.span : qz.id === 'all' ? 'Past quizzes' : 'Every 4 days';
     }
     if (tab === 'account') return st.user ? 'Signed in with ' + (PROVIDER_NAMES[st.user.provider] || st.user.provider) : 'Not signed in';
     return 'Registration year ' + yearLabel(st.year);
@@ -2180,7 +2180,7 @@
     if (!qz.index) { root.innerHTML = loadingHTML(); return; }
     if (qz.id === 'all') { renderQuizList(root); return; }
     if (!qz.id) {
-      root.innerHTML = '<div class="empty-state">' + ico('quiz', 'empty-ico') + '<h2>No quiz yet</h2><p>A short quiz comes with each PD brief, every 8 days.</p></div>';
+      root.innerHTML = '<div class="empty-state">' + ico('quiz', 'empty-ico') + '<h2>No quiz yet</h2><p>A new short quiz comes with each PD brief issue, every 4 days.</p></div>';
       return;
     }
     if (qz.error) {
