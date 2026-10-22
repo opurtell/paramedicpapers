@@ -12,6 +12,30 @@
   "updated": "2026-10-21"
  },
  {
+  "id": "emcrit",
+  "name": "EMCrit",
+  "publisher": "Dr Scott Weingart",
+  "focus": "Resuscitation and emergency critical care",
+  "region": "US",
+  "site": "https://emcrit.org",
+  "art": "data/podcasts/art/emcrit.jpg",
+  "episodes": 162,
+  "latest": "2026-10-21",
+  "updated": "2026-10-22"
+ },
+ {
+  "id": "ems-20-20",
+  "name": "EMS 20/20",
+  "publisher": "Spencer Oliver & Christopher Pfingsten",
+  "focus": "Real calls from real responders and the lessons in them",
+  "region": "US",
+  "site": "https://longpausemedia.com/podcasts/ems-20-20",
+  "art": "data/podcasts/art/ems-20-20.jpg",
+  "episodes": 262,
+  "latest": "2026-10-21",
+  "updated": "2026-10-22"
+ },
+ {
   "id": "out-local",
   "name": "Out Local",
   "publisher": "Aaron McNeill & Michael Wann",
@@ -72,18 +96,6 @@
   "updated": "2026-10-19"
  },
  {
-  "id": "emcrit",
-  "name": "EMCrit",
-  "publisher": "Dr Scott Weingart",
-  "focus": "Resuscitation and emergency critical care",
-  "region": "US",
-  "site": "https://emcrit.org",
-  "art": "data/podcasts/art/emcrit.jpg",
-  "episodes": 161,
-  "latest": "2026-10-18",
-  "updated": "2026-10-20"
- },
- {
   "id": "st-emlyns",
   "name": "St Emlyn's",
   "publisher": "St Emlyn's",
@@ -118,18 +130,6 @@
   "episodes": 102,
   "latest": "2026-10-15",
   "updated": "2026-10-16"
- },
- {
-  "id": "ems-20-20",
-  "name": "EMS 20/20",
-  "publisher": "Spencer Oliver & Christopher Pfingsten",
-  "focus": "Real calls from real responders and the lessons in them",
-  "region": "US",
-  "site": "https://longpausemedia.com/podcasts/ems-20-20",
-  "art": "data/podcasts/art/ems-20-20.jpg",
-  "episodes": 261,
-  "latest": "2026-10-15",
-  "updated": "2026-10-19"
  },
  {
   "id": "pec-podcast",
