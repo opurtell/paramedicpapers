@@ -1,34 +1,34 @@
 {
- "updated": "2026-10-22",
+ "updated": "2026-10-23",
  "latest": [
   {
-   "key": "42901186",
-   "title": "Dispatcher training + volunteer app lifts bystander CPR",
-   "topic": "Cardiac arrest",
-   "finding": "Bystander CPR before EMS arrival rose from 61.4% to 70.9% (adjusted OR 1.54, 95% CI 1.09–2.19), with no improvement in survival to discharge or neurological outcome"
+   "key": "doi-10-1016-j-resplu-2026-101536",
+   "title": "Infant carry slings rarely linked to OHCA",
+   "topic": "Paediatrics",
+   "finding": "Only 2 of 162 OHCA were carry sling-associated (1.8% of the 114 infant cases); co-sleeping accounted for 33.3% and children found unresponsive 26.3%"
   },
   {
-   "key": "42901366",
-   "title": "Real-time feedback tidies BVM ventilation in arrest",
-   "topic": "Airway & ventilation",
-   "finding": "With feedback, insufflated volume fell within guideline range in 68% of ventilations vs 42%, dispersion dropped 35%, and leak volume was 12% lower (mean ratio 0.88); expired tidal volume was unchanged"
+   "key": "doi-10-1186-s13049-026-01715-0",
+   "title": "No unique GCS 8 threshold for intubation",
+   "topic": "Trauma",
+   "finding": "Recorded intubation was 9.1–10.6 percentage points more frequent at GCS 8 (pooled aOR 1.61, 95% CI 1.36–1.91), but model fit favoured a graded GCS–outcome relationship over a discrete jump at the 8/9 boundary in every outcome and both eras"
   },
   {
-   "key": "42901371",
-   "title": "Fatigue common a year after cardiac arrest",
-   "topic": "Cardiac arrest",
-   "finding": "Fatigue 35.8%, anxiety 22.6%, depression 18.0%; fatigue exceeded population norms (SMD 0.64) and higher symptom burden tracked with worse EQ-5D, GOSE and return-to-work rates"
+   "key": "doi-10-1177-27536386261496803",
+   "title": "Paediatric deterioration in the field poorly defined",
+   "topic": "Paediatrics",
+   "finding": "No study offered an operational definition of paediatric out-of-hospital deterioration; research leans on single-timepoint vital signs, trauma-specific indices and hospital-derived early warning scores, and no study examined physiological trajectories"
   },
   {
-   "key": "doi-10-1016-j-resuscitation-2026-111358",
-   "title": "Association Between Capnographic Changes During Pulse Checks of",
-   "topic": "Cardiac arrest",
-   "finding": "Shorter pulse checks were linked to higher ROSC (36.3% vs 19.5%; OR 2.39, 95% CI 1.35–4.24) and more favourable ETCO2 loss and recovery patterns"
+   "key": "doi-10-1080-10903127-2026-2752064",
+   "title": "Paediatric care coordinators linked to fewer EMS errors",
+   "topic": "Paediatrics",
+   "finding": "Coordinator agencies performed more procedures (55.4% vs 26.8%) and gave more medications (23.4% vs 7.7%); procedure adverse safety event rates were 13.7% vs 20.0%, with lower assigned harm severity"
   }
  ],
  "episode": {
-  "date": "2026-10-22",
-  "title": "Paramedic Papers Daily — 22 October 2026",
-  "page": "/episodes/2026-10-22/"
+  "date": "2026-10-23",
+  "title": "Paramedic Papers Daily — 23 October 2026",
+  "page": "/episodes/2026-10-23/"
  }
 }
