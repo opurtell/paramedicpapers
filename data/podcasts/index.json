@@ -1,5 +1,17 @@
 [
  {
+  "id": "prehospital-care-podcast",
+  "name": "Pre-Hospital Care Podcast",
+  "publisher": "Eoin Walker",
+  "focus": "Prehospital clinical topics and recent evidence",
+  "region": "Ireland",
+  "site": "https://podcasters.spotify.com/pod/show/phcp",
+  "art": "data/podcasts/art/prehospital-care-podcast.jpg",
+  "episodes": 395,
+  "latest": "2026-10-22",
+  "updated": "2026-10-23"
+ },
+ {
   "id": "sydney-hems",
   "name": "Greater Sydney Area HEMS",
   "publisher": "NSW Ambulance Aeromedical",
@@ -19,9 +31,9 @@
   "region": "US",
   "site": "https://emcrit.org",
   "art": "data/podcasts/art/emcrit.jpg",
-  "episodes": 162,
+  "episodes": 165,
   "latest": "2026-10-21",
-  "updated": "2026-10-22"
+  "updated": "2026-10-23"
  },
  {
   "id": "ems-20-20",
@@ -72,18 +84,6 @@
   "updated": "2026-10-19"
  },
  {
-  "id": "prehospital-care-podcast",
-  "name": "Pre-Hospital Care Podcast",
-  "publisher": "Eoin Walker",
-  "focus": "Prehospital clinical topics and recent evidence",
-  "region": "Ireland",
-  "site": "https://podcasters.spotify.com/pod/show/phcp",
-  "art": "data/podcasts/art/prehospital-care-podcast.jpg",
-  "episodes": 394,
-  "latest": "2026-10-19",
-  "updated": "2026-10-20"
- },
- {
   "id": "core-em",
   "name": "Core EM",
   "publisher": "Core EM",
@@ -103,9 +103,9 @@
   "region": "UK",
   "site": "https://www.stemlynspodcast.org",
   "art": "data/podcasts/art/st-emlyns.jpg",
-  "episodes": 328,
+  "episodes": 354,
   "latest": "2026-10-17",
-  "updated": "2026-10-19"
+  "updated": "2026-10-23"
  },
  {
   "id": "sgem",
