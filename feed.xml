@@ -25,6 +25,20 @@
     <itunes:explicit>false</itunes:explicit>
     <podcast:guid>09fa3693-e2ac-527c-9d1c-f68df149b888</podcast:guid>
     <item>
+      <title>Paramedic Papers Daily — 24 October 2026</title>
+      <link>https://paramedicpapers.com/episodes/2026-10-24/</link>
+      <description>4 papers: Who doesn't call an ambulance for chest pain; Prehospital ultrasound as a decision tool; How Utah widened paramedic oxytocin scope; HEMS vs road: guideline adherence in trauma</description>
+      <content:encoded><![CDATA[<p>4 papers: Who doesn't call an ambulance for chest pain; Prehospital ultrasound as a decision tool; How Utah widened paramedic oxytocin scope; HEMS vs road: guideline adherence in trauma</p><p>Papers in this episode:</p><ul><li><a href="https://doi.org/10.2147/OAEM.S628784">Who doesn't call an ambulance for chest pain <em>(Open Access Emergency Medicine)</em></a></li><li><a href="https://doi.org/10.5826/tuj.2026.19100">Prehospital ultrasound as a decision tool <em>(The Ultrasound Journal)</em></a></li><li><a href="https://doi.org/10.1111/jmwh.70194">How Utah widened paramedic oxytocin scope <em>(Journal of Midwifery &amp; Women's Health)</em></a></li><li><a href="https://doi.org/10.1007/s00068-026-03367-2">HEMS vs road: guideline adherence in trauma <em>(European Journal of Trauma and Emergency Surgery)</em></a></li></ul><p><a href="https://paramedicpapers.com/episodes/2026-10-24/">Show notes and transcript</a></p>]]></content:encoded>
+      <pubDate>Sat, 24 Oct 2026 07:33:38 +1100</pubDate>
+      <guid isPermaLink="false">https://audio.paramedicpapers.com/ep-2026-10-24.mp3</guid>
+      <enclosure url="https://op3.dev/e/audio.paramedicpapers.com/ep-2026-10-24.mp3" length="1208972" type="audio/mpeg"/>
+      <itunes:duration>302</itunes:duration>
+      <itunes:summary>4 papers: Who doesn't call an ambulance for chest pain; Prehospital ultrasound as a decision tool; How Utah widened paramedic oxytocin scope; HEMS vs road: guideline adherence in trauma</itunes:summary>
+      <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
+      <itunes:episodeType>full</itunes:episodeType>
+      <podcast:transcript url="https://audio.paramedicpapers.com/ep-2026-10-24.txt" type="text/plain" language="en-au"/>
+    </item>
+    <item>
       <title>Paramedic Papers Daily — 23 October 2026</title>
       <link>https://paramedicpapers.com/episodes/2026-10-23/</link>
       <description>4 papers: Infant carry slings rarely linked to OHCA; No unique GCS 8 threshold for intubation; Paediatric deterioration in the field poorly defined; Paediatric care coordinators linked to fewer EMS errors</description>
@@ -419,19 +433,6 @@
       <enclosure url="https://op3.dev/e/audio.paramedicpapers.com/ep-2026-09-25.mp3" length="1132077" type="audio/mpeg"/>
       <itunes:duration>282</itunes:duration>
       <itunes:summary>6 papers: post-ROSC CO2 in paediatric OHCA; supraglottic vs intubation meta-analysis; SpO2 during CPR; calcium in blood-product resus; rCAST validation in children; drone AED cost-effectiveness in Scotland</itunes:summary>
-      <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
-      <itunes:episodeType>full</itunes:episodeType>
-    </item>
-    <item>
-      <title>Paramedic Papers Daily — 24 September 2026</title>
-      <link>https://paramedicpapers.com/episodes/2026-09-24/</link>
-      <description>3 papers: dispatcher-assisted CPR barriers halve survival; night drone AED deliveries match daytime; Ethiopia governance gaps leave care as transport</description>
-      <content:encoded><![CDATA[<p>3 papers: dispatcher-assisted CPR barriers halve survival; night drone AED deliveries match daytime; Ethiopia governance gaps leave care as transport</p><p>Papers in this episode:</p><ul><li><a href="https://doi.org/10.1016/j.resuscitation.2026.111305">Barriers to dispatcher-assisted CPR are associated with delayed bystander CPR and worse outcomes in out-of-hospital cardiac arrest: a retrospective cohort study <em>(Resuscitation)</em></a></li><li><a href="https://doi.org/10.1016/j.resplu.2026.101457">Nighttime human-supervised drone-delivered automated external defibrillators: a quasi-experimental mixed-methods feasibility study <em>(Resuscitation Plus)</em></a></li><li><a href="https://doi.org/10.1016/j.surg.2026.110564">When ambulances are not enough: An interview-based needs assessment of governance and accountability gaps in prehospital emergency care in Hawassa, Ethiopia <em>(Surgery)</em></a></li></ul><p><a href="https://paramedicpapers.com/episodes/2026-09-24/">Show notes and transcript</a></p>]]></content:encoded>
-      <pubDate>Thu, 24 Sep 2026 07:34:48 +1000</pubDate>
-      <guid isPermaLink="false">https://opurtell.github.io/paramedicpapers/audio/ep-2026-09-24.mp3</guid>
-      <enclosure url="https://op3.dev/e/audio.paramedicpapers.com/ep-2026-09-24.mp3" length="865773" type="audio/mpeg"/>
-      <itunes:duration>216</itunes:duration>
-      <itunes:summary>3 papers: dispatcher-assisted CPR barriers halve survival; night drone AED deliveries match daytime; Ethiopia governance gaps leave care as transport</itunes:summary>
       <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
       <itunes:episodeType>full</itunes:episodeType>
     </item>
