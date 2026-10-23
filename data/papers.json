@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-10-22T20:20:43Z",
-  "lastUpdatedSydney": "2026-10-23 07:20 AEDT",
-  "lastUpdatedDate": "2026-10-23",
+  "lastUpdated": "2026-10-23T20:20:43Z",
+  "lastUpdatedSydney": "2026-10-24 07:20 AEDT",
+  "lastUpdatedDate": "2026-10-24",
   "featuredPapers": [
     {
       "id": "42901186",
@@ -1019,57 +1019,218 @@
     }
   ],
   "funFact": {
-    "category": "resuscitation",
-    "fact": "End-tidal CO2 is the most reliable prognostic indicator during cardiac arrest. An ETCO2 below 10 mmHg after 20 minutes of CPR strongly predicts non-survival. It's the closest thing to a crystal ball we have."
+    "category": "pathophysiology",
+    "fact": "In status epilepticus, the longer the seizure runs, the harder it is to stop — GABA receptors retreat inward while glutamate receptors multiply. The brain literally rewires itself to stay excited. Early benzos aren't just best practice, they're fighting a closing window."
   },
   "tldr": {
-    "date": "2026-10-23",
-    "paperCount": 5,
-    "summary": "A paediatric safety day: an English registry found infant carry-sling cardiac arrests are vanishingly rare (2 in five years) compared with co-sleeping, and US data links paediatric EMS care coordinators to fewer harmful errors, while a Japanese trauma registry challenges the GCS 8 threshold.",
+    "date": "2026-10-24",
+    "paperCount": 7,
+    "summary": "Equity and scope-of-practice day: an Australian systematic review finds younger adults, men, overseas-born and remote residents markedly less likely to call an ambulance for chest pain, alongside a prehospital ultrasound review and a US push to widen paramedic oxytocin for postpartum haemorrhage.",
     "highlights": [
       {
-        "id": "10.1016/j.resplu.2026.101536",
-        "pmid": "",
-        "doi": "10.1016/j.resplu.2026.101536",
-        "title": "Infant carry slings rarely linked to OHCA",
-        "journal": "Resuscitation Plus",
-        "note": "Only 2 of 162 OHCA were carry sling-associated (1.8% of the 114 infant cases); co-sleeping accounted for 33.3% and children found unresponsive 26.3%"
+        "id": "42904228",
+        "pmid": "42904228",
+        "doi": "10.2147/OAEM.S628784",
+        "title": "Who doesn't call an ambulance for chest pain",
+        "journal": "Open Access Emergency Medicine",
+        "note": "EMS use for ACS ranged 36–79%; under-49s up to 68% lower odds of EMS use than over-65s, men up to 11% lower than women, overseas-born up to 15% lower, non-English speakers 6–20% lower, remote residents up to 25% lower than major-city residents"
       },
       {
-        "id": "10.1186/s13049-026-01715-0",
-        "pmid": "",
-        "doi": "10.1186/s13049-026-01715-0",
-        "title": "No unique GCS 8 threshold for intubation",
-        "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
-        "note": "Recorded intubation was 9.1–10.6 percentage points more frequent at GCS 8 (pooled aOR 1.61, 95% CI 1.36–1.91), but model fit favoured a graded GCS–outcome relationship over a discrete jump at the 8/9 boundary in every outcome and both eras"
+        "id": "42904388",
+        "pmid": "42904388",
+        "doi": "10.5826/tuj.2026.19100",
+        "title": "Prehospital ultrasound as a decision tool",
+        "journal": "The Ultrasound Journal",
+        "note": "POCUS may identify cardiac activity and reversible causes in arrest, characterise shock mechanisms and improve diagnostic confidence in cardiogenic pulmonary oedema; E-FAST has high specificity but limited sensitivity so it cannot be used as a rule-out test"
       },
       {
-        "id": "10.1177/27536386261496803",
-        "pmid": "",
-        "doi": "10.1177/27536386261496803",
-        "title": "Paediatric deterioration in the field poorly defined",
-        "journal": "Paramedicine",
-        "note": "No study offered an operational definition of paediatric out-of-hospital deterioration; research leans on single-timepoint vital signs, trauma-specific indices and hospital-derived early warning scores, and no study examined physiological trajectories"
+        "id": "42908367",
+        "pmid": "42908367",
+        "doi": "10.1111/jmwh.70194",
+        "title": "How Utah widened paramedic oxytocin scope",
+        "journal": "Journal of Midwifery & Women's Health",
+        "note": "State EMS protocols changed in April 2024 to allow paramedic oxytocin for PPH prevention and AEMT intramuscular oxytocin for PPH prevention and treatment"
       },
       {
-        "id": "10.1080/10903127.2026.2752064",
-        "pmid": "",
-        "doi": "10.1080/10903127.2026.2752064",
-        "title": "Paediatric care coordinators linked to fewer EMS errors",
-        "journal": "Prehospital Emergency Care",
-        "note": "Coordinator agencies performed more procedures (55.4% vs 26.8%) and gave more medications (23.4% vs 7.7%); procedure adverse safety event rates were 13.7% vs 20.0%, with lower assigned harm severity"
+        "id": "42905143",
+        "pmid": "42905143",
+        "doi": "10.1007/s00068-026-03367-2",
+        "title": "HEMS vs road: guideline adherence in trauma",
+        "journal": "European Journal of Trauma and Emergency Surgery",
+        "note": "HEMS transport associated with higher intervention rates across all indication-based subgroups: advanced airway in impaired consciousness 96.5% vs 82.9%, chest tube placement 50.5% vs 40.9%, despite HEMS patients being younger and more severely injured"
       },
       {
-        "id": "10.1111/1742-6723.70377",
+        "id": "10.1186/s12873-026-01811-5",
         "pmid": "",
-        "doi": "10.1111/1742-6723.70377",
-        "title": "AU/NZ emergency care research priorities being set",
-        "journal": "Emergency Medicine Australasia",
-        "note": "No results yet — the partnership is underway, aiming to prioritise unanswered questions across the ~11 million annual ED presentations in both countries"
+        "doi": "10.1186/s12873-026-01811-5",
+        "title": "Paramedics on digital decision support",
+        "journal": "BMC Emergency Medicine",
+        "note": "Four themes: digital support for call assessment and ambulance resource allocation, digital patient information for shared situational awareness, digital communication for interprofessional consultation, and implementation challenges despite established prehospital infrastructure"
+      },
+      {
+        "id": "42904944",
+        "pmid": "42904944",
+        "doi": "10.1097/CCM.0000000000007386",
+        "title": "Cluster trials read differently to individual ones",
+        "journal": "Critical Care Medicine",
+        "note": "No statistically significant difference in mortality effect estimates between cluster and individually randomised trials (MD lnOR −0.110, 95% CI −0.093 to 0.313); cluster trials showed significantly smaller effect magnitudes for length-of-stay/days-alive outcomes (Hedges' g MD −0.202, 95% CI −0.392 to −0.012)"
+      },
+      {
+        "id": "42907357",
+        "pmid": "42907357",
+        "doi": "10.1265/ehpm.26-00085",
+        "title": "Hot days drive dizziness call-outs",
+        "journal": "Environmental Health and Preventive Medicine",
+        "note": "Higher mean air temperature consistently associated with increased odds of high-frequency dizziness-transport days (≥5/day), as were short-term maximum-temperature increases and smaller diurnal temperature ranges; most frequent in summer"
       }
     ]
   },
   "dailyUpdates": [
+    {
+      "date": "2026-10-24",
+      "papers": [
+        {
+          "id": "42904228",
+          "title": "Equity-Related Factors in Emergency Medical Service Use for Acute Coronary Syndromes: A Systematic Review",
+          "journal": "Open Access Emergency Medicine",
+          "date": "2026-10-24",
+          "pmid": "42904228",
+          "doi": "10.2147/OAEM.S628784",
+          "summary": "Systematic review of 14 Australian studies testing whether equity-related factors affect EMS use for acute coronary syndrome — EMS use ranged 36–79%, with under-49s up to 68% lower odds of calling than over-65s, men 11% lower than women, overseas-born 15% lower, non-English speakers 6–20% lower and remote residents 25% lower than city dwellers.",
+          "relevance": "🟢 High — Australian data on who does and doesn't ring for chest pain — core ambulance business everywhere in the country, no translation needed.",
+          "pubDate": "2026-10-16",
+          "topic": "Cardiac (non-arrest)",
+          "studyType": "Systematic review",
+          "design": "Systematic review (PROSPERO-registered) of Australian studies",
+          "n": "14 Australian studies",
+          "finding": "EMS use for ACS ranged 36–79%; under-49s up to 68% lower odds of EMS use than over-65s, men up to 11% lower than women, overseas-born up to 15% lower, non-English speakers 6–20% lower, remote residents up to 25% lower than major-city residents",
+          "caveat": "Vote-counting synthesis of heterogeneous observational studies rather than pooled effect estimates",
+          "bottomLine": "Hypothesis-generating",
+          "shortTitle": "Who doesn't call an ambulance for chest pain",
+          "learningGoal": "Understand the equity-related barriers that lead some Australian patients to delay or avoid calling an ambulance for chest pain."
+        },
+        {
+          "id": "42904388",
+          "title": "Prehospital point-of-care ultrasound as a decision-support tool: A structured narrative review",
+          "journal": "The Ultrasound Journal",
+          "date": "2026-10-24",
+          "pmid": "42904388",
+          "doi": "10.5826/tuj.2026.19100",
+          "summary": "Structured narrative review of 38 articles on prehospital POCUS across cardiac arrest, shock, dyspnoea, trauma, paediatric and obstetric uses — it can identify reversible causes in arrest, characterise shock and support trauma triage and destination decisions, but limited sensitivity means it can't rule anything out.",
+          "relevance": "🟡 Medium — A handful of Australian services carry prehospital ultrasound and most don't, so this shapes the debate about adoption more than current practice.",
+          "pubDate": "2026-10-21",
+          "topic": "Other",
+          "studyType": "Other",
+          "design": "Structured narrative review (38 articles, 9 systematic reviews)",
+          "n": "38 articles reviewed",
+          "finding": "POCUS may identify cardiac activity and reversible causes in arrest, characterise shock mechanisms and improve diagnostic confidence in cardiogenic pulmonary oedema; E-FAST has high specificity but limited sensitivity so it cannot be used as a rule-out test",
+          "caveat": "Single reviewer, no formal risk-of-bias assessment, certainty grading or meta-analysis",
+          "bottomLine": "Context only",
+          "shortTitle": "Prehospital ultrasound as a decision tool",
+          "learningGoal": "Weigh how prehospital point-of-care ultrasound findings should influence my treatment and transport decisions."
+        },
+        {
+          "id": "42908367",
+          "title": "A Community Partnership Initiative in Utah to Enhance Prehospital Perinatal Care in the Prevention of Postpartum Hemorrhage",
+          "journal": "Journal of Midwifery & Women's Health",
+          "date": "2026-10-24",
+          "pmid": "42908367",
+          "doi": "10.1111/jmwh.70194",
+          "summary": "Quality improvement initiative describing how a rural US state changed its EMS protocols in April 2024 to let paramedics give oxytocin to prevent postpartum haemorrhage and AEMTs give it intramuscularly for prevention and treatment.",
+          "relevance": "🟡 Medium — Oxytocin for postpartum haemorrhage is standard on Australian trucks, but this paper is about how a scope-of-practice change was won, not whether the drug works.",
+          "pubDate": "2026-10-22",
+          "topic": "Obstetrics",
+          "studyType": "Other",
+          "design": "Community-based interprofessional quality improvement initiative (implementation science framework)",
+          "n": "Not reported",
+          "finding": "State EMS protocols changed in April 2024 to allow paramedic oxytocin for PPH prevention and AEMT intramuscular oxytocin for PPH prevention and treatment",
+          "caveat": "Single-state process description with no clinical outcome data",
+          "bottomLine": "Context only",
+          "shortTitle": "How Utah widened paramedic oxytocin scope",
+          "learningGoal": "Understand how expanded paramedic scope for oxytocin can strengthen prehospital postpartum haemorrhage care."
+        },
+        {
+          "id": "42905143",
+          "title": "Guideline adherence in helicopter versus ground emergency medical services: an indication-based analysis of 129,783 patients from the TraumaRegister DGU®",
+          "journal": "European Journal of Trauma and Emergency Surgery",
+          "date": "2026-10-24",
+          "pmid": "42905143",
+          "doi": "10.1007/s00068-026-03367-2",
+          "summary": "Retrospective analysis of 129,783 severely injured patients in the German TraumaRegister DGU comparing guideline-recommended prehospital interventions between helicopter and ground transport — HEMS showed consistently higher intervention rates across indication-based subgroups, such as advanced airway in impaired consciousness (96.5% vs 82.9%) and chest drains (50.5% vs 40.9%).",
+          "relevance": "🟡 Medium — A physician-staffed model, and chest drains sit beyond Australian paramedic scope while advanced airway is an intensive care paramedic skill in most services — but the helicopter-utilisation question is live here too.",
+          "pubDate": "2026-10-21",
+          "topic": "Trauma",
+          "studyType": "Registry",
+          "design": "Retrospective multicentre registry cohort (TraumaRegister DGU, 2016–2024)",
+          "n": "129,783 adults with severe trauma (25% HEMS)",
+          "finding": "HEMS transport associated with higher intervention rates across all indication-based subgroups: advanced airway in impaired consciousness 96.5% vs 82.9%, chest tube placement 50.5% vs 40.9%, despite HEMS patients being younger and more severely injured",
+          "caveat": "Descriptive analysis with indication surrogates from registry variables and no adjustment for confounding by injury severity or scene factors",
+          "bottomLine": "Context only",
+          "shortTitle": "HEMS vs road: guideline adherence in trauma",
+          "learningGoal": "Understand how transport mode and scene factors influence adherence to trauma care guidelines in Australia."
+        },
+        {
+          "id": "10.1186/s12873-026-01811-5",
+          "title": "Challenges and opportunities in using digital health technologies for decision-making in prehospital non-emergency situations in Norway: a qualitative study",
+          "journal": "BMC Emergency Medicine",
+          "date": "2026-10-24",
+          "pmid": "",
+          "doi": "10.1186/s12873-026-01811-5",
+          "summary": "Qualitative interview study of 12 Norwegian paramedics on digital health tools for prehospital non-emergency decision-making — four themes emerged around call assessment and resource allocation, shared situational awareness, interprofessional communication, and the challenges of patchy implementation.",
+          "relevance": "🟡 Medium — A Nordic paramedic service rated on its merits, and the low-acuity decision-making burden it describes is the same one Australian crews carry.",
+          "pubDate": "2026-10-23",
+          "topic": "Operations & systems",
+          "studyType": "Qualitative",
+          "design": "Exploratory qualitative interview study (reflexive thematic analysis)",
+          "n": "12 paramedics interviewed",
+          "finding": "Four themes: digital support for call assessment and ambulance resource allocation, digital patient information for shared situational awareness, digital communication for interprofessional consultation, and implementation challenges despite established prehospital infrastructure",
+          "caveat": "Single-country qualitative study with purposive and snowball sampling of 12 paramedics",
+          "bottomLine": "Context only",
+          "shortTitle": "Paramedics on digital decision support",
+          "learningGoal": "Understand how digital decision support tools shape non-emergency call assessment and interprofessional communication in paramedic practice."
+        },
+        {
+          "id": "42904944",
+          "title": "Cluster Versus Individual Randomization in Prehospital, Emergency and Critical Care Trials: A Meta-Epidemiological Study",
+          "journal": "Critical Care Medicine",
+          "date": "2026-10-24",
+          "pmid": "42904944",
+          "doi": "10.1097/CCM.0000000000007386",
+          "summary": "Meta-epidemiological study of 65 meta-analyses (212 trials, 315,276 patients) comparing cluster-randomised with individually randomised trials in prehospital, emergency and critical care — no difference in mortality effect estimates, but cluster trials reported significantly smaller effect sizes for length-of-stay-type outcomes.",
+          "relevance": "🟢 High — Methods evidence about how prehospital and emergency trials behave, which applies to any ambulance service reading the literature.",
+          "pubDate": "2026-10-21",
+          "topic": "Other",
+          "studyType": "Systematic review",
+          "design": "Meta-epidemiological study of meta-analyses",
+          "n": "65 meta-analyses, 212 RCTs (39 cluster), 315,276 patients",
+          "finding": "No statistically significant difference in mortality effect estimates between cluster and individually randomised trials (MD lnOR −0.110, 95% CI −0.093 to 0.313); cluster trials showed significantly smaller effect magnitudes for length-of-stay/days-alive outcomes (Hedges' g MD −0.202, 95% CI −0.392 to −0.012)",
+          "caveat": "Observational comparison across heterogeneous meta-analyses with only 44.7% of eligible meta-analyses reporting randomisation type",
+          "bottomLine": "Context only",
+          "shortTitle": "Cluster trials read differently to individual ones",
+          "learningGoal": "Understand how cluster randomised trials differ in design and how that shapes interpreting prehospital evidence."
+        },
+        {
+          "id": "42907357",
+          "title": "Association between meteorological conditions and dizziness-related ambulance transports: a population-based study in Kochi Prefecture, Japan",
+          "journal": "Environmental Health and Preventive Medicine",
+          "date": "2026-10-24",
+          "pmid": "42907357",
+          "doi": "10.1265/ehpm.26-00085",
+          "summary": "Population-based study of 270,120 emergency transports in Kochi, Japan linking weather to dizziness-related ambulance call-outs — hotter days and short-term temperature spikes raised the odds of high-volume dizziness days, peaking in summer.",
+          "relevance": "🟡 Medium — A Japanese physician-diagnosed dataset, but heat-driven demand spikes are a planning problem Australian ambulance services face every summer.",
+          "pubDate": "2026",
+          "topic": "Operations & systems",
+          "studyType": "Cohort",
+          "design": "Retrospective population-based cohort (2017–2023)",
+          "n": "270,120 emergency transports, 8,981 dizziness-related",
+          "finding": "Higher mean air temperature consistently associated with increased odds of high-frequency dizziness-transport days (≥5/day), as were short-term maximum-temperature increases and smaller diurnal temperature ranges; most frequent in summer",
+          "caveat": "Modest absolute differences in meteorological variables and dizziness defined by receiving-facility physician diagnosis",
+          "bottomLine": "Context only",
+          "shortTitle": "Hot days drive dizziness call-outs",
+          "learningGoal": "Understand how heat and temperature swings influence demand patterns and my management of dizziness presentations in Australian summer conditions."
+        }
+      ]
+    },
     {
       "date": "2026-10-23",
       "papers": [
