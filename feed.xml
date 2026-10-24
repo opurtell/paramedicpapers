@@ -25,6 +25,20 @@
     <itunes:explicit>false</itunes:explicit>
     <podcast:guid>09fa3693-e2ac-527c-9d1c-f68df149b888</podcast:guid>
     <item>
+      <title>Paramedic Papers Daily — 25 October 2026</title>
+      <link>https://paramedicpapers.com/episodes/2026-10-25/</link>
+      <description>4 papers: Hot nights linked to more OHCA; ECPR for OHCA: pump the brakes; How ambulance models shape end-of-life care; Scene-to-door time and stroke thrombectomy</description>
+      <content:encoded><![CDATA[<p>4 papers: Hot nights linked to more OHCA; ECPR for OHCA: pump the brakes; How ambulance models shape end-of-life care; Scene-to-door time and stroke thrombectomy</p><p>Papers in this episode:</p><ul><li><a href="https://doi.org/10.1007/s00484-026-03342-x">Hot nights linked to more OHCA <em>(International Journal of Biometeorology)</em></a></li><li><a href="https://doi.org/10.1080/10903127.2026.2753002">ECPR for OHCA: pump the brakes <em>(Prehospital Emergency Care)</em></a></li><li><a href="https://doi.org/10.1186/s12904-026-02283-x">How ambulance models shape end-of-life care <em>(BMC Palliative Care)</em></a></li><li><a href="https://doi.org/10.1186/s12873-026-01706-5">Scene-to-door time and stroke thrombectomy <em>(BMC Emergency Medicine)</em></a></li></ul><p><a href="https://paramedicpapers.com/episodes/2026-10-25/">Show notes and transcript</a></p>]]></content:encoded>
+      <pubDate>Sun, 25 Oct 2026 07:33:29 +1100</pubDate>
+      <guid isPermaLink="false">https://audio.paramedicpapers.com/ep-2026-10-25.mp3</guid>
+      <enclosure url="https://op3.dev/e/audio.paramedicpapers.com/ep-2026-10-25.mp3" length="1216172" type="audio/mpeg"/>
+      <itunes:duration>303</itunes:duration>
+      <itunes:summary>4 papers: Hot nights linked to more OHCA; ECPR for OHCA: pump the brakes; How ambulance models shape end-of-life care; Scene-to-door time and stroke thrombectomy</itunes:summary>
+      <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
+      <itunes:episodeType>full</itunes:episodeType>
+      <podcast:transcript url="https://audio.paramedicpapers.com/ep-2026-10-25.txt" type="text/plain" language="en-au"/>
+    </item>
+    <item>
       <title>Paramedic Papers Daily — 24 October 2026</title>
       <link>https://paramedicpapers.com/episodes/2026-10-24/</link>
       <description>4 papers: Who doesn't call an ambulance for chest pain; Prehospital ultrasound as a decision tool; How Utah widened paramedic oxytocin scope; HEMS vs road: guideline adherence in trauma</description>
@@ -420,19 +434,6 @@
       <enclosure url="https://op3.dev/e/audio.paramedicpapers.com/ep-2026-09-26.mp3" length="718317" type="audio/mpeg"/>
       <itunes:duration>179</itunes:duration>
       <itunes:summary>3 papers: pit-crew CPR education and intact survival (ahead-of-print); zero studies on post-arrest psychological screening; RFM feedback beats repetition in neonatal mask ventilation</itunes:summary>
-      <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
-      <itunes:episodeType>full</itunes:episodeType>
-    </item>
-    <item>
-      <title>Paramedic Papers Daily — 25 September 2026</title>
-      <link>https://paramedicpapers.com/episodes/2026-09-25/</link>
-      <description>6 papers: post-ROSC CO2 in paediatric OHCA; supraglottic vs intubation meta-analysis; SpO2 during CPR; calcium in blood-product resus; rCAST validation in children; drone AED cost-effectiveness in Scotland</description>
-      <content:encoded><![CDATA[<p>6 papers: post-ROSC CO2 in paediatric OHCA; supraglottic vs intubation meta-analysis; SpO2 during CPR; calcium in blood-product resus; rCAST validation in children; drone AED cost-effectiveness in Scotland</p><p>Papers in this episode:</p><ul><li><a href="https://doi.org/10.1016/j.resuscitation.2026.111306">Association between the first post-resuscitation partial pressure of arterial carbon dioxide and neurologic outcomes in children with out-of-hospital cardiac arrest: a multicenter retrospective cohort study <em>(Resuscitation)</em></a></li><li><a href="https://doi.org/10.1016/j.resplu.2026.101491">Supraglottic airway versus endotracheal intubation in out-of-hospital cardiac arrest: a systematic review and meta-analysis <em>(Resuscitation Plus)</em></a></li><li><a href="https://doi.org/10.1016/j.resuscitation.2026.111215">Associations between pulsed oxygen saturation during out-of-hospital cardiopulmonary resuscitation, cardiopulmonary resuscitation quality and return of spontaneous circulation <em>(Resuscitation)</em></a></li><li><a href="https://doi.org/10.1016/j.ajem.2026.09.034">Calcium during prehospital trauma blood-product resuscitation: A meta-analysis <em>(The American Journal of Emergency Medicine)</em></a></li><li><a href="https://doi.org/10.1016/j.resplu.2026.101489">Prognostic utility of the revised post-cardiac arrest syndrome for therapeutic hypothermia score in pediatric patients with post-cardiac arrest syndrome <em>(Resuscitation Plus)</em></a></li><li><a href="https://doi.org/10.1016/j.ress.2026.113470">A Bayesian learning approach for drone coverage network: A case study on cardiac arrest in Scotland <em>(Reliability Engineering &amp; System Safety)</em></a></li></ul><p><a href="https://paramedicpapers.com/episodes/2026-09-25/">Show notes and transcript</a></p>]]></content:encoded>
-      <pubDate>Fri, 25 Sep 2026 07:36:16 +1000</pubDate>
-      <guid isPermaLink="false">https://opurtell.github.io/paramedicpapers/audio/ep-2026-09-25.mp3</guid>
-      <enclosure url="https://op3.dev/e/audio.paramedicpapers.com/ep-2026-09-25.mp3" length="1132077" type="audio/mpeg"/>
-      <itunes:duration>282</itunes:duration>
-      <itunes:summary>6 papers: post-ROSC CO2 in paediatric OHCA; supraglottic vs intubation meta-analysis; SpO2 during CPR; calcium in blood-product resus; rCAST validation in children; drone AED cost-effectiveness in Scotland</itunes:summary>
       <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
       <itunes:episodeType>full</itunes:episodeType>
     </item>
