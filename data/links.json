@@ -1,34 +1,34 @@
 {
- "updated": "2026-10-23",
+ "updated": "2026-10-24",
  "latest": [
   {
-   "key": "doi-10-1016-j-resplu-2026-101536",
-   "title": "Infant carry slings rarely linked to OHCA",
-   "topic": "Paediatrics",
-   "finding": "Only 2 of 162 OHCA were carry sling-associated (1.8% of the 114 infant cases); co-sleeping accounted for 33.3% and children found unresponsive 26.3%"
+   "key": "42904228",
+   "title": "Who doesn't call an ambulance for chest pain",
+   "topic": "Cardiac (non-arrest)",
+   "finding": "EMS use for ACS ranged 36–79%; under-49s up to 68% lower odds of EMS use than over-65s, men up to 11% lower than women, overseas-born up to 15% lower, non-English speakers 6–20% lower, remote residents up to 25% lower than major-city residents"
   },
   {
-   "key": "doi-10-1186-s13049-026-01715-0",
-   "title": "No unique GCS 8 threshold for intubation",
+   "key": "42904388",
+   "title": "Prehospital ultrasound as a decision tool",
+   "topic": "Other",
+   "finding": "POCUS may identify cardiac activity and reversible causes in arrest, characterise shock mechanisms and improve diagnostic confidence in cardiogenic pulmonary oedema; E-FAST has high specificity but limited sensitivity so it cannot be used as a rule-out test"
+  },
+  {
+   "key": "42908367",
+   "title": "How Utah widened paramedic oxytocin scope",
+   "topic": "Obstetrics",
+   "finding": "State EMS protocols changed in April 2024 to allow paramedic oxytocin for PPH prevention and AEMT intramuscular oxytocin for PPH prevention and treatment"
+  },
+  {
+   "key": "42905143",
+   "title": "HEMS vs road: guideline adherence in trauma",
    "topic": "Trauma",
-   "finding": "Recorded intubation was 9.1–10.6 percentage points more frequent at GCS 8 (pooled aOR 1.61, 95% CI 1.36–1.91), but model fit favoured a graded GCS–outcome relationship over a discrete jump at the 8/9 boundary in every outcome and both eras"
-  },
-  {
-   "key": "doi-10-1177-27536386261496803",
-   "title": "Paediatric deterioration in the field poorly defined",
-   "topic": "Paediatrics",
-   "finding": "No study offered an operational definition of paediatric out-of-hospital deterioration; research leans on single-timepoint vital signs, trauma-specific indices and hospital-derived early warning scores, and no study examined physiological trajectories"
-  },
-  {
-   "key": "doi-10-1080-10903127-2026-2752064",
-   "title": "Paediatric care coordinators linked to fewer EMS errors",
-   "topic": "Paediatrics",
-   "finding": "Coordinator agencies performed more procedures (55.4% vs 26.8%) and gave more medications (23.4% vs 7.7%); procedure adverse safety event rates were 13.7% vs 20.0%, with lower assigned harm severity"
+   "finding": "HEMS transport associated with higher intervention rates across all indication-based subgroups: advanced airway in impaired consciousness 96.5% vs 82.9%, chest tube placement 50.5% vs 40.9%, despite HEMS patients being younger and more severely injured"
   }
  ],
  "episode": {
-  "date": "2026-10-23",
-  "title": "Paramedic Papers Daily — 23 October 2026",
-  "page": "/episodes/2026-10-23/"
+  "date": "2026-10-24",
+  "title": "Paramedic Papers Daily — 24 October 2026",
+  "page": "/episodes/2026-10-24/"
  }
 }
