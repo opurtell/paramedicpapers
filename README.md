@@ -159,8 +159,11 @@ sections from small files. Plan: `_notes/paramedicpapers/instagram-plan.md` §3a
   `paperKey()` (PMID, else `doi-<slug>`, else `id-<slug>`), linking to `/papers/<key>/`.
   Only the first 4 `latest` items show.
 - `data/instagram.json`: `{ "updated", "posts": [ { "date", "hook", "permalink",
-  "cover" } ] }`, newest first; the first 12 show as a grid. `cover` is a permanent
-  540 px thumbnail URL; if it fails, the `hook` text shows instead.
+  "cover", "papers"? } ] }`, newest first; the first 12 show as a grid. `cover` is a permanent
+  540 px thumbnail URL; if it fails, the `hook` text shows instead. Each tile opens
+  the dashboard at `/#post=<date>` (not the Instagram post: visitors have just come
+  from there), which pins that post's papers in the feed: `papers` (dashboard paper
+  ids) when present, else the papers of that date's entry in `episodes.json`.
 - `<!-- LINKS:LATEST:START --><!-- LINKS:LATEST:END -->` in `links.html` is
   for `build_static_pages.py` to fill with the same `.study` links (no-JS latest
   studies); until then a "See today's studies" link shows. The checked-in JSON files

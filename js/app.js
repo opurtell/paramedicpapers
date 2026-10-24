@@ -22,7 +22,7 @@
     tab: 'home',
     query: '',
     sort: 'newest',
-    pinned: '',
+    pinned: [],
     highRelOnly: false,
     savedOnly: false,
     topic: '',
@@ -85,6 +85,7 @@
     $('btn-back').addEventListener('click', function () { setTab(PARENT[state.tab] || 'home'); });
     window.addEventListener('hashchange', function () {
       if (paperFromHash()) { openPaperLink(); return; }
+      if (postFromHash()) { openPostLink(); return; }
       if (episodeFromHash()) { openEpisodeLink(); return; }
       setTab(tabFromHash(), true);
     });
@@ -99,7 +100,9 @@
       return;
     }
     renderAll();
-    if (paperFromHash()) openPaperLink(); else setTab(tabFromHash(), true);
+    if (paperFromHash()) openPaperLink();
+    else if (postFromHash()) openPostLink();
+    else setTab(tabFromHash(), true);
 
     /* Podcast episodes are independent of papers.json — a missing or failed
        episodes.json must never break the paper dashboard. */
@@ -226,8 +229,42 @@
   function openPaperLink() {
     var id = paperFromHash();
     if (!id || !paperById(id)) { setTab('feed', true); return; }
-    state.pinned = id;
+    state.pinned = [id];
     state.pinnedFrom = 'link';
+    state.query = '';
+    $('search-input').value = '';
+    renderFeed();
+    setTab('feed', true);
+  }
+
+  /* Instagram post links from the link page: #post=YYYY-MM-DD opens the
+     feed with that day's carousel papers pinned at the top. The ids come
+     from the post's `papers` in data/instagram.json, else from that date's
+     episode (the carousel is built from its papers[]). */
+  function postFromHash() {
+    var m = /^#post=(\d{4}-\d{2}-\d{2})$/.exec(location.hash || '');
+    return m ? m[1] : '';
+  }
+
+  async function postPaperIds(date) {
+    try {
+      var resp = await fetch('data/instagram.json', { cache: 'no-cache' });
+      var post = resp.ok ? ((await resp.json()).posts || []).filter(function (p) { return p.date === date; })[0] : null;
+      if (post && post.papers && post.papers.length) return post.papers;
+    } catch (e) { /* fall back to the episode */ }
+    var eps = state.episodes.length ? state.episodes : await loadEpisodes().catch(function () { return []; });
+    var ep = eps.filter(function (e) { return e.date === date; })[0];
+    return ep && ep.papers ? ep.papers.map(function (p) { return p.id; }) : [];
+  }
+
+  async function openPostLink() {
+    var date = postFromHash();
+    var ids = (await postPaperIds(date)).filter(paperById);
+    if (date !== postFromHash()) return;  /* hash moved on while loading */
+    if (!ids.length) { setTab('feed', true); return; }
+    state.pinned = ids;
+    state.pinnedFrom = 'post';
+    state.pinnedDate = date;
     state.query = '';
     $('search-input').value = '';
     renderFeed();
@@ -577,7 +614,7 @@
   function bindBulletLinks(root) {
     root.querySelectorAll('.bullet-link').forEach(function (el) {
       el.addEventListener('click', function () {
-        state.pinned = el.getAttribute('data-ref');
+        state.pinned = [el.getAttribute('data-ref')];
         state.pinnedFrom = 'tldr';
         state.query = '';
         $('search-input').value = '';
@@ -645,21 +682,23 @@
     });
     $('result-count').textContent = list.length + ' result' + (list.length === 1 ? '' : 's');
 
-    /* pinned card, if a TLDR bullet sent us here */
-    var pin = state.pinned ? paperById(state.pinned) : null;
-    $('pinned-slot').innerHTML = pin ? (
-      '<div class="pin-head"><span class="label">' +
-        (state.pinnedFrom === 'link' ? 'Shared paper' : 'From the TLDR') +
+    /* pinned cards, if a TLDR bullet, shared link or Instagram post sent us here */
+    var pins = state.pinned.map(paperById).filter(Boolean);
+    var pinLabel = state.pinnedFrom === 'link' ? 'Shared paper'
+      : state.pinnedFrom === 'post' ? 'From Instagram · ' + dayLabel(state.pinnedDate)
+      : 'From the TLDR';
+    $('pinned-slot').innerHTML = pins.length ? (
+      '<div class="pin-head"><span class="label">' + esc(pinLabel) +
         '</span><span class="rule"></span>' +
       '<button class="act" id="clear-pin" type="button">Clear</button></div>' +
-      '<article class="paper-card is-pinned">' + cardInnerHTML(pin) + '</article>'
+      pins.map(function (p) { return '<article class="paper-card is-pinned">' + cardInnerHTML(p) + '</article>'; }).join('')
     ) : '';
-    if (pin) {
-      $('clear-pin').addEventListener('click', function () { state.pinned = ''; renderFeed(); });
+    if (pins.length) {
+      $('clear-pin').addEventListener('click', function () { state.pinned = []; renderFeed(); });
       bindActs($('pinned-slot'));
     }
 
-    var body = list.filter(function (p) { return !pin || p.id !== pin.id; });
+    var body = list.filter(function (p) { return pins.indexOf(p) === -1; });
     var html = '';
 
     if (state.sort === 'relevance') {
@@ -675,7 +714,7 @@
     }
 
     $('feed-list').innerHTML = html;
-    $('feed-empty').hidden = !!(html || pin);
+    $('feed-empty').hidden = !!(html || pins.length);
     bindActs($('feed-list'));
   }
 
