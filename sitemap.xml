@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://paramedicpapers.com/</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-25</lastmod>
   </url>
   <url>
     <loc>https://paramedicpapers.com/about.html</loc>
@@ -12,15 +12,15 @@
   </url>
   <url>
     <loc>https://paramedicpapers.com/links.html</loc>
-    <lastmod>2026-10-23</lastmod>
+    <lastmod>2026-10-24</lastmod>
   </url>
   <url>
     <loc>https://paramedicpapers.com/topics/</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-25</lastmod>
   </url>
   <url>
     <loc>https://paramedicpapers.com/daily/</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-25</lastmod>
   </url>
   <url>
     <loc>https://paramedicpapers.com/episodes/</loc>
@@ -32,7 +32,7 @@
   </url>
   <url>
     <loc>https://paramedicpapers.com/topics/cardiac-arrest/</loc>
-    <lastmod>2026-10-22</lastmod>
+    <lastmod>2026-10-25</lastmod>
   </url>
   <url>
     <loc>https://paramedicpapers.com/topics/cardiac-non-arrest/</loc>
@@ -40,7 +40,7 @@
   </url>
   <url>
     <loc>https://paramedicpapers.com/topics/education-and-training/</loc>
-    <lastmod>2026-10-22</lastmod>
+    <lastmod>2026-10-25</lastmod>
   </url>
   <url>
     <loc>https://paramedicpapers.com/topics/mental-health-patients/</loc>
@@ -56,11 +56,11 @@
   </url>
   <url>
     <loc>https://paramedicpapers.com/topics/operations-and-systems/</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-25</lastmod>
   </url>
   <url>
     <loc>https://paramedicpapers.com/topics/paediatrics/</loc>
-    <lastmod>2026-10-23</lastmod>
+    <lastmod>2026-10-25</lastmod>
   </url>
   <url>
     <loc>https://paramedicpapers.com/topics/pain-and-sedation/</loc>
@@ -76,11 +76,11 @@
   </url>
   <url>
     <loc>https://paramedicpapers.com/topics/stroke-and-neuro/</loc>
-    <lastmod>2026-10-22</lastmod>
+    <lastmod>2026-10-25</lastmod>
   </url>
   <url>
     <loc>https://paramedicpapers.com/topics/toxicology/</loc>
-    <lastmod>2026-10-22</lastmod>
+    <lastmod>2026-10-25</lastmod>
   </url>
   <url>
     <loc>https://paramedicpapers.com/topics/trauma/</loc>
@@ -88,7 +88,11 @@
   </url>
   <url>
     <loc>https://paramedicpapers.com/topics/workforce-and-wellbeing/</loc>
-    <lastmod>2026-10-22</lastmod>
+    <lastmod>2026-10-25</lastmod>
+  </url>
+  <url>
+    <loc>https://paramedicpapers.com/daily/2026-10-25/</loc>
+    <lastmod>2026-10-25</lastmod>
   </url>
   <url>
     <loc>https://paramedicpapers.com/daily/2026-10-24/</loc>
@@ -613,6 +617,50 @@
   <url>
     <loc>https://paramedicpapers.com/episodes/2026-09-25/</loc>
     <lastmod>2026-09-25</lastmod>
+  </url>
+  <url>
+    <loc>https://paramedicpapers.com/papers/doi-10-1186-s12873-026-01816-0/</loc>
+    <lastmod>2026-10-25</lastmod>
+  </url>
+  <url>
+    <loc>https://paramedicpapers.com/papers/doi-10-1080-10903127-2026-2753002/</loc>
+    <lastmod>2026-10-25</lastmod>
+  </url>
+  <url>
+    <loc>https://paramedicpapers.com/papers/doi-10-1016-j-amj-2026-09-006/</loc>
+    <lastmod>2026-10-25</lastmod>
+  </url>
+  <url>
+    <loc>https://paramedicpapers.com/papers/42920291/</loc>
+    <lastmod>2026-10-25</lastmod>
+  </url>
+  <url>
+    <loc>https://paramedicpapers.com/papers/42920141/</loc>
+    <lastmod>2026-10-25</lastmod>
+  </url>
+  <url>
+    <loc>https://paramedicpapers.com/papers/42920134/</loc>
+    <lastmod>2026-10-25</lastmod>
+  </url>
+  <url>
+    <loc>https://paramedicpapers.com/papers/42920123/</loc>
+    <lastmod>2026-10-25</lastmod>
+  </url>
+  <url>
+    <loc>https://paramedicpapers.com/papers/42919346/</loc>
+    <lastmod>2026-10-25</lastmod>
+  </url>
+  <url>
+    <loc>https://paramedicpapers.com/papers/42913135/</loc>
+    <lastmod>2026-10-25</lastmod>
+  </url>
+  <url>
+    <loc>https://paramedicpapers.com/papers/42911834/</loc>
+    <lastmod>2026-10-25</lastmod>
+  </url>
+  <url>
+    <loc>https://paramedicpapers.com/papers/42909662/</loc>
+    <lastmod>2026-10-25</lastmod>
   </url>
   <url>
     <loc>https://paramedicpapers.com/papers/doi-10-1186-s12873-026-01811-5/</loc>
