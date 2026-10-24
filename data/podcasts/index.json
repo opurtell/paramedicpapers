@@ -1,5 +1,17 @@
 [
  {
+  "id": "av-clinical-conversations",
+  "name": "Clinical Conversations",
+  "publisher": "Ambulance Victoria Office of the Medical Director",
+  "focus": "Paramedic clinical practice, guideline changes and monthly clinical updates",
+  "region": "AU",
+  "site": "https://podcasters.spotify.com/pod/show/av-medical-directorate",
+  "art": "data/podcasts/art/av-clinical-conversations.jpg",
+  "episodes": 51,
+  "latest": "2026-10-23",
+  "updated": "2026-10-24"
+ },
+ {
   "id": "prehospital-care-podcast",
   "name": "Pre-Hospital Care Podcast",
   "publisher": "Eoin Walker",
@@ -142,18 +154,6 @@
   "episodes": 100,
   "latest": "2026-10-13",
   "updated": "2026-10-15"
- },
- {
-  "id": "av-clinical-conversations",
-  "name": "Clinical Conversations",
-  "publisher": "Ambulance Victoria Office of the Medical Director",
-  "focus": "Paramedic clinical practice, guideline changes and monthly clinical updates",
-  "region": "AU",
-  "site": "https://podcasters.spotify.com/pod/show/av-medical-directorate",
-  "art": "data/podcasts/art/av-clinical-conversations.jpg",
-  "episodes": 50,
-  "latest": "2026-10-07",
-  "updated": "2026-10-08"
  },
  {
   "id": "rcem-learning",
