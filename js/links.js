@@ -71,9 +71,10 @@
     var box = document.getElementById('posts');
     if (!box) return;
     (ig.posts || []).slice(0, MAX_POSTS).forEach(function (p) {
+      // The dashboard with this post's studies pinned (app.js #post=), not the
+      // post itself: visitors here have just come from Instagram.
       var a = el('a');
-      a.href = p.permalink;
-      a.rel = 'noopener';
+      a.href = '/?utm_source=instagram#post=' + p.date;
       a.appendChild(el('span', 'ph', p.hook || p.date));
       if (p.cover) {
         var img = new Image();
