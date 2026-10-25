@@ -1,0 +1,120 @@
+{
+ "id": "2026-10-25",
+ "span": "18 – 25 Oct 2026",
+ "created": "2026-10-25T00:01:25Z",
+ "est_minutes": 10,
+ "questions": [
+  {
+   "paper_id": "10.1080/10903127.2026.2751025",
+   "short_title": "Ditch lights and sirens for fall-alarm calls",
+   "topic": "Operations & systems",
+   "question": "After dispatch of medical-alert (PERS) activations changed to non-lights-and-siren response, how often did crews need to upgrade to a lights-and-siren transport?",
+   "options": [
+    "About 1% of calls",
+    "About 12% of calls",
+    "About 5% of calls",
+    "About 0.2% of calls"
+   ],
+   "answer": 3,
+   "explanation": "Only 4 of 1,628 post-change calls (0.2%) needed an L&S transport, and just one of those required advanced interventions. Remember this was a single-agency before-after study with no control group, so it's hypothesis-generating rather than proof the change is safe."
+  },
+  {
+   "paper_id": "42894810",
+   "short_title": "Predicting outcomes in PEA cardiac arrest",
+   "topic": "Cardiac arrest",
+   "question": "In PEA cardiac arrest, what did the study find about conversion to a shockable rhythm before hospital arrival?",
+   "options": [
+    "It predicted good outcome only in cardiac PEA and worse outcome in non-cardiac PEA",
+    "It made no difference to neurological outcome in any group",
+    "It predicted good neurological outcome regardless of the cause of the arrest",
+    "It predicted worse outcome only when the arrest was unwitnessed"
+   ],
+   "answer": 0,
+   "explanation": "Rhythm conversion predicted a favourable outcome in cardiac PEA but a poorer one in non-cardiac PEA. This is a registry association with presumed aetiology, so it generates hypotheses rather than proving causation."
+  },
+  {
+   "paper_id": "42894483",
+   "short_title": "Australian alcohol harms keep rising",
+   "topic": "Operations & systems",
+   "question": "Between 2010 and 2023, national Australian data showed alcohol consumption declining by survey and wastewater measures. What happened to alcohol-related harms such as ambulance attendances over the same period?",
+   "options": [
+    "They stayed roughly stable",
+    "They fell sharply after 2019",
+    "They increased substantially",
+    "They declined in line with consumption"
+   ],
+   "answer": 2,
+   "explanation": "Most harm measures, including ambulance attendances, rose substantially even as consumption declined. The caveat is that these are population-level indicators, so no individual presentations were linked and the differing measures are hard to align."
+  },
+  {
+   "paper_id": "42896864",
+   "short_title": "Feedback device lifts paediatric ventilation quality",
+   "topic": "Paediatrics",
+   "question": "In this simulation study, a real-time ventilation feedback device had its largest effect on which measure of paediatric ventilation quality?",
+   "options": [
+    "Mask seal, with leak under 30% far more often",
+    "Tidal volume, with guideline-adherent breaths jumping from 16.2% to 87%",
+    "Reducing gastric insufflation during bagging",
+    "Ventilation rate, with adherence rising from 65% to 88.6%"
+   ],
+   "answer": 1,
+   "explanation": "The biggest jump was tidal volume adherence, from 16.2% to 87% of breaths, ahead of the improvements in rate and mask leak. Remember it's a manikin study — no patient outcomes, and real paediatric airways are less forgiving."
+  },
+  {
+   "paper_id": "42901186",
+   "short_title": "Dispatcher training + volunteer app lifts bystander CPR",
+   "topic": "Cardiac arrest",
+   "question": "Despite more bystanders starting CPR after the dispatcher training and volunteer app intervention, what did the trial find about patient outcomes?",
+   "options": [
+    "Survival to discharge improved but neurological outcomes did not",
+    "Neither survival to discharge nor neurological outcomes improved",
+    "Survival to discharge and neurological outcomes improved alongside CPR rates",
+    "Outcomes improved only when CPR was started within 60 seconds"
+   ],
+   "answer": 1,
+   "explanation": "The rise in bystander CPR did not translate into better survival or neurological outcomes, and the CPR effect itself lost significance under some statistical adjustments. So the results are hypothesis-generating rather than practice-changing."
+  },
+  {
+   "paper_id": "42901366",
+   "short_title": "Real-time feedback tidies BVM ventilation in arrest",
+   "topic": "Airway & ventilation",
+   "question": "In the VECARS-2 study, real-time feedback improved insufflated-volume adherence to 68% of breaths in range. What happened to expired tidal volume?",
+   "options": [
+    "It rose well above the guideline range",
+    "It matched the insufflated volume closely",
+    "It fell below the guideline range",
+    "It stayed essentially unchanged"
+   ],
+   "answer": 3,
+   "explanation": "Expired tidal volumes were in range in only 14% vs 15% of breaths, so despite tidier insufflated volumes the air actually reaching the lungs didn't change. The before-and-after design without randomisation also means the findings are hypothesis-generating only."
+  },
+  {
+   "paper_id": "42900532",
+   "short_title": "Resilience as a skill, not a trait",
+   "topic": "Workforce & wellbeing",
+   "question": "In this study, 'work mode' was described as having a phased structure. Which phases did the authors identify?",
+   "options": [
+    "Readiness, immersion and discharge",
+    "Preparation, containment and recovery",
+    "Anticipation, action and reflection",
+    "Alert, response and debrief"
+   ],
+   "answer": 1,
+   "explanation": "Work mode moved through preparation, containment and recovery, showing features of skilled performance like an athlete's game face. Keep in mind the sample was small, drawn from a single service, and the interviewers analysed their own data."
+  },
+  {
+   "paper_id": "10.1016/j.resplu.2026.101535",
+   "short_title": "Dutch TEAM tool validated for resus training",
+   "topic": "Education & training",
+   "question": "When using a validated TEAM-style tool to rate team performance in resus simulation, how many independent raters does the evidence suggest you need for good reliability?",
+   "options": [
+    "Four raters, as reliability keeps rising steeply with each extra rater",
+    "Three raters, because two gives only moderate reliability",
+    "One rater is enough if they are an experienced instructor",
+    "Two raters give good reliability; three add little"
+   ],
+   "answer": 1,
+   "explanation": "Inter-rater reliability was good with three raters (ICC 0.78) but only moderate with two (ICC 0.68). Scores also clustered near the top, with ceiling effects on every item."
+  }
+ ]
+}

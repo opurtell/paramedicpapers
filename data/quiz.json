@@ -1,120 +1,120 @@
 {
- "id": "2026-10-22",
- "span": "15 – 22 Oct 2026",
- "created": "2026-10-22T00:01:26Z",
+ "id": "2026-10-25",
+ "span": "18 – 25 Oct 2026",
+ "created": "2026-10-25T00:01:25Z",
  "est_minutes": 10,
  "questions": [
   {
-   "paper_id": "10.1080/10903127.2026.2748380",
-   "short_title": "NAEMSP guidance: older adults after low-acuity falls",
-   "topic": "Older people",
-   "question": "The NAEMSP position statement says 'lift assist' calls involving older adults should be framed how?",
+   "paper_id": "10.1080/10903127.2026.2751025",
+   "short_title": "Ditch lights and sirens for fall-alarm calls",
+   "topic": "Operations & systems",
+   "question": "After dispatch of medical-alert (PERS) activations changed to non-lights-and-siren response, how often did crews need to upgrade to a lights-and-siren transport?",
    "options": [
-    "As routine encounters needing no assessment",
-    "As patient encounters warranting full assessment",
-    "As uniformly low-acuity minor traumas",
-    "As responses only worth tracking at dispatch"
+    "About 1% of calls",
+    "About 12% of calls",
+    "About 5% of calls",
+    "About 0.2% of calls"
    ],
-   "answer": 1,
-   "explanation": "The statement recommends treating these calls as patient encounters warranting assessment for underlying medical causes, injuries and safety, not as minor events. It acknowledges a system-level bias toward underassessment, though the abstract-only caveat means detailed recommendations still can't be fully checked."
+   "answer": 3,
+   "explanation": "Only 4 of 1,628 post-change calls (0.2%) needed an L&S transport, and just one of those required advanced interventions. Remember this was a single-agency before-after study with no control group, so it's hypothesis-generating rather than proof the change is safe."
   },
   {
-   "paper_id": "42867902",
-   "short_title": "Dispatcher CPR and survival in shockable OHCA",
+   "paper_id": "42894810",
+   "short_title": "Predicting outcomes in PEA cardiac arrest",
    "topic": "Cardiac arrest",
-   "question": "The huge survival gap between dispatcher-assisted CPR ongoing at arrival and crew-initiated CPR (30-day survival 54.6% vs 7.1%) should be interpreted mainly as what?",
+   "question": "In PEA cardiac arrest, what did the study find about conversion to a shockable rhythm before hospital arrival?",
    "options": [
-    "Evidence that crew-initiated CPR is harmful",
-    "A marker that bystanders had already started CPR early, not a like-for-like comparison",
-    "Proof that dispatcher instructions directly cause a near eight-fold survival benefit",
-    "Evidence that crews arrive too slowly in shockable arrests"
-   ],
-   "answer": 1,
-   "explanation": "DA-CPR still running when the crew arrives tells you the bystander started CPR early, which also selects for better-prognosis arrests. The authors flag massive confounding by indication, so this is an association, not a causal effect."
-  },
-  {
-   "paper_id": "42872019",
-   "short_title": "Prehospital pain assessment happens too rarely",
-   "topic": "Pain & sedation",
-   "question": "Across the studies in this systematic review, how often was pain assessed and documented in the prehospital setting?",
-   "options": [
-    "In 46.7% to 60% of patients",
-    "In 22.5% to 46.7% of patients",
-    "In more than 50% of patients, matching recommended standards",
-    "In up to 22.5% of patients, with some studies under 10%"
-   ],
-   "answer": 1,
-   "explanation": "The review found pain was assessed and documented in only 22.5% to 46.7% of patients, well below recommended standards. Keep in mind the eight studies were heterogeneous and could not be quantitatively pooled."
-  },
-  {
-   "paper_id": "10.1016/j.amj.2026.09.007",
-   "short_title": "Delays in NSW paediatric trauma retrieval",
-   "topic": "Paediatrics",
-   "question": "After stabilising the patient at the referring hospital, how often did the specialist paediatric retrieval team take more than 10 minutes to depart?",
-   "options": [
-    "In 55% of missions",
-    "In 80% of missions",
-    "In about half of missions",
-    "In 30% of missions"
-   ],
-   "answer": 1,
-   "explanation": "Teams took over 10 minutes to leave in 80% of missions, suggesting a consistent delay at the referring hospital once the patient was ready. The data are retrospective, from a single service, and include no patient outcomes, so the clinical impact of these delays is unknown."
-  },
-  {
-   "paper_id": "10.1016/j.resplu.2026.101531",
-   "short_title": "Every minute counts: early bystander CPR",
-   "topic": "Cardiac arrest",
-   "question": "A national registry analysis of bystander CPR during the pandemic found overall CPR rates stayed stable. What did the time-to-event analysis reveal that the headline rates missed?",
-   "options": [
-    "Bystander CPR rates rose sharply for witnessed arrests",
-    "Early initiation within 10 minutes fell modestly during the pandemic",
-    "CPR quality, not timing, worsened during the pandemic",
-    "Delay to CPR made no difference to neurological outcomes"
-   ],
-   "answer": 1,
-   "explanation": "Overall rates were nearly identical (58.7% vs 58.6%), but early starts slipped (aHR 0.96), and CPR begun at 0–3 minutes carried much better odds of favourable neurological outcome than starts after 10 minutes. The timing link is associative, so confounding like dispatch delays can't be ruled out."
-  },
-  {
-   "paper_id": "42882053",
-   "short_title": "Prehospital qSOFA adds a little prognostic signal",
-   "topic": "Sepsis & infection",
-   "question": "A prehospital qSOFA of 2 or more in a suspected infection patient was associated with worse 30-day mortality, but what did the study find about how much it added to what's already known at ED arrival?",
-   "options": [
-    "It was only useful in patients who screened negative at ED triage",
-    "It added almost nothing to a model using arrival vitals and labs",
-    "It predicted mortality as accurately as the arrival vitals and labs combined",
-    "It reclassified most patients into different triage categories"
-   ],
-   "answer": 1,
-   "explanation": "The prehospital qSOFA stayed associated with death even after adjusting for arrival data, but changed the AUC by only 0.007. It's hypothesis-generating: a single Turkish centre with 58% of eligible patients excluded means serious selection bias, so no change to disposition decisions."
-  },
-  {
-   "paper_id": "42881556",
-   "short_title": "Prehospital ACS risk stratification: the evidence",
-   "topic": "Cardiac (non-arrest)",
-   "question": "According to this review, which prehospital ACS risk stratification approach had the strongest evidence for safe field risk assessment?",
-   "options": [
-    "HEART-derived pathways combined with point-of-care troponin testing",
-    "AI-assisted ECG interpretation tools",
-    "Provider gestalt without any structured tool",
-    "Biomarker-free clinical decision rules used on their own"
+    "It predicted good outcome only in cardiac PEA and worse outcome in non-cardiac PEA",
+    "It made no difference to neurological outcome in any group",
+    "It predicted good neurological outcome regardless of the cause of the arrest",
+    "It predicted worse outcome only when the arrest was unwitnessed"
    ],
    "answer": 0,
-   "explanation": "HEART-derived approaches with point-of-care troponin showed the strongest evidence for safe prehospital risk assessment and reduced healthcare use. AI ECG tools looked promising but haven't been prospectively validated for outcomes, and the review was narrative rather than systematic."
+   "explanation": "Rhythm conversion predicted a favourable outcome in cardiac PEA but a poorer one in non-cardiac PEA. This is a registry association with presumed aetiology, so it generates hypotheses rather than proving causation."
   },
   {
-   "paper_id": "42879234",
-   "short_title": "Burnout linked to suicidal risk in EMS",
-   "topic": "Workforce & wellbeing",
-   "question": "In this cross-sectional survey of EMS professionals, how were burnout, anxiety and depression related to suicidal risk?",
+   "paper_id": "42894483",
+   "short_title": "Australian alcohol harms keep rising",
+   "topic": "Operations & systems",
+   "question": "Between 2010 and 2023, national Australian data showed alcohol consumption declining by survey and wastewater measures. What happened to alcohol-related harms such as ambulance attendances over the same period?",
    "options": [
-    "Each was linked to lower suicidal risk when social support was high",
-    "Higher scores on each of these tracked with higher suicidal risk",
-    "Only depression was linked to suicidal risk",
-    "Burnout was linked to risk, but anxiety and depression were not"
+    "They stayed roughly stable",
+    "They fell sharply after 2019",
+    "They increased substantially",
+    "They declined in line with consumption"
+   ],
+   "answer": 2,
+   "explanation": "Most harm measures, including ambulance attendances, rose substantially even as consumption declined. The caveat is that these are population-level indicators, so no individual presentations were linked and the differing measures are hard to align."
+  },
+  {
+   "paper_id": "42896864",
+   "short_title": "Feedback device lifts paediatric ventilation quality",
+   "topic": "Paediatrics",
+   "question": "In this simulation study, a real-time ventilation feedback device had its largest effect on which measure of paediatric ventilation quality?",
+   "options": [
+    "Mask seal, with leak under 30% far more often",
+    "Tidal volume, with guideline-adherent breaths jumping from 16.2% to 87%",
+    "Reducing gastric insufflation during bagging",
+    "Ventilation rate, with adherence rising from 65% to 88.6%"
    ],
    "answer": 1,
-   "explanation": "Scores on all burnout domains and the anxiety and depression subscales each corresponded with higher suicidal risk, with elevated risk among gender-diverse respondents. Because the survey was cross-sectional and self-selected, these are associations only and can't show causation."
+   "explanation": "The biggest jump was tidal volume adherence, from 16.2% to 87% of breaths, ahead of the improvements in rate and mask leak. Remember it's a manikin study — no patient outcomes, and real paediatric airways are less forgiving."
+  },
+  {
+   "paper_id": "42901186",
+   "short_title": "Dispatcher training + volunteer app lifts bystander CPR",
+   "topic": "Cardiac arrest",
+   "question": "Despite more bystanders starting CPR after the dispatcher training and volunteer app intervention, what did the trial find about patient outcomes?",
+   "options": [
+    "Survival to discharge improved but neurological outcomes did not",
+    "Neither survival to discharge nor neurological outcomes improved",
+    "Survival to discharge and neurological outcomes improved alongside CPR rates",
+    "Outcomes improved only when CPR was started within 60 seconds"
+   ],
+   "answer": 1,
+   "explanation": "The rise in bystander CPR did not translate into better survival or neurological outcomes, and the CPR effect itself lost significance under some statistical adjustments. So the results are hypothesis-generating rather than practice-changing."
+  },
+  {
+   "paper_id": "42901366",
+   "short_title": "Real-time feedback tidies BVM ventilation in arrest",
+   "topic": "Airway & ventilation",
+   "question": "In the VECARS-2 study, real-time feedback improved insufflated-volume adherence to 68% of breaths in range. What happened to expired tidal volume?",
+   "options": [
+    "It rose well above the guideline range",
+    "It matched the insufflated volume closely",
+    "It fell below the guideline range",
+    "It stayed essentially unchanged"
+   ],
+   "answer": 3,
+   "explanation": "Expired tidal volumes were in range in only 14% vs 15% of breaths, so despite tidier insufflated volumes the air actually reaching the lungs didn't change. The before-and-after design without randomisation also means the findings are hypothesis-generating only."
+  },
+  {
+   "paper_id": "42900532",
+   "short_title": "Resilience as a skill, not a trait",
+   "topic": "Workforce & wellbeing",
+   "question": "In this study, 'work mode' was described as having a phased structure. Which phases did the authors identify?",
+   "options": [
+    "Readiness, immersion and discharge",
+    "Preparation, containment and recovery",
+    "Anticipation, action and reflection",
+    "Alert, response and debrief"
+   ],
+   "answer": 1,
+   "explanation": "Work mode moved through preparation, containment and recovery, showing features of skilled performance like an athlete's game face. Keep in mind the sample was small, drawn from a single service, and the interviewers analysed their own data."
+  },
+  {
+   "paper_id": "10.1016/j.resplu.2026.101535",
+   "short_title": "Dutch TEAM tool validated for resus training",
+   "topic": "Education & training",
+   "question": "When using a validated TEAM-style tool to rate team performance in resus simulation, how many independent raters does the evidence suggest you need for good reliability?",
+   "options": [
+    "Four raters, as reliability keeps rising steeply with each extra rater",
+    "Three raters, because two gives only moderate reliability",
+    "One rater is enough if they are an experienced instructor",
+    "Two raters give good reliability; three add little"
+   ],
+   "answer": 1,
+   "explanation": "Inter-rater reliability was good with three raters (ICC 0.78) but only moderate with two (ICC 0.68). Scores also clustered near the top, with ceiling effects on every item."
   }
  ]
 }
