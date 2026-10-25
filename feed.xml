@@ -25,6 +25,20 @@
     <itunes:explicit>false</itunes:explicit>
     <podcast:guid>09fa3693-e2ac-527c-9d1c-f68df149b888</podcast:guid>
     <item>
+      <title>Paramedic Papers Daily — 26 October 2026</title>
+      <link>https://paramedicpapers.com/episodes/2026-10-26/</link>
+      <description>3 papers: Prehospital pulse pressure flags trauma bleeding; ECPR in refractory OHCA: benefit past 60 minutes; Instrumented manikin neck for immobilisation training</description>
+      <content:encoded><![CDATA[<p>3 papers: Prehospital pulse pressure flags trauma bleeding; ECPR in refractory OHCA: benefit past 60 minutes; Instrumented manikin neck for immobilisation training</p><p>Papers in this episode:</p><ul><li><a href="https://doi.org/10.1016/j.injury.2026.113779">Prehospital pulse pressure flags trauma bleeding <em>(Injury)</em></a></li><li><a href="https://doi.org/10.1093/ehjacc/zuag132">ECPR in refractory OHCA: benefit past 60 minutes <em>(European Heart Journal. Acute Cardiovascular Care)</em></a></li><li><a href="https://doi.org/10.1177/09544119261497807">Instrumented manikin neck for immobilisation training <em>(Proceedings of the Institution of Mechanical Engineers. Part H, Journal of Engineering in Medicine)</em></a></li></ul><p><a href="https://paramedicpapers.com/episodes/2026-10-26/">Show notes and transcript</a></p>]]></content:encoded>
+      <pubDate>Mon, 26 Oct 2026 07:34:55 +1100</pubDate>
+      <guid isPermaLink="false">https://audio.paramedicpapers.com/ep-2026-10-26.mp3</guid>
+      <enclosure url="https://op3.dev/e/audio.paramedicpapers.com/ep-2026-10-26.mp3" length="922412" type="audio/mpeg"/>
+      <itunes:duration>230</itunes:duration>
+      <itunes:summary>3 papers: Prehospital pulse pressure flags trauma bleeding; ECPR in refractory OHCA: benefit past 60 minutes; Instrumented manikin neck for immobilisation training</itunes:summary>
+      <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
+      <itunes:episodeType>full</itunes:episodeType>
+      <podcast:transcript url="https://audio.paramedicpapers.com/ep-2026-10-26.txt" type="text/plain" language="en-au"/>
+    </item>
+    <item>
       <title>Paramedic Papers Daily — 25 October 2026</title>
       <link>https://paramedicpapers.com/episodes/2026-10-25/</link>
       <description>4 papers: Hot nights linked to more OHCA; ECPR for OHCA: pump the brakes; How ambulance models shape end-of-life care; Scene-to-door time and stroke thrombectomy</description>
@@ -421,19 +435,6 @@
       <enclosure url="https://op3.dev/e/audio.paramedicpapers.com/ep-2026-09-27.mp3" length="656205" type="audio/mpeg"/>
       <itunes:duration>163</itunes:duration>
       <itunes:summary>2 papers: paediatric IHCA trends in Japan (survival up to ~30%); Greece's first national school CPR championship (95%+ quality scores)</itunes:summary>
-      <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
-      <itunes:episodeType>full</itunes:episodeType>
-    </item>
-    <item>
-      <title>Paramedic Papers Daily — 26 September 2026</title>
-      <link>https://paramedicpapers.com/episodes/2026-09-26/</link>
-      <description>3 papers: pit-crew CPR education and intact survival (ahead-of-print); zero studies on post-arrest psychological screening; RFM feedback beats repetition in neonatal mask ventilation</description>
-      <content:encoded><![CDATA[<p>3 papers: pit-crew CPR education and intact survival (ahead-of-print); zero studies on post-arrest psychological screening; RFM feedback beats repetition in neonatal mask ventilation</p><p>Papers in this episode:</p><ul><li><a href="https://doi.org/10.1080/10903127.2026.2739421">A Robust Educational Initiative for EMS Clinicians Focusing on Pit-Crew CPR Improves Neurologically Intact Survival <em>(Prehospital Emergency Care)</em></a></li><li><a href="https://doi.org/10.1016/j.resuscitation.2026.111311">Structured diagnostic strategies for psychological problems in cardiac arrest survivors: an important knowledge gap <em>(Resuscitation)</em></a></li><li><a href="https://doi.org/10.1016/j.resplu.2026.101497">Low-dose, high-frequency simulation with respiratory function monitor feedback enhances face mask ventilation across neonatal resuscitation devices: A prospective study in neonatology fellows <em>(Resuscitation Plus)</em></a></li></ul><p><a href="https://paramedicpapers.com/episodes/2026-09-26/">Show notes and transcript</a></p>]]></content:encoded>
-      <pubDate>Sat, 26 Sep 2026 07:36:22 +1000</pubDate>
-      <guid isPermaLink="false">https://opurtell.github.io/paramedicpapers/audio/ep-2026-09-26.mp3</guid>
-      <enclosure url="https://op3.dev/e/audio.paramedicpapers.com/ep-2026-09-26.mp3" length="718317" type="audio/mpeg"/>
-      <itunes:duration>179</itunes:duration>
-      <itunes:summary>3 papers: pit-crew CPR education and intact survival (ahead-of-print); zero studies on post-arrest psychological screening; RFM feedback beats repetition in neonatal mask ventilation</itunes:summary>
       <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
       <itunes:episodeType>full</itunes:episodeType>
     </item>
