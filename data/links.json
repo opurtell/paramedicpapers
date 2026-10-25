@@ -1,34 +1,34 @@
 {
- "updated": "2026-10-24",
+ "updated": "2026-10-25",
  "latest": [
   {
-   "key": "42904228",
-   "title": "Who doesn't call an ambulance for chest pain",
-   "topic": "Cardiac (non-arrest)",
-   "finding": "EMS use for ACS ranged 36–79%; under-49s up to 68% lower odds of EMS use than over-65s, men up to 11% lower than women, overseas-born up to 15% lower, non-English speakers 6–20% lower, remote residents up to 25% lower than major-city residents"
+   "key": "42909662",
+   "title": "Hot nights linked to more OHCA",
+   "topic": "Cardiac arrest",
+   "finding": "Nighttime heat exposure increased OHCA hospitalisation (RR 1.090, 95% CI 1.047–1.135); RR rose to 1.295 in people ≥75 and 1.352 in women in northern regions, and risk was higher where air-conditioning penetration was low"
   },
   {
-   "key": "42904388",
-   "title": "Prehospital ultrasound as a decision tool",
-   "topic": "Other",
-   "finding": "POCUS may identify cardiac activity and reversible causes in arrest, characterise shock mechanisms and improve diagnostic confidence in cardiogenic pulmonary oedema; E-FAST has high specificity but limited sensitivity so it cannot be used as a rule-out test"
+   "key": "doi-10-1080-10903127-2026-2753002",
+   "title": "ECPR for OHCA: pump the brakes",
+   "topic": "Cardiac arrest",
+   "finding": "Only ARREST (30 patients) strongly favoured ECPR; INCEPTION and Prague OHCA were not statistically significant, and the authors argue intra-arrest transport effects cannot be excluded as a driver of reported benefit"
   },
   {
-   "key": "42908367",
-   "title": "How Utah widened paramedic oxytocin scope",
-   "topic": "Obstetrics",
-   "finding": "State EMS protocols changed in April 2024 to allow paramedic oxytocin for PPH prevention and AEMT intramuscular oxytocin for PPH prevention and treatment"
+   "key": "42920134",
+   "title": "How ambulance models shape end-of-life care",
+   "topic": "Operations & systems",
+   "finding": "Learning on the job and limited access to records, anticipatory medicines and palliative advice dominated practice across all three models; paramedic workload was driven partly by primary and community service shortages"
   },
   {
-   "key": "42905143",
-   "title": "HEMS vs road: guideline adherence in trauma",
-   "topic": "Trauma",
-   "finding": "HEMS transport associated with higher intervention rates across all indication-based subgroups: advanced airway in impaired consciousness 96.5% vs 82.9%, chest tube placement 50.5% vs 40.9%, despite HEMS patients being younger and more severely injured"
+   "key": "42920123",
+   "title": "Scene-to-door time and stroke thrombectomy",
+   "topic": "Stroke & neuro",
+   "finding": "In patients with pre-stroke disability (mRS ≥1), longer scene-to-door time independently reduced favourable 90-day outcome (adjusted OR 0.91, 95% CI 0.81–0.98; optimal cutoff 14 min); no significant association in the overall cohort (AUC 0.57)"
   }
  ],
  "episode": {
-  "date": "2026-10-24",
-  "title": "Paramedic Papers Daily — 24 October 2026",
-  "page": "/episodes/2026-10-24/"
+  "date": "2026-10-25",
+  "title": "Paramedic Papers Daily — 25 October 2026",
+  "page": "/episodes/2026-10-25/"
  }
 }
