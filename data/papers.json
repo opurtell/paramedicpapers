@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-10-24T20:20:43Z",
-  "lastUpdatedSydney": "2026-10-25 07:20 AEDT",
-  "lastUpdatedDate": "2026-10-25",
+  "lastUpdated": "2026-10-25T20:20:43Z",
+  "lastUpdatedSydney": "2026-10-26 07:20 AEDT",
+  "lastUpdatedDate": "2026-10-26",
   "featuredPapers": [
     {
       "id": "42901186",
@@ -1019,105 +1019,106 @@
     }
   ],
   "funFact": {
-    "category": "pharmacology",
-    "fact": "Salbutamol drives potassium into cells by stimulating Na+/K+-ATPase. Throw enough nebs at an asthma exacerbation and serum potassium can tank to dangerous levels. The patient's breathing better — but their heart's in trouble."
+    "category": "EMS",
+    "fact": "The first defibrillator used on a human was in 1947 — Claude Beck, open-chest, on a 14-year-old boy during surgery. Closed-chest defibrillation didn't arrive until 1956. For nearly a decade, you had to crack the chest to shock the heart."
   },
   "tldr": {
-    "date": "2026-10-25",
-    "paperCount": 11,
-    "summary": "A Japanese case-crossover of 135,898 OHCA hospitalisations found hot nights raise OHCA risk by about 9%, worst for older women — worth noting heading into summer. The rest is smaller observational work: a caution on adopting prehospital ECPR, UK qualitative work on paramedic end-of-life care, and a Danish HEMS survey where burnout was common despite low PTSD.",
+    "date": "2026-10-26",
+    "paperCount": 3,
+    "summary": "Today's usable finding is prehospital: a narrowed pulse pressure (≤45 mmHg) on scene helps rule out active haemorrhage in trauma. A large Korean registry also suggests ECPR benefit in refractory OHCA persists beyond the usual 60-minute benchmark.",
     "highlights": [
       {
-        "id": "42909662",
-        "pmid": "42909662",
-        "doi": "10.1007/s00484-026-03342-x",
-        "title": "Hot nights linked to more OHCA",
-        "journal": "International Journal of Biometeorology",
-        "note": "Nighttime heat exposure increased OHCA hospitalisation (RR 1.090, 95% CI 1.047–1.135); RR rose to 1.295 in people ≥75 and 1.352 in women in northern regions, and risk was higher where air-conditioning penetration was low"
+        "id": "42918714",
+        "pmid": "42918714",
+        "doi": "10.1016/j.injury.2026.113779",
+        "title": "Prehospital pulse pressure flags trauma bleeding",
+        "journal": "Injury",
+        "note": "Prehospital pulse pressure predicted active haemorrhage (AUC 0.73, similar to SBP 0.74); each 10 mmHg narrowing raised the odds by 51% (OR 1.51, 95% CI 1.28–1.79), and PP ≤45 mmHg was best for rule-out given high negative predictive value"
       },
       {
-        "id": "10.1080/10903127.2026.2753002",
-        "pmid": "",
-        "doi": "10.1080/10903127.2026.2753002",
-        "title": "ECPR for OHCA: pump the brakes",
-        "journal": "Prehospital Emergency Care",
-        "note": "Only ARREST (30 patients) strongly favoured ECPR; INCEPTION and Prague OHCA were not statistically significant, and the authors argue intra-arrest transport effects cannot be excluded as a driver of reported benefit"
+        "id": "42926135",
+        "pmid": "42926135",
+        "doi": "10.1093/ehjacc/zuag132",
+        "title": "ECPR in refractory OHCA: benefit past 60 minutes",
+        "journal": "European Heart Journal. Acute Cardiovascular Care",
+        "note": "Weighted 30-day survival with ECPR vs conventional CPR was 31.0% vs 16.0%, 21.6% vs 7.2% and 10.9% vs 3.2% at the 15-, 30- and 60-minute landmarks (adjusted risk differences +15.0, +14.4 and +7.7 percentage points, all P<.001), with benefit remaining significant through 120 minutes"
       },
       {
-        "id": "42920134",
-        "pmid": "42920134",
-        "doi": "10.1186/s12904-026-02283-x",
-        "title": "How ambulance models shape end-of-life care",
-        "journal": "BMC Palliative Care",
-        "note": "Learning on the job and limited access to records, anticipatory medicines and palliative advice dominated practice across all three models; paramedic workload was driven partly by primary and community service shortages"
-      },
-      {
-        "id": "42920123",
-        "pmid": "42920123",
-        "doi": "10.1186/s12873-026-01706-5",
-        "title": "Scene-to-door time and stroke thrombectomy",
-        "journal": "BMC Emergency Medicine",
-        "note": "In patients with pre-stroke disability (mRS ≥1), longer scene-to-door time independently reduced favourable 90-day outcome (adjusted OR 0.91, 95% CI 0.81–0.98; optimal cutoff 14 min); no significant association in the overall cohort (AUC 0.57)"
-      },
-      {
-        "id": "42911834",
-        "pmid": "42911834",
-        "doi": "10.1080/10903127.2026.2753000",
-        "title": "Kratom derivative withdrawal treated prehospital",
-        "journal": "Prehospital Emergency Care",
-        "note": "Buprenorphine 24 mg and 32 mg/8 mg with naloxone treated severe 7-OH/MGM-15 withdrawal; both patients were linked to outpatient treatment within 48 hours and retained in treatment at 30 days"
-      },
-      {
-        "id": "10.1016/j.amj.2026.09.006",
-        "pmid": "",
-        "doi": "10.1016/j.amj.2026.09.006",
-        "title": "HEMS burnout high even without PTSD",
-        "journal": "Air Medical Journal",
-        "note": "48.6% exceeded the personal burnout cutoff, 23.2% work-related and 17.4% patient-related; no one met PTSD criteria; trauma exposure correlated with PTSD symptoms (r=0.30) and work-related burnout (r=0.33)"
-      },
-      {
-        "id": "42920141",
-        "pmid": "42920141",
-        "doi": "10.1186/s12873-026-01705-6",
-        "title": "Neonatal calls rare on South African ambulances",
-        "journal": "BMC Emergency Medicine",
-        "note": "Neonatal activations were 0.7% of EMS workload; prehospital intubation 0.4%; recorded mechanical ventilation 4.6% versus sedation/analgesia 1.1%; specialist retrieval teams were strongly associated with advanced interventions"
-      },
-      {
-        "id": "42920291",
-        "pmid": "42920291",
-        "doi": "10.12659/MSM.953922",
-        "title": "Paramedics under-document neuro change over time",
-        "journal": "Medical Science Monitor",
-        "note": "Mean self-reported documentation completeness 24.57/35; level of consciousness was documented often (81.0%) but only 9.2% consistently documented temporal neurological changes; training was associated with higher scores (26.20 vs 23.24, P<0.001)"
-      },
-      {
-        "id": "42913135",
-        "pmid": "42913135",
-        "doi": "10.1016/j.ijnurstu.2026.105732",
-        "title": "Eye-tracking shows how experience guides ambulance care",
-        "journal": "International Journal of Nursing Studies",
-        "note": "Four principal components of gaze behaviour (fixation count, visit count, fixation duration) were significantly associated with experience group after adjustment for multiple comparisons; novices showed distinctly different fixation patterns from experts"
-      },
-      {
-        "id": "10.1186/s12873-026-01816-0",
-        "pmid": "",
-        "doi": "10.1186/s12873-026-01816-0",
-        "title": "Why rural stroke care lags: system drivers",
-        "journal": "BMC Emergency Medicine",
-        "note": "Inequity emerged where stroke recognition had to convert rapidly into dispatch priority, on-scene capability, pre-alerting and transfer; rural and coastal distance compounded delay when combined with limited patient mobility, complex extrication and Category 2 demand"
-      },
-      {
-        "id": "42919346",
-        "pmid": "42919346",
-        "doi": "10.1186/s12909-026-10025-z",
-        "title": "Clearer AED voice prompts fix lay-user errors",
-        "journal": "BMC Medical Education",
-        "note": "With standard AED instructions, fewer than 10% of students correctly completed 8 of 10 assessed items (median time to shock 143 s); modified instructions significantly improved device activation and later steps (P<0.001)"
+        "id": "42927462",
+        "pmid": "42927462",
+        "doi": "10.1177/09544119261497807",
+        "title": "Instrumented manikin neck for immobilisation training",
+        "journal": "Proceedings of the Institution of Mechanical Engineers. Part H, Journal of Engineering in Medicine",
+        "note": "The prototype delivered six-degree-of-freedom neck motion with realistic low stiffness and head-angle accuracy within 0.89° RMSE versus optoelectronic motion capture"
       }
     ]
   },
   "dailyUpdates": [
+    {
+      "date": "2026-10-26",
+      "papers": [
+        {
+          "id": "42918714",
+          "title": "Pre-hospital pulse pressure as an early predictor of active hemorrhage in trauma patients",
+          "journal": "Injury",
+          "date": "2026-10-26",
+          "pmid": "42918714",
+          "doi": "10.1016/j.injury.2026.113779",
+          "summary": "A retrospective study of 2,177 adult trauma patients across three Canadian level 1 trauma centres found prehospital pulse pressure predicted active haemorrhage (AUC 0.73), with each 10 mmHg narrowing raising the odds by 51% and a cut-off of ≤45 mmHg most useful for ruling bleeding out.",
+          "relevance": "🟢 High — Pulse pressure is just two numbers off the cuff you already take — no new equipment or drugs, so it applies to Australian practice as it stands. The outcome (transfusion or haemorrhage control) is hospital-side, but the flag is raised on scene.",
+          "pubDate": "2026-10-15",
+          "topic": "Trauma",
+          "studyType": "Cohort",
+          "design": "Retrospective multicentre cohort",
+          "n": "2,177 adult trauma patients (68 with active haemorrhage)",
+          "finding": "Prehospital pulse pressure predicted active haemorrhage (AUC 0.73, similar to SBP 0.74); each 10 mmHg narrowing raised the odds by 51% (OR 1.51, 95% CI 1.28–1.79), and PP ≤45 mmHg was best for rule-out given high negative predictive value",
+          "caveat": "Retrospective design with only 68 bleeding patients, so the cut-off needs prospective validation",
+          "bottomLine": "Hypothesis-generating",
+          "shortTitle": "Prehospital pulse pressure flags trauma bleeding",
+          "learningGoal": "Recognise narrowing pulse pressure as an early sign of haemorrhage in trauma patients before blood pressure falls."
+        },
+        {
+          "id": "42926135",
+          "title": "Earlier Versus Later Extracorporeal Cardiopulmonary Resuscitation in Refractory Out-of-Hospital Cardiac Arrest: A Nationwide Sequential Landmark Target Trial Emulation",
+          "journal": "European Heart Journal. Acute Cardiovascular Care",
+          "date": "2026-10-26",
+          "pmid": "42926135",
+          "doi": "10.1093/ehjacc/zuag132",
+          "summary": "A target trial emulation in 58,668 patients with refractory OHCA from the Korean nationwide registry found ECPR roughly doubled 30-day survival at every landmark (+15.0, +14.4 and +7.7 percentage points at 15, 30 and 60 minutes), with benefit persisting beyond the usual 60-minute benchmark.",
+          "relevance": "🟡 Medium — ECPR is an in-hospital tool — Australian crews don't deliver it — but the refractory-arrest transport and destination decisions that get a patient to an ECMO centre are ours, and the finding questions the 60-minute cut-off many systems apply.",
+          "pubDate": "2026-10-25",
+          "topic": "Cardiac arrest",
+          "studyType": "Registry",
+          "design": "Nationwide registry target trial emulation (sequential landmark)",
+          "n": "58,668 patients with refractory OHCA (909 received ECPR)",
+          "finding": "Weighted 30-day survival with ECPR vs conventional CPR was 31.0% vs 16.0%, 21.6% vs 7.2% and 10.9% vs 3.2% at the 15-, 30- and 60-minute landmarks (adjusted risk differences +15.0, +14.4 and +7.7 percentage points, all P<.001), with benefit remaining significant through 120 minutes",
+          "caveat": "Propensity-adjusted observational design, not randomised — residual selection bias about who gets ECMO is likely",
+          "bottomLine": "Hypothesis-generating",
+          "shortTitle": "ECPR in refractory OHCA: benefit past 60 minutes",
+          "learningGoal": "Weigh the benefits and uncertainties of ECPR for refractory cardiac arrest beyond the conventional sixty-minute window."
+        },
+        {
+          "id": "42927462",
+          "title": "Six-degree-of-freedom manikin neck for immobilisation training, incorporating linear potentiometers for real-time motion feedback",
+          "journal": "Proceedings of the Institution of Mechanical Engineers. Part H, Journal of Engineering in Medicine",
+          "date": "2026-10-26",
+          "pmid": "42927462",
+          "doi": "10.1177/09544119261497807",
+          "summary": "Australian engineers built and tested a proof-of-concept instrumented manikin neck with six-degree-of-freedom motion and real-time head-position feedback for immobilisation training, achieving angle measurement error under 0.89° versus motion capture.",
+          "relevance": "🔴 Low — A device prototype, not evidence about patient care — interesting for training programs, but nothing here changes what crews do yet, and the authors note it needs work before paramedic training settings.",
+          "pubDate": "2026-10-25",
+          "topic": "Education & training",
+          "studyType": "Simulation",
+          "design": "Device design, manufacture and bench validation",
+          "n": "One manikin neck prototype (bench-tested against motion capture)",
+          "finding": "The prototype delivered six-degree-of-freedom neck motion with realistic low stiffness and head-angle accuracy within 0.89° RMSE versus optoelectronic motion capture",
+          "caveat": "Proof-of-concept only: range of motion and stiffness were limited by the build, and it hasn't been evaluated in actual paramedic training",
+          "bottomLine": "Context only",
+          "shortTitle": "Instrumented manikin neck for immobilisation training",
+          "learningGoal": "Improve my spinal immobilisation technique by understanding how real-time feedback on neck movement reveals excess motion during handling."
+        }
+      ]
+    },
     {
       "date": "2026-10-25",
       "papers": [
