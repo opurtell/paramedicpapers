@@ -25,6 +25,20 @@
     <itunes:explicit>false</itunes:explicit>
     <podcast:guid>09fa3693-e2ac-527c-9d1c-f68df149b888</podcast:guid>
     <item>
+      <title>Paramedic Papers Daily — 27 October 2026</title>
+      <link>https://paramedicpapers.com/episodes/2026-10-27/</link>
+      <description>2 papers: What patients think of alternative response units; Psychological first aid for paramedic families</description>
+      <content:encoded><![CDATA[<p>2 papers: What patients think of alternative response units; Psychological first aid for paramedic families</p><p>Papers in this episode:</p><ul><li><a href="https://doi.org/10.1177/27536386261498217">What patients think of alternative response units <em>(Paramedicine)</em></a></li><li><a href="https://doi.org/10.1177/27536386261502572">Psychological first aid for paramedic families <em>(Paramedicine)</em></a></li></ul><p><a href="https://paramedicpapers.com/episodes/2026-10-27/">Show notes and transcript</a></p>]]></content:encoded>
+      <pubDate>Tue, 27 Oct 2026 07:33:04 +1100</pubDate>
+      <guid isPermaLink="false">https://audio.paramedicpapers.com/ep-2026-10-27.mp3</guid>
+      <enclosure url="https://op3.dev/e/audio.paramedicpapers.com/ep-2026-10-27.mp3" length="676748" type="audio/mpeg"/>
+      <itunes:duration>169</itunes:duration>
+      <itunes:summary>2 papers: What patients think of alternative response units; Psychological first aid for paramedic families</itunes:summary>
+      <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
+      <itunes:episodeType>full</itunes:episodeType>
+      <podcast:transcript url="https://audio.paramedicpapers.com/ep-2026-10-27.txt" type="text/plain" language="en-au"/>
+    </item>
+    <item>
       <title>Paramedic Papers Daily — 26 October 2026</title>
       <link>https://paramedicpapers.com/episodes/2026-10-26/</link>
       <description>3 papers: Prehospital pulse pressure flags trauma bleeding; ECPR in refractory OHCA: benefit past 60 minutes; Instrumented manikin neck for immobilisation training</description>
@@ -422,19 +436,6 @@
       <enclosure url="https://op3.dev/e/audio.paramedicpapers.com/ep-2026-09-28.mp3" length="463437" type="audio/mpeg"/>
       <itunes:duration>115</itunes:duration>
       <itunes:summary>1 paper: two-handed neonatal mask hold cuts facemask leak (27% to 2.5%) in simulation</itunes:summary>
-      <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
-      <itunes:episodeType>full</itunes:episodeType>
-    </item>
-    <item>
-      <title>Paramedic Papers Daily — 27 September 2026</title>
-      <link>https://paramedicpapers.com/episodes/2026-09-27/</link>
-      <description>2 papers: paediatric IHCA trends in Japan (survival up to ~30%); Greece's first national school CPR championship (95%+ quality scores)</description>
-      <content:encoded><![CDATA[<p>2 papers: paediatric IHCA trends in Japan (survival up to ~30%); Greece's first national school CPR championship (95%+ quality scores)</p><p>Papers in this episode:</p><ul><li><a href="https://doi.org/10.1016/j.resuscitation.2026.111225">Incidence, outcomes, and temporal trends of pediatric in-hospital cardiac arrest in Japan: a nationwide study <em>(Resuscitation)</em></a></li><li><a href="https://doi.org/10.1016/j.resplu.2026.101495">Designing and implementing the first national CPR championship in Greece: the “KIDS SAVE LIVES – TA PAIDIA SOZOUN ZOES” experience <em>(Resuscitation Plus)</em></a></li></ul><p><a href="https://paramedicpapers.com/episodes/2026-09-27/">Show notes and transcript</a></p>]]></content:encoded>
-      <pubDate>Sun, 27 Sep 2026 07:33:21 +1000</pubDate>
-      <guid isPermaLink="false">https://opurtell.github.io/paramedicpapers/audio/ep-2026-09-27.mp3</guid>
-      <enclosure url="https://op3.dev/e/audio.paramedicpapers.com/ep-2026-09-27.mp3" length="656205" type="audio/mpeg"/>
-      <itunes:duration>163</itunes:duration>
-      <itunes:summary>2 papers: paediatric IHCA trends in Japan (survival up to ~30%); Greece's first national school CPR championship (95%+ quality scores)</itunes:summary>
       <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
       <itunes:episodeType>full</itunes:episodeType>
     </item>
