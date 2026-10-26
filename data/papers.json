@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-10-25T20:20:43Z",
-  "lastUpdatedSydney": "2026-10-26 07:20 AEDT",
-  "lastUpdatedDate": "2026-10-26",
+  "lastUpdated": "2026-10-26T20:20:44Z",
+  "lastUpdatedSydney": "2026-10-27 07:20 AEDT",
+  "lastUpdatedDate": "2026-10-27",
   "featuredPapers": [
     {
       "id": "42901186",
@@ -23,48 +23,6 @@
       "bottomLine": "Hypothesis-generating",
       "shortTitle": "Dispatcher training + volunteer app lifts bystander CPR",
       "learningGoal": "Understand how dispatcher training and volunteer responder systems influence bystander CPR and survival outcomes in cardiac arrest care."
-    },
-    {
-      "id": "42901371",
-      "title": "Fatigue, Anxiety and Depression 12 Months After Out-of-Hospital Cardiac Arrest: A Population Based Cohort Study",
-      "journal": "Resuscitation",
-      "date": "2026-10-22",
-      "pmid": "42901371",
-      "doi": "10.1016/j.resuscitation.2026.111359",
-      "summary": "A Victorian population-based cohort of 728 out-of-hospital cardiac arrest survivors found fatigue in 35.8%, anxiety in 22.6% and depression in 18.0% at 12 months, with heavier symptom burden linked to worse quality of life, function and return to work.",
-      "relevance": "🟢 High — Australian registry data on what happens to the patients we resuscitate, and survivorship aftercare is a live question for every service running cardiac arrest follow-up pathways.",
-      "featuredReason": "Australian registry data on what happens to the patients we resuscitate, and survivorship aftercare is a live question for every service running cardiac arrest follow-up pathways.",
-      "pubDate": "2026-10",
-      "topic": "Cardiac arrest",
-      "studyType": "Cohort",
-      "design": "Prospective population-based cohort",
-      "n": "728 OHCA survivors (68.2% of those eligible) interviewed at 12 months in Victoria",
-      "finding": "Fatigue 35.8%, anxiety 22.6%, depression 18.0%; fatigue exceeded population norms (SMD 0.64) and higher symptom burden tracked with worse EQ-5D, GOSE and return-to-work rates",
-      "caveat": "Self-reported symptoms with about a third of eligible survivors lost to follow-up",
-      "bottomLine": "Context only",
-      "shortTitle": "Fatigue common a year after cardiac arrest",
-      "learningGoal": "Recognise fatigue, anxiety and depression as common post-cardiac arrest survivors' needs when supporting recovery and follow-up."
-    },
-    {
-      "id": "10.1016/j.resuscitation.2026.111358",
-      "title": "Association Between Capnographic Changes During Pulse Checks of Varying Durations and Clinical Outcomes During Cardiopulmonary Resuscitation: A Multicenter Study From Türkiye (CaPTuRe)",
-      "journal": "Resuscitation",
-      "date": "2026-10-22",
-      "pmid": "",
-      "doi": "10.1016/j.resuscitation.2026.111358",
-      "summary": "A 252-patient multicentre study in Türkiye found pulse checks completed within 5 seconds were associated with roughly double the ROSC rate of checks lasting 6–10 seconds (36.3% vs 19.5%, OR 2.39), alongside better capnographic dynamics.",
-      "relevance": "🟢 High — Pulse-check duration is something every rescuer on every arrest controls, wherever they work, and capnography-guided CPR quality is standard monitoring practice.",
-      "featuredReason": "Pulse-check duration is something every rescuer on every arrest controls, wherever they work, and capnography-guided CPR quality is standard monitoring practice.",
-      "pubDate": "2026-10",
-      "topic": "Cardiac arrest",
-      "studyType": "Cohort",
-      "design": "Multicentre prospective quasi-randomised controlled study",
-      "n": "252 cardiac arrest patients (124 with ≤5-second checks, 128 with 6–10-second checks)",
-      "finding": "Shorter pulse checks were linked to higher ROSC (36.3% vs 19.5%; OR 2.39, 95% CI 1.35–4.24) and more favourable ETCO2 loss and recovery patterns",
-      "caveat": "Groups were categorised rather than truly randomised, so the association may reflect healthier arrests getting quicker checks",
-      "bottomLine": "Hypothesis-generating",
-      "shortTitle": "Keep pulse checks under 5 seconds",
-      "learningGoal": "Improve my technique for keeping pulse checks brief during cardiac arrest resuscitation while interpreting capnography trends."
     },
     {
       "id": "42149949",
@@ -106,6 +64,48 @@
       "bottomLine": "Hypothesis-generating",
       "shortTitle": "Infant carry slings rarely linked to OHCA",
       "learningGoal": "Recognise how carry slings and co-sleeping environments contribute to sudden deterioration in infants under two."
+    },
+    {
+      "id": "10.1186/s13049-026-01715-0",
+      "title": "Reproducible intubation contrast without evidence of a unique threshold at Glasgow Coma Scale 8: a two-era nationwide retrospective cohort study",
+      "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+      "date": "2026-10-23",
+      "pmid": "",
+      "doi": "10.1186/s13049-026-01715-0",
+      "summary": "A two-era Japan Trauma Data Bank analysis of roughly 138,000 adults found recorded intubation more likely at GCS 8 than 9, but no evidence of a unique risk threshold at that boundary.",
+      "relevance": "🟡 Medium — It's in-hospital registry data from a physician-assisted Japanese system, and drug-assisted intubation is an intensive care paramedic skill in most Australian services — but the GCS 8 cutoff it interrogates drives prehospital airway and trauma triage thinking everywhere.",
+      "featuredReason": "It's in-hospital registry data from a physician-assisted Japanese system, and drug-assisted intubation is an intensive care paramedic skill in most Australian services — but the GCS 8 cutoff it interrogates drives prehospital airway and trauma triage thinking everywhere.",
+      "pubDate": "2026-10-22",
+      "topic": "Trauma",
+      "studyType": "Registry",
+      "design": "Retrospective nationwide registry cohort (two eras)",
+      "n": "138,405 adults transported directly from scene (71,988 + 66,417)",
+      "finding": "Recorded intubation was 9.1–10.6 percentage points more frequent at GCS 8 (pooled aOR 1.61, 95% CI 1.36–1.91), but model fit favoured a graded GCS–outcome relationship over a discrete jump at the 8/9 boundary in every outcome and both eras",
+      "caveat": "Outcomes are post-arrival hospital records in patients with no prehospital advanced airway, so the prehospital intubation decision itself isn't tested",
+      "bottomLine": "Hypothesis-generating",
+      "shortTitle": "No unique GCS 8 threshold for intubation",
+      "learningGoal": "Weigh trauma airway decisions against graded consciousness rather than relying on a fixed GCS threshold."
+    },
+    {
+      "id": "42901371",
+      "title": "Fatigue, Anxiety and Depression 12 Months After Out-of-Hospital Cardiac Arrest: A Population Based Cohort Study",
+      "journal": "Resuscitation",
+      "date": "2026-10-22",
+      "pmid": "42901371",
+      "doi": "10.1016/j.resuscitation.2026.111359",
+      "summary": "A Victorian population-based cohort of 728 out-of-hospital cardiac arrest survivors found fatigue in 35.8%, anxiety in 22.6% and depression in 18.0% at 12 months, with heavier symptom burden linked to worse quality of life, function and return to work.",
+      "relevance": "🟢 High — Australian registry data on what happens to the patients we resuscitate, and survivorship aftercare is a live question for every service running cardiac arrest follow-up pathways.",
+      "featuredReason": "Australian registry data on what happens to the patients we resuscitate, and survivorship aftercare is a live question for every service running cardiac arrest follow-up pathways.",
+      "pubDate": "2026-10",
+      "topic": "Cardiac arrest",
+      "studyType": "Cohort",
+      "design": "Prospective population-based cohort",
+      "n": "728 OHCA survivors (68.2% of those eligible) interviewed at 12 months in Victoria",
+      "finding": "Fatigue 35.8%, anxiety 22.6%, depression 18.0%; fatigue exceeded population norms (SMD 0.64) and higher symptom burden tracked with worse EQ-5D, GOSE and return-to-work rates",
+      "caveat": "Self-reported symptoms with about a third of eligible survivors lost to follow-up",
+      "bottomLine": "Context only",
+      "shortTitle": "Fatigue common a year after cardiac arrest",
+      "learningGoal": "Recognise fatigue, anxiety and depression as common post-cardiac arrest survivors' needs when supporting recovery and follow-up."
     }
   ],
   "funFacts": [
@@ -1019,41 +1019,78 @@
     }
   ],
   "funFact": {
-    "category": "EMS",
-    "fact": "The first defibrillator used on a human was in 1947 — Claude Beck, open-chest, on a 14-year-old boy during surgery. Closed-chest defibrillation didn't arrive until 1956. For nearly a decade, you had to crack the chest to shock the heart."
+    "category": "cardiac",
+    "fact": "The Osborn wave — a little notch at the J-point — shows up in hypothermia, hypercalcaemia, and some genetic conditions. In hypothermia, the bigger the wave, the colder the patient. It's the ECG's built-in thermometer."
   },
   "tldr": {
-    "date": "2026-10-26",
-    "paperCount": 3,
-    "summary": "Today's usable finding is prehospital: a narrowed pulse pressure (≤45 mmHg) on scene helps rule out active haemorrhage in trauma. A large Korean registry also suggests ECPR benefit in refractory OHCA persists beyond the usual 60-minute benchmark.",
+    "date": "2026-10-27",
+    "paperCount": 2,
+    "summary": "A quiet day on the clinical front: two papers on the human side of ambulance work — patient and family experience of alternative response units, and a family-focused psychological first aid programme for first responders.",
     "highlights": [
       {
-        "id": "42918714",
-        "pmid": "42918714",
-        "doi": "10.1016/j.injury.2026.113779",
-        "title": "Prehospital pulse pressure flags trauma bleeding",
-        "journal": "Injury",
-        "note": "Prehospital pulse pressure predicted active haemorrhage (AUC 0.73, similar to SBP 0.74); each 10 mmHg narrowing raised the odds by 51% (OR 1.51, 95% CI 1.28–1.79), and PP ≤45 mmHg was best for rule-out given high negative predictive value"
+        "id": "10.1177/27536386261498217",
+        "pmid": "",
+        "doi": "10.1177/27536386261498217",
+        "title": "What patients think of alternative response units",
+        "journal": "Paramedicine",
+        "note": "Key experience constructs: convenience of home-based care, avoiding unnecessary ED attendance, perceived competence plus interpersonal communication, reassurance and psychological safety, and perceived longer-term benefit from referral and continuity of care"
       },
       {
-        "id": "42926135",
-        "pmid": "42926135",
-        "doi": "10.1093/ehjacc/zuag132",
-        "title": "ECPR in refractory OHCA: benefit past 60 minutes",
-        "journal": "European Heart Journal. Acute Cardiovascular Care",
-        "note": "Weighted 30-day survival with ECPR vs conventional CPR was 31.0% vs 16.0%, 21.6% vs 7.2% and 10.9% vs 3.2% at the 15-, 30- and 60-minute landmarks (adjusted risk differences +15.0, +14.4 and +7.7 percentage points, all P<.001), with benefit remaining significant through 120 minutes"
-      },
-      {
-        "id": "42927462",
-        "pmid": "42927462",
-        "doi": "10.1177/09544119261497807",
-        "title": "Instrumented manikin neck for immobilisation training",
-        "journal": "Proceedings of the Institution of Mechanical Engineers. Part H, Journal of Engineering in Medicine",
-        "note": "The prototype delivered six-degree-of-freedom neck motion with realistic low stiffness and head-angle accuracy within 0.89° RMSE versus optoelectronic motion capture"
+        "id": "10.1177/27536386261502572",
+        "pmid": "",
+        "doi": "10.1177/27536386261502572",
+        "title": "Psychological first aid for paramedic families",
+        "journal": "Paramedicine",
+        "note": "Four themes: communicating with care and confidence, navigating the 'not normal', creating an open culture, and sustaining support beyond the programme; participants reported better work-to-home transitions and stronger family and peer relationships"
       }
     ]
   },
   "dailyUpdates": [
+    {
+      "date": "2026-10-27",
+      "papers": [
+        {
+          "id": "10.1177/27536386261498217",
+          "title": "The experiences of patients, their families, and carers during care from alternative ambulance response units: A scoping review",
+          "journal": "Paramedicine",
+          "date": "2026-10-27",
+          "pmid": "",
+          "doi": "10.1177/27536386261498217",
+          "summary": "A scoping review of patient, family and carer experiences of alternative ambulance response units found that people value receiving competent care at home, avoiding hospital transport, and referral pathways with continuity of care beyond the initial episode.",
+          "relevance": "🟡 Medium — Non-transport and alternative response models run across Australian services in various forms, so the experience themes are relevant — but only three small studies with mixed methods underpin them.",
+          "pubDate": "2026-10-25",
+          "topic": "Operations & systems",
+          "studyType": "Systematic review",
+          "design": "Scoping review",
+          "n": "3 studies across diverse settings",
+          "finding": "Key experience constructs: convenience of home-based care, avoiding unnecessary ED attendance, perceived competence plus interpersonal communication, reassurance and psychological safety, and perceived longer-term benefit from referral and continuity of care",
+          "caveat": "Only three studies with heterogeneous methods were found — the evidence base for experience measures in this model is thin",
+          "bottomLine": "Context only",
+          "shortTitle": "What patients think of alternative response units",
+          "learningGoal": "Understand the factors that shape patient, family and carer experiences of alternative ambulance response units in my practice."
+        },
+        {
+          "id": "10.1177/27536386261502572",
+          "title": "‘Taking the fear factor out of it’: Family member and first responder experiences of the HUGS@Home psychological first aid programme",
+          "journal": "Paramedicine",
+          "date": "2026-10-27",
+          "pmid": "",
+          "doi": "10.1177/27536386261502572",
+          "summary": "A qualitative study of a family-focused psychological first aid programme for first responders found participants felt more confident starting difficult conversations at home, with less stigma around operational stress, though gaps remained in organisational integration and programme sustainability.",
+          "relevance": "🟡 Medium — Occupational mental health support is a live issue for every Australian ambulance service, and most still leave families outside their wellbeing programmes — this shows what a family-inclusive approach could look like.",
+          "pubDate": "2026-10-26",
+          "topic": "Workforce & wellbeing",
+          "studyType": "Qualitative",
+          "design": "Qualitative interviews and focus group, reflexive thematic analysis",
+          "n": "11 interviews plus one focus group of 5, 6–9 months after training",
+          "finding": "Four themes: communicating with care and confidence, navigating the 'not normal', creating an open culture, and sustaining support beyond the programme; participants reported better work-to-home transitions and stronger family and peer relationships",
+          "caveat": "Small, self-selected sample from a single programme interviewed 6–9 months after training — no outcome measurement",
+          "bottomLine": "Hypothesis-generating",
+          "shortTitle": "Psychological first aid for paramedic families",
+          "learningGoal": "Strengthen my ability to hold open, confident conversations about operational stress with family and peers."
+        }
+      ]
+    },
     {
       "date": "2026-10-26",
       "papers": [
