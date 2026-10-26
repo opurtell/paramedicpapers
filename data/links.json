@@ -1,34 +1,28 @@
 {
- "updated": "2026-10-25",
+ "updated": "2026-10-26",
  "latest": [
   {
-   "key": "42909662",
-   "title": "Hot nights linked to more OHCA",
+   "key": "42918714",
+   "title": "Prehospital pulse pressure flags trauma bleeding",
+   "topic": "Trauma",
+   "finding": "Prehospital pulse pressure predicted active haemorrhage (AUC 0.73, similar to SBP 0.74); each 10 mmHg narrowing raised the odds by 51% (OR 1.51, 95% CI 1.28–1.79), and PP ≤45 mmHg was best for rule-out given high negative predictive value"
+  },
+  {
+   "key": "42926135",
+   "title": "ECPR in refractory OHCA: benefit past 60 minutes",
    "topic": "Cardiac arrest",
-   "finding": "Nighttime heat exposure increased OHCA hospitalisation (RR 1.090, 95% CI 1.047–1.135); RR rose to 1.295 in people ≥75 and 1.352 in women in northern regions, and risk was higher where air-conditioning penetration was low"
+   "finding": "Weighted 30-day survival with ECPR vs conventional CPR was 31.0% vs 16.0%, 21.6% vs 7.2% and 10.9% vs 3.2% at the 15-, 30- and 60-minute landmarks (adjusted risk differences +15.0, +14.4 and +7.7 percentage points, all P<.001), with benefit remaining significant through 120 minutes"
   },
   {
-   "key": "doi-10-1080-10903127-2026-2753002",
-   "title": "ECPR for OHCA: pump the brakes",
-   "topic": "Cardiac arrest",
-   "finding": "Only ARREST (30 patients) strongly favoured ECPR; INCEPTION and Prague OHCA were not statistically significant, and the authors argue intra-arrest transport effects cannot be excluded as a driver of reported benefit"
-  },
-  {
-   "key": "42920134",
-   "title": "How ambulance models shape end-of-life care",
-   "topic": "Operations & systems",
-   "finding": "Learning on the job and limited access to records, anticipatory medicines and palliative advice dominated practice across all three models; paramedic workload was driven partly by primary and community service shortages"
-  },
-  {
-   "key": "42920123",
-   "title": "Scene-to-door time and stroke thrombectomy",
-   "topic": "Stroke & neuro",
-   "finding": "In patients with pre-stroke disability (mRS ≥1), longer scene-to-door time independently reduced favourable 90-day outcome (adjusted OR 0.91, 95% CI 0.81–0.98; optimal cutoff 14 min); no significant association in the overall cohort (AUC 0.57)"
+   "key": "42927462",
+   "title": "Instrumented manikin neck for immobilisation training",
+   "topic": "Education & training",
+   "finding": "The prototype delivered six-degree-of-freedom neck motion with realistic low stiffness and head-angle accuracy within 0.89° RMSE versus optoelectronic motion capture"
   }
  ],
  "episode": {
-  "date": "2026-10-25",
-  "title": "Paramedic Papers Daily — 25 October 2026",
-  "page": "/episodes/2026-10-25/"
+  "date": "2026-10-26",
+  "title": "Paramedic Papers Daily — 26 October 2026",
+  "page": "/episodes/2026-10-26/"
  }
 }
