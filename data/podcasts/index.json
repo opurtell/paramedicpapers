@@ -1,5 +1,41 @@
 [
  {
+  "id": "ecritcare",
+  "name": "eCritCare",
+  "publisher": "Dr Swapnil Pawar & Dr Jose Chacko",
+  "focus": "Critical care trials and evidence, one topic per episode",
+  "region": "AU",
+  "site": "http://ecritcarepodcast.libsyn.com/website",
+  "art": "data/podcasts/art/ecritcare.jpg",
+  "episodes": 103,
+  "latest": "2026-10-26",
+  "updated": "2026-10-27"
+ },
+ {
+  "id": "prehospital-care-podcast",
+  "name": "Pre-Hospital Care Podcast",
+  "publisher": "Eoin Walker",
+  "focus": "Prehospital clinical topics and recent evidence",
+  "region": "Ireland",
+  "site": "https://podcasters.spotify.com/pod/show/phcp",
+  "art": "data/podcasts/art/prehospital-care-podcast.jpg",
+  "episodes": 396,
+  "latest": "2026-10-26",
+  "updated": "2026-10-27"
+ },
+ {
+  "id": "core-em",
+  "name": "Core EM",
+  "publisher": "Core EM",
+  "focus": "Core emergency medicine topics, concise and practical",
+  "region": "US",
+  "site": "https://coreem.net",
+  "art": "data/podcasts/art/core-em.jpg",
+  "episodes": 234,
+  "latest": "2026-10-26",
+  "updated": "2026-10-27"
+ },
+ {
   "id": "sgem",
   "name": "The Skeptics' Guide to EM",
   "publisher": "Dr Ken Milne",
@@ -22,18 +58,6 @@
   "episodes": 51,
   "latest": "2026-10-23",
   "updated": "2026-10-24"
- },
- {
-  "id": "prehospital-care-podcast",
-  "name": "Pre-Hospital Care Podcast",
-  "publisher": "Eoin Walker",
-  "focus": "Prehospital clinical topics and recent evidence",
-  "region": "Ireland",
-  "site": "https://podcasters.spotify.com/pod/show/phcp",
-  "art": "data/podcasts/art/prehospital-care-podcast.jpg",
-  "episodes": 395,
-  "latest": "2026-10-22",
-  "updated": "2026-10-23"
  },
  {
   "id": "sydney-hems",
@@ -108,18 +132,6 @@
   "updated": "2026-10-19"
  },
  {
-  "id": "core-em",
-  "name": "Core EM",
-  "publisher": "Core EM",
-  "focus": "Core emergency medicine topics, concise and practical",
-  "region": "US",
-  "site": "https://coreem.net",
-  "art": "data/podcasts/art/core-em.jpg",
-  "episodes": 233,
-  "latest": "2026-10-19",
-  "updated": "2026-10-19"
- },
- {
   "id": "st-emlyns",
   "name": "St Emlyn's",
   "publisher": "St Emlyn's",
@@ -130,18 +142,6 @@
   "episodes": 354,
   "latest": "2026-10-17",
   "updated": "2026-10-23"
- },
- {
-  "id": "ecritcare",
-  "name": "eCritCare",
-  "publisher": "Dr Swapnil Pawar & Dr Jose Chacko",
-  "focus": "Critical care trials and evidence, one topic per episode",
-  "region": "AU",
-  "site": "http://ecritcarepodcast.libsyn.com/website",
-  "art": "data/podcasts/art/ecritcare.jpg",
-  "episodes": 102,
-  "latest": "2026-10-15",
-  "updated": "2026-10-16"
  },
  {
   "id": "pec-podcast",
