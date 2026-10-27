@@ -25,6 +25,20 @@
     <itunes:explicit>false</itunes:explicit>
     <podcast:guid>09fa3693-e2ac-527c-9d1c-f68df149b888</podcast:guid>
     <item>
+      <title>Paramedic Papers Daily — 28 October 2026</title>
+      <link>https://paramedicpapers.com/episodes/2026-10-28/</link>
+      <description>4 papers: transport ventilation during CPR feasible; longer on-scene intervals linked to 24-hour mortality; tele-paramedics matched physicians in MCI drill; what drives lay community first responders</description>
+      <content:encoded><![CDATA[<p>4 papers: transport ventilation during CPR feasible; longer on-scene intervals linked to 24-hour mortality; tele-paramedics matched physicians in MCI drill; what drives lay community first responders</p><p>Papers in this episode:</p><ul><li><a href="https://doi.org/10.1186/s12873-026-01692-8">Transport ventilation during CPR feasible in pilot <em>(BMC Emergency Medicine)</em></a></li><li><a href="https://doi.org/10.22037/aaem.v14i1.3081">Longer on-scene intervals linked to 24-hour mortality <em>(Archives of Academic Emergency Medicine)</em></a></li><li><a href="https://doi.org/10.3390/healthcare14203385">Tele-paramedics matched physicians in MCI drill <em>(Healthcare)</em></a></li><li><a href="https://doi.org/10.1186/s12873-026-01826-y">What drives lay community first responders in Denmark <em>(BMC Emergency Medicine)</em></a></li></ul><p><a href="https://paramedicpapers.com/episodes/2026-10-28/">Show notes and transcript</a></p>]]></content:encoded>
+      <pubDate>Wed, 28 Oct 2026 07:33:18 +1100</pubDate>
+      <guid isPermaLink="false">https://audio.paramedicpapers.com/ep-2026-10-28.mp3</guid>
+      <enclosure url="https://op3.dev/e/audio.paramedicpapers.com/ep-2026-10-28.mp3" length="1174892" type="audio/mpeg"/>
+      <itunes:duration>293</itunes:duration>
+      <itunes:summary>4 papers: transport ventilation during CPR feasible; longer on-scene intervals linked to 24-hour mortality; tele-paramedics matched physicians in MCI drill; what drives lay community first responders</itunes:summary>
+      <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
+      <itunes:episodeType>full</itunes:episodeType>
+      <podcast:transcript url="https://audio.paramedicpapers.com/ep-2026-10-28.txt" type="text/plain" language="en-au"/>
+    </item>
+    <item>
       <title>Paramedic Papers Daily — 27 October 2026</title>
       <link>https://paramedicpapers.com/episodes/2026-10-27/</link>
       <description>2 papers: What patients think of alternative response units; Psychological first aid for paramedic families</description>
@@ -423,19 +437,6 @@
       <enclosure url="https://op3.dev/e/audio.paramedicpapers.com/ep-2026-09-29.mp3" length="634797" type="audio/mpeg"/>
       <itunes:duration>158</itunes:duration>
       <itunes:summary>1 paper: sex differences in OHCA vanish when obstructive CAD is angiographically confirmed (Resuscitation Plus registry, n=580)</itunes:summary>
-      <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
-      <itunes:episodeType>full</itunes:episodeType>
-    </item>
-    <item>
-      <title>Paramedic Papers Daily — 28 September 2026</title>
-      <link>https://paramedicpapers.com/episodes/2026-09-28/</link>
-      <description>1 paper: two-handed neonatal mask hold cuts facemask leak (27% to 2.5%) in simulation</description>
-      <content:encoded><![CDATA[<p>1 paper: two-handed neonatal mask hold cuts facemask leak (27% to 2.5%) in simulation</p><p>Papers in this episode:</p><ul><li><a href="https://doi.org/10.1016/j.resplu.2026.101488">It takes two: development of simulation training for two-handed neonatal mask ventilation integrating a respiratory function monitor; a non-randomised before-and-after simulation study <em>(Resuscitation Plus)</em></a></li></ul><p><a href="https://paramedicpapers.com/episodes/2026-09-28/">Show notes and transcript</a></p>]]></content:encoded>
-      <pubDate>Mon, 28 Sep 2026 07:33:17 +1000</pubDate>
-      <guid isPermaLink="false">https://opurtell.github.io/paramedicpapers/audio/ep-2026-09-28.mp3</guid>
-      <enclosure url="https://op3.dev/e/audio.paramedicpapers.com/ep-2026-09-28.mp3" length="463437" type="audio/mpeg"/>
-      <itunes:duration>115</itunes:duration>
-      <itunes:summary>1 paper: two-handed neonatal mask hold cuts facemask leak (27% to 2.5%) in simulation</itunes:summary>
       <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
       <itunes:episodeType>full</itunes:episodeType>
     </item>
