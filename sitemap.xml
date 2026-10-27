@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://paramedicpapers.com/</loc>
-    <lastmod>2026-10-27</lastmod>
+    <lastmod>2026-10-28</lastmod>
   </url>
   <url>
     <loc>https://paramedicpapers.com/about.html</loc>
@@ -12,15 +12,15 @@
   </url>
   <url>
     <loc>https://paramedicpapers.com/links.html</loc>
-    <lastmod>2026-10-26</lastmod>
+    <lastmod>2026-10-27</lastmod>
   </url>
   <url>
     <loc>https://paramedicpapers.com/topics/</loc>
-    <lastmod>2026-10-27</lastmod>
+    <lastmod>2026-10-28</lastmod>
   </url>
   <url>
     <loc>https://paramedicpapers.com/daily/</loc>
-    <lastmod>2026-10-27</lastmod>
+    <lastmod>2026-10-28</lastmod>
   </url>
   <url>
     <loc>https://paramedicpapers.com/episodes/</loc>
@@ -28,7 +28,7 @@
   </url>
   <url>
     <loc>https://paramedicpapers.com/topics/airway-and-ventilation/</loc>
-    <lastmod>2026-10-22</lastmod>
+    <lastmod>2026-10-28</lastmod>
   </url>
   <url>
     <loc>https://paramedicpapers.com/topics/cardiac-arrest/</loc>
@@ -36,11 +36,11 @@
   </url>
   <url>
     <loc>https://paramedicpapers.com/topics/cardiac-non-arrest/</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-27</lastmod>
   </url>
   <url>
     <loc>https://paramedicpapers.com/topics/education-and-training/</loc>
-    <lastmod>2026-10-26</lastmod>
+    <lastmod>2026-10-28</lastmod>
   </url>
   <url>
     <loc>https://paramedicpapers.com/topics/mental-health-patients/</loc>
@@ -56,7 +56,7 @@
   </url>
   <url>
     <loc>https://paramedicpapers.com/topics/operations-and-systems/</loc>
-    <lastmod>2026-10-27</lastmod>
+    <lastmod>2026-10-28</lastmod>
   </url>
   <url>
     <loc>https://paramedicpapers.com/topics/paediatrics/</loc>
@@ -72,7 +72,7 @@
   </url>
   <url>
     <loc>https://paramedicpapers.com/topics/sepsis-and-infection/</loc>
-    <lastmod>2026-10-17</lastmod>
+    <lastmod>2026-10-27</lastmod>
   </url>
   <url>
     <loc>https://paramedicpapers.com/topics/stroke-and-neuro/</loc>
@@ -88,7 +88,11 @@
   </url>
   <url>
     <loc>https://paramedicpapers.com/topics/workforce-and-wellbeing/</loc>
-    <lastmod>2026-10-27</lastmod>
+    <lastmod>2026-10-28</lastmod>
+  </url>
+  <url>
+    <loc>https://paramedicpapers.com/daily/2026-10-28/</loc>
+    <lastmod>2026-10-28</lastmod>
   </url>
   <url>
     <loc>https://paramedicpapers.com/daily/2026-10-27/</loc>
@@ -127,10 +131,6 @@
     <lastmod>2026-10-19</lastmod>
   </url>
   <url>
-    <loc>https://paramedicpapers.com/daily/2026-10-18/</loc>
-    <lastmod>2026-10-18</lastmod>
-  </url>
-  <url>
     <loc>https://paramedicpapers.com/daily/2026-10-17/</loc>
     <lastmod>2026-10-17</lastmod>
   </url>
@@ -143,16 +143,8 @@
     <lastmod>2026-10-15</lastmod>
   </url>
   <url>
-    <loc>https://paramedicpapers.com/daily/2026-10-14/</loc>
-    <lastmod>2026-10-14</lastmod>
-  </url>
-  <url>
     <loc>https://paramedicpapers.com/daily/2026-10-13/</loc>
     <lastmod>2026-10-13</lastmod>
-  </url>
-  <url>
-    <loc>https://paramedicpapers.com/daily/2026-10-12/</loc>
-    <lastmod>2026-10-12</lastmod>
   </url>
   <url>
     <loc>https://paramedicpapers.com/daily/2026-10-11/</loc>
@@ -179,10 +171,6 @@
     <lastmod>2026-10-06</lastmod>
   </url>
   <url>
-    <loc>https://paramedicpapers.com/daily/2026-10-05/</loc>
-    <lastmod>2026-10-05</lastmod>
-  </url>
-  <url>
     <loc>https://paramedicpapers.com/daily/2026-10-04/</loc>
     <lastmod>2026-10-04</lastmod>
   </url>
@@ -195,24 +183,12 @@
     <lastmod>2026-10-02</lastmod>
   </url>
   <url>
-    <loc>https://paramedicpapers.com/daily/2026-10-01/</loc>
-    <lastmod>2026-10-01</lastmod>
-  </url>
-  <url>
     <loc>https://paramedicpapers.com/daily/2026-09-30/</loc>
     <lastmod>2026-09-30</lastmod>
   </url>
   <url>
     <loc>https://paramedicpapers.com/daily/2026-09-29/</loc>
     <lastmod>2026-09-29</lastmod>
-  </url>
-  <url>
-    <loc>https://paramedicpapers.com/daily/2026-09-28/</loc>
-    <lastmod>2026-09-28</lastmod>
-  </url>
-  <url>
-    <loc>https://paramedicpapers.com/daily/2026-09-27/</loc>
-    <lastmod>2026-09-27</lastmod>
   </url>
   <url>
     <loc>https://paramedicpapers.com/daily/2026-09-26/</loc>
@@ -231,10 +207,6 @@
     <lastmod>2026-09-22</lastmod>
   </url>
   <url>
-    <loc>https://paramedicpapers.com/daily/2026-09-20/</loc>
-    <lastmod>2026-09-20</lastmod>
-  </url>
-  <url>
     <loc>https://paramedicpapers.com/daily/2026-09-19/</loc>
     <lastmod>2026-09-19</lastmod>
   </url>
@@ -247,88 +219,36 @@
     <lastmod>2026-09-17</lastmod>
   </url>
   <url>
-    <loc>https://paramedicpapers.com/daily/2026-09-16/</loc>
-    <lastmod>2026-09-16</lastmod>
-  </url>
-  <url>
     <loc>https://paramedicpapers.com/daily/2026-09-15/</loc>
     <lastmod>2026-09-15</lastmod>
-  </url>
-  <url>
-    <loc>https://paramedicpapers.com/daily/2026-09-13/</loc>
-    <lastmod>2026-09-13</lastmod>
   </url>
   <url>
     <loc>https://paramedicpapers.com/daily/2026-09-12/</loc>
     <lastmod>2026-09-12</lastmod>
   </url>
   <url>
-    <loc>https://paramedicpapers.com/daily/2026-09-11/</loc>
-    <lastmod>2026-09-11</lastmod>
-  </url>
-  <url>
-    <loc>https://paramedicpapers.com/daily/2026-09-10/</loc>
-    <lastmod>2026-09-10</lastmod>
-  </url>
-  <url>
     <loc>https://paramedicpapers.com/daily/2026-09-08/</loc>
     <lastmod>2026-09-08</lastmod>
-  </url>
-  <url>
-    <loc>https://paramedicpapers.com/daily/2026-09-05/</loc>
-    <lastmod>2026-09-05</lastmod>
-  </url>
-  <url>
-    <loc>https://paramedicpapers.com/daily/2026-09-04/</loc>
-    <lastmod>2026-09-04</lastmod>
   </url>
   <url>
     <loc>https://paramedicpapers.com/daily/2026-09-03/</loc>
     <lastmod>2026-09-03</lastmod>
   </url>
   <url>
-    <loc>https://paramedicpapers.com/daily/2026-09-02/</loc>
-    <lastmod>2026-09-02</lastmod>
-  </url>
-  <url>
     <loc>https://paramedicpapers.com/daily/2026-09-01/</loc>
     <lastmod>2026-09-01</lastmod>
-  </url>
-  <url>
-    <loc>https://paramedicpapers.com/daily/2026-08-30/</loc>
-    <lastmod>2026-08-30</lastmod>
   </url>
   <url>
     <loc>https://paramedicpapers.com/daily/2026-08-29/</loc>
     <lastmod>2026-08-29</lastmod>
   </url>
   <url>
-    <loc>https://paramedicpapers.com/daily/2026-08-28/</loc>
-    <lastmod>2026-08-28</lastmod>
-  </url>
-  <url>
-    <loc>https://paramedicpapers.com/daily/2026-08-27/</loc>
-    <lastmod>2026-08-27</lastmod>
-  </url>
-  <url>
-    <loc>https://paramedicpapers.com/daily/2026-08-26/</loc>
-    <lastmod>2026-08-26</lastmod>
-  </url>
-  <url>
     <loc>https://paramedicpapers.com/daily/2026-08-25/</loc>
     <lastmod>2026-08-25</lastmod>
   </url>
   <url>
-    <loc>https://paramedicpapers.com/daily/2026-08-24/</loc>
-    <lastmod>2026-08-24</lastmod>
-  </url>
-  <url>
     <loc>https://paramedicpapers.com/daily/2026-08-23/</loc>
     <lastmod>2026-08-23</lastmod>
-  </url>
-  <url>
-    <loc>https://paramedicpapers.com/daily/2026-08-21/</loc>
-    <lastmod>2026-08-21</lastmod>
   </url>
   <url>
     <loc>https://paramedicpapers.com/daily/2026-08-20/</loc>
@@ -343,28 +263,12 @@
     <lastmod>2026-08-16</lastmod>
   </url>
   <url>
-    <loc>https://paramedicpapers.com/daily/2026-08-12/</loc>
-    <lastmod>2026-08-12</lastmod>
-  </url>
-  <url>
-    <loc>https://paramedicpapers.com/daily/2026-08-11/</loc>
-    <lastmod>2026-08-11</lastmod>
-  </url>
-  <url>
     <loc>https://paramedicpapers.com/daily/2026-08-10/</loc>
     <lastmod>2026-08-10</lastmod>
   </url>
   <url>
     <loc>https://paramedicpapers.com/daily/2026-08-09/</loc>
     <lastmod>2026-08-09</lastmod>
-  </url>
-  <url>
-    <loc>https://paramedicpapers.com/daily/2026-08-07/</loc>
-    <lastmod>2026-08-07</lastmod>
-  </url>
-  <url>
-    <loc>https://paramedicpapers.com/daily/2026-08-06/</loc>
-    <lastmod>2026-08-06</lastmod>
   </url>
   <url>
     <loc>https://paramedicpapers.com/daily/2026-08-04/</loc>
@@ -391,48 +295,16 @@
     <lastmod>2026-07-27</lastmod>
   </url>
   <url>
-    <loc>https://paramedicpapers.com/daily/2026-06-25/</loc>
-    <lastmod>2026-06-25</lastmod>
-  </url>
-  <url>
-    <loc>https://paramedicpapers.com/daily/2026-06-07/</loc>
-    <lastmod>2026-06-07</lastmod>
-  </url>
-  <url>
-    <loc>https://paramedicpapers.com/daily/2026-06-06/</loc>
-    <lastmod>2026-06-06</lastmod>
-  </url>
-  <url>
     <loc>https://paramedicpapers.com/daily/2026-06-04/</loc>
     <lastmod>2026-06-04</lastmod>
-  </url>
-  <url>
-    <loc>https://paramedicpapers.com/daily/2026-06-01/</loc>
-    <lastmod>2026-06-01</lastmod>
   </url>
   <url>
     <loc>https://paramedicpapers.com/daily/2026-05-31/</loc>
     <lastmod>2026-05-31</lastmod>
   </url>
   <url>
-    <loc>https://paramedicpapers.com/daily/2026-05-28/</loc>
-    <lastmod>2026-05-28</lastmod>
-  </url>
-  <url>
-    <loc>https://paramedicpapers.com/daily/2026-05-27/</loc>
-    <lastmod>2026-05-27</lastmod>
-  </url>
-  <url>
-    <loc>https://paramedicpapers.com/daily/2026-05-26/</loc>
-    <lastmod>2026-05-26</lastmod>
-  </url>
-  <url>
     <loc>https://paramedicpapers.com/daily/2026-05-23/</loc>
     <lastmod>2026-05-23</lastmod>
-  </url>
-  <url>
-    <loc>https://paramedicpapers.com/daily/2026-05-21/</loc>
-    <lastmod>2026-05-21</lastmod>
   </url>
   <url>
     <loc>https://paramedicpapers.com/daily/2026-05-20/</loc>
@@ -441,10 +313,6 @@
   <url>
     <loc>https://paramedicpapers.com/daily/2026-05-18/</loc>
     <lastmod>2026-05-18</lastmod>
-  </url>
-  <url>
-    <loc>https://paramedicpapers.com/daily/2026-05-15/</loc>
-    <lastmod>2026-05-15</lastmod>
   </url>
   <url>
     <loc>https://paramedicpapers.com/daily/2026-05-14/</loc>
@@ -459,14 +327,6 @@
     <lastmod>2026-05-11</lastmod>
   </url>
   <url>
-    <loc>https://paramedicpapers.com/daily/2026-05-09/</loc>
-    <lastmod>2026-05-09</lastmod>
-  </url>
-  <url>
-    <loc>https://paramedicpapers.com/daily/2026-05-07/</loc>
-    <lastmod>2026-05-07</lastmod>
-  </url>
-  <url>
     <loc>https://paramedicpapers.com/daily/2026-05-06/</loc>
     <lastmod>2026-05-06</lastmod>
   </url>
@@ -475,32 +335,8 @@
     <lastmod>2026-05-05</lastmod>
   </url>
   <url>
-    <loc>https://paramedicpapers.com/daily/2026-05-01/</loc>
-    <lastmod>2026-05-01</lastmod>
-  </url>
-  <url>
     <loc>https://paramedicpapers.com/daily/2026-04-30/</loc>
     <lastmod>2026-04-30</lastmod>
-  </url>
-  <url>
-    <loc>https://paramedicpapers.com/daily/2026-04-26/</loc>
-    <lastmod>2026-04-26</lastmod>
-  </url>
-  <url>
-    <loc>https://paramedicpapers.com/daily/2026-04-25/</loc>
-    <lastmod>2026-04-25</lastmod>
-  </url>
-  <url>
-    <loc>https://paramedicpapers.com/daily/2026-04-24/</loc>
-    <lastmod>2026-04-24</lastmod>
-  </url>
-  <url>
-    <loc>https://paramedicpapers.com/daily/2026-04-23/</loc>
-    <lastmod>2026-04-23</lastmod>
-  </url>
-  <url>
-    <loc>https://paramedicpapers.com/daily/2026-04-22/</loc>
-    <lastmod>2026-04-22</lastmod>
   </url>
   <url>
     <loc>https://paramedicpapers.com/daily/2026-04-21/</loc>
@@ -627,11 +463,51 @@
     <lastmod>2026-09-28</lastmod>
   </url>
   <url>
+    <loc>https://paramedicpapers.com/papers/doi-10-1186-s12909-026-10714-9/</loc>
+    <lastmod>2026-10-28</lastmod>
+  </url>
+  <url>
+    <loc>https://paramedicpapers.com/papers/doi-10-1186-s12873-026-01826-y/</loc>
+    <lastmod>2026-10-28</lastmod>
+  </url>
+  <url>
+    <loc>https://paramedicpapers.com/papers/42940430/</loc>
+    <lastmod>2026-10-28</lastmod>
+  </url>
+  <url>
+    <loc>https://paramedicpapers.com/papers/42938465/</loc>
+    <lastmod>2026-10-28</lastmod>
+  </url>
+  <url>
+    <loc>https://paramedicpapers.com/papers/42936334/</loc>
+    <lastmod>2026-10-28</lastmod>
+  </url>
+  <url>
+    <loc>https://paramedicpapers.com/papers/42934518/</loc>
+    <lastmod>2026-10-28</lastmod>
+  </url>
+  <url>
+    <loc>https://paramedicpapers.com/papers/doi-10-66815-ajqr-19659/</loc>
+    <lastmod>2026-10-27</lastmod>
+  </url>
+  <url>
+    <loc>https://paramedicpapers.com/papers/doi-10-36740-emems202603109/</loc>
+    <lastmod>2026-10-27</lastmod>
+  </url>
+  <url>
     <loc>https://paramedicpapers.com/papers/doi-10-1177-27536386261502572/</loc>
     <lastmod>2026-10-27</lastmod>
   </url>
   <url>
     <loc>https://paramedicpapers.com/papers/doi-10-1177-27536386261498217/</loc>
+    <lastmod>2026-10-27</lastmod>
+  </url>
+  <url>
+    <loc>https://paramedicpapers.com/papers/doi-10-1016-j-cegh-2026-102515/</loc>
+    <lastmod>2026-10-27</lastmod>
+  </url>
+  <url>
+    <loc>https://paramedicpapers.com/papers/42931327/</loc>
     <lastmod>2026-10-27</lastmod>
   </url>
   <url>
