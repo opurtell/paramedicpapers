@@ -1,28 +1,22 @@
 {
- "updated": "2026-10-26",
+ "updated": "2026-10-27",
  "latest": [
   {
-   "key": "42918714",
-   "title": "Prehospital pulse pressure flags trauma bleeding",
-   "topic": "Trauma",
-   "finding": "Prehospital pulse pressure predicted active haemorrhage (AUC 0.73, similar to SBP 0.74); each 10 mmHg narrowing raised the odds by 51% (OR 1.51, 95% CI 1.28–1.79), and PP ≤45 mmHg was best for rule-out given high negative predictive value"
+   "key": "doi-10-1177-27536386261498217",
+   "title": "What patients think of alternative response units",
+   "topic": "Operations & systems",
+   "finding": "Key experience constructs: convenience of home-based care, avoiding unnecessary ED attendance, perceived competence plus interpersonal communication, reassurance and psychological safety, and perceived longer-term benefit from referral and continuity of care"
   },
   {
-   "key": "42926135",
-   "title": "ECPR in refractory OHCA: benefit past 60 minutes",
-   "topic": "Cardiac arrest",
-   "finding": "Weighted 30-day survival with ECPR vs conventional CPR was 31.0% vs 16.0%, 21.6% vs 7.2% and 10.9% vs 3.2% at the 15-, 30- and 60-minute landmarks (adjusted risk differences +15.0, +14.4 and +7.7 percentage points, all P<.001), with benefit remaining significant through 120 minutes"
-  },
-  {
-   "key": "42927462",
-   "title": "Instrumented manikin neck for immobilisation training",
-   "topic": "Education & training",
-   "finding": "The prototype delivered six-degree-of-freedom neck motion with realistic low stiffness and head-angle accuracy within 0.89° RMSE versus optoelectronic motion capture"
+   "key": "doi-10-1177-27536386261502572",
+   "title": "Psychological first aid for paramedic families",
+   "topic": "Workforce & wellbeing",
+   "finding": "Four themes: communicating with care and confidence, navigating the 'not normal', creating an open culture, and sustaining support beyond the programme; participants reported better work-to-home transitions and stronger family and peer relationships"
   }
  ],
  "episode": {
-  "date": "2026-10-26",
-  "title": "Paramedic Papers Daily — 26 October 2026",
-  "page": "/episodes/2026-10-26/"
+  "date": "2026-10-27",
+  "title": "Paramedic Papers Daily — 27 October 2026",
+  "page": "/episodes/2026-10-27/"
  }
 }
