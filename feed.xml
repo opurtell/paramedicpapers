@@ -25,6 +25,20 @@
     <itunes:explicit>false</itunes:explicit>
     <podcast:guid>09fa3693-e2ac-527c-9d1c-f68df149b888</podcast:guid>
     <item>
+      <title>Paramedic Papers Daily — 29 October 2026</title>
+      <link>https://paramedicpapers.com/episodes/2026-10-29/</link>
+      <description>4 papers: trauma analgesia safety across four drug classes; field undertriage linked to higher in-hospital mortality; prehospital blood and arrival calcium derangements; prehospital SBP ≥180 and worse stroke outcomes</description>
+      <content:encoded><![CDATA[<p>4 papers: trauma analgesia safety across four drug classes; field undertriage linked to higher in-hospital mortality; prehospital blood and arrival calcium derangements; prehospital SBP ≥180 and worse stroke outcomes</p><p>Papers in this episode:</p><ul><li><a href="https://doi.org/10.1111/1742-6723.70385">Trauma analgesia safety confirmed across four drug classes <em>(Emergency Medicine Australasia)</em></a></li><li><a href="https://doi.org/10.1016/j.surg.2026.110705">Undertriage in trauma linked with higher in-hospital mortality <em>(Surgery)</em></a></li><li><a href="https://doi.org/10.1016/j.ajem.2026.09.029">Prehospital blood linked to arrival hypocalcaemia in trauma <em>(The American Journal of Emergency Medicine)</em></a></li><li><a href="https://doi.org/10.1016/j.jstrokecerebrovasdis.2026.108776">Prehospital SBP ≥180 linked with worse stroke outcomes <em>(Journal of Stroke and Cerebrovascular Diseases)</em></a></li></ul><p><a href="https://paramedicpapers.com/episodes/2026-10-29/">Show notes and transcript</a></p>]]></content:encoded>
+      <pubDate>Thu, 29 Oct 2026 07:35:05 +1100</pubDate>
+      <guid isPermaLink="false">https://audio.paramedicpapers.com/ep-2026-10-29.mp3</guid>
+      <enclosure url="https://op3.dev/e/audio.paramedicpapers.com/ep-2026-10-29.mp3" length="1093292" type="audio/mpeg"/>
+      <itunes:duration>273</itunes:duration>
+      <itunes:summary>4 papers: trauma analgesia safety across four drug classes; field undertriage linked to higher in-hospital mortality; prehospital blood and arrival calcium derangements; prehospital SBP ≥180 and worse stroke outcomes</itunes:summary>
+      <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
+      <itunes:episodeType>full</itunes:episodeType>
+      <podcast:transcript url="https://audio.paramedicpapers.com/ep-2026-10-29.txt" type="text/plain" language="en-au"/>
+    </item>
+    <item>
       <title>Paramedic Papers Daily — 28 October 2026</title>
       <link>https://paramedicpapers.com/episodes/2026-10-28/</link>
       <description>4 papers: transport ventilation during CPR feasible; longer on-scene intervals linked to 24-hour mortality; tele-paramedics matched physicians in MCI drill; what drives lay community first responders</description>
@@ -424,19 +438,6 @@
       <enclosure url="https://op3.dev/e/audio.paramedicpapers.com/ep-2026-09-30.mp3" length="564525" type="audio/mpeg"/>
       <itunes:duration>141</itunes:duration>
       <itunes:summary>1 paper: PIHCA vs GO-FAR 2 pre-arrest scores validated in 501 Swedish in-hospital cardiac arrests — comparable performance</itunes:summary>
-      <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
-      <itunes:episodeType>full</itunes:episodeType>
-    </item>
-    <item>
-      <title>Paramedic Papers Daily — 29 September 2026</title>
-      <link>https://paramedicpapers.com/episodes/2026-09-29/</link>
-      <description>1 paper: sex differences in OHCA vanish when obstructive CAD is angiographically confirmed (Resuscitation Plus registry, n=580)</description>
-      <content:encoded><![CDATA[<p>1 paper: sex differences in OHCA vanish when obstructive CAD is angiographically confirmed (Resuscitation Plus registry, n=580)</p><p>Papers in this episode:</p><ul><li><a href="https://doi.org/10.1016/j.resplu.2026.101490">Sex differences in management and outcomes after out-of-hospital cardiac arrest with angiographically confirmed obstructive coronary artery disease <em>(Resuscitation Plus)</em></a></li><li><a href="https://doi.org/10.1080/10903127.2026.2739424">Prehospital Minithoracostomy versus Chest Drainage for Emergency Pleural Decompression in Major Trauma <em>(Prehospital Emergency Care)</em></a></li><li><a href="https://doi.org/10.1080/10903127.2026.2739419">Combined NRB and Nasal Cannula Oxygen Delivery Is Inferior to Flush Rate NRB for Emergency Preoxygenation <em>(Prehospital Emergency Care)</em></a></li><li><a href="https://doi.org/10.1111/1742-6723.70355">Postresuscitation Out‐of‐Hospital Cardiac Arrest Presentations to Australia's First Dedicated Cardiac Hospital: A Retrospective Audit of Outcomes and Emergency Department Access Factors <em>(Emergency Medicine Australasia)</em></a></li><li><a href="https://doi.org/10.1080/10903127.2026.2737688">Repeat 9-1-1 Calls and Clinical Outcomes of Children After Non-Transport by Emergency Medical Services <em>(Prehospital Emergency Care)</em></a></li><li><a href="https://doi.org/10.1111/1742-6723.70356">Co‐Design of a Theory‐Informed, Multicomponent, Intervention for Diagnostic Stewardship in a Major‐Referral Emergency Department: A Qualitative Descriptive Study <em>(Emergency Medicine Australasia)</em></a></li><li><a href="https://doi.org/10.1111/1742-6723.70353">Artificial Intelligence Triage of Urgent Versus Non‐Urgent CT Brain Findings to Support Expedited Emergency Department Disposition: A Retrospective Validation Study <em>(Emergency Medicine Australasia)</em></a></li></ul><p><a href="https://paramedicpapers.com/episodes/2026-09-29/">Show notes and transcript</a></p>]]></content:encoded>
-      <pubDate>Tue, 29 Sep 2026 07:35:49 +1000</pubDate>
-      <guid isPermaLink="false">https://opurtell.github.io/paramedicpapers/audio/ep-2026-09-29.mp3</guid>
-      <enclosure url="https://op3.dev/e/audio.paramedicpapers.com/ep-2026-09-29.mp3" length="634797" type="audio/mpeg"/>
-      <itunes:duration>158</itunes:duration>
-      <itunes:summary>1 paper: sex differences in OHCA vanish when obstructive CAD is angiographically confirmed (Resuscitation Plus registry, n=580)</itunes:summary>
       <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
       <itunes:episodeType>full</itunes:episodeType>
     </item>
