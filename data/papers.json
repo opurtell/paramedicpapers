@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-10-28T20:20:43Z",
-  "lastUpdatedSydney": "2026-10-29 07:20 AEDT",
-  "lastUpdatedDate": "2026-10-29",
+  "lastUpdated": "2026-10-29T20:20:43Z",
+  "lastUpdatedSydney": "2026-10-30 07:20 AEDT",
+  "lastUpdatedDate": "2026-10-30",
   "featuredPapers": [
     {
       "id": "10.1016/j.resuscitation.2026.111358",
@@ -87,25 +87,25 @@
       "learningGoal": "Weigh the emerging evidence for double sequential defibrillation in refractory ventricular fibrillation cardiac arrest."
     },
     {
-      "id": "42901371",
-      "title": "Fatigue, Anxiety and Depression 12 Months After Out-of-Hospital Cardiac Arrest: A Population Based Cohort Study",
-      "journal": "Resuscitation",
-      "date": "2026-10-22",
-      "pmid": "42901371",
-      "doi": "10.1016/j.resuscitation.2026.111359",
-      "summary": "A Victorian population-based cohort of 728 out-of-hospital cardiac arrest survivors found fatigue in 35.8%, anxiety in 22.6% and depression in 18.0% at 12 months, with heavier symptom burden linked to worse quality of life, function and return to work.",
-      "relevance": "🟢 High — Australian registry data on what happens to the patients we resuscitate, and survivorship aftercare is a live question for every service running cardiac arrest follow-up pathways.",
-      "featuredReason": "Australian registry data on what happens to the patients we resuscitate, and survivorship aftercare is a live question for every service running cardiac arrest follow-up pathways.",
+      "id": "10.1016/j.resplu.2026.101544",
+      "title": "Early Prediction of Good Neurological Recovery in Comatose Out-of-Hospital Cardiac Arrest Survivors Using Machine Learning: A Multicenter Prospective Registry Study",
+      "journal": "Resuscitation Plus",
+      "date": "2026-10-30",
+      "pmid": "",
+      "doi": "10.1016/j.resplu.2026.101544",
+      "summary": "A South Korean multicentre prospective registry study developed a machine-learning model for comatose OHCA survivors that predicted good 6-month neurological recovery before targeted temperature management with AUROC 0.929, outperforming conventional scores like CAHP.",
+      "relevance": "🟡 Medium — Prognostication happens in intensive care, but the strongest predictors are the prehospital variables crews generate — initial rhythm, collapse duration — so early, accurate handover documentation is where this touches the road.",
+      "featuredReason": "Prognostication happens in intensive care, but the strongest predictors are the prehospital variables crews generate — initial rhythm, collapse duration — so early, accurate handover documentation is where this touches the road.",
       "pubDate": "2026-10",
       "topic": "Cardiac arrest",
-      "studyType": "Cohort",
-      "design": "Prospective population-based cohort",
-      "n": "728 OHCA survivors (68.2% of those eligible) interviewed at 12 months in Victoria",
-      "finding": "Fatigue 35.8%, anxiety 22.6%, depression 18.0%; fatigue exceeded population norms (SMD 0.64) and higher symptom burden tracked with worse EQ-5D, GOSE and return-to-work rates",
-      "caveat": "Self-reported symptoms with about a third of eligible survivors lost to follow-up",
-      "bottomLine": "Context only",
-      "shortTitle": "Fatigue common a year after cardiac arrest",
-      "learningGoal": "Recognise fatigue, anxiety and depression as common post-cardiac arrest survivors' needs when supporting recovery and follow-up."
+      "studyType": "Registry",
+      "design": "Multicentre prospective registry (Korean Hypothermia Network, KORHN-PRO)",
+      "n": "1,358 comatose adult OHCA survivors treated with targeted temperature management",
+      "finding": "The voting-classifier model predicted 6-month neurologically intact survival (29.3% of patients) with AUROC 0.929 and AUPRC 0.850; the top five predictors were prehospital initial rhythm, arrival rhythm, age, PaCO2 and total collapse duration",
+      "caveat": "Single-country registry from 2015–2018 and the model has not been externally validated",
+      "bottomLine": "Hypothesis-generating",
+      "shortTitle": "Machine learning predicts good recovery after OHCA",
+      "learningGoal": "Update my judgement on early prognostication for comatose cardiac arrest survivors in the Australian context."
     }
   ],
   "funFacts": [
@@ -1019,97 +1019,162 @@
     }
   ],
   "funFact": {
-    "category": "pathophysiology",
-    "fact": "Type A aortic dissection (ascending aorta) is a surgical emergency with mortality climbing 1 to 2% per hour. Type B (descending only) is usually managed medically unless it ruptures or cuts off blood flow somewhere critical."
+    "category": "resuscitation",
+    "fact": "The chain of survival — early access, early CPR, early defibrillation, early advanced care — was introduced by the AHA in 1991. A fifth link, post-cardiac arrest care, was added in 2010. Surviving the arrest is just the first half."
   },
   "tldr": {
-    "date": "2026-10-29",
-    "paperCount": 10,
-    "summary": "A systematic review finds prehospital trauma analgesia safe and effective across the four drug classes Australian crews already carry, and a large US cohort links field undertriage in major trauma to a 19% higher in-hospital mortality risk.",
+    "date": "2026-10-30",
+    "paperCount": 5,
+    "summary": "A prospective UK national evaluation of resuscitative thoracotomy found no survivors beyond 10 minutes of traumatic cardiac arrest, and a Korean machine-learning model predicted good neurological recovery after OHCA (AUROC 0.93) using variables available before intensive care.",
     "highlights": [
       {
-        "id": "42947661",
-        "pmid": "42947661",
-        "doi": "10.1111/1742-6723.70385",
-        "title": "Trauma analgesia safety confirmed across four drug classes",
-        "journal": "Emergency Medicine Australasia",
-        "note": "All four agent classes (opioids, ketamine, methoxyflurane, paracetamol) showed effectiveness; no drug-attributed serious adverse events except one opioid study, with minor effects like nausea and drowsiness common."
+        "id": "10.1016/j.resuscitation.2026.111371",
+        "pmid": "",
+        "doi": "10.1016/j.resuscitation.2026.111371",
+        "title": "Resuscitative thoracotomy: no survivors past 10 minutes",
+        "journal": "Resuscitation",
+        "note": "43.1% achieved ROSC and 6.9% survived to discharge; outcomes were substantially better with cardiac tamponade than exsanguination, and there were no survivors beyond 10 minutes of traumatic cardiac arrest"
       },
       {
-        "id": "42945928",
-        "pmid": "42945928",
-        "doi": "10.1016/j.surg.2026.110705",
-        "title": "Undertriage in trauma linked with higher in-hospital mortality",
-        "journal": "Surgery",
-        "note": "Undertriage rate 53%; adjusted risk ratio for in-hospital mortality 1.19 (95% CI 1.07–1.33); shorter length of stay (-0.29 days); over-60s less likely to be discharged home (aRR 0.95)."
+        "id": "42934469",
+        "pmid": "42934469",
+        "doi": "10.1007/s11739-026-04545-1",
+        "title": "Ultrasound tube confirmation: thin evidence on the road",
+        "journal": "Internal and Emergency Medicine",
+        "note": "Only one of 51 included studies evaluated diagnostic performance in adult patients in an out-of-hospital setting; no included study measured patient-oriented outcomes"
       },
       {
-        "id": "42945810",
-        "pmid": "42945810",
-        "doi": "10.1016/j.ajem.2026.09.029",
-        "title": "Prehospital blood linked to arrival hypocalcaemia in trauma",
-        "journal": "The American Journal of Emergency Medicine",
-        "note": "235 patients hypocalcaemic and 39 hypercalcaemic on arrival, both associated with lower survival; 77 of 136 (56.6%) who received prehospital blood were hypocalcaemic; 5 hypercalcaemic patients had received prehospital calcium, suggesting possible iatrogenic hypercalcaemia."
+        "id": "10.1016/j.resplu.2026.101544",
+        "pmid": "",
+        "doi": "10.1016/j.resplu.2026.101544",
+        "title": "Machine learning predicts good recovery after OHCA",
+        "journal": "Resuscitation Plus",
+        "note": "The voting-classifier model predicted 6-month neurologically intact survival (29.3% of patients) with AUROC 0.929 and AUPRC 0.850; the top five predictors were prehospital initial rhythm, arrival rhythm, age, PaCO2 and total collapse duration"
       },
       {
-        "id": "42946235",
-        "pmid": "42946235",
-        "doi": "10.1016/j.jstrokecerebrovasdis.2026.108776",
-        "title": "Prehospital SBP ≥180 linked with worse stroke outcomes",
-        "journal": "Journal of Stroke and Cerebrovascular Diseases",
-        "note": "SBP ≥180 vs <120 mmHg: adjusted OR 0.43 (95% CI 0.22–0.84) for mRS 0–2 at 90 days; significant in EVT-treated patients, not in non-EVT patients (interaction p=0.007); haemorrhagic complications similar across groups."
+        "id": "42951343",
+        "pmid": "42951343",
+        "doi": "10.1093/pubmed/fdag080",
+        "title": "Teen drinking falls, alcohol ambulance call-outs don't",
+        "journal": "Journal of Public Health",
+        "note": "A small but significant monthly decline occurred only among males in major cities (B = −0.01, P < .001); no significant trends for males in regional areas or for females in metropolitan or regional areas"
       },
       {
-        "id": "42946504",
-        "pmid": "42946504",
-        "doi": "10.1016/j.amj.2026.08.003",
-        "title": "Central venous access during arrest feasible in simulation",
-        "journal": "Air Medical Journal",
-        "note": "Cannulation successful in all simulations via standard sterile technique; left femoral vein identified as the most practical site; main challenges were confined workspace and fixed stretcher height."
-      },
-      {
-        "id": "42945416",
-        "pmid": "42945416",
-        "doi": "10.1159/cee/acdag004",
-        "title": "CT stroke unit model separates diagnosis from transport",
-        "journal": "Cerebrovascular Diseases Extra",
-        "note": "The model separates CT-based diagnosis from treatment and transport; patients are moved to a standard EMS vehicle after CT evaluation, which the authors argue may make MSU deployment feasible in resource-constrained regions."
-      },
-      {
-        "id": "42946509",
-        "pmid": "42946509",
-        "doi": "10.1016/j.amj.2026.07.001",
-        "title": "In-flight events uncommon in international air repatriation",
-        "journal": "Air Medical Journal",
-        "note": "In-flight events in 26.7% of transports, major events 3.9%; independent predictors of events were age, orthopaedic/trauma and neoplasm diagnoses, oxygen therapy, invasive ventilation and transport year; acuity increased over time."
-      },
-      {
-        "id": "42946508",
-        "pmid": "42946508",
-        "doi": "10.1016/j.amj.2026.06.003",
-        "title": "Fatigue common among US helicopter air ambulance pilots",
-        "journal": "Air Medical Journal",
-        "note": "53% reported poor sleep quality; 71% felt fatigue was most prevalent on the return-to-base leg; 69% named flight request volume as the biggest schedule-related contributor; 34% reported nodding off in flight; 87% said sleep inertia affected performance."
-      },
-      {
-        "id": "42946515",
-        "pmid": "42946515",
-        "doi": "10.1016/j.amj.2026.08.004",
-        "title": "Flight simulation training: engagement shown, evidence thin",
-        "journal": "Air Medical Journal",
-        "note": "Learners reported improved expertise, engagement, motivation, responsiveness and mood; evidence was insufficient on self-awareness and on performance of trained crews in the prehospital setting; authors recommend standardised training and assessment."
-      },
-      {
-        "id": "42945752",
-        "pmid": "42945752",
-        "doi": "10.1016/j.ienj.2026.101919",
-        "title": "New ambulance nurse induction: four challenges, three fixes",
-        "journal": "International Emergency Nursing",
-        "note": "Four interrelated challenges consolidated; three interventions implemented (restructured theory and practice, prepared clinical supervisors, integrated peer learning); reflection showed theory-practice integration, supervision, leadership and peer learning were interdependent."
+        "id": "42952797",
+        "pmid": "42952797",
+        "doi": "10.3389/fpubh.2026.1936570",
+        "title": "AED coverage depends on how responders travel",
+        "journal": "Frontiers in Public Health",
+        "note": "Baseline demand-weighted 4-minute coverage was 85.07% for driving, 68.27% for cycling and 31.55% for walking; universal coverage required 68 additional AEDs under a driving assumption versus 521 under walking"
       }
     ]
   },
   "dailyUpdates": [
+    {
+      "date": "2026-10-30",
+      "papers": [
+        {
+          "id": "10.1016/j.resuscitation.2026.111371",
+          "title": "Traumatic Emergency Thoracotomy for Resuscitation in Shock (TETRiS): a national service evaluation of resuscitative thoracotomy practice outside the operating theatre",
+          "journal": "Resuscitation",
+          "date": "2026-10-30",
+          "pmid": "",
+          "doi": "10.1016/j.resuscitation.2026.111371",
+          "summary": "A prospective 12-month UK national service evaluation across 20 HEMS and 26 major trauma centres studied 116 resuscitative thoracotomies (82 prehospital) and found 43.1% achieved ROSC but only 6.9% survived to discharge, with no survivors beyond 10 minutes of traumatic cardiac arrest.",
+          "relevance": "🟡 Medium — Prehospital thoracotomy is a doctor-delivered HEMS skill in the UK model, not an Australian paramedic intervention — but the 10-minute ceiling and the tamponade-versus-exsanguination split inform how trauma arrest patients are triaged to major trauma centres here.",
+          "pubDate": "2026-10",
+          "topic": "Trauma",
+          "studyType": "Cohort",
+          "design": "Prospective national service evaluation (PHOTON, TERN, NaTRIC networks)",
+          "n": "116 patients undergoing resuscitative thoracotomy (82 prehospital)",
+          "finding": "43.1% achieved ROSC and 6.9% survived to discharge; outcomes were substantially better with cardiac tamponade than exsanguination, and there were no survivors beyond 10 minutes of traumatic cardiac arrest",
+          "caveat": "Prospective service evaluation without a comparator group — patient selection for thoracotomy drives the outcomes",
+          "bottomLine": "Hypothesis-generating",
+          "shortTitle": "Resuscitative thoracotomy: no survivors past 10 minutes",
+          "learningGoal": "Weigh patient selection for prehospital resuscitative thoracotomy, especially in traumatic arrest from exsanguination."
+        },
+        {
+          "id": "42934469",
+          "title": "Point-of-care ultrasound for confirming endotracheal tube placement in prehospital and critical care transport: a scoping review",
+          "journal": "Internal and Emergency Medicine",
+          "date": "2026-10-30",
+          "pmid": "42934469",
+          "doi": "10.1007/s11739-026-04545-1",
+          "summary": "A scoping review of 51 studies on point-of-care ultrasound for confirming endotracheal tube placement in prehospital and critical care transport found only one primary study of diagnostic accuracy in actual out-of-hospital patients and none measuring patient-oriented outcomes.",
+          "relevance": "🟡 Medium — Ultrasound isn't carried on every Australian ambulance and intubation is an advanced-practice skill in most services — and the review shows the out-of-hospital evidence base behind in-hospital accuracy figures simply doesn't exist yet.",
+          "pubDate": "2026-10-26",
+          "topic": "Airway & ventilation",
+          "studyType": "Systematic review",
+          "design": "Scoping review (Joanna Briggs Institute framework, PRISMA-ScR)",
+          "n": "51 studies from 2,447 records",
+          "finding": "Only one of 51 included studies evaluated diagnostic performance in adult patients in an out-of-hospital setting; no included study measured patient-oriented outcomes",
+          "caveat": "Most included work is cadaver, simulation, training and feasibility studies rather than diagnostic accuracy in transported patients",
+          "bottomLine": "Context only",
+          "shortTitle": "Ultrasound tube confirmation: thin evidence on the road",
+          "learningGoal": "Weigh the reliability of ultrasound for confirming endotracheal tube placement when verifying intubation in the prehospital setting."
+        },
+        {
+          "id": "10.1016/j.resplu.2026.101544",
+          "title": "Early Prediction of Good Neurological Recovery in Comatose Out-of-Hospital Cardiac Arrest Survivors Using Machine Learning: A Multicenter Prospective Registry Study",
+          "journal": "Resuscitation Plus",
+          "date": "2026-10-30",
+          "pmid": "",
+          "doi": "10.1016/j.resplu.2026.101544",
+          "summary": "A South Korean multicentre prospective registry study developed a machine-learning model for comatose OHCA survivors that predicted good 6-month neurological recovery before targeted temperature management with AUROC 0.929, outperforming conventional scores like CAHP.",
+          "relevance": "🟡 Medium — Prognostication happens in intensive care, but the strongest predictors are the prehospital variables crews generate — initial rhythm, collapse duration — so early, accurate handover documentation is where this touches the road.",
+          "pubDate": "2026-10",
+          "topic": "Cardiac arrest",
+          "studyType": "Registry",
+          "design": "Multicentre prospective registry (Korean Hypothermia Network, KORHN-PRO)",
+          "n": "1,358 comatose adult OHCA survivors treated with targeted temperature management",
+          "finding": "The voting-classifier model predicted 6-month neurologically intact survival (29.3% of patients) with AUROC 0.929 and AUPRC 0.850; the top five predictors were prehospital initial rhythm, arrival rhythm, age, PaCO2 and total collapse duration",
+          "caveat": "Single-country registry from 2015–2018 and the model has not been externally validated",
+          "bottomLine": "Hypothesis-generating",
+          "shortTitle": "Machine learning predicts good recovery after OHCA",
+          "learningGoal": "Update my judgement on early prognostication for comatose cardiac arrest survivors in the Australian context."
+        },
+        {
+          "id": "42951343",
+          "title": "Do trends in alcohol harm mirror consumption? An analysis of adolescent ambulance attendances",
+          "journal": "Journal of Public Health",
+          "date": "2026-10-30",
+          "pmid": "42951343",
+          "doi": "10.1093/pubmed/fdag080",
+          "summary": "An Australian study of the National Ambulance Surveillance System tracked 25,928 adolescent alcohol-intoxication ambulance attendances in Victoria from 2012 to 2023 and found rates stayed largely flat despite falling teen drinking, with a small decline only among males in major cities.",
+          "relevance": "🟢 High — Australian ambulance data on a Friday-night workload that lands on crews everywhere — the gap between survey-reported drinking and actual ambulance harm matters for prevention planning in any state.",
+          "pubDate": "2026-10-28",
+          "topic": "Toxicology",
+          "studyType": "Registry",
+          "design": "Retrospective registry analysis with multivariable regression, stratified by gender and remoteness",
+          "n": "25,928 ambulance attendances for adolescent alcohol intoxication (ages 10–19), Victoria 2012–2023",
+          "finding": "A small but significant monthly decline occurred only among males in major cities (B = −0.01, P < .001); no significant trends for males in regional areas or for females in metropolitan or regional areas",
+          "caveat": "Attendance data capture acute harm presentations rather than drinking behaviour, and the data are Victorian only",
+          "bottomLine": "Context only",
+          "shortTitle": "Teen drinking falls, alcohol ambulance call-outs don't",
+          "learningGoal": "Recognise how adolescent alcohol harm persists across gender and remoteness despite falling teen drinking."
+        },
+        {
+          "id": "42952797",
+          "title": "Locating automated external defibrillators in urban areas: considering different travel modes",
+          "journal": "Frontiers in Public Health",
+          "date": "2026-10-30",
+          "pmid": "42952797",
+          "doi": "10.3389/fpubh.2026.1936570",
+          "summary": "A Chinese spatial optimisation study of 17,842 OHCA dispatch records in Wuhan modelled AED coverage under different responder travel modes and found demand-weighted coverage ranged from 85% (driving) to 32% (walking), with universal walking coverage needing 521 extra AEDs versus 68 by car.",
+          "relevance": "🟡 Medium — A Chinese megacity model rather than an Australian deployment, but the core insight — AED planning collapses if volunteer responders walk instead of drive — applies to any community responder program here.",
+          "pubDate": "2026-10-14",
+          "topic": "Cardiac arrest",
+          "studyType": "Modelling",
+          "design": "Spatial optimisation modelling (multimodal location set covering and maximal covering problems)",
+          "n": "17,842 ambulance dispatch records and 3,569 existing AEDs across 1,161 grid cells in Wuhan",
+          "finding": "Baseline demand-weighted 4-minute coverage was 85.07% for driving, 68.27% for cycling and 31.55% for walking; universal coverage required 68 additional AEDs under a driving assumption versus 521 under walking",
+          "caveat": "Modelled demand in a single city with no link to actual survival outcomes",
+          "bottomLine": "Context only",
+          "shortTitle": "AED coverage depends on how responders travel",
+          "learningGoal": "Understand how responder travel modes shape AED coverage and placement in Australian urban communities."
+        }
+      ]
+    },
     {
       "date": "2026-10-29",
       "papers": [
