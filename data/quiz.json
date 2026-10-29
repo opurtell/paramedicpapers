@@ -1,120 +1,120 @@
 {
- "id": "2026-10-25",
- "span": "18 – 25 Oct 2026",
- "created": "2026-10-25T00:01:25Z",
+ "id": "2026-10-29",
+ "span": "22 – 29 Oct 2026",
+ "created": "2026-10-29T00:02:09Z",
  "est_minutes": 10,
  "questions": [
   {
-   "paper_id": "10.1080/10903127.2026.2751025",
-   "short_title": "Ditch lights and sirens for fall-alarm calls",
-   "topic": "Operations & systems",
-   "question": "After dispatch of medical-alert (PERS) activations changed to non-lights-and-siren response, how often did crews need to upgrade to a lights-and-siren transport?",
+   "paper_id": "42901371",
+   "short_title": "Fatigue common a year after cardiac arrest",
+   "topic": "Cardiac arrest",
+   "question": "At 12 months after out-of-hospital cardiac arrest, which symptom was most common among survivors?",
    "options": [
-    "About 1% of calls",
-    "About 12% of calls",
-    "About 5% of calls",
-    "About 0.2% of calls"
+    "Anxiety",
+    "Depression",
+    "Insomnia",
+    "Fatigue"
    ],
    "answer": 3,
-   "explanation": "Only 4 of 1,628 post-change calls (0.2%) needed an L&S transport, and just one of those required advanced interventions. Remember this was a single-agency before-after study with no control group, so it's hypothesis-generating rather than proof the change is safe."
+   "explanation": "Fatigue was reported by 35.8% of survivors, ahead of anxiety at 22.6% and depression at 18.0%, and it exceeded population norms. Keep in mind symptoms were self-reported and about a third of eligible survivors were lost to follow-up."
   },
   {
-   "paper_id": "42894810",
-   "short_title": "Predicting outcomes in PEA cardiac arrest",
+   "paper_id": "10.1016/j.resuscitation.2026.111358",
+   "short_title": "Shorter pulse checks linked to more ROSC",
    "topic": "Cardiac arrest",
-   "question": "In PEA cardiac arrest, what did the study find about conversion to a shockable rhythm before hospital arrival?",
+   "question": "In the CaPTuRe study, how did pulse checks lasting 5 seconds or less compare with checks lasting 6-10 seconds?",
    "options": [
-    "It predicted good outcome only in cardiac PEA and worse outcome in non-cardiac PEA",
-    "It made no difference to neurological outcome in any group",
-    "It predicted good neurological outcome regardless of the cause of the arrest",
-    "It predicted worse outcome only when the arrest was unwitnessed"
-   ],
-   "answer": 0,
-   "explanation": "Rhythm conversion predicted a favourable outcome in cardiac PEA but a poorer one in non-cardiac PEA. This is a registry association with presumed aetiology, so it generates hypotheses rather than proving causation."
-  },
-  {
-   "paper_id": "42894483",
-   "short_title": "Australian alcohol harms keep rising",
-   "topic": "Operations & systems",
-   "question": "Between 2010 and 2023, national Australian data showed alcohol consumption declining by survey and wastewater measures. What happened to alcohol-related harms such as ambulance attendances over the same period?",
-   "options": [
-    "They stayed roughly stable",
-    "They fell sharply after 2019",
-    "They increased substantially",
-    "They declined in line with consumption"
+    "They showed no difference in ROSC but shorter ETCO2 recovery times",
+    "They only benefited patients whose arrest was witnessed",
+    "They were linked to a higher ROSC rate (36.3% vs 19.5%) and better ETCO2 dynamics",
+    "They were linked to lower ROSC because interruptions were judged too brief to assess circulation"
    ],
    "answer": 2,
-   "explanation": "Most harm measures, including ambulance attendances, rose substantially even as consumption declined. The caveat is that these are population-level indicators, so no individual presentations were linked and the differing measures are hard to align."
+   "explanation": "Shorter checks were associated with roughly double the ROSC rate and more favourable ETCO2 loss and recovery patterns. The study was quasi-randomised, so healthier arrests may simply have had quicker checks, and the finding is hypothesis-generating."
   },
   {
-   "paper_id": "42896864",
-   "short_title": "Feedback device lifts paediatric ventilation quality",
+   "paper_id": "10.1016/j.resplu.2026.101536",
+   "short_title": "Infant carry slings rarely linked to OHCA",
    "topic": "Paediatrics",
-   "question": "In this simulation study, a real-time ventilation feedback device had its largest effect on which measure of paediatric ventilation quality?",
+   "question": "In this registry review of cardiac arrests in children under two, which circumstance was most commonly documented surrounding the arrest?",
    "options": [
-    "Mask seal, with leak under 30% far more often",
-    "Tidal volume, with guideline-adherent breaths jumping from 16.2% to 87%",
-    "Reducing gastric insufflation during bagging",
-    "Ventilation rate, with adherence rising from 65% to 88.6%"
-   ],
-   "answer": 1,
-   "explanation": "The biggest jump was tidal volume adherence, from 16.2% to 87% of breaths, ahead of the improvements in rate and mask leak. Remember it's a manikin study — no patient outcomes, and real paediatric airways are less forgiving."
-  },
-  {
-   "paper_id": "42901186",
-   "short_title": "Dispatcher training + volunteer app lifts bystander CPR",
-   "topic": "Cardiac arrest",
-   "question": "Despite more bystanders starting CPR after the dispatcher training and volunteer app intervention, what did the trial find about patient outcomes?",
-   "options": [
-    "Survival to discharge improved but neurological outcomes did not",
-    "Neither survival to discharge nor neurological outcomes improved",
-    "Survival to discharge and neurological outcomes improved alongside CPR rates",
-    "Outcomes improved only when CPR was started within 60 seconds"
-   ],
-   "answer": 1,
-   "explanation": "The rise in bystander CPR did not translate into better survival or neurological outcomes, and the CPR effect itself lost significance under some statistical adjustments. So the results are hypothesis-generating rather than practice-changing."
-  },
-  {
-   "paper_id": "42901366",
-   "short_title": "Real-time feedback tidies BVM ventilation in arrest",
-   "topic": "Airway & ventilation",
-   "question": "In the VECARS-2 study, real-time feedback improved insufflated-volume adherence to 68% of breaths in range. What happened to expired tidal volume?",
-   "options": [
-    "It rose well above the guideline range",
-    "It matched the insufflated volume closely",
-    "It fell below the guideline range",
-    "It stayed essentially unchanged"
+    "Feeding during transport",
+    "Being found unresponsive in a cot, bed, sofa or pushchair",
+    "Infant carry sling use",
+    "Co-sleeping"
    ],
    "answer": 3,
-   "explanation": "Expired tidal volumes were in range in only 14% vs 15% of breaths, so despite tidier insufflated volumes the air actually reaching the lungs didn't change. The before-and-after design without randomisation also means the findings are hypothesis-generating only."
+   "explanation": "Co-sleeping featured in 33.3% of cases, ahead of children found unresponsive at 26.3%, while carry slings were linked to just 2 of 162 arrests. The single-region sample and free-text review mean this can't rule out a rare sling risk."
   },
   {
-   "paper_id": "42900532",
-   "short_title": "Resilience as a skill, not a trait",
-   "topic": "Workforce & wellbeing",
-   "question": "In this study, 'work mode' was described as having a phased structure. Which phases did the authors identify?",
+   "paper_id": "10.1177/27536386261496803",
+   "short_title": "Paediatric deterioration in the field poorly defined",
+   "topic": "Paediatrics",
+   "question": "What gap did the scoping review find across all 28 studies of paediatric out-of-hospital deterioration?",
    "options": [
-    "Readiness, immersion and discharge",
-    "Preparation, containment and recovery",
-    "Anticipation, action and reflection",
-    "Alert, response and debrief"
+    "Lack of a standard operational definition",
+    "Lack of any vital sign measurement",
+    "Lack of data from high-income countries",
+    "Lack of studies on children under 18"
    ],
-   "answer": 1,
-   "explanation": "Work mode moved through preparation, containment and recovery, showing features of skilled performance like an athlete's game face. Keep in mind the sample was small, drawn from a single service, and the interviewers analysed their own data."
+   "answer": 0,
+   "explanation": "No study offered an operational or standardised definition of deterioration, which limits comparability and consistent recognition of sick kids. As a scoping review it maps the field rather than pooling effects, and most included studies were retrospective."
   },
   {
-   "paper_id": "10.1016/j.resplu.2026.101535",
-   "short_title": "Dutch TEAM tool validated for resus training",
-   "topic": "Education & training",
-   "question": "When using a validated TEAM-style tool to rate team performance in resus simulation, how many independent raters does the evidence suggest you need for good reliability?",
+   "paper_id": "42904228",
+   "short_title": "Who doesn't call an ambulance for chest pain",
+   "topic": "Cardiac (non-arrest)",
+   "question": "Which group had higher odds of calling an ambulance for acute coronary syndrome than people living with others?",
    "options": [
-    "Four raters, as reliability keeps rising steeply with each extra rater",
-    "Three raters, because two gives only moderate reliability",
-    "One rater is enough if they are an experienced instructor",
-    "Two raters give good reliability; three add little"
+    "People living alone",
+    "Men",
+    "Adults under 49",
+    "People born outside Australia"
    ],
-   "answer": 1,
-   "explanation": "Inter-rater reliability was good with three raters (ICC 0.78) but only moderate with two (ICC 0.68). Scores also clustered near the top, with ceiling effects on every item."
+   "answer": 0,
+   "explanation": "Living alone was linked to up to 48% higher odds of EMS use — the one equity factor pointing the other way. The review used vote-counting on heterogeneous observational studies, so treat all these figures as hypothesis-generating rather than precise effects."
+  },
+  {
+   "paper_id": "42904944",
+   "short_title": "Cluster trials read differently to individual ones",
+   "topic": "Other",
+   "question": "In prehospital, emergency and critical care trials, how did cluster-randomised trials compare with individually randomised ones?",
+   "options": [
+    "Similar mortality, smaller length-of-stay effects",
+    "Smaller effects on every outcome measured",
+    "Similar effects on every outcome measured",
+    "They showed bigger mortality benefits"
+   ],
+   "answer": 0,
+   "explanation": "Mortality effect estimates were much the same between the two trial types, but cluster trials reported significantly smaller effect sizes for length-of-stay or days-alive outcomes. The comparison was observational across heterogeneous meta-analyses, with under half reporting randomisation type, so treat it as context only."
+  },
+  {
+   "paper_id": "42920134",
+   "short_title": "How ambulance models shape end-of-life care",
+   "topic": "Operations & systems",
+   "question": "Across all three ambulance service models studied, how did paramedics mostly develop their end-of-life care skills?",
+   "options": [
+    "Learning on the job",
+    "From university-based palliative care modules",
+    "Through mandatory annual end-of-life care training",
+    "Through an in-service specialist palliative care team"
+   ],
+   "answer": 0,
+   "explanation": "In every case, learning on the job dominated, alongside limited access to records, anticipatory medicines and palliative advice. The innovative models improved resources, but structured training was still lacking."
+  },
+  {
+   "paper_id": "10.1186/s12873-026-01816-0",
+   "short_title": "Why rural stroke care lags: system drivers",
+   "topic": "Stroke & neuro",
+   "question": "According to this qualitative study, when did rural and coastal distance become most inequity-producing in prehospital stroke care?",
+   "options": [
+    "When the patient lived alone or had subtle or atypical symptoms",
+    "When the nearest stroke unit lacked a pre-alert pathway",
+    "When combined with limited mobility, complex extrication or Category 2 demand",
+    "When crews had no consistent access to translation services"
+   ],
+   "answer": 2,
+   "explanation": "Stakeholders described distance compounding delay only when it interacted with system pressures like limited patient mobility, complex extrication and Category 2 queueing. The findings come from providers only — no patients or carers were interviewed, and it reflects a single region."
   }
  ]
 }
