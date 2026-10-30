@@ -25,6 +25,20 @@
     <itunes:explicit>false</itunes:explicit>
     <podcast:guid>09fa3693-e2ac-527c-9d1c-f68df149b888</podcast:guid>
     <item>
+      <title>Paramedic Papers Daily — 31 October 2026</title>
+      <link>https://paramedicpapers.com/episodes/2026-10-31/</link>
+      <description>4 papers: Real-time BVM feedback linked to better arrest ventilation; Women still get less bystander CPR in public; Adrenaline timing not tied to paediatric OHCA survival; ECG signs appear minutes before post-ROSC rearrest</description>
+      <content:encoded><![CDATA[<p>4 papers: Real-time BVM feedback linked to better arrest ventilation; Women still get less bystander CPR in public; Adrenaline timing not tied to paediatric OHCA survival; ECG signs appear minutes before post-ROSC rearrest</p><p>Papers in this episode:</p><ul><li><a href="https://doi.org/10.1016/j.resuscitation.2026.111372">Real-time BVM feedback linked to better arrest ventilation <em>(Resuscitation)</em></a></li><li><a href="https://doi.org/10.1016/j.resplu.2026.101545">Women still get less bystander CPR in public <em>(Resuscitation Plus)</em></a></li><li><a href="https://doi.org/10.1097/PCC.0000000000004094">Adrenaline timing not tied to paediatric OHCA survival <em>(Pediatric Critical Care Medicine)</em></a></li><li><a href="https://doi.org/10.1016/j.resuscitation.2026.111370">ECG signs appear minutes before post-ROSC rearrest <em>(Resuscitation)</em></a></li></ul><p><a href="https://paramedicpapers.com/episodes/2026-10-31/">Show notes and transcript</a></p>]]></content:encoded>
+      <pubDate>Sat, 31 Oct 2026 07:34:32 +1100</pubDate>
+      <guid isPermaLink="false">https://audio.paramedicpapers.com/ep-2026-10-31.mp3</guid>
+      <enclosure url="https://op3.dev/e/audio.paramedicpapers.com/ep-2026-10-31.mp3" length="1092332" type="audio/mpeg"/>
+      <itunes:duration>272</itunes:duration>
+      <itunes:summary>4 papers: Real-time BVM feedback linked to better arrest ventilation; Women still get less bystander CPR in public; Adrenaline timing not tied to paediatric OHCA survival; ECG signs appear minutes before post-ROSC rearrest</itunes:summary>
+      <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
+      <itunes:episodeType>full</itunes:episodeType>
+      <podcast:transcript url="https://audio.paramedicpapers.com/ep-2026-10-31.txt" type="text/plain" language="en-au"/>
+    </item>
+    <item>
       <title>Paramedic Papers Daily — 30 October 2026</title>
       <link>https://paramedicpapers.com/episodes/2026-10-30/</link>
       <description>4 papers: Resuscitative thoracotomy no survivors past 10 min; ultrasound tube confirmation evidence thin; ML predicts good recovery after OHCA; teen drinking falls, alcohol call-outs don't</description>
@@ -426,19 +440,6 @@
       <enclosure url="https://op3.dev/e/audio.paramedicpapers.com/ep-2026-10-02.mp3" length="828525" type="audio/mpeg"/>
       <itunes:duration>207</itunes:duration>
       <itunes:summary>3 papers: early adrenaline + early airway in OHCA (Korean registry); language barriers shift blunt trauma care (US EMS data); NAEMSP position statement on EMS clinician mental health</itunes:summary>
-      <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
-      <itunes:episodeType>full</itunes:episodeType>
-    </item>
-    <item>
-      <title>Paramedic Papers Daily — 1 October 2026</title>
-      <link>https://paramedicpapers.com/episodes/2026-10-01/</link>
-      <description>1 paper: prehospital whole blood in traumatic haemorrhagic shock — systematic review/meta-analysis (Injury, ahead-of-print)</description>
-      <content:encoded><![CDATA[<p>1 paper: prehospital whole blood in traumatic haemorrhagic shock — systematic review/meta-analysis (Injury, ahead-of-print)</p><p>Papers in this episode:</p><ul><li><a href="https://doi.org/10.1016/j.injury.2026.113732">Prehospital whole blood transfusion in traumatic hemorrhagic shock: a systematic review and meta-analysis <em>(Injury)</em></a></li></ul><p><a href="https://paramedicpapers.com/episodes/2026-10-01/">Show notes and transcript</a></p>]]></content:encoded>
-      <pubDate>Thu, 01 Oct 2026 07:33:26 +1000</pubDate>
-      <guid isPermaLink="false">https://opurtell.github.io/paramedicpapers/audio/ep-2026-10-01.mp3</guid>
-      <enclosure url="https://op3.dev/e/audio.paramedicpapers.com/ep-2026-10-01.mp3" length="412749" type="audio/mpeg"/>
-      <itunes:duration>103</itunes:duration>
-      <itunes:summary>1 paper: prehospital whole blood in traumatic haemorrhagic shock — systematic review/meta-analysis (Injury, ahead-of-print)</itunes:summary>
       <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
       <itunes:episodeType>full</itunes:episodeType>
     </item>
