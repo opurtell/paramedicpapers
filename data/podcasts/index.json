@@ -12,6 +12,18 @@
   "updated": "2026-10-29"
  },
  {
+  "id": "emcrit",
+  "name": "EMCrit",
+  "publisher": "Dr Scott Weingart",
+  "focus": "Resuscitation and emergency critical care",
+  "region": "US",
+  "site": "https://emcrit.org",
+  "art": "data/podcasts/art/emcrit.jpg",
+  "episodes": 166,
+  "latest": "2026-10-29",
+  "updated": "2026-10-30"
+ },
+ {
   "id": "prehospital-care-podcast",
   "name": "Pre-Hospital Care Podcast",
   "publisher": "Eoin Walker",
@@ -94,18 +106,6 @@
   "episodes": 33,
   "latest": "2026-10-21",
   "updated": "2026-10-21"
- },
- {
-  "id": "emcrit",
-  "name": "EMCrit",
-  "publisher": "Dr Scott Weingart",
-  "focus": "Resuscitation and emergency critical care",
-  "region": "US",
-  "site": "https://emcrit.org",
-  "art": "data/podcasts/art/emcrit.jpg",
-  "episodes": 165,
-  "latest": "2026-10-21",
-  "updated": "2026-10-23"
  },
  {
   "id": "out-local",
