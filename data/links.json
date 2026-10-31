@@ -1,34 +1,34 @@
 {
- "updated": "2026-10-30",
+ "updated": "2026-10-31",
  "latest": [
   {
-   "key": "42951343",
-   "title": "Teen drinking falls, alcohol ambulance call-outs don't",
-   "topic": "Toxicology",
-   "finding": "A small but significant monthly decline occurred only among males in major cities (B = −0.01, P < .001); no significant trends for males in regional areas or for females in metropolitan or regional areas"
-  },
-  {
-   "key": "doi-10-1016-j-resuscitation-2026-111371",
-   "title": "Resuscitative thoracotomy: no survivors past 10 minutes",
-   "topic": "Trauma",
-   "finding": "43.1% achieved ROSC and 6.9% survived to discharge; outcomes were substantially better with cardiac tamponade than exsanguination, and there were no survivors beyond 10 minutes of traumatic cardiac arrest"
-  },
-  {
-   "key": "42934469",
-   "title": "Ultrasound tube confirmation: thin evidence on the road",
-   "topic": "Airway & ventilation",
-   "finding": "Only one of 51 included studies evaluated diagnostic performance in adult patients in an out-of-hospital setting; no included study measured patient-oriented outcomes"
-  },
-  {
-   "key": "doi-10-1016-j-resplu-2026-101544",
-   "title": "Machine learning predicts good recovery after OHCA",
+   "key": "42956924",
+   "title": "Real-time BVM feedback linked to better arrest ventilation",
    "topic": "Cardiac arrest",
-   "finding": "The voting-classifier model predicted 6-month neurologically intact survival (29.3% of patients) with AUROC 0.929 and AUPRC 0.850; the top five predictors were prehospital initial rhythm, arrival rhythm, age, PaCO2 and total collapse duration"
+   "finding": "Ventilations in-target for both rate and tidal volume rose from 7.5% to 39.0% with real-time feedback; with ETCO2 monitoring alone only 6.8% met both, and 58.2% of ventilations delivered a lower-than-target tidal volume"
+  },
+  {
+   "key": "doi-10-1016-j-resplu-2026-101545",
+   "title": "Women still get less bystander CPR in public",
+   "topic": "Cardiac arrest",
+   "finding": "Public bystander CPR: 48% of men vs 44% of women in North Carolina (aOR 0.87) and 59% vs 52% in Singapore (aOR 0.78); survival to discharge favoured women in North Carolina (aOR 1.15) but men in Singapore (aOR 0.63)"
+  },
+  {
+   "key": "42957612",
+   "title": "Adrenaline timing not tied to paediatric OHCA survival",
+   "topic": "Paediatrics",
+   "finding": "No timing window (1–10 through 26–30 minutes after EMS contact) showed an association with one-month survival; risk ratios ranged 0.97–2.94 with confidence intervals crossing 1"
+  },
+  {
+   "key": "42956923",
+   "title": "ECG signs appear minutes before post-ROSC rearrest",
+   "topic": "Cardiac arrest",
+   "finding": "40.7% of post-ROSC patients rearrested; identification was highest one minute before rearrest (AUROC 0.74) and declined beyond three minutes; rearrest carried lower survival (20.4% vs 43.1%) and favourable neuro outcome (7.8% vs 21.2%)"
   }
  ],
  "episode": {
-  "date": "2026-10-30",
-  "title": "Paramedic Papers Daily — 30 October 2026",
-  "page": "/episodes/2026-10-30/"
+  "date": "2026-10-31",
+  "title": "Paramedic Papers Daily — 31 October 2026",
+  "page": "/episodes/2026-10-31/"
  }
 }
