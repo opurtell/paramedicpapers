@@ -74,6 +74,7 @@
 
   async function init() {
     enableMoreTab();
+    showSignupResult();
     bindTabs();
     bindHome();
     bindFeed();
@@ -1434,6 +1435,58 @@
   }
 
   /* ── bindings ───────────────────────────────────────── */
+
+  /* ── PD brief sign-up result ──────────────────────── */
+
+  /* The confirm link in the sign-up email (join.paramedicpapers.com/confirm)
+     redirects here with ?pd=confirmed|already|expired, plus &when=<phrase>
+     on success ("on your 3A PD shift", "every Tuesday"). Shown once at the
+     top of Home; the query is dropped from the address bar so a reload or a
+     shared link doesn't show it again. */
+  function showSignupResult() {
+    var q = new URLSearchParams(location.search);
+    var kind = q.get('pd');
+    if (!kind) return;
+    var when = (q.get('when') || '').slice(0, 60);
+    q.delete('pd'); q.delete('when');
+    var rest = q.toString();
+    try { history.replaceState(null, '', location.pathname + (rest ? '?' + rest : '') + location.hash); } catch (e) {}
+
+    var JOIN = 'https://join.paramedicpapers.com';
+    var copy = {
+      confirmed: {
+        head: 'You\u2019re subscribed',
+        body: 'Your first PD brief is on its way and should arrive within a few minutes.' +
+          (when ? ' After that it arrives <b>' + esc(when) + '</b>.' : ''),
+        tip: 'Can\u2019t see it? Check Junk, then add newsletter@paramedicpapers.com to your safe senders.'
+      },
+      already: {
+        head: 'You\u2019re already subscribed',
+        body: 'That link has already been used, so you\u2019re on the list. There\u2019s nothing else to do.'
+      },
+      expired: {
+        head: 'That link has expired',
+        body: 'Confirmation links work for 7 days. Sign up again and we\u2019ll send a fresh one.',
+        cta: '<a class="link-btn" href="' + JOIN + '">Sign up again ' + ico('arrow') + '</a>'
+      }
+    }[kind];
+    var el = $('pd-welcome');
+    if (!copy || !el) return;
+    el.innerHTML =
+      '<div class="panel-head">' +
+        '<span class="panel-kicker panel-kicker-accent">' + (kind === 'expired' ? 'PD brief' : ico('check') + ' PD brief') + '</span>' +
+        '<button class="pd-welcome-close" type="button" aria-label="Dismiss">' + ico('x') + '</button>' +
+      '</div>' +
+      '<h2 class="pd-welcome-head">' + copy.head + '</h2>' +
+      '<p class="panel-lead">' + copy.body + '</p>' +
+      (copy.tip ? '<p class="notice">' + copy.tip + '</p>' : '') +
+      (copy.cta || '');
+    el.hidden = false;
+    el.querySelector('.pd-welcome-close').addEventListener('click', function () {
+      el.hidden = true;
+      el.innerHTML = '';
+    });
+  }
 
   function bindHome() {
     collapser('fun-fact-toggle', 'fun-fact-body', 'Read more', 'Close');

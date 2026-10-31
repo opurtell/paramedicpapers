@@ -24,7 +24,7 @@
   <link rel="preload" href="/fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/fonts/ibm-plex-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="css/fonts.css?v=1">
-  <link rel="stylesheet" href="css/style.css?v=27">
+  <link rel="stylesheet" href="css/style.css?v=28">
   <!-- Apply a saved dark-theme choice before first paint (light is default). -->
   <script>
     try {
@@ -199,6 +199,9 @@
            mobile stacking order is unchanged; on desktop they become the
            sticky right rail and the left reading column. -->
       <div class="home-rail">
+      <!-- PD brief sign-up result: shown once when the confirm link on
+           join.paramedicpapers.com sends people here with ?pd=… (js/app.js). -->
+      <article class="panel pd-welcome" id="pd-welcome" role="status" hidden></article>
       <!-- CPD tracker launch card: signed-out visitors only, dismissible (js/cpd.js). -->
       <div class="cpd-promo" id="cpd-promo" hidden></div>
       <article class="panel" id="daily-tldr-panel">
@@ -450,7 +453,7 @@
 
   <!-- defer keeps the order (cpd.js and podcasts.js rely on app.js's
        window.PP); all three start from DOMContentLoaded as before. -->
-  <script defer src="js/app.js?v=31"></script>
+  <script defer src="js/app.js?v=32"></script>
   <script defer src="js/cpd.js?v=15"></script>
   <script defer src="js/podcasts.js?v=4"></script>
 </body>
