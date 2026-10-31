@@ -1,8 +1,50 @@
 {
-  "lastUpdated": "2026-10-30T20:20:43Z",
-  "lastUpdatedSydney": "2026-10-31 07:20 AEDT",
-  "lastUpdatedDate": "2026-10-31",
+  "lastUpdated": "2026-10-31T20:20:11Z",
+  "lastUpdatedSydney": "2026-11-01 07:20 AEDT",
+  "lastUpdatedDate": "2026-11-01",
   "featuredPapers": [
+    {
+      "id": "10.1016/j.resplu.2026.101542",
+      "title": "Initial shockable rhythm detection among patients with out-of-hospital cardiac arrest by arrest location: A population-based cohort study in Japan",
+      "journal": "Resuscitation Plus",
+      "date": "2026-11-01",
+      "pmid": "",
+      "doi": "10.1016/j.resplu.2026.101542",
+      "summary": "A Japanese population-based registry of 2,478 medical-origin OHCA cases found an initial shockable rhythm in 36.3% of nursing-home arrests versus 7.1% at home (adjusted OR 12.35), with 97% of shockable nursing-home patients receiving an AED shock but only 0.8% surviving with good neurological outcome.",
+      "relevance": "🟢 High — Bystander AED use and early rhythm detection are the same in Australia, and residential aged care is a common arrest location here; the finding speaks to where AED access changes what rhythms crews first see.",
+      "featuredReason": "Bystander AED use and early rhythm detection are the same in Australia, and residential aged care is a common arrest location here; the finding speaks to where AED access changes what rhythms crews first see.",
+      "pubDate": "2026-10",
+      "topic": "Cardiac arrest",
+      "studyType": "Registry",
+      "design": "Population-based registry cohort, descriptive plus multivariable logistic regression",
+      "n": "2,478 medical-origin OHCAs, Japan, 2016–2024",
+      "finding": "Initial shockable rhythm: 36.3% in nursing homes vs 7.1% at home (aOR 12.35, 95% CI 8.93–17.24) and 33.4% in other locations; 97.0% of shockable nursing-home cases got an AED shock; one-month favourable neurological survival lowest in nursing homes at 0.8%",
+      "caveat": "Descriptive by design — the authors themselves attribute the rhythm gap to earlier AED access rather than proven causation, and survival was worst in nursing homes despite the shockable rhythms",
+      "bottomLine": "Hypothesis-generating",
+      "shortTitle": "Nursing-home arrests more often shockable, linked to early AED",
+      "learningGoal": "Weigh whether early AED access in residential aged care settings changes shockable rhythm detection and outcomes in cardiac arrest."
+    },
+    {
+      "id": "10.1186/s13049-026-01719-w",
+      "title": "Remote triage with unmanned aerial vehicles in mass-casualty and prehospital emergency care: a scoping review",
+      "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+      "date": "2026-11-01",
+      "pmid": "",
+      "doi": "10.1186/s13049-026-01719-w",
+      "summary": "A scoping review of 20 studies on UAV-assisted remote triage in mass-casualty and prehospital care found technical feasibility of remote vital-sign acquisition is demonstrated, but only one randomised comparison reached effectiveness — UAV-assisted triage took about 3.5 minutes longer with identical accuracy — and no study validated remote triage in real-world responses.",
+      "relevance": "🟡 Medium — UAV triage is not part of Australian MCI practice today, but drones are actively trialled here, and this review maps what would need to be proven before it changes triage on the road.",
+      "featuredReason": "UAV triage is not part of Australian MCI practice today, but drones are actively trialled here, and this review maps what would need to be proven before it changes triage on the road.",
+      "pubDate": "2026-10-30",
+      "topic": "Operations & systems",
+      "studyType": "Systematic review",
+      "design": "Scoping review (JBI methodology, PRISMA-ScR), 20 original studies",
+      "n": "20 studies — 8 acquisition, 11 decision-support, 1 effectiveness",
+      "finding": "Remote capture of heart rate, respiratory rate, temperature, SpO2, consciousness and location is feasible; the single randomised comparison showed UAV-assisted triage took ~3.5 min longer with identical accuracy; no validated remote triage standard exists",
+      "caveat": "Evidence is concentrated in disaster/mass-casualty settings under controlled conditions, with no real-world validation or patient-centred outcomes",
+      "bottomLine": "Context only",
+      "shortTitle": "Drone triage feasible but unproven in real MCIs",
+      "learningGoal": "Weigh the benefits and delays of unmanned aerial triage against conventional methods in mass-casualty responses."
+    },
     {
       "id": "10.1016/j.resplu.2026.101545",
       "title": "Sex differences in bystander cardiopulmonary resuscitation and survival to hospital discharge for public out-of-hospital cardiac arrests in North Carolina and Singapore: a retrospective cohort study",
@@ -65,48 +107,6 @@
       "bottomLine": "Context only",
       "shortTitle": "Simulated EMS care held up at altitude",
       "learningGoal": "Recognise how acute altitude exposure affects my own clinical performance and when supplemental oxygen protects decision-making."
-    },
-    {
-      "id": "42947661",
-      "title": "Prehospital Analgesia in Trauma: A Systematic Review of Current Evidence",
-      "journal": "Emergency Medicine Australasia",
-      "date": "2026-10-29",
-      "pmid": "42947661",
-      "doi": "10.1111/1742-6723.70385",
-      "summary": "An Israeli-led systematic review of 17 multinational studies (6 RCTs, 17,115 injured adults) found opioids, ketamine, methoxyflurane and paracetamol all effective for prehospital trauma analgesia, with no drug-attributed serious adverse events reported apart from one opioid study.",
-      "relevance": "🟢 High — All four agents are standard across Australian ambulance formularies, so the safety findings apply directly to current practice.",
-      "featuredReason": "All four agents are standard across Australian ambulance formularies, so the safety findings apply directly to current practice.",
-      "pubDate": "2026-10-28",
-      "topic": "Pain & sedation",
-      "studyType": "Systematic review",
-      "design": "Systematic review of RCTs and observational studies",
-      "n": "17 studies, 17,115 injured adults over 15 years",
-      "finding": "All four agent classes (opioids, ketamine, methoxyflurane, paracetamol) showed effectiveness; no drug-attributed serious adverse events except one opioid study, with minor effects like nausea and drowsiness common.",
-      "caveat": "Only 6 of the 17 included studies were RCTs — most of the evidence is retrospective or observational.",
-      "bottomLine": "Supports current practice",
-      "shortTitle": "Trauma analgesia safety confirmed across four drug classes",
-      "learningGoal": "Weigh the safety profile of opioid, ketamine, methoxyflurane and paracetamol options when selecting prehospital trauma analgesia."
-    },
-    {
-      "id": "10.1016/j.resuscitation.2026.111358",
-      "title": "Association Between Capnographic Changes During Pulse Checks of Varying Durations and Clinical Outcomes During Cardiopulmonary Resuscitation: A Multicenter Study From Türkiye (CaPTuRe)",
-      "journal": "Resuscitation",
-      "date": "2026-10-22",
-      "pmid": "",
-      "doi": "10.1016/j.resuscitation.2026.111358",
-      "summary": "A 252-patient quasi-randomised multicentre study in Türkiye found pulse checks completed within 5 seconds were associated with roughly double the ROSC rate of checks lasting 6–10 seconds (36.3% vs 19.5%, OR 2.39), alongside better capnographic dynamics.",
-      "relevance": "🟢 High — Pulse-check duration is something every rescuer on every arrest controls, wherever they work, and capnography-guided CPR quality is standard monitoring practice.",
-      "featuredReason": "Pulse-check duration is something every rescuer on every arrest controls, wherever they work, and capnography-guided CPR quality is standard monitoring practice.",
-      "pubDate": "2026-10",
-      "topic": "Cardiac arrest",
-      "studyType": "Other",
-      "design": "Multicentre prospective quasi-randomised controlled study",
-      "n": "252 cardiac arrest patients (124 with ≤5-second checks, 128 with 6–10-second checks)",
-      "finding": "Shorter pulse checks were linked to higher ROSC (36.3% vs 19.5%; OR 2.39, 95% CI 1.35–4.24) and more favourable ETCO2 loss and recovery patterns",
-      "caveat": "Quasi-randomised, not truly randomised, so healthier arrests may have had quicker checks; the abstract doesn't say whether arrests were in or out of hospital",
-      "bottomLine": "Hypothesis-generating",
-      "shortTitle": "Shorter pulse checks linked to more ROSC",
-      "learningGoal": "Improve my technique for keeping pulse checks brief during cardiac arrest resuscitation while interpreting capnography trends."
     }
   ],
   "funFacts": [
@@ -1020,129 +1020,190 @@
     }
   ],
   "funFact": {
-    "category": "pharmacology",
-    "fact": "Droperidol got an FDA black box in 2001 for QT prolongation — but the doses that caused problems were far higher than the 1.25 to 2.5mg used for nausea and agitation. Many toxicologists reckon the warning was a massive overreaction that scared everyone off a useful drug."
+    "category": "EMS",
+    "fact": "Australia's 000 emergency number launched in 1961. Before that, you just dialled your local police, fire, or ambulance station directly. 000 was chosen because '0' was the easiest digit to find on a rotary phone in the dark. Practicality over glamour."
   },
   "tldr": {
-    "date": "2026-10-31",
-    "paperCount": 14,
-    "summary": "Cardiac arrest led the day: real-time BVM feedback saw ventilations meeting both rate and volume targets rise from 7.5% to 39%, and dual-registry data confirmed women still receive less bystander CPR in public.",
+    "date": "2026-11-01",
+    "paperCount": 6,
+    "summary": "A quiet day led by a Japanese registry finding that over a third of nursing-home arrests present with an initial shockable rhythm (vs 7% at home) — likely reflecting earlier AED access — plus qualitative work on the toll bystander CPR takes.",
     "highlights": [
       {
-        "id": "42956924",
-        "pmid": "42956924",
-        "doi": "10.1016/j.resuscitation.2026.111372",
-        "title": "Real-time BVM feedback linked to better arrest ventilation",
-        "journal": "Resuscitation",
-        "note": "Ventilations in-target for both rate and tidal volume rose from 7.5% to 39.0% with real-time feedback; with ETCO2 monitoring alone only 6.8% met both, and 58.2% of ventilations delivered a lower-than-target tidal volume"
-      },
-      {
-        "id": "10.1016/j.resplu.2026.101545",
+        "id": "10.1016/j.resplu.2026.101542",
         "pmid": "",
-        "doi": "10.1016/j.resplu.2026.101545",
-        "title": "Women still get less bystander CPR in public",
+        "doi": "10.1016/j.resplu.2026.101542",
+        "title": "Nursing-home arrests more often shockable, linked to early AED",
         "journal": "Resuscitation Plus",
-        "note": "Public bystander CPR: 48% of men vs 44% of women in North Carolina (aOR 0.87) and 59% vs 52% in Singapore (aOR 0.78); survival to discharge favoured women in North Carolina (aOR 1.15) but men in Singapore (aOR 0.63)"
+        "note": "Initial shockable rhythm: 36.3% in nursing homes vs 7.1% at home (aOR 12.35, 95% CI 8.93–17.24) and 33.4% in other locations; 97.0% of shockable nursing-home cases got an AED shock; one-month favourable neurological survival lowest in nursing homes at 0.8%"
       },
       {
-        "id": "42957612",
-        "pmid": "42957612",
-        "doi": "10.1097/PCC.0000000000004094",
-        "title": "Adrenaline timing not tied to paediatric OHCA survival",
-        "journal": "Pediatric Critical Care Medicine",
-        "note": "No timing window (1–10 through 26–30 minutes after EMS contact) showed an association with one-month survival; risk ratios ranged 0.97–2.94 with confidence intervals crossing 1"
-      },
-      {
-        "id": "42956923",
-        "pmid": "42956923",
-        "doi": "10.1016/j.resuscitation.2026.111370",
-        "title": "ECG signs appear minutes before post-ROSC rearrest",
-        "journal": "Resuscitation",
-        "note": "40.7% of post-ROSC patients rearrested; identification was highest one minute before rearrest (AUROC 0.74) and declined beyond three minutes; rearrest carried lower survival (20.4% vs 43.1%) and favourable neuro outcome (7.8% vs 21.2%)"
-      },
-      {
-        "id": "42961073",
-        "pmid": "42961073",
-        "doi": "10.1080/10903127.2026.2755518",
-        "title": "Severe hypertension in pregnancy rarely treated to guideline",
-        "journal": "Prehospital Emergency Care",
-        "note": "Persistent severe hypertension in 3.1% (1,234/39,546); of those, 6.2% received magnesium only, 1.5% an antihypertensive only, and 0.8% both magnesium and an antihypertensive"
-      },
-      {
-        "id": "42958936",
-        "pmid": "42958936",
-        "doi": "10.1017/s1049023x26109169",
-        "title": "Few heat-stroke cooling devices suit the prehospital setting",
-        "journal": "Prehospital and Disaster Medicine",
-        "note": "Three of 18 devices met the ideal cooling threshold (≥0.155°C/min), two were acceptable (0.078–0.154°C/min), 61% reported no cooling-rate data, and five met the ≤16 kg single-person portability limit"
-      },
-      {
-        "id": "42956925",
-        "pmid": "42956925",
-        "doi": "10.1016/j.resuscitation.2026.111373",
-        "title": "AI ECG model excludes ACS after cardiac arrest",
-        "journal": "Resuscitation",
-        "note": "The tree labelled 52.0% of development and 45.1% of validation patients 'ACS not likely' with zero missed ACS cases; yield concentrated in non-shockable rhythms (64.8% of non-ACS cases excluded, AUROC 0.824)"
-      },
-      {
-        "id": "42956938",
-        "pmid": "42956938",
-        "doi": "10.1016/j.ajic.2026.10.014",
-        "title": "Ambulance infection control hinges on human factors",
-        "journal": "American Journal of Infection Control",
-        "note": "Human factors ranked first among determinants of compliance, followed by education and training, physical environment, equipment and consumables, and contaminated equipment management"
-      },
-      {
-        "id": "42959155",
-        "pmid": "42959155",
-        "doi": "10.3389/frhs.2026.1939050",
-        "title": "Community paramedicine cut hospital admissions in cluster RCT",
-        "journal": "Frontiers in Health Services",
-        "note": "Hospital admission rates were lower in intervention buildings during the 12-month trial (aIRR 0.75) and the following year (aIRR 0.82); primary care visits fell then rose post-trial; ED visits unchanged"
-      },
-      {
-        "id": "10.1186/s13049-026-01721-2",
+        "id": "10.1016/j.resplu.2026.101546",
         "pmid": "",
-        "doi": "10.1186/s13049-026-01721-2",
-        "title": "Simulated EMS care held up at altitude",
+        "doi": "10.1016/j.resplu.2026.101546",
+        "title": "Bystanders describe heavy emotional toll of doing CPR",
+        "journal": "Resuscitation Plus",
+        "note": "Four themes: emotional impact; managing multiple roles; compelled to help but unprepared; talking to the right person"
+      },
+      {
+        "id": "10.34074/whit.3303",
+        "pmid": "",
+        "doi": "10.34074/whit.3303",
+        "title": "NZ paramedics breached patient rights more often than nurses",
+        "journal": "Whitireia Journal of Nursing, Health and Social Services",
+        "note": "Per 1,000 practitioners, paramedics were three times more likely than nurses to breach the Code and breached at a higher severity rate; Right 4 was the most prevalent breach in both professions"
+      },
+      {
+        "id": "10.1186/s13049-026-01719-w",
+        "pmid": "",
+        "doi": "10.1186/s13049-026-01719-w",
+        "title": "Drone triage feasible but unproven in real MCIs",
         "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
-        "note": "Median composite performance 82% at baseline, 74% during acute exposure to 3,450 m, 82% with supplemental oxygen at 4 L/min, and 83% after 20 hours at altitude; overall difference not significant (p=0.082)"
+        "note": "Remote capture of heart rate, respiratory rate, temperature, SpO2, consciousness and location is feasible; the single randomised comparison showed UAV-assisted triage took ~3.5 min longer with identical accuracy; no validated remote triage standard exists"
       },
       {
-        "id": "10.1186/s13049-026-01720-3",
+        "id": "42961889",
+        "pmid": "42961889",
+        "doi": "10.1371/journal.pone.0361118",
+        "title": "Ambulance CTG streamed to hospital during maternal transfer",
+        "journal": "PloS One",
+        "note": "All 68 fetal heart-rate records legible, median 91.1% legible recording time; median ambulance time 34.5 min (range 15.0–67.0); no monitoring sessions discontinued for connectivity"
+      },
+      {
+        "id": "10.1016/j.resplu.2026.101543",
         "pmid": "",
-        "doi": "10.1186/s13049-026-01720-3",
-        "title": "Swedish bleeding control guidelines scored low on quality",
-        "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
-        "note": "Clarity of presentation scored highest; rigour of development, stakeholder involvement, applicability and editorial independence scored poorly; most guidelines lacked evidence search strategies, evidence links and update procedures"
-      },
-      {
-        "id": "42959149",
-        "pmid": "42959149",
-        "doi": "10.3389/frhs.2026.1861375",
-        "title": "Drone AEDs arrived first in two-thirds of arrests",
-        "journal": "Frontiers in Health Services",
-        "note": "Drone AEDs arrived before ambulances in 67% of cases (median lead time 3 min 14 s); drone blood delivery reduced transport time 61%; modelled networks were cost-effective with OHCA survival gains of 21–46% under model assumptions"
-      },
-      {
-        "id": "10.5811/westjem.53140",
-        "pmid": "",
-        "doi": "10.5811/westjem.53140",
-        "title": "Facial recognition helped paramedics ID unknown patients",
-        "journal": "Western Journal of Emergency Medicine",
-        "note": "83.3% of the app group identified the standardised patient vs 21.4% of controls (OR 13.87); secondary outcomes included retrieving key medical information and treatment appropriateness"
-      },
-      {
-        "id": "10.1016/j.amj.2026.10.002",
-        "pmid": "",
-        "doi": "10.1016/j.amj.2026.10.002",
-        "title": "Fewer ultrasound frames preserved remote B-line detection",
-        "journal": "Air Medical Journal",
-        "note": "B-line sensitivity 89.4% with 5 frames vs 90.1% with 32 (paired difference −0.7 points); package size fell 84% (526 to 84 KB) and idealised transfer at 0.1 Mbps fell from 43 to 7 seconds"
+        "doi": "10.1016/j.resplu.2026.101543",
+        "title": "Lab work targets haemolysis in stored whole blood",
+        "journal": "Resuscitation Plus",
+        "note": "Stored whole-blood haemolysis correlated negatively with haematocrit, microvascular flow and functional capillary density, and positively with organ injury markers and lactate; the scavenger protein cocktail mitigated capillary collapse and tissue injury but caused haemodilution without recovery of haematocrit, pH or lactate to baseline"
       }
     ]
   },
   "dailyUpdates": [
+    {
+      "date": "2026-11-01",
+      "papers": [
+        {
+          "id": "10.1016/j.resplu.2026.101542",
+          "title": "Initial shockable rhythm detection among patients with out-of-hospital cardiac arrest by arrest location: A population-based cohort study in Japan",
+          "journal": "Resuscitation Plus",
+          "date": "2026-11-01",
+          "pmid": "",
+          "doi": "10.1016/j.resplu.2026.101542",
+          "summary": "A Japanese population-based registry of 2,478 medical-origin OHCA cases found an initial shockable rhythm in 36.3% of nursing-home arrests versus 7.1% at home (adjusted OR 12.35), with 97% of shockable nursing-home patients receiving an AED shock but only 0.8% surviving with good neurological outcome.",
+          "relevance": "🟢 High — Bystander AED use and early rhythm detection are the same in Australia, and residential aged care is a common arrest location here; the finding speaks to where AED access changes what rhythms crews first see.",
+          "pubDate": "2026-10",
+          "topic": "Cardiac arrest",
+          "studyType": "Registry",
+          "design": "Population-based registry cohort, descriptive plus multivariable logistic regression",
+          "n": "2,478 medical-origin OHCAs, Japan, 2016–2024",
+          "finding": "Initial shockable rhythm: 36.3% in nursing homes vs 7.1% at home (aOR 12.35, 95% CI 8.93–17.24) and 33.4% in other locations; 97.0% of shockable nursing-home cases got an AED shock; one-month favourable neurological survival lowest in nursing homes at 0.8%",
+          "caveat": "Descriptive by design — the authors themselves attribute the rhythm gap to earlier AED access rather than proven causation, and survival was worst in nursing homes despite the shockable rhythms",
+          "bottomLine": "Hypothesis-generating",
+          "shortTitle": "Nursing-home arrests more often shockable, linked to early AED",
+          "learningGoal": "Weigh whether early AED access in residential aged care settings changes shockable rhythm detection and outcomes in cardiac arrest."
+        },
+        {
+          "id": "10.1016/j.resplu.2026.101546",
+          "title": "Experiences and coping strategies of bystanders involved in out-of-hospital cardiopulmonary resuscitation: A qualitative study",
+          "journal": "Resuscitation Plus",
+          "date": "2026-11-01",
+          "pmid": "",
+          "doi": "10.1016/j.resplu.2026.101546",
+          "summary": "A Scottish qualitative study of 11 bystanders who performed CPR in an OHCA found a substantial emotional impact — worst when the patient died or was known to them — with themes of being compelled to help but unprepared, and identified better emotional preparation in CPR training and access to a knowledgeable independent person as ways to reduce it.",
+          "relevance": "🟢 High — Bystander experience after CPR is the same in any system, and CPR training and post-event support are things Australian ambulance services directly shape.",
+          "pubDate": "2026-10",
+          "topic": "Cardiac arrest",
+          "studyType": "Qualitative",
+          "design": "Qualitative — semi-structured interviews, reflexive thematic analysis",
+          "n": "11 bystanders (9 knew the patient), recruited via social media, Scotland",
+          "finding": "Four themes: emotional impact; managing multiple roles; compelled to help but unprepared; talking to the right person",
+          "caveat": "Small, self-selected sample recruited through social media advertisements",
+          "bottomLine": "Hypothesis-generating",
+          "shortTitle": "Bystanders describe heavy emotional toll of doing CPR",
+          "learningGoal": "Understand the emotional impact on bystanders performing CPR and how dispatcher support can better prepare them."
+        },
+        {
+          "id": "10.34074/whit.3303",
+          "title": "Patient Rights Breaches by Aotearoa New Zealand Paramedics and Nurses: An Exploratory Study",
+          "journal": "Whitireia Journal of Nursing, Health and Social Services",
+          "date": "2026-11-01",
+          "pmid": "",
+          "doi": "10.34074/whit.3303",
+          "summary": "A New Zealand descriptive analysis of Health and Disability Commissioner decisions from 2014–2024 found nine paramedic and 100 nurse Code of Rights breaches, but per 1,000 practitioners paramedics were three times more likely to breach than nurses and at higher severity, with Right 4 (appropriate standard of care) most common in both professions.",
+          "relevance": "🟢 High — An Aotearoa NZ paramedic workforce studied under a statutory complaints framework closely mirrors Australian regulation, and error-reporting culture is a live issue across Australian services too.",
+          "pubDate": "2026",
+          "topic": "Workforce & wellbeing",
+          "studyType": "Cross-sectional",
+          "design": "Descriptive statistical analysis of published regulatory breach decisions",
+          "n": "109 breach decisions (9 paramedics, 100 nurses), NZ, 2014–2024",
+          "finding": "Per 1,000 practitioners, paramedics were three times more likely than nurses to breach the Code and breached at a higher severity rate; Right 4 was the most prevalent breach in both professions",
+          "caveat": "Small paramedic numbers make the per-1,000 comparison fragile, and published decisions capture only reported and upheld breaches in one country",
+          "bottomLine": "Context only",
+          "shortTitle": "NZ paramedics breached patient rights more often than nurses",
+          "learningGoal": "Understand the professional conduct risks that lead paramedics to breach patients' rights to appropriate standards of care."
+        },
+        {
+          "id": "10.1186/s13049-026-01719-w",
+          "title": "Remote triage with unmanned aerial vehicles in mass-casualty and prehospital emergency care: a scoping review",
+          "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+          "date": "2026-11-01",
+          "pmid": "",
+          "doi": "10.1186/s13049-026-01719-w",
+          "summary": "A scoping review of 20 studies on UAV-assisted remote triage in mass-casualty and prehospital care found technical feasibility of remote vital-sign acquisition is demonstrated, but only one randomised comparison reached effectiveness — UAV-assisted triage took about 3.5 minutes longer with identical accuracy — and no study validated remote triage in real-world responses.",
+          "relevance": "🟡 Medium — UAV triage is not part of Australian MCI practice today, but drones are actively trialled here, and this review maps what would need to be proven before it changes triage on the road.",
+          "pubDate": "2026-10-30",
+          "topic": "Operations & systems",
+          "studyType": "Systematic review",
+          "design": "Scoping review (JBI methodology, PRISMA-ScR), 20 original studies",
+          "n": "20 studies — 8 acquisition, 11 decision-support, 1 effectiveness",
+          "finding": "Remote capture of heart rate, respiratory rate, temperature, SpO2, consciousness and location is feasible; the single randomised comparison showed UAV-assisted triage took ~3.5 min longer with identical accuracy; no validated remote triage standard exists",
+          "caveat": "Evidence is concentrated in disaster/mass-casualty settings under controlled conditions, with no real-world validation or patient-centred outcomes",
+          "bottomLine": "Context only",
+          "shortTitle": "Drone triage feasible but unproven in real MCIs",
+          "learningGoal": "Weigh the benefits and delays of unmanned aerial triage against conventional methods in mass-casualty responses."
+        },
+        {
+          "id": "42961889",
+          "title": "Feasibility of using a mobile cardiotocograph device in an ambulance during maternal transport",
+          "journal": "PloS One",
+          "date": "2026-11-01",
+          "pmid": "42961889",
+          "doi": "10.1371/journal.pone.0361118",
+          "summary": "A Japanese feasibility study transferred 68 pregnant women from nine primary obstetric clinics to a university hospital with real-time remote CTG monitoring from an ambulance, achieving legible fetal heart-rate traces in all transfers (median 91.1% legible recording time) with no sessions lost to connectivity issues over median transport of 34.5 minutes.",
+          "relevance": "🟡 Medium — Remote fetal monitoring during maternal transport is not standard in Australian ambulances, but the model — transmitting CTG ahead to the receiving obstetric unit — fits how Australian services already pre-notify specialist centres.",
+          "pubDate": "2026-10-30",
+          "topic": "Obstetrics",
+          "studyType": "Cohort",
+          "design": "Prospective feasibility study with staff surveys",
+          "n": "68 women with singleton pregnancies beyond 22 weeks, Japan, 2021–2023",
+          "finding": "All 68 fetal heart-rate records legible, median 91.1% legible recording time; median ambulance time 34.5 min (range 15.0–67.0); no monitoring sessions discontinued for connectivity",
+          "caveat": "Feasibility only — no clinical outcomes, and the Japanese system of clinic-level birth with frequent transfers differs from Australian maternity networks",
+          "bottomLine": "Context only",
+          "shortTitle": "Ambulance CTG streamed to hospital during maternal transfer",
+          "learningGoal": "Weigh the role of remote fetal heart-rate monitoring during maternal transport in Australian maternity networks."
+        },
+        {
+          "id": "10.1016/j.resplu.2026.101543",
+          "title": "Improving the safety and efficacy of whole blood resuscitation from hemorrhagic shock with a novel scavenger protein cocktail",
+          "journal": "Resuscitation Plus",
+          "date": "2026-11-01",
+          "pmid": "",
+          "doi": "10.1016/j.resplu.2026.101543",
+          "summary": "A US-led laboratory study in hamsters found that haemolysis in stored whole blood correlated with worse microvascular flow and more organ injury after shock resuscitation, and pre-treating the blood with an experimental scavenger protein cocktail binding haemoglobin, heme and iron mitigated capillary collapse and tissue injury in moderate- and high-haemolysis blood.",
+          "relevance": "🟡 Medium — Prehospital blood is carried by a handful of Australian services, most don't, and this is early animal work — it informs the stored-blood safety question those programs face rather than anything usable on the road now.",
+          "pubDate": "2026-10",
+          "topic": "Trauma",
+          "studyType": "Other",
+          "design": "Animal laboratory study — haemorrhagic shock and transfusion in hamster dorsal window chamber model",
+          "n": "Adult male Golden Syrian hamsters across stored-blood groups with low, moderate or severe haemolysis",
+          "finding": "Stored whole-blood haemolysis correlated negatively with haematocrit, microvascular flow and functional capillary density, and positively with organ injury markers and lactate; the scavenger protein cocktail mitigated capillary collapse and tissue injury but caused haemodilution without recovery of haematocrit, pH or lactate to baseline",
+          "caveat": "Animal model with an experimental additive — a long way from clinical transfusion, and the cocktail's own haemodilution is unresolved",
+          "bottomLine": "Context only",
+          "shortTitle": "Lab work targets haemolysis in stored whole blood",
+          "learningGoal": "Weigh the risks of haemolysis in stored whole blood when considering prehospital transfusion in major haemorrhage."
+        }
+      ]
+    },
     {
       "date": "2026-10-31",
       "papers": [
