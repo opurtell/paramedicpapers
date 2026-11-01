@@ -1,34 +1,34 @@
 {
- "updated": "2026-10-31",
+ "updated": "2026-11-01",
  "latest": [
   {
-   "key": "42956924",
-   "title": "Real-time BVM feedback linked to better arrest ventilation",
+   "key": "doi-10-1016-j-resplu-2026-101542",
+   "title": "Nursing-home arrests more often shockable, linked to early AED",
    "topic": "Cardiac arrest",
-   "finding": "Ventilations in-target for both rate and tidal volume rose from 7.5% to 39.0% with real-time feedback; with ETCO2 monitoring alone only 6.8% met both, and 58.2% of ventilations delivered a lower-than-target tidal volume"
+   "finding": "Initial shockable rhythm: 36.3% in nursing homes vs 7.1% at home (aOR 12.35, 95% CI 8.93–17.24) and 33.4% in other locations; 97.0% of shockable nursing-home cases got an AED shock; one-month favourable neurological survival lowest in nursing homes at 0.8%"
   },
   {
-   "key": "doi-10-1016-j-resplu-2026-101545",
-   "title": "Women still get less bystander CPR in public",
+   "key": "doi-10-1016-j-resplu-2026-101546",
+   "title": "Bystanders describe heavy emotional toll of doing CPR",
    "topic": "Cardiac arrest",
-   "finding": "Public bystander CPR: 48% of men vs 44% of women in North Carolina (aOR 0.87) and 59% vs 52% in Singapore (aOR 0.78); survival to discharge favoured women in North Carolina (aOR 1.15) but men in Singapore (aOR 0.63)"
+   "finding": "Four themes: emotional impact; managing multiple roles; compelled to help but unprepared; talking to the right person"
   },
   {
-   "key": "42957612",
-   "title": "Adrenaline timing not tied to paediatric OHCA survival",
-   "topic": "Paediatrics",
-   "finding": "No timing window (1–10 through 26–30 minutes after EMS contact) showed an association with one-month survival; risk ratios ranged 0.97–2.94 with confidence intervals crossing 1"
+   "key": "doi-10-34074-whit-3303",
+   "title": "NZ paramedics breached patient rights more often than nurses",
+   "topic": "Workforce & wellbeing",
+   "finding": "Per 1,000 practitioners, paramedics were three times more likely than nurses to breach the Code and breached at a higher severity rate; Right 4 was the most prevalent breach in both professions"
   },
   {
-   "key": "42956923",
-   "title": "ECG signs appear minutes before post-ROSC rearrest",
-   "topic": "Cardiac arrest",
-   "finding": "40.7% of post-ROSC patients rearrested; identification was highest one minute before rearrest (AUROC 0.74) and declined beyond three minutes; rearrest carried lower survival (20.4% vs 43.1%) and favourable neuro outcome (7.8% vs 21.2%)"
+   "key": "doi-10-1186-s13049-026-01719-w",
+   "title": "Drone triage feasible but unproven in real MCIs",
+   "topic": "Operations & systems",
+   "finding": "Remote capture of heart rate, respiratory rate, temperature, SpO2, consciousness and location is feasible; the single randomised comparison showed UAV-assisted triage took ~3.5 min longer with identical accuracy; no validated remote triage standard exists"
   }
  ],
  "episode": {
-  "date": "2026-10-31",
-  "title": "Paramedic Papers Daily — 31 October 2026",
-  "page": "/episodes/2026-10-31/"
+  "date": "2026-11-01",
+  "title": "Paramedic Papers Daily — 1 November 2026",
+  "page": "/episodes/2026-11-01/"
  }
 }
