@@ -25,6 +25,20 @@
     <itunes:explicit>false</itunes:explicit>
     <podcast:guid>09fa3693-e2ac-527c-9d1c-f68df149b888</podcast:guid>
     <item>
+      <title>Paramedic Papers Daily — 2 November 2026</title>
+      <link>https://paramedicpapers.com/episodes/2026-11-02/</link>
+      <description>1 paper: Defining quality in bystander CPR</description>
+      <content:encoded><![CDATA[<p>1 paper: Defining quality in bystander CPR</p><p>Papers in this episode:</p><ul><li><a href="https://doi.org/10.1016/j.ijnsa.2026.100714">Defining quality in bystander CPR <em>(International Journal of Nursing Studies Advances)</em></a></li></ul><p><a href="https://paramedicpapers.com/episodes/2026-11-02/">Show notes and transcript</a></p>]]></content:encoded>
+      <pubDate>Mon, 02 Nov 2026 07:32:05 +1100</pubDate>
+      <guid isPermaLink="false">https://audio.paramedicpapers.com/ep-2026-11-02.mp3</guid>
+      <enclosure url="https://op3.dev/e/audio.paramedicpapers.com/ep-2026-11-02.mp3" length="450380" type="audio/mpeg"/>
+      <itunes:duration>112</itunes:duration>
+      <itunes:summary>1 paper: Defining quality in bystander CPR</itunes:summary>
+      <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
+      <itunes:episodeType>full</itunes:episodeType>
+      <podcast:transcript url="https://audio.paramedicpapers.com/ep-2026-11-02.txt" type="text/plain" language="en-au"/>
+    </item>
+    <item>
       <title>Paramedic Papers Daily — 1 November 2026</title>
       <link>https://paramedicpapers.com/episodes/2026-11-01/</link>
       <description>4 papers: Nursing-home arrests more often shockable, linked to early AED; Bystanders describe heavy emotional toll of doing CPR; NZ paramedics breached patient rights more often than nurses; Drone triage feasible but unproven in real MCIs</description>
@@ -429,20 +443,6 @@
       <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
       <itunes:episodeType>full</itunes:episodeType>
       <podcast:transcript url="https://audio.paramedicpapers.com/ep-2026-10-04.txt" type="text/plain" language="en-au"/>
-    </item>
-    <item>
-      <title>Paramedic Papers Daily — 3 October 2026</title>
-      <link>https://paramedicpapers.com/episodes/2026-10-03/</link>
-      <description>11 papers: chest-pain risk-score conveyance; First Nations stroke gaps; OHCA cost-effectiveness; paediatric dosing errors; trauma vasopressors; methoxyflurane; crew size; paediatric asthma agreement; stroke delay; geriatric direct admission; US trauma disparities</description>
-      <content:encoded><![CDATA[<p>11 papers: chest-pain risk-score conveyance; First Nations stroke gaps; OHCA cost-effectiveness; paediatric dosing errors; trauma vasopressors; methoxyflurane; crew size; paediatric asthma agreement; stroke delay; geriatric direct admission; US trauma disparities</p><p>Papers in this episode:</p><ul><li><a href="https://doi.org/10.1136/heartjnl-2026-328924">Risk-score-guided conveyance safe in chest pain <em>(Heart)</em></a></li><li><a href="https://doi.org/10.5694/mja2.70303">Stroke care gaps for First Nations patients <em>(The Medical Journal of Australia)</em></a></li><li><a href="https://doi.org/10.1080/10903127.2026.2741269">What OHCA care is worth paying for <em>(Prehospital Emergency Care)</em></a></li><li><a href="https://doi.org/10.1080/10903127.2026.2740143">Nearly half of paediatric doses off-protocol <em>(Prehospital Emergency Care)</em></a></li><li><a href="https://doi.org/10.1097/MEJ.0000000000001379">Prehospital vasopressors in trauma unproven <em>(European Journal of Emergency Medicine)</em></a></li><li><a href="https://doi.org/10.1080/17581869.2026.2736033">Methoxyflurane feasibility confirmed in Canada <em>(Pain Management)</em></a></li><li><a href="https://doi.org/10.20408/jti.2025.0230">Bigger crews work faster, don't save more <em>(Journal of Trauma and Injury)</em></a></li><li><a href="https://doi.org/10.1080/10903127.2026.2717525">EMS and ED disagree on paediatric asthma signs <em>(Prehospital Emergency Care)</em></a></li><li><a href="https://doi.org/10.1159/ced/accag027">Two-thirds of stroke patients delay seeking care <em>(Cerebrovascular Diseases)</em></a></li><li><a href="https://doi.org/10.1186/s12877-026-08370-1">Direct geriatric admission depends on geography <em>(BMC Geriatrics)</em></a></li><li><a href="https://doi.org/10.1001/jamasurg.2026.4509">US racial gaps in trauma interventions <em>(JAMA Surgery)</em></a></li></ul><p><a href="https://paramedicpapers.com/episodes/2026-10-03/">Show notes and transcript</a></p>]]></content:encoded>
-      <pubDate>Sat, 03 Oct 2026 07:38:34 +1000</pubDate>
-      <guid isPermaLink="false">https://opurtell.github.io/paramedicpapers/audio/ep-2026-10-03.mp3</guid>
-      <enclosure url="https://op3.dev/e/audio.paramedicpapers.com/ep-2026-10-03.mp3" length="3074156" type="audio/mpeg"/>
-      <itunes:duration>768</itunes:duration>
-      <itunes:summary>11 papers: chest-pain risk-score conveyance; First Nations stroke gaps; OHCA cost-effectiveness; paediatric dosing errors; trauma vasopressors; methoxyflurane; crew size; paediatric asthma agreement; stroke delay; geriatric direct admission; US trauma disparities</itunes:summary>
-      <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
-      <itunes:episodeType>full</itunes:episodeType>
-      <podcast:transcript url="https://audio.paramedicpapers.com/ep-2026-10-03.txt" type="text/plain" language="en-au"/>
     </item>
   </channel>
 </rss>
