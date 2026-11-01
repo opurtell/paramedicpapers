@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-10-31T20:20:11Z",
-  "lastUpdatedSydney": "2026-11-01 07:20 AEDT",
-  "lastUpdatedDate": "2026-11-01",
+  "lastUpdated": "2026-11-01T20:20:11Z",
+  "lastUpdatedSydney": "2026-11-02 07:20 AEDT",
+  "lastUpdatedDate": "2026-11-02",
   "featuredPapers": [
     {
       "id": "10.1016/j.resplu.2026.101542",
@@ -1020,65 +1020,50 @@
     }
   ],
   "funFact": {
-    "category": "EMS",
-    "fact": "Australia's 000 emergency number launched in 1961. Before that, you just dialled your local police, fire, or ambulance station directly. 000 was chosen because '0' was the easiest digit to find on a rotary phone in the dark. Practicality over glamour."
+    "category": "pathophysiology",
+    "fact": "Pulse pressure narrows in cardiac tamponade because pericardial fluid strangles diastolic filling — stroke volume tanks while vasoconstriction pushes diastolic pressure up. A pulse pressure under 25 mmHg? That's your red flag waving furiously."
   },
   "tldr": {
-    "date": "2026-11-01",
-    "paperCount": 6,
-    "summary": "A quiet day led by a Japanese registry finding that over a third of nursing-home arrests present with an initial shockable rhythm (vs 7% at home) — likely reflecting earlier AED access — plus qualitative work on the toll bystander CPR takes.",
+    "date": "2026-11-02",
+    "paperCount": 1,
+    "summary": "A quiet day, led by a UK modified Delphi study building the first consensus-based quality metric for bystander CPR — eleven indicators spanning compression mechanics through to dispatcher instruction and time to emergency call.",
     "highlights": [
       {
-        "id": "10.1016/j.resplu.2026.101542",
-        "pmid": "",
-        "doi": "10.1016/j.resplu.2026.101542",
-        "title": "Nursing-home arrests more often shockable, linked to early AED",
-        "journal": "Resuscitation Plus",
-        "note": "Initial shockable rhythm: 36.3% in nursing homes vs 7.1% at home (aOR 12.35, 95% CI 8.93–17.24) and 33.4% in other locations; 97.0% of shockable nursing-home cases got an AED shock; one-month favourable neurological survival lowest in nursing homes at 0.8%"
-      },
-      {
-        "id": "10.1016/j.resplu.2026.101546",
-        "pmid": "",
-        "doi": "10.1016/j.resplu.2026.101546",
-        "title": "Bystanders describe heavy emotional toll of doing CPR",
-        "journal": "Resuscitation Plus",
-        "note": "Four themes: emotional impact; managing multiple roles; compelled to help but unprepared; talking to the right person"
-      },
-      {
-        "id": "10.34074/whit.3303",
-        "pmid": "",
-        "doi": "10.34074/whit.3303",
-        "title": "NZ paramedics breached patient rights more often than nurses",
-        "journal": "Whitireia Journal of Nursing, Health and Social Services",
-        "note": "Per 1,000 practitioners, paramedics were three times more likely than nurses to breach the Code and breached at a higher severity rate; Right 4 was the most prevalent breach in both professions"
-      },
-      {
-        "id": "10.1186/s13049-026-01719-w",
-        "pmid": "",
-        "doi": "10.1186/s13049-026-01719-w",
-        "title": "Drone triage feasible but unproven in real MCIs",
-        "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
-        "note": "Remote capture of heart rate, respiratory rate, temperature, SpO2, consciousness and location is feasible; the single randomised comparison showed UAV-assisted triage took ~3.5 min longer with identical accuracy; no validated remote triage standard exists"
-      },
-      {
-        "id": "42961889",
-        "pmid": "42961889",
-        "doi": "10.1371/journal.pone.0361118",
-        "title": "Ambulance CTG streamed to hospital during maternal transfer",
-        "journal": "PloS One",
-        "note": "All 68 fetal heart-rate records legible, median 91.1% legible recording time; median ambulance time 34.5 min (range 15.0–67.0); no monitoring sessions discontinued for connectivity"
-      },
-      {
-        "id": "10.1016/j.resplu.2026.101543",
-        "pmid": "",
-        "doi": "10.1016/j.resplu.2026.101543",
-        "title": "Lab work targets haemolysis in stored whole blood",
-        "journal": "Resuscitation Plus",
-        "note": "Stored whole-blood haemolysis correlated negatively with haematocrit, microvascular flow and functional capillary density, and positively with organ injury markers and lactate; the scavenger protein cocktail mitigated capillary collapse and tissue injury but caused haemodilution without recovery of haematocrit, pH or lactate to baseline"
+        "id": "42964524",
+        "pmid": "42964524",
+        "doi": "10.1016/j.ijnsa.2026.100714",
+        "title": "Defining quality in bystander CPR",
+        "journal": "International Journal of Nursing Studies Advances",
+        "note": "Consensus (≥75% agreement) on 11 indicators covering chest compression rate, depth and recoil and contextual factors including dispatcher instruction, time from recognition to emergency call and AED use; two composite indicators were created and all criteria scored dichotomously."
       }
     ]
   },
   "dailyUpdates": [
+    {
+      "date": "2026-11-02",
+      "papers": [
+        {
+          "id": "42964524",
+          "title": "Development of a quality metric to measure bystander cardiopulmonary resuscitation in out of hospital cardiac arrest: A modified Delphi study",
+          "journal": "International Journal of Nursing Studies Advances",
+          "date": "2026-11-02",
+          "pmid": "42964524",
+          "doi": "10.1016/j.ijnsa.2026.100714",
+          "summary": "A UK-led modified Delphi study with an international panel of doctors, paramedics, nurses and laypersons reached consensus on 11 dichotomous indicators — compression rate, depth and recoil plus dispatcher instruction, time from recognition to emergency call and AED use — to measure bystander CPR quality in OHCA.",
+          "relevance": "🟡 Medium — Bystander CPR measurement matters to every Australian system, but this is a provisional consensus metric from one UK-led process that still needs validation before it informs anything on the ground.",
+          "pubDate": "2026-10-17",
+          "topic": "Cardiac arrest",
+          "studyType": "Guideline / statement",
+          "design": "Modified Delphi consensus study (two survey rounds plus a virtual consensus meeting)",
+          "n": "104 panellists registered; 62, 48 and 18 completed rounds 1–3",
+          "finding": "Consensus (≥75% agreement) on 11 indicators covering chest compression rate, depth and recoil and contextual factors including dispatcher instruction, time from recognition to emergency call and AED use; two composite indicators were created and all criteria scored dichotomously.",
+          "caveat": "The metric is provisional and unvalidated, and panel attrition left only 18 participants in the final consensus round.",
+          "bottomLine": "Context only",
+          "shortTitle": "Defining quality in bystander CPR",
+          "learningGoal": "Understand how bystander CPR quality indicators can inform community responder and dispatcher practice in cardiac arrest care."
+        }
+      ]
+    },
     {
       "date": "2026-11-01",
       "papers": [
