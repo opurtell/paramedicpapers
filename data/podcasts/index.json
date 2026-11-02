@@ -1,5 +1,17 @@
 [
  {
+  "id": "ecritcare",
+  "name": "eCritCare",
+  "publisher": "Dr Swapnil Pawar & Dr Jose Chacko",
+  "focus": "Critical care trials and evidence, one topic per episode",
+  "region": "AU",
+  "site": "http://ecritcarepodcast.libsyn.com/website",
+  "art": "data/podcasts/art/ecritcare.jpg",
+  "episodes": 105,
+  "latest": "2026-11-02",
+  "updated": "2026-11-02"
+ },
+ {
   "id": "resus-room",
   "name": "The Resus Room",
   "publisher": "Simon, Rob & James",
@@ -12,16 +24,16 @@
   "updated": "2026-11-01"
  },
  {
-  "id": "ecritcare",
-  "name": "eCritCare",
-  "publisher": "Dr Swapnil Pawar & Dr Jose Chacko",
-  "focus": "Critical care trials and evidence, one topic per episode",
-  "region": "AU",
-  "site": "http://ecritcarepodcast.libsyn.com/website",
-  "art": "data/podcasts/art/ecritcare.jpg",
-  "episodes": 104,
-  "latest": "2026-10-29",
-  "updated": "2026-10-29"
+  "id": "sgem",
+  "name": "The Skeptics' Guide to EM",
+  "publisher": "Dr Ken Milne",
+  "focus": "Critical appraisal of recent emergency medicine papers",
+  "region": "Canada",
+  "site": "https://thesgem.com",
+  "art": "data/podcasts/art/sgem.jpg",
+  "episodes": 111,
+  "latest": "2026-10-31",
+  "updated": "2026-11-02"
  },
  {
   "id": "emcrit",
@@ -82,18 +94,6 @@
   "episodes": 234,
   "latest": "2026-10-26",
   "updated": "2026-10-27"
- },
- {
-  "id": "sgem",
-  "name": "The Skeptics' Guide to EM",
-  "publisher": "Dr Ken Milne",
-  "focus": "Critical appraisal of recent emergency medicine papers",
-  "region": "Canada",
-  "site": "https://thesgem.com",
-  "art": "data/podcasts/art/sgem.jpg",
-  "episodes": 110,
-  "latest": "2026-10-24",
-  "updated": "2026-10-25"
  },
  {
   "id": "av-clinical-conversations",
