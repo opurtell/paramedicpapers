@@ -25,6 +25,20 @@
     <itunes:explicit>false</itunes:explicit>
     <podcast:guid>09fa3693-e2ac-527c-9d1c-f68df149b888</podcast:guid>
     <item>
+      <title>Paramedic Papers Daily — 3 November 2026</title>
+      <link>https://paramedicpapers.com/episodes/2026-11-03/</link>
+      <description>4 papers: prehospital stroke triage under/overtriage; reported LOC didn't flag post-traumatic amnesia; wearables detecting cardiac arrest (review); ground vs helicopter travel time models</description>
+      <content:encoded><![CDATA[<p>4 papers: prehospital stroke triage under/overtriage; reported LOC didn't flag post-traumatic amnesia; wearables detecting cardiac arrest (review); ground vs helicopter travel time models</p><p>Papers in this episode:</p><ul><li><a href="https://doi.org/10.57187/5264">Prehospital stroke triage: high under- and overtriage rates <em>(Swiss Medical Weekly)</em></a></li><li><a href="https://doi.org/10.1111/1742-6723.70383">Reported LOC didn't flag post-traumatic amnesia in ED <em>(Emergency Medicine Australasia)</em></a></li><li><a href="https://doi.org/10.1016/j.resuscitation.2026.111378">Wearables detecting cardiac arrest: systematic review <em>(Resuscitation)</em></a></li><li><a href="https://doi.org/10.1186/s13049-026-01722-1">Predicting ground vs helicopter EMS travel times <em>(Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine)</em></a></li></ul><p><a href="https://paramedicpapers.com/episodes/2026-11-03/">Show notes and transcript</a></p>]]></content:encoded>
+      <pubDate>Tue, 03 Nov 2026 07:34:14 +1100</pubDate>
+      <guid isPermaLink="false">https://audio.paramedicpapers.com/ep-2026-11-03.mp3</guid>
+      <enclosure url="https://op3.dev/e/audio.paramedicpapers.com/ep-2026-11-03.mp3" length="937388" type="audio/mpeg"/>
+      <itunes:duration>234</itunes:duration>
+      <itunes:summary>4 papers: prehospital stroke triage under/overtriage; reported LOC didn't flag post-traumatic amnesia; wearables detecting cardiac arrest (review); ground vs helicopter travel time models</itunes:summary>
+      <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
+      <itunes:episodeType>full</itunes:episodeType>
+      <podcast:transcript url="https://audio.paramedicpapers.com/ep-2026-11-03.txt" type="text/plain" language="en-au"/>
+    </item>
+    <item>
       <title>Paramedic Papers Daily — 2 November 2026</title>
       <link>https://paramedicpapers.com/episodes/2026-11-02/</link>
       <description>1 paper: Defining quality in bystander CPR</description>
@@ -429,20 +443,6 @@
       <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
       <itunes:episodeType>full</itunes:episodeType>
       <podcast:transcript url="https://audio.paramedicpapers.com/ep-2026-10-05.txt" type="text/plain" language="en-au"/>
-    </item>
-    <item>
-      <title>Paramedic Papers Daily — 4 October 2026</title>
-      <link>https://paramedicpapers.com/episodes/2026-10-04/</link>
-      <description>3 papers: TRiM peer support training feasible for first responders; Shift-worker nutrition evidence: thin for responders; Anaphylaxis knowledge gaps in prehospital crews</description>
-      <content:encoded><![CDATA[<p>3 papers: TRiM peer support training feasible for first responders; Shift-worker nutrition evidence: thin for responders; Anaphylaxis knowledge gaps in prehospital crews</p><p>Papers in this episode:</p><ul><li><a href="https://doi.org/10.1002/jts.70130">TRiM peer support training feasible for first responders <em>(Journal of Traumatic Stress)</em></a></li><li><a href="https://doi.org/10.1111/jhn.70340">Shift-worker nutrition evidence: thin for responders <em>(Journal of Human Nutrition and Dietetics)</em></a></li><li><a href="https://doi.org/10.18502/ijaai.v25is11.22483">Anaphylaxis knowledge gaps in prehospital crews <em>(Iranian Journal of Allergy, Asthma, and Immunology)</em></a></li></ul><p><a href="https://paramedicpapers.com/episodes/2026-10-04/">Show notes and transcript</a></p>]]></content:encoded>
-      <pubDate>Sun, 04 Oct 2026 07:33:58 +1100</pubDate>
-      <guid isPermaLink="false">https://audio.paramedicpapers.com/ep-2026-10-04.mp3</guid>
-      <enclosure url="https://op3.dev/e/audio.paramedicpapers.com/ep-2026-10-04.mp3" length="833420" type="audio/mpeg"/>
-      <itunes:duration>208</itunes:duration>
-      <itunes:summary>3 papers: TRiM peer support training feasible for first responders; Shift-worker nutrition evidence: thin for responders; Anaphylaxis knowledge gaps in prehospital crews</itunes:summary>
-      <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
-      <itunes:episodeType>full</itunes:episodeType>
-      <podcast:transcript url="https://audio.paramedicpapers.com/ep-2026-10-04.txt" type="text/plain" language="en-au"/>
     </item>
   </channel>
 </rss>
