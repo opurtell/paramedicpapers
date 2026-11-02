@@ -1440,8 +1440,9 @@
 
   /* The confirm link in the sign-up email (join.paramedicpapers.com/confirm)
      redirects here with ?pd=confirmed|already|expired, plus &when=<phrase>
-     on success ("on your 3A PD shift", "every Tuesday"). Shown once at the
-     top of Home; the query is dropped from the address bar so a reload or a
+     on success ("on your 3A PD shift", "every Tuesday"). ?pd=moved comes from
+     the re-confirm link sent to readers who joined through Cloudflare (Nov 2026).
+     Shown once at the top of Home; the query is dropped from the address bar so a reload or a
      shared link doesn't show it again. */
   function showSignupResult() {
     var q = new URLSearchParams(location.search);
@@ -1459,6 +1460,12 @@
         body: 'Your first PD brief is on its way and should arrive within a few minutes.' +
           (when ? ' After that it arrives <b>' + esc(when) + '</b>.' : ''),
         tip: 'Can\u2019t see it? Check Junk, then add newsletter@paramedicpapers.com to your safe senders.'
+      },
+      moved: {
+        head: 'Thanks, you\u2019re all set',
+        body: 'Your address is confirmed and nothing else changes.' +
+          (when ? ' The PD brief keeps arriving <b>' + esc(when) + '</b>.' : ''),
+        tip: 'Add newsletter@paramedicpapers.com to your safe senders so it doesn\u2019t land in Junk.'
       },
       already: {
         head: 'You\u2019re already subscribed',
