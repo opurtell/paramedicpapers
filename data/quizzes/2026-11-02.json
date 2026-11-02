@@ -1,0 +1,120 @@
+{
+ "id": "2026-11-02",
+ "span": "26 Oct – 2 Nov 2026",
+ "created": "2026-11-02T00:02:51Z",
+ "est_minutes": 10,
+ "questions": [
+  {
+   "paper_id": "42918714",
+   "short_title": "Prehospital pulse pressure flags trauma bleeding",
+   "topic": "Trauma",
+   "question": "A narrowed prehospital pulse pressure in an adult trauma patient suggests higher odds of active haemorrhage. According to the study, what is the cut-off of PP ≤45 mmHg best used for?",
+   "options": [
+    "Ruling in active haemorrhage needing immediate blood products",
+    "Titrating fluid volumes before hospital arrival",
+    "Ruling out active haemorrhage, given its high negative predictive value",
+    "Predicting the need for interventional radiology over surgery"
+   ],
+   "answer": 2,
+   "explanation": "The study found PP ≤45 mmHg had a high negative predictive value, so it is most useful for ruling out bleeding rather than confirming it. Keep in mind the finding is hypothesis-generating: it was retrospective with only 68 bleeding patients, so the cut-off needs prospective validation."
+  },
+  {
+   "paper_id": "42947661",
+   "short_title": "Trauma analgesia safety confirmed across four drug classes",
+   "topic": "Pain & sedation",
+   "question": "What safety picture did the review find for the four analgesic classes?",
+   "options": [
+    "Paracetamol caused most serious events",
+    "Frequent serious events with ketamine",
+    "No adverse effects of any kind reported",
+    "Serious events only with one opioid study"
+   ],
+   "answer": 3,
+   "explanation": "Apart from a single opioid study, no drug-attributed serious adverse events were reported, while minor effects like nausea and drowsiness were common. Only 6 of the 17 studies were RCTs, so most of the evidence was observational."
+  },
+  {
+   "paper_id": "42945928",
+   "short_title": "Undertriage in trauma linked with higher in-hospital mortality",
+   "topic": "Trauma",
+   "question": "What outcome difference did undertriaged trauma patients show in this cohort study?",
+   "options": [
+    "Higher mortality only in patients under 60",
+    "No difference in mortality but more transfers",
+    "Longer hospital length of stay by about half a day",
+    "19% higher relative risk of in-hospital mortality"
+   ],
+   "answer": 3,
+   "explanation": "Undertriage was associated with a 19% higher relative risk of dying in hospital (aRR 1.19), and older patients were less likely to go home. The data came from administrative coding, which can misclassify undertriage and injury severity, so the association isn't proof of causation."
+  },
+  {
+   "paper_id": "42951343",
+   "short_title": "Teen drinking falls, alcohol ambulance call-outs don't",
+   "topic": "Toxicology",
+   "question": "In the adolescent alcohol-intoxication ambulance data, which group showed a significant monthly decline in attendances?",
+   "options": [
+    "Males in major cities",
+    "Males in regional areas",
+    "Females in major cities",
+    "Females in regional areas"
+   ],
+   "answer": 0,
+   "explanation": "Only males in major cities showed a small but significant monthly decline. Attendance data capture acute harm rather than drinking behaviour, and the Victorian data limit broader generalisation."
+  },
+  {
+   "paper_id": "42956924",
+   "short_title": "Real-time BVM feedback linked to better arrest ventilation",
+   "topic": "Cardiac arrest",
+   "question": "During cardiac arrest ventilation, real-time BVM feedback was linked to the biggest rise in which measure?",
+   "options": [
+    "Reduction in chest compression interruptions",
+    "Ventilations meeting both rate and tidal volume targets",
+    "Speed of achieving return of spontaneous circulation",
+    "Patient survival to hospital discharge"
+   ],
+   "answer": 1,
+   "explanation": "In-target ventilations for both rate and tidal volume rose from 7.5% to 39.0% with feedback. It was a before/after study without randomisation, so the result is hypothesis-generating rather than proof of benefit."
+  },
+  {
+   "paper_id": "10.1016/j.resplu.2026.101545",
+   "short_title": "Women still get less bystander CPR in public",
+   "topic": "Cardiac arrest",
+   "question": "A registry study of public out-of-hospital cardiac arrests in North Carolina and Singapore found women received less bystander CPR than men. What did it show about survival to hospital discharge?",
+   "options": [
+    "Women had lower survival in both regions",
+    "Survival was equal between sexes in both regions",
+    "Survival favoured men in North Carolina but women in Singapore",
+    "Survival favoured women in North Carolina but men in Singapore"
+   ],
+   "answer": 3,
+   "explanation": "Women were less likely to get bystander CPR in both regions, yet survival to discharge favoured women in North Carolina (aOR 1.15) and men in Singapore (aOR 0.63). The registry data can't explain why the survival findings point in opposite directions between the two regions."
+  },
+  {
+   "paper_id": "42957612",
+   "short_title": "Adrenaline timing not tied to paediatric OHCA survival",
+   "topic": "Paediatrics",
+   "question": "What did this registry study find about the timing of adrenaline in witnessed paediatric out-of-hospital cardiac arrest?",
+   "options": [
+    "No timing window was associated with better one-month survival or neurological outcome",
+    "Adrenaline given after 30 minutes was linked to worse neurological outcomes",
+    "Delayed adrenaline improved survival compared with early administration",
+    "Survival improved when adrenaline was given within 10 minutes of EMS contact"
+   ],
+   "answer": 0,
+   "explanation": "Across the six timing windows, all confidence intervals crossed 1, so no interval was linked to better or worse one-month survival or neurological outcome. With only 259 children spread across the windows, every comparison was underpowered, so the findings are hypothesis-generating rather than practice-changing."
+  },
+  {
+   "paper_id": "42956938",
+   "short_title": "Ambulance infection control hinges on human factors",
+   "topic": "Operations & systems",
+   "question": "When experts ranked what drives infection prevention and control compliance in ambulances, what came out on top?",
+   "options": [
+    "Equipment and consumables availability",
+    "Education and training quality",
+    "Human factors, like culture and compliance fatigue",
+    "Contaminated equipment management practices"
+   ],
+   "answer": 2,
+   "explanation": "The panel ranked human factors first, ahead of education, the physical environment, and equipment. Bear in mind this is consensus opinion from ten experts with no outcome data, so it points to priorities rather than proven solutions."
+  }
+ ]
+}

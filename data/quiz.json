@@ -1,120 +1,120 @@
 {
- "id": "2026-10-29",
- "span": "22 – 29 Oct 2026",
- "created": "2026-10-29T00:02:09Z",
+ "id": "2026-11-02",
+ "span": "26 Oct – 2 Nov 2026",
+ "created": "2026-11-02T00:02:51Z",
  "est_minutes": 10,
  "questions": [
   {
-   "paper_id": "42901371",
-   "short_title": "Fatigue common a year after cardiac arrest",
-   "topic": "Cardiac arrest",
-   "question": "At 12 months after out-of-hospital cardiac arrest, which symptom was most common among survivors?",
+   "paper_id": "42918714",
+   "short_title": "Prehospital pulse pressure flags trauma bleeding",
+   "topic": "Trauma",
+   "question": "A narrowed prehospital pulse pressure in an adult trauma patient suggests higher odds of active haemorrhage. According to the study, what is the cut-off of PP ≤45 mmHg best used for?",
    "options": [
-    "Anxiety",
-    "Depression",
-    "Insomnia",
-    "Fatigue"
-   ],
-   "answer": 3,
-   "explanation": "Fatigue was reported by 35.8% of survivors, ahead of anxiety at 22.6% and depression at 18.0%, and it exceeded population norms. Keep in mind symptoms were self-reported and about a third of eligible survivors were lost to follow-up."
-  },
-  {
-   "paper_id": "10.1016/j.resuscitation.2026.111358",
-   "short_title": "Shorter pulse checks linked to more ROSC",
-   "topic": "Cardiac arrest",
-   "question": "In the CaPTuRe study, how did pulse checks lasting 5 seconds or less compare with checks lasting 6-10 seconds?",
-   "options": [
-    "They showed no difference in ROSC but shorter ETCO2 recovery times",
-    "They only benefited patients whose arrest was witnessed",
-    "They were linked to a higher ROSC rate (36.3% vs 19.5%) and better ETCO2 dynamics",
-    "They were linked to lower ROSC because interruptions were judged too brief to assess circulation"
+    "Ruling in active haemorrhage needing immediate blood products",
+    "Titrating fluid volumes before hospital arrival",
+    "Ruling out active haemorrhage, given its high negative predictive value",
+    "Predicting the need for interventional radiology over surgery"
    ],
    "answer": 2,
-   "explanation": "Shorter checks were associated with roughly double the ROSC rate and more favourable ETCO2 loss and recovery patterns. The study was quasi-randomised, so healthier arrests may simply have had quicker checks, and the finding is hypothesis-generating."
+   "explanation": "The study found PP ≤45 mmHg had a high negative predictive value, so it is most useful for ruling out bleeding rather than confirming it. Keep in mind the finding is hypothesis-generating: it was retrospective with only 68 bleeding patients, so the cut-off needs prospective validation."
   },
   {
-   "paper_id": "10.1016/j.resplu.2026.101536",
-   "short_title": "Infant carry slings rarely linked to OHCA",
-   "topic": "Paediatrics",
-   "question": "In this registry review of cardiac arrests in children under two, which circumstance was most commonly documented surrounding the arrest?",
+   "paper_id": "42947661",
+   "short_title": "Trauma analgesia safety confirmed across four drug classes",
+   "topic": "Pain & sedation",
+   "question": "What safety picture did the review find for the four analgesic classes?",
    "options": [
-    "Feeding during transport",
-    "Being found unresponsive in a cot, bed, sofa or pushchair",
-    "Infant carry sling use",
-    "Co-sleeping"
+    "Paracetamol caused most serious events",
+    "Frequent serious events with ketamine",
+    "No adverse effects of any kind reported",
+    "Serious events only with one opioid study"
    ],
    "answer": 3,
-   "explanation": "Co-sleeping featured in 33.3% of cases, ahead of children found unresponsive at 26.3%, while carry slings were linked to just 2 of 162 arrests. The single-region sample and free-text review mean this can't rule out a rare sling risk."
+   "explanation": "Apart from a single opioid study, no drug-attributed serious adverse events were reported, while minor effects like nausea and drowsiness were common. Only 6 of the 17 studies were RCTs, so most of the evidence was observational."
   },
   {
-   "paper_id": "10.1177/27536386261496803",
-   "short_title": "Paediatric deterioration in the field poorly defined",
+   "paper_id": "42945928",
+   "short_title": "Undertriage in trauma linked with higher in-hospital mortality",
+   "topic": "Trauma",
+   "question": "What outcome difference did undertriaged trauma patients show in this cohort study?",
+   "options": [
+    "Higher mortality only in patients under 60",
+    "No difference in mortality but more transfers",
+    "Longer hospital length of stay by about half a day",
+    "19% higher relative risk of in-hospital mortality"
+   ],
+   "answer": 3,
+   "explanation": "Undertriage was associated with a 19% higher relative risk of dying in hospital (aRR 1.19), and older patients were less likely to go home. The data came from administrative coding, which can misclassify undertriage and injury severity, so the association isn't proof of causation."
+  },
+  {
+   "paper_id": "42951343",
+   "short_title": "Teen drinking falls, alcohol ambulance call-outs don't",
+   "topic": "Toxicology",
+   "question": "In the adolescent alcohol-intoxication ambulance data, which group showed a significant monthly decline in attendances?",
+   "options": [
+    "Males in major cities",
+    "Males in regional areas",
+    "Females in major cities",
+    "Females in regional areas"
+   ],
+   "answer": 0,
+   "explanation": "Only males in major cities showed a small but significant monthly decline. Attendance data capture acute harm rather than drinking behaviour, and the Victorian data limit broader generalisation."
+  },
+  {
+   "paper_id": "42956924",
+   "short_title": "Real-time BVM feedback linked to better arrest ventilation",
+   "topic": "Cardiac arrest",
+   "question": "During cardiac arrest ventilation, real-time BVM feedback was linked to the biggest rise in which measure?",
+   "options": [
+    "Reduction in chest compression interruptions",
+    "Ventilations meeting both rate and tidal volume targets",
+    "Speed of achieving return of spontaneous circulation",
+    "Patient survival to hospital discharge"
+   ],
+   "answer": 1,
+   "explanation": "In-target ventilations for both rate and tidal volume rose from 7.5% to 39.0% with feedback. It was a before/after study without randomisation, so the result is hypothesis-generating rather than proof of benefit."
+  },
+  {
+   "paper_id": "10.1016/j.resplu.2026.101545",
+   "short_title": "Women still get less bystander CPR in public",
+   "topic": "Cardiac arrest",
+   "question": "A registry study of public out-of-hospital cardiac arrests in North Carolina and Singapore found women received less bystander CPR than men. What did it show about survival to hospital discharge?",
+   "options": [
+    "Women had lower survival in both regions",
+    "Survival was equal between sexes in both regions",
+    "Survival favoured men in North Carolina but women in Singapore",
+    "Survival favoured women in North Carolina but men in Singapore"
+   ],
+   "answer": 3,
+   "explanation": "Women were less likely to get bystander CPR in both regions, yet survival to discharge favoured women in North Carolina (aOR 1.15) and men in Singapore (aOR 0.63). The registry data can't explain why the survival findings point in opposite directions between the two regions."
+  },
+  {
+   "paper_id": "42957612",
+   "short_title": "Adrenaline timing not tied to paediatric OHCA survival",
    "topic": "Paediatrics",
-   "question": "What gap did the scoping review find across all 28 studies of paediatric out-of-hospital deterioration?",
+   "question": "What did this registry study find about the timing of adrenaline in witnessed paediatric out-of-hospital cardiac arrest?",
    "options": [
-    "Lack of a standard operational definition",
-    "Lack of any vital sign measurement",
-    "Lack of data from high-income countries",
-    "Lack of studies on children under 18"
+    "No timing window was associated with better one-month survival or neurological outcome",
+    "Adrenaline given after 30 minutes was linked to worse neurological outcomes",
+    "Delayed adrenaline improved survival compared with early administration",
+    "Survival improved when adrenaline was given within 10 minutes of EMS contact"
    ],
    "answer": 0,
-   "explanation": "No study offered an operational or standardised definition of deterioration, which limits comparability and consistent recognition of sick kids. As a scoping review it maps the field rather than pooling effects, and most included studies were retrospective."
+   "explanation": "Across the six timing windows, all confidence intervals crossed 1, so no interval was linked to better or worse one-month survival or neurological outcome. With only 259 children spread across the windows, every comparison was underpowered, so the findings are hypothesis-generating rather than practice-changing."
   },
   {
-   "paper_id": "42904228",
-   "short_title": "Who doesn't call an ambulance for chest pain",
-   "topic": "Cardiac (non-arrest)",
-   "question": "Which group had higher odds of calling an ambulance for acute coronary syndrome than people living with others?",
-   "options": [
-    "People living alone",
-    "Men",
-    "Adults under 49",
-    "People born outside Australia"
-   ],
-   "answer": 0,
-   "explanation": "Living alone was linked to up to 48% higher odds of EMS use — the one equity factor pointing the other way. The review used vote-counting on heterogeneous observational studies, so treat all these figures as hypothesis-generating rather than precise effects."
-  },
-  {
-   "paper_id": "42904944",
-   "short_title": "Cluster trials read differently to individual ones",
-   "topic": "Other",
-   "question": "In prehospital, emergency and critical care trials, how did cluster-randomised trials compare with individually randomised ones?",
-   "options": [
-    "Similar mortality, smaller length-of-stay effects",
-    "Smaller effects on every outcome measured",
-    "Similar effects on every outcome measured",
-    "They showed bigger mortality benefits"
-   ],
-   "answer": 0,
-   "explanation": "Mortality effect estimates were much the same between the two trial types, but cluster trials reported significantly smaller effect sizes for length-of-stay or days-alive outcomes. The comparison was observational across heterogeneous meta-analyses, with under half reporting randomisation type, so treat it as context only."
-  },
-  {
-   "paper_id": "42920134",
-   "short_title": "How ambulance models shape end-of-life care",
+   "paper_id": "42956938",
+   "short_title": "Ambulance infection control hinges on human factors",
    "topic": "Operations & systems",
-   "question": "Across all three ambulance service models studied, how did paramedics mostly develop their end-of-life care skills?",
+   "question": "When experts ranked what drives infection prevention and control compliance in ambulances, what came out on top?",
    "options": [
-    "Learning on the job",
-    "From university-based palliative care modules",
-    "Through mandatory annual end-of-life care training",
-    "Through an in-service specialist palliative care team"
-   ],
-   "answer": 0,
-   "explanation": "In every case, learning on the job dominated, alongside limited access to records, anticipatory medicines and palliative advice. The innovative models improved resources, but structured training was still lacking."
-  },
-  {
-   "paper_id": "10.1186/s12873-026-01816-0",
-   "short_title": "Why rural stroke care lags: system drivers",
-   "topic": "Stroke & neuro",
-   "question": "According to this qualitative study, when did rural and coastal distance become most inequity-producing in prehospital stroke care?",
-   "options": [
-    "When the patient lived alone or had subtle or atypical symptoms",
-    "When the nearest stroke unit lacked a pre-alert pathway",
-    "When combined with limited mobility, complex extrication or Category 2 demand",
-    "When crews had no consistent access to translation services"
+    "Equipment and consumables availability",
+    "Education and training quality",
+    "Human factors, like culture and compliance fatigue",
+    "Contaminated equipment management practices"
    ],
    "answer": 2,
-   "explanation": "Stakeholders described distance compounding delay only when it interacted with system pressures like limited patient mobility, complex extrication and Category 2 queueing. The findings come from providers only — no patients or carers were interviewed, and it reflects a single region."
+   "explanation": "The panel ranked human factors first, ahead of education, the physical environment, and equipment. Bear in mind this is consensus opinion from ten experts with no outcome data, so it points to priorities rather than proven solutions."
   }
  ]
 }
