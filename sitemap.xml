@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://paramedicpapers.com/</loc>
-    <lastmod>2026-11-02</lastmod>
+    <lastmod>2026-11-03</lastmod>
   </url>
   <url>
     <loc>https://paramedicpapers.com/about.html</loc>
@@ -16,11 +16,11 @@
   </url>
   <url>
     <loc>https://paramedicpapers.com/topics/</loc>
-    <lastmod>2026-11-02</lastmod>
+    <lastmod>2026-11-03</lastmod>
   </url>
   <url>
     <loc>https://paramedicpapers.com/daily/</loc>
-    <lastmod>2026-11-02</lastmod>
+    <lastmod>2026-11-03</lastmod>
   </url>
   <url>
     <loc>https://paramedicpapers.com/episodes/</loc>
@@ -32,7 +32,7 @@
   </url>
   <url>
     <loc>https://paramedicpapers.com/topics/cardiac-arrest/</loc>
-    <lastmod>2026-11-02</lastmod>
+    <lastmod>2026-11-03</lastmod>
   </url>
   <url>
     <loc>https://paramedicpapers.com/topics/cardiac-non-arrest/</loc>
@@ -56,7 +56,7 @@
   </url>
   <url>
     <loc>https://paramedicpapers.com/topics/operations-and-systems/</loc>
-    <lastmod>2026-11-01</lastmod>
+    <lastmod>2026-11-03</lastmod>
   </url>
   <url>
     <loc>https://paramedicpapers.com/topics/paediatrics/</loc>
@@ -76,7 +76,7 @@
   </url>
   <url>
     <loc>https://paramedicpapers.com/topics/stroke-and-neuro/</loc>
-    <lastmod>2026-10-29</lastmod>
+    <lastmod>2026-11-03</lastmod>
   </url>
   <url>
     <loc>https://paramedicpapers.com/topics/toxicology/</loc>
@@ -84,11 +84,15 @@
   </url>
   <url>
     <loc>https://paramedicpapers.com/topics/trauma/</loc>
-    <lastmod>2026-11-01</lastmod>
+    <lastmod>2026-11-03</lastmod>
   </url>
   <url>
     <loc>https://paramedicpapers.com/topics/workforce-and-wellbeing/</loc>
-    <lastmod>2026-11-01</lastmod>
+    <lastmod>2026-11-03</lastmod>
+  </url>
+  <url>
+    <loc>https://paramedicpapers.com/daily/2026-11-03/</loc>
+    <lastmod>2026-11-03</lastmod>
   </url>
   <url>
     <loc>https://paramedicpapers.com/daily/2026-11-01/</loc>
@@ -477,6 +481,26 @@
   <url>
     <loc>https://paramedicpapers.com/episodes/2026-10-04/</loc>
     <lastmod>2026-10-04</lastmod>
+  </url>
+  <url>
+    <loc>https://paramedicpapers.com/papers/doi-10-1186-s13049-026-01722-1/</loc>
+    <lastmod>2026-11-03</lastmod>
+  </url>
+  <url>
+    <loc>https://paramedicpapers.com/papers/doi-10-1111-1742-6723-70383/</loc>
+    <lastmod>2026-11-03</lastmod>
+  </url>
+  <url>
+    <loc>https://paramedicpapers.com/papers/doi-10-1016-j-resuscitation-2026-111378/</loc>
+    <lastmod>2026-11-03</lastmod>
+  </url>
+  <url>
+    <loc>https://paramedicpapers.com/papers/42969076/</loc>
+    <lastmod>2026-11-03</lastmod>
+  </url>
+  <url>
+    <loc>https://paramedicpapers.com/papers/42968711/</loc>
+    <lastmod>2026-11-03</lastmod>
   </url>
   <url>
     <loc>https://paramedicpapers.com/papers/42964524/</loc>
