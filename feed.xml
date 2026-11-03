@@ -25,6 +25,20 @@
     <itunes:explicit>false</itunes:explicit>
     <podcast:guid>09fa3693-e2ac-527c-9d1c-f68df149b888</podcast:guid>
     <item>
+      <title>Paramedic Papers Daily — 4 November 2026</title>
+      <link>https://paramedicpapers.com/episodes/2026-11-04/</link>
+      <description>4 papers: What helps kids in pain in ambulances; M-DIRECT stroke triage scale revalidated; Post-ROSC ST elevation tracks acute coronary occlusion; Two-thirds of ECPR survivors alive at five years</description>
+      <content:encoded><![CDATA[<p>4 papers: What helps kids in pain in ambulances; M-DIRECT stroke triage scale revalidated; Post-ROSC ST elevation tracks acute coronary occlusion; Two-thirds of ECPR survivors alive at five years</p><p>Papers in this episode:</p><ul><li><a href="https://doi.org/10.1186/s13049-026-01712-3">What helps kids in pain in ambulances <em>(Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine)</em></a></li><li><a href="https://doi.org/10.1186/s12873-026-01711-8">M-DIRECT stroke triage scale revalidated <em>(BMC Emergency Medicine)</em></a></li><li><a href="https://doi.org/10.1016/j.resuscitation.2026.111380">Post-ROSC ST elevation tracks acute coronary occlusion <em>(Resuscitation)</em></a></li><li><a href="https://doi.org/10.1016/j.resuscitation.2026.111379">Two-thirds of ECPR survivors alive at five years <em>(Resuscitation)</em></a></li></ul><p><a href="https://paramedicpapers.com/episodes/2026-11-04/">Show notes and transcript</a></p>]]></content:encoded>
+      <pubDate>Wed, 04 Nov 2026 07:34:55 +1100</pubDate>
+      <guid isPermaLink="false">https://audio.paramedicpapers.com/ep-2026-11-04.mp3</guid>
+      <enclosure url="https://op3.dev/e/audio.paramedicpapers.com/ep-2026-11-04.mp3" length="838412" type="audio/mpeg"/>
+      <itunes:duration>209</itunes:duration>
+      <itunes:summary>4 papers: What helps kids in pain in ambulances; M-DIRECT stroke triage scale revalidated; Post-ROSC ST elevation tracks acute coronary occlusion; Two-thirds of ECPR survivors alive at five years</itunes:summary>
+      <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
+      <itunes:episodeType>full</itunes:episodeType>
+      <podcast:transcript url="https://audio.paramedicpapers.com/ep-2026-11-04.txt" type="text/plain" language="en-au"/>
+    </item>
+    <item>
       <title>Paramedic Papers Daily — 3 November 2026</title>
       <link>https://paramedicpapers.com/episodes/2026-11-03/</link>
       <description>4 papers: prehospital stroke triage under/overtriage; reported LOC didn't flag post-traumatic amnesia; wearables detecting cardiac arrest (review); ground vs helicopter travel time models</description>
@@ -429,20 +443,6 @@
       <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
       <itunes:episodeType>full</itunes:episodeType>
       <podcast:transcript url="https://audio.paramedicpapers.com/ep-2026-10-06.txt" type="text/plain" language="en-au"/>
-    </item>
-    <item>
-      <title>Paramedic Papers Daily — 5 October 2026</title>
-      <link>https://paramedicpapers.com/episodes/2026-10-05/</link>
-      <description>2 papers: Online stroke education boosts EMS-seeking; What actually degrades CPR performance</description>
-      <content:encoded><![CDATA[<p>2 papers: Online stroke education boosts EMS-seeking; What actually degrades CPR performance</p><p>Papers in this episode:</p><ul><li><a href="https://doi.org/10.4103/jehp.jehp_187_26">Online stroke education boosts EMS-seeking <em>(Journal of Education and Health Promotion)</em></a></li><li><a href="https://doi.org/10.1186/s12873-026-01806-2">What actually degrades CPR performance <em>(BMC Emergency Medicine)</em></a></li></ul><p><a href="https://paramedicpapers.com/episodes/2026-10-05/">Show notes and transcript</a></p>]]></content:encoded>
-      <pubDate>Mon, 05 Oct 2026 07:32:49 +1100</pubDate>
-      <guid isPermaLink="false">https://audio.paramedicpapers.com/ep-2026-10-05.mp3</guid>
-      <enclosure url="https://op3.dev/e/audio.paramedicpapers.com/ep-2026-10-05.mp3" length="698444" type="audio/mpeg"/>
-      <itunes:duration>174</itunes:duration>
-      <itunes:summary>2 papers: Online stroke education boosts EMS-seeking; What actually degrades CPR performance</itunes:summary>
-      <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
-      <itunes:episodeType>full</itunes:episodeType>
-      <podcast:transcript url="https://audio.paramedicpapers.com/ep-2026-10-05.txt" type="text/plain" language="en-au"/>
     </item>
   </channel>
 </rss>
