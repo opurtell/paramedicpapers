@@ -12,6 +12,42 @@
   "updated": "2026-11-02"
  },
  {
+  "id": "prehospital-care-podcast",
+  "name": "Pre-Hospital Care Podcast",
+  "publisher": "Eoin Walker",
+  "focus": "Prehospital clinical topics and recent evidence",
+  "region": "Ireland",
+  "site": "https://podcasters.spotify.com/pod/show/phcp",
+  "art": "data/podcasts/art/prehospital-care-podcast.jpg",
+  "episodes": 398,
+  "latest": "2026-11-02",
+  "updated": "2026-11-03"
+ },
+ {
+  "id": "rcem-learning",
+  "name": "RCEM Learning",
+  "publisher": "Royal College of Emergency Medicine",
+  "focus": "Emergency medicine literature reviews and guideline updates",
+  "region": "UK",
+  "site": "https://www.rcemlearning.co.uk",
+  "art": "data/podcasts/art/rcem-learning.jpg",
+  "episodes": 296,
+  "latest": "2026-11-02",
+  "updated": "2026-11-03"
+ },
+ {
+  "id": "core-em",
+  "name": "Core EM",
+  "publisher": "Core EM",
+  "focus": "Core emergency medicine topics, concise and practical",
+  "region": "US",
+  "site": "https://coreem.net",
+  "art": "data/podcasts/art/core-em.jpg",
+  "episodes": 235,
+  "latest": "2026-11-02",
+  "updated": "2026-11-03"
+ },
+ {
   "id": "resus-room",
   "name": "The Resus Room",
   "publisher": "Simon, Rob & James",
@@ -48,18 +84,6 @@
   "updated": "2026-10-30"
  },
  {
-  "id": "prehospital-care-podcast",
-  "name": "Pre-Hospital Care Podcast",
-  "publisher": "Eoin Walker",
-  "focus": "Prehospital clinical topics and recent evidence",
-  "region": "Ireland",
-  "site": "https://podcasters.spotify.com/pod/show/phcp",
-  "art": "data/podcasts/art/prehospital-care-podcast.jpg",
-  "episodes": 397,
-  "latest": "2026-10-29",
-  "updated": "2026-10-29"
- },
- {
   "id": "ems-20-20",
   "name": "EMS 20/20",
   "publisher": "Spencer Oliver & Christopher Pfingsten",
@@ -82,18 +106,6 @@
   "episodes": 101,
   "latest": "2026-10-27",
   "updated": "2026-10-28"
- },
- {
-  "id": "core-em",
-  "name": "Core EM",
-  "publisher": "Core EM",
-  "focus": "Core emergency medicine topics, concise and practical",
-  "region": "US",
-  "site": "https://coreem.net",
-  "art": "data/podcasts/art/core-em.jpg",
-  "episodes": 234,
-  "latest": "2026-10-26",
-  "updated": "2026-10-27"
  },
  {
   "id": "av-clinical-conversations",
@@ -154,18 +166,6 @@
   "episodes": 354,
   "latest": "2026-10-17",
   "updated": "2026-10-23"
- },
- {
-  "id": "rcem-learning",
-  "name": "RCEM Learning",
-  "publisher": "Royal College of Emergency Medicine",
-  "focus": "Emergency medicine literature reviews and guideline updates",
-  "region": "UK",
-  "site": "https://www.rcemlearning.co.uk",
-  "art": "data/podcasts/art/rcem-learning.jpg",
-  "episodes": 295,
-  "latest": "2026-10-05",
-  "updated": "2026-10-08"
  },
  {
   "id": "rebel-cast",
