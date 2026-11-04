@@ -1,5 +1,17 @@
 [
  {
+  "id": "acp",
+  "name": "The Australasian College of Paramedicine",
+  "publisher": "Australasian College of Paramedicine",
+  "focus": "Paramedic research, practice and the profession across Australia and NZ",
+  "region": "AU/NZ",
+  "site": "https://paramedics.org",
+  "art": "data/podcasts/art/acp.jpg",
+  "episodes": 80,
+  "latest": "2026-11-04",
+  "updated": "2026-11-04"
+ },
+ {
   "id": "ecritcare",
   "name": "eCritCare",
   "publisher": "Dr Swapnil Pawar & Dr Jose Chacko",
@@ -177,18 +189,6 @@
   "art": "data/podcasts/art/rebel-cast.jpg",
   "episodes": 49,
   "latest": "2026-10-05",
-  "updated": "2026-10-08"
- },
- {
-  "id": "acp",
-  "name": "The Australasian College of Paramedicine",
-  "publisher": "Australasian College of Paramedicine",
-  "focus": "Paramedic research, practice and the profession across Australia and NZ",
-  "region": "AU/NZ",
-  "site": "https://paramedics.org",
-  "art": "data/podcasts/art/acp.jpg",
-  "episodes": 79,
-  "latest": "2026-10-01",
   "updated": "2026-10-08"
  },
  {
