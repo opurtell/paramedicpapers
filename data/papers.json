@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-11-03T20:20:11Z",
-  "lastUpdatedSydney": "2026-11-04 07:20 AEDT",
-  "lastUpdatedDate": "2026-11-04",
+  "lastUpdated": "2026-11-04T20:20:11Z",
+  "lastUpdatedSydney": "2026-11-05 07:20 AEDT",
+  "lastUpdatedDate": "2026-11-05",
   "featuredPapers": [
     {
       "id": "10.1016/j.resuscitation.2026.111378",
@@ -67,46 +67,45 @@
       "learningGoal": "Weigh the benefits and delays of unmanned aerial triage against conventional methods in mass-casualty responses."
     },
     {
-      "id": "10.1016/j.resplu.2026.101545",
-      "title": "Sex differences in bystander cardiopulmonary resuscitation and survival to hospital discharge for public out-of-hospital cardiac arrests in North Carolina and Singapore: a retrospective cohort study",
-      "journal": "Resuscitation Plus",
-      "date": "2026-10-31",
+      "id": "10.1016/j.resuscitation.2026.111358",
+      "title": "Association Between Capnographic Changes During Pulse Checks of Varying Durations and Clinical Outcomes During Cardiopulmonary Resuscitation: A Multicenter Study From Türkiye (CaPTuRe)",
+      "journal": "Resuscitation",
+      "date": "2026-10-22",
       "pmid": "",
-      "doi": "10.1016/j.resplu.2026.101545",
-      "summary": "A retrospective cohort of 10,445 public out-of-hospital cardiac arrests in North Carolina and Singapore found women were less likely to receive bystander CPR in both regions (aOR 0.87 and 0.78), with survival favouring women in North Carolina but men in Singapore.",
-      "relevance": "🟢 High — Bystander CPR rates are a system-wide measure every Australian community can act on, and the gap replicated across two very different registries a decade apart.",
-      "featuredReason": "Bystander CPR rates are a system-wide measure every Australian community can act on, and the gap replicated across two very different registries a decade apart.",
+      "doi": "10.1016/j.resuscitation.2026.111358",
+      "summary": "A 252-patient quasi-randomised multicentre study in Türkiye found pulse checks completed within 5 seconds were associated with roughly double the ROSC rate of checks lasting 6–10 seconds (36.3% vs 19.5%, OR 2.39), alongside better capnographic dynamics.",
+      "relevance": "🟢 High — Pulse-check duration is something every rescuer on every arrest controls, wherever they work, and capnography-guided CPR quality is standard monitoring practice.",
+      "featuredReason": "Pulse-check duration is something every rescuer on every arrest controls, wherever they work, and capnography-guided CPR quality is standard monitoring practice.",
       "pubDate": "2026-10",
       "topic": "Cardiac arrest",
-      "studyType": "Registry",
-      "design": "Retrospective dual-registry cohort (CARES North Carolina, Pan-Asian RESC Singapore)",
-      "n": "6,828 OHCAs in North Carolina and 3,617 in Singapore",
-      "finding": "Public bystander CPR: 48% of men vs 44% of women in North Carolina (aOR 0.87) and 59% vs 52% in Singapore (aOR 0.78); survival to discharge favoured women in North Carolina (aOR 1.15) but men in Singapore (aOR 0.63)",
-      "caveat": "Registry data, and the opposite-direction survival findings between the two regions are unexplained",
-      "bottomLine": "Supports current practice",
-      "shortTitle": "Women still get less bystander CPR in public",
-      "learningGoal": "Recognise how sex-related barriers to bystander CPR in public settings affect my cardiac arrest care."
+      "studyType": "Other",
+      "design": "Multicentre prospective quasi-randomised controlled study",
+      "n": "252 cardiac arrest patients (124 with ≤5-second checks, 128 with 6–10-second checks)",
+      "finding": "Shorter pulse checks were linked to higher ROSC (36.3% vs 19.5%; OR 2.39, 95% CI 1.35–4.24) and more favourable ETCO2 loss and recovery patterns",
+      "caveat": "Quasi-randomised, not truly randomised, so healthier arrests may have had quicker checks; the abstract doesn't say whether arrests were in or out of hospital",
+      "bottomLine": "Hypothesis-generating",
+      "shortTitle": "Shorter pulse checks linked to more ROSC",
+      "learningGoal": "Improve my technique for keeping pulse checks brief during cardiac arrest resuscitation while interpreting capnography trends."
     },
     {
-      "id": "42956923",
-      "title": "Early Identification of Recurrent Out-of-hospital Cardiac Arrest Using Clinical ECG Features",
-      "journal": "Resuscitation",
-      "date": "2026-10-31",
-      "pmid": "42956923",
-      "doi": "10.1016/j.resuscitation.2026.111370",
-      "summary": "A US retrospective cohort of 1,298 post-ROSC OHCA patients found routine ECG features — wider QRS, lower heart rate, higher heart-rate variability — were associated with rearrest, with prediction best one minute before it (AUROC 0.74).",
-      "relevance": "🟢 High — Continuous ECG monitoring after ROSC is standard care on every Australian ambulance; the question it raises — watching for rearrest rather than waiting for it — is one crews can act on.",
-      "featuredReason": "Continuous ECG monitoring after ROSC is standard care on every Australian ambulance; the question it raises — watching for rearrest rather than waiting for it — is one crews can act on.",
-      "pubDate": "2026-10",
+      "id": "42149949",
+      "title": "Use of double sequential external defibrillation in the United States before and after the DOSE VF randomized clinical trial",
+      "journal": "Prehospital Emergency Care",
+      "date": "2026-05-18",
+      "pmid": "42149949",
+      "doi": "10.1080/10903127.2026.2674263",
+      "summary": "Nationwide observational study examined trends in DSED use for refractory VF before and after publication of the DOSE VF trial.",
+      "relevance": "🟢 High",
+      "featuredReason": "",
       "topic": "Cardiac arrest",
       "studyType": "Cohort",
-      "design": "Retrospective cohort, 2018–2024",
-      "n": "1,298 adults with OHCA achieving ROSC",
-      "finding": "40.7% of post-ROSC patients rearrested; identification was highest one minute before rearrest (AUROC 0.74) and declined beyond three minutes; rearrest carried lower survival (20.4% vs 43.1%) and favourable neuro outcome (7.8% vs 21.2%)",
-      "caveat": "Retrospective, single US region, and no prospective test of acting on the prediction",
-      "bottomLine": "Hypothesis-generating",
-      "shortTitle": "ECG signs appear minutes before post-ROSC rearrest",
-      "learningGoal": "Recognise ECG warning signs that precede rearrest in post-ROSC patients to intervene earlier."
+      "design": "Retrospective interrupted time-series analysis of a national EMS data collaborative",
+      "n": "16,450 adults with OHCA and VF/pVT and ≥4 defibrillation attempts from 906 agencies, 2018–2024",
+      "finding": "DSED use varied by identification method (1.8%–7.6%); use detected by any method increased after DOSE VF publication (7.3% vs 8.2%, p=0.048), with a rate increase of RR 1.09 (95% CI 1.04–1.14) per quarter.",
+      "caveat": "DSED identified by proxy measures with potential misclassification; observational design cannot link use to outcomes.",
+      "bottomLine": "Context only",
+      "shortTitle": "DSED use rising but still low after DOSE VF",
+      "learningGoal": "Weigh the emerging evidence for double sequential defibrillation in refractory ventricular fibrillation cardiac arrest."
     }
   ],
   "funFacts": [
@@ -1020,81 +1019,134 @@
     }
   ],
   "funFact": {
-    "category": "pharmacology",
-    "fact": "Paracetamol's mechanism is still debated — probably COX inhibition in the CNS where peroxide tone is low. That selectivity is why it kills pain and fever without gutting your stomach lining. A drug we've used for over a century and we're still not entirely sure how it works."
+    "category": "resuscitation",
+    "fact": "Double sequential defibrillation — two defibs firing at once — was a desperate move for refractory VF. The 2023 PARAMEDIC-DS trial found no survival benefit. Turns out sometimes the answer is 'more electricity' and sometimes it isn't."
   },
   "tldr": {
-    "date": "2026-11-04",
-    "paperCount": 8,
-    "summary": "Cardiac arrest follow-through dominates today: post-ROSC ST-segment elevation and five-year ECPR survival from Resuscitation, plus a Spanish revalidation of the M-DIRECT prehospital stroke triage scale in 1,950 patients. The most road-relevant pick is a UK realist evaluation of what actually helps children in pain in ambulances.",
+    "date": "2026-11-05",
+    "paperCount": 4,
+    "summary": "Today's standout: continuous ECG review found prehospital transcutaneous pacing achieved electrical capture in only 32% of patients, often intermittently, and clinicians could rarely tell when it worked. A lab study also quantified how far counted drip rates drift from target.",
     "highlights": [
       {
-        "id": "10.1186/s13049-026-01712-3",
+        "id": "42976244",
+        "pmid": "42976244",
+        "doi": "10.1080/10903127.2026.2756599",
+        "title": "Electrical capture uncommon in prehospital transcutaneous pacing",
+        "journal": "Prehospital Emergency Care",
+        "note": "Electrical capture in 18/56 (32%); among capturers, complete capture occurred only 27.2% of pacing time; median SBP change +22 mmHg with capture vs 0 mmHg without (p=0.031); clinician-verbalised pulse coincided with electrical capture in only 4/26 (15%) instances"
+      },
+      {
+        "id": "10.1080/10903127.2026.2757796",
         "pmid": "",
-        "doi": "10.1186/s13049-026-01712-3",
-        "title": "What helps kids in pain in ambulances",
-        "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
-        "note": "Around 60% of children and young people needing an ambulance for a painful condition experience poor pain management; preparedness (education, training, exposure, experience) and compassionate person-centred care were the refined programme theory's central mechanisms"
+        "doi": "10.1080/10903127.2026.2757796",
+        "title": "Counted drip rates vary widely between paramedics",
+        "journal": "Prehospital Emergency Care",
+        "note": "Overall inaccuracy ranged from -45.3% to +5.8%; imprecision was primarily human; 1 gtt/s targets more accurate than all others (absolute error 31.1% vs 48.5%); whole-number rates more accurate than fractional (40.7% vs 54.1%)"
       },
       {
-        "id": "42972247",
-        "pmid": "42972247",
-        "doi": "10.1186/s12873-026-01711-8",
-        "title": "M-DIRECT stroke triage scale revalidated",
-        "journal": "BMC Emergency Medicine",
-        "note": "Sensitivity 77%, specificity 76%, AUC 0.768 for EVT; 58% of M-DIRECT-positive patients had LVO/MeVO and 50% underwent EVT; positive score independently associated with EVT (aOR 3.05, 95% CI 1.65–5.68); only 10% of EVT patients needed a secondary transfer"
+        "id": "42978241",
+        "pmid": "42978241",
+        "doi": "10.1111/trf.70461",
+        "title": "Military prehospital transfusion often outside guideline criteria",
+        "journal": "Transfusion",
+        "note": "Meeting transfusion criteria was associated with requiring transfusion (RR 3.20, 95% CI 2.29–4.47); 65% of transfused patients did not meet criteria; median transfusion rate 25 mL/min"
       },
       {
-        "id": "42971310",
-        "pmid": "42971310",
-        "doi": "10.1016/j.resuscitation.2026.111380",
-        "title": "Post-ROSC ST elevation tracks acute coronary occlusion",
-        "journal": "Resuscitation",
-        "note": "ST elevation was associated with more impaired culprit-vessel flow and greater myocardial injury; patients without ST elevation more often had multivessel disease or chronic total occlusion; ST elevation was not independently associated with neurological outcome after adjustment for prehospital factors"
-      },
-      {
-        "id": "10.1016/j.resuscitation.2026.111379",
-        "pmid": "",
-        "doi": "10.1016/j.resuscitation.2026.111379",
-        "title": "Two-thirds of ECPR survivors alive at five years",
-        "journal": "Resuscitation",
-        "note": "211/728 (29.0%) survived to discharge; 76.9% and 67.2% of hospital survivors were alive at 1 and 5 years; CPC 1–2 in 78.7% at discharge and above 93% among survivors beyond 1 year; five-year survival ranged from 91.6% (18–39 years) to 52.9% (>70 years)"
-      },
-      {
-        "id": "42932412",
-        "pmid": "42932412",
-        "doi": "10.1161/circulationaha.126.081889",
-        "title": "STEMI deaths now mostly prehospital",
-        "journal": "Circulation",
-        "note": "Five recommendations to shorten symptom onset to reperfusion: patient education, prehospital glycoprotein IIb/IIIa inhibitors or thrombolytics, rapid PCI access, and changes to prehospital care reimbursement"
-      },
-      {
-        "id": "42970562",
-        "pmid": "42970562",
-        "doi": "10.1097/JOM.0000000000003922",
-        "title": "Long wildfire shifts linked to broken sleep",
-        "journal": "Journal of Occupational and Environmental Medicine",
-        "note": "24-hour shifts associated with 1.65 fewer total sleep hours (95% CI −2.45 to −0.84) and 1.93 fewer consecutive hours; four or more consecutive shifts and poorer working conditions also associated with shorter sleep; 83% reported poor or very poor sleep quality"
-      },
-      {
-        "id": "10.1177/27536386261503596",
-        "pmid": "",
-        "doi": "10.1177/27536386261503596",
-        "title": "Turning HEMS debriefs into shared learning",
-        "journal": "Paramedicine",
-        "note": "Organisational learning was the global theme, organised into education (knowledge generation, engagement, incidental learning), accessibility (learning reaching staff who missed debriefs) and calibration (moderation and vetting of learning points)"
-      },
-      {
-        "id": "10.1377/hlthaff.2026.01419",
-        "pmid": "",
-        "doi": "10.1377/hlthaff.2026.01419",
-        "title": "US Medicaid cuts threaten EMS funding",
-        "journal": "Health Affairs",
-        "note": "H.R. 1 and subsequent CMS rules are expected to place financial strain on local EMS systems already struggling with inadequate reimbursement"
+        "id": "42978318",
+        "pmid": "42978318",
+        "doi": "10.1017/dmp.2026.10458",
+        "title": "START triage knowledge unrelated to student decision styles",
+        "journal": "Disaster Medicine and Public Health Preparedness",
+        "note": "Mean START knowledge score 69.99 ± 14.76; no significant association with intolerance of uncertainty or any decision-making style subscale"
       }
     ]
   },
   "dailyUpdates": [
+    {
+      "date": "2026-11-05",
+      "papers": [
+        {
+          "id": "42976244",
+          "title": "Transcutaneous Pacing in the Prehospital Setting – A Retrospective Cohort Study of Electrical Capture",
+          "journal": "Prehospital Emergency Care",
+          "date": "2026-11-05",
+          "pmid": "42976244",
+          "doi": "10.1080/10903127.2026.2756599",
+          "summary": "A US EMS agency reviewed continuous monitor ECGs from 56 patients given prehospital transcutaneous pacing between 2017 and 2024 and found electrical capture in only 32%, often intermittent, with clinician-verbalised pulses coinciding with capture in just 15% of instances.",
+          "relevance": "🟡 Medium — Transcutaneous pacing is carried by only a handful of Australian services, so this speaks most directly to the services that pace rather than day-to-day practice everywhere.",
+          "pubDate": "2026-11-03",
+          "topic": "Cardiac (non-arrest)",
+          "studyType": "Cohort",
+          "design": "Retrospective cohort with continuous ECG review",
+          "n": "56 patients who received prehospital transcutaneous pacing",
+          "finding": "Electrical capture in 18/56 (32%); among capturers, complete capture occurred only 27.2% of pacing time; median SBP change +22 mmHg with capture vs 0 mmHg without (p=0.031); clinician-verbalised pulse coincided with electrical capture in only 4/26 (15%) instances",
+          "caveat": "Single US agency, small sample, and capture judged from monitor recordings rather than patient-centred outcomes",
+          "bottomLine": "Hypothesis-generating",
+          "shortTitle": "Electrical capture uncommon in prehospital transcutaneous pacing",
+          "learningGoal": "Strengthen my judgement on when prehospital transcutaneous pacing is likely to achieve electrical capture and meaningful perfusion."
+        },
+        {
+          "id": "10.1080/10903127.2026.2757796",
+          "title": "The Accuracy and Precision of Gravity-Driven Infusions",
+          "journal": "Prehospital Emergency Care",
+          "date": "2026-11-05",
+          "pmid": "",
+          "doi": "10.1080/10903127.2026.2757796",
+          "summary": "In a controlled US laboratory simulation, 55 paramedics setting nine drip rates on a standardised gravity set produced overall flow errors from -45.3% to +5.8%, with imprecision driven mainly by human counting and whole-number target rates more accurate than fractional ones.",
+          "relevance": "🟢 High — Gravity sets and counted drip rates are standard kit on Australian ambulances, so these accuracy numbers apply directly to crews.",
+          "pubDate": "2026-11-03",
+          "topic": "Other",
+          "studyType": "Simulation",
+          "design": "Controlled laboratory simulation",
+          "n": "55 paramedics, nine drip rates each",
+          "finding": "Overall inaccuracy ranged from -45.3% to +5.8%; imprecision was primarily human; 1 gtt/s targets more accurate than all others (absolute error 31.1% vs 48.5%); whole-number rates more accurate than fractional (40.7% vs 54.1%)",
+          "caveat": "Laboratory setup with a standardised giving set; field conditions, movement and different tubing not tested",
+          "bottomLine": "Hypothesis-generating",
+          "shortTitle": "Counted drip rates vary widely between paramedics",
+          "learningGoal": "Refine my technique for setting and counting gravity-driven infusion rates to reduce dosing error in the field."
+        },
+        {
+          "id": "42978241",
+          "title": "Compliance with French Military Health Service guidelines for prehospital transfusion of blood products during forward aeromedical evacuations in Sahel (2015 to 2023)",
+          "journal": "Transfusion",
+          "date": "2026-11-05",
+          "pmid": "42978241",
+          "doi": "10.1111/trf.70461",
+          "summary": "A French military review of 206 forward aeromedical evacuations for trauma in Sahel (2015–2023) found 64 casualties transfused prehospital, with 65% of transfused patients not meeting guideline criteria, while heart rate above 110, shock index above 1, penetrating or pelvic trauma and FAST effusion were more frequent among them.",
+          "relevance": "🟡 Medium — Prehospital blood is limited to a few Australian services, and this comes from a military aeromedical evacuation chain, so it informs the transfusion-trigger debate more than current civilian practice.",
+          "pubDate": "2026-11-03",
+          "topic": "Trauma",
+          "studyType": "Cohort",
+          "design": "Multicentre retrospective observational study",
+          "n": "206 trauma casualties evacuated, 64 transfused with 89 blood products",
+          "finding": "Meeting transfusion criteria was associated with requiring transfusion (RR 3.20, 95% CI 2.29–4.47); 65% of transfused patients did not meet criteria; median transfusion rate 25 mL/min",
+          "caveat": "Retrospective military cohort with no civilian comparison; authors call for prospective evaluation before any guideline revision",
+          "bottomLine": "Context only",
+          "shortTitle": "Military prehospital transfusion often outside guideline criteria",
+          "learningGoal": "Weigh the risks and benefits of prehospital blood transfusion when my trauma patients fall outside guideline criteria."
+        },
+        {
+          "id": "42978318",
+          "title": "Decision-Making Under Uncertainty in Paramedic Students: A START Triage Perspective",
+          "journal": "Disaster Medicine and Public Health Preparedness",
+          "date": "2026-11-05",
+          "pmid": "42978318",
+          "doi": "10.1017/dmp.2026.10458",
+          "summary": "A Turkish cross-sectional survey of 121 paramedic students found theoretical START triage knowledge (mean 69.99 ± 14.76) was not significantly associated with intolerance of uncertainty or decision-making style subscale scores.",
+          "relevance": "🔴 Low — A paper-based knowledge test with self-reported psychosocial measures only — no simulation or field performance — so there is little here that transfers to triage practice on the road.",
+          "pubDate": "2026-11-04",
+          "topic": "Education & training",
+          "studyType": "Cross-sectional",
+          "design": "Cross-sectional questionnaire study",
+          "n": "121 paramedic students",
+          "finding": "Mean START knowledge score 69.99 ± 14.76; no significant association with intolerance of uncertainty or any decision-making style subscale",
+          "caveat": "Declarative knowledge only, single training program, self-reported psychosocial measures",
+          "bottomLine": "Context only",
+          "shortTitle": "START triage knowledge unrelated to student decision styles",
+          "learningGoal": "Strengthen my judgement when applying mass casualty triage under uncertainty in the Australian prehospital context."
+        }
+      ]
+    },
     {
       "date": "2026-11-04",
       "papers": [
