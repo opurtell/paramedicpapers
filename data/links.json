@@ -1,34 +1,28 @@
 {
- "updated": "2026-11-01",
+ "updated": "2026-11-05",
  "latest": [
   {
-   "key": "doi-10-1016-j-resplu-2026-101542",
-   "title": "Nursing-home arrests more often shockable, linked to early AED",
-   "topic": "Cardiac arrest",
-   "finding": "Initial shockable rhythm: 36.3% in nursing homes vs 7.1% at home (aOR 12.35, 95% CI 8.93–17.24) and 33.4% in other locations; 97.0% of shockable nursing-home cases got an AED shock; one-month favourable neurological survival lowest in nursing homes at 0.8%"
+   "key": "doi-10-1080-10903127-2026-2757796",
+   "title": "Counted drip rates vary widely between paramedics",
+   "topic": "Other",
+   "finding": "Overall inaccuracy ranged from -45.3% to +5.8%; imprecision was primarily human; 1 gtt/s targets more accurate than all others (absolute error 31.1% vs 48.5%); whole-number rates more accurate than fractional (40.7% vs 54.1%)"
   },
   {
-   "key": "doi-10-1016-j-resplu-2026-101546",
-   "title": "Bystanders describe heavy emotional toll of doing CPR",
-   "topic": "Cardiac arrest",
-   "finding": "Four themes: emotional impact; managing multiple roles; compelled to help but unprepared; talking to the right person"
+   "key": "42976244",
+   "title": "Electrical capture uncommon in prehospital transcutaneous pacing",
+   "topic": "Cardiac (non-arrest)",
+   "finding": "Electrical capture in 18/56 (32%); among capturers, complete capture occurred only 27.2% of pacing time; median SBP change +22 mmHg with capture vs 0 mmHg without (p=0.031); clinician-verbalised pulse coincided with electrical capture in only 4/26 (15%) instances"
   },
   {
-   "key": "doi-10-34074-whit-3303",
-   "title": "NZ paramedics breached patient rights more often than nurses",
-   "topic": "Workforce & wellbeing",
-   "finding": "Per 1,000 practitioners, paramedics were three times more likely than nurses to breach the Code and breached at a higher severity rate; Right 4 was the most prevalent breach in both professions"
-  },
-  {
-   "key": "doi-10-1186-s13049-026-01719-w",
-   "title": "Drone triage feasible but unproven in real MCIs",
-   "topic": "Operations & systems",
-   "finding": "Remote capture of heart rate, respiratory rate, temperature, SpO2, consciousness and location is feasible; the single randomised comparison showed UAV-assisted triage took ~3.5 min longer with identical accuracy; no validated remote triage standard exists"
+   "key": "42978241",
+   "title": "Military prehospital transfusion often outside guideline criteria",
+   "topic": "Trauma",
+   "finding": "Meeting transfusion criteria was associated with requiring transfusion (RR 3.20, 95% CI 2.29–4.47); 65% of transfused patients did not meet criteria; median transfusion rate 25 mL/min"
   }
  ],
  "episode": {
-  "date": "2026-11-01",
-  "title": "Paramedic Papers Daily — 1 November 2026",
-  "page": "/episodes/2026-11-01/"
+  "date": "2026-11-05",
+  "title": "Paramedic Papers Daily — 5 November 2026",
+  "page": "/episodes/2026-11-05/"
  }
 }
