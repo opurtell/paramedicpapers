@@ -12,6 +12,18 @@
   "updated": "2026-11-04"
  },
  {
+  "id": "ems-20-20",
+  "name": "EMS 20/20",
+  "publisher": "Spencer Oliver & Christopher Pfingsten",
+  "focus": "Real calls from real responders and the lessons in them",
+  "region": "US",
+  "site": "https://longpausemedia.com/podcasts/ems-20-20",
+  "art": "data/podcasts/art/ems-20-20.jpg",
+  "episodes": 264,
+  "latest": "2026-11-04",
+  "updated": "2026-11-05"
+ },
+ {
   "id": "ecritcare",
   "name": "eCritCare",
   "publisher": "Dr Swapnil Pawar & Dr Jose Chacko",
@@ -94,18 +106,6 @@
   "episodes": 166,
   "latest": "2026-10-29",
   "updated": "2026-10-30"
- },
- {
-  "id": "ems-20-20",
-  "name": "EMS 20/20",
-  "publisher": "Spencer Oliver & Christopher Pfingsten",
-  "focus": "Real calls from real responders and the lessons in them",
-  "region": "US",
-  "site": "https://longpausemedia.com/podcasts/ems-20-20",
-  "art": "data/podcasts/art/ems-20-20.jpg",
-  "episodes": 263,
-  "latest": "2026-10-28",
-  "updated": "2026-10-29"
  },
  {
   "id": "pec-podcast",
