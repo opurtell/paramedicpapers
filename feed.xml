@@ -25,6 +25,20 @@
     <itunes:explicit>false</itunes:explicit>
     <podcast:guid>09fa3693-e2ac-527c-9d1c-f68df149b888</podcast:guid>
     <item>
+      <title>Paramedic Papers Daily — 7 November 2026</title>
+      <link>https://paramedicpapers.com/episodes/2026-11-07/</link>
+      <description>4 papers: paediatric prehospital fentanyl; CARE framework for traumatic cardiac arrest; prehospital transfusion and HDFN risk; first responders notifying schools after child trauma</description>
+      <content:encoded><![CDATA[<p>4 papers: paediatric prehospital fentanyl; CARE framework for traumatic cardiac arrest; prehospital transfusion and HDFN risk; first responders notifying schools after child trauma</p><p>Papers in this episode:</p><ul><li><a href="https://doi.org/10.1186/s13049-026-01723-0">Paediatric prehospital fentanyl: serious adverse effects rare <em>(Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine)</em></a></li><li><a href="https://doi.org/10.1016/j.resplu.2026.101539">CARE framework for traumatic cardiac arrest <em>(Resuscitation Plus)</em></a></li><li><a href="https://doi.org/10.1111/trf.70478">Forecast: prehospital transfusion growth and HDFN risk <em>(Transfusion)</em></a></li><li><a href="https://doi.org/10.1007/s40653-026-00975-3">First responders notifying schools after child trauma <em>(Journal of Child &amp; Adolescent Trauma)</em></a></li></ul><p><a href="https://paramedicpapers.com/episodes/2026-11-07/">Show notes and transcript</a></p>]]></content:encoded>
+      <pubDate>Sat, 07 Nov 2026 07:35:06 +1100</pubDate>
+      <guid isPermaLink="false">https://audio.paramedicpapers.com/ep-2026-11-07.mp3</guid>
+      <enclosure url="https://op3.dev/e/audio.paramedicpapers.com/ep-2026-11-07.mp3" length="1054412" type="audio/mpeg"/>
+      <itunes:duration>263</itunes:duration>
+      <itunes:summary>4 papers: paediatric prehospital fentanyl; CARE framework for traumatic cardiac arrest; prehospital transfusion and HDFN risk; first responders notifying schools after child trauma</itunes:summary>
+      <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
+      <itunes:episodeType>full</itunes:episodeType>
+      <podcast:transcript url="https://audio.paramedicpapers.com/ep-2026-11-07.txt" type="text/plain" language="en-au"/>
+    </item>
+    <item>
       <title>Paramedic Papers Daily — 6 November 2026</title>
       <link>https://paramedicpapers.com/episodes/2026-11-06/</link>
       <description>4 papers: 2026 ILCOR resuscitation consensus; layperson naloxone linked to fewer EMS interventions; physiology-based traumatic shock pathway rolled out; long-term life after ECPR for cardiac arrest</description>
@@ -429,20 +443,6 @@
       <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
       <itunes:episodeType>full</itunes:episodeType>
       <podcast:transcript url="https://audio.paramedicpapers.com/ep-2026-10-09.txt" type="text/plain" language="en-au"/>
-    </item>
-    <item>
-      <title>Paramedic Papers Daily — 8 October 2026</title>
-      <link>https://paramedicpapers.com/episodes/2026-10-08/</link>
-      <description>4 papers: amiodarone after non-shockable-to-shockable conversion; long resuscitations don't rule out good recovery; family CPR vs strangers' CPR; bystander AEDs underused</description>
-      <content:encoded><![CDATA[<p>4 papers: amiodarone after non-shockable-to-shockable conversion; long resuscitations don't rule out good recovery; family CPR vs strangers' CPR; bystander AEDs underused</p><p>Papers in this episode:</p><ul><li><a href="https://doi.org/10.1016/j.resuscitation.2026.111349">Amiodarone after non-shockable-to-shockable conversion <em>(Resuscitation)</em></a></li><li><a href="https://doi.org/10.1016/j.resuscitation.2026.111342">Long resuscitations don't rule out good recovery <em>(Resuscitation)</em></a></li><li><a href="https://doi.org/10.1016/j.resplu.2026.101516">Family CPR helps — but strangers' CPR helps more <em>(Resuscitation Plus)</em></a></li><li><a href="https://doi.org/10.1080/10903127.2026.2743854">Bystander AEDs work — when someone actually grabs one <em>(Prehospital Emergency Care)</em></a></li></ul><p><a href="https://paramedicpapers.com/episodes/2026-10-08/">Show notes and transcript</a></p>]]></content:encoded>
-      <pubDate>Thu, 08 Oct 2026 07:33:56 +1100</pubDate>
-      <guid isPermaLink="false">https://audio.paramedicpapers.com/ep-2026-10-08.mp3</guid>
-      <enclosure url="https://op3.dev/e/audio.paramedicpapers.com/ep-2026-10-08.mp3" length="987692" type="audio/mpeg"/>
-      <itunes:duration>246</itunes:duration>
-      <itunes:summary>4 papers: amiodarone after non-shockable-to-shockable conversion; long resuscitations don't rule out good recovery; family CPR vs strangers' CPR; bystander AEDs underused</itunes:summary>
-      <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
-      <itunes:episodeType>full</itunes:episodeType>
-      <podcast:transcript url="https://audio.paramedicpapers.com/ep-2026-10-08.txt" type="text/plain" language="en-au"/>
     </item>
   </channel>
 </rss>
