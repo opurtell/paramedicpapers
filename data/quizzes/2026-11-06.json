@@ -1,0 +1,120 @@
+{
+ "id": "2026-11-06",
+ "span": "30 Oct – 6 Nov 2026",
+ "created": "2026-11-06T00:01:44Z",
+ "est_minutes": 10,
+ "questions": [
+  {
+   "paper_id": "42956923",
+   "short_title": "ECG signs appear minutes before post-ROSC rearrest",
+   "topic": "Cardiac arrest",
+   "question": "How far ahead of a post-ROSC rearrest were ECG features most predictive?",
+   "options": [
+    "Prediction stayed constant across the whole window",
+    "One minute before rearrest",
+    "Three minutes before rearrest",
+    "Five minutes before rearrest"
+   ],
+   "answer": 1,
+   "explanation": "Prediction peaked one minute before rearrest (AUROC 0.74) and faded beyond three minutes. It's a retrospective, single-region study, so it's hypothesis-generating rather than practice-changing."
+  },
+  {
+   "paper_id": "42958936",
+   "short_title": "Few heat-stroke cooling devices suit the prehospital setting",
+   "topic": "Other",
+   "question": "What gap did this review of commercial heat-stroke cooling devices find that matters for prehospital practice?",
+   "options": [
+    "Most devices were too heavy for two paramedics to carry",
+    "Most devices reported no cooling-rate data at all",
+    "Cooling rates were only measured in hot conditions",
+    "No device could be powered from an ambulance"
+   ],
+   "answer": 1,
+   "explanation": "About 61% of the 18 devices provided no cooling-rate figures, so performance can't be compared, and no device combined effectiveness, portability, field readiness and reusability. The review was based on device specifications only, with no clinical outcome data."
+  },
+  {
+   "paper_id": "10.1016/j.resplu.2026.101542",
+   "short_title": "Nursing-home arrests more often shockable, linked to early AED",
+   "topic": "Cardiac arrest",
+   "question": "Nursing-home arrests were far more likely to present with an initial shockable rhythm than arrests at home. What best explains the study authors' interpretation of this gap?",
+   "options": [
+    "Nursing-home residents have less underlying cardiac disease than people arrested at home",
+    "Ambulance response times to nursing homes were substantially faster",
+    "Residents receive better bystander CPR, which preserves shockable rhythms",
+    "Earlier AED access likely detects shockable rhythms soon after collapse, before they deteriorate"
+   ],
+   "answer": 3,
+   "explanation": "The authors attributed the higher rate to prompt AED use — 97.0% of shockable nursing-home cases received a shock — meaning rhythms were caught early. It's descriptive, not proof of causation, and survival with good neurological outcome was actually lowest in nursing homes at 0.8%."
+  },
+  {
+   "paper_id": "10.34074/whit.3303",
+   "short_title": "NZ paramedics breached patient rights more often than nurses",
+   "topic": "Workforce & wellbeing",
+   "question": "When comparing upheld Code of Rights breaches between paramedics and nurses in NZ, what did the study find once the raw numbers were converted to rates per 1,000 practitioners?",
+   "options": [
+    "Paramedics were three times more likely to breach, and at higher severity",
+    "Nurses had the higher breach rate because they had far more decisions overall",
+    "Paramedics breached less often but at greater severity",
+    "The breach rates were roughly equal between the two professions"
+   ],
+   "answer": 0,
+   "explanation": "Nurses had more breaches in absolute terms (100 vs 9), but per 1,000 practitioners paramedics were three times more likely to breach and breached at higher severity. The comparison is fragile though, since only nine paramedic cases were involved and published decisions capture only reported and upheld breaches."
+  },
+  {
+   "paper_id": "42934878",
+   "short_title": "Workplace violence follows prehospital staff home",
+   "topic": "Workforce & wellbeing",
+   "question": "In this qualitative study of prehospital staff who had experienced workplace violence, which coping strategies did participants rely on most?",
+   "options": [
+    "Personal security equipment and protective policies",
+    "Formal psychological debriefing run by their organisation",
+    "De-escalation, situational awareness and peer support",
+    "Transferring to non-emergency roles after incidents"
+   ],
+   "answer": 2,
+   "explanation": "Participants described coping through communication and de-escalation, staying situationally aware, and leaning on colleagues. They saw organisational support as insufficient, and the qualitative design with a purposive sample of staff who had all experienced violence means the findings aren't generalisable."
+  },
+  {
+   "paper_id": "10.1186/s13049-026-01712-3",
+   "short_title": "What helps kids in pain in ambulances",
+   "topic": "Pain & sedation",
+   "question": "According to the refined programme theory, what sits at the centre of better paediatric pain care in ambulances?",
+   "options": [
+    "Preparedness and person-centred care",
+    "Compulsory pain scoring",
+    "Parent-delivered analgesia",
+    "Faster response times"
+   ],
+   "answer": 0,
+   "explanation": "Clinician preparedness (education, training, exposure, experience) and compassionate person-centred care emerged as the key mechanisms. This is theory to be tested, not evidence they improve outcomes."
+  },
+  {
+   "paper_id": "10.1080/10903127.2026.2757796",
+   "short_title": "Counted drip rates vary widely between paramedics",
+   "topic": "Other",
+   "question": "When paramedics set a drip rate of 1 drop per second, how did accuracy compare with other target rates?",
+   "options": [
+    "It matched the accuracy of fractional target rates",
+    "It was more accurate than all other target rates",
+    "It was only accurate when counted by two people",
+    "It was the least accurate rate tested"
+   ],
+   "answer": 1,
+   "explanation": "The 1 drop per second target had an absolute error of 31.1% versus 48.5% for all other rates, making it the most accurate. This came from a controlled lab setup with standardised tubing, so field conditions, movement and different giving sets weren't tested."
+  },
+  {
+   "paper_id": "42981768",
+   "short_title": "Layperson naloxone linked to fewer EMS interventions",
+   "topic": "Toxicology",
+   "question": "In cases where a layperson gave naloxone before EMS arrival, what did the study find about subsequent EMS care?",
+   "options": [
+    "No difference in EMS naloxone use, but more advanced airway attempts",
+    "Higher rates of cardiac arrest on EMS arrival",
+    "More patients needed EMS naloxone and more were transported",
+    "Fewer patients needed EMS naloxone and fewer were transported"
+   ],
+   "answer": 3,
+   "explanation": "Layperson naloxone was linked to less subsequent EMS naloxone (24.4% vs 34.8%) and lower transport rates (79.4% vs 84.4%). As a registry cross-section, though, the study can't tell whether reduced transports reflected genuine recovery or refusals of care."
+  }
+ ]
+}
