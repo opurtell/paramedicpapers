@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-11-06T20:20:11Z",
-  "lastUpdatedSydney": "2026-11-07 07:20 AEDT",
-  "lastUpdatedDate": "2026-11-07",
+  "lastUpdated": "2026-11-07T20:20:11Z",
+  "lastUpdatedSydney": "2026-11-08 07:20 AEDT",
+  "lastUpdatedDate": "2026-11-08",
   "featuredPapers": [
     {
       "id": "10.1016/j.resplu.2026.101556",
@@ -23,27 +23,6 @@
       "bottomLine": "Context only",
       "shortTitle": "Layperson CPR: pocket mask versus face shield",
       "learningGoal": "Weigh the benefits and limitations of barrier devices for paediatric rescue ventilation when supporting layperson CPR in the community."
-    },
-    {
-      "id": "10.1016/j.resuscitation.2026.111378",
-      "title": "Wearable-based automated cardiac arrest detection and alerting: A systematic review",
-      "journal": "Resuscitation",
-      "date": "2026-11-03",
-      "pmid": "",
-      "doi": "10.1016/j.resuscitation.2026.111378",
-      "summary": "Abstract not yet available — this Resuscitation systematic review maps wearable-based automated cardiac arrest detection and alerting systems.",
-      "relevance": "🟡 Medium — Wearables aren't crew equipment, but automated detection and alerting feed bystander response and dispatch — the front end of every OHCA chain of survival.",
-      "featuredReason": "Wearables aren't crew equipment, but automated detection and alerting feed bystander response and dispatch — the front end of every OHCA chain of survival.",
-      "pubDate": "2026-11",
-      "topic": "Cardiac arrest",
-      "studyType": "Systematic review",
-      "design": "Systematic review",
-      "n": "Not reported",
-      "finding": "Abstract not yet available",
-      "caveat": "Abstract not yet available, so findings can't yet be assessed",
-      "bottomLine": "Context only",
-      "shortTitle": "Wearables detecting cardiac arrest: systematic review",
-      "learningGoal": "Understand how wearable cardiac arrest detection technology may shape early warning and community response pathways."
     },
     {
       "id": "10.1016/j.resuscitation.2026.111358",
@@ -87,25 +66,46 @@
       "learningGoal": "Weigh the emerging evidence for double sequential defibrillation in refractory ventricular fibrillation cardiac arrest."
     },
     {
-      "id": "10.1186/s13049-026-01723-0",
-      "title": "Is prehospital opioid administration safe in children? A register-based study",
-      "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
-      "date": "2026-11-07",
+      "id": "10.1016/j.resplu.2026.101554",
+      "title": "Differences between Mainstream and Sidestream Capnography during Resuscitation",
+      "journal": "Resuscitation Plus",
+      "date": "2026-11-08",
       "pmid": "",
-      "doi": "10.1186/s13049-026-01723-0",
-      "summary": "A Danish register study of 1,531 children given prehospital opioids (99.7% fentanyl) found 15.1% had at least one clinical sign compatible with opioid adverse effects, serious signs were uncommon (bradycardia and respiratory depression 0.7% each), and 63.6% were still in pain at hospital arrival.",
-      "relevance": "🟢 High — Fentanyl is standard prehospital analgesia across Australian services, and a national registry like this speaks directly to how crews dose paediatric pain relief.",
-      "featuredReason": "Fentanyl is standard prehospital analgesia across Australian services, and a national registry like this speaks directly to how crews dose paediatric pain relief.",
-      "pubDate": "2026-11-05",
-      "topic": "Paediatrics",
-      "studyType": "Registry",
-      "design": "Retrospective register-based cohort with medical record review",
-      "n": "1,531 children aged 0–14 given prehospital opioids, Denmark 2017–2022",
-      "finding": "15.1% had at least one clinical sign compatible with opioid-related adverse effects; bradycardia 0.7%, respiratory depression 0.7%; no opioid antidote given; 63.6% in pain at arrival and 51% received further in-hospital analgesia.",
-      "caveat": "Retrospective register review — nonspecific signs such as nausea and drowsiness can't be firmly attributed to opioids (no other explanation identified in 9.2%).",
-      "bottomLine": "Supports current practice",
-      "shortTitle": "Paediatric prehospital fentanyl: serious adverse effects rare",
-      "learningGoal": "Refine my assessment and monitoring of prehospital opioid analgesia in paediatric patients to reduce under-treatment of pain."
+      "doi": "10.1016/j.resplu.2026.101554",
+      "summary": "A Spanish retrospective analysis of 23 OHCA recordings with concurrent mainstream and sidestream capnography found mainstream systematically recorded higher ETCO2 (bias 3.94 mmHg, limits of agreement -3.21 to 11.09 mmHg), though trends and abrupt rises/drops were consistently co-detected.",
+      "relevance": "🟢 High — ETCO2-guided CPR quality monitoring is standard practice on Australian ambulances, and the numbers crews chart or hand over at hospital depend on which technology the monitor uses.",
+      "featuredReason": "ETCO2-guided CPR quality monitoring is standard practice on Australian ambulances, and the numbers crews chart or hand over at hospital depend on which technology the monitor uses.",
+      "pubDate": "2026-11",
+      "topic": "Cardiac arrest",
+      "studyType": "Cohort",
+      "design": "Retrospective device-comparison analysis of synchronized capnography waveforms",
+      "n": "23 OHCA recordings (3,460 paired ventilations)",
+      "finding": "Mainstream ETCO2 bias +3.94 mmHg vs sidestream (limits of agreement -3.21 to 11.09 mmHg, proportional bias 0.0746); trends matched (-1.44 vs -1.41 mmHg/min, p=0.93); abrupt rises >=10 mmHg co-detected in 7/8 and drops in 10/15",
+      "caveat": "Small sample — 23 recordings from one region, so the wide limits of agreement are imprecisely estimated",
+      "bottomLine": "Hypothesis-generating",
+      "shortTitle": "Mainstream and sidestream capnography give different ETCO2",
+      "learningGoal": "Weigh how differences between mainstream and sidestream capnography affect my interpretation of EtCO2 trends during cardiac arrest."
+    },
+    {
+      "id": "10.1016/j.resplu.2026.101553",
+      "title": "Characteristics and experiences of community first responders in suspected out-of-hospital cardiac arrest: A survey of early adopters prior to local system implementation",
+      "journal": "Resuscitation Plus",
+      "date": "2026-11-08",
+      "pmid": "",
+      "doi": "10.1016/j.resplu.2026.101553",
+      "summary": "A cross-sectional survey of 2,704 registered community first responders in two Swedish regions before local system launch found most were CPR-trained and felt prepared (97.3%) but real dispatch experience was low (15.1% ever dispatched, 1.9% performed CPR).",
+      "relevance": "🟢 High — Community first responder schemes run in parts of Australia and the same readiness-versus-experience question applies wherever a new scheme launches.",
+      "featuredReason": "Community first responder schemes run in parts of Australia and the same readiness-versus-experience question applies wherever a new scheme launches.",
+      "pubDate": "2026-11",
+      "topic": "Cardiac arrest",
+      "studyType": "Cross-sectional",
+      "design": "Multicentre cross-sectional survey (two regions, pre-implementation)",
+      "n": "2,704 respondents of 14,141 registered first responders (19.1%)",
+      "finding": "84.3% had CPR training within two years and 97.3% felt prepared (both associated with healthcare/emergency background and recent training, p<0.001), yet only 15.1% had ever been dispatched, 2.8% arrived before EMS and 1.9% performed CPR",
+      "caveat": "Self-reported readiness in volunteers with almost no real-world dispatch experience; 19.1% response rate",
+      "bottomLine": "Hypothesis-generating",
+      "shortTitle": "Community first responders trained but rarely dispatched",
+      "learningGoal": "Understand how volunteer readiness and dispatch integration shape community responder impact in out-of-hospital cardiac arrest."
     }
   ],
   "funFacts": [
@@ -1019,57 +1019,134 @@
     }
   ],
   "funFact": {
-    "category": "pharmacology",
-    "fact": "Hydroxocobalamin for cyanide poisoning turns the patient's skin and urine bright red. It works by binding cyanide to form cyanocobalamin — vitamin B12 — which the kidneys just excrete. You're literally turning poison into a vitamin."
+    "category": "EMS",
+    "fact": "NSW Ambulance's Special Operations Team covers urban search and rescue, hazmat, and tactical medicine. They were hammered during the 2019 to 2020 Black Summer bushfires — one of the biggest deployments in the service's history."
   },
   "tldr": {
-    "date": "2026-11-07",
-    "paperCount": 5,
-    "summary": "A Danish registry of 1,531 children suggests serious opioid adverse effects after prehospital fentanyl are uncommon, though most kids arrived still in pain; a traumatic cardiac arrest framework and a US forecast of HDFN risk from prehospital blood round out a quiet day.",
+    "date": "2026-11-08",
+    "paperCount": 4,
+    "summary": "A device-measurement day: concurrent mainstream and sidestream capnography in OHCA showed a systematic ~4 mmHg gap, while a Swedish survey found community first responders feel ready despite almost none ever being dispatched.",
     "highlights": [
       {
-        "id": "10.1186/s13049-026-01723-0",
+        "id": "10.1016/j.resplu.2026.101554",
         "pmid": "",
-        "doi": "10.1186/s13049-026-01723-0",
-        "title": "Paediatric prehospital fentanyl: serious adverse effects rare",
-        "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
-        "note": "15.1% had at least one clinical sign compatible with opioid-related adverse effects; bradycardia 0.7%, respiratory depression 0.7%; no opioid antidote given; 63.6% in pain at arrival and 51% received further in-hospital analgesia."
-      },
-      {
-        "id": "10.1016/j.resplu.2026.101539",
-        "pmid": "",
-        "doi": "10.1016/j.resplu.2026.101539",
-        "title": "CARE framework for traumatic cardiac arrest",
+        "doi": "10.1016/j.resplu.2026.101554",
+        "title": "Mainstream and sidestream capnography give different ETCO2",
         "journal": "Resuscitation Plus",
-        "note": "Not reported — abstract not yet available."
+        "note": "Mainstream ETCO2 bias +3.94 mmHg vs sidestream (limits of agreement -3.21 to 11.09 mmHg, proportional bias 0.0746); trends matched (-1.44 vs -1.41 mmHg/min, p=0.93); abrupt rises >=10 mmHg co-detected in 7/8 and drops in 10/15"
       },
       {
-        "id": "42989699",
-        "pmid": "42989699",
-        "doi": "10.1111/trf.70478",
-        "title": "Forecast: prehospital transfusion growth and HDFN risk",
-        "journal": "Transfusion",
-        "note": "One HDFN case forecast every 0.5–20 years depending on region and model (base case: 0.5 years in the South, 20.0 in the Northeast)."
-      },
-      {
-        "id": "42991923",
-        "pmid": "42991923",
-        "doi": "10.1007/s40653-026-00975-3",
-        "title": "First responders notifying schools after child trauma",
-        "journal": "Journal of Child & Adolescent Trauma",
-        "note": "Significant gains in school staff trauma-informed attitudes; greater first-responder training exposure linked with lower burnout; disciplinary referrals decreased overall while in-school suspensions increased; attendance stable."
-      },
-      {
-        "id": "10.1016/j.resplu.2026.101556",
+        "id": "10.1016/j.resplu.2026.101553",
         "pmid": "",
-        "doi": "10.1016/j.resplu.2026.101556",
-        "title": "Layperson CPR: pocket mask versus face shield",
+        "doi": "10.1016/j.resplu.2026.101553",
+        "title": "Community first responders trained but rarely dispatched",
         "journal": "Resuscitation Plus",
-        "note": "Not reported — abstract not yet available."
+        "note": "84.3% had CPR training within two years and 97.3% felt prepared (both associated with healthcare/emergency background and recent training, p<0.001), yet only 15.1% had ever been dispatched, 2.8% arrived before EMS and 1.9% performed CPR"
+      },
+      {
+        "id": "10.1177/27536386261501034",
+        "pmid": "",
+        "doi": "10.1177/27536386261501034",
+        "title": "Mapping chest pain risk tools in ambulance care",
+        "journal": "Paramedicine",
+        "note": "Eight chest-pain risk-stratification tools were used or trialled in ambulance settings; HEART and its derivatives were the most frequently studied, with performance varying across settings and validation for ambulance use incomplete"
+      },
+      {
+        "id": "10.1016/j.resplu.2026.101555",
+        "pmid": "",
+        "doi": "10.1016/j.resplu.2026.101555",
+        "title": "AI in cardiac arrest: oversight may be symbolic",
+        "journal": "Resuscitation Plus",
+        "note": "No empirical data — proposes five policy measures including ecological trialling, designed-in explainability, defined escalation triggers and authority, and protection for justified deviation from AI recommendations"
       }
     ]
   },
   "dailyUpdates": [
+    {
+      "date": "2026-11-08",
+      "papers": [
+        {
+          "id": "10.1016/j.resplu.2026.101554",
+          "title": "Differences between Mainstream and Sidestream Capnography during Resuscitation",
+          "journal": "Resuscitation Plus",
+          "date": "2026-11-08",
+          "pmid": "",
+          "doi": "10.1016/j.resplu.2026.101554",
+          "summary": "A Spanish retrospective analysis of 23 OHCA recordings with concurrent mainstream and sidestream capnography found mainstream systematically recorded higher ETCO2 (bias 3.94 mmHg, limits of agreement -3.21 to 11.09 mmHg), though trends and abrupt rises/drops were consistently co-detected.",
+          "relevance": "🟢 High — ETCO2-guided CPR quality monitoring is standard practice on Australian ambulances, and the numbers crews chart or hand over at hospital depend on which technology the monitor uses.",
+          "pubDate": "2026-11",
+          "topic": "Cardiac arrest",
+          "studyType": "Cohort",
+          "design": "Retrospective device-comparison analysis of synchronized capnography waveforms",
+          "n": "23 OHCA recordings (3,460 paired ventilations)",
+          "finding": "Mainstream ETCO2 bias +3.94 mmHg vs sidestream (limits of agreement -3.21 to 11.09 mmHg, proportional bias 0.0746); trends matched (-1.44 vs -1.41 mmHg/min, p=0.93); abrupt rises >=10 mmHg co-detected in 7/8 and drops in 10/15",
+          "caveat": "Small sample — 23 recordings from one region, so the wide limits of agreement are imprecisely estimated",
+          "bottomLine": "Hypothesis-generating",
+          "shortTitle": "Mainstream and sidestream capnography give different ETCO2",
+          "learningGoal": "Weigh how differences between mainstream and sidestream capnography affect my interpretation of EtCO2 trends during cardiac arrest."
+        },
+        {
+          "id": "10.1016/j.resplu.2026.101553",
+          "title": "Characteristics and experiences of community first responders in suspected out-of-hospital cardiac arrest: A survey of early adopters prior to local system implementation",
+          "journal": "Resuscitation Plus",
+          "date": "2026-11-08",
+          "pmid": "",
+          "doi": "10.1016/j.resplu.2026.101553",
+          "summary": "A cross-sectional survey of 2,704 registered community first responders in two Swedish regions before local system launch found most were CPR-trained and felt prepared (97.3%) but real dispatch experience was low (15.1% ever dispatched, 1.9% performed CPR).",
+          "relevance": "🟢 High — Community first responder schemes run in parts of Australia and the same readiness-versus-experience question applies wherever a new scheme launches.",
+          "pubDate": "2026-11",
+          "topic": "Cardiac arrest",
+          "studyType": "Cross-sectional",
+          "design": "Multicentre cross-sectional survey (two regions, pre-implementation)",
+          "n": "2,704 respondents of 14,141 registered first responders (19.1%)",
+          "finding": "84.3% had CPR training within two years and 97.3% felt prepared (both associated with healthcare/emergency background and recent training, p<0.001), yet only 15.1% had ever been dispatched, 2.8% arrived before EMS and 1.9% performed CPR",
+          "caveat": "Self-reported readiness in volunteers with almost no real-world dispatch experience; 19.1% response rate",
+          "bottomLine": "Hypothesis-generating",
+          "shortTitle": "Community first responders trained but rarely dispatched",
+          "learningGoal": "Understand how volunteer readiness and dispatch integration shape community responder impact in out-of-hospital cardiac arrest."
+        },
+        {
+          "id": "10.1177/27536386261501034",
+          "title": "Chest pain risk-stratification tools used or trialled in Ambulance Health Service settings: A Scoping Review",
+          "journal": "Paramedicine",
+          "date": "2026-11-08",
+          "pmid": "",
+          "doi": "10.1177/27536386261501034",
+          "summary": "A scoping review of 27 articles mapped eight chest-pain risk-stratification tools used or trialled in ambulance settings, finding the HEART score and derivatives most studied but with varying and incomplete validation for ambulance use.",
+          "relevance": "🟡 Medium — Safely triaging chest pain without transport is an active question for Australian ambulance services, but the tools reviewed are mostly hospital-derived and inconsistently validated for prehospital use.",
+          "pubDate": "2026-11-07",
+          "topic": "Cardiac (non-arrest)",
+          "studyType": "Systematic review",
+          "design": "Scoping review (JBI methodology, PRISMA-ScR)",
+          "n": "27 articles, 8 risk-stratification tools",
+          "finding": "Eight chest-pain risk-stratification tools were used or trialled in ambulance settings; HEART and its derivatives were the most frequently studied, with performance varying across settings and validation for ambulance use incomplete",
+          "caveat": "Scoping review — descriptive mapping only, no pooled performance estimates",
+          "bottomLine": "Context only",
+          "shortTitle": "Mapping chest pain risk tools in ambulance care",
+          "learningGoal": "Compare chest pain risk-stratification tools and their validity for prehospital use to strengthen my cardiac triage decisions."
+        },
+        {
+          "id": "10.1016/j.resplu.2026.101555",
+          "title": "Human-in-the-Loop in AI-assisted Resuscitation Protocols: Conceptual Pitfalls and Practical Considerations",
+          "journal": "Resuscitation Plus",
+          "date": "2026-11-08",
+          "pmid": "",
+          "doi": "10.1016/j.resplu.2026.101555",
+          "summary": "A conceptual analysis of AI-assisted OHCA resuscitation protocols argues that time pressure, protocol-driven practice and ambiguous authority can turn human-in-the-loop oversight of AI recommendations into symbolic governance rather than real crew control.",
+          "relevance": "🟡 Medium — AI decision support is arriving in dispatch and clinical systems worldwide, and whether crews can meaningfully override it is a governance question every ambulance service will face.",
+          "pubDate": "2026-11",
+          "topic": "Cardiac arrest",
+          "studyType": "Other",
+          "design": "Conceptual/policy analysis (no empirical data)",
+          "n": "Not reported",
+          "finding": "No empirical data — proposes five policy measures including ecological trialling, designed-in explainability, defined escalation triggers and authority, and protection for justified deviation from AI recommendations",
+          "caveat": "Purely conceptual; no data on how crews actually behave with AI recommendations",
+          "bottomLine": "Context only",
+          "shortTitle": "AI in cardiac arrest: oversight may be symbolic",
+          "learningGoal": "Understand how authority, escalation triggers and justified deviation shape real oversight of AI-assisted resuscitation recommendations."
+        }
+      ]
+    },
     {
       "date": "2026-11-07",
       "papers": [
