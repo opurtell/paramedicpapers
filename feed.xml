@@ -25,6 +25,20 @@
     <itunes:explicit>false</itunes:explicit>
     <podcast:guid>09fa3693-e2ac-527c-9d1c-f68df149b888</podcast:guid>
     <item>
+      <title>Paramedic Papers Daily — 8 November 2026</title>
+      <link>https://paramedicpapers.com/episodes/2026-11-08/</link>
+      <description>4 papers: mainstream vs sidestream capnography; community first responders rarely dispatched; chest-pain risk tools in ambulance care; AI oversight in resuscitation may be symbolic</description>
+      <content:encoded><![CDATA[<p>4 papers: mainstream vs sidestream capnography; community first responders rarely dispatched; chest-pain risk tools in ambulance care; AI oversight in resuscitation may be symbolic</p><p>Papers in this episode:</p><ul><li><a href="https://doi.org/10.1016/j.resplu.2026.101554">Mainstream and sidestream capnography give different ETCO2 <em>(Resuscitation Plus)</em></a></li><li><a href="https://doi.org/10.1016/j.resplu.2026.101553">Community first responders trained but rarely dispatched <em>(Resuscitation Plus)</em></a></li><li><a href="https://doi.org/10.1177/27536386261501034">Mapping chest pain risk tools in ambulance care <em>(Paramedicine)</em></a></li><li><a href="https://doi.org/10.1016/j.resplu.2026.101555">AI in cardiac arrest: oversight may be symbolic <em>(Resuscitation Plus)</em></a></li></ul><p><a href="https://paramedicpapers.com/episodes/2026-11-08/">Show notes and transcript</a></p>]]></content:encoded>
+      <pubDate>Sun, 08 Nov 2026 07:36:18 +1100</pubDate>
+      <guid isPermaLink="false">https://audio.paramedicpapers.com/ep-2026-11-08.mp3</guid>
+      <enclosure url="https://op3.dev/e/audio.paramedicpapers.com/ep-2026-11-08.mp3" length="968492" type="audio/mpeg"/>
+      <itunes:duration>242</itunes:duration>
+      <itunes:summary>4 papers: mainstream vs sidestream capnography; community first responders rarely dispatched; chest-pain risk tools in ambulance care; AI oversight in resuscitation may be symbolic</itunes:summary>
+      <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
+      <itunes:episodeType>full</itunes:episodeType>
+      <podcast:transcript url="https://audio.paramedicpapers.com/ep-2026-11-08.txt" type="text/plain" language="en-au"/>
+    </item>
+    <item>
       <title>Paramedic Papers Daily — 7 November 2026</title>
       <link>https://paramedicpapers.com/episodes/2026-11-07/</link>
       <description>4 papers: paediatric prehospital fentanyl; CARE framework for traumatic cardiac arrest; prehospital transfusion and HDFN risk; first responders notifying schools after child trauma</description>
@@ -429,20 +443,6 @@
       <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
       <itunes:episodeType>full</itunes:episodeType>
       <podcast:transcript url="https://audio.paramedicpapers.com/ep-2026-10-10.txt" type="text/plain" language="en-au"/>
-    </item>
-    <item>
-      <title>Paramedic Papers Daily — 9 October 2026</title>
-      <link>https://paramedicpapers.com/episodes/2026-10-09/</link>
-      <description>4 papers: STEMI confirmation in 60% of suspected; bystander CPR up but outcomes flat in the very old; CPR injuries track long compressions; ice-water immersion wins for drug hyperthermia</description>
-      <content:encoded><![CDATA[<p>4 papers: STEMI confirmation in 60% of suspected; bystander CPR up but outcomes flat in the very old; CPR injuries track long compressions; ice-water immersion wins for drug hyperthermia</p><p>Papers in this episode:</p><ul><li><a href="https://doi.org/10.1016/j.annemergmed.2026.07.027">Only 60% of paramedic-suspected STEMI confirmed <em>(Annals of Emergency Medicine)</em></a></li><li><a href="https://doi.org/10.1016/j.resplu.2026.101525">Bystander CPR up but outcomes flat in the very old <em>(Resuscitation Plus)</em></a></li><li><a href="https://doi.org/10.1016/j.resplu.2026.101523">CPR injuries common after long arrests <em>(Resuscitation Plus)</em></a></li><li><a href="https://doi.org/10.1080/15563650.2026.2738599">Ice-water immersion wins for drug hyperthermia <em>(Clinical Toxicology)</em></a></li></ul><p><a href="https://paramedicpapers.com/episodes/2026-10-09/">Show notes and transcript</a></p>]]></content:encoded>
-      <pubDate>Fri, 09 Oct 2026 07:33:32 +1100</pubDate>
-      <guid isPermaLink="false">https://audio.paramedicpapers.com/ep-2026-10-09.mp3</guid>
-      <enclosure url="https://op3.dev/e/audio.paramedicpapers.com/ep-2026-10-09.mp3" length="1032332" type="audio/mpeg"/>
-      <itunes:duration>257</itunes:duration>
-      <itunes:summary>4 papers: STEMI confirmation in 60% of suspected; bystander CPR up but outcomes flat in the very old; CPR injuries track long compressions; ice-water immersion wins for drug hyperthermia</itunes:summary>
-      <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
-      <itunes:episodeType>full</itunes:episodeType>
-      <podcast:transcript url="https://audio.paramedicpapers.com/ep-2026-10-09.txt" type="text/plain" language="en-au"/>
     </item>
   </channel>
 </rss>
