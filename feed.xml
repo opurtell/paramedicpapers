@@ -25,6 +25,20 @@
     <itunes:explicit>false</itunes:explicit>
     <podcast:guid>09fa3693-e2ac-527c-9d1c-f68df149b888</podcast:guid>
     <item>
+      <title>Paramedic Papers Daily — 9 November 2026</title>
+      <link>https://paramedicpapers.com/episodes/2026-11-09/</link>
+      <description>3 papers: smart first-responder alerting vs fixed-radius alerts in OHCA; PEEP during CPR linked with more ROSC; ultrasound added to stroke scales for LVO triage</description>
+      <content:encoded><![CDATA[<p>3 papers: smart first-responder alerting vs fixed-radius alerts in OHCA; PEEP during CPR linked with more ROSC; ultrasound added to stroke scales for LVO triage</p><p>Papers in this episode:</p><ul><li><a href="https://doi.org/10.1161/jaha.126.051900">Smart first-responder alerting vs fixed-radius alerts in OHCA <em>(Journal of the American Heart Association)</em></a></li><li><a href="https://doi.org/10.1016/j.ajem.2026.10.026">PEEP during CPR linked with more ROSC <em>(The American Journal of Emergency Medicine)</em></a></li><li><a href="https://doi.org/10.3389/fneur.2026.1924664">Ultrasound added to stroke scales for LVO triage <em>(Frontiers in Neurology)</em></a></li></ul><p><a href="https://paramedicpapers.com/episodes/2026-11-09/">Show notes and transcript</a></p>]]></content:encoded>
+      <pubDate>Mon, 09 Nov 2026 07:32:21 +1100</pubDate>
+      <guid isPermaLink="false">https://audio.paramedicpapers.com/ep-2026-11-09.mp3</guid>
+      <enclosure url="https://op3.dev/e/audio.paramedicpapers.com/ep-2026-11-09.mp3" length="1028972" type="audio/mpeg"/>
+      <itunes:duration>257</itunes:duration>
+      <itunes:summary>3 papers: smart first-responder alerting vs fixed-radius alerts in OHCA; PEEP during CPR linked with more ROSC; ultrasound added to stroke scales for LVO triage</itunes:summary>
+      <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
+      <itunes:episodeType>full</itunes:episodeType>
+      <podcast:transcript url="https://audio.paramedicpapers.com/ep-2026-11-09.txt" type="text/plain" language="en-au"/>
+    </item>
+    <item>
       <title>Paramedic Papers Daily — 8 November 2026</title>
       <link>https://paramedicpapers.com/episodes/2026-11-08/</link>
       <description>4 papers: mainstream vs sidestream capnography; community first responders rarely dispatched; chest-pain risk tools in ambulance care; AI oversight in resuscitation may be symbolic</description>
@@ -429,20 +443,6 @@
       <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
       <itunes:episodeType>full</itunes:episodeType>
       <podcast:transcript url="https://audio.paramedicpapers.com/ep-2026-10-11.txt" type="text/plain" language="en-au"/>
-    </item>
-    <item>
-      <title>Paramedic Papers Daily — 10 October 2026</title>
-      <link>https://paramedicpapers.com/episodes/2026-10-10/</link>
-      <description>4 papers: ITDs in OHCA: early wins, late losses; Paediatric OHCA in Australia and NZ: Aus-ROC report; Unwitnessed arrests: mostly women, mostly at home; Redirecting non-urgent patients to primary care looks safe</description>
-      <content:encoded><![CDATA[<p>4 papers: ITDs in OHCA: early wins, late losses; Paediatric OHCA in Australia and NZ: Aus-ROC report; Unwitnessed arrests: mostly women, mostly at home; Redirecting non-urgent patients to primary care looks safe</p><p>Papers in this episode:</p><ul><li><a href="https://doi.org/10.1016/j.resuscitation.2026.111340">ITDs in OHCA: early wins, late losses <em>(Resuscitation)</em></a></li><li><a href="https://doi.org/10.1016/j.resuscitation.2026.111347">Paediatric OHCA in Australia and NZ: Aus-ROC report <em>(Resuscitation)</em></a></li><li><a href="https://doi.org/10.1016/j.hrtlng.2026.102970">Unwitnessed arrests: mostly women, mostly at home <em>(Heart &amp; Lung)</em></a></li><li><a href="https://doi.org/10.1111/1742-6723.70361">Redirecting non-urgent patients to primary care looks safe <em>(Emergency Medicine Australasia)</em></a></li></ul><p><a href="https://paramedicpapers.com/episodes/2026-10-10/">Show notes and transcript</a></p>]]></content:encoded>
-      <pubDate>Sat, 10 Oct 2026 07:33:23 +1100</pubDate>
-      <guid isPermaLink="false">https://audio.paramedicpapers.com/ep-2026-10-10.mp3</guid>
-      <enclosure url="https://op3.dev/e/audio.paramedicpapers.com/ep-2026-10-10.mp3" length="995469" type="audio/mpeg"/>
-      <itunes:duration>248</itunes:duration>
-      <itunes:summary>4 papers: ITDs in OHCA: early wins, late losses; Paediatric OHCA in Australia and NZ: Aus-ROC report; Unwitnessed arrests: mostly women, mostly at home; Redirecting non-urgent patients to primary care looks safe</itunes:summary>
-      <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
-      <itunes:episodeType>full</itunes:episodeType>
-      <podcast:transcript url="https://audio.paramedicpapers.com/ep-2026-10-10.txt" type="text/plain" language="en-au"/>
     </item>
   </channel>
 </rss>
