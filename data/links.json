@@ -1,28 +1,34 @@
 {
- "updated": "2026-11-06",
+ "updated": "2026-11-08",
  "latest": [
   {
-   "key": "42981768",
-   "title": "Layperson naloxone linked to fewer EMS interventions",
-   "topic": "Toxicology",
-   "finding": "Layperson naloxone preceded 30.7% of activations; any subsequent EMS naloxone 24.4% vs 34.8% (aOR 0.73, 95% CI 0.68–0.78) and transport 79.4% vs 84.4% (aOR 0.78, 95% CI 0.73–0.84); advanced airway attempts (1.6% vs 1.4%) and cardiac arrest (6.6% vs 6.0%) uncommon in both groups."
-  },
-  {
-   "key": "42982428",
-   "title": "Physiology-based traumatic shock pathway rolled out",
-   "topic": "Trauma",
-   "finding": "Shocked patients had markedly higher ED mortality (6.8% vs 0.4%); favourable ratings of trauma bay equipment rose from about one-quarter to 87.0%, with 85.2–88.9% favourability for timely life-saving interventions, pathway embedding and role confidence."
-  },
-  {
-   "key": "doi-10-1016-j-resplu-2026-101547",
-   "title": "Long-term life after ECPR for cardiac arrest",
+   "key": "doi-10-1016-j-resplu-2026-101554",
+   "title": "Mainstream and sidestream capnography give different ETCO2",
    "topic": "Cardiac arrest",
-   "finding": "63/406 (16%) discharged alive; at median 3.1 years 61% were alive, 82% with favourable neurology, and only 1.7% of all treated were alive with poor neurology; mild cognitive impairment in 6/16 survivors, poor sleep in 10/17, anxiety symptoms more common in caregivers (6/18 vs 1/17)."
+   "finding": "Mainstream ETCO2 bias +3.94 mmHg vs sidestream (limits of agreement -3.21 to 11.09 mmHg, proportional bias 0.0746); trends matched (-1.44 vs -1.41 mmHg/min, p=0.93); abrupt rises >=10 mmHg co-detected in 7/8 and drops in 10/15"
+  },
+  {
+   "key": "doi-10-1016-j-resplu-2026-101553",
+   "title": "Community first responders trained but rarely dispatched",
+   "topic": "Cardiac arrest",
+   "finding": "84.3% had CPR training within two years and 97.3% felt prepared (both associated with healthcare/emergency background and recent training, p<0.001), yet only 15.1% had ever been dispatched, 2.8% arrived before EMS and 1.9% performed CPR"
+  },
+  {
+   "key": "doi-10-1177-27536386261501034",
+   "title": "Mapping chest pain risk tools in ambulance care",
+   "topic": "Cardiac (non-arrest)",
+   "finding": "Eight chest-pain risk-stratification tools were used or trialled in ambulance settings; HEART and its derivatives were the most frequently studied, with performance varying across settings and validation for ambulance use incomplete"
+  },
+  {
+   "key": "doi-10-1016-j-resplu-2026-101555",
+   "title": "AI in cardiac arrest: oversight may be symbolic",
+   "topic": "Cardiac arrest",
+   "finding": "No empirical data — proposes five policy measures including ecological trialling, designed-in explainability, defined escalation triggers and authority, and protection for justified deviation from AI recommendations"
   }
  ],
  "episode": {
-  "date": "2026-11-06",
-  "title": "Paramedic Papers Daily — 6 November 2026",
-  "page": "/episodes/2026-11-06/"
+  "date": "2026-11-08",
+  "title": "Paramedic Papers Daily — 8 November 2026",
+  "page": "/episodes/2026-11-08/"
  }
 }
