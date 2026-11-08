@@ -1,5 +1,17 @@
 [
  {
+  "id": "sgem",
+  "name": "The Skeptics' Guide to EM",
+  "publisher": "Dr Ken Milne",
+  "focus": "Critical appraisal of recent emergency medicine papers",
+  "region": "Canada",
+  "site": "https://thesgem.com",
+  "art": "data/podcasts/art/sgem.jpg",
+  "episodes": 112,
+  "latest": "2026-11-07",
+  "updated": "2026-11-08"
+ },
+ {
   "id": "ecritcare",
   "name": "eCritCare",
   "publisher": "Dr Swapnil Pawar & Dr Jose Chacko",
@@ -82,18 +94,6 @@
   "episodes": 291,
   "latest": "2026-11-01",
   "updated": "2026-11-01"
- },
- {
-  "id": "sgem",
-  "name": "The Skeptics' Guide to EM",
-  "publisher": "Dr Ken Milne",
-  "focus": "Critical appraisal of recent emergency medicine papers",
-  "region": "Canada",
-  "site": "https://thesgem.com",
-  "art": "data/podcasts/art/sgem.jpg",
-  "episodes": 111,
-  "latest": "2026-10-31",
-  "updated": "2026-11-02"
  },
  {
   "id": "emcrit",
