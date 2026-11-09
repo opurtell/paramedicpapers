@@ -25,6 +25,20 @@
     <itunes:explicit>false</itunes:explicit>
     <podcast:guid>09fa3693-e2ac-527c-9d1c-f68df149b888</podcast:guid>
     <item>
+      <title>Paramedic Papers Daily — 10 November 2026</title>
+      <link>https://paramedicpapers.com/episodes/2026-11-10/</link>
+      <description>3 papers: Prehospital ECPR linked to doubled arrest survival; Big community arrest programme didn't change survival; Intubation linked to more ROSC in OHCA registry</description>
+      <content:encoded><![CDATA[<p>3 papers: Prehospital ECPR linked to doubled arrest survival; Big community arrest programme didn't change survival; Intubation linked to more ROSC in OHCA registry</p><p>Papers in this episode:</p><ul><li><a href="https://doi.org/10.1056/NEJMoa2602919">Prehospital ECPR linked to doubled arrest survival <em>(The New England Journal of Medicine)</em></a></li><li><a href="https://doi.org/10.1056/NEJMoa2612757">Big community arrest programme didn't change survival <em>(The New England Journal of Medicine)</em></a></li><li><a href="https://doi.org/10.1186/s12873-026-01718-1">Intubation linked to more ROSC in OHCA registry <em>(BMC Emergency Medicine)</em></a></li></ul><p><a href="https://paramedicpapers.com/episodes/2026-11-10/">Show notes and transcript</a></p>]]></content:encoded>
+      <pubDate>Tue, 10 Nov 2026 07:32:18 +1100</pubDate>
+      <guid isPermaLink="false">https://audio.paramedicpapers.com/ep-2026-11-10.mp3</guid>
+      <enclosure url="https://op3.dev/e/audio.paramedicpapers.com/ep-2026-11-10.mp3" length="869228" type="audio/mpeg"/>
+      <itunes:duration>217</itunes:duration>
+      <itunes:summary>3 papers: Prehospital ECPR linked to doubled arrest survival; Big community arrest programme didn't change survival; Intubation linked to more ROSC in OHCA registry</itunes:summary>
+      <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
+      <itunes:episodeType>full</itunes:episodeType>
+      <podcast:transcript url="https://audio.paramedicpapers.com/ep-2026-11-10.txt" type="text/plain" language="en-au"/>
+    </item>
+    <item>
       <title>Paramedic Papers Daily — 9 November 2026</title>
       <link>https://paramedicpapers.com/episodes/2026-11-09/</link>
       <description>3 papers: smart first-responder alerting vs fixed-radius alerts in OHCA; PEEP during CPR linked with more ROSC; ultrasound added to stroke scales for LVO triage</description>
@@ -429,20 +443,6 @@
       <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
       <itunes:episodeType>full</itunes:episodeType>
       <podcast:transcript url="https://audio.paramedicpapers.com/ep-2026-10-12.txt" type="text/plain" language="en-au"/>
-    </item>
-    <item>
-      <title>Paramedic Papers Daily — 11 October 2026</title>
-      <link>https://paramedicpapers.com/episodes/2026-10-11/</link>
-      <description>4 papers: Prehospital TXA helps fibrinolytic shutdown; Opioid OHCA outcomes similar to other arrests; Three post-ROSC lab phenotypes predict outcome; Prehospital variables can't pick pelvic binder benefit</description>
-      <content:encoded><![CDATA[<p>4 papers: Prehospital TXA helps fibrinolytic shutdown; Opioid OHCA outcomes similar to other arrests; Three post-ROSC lab phenotypes predict outcome; Prehospital variables can't pick pelvic binder benefit</p><p>Papers in this episode:</p><ul><li><a href="https://doi.org/10.1097/TA.0000000000005092">Prehospital TXA helps fibrinolytic shutdown <em>(The Journal of Trauma and Acute Care Surgery)</em></a></li><li><a href="https://doi.org/10.1016/j.resuscitation.2026.111352">Opioid OHCA outcomes similar to other arrests <em>(Resuscitation)</em></a></li><li><a href="https://doi.org/10.1016/j.resuscitation.2026.111351">Three post-ROSC lab phenotypes predict outcome <em>(Resuscitation)</em></a></li><li><a href="https://doi.org/10.1177/00031348261494137">Prehospital variables can't pick pelvic binder benefit <em>(The American Surgeon)</em></a></li></ul><p><a href="https://paramedicpapers.com/episodes/2026-10-11/">Show notes and transcript</a></p>]]></content:encoded>
-      <pubDate>Sun, 11 Oct 2026 07:33:21 +1100</pubDate>
-      <guid isPermaLink="false">https://audio.paramedicpapers.com/ep-2026-10-11.mp3</guid>
-      <enclosure url="https://op3.dev/e/audio.paramedicpapers.com/ep-2026-10-11.mp3" length="1008812" type="audio/mpeg"/>
-      <itunes:duration>252</itunes:duration>
-      <itunes:summary>4 papers: Prehospital TXA helps fibrinolytic shutdown; Opioid OHCA outcomes similar to other arrests; Three post-ROSC lab phenotypes predict outcome; Prehospital variables can't pick pelvic binder benefit</itunes:summary>
-      <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
-      <itunes:episodeType>full</itunes:episodeType>
-      <podcast:transcript url="https://audio.paramedicpapers.com/ep-2026-10-11.txt" type="text/plain" language="en-au"/>
     </item>
   </channel>
 </rss>
