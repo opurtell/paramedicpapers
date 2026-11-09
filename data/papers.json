@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-11-08T20:20:11Z",
-  "lastUpdatedSydney": "2026-11-09 07:20 AEDT",
-  "lastUpdatedDate": "2026-11-09",
+  "lastUpdated": "2026-11-09T20:20:11Z",
+  "lastUpdatedSydney": "2026-11-10 07:20 AEDT",
+  "lastUpdatedDate": "2026-11-10",
   "featuredPapers": [
     {
       "id": "10.1016/j.resplu.2026.101556",
@@ -1019,41 +1019,106 @@
     }
   ],
   "funFact": {
-    "category": "cardiac",
-    "fact": "Takotsubo cardiomyopathy — broken heart syndrome — looks exactly like a STEMI with ST elevation and troponin rise. But the coronaries are clean. The apex balloons out from catecholamine stunning, usually triggered by severe emotional stress. The heart can literally break."
+    "category": "pathophysiology",
+    "fact": "Hyperkalaemia progresses from peaked T-waves to widened QRS to a sine-wave pattern to asystole. The dialysis patient who missed their session and has a K+ over 6.5? That's a 'treat right now' emergency, not a 'monitor and see' situation."
   },
   "tldr": {
-    "date": "2026-11-09",
+    "date": "2026-11-10",
     "paperCount": 3,
-    "summary": "A German RCT found smart first-responder alerting beat a small fixed radius for arriving before EMS but added nothing over a simple large radius; a Belgian cohort linked PEEP during CPR with higher odds of ROSC.",
+    "summary": "Two NEJM cardiac arrest studies lead the day: prehospital ECPR in the Netherlands was linked to doubled survival in refractory arrest, while a large US cluster-randomised trial of community and EMS interventions found no survival gain.",
     "highlights": [
       {
-        "id": "42998307",
-        "pmid": "42998307",
-        "doi": "10.1161/jaha.126.051900",
-        "title": "Smart first-responder alerting vs fixed-radius alerts in OHCA",
-        "journal": "Journal of the American Heart Association",
-        "note": "CFR arrived before EMS in 58% (smart alerting), 57% (2500 m) and 31% (600 m); smart alerting vs 600 m risk difference +26.8% (95% CI 18.6–34.4), vs 2500 m +1.2% (95% CI −7.0 to +9.3, p=0.80)"
+        "id": "43001740",
+        "pmid": "43001740",
+        "doi": "10.1056/NEJMoa2602919",
+        "title": "Prehospital ECPR linked to doubled arrest survival",
+        "journal": "The New England Journal of Medicine",
+        "note": "Survival to discharge 40% with ECPR vs 20% without (OR 2.72, 95% CI 1.59–4.66); favourable neurological outcome at 6 months 36% vs 13% (OR 4.22, 95% CI 2.82–6.32); 32 adverse events with ECPR vs 11"
       },
       {
-        "id": "42987442",
-        "pmid": "42987442",
-        "doi": "10.1016/j.ajem.2026.10.026",
-        "title": "PEEP during CPR linked with more ROSC",
-        "journal": "The American Journal of Emergency Medicine",
-        "note": "Adjusted OR for ROSC with mechanical ventilation using PEEP 1.58 (95% CI 1.01–2.50, p=0.048); unadjusted OR for survival to hospital discharge 2.22 (95% CI 1.03–4.78)"
+        "id": "43001758",
+        "pmid": "43001758",
+        "doi": "10.1056/NEJMoa2612757",
+        "title": "Big community arrest programme didn't change survival",
+        "journal": "The New England Journal of Medicine",
+        "note": "Survival to discharge with good neurological outcome 9.0% (intervention) vs 9.4% (usual care), adjusted OR 0.97, 95% CI 0.75–1.26, P = 0.80"
       },
       {
-        "id": "42996178",
-        "pmid": "42996178",
-        "doi": "10.3389/fneur.2026.1924664",
-        "title": "Ultrasound added to stroke scales for LVO triage",
-        "journal": "Frontiers in Neurology",
-        "note": "Combining brain perfusion ultrasound with prehospital stroke scales shifted sensitivity and negative predictive value higher and reclassified all patients misdiagnosed by either method alone; three prehospital-ICH false positives showed severe perfusion deficits suggesting LVO"
+        "id": "43000245",
+        "pmid": "43000245",
+        "doi": "10.1186/s12873-026-01718-1",
+        "title": "Intubation linked to more ROSC in OHCA registry",
+        "journal": "BMC Emergency Medicine",
+        "note": "ROSC 21.1% with intubation vs 3.8% with basic airway (multivariable OR 7.61, propensity-matched OR 6.33); the unadjusted association was not significant in the shockable-rhythm stratum"
       }
     ]
   },
   "dailyUpdates": [
+    {
+      "date": "2026-11-10",
+      "papers": [
+        {
+          "id": "43001740",
+          "title": "Prehospital Extracorporeal Life Support in Refractory Out-of-Hospital Cardiac Arrest",
+          "journal": "The New England Journal of Medicine",
+          "date": "2026-11-10",
+          "pmid": "43001740",
+          "doi": "10.1056/NEJMoa2602919",
+          "summary": "A nationwide Dutch study compared HEMS with prehospital ECPR against conventional HEMS in adults 50 or younger with refractory out-of-hospital cardiac arrest and found 40% survival to discharge with ECPR versus 20% without, with better neurological outcomes at 6 months.",
+          "relevance": "🟡 Medium — Prehospital ECPR runs from physician-staffed helicopter services — an intensive care tier well beyond Australian road practice — so this informs where the evidence is heading rather than what crews do today.",
+          "pubDate": "2026-11-07",
+          "topic": "Cardiac arrest",
+          "studyType": "Cohort",
+          "design": "Nationwide nonrandomised comparative cohort (OnScene, Netherlands)",
+          "n": "231 adults ≤ 50 with refractory OHCA (144 ECPR-capable HEMS vs 87 conventional)",
+          "finding": "Survival to discharge 40% with ECPR vs 20% without (OR 2.72, 95% CI 1.59–4.66); favourable neurological outcome at 6 months 36% vs 13% (OR 4.22, 95% CI 2.82–6.32); 32 adverse events with ECPR vs 11",
+          "caveat": "Not randomised — patients attended by ECPR-capable HEMS may differ systematically, and the ECPR group had nearly three times the adverse events",
+          "bottomLine": "Hypothesis-generating",
+          "shortTitle": "Prehospital ECPR linked to doubled arrest survival",
+          "learningGoal": "Weigh the benefits and harms of prehospital ECPR for young adults in refractory cardiac arrest."
+        },
+        {
+          "id": "43001758",
+          "title": "Community and EMS Interventions to Improve Survival in Cardiac Arrest",
+          "journal": "The New England Journal of Medicine",
+          "date": "2026-11-10",
+          "pmid": "43001758",
+          "doi": "10.1056/NEJMoa2612757",
+          "summary": "A cluster-randomised trial across 55 North Carolina county clusters (22,459 patients with out-of-hospital cardiac arrest) found a multifaceted community and EMS programme did not improve survival with good neurological outcome (9.0% vs 9.4%).",
+          "relevance": "🟢 High — Dispatch recognition, telephone CPR instructions, community CPR training and first-responder AED use are core parts of Australian systems, and this is a large cluster-randomised trial with a clear null result.",
+          "pubDate": "2026-11-08",
+          "topic": "Cardiac arrest",
+          "studyType": "RCT",
+          "design": "Registry-based cluster-randomised trial (CARES registry, North Carolina)",
+          "n": "22,459 adults with OHCA across 55 county clusters",
+          "finding": "Survival to discharge with good neurological outcome 9.0% (intervention) vs 9.4% (usual care), adjusted OR 0.97, 95% CI 0.75–1.26, P = 0.80",
+          "caveat": "The intervention bundled four components, so it can't show whether one element — such as telecommunicator CPR instructions — underperformed",
+          "bottomLine": "Supports current practice",
+          "shortTitle": "Big community arrest programme didn't change survival",
+          "learningGoal": "Weigh how bundled community and EMS resuscitation interventions influence survival outcomes in out-of-hospital cardiac arrest."
+        },
+        {
+          "id": "43000245",
+          "title": "Prehospital endotracheal intubation and return of spontaneous circulation in out-of-hospital cardiac arrest patients: a retrospective cohort study based on prehospital emergency registry data",
+          "journal": "BMC Emergency Medicine",
+          "date": "2026-11-10",
+          "pmid": "43000245",
+          "doi": "10.1186/s12873-026-01718-1",
+          "summary": "A Chinese regional EMS registry cohort of 6,162 adult non-traumatic out-of-hospital cardiac arrest patients found prehospital endotracheal intubation associated with more prehospital ROSC than basic airways (21.1% vs 3.8%, propensity-matched OR 6.33).",
+          "relevance": "🟡 Medium — A physician-staffed Chinese system where on-scene doctors chose the airway; intubation is an intensive care paramedic skill in most Australian services, and the association almost certainly reflects who was selected for a tube.",
+          "pubDate": "2026-08-11",
+          "topic": "Airway & ventilation",
+          "studyType": "Cohort",
+          "design": "Retrospective registry cohort with propensity-score matching",
+          "n": "6,162 adults with non-traumatic OHCA (1,448 intubated vs 4,714 basic airway)",
+          "finding": "ROSC 21.1% with intubation vs 3.8% with basic airway (multivariable OR 7.61, propensity-matched OR 6.33); the unadjusted association was not significant in the shockable-rhythm stratum",
+          "caveat": "Airway strategy was chosen by on-scene physicians, so sicker or different patients were selected for intubation, and the registry had no long-term survival or neurological data",
+          "bottomLine": "Hypothesis-generating",
+          "shortTitle": "Intubation linked to more ROSC in OHCA registry",
+          "learningGoal": "Weigh advanced airway management against basic airway techniques when managing cardiac arrest in the Australian prehospital setting."
+        }
+      ]
+    },
     {
       "date": "2026-11-09",
       "papers": [
