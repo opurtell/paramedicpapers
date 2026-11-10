@@ -1,34 +1,28 @@
 {
- "updated": "2026-11-08",
+ "updated": "2026-11-10",
  "latest": [
   {
-   "key": "doi-10-1016-j-resplu-2026-101554",
-   "title": "Mainstream and sidestream capnography give different ETCO2",
+   "key": "43001758",
+   "title": "Big community arrest programme didn't change survival",
    "topic": "Cardiac arrest",
-   "finding": "Mainstream ETCO2 bias +3.94 mmHg vs sidestream (limits of agreement -3.21 to 11.09 mmHg, proportional bias 0.0746); trends matched (-1.44 vs -1.41 mmHg/min, p=0.93); abrupt rises >=10 mmHg co-detected in 7/8 and drops in 10/15"
+   "finding": "Survival to discharge with good neurological outcome 9.0% (intervention) vs 9.4% (usual care), adjusted OR 0.97, 95% CI 0.75–1.26, P = 0.80"
   },
   {
-   "key": "doi-10-1016-j-resplu-2026-101553",
-   "title": "Community first responders trained but rarely dispatched",
+   "key": "43001740",
+   "title": "Prehospital Extracorporeal Life Support",
    "topic": "Cardiac arrest",
-   "finding": "84.3% had CPR training within two years and 97.3% felt prepared (both associated with healthcare/emergency background and recent training, p<0.001), yet only 15.1% had ever been dispatched, 2.8% arrived before EMS and 1.9% performed CPR"
+   "finding": "Survival to discharge 40% with ECPR vs 20% without (OR 2.72, 95% CI 1.59–4.66); favourable neurological outcome at 6 months 36% vs 13% (OR 4.22, 95% CI 2.82–6.32); 32 adverse events with ECPR vs 11"
   },
   {
-   "key": "doi-10-1177-27536386261501034",
-   "title": "Mapping chest pain risk tools in ambulance care",
-   "topic": "Cardiac (non-arrest)",
-   "finding": "Eight chest-pain risk-stratification tools were used or trialled in ambulance settings; HEART and its derivatives were the most frequently studied, with performance varying across settings and validation for ambulance use incomplete"
-  },
-  {
-   "key": "doi-10-1016-j-resplu-2026-101555",
-   "title": "AI in cardiac arrest: oversight may be symbolic",
-   "topic": "Cardiac arrest",
-   "finding": "No empirical data — proposes five policy measures including ecological trialling, designed-in explainability, defined escalation triggers and authority, and protection for justified deviation from AI recommendations"
+   "key": "43000245",
+   "title": "Intubation linked to more ROSC in OHCA registry",
+   "topic": "Airway & ventilation",
+   "finding": "ROSC 21.1% with intubation vs 3.8% with basic airway (multivariable OR 7.61, propensity-matched OR 6.33); the unadjusted association was not significant in the shockable-rhythm stratum"
   }
  ],
  "episode": {
-  "date": "2026-11-08",
-  "title": "Paramedic Papers Daily — 8 November 2026",
-  "page": "/episodes/2026-11-08/"
+  "date": "2026-11-10",
+  "title": "Paramedic Papers Daily — 10 November 2026",
+  "page": "/episodes/2026-11-10/"
  }
 }
