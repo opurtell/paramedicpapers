@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-11-09T20:20:11Z",
-  "lastUpdatedSydney": "2026-11-10 07:20 AEDT",
-  "lastUpdatedDate": "2026-11-10",
+  "lastUpdated": "2026-11-10T20:20:11Z",
+  "lastUpdatedSydney": "2026-11-11 07:20 AEDT",
+  "lastUpdatedDate": "2026-11-11",
   "featuredPapers": [
     {
       "id": "10.1016/j.resplu.2026.101556",
@@ -1019,41 +1019,218 @@
     }
   ],
   "funFact": {
-    "category": "pathophysiology",
-    "fact": "Hyperkalaemia progresses from peaked T-waves to widened QRS to a sine-wave pattern to asystole. The dialysis patient who missed their session and has a K+ over 6.5? That's a 'treat right now' emergency, not a 'monitor and see' situation."
+    "category": "pharmacology",
+    "fact": "Methanol and ethanol compete for the same enzyme — alcohol dehydrogenase — but methanol produces formic acid, which causes blindness. Fomepizole blocks the enzyme entirely, giving the kidneys time to excrete methanol unchanged. We block the poison by blocking its metabolism."
   },
   "tldr": {
-    "date": "2026-11-10",
-    "paperCount": 3,
-    "summary": "Two NEJM cardiac arrest studies lead the day: prehospital ECPR in the Netherlands was linked to doubled survival in refractory arrest, while a large US cluster-randomised trial of community and EMS interventions found no survival gain.",
+    "date": "2026-11-11",
+    "paperCount": 7,
+    "summary": "Quiet clinical day, led by the first 12 months of Sydney's COAST registry: 257 shocked major trauma patients, 53% given prehospital blood and 21% dead at 30 days. Also French prehospital capillary troponin and a UK review showing bystander CPR up but AED use flat.",
     "highlights": [
       {
-        "id": "43001740",
-        "pmid": "43001740",
-        "doi": "10.1056/NEJMoa2602919",
-        "title": "Prehospital ECPR linked to doubled arrest survival",
-        "journal": "The New England Journal of Medicine",
-        "note": "Survival to discharge 40% with ECPR vs 20% without (OR 2.72, 95% CI 1.59–4.66); favourable neurological outcome at 6 months 36% vs 13% (OR 4.22, 95% CI 2.82–6.32); 32 adverse events with ECPR vs 11"
+        "id": "43004811",
+        "pmid": "43004811",
+        "doi": "10.1111/1742-6723.70388",
+        "title": "Sydney COAST registry: trauma shock first year",
+        "journal": "Emergency Medicine Australasia",
+        "note": "Hypotension was the shock criterion in 90%; 53% received prehospital blood, 31% needed interventional haemorrhage control, 74% in-hospital transfusion; median ISS 27; mortality 4.7% at 4 hours, 9% at 24 hours, 21% at 30 days"
       },
       {
-        "id": "43001758",
-        "pmid": "43001758",
-        "doi": "10.1056/NEJMoa2612757",
-        "title": "Big community arrest programme didn't change survival",
-        "journal": "The New England Journal of Medicine",
-        "note": "Survival to discharge with good neurological outcome 9.0% (intervention) vs 9.4% (usual care), adjusted OR 0.97, 95% CI 0.75–1.26, P = 0.80"
+        "id": "43007266",
+        "pmid": "43007266",
+        "doi": "10.1097/mej.0000000000001391",
+        "title": "Roadside capillary troponin for chest pain",
+        "journal": "European Journal of Emergency Medicine",
+        "note": "Diagnostic performance expressed as AUC with 95% CIs against predefined thresholds; the indexed abstract's main-results section carries no numbers"
       },
       {
-        "id": "43000245",
-        "pmid": "43000245",
-        "doi": "10.1186/s12873-026-01718-1",
-        "title": "Intubation linked to more ROSC in OHCA registry",
-        "journal": "BMC Emergency Medicine",
-        "note": "ROSC 21.1% with intubation vs 3.8% with basic airway (multivariable OR 7.61, propensity-matched OR 6.33); the unadjusted association was not significant in the shockable-rhythm stratum"
+        "id": "10.12968/jpar.2025.0119",
+        "pmid": "",
+        "doi": "10.12968/jpar.2025.0119",
+        "title": "UK bystander CPR up, AED use flat",
+        "journal": "Journal of Paramedic Practice",
+        "note": "Bystander CPR rates increased in England and Scotland; AED use in OHCA showed little improvement; intervention rates varied with demographics and socioeconomic factors"
+      },
+      {
+        "id": "43007262",
+        "pmid": "43007262",
+        "doi": "10.1097/SIH.0000000000000982",
+        "title": "AR-guided FAST training sped up students",
+        "journal": "Simulation in Healthcare",
+        "note": "Median total FAST time fell 263.5 s (95% CI 177–352.5, P<0.001); Task-Specific Checklist and Global Rating Scale scores both improved (P<0.001); no time gain in the Douglas pouch view"
+      },
+      {
+        "id": "43003391",
+        "pmid": "43003391",
+        "doi": "10.1111/1742-6723.70392",
+        "title": "Fibrinogen concentrate supply grows in Queensland",
+        "journal": "Emergency Medicine Australasia",
+        "note": "97.0% of supply went to 54 hospitals, 2.0% to retrieval services and 1.0% to ambulance services; 66.2% went to major trauma services and 92.9% to viscoelastic-assay-capable hospitals; population-adjusted supply rose from 8.19 to 59.2 g per 100,000 (2016–2025)"
+      },
+      {
+        "id": "10.12968/jpar.2026.0027",
+        "pmid": "",
+        "doi": "10.12968/jpar.2026.0027",
+        "title": "Paramedic and midwifery students train together",
+        "journal": "Journal of Paramedic Practice",
+        "note": "Students reported improved understanding of professional roles, increased confidence and better appreciation of collaborative decision-making; the student-led format fostered psychological safety"
+      },
+      {
+        "id": "43005089",
+        "pmid": "43005089",
+        "doi": "10.3389/fpsyg.2026.1909957",
+        "title": "Autonomy and support, not workload, drive flourishing",
+        "journal": "Frontiers in Psychology",
+        "note": "Three capability sets emerged (weak 48%, constrained 30%, robust 22%); emotional demands correlated negatively with capability and flourishing, while autonomy and co-worker support differentiated the groups and job demands did not"
       }
     ]
   },
   "dailyUpdates": [
+    {
+      "date": "2026-11-11",
+      "papers": [
+        {
+          "id": "43004811",
+          "title": "Prospective Observational Study Assessing Patient Characteristics, Management and Early Outcomes of Major Trauma Patients With Prehospital Shock. A preliminary report of the Sydney COAST study",
+          "journal": "Emergency Medicine Australasia",
+          "date": "2026-11-11",
+          "pmid": "43004811",
+          "doi": "10.1111/1742-6723.70388",
+          "summary": "An Australian prospective multicentre registry enrolled 257 adults with prehospital trauma shock over 12 months in Sydney, finding hypotension drove 90% of shock definitions, 53% received prehospital blood, and mortality was 4.7% at 4 hours and 21% at 30 days.",
+          "relevance": "🟡 Medium — Australian data, but the prehospital blood that half these patients got is limited to a few Australian services — the shock epidemiology travels nationally, the blood component doesn't yet",
+          "pubDate": "2026-11-09",
+          "topic": "Trauma",
+          "studyType": "Registry",
+          "design": "Prospective multicentre registry, first 12 months (prehospital medical teams)",
+          "n": "257 adults with prehospital trauma shock",
+          "finding": "Hypotension was the shock criterion in 90%; 53% received prehospital blood, 31% needed interventional haemorrhage control, 74% in-hospital transfusion; median ISS 27; mortality 4.7% at 4 hours, 9% at 24 hours, 21% at 30 days",
+          "caveat": "Preliminary descriptive report — no outcome comparisons, and not all shocked patients had haemorrhage",
+          "bottomLine": "Context only",
+          "shortTitle": "Sydney COAST registry: trauma shock first year",
+          "learningGoal": "Strengthen my recognition of occult shock in major trauma patients who are not yet hypotensive."
+        },
+        {
+          "id": "43007266",
+          "title": "Diagnostic accuracy of prehospital capillary high-sensitivity cardiac troponin I in patients with acute chest pain: the prospective multicenter VALIDATE study",
+          "journal": "European Journal of Emergency Medicine",
+          "date": "2026-11-11",
+          "pmid": "43007266",
+          "doi": "10.1097/mej.0000000000001391",
+          "summary": "A French prospective multicentre diagnostic accuracy study (VALIDATE) tested prehospital capillary high-sensitivity troponin I on a point-of-care device against NSTEMI at hospital discharge in adults with acute chest pain, with treating clinicians blinded to results.",
+          "relevance": "🟡 Medium — Point-of-care troponin isn't something Australian ambulances carry — adoption would need a guideline change — and the French systems that ran it are physician-staffed",
+          "pubDate": "2026-11-10",
+          "topic": "Cardiac (non-arrest)",
+          "studyType": "Cross-sectional",
+          "design": "Prospective multicentre diagnostic accuracy study, blinded index test (physician-staffed)",
+          "n": "Adults with acute chest pain across 4 French EMS systems and 10 mobile intensive care units",
+          "finding": "Diagnostic performance expressed as AUC with 95% CIs against predefined thresholds; the indexed abstract's main-results section carries no numbers",
+          "caveat": "Physician-staffed French setting and no numeric results in the indexed abstract",
+          "bottomLine": "Hypothesis-generating",
+          "shortTitle": "Roadside capillary troponin for chest pain",
+          "learningGoal": "Weigh the value of prehospital point-of-care troponin testing in my assessment of acute chest pain."
+        },
+        {
+          "id": "10.12968/jpar.2025.0119",
+          "title": "Out-of-hospital cardiac arrest: comparing interventions across the UK",
+          "journal": "Journal of Paramedic Practice",
+          "date": "2026-11-11",
+          "pmid": "",
+          "doi": "10.12968/jpar.2025.0119",
+          "summary": "A UK literature review of eight articles found bystander CPR rates increasing in England and Scotland while AED use in out-of-hospital cardiac arrest has shown little improvement, with demographics and socioeconomic factors shaping prehospital intervention rates.",
+          "relevance": "🟡 Medium — UK bystander-intervention data, but the CPR-up/AED-flat pattern is the same battle Australian OHCA registries describe",
+          "pubDate": "2026-11-02",
+          "topic": "Cardiac arrest",
+          "studyType": "Systematic review",
+          "design": "PRISMA-guided literature review",
+          "n": "8 peer-reviewed UK articles (544 screened)",
+          "finding": "Bystander CPR rates increased in England and Scotland; AED use in OHCA showed little improvement; intervention rates varied with demographics and socioeconomic factors",
+          "caveat": "Small review — eight articles spanning four UK health systems",
+          "bottomLine": "Context only",
+          "shortTitle": "UK bystander CPR up, AED use flat",
+          "learningGoal": "Understand the system and socioeconomic factors that shape bystander CPR and AED use in out-of-hospital cardiac arrest."
+        },
+        {
+          "id": "43007262",
+          "title": "FAST Performance Changes After a Training Sequence Including Augmented Reality Guidance Among Paramedic Students",
+          "journal": "Simulation in Healthcare",
+          "date": "2026-11-11",
+          "pmid": "43007262",
+          "doi": "10.1097/SIH.0000000000000982",
+          "summary": "A Japanese single-arm training study gave 18 undergraduate paramedic students a two-hour FAST course including augmented-reality-guided scans, and total examination time fell by a median 263.5 seconds with quality scores improving significantly.",
+          "relevance": "🟡 Medium — Point-of-care ultrasound is carried by several Australian services but not most, and this was a small student cohort with no control group",
+          "pubDate": "2026-11-09",
+          "topic": "Education & training",
+          "studyType": "Simulation",
+          "design": "Single-arm interventional training study, pre/post design",
+          "n": "18 undergraduate paramedic students",
+          "finding": "Median total FAST time fell 263.5 s (95% CI 177–352.5, P<0.001); Task-Specific Checklist and Global Rating Scale scores both improved (P<0.001); no time gain in the Douglas pouch view",
+          "caveat": "No parallel control group and a fixed scan sequence — the authors call the findings cautious",
+          "bottomLine": "Hypothesis-generating",
+          "shortTitle": "AR-guided FAST training sped up students",
+          "learningGoal": "Strengthen my FAST scanning technique, including the Douglas pouch view, when using point-of-care ultrasound in the field."
+        },
+        {
+          "id": "43003391",
+          "title": "Supply of Fibrinogen Concentrate Across Queensland Health",
+          "journal": "Emergency Medicine Australasia",
+          "date": "2026-11-11",
+          "pmid": "43003391",
+          "doi": "10.1111/1742-6723.70392",
+          "summary": "A ten-year Queensland Health supply analysis of 24,717 g of fibrinogen concentrate found 97% went to 54 hospitals and only 1% to ambulance services, while population-adjusted supply rose from 8.19 to 59.2 g per 100,000 between 2016 and 2025.",
+          "relevance": "🟡 Medium — Fibrinogen concentrate isn't carried by Australian ambulances, so this is supply-chain context for the bleeding debate rather than current practice",
+          "pubDate": "2026-11-09",
+          "topic": "Trauma",
+          "studyType": "Other",
+          "design": "Retrospective statewide supply analysis",
+          "n": "24,717 g of fibrinogen concentrate supplied across Queensland, 2016–2026",
+          "finding": "97.0% of supply went to 54 hospitals, 2.0% to retrieval services and 1.0% to ambulance services; 66.2% went to major trauma services and 92.9% to viscoelastic-assay-capable hospitals; population-adjusted supply rose from 8.19 to 59.2 g per 100,000 (2016–2025)",
+          "caveat": "Supply data only — no patient outcomes, no link to bleeding control or mortality",
+          "bottomLine": "Context only",
+          "shortTitle": "Fibrinogen concentrate supply grows in Queensland",
+          "learningGoal": "Understand the supply pathways and access barriers that shape prehospital availability of fibrinogen concentrate in Australia."
+        },
+        {
+          "id": "10.12968/jpar.2026.0027",
+          "title": "Interprofessional simulation in prehospital maternity care: learning from joint training",
+          "journal": "Journal of Paramedic Practice",
+          "date": "2026-11-11",
+          "pmid": "",
+          "doi": "10.12968/jpar.2026.0027",
+          "summary": "A UK peer-led interprofessional simulation put paramedic and midwifery students through prehospital maternity emergencies together, with students reporting better role clarity, confidence and shared decision-making.",
+          "relevance": "🟡 Medium — A UK student programme, but joint obstetric training with midwives speaks directly to how Australian paramedic courses could run the same low-frequency, high-risk scenarios",
+          "pubDate": "2026-11-02",
+          "topic": "Education & training",
+          "studyType": "Simulation",
+          "design": "Peer-led interprofessional simulation, reflective report",
+          "n": "Paramedic and midwifery students at one UK university (count not reported)",
+          "finding": "Students reported improved understanding of professional roles, increased confidence and better appreciation of collaborative decision-making; the student-led format fostered psychological safety",
+          "caveat": "Reflective practice report with no outcome measures",
+          "bottomLine": "Context only",
+          "shortTitle": "Paramedic and midwifery students train together",
+          "learningGoal": "Understand how interprofessional training with midwifery colleagues strengthens role clarity and shared decision-making in prehospital maternity emergencies."
+        },
+        {
+          "id": "43005089",
+          "title": "Emergency medical services personnel's work capability sets: associations with job demands, job resources, and flourishing at work",
+          "journal": "Frontiers in Psychology",
+          "date": "2026-11-11",
+          "pmid": "43005089",
+          "doi": "10.3389/fpsyg.2026.1909957",
+          "summary": "A South African cross-sectional survey of 197 EMS personnel found emotional demands were associated with lower work capability and flourishing, while autonomy and co-worker support — not job demands — distinguished the strongest capability group.",
+          "relevance": "🟡 Medium — South African EMS, but the demands-resources pattern echoes what Australian paramedic wellbeing studies keep finding",
+          "pubDate": "2026-10-26",
+          "topic": "Workforce & wellbeing",
+          "studyType": "Cross-sectional",
+          "design": "Cross-sectional survey with latent class analysis",
+          "n": "197 EMS personnel",
+          "finding": "Three capability sets emerged (weak 48%, constrained 30%, robust 22%); emotional demands correlated negatively with capability and flourishing, while autonomy and co-worker support differentiated the groups and job demands did not",
+          "caveat": "Cross-sectional self-report in one country — no causal claims possible",
+          "bottomLine": "Hypothesis-generating",
+          "shortTitle": "Autonomy and support, not workload, drive flourishing",
+          "learningGoal": "Recognise how autonomy and co-worker support shape my work capability and flourishing under emotionally demanding conditions."
+        }
+      ]
+    },
     {
       "date": "2026-11-10",
       "papers": [
@@ -1116,6 +1293,63 @@
           "bottomLine": "Hypothesis-generating",
           "shortTitle": "Intubation linked to more ROSC in OHCA registry",
           "learningGoal": "Weigh advanced airway management against basic airway techniques when managing cardiac arrest in the Australian prehospital setting."
+        },
+        {
+          "id": "10.24911/ijmdc.51-1791096110",
+          "title": "Whole blood transfusion vs. component therapy for trauma resuscitation in the prehospital and emergency department settings: a systematic review",
+          "journal": "International Journal of Medicine in Developing Countries",
+          "date": "2026-11-10",
+          "pmid": "",
+          "doi": "10.24911/ijmdc.51-1791096110",
+          "summary": "A PRISMA systematic review of 22 comparative studies (about 95,000 patients) on whole blood versus component therapy for trauma resuscitation found mixed mortality results — survival signals in hypotensive, penetrating and geriatric subgroups but not everywhere — with consistently lower transfusion requirements and comparable or better safety with whole blood.",
+          "relevance": "🟡 Medium — Blood products are carried by several Australian services but not most, and the review spans prehospital and ED settings, so it informs the whole-blood-versus-components debate rather than everyday practice.",
+          "topic": "Trauma",
+          "studyType": "Systematic review",
+          "design": "Systematic review (PRISMA 2020, ROBINS-I) of comparative studies",
+          "n": "22 comparative studies, about 95,000 trauma patients",
+          "finding": "Survival benefit with whole blood in some studies — hypotensive patients (aOR 0.72 for SBP<90), penetrating injury (RR 0.36), geriatric (OR 0.60) — but no difference in others including one randomised trial; transfusion requirements consistently lower with whole blood; VTE risk lower (OR 0.70)",
+          "caveat": "Narrative synthesis only due to heterogeneity, and the publishing journal is low-profile — treat the pooled direction with caution",
+          "bottomLine": "Hypothesis-generating",
+          "shortTitle": "Whole blood vs components: mixed mortality, lower transfusion needs",
+          "learningGoal": "Weigh the benefits and limitations of prehospital whole blood versus component therapy when resuscitating hypotensive trauma patients."
+        },
+        {
+          "id": "10.1021/ehp.6c00307",
+          "title": "Temporal Changes in the Association between Wet-Bulb Globe Temperature and Heat-Related Emergency Ambulance Dispatches across Japan: A Multi-Prefecture Time-Series Analysis Spanning the COVID-19 Pandemic and National Heatstroke Alert Implementation (2015–2023)",
+          "journal": "Environmental Health Perspectives",
+          "date": "2026-11-10",
+          "pmid": "",
+          "doi": "10.1021/ehp.6c00307",
+          "summary": "A Japanese multi-prefecture time-series analysis of 577,027 heat-related ambulance dispatches (2015–2023) found the association between wet-bulb globe temperature and dispatches attenuated by 44% after the pandemic and national heatstroke alerts, yet absolute heat-attributable demand still grew 18%.",
+          "relevance": "🟡 Medium — Heat-driven ambulance demand peaks are an Australian summer reality, and the finding that public alerts softened relative risk without containing absolute workload speaks directly to summer deployment planning.",
+          "topic": "Operations & systems",
+          "studyType": "Time-series",
+          "design": "Two-stage distributed lag nonlinear model time-series analysis across 47 prefectures",
+          "n": "577,027 heat-related ambulance dispatches, Japan 2015–2023",
+          "finding": "At the 95th WBGT percentile the pooled cumulative relative risk fell from 10.45 (2015–19) to 5.90 (2022–23), a 43.6% reduction; severe-case relative risks also declined while age 65+ became the strongest effect modifier; heat-attributable counts still rose 18.1%",
+          "caveat": "Ecological time-series design — the attenuation can't be attributed to the heatstroke alert system specifically versus pandemic-era behaviour change",
+          "bottomLine": "Hypothesis-generating",
+          "shortTitle": "Heat alerts eased heat-dispatch risk but demand still grew",
+          "learningGoal": "Understand how heat alert systems and changing community behaviour shape surging heat-related ambulance demand in Australia."
+        },
+        {
+          "id": "10.1186/s12909-026-10789-4",
+          "title": "Educational challenges in teaching obstetric and gynecologic emergencies: perspectives of EMS students",
+          "journal": "BMC Medical Education",
+          "date": "2026-11-10",
+          "pmid": "",
+          "doi": "10.1186/s12909-026-10789-4",
+          "summary": "An Iranian qualitative study of 14 EMS students and recent graduates identified six categories of educational challenge in obstetric and gynaecologic emergencies, centred on a disconnect between educational preparation and real-world demands, with calls for more simulation, clinical exposure and gender-sensitive communication training.",
+          "relevance": "🟡 Medium — Obstetric emergencies are low-frequency, high-stakes ambulance work, and the gaps described — limited clinical exposure, reliance on simulation — mirror those reported by Australian paramedic students.",
+          "topic": "Education & training",
+          "studyType": "Qualitative",
+          "design": "Qualitative conventional content analysis, semi-structured interviews",
+          "n": "14 EMS students and recent graduates, Iran",
+          "finding": "1,532 codes distilled to six challenge categories: educational content and approaches, clinical education barriers, communication and cultural barriers, resource limitations, motivation and educational justice, and process management; higher-order category: disconnects between preparation and real-world demands",
+          "caveat": "Single-country student perspectives with no measure of actual clinical performance",
+          "bottomLine": "Hypothesis-generating",
+          "shortTitle": "EMS students report obs/gyn training gaps",
+          "learningGoal": "Understand how gaps in obstetric emergency education affect paramedic preparedness and gender-sensitive patient communication."
         }
       ]
     },
@@ -13992,93 +14226,93 @@
     }
   ],
   "weeklyTldr": {
-    "dateRange": "27 Oct – 3 Nov 2026",
-    "summary": "Prehospital trauma analgesia got a broad safety tick: all four standard drug classes effective across 17,115 patients, with no drug-attributed serious adverse events outside one opioid study\nReal-time bag-valve-mask feedback in US cardiac arrest lifted ventilations meeting rate and volume targets from 7.5% to 39%\nOnly three of 18 commercial heat-stroke cooling devices hit the ideal prehospital cooling rate — timely reading as summer starts\nWomen still receive less bystander CPR in public, and the survival gap held\nGerman EMS suspected pulmonary embolism in only 5% of cases, but correct detection halved median time to CT diagnosis",
+    "dateRange": "3–10 Nov 2026",
+    "summary": "Prehospital ECPR doubled survival to discharge in refractory OHCA in a nationwide Dutch cohort of adults 50 or under (40% vs 20%)\nA 22,459-patient cluster-randomised trial found a community-and-EMS cardiac arrest bundle did not improve survival (9.0% vs 9.4%)\nDanish registry data showed paediatric prehospital fentanyl's serious adverse effects were rare (0.7% bradycardia, 0.7% respiratory depression) but most children arrived still in pain\nParamedic-counted gravity drip rates varied widely, with flow errors from −45% to +6% in a controlled US simulation\nThe 2026 ILCOR resuscitation consensus — the evidence base behind guidelines worldwide — was published",
     "highlights": [
       {
-        "text": "Prehospital trauma analgesia got a broad safety tick: all four standard drug classes effective across 17,115 patients, with no drug-attributed serious adverse events outside one opioid study",
-        "id": "42947661"
+        "text": "Prehospital ECPR doubled survival to discharge in refractory OHCA in a nationwide Dutch cohort of adults 50 or under (40% vs 20%)",
+        "id": "43001740"
       },
       {
-        "text": "Real-time bag-valve-mask feedback in US cardiac arrest lifted ventilations meeting rate and volume targets from 7.5% to 39%",
-        "id": "42956924"
+        "text": "A 22,459-patient cluster-randomised trial found a community-and-EMS cardiac arrest bundle did not improve survival (9.0% vs 9.4%)",
+        "id": "43001758"
       },
       {
-        "text": "Only three of 18 commercial heat-stroke cooling devices hit the ideal prehospital cooling rate — timely reading as summer starts",
-        "id": "42958936"
+        "text": "Danish registry data showed paediatric prehospital fentanyl's serious adverse effects were rare (0.7% bradycardia, 0.7% respiratory depression) but most children arrived still in pain",
+        "id": "10.1186/s13049-026-01723-0"
       },
       {
-        "text": "Women still receive less bystander CPR in public, and the survival gap held",
-        "id": "10.1016/j.resplu.2026.101545"
+        "text": "Paramedic-counted gravity drip rates varied widely, with flow errors from −45% to +6% in a controlled US simulation",
+        "id": "10.1080/10903127.2026.2757796"
       },
       {
-        "text": "German EMS suspected pulmonary embolism in only 5% of cases, but correct detection halved median time to CT diagnosis",
-        "id": "10.3390/jcm15218426"
+        "text": "The 2026 ILCOR resuscitation consensus — the evidence base behind guidelines worldwide — was published",
+        "id": "10.1016/j.resuscitation.2026.111328"
       }
     ],
     "topPicks": [
       {
-        "id": "42947661",
-        "title": "Prehospital Analgesia in Trauma: A Systematic Review of Current Evidence",
-        "authors": "Alkoby-Meshulam L, Shahar C, Jacob R, et al.",
-        "journal": "Emergency Medicine Australasia",
-        "summary": "An Israeli-led systematic review of 17 multinational studies (6 RCTs, 17,115 injured adults) found opioids, ketamine, methoxyflurane and paracetamol all effective for prehospital trauma analgesia, with no drug-attributed serious adverse events reported apart from one opioid study.",
-        "relevance": "🟢 High transferability — All four agents are standard across Australian ambulance formularies, so the safety findings apply directly to current practice.",
-        "pmid": "42947661",
-        "doi": "10.1111/1742-6723.70385",
-        "featuredReason": "The broadest safety check yet on the analgesics crews draw up every shift — 17,115 patients and virtually no drug-attributed serious harm. Reassuring, formulary-wide evidence for current practice.",
-        "pubDate": "2026-10-28",
-        "topic": "Pain & sedation",
-        "studyType": "Systematic review",
-        "design": "Systematic review of RCTs and observational studies",
-        "n": "17 studies, 17,115 injured adults over 15 years",
-        "finding": "All four agent classes (opioids, ketamine, methoxyflurane, paracetamol) showed effectiveness; no drug-attributed serious adverse events except one opioid study, with minor effects like nausea and drowsiness common.",
-        "caveat": "Only 6 of the 17 included studies were RCTs — most of the evidence is retrospective or observational.",
-        "bottomLine": "Supports current practice",
-        "shortTitle": "Trauma analgesia safety confirmed across four drug classes",
-        "learningGoal": "Weigh the safety profile of opioid, ketamine, methoxyflurane and paracetamol options when selecting prehospital trauma analgesia."
-      },
-      {
-        "id": "42956924",
-        "title": "Ventilation Monitoring in Out-of-Hospital Cardiac Arrest Care",
-        "authors": "Aufderheide TP, Colella MR, Weston BW, et al.",
-        "journal": "Resuscitation",
-        "summary": "A US prospective before/after study in Milwaukee found real-time BVM feedback (Real BVM Help) was associated with the share of OHCA ventilations meeting both rate and tidal-volume targets rising from 7.5% to 39.0%.",
-        "relevance": "🟢 High transferability — Bag-valve-mask ventilation and ETCO2 monitoring are core skills on every Australian ambulance, and most crews ventilate arrests with a BVM and little more than ETCO2 to go on.",
-        "pmid": "42956924",
-        "doi": "10.1016/j.resuscitation.2026.111372",
-        "featuredReason": "Ventilation is the arrest skill most crews do almost blind. Real-time feedback on the bag more than quadrupled compliant ventilations — cheap technology aimed straight at the basics.",
-        "pubDate": "2026-10",
+        "id": "43001740",
+        "title": "Prehospital Extracorporeal Life Support in Refractory Out-of-Hospital Cardiac Arrest",
+        "authors": "Reis Miranda D, Moors X, Ali S, et al.",
+        "journal": "The New England Journal of Medicine",
+        "summary": "A nationwide Dutch cohort of 231 adults 50 or younger with refractory OHCA found survival to discharge of 40% with prehospital ECPR-capable HEMS versus 20% with conventional HEMS, and six-month favourable neurological outcome of 36% versus 13%.",
+        "relevance": "🟡 Medium transferability — prehospital ECPR sits on physician-staffed helicopter services well beyond Australian road practice, so this shapes where the evidence is heading, not what crews do today.",
+        "pmid": "43001740",
+        "doi": "10.1056/NEJMoa2602919",
+        "featuredReason": "The strongest evidence yet that taking the ECMO team to the patient changes the ceiling for refractory arrest — survival doubled and good neurology tripled, though not randomised and with nearly three times the adverse events.",
+        "pubDate": "2026-11-07",
         "topic": "Cardiac arrest",
         "studyType": "Cohort",
-        "design": "Prospective before/after quality assurance study",
-        "n": "278 adults with OHCA (148 before / 130 after)",
-        "finding": "Ventilations in-target for both rate and tidal volume rose from 7.5% to 39.0% with real-time feedback; with ETCO2 monitoring alone only 6.8% met both, and 58.2% of ventilations delivered a lower-than-target tidal volume",
-        "caveat": "Before/after design without randomisation, in a single US county system",
+        "design": "Nationwide nonrandomised comparative cohort (OnScene, Netherlands)",
+        "n": "231 adults ≤ 50 with refractory OHCA (144 ECPR-capable HEMS vs 87 conventional)",
+        "finding": "Survival to discharge 40% with ECPR vs 20% without (OR 2.72, 95% CI 1.59–4.66); favourable neurological outcome at 6 months 36% vs 13% (OR 4.22, 95% CI 2.82–6.32); 32 adverse events with ECPR vs 11",
+        "caveat": "Not randomised — patients attended by ECPR-capable HEMS may differ systematically, and the ECPR group had nearly three times the adverse events",
         "bottomLine": "Hypothesis-generating",
-        "shortTitle": "Real-time BVM feedback linked to better arrest ventilation",
-        "learningGoal": "Strengthen my ventilation technique during cardiac arrest resuscitation by using feedback to improve rate and tidal volume."
+        "shortTitle": "Prehospital ECPR linked to doubled arrest survival",
+        "learningGoal": "Weigh the benefits and harms of prehospital ECPR for young adults in refractory cardiac arrest."
       },
       {
-        "id": "42958936",
-        "title": "Heat Stroke Cooling Devices for Prehospital Use: A Systematic Review",
-        "authors": "Londono MJ, Alvarez I, Fasci A, et al.",
-        "journal": "Prehospital and Disaster Medicine",
-        "summary": "A US systematic review of 18 commercial heat-stroke cooling devices found only three reached the ideal prehospital cooling rate (at least 0.155°C/min) and just five met single-person portability, with most relying on water, power or disposables.",
-        "relevance": "🟢 High transferability — Heat illness is a summer mainstay for Australian crews and rapid cooling on scene is the established treatment, so which devices actually perform in the field matters directly here.",
-        "pmid": "42958936",
-        "doi": "10.1017/s1049023x26109169",
-        "featuredReason": "Summer's here and rapid cooling on scene is the treatment that matters in heat stroke. Knowing only three devices actually hit the target cooling rate is procurement-grade information for services kitting up.",
-        "pubDate": "2026",
-        "topic": "Other",
-        "studyType": "Systematic review",
-        "design": "Systematic review of commercially available cooling devices",
-        "n": "18 commercial cooling devices",
-        "finding": "Three of 18 devices met the ideal cooling threshold (≥0.155°C/min), two were acceptable (0.078–0.154°C/min), 61% reported no cooling-rate data, and five met the ≤16 kg single-person portability limit",
-        "caveat": "Device specification review with no clinical outcome data, and cooling-rate figures were missing for most products",
-        "bottomLine": "Context only",
-        "shortTitle": "Few heat-stroke cooling devices suit the prehospital setting",
-        "learningGoal": "Weigh which cooling devices suit prehospital heat stroke care given portability and cooling rate trade-offs."
+        "id": "43001758",
+        "title": "Community and EMS Interventions to Improve Survival in Cardiac Arrest",
+        "authors": "Malta Hansen C, Krychtiuk KA, Starks MA, et al.",
+        "journal": "The New England Journal of Medicine",
+        "summary": "A cluster-randomised trial across 55 North Carolina county clusters (22,459 OHCA patients) found a multifaceted community and EMS programme did not improve survival with good neurological outcome (9.0% vs 9.4%, adjusted OR 0.97).",
+        "relevance": "🟢 High transferability — dispatch recognition, telephone CPR, community training and first-responder AEDs are core parts of Australian systems, making this large null trial directly relevant.",
+        "pmid": "43001758",
+        "doi": "10.1056/NEJMoa2612757",
+        "featuredReason": "A sobering, rigorous check on the system-level bundle everyone invests in: nothing moved. It can't say which component underperformed, but it questions whether adding more of the same changes outcomes.",
+        "pubDate": "2026-11-08",
+        "topic": "Cardiac arrest",
+        "studyType": "RCT",
+        "design": "Registry-based cluster-randomised trial (CARES registry, North Carolina)",
+        "n": "22,459 adults with OHCA across 55 county clusters",
+        "finding": "Survival to discharge with good neurological outcome 9.0% (intervention) vs 9.4% (usual care), adjusted OR 0.97, 95% CI 0.75–1.26, P = 0.80",
+        "caveat": "The intervention bundled four components, so it can't show whether one element — such as telecommunicator CPR instructions — underperformed",
+        "bottomLine": "Supports current practice",
+        "shortTitle": "Big community arrest programme didn't change survival",
+        "learningGoal": "Weigh how bundled community and EMS resuscitation interventions influence survival outcomes in out-of-hospital cardiac arrest."
+      },
+      {
+        "id": "10.1186/s13049-026-01723-0",
+        "title": "Is prehospital opioid administration safe in children? A register-based study",
+        "authors": "Skøtt VN, Oldin NN, Colding-Jørgensen JT, et al.",
+        "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+        "summary": "A Danish register study of 1,531 children given prehospital opioids (99.7% fentanyl) found 15.1% with at least one sign compatible with opioid adverse effects, serious signs rare (bradycardia and respiratory depression 0.7% each), and 63.6% still in pain at hospital arrival.",
+        "relevance": "🟢 High transferability — fentanyl is standard prehospital analgesia across Australian services, and a whole-of-country registry speaks directly to how crews dose paediatric pain relief.",
+        "pmid": "",
+        "doi": "10.1186/s13049-026-01723-0",
+        "featuredReason": "Reassuring on safety — serious adverse effects under 1% and no antidote given — but two-thirds of kids arriving still in pain means the real story may be under-treatment, not over-treatment.",
+        "pubDate": "2026-11-05",
+        "topic": "Paediatrics",
+        "studyType": "Registry",
+        "design": "Retrospective register-based cohort with medical record review",
+        "n": "1,531 children aged 0–14 given prehospital opioids, Denmark 2017–2022",
+        "finding": "15.1% had at least one clinical sign compatible with opioid-related adverse effects; bradycardia 0.7%, respiratory depression 0.7%; no opioid antidote given; 63.6% in pain at arrival and 51% received further in-hospital analgesia.",
+        "caveat": "Retrospective register review — nonspecific signs such as nausea and drowsiness can't be firmly attributed to opioids (no other explanation identified in 9.2%).",
+        "bottomLine": "Supports current practice",
+        "shortTitle": "Paediatric prehospital fentanyl: serious adverse effects rare",
+        "learningGoal": "Refine my assessment and monitoring of prehospital opioid analgesia in paediatric patients to reduce under-treatment of pain."
       }
     ]
   }
