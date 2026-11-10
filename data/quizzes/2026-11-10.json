@@ -1,0 +1,120 @@
+{
+ "id": "2026-11-10",
+ "span": "3 – 10 Nov 2026",
+ "created": "2026-11-10T00:01:43Z",
+ "est_minutes": 10,
+ "questions": [
+  {
+   "paper_id": "42982770",
+   "short_title": "Stroke triage app adopted but not embedded",
+   "topic": "Stroke & neuro",
+   "question": "The Stroke Triage App was well accepted, so what stopped it becoming routine practice?",
+   "options": [
+    "Poor workflow fit and limited perceived added value",
+    "Technical failures and unreliable performance",
+    "No training or local champions to promote it",
+    "Doubts about the accuracy of its advice"
+   ],
+   "answer": 0,
+   "explanation": "Adoption was good, but clinical urgency, poor workflow integration and limited perceived added value got in the way of routine use. Also, usage data can't show whether the app's advice actually changed triage decisions."
+  },
+  {
+   "paper_id": "10.1186/s13049-026-01723-0",
+   "short_title": "Paediatric prehospital fentanyl: serious adverse effects rare",
+   "topic": "Paediatrics",
+   "question": "What did this study find about serious opioid-related adverse effects in children given prehospital opioids?",
+   "options": [
+    "Bradycardia and respiratory depression did not occur at all in the cohort",
+    "About 15% of children developed respiratory depression requiring naloxone",
+    "Serious adverse effects were rare but half the children received an opioid antidote",
+    "Bradycardia and respiratory depression each occurred in 0.7%, and no child needed an opioid antidote"
+   ],
+   "answer": 3,
+   "explanation": "Serious signs were uncommon: bradycardia and respiratory depression each affected 0.7% of children, and no opioid antidote was given. Keep in mind the 15.1% with compatible signs were mostly nonspecific ones like nausea and drowsiness, which a retrospective register review can't firmly attribute to opioids."
+  },
+  {
+   "paper_id": "10.1016/j.resplu.2026.101554",
+   "short_title": "Mainstream and sidestream capnography give different ETCO2",
+   "topic": "Cardiac arrest",
+   "question": "Mainstream capnography gave higher ETCO2 readings than sidestream during resuscitation, yet both devices agreed on what?",
+   "options": [
+    "The timing of each chest compression",
+    "The overall trend of ETCO2 over time",
+    "Whether ETCO2 exceeded 45 mmHg",
+    "The ventilation rate needed for good CPR"
+   ],
+   "answer": 1,
+   "explanation": "Despite mainstream readings running about 3.94 mmHg higher, both technologies tracked trends almost identically and flagged abrupt rises and drops together. With only 23 recordings, the wide limits of agreement are imprecisely estimated, so treat absolute values with caution depending on the device used."
+  },
+  {
+   "paper_id": "10.1016/j.resplu.2026.101553",
+   "short_title": "Community first responders trained but rarely dispatched",
+   "topic": "Cardiac arrest",
+   "question": "Despite most registered community first responders feeling prepared to respond to a cardiac arrest, what did the survey reveal about their actual real-world experience?",
+   "options": [
+    "Only 15.1% had ever been dispatched, and just 1.9% had actually performed CPR",
+    "Most had been dispatched, but nearly all arrived after EMS on scene",
+    "Over half had been dispatched at least once, but few felt confident responding",
+    "None had been dispatched, since they lived in regions without any alerting system"
+   ],
+   "answer": 0,
+   "explanation": "Only 15.1% had ever been dispatched and 1.9% had performed CPR, even though 97.3% felt prepared. That confidence came from volunteers with almost no real dispatch experience, so it should be treated cautiously."
+  },
+  {
+   "paper_id": "42969076",
+   "short_title": "Prehospital stroke triage: high under- and overtriage rates",
+   "topic": "Stroke & neuro",
+   "question": "In the Lausanne stroke pathway study, what happened to EMS under- and overtriage rates when the coordinated medical team call step was added?",
+   "options": [
+    "Both rates stayed roughly the same",
+    "Overtriage fell to zero while undertriage was unchanged",
+    "Both rates fell, with undertriage dropping from 21% to 11%",
+    "Undertriage fell but overtriage rose sharply"
+   ],
+   "answer": 2,
+   "explanation": "The second expert assessment step reduced undertriage from 21% to 11% and overtriage from 63% to 57%. Even with this improvement, both rates remained high, and the physician-staffed call model doesn't match how Australian dispatch works."
+  },
+  {
+   "paper_id": "10.1111/1742-6723.70383",
+   "short_title": "Reported LOC didn't flag post-traumatic amnesia in ED",
+   "topic": "Trauma",
+   "question": "In this Australian ED cohort of adults tested with the A-WPTAS after head injury, how did pass rates relate to documented loss of consciousness?",
+   "options": [
+    "LOC predicted failure only in patients with GCS 15",
+    "Pass rates were similar with and without documented LOC",
+    "Pass rates were clearly lower in patients with documented LOC",
+    "Only patients with LOC failed the A-WPTAS"
+   ],
+   "answer": 1,
+   "explanation": "Pass rates were 90.6% with documented LOC and 92% without, a difference that wasn't statistically significant. PTA on the scale lined up with GCS 13-14 instead, though the study was retrospective, ED-only, and didn't link back to prehospital documentation."
+  },
+  {
+   "paper_id": "10.1186/s13049-026-01722-1",
+   "short_title": "Predicting ground vs helicopter EMS travel times",
+   "topic": "Operations & systems",
+   "question": "When comparing the predictive models, which travel times were hardest to estimate accurately?",
+   "options": [
+    "Ground EMS transport times to hospital",
+    "Ground EMS drive times to the scene",
+    "Helicopter flight times",
+    "Both were predicted with similar accuracy"
+   ],
+   "answer": 2,
+   "explanation": "Helicopter flight times had the weakest models (R² 0.46 and 0.38 versus 0.79 and 0.70 for ground), so their times are much less predictable. Accuracy also depends on local geography and data quality."
+  },
+  {
+   "paper_id": "42968711",
+   "short_title": "Mapping anti-violence measures for ambulance personnel",
+   "topic": "Workforce & wellbeing",
+   "question": "This review will classify anti-violence measures using several conceptual frameworks. Which one is included?",
+   "options": [
+    "Crime prevention through environmental design",
+    "Trauma-informed care principles",
+    "Root cause analysis and just culture",
+    "Levels of prevention and hierarchy of controls"
+   ],
+   "answer": 3,
+   "explanation": "The protocol maps measures across five frameworks including levels of prevention and the hierarchy of controls. It's only a protocol with no results yet, so it offers context rather than findings, and the single-reviewer title/abstract screening is a limitation."
+  }
+ ]
+}

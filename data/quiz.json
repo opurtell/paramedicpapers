@@ -1,120 +1,120 @@
 {
- "id": "2026-11-06",
- "span": "30 Oct – 6 Nov 2026",
- "created": "2026-11-06T00:01:44Z",
+ "id": "2026-11-10",
+ "span": "3 – 10 Nov 2026",
+ "created": "2026-11-10T00:01:43Z",
  "est_minutes": 10,
  "questions": [
   {
-   "paper_id": "42956923",
-   "short_title": "ECG signs appear minutes before post-ROSC rearrest",
-   "topic": "Cardiac arrest",
-   "question": "How far ahead of a post-ROSC rearrest were ECG features most predictive?",
+   "paper_id": "42982770",
+   "short_title": "Stroke triage app adopted but not embedded",
+   "topic": "Stroke & neuro",
+   "question": "The Stroke Triage App was well accepted, so what stopped it becoming routine practice?",
    "options": [
-    "Prediction stayed constant across the whole window",
-    "One minute before rearrest",
-    "Three minutes before rearrest",
-    "Five minutes before rearrest"
-   ],
-   "answer": 1,
-   "explanation": "Prediction peaked one minute before rearrest (AUROC 0.74) and faded beyond three minutes. It's a retrospective, single-region study, so it's hypothesis-generating rather than practice-changing."
-  },
-  {
-   "paper_id": "42958936",
-   "short_title": "Few heat-stroke cooling devices suit the prehospital setting",
-   "topic": "Other",
-   "question": "What gap did this review of commercial heat-stroke cooling devices find that matters for prehospital practice?",
-   "options": [
-    "Most devices were too heavy for two paramedics to carry",
-    "Most devices reported no cooling-rate data at all",
-    "Cooling rates were only measured in hot conditions",
-    "No device could be powered from an ambulance"
-   ],
-   "answer": 1,
-   "explanation": "About 61% of the 18 devices provided no cooling-rate figures, so performance can't be compared, and no device combined effectiveness, portability, field readiness and reusability. The review was based on device specifications only, with no clinical outcome data."
-  },
-  {
-   "paper_id": "10.1016/j.resplu.2026.101542",
-   "short_title": "Nursing-home arrests more often shockable, linked to early AED",
-   "topic": "Cardiac arrest",
-   "question": "Nursing-home arrests were far more likely to present with an initial shockable rhythm than arrests at home. What best explains the study authors' interpretation of this gap?",
-   "options": [
-    "Nursing-home residents have less underlying cardiac disease than people arrested at home",
-    "Ambulance response times to nursing homes were substantially faster",
-    "Residents receive better bystander CPR, which preserves shockable rhythms",
-    "Earlier AED access likely detects shockable rhythms soon after collapse, before they deteriorate"
-   ],
-   "answer": 3,
-   "explanation": "The authors attributed the higher rate to prompt AED use — 97.0% of shockable nursing-home cases received a shock — meaning rhythms were caught early. It's descriptive, not proof of causation, and survival with good neurological outcome was actually lowest in nursing homes at 0.8%."
-  },
-  {
-   "paper_id": "10.34074/whit.3303",
-   "short_title": "NZ paramedics breached patient rights more often than nurses",
-   "topic": "Workforce & wellbeing",
-   "question": "When comparing upheld Code of Rights breaches between paramedics and nurses in NZ, what did the study find once the raw numbers were converted to rates per 1,000 practitioners?",
-   "options": [
-    "Paramedics were three times more likely to breach, and at higher severity",
-    "Nurses had the higher breach rate because they had far more decisions overall",
-    "Paramedics breached less often but at greater severity",
-    "The breach rates were roughly equal between the two professions"
+    "Poor workflow fit and limited perceived added value",
+    "Technical failures and unreliable performance",
+    "No training or local champions to promote it",
+    "Doubts about the accuracy of its advice"
    ],
    "answer": 0,
-   "explanation": "Nurses had more breaches in absolute terms (100 vs 9), but per 1,000 practitioners paramedics were three times more likely to breach and breached at higher severity. The comparison is fragile though, since only nine paramedic cases were involved and published decisions capture only reported and upheld breaches."
+   "explanation": "Adoption was good, but clinical urgency, poor workflow integration and limited perceived added value got in the way of routine use. Also, usage data can't show whether the app's advice actually changed triage decisions."
   },
   {
-   "paper_id": "42934878",
-   "short_title": "Workplace violence follows prehospital staff home",
-   "topic": "Workforce & wellbeing",
-   "question": "In this qualitative study of prehospital staff who had experienced workplace violence, which coping strategies did participants rely on most?",
+   "paper_id": "10.1186/s13049-026-01723-0",
+   "short_title": "Paediatric prehospital fentanyl: serious adverse effects rare",
+   "topic": "Paediatrics",
+   "question": "What did this study find about serious opioid-related adverse effects in children given prehospital opioids?",
    "options": [
-    "Personal security equipment and protective policies",
-    "Formal psychological debriefing run by their organisation",
-    "De-escalation, situational awareness and peer support",
-    "Transferring to non-emergency roles after incidents"
+    "Bradycardia and respiratory depression did not occur at all in the cohort",
+    "About 15% of children developed respiratory depression requiring naloxone",
+    "Serious adverse effects were rare but half the children received an opioid antidote",
+    "Bradycardia and respiratory depression each occurred in 0.7%, and no child needed an opioid antidote"
+   ],
+   "answer": 3,
+   "explanation": "Serious signs were uncommon: bradycardia and respiratory depression each affected 0.7% of children, and no opioid antidote was given. Keep in mind the 15.1% with compatible signs were mostly nonspecific ones like nausea and drowsiness, which a retrospective register review can't firmly attribute to opioids."
+  },
+  {
+   "paper_id": "10.1016/j.resplu.2026.101554",
+   "short_title": "Mainstream and sidestream capnography give different ETCO2",
+   "topic": "Cardiac arrest",
+   "question": "Mainstream capnography gave higher ETCO2 readings than sidestream during resuscitation, yet both devices agreed on what?",
+   "options": [
+    "The timing of each chest compression",
+    "The overall trend of ETCO2 over time",
+    "Whether ETCO2 exceeded 45 mmHg",
+    "The ventilation rate needed for good CPR"
+   ],
+   "answer": 1,
+   "explanation": "Despite mainstream readings running about 3.94 mmHg higher, both technologies tracked trends almost identically and flagged abrupt rises and drops together. With only 23 recordings, the wide limits of agreement are imprecisely estimated, so treat absolute values with caution depending on the device used."
+  },
+  {
+   "paper_id": "10.1016/j.resplu.2026.101553",
+   "short_title": "Community first responders trained but rarely dispatched",
+   "topic": "Cardiac arrest",
+   "question": "Despite most registered community first responders feeling prepared to respond to a cardiac arrest, what did the survey reveal about their actual real-world experience?",
+   "options": [
+    "Only 15.1% had ever been dispatched, and just 1.9% had actually performed CPR",
+    "Most had been dispatched, but nearly all arrived after EMS on scene",
+    "Over half had been dispatched at least once, but few felt confident responding",
+    "None had been dispatched, since they lived in regions without any alerting system"
+   ],
+   "answer": 0,
+   "explanation": "Only 15.1% had ever been dispatched and 1.9% had performed CPR, even though 97.3% felt prepared. That confidence came from volunteers with almost no real dispatch experience, so it should be treated cautiously."
+  },
+  {
+   "paper_id": "42969076",
+   "short_title": "Prehospital stroke triage: high under- and overtriage rates",
+   "topic": "Stroke & neuro",
+   "question": "In the Lausanne stroke pathway study, what happened to EMS under- and overtriage rates when the coordinated medical team call step was added?",
+   "options": [
+    "Both rates stayed roughly the same",
+    "Overtriage fell to zero while undertriage was unchanged",
+    "Both rates fell, with undertriage dropping from 21% to 11%",
+    "Undertriage fell but overtriage rose sharply"
    ],
    "answer": 2,
-   "explanation": "Participants described coping through communication and de-escalation, staying situationally aware, and leaning on colleagues. They saw organisational support as insufficient, and the qualitative design with a purposive sample of staff who had all experienced violence means the findings aren't generalisable."
+   "explanation": "The second expert assessment step reduced undertriage from 21% to 11% and overtriage from 63% to 57%. Even with this improvement, both rates remained high, and the physician-staffed call model doesn't match how Australian dispatch works."
   },
   {
-   "paper_id": "10.1186/s13049-026-01712-3",
-   "short_title": "What helps kids in pain in ambulances",
-   "topic": "Pain & sedation",
-   "question": "According to the refined programme theory, what sits at the centre of better paediatric pain care in ambulances?",
+   "paper_id": "10.1111/1742-6723.70383",
+   "short_title": "Reported LOC didn't flag post-traumatic amnesia in ED",
+   "topic": "Trauma",
+   "question": "In this Australian ED cohort of adults tested with the A-WPTAS after head injury, how did pass rates relate to documented loss of consciousness?",
    "options": [
-    "Preparedness and person-centred care",
-    "Compulsory pain scoring",
-    "Parent-delivered analgesia",
-    "Faster response times"
-   ],
-   "answer": 0,
-   "explanation": "Clinician preparedness (education, training, exposure, experience) and compassionate person-centred care emerged as the key mechanisms. This is theory to be tested, not evidence they improve outcomes."
-  },
-  {
-   "paper_id": "10.1080/10903127.2026.2757796",
-   "short_title": "Counted drip rates vary widely between paramedics",
-   "topic": "Other",
-   "question": "When paramedics set a drip rate of 1 drop per second, how did accuracy compare with other target rates?",
-   "options": [
-    "It matched the accuracy of fractional target rates",
-    "It was more accurate than all other target rates",
-    "It was only accurate when counted by two people",
-    "It was the least accurate rate tested"
+    "LOC predicted failure only in patients with GCS 15",
+    "Pass rates were similar with and without documented LOC",
+    "Pass rates were clearly lower in patients with documented LOC",
+    "Only patients with LOC failed the A-WPTAS"
    ],
    "answer": 1,
-   "explanation": "The 1 drop per second target had an absolute error of 31.1% versus 48.5% for all other rates, making it the most accurate. This came from a controlled lab setup with standardised tubing, so field conditions, movement and different giving sets weren't tested."
+   "explanation": "Pass rates were 90.6% with documented LOC and 92% without, a difference that wasn't statistically significant. PTA on the scale lined up with GCS 13-14 instead, though the study was retrospective, ED-only, and didn't link back to prehospital documentation."
   },
   {
-   "paper_id": "42981768",
-   "short_title": "Layperson naloxone linked to fewer EMS interventions",
-   "topic": "Toxicology",
-   "question": "In cases where a layperson gave naloxone before EMS arrival, what did the study find about subsequent EMS care?",
+   "paper_id": "10.1186/s13049-026-01722-1",
+   "short_title": "Predicting ground vs helicopter EMS travel times",
+   "topic": "Operations & systems",
+   "question": "When comparing the predictive models, which travel times were hardest to estimate accurately?",
    "options": [
-    "No difference in EMS naloxone use, but more advanced airway attempts",
-    "Higher rates of cardiac arrest on EMS arrival",
-    "More patients needed EMS naloxone and more were transported",
-    "Fewer patients needed EMS naloxone and fewer were transported"
+    "Ground EMS transport times to hospital",
+    "Ground EMS drive times to the scene",
+    "Helicopter flight times",
+    "Both were predicted with similar accuracy"
+   ],
+   "answer": 2,
+   "explanation": "Helicopter flight times had the weakest models (R² 0.46 and 0.38 versus 0.79 and 0.70 for ground), so their times are much less predictable. Accuracy also depends on local geography and data quality."
+  },
+  {
+   "paper_id": "42968711",
+   "short_title": "Mapping anti-violence measures for ambulance personnel",
+   "topic": "Workforce & wellbeing",
+   "question": "This review will classify anti-violence measures using several conceptual frameworks. Which one is included?",
+   "options": [
+    "Crime prevention through environmental design",
+    "Trauma-informed care principles",
+    "Root cause analysis and just culture",
+    "Levels of prevention and hierarchy of controls"
    ],
    "answer": 3,
-   "explanation": "Layperson naloxone was linked to less subsequent EMS naloxone (24.4% vs 34.8%) and lower transport rates (79.4% vs 84.4%). As a registry cross-section, though, the study can't tell whether reduced transports reflected genuine recovery or refusals of care."
+   "explanation": "The protocol maps measures across five frameworks including levels of prevention and the hierarchy of controls. It's only a protocol with no results yet, so it offers context rather than findings, and the single-reviewer title/abstract screening is a limitation."
   }
  ]
 }
