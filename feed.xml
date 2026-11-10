@@ -25,6 +25,20 @@
     <itunes:explicit>false</itunes:explicit>
     <podcast:guid>09fa3693-e2ac-527c-9d1c-f68df149b888</podcast:guid>
     <item>
+      <title>Paramedic Papers Daily — 11 November 2026</title>
+      <link>https://paramedicpapers.com/episodes/2026-11-11/</link>
+      <description>4 papers: Sydney COAST trauma shock registry; roadside capillary troponin (France); UK bystander CPR up, AEDs flat; AR-guided FAST training</description>
+      <content:encoded><![CDATA[<p>4 papers: Sydney COAST trauma shock registry; roadside capillary troponin (France); UK bystander CPR up, AEDs flat; AR-guided FAST training</p><p>Papers in this episode:</p><ul><li><a href="https://doi.org/10.1111/1742-6723.70388">Sydney COAST registry: trauma shock first year <em>(Emergency Medicine Australasia)</em></a></li><li><a href="https://doi.org/10.1097/mej.0000000000001391">Roadside capillary troponin for chest pain <em>(European Journal of Emergency Medicine)</em></a></li><li><a href="https://doi.org/10.12968/jpar.2025.0119">UK bystander CPR up, AED use flat <em>(Journal of Paramedic Practice)</em></a></li><li><a href="https://doi.org/10.1097/SIH.0000000000000982">AR-guided FAST training sped up students <em>(Simulation in Healthcare)</em></a></li></ul><p><a href="https://paramedicpapers.com/episodes/2026-11-11/">Show notes and transcript</a></p>]]></content:encoded>
+      <pubDate>Wed, 11 Nov 2026 07:35:16 +1100</pubDate>
+      <guid isPermaLink="false">https://audio.paramedicpapers.com/ep-2026-11-11.mp3</guid>
+      <enclosure url="https://op3.dev/e/audio.paramedicpapers.com/ep-2026-11-11.mp3" length="827948" type="audio/mpeg"/>
+      <itunes:duration>206</itunes:duration>
+      <itunes:summary>4 papers: Sydney COAST trauma shock registry; roadside capillary troponin (France); UK bystander CPR up, AEDs flat; AR-guided FAST training</itunes:summary>
+      <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
+      <itunes:episodeType>full</itunes:episodeType>
+      <podcast:transcript url="https://audio.paramedicpapers.com/ep-2026-11-11.txt" type="text/plain" language="en-au"/>
+    </item>
+    <item>
       <title>Paramedic Papers Daily — 10 November 2026</title>
       <link>https://paramedicpapers.com/episodes/2026-11-10/</link>
       <description>3 papers: Prehospital ECPR linked to doubled arrest survival; Big community arrest programme didn't change survival; Intubation linked to more ROSC in OHCA registry</description>
@@ -429,20 +443,6 @@
       <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
       <itunes:episodeType>full</itunes:episodeType>
       <podcast:transcript url="https://audio.paramedicpapers.com/ep-2026-10-13.txt" type="text/plain" language="en-au"/>
-    </item>
-    <item>
-      <title>Paramedic Papers Daily — 12 October 2026</title>
-      <link>https://paramedicpapers.com/episodes/2026-10-12/</link>
-      <description>2 papers: Bedside observations beat NEWS for spotting deterioration; Stable penetrating chest trauma: surgery increasingly avoided</description>
-      <content:encoded><![CDATA[<p>2 papers: Bedside observations beat NEWS for spotting deterioration; Stable penetrating chest trauma: surgery increasingly avoided</p><p>Papers in this episode:</p><ul><li><a href="https://doi.org/10.1016/j.resplu.2026.101529">Bedside observations beat NEWS for spotting deterioration <em>(Resuscitation Plus)</em></a></li><li><a href="https://doi.org/10.1186/s12873-026-01782-7">Stable penetrating chest trauma: surgery increasingly avoided <em>(BMC Emergency Medicine)</em></a></li></ul><p><a href="https://paramedicpapers.com/episodes/2026-10-12/">Show notes and transcript</a></p>]]></content:encoded>
-      <pubDate>Mon, 12 Oct 2026 07:33:09 +1100</pubDate>
-      <guid isPermaLink="false">https://audio.paramedicpapers.com/ep-2026-10-12.mp3</guid>
-      <enclosure url="https://op3.dev/e/audio.paramedicpapers.com/ep-2026-10-12.mp3" length="665324" type="audio/mpeg"/>
-      <itunes:duration>166</itunes:duration>
-      <itunes:summary>2 papers: Bedside observations beat NEWS for spotting deterioration; Stable penetrating chest trauma: surgery increasingly avoided</itunes:summary>
-      <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
-      <itunes:episodeType>full</itunes:episodeType>
-      <podcast:transcript url="https://audio.paramedicpapers.com/ep-2026-10-12.txt" type="text/plain" language="en-au"/>
     </item>
   </channel>
 </rss>
