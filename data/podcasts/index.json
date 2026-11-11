@@ -1,5 +1,41 @@
 [
  {
+  "id": "sydney-hems",
+  "name": "Greater Sydney Area HEMS",
+  "publisher": "NSW Ambulance Aeromedical",
+  "focus": "Retrieval and prehospital medicine case debriefs",
+  "region": "AU",
+  "site": "https://samuelbulford.podbean.com",
+  "art": "data/podcasts/art/sydney-hems.jpg",
+  "episodes": 34,
+  "latest": "2026-11-11",
+  "updated": "2026-11-11"
+ },
+ {
+  "id": "em-cases",
+  "name": "Emergency Medicine Cases",
+  "publisher": "Dr Anton Helman",
+  "focus": "Case-based emergency medicine with expert panels",
+  "region": "Canada",
+  "site": "https://emergencymedicinecases.com",
+  "art": "data/podcasts/art/em-cases.jpg",
+  "episodes": 406,
+  "latest": "2026-11-10",
+  "updated": "2026-11-11"
+ },
+ {
+  "id": "out-local",
+  "name": "Out Local",
+  "publisher": "Aaron McNeill & Michael Wann",
+  "focus": "Paramedic practitioner cases, workup and extended-care decisions",
+  "region": "AU",
+  "site": "https://podcasters.spotify.com/pod/show/takeaim830",
+  "art": "data/podcasts/art/out-local.jpg",
+  "episodes": 5,
+  "latest": "2026-11-09",
+  "updated": "2026-11-11"
+ },
+ {
   "id": "ecritcare",
   "name": "eCritCare",
   "publisher": "Dr Swapnil Pawar & Dr Jose Chacko",
@@ -130,42 +166,6 @@
   "episodes": 51,
   "latest": "2026-10-23",
   "updated": "2026-10-24"
- },
- {
-  "id": "sydney-hems",
-  "name": "Greater Sydney Area HEMS",
-  "publisher": "NSW Ambulance Aeromedical",
-  "focus": "Retrieval and prehospital medicine case debriefs",
-  "region": "AU",
-  "site": "https://samuelbulford.podbean.com",
-  "art": "data/podcasts/art/sydney-hems.jpg",
-  "episodes": 33,
-  "latest": "2026-10-21",
-  "updated": "2026-10-21"
- },
- {
-  "id": "out-local",
-  "name": "Out Local",
-  "publisher": "Aaron McNeill & Michael Wann",
-  "focus": "Paramedic practitioner cases, workup and extended-care decisions",
-  "region": "AU",
-  "site": "https://podcasters.spotify.com/pod/show/takeaim830",
-  "art": "data/podcasts/art/out-local.jpg",
-  "episodes": 4,
-  "latest": "2026-10-20",
-  "updated": "2026-10-21"
- },
- {
-  "id": "em-cases",
-  "name": "Emergency Medicine Cases",
-  "publisher": "Dr Anton Helman",
-  "focus": "Case-based emergency medicine with expert panels",
-  "region": "Canada",
-  "site": "https://emergencymedicinecases.com",
-  "art": "data/podcasts/art/em-cases.jpg",
-  "episodes": 405,
-  "latest": "2026-10-20",
-  "updated": "2026-10-21"
  },
  {
   "id": "st-emlyns",
