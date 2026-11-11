@@ -25,6 +25,20 @@
     <itunes:explicit>false</itunes:explicit>
     <podcast:guid>09fa3693-e2ac-527c-9d1c-f68df149b888</podcast:guid>
     <item>
+      <title>Paramedic Papers Daily — 12 November 2026</title>
+      <link>https://paramedicpapers.com/episodes/2026-11-12/</link>
+      <description>4 papers: Whole blood in paediatric trauma: early program data; Risk scores sort survival odds in paediatric OHCA; Out-of-hospital RSI practice across South African services; How common are blood-borne infections in first responders</description>
+      <content:encoded><![CDATA[<p>4 papers: Whole blood in paediatric trauma: early program data; Risk scores sort survival odds in paediatric OHCA; Out-of-hospital RSI practice across South African services; How common are blood-borne infections in first responders</p><p>Papers in this episode:</p><ul><li><a href="https://doi.org/10.1080/10903127.2026.2759767">Whole blood in paediatric trauma: early program data <em>(Prehospital Emergency Care)</em></a></li><li><a href="https://doi.org/10.1016/j.ajem.2026.10.040">Risk scores sort survival odds in paediatric OHCA <em>(The American Journal of Emergency Medicine)</em></a></li><li><a href="https://doi.org/10.1186/s12873-026-01845-9">Out-of-hospital RSI practice across South African services <em>(BMC Emergency Medicine)</em></a></li><li><a href="https://doi.org/10.1080/10903127.2026.2759763">How common are blood-borne infections in first responders <em>(Prehospital Emergency Care)</em></a></li></ul><p><a href="https://paramedicpapers.com/episodes/2026-11-12/">Show notes and transcript</a></p>]]></content:encoded>
+      <pubDate>Thu, 12 Nov 2026 07:33:05 +1100</pubDate>
+      <guid isPermaLink="false">https://audio.paramedicpapers.com/ep-2026-11-12.mp3</guid>
+      <enclosure url="https://op3.dev/e/audio.paramedicpapers.com/ep-2026-11-12.mp3" length="1208780" type="audio/mpeg"/>
+      <itunes:duration>302</itunes:duration>
+      <itunes:summary>4 papers: Whole blood in paediatric trauma: early program data; Risk scores sort survival odds in paediatric OHCA; Out-of-hospital RSI practice across South African services; How common are blood-borne infections in first responders</itunes:summary>
+      <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
+      <itunes:episodeType>full</itunes:episodeType>
+      <podcast:transcript url="https://audio.paramedicpapers.com/ep-2026-11-12.txt" type="text/plain" language="en-au"/>
+    </item>
+    <item>
       <title>Paramedic Papers Daily — 11 November 2026</title>
       <link>https://paramedicpapers.com/episodes/2026-11-11/</link>
       <description>4 papers: Sydney COAST trauma shock registry; roadside capillary troponin (France); UK bystander CPR up, AEDs flat; AR-guided FAST training</description>
@@ -429,20 +443,6 @@
       <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
       <itunes:episodeType>full</itunes:episodeType>
       <podcast:transcript url="https://audio.paramedicpapers.com/ep-2026-10-14.txt" type="text/plain" language="en-au"/>
-    </item>
-    <item>
-      <title>Paramedic Papers Daily — 13 October 2026</title>
-      <link>https://paramedicpapers.com/episodes/2026-10-13/</link>
-      <description>3 papers: Lactate drives prehospital mSOFA risk; Who calls an ambulance for low-acuity problems; What makes an ambulance driver competent</description>
-      <content:encoded><![CDATA[<p>3 papers: Lactate drives prehospital mSOFA risk; Who calls an ambulance for low-acuity problems; What makes an ambulance driver competent</p><p>Papers in this episode:</p><ul><li><a href="https://doi.org/10.1093/qjmed/hcag287">Lactate drives prehospital mSOFA risk <em>(QJM)</em></a></li><li><a href="https://doi.org/10.1080/10903127.2026.2747036">Who calls an ambulance for low-acuity problems <em>(Prehospital Emergency Care)</em></a></li><li><a href="https://doi.org/10.1177/27536386261496253">What makes an ambulance driver competent <em>(Paramedicine)</em></a></li></ul><p><a href="https://paramedicpapers.com/episodes/2026-10-13/">Show notes and transcript</a></p>]]></content:encoded>
-      <pubDate>Tue, 13 Oct 2026 07:33:10 +1100</pubDate>
-      <guid isPermaLink="false">https://audio.paramedicpapers.com/ep-2026-10-13.mp3</guid>
-      <enclosure url="https://op3.dev/e/audio.paramedicpapers.com/ep-2026-10-13.mp3" length="883052" type="audio/mpeg"/>
-      <itunes:duration>220</itunes:duration>
-      <itunes:summary>3 papers: Lactate drives prehospital mSOFA risk; Who calls an ambulance for low-acuity problems; What makes an ambulance driver competent</itunes:summary>
-      <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
-      <itunes:episodeType>full</itunes:episodeType>
-      <podcast:transcript url="https://audio.paramedicpapers.com/ep-2026-10-13.txt" type="text/plain" language="en-au"/>
     </item>
   </channel>
 </rss>
