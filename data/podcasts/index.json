@@ -1,5 +1,17 @@
 [
  {
+  "id": "prehospital-care-podcast",
+  "name": "Pre-Hospital Care Podcast",
+  "publisher": "Eoin Walker",
+  "focus": "Prehospital clinical topics and recent evidence",
+  "region": "Ireland",
+  "site": "https://podcasters.spotify.com/pod/show/phcp",
+  "art": "data/podcasts/art/prehospital-care-podcast.jpg",
+  "episodes": 401,
+  "latest": "2026-11-12",
+  "updated": "2026-11-12"
+ },
+ {
   "id": "sydney-hems",
   "name": "Greater Sydney Area HEMS",
   "publisher": "NSW Ambulance Aeromedical",
@@ -10,6 +22,18 @@
   "episodes": 34,
   "latest": "2026-11-11",
   "updated": "2026-11-11"
+ },
+ {
+  "id": "ems-20-20",
+  "name": "EMS 20/20",
+  "publisher": "Spencer Oliver & Christopher Pfingsten",
+  "focus": "Real calls from real responders and the lessons in them",
+  "region": "US",
+  "site": "https://longpausemedia.com/podcasts/ems-20-20",
+  "art": "data/podcasts/art/ems-20-20.jpg",
+  "episodes": 265,
+  "latest": "2026-11-11",
+  "updated": "2026-11-12"
  },
  {
   "id": "em-cases",
@@ -48,18 +72,6 @@
   "updated": "2026-11-09"
  },
  {
-  "id": "prehospital-care-podcast",
-  "name": "Pre-Hospital Care Podcast",
-  "publisher": "Eoin Walker",
-  "focus": "Prehospital clinical topics and recent evidence",
-  "region": "Ireland",
-  "site": "https://podcasters.spotify.com/pod/show/phcp",
-  "art": "data/podcasts/art/prehospital-care-podcast.jpg",
-  "episodes": 400,
-  "latest": "2026-11-09",
-  "updated": "2026-11-09"
- },
- {
   "id": "sgem",
   "name": "The Skeptics' Guide to EM",
   "publisher": "Dr Ken Milne",
@@ -82,18 +94,6 @@
   "episodes": 80,
   "latest": "2026-11-04",
   "updated": "2026-11-04"
- },
- {
-  "id": "ems-20-20",
-  "name": "EMS 20/20",
-  "publisher": "Spencer Oliver & Christopher Pfingsten",
-  "focus": "Real calls from real responders and the lessons in them",
-  "region": "US",
-  "site": "https://longpausemedia.com/podcasts/ems-20-20",
-  "art": "data/podcasts/art/ems-20-20.jpg",
-  "episodes": 264,
-  "latest": "2026-11-04",
-  "updated": "2026-11-05"
  },
  {
   "id": "rcem-learning",
