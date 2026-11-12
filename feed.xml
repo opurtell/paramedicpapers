@@ -25,6 +25,20 @@
     <itunes:explicit>false</itunes:explicit>
     <podcast:guid>09fa3693-e2ac-527c-9d1c-f68df149b888</podcast:guid>
     <item>
+      <title>Paramedic Papers Daily — 13 November 2026</title>
+      <link>https://paramedicpapers.com/episodes/2026-11-13/</link>
+      <description>4 papers: GCS-based triage misses severe injuries; rhythm transitions during CPR track outcome; night-time OHCA and bystander availability; admission carbon dioxide and post-arrest survival</description>
+      <content:encoded><![CDATA[<p>4 papers: GCS-based triage misses severe injuries; rhythm transitions during CPR track outcome; night-time OHCA and bystander availability; admission carbon dioxide and post-arrest survival</p><p>Papers in this episode:</p><ul><li><a href="https://doi.org/10.1186/s12873-026-01842-y">GCS-based triage misses seriously injured trauma patients <em>(BMC Emergency Medicine)</em></a></li><li><a href="https://doi.org/10.1097/CCM.0000000000007449">Rhythm changes during CPR track neurological outcomes <em>(Critical Care Medicine)</em></a></li><li><a href="https://doi.org/10.62838/jccm-2026-0029">Night-time OHCA outcomes linked to bystander availability <em>(Journal of Critical Care Medicine)</em></a></li><li><a href="https://doi.org/10.62838/jccm-2026-0039">Higher admission PaCO2 linked to worse post-arrest survival <em>(Journal of Critical Care Medicine)</em></a></li></ul><p><a href="https://paramedicpapers.com/episodes/2026-11-13/">Show notes and transcript</a></p>]]></content:encoded>
+      <pubDate>Fri, 13 Nov 2026 07:34:55 +1100</pubDate>
+      <guid isPermaLink="false">https://audio.paramedicpapers.com/ep-2026-11-13.mp3</guid>
+      <enclosure url="https://op3.dev/e/audio.paramedicpapers.com/ep-2026-11-13.mp3" length="972332" type="audio/mpeg"/>
+      <itunes:duration>242</itunes:duration>
+      <itunes:summary>4 papers: GCS-based triage misses severe injuries; rhythm transitions during CPR track outcome; night-time OHCA and bystander availability; admission carbon dioxide and post-arrest survival</itunes:summary>
+      <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
+      <itunes:episodeType>full</itunes:episodeType>
+      <podcast:transcript url="https://audio.paramedicpapers.com/ep-2026-11-13.txt" type="text/plain" language="en-au"/>
+    </item>
+    <item>
       <title>Paramedic Papers Daily — 12 November 2026</title>
       <link>https://paramedicpapers.com/episodes/2026-11-12/</link>
       <description>4 papers: Whole blood in paediatric trauma: early program data; Risk scores sort survival odds in paediatric OHCA; Out-of-hospital RSI practice across South African services; How common are blood-borne infections in first responders</description>
@@ -429,20 +443,6 @@
       <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
       <itunes:episodeType>full</itunes:episodeType>
       <podcast:transcript url="https://audio.paramedicpapers.com/ep-2026-10-15.txt" type="text/plain" language="en-au"/>
-    </item>
-    <item>
-      <title>Paramedic Papers Daily — 14 October 2026</title>
-      <link>https://paramedicpapers.com/episodes/2026-10-14/</link>
-      <description>2 papers: Mechanical vs manual BVM in adult CPR; Community paramedic referrals cut ambulance use</description>
-      <content:encoded><![CDATA[<p>2 papers: Mechanical vs manual BVM in adult CPR; Community paramedic referrals cut ambulance use</p><p>Papers in this episode:</p><ul><li><a href="https://doi.org/10.1016/j.resuscitation.2026.111345">Mechanical vs manual BVM in adult CPR <em>(Resuscitation)</em></a></li><li><a href="https://doi.org/10.1177/19427891261496776">Community paramedic referrals cut ambulance use <em>(Population Health Management)</em></a></li></ul><p><a href="https://paramedicpapers.com/episodes/2026-10-14/">Show notes and transcript</a></p>]]></content:encoded>
-      <pubDate>Wed, 14 Oct 2026 07:32:58 +1100</pubDate>
-      <guid isPermaLink="false">https://audio.paramedicpapers.com/ep-2026-10-14.mp3</guid>
-      <enclosure url="https://op3.dev/e/audio.paramedicpapers.com/ep-2026-10-14.mp3" length="566060" type="audio/mpeg"/>
-      <itunes:duration>141</itunes:duration>
-      <itunes:summary>2 papers: Mechanical vs manual BVM in adult CPR; Community paramedic referrals cut ambulance use</itunes:summary>
-      <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
-      <itunes:episodeType>full</itunes:episodeType>
-      <podcast:transcript url="https://audio.paramedicpapers.com/ep-2026-10-14.txt" type="text/plain" language="en-au"/>
     </item>
   </channel>
 </rss>
