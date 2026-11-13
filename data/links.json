@@ -1,34 +1,28 @@
 {
- "updated": "2026-11-12",
+ "updated": "2026-11-13",
  "latest": [
   {
-   "key": "43002825",
-   "title": "Risk scores sort survival odds in paediatric OHCA",
-   "topic": "Paediatrics",
-   "finding": "27.8% survived to admission and 11.9% to discharge; scores using gender, arrest location, witness status, aetiology, bystander CPR, prehospital AED use and first rhythm reached AUROC 0.76–0.82, with average survival 3–48% across low/moderate/high groups"
+   "key": "doi-10-1186-s12873-026-01842-y",
+   "title": "GCS-based triage misses seriously injured trauma patients",
+   "topic": "Trauma",
+   "finding": "GCS 3–8 detected diagnosis-based severe injury with 54.2% sensitivity (κ 0.192); one in ten patients (10.0%) met the anatomical severity criterion despite GCS 9–15; destination undertriage was 33.6% (GCS-based) and 47.3% (ICISS-based), with rural disparity (aOR 2.65 and 2.04)."
   },
   {
-   "key": "43008208",
-   "title": "Whole blood in paediatric trauma: early program data",
-   "topic": "Paediatrics",
-   "finding": "Trauma caused 96% of paediatric transfusions (74% gunshot, 84% all penetrating); 45% had elevated age-adjusted SIPA, 20% were pulseless; survival 50%, died 39%, unknown 11%; younger children showed the largest drop in shock index after resuscitation"
+   "key": "43018417",
+   "title": "Rhythm changes during CPR track neurological outcomes",
+   "topic": "Cardiac arrest",
+   "finding": "Weighted good-neurological-outcome risks were 0.101% (asystole–asystole), 0.231% (asystole→PEA), 0.384% (PEA→asystole) and 0.874% (PEA–PEA); versus persistent asystole, asystole→PEA OR 2.28 (95% CI 1.78–2.93) and PEA–PEA OR 8.70 (95% CI 6.98–10.83)."
   },
   {
-   "key": "doi-10-1186-s12873-026-01845-9",
-   "title": "Out-of-hospital RSI practice across South African services",
-   "topic": "Airway & ventilation",
-   "finding": "Trauma caused 238/354 (67.2%) of RSIs; ketamine documented in 74.9%, rocuronium in 52.3%, pre-oxygenation in 99.4%, end-tidal CO2 monitoring in 83.6% and post-intubation sedation/analgesia in 72%"
-  },
-  {
-   "key": "43008211",
-   "title": "How common are blood-borne infections in first responders",
-   "topic": "Workforce & wellbeing",
-   "finding": "Pooled prevalence: hepatitis B 6.2% (95% CI 4.5–8.2), hepatitis C 1.8% (0.9–2.9), MRSA colonisation ~4% (2.6–5.9), COVID-19 among unvaccinated staff 13.6% (4.8–25.9), falling to 7.3% after excluding high-bias studies"
+   "key": "43017117",
+   "title": "Higher admission PaCO2 linked to worse post-arrest survival",
+   "topic": "Cardiac arrest",
+   "finding": "One-month mortality was 73.6% overall and rose across PaCO2 groups (49.7%, 81.1% and 90.7% for ≤50, >50–70 and >70 mmHg); each 10-mmHg increase carried aOR 1.45 (95% CI 1.24–1.70) for mortality, with a matching gradient for neurological outcome (common aOR 1.53)."
   }
  ],
  "episode": {
-  "date": "2026-11-12",
-  "title": "Paramedic Papers Daily — 12 November 2026",
-  "page": "/episodes/2026-11-12/"
+  "date": "2026-11-13",
+  "title": "Paramedic Papers Daily — 13 November 2026",
+  "page": "/episodes/2026-11-13/"
  }
 }
