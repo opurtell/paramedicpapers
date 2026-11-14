@@ -799,7 +799,7 @@
       }).join('') + '</section>';
 
     out += '<a class="newsletter-banner" href="https://join.paramedicpapers.com">' +
-      '<span><b>Get the next one by email</b> — the PD brief lands on your PD day, every 8 days. Pick your block when you sign up.</span>' +
+      '<span><b>Get the next one by email</b> — the free PD brief, every week on a day you choose.</span>' +
       '<span class="newsletter-cta">Sign up ' + ico('arrow') + '</span></a>' +
       '<p class="brief-fine">Summaries are AI-assisted — check the paper before acting on it.</p>';
     $('brief-body').innerHTML = out;
