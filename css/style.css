@@ -460,6 +460,41 @@ a.act { color: var(--accent); }
 }
 .home-intro-close:hover { color: var(--ink); background: rgba(var(--shadow-rgb),.05); }
 .home-intro-close .hi { width: 16px; height: 16px; }
+/* About popup opened from the intro's "How it works" (native <dialog>). */
+.about-modal {
+  width: min(560px, calc(100vw - 32px)); max-height: min(86vh, 720px); max-height: min(86dvh, 720px);
+  margin: auto; padding: 0; border: 1px solid var(--line); border-radius: 16px;
+  background: var(--bg); color: var(--ink);
+  box-shadow: 0 18px 50px -16px rgba(var(--shadow-rgb),.45);
+  overscroll-behavior: contain;
+}
+.about-modal::backdrop { background: rgba(0,0,0,.45); }
+.about-modal-in { padding: 0 20px 20px; }
+.about-modal-head {
+  position: sticky; top: 0; z-index: 1; margin: 0 -20px 10px; padding: 14px 10px 10px 20px;
+  display: flex; align-items: flex-start; justify-content: space-between; gap: 12px;
+  background: var(--bg); border-bottom: 1px solid var(--hair);
+}
+.about-modal-head h2 { font-size: 21px; font-weight: 500; line-height: 1.25; padding-top: 7px; }
+.about-modal-close {
+  flex: none; display: grid; place-items: center; width: 40px; height: 40px;
+  background: none; border: 0; border-radius: 10px; cursor: pointer; color: var(--ink-3);
+}
+.about-modal-close:hover { color: var(--ink); background: rgba(var(--shadow-rgb),.06); }
+.about-modal-close .hi { width: 20px; height: 20px; }
+.about-modal h3 { font-family: var(--sans); font-size: 14px; font-weight: 600; letter-spacing: 0; color: var(--ink); margin: 18px 0 6px; }
+.about-modal p, .about-modal li { font-size: 14px; line-height: 1.55; color: var(--ink-2); margin: 0; }
+.about-modal .about-modal-lead { font-size: 15px; }
+.about-modal ul { margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 6px; }
+.about-modal a:not(.btn) { color: var(--accent); }
+.about-modal-callout {
+  margin: 16px 0 0; padding: 12px 14px; border-left: 3px solid var(--warm);
+  background: var(--warm-tint); border-radius: 0 8px 8px 0;
+}
+.about-modal-callout strong { color: var(--warm); }
+.about-modal-btns { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; }
+body.has-modal { overflow: hidden; }
+
 /* One message at a time: the CPD launch card waits until the intro is gone. */
 #page-home.has-intro .cpd-promo { display: none; }
 
