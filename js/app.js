@@ -65,6 +65,7 @@
     setSaved: function (ids) { setSaved(ids); },
     renderSavedStatus: function () { renderSavedStatus(); },
     paperById: function (id) { return paperById(id); },
+    ensureArchive: function () { return ensureArchive(); },
     hasData: function () { return !!state.data; },
     renderPapers: function () { renderPaperLists(); },
     hooks: hooks,
@@ -94,15 +95,21 @@
     });
     DESKTOP.addEventListener('change', syncLayout);
     syncLayout();
+    registerOffline();
 
     try {
       state.data = await loadData(false);
     } catch (err) {
       console.error(err);
-      $('feed-list').innerHTML = '<p class="empty">Unable to load research data. Please try again later.</p>';
+      $('feed-list').innerHTML = '<p class="empty">' + (navigator.onLine === false
+        ? 'You\u2019re offline and no papers are saved on this device yet. Open the site once with signal and they\u2019ll be kept for next time.'
+        : 'Unable to load research data. Please try again later.') + '</p>';
       return;
     }
+    markSeen();
     renderAll();
+    renderOffline();
+    if (savedPapers().length < Object.keys(state.saved).length) withArchive();
     if (paperFromHash()) openPaperLink();
     else if (postFromHash()) openPostLink();
     else setTab(tabFromHash(), true);
@@ -178,8 +185,13 @@
     var btn = $('btn-refresh');
     btn.disabled = true; btn.classList.add('spinning');
     try {
+      var hadArchive = state.archiveLoaded;
       state.data = await loadData(true);
+      state.archiveLoaded = false;
+      archivePromise = null;
       renderAll();
+      renderOffline();
+      if (hadArchive) withArchive();
       loadEpisodes().then(function (eps) {
         state.episodes = eps;
         renderPodcastStrip();
@@ -231,6 +243,11 @@
 
   function openPaperLink() {
     var id = paperFromHash();
+    if (id && !paperById(id) && archivePending()) {
+      /* An older paper: it's in the archive file (review BC4). */
+      ensureArchive().then(function () { if (paperFromHash() === id) openPaperLink(); });
+      return;
+    }
     if (!id || !paperById(id)) { setTab('feed', true); return; }
     state.pinned = [id];
     state.pinnedFrom = 'link';
@@ -262,7 +279,9 @@
 
   async function openPostLink() {
     var date = postFromHash();
-    var ids = (await postPaperIds(date)).filter(paperById);
+    var all = await postPaperIds(date);
+    if (all.some(function (id) { return !paperById(id); })) await ensureArchive();
+    var ids = all.filter(paperById);
     if (date !== postFromHash()) return;  /* hash moved on while loading */
     if (!ids.length) { setTab('feed', true); return; }
     state.pinned = ids;
@@ -418,7 +437,7 @@
     var days = state.data.dailyUpdates || [];
     var savedCount = savedPapers().length;
 
-    $('nav-count-feed').textContent = allPapers().length;
+    $('nav-count-feed').textContent = totalPapers();
     $('nav-count-saved').textContent = savedCount;
     $('nav-count-saved').hidden = savedCount === 0;
 
@@ -449,7 +468,9 @@
     if (state.tab === 'home') {
       text = longDate(new Date());
     } else if (state.tab === 'feed') {
-      text = allPapers().length + ' papers · ' + d.dailyUpdates.length + ' scans';
+      text = totalPapers() + ' papers · ' + totalScans() + ' scans';
+      var fresh = newCount();
+      if (fresh) text += ' · ' + fresh + ' new';
     } else if (state.tab === 'weekly') {
       text = (d.weeklyTldr && d.weeklyTldr.dateRange) || 'This week';
     } else if (state.tab === 'brief') {
@@ -664,6 +685,10 @@
   function renderTopicFilter() {
     var counts = {};
     allPapers().forEach(function (p) { if (p.topic) counts[p.topic] = (counts[p.topic] || 0) + 1; });
+    /* Until the archive is loaded, its per-topic counts come from the
+       main file's archive summary, so the totals are right from the start. */
+    var arc = archivePending() ? archiveInfo().topics || {} : {};
+    Object.keys(arc).forEach(function (t) { counts[t] = (counts[t] || 0) + arc[t]; });
     var topics = Object.keys(counts).sort();
     var sel = $('topic-filter');
     sel.hidden = topics.length < 2;
@@ -775,26 +800,43 @@
     }
 
     var left = state.feedTotal - cards;
-    if (left > 0) {
+    var older = left > 0 ? 0 : archivePending() ? archiveInfo().papers || 0 : 0;
+    if (left > 0 || older) {
       var more = document.createElement('button');
       more.className = 'wide-btn feed-more';
       more.id = 'feed-more';
       more.type = 'button';
-      more.textContent = 'Show ' + Math.min(left, FEED_PAGE) + ' more · ' + left + ' left';
-      more.addEventListener('click', function () { drawFeedPage(state.feedLimit + FEED_PAGE); });
+      if (left > 0) {
+        more.textContent = 'Show ' + Math.min(left, FEED_PAGE) + ' more · ' + left + ' left';
+        feedMore = function () { drawFeedPage(state.feedLimit + FEED_PAGE); };
+      } else {
+        /* End of the recent papers: the rest are in the archive file. */
+        more.textContent = 'Show older papers · ' + older + ' more';
+        feedMore = function () {
+          more.disabled = true;
+          more.textContent = 'Loading older papers\u2026';
+          ensureArchive().then(function (ok) {
+            if (ok) { var keep = state.feedLimit; renderAfterArchive(); drawFeedPage(keep + FEED_PAGE); }
+            else { more.disabled = false; more.textContent = 'Couldn\u2019t load older papers \u00b7 try again'; }
+          });
+        };
+      }
+      more.addEventListener('click', function () { feedMore(); });
       list.appendChild(more);
-      watchFeedEnd(more);
+      if (left > 0) watchFeedEnd(more);
+      else if (feedObserver) feedObserver.disconnect();
     } else if (feedObserver) {
       feedObserver.disconnect();
     }
   }
+  var feedMore = function () {};
 
   function watchFeedEnd(el) {
     if (!('IntersectionObserver' in window)) return;
     if (!feedObserver) {
       feedObserver = new IntersectionObserver(function (entries) {
         entries.forEach(function (e) {
-          if (e.isIntersecting && state.tab === 'feed') drawFeedPage(state.feedLimit + FEED_PAGE);
+          if (e.isIntersecting && state.tab === 'feed') feedMore();
         });
       }, { rootMargin: '600px 0px' });
     }
@@ -802,8 +844,15 @@
     feedObserver.observe(el);
   }
 
-  /* A new search, sort, filter or pin starts the feed from its first page. */
-  function resetFeed() { state.feedLimit = 0; renderFeed(); }
+  /* A new search, sort, filter or pin starts the feed from its first page.
+     Search and filters cover every paper, so any of them pulls in the
+     archive (review BC4); the plain newest-first feed doesn't need it until
+     the reader scrolls past the recent papers. */
+  function resetFeed() {
+    state.feedLimit = 0;
+    renderFeed();
+    if (state.query.trim() || state.topic || state.highRelOnly || state.savedOnly || state.sort !== 'newest') withArchive();
+  }
 
   /* Stable sort: High, then Med, then Low; the scan's own order within each. */
   function highFirst(papers) {
@@ -1412,6 +1461,7 @@
   /* topic / studyType are optional — rendered only when the backend supplies them. */
   function tagsHTML(p) {
     var out = '<div class="tagrow">';
+    if (isNew(p)) out += '<span class="tag tag-new">New</span>';
     if (p.topic) out += '<span class="tag">' + esc(p.topic) + '</span>';
     if (p.studyType) out += '<span class="tag tag-outline">' + esc(p.studyType) + '</span>';
     if (p.bottomLine) out += '<span class="tag tag-bl bl-' + esc(p.bottomLine.split(' ')[0].toLowerCase()) + '">' + esc(p.bottomLine) + '</span>';
@@ -1699,6 +1749,108 @@
   }
   function paperById(id) {
     return allPapers().filter(function (p) { return p.id === id; })[0] || null;
+  }
+
+  /* ── archive (review BC4) ───────────────────────────── */
+
+  /* data/papers.json holds the recent days; older days are in a second
+     file named by data.archive.url, loaded only when something needs them:
+     search or a filter, scrolling past the recent papers, or a link, saved
+     paper or CPD entry that points at an older paper. data.archive also
+     carries the archive's paper and scan counts and its per-topic counts,
+     so totals are right before it loads. A papers.json without "archive"
+     (the old single-file build) works exactly as before. */
+  var archivePromise = null;
+  function archiveInfo() { return state.data && state.data.archive; }
+  function archivePending() { var a = archiveInfo(); return !!(a && a.url && !state.archiveLoaded); }
+  function ensureArchive() {
+    if (!archivePending()) return Promise.resolve(false);
+    if (archivePromise) return archivePromise;
+    var data = state.data, a = data.archive;
+    /* The version changes with each build, so a day's copy can be cached. */
+    var url = a.url + (a.url.indexOf('?') < 0 ? '?' : '&') + 'v=' + encodeURIComponent(a.version || data.lastUpdated || '');
+    archivePromise = fetch(url).then(function (r) {
+      if (!r.ok) throw new Error('archive ' + r.status);
+      return r.json();
+    }).then(function (arc) {
+      if (state.data !== data) return false;  /* refreshed meanwhile */
+      var have = {};
+      data.dailyUpdates = data.dailyUpdates || [];
+      data.dailyUpdates.forEach(function (d) { have[d.date] = true; });
+      (arc.dailyUpdates || []).forEach(function (d) { if (!have[d.date]) data.dailyUpdates.push(d); });
+      data.dailyUpdates.sort(function (x, y) { return x.date < y.date ? 1 : x.date > y.date ? -1 : 0; });
+      state.archiveLoaded = true;
+      return true;
+    }).catch(function (err) {
+      console.warn('Older papers not loaded:', err && err.message);
+      archivePromise = null;
+      return false;
+    });
+    return archivePromise;
+  }
+  /* Load the archive, then redraw what depends on it, keeping the feed's
+     scroll depth. */
+  function withArchive() {
+    if (!archivePending()) return;
+    ensureArchive().then(function (ok) { if (ok) renderAfterArchive(); });
+  }
+  function renderAfterArchive() {
+    renderKicker(); renderTopicFilter(); renderFeed(); renderSaved(); renderSidebar();
+  }
+  function totalPapers() {
+    return allPapers().length + (archivePending() ? archiveInfo().papers || 0 : 0);
+  }
+  function totalScans() {
+    return (state.data.dailyUpdates || []).length + (archivePending() ? archiveInfo().days || 0 : 0);
+  }
+
+  /* ── new since last visit (review BC8) ──────────────── */
+
+  /* pp:seen holds the newest scan date this device has shown. Papers from
+     later scans are marked New for the whole of the next visit; the
+     first visit marks nothing. */
+  var SEEN_KEY = 'pp:seen';
+  function markSeen() {
+    var days = state.data.dailyUpdates || [];
+    if (!days.length) return;
+    var prev = '';
+    try { prev = localStorage.getItem(SEEN_KEY) || ''; } catch (e) {}
+    if (state.seenBefore === undefined) state.seenBefore = prev;
+    if (!prev || days[0].date > prev) {
+      try { localStorage.setItem(SEEN_KEY, days[0].date); } catch (e) {}
+    }
+  }
+  function isNew(p) {
+    return !!(state.seenBefore && p.date && p.date > state.seenBefore);
+  }
+  function newCount() {
+    if (!state.seenBefore || !state.data) return 0;
+    return (state.data.dailyUpdates || []).reduce(function (n, d) {
+      return d.date > state.seenBefore ? n + (d.papers || []).length : n;
+    }, 0);
+  }
+
+  /* ── offline (review BC8) ───────────────────────────── */
+
+  /* /sw.js keeps the last copy of the app and its data on the device, so
+     the dashboard opens without signal. Network first, so online readers
+     always get the latest. */
+  function registerOffline() {
+    if ('serviceWorker' in navigator && (location.protocol === 'https:' || location.hostname === 'localhost')) {
+      navigator.serviceWorker.register('/sw.js').catch(function (err) { console.warn('Offline copy unavailable:', err && err.message); });
+    }
+    window.addEventListener('online', renderOffline);
+    window.addEventListener('offline', renderOffline);
+  }
+  function renderOffline() {
+    var el = $('offline-note');
+    if (!el) return;
+    var off = navigator.onLine === false;
+    el.hidden = !off;
+    if (off) {
+      el.textContent = 'You\u2019re offline. Showing the papers saved on this device' +
+        (state.data && state.data.lastUpdatedSydney ? ', last updated ' + state.data.lastUpdatedSydney : '') + '.';
+    }
   }
   function matches(p, term) {
     return [p.title, p.journal, p.summary, p.relevance, p.topic, p.studyType,

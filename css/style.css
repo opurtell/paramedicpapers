@@ -281,6 +281,14 @@ main { padding-bottom: calc(var(--tabbar-h) + env(safe-area-inset-bottom)); }
   padding: 3px 7px; border-radius: 4px; background: var(--accent-lo); color: var(--accent);
 }
 .tag-outline { background: none; border: 1px solid var(--line-2); color: var(--ink-3b); padding: 2px 7px; }
+/* Papers from scans since the last visit (review BC8). */
+.tag-new { background: var(--warm-tint); color: var(--warm-ink); }
+/* Offline notice above every view (review BC8). */
+.offline-note {
+  margin: 14px 22px 0; font-size: 13px; line-height: 1.5; padding: 9px 12px; border-radius: 10px;
+  background: var(--warm-tint); color: var(--ink-2); border: 1px solid var(--warm-rule);
+}
+@media (min-width: 960px) { .offline-note { margin: 18px 40px 0; } }
 .rel {
   margin-left: auto; font-family: var(--mono); font-size: 11px;
   letter-spacing: .09em; text-transform: uppercase; color: var(--muted);

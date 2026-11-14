@@ -24,7 +24,7 @@
   <link rel="preload" href="/fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/fonts/ibm-plex-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="css/fonts.css?v=1">
-  <link rel="stylesheet" href="css/style.css?v=30">
+  <link rel="stylesheet" href="css/style.css?v=31">
   <!-- Apply a saved dark-theme choice before first paint (light is default). -->
   <script>
     try {
@@ -177,6 +177,9 @@
   </header>
 
   <main id="main">
+
+    <!-- Shown only while the device is offline (review BC8). -->
+    <p class="offline-note" id="offline-note" role="status" hidden></p>
 
     <!-- ── HOME ───────────────────────────────────────────── -->
     <section class="page" id="page-home">
@@ -418,6 +421,7 @@
         <a href="/about.html">About</a>
         <a href="/privacy.html">Privacy</a>
         <a href="/feed.xml">RSS</a>
+        <a href="https://www.instagram.com/paramedicpapers/" rel="noopener">Instagram @paramedicpapers</a>
       </nav>
     </footer>
 
@@ -466,8 +470,8 @@
 
   <!-- defer keeps the order (cpd.js and podcasts.js rely on app.js's
        window.PP); all three start from DOMContentLoaded as before. -->
-  <script defer src="js/app.js?v=34"></script>
-  <script defer src="js/cpd.js?v=15"></script>
+  <script defer src="js/app.js?v=35"></script>
+  <script defer src="js/cpd.js?v=16"></script>
   <script defer src="js/podcasts.js?v=4"></script>
 </body>
 </html>

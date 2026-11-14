@@ -1128,6 +1128,10 @@
     var p = PP.paperById(paperId);
     var cached = entryId && st.entries ? st.entries.filter(function (e) { return e.id === entryId; })[0] : null;
     var getEntry = !entryId ? Promise.resolve(null) : cached ? Promise.resolve(cached) : api('/api/entries/' + encodeURIComponent(entryId));
+    /* Papers older than the main data file are in the archive (review BC4). */
+    if (!p && PP.ensureArchive) {
+      getEntry = Promise.all([getEntry, PP.ensureArchive()]).then(function (r) { p = PP.paperById(paperId); return r[0]; });
+    }
     openSheet({ type: 'paper', paperId: paperId, loading: true }, '<div class="sheet-grip" aria-hidden="true"></div>' + loadingHTML());
     getEntry.then(function (e) {
       if (!p && !e) throw new Error('That paper is no longer on the dashboard.');

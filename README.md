@@ -30,6 +30,15 @@ npx serve .
 into it, then commits and pushes. The nightly cron (`daily-dashboard-push.sh`) reruns
 this with the LLM-written daily TLDR. There is no build step for the front-end itself.
 
+Since the review's BC4 (Nov 2026) `papers.json` holds only the last 30 days of
+scans; older days are in `data/papers-archive.json` (`{"lastUpdated", "dailyUpdates"}`),
+which `js/app.js` loads only for search, filters, scrolling past the recent papers, or
+a link or saved paper that points at an older one. Without an `archive` block the
+app treats `papers.json` as the whole set, as before.
+
+`sw.js` keeps the last copy of the app and its data on the device for offline use
+(network first, so online readers always get the latest).
+
 The JSON schema:
 
 ```json
@@ -46,6 +55,12 @@ The JSON schema:
       "papers": [ ... ]
     }
   ],
+  "archive": {
+    "url": "data/papers-archive.json",
+    "version": "same as lastUpdated",
+    "days": 92, "papers": 466, "from": "YYYY-MM-DD", "to": "YYYY-MM-DD",
+    "topics": { "Cardiac arrest": 142 }
+  },
   "tldr": { ... },
   "weeklyTldr": { ... }
 }
