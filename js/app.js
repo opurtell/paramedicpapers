@@ -1006,8 +1006,9 @@
     }
     a.play();
     /* "Paramedic Papers Daily — 2 October 2026" → "2 October 2026": the
-       bar is narrow on phones and the show name adds nothing there. */
-    $('player-title').textContent = ep.title.replace(/^.*—\s*/, '') || ep.title;
+       bar is narrow on phones and the show name adds nothing there. Newer
+       titles lead with the paper ("Short title · 13 Nov") and stay whole. */
+    $('player-title').textContent = ep.title.replace(/^Paramedic Papers Daily\s*—\s*/, '') || ep.title;
     $('player').hidden = false;
     document.body.classList.add('has-player');
     setMediaSession(ep);
