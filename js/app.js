@@ -1626,8 +1626,13 @@
   function bindAboutModal() {
     bindPopup('home-intro-about', 'about-modal', 'about-modal-close');
     bindPopup('home-intro-join', 'join-modal', 'join-modal-close', function () {
+      /* The sign-up page can't see this app's theme toggle, so pass it
+         (join.paramedicpapers.com reads ?theme=light|dark). Reload the
+         frame only if the theme changed since it was last opened. */
       var frame = $('join-modal-frame');
-      if (!frame.getAttribute('src')) frame.setAttribute('src', $('home-intro-join').href);
+      var theme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
+      var src = $('home-intro-join').href.replace(/\/?$/, '/') + '?theme=' + theme;
+      if (frame.getAttribute('src') !== src) frame.setAttribute('src', src);
     });
   }
   function bindPopup(linkId, dlgId, closeId, onOpen) {
