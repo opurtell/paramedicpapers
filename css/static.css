@@ -8,7 +8,7 @@
 
 :root {
   --bg: #FBFAF8; --surface: #FFFFFF; --ink: #14171A; --ink-2: #2A2E33; --ink-3: #5A6067;
-  --muted: #8A9097; --line: #EAE8E3; --hair: #F0EEE9; --hover: #F4F2ED;
+  --muted: #646A71; --line: #EAE8E3; --hair: #F0EEE9; --hover: #F4F2ED;
   --accent: #2F5FA8; --accent-lo: #EDF2FB; --accent-hi: #26508F;
   --warm: #C2562F; --warm-tint: #FAF0EA; --good: #2E7350; --good-lo: #EAF3EE;
   color-scheme: light;
@@ -19,7 +19,7 @@
 /* Dark is opt-in (the dashboard's toggle, saved as pp:theme), as on the app. */
 :root[data-theme="dark"] {
   --bg: #121417; --surface: #1A1D21; --ink: #ECEDEE; --ink-2: #D3D6D9; --ink-3: #A3A9B0;
-  --muted: #858C94; --line: #2A2E33; --hair: #22262A; --hover: #22262B;
+  --muted: #9097A0; --line: #2A2E33; --hair: #22262A; --hover: #22262B;
   --accent: #7DA2E3; --accent-lo: #1C2638; --accent-hi: #9BB4E0;
   --warm: #E07A52; --warm-tint: #2C1F18; --good: #5DB585; --good-lo: #17271F;
   color-scheme: dark;
