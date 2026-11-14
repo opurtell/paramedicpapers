@@ -1614,7 +1614,34 @@
     if (!el.dataset.bound) {
       el.dataset.bound = '1';
       $('home-intro-close').addEventListener('click', closeIntro);
+      bindAboutModal();
     }
+  }
+
+  /* "How it works" opens the about popup so the reader stays on Home.
+     Close with the X, the back-to-papers button, Esc (native) or a tap
+     outside. Falls back to about.html where <dialog> isn't supported. */
+  function bindAboutModal() {
+    var link = $('home-intro-about');
+    var dlg = $('about-modal');
+    if (!link || !dlg || typeof dlg.showModal !== 'function') return;
+    function close() { if (dlg.open) dlg.close(); }
+    link.addEventListener('click', function (e) {
+      if (e.metaKey || e.ctrlKey || e.shiftKey || e.button > 0) return;
+      e.preventDefault();
+      document.body.classList.add('has-modal');
+      dlg.showModal();
+      dlg.scrollTop = 0;
+      $('about-modal-close').focus();
+    });
+    dlg.addEventListener('close', function () {
+      document.body.classList.remove('has-modal');
+      link.focus();
+    });
+    $('about-modal-close').addEventListener('click', close);
+    dlg.querySelectorAll('[data-about-close]').forEach(function (b) { b.addEventListener('click', close); });
+    /* A click on the dialog box itself (not its content) is the backdrop. */
+    dlg.addEventListener('click', function (e) { if (e.target === dlg) close(); });
   }
 
   function showSignupResult() {
