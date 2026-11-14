@@ -1618,27 +1618,37 @@
     }
   }
 
-  /* "How it works" opens the about popup so the reader stays on Home.
-     Close with the X, the back-to-papers button, Esc (native) or a tap
-     outside. Falls back to about.html where <dialog> isn't supported. */
+  /* The intro's two buttons open popups so the reader stays on Home:
+     "How it works" shows the about text, "Get the PD brief" shows the
+     join.paramedicpapers.com form in a frame (loaded on first open).
+     Close with the X, Esc (native) or a tap outside. Without <dialog>,
+     or on ctrl/cmd-click, the links work as normal pages. */
   function bindAboutModal() {
-    var link = $('home-intro-about');
-    var dlg = $('about-modal');
+    bindPopup('home-intro-about', 'about-modal', 'about-modal-close');
+    bindPopup('home-intro-join', 'join-modal', 'join-modal-close', function () {
+      var frame = $('join-modal-frame');
+      if (!frame.getAttribute('src')) frame.setAttribute('src', $('home-intro-join').href);
+    });
+  }
+  function bindPopup(linkId, dlgId, closeId, onOpen) {
+    var link = $(linkId);
+    var dlg = $(dlgId);
     if (!link || !dlg || typeof dlg.showModal !== 'function') return;
     function close() { if (dlg.open) dlg.close(); }
     link.addEventListener('click', function (e) {
       if (e.metaKey || e.ctrlKey || e.shiftKey || e.button > 0) return;
       e.preventDefault();
+      if (onOpen) onOpen();
       document.body.classList.add('has-modal');
       dlg.showModal();
       dlg.scrollTop = 0;
-      $('about-modal-close').focus();
+      $(closeId).focus();
     });
     dlg.addEventListener('close', function () {
       document.body.classList.remove('has-modal');
       link.focus();
     });
-    $('about-modal-close').addEventListener('click', close);
+    $(closeId).addEventListener('click', close);
     dlg.querySelectorAll('[data-about-close]').forEach(function (b) { b.addEventListener('click', close); });
     /* A click on the dialog box itself (not its content) is the backdrop. */
     dlg.addEventListener('click', function (e) { if (e.target === dlg) close(); });
