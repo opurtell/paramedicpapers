@@ -494,6 +494,12 @@ a.act { color: var(--accent); }
 .about-modal-callout strong { color: var(--warm); }
 .about-modal-btns { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; }
 body.has-modal { overflow: hidden; }
+/* Sign-up popup: same box, the head sits above a full-height frame. */
+.join-modal[open] { display: flex; flex-direction: column; height: min(86vh, 760px); height: min(86dvh, 760px); overflow: hidden; }
+.join-modal .about-modal-head { position: static; margin: 0; align-items: center; }
+.join-modal .about-modal-head h2 { flex: 1; padding-top: 0; }
+.join-modal-out { font-size: 13px; color: var(--accent); white-space: nowrap; }
+.join-modal-frame { flex: 1; width: 100%; border: 0; background: var(--bg); }
 
 /* One message at a time: the CPD launch card waits until the intro is gone. */
 #page-home.has-intro .cpd-promo { display: none; }
