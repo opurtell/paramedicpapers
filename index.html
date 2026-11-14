@@ -24,7 +24,7 @@
   <link rel="preload" href="/fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/fonts/ibm-plex-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="css/fonts.css?v=1">
-  <link rel="stylesheet" href="css/style.css?v=29">
+  <link rel="stylesheet" href="css/style.css?v=30">
   <!-- Apply a saved dark-theme choice before first paint (light is default). -->
   <script>
     try {
@@ -126,9 +126,9 @@
     </div>
 
     <nav class="sidebar-nav" aria-label="Views">
-      <button class="nav-item is-on" data-tab="home" type="button"><svg class="hi ico" aria-hidden="true"><use href="#hi-home"/></svg>Home</button>
-      <button class="nav-item" data-tab="feed" type="button"><svg class="hi ico" aria-hidden="true"><use href="#hi-feed"/></svg>Feed<span class="nav-pill" id="nav-count-feed"></span></button>
-      <button class="nav-item" data-tab="weekly" type="button"><svg class="hi ico" aria-hidden="true"><use href="#hi-weekly"/></svg>Weekly</button>
+      <button class="nav-item is-on" data-tab="home" type="button"><svg class="hi ico" aria-hidden="true"><use href="#hi-home"/></svg>Today</button>
+      <button class="nav-item" data-tab="feed" type="button"><svg class="hi ico" aria-hidden="true"><use href="#hi-feed"/></svg>Papers<span class="nav-pill" id="nav-count-feed"></span></button>
+      <button class="nav-item" data-tab="weekly" type="button"><svg class="hi ico" aria-hidden="true"><use href="#hi-weekly"/></svg>PD</button>
       <button class="nav-item" data-tab="podcast" type="button"><svg class="hi ico" aria-hidden="true"><use href="#hi-podcast"/></svg>Podcast</button>
       <button class="nav-item" data-tab="saved" type="button"><svg class="hi ico" aria-hidden="true"><use href="#hi-saved"/></svg>Saved<span class="nav-pill nav-pill-warm" id="nav-count-saved" hidden></span></button>
       <button class="nav-item" data-tab="cpd" data-cpd type="button" hidden><svg class="hi ico" aria-hidden="true"><use href="#hi-cpd"/></svg>CPD<span class="nav-pill" id="nav-cpd-hours" hidden></span></button>
@@ -158,7 +158,7 @@
     <div class="masthead-row" id="masthead-row">
       <div class="title-wrap">
         <!-- Shown on sub-views (the PD brief) to return to their tab. -->
-        <button class="icon-btn back-btn" id="btn-back" type="button" aria-label="Back to Weekly" hidden><svg class="hi" aria-hidden="true"><use href="#hi-chev-left"/></svg></button>
+        <button class="icon-btn back-btn" id="btn-back" type="button" aria-label="Back to PD" hidden><svg class="hi" aria-hidden="true"><use href="#hi-chev-left"/></svg></button>
         <div>
           <h1 id="page-title">Paramedic Papers</h1>
           <p class="kicker" id="page-kicker">Loading…</p>
@@ -180,6 +180,19 @@
 
     <!-- ── HOME ───────────────────────────────────────────── -->
     <section class="page" id="page-home">
+      <!-- First-visit intro (review QW3, option A): says what the site is and
+           who it's for. Shown until dismissed or until the reader signs up
+           for the PD brief (js/app.js renderIntro). Hides the CPD promo
+           while it shows, so there's one message at a time. -->
+      <aside class="home-intro" id="home-intro" aria-label="About Paramedic Papers" hidden>
+        <button class="home-intro-close" id="home-intro-close" type="button" aria-label="Dismiss"><svg class="hi" aria-hidden="true"><use href="#hi-x"/></svg></button>
+        <h2 class="home-intro-head">New prehospital research, summarised every morning for Australian paramedics.</h2>
+        <p class="home-intro-text">Read it here, listen to the short daily podcast, or get the PD brief by email every week on a day you choose. Free and independent.</p>
+        <div class="home-intro-btns">
+          <a class="btn btn-primary" href="https://join.paramedicpapers.com">Get the PD brief</a>
+          <a class="btn" href="/about.html">How it works</a>
+        </div>
+      </aside>
       <!-- Latest-episode strip. Hidden until episodes.json exists; spans
            both home columns on desktop (see css). -->
       <article class="panel podcast-strip" id="podcast-strip" hidden>
@@ -432,9 +445,9 @@
   </div>
 
   <nav class="tabbar" aria-label="Primary">
-    <button class="tab is-on" data-tab="home" type="button"><svg class="hi ico" aria-hidden="true"><use href="#hi-home"/></svg>Home</button>
-    <button class="tab" data-tab="feed" type="button"><svg class="hi ico" aria-hidden="true"><use href="#hi-feed"/></svg>Feed</button>
-    <button class="tab" data-tab="weekly" type="button"><svg class="hi ico" aria-hidden="true"><use href="#hi-weekly"/></svg>Weekly</button>
+    <button class="tab is-on" data-tab="home" type="button"><svg class="hi ico" aria-hidden="true"><use href="#hi-home"/></svg>Today</button>
+    <button class="tab" data-tab="feed" type="button"><svg class="hi ico" aria-hidden="true"><use href="#hi-feed"/></svg>Papers</button>
+    <button class="tab" data-tab="weekly" type="button"><svg class="hi ico" aria-hidden="true"><use href="#hi-weekly"/></svg>PD</button>
     <button class="tab" data-tab="podcast" type="button"><svg class="hi ico" aria-hidden="true"><use href="#hi-podcast"/></svg>Podcast</button>
     <button class="tab" data-tab="saved" type="button"><svg class="hi ico" aria-hidden="true"><use href="#hi-saved"/></svg>Saved</button>
   </nav>
@@ -453,7 +466,7 @@
 
   <!-- defer keeps the order (cpd.js and podcasts.js rely on app.js's
        window.PP); all three start from DOMContentLoaded as before. -->
-  <script defer src="js/app.js?v=32"></script>
+  <script defer src="js/app.js?v=33"></script>
   <script defer src="js/cpd.js?v=15"></script>
   <script defer src="js/podcasts.js?v=4"></script>
 </body>
