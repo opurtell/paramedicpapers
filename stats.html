@@ -252,8 +252,15 @@
   function loadUsage() {
     usage.innerHTML = '';
     var want = days;
+    /* Older papers live in the archive file named by papers.json (review BC4). */
     var papers = titles ? Promise.resolve() : fetch('/data/papers.json').then(function (r) { return r.json(); })
-      .then(function (data) { titles = {}; collectTitles(data); }).catch(function () { titles = {}; });
+      .then(function (data) {
+        titles = {}; collectTitles(data);
+        var a = data.archive;
+        if (!a || !a.url) return;
+        return fetch('/' + a.url.replace(/^\//, '') + '?v=' + encodeURIComponent(a.version || data.lastUpdated || ''))
+          .then(function (r) { return r.json(); }).then(collectTitles).catch(function () {});
+      }).catch(function () { titles = titles || {}; });
     Promise.all([get('/api/admin/usage?days=' + days), papers]).then(function (res) {
       if (want === days) renderUsage(res[0]);
     }, function (e) {
@@ -296,7 +303,8 @@
     if (!rows.length) return '<p class="empty">The first snapshot is written by the API’s daily job.</p>';
     var cols = [['visitors', 'Unique visitors'], ['new_visitors', 'New'], ['cf_visits', 'Visits (CF)'], ['cf_pageviews', 'Page views (CF)'],
       ['active_users', 'Signed-in active'], ['new_users', 'New accounts'], ['ev_episode_play', 'Episode plays'],
-      ['ev_paper_open', 'Papers opened'], ['ev_cpd_logged', 'CPD logs'], ['ev_quiz_completed', 'Quizzes']];
+      ['ev_paper_open', 'Papers opened'], ['ev_cpd_logged', 'CPD logs'], ['ev_quiz_completed', 'Quizzes'],
+      ['subscribers', 'PD brief subscribers']];
     return '<div class="tbl-wrap"><table class="tbl"><thead><tr><th>Month</th>' +
       cols.map(function (c) { return '<th>' + c[1] + '</th>'; }).join('') + '</tr></thead><tbody>' +
       rows.slice().reverse().map(function (r) {
@@ -317,6 +325,9 @@
         kpi('Returning share', pct(v.returning, v.unique), '<span class="delta">of visitors in range</span>') +
         kpi('Weekly / monthly active', n(v.wau) + ' / ' + n(v.mau), '<span class="delta">stickiness ' + pct(v.wau, v.mau) + '</span>') +
         kpi('Signed-in users', n(us.active), '<span class="delta">active of ' + n(us.total) + ' · ' + n(us.new) + ' new</span>') +
+        /* Confirmed PD brief readers, from the API's nightly snapshot (review QW8). */
+        kpi('PD brief subscribers', u.subscribers ? n(u.subscribers.confirmed) : '–',
+          '<span class="delta">' + (u.subscribers ? 'confirmed, as of ' + esc(short(u.subscribers.asOf)) : 'counted from the first nightly snapshot') + '</span>') +
       '</div>' +
       '<section class="card"><h2>Daily unique visitors</h2>' + chart(daily, ['Unique visitors', null]) + '</section>' +
       '<section class="card" style="margin-top:12px"><h2>Visitor retention, by week first seen</h2>' +
