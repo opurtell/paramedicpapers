@@ -26,6 +26,7 @@
     highRelOnly: false,
     savedOnly: false,
     topic: '',
+    feedLimit: 0,
     episodes: [],
     brief: null,
     playDate: null,
@@ -75,6 +76,7 @@
   async function init() {
     enableMoreTab();
     showSignupResult();
+    renderIntro();
     bindTabs();
     bindHome();
     bindFeed();
@@ -202,10 +204,10 @@
      tab is highlighted; they're top-level, so no back button. */
   var MENU = { saved: 1, cpd: 1, account: 1 };
   var VIEWS = TABS.concat(Object.keys(PARENT), ['cpd', 'account']);
-  var TITLES = { home: 'Paramedic Papers', feed: 'Research feed', weekly: 'Weekly', podcast: 'Podcast', saved: 'Saved', brief: 'PD brief', quiz: 'PD quiz', podcasts: 'Podcasts for CPD', cpd: 'CPD', account: 'Account' };
+  var TITLES = { home: 'Paramedic Papers', feed: 'Papers', weekly: 'PD', podcast: 'Podcast', saved: 'Saved', brief: 'PD brief', quiz: 'PD quiz', podcasts: 'Podcasts for CPD', cpd: 'CPD', account: 'Account' };
   /* On desktop the sidebar carries the wordmark, so the content header
      names the view instead of the app. */
-  var TITLES_WIDE = { home: 'Today', feed: 'Research feed', weekly: 'Weekly digest', podcast: 'Podcast', saved: 'Saved papers', brief: 'PD brief', quiz: 'PD quiz', podcasts: 'Podcasts for CPD', cpd: 'CPD tracker', account: 'Account' };
+  var TITLES_WIDE = { home: 'Today', feed: 'Papers', weekly: 'PD', podcast: 'Podcast', saved: 'Saved papers', brief: 'PD brief', quiz: 'PD quiz', podcasts: 'Podcasts for CPD', cpd: 'CPD tracker', account: 'Account' };
 
   /* The 5th mobile tab becomes "More", which opens the menu sheet
      (js/cpd.js); the sidebar gains CPD and the account chip. Done here
@@ -234,7 +236,7 @@
     state.pinnedFrom = 'link';
     state.query = '';
     $('search-input').value = '';
-    renderFeed();
+    resetFeed();
     setTab('feed', true);
   }
 
@@ -268,7 +270,7 @@
     state.pinnedDate = date;
     state.query = '';
     $('search-input').value = '';
-    renderFeed();
+    resetFeed();
     setTab('feed', true);
   }
 
@@ -619,7 +621,7 @@
         state.pinnedFrom = 'tldr';
         state.query = '';
         $('search-input').value = '';
-        renderFeed();
+        resetFeed();
         setTab('feed');
       });
     });
@@ -649,7 +651,7 @@
   }
 
   function renderTodayList(papers) {
-    $('today-list').innerHTML = papers.map(function (p) {
+    $('today-list').innerHTML = highFirst(papers).map(function (p) {
       return '<article class="today-item" data-today-id="' + esc(p.id) + '">' +
         cardInnerHTML(p) + '</article>';
     }).join('');
@@ -700,23 +702,114 @@
     }
 
     var body = list.filter(function (p) { return pins.indexOf(p) === -1; });
-    var html = '';
 
+    /* The whole filtered list, as day heads and cards in display order.
+       Search and filters above run over every paper; only drawing is paged. */
+    var items = [];
     if (state.sort === 'relevance') {
-      var ranked = body.slice().sort(function (a, b) { return relRank(b.relevance) - relRank(a.relevance); });
-      if (ranked.length) html += dayHeadHTML('Ranked by relevance', ranked.length);
-      html += ranked.map(cardHTML).join('');
+      var ranked = highFirst(body);
+      if (ranked.length) items.push({ head: dayHeadHTML('Ranked by relevance', ranked.length) });
+      ranked.forEach(function (p) { items.push({ paper: p }); });
     } else {
+      /* Each day's papers High relevance first (review BC2). */
       (state.data.dailyUpdates || []).forEach(function (day) {
         var ps = body.filter(function (p) { return day.papers.indexOf(p) !== -1; });
         if (!ps.length) return;
-        html += dayHeadHTML(dayLabel(day.date), ps.length) + ps.map(cardHTML).join('');
+        items.push({ head: dayHeadHTML(dayLabel(day.date), ps.length) });
+        highFirst(ps).forEach(function (p) { items.push({ paper: p }); });
       });
     }
+    state.feedItems = items;
+    state.feedDrawn = 0;
+    state.feedTotal = body.length;
 
-    $('feed-list').innerHTML = html;
-    $('feed-empty').hidden = !!(html || pins.length);
-    bindActs($('feed-list'));
+    $('feed-list').innerHTML = '';
+    $('feed-empty').hidden = !!(items.length || pins.length);
+    drawFeedPage(Math.max(state.feedLimit || 0, FEED_PAGE));
+  }
+
+  /* Paged feed (review BC3): the feed holds every paper ever logged, so it
+     draws FEED_PAGE cards and adds the next lot as the reader nears the
+     end (or taps the button, which also works without IntersectionObserver).
+     state.feedLimit survives a re-render (e.g. after Save) so the list
+     doesn't jump back; changing search, sort or a filter resets it. */
+  var FEED_PAGE = 30;
+  var feedObserver = null;
+
+  function drawFeedPage(upTo) {
+    var items = state.feedItems || [];
+    var list = $('feed-list');
+    var cards = 0;
+    var html = '';
+    var i = state.feedDrawn;
+    /* Count the cards already drawn so upTo is a total, not an increment. */
+    for (var k = 0; k < i; k++) if (items[k].paper) cards++;
+    for (; i < items.length; i++) {
+      if (items[i].paper) {
+        if (cards >= upTo) break;
+        cards++;
+        html += cardHTML(items[i].paper);
+      } else {
+        html += items[i].head;
+      }
+    }
+    /* Don't leave a day head dangling at the bottom with no cards under it. */
+    if (i < items.length && i > state.feedDrawn && !items[i - 1].paper) {
+      html = html.slice(0, html.length - items[i - 1].head.length);
+      i--;
+    }
+    state.feedDrawn = i;
+    state.feedLimit = cards;
+
+    var old = $('feed-more');
+    if (old) old.remove();
+    if (html) {
+      var tmp = document.createElement('div');
+      tmp.innerHTML = html;
+      var frag = document.createDocumentFragment();
+      while (tmp.firstChild) frag.appendChild(tmp.firstChild);
+      /* Bind only the new nodes, so earlier cards don't get double handlers. */
+      var added = Array.prototype.slice.call(frag.childNodes);
+      list.appendChild(frag);
+      added.forEach(function (n) { if (n.nodeType === 1) bindActs(n); });
+    }
+
+    var left = state.feedTotal - cards;
+    if (left > 0) {
+      var more = document.createElement('button');
+      more.className = 'wide-btn feed-more';
+      more.id = 'feed-more';
+      more.type = 'button';
+      more.textContent = 'Show ' + Math.min(left, FEED_PAGE) + ' more · ' + left + ' left';
+      more.addEventListener('click', function () { drawFeedPage(state.feedLimit + FEED_PAGE); });
+      list.appendChild(more);
+      watchFeedEnd(more);
+    } else if (feedObserver) {
+      feedObserver.disconnect();
+    }
+  }
+
+  function watchFeedEnd(el) {
+    if (!('IntersectionObserver' in window)) return;
+    if (!feedObserver) {
+      feedObserver = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting && state.tab === 'feed') drawFeedPage(state.feedLimit + FEED_PAGE);
+        });
+      }, { rootMargin: '600px 0px' });
+    }
+    feedObserver.disconnect();
+    feedObserver.observe(el);
+  }
+
+  /* A new search, sort, filter or pin starts the feed from its first page. */
+  function resetFeed() { state.feedLimit = 0; renderFeed(); }
+
+  /* Stable sort: High, then Med, then Low; the scan's own order within each. */
+  function highFirst(papers) {
+    return papers.map(function (p, i) { return { p: p, i: i, r: relRank(p.relevance) }; })
+      .sort(function (a, b) { return (b.r - a.r) || (a.i - b.i); })
+      .map(function (x) { return x.p; });
   }
 
   /* ── PD brief (the newsletter, online) ──────────────── */
@@ -822,7 +915,7 @@
           '<span class="pick-rank">' + pad(i + 1) + '</span>' +
           tagsHTML(p) +
         '</div>' +
-        '<h3 class="paper-title">' + titleLinkHTML(p) + '</h3>' +
+        headingHTML(p) +
         (p.summary ? '<p class="paper-summary" data-expand>' + esc(p.summary) + '</p>' : '') +
         (why ? '<div class="why"><span class="why-kicker">Why it\'s picked</span>' +
                '<span class="why-text">' + esc(why) + '</span></div>' : '') +
@@ -1255,17 +1348,27 @@
 
   function cardHTML(p) { return '<article class="paper-card">' + cardInnerHTML(p) + '</article>'; }
 
-  /* One card for Home and Feed at every width. A card has a single
-     expanded state: the Details button and a tap on the summary both
-     toggle it. Expanded = full summary (only Home on mobile clamps it)
-     plus the details panel (Design / Found / Caveat / Relevance).
-     Nothing in the panel appears anywhere else on the card. */
+  /* One card for Home, Feed and Saved at every width (review BC1, option A):
+     the plain-English headline (shortTitle) leads, the paper's full title
+     follows in italic serif (linked to the paper), then two lines of
+     summary. A card has a single expanded state: the Details button and a
+     tap on the summary both toggle it. Expanded = full summary plus the
+     details panel (Design / Found / Caveat / Relevance). Papers without a
+     headline keep the full title as the heading. */
   function cardInnerHTML(p) {
-    return tagsHTML(p) +
-      '<h3 class="paper-title">' + titleLinkHTML(p) + '</h3>' +
+    return tagsHTML(p) + headingHTML(p) +
       (p.summary ? '<p class="paper-summary" data-expand>' + esc(p.summary) + '</p>' : '') +
       extraHTML(p) +
       footHTML(p);
+  }
+
+  function headingHTML(p) {
+    var head = String(p.shortTitle || '').trim();
+    if (!head || head === String(p.title || '').trim()) {
+      return '<h3 class="paper-title">' + titleLinkHTML(p) + '</h3>';
+    }
+    return '<h3 class="paper-headline">' + esc(head) + '</h3>' +
+      '<p class="paper-fulltitle">' + titleLinkHTML(p) + '</p>';
   }
 
   /* Structured triage fields (papers from 2 Oct 2026 on). */
@@ -1443,6 +1546,26 @@
      on success ("on your 3A PD shift", "every Tuesday"). Shown once at the
      top of Home; the query is dropped from the address bar so a reload or a
      shared link doesn't show it again. */
+  /* First-visit intro on Home (review QW3). Stays until dismissed, or until
+     the reader comes back through a PD brief confirm link. */
+  var INTRO_KEY = 'pp:intro-closed';
+  function closeIntro() {
+    try { localStorage.setItem(INTRO_KEY, '1'); } catch (e) {}
+    renderIntro();
+  }
+  function renderIntro() {
+    var el = $('home-intro');
+    if (!el) return;
+    var closed = false;
+    try { closed = localStorage.getItem(INTRO_KEY) === '1'; } catch (e) {}
+    el.hidden = closed;
+    $('page-home').classList.toggle('has-intro', !closed);
+    if (!el.dataset.bound) {
+      el.dataset.bound = '1';
+      $('home-intro-close').addEventListener('click', closeIntro);
+    }
+  }
+
   function showSignupResult() {
     var q = new URLSearchParams(location.search);
     var kind = q.get('pd');
@@ -1472,6 +1595,9 @@
     }[kind];
     var el = $('pd-welcome');
     if (!copy || !el) return;
+    if (kind === 'confirmed' || kind === 'already') {
+      try { localStorage.setItem(INTRO_KEY, '1'); } catch (e) {}
+    }
     el.innerHTML =
       '<div class="panel-head">' +
         '<span class="panel-kicker panel-kicker-accent">' + (kind === 'expired' ? 'PD brief' : ico('check') + ' PD brief') + '</span>' +
@@ -1524,7 +1650,7 @@
   function bindFeed() {
     $('search-input').addEventListener('input', function (e) {
       state.query = e.target.value;
-      renderFeed();
+      resetFeed();
       /* On desktop the search sits in the header on every view — typing
          there means the reader wants the feed. */
       if (state.tab !== 'feed') setTab('feed');
@@ -1535,13 +1661,13 @@
         document.querySelectorAll('.chip[data-sort]').forEach(function (c) {
           c.classList.toggle('is-on', c === chip);
         });
-        renderFeed();
+        resetFeed();
       });
     });
     $('topic-filter').addEventListener('change', function (e) {
       state.topic = e.target.value;
       e.target.classList.toggle('is-on', !!state.topic);
-      renderFeed();
+      resetFeed();
     });
     /* High-rel / Saved filters; not persisted. */
     document.querySelectorAll('.chip[data-filter]').forEach(function (chip) {
@@ -1550,7 +1676,7 @@
         state[key] = !state[key];
         chip.classList.toggle('is-on', state[key]);
         chip.setAttribute('aria-pressed', String(state[key]));
-        renderFeed();
+        resetFeed();
       });
     });
     document.addEventListener('keydown', function (e) {
