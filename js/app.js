@@ -637,13 +637,13 @@
       return renderTodayList(papers);
     }
     /* Nothing from today: either today's scan found none, or it hasn't run
-       yet (daily at 07:00 Canberra, on the site by ~07:30). Today's push
+       yet (daily at 05:00 Canberra, on the site by ~05:30). Today's push
        stamps tldr.date and lastUpdatedDate even when it finds nothing. */
     var t = state.data.tldr || {};
     var scanned = isToday(t.date) || isToday(state.data.lastUpdatedDate);
     var found = papers.length + ' found ' + (isYesterday(day.date) ? 'yesterday, ' : '') + dayLabel(day.date);
     var status = scanned ? "today's scan found none new"
-      : sydneyHour() < 9 ? "today's scan due ~7:30 am" : "today's scan hasn't run yet";
+      : sydneyHour() < 7 ? "today's scan due ~5:30 am" : "today's scan hasn't run yet";
     $('today-count').textContent = found + ' · ' + status;
     renderTodayList(papers);
   }
