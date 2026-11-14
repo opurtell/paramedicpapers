@@ -25,6 +25,20 @@
     <itunes:explicit>false</itunes:explicit>
     <podcast:guid>09fa3693-e2ac-527c-9d1c-f68df149b888</podcast:guid>
     <item>
+      <title>Airway assistant training halved sim intubation time · 15 Nov</title>
+      <link>https://paramedicpapers.com/episodes/2026-11-15/</link>
+      <description>4 papers: Airway assistant training halved sim intubation time; Numbers for when on-scene ROSC stops happening; Co-dispatch modelled to cut OHCA response times; Social support buffers the violence-to-burnout pathway</description>
+      <content:encoded><![CDATA[<p>4 papers: Airway assistant training halved sim intubation time; Numbers for when on-scene ROSC stops happening; Co-dispatch modelled to cut OHCA response times; Social support buffers the violence-to-burnout pathway</p><p>Papers in this episode:</p><ul><li><a href="https://doi.org/10.1080/10903127.2026.2761043">Airway assistant training halved sim intubation time <em>(Prehospital Emergency Care)</em></a></li><li><a href="https://doi.org/10.3390/jcm15218484">Numbers for when on-scene ROSC stops happening <em>(Journal of Clinical Medicine)</em></a></li><li><a href="https://doi.org/10.3390/jcm15218237">Co-dispatch modelled to cut OHCA response times <em>(Journal of Clinical Medicine)</em></a></li><li><a href="https://doi.org/10.3390/healthcare14213607">Social support buffers the violence-to-burnout pathway <em>(Healthcare)</em></a></li></ul><p><a href="https://paramedicpapers.com/episodes/2026-11-15/">Show notes and transcript</a></p>]]></content:encoded>
+      <pubDate>Sun, 15 Nov 2026 05:32:41 +1100</pubDate>
+      <guid isPermaLink="false">https://audio.paramedicpapers.com/ep-2026-11-15.mp3</guid>
+      <enclosure url="https://op3.dev/e/audio.paramedicpapers.com/ep-2026-11-15.mp3" length="1226348" type="audio/mpeg"/>
+      <itunes:duration>306</itunes:duration>
+      <itunes:summary>4 papers: Airway assistant training halved sim intubation time; Numbers for when on-scene ROSC stops happening; Co-dispatch modelled to cut OHCA response times; Social support buffers the violence-to-burnout pathway</itunes:summary>
+      <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
+      <itunes:episodeType>full</itunes:episodeType>
+      <podcast:transcript url="https://audio.paramedicpapers.com/ep-2026-11-15.txt" type="text/plain" language="en-au"/>
+    </item>
+    <item>
       <title>Paramedic Papers Daily — 14 November 2026</title>
       <link>https://paramedicpapers.com/episodes/2026-11-14/</link>
       <description>4 papers: advanced airway in traumatic arrest; paramedics miss non-convulsive seizures; sepsis flag at dispatch, earlier antibiotics; 3% of callers drive a fifth of calls</description>
@@ -429,20 +443,6 @@
       <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
       <itunes:episodeType>full</itunes:episodeType>
       <podcast:transcript url="https://audio.paramedicpapers.com/ep-2026-10-17.txt" type="text/plain" language="en-au"/>
-    </item>
-    <item>
-      <title>Paramedic Papers Daily — 16 October 2026</title>
-      <link>https://paramedicpapers.com/episodes/2026-10-16/</link>
-      <description>4 papers: Signs of life in traumatic OHCA; Prehospital pain assessment happens too rarely; Delays in NSW paediatric trauma retrieval; One in five transports: brief stay, no intervention</description>
-      <content:encoded><![CDATA[<p>4 papers: Signs of life in traumatic OHCA; Prehospital pain assessment happens too rarely; Delays in NSW paediatric trauma retrieval; One in five transports: brief stay, no intervention</p><p>Papers in this episode:</p><ul><li><a href="https://doi.org/10.1016/j.jemermed.2026.09.006">Signs of life in traumatic OHCA <em>(The Journal of Emergency Medicine)</em></a></li><li><a href="https://doi.org/10.47176/mjiri.40.60">Prehospital pain assessment happens too rarely <em>(Medical Journal of the Islamic Republic of Iran)</em></a></li><li><a href="https://doi.org/10.1016/j.amj.2026.09.007">Delays in NSW paediatric trauma retrieval <em>(Air Medical Journal)</em></a></li><li><a href="https://doi.org/10.1136/bmjopen-2026-124531">One in five transports: brief stay, no intervention <em>(BMJ Open)</em></a></li></ul><p><a href="https://paramedicpapers.com/episodes/2026-10-16/">Show notes and transcript</a></p>]]></content:encoded>
-      <pubDate>Fri, 16 Oct 2026 07:33:30 +1100</pubDate>
-      <guid isPermaLink="false">https://audio.paramedicpapers.com/ep-2026-10-16.mp3</guid>
-      <enclosure url="https://op3.dev/e/audio.paramedicpapers.com/ep-2026-10-16.mp3" length="915020" type="audio/mpeg"/>
-      <itunes:duration>228</itunes:duration>
-      <itunes:summary>4 papers: Signs of life in traumatic OHCA; Prehospital pain assessment happens too rarely; Delays in NSW paediatric trauma retrieval; One in five transports: brief stay, no intervention</itunes:summary>
-      <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
-      <itunes:episodeType>full</itunes:episodeType>
-      <podcast:transcript url="https://audio.paramedicpapers.com/ep-2026-10-16.txt" type="text/plain" language="en-au"/>
     </item>
   </channel>
 </rss>
