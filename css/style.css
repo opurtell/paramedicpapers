@@ -593,6 +593,60 @@ body.has-modal { overflow: hidden; }
 .brief-sec .brief-finding { font-size: 13.5px; }
 .brief-fine { font-size: 12px; color: var(--muted); }
 
+/* The issue on the PD tab (js/app.js renderBriefBlock). */
+.brief-block { gap: 10px; }
+.brief-block:hover { border-color: var(--accent-edge); }
+.brief-block-intro { font-family: var(--serif); font-size: 17px; line-height: 1.45; color: var(--ink); text-wrap: pretty; }
+.brief-block-h {
+  font-family: var(--mono); font-size: 11px; font-weight: 500; letter-spacing: .1em;
+  text-transform: uppercase; color: var(--accent); margin: 8px 0 0;
+  padding-top: 10px; border-top: 1px solid var(--accent-edge);
+}
+.brief-block-lessons { gap: 10px; }
+.brief-block-lessons li[hidden] { display: none; }
+.brief-block-lessons p { font-size: 14px; line-height: 1.5; color: var(--ink-2); text-wrap: pretty; }
+.brief-block-lessons .brief-refs, .brief-block-lessons .brief-ref { font-size: 12.5px; }
+.brief-more { margin-top: 0; }
+.brief-block-dives { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 6px; }
+.brief-block-dives a {
+  display: flex; align-items: center; gap: 8px; min-height: 44px;
+  padding: 9px 12px; border-radius: 10px;
+  background: var(--surface); border: 1px solid var(--accent-edge); border-left: 3px solid var(--accent);
+  color: var(--ink); text-decoration: none;
+}
+.brief-block-dives a:hover { border-color: var(--accent-in); color: var(--ink); }
+.brief-block-dive-t { flex: 1; font-family: var(--serif); font-size: 15.5px; font-weight: 600; line-height: 1.3; }
+.brief-block-dives .hi { width: 14px; height: 14px; color: var(--accent); flex: none; }
+.brief-block-discuss { font-family: var(--serif); font-size: 16px; font-style: italic; line-height: 1.45; color: var(--ink); text-wrap: pretty; }
+.brief-block-foot {
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 16px;
+  margin-top: 6px; padding-top: 10px; border-top: 1px solid var(--accent-edge);
+}
+.brief-block-foot .brief-card-go { margin: 0; }
+.brief-block-join { font-size: 13px; color: var(--ink-3); text-decoration: underline; text-underline-offset: 2px; }
+.brief-block-join:hover { color: var(--accent); }
+/* The full issue's deep dives clear the sticky header when linked to. */
+.brief-dive { scroll-margin-top: 96px; }
+.brief-dive:focus { outline: none; }
+.brief-all-btn { align-self: flex-start; }
+#brief-all[hidden] { display: none; }
+
+/* CPD hours this year on the PD tab (js/cpd.js renderPdCpdStrip). */
+.pd-cpd-strip {
+  display: flex; align-items: center; gap: 10px;
+  padding: 12px 16px; border-radius: 12px;
+  background: var(--surface); border: 1px solid var(--line); color: var(--ink);
+  text-decoration: none;
+}
+.pd-cpd-strip[hidden] { display: none; }
+.pd-cpd-strip:hover { border-color: var(--accent-edge); color: var(--ink); }
+.pd-cpd-strip .hi { width: 20px; height: 20px; color: var(--accent); flex: none; }
+.pd-cpd-strip .pd-cpd-text { flex: 1; display: flex; flex-direction: column; gap: 2px; font-size: 14px; line-height: 1.35; }
+.pd-cpd-strip .pd-cpd-sub { font-size: 12.5px; color: var(--muted); }
+.pd-cpd-strip .pd-cpd-bar { display: block; height: 4px; border-radius: 2px; background: var(--line); overflow: hidden; margin-top: 4px; }
+.pd-cpd-strip .pd-cpd-bar span { display: block; height: 100%; background: var(--accent); }
+.pd-cpd-strip .entry-chev { width: 14px; height: 14px; color: var(--muted); }
+
 /* ── tab bar (iOS-standard 49px + safe area) ──────────── */
 .tabbar {
   position: fixed; left: 0; right: 0; bottom: 0; z-index: 30;

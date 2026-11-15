@@ -24,7 +24,7 @@
   <link rel="preload" href="/fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/fonts/ibm-plex-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="css/fonts.css?v=1">
-  <link rel="stylesheet" href="css/style.css?v=33">
+  <link rel="stylesheet" href="css/style.css?v=34">
   <!-- Apply a saved dark-theme choice before first paint (light is default). -->
   <script>
     try {
@@ -294,30 +294,30 @@
     <!-- ── WEEKLY ─────────────────────────────────────────── -->
     <section class="page" id="page-weekly" hidden>
       <!-- Latest PD brief (data/pd-brief.json, pushed by greg's
-           send-newsletter.py). Hidden until that file loads. -->
+           send-newsletter.py): the issue's lessons, deep-dive topics and
+           crew question sit on the tab itself (js/app.js renderBrief).
+           Hidden until that file loads. -->
       <!-- The quiz belongs to the brief, so it sits under it, inset
            (js/cpd.js fills it from data/quizzes/index.json). -->
       <div class="brief-group">
-        <a class="brief-card" id="brief-card" href="#brief" hidden>
-          <span class="panel-kicker panel-kicker-accent">PD brief · the email, online</span>
-          <span class="brief-card-title" id="brief-card-title"></span>
-          <span class="brief-card-lead" id="brief-card-lead"></span>
-          <span class="brief-card-go">Read the latest issue <svg class="hi" aria-hidden="true"><use href="#hi-arrow"/></svg></span>
-        </a>
+        <article class="brief-card brief-block" id="brief-card" hidden>
+          <span class="panel-kicker panel-kicker-accent" id="brief-card-kicker">PD brief</span>
+          <p class="brief-block-intro" id="brief-card-lead"></p>
+          <div id="brief-card-body"></div>
+          <div class="brief-block-foot">
+            <a class="brief-card-go" href="#brief">Read the full issue <svg class="hi" aria-hidden="true"><use href="#hi-arrow"/></svg></a>
+            <a class="brief-block-join" id="pd-join" href="https://join.paramedicpapers.com" aria-haspopup="dialog">Get it by email every week, free</a>
+          </div>
+        </article>
         <div class="quiz-slot" id="quiz-slot" hidden></div>
       </div>
-      <article class="panel">
-        <div class="panel-head">
-          <span class="panel-kicker panel-kicker-accent">Week's TLDR</span>
-          <button class="sign-btn" id="weekly-tldr-toggle" type="button" aria-expanded="true" aria-label="Collapse week's TLDR"><svg class="hi" aria-hidden="true"><use href="#hi-minus"/></svg></button>
-        </div>
-        <p class="panel-lead" id="weekly-tldr-lead"></p>
-        <div class="collapse bullets" id="weekly-tldr-body"></div>
-      </article>
+
+      <!-- CPD hours this year, or "Track your CPD" (js/cpd.js fills it). -->
+      <a class="pd-cpd-strip" id="pd-cpd-strip" href="#cpd" hidden></a>
 
       <div class="section-head">
-        <h2>Editor's picks</h2>
-        <span class="muted-flag" id="weekly-pick-count"></span>
+        <h2>Picks of the week</h2>
+        <span class="muted-flag" id="weekly-pick-week"></span>
       </div>
       <div id="weekly-picks"></div>
     </section>
@@ -513,8 +513,8 @@
 
   <!-- defer keeps the order (cpd.js and podcasts.js rely on app.js's
        window.PP); all three start from DOMContentLoaded as before. -->
-  <script defer src="js/app.js?v=38"></script>
-  <script defer src="js/cpd.js?v=16"></script>
+  <script defer src="js/app.js?v=39"></script>
+  <script defer src="js/cpd.js?v=17"></script>
   <script defer src="js/podcasts.js?v=4"></script>
 </body>
 </html>
