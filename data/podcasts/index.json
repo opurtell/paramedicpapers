@@ -1,5 +1,29 @@
 [
  {
+  "id": "emcrit",
+  "name": "EMCrit",
+  "publisher": "Dr Scott Weingart",
+  "focus": "Resuscitation and emergency critical care",
+  "region": "US",
+  "site": "https://emcrit.org",
+  "art": "data/podcasts/art/emcrit.jpg",
+  "episodes": 167,
+  "latest": "2026-11-14",
+  "updated": "2026-11-15"
+ },
+ {
+  "id": "sgem",
+  "name": "The Skeptics' Guide to EM",
+  "publisher": "Dr Ken Milne",
+  "focus": "Critical appraisal of recent emergency medicine papers",
+  "region": "Canada",
+  "site": "https://thesgem.com",
+  "art": "data/podcasts/art/sgem.jpg",
+  "episodes": 113,
+  "latest": "2026-11-14",
+  "updated": "2026-11-15"
+ },
+ {
   "id": "prehospital-care-podcast",
   "name": "Pre-Hospital Care Podcast",
   "publisher": "Eoin Walker",
@@ -72,18 +96,6 @@
   "updated": "2026-11-09"
  },
  {
-  "id": "sgem",
-  "name": "The Skeptics' Guide to EM",
-  "publisher": "Dr Ken Milne",
-  "focus": "Critical appraisal of recent emergency medicine papers",
-  "region": "Canada",
-  "site": "https://thesgem.com",
-  "art": "data/podcasts/art/sgem.jpg",
-  "episodes": 112,
-  "latest": "2026-11-07",
-  "updated": "2026-11-08"
- },
- {
   "id": "acp",
   "name": "The Australasian College of Paramedicine",
   "publisher": "Australasian College of Paramedicine",
@@ -130,18 +142,6 @@
   "episodes": 291,
   "latest": "2026-11-01",
   "updated": "2026-11-01"
- },
- {
-  "id": "emcrit",
-  "name": "EMCrit",
-  "publisher": "Dr Scott Weingart",
-  "focus": "Resuscitation and emergency critical care",
-  "region": "US",
-  "site": "https://emcrit.org",
-  "art": "data/podcasts/art/emcrit.jpg",
-  "episodes": 166,
-  "latest": "2026-10-29",
-  "updated": "2026-10-30"
  },
  {
   "id": "pec-podcast",
