@@ -81,7 +81,6 @@
     bindTabs();
     bindHome();
     bindFeed();
-    bindWeekly();
     bindPodcast();
     bindSaved();
     $('btn-refresh').addEventListener('click', refresh);
@@ -360,6 +359,7 @@
     renderKicker();
     if (!silent) location.hash = tab;
     window.scrollTo(0, 0);
+    if (tab === 'brief') scrollToBriefSection();
     if (hooks.onShow) hooks.onShow(tab);
   }
 
@@ -472,7 +472,7 @@
       var fresh = newCount();
       if (fresh) text += ' · ' + fresh + ' new';
     } else if (state.tab === 'weekly') {
-      text = (d.weeklyTldr && d.weeklyTldr.dateRange) || 'This week';
+      text = longDate(new Date());
     } else if (state.tab === 'brief') {
       text = state.brief ? state.brief.span : 'The email, online';
     } else if (state.tab === 'podcast') {
@@ -863,9 +863,11 @@
 
   /* ── PD brief (the newsletter, online) ──────────────── */
 
-  /* Weekly-tab card + the #brief view, from data/pd-brief.json: the latest
-     issue as sent, with each paper's fields copied in so this view doesn't
-     depend on papers.json. Paper links open the paper in the feed. */
+  /* PD-tab brief block + the #brief view, from data/pd-brief.json: the
+     latest issue as sent, with each paper's fields copied in so this view
+     doesn't depend on papers.json. Paper links open the paper in the feed. */
+  var LESSONS_SHOWN = 3;  /* on the PD tab; the rest sit behind "Show all" */
+
   function renderBrief() {
     var b = state.brief;
     $('brief-card').hidden = !b;
@@ -876,8 +878,6 @@
       return;
     }
     var s = b.synthesis;
-    $('brief-card-title').textContent = b.span;
-    $('brief-card-lead').textContent = s ? s.intro : b.papers.length + ' papers from these 8 days, with their bottom lines.';
 
     var byId = {};
     b.papers.forEach(function (p) { byId[p.id] = p; });
@@ -886,6 +886,8 @@
         return '<a class="brief-ref" href="#paper=' + encodeURIComponent(id) + '">' + esc(byId[id].title) + '</a>';
       }).join('<span class="brief-sep"> · </span>');
     }
+
+    renderBriefBlock(b, s, refs);
 
     var out = '<header class="brief-head">' +
       '<p class="panel-kicker panel-kicker-accent">Paramedic Papers · PD brief</p>' +
@@ -901,8 +903,8 @@
         }).join('') + '</ol></section>';
 
       out += '<section class="brief-sec"><h3>Worth a deeper look</h3>' +
-        s.deep_dives.map(function (d) {
-          return '<article class="brief-dive">' +
+        s.deep_dives.map(function (d, i) {
+          return '<article class="brief-dive" id="brief-dive-' + (i + 1) + '" tabindex="-1">' +
             '<h4>' + esc(d.topic) + '</h4>' +
             '<p>' + esc(d.why) + '</p>' +
             '<p class="brief-refs"><span class="brief-label">Read</span> ' + refs(d.ids) + '</p>' +
@@ -922,7 +924,11 @@
       var ia = BL.indexOf(a.bottomLine), ic = BL.indexOf(c.bottomLine);
       return (ia < 0 ? 9 : ia) - (ic < 0 ? 9 : ic);
     }).forEach(function (p) { (groups[p.topic] = groups[p.topic] || []).push(p); });
+    /* The paper list is long (~50 papers), so it waits behind a button. */
     out += '<section class="brief-sec"><h3>All papers this period</h3>' +
+      '<button class="btn brief-all-btn" id="brief-all-btn" type="button" aria-expanded="false" aria-controls="brief-all">' +
+        'Show all ' + b.papers.length + ' papers</button>' +
+      '<div id="brief-all" hidden>' +
       Object.keys(groups).sort().map(function (topic) {
         return '<h4 class="brief-topic">' + esc(topic) + '</h4>' + groups[topic].map(function (p) {
           var meta = [p.journal, p.design, p.n].filter(Boolean).join(' · ');
@@ -938,13 +944,64 @@
             '<p class="brief-finding">' + esc(p.finding) + '</p>' +
             (links ? '<p class="brief-links">' + links + '</p>' : '') + '</div>';
         }).join('');
-      }).join('') + '</section>';
+      }).join('') + '</div></section>';
 
     out += '<a class="newsletter-banner" href="https://join.paramedicpapers.com">' +
       '<span><b>Get the next one by email</b> — the free PD brief, every week on a day you choose.</span>' +
       '<span class="newsletter-cta">Sign up ' + ico('arrow') + '</span></a>' +
       '<p class="brief-fine">Summaries are AI-assisted — check the paper before acting on it.</p>';
     $('brief-body').innerHTML = out;
+    var allBtn = $('brief-all-btn');
+    allBtn.addEventListener('click', function () {
+      var box = $('brief-all'), open = box.hidden;
+      box.hidden = !open;
+      allBtn.setAttribute('aria-expanded', String(open));
+      allBtn.textContent = open ? 'Hide the papers' : 'Show all ' + b.papers.length + ' papers';
+    });
+    if (state.tab === 'brief') scrollToBriefSection();
+  }
+
+  /* The issue on the PD tab: intro, lessons (3, then "Show all"), the
+     deep-dive topics (each opens the full issue at that topic) and the
+     crew question. Without a synthesis it falls back to a short line. */
+  function renderBriefBlock(b, s, refs) {
+    $('brief-card-kicker').textContent = 'PD brief · ' + b.span;
+    $('brief-card-lead').textContent = s ? s.intro : b.papers.length + ' papers from this period, with their bottom lines.';
+    var body = $('brief-card-body');
+    if (!s) { body.innerHTML = ''; return; }
+    var lessons = s.lessons || [], dives = s.deep_dives || [];
+    var extra = lessons.length - LESSONS_SHOWN;
+    body.innerHTML =
+      (lessons.length ? '<h3 class="brief-block-h">Lessons learnt</h3>' +
+        '<ol class="brief-lessons brief-block-lessons" id="brief-block-lessons">' +
+        lessons.map(function (x, i) {
+          return '<li' + (i >= LESSONS_SHOWN ? ' class="is-extra" hidden' : '') + '><p>' + esc(x.text) + '</p>' +
+            (refs(x.ids) ? '<p class="brief-refs">' + refs(x.ids) + '</p>' : '') + '</li>';
+        }).join('') + '</ol>' +
+        (extra > 0 ? '<button class="link-btn brief-more" id="brief-block-more" type="button" aria-expanded="false" aria-controls="brief-block-lessons">Show all ' + lessons.length + '</button>' : '') : '') +
+      (dives.length ? '<h3 class="brief-block-h">Worth a deeper look</h3><ul class="brief-block-dives">' +
+        dives.map(function (d, i) {
+          return '<li><a href="#brief=dive-' + (i + 1) + '"><span class="brief-block-dive-t">' + esc(d.topic) + '</span>' +
+            ico('chev-right') + '</a></li>';
+        }).join('') + '</ul>' : '') +
+      (s.discussion ? '<h3 class="brief-block-h">Crew question</h3><p class="brief-block-discuss">' + esc(s.discussion) + '</p>' : '');
+    var more = $('brief-block-more');
+    if (more) more.addEventListener('click', function () {
+      var open = more.getAttribute('aria-expanded') !== 'true';
+      body.querySelectorAll('.is-extra').forEach(function (li) { li.hidden = !open; });
+      more.setAttribute('aria-expanded', String(open));
+      more.textContent = open ? 'Show fewer' : 'Show all ' + lessons.length;
+    });
+  }
+
+  /* #brief=dive-2 (from the PD tab's topic links) opens the issue at that
+     deep-dive topic. */
+  function scrollToBriefSection() {
+    var m = /^#brief=dive-(\d+)$/.exec(location.hash || '');
+    var el = m && $('brief-dive-' + m[1]);
+    if (!el) return;
+    el.scrollIntoView({ block: 'start' });
+    el.focus({ preventScroll: true });
   }
 
   function dayLabel(iso) {
@@ -956,7 +1013,7 @@
   function renderWeeklyPicks() {
     var w = state.data.weeklyTldr || {};
     var picks = w.topPicks || state.data.featuredPapers || [];
-    $('weekly-pick-count').textContent = picks.length + ' of ' + allPapers().length;
+    $('weekly-pick-week').textContent = pickWeekLabel(w.dateRange);
     $('weekly-picks').innerHTML = picks.map(function (p, i) {
       var why = p.featuredReason || p.why || p.reason || '';
       return '<article class="paper-card">' +
@@ -973,6 +1030,15 @@
       '</article>';
     }).join('');
     bindActs($('weekly-picks'));
+  }
+
+  /* "3–10 Nov 2026" → "Week of 3–10 Nov". The year stays when the range
+     crosses one. */
+  function pickWeekLabel(range) {
+    if (!range) return '';
+    var r = String(range);
+    if ((r.match(/\d{4}/g) || []).length === 1) r = r.replace(/\s*\d{4}\s*$/, '');
+    return 'Week of ' + r;
   }
 
   function renderSaved() {
@@ -1624,8 +1690,9 @@
      Close with the X, Esc (native) or a tap outside. Without <dialog>,
      or on ctrl/cmd-click, the links work as normal pages. */
   function bindAboutModal() {
-    bindPopup('home-intro-about', 'about-modal', 'about-modal-close');
-    bindPopup('home-intro-join', 'join-modal', 'join-modal-close', function () {
+    bindPopup(['home-intro-about'], 'about-modal', 'about-modal-close');
+    /* The PD tab's sign-up line opens the same popup. */
+    bindPopup(['home-intro-join', 'pd-join'], 'join-modal', 'join-modal-close', function () {
       /* The sign-up page can't see this app's theme toggle, so pass it
          (join.paramedicpapers.com reads ?theme=light|dark). Reload the
          frame only if the theme changed since it was last opened. */
@@ -1635,23 +1702,27 @@
       if (frame.getAttribute('src') !== src) frame.setAttribute('src', src);
     });
   }
-  function bindPopup(linkId, dlgId, closeId, onOpen) {
-    var link = $(linkId);
+  function bindPopup(linkIds, dlgId, closeId, onOpen) {
+    var links = linkIds.map($).filter(Boolean);
     var dlg = $(dlgId);
-    if (!link || !dlg || typeof dlg.showModal !== 'function') return;
+    if (!links.length || !dlg || typeof dlg.showModal !== 'function') return;
+    var opener = null;  /* focus goes back to the link that opened it */
     function close() { if (dlg.open) dlg.close(); }
-    link.addEventListener('click', function (e) {
-      if (e.metaKey || e.ctrlKey || e.shiftKey || e.button > 0) return;
-      e.preventDefault();
-      if (onOpen) onOpen();
-      document.body.classList.add('has-modal');
-      dlg.showModal();
-      dlg.scrollTop = 0;
-      $(closeId).focus();
+    links.forEach(function (link) {
+      link.addEventListener('click', function (e) {
+        if (e.metaKey || e.ctrlKey || e.shiftKey || e.button > 0) return;
+        e.preventDefault();
+        opener = link;
+        if (onOpen) onOpen();
+        document.body.classList.add('has-modal');
+        dlg.showModal();
+        dlg.scrollTop = 0;
+        $(closeId).focus();
+      });
     });
     dlg.addEventListener('close', function () {
       document.body.classList.remove('has-modal');
-      link.focus();
+      if (opener) opener.focus();
     });
     $(closeId).addEventListener('click', close);
     dlg.querySelectorAll('[data-about-close]').forEach(function (b) { b.addEventListener('click', close); });
@@ -1725,9 +1796,6 @@
     });
   }
 
-  function bindWeekly() {
-    collapser('weekly-tldr-toggle', 'weekly-tldr-body', ico('plus'), ico('minus'));
-  }
 
   function collapser(btnId, bodyId, closedLabel, openLabel) {
     var btn = $(btnId), body = $(bodyId);

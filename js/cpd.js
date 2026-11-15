@@ -389,7 +389,29 @@
       pill.hidden = !show;
       if (show) pill.textContent = hrs(st.summary.minutes);
     }
+    renderPdCpdStrip();
     if (st.sheet && st.sheet.type === 'menu') renderMenu();
+  }
+
+  /* The PD tab's CPD line: this year's hours when signed in, an invite
+     when signed out, nothing while unsure or when the API is down. */
+  function renderPdCpdStrip() {
+    var el = $('pd-cpd-strip');
+    if (!el) return;
+    var s = st.summary, u = st.user;
+    var html = '';
+    if (u && s && st.year === cpdYear(todayISO())) {
+      var pct = Math.min(100, Math.round(s.minutes / Math.max(1, u.target_hours * 60) * 100));
+      html = '<span class="pd-cpd-text"><b>' + esc(hrs(s.minutes)) + ' of ' + esc(u.target_hours) + ' h logged this year</b>' +
+        '<span class="pd-cpd-sub">' + esc(hrs(s.interactive_minutes)) + ' of ' + esc(u.target_interactive_hours) + ' h interactive · ' +
+          daysLeft(st.year) + ' days left</span>' +
+        '<span class="pd-cpd-bar" aria-hidden="true"><span style="width:' + pct + '%"></span></span></span>';
+    } else if (st.checked && !u && !st.apiDown) {
+      html = '<span class="pd-cpd-text"><b>Track your CPD</b>' +
+        '<span class="pd-cpd-sub">Log papers, quizzes and podcasts toward your 30 hours. Free.</span></span>';
+    }
+    el.hidden = !html;
+    el.innerHTML = html ? ico('cpd') + html + ico('chev-right', 'entry-chev') : '';
   }
 
   function initial(u) {
