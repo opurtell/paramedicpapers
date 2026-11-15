@@ -24,7 +24,7 @@
   <link rel="preload" href="/fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/fonts/ibm-plex-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="css/fonts.css?v=1">
-  <link rel="stylesheet" href="css/style.css?v=34">
+  <link rel="stylesheet" href="css/style.css?v=35">
   <!-- Apply a saved dark-theme choice before first paint (light is default). -->
   <script>
     try {
@@ -293,6 +293,8 @@
 
     <!-- ── WEEKLY ─────────────────────────────────────────── -->
     <section class="page" id="page-weekly" hidden>
+      <!-- Today's prompt: one card a day on a 3-day cycle (js/app.js renderPdPrompt). -->
+      <article class="panel pd-prompt" id="pd-prompt" hidden></article>
       <!-- Latest PD brief (data/pd-brief.json, pushed by greg's
            send-newsletter.py): the issue's lessons, deep-dive topics and
            crew question sit on the tab itself (js/app.js renderBrief).
@@ -513,8 +515,8 @@
 
   <!-- defer keeps the order (cpd.js and podcasts.js rely on app.js's
        window.PP); all three start from DOMContentLoaded as before. -->
-  <script defer src="js/app.js?v=39"></script>
-  <script defer src="js/cpd.js?v=17"></script>
+  <script defer src="js/app.js?v=40"></script>
+  <script defer src="js/cpd.js?v=18"></script>
   <script defer src="js/podcasts.js?v=4"></script>
 </body>
 </html>
