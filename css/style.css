@@ -631,6 +631,33 @@ body.has-modal { overflow: hidden; }
 .brief-all-btn { align-self: flex-start; }
 #brief-all[hidden] { display: none; }
 
+/* Today's prompt on the PD tab (js/app.js drawPdPrompt). */
+.pd-prompt[hidden] { display: none; }
+.pd-prompt { border-color: var(--accent-edge); }
+.pd-prompt-meta { font-size: 12.5px; line-height: 1.45; color: var(--muted); }
+.pd-prompt-meta a { color: var(--accent); }
+.pd-prompt-q { font-size: 18px; line-height: 1.3; text-wrap: pretty; }
+.pd-prompt-crew, .pd-prompt-goal { font-family: var(--serif); font-size: 18px; line-height: 1.4; color: var(--ink); text-wrap: pretty; }
+.pd-prompt-crew { font-style: italic; }
+.pd-prompt-reads { font-size: 13px; line-height: 1.5; }
+.pd-prompt-finding { font-size: 14.5px; line-height: 1.55; color: var(--ink-2); text-wrap: pretty; }
+.pd-prompt-caveat { font-size: 13px; line-height: 1.5; color: var(--ink-3); text-wrap: pretty; }
+.pd-prompt-caveat .brief-label {
+  font-family: var(--mono); font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: var(--warm); margin-right: 4px;
+}
+.pd-prompt-reads .brief-label {
+  font-family: var(--mono); font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin-right: 4px;
+}
+.pd-prompt .brief-card-go { margin-top: 0; }
+.pd-prompt .paper-foot { margin-top: 2px; }
+
+/* The quiz card's first question (js/cpd.js renderQuizCard). */
+.quiz-card-q { font-size: 16px; line-height: 1.35; font-weight: 600; color: var(--ink); text-wrap: pretty; }
+.quiz-card .quiz-opts { gap: 6px; }
+.quiz-card .quiz-opt { padding: 10px 12px; font-size: 14px; }
+.quiz-card-sub { font-size: 12.5px; color: var(--muted); }
+.quiz-card-sub a { color: var(--accent); }
+
 /* CPD hours this year on the PD tab (js/cpd.js renderPdCpdStrip). */
 .pd-cpd-strip {
   display: flex; align-items: center; gap: 10px;

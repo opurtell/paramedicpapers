@@ -132,7 +132,7 @@
     }).catch(function (err) {
       console.warn('No PD brief:', err && err.message);
       renderBrief();
-    });
+    }).then(renderPdPrompt);
   }
 
   async function loadData(bust) {
@@ -1004,6 +1004,149 @@
     el.focus({ preventScroll: true });
   }
 
+  /* ── PD tab: today's prompt (one rotating card) ─────── */
+
+  /* One card a day on a 3-day cycle: a paper whose bottom line is
+     "Supports current practice" (current and archived papers), a crew
+     question from the current brief, then a learning goal from a recent
+     High relevance paper. The day is the Canberra date, so every reader
+     sees the same card. Each pool steps through in order (oldest first),
+     so an evidence card doesn't come back for months. A missing source
+     moves on to the next type; with none, the card stays hidden. */
+  var PROMPT_TYPES = ['evidence', 'crew', 'goal'];
+  var PROMPT_START = '2026-11-15';   /* day 1 of the cycle */
+  var prompt = null;                 /* { type, item } on screen */
+  var archivePapersP = null;
+
+  function canberraISO(d) {
+    try {
+      return new Intl.DateTimeFormat('en-CA', { timeZone: 'Australia/Sydney', year: 'numeric', month: '2-digit', day: '2-digit' }).format(d);
+    } catch (e) {
+      return d.getFullYear() + '-' + pad(d.getMonth() + 1) + '-' + pad(d.getDate());
+    }
+  }
+  function dayNumber(iso) {
+    return Math.round(Date.UTC(+iso.slice(0, 4), +iso.slice(5, 7) - 1, +iso.slice(8, 10)) / 86400000);
+  }
+  /* The archive's papers, read on their own so the feed's lazy archive
+     load is untouched (same URL, so the browser's copy is shared). */
+  function archivePapersOnce() {
+    var a = state.data && state.data.archive;
+    if (!a || !a.url) return Promise.resolve([]);
+    if (!archivePapersP) {
+      var url = a.url + (a.url.indexOf('?') < 0 ? '?' : '&') + 'v=' + encodeURIComponent(a.version || state.data.lastUpdated || '');
+      archivePapersP = fetch(url)
+        .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+        .then(function (arc) {
+          var out = [];
+          (arc.dailyUpdates || []).forEach(function (d) {
+            (d.papers || []).forEach(function (p) { out.push({ p: p, date: d.date }); });
+          });
+          return out;
+        })
+        .catch(function () { archivePapersP = null; return []; });
+    }
+    return archivePapersP;
+  }
+
+  function renderPdPrompt() {
+    var today = canberraISO(new Date());
+    var n = dayNumber(today) - dayNumber(PROMPT_START);
+    var cycle = ((n % 3) + 3) % 3, round = Math.floor(n / 3);
+    var tries = [0, 1, 2].map(function (i) { return PROMPT_TYPES[(cycle + i) % 3]; });
+    (function next(i) {
+      if (i >= tries.length) { prompt = null; drawPdPrompt(); return; }
+      promptItem(tries[i], round, today).then(function (item) {
+        if (!item) { next(i + 1); return; }
+        prompt = { type: tries[i], item: item };
+        drawPdPrompt();
+      }, function () { next(i + 1); });
+    })(0);
+  }
+
+  function pick(list, round) {
+    return list.length ? list[((round % list.length) + list.length) % list.length] : null;
+  }
+
+  /* Resolves to the day's item of that type, or null. */
+  function promptItem(type, round, today) {
+    if (type === 'evidence') {
+      return archivePapersOnce().then(function (arc) {
+        var seen = {}, pool = [];
+        (state.data.dailyUpdates || []).forEach(function (d) {
+          (d.papers || []).forEach(function (p) { pool.push({ p: p, date: d.date }); });
+        });
+        pool = pool.concat(arc).filter(function (x) {
+          if (seen[x.p.id] || x.p.bottomLine !== 'Supports current practice' || !x.p.finding) return false;
+          seen[x.p.id] = true;
+          return true;
+        });
+        pool.sort(function (x, y) { return x.date < y.date ? -1 : x.date > y.date ? 1 : (x.p.id < y.p.id ? -1 : 1); });
+        var hit = pick(pool, round);
+        return hit ? hit.p : null;
+      });
+    }
+    if (type === 'crew') {
+      var b = state.brief, sy = b && b.synthesis;
+      if (!sy) return Promise.resolve(null);
+      var pool = [];
+      (sy.deep_dives || []).forEach(function (d, i) {
+        (d.questions || []).forEach(function (q) { pool.push({ text: q, topic: d.topic, ids: d.ids || [], dive: i + 1 }); });
+      });
+      if (sy.discussion) pool.push({ text: sy.discussion, topic: '', ids: [], dive: 0 });
+      return Promise.resolve(pick(pool, round));
+    }
+    /* Learning goal from a High relevance paper in the last 7 days. */
+    var cutoff = dayNumber(today) - 7;
+    var goals = [];
+    (state.data.dailyUpdates || []).slice().reverse().forEach(function (day) {
+      if (!day.date || dayNumber(day.date) < cutoff) return;
+      (day.papers || []).forEach(function (p) {
+        if (p.learningGoal && /high/i.test(String(p.relevance || '').split(/[—-]/)[0])) goals.push(p);
+      });
+    });
+    return Promise.resolve(pick(goals, round));
+  }
+
+  function drawPdPrompt() {
+    var el = $('pd-prompt');
+    if (!el) return;
+    if (!prompt) { el.hidden = true; el.innerHTML = ''; return; }
+    var t = prompt.type, it = prompt.item, html = '';
+    var LABELS = { evidence: 'Evidence that backs you', crew: 'Crew question', goal: 'Learning goal' };
+    var head = '<div class="panel-head"><span class="panel-kicker panel-kicker-accent">Today · ' + LABELS[t] + '</span></div>';
+    if (t === 'evidence') {
+      html = head +
+        '<h3 class="pd-prompt-q">' + esc(it.shortTitle || it.title) + '</h3>' +
+        '<p class="pd-prompt-finding">' + esc(it.finding) + '</p>' +
+        (it.caveat ? '<p class="pd-prompt-caveat"><span class="brief-label">Caveat</span> ' + esc(it.caveat) + '</p>' : '') +
+        '<p class="pd-prompt-meta">' + esc([it.journal, it.studyType].filter(Boolean).join(' · ')) + '</p>' +
+        '<a class="brief-card-go" href="#paper=' + encodeURIComponent(it.id) + '">Read the paper' + ico('arrow') + '</a>';
+    } else if (t === 'crew') {
+      var byId = {};
+      ((state.brief && state.brief.papers) || []).forEach(function (p) { byId[p.id] = p; });
+      var reads = it.ids.filter(function (id) { return byId[id]; }).map(function (id) {
+        return '<a class="brief-ref" href="#paper=' + encodeURIComponent(id) + '">' + esc(byId[id].title) + '</a>';
+      }).join('<span class="brief-sep"> · </span>');
+      html = head +
+        '<p class="pd-prompt-crew">' + esc(it.text) + '</p>' +
+        '<p class="pd-prompt-meta">Take it to your crew partner or station' + (it.topic ? ' · ' + esc(it.topic) : '') + '</p>' +
+        (reads ? '<p class="pd-prompt-reads"><span class="brief-label">Read</span> ' + reads + '</p>' : '') +
+        '<a class="brief-card-go" href="' + (it.dive ? '#brief=dive-' + it.dive : '#brief') + '">' +
+          (it.dive ? 'More on this topic' : 'Read the full issue') + ico('arrow') + '</a>';
+    } else {
+      var p = it;
+      html = head +
+        '<p class="pd-prompt-goal">' + esc(p.learningGoal) + '</p>' +
+        '<p class="pd-prompt-meta">From <a href="#paper=' + encodeURIComponent(p.id) + '">' + esc(p.shortTitle || p.title) + '</a></p>' +
+        footHTML(p);
+    }
+    el.innerHTML = html;
+    el.className = 'panel pd-prompt is-' + t;
+    el.hidden = false;
+    if (t === 'goal') bindActs(el);
+  }
+
   function dayLabel(iso) {
     var m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(iso || '');
     if (!m) return '';
@@ -1615,7 +1758,7 @@
      episode buttons). */
   function renderPaperLists() {
     if (!state.data) return;
-    renderToday(); renderFeed(); renderWeeklyPicks(); renderSaved();
+    renderToday(); renderFeed(); renderWeeklyPicks(); renderSaved(); drawPdPrompt();
   }
 
   /* ── saved ──────────────────────────────────────────── */
@@ -1647,7 +1790,7 @@
     renderSavedLists();
   }
   function renderSavedLists() {
-    if (state.data) { renderToday(); renderFeed(); renderWeeklyPicks(); renderSaved(); renderSidebar(); }
+    if (state.data) { renderToday(); renderFeed(); renderWeeklyPicks(); renderSaved(); renderSidebar(); drawPdPrompt(); }
     else renderSavedStatus();
   }
   function savedPapers() {
