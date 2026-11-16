@@ -1,29 +1,8 @@
 {
-  "lastUpdated": "2026-11-15T18:20:11Z",
-  "lastUpdatedSydney": "2026-11-16 05:20 AEDT",
-  "lastUpdatedDate": "2026-11-16",
+  "lastUpdated": "2026-11-16T18:20:11Z",
+  "lastUpdatedSydney": "2026-11-17 05:20 AEDT",
+  "lastUpdatedDate": "2026-11-17",
   "featuredPapers": [
-    {
-      "id": "43008211",
-      "title": "Pooled prevalence of infectious diseases among first responders in the prehospital setting: A systematic review with meta-analysis by occupation",
-      "journal": "Prehospital Emergency Care",
-      "date": "2026-11-12",
-      "pmid": "43008211",
-      "doi": "10.1080/10903127.2026.2759763",
-      "summary": "A systematic review and meta-analysis of 22 studies covering 19,188 prehospital first responders estimated pooled infection prevalence — hepatitis B 6.2%, hepatitis C 1.8%, MRSA colonisation about 4%, and COVID-19 13.6% in unvaccinated staff.",
-      "relevance": "🟢 High — Occupational exposure risk is the same in uncontrolled prehospital environments everywhere — this is the evidence base behind PPE, vaccination and infection-control protocols Australian crews already work under.",
-      "featuredReason": "Occupational exposure risk is the same in uncontrolled prehospital environments everywhere — this is the evidence base behind PPE, vaccination and infection-control protocols Australian crews already work under.",
-      "pubDate": "2026-11-10",
-      "topic": "Workforce & wellbeing",
-      "studyType": "Systematic review",
-      "design": "Systematic review with random-effects meta-analysis (88 full texts screened, 22 studies included)",
-      "n": "19,188 first responders across 22 studies",
-      "finding": "Pooled prevalence: hepatitis B 6.2% (95% CI 4.5–8.2), hepatitis C 1.8% (0.9–2.9), MRSA colonisation ~4% (2.6–5.9), COVID-19 among unvaccinated staff 13.6% (4.8–25.9), falling to 7.3% after excluding high-bias studies",
-      "caveat": "Very high heterogeneity across the 22 studies, and the pooled estimates mix paramedics with police and firefighters",
-      "bottomLine": "Supports current practice",
-      "shortTitle": "How common are blood-borne infections in first responders",
-      "learningGoal": "Understand how occupational exposure risks for blood-borne infections shape my infection prevention and vaccination practice."
-    },
     {
       "id": "43024742",
       "title": "Effect of airway assistant training on intubation time during simulated prehospital airway management: A pilot study",
@@ -86,6 +65,27 @@
       "bottomLine": "Context only",
       "shortTitle": "Systematic review of newborn PPV at birth",
       "learningGoal": "Recognise which newborns at birth are most likely to need positive pressure ventilation and how practice patterns are changing."
+    },
+    {
+      "id": "43008211",
+      "title": "Pooled prevalence of infectious diseases among first responders in the prehospital setting: A systematic review with meta-analysis by occupation",
+      "journal": "Prehospital Emergency Care",
+      "date": "2026-11-12",
+      "pmid": "43008211",
+      "doi": "10.1080/10903127.2026.2759763",
+      "summary": "A systematic review and meta-analysis of 22 studies covering 19,188 prehospital first responders estimated pooled infection prevalence — hepatitis B 6.2%, hepatitis C 1.8%, MRSA colonisation about 4%, and COVID-19 13.6% in unvaccinated staff.",
+      "relevance": "🟢 High — Occupational exposure risk is the same in uncontrolled prehospital environments everywhere — this is the evidence base behind PPE, vaccination and infection-control protocols Australian crews already work under.",
+      "featuredReason": "Occupational exposure risk is the same in uncontrolled prehospital environments everywhere — this is the evidence base behind PPE, vaccination and infection-control protocols Australian crews already work under.",
+      "pubDate": "2026-11-10",
+      "topic": "Workforce & wellbeing",
+      "studyType": "Systematic review",
+      "design": "Systematic review with random-effects meta-analysis (88 full texts screened, 22 studies included)",
+      "n": "19,188 first responders across 22 studies",
+      "finding": "Pooled prevalence: hepatitis B 6.2% (95% CI 4.5–8.2), hepatitis C 1.8% (0.9–2.9), MRSA colonisation ~4% (2.6–5.9), COVID-19 among unvaccinated staff 13.6% (4.8–25.9), falling to 7.3% after excluding high-bias studies",
+      "caveat": "Very high heterogeneity across the 22 studies, and the pooled estimates mix paramedics with police and firefighters",
+      "bottomLine": "Supports current practice",
+      "shortTitle": "How common are blood-borne infections in first responders",
+      "learningGoal": "Understand how occupational exposure risks for blood-borne infections shape my infection prevention and vaccination practice."
     },
     {
       "id": "10.1016/j.resuscitation.2026.111358",
@@ -1020,33 +1020,106 @@
     }
   ],
   "funFact": {
-    "category": "cardiac",
-    "fact": "The left main coronary artery — the 'widow-maker' — supplies such a massive territory that occlusion causes widespread ST elevation across most leads with reciprocal changes inferiorly. If this one goes, a huge chunk of heart muscle dies in minutes."
+    "category": "EMS",
+    "fact": "Australia's first paramedic program started at Charles Sturt University in 1995. Before that, ambulance officers were trained through in-service apprenticeships. We went from 'learn on the job' to university degrees in one leap."
   },
   "tldr": {
-    "date": "2026-11-16",
-    "paperCount": 2,
-    "summary": "A quiet day. The lead is Beijing dispatch-data evidence that road density — not just distance — shapes EMS response times, alongside a Japanese case series of fatal head-first snow burial and a title-only neonatal transport framework.",
+    "date": "2026-11-17",
+    "paperCount": 3,
+    "summary": "A light day: England's air ambulance services report on field amputation practice, an umbrella review maps paramedic competence into five domains, and Norwegian crews share what running an ambulance RCT actually takes.",
     "highlights": [
       {
-        "id": "43031846",
-        "pmid": "43031846",
-        "doi": "10.3389/fpubh.2026.1930880",
-        "title": "Street layout linked to EMS response times",
-        "journal": "Frontiers in Public Health",
-        "note": "Lower residential facility density and denser arterial and local road networks were associated with shorter response times; high residential density was associated with slower responses in central urban areas, while local-road density mattered most in suburbs"
+        "id": "10.1016/j.injury.2026.113906",
+        "pmid": "",
+        "doi": "10.1016/j.injury.2026.113906",
+        "title": "Field amputation: broad capability, little standardisation",
+        "journal": "Injury",
+        "note": "All 14 services could provide field amputation; 12 (86%) had a specific clinical practice guideline; 4 services performed 6 cases in five years; a Gigli saw was the most common disarticulation instrument (93%); none used hospital response teams"
       },
       {
-        "id": "10.1186/s13049-026-01725-y",
-        "pmid": "",
-        "doi": "10.1186/s13049-026-01725-y",
-        "title": "Head-first snow burial: six Japanese deaths",
-        "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
-        "note": "All six victims were buried head-first in open slopes, terrain depressions or forested terrain (none in tree wells); five were in cardiopulmonary arrest or confirmed dead at recovery, and three had been travelling alone"
+        "id": "43036453",
+        "pmid": "43036453",
+        "doi": "10.1155/emmi/5400734",
+        "title": "What competence actually means for paramedics",
+        "journal": "Emergency Medicine International",
+        "note": "Five competence domains identified: interpersonal and teamwork; cognitive and decision-making; professionalism and ethical; clinical; and competence across certification levels and in special or high-stress situations"
+      },
+      {
+        "id": "43035480",
+        "pmid": "43035480",
+        "doi": "10.1186/s13063-026-09955-2",
+        "title": "What running an ambulance trial really takes",
+        "journal": "Trials",
+        "note": "94 protocol deviations across 338 inclusions (28%), mostly early with missing measurements the commonest cause; motivation fell from median 8 to 7 over 18 months; 51% found communication excessive; 90% willing to participate in future research"
       }
     ]
   },
   "dailyUpdates": [
+    {
+      "date": "2026-11-17",
+      "papers": [
+        {
+          "id": "10.1016/j.injury.2026.113906",
+          "title": "Field Amputation by helicopter emergency service personnel: A cross-sectional survey of clinical practice and experience within air ambulance services in England",
+          "journal": "Injury",
+          "date": "2026-11-17",
+          "pmid": "",
+          "doi": "10.1016/j.injury.2026.113906",
+          "summary": "A survey of all English air ambulance services found every one could perform prehospital field amputation and four had completed six cases in five years, with a Gigli saw the standard bone instrument and little national standardisation.",
+          "relevance": "🟡 Medium — Field amputation sits with physician-staffed helicopter services rather than routine road crews in Australia, but the questions it raises — governance, training, equipment, case registries — are the same ones Australian HEMS teams face.",
+          "pubDate": "2026-11",
+          "topic": "Trauma",
+          "studyType": "Cross-sectional",
+          "design": "Cross-sectional survey of air ambulance services",
+          "n": "14 UK helicopter emergency medical services (all England)",
+          "finding": "All 14 services could provide field amputation; 12 (86%) had a specific clinical practice guideline; 4 services performed 6 cases in five years; a Gigli saw was the most common disarticulation instrument (93%); none used hospital response teams",
+          "caveat": "Self-reported survey with only six cases nationally in five years, so the clinical practice data are thin",
+          "bottomLine": "Context only",
+          "shortTitle": "Field amputation: broad capability, little standardisation",
+          "learningGoal": "Understand how rare prehospital amputation capability is planned and governed in a low-frequency, high-risk setting."
+        },
+        {
+          "id": "43036453",
+          "title": "Competences of Paramedics in Prehospital Emergency Care: An Umbrella Review",
+          "journal": "Emergency Medicine International",
+          "date": "2026-11-17",
+          "pmid": "43036453",
+          "doi": "10.1155/emmi/5400734",
+          "summary": "A Finnish-led umbrella review of 20 studies defined the competences paramedics need in out-of-hospital emergency care, organised into five domains: interpersonal and teamwork, cognitive and decision-making, professionalism and ethical, clinical, and situation-specific or high-stress competence.",
+          "relevance": "🟡 Medium — Finnish-led, but the five competence domains map closely onto Australian paramedic registration standards and the expanding scope of practice debate.",
+          "pubDate": "2026-11-15",
+          "topic": "Education & training",
+          "studyType": "Systematic review",
+          "design": "Umbrella review (Joanna Briggs Institute methodology, GRADE-CERQual)",
+          "n": "8 reviews synthesised from 2,224 screened records",
+          "finding": "Five competence domains identified: interpersonal and teamwork; cognitive and decision-making; professionalism and ethical; clinical; and competence across certification levels and in special or high-stress situations",
+          "caveat": "The review stops at describing domains — which educational approaches best build and maintain competence remains unknown",
+          "bottomLine": "Context only",
+          "shortTitle": "What competence actually means for paramedics",
+          "learningGoal": "Understand how the five competence domains apply to my scope of practice across routine and high-stress situations."
+        },
+        {
+          "id": "43035480",
+          "title": "Integrating clinical research into emergency medical services: lessons from the PreMeFen trial",
+          "journal": "Trials",
+          "date": "2026-11-17",
+          "pmid": "43035480",
+          "doi": "10.1186/s13063-026-09955-2",
+          "summary": "A Norwegian survey of 67 ambulance personnel in the PreMeFen RCT found integrating research into EMS was feasible but demanding: 28% protocol deviations across 338 inclusions, motivation declining over 18 months, and 51% finding study communication excessive — yet 90% would take part in future research.",
+          "relevance": "🟡 Medium — A Norwegian regional EMS, but the training, motivation and communication lessons apply directly to Australian services running or joining prehospital trials.",
+          "pubDate": "2026-08-19",
+          "topic": "Operations & systems",
+          "studyType": "Cross-sectional",
+          "design": "Cross-sectional survey with linked trial process data",
+          "n": "67 of 70 invited ambulance personnel (96% response)",
+          "finding": "94 protocol deviations across 338 inclusions (28%), mostly early with missing measurements the commonest cause; motivation fell from median 8 to 7 over 18 months; 51% found communication excessive; 90% willing to participate in future research",
+          "caveat": "Single regional EMS with self-reported survey data",
+          "bottomLine": "Context only",
+          "shortTitle": "What running an ambulance trial really takes",
+          "learningGoal": "Understand the system factors that affect paramedics' sustained engagement and data quality when research is embedded in routine practice."
+        }
+      ]
+    },
     {
       "date": "2026-11-16",
       "papers": [
@@ -5113,31 +5186,6 @@
           "learningGoal": "Recognise which patients experiencing self-directed violence face higher risk of death before ambulance arrival."
         }
       ]
-    },
-    {
-      "date": "2026-10-18",
-      "papers": [
-        {
-          "id": "10.1186/s13049-026-01713-2",
-          "title": "Advanced airway management practice patterns and short-term survival in Poland’s national physician-staffed helicopter emergency medical service, 2020–2024: a retrospective observational study",
-          "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
-          "date": "2026-10-18",
-          "pmid": "",
-          "doi": "10.1186/s13049-026-01713-2",
-          "summary": "A retrospective analysis of Poland's national physician-staffed HEMS registry tested airway strategies in 8,980 intubated adults against survival to hospital handover — HEMS-performed intubation was most common (49.8%), and in non-traumatic cardiac arrest a sequential supraglottic-airway-then-intubation strategy showed no significant difference from HEMS-performed intubation, while some other strategies carried higher unadjusted odds of not being alive at handover.",
-          "relevance": "🟡 Medium — Delivered by a physician-staffed HEMS crew, a model Australian services don't run — but the questions it speaks to (intubation vs supraglottic first, and who performs the intubation) sit squarely in the intensive care paramedic skill set across Australia.",
-          "pubDate": "2026-10-16",
-          "topic": "Airway & ventilation",
-          "studyType": "Registry",
-          "design": "Retrospective national HEMS registry cohort",
-          "n": "8,980 adults requiring advanced airway management",
-          "finding": "HEMS-performed intubation was the most common strategy (49.8%); sequential supraglottic-to-intubation did not differ significantly from HEMS-performed intubation in non-traumatic cardiac arrest; 32.9% were not alive at hospital handover",
-          "caveat": "Univariate analyses only, so strategy effects are confounded by patient severity, and the physician-staffed setting limits direct comparison with paramedic-only systems",
-          "bottomLine": "Hypothesis-generating",
-          "shortTitle": "Airway strategy and survival in Polish HEMS",
-          "learningGoal": "Weigh a sequential supraglottic airway approach against primary intubation when managing advanced airways in out-of-hospital cardiac arrest."
-        }
-      ]
     }
   ],
   "weeklyTldr": {
@@ -5233,13 +5281,13 @@
   },
   "archive": {
     "url": "data/papers-archive.json",
-    "version": "2026-11-15T18:20:11Z",
-    "days": 94,
-    "papers": 489,
+    "version": "2026-11-16T18:20:11Z",
+    "days": 95,
+    "papers": 490,
     "from": "2026-04-21",
-    "to": "2026-10-17",
+    "to": "2026-10-18",
     "topics": {
-      "Airway & ventilation": 23,
+      "Airway & ventilation": 24,
       "Cardiac (non-arrest)": 15,
       "Cardiac arrest": 147,
       "Education & preparedness": 1,
