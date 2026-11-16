@@ -24,7 +24,7 @@
   <link rel="preload" href="/fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/fonts/ibm-plex-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="css/fonts.css?v=1">
-  <link rel="stylesheet" href="css/style.css?v=28">
+  <link rel="stylesheet" href="css/style.css?v=35">
   <!-- Apply a saved dark-theme choice before first paint (light is default). -->
   <script>
     try {
@@ -126,9 +126,9 @@
     </div>
 
     <nav class="sidebar-nav" aria-label="Views">
-      <button class="nav-item is-on" data-tab="home" type="button"><svg class="hi ico" aria-hidden="true"><use href="#hi-home"/></svg>Home</button>
-      <button class="nav-item" data-tab="feed" type="button"><svg class="hi ico" aria-hidden="true"><use href="#hi-feed"/></svg>Feed<span class="nav-pill" id="nav-count-feed"></span></button>
-      <button class="nav-item" data-tab="weekly" type="button"><svg class="hi ico" aria-hidden="true"><use href="#hi-weekly"/></svg>Weekly</button>
+      <button class="nav-item is-on" data-tab="home" type="button"><svg class="hi ico" aria-hidden="true"><use href="#hi-home"/></svg>Today</button>
+      <button class="nav-item" data-tab="feed" type="button"><svg class="hi ico" aria-hidden="true"><use href="#hi-feed"/></svg>Papers<span class="nav-pill" id="nav-count-feed"></span></button>
+      <button class="nav-item" data-tab="weekly" type="button"><svg class="hi ico" aria-hidden="true"><use href="#hi-weekly"/></svg>PD</button>
       <button class="nav-item" data-tab="podcast" type="button"><svg class="hi ico" aria-hidden="true"><use href="#hi-podcast"/></svg>Podcast</button>
       <button class="nav-item" data-tab="saved" type="button"><svg class="hi ico" aria-hidden="true"><use href="#hi-saved"/></svg>Saved<span class="nav-pill nav-pill-warm" id="nav-count-saved" hidden></span></button>
       <button class="nav-item" data-tab="cpd" data-cpd type="button" hidden><svg class="hi ico" aria-hidden="true"><use href="#hi-cpd"/></svg>CPD<span class="nav-pill" id="nav-cpd-hours" hidden></span></button>
@@ -158,7 +158,7 @@
     <div class="masthead-row" id="masthead-row">
       <div class="title-wrap">
         <!-- Shown on sub-views (the PD brief) to return to their tab. -->
-        <button class="icon-btn back-btn" id="btn-back" type="button" aria-label="Back to Weekly" hidden><svg class="hi" aria-hidden="true"><use href="#hi-chev-left"/></svg></button>
+        <button class="icon-btn back-btn" id="btn-back" type="button" aria-label="Back to PD" hidden><svg class="hi" aria-hidden="true"><use href="#hi-chev-left"/></svg></button>
         <div>
           <h1 id="page-title">Paramedic Papers</h1>
           <p class="kicker" id="page-kicker">Loading…</p>
@@ -178,8 +178,24 @@
 
   <main id="main">
 
+    <!-- Shown only while the device is offline (review BC8). -->
+    <p class="offline-note" id="offline-note" role="status" hidden></p>
+
     <!-- ── HOME ───────────────────────────────────────────── -->
     <section class="page" id="page-home">
+      <!-- First-visit intro (review QW3, option A): says what the site is and
+           who it's for. Shown until dismissed or until the reader signs up
+           for the PD brief (js/app.js renderIntro). Hides the CPD promo
+           while it shows, so there's one message at a time. -->
+      <aside class="home-intro" id="home-intro" aria-label="About Paramedic Papers" hidden>
+        <button class="home-intro-close" id="home-intro-close" type="button" aria-label="Dismiss"><svg class="hi" aria-hidden="true"><use href="#hi-x"/></svg></button>
+        <h2 class="home-intro-head">New prehospital research, summarised every morning for Australian paramedics.</h2>
+        <p class="home-intro-text">Read it here, listen to the short daily podcast, or get the PD brief by email every week on a day you choose. Free and independent.</p>
+        <div class="home-intro-btns">
+          <a class="btn btn-primary" href="https://join.paramedicpapers.com" id="home-intro-join" aria-haspopup="dialog">Get the PD brief</a>
+          <a class="btn" href="/about.html" id="home-intro-about" aria-haspopup="dialog">How it works</a>
+        </div>
+      </aside>
       <!-- Latest-episode strip. Hidden until episodes.json exists; spans
            both home columns on desktop (see css). -->
       <article class="panel podcast-strip" id="podcast-strip" hidden>
@@ -209,7 +225,7 @@
           <span class="panel-kicker panel-kicker-accent" id="daily-tldr-kicker">Today's TLDR</span>
           <button class="sign-btn" id="daily-tldr-toggle" type="button" aria-expanded="false" aria-label="Expand today's TLDR"><svg class="hi" aria-hidden="true"><use href="#hi-plus"/></svg></button>
         </div>
-        <p class="panel-lead" id="daily-tldr-lead"><!-- SEO:TLDR:START -->Cardiac arrest day: a South Korean national registry found rhythm transitions during CPR grade neurological outcome, and a trauma-triage cohort showed GCS-based classification misses one in ten severe injuries.<!-- SEO:TLDR:END --></p>
+        <p class="panel-lead" id="daily-tldr-lead"><!-- SEO:TLDR:START -->A quiet day. The lead is Beijing dispatch-data evidence that road density — not just distance — shapes EMS response times, alongside a Japanese case series of fatal head-first snow burial and a title-only neonatal transport framework.<!-- SEO:TLDR:END --></p>
         <div class="collapse bullets" id="daily-tldr-body" hidden></div>
       </article>
 
@@ -231,10 +247,10 @@
       </div>
       <!-- The nightly build fills both marker blocks with today's content so it
            is in the HTML; app.js replaces it with the same content on load. -->
-      <div class="today-list" id="today-list"><!-- SEO:TODAY:START --><article class="today-item"><h3 class="paper-title"><a href="/papers/doi-10-1186-s12873-026-01842-y/">Concordance between prehospital Glasgow Coma Scale–based classification and diagnosis-based injury severity in destination decisions for suspected severe trauma: a linked EMS–hospital cohort study</a></h3><p class="paper-summary">A South Korean linked EMS–hospital cohort of 5,841 suspected severe trauma patients found weak agreement between prehospital GCS classification and diagnosis-based injury severity (κ 0.192), with one in ten patients (10.0%) severely injured despite GCS 9–15 and destination undertriage of 33.6% (GCS-based) and 47.3% (diagnosis-based), roughly doubled in rural areas.</p></article><article class="today-item"><h3 class="paper-title"><a href="/papers/43018417/">Neurological Outcomes of Rhythm Transitions in Out-of-Hospital Cardiac Arrest With Initial Nonshockable Rhythms: A Nationwide Population-Based Study</a></h3><p class="paper-summary">A South Korean nationwide registry study of adults with initial nonshockable OHCA found rhythm transitions during CPR graded neurological outcome: asystole converting to PEA was linked to better outcomes than persistent asystole (OR 2.28), and persistent PEA carried the best odds (OR 8.70 versus persistent asystole).</p></article><article class="today-item"><h3 class="paper-title"><a href="/papers/43017087/">Circadian rhythmicity in patients with out-of-hospital cardiac arrest and ST-segment elevation myocardial infarction: a scoping review</a></h3><p class="paper-summary">A Czech-led scoping review of 18 studies found OHCA and STEMI incidence peaks in the morning with a secondary afternoon/evening peak, and night-time events were linked to lower ROSC and worse one-month and one-year survival, explained by limited bystander availability, less bystander CPR and defibrillation and longer times to hospital intervention rather than time of day itself.</p></article><article class="today-item"><h3 class="paper-title"><a href="/papers/43017117/">Admission arterial partial pressure of carbon dioxide (PaCO2) and outcomes after out-of-hospital cardiac arrest: a single-centre retrospective cohort study</a></h3><p class="paper-summary">A Chinese single-centre retrospective cohort of 617 adults resuscitated from OHCA found admission PaCO2 above 50 mmHg associated with higher one-month mortality in a stepwise gradient (each 10-mmHg increase aOR 1.45, 95% CI 1.24–1.70).</p></article><article class="today-item"><h3 class="paper-title"><a href="/papers/43014632/">SUDDEN CARDIAC ARREST IN NEW SOUTH WALES (NSW), AUSTRALIA: A DATA LINKAGE STUDY</a></h3><p class="paper-summary">An Australian data-linkage study identified 13,345 presumed sudden cardiac arrests aged 1–50 in NSW from 1.7 million linked records — 54% cardiac in aetiology and 83% fatal — and extrapolated roughly 370 cardiac SCA deaths a year among Australians aged 1–35.</p></article><article class="today-item"><h3 class="paper-title"><a href="/papers/doi-10-1177-27536386261492215/">Child representatives’ conceptions of children&#x27;s participation in prehospital emergency care: A phenomenographic study</a></h3><p class="paper-summary">A Swedish qualitative interview study of ambulance child representatives found children&#x27;s participation in prehospital emergency care conceived as shaped chiefly by clinicians&#x27; attitudes and experience, then by the child&#x27;s age and situational urgency, and constrained by the adult-oriented ambulance environment.</p></article><article class="today-item"><h3 class="paper-title"><a href="/papers/doi-10-1016-j-resuscitation-2026-111388/">Positive pressure ventilation in newborns at birth: a systematic review of recipient characteristics and temporal trends</a></h3><p class="paper-summary">A systematic review of positive pressure ventilation in newborns at birth (abstract not yet available) examines recipient characteristics and temporal trends.</p></article><!-- SEO:TODAY:END --></div>
+      <div class="today-list" id="today-list"><!-- SEO:TODAY:START --><article class="today-item"><h3 class="paper-title"><a href="/papers/43031846/">Built environment and emergency medical services response time in a high-density megacity: multilevel evidence from urban-suburban</a></h3><p class="paper-summary">A Chinese multilevel regression of 2024 Beijing ambulance dispatch data found denser arterial and local road networks were associated with shorter EMS response times citywide, while denser residential development was linked to slower responses in the central city.</p></article><article class="today-item"><h3 class="paper-title"><a href="/papers/doi-10-1186-s13049-026-01725-y/">Fatal non-avalanche snow burial in Japanese backcountry terrain: a case series of head-first burial in non–tree-well environments</a></h3><p class="paper-summary">A Japanese review of police records across five winters characterised six fatal non-avalanche snow burials in backcountry terrain, all buried head-first with only the lower limbs visible.</p></article><!-- SEO:TODAY:END --></div>
 
       <button class="wide-btn" id="btn-open-feed" type="button">Open full feed</button>
-      <a class="newsletter-link" href="https://join.paramedicpapers.com">Get the PD brief by email, on your PD shift <svg class="hi" aria-hidden="true"><use href="#hi-arrow"/></svg></a>
+      <a class="newsletter-link" href="https://join.paramedicpapers.com">Get the free PD brief by email, every week <svg class="hi" aria-hidden="true"><use href="#hi-arrow"/></svg></a>
 
       <!-- Fun fact lives below the home feed — a nice-to-have closer, not
            the opening act. Dark panel, kicker, and JS refs unchanged. -->
@@ -250,7 +266,7 @@
     <!-- ── FEED ───────────────────────────────────────────── -->
     <section class="page" id="page-feed" hidden>
       <a class="newsletter-banner" href="https://join.paramedicpapers.com">
-        <span><b>The PD brief</b> — these papers summarised by email on your PD shift, every 8 days, with lessons and topics worth a deeper look.</span>
+        <span><b>The PD brief</b> — these papers summarised by email every week on a day you choose, with lessons and topics worth a deeper look.</span>
         <span class="newsletter-cta">Sign up <svg class="hi" aria-hidden="true"><use href="#hi-arrow"/></svg></span>
       </a>
       <!-- Moved into the masthead by js/app.js at the desktop breakpoint. -->
@@ -277,31 +293,33 @@
 
     <!-- ── WEEKLY ─────────────────────────────────────────── -->
     <section class="page" id="page-weekly" hidden>
+      <!-- Today's prompt: one card a day on a 3-day cycle (js/app.js renderPdPrompt). -->
+      <article class="panel pd-prompt" id="pd-prompt" hidden></article>
       <!-- Latest PD brief (data/pd-brief.json, pushed by greg's
-           send-newsletter.py). Hidden until that file loads. -->
+           send-newsletter.py): the issue's lessons, deep-dive topics and
+           crew question sit on the tab itself (js/app.js renderBrief).
+           Hidden until that file loads. -->
       <!-- The quiz belongs to the brief, so it sits under it, inset
            (js/cpd.js fills it from data/quizzes/index.json). -->
       <div class="brief-group">
-        <a class="brief-card" id="brief-card" href="#brief" hidden>
-          <span class="panel-kicker panel-kicker-accent">PD brief · the email, online</span>
-          <span class="brief-card-title" id="brief-card-title"></span>
-          <span class="brief-card-lead" id="brief-card-lead"></span>
-          <span class="brief-card-go">Read the latest issue <svg class="hi" aria-hidden="true"><use href="#hi-arrow"/></svg></span>
-        </a>
+        <article class="brief-card brief-block" id="brief-card" hidden>
+          <span class="panel-kicker panel-kicker-accent" id="brief-card-kicker">PD brief</span>
+          <p class="brief-block-intro" id="brief-card-lead"></p>
+          <div id="brief-card-body"></div>
+          <div class="brief-block-foot">
+            <a class="brief-card-go" href="#brief">Read the full issue <svg class="hi" aria-hidden="true"><use href="#hi-arrow"/></svg></a>
+            <a class="brief-block-join" id="pd-join" href="https://join.paramedicpapers.com" aria-haspopup="dialog">Get it by email every week, free</a>
+          </div>
+        </article>
         <div class="quiz-slot" id="quiz-slot" hidden></div>
       </div>
-      <article class="panel">
-        <div class="panel-head">
-          <span class="panel-kicker panel-kicker-accent">Week's TLDR</span>
-          <button class="sign-btn" id="weekly-tldr-toggle" type="button" aria-expanded="true" aria-label="Collapse week's TLDR"><svg class="hi" aria-hidden="true"><use href="#hi-minus"/></svg></button>
-        </div>
-        <p class="panel-lead" id="weekly-tldr-lead"></p>
-        <div class="collapse bullets" id="weekly-tldr-body"></div>
-      </article>
+
+      <!-- CPD hours this year, or "Track your CPD" (js/cpd.js fills it). -->
+      <a class="pd-cpd-strip" id="pd-cpd-strip" href="#cpd" hidden></a>
 
       <div class="section-head">
-        <h2>Editor's picks</h2>
-        <span class="muted-flag" id="weekly-pick-count"></span>
+        <h2>Picks of the week</h2>
+        <span class="muted-flag" id="weekly-pick-week"></span>
       </div>
       <div id="weekly-picks"></div>
     </section>
@@ -405,6 +423,7 @@
         <a href="/about.html">About</a>
         <a href="/privacy.html">Privacy</a>
         <a href="/feed.xml">RSS</a>
+        <a href="https://www.instagram.com/paramedicpapers/" rel="noopener">Instagram @paramedicpapers</a>
       </nav>
     </footer>
 
@@ -432,14 +451,57 @@
   </div>
 
   <nav class="tabbar" aria-label="Primary">
-    <button class="tab is-on" data-tab="home" type="button"><svg class="hi ico" aria-hidden="true"><use href="#hi-home"/></svg>Home</button>
-    <button class="tab" data-tab="feed" type="button"><svg class="hi ico" aria-hidden="true"><use href="#hi-feed"/></svg>Feed</button>
-    <button class="tab" data-tab="weekly" type="button"><svg class="hi ico" aria-hidden="true"><use href="#hi-weekly"/></svg>Weekly</button>
+    <button class="tab is-on" data-tab="home" type="button"><svg class="hi ico" aria-hidden="true"><use href="#hi-home"/></svg>Today</button>
+    <button class="tab" data-tab="feed" type="button"><svg class="hi ico" aria-hidden="true"><use href="#hi-feed"/></svg>Papers</button>
+    <button class="tab" data-tab="weekly" type="button"><svg class="hi ico" aria-hidden="true"><use href="#hi-weekly"/></svg>PD</button>
     <button class="tab" data-tab="podcast" type="button"><svg class="hi ico" aria-hidden="true"><use href="#hi-podcast"/></svg>Podcast</button>
     <button class="tab" data-tab="saved" type="button"><svg class="hi ico" aria-hidden="true"><use href="#hi-saved"/></svg>Saved</button>
   </nav>
 
   <!-- In-page sheets (no browser dialogs): the "More" menu and the CPD forms. -->
+  <!-- About popup: the Home intro's "How it works" opens this instead of
+       leaving Home (js/app.js bindAboutModal). Condensed from about.html;
+       keep the two in step. Without JS the button still goes to about.html. -->
+  <dialog class="about-modal" id="about-modal" aria-labelledby="about-modal-title">
+    <div class="about-modal-in">
+      <div class="about-modal-head">
+        <h2 id="about-modal-title">How Paramedic Papers works</h2>
+        <button class="about-modal-close" id="about-modal-close" type="button" aria-label="Close"><svg class="hi" aria-hidden="true"><use href="#hi-x"/></svg></button>
+      </div>
+      <p class="about-modal-lead">A free, daily scan of new paramedic and prehospital research, summarised in plain English for working clinicians, with notes on how each paper fits Australian practice.</p>
+      <h3>How papers are found and summarised</h3>
+      <ul>
+        <li>Each morning, newly published papers in prehospital, emergency and resuscitation journals are found through Crossref and PubMed.</li>
+        <li>Papers are screened for relevance to paramedic practice. Each kept paper gets a short summary, the study design and size, the main finding, the key caveat, and a note on what it means for Australian ambulance services.</li>
+        <li>Summaries are written with the help of AI from each paper’s published abstract, not the full text. Every summary links to the original paper (DOI and PubMed) so you can read it yourself.</li>
+        <li>The daily podcast is a short audio roundup of the same papers, voiced with text-to-speech.</li>
+      </ul>
+      <div class="about-modal-callout">
+        <p><strong>Not clinical advice.</strong> Summaries can miss nuance or contain errors, and a single study rarely changes practice. Always follow your service’s clinical practice guidelines, and check the original paper before relying on a finding.</p>
+      </div>
+      <h3>Who runs it</h3>
+      <p>Paramedic Papers is a non-commercial project run by Oscar Purtell, an Australian paramedic. There’s no advertising and no sponsorship, and nothing on the site is paid placement.</p>
+      <h3>Corrections and feedback</h3>
+      <p>Spotted an error in a summary? Email <a href="mailto:newsletter@paramedicpapers.com">newsletter@paramedicpapers.com</a> with a link to the paper and it will be fixed.</p>
+      <div class="about-modal-btns">
+        <button class="btn btn-primary" type="button" data-about-close>Back to today’s papers</button>
+        <a class="btn" href="/about.html">Full about page</a>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- PD brief sign-up popup: the Home intro's "Get the PD brief" shows
+       join.paramedicpapers.com in a frame so the reader stays on Home
+       (js/app.js bindJoinModal). The frame loads on first open. -->
+  <dialog class="about-modal join-modal" id="join-modal" aria-labelledby="join-modal-title">
+    <div class="about-modal-head">
+      <h2 id="join-modal-title">Get the PD brief</h2>
+      <a class="join-modal-out" href="https://join.paramedicpapers.com" target="_blank" rel="noopener">Open in new tab</a>
+      <button class="about-modal-close" id="join-modal-close" type="button" aria-label="Close"><svg class="hi" aria-hidden="true"><use href="#hi-x"/></svg></button>
+    </div>
+    <iframe class="join-modal-frame" id="join-modal-frame" title="PD brief sign-up form"></iframe>
+  </dialog>
+
   <div class="sheet-backdrop" id="sheet-backdrop" hidden></div>
   <div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="sheet-title" hidden></div>
 
@@ -453,8 +515,8 @@
 
   <!-- defer keeps the order (cpd.js and podcasts.js rely on app.js's
        window.PP); all three start from DOMContentLoaded as before. -->
-  <script defer src="js/app.js?v=32"></script>
-  <script defer src="js/cpd.js?v=16"></script>
+  <script defer src="js/app.js?v=40"></script>
+  <script defer src="js/cpd.js?v=19"></script>
   <script defer src="js/podcasts.js?v=4"></script>
 </body>
 </html>

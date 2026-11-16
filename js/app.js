@@ -26,6 +26,7 @@
     highRelOnly: false,
     savedOnly: false,
     topic: '',
+    feedLimit: 0,
     episodes: [],
     brief: null,
     playDate: null,
@@ -64,6 +65,7 @@
     setSaved: function (ids) { setSaved(ids); },
     renderSavedStatus: function () { renderSavedStatus(); },
     paperById: function (id) { return paperById(id); },
+    ensureArchive: function () { return ensureArchive(); },
     hasData: function () { return !!state.data; },
     renderPapers: function () { renderPaperLists(); },
     hooks: hooks,
@@ -75,10 +77,10 @@
   async function init() {
     enableMoreTab();
     showSignupResult();
+    renderIntro();
     bindTabs();
     bindHome();
     bindFeed();
-    bindWeekly();
     bindPodcast();
     bindSaved();
     $('btn-refresh').addEventListener('click', refresh);
@@ -92,15 +94,21 @@
     });
     DESKTOP.addEventListener('change', syncLayout);
     syncLayout();
+    registerOffline();
 
     try {
       state.data = await loadData(false);
     } catch (err) {
       console.error(err);
-      $('feed-list').innerHTML = '<p class="empty">Unable to load research data. Please try again later.</p>';
+      $('feed-list').innerHTML = '<p class="empty">' + (navigator.onLine === false
+        ? 'You\u2019re offline and no papers are saved on this device yet. Open the site once with signal and they\u2019ll be kept for next time.'
+        : 'Unable to load research data. Please try again later.') + '</p>';
       return;
     }
+    markSeen();
     renderAll();
+    renderOffline();
+    if (savedPapers().length < Object.keys(state.saved).length) withArchive();
     if (paperFromHash()) openPaperLink();
     else if (postFromHash()) openPostLink();
     else setTab(tabFromHash(), true);
@@ -124,7 +132,7 @@
     }).catch(function (err) {
       console.warn('No PD brief:', err && err.message);
       renderBrief();
-    });
+    }).then(renderPdPrompt);
   }
 
   async function loadData(bust) {
@@ -176,8 +184,13 @@
     var btn = $('btn-refresh');
     btn.disabled = true; btn.classList.add('spinning');
     try {
+      var hadArchive = state.archiveLoaded;
       state.data = await loadData(true);
+      state.archiveLoaded = false;
+      archivePromise = null;
       renderAll();
+      renderOffline();
+      if (hadArchive) withArchive();
       loadEpisodes().then(function (eps) {
         state.episodes = eps;
         renderPodcastStrip();
@@ -202,10 +215,10 @@
      tab is highlighted; they're top-level, so no back button. */
   var MENU = { saved: 1, cpd: 1, account: 1 };
   var VIEWS = TABS.concat(Object.keys(PARENT), ['cpd', 'account']);
-  var TITLES = { home: 'Paramedic Papers', feed: 'Research feed', weekly: 'Weekly', podcast: 'Podcast', saved: 'Saved', brief: 'PD brief', quiz: 'PD quiz', podcasts: 'Podcasts for CPD', cpd: 'CPD', account: 'Account' };
+  var TITLES = { home: 'Paramedic Papers', feed: 'Papers', weekly: 'PD', podcast: 'Podcast', saved: 'Saved', brief: 'PD brief', quiz: 'PD quiz', podcasts: 'Podcasts for CPD', cpd: 'CPD', account: 'Account' };
   /* On desktop the sidebar carries the wordmark, so the content header
      names the view instead of the app. */
-  var TITLES_WIDE = { home: 'Today', feed: 'Research feed', weekly: 'Weekly digest', podcast: 'Podcast', saved: 'Saved papers', brief: 'PD brief', quiz: 'PD quiz', podcasts: 'Podcasts for CPD', cpd: 'CPD tracker', account: 'Account' };
+  var TITLES_WIDE = { home: 'Today', feed: 'Papers', weekly: 'PD', podcast: 'Podcast', saved: 'Saved papers', brief: 'PD brief', quiz: 'PD quiz', podcasts: 'Podcasts for CPD', cpd: 'CPD tracker', account: 'Account' };
 
   /* The 5th mobile tab becomes "More", which opens the menu sheet
      (js/cpd.js); the sidebar gains CPD and the account chip. Done here
@@ -229,12 +242,17 @@
 
   function openPaperLink() {
     var id = paperFromHash();
+    if (id && !paperById(id) && archivePending()) {
+      /* An older paper: it's in the archive file (review BC4). */
+      ensureArchive().then(function () { if (paperFromHash() === id) openPaperLink(); });
+      return;
+    }
     if (!id || !paperById(id)) { setTab('feed', true); return; }
     state.pinned = [id];
     state.pinnedFrom = 'link';
     state.query = '';
     $('search-input').value = '';
-    renderFeed();
+    resetFeed();
     setTab('feed', true);
   }
 
@@ -260,7 +278,9 @@
 
   async function openPostLink() {
     var date = postFromHash();
-    var ids = (await postPaperIds(date)).filter(paperById);
+    var all = await postPaperIds(date);
+    if (all.some(function (id) { return !paperById(id); })) await ensureArchive();
+    var ids = all.filter(paperById);
     if (date !== postFromHash()) return;  /* hash moved on while loading */
     if (!ids.length) { setTab('feed', true); return; }
     state.pinned = ids;
@@ -268,7 +288,7 @@
     state.pinnedDate = date;
     state.query = '';
     $('search-input').value = '';
-    renderFeed();
+    resetFeed();
     setTab('feed', true);
   }
 
@@ -339,6 +359,7 @@
     renderKicker();
     if (!silent) location.hash = tab;
     window.scrollTo(0, 0);
+    if (tab === 'brief') scrollToBriefSection();
     if (hooks.onShow) hooks.onShow(tab);
   }
 
@@ -416,7 +437,7 @@
     var days = state.data.dailyUpdates || [];
     var savedCount = savedPapers().length;
 
-    $('nav-count-feed').textContent = allPapers().length;
+    $('nav-count-feed').textContent = totalPapers();
     $('nav-count-saved').textContent = savedCount;
     $('nav-count-saved').hidden = savedCount === 0;
 
@@ -447,9 +468,11 @@
     if (state.tab === 'home') {
       text = longDate(new Date());
     } else if (state.tab === 'feed') {
-      text = allPapers().length + ' papers · ' + d.dailyUpdates.length + ' scans';
+      text = totalPapers() + ' papers · ' + totalScans() + ' scans';
+      var fresh = newCount();
+      if (fresh) text += ' · ' + fresh + ' new';
     } else if (state.tab === 'weekly') {
-      text = (d.weeklyTldr && d.weeklyTldr.dateRange) || 'This week';
+      text = longDate(new Date());
     } else if (state.tab === 'brief') {
       text = state.brief ? state.brief.span : 'The email, online';
     } else if (state.tab === 'podcast') {
@@ -619,7 +642,7 @@
         state.pinnedFrom = 'tldr';
         state.query = '';
         $('search-input').value = '';
-        renderFeed();
+        resetFeed();
         setTab('feed');
       });
     });
@@ -637,19 +660,19 @@
       return renderTodayList(papers);
     }
     /* Nothing from today: either today's scan found none, or it hasn't run
-       yet (daily at 07:00 Canberra, on the site by ~07:30). Today's push
+       yet (daily at 05:00 Canberra, on the site by ~05:30). Today's push
        stamps tldr.date and lastUpdatedDate even when it finds nothing. */
     var t = state.data.tldr || {};
     var scanned = isToday(t.date) || isToday(state.data.lastUpdatedDate);
     var found = papers.length + ' found ' + (isYesterday(day.date) ? 'yesterday, ' : '') + dayLabel(day.date);
     var status = scanned ? "today's scan found none new"
-      : sydneyHour() < 9 ? "today's scan due ~7:30 am" : "today's scan hasn't run yet";
+      : sydneyHour() < 7 ? "today's scan due ~5:30 am" : "today's scan hasn't run yet";
     $('today-count').textContent = found + ' · ' + status;
     renderTodayList(papers);
   }
 
   function renderTodayList(papers) {
-    $('today-list').innerHTML = papers.map(function (p) {
+    $('today-list').innerHTML = highFirst(papers).map(function (p) {
       return '<article class="today-item" data-today-id="' + esc(p.id) + '">' +
         cardInnerHTML(p) + '</article>';
     }).join('');
@@ -662,6 +685,10 @@
   function renderTopicFilter() {
     var counts = {};
     allPapers().forEach(function (p) { if (p.topic) counts[p.topic] = (counts[p.topic] || 0) + 1; });
+    /* Until the archive is loaded, its per-topic counts come from the
+       main file's archive summary, so the totals are right from the start. */
+    var arc = archivePending() ? archiveInfo().topics || {} : {};
+    Object.keys(arc).forEach(function (t) { counts[t] = (counts[t] || 0) + arc[t]; });
     var topics = Object.keys(counts).sort();
     var sel = $('topic-filter');
     sel.hidden = topics.length < 2;
@@ -700,30 +727,147 @@
     }
 
     var body = list.filter(function (p) { return pins.indexOf(p) === -1; });
-    var html = '';
 
+    /* The whole filtered list, as day heads and cards in display order.
+       Search and filters above run over every paper; only drawing is paged. */
+    var items = [];
     if (state.sort === 'relevance') {
-      var ranked = body.slice().sort(function (a, b) { return relRank(b.relevance) - relRank(a.relevance); });
-      if (ranked.length) html += dayHeadHTML('Ranked by relevance', ranked.length);
-      html += ranked.map(cardHTML).join('');
+      var ranked = highFirst(body);
+      if (ranked.length) items.push({ head: dayHeadHTML('Ranked by relevance', ranked.length) });
+      ranked.forEach(function (p) { items.push({ paper: p }); });
     } else {
+      /* Each day's papers High relevance first (review BC2). */
       (state.data.dailyUpdates || []).forEach(function (day) {
         var ps = body.filter(function (p) { return day.papers.indexOf(p) !== -1; });
         if (!ps.length) return;
-        html += dayHeadHTML(dayLabel(day.date), ps.length) + ps.map(cardHTML).join('');
+        items.push({ head: dayHeadHTML(dayLabel(day.date), ps.length) });
+        highFirst(ps).forEach(function (p) { items.push({ paper: p }); });
       });
     }
+    state.feedItems = items;
+    state.feedDrawn = 0;
+    state.feedTotal = body.length;
 
-    $('feed-list').innerHTML = html;
-    $('feed-empty').hidden = !!(html || pins.length);
-    bindActs($('feed-list'));
+    $('feed-list').innerHTML = '';
+    $('feed-empty').hidden = !!(items.length || pins.length);
+    drawFeedPage(Math.max(state.feedLimit || 0, FEED_PAGE));
+  }
+
+  /* Paged feed (review BC3): the feed holds every paper ever logged, so it
+     draws FEED_PAGE cards and adds the next lot as the reader nears the
+     end (or taps the button, which also works without IntersectionObserver).
+     state.feedLimit survives a re-render (e.g. after Save) so the list
+     doesn't jump back; changing search, sort or a filter resets it. */
+  var FEED_PAGE = 30;
+  var feedObserver = null;
+
+  function drawFeedPage(upTo) {
+    var items = state.feedItems || [];
+    var list = $('feed-list');
+    var cards = 0;
+    var html = '';
+    var i = state.feedDrawn;
+    /* Count the cards already drawn so upTo is a total, not an increment. */
+    for (var k = 0; k < i; k++) if (items[k].paper) cards++;
+    for (; i < items.length; i++) {
+      if (items[i].paper) {
+        if (cards >= upTo) break;
+        cards++;
+        html += cardHTML(items[i].paper);
+      } else {
+        html += items[i].head;
+      }
+    }
+    /* Don't leave a day head dangling at the bottom with no cards under it. */
+    if (i < items.length && i > state.feedDrawn && !items[i - 1].paper) {
+      html = html.slice(0, html.length - items[i - 1].head.length);
+      i--;
+    }
+    state.feedDrawn = i;
+    state.feedLimit = cards;
+
+    var old = $('feed-more');
+    if (old) old.remove();
+    if (html) {
+      var tmp = document.createElement('div');
+      tmp.innerHTML = html;
+      var frag = document.createDocumentFragment();
+      while (tmp.firstChild) frag.appendChild(tmp.firstChild);
+      /* Bind only the new nodes, so earlier cards don't get double handlers. */
+      var added = Array.prototype.slice.call(frag.childNodes);
+      list.appendChild(frag);
+      added.forEach(function (n) { if (n.nodeType === 1) bindActs(n); });
+    }
+
+    var left = state.feedTotal - cards;
+    var older = left > 0 ? 0 : archivePending() ? archiveInfo().papers || 0 : 0;
+    if (left > 0 || older) {
+      var more = document.createElement('button');
+      more.className = 'wide-btn feed-more';
+      more.id = 'feed-more';
+      more.type = 'button';
+      if (left > 0) {
+        more.textContent = 'Show ' + Math.min(left, FEED_PAGE) + ' more · ' + left + ' left';
+        feedMore = function () { drawFeedPage(state.feedLimit + FEED_PAGE); };
+      } else {
+        /* End of the recent papers: the rest are in the archive file. */
+        more.textContent = 'Show older papers · ' + older + ' more';
+        feedMore = function () {
+          more.disabled = true;
+          more.textContent = 'Loading older papers\u2026';
+          ensureArchive().then(function (ok) {
+            if (ok) { var keep = state.feedLimit; renderAfterArchive(); drawFeedPage(keep + FEED_PAGE); }
+            else { more.disabled = false; more.textContent = 'Couldn\u2019t load older papers \u00b7 try again'; }
+          });
+        };
+      }
+      more.addEventListener('click', function () { feedMore(); });
+      list.appendChild(more);
+      if (left > 0) watchFeedEnd(more);
+      else if (feedObserver) feedObserver.disconnect();
+    } else if (feedObserver) {
+      feedObserver.disconnect();
+    }
+  }
+  var feedMore = function () {};
+
+  function watchFeedEnd(el) {
+    if (!('IntersectionObserver' in window)) return;
+    if (!feedObserver) {
+      feedObserver = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting && state.tab === 'feed') feedMore();
+        });
+      }, { rootMargin: '600px 0px' });
+    }
+    feedObserver.disconnect();
+    feedObserver.observe(el);
+  }
+
+  /* A new search, sort, filter or pin starts the feed from its first page.
+     Search and filters cover every paper, so any of them pulls in the
+     archive (review BC4); the plain newest-first feed doesn't need it until
+     the reader scrolls past the recent papers. */
+  function resetFeed() {
+    state.feedLimit = 0;
+    renderFeed();
+    if (state.query.trim() || state.topic || state.highRelOnly || state.savedOnly || state.sort !== 'newest') withArchive();
+  }
+
+  /* Stable sort: High, then Med, then Low; the scan's own order within each. */
+  function highFirst(papers) {
+    return papers.map(function (p, i) { return { p: p, i: i, r: relRank(p.relevance) }; })
+      .sort(function (a, b) { return (b.r - a.r) || (a.i - b.i); })
+      .map(function (x) { return x.p; });
   }
 
   /* ── PD brief (the newsletter, online) ──────────────── */
 
-  /* Weekly-tab card + the #brief view, from data/pd-brief.json: the latest
-     issue as sent, with each paper's fields copied in so this view doesn't
-     depend on papers.json. Paper links open the paper in the feed. */
+  /* PD-tab brief block + the #brief view, from data/pd-brief.json: the
+     latest issue as sent, with each paper's fields copied in so this view
+     doesn't depend on papers.json. Paper links open the paper in the feed. */
+  var LESSONS_SHOWN = 3;  /* on the PD tab; the rest sit behind "Show all" */
+
   function renderBrief() {
     var b = state.brief;
     $('brief-card').hidden = !b;
@@ -734,8 +878,6 @@
       return;
     }
     var s = b.synthesis;
-    $('brief-card-title').textContent = b.span;
-    $('brief-card-lead').textContent = s ? s.intro : b.papers.length + ' papers from these 8 days, with their bottom lines.';
 
     var byId = {};
     b.papers.forEach(function (p) { byId[p.id] = p; });
@@ -744,6 +886,8 @@
         return '<a class="brief-ref" href="#paper=' + encodeURIComponent(id) + '">' + esc(byId[id].title) + '</a>';
       }).join('<span class="brief-sep"> · </span>');
     }
+
+    renderBriefBlock(b, s, refs);
 
     var out = '<header class="brief-head">' +
       '<p class="panel-kicker panel-kicker-accent">Paramedic Papers · PD brief</p>' +
@@ -759,8 +903,8 @@
         }).join('') + '</ol></section>';
 
       out += '<section class="brief-sec"><h3>Worth a deeper look</h3>' +
-        s.deep_dives.map(function (d) {
-          return '<article class="brief-dive">' +
+        s.deep_dives.map(function (d, i) {
+          return '<article class="brief-dive" id="brief-dive-' + (i + 1) + '" tabindex="-1">' +
             '<h4>' + esc(d.topic) + '</h4>' +
             '<p>' + esc(d.why) + '</p>' +
             '<p class="brief-refs"><span class="brief-label">Read</span> ' + refs(d.ids) + '</p>' +
@@ -780,7 +924,11 @@
       var ia = BL.indexOf(a.bottomLine), ic = BL.indexOf(c.bottomLine);
       return (ia < 0 ? 9 : ia) - (ic < 0 ? 9 : ic);
     }).forEach(function (p) { (groups[p.topic] = groups[p.topic] || []).push(p); });
+    /* The paper list is long (~50 papers), so it waits behind a button. */
     out += '<section class="brief-sec"><h3>All papers this period</h3>' +
+      '<button class="btn brief-all-btn" id="brief-all-btn" type="button" aria-expanded="false" aria-controls="brief-all">' +
+        'Show all ' + b.papers.length + ' papers</button>' +
+      '<div id="brief-all" hidden>' +
       Object.keys(groups).sort().map(function (topic) {
         return '<h4 class="brief-topic">' + esc(topic) + '</h4>' + groups[topic].map(function (p) {
           var meta = [p.journal, p.design, p.n].filter(Boolean).join(' · ');
@@ -796,13 +944,207 @@
             '<p class="brief-finding">' + esc(p.finding) + '</p>' +
             (links ? '<p class="brief-links">' + links + '</p>' : '') + '</div>';
         }).join('');
-      }).join('') + '</section>';
+      }).join('') + '</div></section>';
 
     out += '<a class="newsletter-banner" href="https://join.paramedicpapers.com">' +
-      '<span><b>Get the next one by email</b> — the PD brief lands on your PD day, every 8 days. Pick your block when you sign up.</span>' +
+      '<span><b>Get the next one by email</b> — the free PD brief, every week on a day you choose.</span>' +
       '<span class="newsletter-cta">Sign up ' + ico('arrow') + '</span></a>' +
       '<p class="brief-fine">Summaries are AI-assisted — check the paper before acting on it.</p>';
     $('brief-body').innerHTML = out;
+    var allBtn = $('brief-all-btn');
+    allBtn.addEventListener('click', function () {
+      var box = $('brief-all'), open = box.hidden;
+      box.hidden = !open;
+      allBtn.setAttribute('aria-expanded', String(open));
+      allBtn.textContent = open ? 'Hide the papers' : 'Show all ' + b.papers.length + ' papers';
+    });
+    if (state.tab === 'brief') scrollToBriefSection();
+  }
+
+  /* The issue on the PD tab: intro, lessons (3, then "Show all"), the
+     deep-dive topics (each opens the full issue at that topic) and the
+     crew question. Without a synthesis it falls back to a short line. */
+  function renderBriefBlock(b, s, refs) {
+    $('brief-card-kicker').textContent = 'PD brief · ' + b.span;
+    $('brief-card-lead').textContent = s ? s.intro : b.papers.length + ' papers from this period, with their bottom lines.';
+    var body = $('brief-card-body');
+    if (!s) { body.innerHTML = ''; return; }
+    var lessons = s.lessons || [], dives = s.deep_dives || [];
+    var extra = lessons.length - LESSONS_SHOWN;
+    body.innerHTML =
+      (lessons.length ? '<h3 class="brief-block-h">Lessons learnt</h3>' +
+        '<ol class="brief-lessons brief-block-lessons" id="brief-block-lessons">' +
+        lessons.map(function (x, i) {
+          return '<li' + (i >= LESSONS_SHOWN ? ' class="is-extra" hidden' : '') + '><p>' + esc(x.text) + '</p>' +
+            (refs(x.ids) ? '<p class="brief-refs">' + refs(x.ids) + '</p>' : '') + '</li>';
+        }).join('') + '</ol>' +
+        (extra > 0 ? '<button class="link-btn brief-more" id="brief-block-more" type="button" aria-expanded="false" aria-controls="brief-block-lessons">Show all ' + lessons.length + '</button>' : '') : '') +
+      (dives.length ? '<h3 class="brief-block-h">Worth a deeper look</h3><ul class="brief-block-dives">' +
+        dives.map(function (d, i) {
+          return '<li><a href="#brief=dive-' + (i + 1) + '"><span class="brief-block-dive-t">' + esc(d.topic) + '</span>' +
+            ico('chev-right') + '</a></li>';
+        }).join('') + '</ul>' : '') +
+      (s.discussion ? '<h3 class="brief-block-h">Crew question</h3><p class="brief-block-discuss">' + esc(s.discussion) + '</p>' : '');
+    var more = $('brief-block-more');
+    if (more) more.addEventListener('click', function () {
+      var open = more.getAttribute('aria-expanded') !== 'true';
+      body.querySelectorAll('.is-extra').forEach(function (li) { li.hidden = !open; });
+      more.setAttribute('aria-expanded', String(open));
+      more.textContent = open ? 'Show fewer' : 'Show all ' + lessons.length;
+    });
+  }
+
+  /* #brief=dive-2 (from the PD tab's topic links) opens the issue at that
+     deep-dive topic. */
+  function scrollToBriefSection() {
+    var m = /^#brief=dive-(\d+)$/.exec(location.hash || '');
+    var el = m && $('brief-dive-' + m[1]);
+    if (!el) return;
+    el.scrollIntoView({ block: 'start' });
+    el.focus({ preventScroll: true });
+  }
+
+  /* ── PD tab: today's prompt (one rotating card) ─────── */
+
+  /* One card a day on a 3-day cycle: a paper whose bottom line is
+     "Supports current practice" (current and archived papers), a crew
+     question from the current brief, then a learning goal from a recent
+     High relevance paper. The day is the Canberra date, so every reader
+     sees the same card. Each pool steps through in order (oldest first),
+     so an evidence card doesn't come back for months. A missing source
+     moves on to the next type; with none, the card stays hidden. */
+  var PROMPT_TYPES = ['evidence', 'crew', 'goal'];
+  var PROMPT_START = '2026-11-15';   /* day 1 of the cycle */
+  var prompt = null;                 /* { type, item } on screen */
+  var archivePapersP = null;
+
+  function canberraISO(d) {
+    try {
+      return new Intl.DateTimeFormat('en-CA', { timeZone: 'Australia/Sydney', year: 'numeric', month: '2-digit', day: '2-digit' }).format(d);
+    } catch (e) {
+      return d.getFullYear() + '-' + pad(d.getMonth() + 1) + '-' + pad(d.getDate());
+    }
+  }
+  function dayNumber(iso) {
+    return Math.round(Date.UTC(+iso.slice(0, 4), +iso.slice(5, 7) - 1, +iso.slice(8, 10)) / 86400000);
+  }
+  /* The archive's papers, read on their own so the feed's lazy archive
+     load is untouched (same URL, so the browser's copy is shared). */
+  function archivePapersOnce() {
+    var a = state.data && state.data.archive;
+    if (!a || !a.url) return Promise.resolve([]);
+    if (!archivePapersP) {
+      var url = a.url + (a.url.indexOf('?') < 0 ? '?' : '&') + 'v=' + encodeURIComponent(a.version || state.data.lastUpdated || '');
+      archivePapersP = fetch(url)
+        .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+        .then(function (arc) {
+          var out = [];
+          (arc.dailyUpdates || []).forEach(function (d) {
+            (d.papers || []).forEach(function (p) { out.push({ p: p, date: d.date }); });
+          });
+          return out;
+        })
+        .catch(function () { archivePapersP = null; return []; });
+    }
+    return archivePapersP;
+  }
+
+  function renderPdPrompt() {
+    var today = canberraISO(new Date());
+    var n = dayNumber(today) - dayNumber(PROMPT_START);
+    var cycle = ((n % 3) + 3) % 3, round = Math.floor(n / 3);
+    var tries = [0, 1, 2].map(function (i) { return PROMPT_TYPES[(cycle + i) % 3]; });
+    (function next(i) {
+      if (i >= tries.length) { prompt = null; drawPdPrompt(); return; }
+      promptItem(tries[i], round, today).then(function (item) {
+        if (!item) { next(i + 1); return; }
+        prompt = { type: tries[i], item: item };
+        drawPdPrompt();
+      }, function () { next(i + 1); });
+    })(0);
+  }
+
+  function pick(list, round) {
+    return list.length ? list[((round % list.length) + list.length) % list.length] : null;
+  }
+
+  /* Resolves to the day's item of that type, or null. */
+  function promptItem(type, round, today) {
+    if (type === 'evidence') {
+      return archivePapersOnce().then(function (arc) {
+        var seen = {}, pool = [];
+        (state.data.dailyUpdates || []).forEach(function (d) {
+          (d.papers || []).forEach(function (p) { pool.push({ p: p, date: d.date }); });
+        });
+        pool = pool.concat(arc).filter(function (x) {
+          if (seen[x.p.id] || x.p.bottomLine !== 'Supports current practice' || !x.p.finding) return false;
+          seen[x.p.id] = true;
+          return true;
+        });
+        pool.sort(function (x, y) { return x.date < y.date ? -1 : x.date > y.date ? 1 : (x.p.id < y.p.id ? -1 : 1); });
+        var hit = pick(pool, round);
+        return hit ? hit.p : null;
+      });
+    }
+    if (type === 'crew') {
+      var b = state.brief, sy = b && b.synthesis;
+      if (!sy) return Promise.resolve(null);
+      var pool = [];
+      (sy.deep_dives || []).forEach(function (d, i) {
+        (d.questions || []).forEach(function (q) { pool.push({ text: q, topic: d.topic, ids: d.ids || [], dive: i + 1 }); });
+      });
+      if (sy.discussion) pool.push({ text: sy.discussion, topic: '', ids: [], dive: 0 });
+      return Promise.resolve(pick(pool, round));
+    }
+    /* Learning goal from a High relevance paper in the last 7 days. */
+    var cutoff = dayNumber(today) - 7;
+    var goals = [];
+    (state.data.dailyUpdates || []).slice().reverse().forEach(function (day) {
+      if (!day.date || dayNumber(day.date) < cutoff) return;
+      (day.papers || []).forEach(function (p) {
+        if (p.learningGoal && /high/i.test(String(p.relevance || '').split(/[—-]/)[0])) goals.push(p);
+      });
+    });
+    return Promise.resolve(pick(goals, round));
+  }
+
+  function drawPdPrompt() {
+    var el = $('pd-prompt');
+    if (!el) return;
+    if (!prompt) { el.hidden = true; el.innerHTML = ''; return; }
+    var t = prompt.type, it = prompt.item, html = '';
+    var LABELS = { evidence: 'Evidence that backs you', crew: 'Crew question', goal: 'Learning goal' };
+    var head = '<div class="panel-head"><span class="panel-kicker panel-kicker-accent">Today · ' + LABELS[t] + '</span></div>';
+    if (t === 'evidence') {
+      html = head +
+        '<h3 class="pd-prompt-q">' + esc(it.shortTitle || it.title) + '</h3>' +
+        '<p class="pd-prompt-finding">' + esc(it.finding) + '</p>' +
+        (it.caveat ? '<p class="pd-prompt-caveat"><span class="brief-label">Caveat</span> ' + esc(it.caveat) + '</p>' : '') +
+        '<p class="pd-prompt-meta">' + esc([it.journal, it.studyType].filter(Boolean).join(' · ')) + '</p>' +
+        '<a class="brief-card-go" href="#paper=' + encodeURIComponent(it.id) + '">Read the paper' + ico('arrow') + '</a>';
+    } else if (t === 'crew') {
+      var byId = {};
+      ((state.brief && state.brief.papers) || []).forEach(function (p) { byId[p.id] = p; });
+      var reads = it.ids.filter(function (id) { return byId[id]; }).map(function (id) {
+        return '<a class="brief-ref" href="#paper=' + encodeURIComponent(id) + '">' + esc(byId[id].title) + '</a>';
+      }).join('<span class="brief-sep"> · </span>');
+      html = head +
+        '<p class="pd-prompt-crew">' + esc(it.text) + '</p>' +
+        '<p class="pd-prompt-meta">Take it to your crew partner or station' + (it.topic ? ' · ' + esc(it.topic) : '') + '</p>' +
+        (reads ? '<p class="pd-prompt-reads"><span class="brief-label">Read</span> ' + reads + '</p>' : '') +
+        '<a class="brief-card-go" href="' + (it.dive ? '#brief=dive-' + it.dive : '#brief') + '">' +
+          (it.dive ? 'More on this topic' : 'Read the full issue') + ico('arrow') + '</a>';
+    } else {
+      var p = it;
+      html = head +
+        '<p class="pd-prompt-goal">' + esc(p.learningGoal) + '</p>' +
+        '<p class="pd-prompt-meta">From <a href="#paper=' + encodeURIComponent(p.id) + '">' + esc(p.shortTitle || p.title) + '</a></p>' +
+        footHTML(p);
+    }
+    el.innerHTML = html;
+    el.className = 'panel pd-prompt is-' + t;
+    el.hidden = false;
+    if (t === 'goal') bindActs(el);
   }
 
   function dayLabel(iso) {
@@ -814,7 +1156,7 @@
   function renderWeeklyPicks() {
     var w = state.data.weeklyTldr || {};
     var picks = w.topPicks || state.data.featuredPapers || [];
-    $('weekly-pick-count').textContent = picks.length + ' of ' + allPapers().length;
+    $('weekly-pick-week').textContent = pickWeekLabel(w.dateRange);
     $('weekly-picks').innerHTML = picks.map(function (p, i) {
       var why = p.featuredReason || p.why || p.reason || '';
       return '<article class="paper-card">' +
@@ -822,7 +1164,7 @@
           '<span class="pick-rank">' + pad(i + 1) + '</span>' +
           tagsHTML(p) +
         '</div>' +
-        '<h3 class="paper-title">' + titleLinkHTML(p) + '</h3>' +
+        headingHTML(p) +
         (p.summary ? '<p class="paper-summary" data-expand>' + esc(p.summary) + '</p>' : '') +
         (why ? '<div class="why"><span class="why-kicker">Why it\'s picked</span>' +
                '<span class="why-text">' + esc(why) + '</span></div>' : '') +
@@ -831,6 +1173,15 @@
       '</article>';
     }).join('');
     bindActs($('weekly-picks'));
+  }
+
+  /* "3–10 Nov 2026" → "Week of 3–10 Nov". The year stays when the range
+     crosses one. */
+  function pickWeekLabel(range) {
+    if (!range) return '';
+    var r = String(range);
+    if ((r.match(/\d{4}/g) || []).length === 1) r = r.replace(/\s*\d{4}\s*$/, '');
+    return 'Week of ' + r;
   }
 
   function renderSaved() {
@@ -913,8 +1264,9 @@
     }
     a.play();
     /* "Paramedic Papers Daily — 2 October 2026" → "2 October 2026": the
-       bar is narrow on phones and the show name adds nothing there. */
-    $('player-title').textContent = ep.title.replace(/^.*—\s*/, '') || ep.title;
+       bar is narrow on phones and the show name adds nothing there. Newer
+       titles lead with the paper ("Short title · 13 Nov") and stay whole. */
+    $('player-title').textContent = ep.title.replace(/^Paramedic Papers Daily\s*—\s*/, '') || ep.title;
     $('player').hidden = false;
     document.body.classList.add('has-player');
     setMediaSession(ep);
@@ -1255,17 +1607,27 @@
 
   function cardHTML(p) { return '<article class="paper-card">' + cardInnerHTML(p) + '</article>'; }
 
-  /* One card for Home and Feed at every width. A card has a single
-     expanded state: the Details button and a tap on the summary both
-     toggle it. Expanded = full summary (only Home on mobile clamps it)
-     plus the details panel (Design / Found / Caveat / Relevance).
-     Nothing in the panel appears anywhere else on the card. */
+  /* One card for Home, Feed and Saved at every width (review BC1, option A):
+     the plain-English headline (shortTitle) leads, the paper's full title
+     follows in italic serif (linked to the paper), then two lines of
+     summary. A card has a single expanded state: the Details button and a
+     tap on the summary both toggle it. Expanded = full summary plus the
+     details panel (Design / Found / Caveat / Relevance). Papers without a
+     headline keep the full title as the heading. */
   function cardInnerHTML(p) {
-    return tagsHTML(p) +
-      '<h3 class="paper-title">' + titleLinkHTML(p) + '</h3>' +
+    return tagsHTML(p) + headingHTML(p) +
       (p.summary ? '<p class="paper-summary" data-expand>' + esc(p.summary) + '</p>' : '') +
       extraHTML(p) +
       footHTML(p);
+  }
+
+  function headingHTML(p) {
+    var head = String(p.shortTitle || '').trim();
+    if (!head || head === String(p.title || '').trim()) {
+      return '<h3 class="paper-title">' + titleLinkHTML(p) + '</h3>';
+    }
+    return '<h3 class="paper-headline">' + esc(head) + '</h3>' +
+      '<p class="paper-fulltitle">' + titleLinkHTML(p) + '</p>';
   }
 
   /* Structured triage fields (papers from 2 Oct 2026 on). */
@@ -1308,6 +1670,7 @@
   /* topic / studyType are optional — rendered only when the backend supplies them. */
   function tagsHTML(p) {
     var out = '<div class="tagrow">';
+    if (isNew(p)) out += '<span class="tag tag-new">New</span>';
     if (p.topic) out += '<span class="tag">' + esc(p.topic) + '</span>';
     if (p.studyType) out += '<span class="tag tag-outline">' + esc(p.studyType) + '</span>';
     if (p.bottomLine) out += '<span class="tag tag-bl bl-' + esc(p.bottomLine.split(' ')[0].toLowerCase()) + '">' + esc(p.bottomLine) + '</span>';
@@ -1395,7 +1758,7 @@
      episode buttons). */
   function renderPaperLists() {
     if (!state.data) return;
-    renderToday(); renderFeed(); renderWeeklyPicks(); renderSaved();
+    renderToday(); renderFeed(); renderWeeklyPicks(); renderSaved(); drawPdPrompt();
   }
 
   /* ── saved ──────────────────────────────────────────── */
@@ -1427,7 +1790,7 @@
     renderSavedLists();
   }
   function renderSavedLists() {
-    if (state.data) { renderToday(); renderFeed(); renderWeeklyPicks(); renderSaved(); renderSidebar(); }
+    if (state.data) { renderToday(); renderFeed(); renderWeeklyPicks(); renderSaved(); renderSidebar(); drawPdPrompt(); }
     else renderSavedStatus();
   }
   function savedPapers() {
@@ -1443,6 +1806,73 @@
      on success ("on your 3A PD shift", "every Tuesday"). Shown once at the
      top of Home; the query is dropped from the address bar so a reload or a
      shared link doesn't show it again. */
+  /* First-visit intro on Home (review QW3). Stays until dismissed, or until
+     the reader comes back through a PD brief confirm link. */
+  var INTRO_KEY = 'pp:intro-closed';
+  function closeIntro() {
+    try { localStorage.setItem(INTRO_KEY, '1'); } catch (e) {}
+    renderIntro();
+  }
+  function renderIntro() {
+    var el = $('home-intro');
+    if (!el) return;
+    var closed = false;
+    try { closed = localStorage.getItem(INTRO_KEY) === '1'; } catch (e) {}
+    el.hidden = closed;
+    $('page-home').classList.toggle('has-intro', !closed);
+    if (!el.dataset.bound) {
+      el.dataset.bound = '1';
+      $('home-intro-close').addEventListener('click', closeIntro);
+      bindAboutModal();
+    }
+  }
+
+  /* The intro's two buttons open popups so the reader stays on Home:
+     "How it works" shows the about text, "Get the PD brief" shows the
+     join.paramedicpapers.com form in a frame (loaded on first open).
+     Close with the X, Esc (native) or a tap outside. Without <dialog>,
+     or on ctrl/cmd-click, the links work as normal pages. */
+  function bindAboutModal() {
+    bindPopup(['home-intro-about'], 'about-modal', 'about-modal-close');
+    /* The PD tab's sign-up line opens the same popup. */
+    bindPopup(['home-intro-join', 'pd-join'], 'join-modal', 'join-modal-close', function () {
+      /* The sign-up page can't see this app's theme toggle, so pass it
+         (join.paramedicpapers.com reads ?theme=light|dark). Reload the
+         frame only if the theme changed since it was last opened. */
+      var frame = $('join-modal-frame');
+      var theme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
+      var src = $('home-intro-join').href.replace(/\/?$/, '/') + '?theme=' + theme;
+      if (frame.getAttribute('src') !== src) frame.setAttribute('src', src);
+    });
+  }
+  function bindPopup(linkIds, dlgId, closeId, onOpen) {
+    var links = linkIds.map($).filter(Boolean);
+    var dlg = $(dlgId);
+    if (!links.length || !dlg || typeof dlg.showModal !== 'function') return;
+    var opener = null;  /* focus goes back to the link that opened it */
+    function close() { if (dlg.open) dlg.close(); }
+    links.forEach(function (link) {
+      link.addEventListener('click', function (e) {
+        if (e.metaKey || e.ctrlKey || e.shiftKey || e.button > 0) return;
+        e.preventDefault();
+        opener = link;
+        if (onOpen) onOpen();
+        document.body.classList.add('has-modal');
+        dlg.showModal();
+        dlg.scrollTop = 0;
+        $(closeId).focus();
+      });
+    });
+    dlg.addEventListener('close', function () {
+      document.body.classList.remove('has-modal');
+      if (opener) opener.focus();
+    });
+    $(closeId).addEventListener('click', close);
+    dlg.querySelectorAll('[data-about-close]').forEach(function (b) { b.addEventListener('click', close); });
+    /* A click on the dialog box itself (not its content) is the backdrop. */
+    dlg.addEventListener('click', function (e) { if (e.target === dlg) close(); });
+  }
+
   function showSignupResult() {
     var q = new URLSearchParams(location.search);
     var kind = q.get('pd');
@@ -1472,6 +1902,9 @@
     }[kind];
     var el = $('pd-welcome');
     if (!copy || !el) return;
+    if (kind === 'confirmed' || kind === 'already') {
+      try { localStorage.setItem(INTRO_KEY, '1'); } catch (e) {}
+    }
     el.innerHTML =
       '<div class="panel-head">' +
         '<span class="panel-kicker panel-kicker-accent">' + (kind === 'expired' ? 'PD brief' : ico('check') + ' PD brief') + '</span>' +
@@ -1506,9 +1939,6 @@
     });
   }
 
-  function bindWeekly() {
-    collapser('weekly-tldr-toggle', 'weekly-tldr-body', ico('plus'), ico('minus'));
-  }
 
   function collapser(btnId, bodyId, closedLabel, openLabel) {
     var btn = $(btnId), body = $(bodyId);
@@ -1524,7 +1954,7 @@
   function bindFeed() {
     $('search-input').addEventListener('input', function (e) {
       state.query = e.target.value;
-      renderFeed();
+      resetFeed();
       /* On desktop the search sits in the header on every view — typing
          there means the reader wants the feed. */
       if (state.tab !== 'feed') setTab('feed');
@@ -1535,13 +1965,13 @@
         document.querySelectorAll('.chip[data-sort]').forEach(function (c) {
           c.classList.toggle('is-on', c === chip);
         });
-        renderFeed();
+        resetFeed();
       });
     });
     $('topic-filter').addEventListener('change', function (e) {
       state.topic = e.target.value;
       e.target.classList.toggle('is-on', !!state.topic);
-      renderFeed();
+      resetFeed();
     });
     /* High-rel / Saved filters; not persisted. */
     document.querySelectorAll('.chip[data-filter]').forEach(function (chip) {
@@ -1550,7 +1980,7 @@
         state[key] = !state[key];
         chip.classList.toggle('is-on', state[key]);
         chip.setAttribute('aria-pressed', String(state[key]));
-        renderFeed();
+        resetFeed();
       });
     });
     document.addEventListener('keydown', function (e) {
@@ -1572,6 +2002,108 @@
   }
   function paperById(id) {
     return allPapers().filter(function (p) { return p.id === id; })[0] || null;
+  }
+
+  /* ── archive (review BC4) ───────────────────────────── */
+
+  /* data/papers.json holds the recent days; older days are in a second
+     file named by data.archive.url, loaded only when something needs them:
+     search or a filter, scrolling past the recent papers, or a link, saved
+     paper or CPD entry that points at an older paper. data.archive also
+     carries the archive's paper and scan counts and its per-topic counts,
+     so totals are right before it loads. A papers.json without "archive"
+     (the old single-file build) works exactly as before. */
+  var archivePromise = null;
+  function archiveInfo() { return state.data && state.data.archive; }
+  function archivePending() { var a = archiveInfo(); return !!(a && a.url && !state.archiveLoaded); }
+  function ensureArchive() {
+    if (!archivePending()) return Promise.resolve(false);
+    if (archivePromise) return archivePromise;
+    var data = state.data, a = data.archive;
+    /* The version changes with each build, so a day's copy can be cached. */
+    var url = a.url + (a.url.indexOf('?') < 0 ? '?' : '&') + 'v=' + encodeURIComponent(a.version || data.lastUpdated || '');
+    archivePromise = fetch(url).then(function (r) {
+      if (!r.ok) throw new Error('archive ' + r.status);
+      return r.json();
+    }).then(function (arc) {
+      if (state.data !== data) return false;  /* refreshed meanwhile */
+      var have = {};
+      data.dailyUpdates = data.dailyUpdates || [];
+      data.dailyUpdates.forEach(function (d) { have[d.date] = true; });
+      (arc.dailyUpdates || []).forEach(function (d) { if (!have[d.date]) data.dailyUpdates.push(d); });
+      data.dailyUpdates.sort(function (x, y) { return x.date < y.date ? 1 : x.date > y.date ? -1 : 0; });
+      state.archiveLoaded = true;
+      return true;
+    }).catch(function (err) {
+      console.warn('Older papers not loaded:', err && err.message);
+      archivePromise = null;
+      return false;
+    });
+    return archivePromise;
+  }
+  /* Load the archive, then redraw what depends on it, keeping the feed's
+     scroll depth. */
+  function withArchive() {
+    if (!archivePending()) return;
+    ensureArchive().then(function (ok) { if (ok) renderAfterArchive(); });
+  }
+  function renderAfterArchive() {
+    renderKicker(); renderTopicFilter(); renderFeed(); renderSaved(); renderSidebar();
+  }
+  function totalPapers() {
+    return allPapers().length + (archivePending() ? archiveInfo().papers || 0 : 0);
+  }
+  function totalScans() {
+    return (state.data.dailyUpdates || []).length + (archivePending() ? archiveInfo().days || 0 : 0);
+  }
+
+  /* ── new since last visit (review BC8) ──────────────── */
+
+  /* pp:seen holds the newest scan date this device has shown. Papers from
+     later scans are marked New for the whole of the next visit; the
+     first visit marks nothing. */
+  var SEEN_KEY = 'pp:seen';
+  function markSeen() {
+    var days = state.data.dailyUpdates || [];
+    if (!days.length) return;
+    var prev = '';
+    try { prev = localStorage.getItem(SEEN_KEY) || ''; } catch (e) {}
+    if (state.seenBefore === undefined) state.seenBefore = prev;
+    if (!prev || days[0].date > prev) {
+      try { localStorage.setItem(SEEN_KEY, days[0].date); } catch (e) {}
+    }
+  }
+  function isNew(p) {
+    return !!(state.seenBefore && p.date && p.date > state.seenBefore);
+  }
+  function newCount() {
+    if (!state.seenBefore || !state.data) return 0;
+    return (state.data.dailyUpdates || []).reduce(function (n, d) {
+      return d.date > state.seenBefore ? n + (d.papers || []).length : n;
+    }, 0);
+  }
+
+  /* ── offline (review BC8) ───────────────────────────── */
+
+  /* /sw.js keeps the last copy of the app and its data on the device, so
+     the dashboard opens without signal. Network first, so online readers
+     always get the latest. */
+  function registerOffline() {
+    if ('serviceWorker' in navigator && (location.protocol === 'https:' || location.hostname === 'localhost')) {
+      navigator.serviceWorker.register('/sw.js').catch(function (err) { console.warn('Offline copy unavailable:', err && err.message); });
+    }
+    window.addEventListener('online', renderOffline);
+    window.addEventListener('offline', renderOffline);
+  }
+  function renderOffline() {
+    var el = $('offline-note');
+    if (!el) return;
+    var off = navigator.onLine === false;
+    el.hidden = !off;
+    if (off) {
+      el.textContent = 'You\u2019re offline. Showing the papers saved on this device' +
+        (state.data && state.data.lastUpdatedSydney ? ', last updated ' + state.data.lastUpdatedSydney : '') + '.';
+    }
   }
   function matches(p, term) {
     return [p.title, p.journal, p.summary, p.relevance, p.topic, p.studyType,

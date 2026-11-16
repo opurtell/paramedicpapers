@@ -1,0 +1,120 @@
+{
+ "id": "2026-11-14",
+ "span": "7 – 14 Nov 2026",
+ "created": "2026-11-14T00:02:09Z",
+ "est_minutes": 10,
+ "questions": [
+  {
+   "paper_id": "43001758",
+   "short_title": "Big community arrest programme didn't change survival",
+   "topic": "Cardiac arrest",
+   "question": "A large cluster-randomised trial tested a community and EMS programme bundling telecommunicator CPR training, community CPR training and better AED use. What did it find for survival with good neurological outcome?",
+   "options": [
+    "A benefit only in younger patients",
+    "A reduction in survival compared with usual care",
+    "About a 9% absolute improvement over usual care",
+    "No meaningful difference from usual care"
+   ],
+   "answer": 3,
+   "explanation": "Survival with good neurological outcome was essentially the same: 9.0% with the intervention versus 9.4% with usual care. Because the programme bundled four components together, the trial can't tell whether one element, like telecommunicator CPR instructions, drove the null result."
+  },
+  {
+   "paper_id": "43002825",
+   "short_title": "Risk scores sort survival odds in paediatric OHCA",
+   "topic": "Paediatrics",
+   "question": "The paediatric OHCA risk scores grouped children into low, moderate and high survival categories using which of the following?",
+   "options": [
+    "Only age, with outcomes otherwise identical across the groups",
+    "Hospital interventions including length of resuscitation and drug doses given",
+    "Post-arrest EEG results and imaging findings from the receiving hospital",
+    "Prehospital variables such as bystander CPR, first rhythm and arrest location"
+   ],
+   "answer": 3,
+   "explanation": "The scores were built entirely from variables known before hospital arrival, like gender, witness status, aetiology, bystander CPR, prehospital AED use and first rhythm. They were only internally validated, so they're hypothesis-generating rather than bedside-ready."
+  },
+  {
+   "paper_id": "43008211",
+   "short_title": "How common are blood-borne infections in first responders",
+   "topic": "Workforce & wellbeing",
+   "question": "Which blood-borne infection had the highest pooled prevalence among prehospital first responders in this review?",
+   "options": [
+    "MRSA colonisation",
+    "Hepatitis C",
+    "HIV",
+    "Hepatitis B"
+   ],
+   "answer": 3,
+   "explanation": "Hepatitis B pooled at 6.2%, above MRSA at about 4% and hepatitis C at 1.8%. The estimates came from very heterogeneous studies that mixed paramedics with police and firefighters, so treat them as rough."
+  },
+  {
+   "paper_id": "10.1186/s12873-026-01842-y",
+   "short_title": "GCS-based triage misses seriously injured trauma patients",
+   "topic": "Trauma",
+   "question": "In this cohort of patients flagged by EMS as suspected severe trauma, what did a GCS of 9–15 suggest about underlying injury severity?",
+   "options": [
+    "Roughly half met the anatomical criterion",
+    "Only rural patients in this group were severely injured",
+    "One in ten of these patients met the anatomical severity criterion",
+    "These patients never had severe injuries on hospital diagnosis"
+   ],
+   "answer": 2,
+   "explanation": "10.0% of patients with GCS 9–15 met the diagnosis-based anatomical severity criterion, so a normal-ish GCS doesn't rule out serious injury. The severity measure was post-hoc and diagnosis-based, and undertriage definitions vary between systems, so treat this as hypothesis-generating."
+  },
+  {
+   "paper_id": "43018417",
+   "short_title": "Rhythm changes during CPR track neurological outcomes",
+   "topic": "Cardiac arrest",
+   "question": "In the registry study of nonshockable OHCA, how did rhythm changes during CPR relate to good neurological outcome at discharge?",
+   "options": [
+    "Asystole converting to PEA did better than persistent asystole, and persistent PEA did best",
+    "PEA deteriorating to asystole had worse outcomes than patients who never had PEA at all",
+    "Any rhythm transition, in either direction, carried the same prognosis as persistent asystole",
+    "Only patients whose rhythm stayed the same throughout CPR had good outcomes"
+   ],
+   "answer": 0,
+   "explanation": "Asystole-to-PEA roughly doubled the odds of good outcome versus persistent asystole, and persistent PEA did best (OR 8.70). Keep in mind the absolute differences were tiny (0.1 to 0.9 percentage points), and rhythm transitions may just track how the arrest is going rather than change it."
+  },
+  {
+   "paper_id": "10.1186/s13049-026-01730-1",
+   "short_title": "Sepsis suspicion at dispatch, earlier antibiotics",
+   "topic": "Sepsis & infection",
+   "question": "When dispatch flagged suspected sepsis, what was the adjusted difference in time from ED arrival to antibiotics?",
+   "options": [
+    "About 31 minutes shorter",
+    "About 60 minutes shorter",
+    "About 31 minutes longer",
+    "No meaningful difference"
+   ],
+   "answer": 0,
+   "explanation": "Sepsis suspicion at dispatch was associated with a 31-minute shorter adjusted time to antibiotics and higher odds of antibiotics within 60 minutes. Only 31 of 115 triaged patients carried the flag, so the finding is hypothesis-generating."
+  },
+  {
+   "paper_id": "43021062",
+   "short_title": "3% of callers drive a fifth of all calls",
+   "topic": "Operations & systems",
+   "question": "How did post-threshold calls from frequent callers differ from calls before they reached the frequent-caller threshold?",
+   "options": [
+    "More often conveyed to hospital after dispatch",
+    "More often categorised as unclear problem at dispatch",
+    "More often given high-priority ambulance dispatch",
+    "More often resolved by phone and ended without transport"
+   ],
+   "answer": 3,
+   "explanation": "Calls after the fifth-call threshold were more often resolved over the phone (23.8%) and ended in non-conveyance (27.4%) than pre-threshold calls. The finding comes from a single Danish region with a dispatch-based definition of frequent calling, so it may not map directly onto Australian systems."
+  },
+  {
+   "paper_id": "43020186",
+   "short_title": "US naloxone use varies by region, not rurality",
+   "topic": "Toxicology",
+   "question": "After adjusting for clinical factors, what did this US study find about rural versus urban naloxone administration during suspected opioid overdose?",
+   "options": [
+    "Rural odds were nearly double urban odds",
+    "Rural odds were essentially the same as urban odds",
+    "Rural odds were clearly lower than urban odds",
+    "Rural odds were higher only for fentanyl-involved cases"
+   ],
+   "answer": 1,
+   "explanation": "The rural-versus-urban association attenuated to null (aOR 1.01) once clinical factors like fentanyl involvement, cardiac arrest and acuity were adjusted for. The raw rural-urban gap appears to have reflected case-mix rather than genuine treatment differences, and the authors note documented naloxone use is a surveillance marker, not a clinical endpoint."
+  }
+ ]
+}

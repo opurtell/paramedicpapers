@@ -88,6 +88,7 @@
   PP.hooks.onShow = function (tab) {
     if (tab !== 'quiz') pauseClock();
     if (tab === 'quiz') showQuiz();
+    if (tab === 'weekly') renderQuizCard();
     if (tab === 'cpd' || tab === 'account') render();
     if (tab === 'cpd' && st.user && !st.entries && !st.loading) loadYear();
   };
@@ -396,7 +397,29 @@
       pill.hidden = !show;
       if (show) pill.textContent = hrs(st.summary.minutes);
     }
+    renderPdCpdStrip();
     if (st.sheet && st.sheet.type === 'menu') renderMenu();
+  }
+
+  /* The PD tab's CPD line: this year's hours when signed in, an invite
+     when signed out, nothing while unsure or when the API is down. */
+  function renderPdCpdStrip() {
+    var el = $('pd-cpd-strip');
+    if (!el) return;
+    var s = st.summary, u = st.user;
+    var html = '';
+    if (u && s && st.year === cpdYear(todayISO())) {
+      var pct = Math.min(100, Math.round(s.minutes / Math.max(1, u.target_hours * 60) * 100));
+      html = '<span class="pd-cpd-text"><b>' + esc(hrs(s.minutes)) + ' of ' + esc(u.target_hours) + ' h logged this year</b>' +
+        '<span class="pd-cpd-sub">' + esc(hrs(s.interactive_minutes)) + ' of ' + esc(u.target_interactive_hours) + ' h interactive · ' +
+          daysLeft(st.year) + ' days left</span>' +
+        '<span class="pd-cpd-bar" aria-hidden="true"><span style="width:' + pct + '%"></span></span></span>';
+    } else if (st.checked && !u && !st.apiDown) {
+      html = '<span class="pd-cpd-text"><b>Track your CPD</b>' +
+        '<span class="pd-cpd-sub">Log papers, quizzes and podcasts toward your 30 hours. Free.</span></span>';
+    }
+    el.hidden = !html;
+    el.innerHTML = html ? ico('cpd') + html + ico('chev-right', 'entry-chev') : '';
   }
 
   function initial(u) {
@@ -1144,6 +1167,10 @@
     var p = PP.paperById(paperId);
     var cached = entryId && st.entries ? st.entries.filter(function (e) { return e.id === entryId; })[0] : null;
     var getEntry = !entryId ? Promise.resolve(null) : cached ? Promise.resolve(cached) : api('/api/entries/' + encodeURIComponent(entryId));
+    /* Papers older than the main data file are in the archive (review BC4). */
+    if (!p && PP.ensureArchive) {
+      getEntry = Promise.all([getEntry, PP.ensureArchive()]).then(function (r) { p = PP.paperById(paperId); return r[0]; });
+    }
     openSheet({ type: 'paper', paperId: paperId, loading: true }, '<div class="sheet-grip" aria-hidden="true"></div>' + loadingHTML());
     getEntry.then(function (e) {
       if (!p && !e) throw new Error('That paper is no longer on the dashboard.');
@@ -2015,6 +2042,10 @@
      API grades from the same file. A run (answers, time, the log form) is
      kept in sessionStorage so it survives the sign-in round trip. */
   var QUIZ_KEY = 'pp:quiz:';   /* + quiz id */
+  /* Finished results on this device, { quiz id: { score, total, date } }:
+     a signed-out reader's result survives closing the browser. A logged
+     attempt from the CPD tracker wins over it. */
+  var RESULTS_KEY = 'pp:quiz-results';
   var QUIZ_MIN = 5, QUIZ_MAX = 60;
   var SEGMENT_MAX = 900;       /* one timing stretch counts at most 15 min (a sleeping laptop) */
   var LETTERS = 'ABCD';
@@ -2069,6 +2100,22 @@
       qz.attempts = qz.attempts || {};
       if (PP.state.tab === 'quiz') renderQuiz();
     });
+  }
+
+  function localResults() {
+    try { return JSON.parse(localStorage.getItem(RESULTS_KEY) || '{}') || {}; } catch (e) { return {}; }
+  }
+  function saveLocalResult(id, s, n) {
+    var m = localResults();
+    m[id] = { score: s, total: n, date: todayISO() };
+    try { localStorage.setItem(RESULTS_KEY, JSON.stringify(m)); } catch (e) {}
+  }
+  /* { score, total, logged } from the account, else from this device. */
+  function resultFor(id) {
+    var a = attemptFor(id);
+    if (a) return { score: a.score, total: a.total, logged: true };
+    var l = localResults()[id];
+    return l && typeof l.score === 'number' ? { score: l.score, total: l.total, logged: false, date: l.date } : null;
   }
 
   /* A logged attempt whose CPD entry still exists. */
@@ -2166,25 +2213,80 @@
     return Math.min(QUIZ_MAX, Math.max(QUIZ_MIN, Math.ceil(seconds / 60 / 5) * 5));
   }
 
-  /* ── Weekly-tab card ── */
+  /* ── PD-tab card ── */
 
+  /* Question 1 sits on the card: picking an answer opens the quiz at that
+     answer, with its explanation. A quiz in progress shows "Carry on"; a
+     finished one shows the score. Timer and CPD logging are unchanged. */
+  var cardQuizFailed = {};
   function renderQuizCard() {
     var slot = $('quiz-slot');
     if (!slot) return;
     var q = qz.index && qz.index[0];
     slot.hidden = !q;
     if (!q) { slot.innerHTML = ''; return; }
-    var a = attemptFor(q.id);
+    var res = resultFor(q.id);
+    var quiz = qz.quizzes[q.id];
+    if (!quiz && !res && !cardQuizFailed[q.id]) {
+      loadQuizFile(q.id).then(renderQuizCard, function () { cardQuizFailed[q.id] = true; });
+    }
+    var run = quiz ? (qz.run && qz.run.id === q.id ? qz.run : restoreRun(quiz)) : null;
+    var kicker = '<span class="panel-kicker panel-kicker-accent">' + ico('quiz') + 'Quiz on this brief · ' + esc(q.span) + '</span>';
+    var past = qz.index.length > 1 ? '<a class="quiz-past-link" href="#quiz=all">Past quizzes ' + ico('chev-right') + '</a>' : '';
+
+    if (res || (run && run.done)) {
+      if (!res) res = { score: score(quiz, run), total: quiz.questions.length, logged: false };
+      slot.innerHTML =
+        '<a class="brief-card quiz-card" href="#quiz">' + kicker +
+          '<span class="brief-card-title"><span class="quiz-done">' + ico('check') + 'Done · ' + res.score + '/' + res.total + '</span></span>' +
+          '<span class="brief-card-lead">' + (res.logged ? 'Logged to your CPD.'
+            : st.user ? 'Not logged as CPD yet.' : 'Sign in to log it as CPD.') + '</span>' +
+          '<span class="brief-card-go">Review it' + ico('arrow') + '</span>' +
+        '</a>' + past;
+      return;
+    }
+    if (run && run.answers.length && !run.done) {
+      slot.innerHTML =
+        '<a class="brief-card quiz-card" href="#quiz">' + kicker +
+          '<span class="brief-card-title">' + run.answers.length + ' of ' + quiz.questions.length + ' answered</span>' +
+          '<span class="brief-card-lead">Pick up where you left off.</span>' +
+          '<span class="brief-card-go">Carry on' + ico('arrow') + '</span>' +
+        '</a>' + past;
+      return;
+    }
+    if (quiz && quiz.questions && quiz.questions.length) {
+      var q1 = quiz.questions[0];
+      slot.innerHTML =
+        '<div class="brief-card quiz-card">' + kicker +
+          '<span class="quiz-card-sub">Question 1 of ' + quiz.questions.length + ' · about ' + esc(q.est_minutes) + ' min · answer to start</span>' +
+          '<p class="quiz-card-q" id="quiz-card-q">' + esc(q1.question) + '</p>' +
+          '<div class="quiz-opts" role="group" aria-labelledby="quiz-card-q">' +
+            q1.options.map(function (o, j) {
+              return '<button class="quiz-opt" data-card-opt="' + j + '" type="button">' +
+                '<span class="quiz-letter" aria-hidden="true">' + LETTERS[j] + '</span>' +
+                '<span class="quiz-opt-text">' + esc(o) + '</span><span class="quiz-mark"></span></button>';
+            }).join('') +
+          '</div>' +
+          '<span class="quiz-card-sub">Each answer comes with why. Signed in, the quiz is logged as CPD.</span>' +
+        '</div>' + past;
+      slot.querySelectorAll('[data-card-opt]').forEach(function (b) {
+        b.addEventListener('click', function () {
+          var r = qz.run && qz.run.id === quiz.id ? qz.run : restoreRun(quiz);
+          r.pos = 0; r.answers = [+b.getAttribute('data-card-opt')]; r.seconds = 0; r.done = false; r.saved = null; r.error = '';
+          qz.run = r;
+          saveRun();
+          location.hash = 'quiz=' + quiz.id;
+        });
+      });
+      return;
+    }
+    /* Quiz file not here (yet): the plain card. */
     slot.innerHTML =
-      '<a class="brief-card quiz-card" href="#quiz">' +
-        '<span class="panel-kicker panel-kicker-accent">' + ico('quiz') + 'Quiz on this brief · ' + esc(q.span) + '</span>' +
+      '<a class="brief-card quiz-card" href="#quiz">' + kicker +
         '<span class="brief-card-title">' + esc(q.count) + ' questions on the brief’s papers</span>' +
-        '<span class="brief-card-lead">' + (a
-          ? '<span class="quiz-done">' + ico('check') + 'Done · ' + a.score + '/' + a.total + '</span> Logged to your CPD.'
-          : 'About ' + esc(q.est_minutes) + ' minutes. Each answer comes with why. Signed in, it’s logged as CPD.') + '</span>' +
-        '<span class="brief-card-go">' + (a ? 'Review it' : 'Take the quiz') + ico('arrow') + '</span>' +
-      '</a>' +
-      (qz.index.length > 1 ? '<a class="quiz-past-link" href="#quiz=all">Past quizzes ' + ico('chev-right') + '</a>' : '');
+        '<span class="brief-card-lead">About ' + esc(q.est_minutes) + ' minutes. Each answer comes with why. Signed in, it’s logged as CPD.</span>' +
+        '<span class="brief-card-go">Take the quiz' + ico('arrow') + '</span>' +
+      '</a>' + past;
   }
 
   /* ── quiz view ── */
@@ -2215,7 +2317,7 @@
     root.innerHTML =
       '<div class="section-head"><h2>Past quizzes</h2><span class="muted-flag">' + qz.index.length + '</span></div>' +
       (qz.index.length ? '<div class="quiz-list">' + qz.index.map(function (q) {
-        var a = attemptFor(q.id);
+        var a = resultFor(q.id);
         return '<a class="quiz-row" href="#quiz=' + esc(q.id) + '">' +
           '<span class="quiz-row-main"><span class="quiz-row-title">' + esc(q.span) + '</span>' +
           '<span class="entry-meta">' + q.count + ' questions · about ' + esc(q.est_minutes) + ' min</span></span>' +
@@ -2233,11 +2335,14 @@
 
   function renderIntro(root, quiz) {
     var a = attemptFor(quiz.id);
+    var local = a ? null : resultFor(quiz.id);
     root.innerHTML =
       quizHeadHTML(quiz, quiz.questions.length + ' questions · about ' + quiz.est_minutes + ' min') +  /* esc'd in quizHeadHTML */
       '<p class="quiz-lead">One question per paper from this period’s PD brief. Each answer shows why, with a link to the paper.</p>' +
-      (a ? '<p class="notice">' + ico('check') + ' You’ve logged this quiz: ' + a.score + '/' + a.total + '. A retake isn’t logged again.</p>' : '') +
-      '<button class="btn btn-primary btn-add" data-quiz-start type="button">' + (a ? 'Take it again' : 'Start') + '</button>' +
+      (a ? '<p class="notice">' + ico('check') + ' You’ve logged this quiz: ' + a.score + '/' + a.total + '. A retake isn’t logged again.</p>'
+        : local ? '<p class="notice">' + ico('check') + ' You scored ' + local.score + '/' + local.total + ' on this device' +
+          (local.date ? ' on ' + esc(niceDate(local.date)) : '') + '.' + (st.user ? '' : ' Sign in before you take it again to log it as CPD.') + '</p>' : '') +
+      '<button class="btn btn-primary btn-add" data-quiz-start type="button">' + (a || local ? 'Take it again' : 'Start') + '</button>' +
       '<p class="fine">Your time is counted while a question is on screen, for your CPD log.' +
         (qz.index.length > 1 ? ' <a href="#quiz=all">Past quizzes</a>' : '') + '</p>';
     root.querySelector('[data-quiz-start]').addEventListener('click', function () {
@@ -2305,6 +2410,7 @@
       if (last) {
         pauseClock();
         r.done = true;
+        saveLocalResult(quiz.id, score(quiz, r), quiz.questions.length);
         r.v.minutes = quizMinutes(r.seconds);
         r.saved = null; r.error = '';
       } else {
