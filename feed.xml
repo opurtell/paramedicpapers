@@ -25,6 +25,20 @@
     <itunes:explicit>false</itunes:explicit>
     <podcast:guid>09fa3693-e2ac-527c-9d1c-f68df149b888</podcast:guid>
     <item>
+      <title>Field amputation: broad capability, little standardisation · 17 Nov</title>
+      <link>https://paramedicpapers.com/episodes/2026-11-17/</link>
+      <description>3 papers: field amputation in England's air ambulances; five domains of paramedic competence; what running an ambulance RCT takes</description>
+      <content:encoded><![CDATA[<p>3 papers: field amputation in England's air ambulances; five domains of paramedic competence; what running an ambulance RCT takes</p><p>Papers in this episode:</p><ul><li><a href="https://doi.org/10.1016/j.injury.2026.113906">Field amputation: broad capability, little standardisation <em>(Injury)</em></a></li><li><a href="https://doi.org/10.1155/emmi/5400734">What competence actually means for paramedics <em>(Emergency Medicine International)</em></a></li><li><a href="https://doi.org/10.1186/s13063-026-09955-2">What running an ambulance trial really takes <em>(Trials)</em></a></li></ul><p><a href="https://paramedicpapers.com/episodes/2026-11-17/">Show notes and transcript</a></p>]]></content:encoded>
+      <pubDate>Tue, 17 Nov 2026 05:32:10 +1100</pubDate>
+      <guid isPermaLink="false">https://audio.paramedicpapers.com/ep-2026-11-17.mp3</guid>
+      <enclosure url="https://op3.dev/e/audio.paramedicpapers.com/ep-2026-11-17.mp3" length="922508" type="audio/mpeg"/>
+      <itunes:duration>230</itunes:duration>
+      <itunes:summary>3 papers: field amputation in England's air ambulances; five domains of paramedic competence; what running an ambulance RCT takes</itunes:summary>
+      <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
+      <itunes:episodeType>full</itunes:episodeType>
+      <podcast:transcript url="https://audio.paramedicpapers.com/ep-2026-11-17.txt" type="text/plain" language="en-au"/>
+    </item>
+    <item>
       <title>Street layout linked to EMS response times · 16 Nov</title>
       <link>https://paramedicpapers.com/episodes/2026-11-16/</link>
       <description>2 papers: Street layout linked to EMS response times; Head-first snow burial: six Japanese deaths</description>
@@ -429,20 +443,6 @@
       <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
       <itunes:episodeType>full</itunes:episodeType>
       <podcast:transcript url="https://audio.paramedicpapers.com/ep-2026-10-19.txt" type="text/plain" language="en-au"/>
-    </item>
-    <item>
-      <title>Paramedic Papers Daily — 18 October 2026</title>
-      <link>https://paramedicpapers.com/episodes/2026-10-18/</link>
-      <description>1 paper: Airway strategy and survival in Polish HEMS</description>
-      <content:encoded><![CDATA[<p>1 paper: Airway strategy and survival in Polish HEMS</p><p>Papers in this episode:</p><ul><li><a href="https://doi.org/10.1186/s13049-026-01713-2">Airway strategy and survival in Polish HEMS <em>(Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine)</em></a></li></ul><p><a href="https://paramedicpapers.com/episodes/2026-10-18/">Show notes and transcript</a></p>]]></content:encoded>
-      <pubDate>Sun, 18 Oct 2026 07:33:13 +1100</pubDate>
-      <guid isPermaLink="false">https://audio.paramedicpapers.com/ep-2026-10-18.mp3</guid>
-      <enclosure url="https://op3.dev/e/audio.paramedicpapers.com/ep-2026-10-18.mp3" length="536684" type="audio/mpeg"/>
-      <itunes:duration>134</itunes:duration>
-      <itunes:summary>1 paper: Airway strategy and survival in Polish HEMS</itunes:summary>
-      <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
-      <itunes:episodeType>full</itunes:episodeType>
-      <podcast:transcript url="https://audio.paramedicpapers.com/ep-2026-10-18.txt" type="text/plain" language="en-au"/>
     </item>
   </channel>
 </rss>
