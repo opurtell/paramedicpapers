@@ -43,6 +43,13 @@
   };
   var MANUAL_TYPES = ['journal_club', 'simulation', 'case_review', 'conference', 'mentoring', 'online_course', 'media', 'other'];
   var PROVIDER_NAMES = { google: 'Google', microsoft: 'Microsoft' };
+  /* Sign-in options hidden on the site even if the Worker still offers them.
+     Microsoft is paused (Nov 2026) while the Azure app is sorted out. To bring
+     it back, empty this list (and set PROVIDERS on the Worker to include it). */
+  var HIDDEN_PROVIDERS = ['microsoft'];
+  function visibleProviders(list) {
+    return list.filter(function (p) { return HIDDEN_PROVIDERS.indexOf(p) === -1; });
+  }
   var MONTHS = ['Dec', 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov'];
   /* Bar colours, validated with the dataviz palette checker (both pass on
      the light surface; the lighter one is below 3:1, so the chart has a
@@ -54,7 +61,7 @@
     checked: false,      /* /api/me has answered (or failed) */
     apiDown: false,
     user: null,
-    providers: ['google', 'microsoft'],
+    providers: visibleProviders(['google', 'microsoft']),
     loginError: '',
     year: cpdYear(todayISO()),
     summary: null,       /* for st.year */
@@ -115,7 +122,7 @@
 
   function boot() {
     /* Never blocks the rest of the site: papers.json loads in parallel. */
-    api('/api/config').then(function (c) { if (c && c.providers) st.providers = c.providers; }).catch(function () {});
+    api('/api/config').then(function (c) { if (c && c.providers) st.providers = visibleProviders(c.providers); }).catch(function () {});
     api('/api/me').then(function (me) {
       st.user = me;
       st.checked = true;
@@ -541,6 +548,13 @@
     return '<svg class="prov-logo" viewBox="0 0 24 24" aria-hidden="true"><path fill="#F25022" d="M2 2h9.5v9.5H2z"/><path fill="#7FBA00" d="M12.5 2H22v9.5h-9.5z"/><path fill="#00A4EF" d="M2 12.5h9.5V22H2z"/><path fill="#FFB900" d="M12.5 12.5H22V22h-9.5z"/></svg>';
   }
 
+  /* Only mention the other sign-in option when the site actually offers it. */
+  function otherProviderNote(u) {
+    var other = u.provider === 'google' ? 'microsoft' : 'google';
+    return st.providers.indexOf(other) === -1 ? ''
+      : ' Signing in with ' + esc(PROVIDER_NAMES[other]) + ' would create a separate account.';
+  }
+
   function loginErrorHTML() {
     if (!st.loginError) return '';
     var r = st.loginError, msg;
@@ -549,7 +563,9 @@
     } else if (r === 'access_denied') {
       msg = 'Sign-in was cancelled. Try again whenever you’re ready.';
     } else {
-      msg = 'Sign-in didn’t finish. Try again, or use the other sign-in option.';
+      msg = st.providers.length > 1
+        ? 'Sign-in didn’t finish. Try again, or use the other sign-in option.'
+        : 'Sign-in didn’t finish. Try again whenever you’re ready.';
     }
     return '<p class="notice notice-warn" role="alert">' + esc(msg) + '</p>';
   }
@@ -2623,7 +2639,7 @@
       '<article class="panel">' +
         '<span class="panel-kicker">Your data</span>' +
         '<a class="btn" href="' + esc(API + '/api/export.json') + '">' + ico('download') + 'Download all my data (JSON)</a>' +
-        '<p class="hint">Everything you’ve logged, every year, and your saved papers (' + PP.savedIds().length + ' synced to this account). Signing in with ' + esc(PROVIDER_NAMES[u.provider === 'google' ? 'microsoft' : 'google']) + ' would create a separate account.</p>' +
+        '<p class="hint">Everything you’ve logged, every year, and your saved papers (' + PP.savedIds().length + ' synced to this account).' + otherProviderNote(u) + '</p>' +
         '<button class="btn" id="btn-signout" type="button">Sign out</button>' +
       '</article>' +
 
