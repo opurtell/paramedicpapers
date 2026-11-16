@@ -1,34 +1,16 @@
 {
- "updated": "2026-11-15",
+ "updated": "2026-11-16",
  "latest": [
   {
-   "key": "43030628",
-   "title": "Numbers for when on-scene ROSC stops happening",
-   "topic": "Cardiac arrest",
-   "finding": "Probability of subsequent on-scene ROSC 6.97% at 10 min and 0.50% at 20 min after EMS contact; favourable neurological outcome (CPC 1–2 at 1 month) in 50.0% of patients <75 and 20.5% of those ≥75 with on-scene ROSC at or after 10 min"
-  },
-  {
-   "key": "43024742",
-   "title": "Airway assistant training halved sim intubation time",
-   "topic": "Airway & ventilation",
-   "finding": "Median intubation time 53 s (IQR 19) trained vs 102.5 s (IQR 36) untrained, p = 0.009, very large effect size (Cohen's d = 1.86); no oesophageal intubations in either group"
-  },
-  {
-   "key": "43030381",
-   "title": "Modelled Response Times for Police and Fire Brigade Co-Dispatch",
-   "topic": "Cardiac arrest",
-   "finding": "Median first-unit response 9.81 min with EMS alone vs 5.45 min with police added, 7.36 min with fire added, 5.41 min with triple dispatch (paired median gain 4.34 min); locations reached within 10 min rose from 51.1% to 94.6%"
-  },
-  {
-   "key": "43028628",
-   "title": "Social support buffers the violence-to-burnout pathway",
-   "topic": "Workforce & wellbeing",
-   "finding": "Workplace violence exposure associated with burnout indirectly through post-traumatic stress symptoms; social support moderated the violence–PTSS (p = 0.002) and violence–burnout (p = 0.015) associations; resilience findings did not survive correction"
+   "key": "43031846",
+   "title": "Street layout linked to EMS response times",
+   "topic": "Operations & systems",
+   "finding": "Lower residential facility density and denser arterial and local road networks were associated with shorter response times; high residential density was associated with slower responses in central urban areas, while local-road density mattered most in suburbs"
   }
  ],
  "episode": {
-  "date": "2026-11-15",
-  "title": "Airway assistant training halved sim intubation time · 15 Nov",
-  "page": "/episodes/2026-11-15/"
+  "date": "2026-11-16",
+  "title": "Street layout linked to EMS response times · 16 Nov",
+  "page": "/episodes/2026-11-16/"
  }
 }
