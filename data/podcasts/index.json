@@ -1,5 +1,17 @@
 [
  {
+  "id": "resus-room",
+  "name": "The Resus Room",
+  "publisher": "Simon, Rob & James",
+  "focus": "UK emergency and prehospital evidence, papers of the month",
+  "region": "UK",
+  "site": "https://www.theresusroom.co.uk",
+  "art": "data/podcasts/art/resus-room.jpg",
+  "episodes": 292,
+  "latest": "2026-11-17",
+  "updated": "2026-11-17"
+ },
+ {
   "id": "prehospital-care-podcast",
   "name": "Pre-Hospital Care Podcast",
   "publisher": "Eoin Walker",
@@ -130,18 +142,6 @@
   "episodes": 235,
   "latest": "2026-11-02",
   "updated": "2026-11-03"
- },
- {
-  "id": "resus-room",
-  "name": "The Resus Room",
-  "publisher": "Simon, Rob & James",
-  "focus": "UK emergency and prehospital evidence, papers of the month",
-  "region": "UK",
-  "site": "https://www.theresusroom.co.uk",
-  "art": "data/podcasts/art/resus-room.jpg",
-  "episodes": 291,
-  "latest": "2026-11-01",
-  "updated": "2026-11-01"
  },
  {
   "id": "pec-podcast",
