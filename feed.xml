@@ -25,6 +25,20 @@
     <itunes:explicit>false</itunes:explicit>
     <podcast:guid>09fa3693-e2ac-527c-9d1c-f68df149b888</podcast:guid>
     <item>
+      <title>Centralised call centres linked to leaner ambulance operations · 18 Nov</title>
+      <link>https://paramedicpapers.com/episodes/2026-11-18/</link>
+      <description>3 papers: centralised call centres and lean ambulance ops; fatal brain bleeds dying before neurosurgery; breathlessness self-management avoiding ambulance calls</description>
+      <content:encoded><![CDATA[<p>3 papers: centralised call centres and lean ambulance ops; fatal brain bleeds dying before neurosurgery; breathlessness self-management avoiding ambulance calls</p><p>Papers in this episode:</p><ul><li><a href="https://doi.org/10.12669/pjms.42.10.16649">Centralised call centres linked to leaner ambulance operations <em>(Pakistan Journal of Medical Sciences)</em></a></li><li><a href="https://doi.org/10.1001/jamanetworkopen.2026.44245">Most fatal brain bleeds die before neurosurgery <em>(JAMA Network Open)</em></a></li><li><a href="https://doi.org/10.1186/s12890-026-04600-9">Breathlessness self-management linked to fewer ambulance calls <em>(BMC Pulmonary Medicine)</em></a></li></ul><p><a href="https://paramedicpapers.com/episodes/2026-11-18/">Show notes and transcript</a></p>]]></content:encoded>
+      <pubDate>Wed, 18 Nov 2026 05:32:21 +1100</pubDate>
+      <guid isPermaLink="false">https://audio.paramedicpapers.com/ep-2026-11-18.mp3</guid>
+      <enclosure url="https://op3.dev/e/audio.paramedicpapers.com/ep-2026-11-18.mp3" length="947948" type="audio/mpeg"/>
+      <itunes:duration>236</itunes:duration>
+      <itunes:summary>3 papers: centralised call centres and lean ambulance ops; fatal brain bleeds dying before neurosurgery; breathlessness self-management avoiding ambulance calls</itunes:summary>
+      <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
+      <itunes:episodeType>full</itunes:episodeType>
+      <podcast:transcript url="https://audio.paramedicpapers.com/ep-2026-11-18.txt" type="text/plain" language="en-au"/>
+    </item>
+    <item>
       <title>Field amputation: broad capability, little standardisation · 17 Nov</title>
       <link>https://paramedicpapers.com/episodes/2026-11-17/</link>
       <description>3 papers: field amputation in England's air ambulances; five domains of paramedic competence; what running an ambulance RCT takes</description>
@@ -429,20 +443,6 @@
       <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
       <itunes:episodeType>full</itunes:episodeType>
       <podcast:transcript url="https://audio.paramedicpapers.com/ep-2026-10-20.txt" type="text/plain" language="en-au"/>
-    </item>
-    <item>
-      <title>Paramedic Papers Daily — 19 October 2026</title>
-      <link>https://paramedicpapers.com/episodes/2026-10-19/</link>
-      <description>4 papers: Five scene findings flag kids needing blood; Ditch lights and sirens for fall-alarm calls; Why patients decline hypoglycaemia call-back programs; Mobile ECPR team cannulates on scene</description>
-      <content:encoded><![CDATA[<p>4 papers: Five scene findings flag kids needing blood; Ditch lights and sirens for fall-alarm calls; Why patients decline hypoglycaemia call-back programs; Mobile ECPR team cannulates on scene</p><p>Papers in this episode:</p><ul><li><a href="https://doi.org/10.1080/10903127.2026.2750457">Five scene findings flag kids needing blood <em>(Prehospital Emergency Care)</em></a></li><li><a href="https://doi.org/10.1080/10903127.2026.2751025">Ditch lights and sirens for fall-alarm calls <em>(Prehospital Emergency Care)</em></a></li><li><a href="https://doi.org/10.2337/doc26-0061">Why patients decline hypoglycaemia call-back programs <em>(Diabetes, Obesity, and Cardiometabolic CARE)</em></a></li><li><a href="https://doi.org/10.1016/j.resplu.2026.101504">Mobile ECPR team cannulates on scene <em>(Resuscitation Plus)</em></a></li></ul><p><a href="https://paramedicpapers.com/episodes/2026-10-19/">Show notes and transcript</a></p>]]></content:encoded>
-      <pubDate>Mon, 19 Oct 2026 07:34:27 +1100</pubDate>
-      <guid isPermaLink="false">https://audio.paramedicpapers.com/ep-2026-10-19.mp3</guid>
-      <enclosure url="https://op3.dev/e/audio.paramedicpapers.com/ep-2026-10-19.mp3" length="1073324" type="audio/mpeg"/>
-      <itunes:duration>268</itunes:duration>
-      <itunes:summary>4 papers: Five scene findings flag kids needing blood; Ditch lights and sirens for fall-alarm calls; Why patients decline hypoglycaemia call-back programs; Mobile ECPR team cannulates on scene</itunes:summary>
-      <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
-      <itunes:episodeType>full</itunes:episodeType>
-      <podcast:transcript url="https://audio.paramedicpapers.com/ep-2026-10-19.txt" type="text/plain" language="en-au"/>
     </item>
   </channel>
 </rss>
