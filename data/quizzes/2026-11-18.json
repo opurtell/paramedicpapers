@@ -1,0 +1,120 @@
+{
+ "id": "2026-11-18",
+ "span": "11 – 18 Nov 2026",
+ "created": "2026-11-18T00:03:31Z",
+ "est_minutes": 10,
+ "questions": [
+  {
+   "paper_id": "43019463",
+   "short_title": "Advanced airway not linked to traumatic arrest survival",
+   "topic": "Cardiac arrest",
+   "question": "A colleague asks whether prehospital advanced airway management improves outcomes in traumatic cardiac arrest. What does this nationwide registry study suggest?",
+   "options": [
+    "No significant association with survival or neurological outcome",
+    "It improves neurological outcome but not survival",
+    "It clearly improves 30-day survival",
+    "It only helps when placed early in the resuscitation"
+   ],
+   "answer": 0,
+   "explanation": "Thirty-day survival was 1.8% with advanced airway versus 1.4% without, and neurological outcomes were similarly flat, even after correcting for resuscitation-time bias. Event rates were extremely low, so a real effect could hide in the confidence intervals — the authors call the findings hypothesis-generating."
+  },
+  {
+   "paper_id": "43023474",
+   "short_title": "Untangling trauma terms for first responders",
+   "topic": "Workforce & wellbeing",
+   "question": "According to this review, what keeps the concepts of secondary traumatic stress, vicarious trauma, compassion fatigue and PTSD from being clearly separated?",
+   "options": [
+    "Symptomatic overlap and measurement tools built for other professions",
+    "They only apply to police and firefighters, not ambulance work",
+    "They differ mainly in how quickly symptoms appear after exposure",
+    "Each concept has its own validated measurement tool for paramedics"
+   ],
+   "answer": 0,
+   "explanation": "The review found conceptual overlap sustained by shared symptoms and tools designed for other professional groups, so they're hard to distinguish in first responders. It's a conceptual synthesis with no intervention data, and covered mixed professions."
+  },
+  {
+   "paper_id": "43030628",
+   "short_title": "Numbers for when on-scene ROSC stops happening",
+   "topic": "Cardiac arrest",
+   "question": "In this Japanese Utstein cohort of shockable-rhythm cardiac arrest, what happened to the probability of achieving on-scene ROSC as on-scene resuscitation went from 10 to 20 minutes after EMS contact?",
+   "options": [
+    "It fell from 6.97% to 0.50%",
+    "It fell from 50.0% to 20.5%",
+    "It stayed steady at around 7%",
+    "It rose as more shocks were delivered"
+   ],
+   "answer": 0,
+   "explanation": "The chance of later ROSC dropped from 6.97% at 10 minutes to 0.50% at 20 minutes. The 50.0% and 20.5% figures are about favourable neurological outcomes, not ROSC probability, and the descriptive design means this can't set transport or cessation rules."
+  },
+  {
+   "paper_id": "43004811",
+   "short_title": "Sydney COAST registry: trauma shock first year",
+   "topic": "Trauma",
+   "question": "In the Sydney COAST registry, which shock criterion most often qualified patients for inclusion?",
+   "options": [
+    "Hypotension (systolic BP under 100 mmHg)",
+    "Shock index greater than one",
+    "Receiving a blood transfusion",
+    "Needing inotropic support"
+   ],
+   "answer": 0,
+   "explanation": "Hypotension was the qualifying criterion in 90% of the 257 patients. The other criteria were part of the definition but were far less common, and the authors caution that not all shocked patients were actually bleeding."
+  },
+  {
+   "paper_id": "43007266",
+   "short_title": "Roadside capillary troponin for chest pain",
+   "topic": "Cardiac (non-arrest)",
+   "question": "In the VALIDATE study, the prehospital capillary troponin rule-out threshold of <2.2 ng/L identified only 7.1% of patients. What does that figure mean for its usefulness at the roadside?",
+   "options": [
+    "It only covered a small slice of patients, limiting its practical impact",
+    "It performed better than the rule-in threshold at confirming NSTEMI",
+    "It correctly identified most patients who actually had NSTEMI",
+    "It ruled out NSTEMI safely in everyone tested"
+   ],
+   "answer": 0,
+   "explanation": "The threshold had a perfect negative predictive value, but it applied to only 7.1% of patients, so most chest pain patients still couldn't be ruled out prehospital. The findings also come from a physician-staffed French setting and feasibility was hampered by uninterpretable tests, so it's hypothesis-generating only."
+  },
+  {
+   "paper_id": "43007262",
+   "short_title": "AR-guided FAST training sped up students",
+   "topic": "Education & training",
+   "question": "After the AR-guided FAST training sequence, which view showed no significant reduction in scan time?",
+   "options": [
+    "The perisplenic view",
+    "Morison's pouch view",
+    "The pericardial view",
+    "The Douglas pouch view"
+   ],
+   "answer": 3,
+   "explanation": "Time fell significantly in the pericardial, Morison's pouch and perisplenic views, but not the Douglas pouch view. Keep in mind the study had no control group, so the improvements can't be confidently attributed to the AR component alone."
+  },
+  {
+   "paper_id": "43003391",
+   "short_title": "Fibrinogen concentrate supply grows in Queensland",
+   "topic": "Trauma",
+   "question": "In the Queensland fibrinogen concentrate supply analysis, where did the largest share of supply go?",
+   "options": [
+    "Ambulance services, for prehospital use",
+    "Retrieval services",
+    "Remote and very remote hospitals",
+    "Hospitals, especially major trauma services"
+   ],
+   "answer": 3,
+   "explanation": "97.0% of the 24,717 g went to 54 hospitals, with 66.2% of hospital supply going to major trauma services. It's a supply study only, so no link to patient outcomes like bleeding control or mortality was made."
+  },
+  {
+   "paper_id": "10.12968/jpar.2026.0027",
+   "short_title": "Paramedic and midwifery students train together",
+   "topic": "Education & training",
+   "question": "What benefit did the peer-led simulation format itself offer, according to student reflections?",
+   "options": [
+    "It created psychological safety that supported reflective learning",
+    "It guaranteed improved clinical outcomes in maternity emergencies",
+    "It replaced the need for qualified clinical supervision",
+    "It eliminated the practical challenges of running joint training"
+   ],
+   "answer": 0,
+   "explanation": "Students reported that the student-led format fostered psychological safety and reflective learning. Keep in mind this was a reflective practice report with no outcome measures, so the findings are context rather than proof of effect."
+  }
+ ]
+}
