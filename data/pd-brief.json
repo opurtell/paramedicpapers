@@ -3,8 +3,88 @@
  "start": "2026-11-11",
  "span": "11 – 18 Nov 2026",
  "next": "2026-11-22",
- "subject": "PD brief 11 – 18 Nov 2026: 53 papers",
- "synthesis": null,
+ "subject": "PD brief 11 – 18 Nov 2026: 53 papers, 3 to dig into",
+ "synthesis": {
+  "intro": "Cardiac arrest dominated these 8 days, from bystander factors and rhythm changes through to when to call prolonged on-scene resuscitation. Trauma triage and airway teamwork also featured, alongside a cluster of workforce wellbeing studies pointing to support and autonomy rather than workload.",
+  "discussion": "Two papers this period suggest the clock and the rhythm both carry prognostic weight in non-shockable arrest — how much should that shape on-scene resuscitation decisions, and what role should crew judgement play alongside it?",
+  "lessons": [
+   {
+    "text": "Night-time cardiac arrests have lower ROSC and worse survival, attributed to less bystander CPR and defibrillation and longer times to intervention — a prompt to coach bystanders early and look harder for an AED on overnight calls.",
+    "ids": [
+     "43017087"
+    ]
+   },
+   {
+    "text": "When an arrest stays non-shockable, the rhythm trajectory carries prognostic weight: patients who stay in or return to PEA fare far better than those in persistent asystole, and the chance of on-scene ROSC falls to 6.97% at 10 minutes and 0.50% at 20 minutes after EMS contact.",
+    "ids": [
+     "43018417",
+     "43030628"
+    ]
+   },
+   {
+    "text": "GCS-based triage missed one in ten patients who met anatomical criteria for severe injury, and destination undertriage was worse for rural patients — worth pausing on when GCS looks reassuring at the roadside.",
+    "ids": [
+     "10.1186/s12873-026-01842-y"
+    ]
+   },
+   {
+    "text": "Non-convulsive seizures are being missed in 53.0–81.4% of cases in the prehospital literature, so a normal-looking postictal or confused patient may still be seizing.",
+    "ids": [
+     "43019610"
+    ]
+   },
+   {
+    "text": "In a trained airway assistant simulation study, median intubation time halved (53 s vs 102.5 s) — a reminder that your crewmate's role in a difficult airway is a skill in its own right.",
+    "ids": [
+     "43024742"
+    ]
+   }
+  ],
+  "deep_dives": [
+   {
+    "topic": "When prolonged arrest resuscitation stops paying off",
+    "why": "Two high-transferability papers this period give concrete numbers for rhythm trajectory and time-based futility, which sit directly against local decisions about how long to work an arrest on scene.",
+    "ids": [
+     "43018417",
+     "43030628",
+     "43017087"
+    ],
+    "questions": [
+     "How do you and your partner currently frame the decision to continue or cease on-scene resuscitation in a non-shockable rhythm?",
+     "Does the rhythm change you see during a arrest shift your expectations, and should it?"
+    ],
+    "ideas": "Compare the survival figures at 10 and 20 minutes of on-scene resuscitation with your local guideline's termination criteria, and consider whether the rhythm-transition data (PEA–PEA versus persistent asystole) changes how you'd counsel a crew working a long arrest."
+   },
+   {
+    "topic": "Trauma triage tools and their blind spots",
+    "why": "Three papers this period question how well prehospital and dispatch-level tools actually sort the sickest trauma patients, with rural patients faring worst on destination decisions.",
+    "ids": [
+     "10.1186/s12873-026-01842-y",
+     "43020495",
+     "43004811"
+    ],
+    "questions": [
+     "Which cues do you weight most when deciding a trauma patient needs a major trauma centre — physiology, mechanism, or anatomy?",
+     "Would a composite number like rSIG add anything to the judgement you already make?"
+    ],
+    "ideas": "Compare the rSIG cutoff of 24.8 and its associations with intervention and transfusion against how the GCS-based cohort performed, and ask whether either would change destination decisions for your rural patients."
+   },
+   {
+    "topic": "Blood products and haemorrhage care reaching the roadside",
+    "why": "Prehospital blood, fibrinogen supply and paediatric whole blood all appeared this period, giving a picture of where blood-based trauma care is heading and how unevenly it is distributed.",
+    "ids": [
+     "43003391",
+     "43004811",
+     "43008208"
+    ],
+    "questions": [
+     "How does access to prehospital blood vary across the regions you work in, and does that shape your shock management?",
+     "What would you want to know before carrying or requesting blood products for a paediatric trauma patient?"
+    ],
+    "ideas": "Look at the fibrinogen supply figures (1.0% to ambulance services versus 97.0% to hospitals) against the 53% of shocked trauma patients receiving prehospital blood, and consider what that gap means for equity of trauma care across Australia."
+   }
+  ]
+ },
  "papers": [
   {
    "id": "43004811",
