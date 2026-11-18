@@ -1,5 +1,17 @@
 [
  {
+  "id": "ecritcare",
+  "name": "eCritCare",
+  "publisher": "Dr Swapnil Pawar & Dr Jose Chacko",
+  "focus": "Critical care trials and evidence, one topic per episode",
+  "region": "AU",
+  "site": "http://ecritcarepodcast.libsyn.com/website",
+  "art": "data/podcasts/art/ecritcare.jpg",
+  "episodes": 108,
+  "latest": "2026-11-18",
+  "updated": "2026-11-18"
+ },
+ {
   "id": "resus-room",
   "name": "The Resus Room",
   "publisher": "Simon, Rob & James",
@@ -94,18 +106,6 @@
   "episodes": 5,
   "latest": "2026-11-09",
   "updated": "2026-11-11"
- },
- {
-  "id": "ecritcare",
-  "name": "eCritCare",
-  "publisher": "Dr Swapnil Pawar & Dr Jose Chacko",
-  "focus": "Critical care trials and evidence, one topic per episode",
-  "region": "AU",
-  "site": "http://ecritcarepodcast.libsyn.com/website",
-  "art": "data/podcasts/art/ecritcare.jpg",
-  "episodes": 107,
-  "latest": "2026-11-09",
-  "updated": "2026-11-09"
  },
  {
   "id": "acp",
