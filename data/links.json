@@ -1,16 +1,16 @@
 {
- "updated": "2026-11-17",
+ "updated": "2026-11-18",
  "latest": [
   {
-   "key": "doi-10-1016-j-injury-2026-113906",
-   "title": "Field amputation: broad capability, little standardisation",
-   "topic": "Trauma",
-   "finding": "All 14 services could provide field amputation; 12 (86%) had a specific clinical practice guideline; 4 services performed 6 cases in five years; a Gigli saw was the most common disarticulation instrument (93%); none used hospital response teams"
+   "key": "43042206",
+   "title": "Centralised call centres linked to leaner ambulance operations",
+   "topic": "Operations & systems",
+   "finding": "Calls per incident fell 49.0% (4.63 to 2.36), ambulance response time fell 36.9% and mobilisation time 23.7%; on-time arrival improved (urban 93.9% to 98.4%, rural 82.2% to 89.2%)"
   }
  ],
  "episode": {
-  "date": "2026-11-17",
-  "title": "Field amputation: broad capability, little standardisation · 17 Nov",
-  "page": "/episodes/2026-11-17/"
+  "date": "2026-11-18",
+  "title": "Centralised call centres linked to leaner ambulance operations · 18 Nov",
+  "page": "/episodes/2026-11-18/"
  }
 }
