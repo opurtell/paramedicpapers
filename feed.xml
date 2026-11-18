@@ -25,6 +25,20 @@
     <itunes:explicit>false</itunes:explicit>
     <podcast:guid>09fa3693-e2ac-527c-9d1c-f68df149b888</podcast:guid>
     <item>
+      <title>Prehospital TXA lowers mortality in bleeding trauma · 19 Nov</title>
+      <link>https://paramedicpapers.com/episodes/2026-11-19/</link>
+      <description>4 papers: Prehospital TXA lowers mortality in bleeding trauma; Bystander-attached AEDs and best OHCA survival; First responder alerts lift defibrillation; Mobile app lifts simulated trauma</description>
+      <content:encoded><![CDATA[<p>4 papers: Prehospital TXA lowers mortality in bleeding trauma; Bystander-attached AEDs and best OHCA survival; First responder alerts lift defibrillation; Mobile app lifts simulated trauma</p><p>Papers in this episode:</p><ul><li><a href="https://doi.org/10.1186/s12873-026-01735-0">Prehospital TXA lowers mortality in bleeding trauma <em>(BMC Emergency Medicine)</em></a></li><li><a href="https://doi.org/10.1016/j.resuscitation.2026.111402">Bystander-attached AEDs linked with best OHCA survival <em>(Resuscitation)</em></a></li><li><a href="https://doi.org/10.1016/j.resuscitation.2026.111391">First responder alerts linked to more defibrillation <em>(Resuscitation)</em></a></li><li><a href="https://doi.org/10.1080/10903127.2026.2765894">Mobile app lifts simulated trauma performance <em>(Prehospital Emergency Care)</em></a></li></ul><p><a href="https://paramedicpapers.com/episodes/2026-11-19/">Show notes and transcript</a></p>]]></content:encoded>
+      <pubDate>Thu, 19 Nov 2026 05:33:02 +1100</pubDate>
+      <guid isPermaLink="false">https://audio.paramedicpapers.com/ep-2026-11-19.mp3</guid>
+      <enclosure url="https://op3.dev/e/audio.paramedicpapers.com/ep-2026-11-19.mp3" length="1140908" type="audio/mpeg"/>
+      <itunes:duration>285</itunes:duration>
+      <itunes:summary>4 papers: Prehospital TXA lowers mortality in bleeding trauma; Bystander-attached AEDs and best OHCA survival; First responder alerts lift defibrillation; Mobile app lifts simulated trauma</itunes:summary>
+      <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
+      <itunes:episodeType>full</itunes:episodeType>
+      <podcast:transcript url="https://audio.paramedicpapers.com/ep-2026-11-19.txt" type="text/plain" language="en-au"/>
+    </item>
+    <item>
       <title>Centralised call centres linked to leaner ambulance operations · 18 Nov</title>
       <link>https://paramedicpapers.com/episodes/2026-11-18/</link>
       <description>3 papers: centralised call centres and lean ambulance ops; fatal brain bleeds dying before neurosurgery; breathlessness self-management avoiding ambulance calls</description>
@@ -429,20 +443,6 @@
       <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
       <itunes:episodeType>full</itunes:episodeType>
       <podcast:transcript url="https://audio.paramedicpapers.com/ep-2026-10-21.txt" type="text/plain" language="en-au"/>
-    </item>
-    <item>
-      <title>Paramedic Papers Daily — 20 October 2026</title>
-      <link>https://paramedicpapers.com/episodes/2026-10-20/</link>
-      <description>4 papers: Predicting outcomes in PEA cardiac arrest; Drone AI for mass-casualty triage; Australian alcohol harms keep rising; Interprofessional simulation shapes student identity</description>
-      <content:encoded><![CDATA[<p>4 papers: Predicting outcomes in PEA cardiac arrest; Drone AI for mass-casualty triage; Australian alcohol harms keep rising; Interprofessional simulation shapes student identity</p><p>Papers in this episode:</p><ul><li><a href="https://doi.org/10.1016/j.resplu.2026.101508">Predicting outcomes in PEA cardiac arrest <em>(Resuscitation Plus)</em></a></li><li><a href="https://doi.org/10.1017/s1049023x26109121">Drone AI for mass-casualty triage <em>(Prehospital and Disaster Medicine)</em></a></li><li><a href="https://doi.org/10.1111/dar.70261">Australian alcohol harms keep rising <em>(Drug and Alcohol Review)</em></a></li><li><a href="https://doi.org/10.1177/27536386261501047">Interprofessional simulation shapes student identity <em>(Paramedicine)</em></a></li></ul><p><a href="https://paramedicpapers.com/episodes/2026-10-20/">Show notes and transcript</a></p>]]></content:encoded>
-      <pubDate>Tue, 20 Oct 2026 08:04:11 +1100</pubDate>
-      <guid isPermaLink="false">https://audio.paramedicpapers.com/ep-2026-10-20.mp3</guid>
-      <enclosure url="https://op3.dev/e/audio.paramedicpapers.com/ep-2026-10-20.mp3" length="1217708" type="audio/mpeg"/>
-      <itunes:duration>304</itunes:duration>
-      <itunes:summary>4 papers: Predicting outcomes in PEA cardiac arrest; Drone AI for mass-casualty triage; Australian alcohol harms keep rising; Interprofessional simulation shapes student identity</itunes:summary>
-      <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
-      <itunes:episodeType>full</itunes:episodeType>
-      <podcast:transcript url="https://audio.paramedicpapers.com/ep-2026-10-20.txt" type="text/plain" language="en-au"/>
     </item>
   </channel>
 </rss>
