@@ -1,325 +1,11 @@
 {
- "date": "2026-11-14",
- "start": "2026-11-07",
- "span": "7 – 14 Nov 2026",
- "next": "2026-11-18",
- "subject": "PD brief 7 – 14 Nov 2026: 50 papers, 3 to dig into",
- "synthesis": {
-  "intro": "Cardiac arrest dominated these 8 days — capnography, rhythm transitions, community responder systems and post-arrest physiology all featured — alongside trauma triage gaps and a reassuring paediatric opioid registry study.",
-  "discussion": "If a monitor number or rhythm change suggests your arrest is going badly, how much should that shift your crew's plan — and which number would you actually trust?",
-  "lessons": [
-   {
-    "text": "Prehospital fentanyl in children looks reassuring: serious adverse effects were rare (bradycardia and respiratory depression each 0.7%, no antidote given), but over half of children were still in pain on arrival — a prompt to reassess and advocate for in-hospital analgesia on handover.",
-    "ids": [
-     "10.1186/s13049-026-01723-0"
-    ]
-   },
-   {
-    "text": "Night-time cardiac arrests carry worse survival, apparently because bystander CPR and defibrillation are less available — a reminder to coach compressions early and get an AED attached sooner on overnight arrest calls.",
-    "ids": [
-     "43017087",
-     "10.12968/jpar.2025.0119"
-    ]
-   },
-   {
-    "text": "A GCS of 9–15 does not rule out severe injury: one in ten patients in a large linked cohort met anatomical severity criteria despite a mid-range GCS, and rural patients were undertriaged more often — consider mechanism and anatomy, not just consciousness, when choosing destination.",
-    "ids": [
-     "10.1186/s12873-026-01842-y"
-    ]
-   },
-   {
-    "text": "When sepsis is flagged at dispatch, patients received antibiotics about 31 minutes sooner — calling your sepsis suspicion early to the receiving hospital may be one of the highest-value things you say on the radio.",
-    "ids": [
-     "10.1186/s13049-026-01730-1"
-    ]
-   },
-   {
-    "text": "Blood-borne infection prevalence in first responders is not trivial (hepatitis B 6.2%, hepatitis C 1.8% pooled), a supporting reminder to maintain standard precautions and stay current with vaccination.",
-    "ids": [
-     "43008211"
-    ]
-   }
-  ],
-  "deep_dives": [
-   {
-    "topic": "Monitoring the arrest: waveforms and rhythms",
-    "why": "Several studies this period circle the same question — what arrest monitoring actually tells you — yet they disagree about how much a single number or rhythm change is worth. Working out what you'd trust on scene is a rich hour of PD.",
-    "ids": [
-     "10.1016/j.resplu.2026.101554",
-     "43020455",
-     "43018417",
-     "42987442"
-    ],
-    "questions": [
-     "How would an ETCO2 device bias of nearly 4 mmHg change the thresholds you use to judge compression quality or ROSC?",
-     "Would a rhythm change from asystole to PEA during CPR change your crew's plan, given the outcome differences tracked in the registry data?"
-    ],
-    "ideas": "Compare how the device-comparison and prediction studies weigh absolute ETCO2 values against trends, and consider which your crew actually relies on. Ask whether the rhythm-transition outcomes reflect something you could act on during CPR, or just the arrest's underlying trajectory. Look at the PEEP finding as a hypothesis about ventilation strategy, and where it sits against your local guideline."
-   },
-   {
-    "topic": "Advanced airway decisions in arrest",
-    "why": "Two registry cohorts this period pull in different directions on airway management — one links intubation with far higher ROSC, the other finds no survival signal for advanced airways in traumatic arrest. Both are confounded by who gets intubated, which makes them a good test of how you read observational airway evidence.",
-    "ids": [
-     "43000245",
-     "43019463"
-    ],
-    "questions": [
-     "How much of the medical arrest ROSC difference do you attribute to the airway itself versus physician selection of less sick patients?",
-     "Does the traumatic arrest finding match what you see when advanced airways are attempted in your region?"
-    ],
-    "ideas": "Compare the selection problems in the two cohorts — physician choice in one, extremely low event rates in the other — and consider which bias worries you more. Consider whether either study would actually change what you do on your next arrest, given neither is randomised."
-   },
-   {
-    "topic": "Recognition gaps: seizure and chest pain",
-    "why": "Non-convulsive seizures are missed in up to four in five cases, and chest-pain risk tools validated for ambulance use remain incomplete — recognition and risk stratification are where prehospital decisions carry the most weight for two common presentations.",
-    "ids": [
-     "43019610",
-     "10.1177/27536386261501034",
-     "43007266"
-    ],
-    "questions": [
-     "What features make you suspect a non-convulsive seizure when the convulsive part has stopped?",
-     "How closely does the chest-pain tool you use match the ones reviewed here, and what does it not capture?"
-    ],
-    "ideas": "Look at which patient groups the seizure review suggests are being missed, and whether your own experiences of subtle postictal presentations fit. Compare the scoping review's account of incomplete ambulance validation of chest-pain tools with what roadside troponin testing might add, and where each sits against your local guideline."
-   }
-  ]
- },
+ "date": "2026-11-18",
+ "start": "2026-11-11",
+ "span": "11 – 18 Nov 2026",
+ "next": "2026-11-22",
+ "subject": "PD brief 11 – 18 Nov 2026: 53 papers",
+ "synthesis": null,
  "papers": [
-  {
-   "id": "10.1186/s13049-026-01723-0",
-   "title": "Paediatric prehospital fentanyl: serious adverse effects rare",
-   "topic": "Paediatrics",
-   "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
-   "design": "Retrospective register-based cohort with medical record review",
-   "n": "1,531 children aged 0–14 given prehospital opioids, Denmark 2017–2022",
-   "bottomLine": "Supports current practice",
-   "finding": "15.1% had at least one clinical sign compatible with opioid-related adverse effects; bradycardia 0.7%, respiratory depression 0.7%; no opioid antidote given; 63.6% in pain at arrival and 51% received further in-hospital analgesia.",
-   "pmid": "",
-   "doi": "10.1186/s13049-026-01723-0",
-   "url": "https://doi.org/10.1186/s13049-026-01723-0"
-  },
-  {
-   "id": "10.1016/j.resplu.2026.101539",
-   "title": "CARE framework for traumatic cardiac arrest",
-   "topic": "Cardiac arrest",
-   "journal": "Resuscitation Plus",
-   "design": "Framework / consensus-style paper",
-   "n": "Not reported",
-   "bottomLine": "Context only",
-   "finding": "Not reported — abstract not yet available.",
-   "pmid": "",
-   "doi": "10.1016/j.resplu.2026.101539",
-   "url": "https://doi.org/10.1016/j.resplu.2026.101539"
-  },
-  {
-   "id": "42989699",
-   "title": "Forecast: prehospital transfusion growth and HDFN risk",
-   "topic": "Trauma",
-   "journal": "Transfusion",
-   "design": "Forecasting model (regression on US transfusion trends, 500 instantiations per model)",
-   "n": "779 females of childbearing potential projected to receive prehospital transfusion in the US in 2029",
-   "bottomLine": "Context only",
-   "finding": "One HDFN case forecast every 0.5–20 years depending on region and model (base case: 0.5 years in the South, 20.0 in the Northeast).",
-   "pmid": "42989699",
-   "doi": "10.1111/trf.70478",
-   "url": "https://doi.org/10.1111/trf.70478"
-  },
-  {
-   "id": "42991923",
-   "title": "First responders notifying schools after child trauma",
-   "topic": "Operations & systems",
-   "journal": "Journal of Child & Adolescent Trauma",
-   "design": "Mixed-methods first-year implementation evaluation (training, notification process, surveys, qualitative interviews)",
-   "n": "75 school staff and 64 first responders, one Mississippi school district",
-   "bottomLine": "Context only",
-   "finding": "Significant gains in school staff trauma-informed attitudes; greater first-responder training exposure linked with lower burnout; disciplinary referrals decreased overall while in-school suspensions increased; attendance stable.",
-   "pmid": "42991923",
-   "doi": "10.1007/s40653-026-00975-3",
-   "url": "https://doi.org/10.1007/s40653-026-00975-3"
-  },
-  {
-   "id": "10.1016/j.resplu.2026.101556",
-   "title": "Layperson CPR: pocket mask versus face shield",
-   "topic": "Cardiac arrest",
-   "journal": "Resuscitation Plus",
-   "design": "Randomised crossover simulation study",
-   "n": "Not reported",
-   "bottomLine": "Context only",
-   "finding": "Not reported — abstract not yet available.",
-   "pmid": "",
-   "doi": "10.1016/j.resplu.2026.101556",
-   "url": "https://doi.org/10.1016/j.resplu.2026.101556"
-  },
-  {
-   "id": "10.1016/j.resplu.2026.101554",
-   "title": "Mainstream and sidestream capnography give different ETCO2",
-   "topic": "Cardiac arrest",
-   "journal": "Resuscitation Plus",
-   "design": "Retrospective device-comparison analysis of synchronized capnography waveforms",
-   "n": "23 OHCA recordings (3,460 paired ventilations)",
-   "bottomLine": "Hypothesis-generating",
-   "finding": "Mainstream ETCO2 bias +3.94 mmHg vs sidestream (limits of agreement -3.21 to 11.09 mmHg, proportional bias 0.0746); trends matched (-1.44 vs -1.41 mmHg/min, p=0.93); abrupt rises >=10 mmHg co-detected in 7/8 and drops in 10/15",
-   "pmid": "",
-   "doi": "10.1016/j.resplu.2026.101554",
-   "url": "https://doi.org/10.1016/j.resplu.2026.101554"
-  },
-  {
-   "id": "10.1016/j.resplu.2026.101553",
-   "title": "Community first responders trained but rarely dispatched",
-   "topic": "Cardiac arrest",
-   "journal": "Resuscitation Plus",
-   "design": "Multicentre cross-sectional survey (two regions, pre-implementation)",
-   "n": "2,704 respondents of 14,141 registered first responders (19.1%)",
-   "bottomLine": "Hypothesis-generating",
-   "finding": "84.3% had CPR training within two years and 97.3% felt prepared (both associated with healthcare/emergency background and recent training, p<0.001), yet only 15.1% had ever been dispatched, 2.8% arrived before EMS and 1.9% performed CPR",
-   "pmid": "",
-   "doi": "10.1016/j.resplu.2026.101553",
-   "url": "https://doi.org/10.1016/j.resplu.2026.101553"
-  },
-  {
-   "id": "10.1177/27536386261501034",
-   "title": "Mapping chest pain risk tools in ambulance care",
-   "topic": "Cardiac (non-arrest)",
-   "journal": "Paramedicine",
-   "design": "Scoping review (JBI methodology, PRISMA-ScR)",
-   "n": "27 articles, 8 risk-stratification tools",
-   "bottomLine": "Context only",
-   "finding": "Eight chest-pain risk-stratification tools were used or trialled in ambulance settings; HEART and its derivatives were the most frequently studied, with performance varying across settings and validation for ambulance use incomplete",
-   "pmid": "",
-   "doi": "10.1177/27536386261501034",
-   "url": "https://doi.org/10.1177/27536386261501034"
-  },
-  {
-   "id": "10.1016/j.resplu.2026.101555",
-   "title": "AI in cardiac arrest: oversight may be symbolic",
-   "topic": "Cardiac arrest",
-   "journal": "Resuscitation Plus",
-   "design": "Conceptual/policy analysis (no empirical data)",
-   "n": "Not reported",
-   "bottomLine": "Context only",
-   "finding": "No empirical data — proposes five policy measures including ecological trialling, designed-in explainability, defined escalation triggers and authority, and protection for justified deviation from AI recommendations",
-   "pmid": "",
-   "doi": "10.1016/j.resplu.2026.101555",
-   "url": "https://doi.org/10.1016/j.resplu.2026.101555"
-  },
-  {
-   "id": "42998307",
-   "title": "Smart first-responder alerting vs fixed-radius alerts in OHCA",
-   "topic": "Operations & systems",
-   "journal": "Journal of the American Heart Association",
-   "design": "Prospective randomised three-arm trial",
-   "n": "823 activations, 1482 dispatched community first responders",
-   "bottomLine": "Hypothesis-generating",
-   "finding": "CFR arrived before EMS in 58% (smart alerting), 57% (2500 m) and 31% (600 m); smart alerting vs 600 m risk difference +26.8% (95% CI 18.6–34.4), vs 2500 m +1.2% (95% CI −7.0 to +9.3, p=0.80)",
-   "pmid": "42998307",
-   "doi": "10.1161/jaha.126.051900",
-   "url": "https://doi.org/10.1161/jaha.126.051900"
-  },
-  {
-   "id": "42987442",
-   "title": "PEEP during CPR linked with more ROSC",
-   "topic": "Cardiac arrest",
-   "journal": "The American Journal of Emergency Medicine",
-   "design": "Single-centre retrospective cohort with continuous intratracheal pressure monitoring, physician-staffed EMS",
-   "n": "362 intubated adults with OHCA",
-   "bottomLine": "Hypothesis-generating",
-   "finding": "Adjusted OR for ROSC with mechanical ventilation using PEEP 1.58 (95% CI 1.01–2.50, p=0.048); unadjusted OR for survival to hospital discharge 2.22 (95% CI 1.03–4.78)",
-   "pmid": "42987442",
-   "doi": "10.1016/j.ajem.2026.10.026",
-   "url": "https://doi.org/10.1016/j.ajem.2026.10.026"
-  },
-  {
-   "id": "42996178",
-   "title": "Ultrasound added to stroke scales for LVO triage",
-   "topic": "Stroke & neuro",
-   "journal": "Frontiers in Neurology",
-   "design": "Exploratory secondary analysis of a 20-patient portable ultrasound device trial",
-   "n": "20 patients with acute ischaemic stroke",
-   "bottomLine": "Hypothesis-generating",
-   "finding": "Combining brain perfusion ultrasound with prehospital stroke scales shifted sensitivity and negative predictive value higher and reclassified all patients misdiagnosed by either method alone; three prehospital-ICH false positives showed severe perfusion deficits suggesting LVO",
-   "pmid": "42996178",
-   "doi": "10.3389/fneur.2026.1924664",
-   "url": "https://doi.org/10.3389/fneur.2026.1924664"
-  },
-  {
-   "id": "43001740",
-   "title": "Prehospital ECPR linked to doubled arrest survival",
-   "topic": "Cardiac arrest",
-   "journal": "The New England Journal of Medicine",
-   "design": "Nationwide nonrandomised comparative cohort (OnScene, Netherlands)",
-   "n": "231 adults ≤ 50 with refractory OHCA (144 ECPR-capable HEMS vs 87 conventional)",
-   "bottomLine": "Hypothesis-generating",
-   "finding": "Survival to discharge 40% with ECPR vs 20% without (OR 2.72, 95% CI 1.59–4.66); favourable neurological outcome at 6 months 36% vs 13% (OR 4.22, 95% CI 2.82–6.32); 32 adverse events with ECPR vs 11",
-   "pmid": "43001740",
-   "doi": "10.1056/NEJMoa2602919",
-   "url": "https://doi.org/10.1056/NEJMoa2602919"
-  },
-  {
-   "id": "43001758",
-   "title": "Big community arrest programme didn't change survival",
-   "topic": "Cardiac arrest",
-   "journal": "The New England Journal of Medicine",
-   "design": "Registry-based cluster-randomised trial (CARES registry, North Carolina)",
-   "n": "22,459 adults with OHCA across 55 county clusters",
-   "bottomLine": "Supports current practice",
-   "finding": "Survival to discharge with good neurological outcome 9.0% (intervention) vs 9.4% (usual care), adjusted OR 0.97, 95% CI 0.75–1.26, P = 0.80",
-   "pmid": "43001758",
-   "doi": "10.1056/NEJMoa2612757",
-   "url": "https://doi.org/10.1056/NEJMoa2612757"
-  },
-  {
-   "id": "43000245",
-   "title": "Intubation linked to more ROSC in OHCA registry",
-   "topic": "Airway & ventilation",
-   "journal": "BMC Emergency Medicine",
-   "design": "Retrospective registry cohort with propensity-score matching",
-   "n": "6,162 adults with non-traumatic OHCA (1,448 intubated vs 4,714 basic airway)",
-   "bottomLine": "Hypothesis-generating",
-   "finding": "ROSC 21.1% with intubation vs 3.8% with basic airway (multivariable OR 7.61, propensity-matched OR 6.33); the unadjusted association was not significant in the shockable-rhythm stratum",
-   "pmid": "43000245",
-   "doi": "10.1186/s12873-026-01718-1",
-   "url": "https://doi.org/10.1186/s12873-026-01718-1"
-  },
-  {
-   "id": "10.24911/ijmdc.51-1791096110",
-   "title": "Whole blood vs components: mixed mortality, lower transfusion needs",
-   "topic": "Trauma",
-   "journal": "International Journal of Medicine in Developing Countries",
-   "design": "Systematic review (PRISMA 2020, ROBINS-I) of comparative studies",
-   "n": "22 comparative studies, about 95,000 trauma patients",
-   "bottomLine": "Hypothesis-generating",
-   "finding": "Survival benefit with whole blood in some studies — hypotensive patients (aOR 0.72 for SBP<90), penetrating injury (RR 0.36), geriatric (OR 0.60) — but no difference in others including one randomised trial; transfusion requirements consistently lower with whole blood; VTE risk lower (OR 0.70)",
-   "pmid": "",
-   "doi": "10.24911/ijmdc.51-1791096110",
-   "url": "https://doi.org/10.24911/ijmdc.51-1791096110"
-  },
-  {
-   "id": "10.1021/ehp.6c00307",
-   "title": "Heat alerts eased heat-dispatch risk but demand still grew",
-   "topic": "Operations & systems",
-   "journal": "Environmental Health Perspectives",
-   "design": "Two-stage distributed lag nonlinear model time-series analysis across 47 prefectures",
-   "n": "577,027 heat-related ambulance dispatches, Japan 2015–2023",
-   "bottomLine": "Hypothesis-generating",
-   "finding": "At the 95th WBGT percentile the pooled cumulative relative risk fell from 10.45 (2015–19) to 5.90 (2022–23), a 43.6% reduction; severe-case relative risks also declined while age 65+ became the strongest effect modifier; heat-attributable counts still rose 18.1%",
-   "pmid": "",
-   "doi": "10.1021/ehp.6c00307",
-   "url": "https://doi.org/10.1021/ehp.6c00307"
-  },
-  {
-   "id": "10.1186/s12909-026-10789-4",
-   "title": "EMS students report obs/gyn training gaps",
-   "topic": "Education & training",
-   "journal": "BMC Medical Education",
-   "design": "Qualitative conventional content analysis, semi-structured interviews",
-   "n": "14 EMS students and recent graduates, Iran",
-   "bottomLine": "Hypothesis-generating",
-   "finding": "1,532 codes distilled to six challenge categories: educational content and approaches, clinical education barriers, communication and cultural barriers, resource limitations, motivation and educational justice, and process management; higher-order category: disconnects between preparation and real-world demands",
-   "pmid": "",
-   "doi": "10.1186/s12909-026-10789-4",
-   "url": "https://doi.org/10.1186/s12909-026-10789-4"
-  },
   {
    "id": "43004811",
    "title": "Sydney COAST registry: trauma shock first year",
@@ -598,10 +284,10 @@
    "title": "Systematic review of newborn PPV at birth",
    "topic": "Paediatrics",
    "journal": "Resuscitation",
-   "design": "Systematic review",
-   "n": "Not reported",
+   "design": "Systematic review (PROSPERO-registered, PRISMA 2020)",
+   "n": "42 studies from 34 countries, 269 to 10,696,831 livebirths per study",
    "bottomLine": "Context only",
-   "finding": "Abstract not yet available.",
+   "finding": "PPV incidence 3.0%–8.0% in nine population-based/large multicentre studies excluding CPAP; rates much higher among very and extremely preterm infants; overall and facemask PPV increasing over time while tracheal-tube PPV was stable or declining; lower incidence in low-resource and lower-level birthing centres; few studies reported indications or timing of PPV initiation.",
    "pmid": "",
    "doi": "10.1016/j.resuscitation.2026.111388",
    "url": "https://doi.org/10.1016/j.resuscitation.2026.111388"
@@ -735,6 +421,279 @@
    "pmid": "43019319",
    "doi": "10.1371/journal.pone.0348829",
    "url": "https://doi.org/10.1371/journal.pone.0348829"
+  },
+  {
+   "id": "43024742",
+   "title": "Airway assistant training halved sim intubation time",
+   "topic": "Airway & ventilation",
+   "journal": "Prehospital Emergency Care",
+   "design": "Pilot randomised simulation study (SALAD manikin)",
+   "n": "12 qualified paramedics in two groups of 6, paired with intensive care paramedics",
+   "bottomLine": "Hypothesis-generating",
+   "finding": "Median intubation time 53 s (IQR 19) trained vs 102.5 s (IQR 36) untrained, p = 0.009, very large effect size (Cohen's d = 1.86); no oesophageal intubations in either group",
+   "pmid": "43024742",
+   "doi": "10.1080/10903127.2026.2761043",
+   "url": "https://doi.org/10.1080/10903127.2026.2761043"
+  },
+  {
+   "id": "43030628",
+   "title": "Numbers for when on-scene ROSC stops happening",
+   "topic": "Cardiac arrest",
+   "journal": "Journal of Clinical Medicine",
+   "design": "Retrospective nationwide Utstein descriptive cohort, 2017–2022",
+   "n": "22,383 adults with cardiogenic OHCA and an initial shockable rhythm",
+   "bottomLine": "Hypothesis-generating",
+   "finding": "Probability of subsequent on-scene ROSC 6.97% at 10 min and 0.50% at 20 min after EMS contact; favourable neurological outcome (CPC 1–2 at 1 month) in 50.0% of patients <75 and 20.5% of those ≥75 with on-scene ROSC at or after 10 min",
+   "pmid": "43030628",
+   "doi": "10.3390/jcm15218484",
+   "url": "https://doi.org/10.3390/jcm15218484"
+  },
+  {
+   "id": "43030381",
+   "title": "Co-dispatch modelled to cut OHCA response times",
+   "topic": "Cardiac arrest",
+   "journal": "Journal of Clinical Medicine",
+   "design": "Geospatial routing simulation",
+   "n": "500 modelled OHCA locations served by 18 EMS, 28 police and 121 volunteer fire stations",
+   "bottomLine": "Hypothesis-generating",
+   "finding": "Median first-unit response 9.81 min with EMS alone vs 5.45 min with police added, 7.36 min with fire added, 5.41 min with triple dispatch (paired median gain 4.34 min); locations reached within 10 min rose from 51.1% to 94.6%",
+   "pmid": "43030381",
+   "doi": "10.3390/jcm15218237",
+   "url": "https://doi.org/10.3390/jcm15218237"
+  },
+  {
+   "id": "43028628",
+   "title": "Social support buffers the violence-to-burnout pathway",
+   "topic": "Workforce & wellbeing",
+   "journal": "Healthcare",
+   "design": "Cross-sectional moderated mediation survey",
+   "n": "210 fire-service-based paramedics in Busan",
+   "bottomLine": "Context only",
+   "finding": "Workplace violence exposure associated with burnout indirectly through post-traumatic stress symptoms; social support moderated the violence–PTSS (p = 0.002) and violence–burnout (p = 0.015) associations; resilience findings did not survive correction",
+   "pmid": "43028628",
+   "doi": "10.3390/healthcare14213607",
+   "url": "https://doi.org/10.3390/healthcare14213607"
+  },
+  {
+   "id": "43028633",
+   "title": "Dispatch stress, depression and suicidal ideation linked",
+   "topic": "Workforce & wellbeing",
+   "journal": "Healthcare",
+   "design": "Cross-sectional moderated mediation survey",
+   "n": "211 fire-service emergency dispatch personnel in Busan and Gyeongnam",
+   "bottomLine": "Context only",
+   "finding": "Conditional indirect association of secondary traumatic stress with suicidal ideation through depression fell from 0.191 at low social support to 0.013 at high; emotional labour pathways held only at low and mean support",
+   "pmid": "43028633",
+   "doi": "10.3390/healthcare14213612",
+   "url": "https://doi.org/10.3390/healthcare14213612"
+  },
+  {
+   "id": "43025314",
+   "title": "Hot days, more injury calls to ambulance services",
+   "topic": "Operations & systems",
+   "journal": "Ecotoxicology and Environmental Safety",
+   "design": "Time-stratified case-crossover with distributed lag models",
+   "n": "170,538 unintentional injury-related EMS calls, July 2021 – June 2025",
+   "bottomLine": "Context only",
+   "finding": "Cumulative OR 1.21 (95% CI 1.12–1.31) comparing the 99th percentile apparent temperature (42.5 °C) with the exposure minimum; traffic injuries OR 1.80 (95% CI 1.56–2.07); adults 18–64 OR 1.38; heat waves OR 1.07",
+   "pmid": "43025314",
+   "doi": "10.1016/j.ecoenv.2026.121044",
+   "url": "https://doi.org/10.1016/j.ecoenv.2026.121044"
+  },
+  {
+   "id": "43026539",
+   "title": "Mapping 50 years of EMS cardiac arrest research",
+   "topic": "Cardiac arrest",
+   "journal": "International Journal of Emergency Medicine",
+   "design": "Retrospective bibliometric analysis (Web of Science, VOSviewer)",
+   "n": "3,005 records, 1972 – June 2026",
+   "bottomLine": "Context only",
+   "finding": "Annual output peaked at 244 publications in 2021 and stayed above 200 from 2022–2025; Resuscitation published 23.1% of records; the US led with 34.0%, then Japan 12.5% and Canada 9.4%",
+   "pmid": "43026539",
+   "doi": "10.1186/s12245-026-01408-6",
+   "url": "https://doi.org/10.1186/s12245-026-01408-6"
+  },
+  {
+   "id": "43031846",
+   "title": "Street layout linked to EMS response times",
+   "topic": "Operations & systems",
+   "journal": "Frontiers in Public Health",
+   "design": "Retrospective multilevel regression of ambulance dispatch data",
+   "n": "Not reported (2024 Beijing Emergency Center dispatch data)",
+   "bottomLine": "Context only",
+   "finding": "Lower residential facility density and denser arterial and local road networks were associated with shorter response times; high residential density was associated with slower responses in central urban areas, while local-road density mattered most in suburbs",
+   "pmid": "43031846",
+   "doi": "10.3389/fpubh.2026.1930880",
+   "url": "https://doi.org/10.3389/fpubh.2026.1930880"
+  },
+  {
+   "id": "10.1186/s13049-026-01725-y",
+   "title": "Head-first snow burial: six Japanese deaths",
+   "topic": "Other",
+   "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+   "design": "Retrospective case series (prefectural police record review)",
+   "n": "6 fatal cases over 5 years",
+   "bottomLine": "Context only",
+   "finding": "All six victims were buried head-first in open slopes, terrain depressions or forested terrain (none in tree wells); five were in cardiopulmonary arrest or confirmed dead at recovery, and three had been travelling alone",
+   "pmid": "",
+   "doi": "10.1186/s13049-026-01725-y",
+   "url": "https://doi.org/10.1186/s13049-026-01725-y"
+  },
+  {
+   "id": "10.1016/j.injury.2026.113906",
+   "title": "Field amputation: broad capability, little standardisation",
+   "topic": "Trauma",
+   "journal": "Injury",
+   "design": "Cross-sectional survey of air ambulance services",
+   "n": "14 UK helicopter emergency medical services (all England)",
+   "bottomLine": "Context only",
+   "finding": "All 14 services could provide field amputation; 12 (86%) had a specific clinical practice guideline; 4 services performed 6 cases in five years; a Gigli saw was the most common disarticulation instrument (93%); none used hospital response teams",
+   "pmid": "",
+   "doi": "10.1016/j.injury.2026.113906",
+   "url": "https://doi.org/10.1016/j.injury.2026.113906"
+  },
+  {
+   "id": "43036453",
+   "title": "What competence actually means for paramedics",
+   "topic": "Education & training",
+   "journal": "Emergency Medicine International",
+   "design": "Umbrella review (Joanna Briggs Institute methodology, GRADE-CERQual)",
+   "n": "8 reviews synthesised from 2,224 screened records",
+   "bottomLine": "Context only",
+   "finding": "Five competence domains identified: interpersonal and teamwork; cognitive and decision-making; professionalism and ethical; clinical; and competence across certification levels and in special or high-stress situations",
+   "pmid": "43036453",
+   "doi": "10.1155/emmi/5400734",
+   "url": "https://doi.org/10.1155/emmi/5400734"
+  },
+  {
+   "id": "43035480",
+   "title": "What running an ambulance trial really takes",
+   "topic": "Operations & systems",
+   "journal": "Trials",
+   "design": "Cross-sectional survey with linked trial process data",
+   "n": "67 of 70 invited ambulance personnel (96% response)",
+   "bottomLine": "Context only",
+   "finding": "94 protocol deviations across 338 inclusions (28%), mostly early with missing measurements the commonest cause; motivation fell from median 8 to 7 over 18 months; 51% found communication excessive; 90% willing to participate in future research",
+   "pmid": "43035480",
+   "doi": "10.1186/s13063-026-09955-2",
+   "url": "https://doi.org/10.1186/s13063-026-09955-2"
+  },
+  {
+   "id": "43020495",
+   "title": "rSIG cutoff flags trauma patients needing intervention",
+   "topic": "Trauma",
+   "journal": "BMJ Open",
+   "design": "Single-centre retrospective observational cohort with derivation and validation arms",
+   "n": "747 trauma patients (505 derivation, 242 validation)",
+   "bottomLine": "Hypothesis-generating",
+   "finding": "Optimal prehospital rSIG cutoff 24.8; lower rSIG associated with resuscitative interventions (aOR 3.17, 95% CI 1.34-7.50) and blood transfusion within 24 hours (aOR 4.20, 95% CI 1.36-12.95); no significant association with surgery or interventional radiology within 24 hours or with in-hospital mortality",
+   "pmid": "43020495",
+   "doi": "10.1136/bmjopen-2026-121978",
+   "url": "https://doi.org/10.1136/bmjopen-2026-121978"
+  },
+  {
+   "id": "10.3390/jcm15228838",
+   "title": "Prehospital trauma scores poorly predict secondary transfer",
+   "topic": "Trauma",
+   "journal": "Journal of Clinical Medicine",
+   "design": "Retrospective cohort with ROC comparison of eight trauma scores and machine learning",
+   "n": "1,194 multiply injured patients (47% secondarily transferred)",
+   "bottomLine": "Hypothesis-generating",
+   "finding": "CRAMS had the highest score discrimination (AUC 0.676); paediatric age (OR 4.46), elderly age (OR 2.44) and thoracic injury (OR 1.68) were independently associated with transfer; random forest AUC 0.836 versus 0.765 for logistic regression, with calibration compressed toward average risk",
+   "pmid": "",
+   "doi": "10.3390/jcm15228838",
+   "url": "https://doi.org/10.3390/jcm15228838"
+  },
+  {
+   "id": "10.1016/j.afjem.2026.101226",
+   "title": "Dispatch triage overcalls and misses across call types",
+   "topic": "Operations & systems",
+   "journal": "African Journal of Emergency Medicine",
+   "design": "Retrospective analysis of computer-aided dispatch records and electronic patient care records",
+   "n": "242,576 primary emergency responses",
+   "bottomLine": "Context only",
+   "finding": "Overtriage 62.28% and undertriage 15.29% against the South African Triage Scale; sensitivity 53.71%, specificity 74.31%; highest undertriage in respiratory complaints (31%), diabetes (30%) and chest pain (29%)",
+   "pmid": "",
+   "doi": "10.1016/j.afjem.2026.101226",
+   "url": "https://doi.org/10.1016/j.afjem.2026.101226"
+  },
+  {
+   "id": "10.53365/nrfhh.4219",
+   "title": "What the evidence says about ambulance-ED handover",
+   "topic": "Operations & systems",
+   "journal": "Natural Resources for Human Health",
+   "design": "Narrative review (SANRA-informed) of offload, handover, prenotification, diversion and governance literature",
+   "n": "Not reported (PubMed, CINAHL, Embase, Scopus and grey literature)",
+   "bottomLine": "Context only",
+   "finding": "Prehospital notification associated with faster diagnosis and reperfusion in stroke and myocardial infarction; structured handover tools improved completeness and efficiency; prolonged offload associated with harm and lost ambulance capacity; diversion offered little relief and was linked to higher mortality in time-sensitive conditions",
+   "pmid": "",
+   "doi": "10.53365/nrfhh.4219",
+   "url": "https://doi.org/10.53365/nrfhh.4219"
+  },
+  {
+   "id": "10.32725/jnss.2026.021",
+   "title": "Paediatric IO sim success beat IV in students",
+   "topic": "Education & training",
+   "journal": "Journal of Nursing, Social Studies, Public Health and Rehabilitation",
+   "design": "Within-subject simulation study with fixed task order and a single non-blinded assessor",
+   "n": "50 second- and third-year paramedic students",
+   "bottomLine": "Context only",
+   "finding": "IO insertion with verified patency 50/50 attempts (100%, mean 118.1 s); IV catheterisation 4/50 (8%, mean 288.9 s among successes); 92% of students rated IV more demanding and 88% found the models unrealistic or only partly realistic",
+   "pmid": "",
+   "doi": "10.32725/jnss.2026.021",
+   "url": "https://doi.org/10.32725/jnss.2026.021"
+  },
+  {
+   "id": "10.1002/ams2.70183",
+   "title": "Harder ambulance transports, higher pneumonia mortality",
+   "topic": "Respiratory",
+   "journal": "Acute Medicine &amp; Surgery",
+   "design": "Retrospective population-based registry study (Osaka ORION), 2018-2023",
+   "n": "78,720 patients transported for suspected bacterial pneumonia (65,510 physician-diagnosed)",
+   "bottomLine": "Context only",
+   "finding": "Difficult transport rose from 2.7% (2018-2019) to 10.3% (2020-2022) and 9.3% (2023); difficult transport associated with higher in-hospital mortality (adjusted OR 1.14, 95% CI 1.03-1.25); transport rates fell from 166.3 to 117.3 per 100,000 residents then returned to 167.0 by 2023",
+   "pmid": "",
+   "doi": "10.1002/ams2.70183",
+   "url": "https://doi.org/10.1002/ams2.70183"
+  },
+  {
+   "id": "43042206",
+   "title": "Centralised call centres linked to leaner ambulance operations",
+   "topic": "Operations & systems",
+   "journal": "Pakistan Journal of Medical Sciences",
+   "design": "Retrospective longitudinal before–after study framed on lean management principles",
+   "n": "2,346,774 emergency calls and 721,897 cases over 84 months",
+   "bottomLine": "Context only",
+   "finding": "Calls per incident fell 49.0% (4.63 to 2.36), ambulance response time fell 36.9% and mobilisation time 23.7%; on-time arrival improved (urban 93.9% to 98.4%, rural 82.2% to 89.2%)",
+   "pmid": "43042206",
+   "doi": "10.12669/pjms.42.10.16649",
+   "url": "https://doi.org/10.12669/pjms.42.10.16649"
+  },
+  {
+   "id": "43037983",
+   "title": "Most fatal brain bleeds die before neurosurgery",
+   "topic": "Stroke & neuro",
+   "journal": "JAMA Network Open",
+   "design": "Retrospective nationwide cohort from two administrative data collections",
+   "n": "12,912 patients with aneurysmal SAH across 41 hospital districts in Finland and New Zealand",
+   "bottomLine": "Context only",
+   "finding": "3,819 of 5,418 SAH deaths (70.5%) occurred without neurosurgical unit admission — 70.7% in Finland, 70.1% in New Zealand — and the proportion rose with distance from a neurosurgical centre (age- and sex-adjusted RR 1.07 close-distance, higher farther out)",
+   "pmid": "43037983",
+   "doi": "10.1001/jamanetworkopen.2026.44245",
+   "url": "https://doi.org/10.1001/jamanetworkopen.2026.44245"
+  },
+  {
+   "id": "43040287",
+   "title": "Breathlessness self-management linked to fewer ambulance calls",
+   "topic": "Respiratory",
+   "journal": "BMC Pulmonary Medicine",
+   "design": "Co-designed feasibility study with mixed-methods evaluation",
+   "n": "140 patients completing the programme over 22 months",
+   "bottomLine": "Context only",
+   "finding": "90% reported improvement on activities of daily living, 70% on 'worst' breathlessness and 68% on mastery; 21% reported avoiding an ambulance call using the strategies they learned",
+   "pmid": "43040287",
+   "doi": "10.1186/s12890-026-04600-9",
+   "url": "https://doi.org/10.1186/s12890-026-04600-9"
   }
  ]
 }
