@@ -25,6 +25,20 @@
     <itunes:explicit>false</itunes:explicit>
     <podcast:guid>09fa3693-e2ac-527c-9d1c-f68df149b888</podcast:guid>
     <item>
+      <title>Updated paediatric traumatic arrest position statement · 20 Nov</title>
+      <link>https://paramedicpapers.com/episodes/2026-11-20/</link>
+      <description>4 papers: Updated paediatric traumatic arrest position statement; Choking arrests: ROSC common, survival still poor; Traumatic pneumothorax: most EDs don't drain early; Studying barriers to trauma triage tool use</description>
+      <content:encoded><![CDATA[<p>4 papers: Updated paediatric traumatic arrest position statement; Choking arrests: ROSC common, survival still poor; Traumatic pneumothorax: most EDs don't drain early; Studying barriers to trauma triage tool use</p><p>Papers in this episode:</p><ul><li><a href="https://doi.org/10.1080/10903127.2026.2660751">Updated paediatric traumatic arrest position statement <em>(Prehospital Emergency Care)</em></a></li><li><a href="https://doi.org/10.1016/j.resuscitation.2026.111401">Choking arrests: ROSC common, survival still poor <em>(Resuscitation)</em></a></li><li><a href="https://doi.org/10.1111/1742-6723.70401">Traumatic pneumothorax: most EDs don't drain early <em>(Emergency Medicine Australasia)</em></a></li><li><a href="https://doi.org/10.12688/hrbopenres.14504.1">Studying barriers to trauma triage tool use <em>(HRB Open Research)</em></a></li></ul><p><a href="https://paramedicpapers.com/episodes/2026-11-20/">Show notes and transcript</a></p>]]></content:encoded>
+      <pubDate>Fri, 20 Nov 2026 05:32:35 +1100</pubDate>
+      <guid isPermaLink="false">https://audio.paramedicpapers.com/ep-2026-11-20.mp3</guid>
+      <enclosure url="https://op3.dev/e/audio.paramedicpapers.com/ep-2026-11-20.mp3" length="1153292" type="audio/mpeg"/>
+      <itunes:duration>288</itunes:duration>
+      <itunes:summary>4 papers: Updated paediatric traumatic arrest position statement; Choking arrests: ROSC common, survival still poor; Traumatic pneumothorax: most EDs don't drain early; Studying barriers to trauma triage tool use</itunes:summary>
+      <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
+      <itunes:episodeType>full</itunes:episodeType>
+      <podcast:transcript url="https://audio.paramedicpapers.com/ep-2026-11-20.txt" type="text/plain" language="en-au"/>
+    </item>
+    <item>
       <title>Prehospital TXA lowers mortality in bleeding trauma · 19 Nov</title>
       <link>https://paramedicpapers.com/episodes/2026-11-19/</link>
       <description>4 papers: Prehospital TXA lowers mortality in bleeding trauma; Bystander-attached AEDs and best OHCA survival; First responder alerts lift defibrillation; Mobile app lifts simulated trauma</description>
@@ -429,20 +443,6 @@
       <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
       <itunes:episodeType>full</itunes:episodeType>
       <podcast:transcript url="https://audio.paramedicpapers.com/ep-2026-10-22.txt" type="text/plain" language="en-au"/>
-    </item>
-    <item>
-      <title>Paramedic Papers Daily — 21 October 2026</title>
-      <link>https://paramedicpapers.com/episodes/2026-10-21/</link>
-      <description>3 papers: Feedback device lifts paediatric ventilation quality; TBI in first responders needs occupational pathways; Joint training lifts behavioural emergency confidence</description>
-      <content:encoded><![CDATA[<p>3 papers: Feedback device lifts paediatric ventilation quality; TBI in first responders needs occupational pathways; Joint training lifts behavioural emergency confidence</p><p>Papers in this episode:</p><ul><li><a href="https://doi.org/10.1542/peds.2026-077291">Feedback device lifts paediatric ventilation quality <em>(Pediatrics)</em></a></li><li><a href="https://doi.org/10.1097/HTR.0000000000001227">TBI in first responders needs occupational pathways <em>(The Journal of Head Trauma Rehabilitation)</em></a></li><li><a href="https://doi.org/10.1186/s12909-026-10646-4">Joint training lifts behavioural emergency confidence <em>(BMC Medical Education)</em></a></li></ul><p><a href="https://paramedicpapers.com/episodes/2026-10-21/">Show notes and transcript</a></p>]]></content:encoded>
-      <pubDate>Wed, 21 Oct 2026 07:32:59 +1100</pubDate>
-      <guid isPermaLink="false">https://audio.paramedicpapers.com/ep-2026-10-21.mp3</guid>
-      <enclosure url="https://op3.dev/e/audio.paramedicpapers.com/ep-2026-10-21.mp3" length="921548" type="audio/mpeg"/>
-      <itunes:duration>230</itunes:duration>
-      <itunes:summary>3 papers: Feedback device lifts paediatric ventilation quality; TBI in first responders needs occupational pathways; Joint training lifts behavioural emergency confidence</itunes:summary>
-      <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
-      <itunes:episodeType>full</itunes:episodeType>
-      <podcast:transcript url="https://audio.paramedicpapers.com/ep-2026-10-21.txt" type="text/plain" language="en-au"/>
     </item>
   </channel>
 </rss>
