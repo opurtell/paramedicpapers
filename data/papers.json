@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-11-18T18:20:11Z",
-  "lastUpdatedSydney": "2026-11-19 05:20 AEDT",
-  "lastUpdatedDate": "2026-11-19",
+  "lastUpdated": "2026-11-19T18:20:11Z",
+  "lastUpdatedSydney": "2026-11-20 05:20 AEDT",
+  "lastUpdatedDate": "2026-11-20",
   "featuredPapers": [
     {
       "id": "43044058",
@@ -46,6 +46,27 @@
       "learningGoal": "Understand how video-assisted emergency calls shape dispatch decisions and prehospital resource use across systems."
     },
     {
+      "id": "10.1016/j.resuscitation.2026.111401",
+      "title": "Out-of-hospital cardiac arrests due to foreign body airway obstruction: A CanROC registry, retrospective cohort study",
+      "journal": "Resuscitation",
+      "date": "2026-11-20",
+      "pmid": "",
+      "doi": "10.1016/j.resuscitation.2026.111401",
+      "summary": "A Canadian CanROC registry cohort of 105,178 EMS-treated out-of-hospital cardiac arrests (2005–2023) found 1,106 (1.1%) were obviously foreign-body-airway-obstruction-related: prehospital ROSC was far more frequent than in presumed cardiac arrests (62.7% vs 37.8%) but survival to discharge was similar (10.6% vs 9.0%).",
+      "relevance": "🟢 High — A Canadian paramedic-model registry answering a question Australian crews face on every choking arrest. Bystander presence and shorter EMS response times drove outcomes — both central to how Australian systems are built, and the same arrest is managed the same way here.",
+      "featuredReason": "A Canadian paramedic-model registry answering a question Australian crews face on every choking arrest. Bystander presence and shorter EMS response times drove outcomes — both central to how Australian systems are built, and the same arrest is managed the same way here.",
+      "pubDate": "2026-11",
+      "topic": "Cardiac arrest",
+      "studyType": "Registry",
+      "design": "Retrospective registry cohort (CanROC, 2005–2023)",
+      "n": "105,178 EMS-treated OHCAs, of which 1,106 obviously FBAO-related",
+      "finding": "FBAO-related arrests achieved prehospital ROSC more often than presumed cardiac arrests (62.7% vs 37.8%, OR 2.77) but survival to discharge did not differ (10.6% vs 9.0%, p=0.094); within FBAO arrests, survival was 18.1% with prehospital ROSC and 0.8% without, and was associated with younger age (aOR 0.76 per decade), shockable rhythm (aOR 4.76) and shorter EMS response time (aOR 0.81 per minute).",
+      "caveat": "Exploratory retrospective design, and 'obviously FBAO-related' classification depends on registry coding rather than verified cause of arrest.",
+      "bottomLine": "Supports current practice",
+      "shortTitle": "Choking arrests: ROSC common, survival still poor",
+      "learningGoal": "Strengthen my recognition of airway obstruction as the reversible cause in cardiac arrest and prioritise early airway clearance."
+    },
+    {
       "id": "43044727",
       "title": "Survival after out of hospital cardiac arrest in relation to AED usage in a multi response system including AED equipped drones",
       "journal": "Resuscitation",
@@ -65,27 +86,6 @@
       "bottomLine": "Hypothesis-generating",
       "shortTitle": "Bystander-attached AEDs linked with best OHCA survival",
       "learningGoal": "Understand how community AED access and drone-delivered defibrillation shape early bystander response in cardiac arrest."
-    },
-    {
-      "id": "43024742",
-      "title": "Effect of airway assistant training on intubation time during simulated prehospital airway management: A pilot study",
-      "journal": "Prehospital Emergency Care",
-      "date": "2026-11-15",
-      "pmid": "43024742",
-      "doi": "10.1080/10903127.2026.2761043",
-      "summary": "An Australian pilot randomised simulation of 12 paramedic–ICP pairs found a one-hour airway assistant training course cut median intubation time in a continuously regurgitating airway from 102.5 to 53 seconds.",
-      "relevance": "🟡 Medium — Airway management at intubation is core business for crews across Australian services and the assistant role exists on every two-paramedic response — the open question is whether a 12-person manikin result holds on patients.",
-      "featuredReason": "Airway management at intubation is core business for crews across Australian services and the assistant role exists on every two-paramedic response — the open question is whether a 12-person manikin result holds on patients.",
-      "pubDate": "2026-11-13",
-      "topic": "Airway & ventilation",
-      "studyType": "Simulation",
-      "design": "Pilot randomised simulation study (SALAD manikin)",
-      "n": "12 qualified paramedics in two groups of 6, paired with intensive care paramedics",
-      "finding": "Median intubation time 53 s (IQR 19) trained vs 102.5 s (IQR 36) untrained, p = 0.009, very large effect size (Cohen's d = 1.86); no oesophageal intubations in either group",
-      "caveat": "Pilot simulation with 12 participants — no patient outcomes, and the authors call for larger studies",
-      "bottomLine": "Hypothesis-generating",
-      "shortTitle": "Airway assistant training halved sim intubation time",
-      "learningGoal": "Strengthen my ability to assist effectively during prehospital intubation in soiled or regurgitating airways."
     },
     {
       "id": "43008211",
@@ -1021,168 +1021,161 @@
   ],
   "funFact": {
     "category": "weird",
-    "fact": "In 2003, climber Aron Ralston amputated his own arm with a blunt pocketknife after being trapped by a boulder for five days. He then rappeled down a cliff one-armed and hiked out. He didn't pass out. He didn't bleed to death. The human body's stress response is absolutely terrifying when it works properly."
+    "fact": "Your stomach lining replaces itself every 3 to 4 days. Any slower and your own gastric acid would digest your stomach from the inside. Your body is in a constant race against itself — and it wins, most of the time."
   },
   "tldr": {
-    "date": "2026-11-19",
-    "paperCount": 19,
-    "summary": "A big day for the chain of survival — bystander AED findings from Sweden and Denmark, a UK bystander-support pathway and five years of head-up CPR data — but the headline is a pooled RCT analysis backing prehospital TXA in bleeding trauma (RR 0.81 for 30-day mortality).",
+    "date": "2026-11-20",
+    "paperCount": 5,
+    "summary": "A quiet clinical day led by two strong pieces: updated North American guidance on paediatric traumatic cardiac arrest, and a 105,000-case Canadian registry showing choking-related arrests get a pulse back often but rarely survive to discharge.",
     "highlights": [
       {
-        "id": "43046131",
-        "pmid": "43046131",
-        "doi": "10.1186/s12873-026-01735-0",
-        "title": "Prehospital TXA lowers mortality in bleeding trauma",
-        "journal": "BMC Emergency Medicine",
-        "note": "Lower 28–30-day mortality with prehospital TXA (RR 0.81, 95% CI 0.68–0.95); TBI mortality (RR 0.87, 95% CI 0.64–1.20) and in-hospital mortality came from single trials; no statistically significant increase in thromboembolic events or seizures."
-      },
-      {
-        "id": "43044727",
-        "pmid": "43044727",
-        "doi": "10.1016/j.resuscitation.2026.111402",
-        "title": "Bystander-attached AEDs linked with best OHCA survival",
-        "journal": "Resuscitation",
-        "note": "EMS attached the first AED in 72% of cases; 30-day survival was 28% with bystander attachment vs 9.0% EMS, 8.7% on-duty first responders and 8.6% community first responders; bystander attachment associated with higher 30-day survival (OR 2.25, 95% CI 1.77–2.85), rising to 62% in witnessed shockable arrests."
-      },
-      {
-        "id": "43044722",
-        "pmid": "43044722",
-        "doi": "10.1016/j.resuscitation.2026.111391",
-        "title": "First responder alerts linked to more defibrillation",
-        "journal": "Resuscitation",
-        "note": "Activation (41% of cases) predicted bystander defibrillation of 9.6% vs 5.5% at 389 m and 13.0% vs 4.8% at 1,183 m; TMLE estimated +6.1 pp bystander defibrillation (95% CI 4.5–7.8) and +1.8 pp 30-day survival (95% CI 0.1–3.6)."
-      },
-      {
-        "id": "43044058",
-        "pmid": "43044058",
-        "doi": "10.1080/10903127.2026.2765894",
-        "title": "Mobile app lifts simulated trauma performance",
+        "id": "43055685",
+        "pmid": "43055685",
+        "doi": "10.1080/10903127.2026.2660751",
+        "title": "Updated paediatric traumatic arrest position statement",
         "journal": "Prehospital Emergency Care",
-        "note": "35.4% of app-supported scenarios met all critical actions vs 6.3% without (adjusted OR 8.28, 95% CI 2.21–31.09); paediatric completion 30.4% vs 0%; users rated the app practical and valuable."
+        "note": "Recommendations: promptly identify children who may benefit from trauma-centre transport; treat reversible causes with direct pressure, wound packing and tourniquets, least-invasive airway management, and chest decompression only if thoracic trauma is suspected (no empiric bilateral decompression); compressions and ventilations have a larger role in paediatric than adult traumatic arrest."
       },
       {
-        "id": "43038421",
-        "pmid": "43038421",
-        "doi": "10.1080/10903127.2026.2764803",
-        "title": "Prehospital STEMI thrombolysis is value for money",
-        "journal": "Prehospital Emergency Care",
-        "note": "AUD 16,750 per QALY gained (95% uncertainty range 15,477–18,423), equivalent to USD 11,725; results robust in sensitivity analysis."
-      },
-      {
-        "id": "43044057",
-        "pmid": "43044057",
-        "doi": "10.1080/10903127.2026.2762131",
-        "title": "Five years of automated head-up CPR outcomes",
-        "journal": "Prehospital Emergency Care",
-        "note": "ROSC 29.5%, survival to discharge 13.1%, favourable neurological survival 10.5%; shockable rhythm 33.9% favourable survival vs 2.0% asystole; 91% of the 391 survivors had CPC 1."
-      },
-      {
-        "id": "43044726",
-        "pmid": "43044726",
-        "doi": "10.1016/j.resuscitation.2026.111403",
-        "title": "MIRA-29: early prehospital prognosis after arrest",
+        "id": "10.1016/j.resuscitation.2026.111401",
+        "pmid": "",
+        "doi": "10.1016/j.resuscitation.2026.111401",
+        "title": "Choking arrests: ROSC common, survival still poor",
         "journal": "Resuscitation",
-        "note": "Low-flow duration, shock count, adrenaline dose and arrest site predicted neurological outcome; precision 0.86 and recall 0.88 in external validation, specificity for poor outcome 0.99; age was not retained in the final model."
+        "note": "FBAO-related arrests achieved prehospital ROSC more often than presumed cardiac arrests (62.7% vs 37.8%, OR 2.77) but survival to discharge did not differ (10.6% vs 9.0%, p=0.094); within FBAO arrests, survival was 18.1% with prehospital ROSC and 0.8% without, and was associated with younger age (aOR 0.76 per decade), shockable rhythm (aOR 4.76) and shorter EMS response time (aOR 0.81 per minute)."
       },
       {
-        "id": "43044725",
-        "pmid": "43044725",
-        "doi": "10.1016/j.resuscitation.2026.111404",
-        "title": "Digital support pathway for OHCA bystanders feasible",
-        "journal": "Resuscitation",
-        "note": "Incident-level capture 50.9%; 96.2% of registered adults accessed digital resources at least once; ~10% self-referred for liaison officer support; 10.1% of identified bystanders were under 18; EMS clinicians rated it acceptable."
+        "id": "43051254",
+        "pmid": "43051254",
+        "doi": "10.1111/1742-6723.70401",
+        "title": "Traumatic pneumothorax: most EDs don't drain early",
+        "journal": "Emergency Medicine Australasia",
+        "note": "231 patients (68.1%) were initially managed without drainage; pneumothorax size >35 mm (aOR 41.0, 95% CI 16.4–102) and haemothorax (aOR 6.3, 95% CI 2.5–15.8) predicted ED-initiated drainage; 22.8% of drained patients had a recorded complication and in-hospital mortality was 5.6%."
       },
       {
-        "id": "43044053",
-        "pmid": "43044053",
-        "doi": "10.1080/10903127.2026.2765392",
-        "title": "Video calls showed no clear resource savings",
-        "journal": "Prehospital Emergency Care",
-        "note": "Initial dispatch 69.4% vs 73.9% (risk difference −4.5 pp, 95% CI −10.0 to 1.0); cumulative unit time −1.5 min (95% CI −6.2 to 3.1); no outcome reached statistical significance and later dispatch didn't offset the difference."
+        "id": "43053902",
+        "pmid": "43053902",
+        "doi": "10.12688/hrbopenres.14504.1",
+        "title": "Studying barriers to trauma triage tool use",
+        "journal": "HRB Open Research",
+        "note": "Protocol only — semi-structured interviews and focus groups are underway, with results intended to inform Irish trauma triage implementation strategy."
       },
       {
-        "id": "10.1016/j.resuscitation.2026.111400",
-        "pmid": "",
-        "doi": "10.1016/j.resuscitation.2026.111400",
-        "title": "Neonatal chest compressions: most survive a month",
-        "journal": "Resuscitation",
-        "note": "70.5% established regular breathing within 60 minutes and 89.0% survived to 28 days; adjusted survival odds fell with gestational age (aOR 0.17 under 28 weeks), though the term vs moderate-preterm gap attenuated after adjusting for cord pH or adrenaline."
-      },
-      {
-        "id": "43046160",
-        "pmid": "43046160",
-        "doi": "10.1186/s12873-026-01748-9",
-        "title": "Chinese OHCA registry: low survival, low AED use",
-        "journal": "BMC Emergency Medicine",
-        "note": "30-day survival 3.0%, favourable neurological outcome 2.0%; bystander CPR 47.7%, dispatcher-assisted CPR 20.0%, bystander AED use 1.8%; shockable rhythm the strongest factor for survival and neurological recovery; survival declined with longer EMS response times."
-      },
-      {
-        "id": "10.1186/s12889-026-30400-1",
-        "pmid": "",
-        "doi": "10.1186/s12889-026-30400-1",
-        "title": "OHCA cause attribution shifts with definitions",
-        "journal": "BMC Public Health",
-        "note": "Cardiac attribution estimates ranged from 20.74% to 42.32% across the definition matrix; in paired records, registry-recorded cardiac attribution was 22.70% vs 27.82% under a broader rule (difference 5.12 pp, 95% CI 0.96–8.51)."
-      },
-      {
-        "id": "43038405",
-        "pmid": "43038405",
-        "doi": "10.1080/10903127.2026.2764155",
-        "title": "Clinician smartphones linked to tripled interpreter use",
-        "journal": "Prehospital Emergency Care",
-        "note": "Requests rose from 104 (0.19 per 100 encounters) to 326 (0.57 per 100) after agency-issued smartphones (RR 3.04, 95% CI 2.44–3.79); audio requests tripled; most requested languages were Spanish (36%), Somali (34%) and Arabic (10%)."
-      },
-      {
-        "id": "10.1186/s13049-026-01731-0",
-        "pmid": "",
-        "doi": "10.1186/s13049-026-01731-0",
-        "title": "Extrication after road collisions: an evidence map",
-        "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
-        "note": "Mapped rescue characteristics studied against morbidity, mortality and physiological deterioration; found inconsistent definitions of entrapment, extrication method and time, and heterogenous outcome reporting limiting synthesis and system-level learning."
-      },
-      {
-        "id": "43044608",
-        "pmid": "43044608",
-        "doi": "10.1016/j.suc.2026.09.001",
-        "title": "A US systems approach to MCI triage",
-        "journal": "The Surgical Clinics of North America",
-        "note": "Sets out early recognition, resource escalation and dynamic primary/secondary/tertiary triage with retriage, casualty collection and ambulance exchange points, and Incident Command System–structured triage-driven transport."
-      },
-      {
-        "id": "43046174",
-        "pmid": "43046174",
-        "doi": "10.1186/s12873-026-01747-w",
-        "title": "Self-efficacy predicts bystander willingness for CPR",
-        "journal": "BMC Emergency Medicine",
-        "note": "Self-efficacy was the strongest predictor of intention (β 0.515, p<0.001, large effect), attitude smaller (β 0.206) and perceived norms negligible (β 0.094); intention mediated the path to behavioural willingness."
-      },
-      {
-        "id": "10.1177/27536386261509154",
-        "pmid": "",
-        "doi": "10.1177/27536386261509154",
-        "title": "Paramedic students learn safety from unsafe events",
-        "journal": "Paramedicine",
-        "note": "Four themes emerged: professional role modelling and feedback, unsafe situations as learning triggers, emotional impact and student vulnerability, and developing patient-safety awareness for future practice."
-      },
-      {
-        "id": "10.1186/s13049-026-01705-2",
-        "pmid": "",
-        "doi": "10.1186/s13049-026-01705-2",
-        "title": "Drowning and trauma lead Swedish mountain deaths",
-        "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
-        "note": "Drowning (n=7) and traumatic injuries (n=7) were the leading causes of death, then suffocation (4), hypothermia (4), disease (3) and intoxication (1); 25 of 26 were male and 13 died alone."
-      },
-      {
-        "id": "43044117",
-        "pmid": "43044117",
-        "doi": "10.2196/97722",
-        "title": "Protocol: climate and emergency dispatch volumes",
-        "journal": "JMIR Research Protocols",
-        "note": "Protocol only — will assess nonlinear temperature-response relationships, temporal lags and spatial variation in dispatch volumes across Hanover and Brunswick, comparing high-resolution versus station-based exposure data."
+        "id": "43052941",
+        "pmid": "43052941",
+        "doi": "10.1186/s12903-026-09704-6",
+        "title": "Shift work is rough on paramedics' teeth",
+        "journal": "BMC Oral Health",
+        "note": "54.9% reported current or recent dental/oral problems, 20% had no dental check-up in two years, and hygiene-kit availability was strongly associated with daily or more frequent on-duty brushing among 24-hour staff (85% vs 21%); 88–90% were willing to undergo workplace screening."
       }
     ]
   },
   "dailyUpdates": [
+    {
+      "date": "2026-11-20",
+      "papers": [
+        {
+          "id": "43055685",
+          "title": "Prehospital Trauma Compendium: Prehospital Management of Pediatric Traumatic Out-of-Hospital Circulatory Arrest – A Joint Position Statement and Resource Document of NAEMSP, ACS-COT, ACEP, and AAP",
+          "journal": "Prehospital Emergency Care",
+          "date": "2026-11-20",
+          "pmid": "43055685",
+          "doi": "10.1080/10903127.2026.2660751",
+          "summary": "A US joint position statement and resource document from NAEMSP, ACS-COT, ACEP and AAP updates guidance on withholding or discontinuing resuscitation in paediatric traumatic out-of-hospital circulatory arrest, prioritising reversible causes, rapid haemorrhage control, least-invasive airway care and transport to a trauma centre when safe and appropriate.",
+          "relevance": "🟢 High — Every intervention it recommends — haemorrhage control, least-invasive airway care, chest decompression for suspected tension pneumothorax — is a core Australian paramedic skill; chest decompression is carried by most services but not all, so a couple will still need local guidance on the specifics. The withholding/termination framing aligns with how Australian major-trauma practice treats these cases.",
+          "pubDate": "2026-11-19",
+          "topic": "Trauma",
+          "studyType": "Guideline / statement",
+          "design": "Joint position statement and resource document",
+          "n": "Not applicable (guidance document)",
+          "finding": "Recommendations: promptly identify children who may benefit from trauma-centre transport; treat reversible causes with direct pressure, wound packing and tourniquets, least-invasive airway management, and chest decompression only if thoracic trauma is suspected (no empiric bilateral decompression); compressions and ventilations have a larger role in paediatric than adult traumatic arrest.",
+          "caveat": "US consensus guidance, not an Australian guideline — withholding and termination decisions still follow local CPGs.",
+          "bottomLine": "Supports current practice",
+          "shortTitle": "Updated paediatric traumatic arrest position statement",
+          "learningGoal": "Refine my judgement on identifying children with traumatic arrest who may benefit from rapid haemorrhage control and trauma-centre transport."
+        },
+        {
+          "id": "10.1016/j.resuscitation.2026.111401",
+          "title": "Out-of-hospital cardiac arrests due to foreign body airway obstruction: A CanROC registry, retrospective cohort study",
+          "journal": "Resuscitation",
+          "date": "2026-11-20",
+          "pmid": "",
+          "doi": "10.1016/j.resuscitation.2026.111401",
+          "summary": "A Canadian CanROC registry cohort of 105,178 EMS-treated out-of-hospital cardiac arrests (2005–2023) found 1,106 (1.1%) were obviously foreign-body-airway-obstruction-related: prehospital ROSC was far more frequent than in presumed cardiac arrests (62.7% vs 37.8%) but survival to discharge was similar (10.6% vs 9.0%).",
+          "relevance": "🟢 High — A Canadian paramedic-model registry answering a question Australian crews face on every choking arrest. Bystander presence and shorter EMS response times drove outcomes — both central to how Australian systems are built, and the same arrest is managed the same way here.",
+          "pubDate": "2026-11",
+          "topic": "Cardiac arrest",
+          "studyType": "Registry",
+          "design": "Retrospective registry cohort (CanROC, 2005–2023)",
+          "n": "105,178 EMS-treated OHCAs, of which 1,106 obviously FBAO-related",
+          "finding": "FBAO-related arrests achieved prehospital ROSC more often than presumed cardiac arrests (62.7% vs 37.8%, OR 2.77) but survival to discharge did not differ (10.6% vs 9.0%, p=0.094); within FBAO arrests, survival was 18.1% with prehospital ROSC and 0.8% without, and was associated with younger age (aOR 0.76 per decade), shockable rhythm (aOR 4.76) and shorter EMS response time (aOR 0.81 per minute).",
+          "caveat": "Exploratory retrospective design, and 'obviously FBAO-related' classification depends on registry coding rather than verified cause of arrest.",
+          "bottomLine": "Supports current practice",
+          "shortTitle": "Choking arrests: ROSC common, survival still poor",
+          "learningGoal": "Strengthen my recognition of airway obstruction as the reversible cause in cardiac arrest and prioritise early airway clearance."
+        },
+        {
+          "id": "43051254",
+          "title": "Management of Traumatic Pneumothorax in the Emergency Department: A Two‐Centre Retrospective Cohort Study",
+          "journal": "Emergency Medicine Australasia",
+          "date": "2026-11-20",
+          "pmid": "43051254",
+          "doi": "10.1111/1742-6723.70401",
+          "summary": "An Australian two-centre retrospective cohort of 339 ED patients with traumatic pneumothorax found two-thirds were managed conservatively before leaving the ED, and of the 50 who arrived after a prehospital pleural intervention, 27 had chest drains inserted to formalise finger thoracostomy or needle decompression.",
+          "relevance": "🟡 Medium — The endpoints are in-hospital, but the prehospital pleural-intervention subgroup speaks directly to how prehospital needle decompression and finger thoracostomy hold up downstream — a skill most Australian services carry and some don't, so the findings inform practice unevenly across the country.",
+          "pubDate": "2026-11-18",
+          "topic": "Trauma",
+          "studyType": "Cohort",
+          "design": "Two-centre retrospective cohort",
+          "n": "339 patients aged 14 and over with traumatic pneumothorax",
+          "finding": "231 patients (68.1%) were initially managed without drainage; pneumothorax size >35 mm (aOR 41.0, 95% CI 16.4–102) and haemothorax (aOR 6.3, 95% CI 2.5–15.8) predicted ED-initiated drainage; 22.8% of drained patients had a recorded complication and in-hospital mortality was 5.6%.",
+          "caveat": "Retrospective design at only two EDs, and the prehospital pleural-intervention subgroup is small (n=50).",
+          "bottomLine": "Context only",
+          "shortTitle": "Traumatic pneumothorax: most EDs don't drain early",
+          "learningGoal": "Strengthen my judgement on when conservative management of traumatic pneumothorax is appropriate after prehospital pleural intervention."
+        },
+        {
+          "id": "43053902",
+          "title": "Barriers and Enablers of Trauma Triage Tool Implementation in Ireland: A Qualitative Study of First Responders",
+          "journal": "HRB Open Research",
+          "date": "2026-11-20",
+          "pmid": "43053902",
+          "doi": "10.12688/hrbopenres.14504.1",
+          "summary": "An Irish study protocol describes a qualitative project using the Consolidated Framework for Implementation Research to explore barriers and enablers to using the HSE trauma triage tool among up to 30 Dublin Fire Brigade paramedics, advanced paramedics, EMTs, firefighters and managers.",
+          "relevance": "🟡 Medium — It sits inside an Irish trauma-system rollout, but trauma triage tools guide major-trauma destination decisions across Australian services, and the implementation friction it targets — time pressure, limited training, resource limits, reluctance to change — is the same here.",
+          "pubDate": "2026-09-09",
+          "topic": "Operations & systems",
+          "studyType": "Other",
+          "design": "Qualitative study protocol (phenomenological, CFIR framework)",
+          "n": "Up to 30 Dublin Fire Brigade responders and managers",
+          "finding": "Protocol only — semi-structured interviews and focus groups are underway, with results intended to inform Irish trauma triage implementation strategy.",
+          "caveat": "No findings yet — this is the study protocol, results will come later.",
+          "bottomLine": "Context only",
+          "shortTitle": "Studying barriers to trauma triage tool use",
+          "learningGoal": "Understand the system barriers that shape trauma triage tool use in prehospital practice."
+        },
+        {
+          "id": "43052941",
+          "title": "Oral health behaviours and shift work barriers among Hungarian EMS personnel: a cross-sectional study",
+          "journal": "BMC Oral Health",
+          "date": "2026-11-20",
+          "pmid": "43052941",
+          "doi": "10.1186/s12903-026-09704-6",
+          "summary": "A Hungarian nationwide cross-sectional survey of 1,061 National Ambulance Service staff found over half (54.9%) reported current or recent dental or oral problems, and on-duty hygiene-kit availability was strongly associated with daily on-shift brushing (85% vs 21%) among 24-hour shift workers.",
+          "relevance": "🟡 Medium — The 24-hour shift patterns mirror Australian ambulance rosters and the fix it points to — enabling on-duty hygiene and routine care — is an organisational one any service could adopt, but oral health is a small slice of workforce wellbeing and the study is self-reported survey data from a single national system.",
+          "pubDate": "2026-08-25",
+          "topic": "Workforce & wellbeing",
+          "studyType": "Cross-sectional",
+          "design": "Nationwide cross-sectional online survey",
+          "n": "1,061 Hungarian National Ambulance Service staff",
+          "finding": "54.9% reported current or recent dental/oral problems, 20% had no dental check-up in two years, and hygiene-kit availability was strongly associated with daily or more frequent on-duty brushing among 24-hour staff (85% vs 21%); 88–90% were willing to undergo workplace screening.",
+          "caveat": "Self-reported cross-sectional survey — associations, not causation, and no outcome follow-up.",
+          "bottomLine": "Context only",
+          "shortTitle": "Shift work is rough on paramedics' teeth",
+          "learningGoal": "Understand how shift work and workplace hygiene-kit access shape oral health for Australian paramedics."
+        }
+      ]
+    },
     {
       "date": "2026-11-19",
       "papers": [
@@ -5534,91 +5527,6 @@
           "learningGoal": "Understand how structured team performance tools can strengthen debriefing quality in simulation-based resuscitation training."
         }
       ]
-    },
-    {
-      "date": "2026-10-21",
-      "papers": [
-        {
-          "id": "42896864",
-          "title": "Prehospital Pediatric Ventilation Quality Following Use of a Feedback Device: A Randomized Study",
-          "journal": "Pediatrics",
-          "date": "2026-10-21",
-          "pmid": "42896864",
-          "doi": "10.1542/peds.2026-077291",
-          "summary": "Randomised crossover simulation study with 123 EMS clinicians testing a ventilation feedback device on a paediatric manikin — guideline-adherent tidal volumes jumped from 16.2% to 87% of breaths with feedback, and rate adherence from 65% to 88.6%.",
-          "relevance": "🟢 High — Bag-mask ventilation of children is core practice on every Australian ambulance and the age-based guideline targets are the same ones used here — the only real catch is that it was done on a manikin rather than patients.",
-          "pubDate": "2026-10-20",
-          "topic": "Paediatrics",
-          "studyType": "Simulation",
-          "design": "Randomised crossover simulation study",
-          "n": "123 EMS clinicians across 5 agencies",
-          "finding": "Guideline-recommended tidal volume in 87% of breaths with feedback vs 16.2% without; rate adherence 88.6% vs 65%; mask leak <30% in 88.4% vs 80%",
-          "caveat": "Manikin simulation of a 3-year-old at 5 US agencies — no patient outcomes, and real paediatric airways are less forgiving",
-          "bottomLine": "Hypothesis-generating",
-          "shortTitle": "Feedback device lifts paediatric ventilation quality",
-          "learningGoal": "Refine my paediatric bag-mask ventilation technique to deliver guideline-consistent tidal volumes and rates in prehospital care."
-        },
-        {
-          "id": "42897715",
-          "title": "Traumatic Brain Injury in First Responders: From Hidden Burden to Occupational Health Action",
-          "journal": "The Journal of Head Trauma Rehabilitation",
-          "date": "2026-10-21",
-          "pmid": "42897715",
-          "doi": "10.1097/HTR.0000000000001227",
-          "summary": "Introduction to a themed issue on TBI in first responders, finding a substantial but underrecognised burden with no consistent pathways for recognition, rehabilitation or return to duty, and presenting a 28-recommendation multidisciplinary consensus statement.",
-          "relevance": "🟡 Medium — Return-to-duty and occupational health structures differ across Australian services, but the underrecognition of frontline TBI and its overlap with mental health is just as live a gap here.",
-          "pubDate": "2026-10-20",
-          "topic": "Workforce & wellbeing",
-          "studyType": "Guideline / statement",
-          "design": "Consensus statement / thematic review",
-          "n": "28 consensus recommendations across a multidisciplinary group",
-          "finding": "Substantial TBI burden in law enforcement, fire and EMS with persistent gaps in diagnosis, rehabilitation and duty-readiness; 28 recommendations spanning recognition, early assessment, return to duty and organisational policy",
-          "caveat": "Narrative synthesis of a themed issue — the authors concede first responder-specific evidence remains limited",
-          "bottomLine": "Context only",
-          "shortTitle": "TBI in first responders needs occupational pathways",
-          "learningGoal": "Understand how occupational traumatic brain injury in paramedics affects recognition, return to duty and organisational support."
-        },
-        {
-          "id": "10.1186/s12909-026-10646-4",
-          "title": "Interprofessional continuing education for prehospital behavioral emergency response: a city-wide pre-post study in Taiwan",
-          "journal": "BMC Medical Education",
-          "date": "2026-10-21",
-          "pmid": "",
-          "doi": "10.1186/s12909-026-10646-4",
-          "summary": "City-wide single-group pre-post evaluation of a 4-hour interprofessional behavioural-emergency course in Taiwan: self-efficacy rose from 3.16 to 3.54 (dz 0.76) and cognition rose in the 395 paired attendees, but stigma scores did not improve; the authors note these are pre-post associations, not causal evidence.",
-          "relevance": "🟡 Medium — Training paramedics alongside police, fire and mental health clinicians speaks directly to Australian co-response and joint-training debates, though this ran in a different EMS system with no control group.",
-          "pubDate": "2026-10-19",
-          "topic": "Education & training",
-          "studyType": "Cohort",
-          "design": "Single-group pre-post study",
-          "n": "750 attendees, 395 in the paired analysis",
-          "finding": "Self-efficacy rose from 3.16 to 3.54 (mean difference 0.39, 95% CI 0.34–0.44, dz 0.76) and cognition from 3.81 to 3.95; behavioural-emergency stigma rose slightly and substance-use stigma was unchanged",
-          "caveat": "Uncontrolled single-group design with anonymous demographic linkage and immediate self-reported outcomes only",
-          "bottomLine": "Context only",
-          "shortTitle": "Joint training linked to higher behavioural emergency confidence",
-          "learningGoal": "Strengthen my interprofessional collaboration when managing behavioural emergencies alongside mental health clinicians."
-        },
-        {
-          "id": "42897726",
-          "title": "Nursing Competencies in Helicopter Emergency Medical Services (HEMS) in Spain: A Qualitative Study of Professional Profiles and Advanced Training",
-          "journal": "Nursing Open",
-          "date": "2026-10-21",
-          "pmid": "42897726",
-          "doi": "10.1002/nop2.70937",
-          "summary": "A qualitative Spanish study of 17 HEMS professionals found flight nursing was seen as a highly specialised profile requiring critical-care experience, advanced technical skills, aviation safety training and structured in-person education — with no formalised national training pathway.",
-          "relevance": "🟡 Medium — Spain runs a physician-and-nurse HEMS model unlike Australian flight services, but the emphasis on critical-care depth, CRM and aviation safety echoes what Australian aeromedical retrieval training already requires.",
-          "pubDate": "2026-10",
-          "topic": "Operations & systems",
-          "studyType": "Qualitative",
-          "design": "Qualitative study (phenomenologically informed thematic analysis)",
-          "n": "17 HEMS professionals interviewed",
-          "finding": "Four themes: access to the HEMS environment, technical competencies, professional role development and structured professionalisation; online-only training widely seen as insufficient",
-          "caveat": "Small purposive sample in a single country's physician-staffed system; perception-based, no outcome data",
-          "bottomLine": "Context only",
-          "shortTitle": "What makes a HEMS nurse: Spanish views",
-          "learningGoal": "Understand what critical care and aviation competencies underpin safe aeromedical retrieval practice in Australia."
-        }
-      ]
     }
   ],
   "weeklyTldr": {
@@ -5714,30 +5622,30 @@
   },
   "archive": {
     "url": "data/papers-archive.json",
-    "version": "2026-11-18T18:20:11Z",
-    "days": 97,
-    "papers": 505,
+    "version": "2026-11-19T18:20:11Z",
+    "days": 98,
+    "papers": 509,
     "from": "2026-04-21",
-    "to": "2026-10-20",
+    "to": "2026-10-21",
     "topics": {
       "Airway & ventilation": 24,
       "Cardiac (non-arrest)": 15,
       "Cardiac arrest": 150,
       "Education & preparedness": 1,
-      "Education & training": 24,
+      "Education & training": 25,
       "Mental health (patients)": 9,
       "Obstetrics": 5,
       "Older people": 4,
-      "Operations & systems": 85,
+      "Operations & systems": 86,
       "Other": 7,
-      "Paediatrics": 42,
+      "Paediatrics": 43,
       "Pain & sedation": 12,
       "Respiratory": 4,
       "Sepsis & infection": 9,
       "Stroke & neuro": 15,
       "Toxicology": 11,
       "Trauma": 67,
-      "Workforce & wellbeing": 16
+      "Workforce & wellbeing": 17
     }
   }
 }
