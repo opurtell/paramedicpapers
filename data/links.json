@@ -1,28 +1,16 @@
 {
- "updated": "2026-11-19",
+ "updated": "2026-11-20",
  "latest": [
   {
-   "key": "43046131",
-   "title": "Prehospital TXA lowers mortality in bleeding trauma",
+   "key": "43051254",
+   "title": "Traumatic pneumothorax: most EDs don't drain early",
    "topic": "Trauma",
-   "finding": "Lower 28–30-day mortality with prehospital TXA (RR 0.81, 95% CI 0.68–0.95); TBI mortality (RR 0.87, 95% CI 0.64–1.20) and in-hospital mortality came from single trials; no statistically significant increase in thromboembolic events or seizures."
-  },
-  {
-   "key": "43044722",
-   "title": "First responder alerts linked to more defibrillation",
-   "topic": "Cardiac arrest",
-   "finding": "Activation (41% of cases) predicted bystander defibrillation of 9.6% vs 5.5% at 389 m and 13.0% vs 4.8% at 1,183 m; TMLE estimated +6.1 pp bystander defibrillation (95% CI 4.5–7.8) and +1.8 pp 30-day survival (95% CI 0.1–3.6)."
-  },
-  {
-   "key": "43044058",
-   "title": "Mobile app lifts simulated trauma performance",
-   "topic": "Trauma",
-   "finding": "35.4% of app-supported scenarios met all critical actions vs 6.3% without (adjusted OR 8.28, 95% CI 2.21–31.09); paediatric completion 30.4% vs 0%; users rated the app practical and valuable."
+   "finding": "231 patients (68.1%) were initially managed without drainage; pneumothorax size >35 mm (aOR 41.0, 95% CI 16.4–102) and haemothorax (aOR 6.3, 95% CI 2.5–15.8) predicted ED-initiated drainage; 22.8% of drained patients had a recorded complication and in-hospital mortality was 5.6%."
   }
  ],
  "episode": {
-  "date": "2026-11-19",
-  "title": "Prehospital TXA lowers mortality in bleeding trauma · 19 Nov",
-  "page": "/episodes/2026-11-19/"
+  "date": "2026-11-20",
+  "title": "Updated paediatric traumatic arrest position statement · 20 Nov",
+  "page": "/episodes/2026-11-20/"
  }
 }
