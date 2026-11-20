@@ -25,6 +25,20 @@
     <itunes:explicit>false</itunes:explicit>
     <podcast:guid>09fa3693-e2ac-527c-9d1c-f68df149b888</podcast:guid>
     <item>
+      <title>Rescue breaths linked to better paediatric arrest survival · 21 Nov</title>
+      <link>https://paramedicpapers.com/episodes/2026-11-21/</link>
+      <description>4 papers: Rescue breaths linked to better paediatric arrest survival; Incomplete on-scene care in paediatric cardiac arrest; Blood stored on ambulances stays within limits to day 42; Blood biomarker assay fits inside an EMS transport window</description>
+      <content:encoded><![CDATA[<p>4 papers: Rescue breaths linked to better paediatric arrest survival; Incomplete on-scene care in paediatric cardiac arrest; Blood stored on ambulances stays within limits to day 42; Blood biomarker assay fits inside an EMS transport window</p><p>Papers in this episode:</p><ul><li><a href="https://doi.org/10.1001/jamanetworkopen.2026.44991">Rescue breaths linked to better paediatric arrest survival <em>(JAMA Network Open)</em></a></li><li><a href="https://doi.org/10.1080/10903127.2026.2761025">Incomplete on-scene care in paediatric cardiac arrest <em>(Prehospital Emergency Care)</em></a></li><li><a href="https://doi.org/10.1080/10903127.2026.2755973">Blood stored on ambulances stays within limits to day 42 <em>(Prehospital Emergency Care)</em></a></li><li><a href="https://doi.org/10.1136/tsaco-2026-002383">Blood biomarker assay fits inside an EMS transport window <em>(Trauma Surgery &amp; Acute Care Open)</em></a></li></ul><p><a href="https://paramedicpapers.com/episodes/2026-11-21/">Show notes and transcript</a></p>]]></content:encoded>
+      <pubDate>Sat, 21 Nov 2026 05:32:37 +1100</pubDate>
+      <guid isPermaLink="false">https://audio.paramedicpapers.com/ep-2026-11-21.mp3</guid>
+      <enclosure url="https://op3.dev/e/audio.paramedicpapers.com/ep-2026-11-21.mp3" length="1028588" type="audio/mpeg"/>
+      <itunes:duration>257</itunes:duration>
+      <itunes:summary>4 papers: Rescue breaths linked to better paediatric arrest survival; Incomplete on-scene care in paediatric cardiac arrest; Blood stored on ambulances stays within limits to day 42; Blood biomarker assay fits inside an EMS transport window</itunes:summary>
+      <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
+      <itunes:episodeType>full</itunes:episodeType>
+      <podcast:transcript url="https://audio.paramedicpapers.com/ep-2026-11-21.txt" type="text/plain" language="en-au"/>
+    </item>
+    <item>
       <title>Updated paediatric traumatic arrest position statement · 20 Nov</title>
       <link>https://paramedicpapers.com/episodes/2026-11-20/</link>
       <description>4 papers: Updated paediatric traumatic arrest position statement; Choking arrests: ROSC common, survival still poor; Traumatic pneumothorax: most EDs don't drain early; Studying barriers to trauma triage tool use</description>
@@ -429,20 +443,6 @@
       <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
       <itunes:episodeType>full</itunes:episodeType>
       <podcast:transcript url="https://audio.paramedicpapers.com/ep-2026-10-23.txt" type="text/plain" language="en-au"/>
-    </item>
-    <item>
-      <title>Paramedic Papers Daily — 22 October 2026</title>
-      <link>https://paramedicpapers.com/episodes/2026-10-22/</link>
-      <description>4 papers: Dispatcher training + volunteer app lifts bystander CPR; Real-time feedback tidies BVM ventilation in arrest; Fatigue common a year after cardiac arrest; Keep pulse checks under 5 seconds</description>
-      <content:encoded><![CDATA[<p>4 papers: Dispatcher training + volunteer app lifts bystander CPR; Real-time feedback tidies BVM ventilation in arrest; Fatigue common a year after cardiac arrest; Keep pulse checks under 5 seconds</p><p>Papers in this episode:</p><ul><li><a href="https://doi.org/10.1016/S2468-2667(26)00200-8">Dispatcher training + volunteer app lifts bystander CPR <em>(The Lancet. Public Health)</em></a></li><li><a href="https://doi.org/10.1016/j.resuscitation.2026.111364">Real-time feedback tidies BVM ventilation in arrest <em>(Resuscitation)</em></a></li><li><a href="https://doi.org/10.1016/j.resuscitation.2026.111359">Fatigue common a year after cardiac arrest <em>(Resuscitation)</em></a></li><li><a href="https://doi.org/10.1016/j.resuscitation.2026.111358">Keep pulse checks under 5 seconds <em>(Resuscitation)</em></a></li></ul><p><a href="https://paramedicpapers.com/episodes/2026-10-22/">Show notes and transcript</a></p>]]></content:encoded>
-      <pubDate>Thu, 22 Oct 2026 13:48:52 +1100</pubDate>
-      <guid isPermaLink="false">https://audio.paramedicpapers.com/ep-2026-10-22.mp3</guid>
-      <enclosure url="https://op3.dev/e/audio.paramedicpapers.com/ep-2026-10-22.mp3" length="978189" type="audio/mpeg"/>
-      <itunes:duration>244</itunes:duration>
-      <itunes:summary>4 papers: Dispatcher training + volunteer app lifts bystander CPR; Real-time feedback tidies BVM ventilation in arrest; Fatigue common a year after cardiac arrest; Keep pulse checks under 5 seconds</itunes:summary>
-      <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
-      <itunes:episodeType>full</itunes:episodeType>
-      <podcast:transcript url="https://audio.paramedicpapers.com/ep-2026-10-22.txt" type="text/plain" language="en-au"/>
     </item>
   </channel>
 </rss>
