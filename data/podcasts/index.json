@@ -1,5 +1,29 @@
 [
  {
+  "id": "prehospital-care-podcast",
+  "name": "Pre-Hospital Care Podcast",
+  "publisher": "Eoin Walker",
+  "focus": "Prehospital clinical topics and recent evidence",
+  "region": "Ireland",
+  "site": "https://podcasters.spotify.com/pod/show/phcp",
+  "art": "data/podcasts/art/prehospital-care-podcast.jpg",
+  "episodes": 403,
+  "latest": "2026-11-19",
+  "updated": "2026-11-20"
+ },
+ {
+  "id": "ems-20-20",
+  "name": "EMS 20/20",
+  "publisher": "Spencer Oliver & Christopher Pfingsten",
+  "focus": "Real calls from real responders and the lessons in them",
+  "region": "US",
+  "site": "https://longpausemedia.com/podcasts/ems-20-20",
+  "art": "data/podcasts/art/ems-20-20.jpg",
+  "episodes": 266,
+  "latest": "2026-11-19",
+  "updated": "2026-11-20"
+ },
+ {
   "id": "ecritcare",
   "name": "eCritCare",
   "publisher": "Dr Swapnil Pawar & Dr Jose Chacko",
@@ -22,18 +46,6 @@
   "episodes": 292,
   "latest": "2026-11-17",
   "updated": "2026-11-17"
- },
- {
-  "id": "prehospital-care-podcast",
-  "name": "Pre-Hospital Care Podcast",
-  "publisher": "Eoin Walker",
-  "focus": "Prehospital clinical topics and recent evidence",
-  "region": "Ireland",
-  "site": "https://podcasters.spotify.com/pod/show/phcp",
-  "art": "data/podcasts/art/prehospital-care-podcast.jpg",
-  "episodes": 402,
-  "latest": "2026-11-16",
-  "updated": "2026-11-16"
  },
  {
   "id": "emcrit",
@@ -70,18 +82,6 @@
   "episodes": 34,
   "latest": "2026-11-11",
   "updated": "2026-11-11"
- },
- {
-  "id": "ems-20-20",
-  "name": "EMS 20/20",
-  "publisher": "Spencer Oliver & Christopher Pfingsten",
-  "focus": "Real calls from real responders and the lessons in them",
-  "region": "US",
-  "site": "https://longpausemedia.com/podcasts/ems-20-20",
-  "art": "data/podcasts/art/ems-20-20.jpg",
-  "episodes": 265,
-  "latest": "2026-11-11",
-  "updated": "2026-11-12"
  },
  {
   "id": "em-cases",
