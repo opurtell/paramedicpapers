@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <meta name="theme-color" content="#FBFAF8">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#FBFAF8" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#121417" media="(prefers-color-scheme: dark)">
   <title>About — Paramedic Papers</title>
   <meta name="description" content="Who runs Paramedic Papers, how new prehospital research is found and summarised each morning, and how to use the summaries safely.">
   <link rel="canonical" href="https://paramedicpapers.com/about.html">
@@ -28,13 +30,19 @@
   <link rel="preload" href="/fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/fonts/ibm-plex-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/css/fonts.css?v=1">
-  <link rel="stylesheet" href="/css/static.css?v=2">
+  <link rel="stylesheet" href="/css/static.css?v=3">
+  <!-- Theme follows the device unless the reader chose Light or Dark
+       (pp:theme). Applied before first paint so there's no flash. -->
   <script>
     try {
-      if (localStorage.getItem('pp:theme') === 'dark') {
-        document.documentElement.setAttribute('data-theme', 'dark');
-        document.querySelector('meta[name="theme-color"]').setAttribute('content', '#121417');
-      }
+      (function (t) {
+        if (t !== 'light' && t !== 'dark') return;
+        document.documentElement.setAttribute('data-theme', t);
+        document.querySelector('meta[name="color-scheme"]').content = t;
+        document.querySelectorAll('meta[name="theme-color"]').forEach(function (m) {
+          m.content = t === 'dark' ? '#121417' : '#FBFAF8';
+        });
+      })(localStorage.getItem('pp:theme'));
     } catch (e) {}
   </script>
   <link rel="icon" type="image/png" sizes="32x32" href="/icon-32.png">

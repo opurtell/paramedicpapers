@@ -151,30 +151,62 @@
     return resp.json();
   }
 
-  /* ── theme (light default; dark is opt-in, remembered per device) ── */
+  /* ── theme: follow the device unless the reader picks Light or Dark ──
+     Two-state toggle over three states (modern-web-guidance
+     dark-mode-toggle): pp:theme holds 'light' or 'dark' only when the pick
+     differed from the device setting at the time. Picking the device's own
+     setting clears it, so the site follows the device again. A saved pick is
+     kept even if the device later switches to match it. */
   var THEME_KEY = 'pp:theme';
+  var THEME_BAR = { light: '#FBFAF8', dark: '#121417' };
+  var DEVICE_DARK = window.matchMedia('(prefers-color-scheme: dark)');
+
+  function savedTheme() {
+    try {
+      var t = localStorage.getItem(THEME_KEY);
+      return t === 'light' || t === 'dark' ? t : null;
+    } catch (e) { return null; }
+  }
+  function deviceTheme() { return DEVICE_DARK.matches ? 'dark' : 'light'; }
+  /* The theme on screen right now: the reader's pick, else the device's. */
+  function shownTheme() {
+    return document.documentElement.getAttribute('data-theme') || deviceTheme();
+  }
 
   function bindTheme() {
-    var dark = document.documentElement.getAttribute('data-theme') === 'dark';
-    applyTheme(dark);
+    applyTheme(savedTheme());
     $('btn-theme').addEventListener('click', function () {
-      dark = !dark;
-      applyTheme(dark);
+      var want = shownTheme() === 'dark' ? 'light' : 'dark';
+      var pick = want === deviceTheme() ? null : want;
       try {
-        if (dark) localStorage.setItem(THEME_KEY, 'dark');
+        if (pick) localStorage.setItem(THEME_KEY, pick);
         else localStorage.removeItem(THEME_KEY);
       } catch (e) {}
+      applyTheme(pick);   // applies even if storage is blocked
+    });
+    /* Device switched light/dark: only the button needs updating (CSS
+       already follows), unless a pick is set, which stays. */
+    DEVICE_DARK.addEventListener('change', function () {
+      applyTheme(document.documentElement.getAttribute('data-theme'));
+    });
+    /* Picked in another tab. */
+    window.addEventListener('storage', function (e) {
+      if (e.key === THEME_KEY || e.key === null) applyTheme(savedTheme());
     });
   }
 
-  function applyTheme(dark) {
+  function applyTheme(pick) {
     var root = document.documentElement;
-    if (dark) root.setAttribute('data-theme', 'dark');
+    if (pick) root.setAttribute('data-theme', pick);
     else root.removeAttribute('data-theme');
-    document.querySelector('meta[name="theme-color"]').setAttribute('content', dark ? '#121417' : '#FBFAF8');
+    var scheme = document.querySelector('meta[name="color-scheme"]');
+    if (scheme) scheme.content = pick || 'light dark';
+    Array.prototype.forEach.call(document.querySelectorAll('meta[name="theme-color"]'), function (m) {
+      m.content = THEME_BAR[pick || (/dark/.test(m.media) ? 'dark' : 'light')];
+    });
+    var dark = shownTheme() === 'dark';
+    var label = dark ? 'Switch to light mode' : 'Switch to dark mode';
     var btn = $('btn-theme');
-    var label = dark ? 'Light mode' : 'Dark mode';
-    btn.setAttribute('aria-pressed', String(dark));
     btn.setAttribute('aria-label', label);
     btn.title = label;
     btn.querySelector('use').setAttribute('href', dark ? '#hi-sun' : '#hi-moon');
@@ -1840,7 +1872,7 @@
          (join.paramedicpapers.com reads ?theme=light|dark). Reload the
          frame only if the theme changed since it was last opened. */
       var frame = $('join-modal-frame');
-      var theme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
+      var theme = shownTheme();
       var src = $('home-intro-join').href.replace(/\/?$/, '/') + '?theme=' + theme;
       if (frame.getAttribute('src') !== src) frame.setAttribute('src', src);
     });
