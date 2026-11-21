@@ -101,6 +101,7 @@
   PP.hooks.podcastLogged = podcastLogged;
   PP.hooks.podcastStats = podcastStats;
   PP.hooks.openAdd = openAdd;
+  PP.hooks.installChanged = function () { if (st.sheet && st.sheet.type === 'menu') renderMenu(); };
   PP.hooks.savedChanged = savedChanged;
   PP.hooks.savedStatus = savedStatus;
 
@@ -533,11 +534,20 @@
         item('cpd', 'cpd', 'CPD', cpdLine()) +
         item('saved', 'saved', 'Saved', saved ? saved + ' paper' + (saved === 1 ? '' : 's') : 'Papers you keep for later', saved || '') +
         item('account', 'user', 'Account', acct) +
+        (PP.canInstall && PP.canInstall()
+          ? '<button class="menu-item" data-install type="button">' +
+              '<span class="menu-ico">' + ico('download') + '</span>' +
+              '<span class="menu-text"><span class="menu-title">Install app</span>' +
+              '<span class="menu-sub">Open it from your home screen, like any app</span></span></button>'
+          : '') +
       '</nav>' +
       '<a class="menu-foot" href="privacy.html">Privacy</a>');
     el.querySelectorAll('[data-go]').forEach(function (b) {
       b.addEventListener('click', function () { closeSheet(true); PP.setTab(b.getAttribute('data-go')); });
     });
+    var inst = el.querySelector('[data-install]');
+    /* Install first (it needs this tap), then close the menu. */
+    if (inst) inst.addEventListener('click', function () { PP.install(inst); closeSheet(true); });
   }
 
   /* ── shared bits ────────────────────────────────────── */

@@ -28,7 +28,7 @@
   <link rel="preload" href="/fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/fonts/ibm-plex-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="css/fonts.css?v=1">
-  <link rel="stylesheet" href="css/style.css?v=41">
+  <link rel="stylesheet" href="css/style.css?v=42">
   <!-- Theme follows the device unless the reader chose Light or Dark
        (pp:theme). Applied before first paint so there's no flash. -->
   <script>
@@ -200,6 +200,9 @@
       </div>
       <div class="masthead-actions">
         <span class="updated" id="last-updated"></span>
+        <button class="icon-btn" id="btn-install" type="button" title="Install app" aria-label="Install app" hidden>
+          <svg class="hi" aria-hidden="true"><use href="#hi-download"/></svg>
+        </button>
         <button class="icon-btn" id="btn-theme" type="button" title="Switch to dark mode" aria-label="Switch to dark mode">
           <svg class="hi" aria-hidden="true"><use href="#hi-moon"/></svg>
         </button>
@@ -568,8 +571,8 @@
   <!-- defer keeps the order (cpd.js and podcasts.js rely on app.js's
        window.PP); all three start from DOMContentLoaded as before. -->
   <script defer src="js/safe-html.js?v=1"></script>
-  <script defer src="js/app.js?v=46"></script>
-  <script defer src="js/cpd.js?v=23"></script>
+  <script defer src="js/app.js?v=47"></script>
+  <script defer src="js/cpd.js?v=24"></script>
   <script defer src="js/podcasts.js?v=5"></script>
 </body>
 </html>
