@@ -26,7 +26,7 @@
   <link rel="preload" href="/fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/fonts/ibm-plex-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="css/fonts.css?v=1">
-  <link rel="stylesheet" href="css/style.css?v=38">
+  <link rel="stylesheet" href="css/style.css?v=39">
   <!-- Theme follows the device unless the reader chose Light or Dark
        (pp:theme). Applied before first paint so there's no flash. -->
   <script>
@@ -47,8 +47,32 @@
   <link rel="manifest" href="site.webmanifest">
   <link rel="alternate" type="application/rss+xml" title="Paramedic Papers Daily" href="feed.xml">
   <!-- Cloudflare Web Analytics: cookie-free visit counts -->
-  <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "767370751000434aad7703e82270a359"}'></script>
-  <script defer src="/js/track.js?v=1"></script>
+  <script async src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "767370751000434aad7703e82270a359"}'></script>
+  <script defer src="/js/track.js?v=2"></script>
+  <!-- Speculation rules (modern-web-guidance improve-next-page-load-performance):
+       links to the static pages greg builds are fetched ahead when the
+       reader hovers or starts to tap them, and prerendered on press, so
+       they open almost instantly. Chromium only; other browsers ignore it.
+       The dashboard itself ("/") is never prerendered. -->
+  <script type="speculationrules">
+  {
+    "prefetch": [{
+      "where": { "or": [
+        { "href_matches": "/papers/*" }, { "href_matches": "/topics/*" },
+        { "href_matches": "/daily/*" }, { "href_matches": "/episodes/*" },
+        { "href_matches": "/about.html" }
+      ] },
+      "eagerness": "moderate"
+    }],
+    "prerender": [{
+      "where": { "or": [
+        { "href_matches": "/papers/*" }, { "href_matches": "/topics/*" },
+        { "href_matches": "/daily/*" }, { "href_matches": "/episodes/*" }
+      ] },
+      "eagerness": "conservative"
+    }]
+  }
+  </script>
   <!-- Structured data for search engines (hand-written, not generated). -->
   <script type="application/ld+json">
   {
@@ -190,12 +214,12 @@
     <p class="offline-note" id="offline-note" role="status" hidden></p>
 
     <!-- ── HOME ───────────────────────────────────────────── -->
-    <section class="page" id="page-home">
+    <section class="page has-intro" id="page-home">
       <!-- First-visit intro (review QW3, option A): says what the site is and
            who it's for. Shown until dismissed or until the reader signs up
            for the PD brief (js/app.js renderIntro). Hides the CPD promo
            while it shows, so there's one message at a time. -->
-      <aside class="home-intro" id="home-intro" aria-label="About Paramedic Papers" hidden>
+      <aside class="home-intro" id="home-intro" aria-label="About Paramedic Papers">
         <button class="home-intro-close" id="home-intro-close" type="button" aria-label="Dismiss"><svg class="hi" aria-hidden="true"><use href="#hi-x"/></svg></button>
         <h2 class="home-intro-head">New prehospital research, summarised every morning for Australian paramedics.</h2>
         <p class="home-intro-text">Read it here, listen to the short daily podcast, or get the PD brief by email every week on a day you choose. Free and independent.</p>
@@ -204,15 +228,27 @@
           <a class="btn" href="/about.html" id="home-intro-about" aria-haspopup="dialog">How it works</a>
         </div>
       </aside>
-      <!-- Latest-episode strip. Hidden until episodes.json exists; spans
-           both home columns on desktop (see css). -->
-      <article class="panel podcast-strip" id="podcast-strip" hidden>
-        <button class="ep-play" id="strip-play" type="button" aria-label="Play latest episode">
+      <!-- Hide the intro before first paint if it was dismissed, so it never
+           appears and then vanishes (layout shift). app.js renderIntro()
+           keeps it in step after load. -->
+      <script>
+        try {
+          if (localStorage.getItem('pp:intro-closed') === '1') {
+            document.getElementById('home-intro').hidden = true;
+            document.getElementById('page-home').classList.remove('has-intro');
+          }
+        } catch (e) {}
+      </script>
+      <!-- Latest-episode strip. Shown from the first paint so the page below
+           doesn't jump when episodes.json arrives; hidden only if it fails.
+           Spans both home columns on desktop (see css). -->
+      <article class="panel podcast-strip" id="podcast-strip">
+        <button class="ep-play" id="strip-play" type="button" aria-label="Play latest episode" disabled>
           <svg class="hi hi-solid" aria-hidden="true"><use class="ply" href="#hi-play"/><use class="pse" href="#hi-pause" style="display:none"/></svg>
         </button>
         <div class="strip-text">
           <span class="panel-kicker panel-kicker-accent">Daily podcast</span>
-          <span class="strip-title" id="strip-title"></span>
+          <span class="strip-title" id="strip-title">Loading the latest episode…</span>
         </div>
         <span class="strip-dur" id="strip-dur"></span>
         <button class="strip-link" id="strip-open" type="button">All episodes <svg class="hi" aria-hidden="true"><use href="#hi-arrow"/></svg></button>
@@ -529,7 +565,7 @@
 
   <!-- defer keeps the order (cpd.js and podcasts.js rely on app.js's
        window.PP); all three start from DOMContentLoaded as before. -->
-  <script defer src="js/app.js?v=43"></script>
+  <script defer src="js/app.js?v=44"></script>
   <script defer src="js/cpd.js?v=21"></script>
   <script defer src="js/podcasts.js?v=4"></script>
 </body>

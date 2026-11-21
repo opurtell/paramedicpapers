@@ -49,7 +49,20 @@ a link or saved paper that points at an older one. Without an `archive` block th
 app treats `papers.json` as the whole set, as before.
 
 `sw.js` keeps the last copy of the app and its data on the device for offline use
-(network first, so online readers always get the latest).
+(network first for pages and data, so online readers always get the latest). Two
+exceptions: `css/` and `js/` files loaded with `?v=N`, and fonts, are served from the
+device cache first, so **a changed file that keeps its old `?v=` stays stale for
+readers**; and at most 60 paper/topic/daily/episode pages are kept (least recently
+opened dropped first). `static.css`, `fonts.css` and `track.js` stay network first
+because greg's built pages reference them with their own `?v=` (bump it in
+`build_static_pages.py` via a greg patch).
+
+Loading speed (web guidance phase 4, Nov 2026): long Papers and Podcast lists use
+`content-visibility: auto`; `index.html` has speculation rules that prefetch links to
+the built pages on hover and prerender them on press (Chromium only); same-origin page
+loads cross-fade (`@view-transition` in `style.css` and `static.css`); on first load
+`app.js` draws Today, yields, then draws the other tabs. `track.js` counts a
+prerendered page only once it is shown.
 
 The JSON schema:
 
@@ -285,8 +298,10 @@ cd ~/.hermes/paramedic/dashboard
 git add index.html css/ js/ && git commit -m "..." && git push
 ```
 
-Bump the cache-bust query strings when `style.css` or `app.js` change:
-`css/style.css?v=N` / `js/app.js?v=N` in `index.html`. GitHub Pages deploys
+Bump the cache-bust query strings whenever a CSS or JS file changes:
+`css/style.css?v=N` / `js/app.js?v=N` (and the other `?v=` files) in `index.html`.
+The service worker serves `?v=` files from the device cache, so a missed bump means
+readers keep the old file. GitHub Pages deploys
 within a minute or two of push.
 
 ## License

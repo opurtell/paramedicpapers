@@ -354,6 +354,15 @@ main { padding-bottom: calc(var(--tabbar-h) + env(safe-area-inset-bottom)); }
   border-radius: 14px; padding: 15px 16px; margin-bottom: 10px;
   box-shadow: 0 1px 2px rgba(var(--shadow-rgb),.04);
 }
+/* Long lists: cards past the first screen skip layout and paint until
+   they scroll near (modern-web-guidance defer-rendering-heavy-content).
+   The first four stay normal so the first screen isn't delayed. The size
+   is the measured average card (about 300-330px at 390 and 1280 wide);
+   `auto` then remembers each card's real height once drawn. */
+#feed-list > .paper-card:nth-child(n+5) {
+  content-visibility: auto;
+  contain-intrinsic-size: auto none auto 20rem;
+}
 .paper-card.is-pinned {
   border-color: var(--warm);
   box-shadow: 0 2px 10px -4px rgba(194,86,47,.35);
@@ -1012,6 +1021,14 @@ a.act { color: var(--accent); }
   border-bottom: 1px solid var(--hair);
 }
 .ep-row { scroll-margin-top: 110px; }  /* clear the sticky header on #episode= links */
+/* Episode rows past the first screen render on demand, as feed cards do.
+   Paint containment clips at the row's edge, so the row gets 4px of side
+   padding (cancelled by the margin) to keep the play button's focus ring. */
+#episode-list > .ep-row:nth-child(n+7) {
+  content-visibility: auto;
+  contain-intrinsic-size: auto none auto 8.5rem;
+  padding-inline: 4px; margin-inline: -4px;
+}
 .ep-main { display: flex; align-items: center; gap: 12px; }
 .ep-notes-btn { margin-top: 4px; }
 .ep-notes { padding: 10px 0 2px 52px; display: flex; flex-direction: column; gap: 10px; }
@@ -1708,3 +1725,12 @@ body.has-player main {
 }
 .pick-row:hover { background: var(--accent-lo); }
 .pick-title { font-size: 14.5px; font-weight: 500; color: var(--ink); line-height: 1.35; }
+
+/* ── Page-to-page transitions ─────────────────────────── */
+/* Same-origin page loads (dashboard to a paper, topic, daily or episode
+   page and back) cross-fade instead of flashing white. css/static.css has
+   the same rule; both pages must opt in. Off under reduced motion.
+   Firefox ignores it and loads pages as before. */
+@media (prefers-reduced-motion: no-preference) {
+  @view-transition { navigation: auto; }
+}

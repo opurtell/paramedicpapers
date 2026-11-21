@@ -28,6 +28,7 @@
     topic: '',
     feedLimit: 0,
     episodes: [],
+    episodesLoaded: false,  /* the Home strip shows a placeholder until then */
     brief: null,
     playDate: null,
     rate: loadRate(),
@@ -100,17 +101,34 @@
     syncLayout();
     registerOffline();
 
+    /* Episodes and the PD brief don't depend on papers.json, so ask for all
+       three at once rather than one after another. */
+    var episodesReq = loadEpisodes();
+    var briefReq = loadBrief();
+    episodesReq.catch(function () {});  /* handled below; no unhandled-rejection noise */
+    briefReq.catch(function () {});
+
     try {
       state.data = await loadData(false);
     } catch (err) {
       console.error(err);
+      $('podcast-strip').hidden = true;
       $('feed-list').innerHTML = '<p class="empty">' + (navigator.onLine === false
         ? 'You\u2019re offline and no papers are saved on this device yet. Open the site once with signal and they\u2019ll be kept for next time.'
         : 'Unable to load research data. Please try again later.') + '</p>';
       return;
     }
     markSeen();
-    renderAll();
+    /* Opening on Today (the usual case): draw what's on screen, let the
+       browser paint, then draw the other tabs (break-up-long-tasks). Any
+       other starting view is drawn in one go so it never flashes Today. */
+    if (tabFromHash() === 'home' && !paperFromHash() && !postFromHash()) {
+      renderFirstView();
+      await yieldToMain();
+      renderOtherViews();
+    } else {
+      renderAll();
+    }
     renderOffline();
     if (savedPapers().length < Object.keys(state.saved).length) withArchive();
     if (paperFromHash()) openPaperLink();
@@ -119,18 +137,21 @@
 
     /* Podcast episodes are independent of papers.json — a missing or failed
        episodes.json must never break the paper dashboard. */
-    loadEpisodes().then(function (eps) {
+    episodesReq.then(function (eps) {
       state.episodes = eps;
+      state.episodesLoaded = true;
       renderPodcastStrip();
       renderEpisodes();
       renderPaperLists();
       if (episodeFromHash()) openEpisodeLink();
     }).catch(function (err) {
       console.warn('No podcast episodes:', err && err.message);
+      state.episodesLoaded = true;
+      renderPodcastStrip();  /* hides the strip */
     });
 
     /* The PD brief is optional too: no file, no card. */
-    loadBrief().then(function (b) {
+    briefReq.then(function (b) {
       state.brief = b;
       renderBrief();
     }).catch(function (err) {
@@ -229,6 +250,7 @@
       if (hadArchive) withArchive();
       loadEpisodes().then(function (eps) {
         state.episodes = eps;
+        state.episodesLoaded = true;
         renderPodcastStrip();
         renderEpisodes();
         renderPaperLists();
@@ -484,20 +506,40 @@
   /* ── rendering ──────────────────────────────────────── */
 
   function renderAll() {
+    renderFirstView();
+    renderOtherViews();
+  }
+
+  /* Today, the header and the sidebar: what the first screen shows. */
+  function renderFirstView() {
     renderUpdated();
     renderKicker();
     renderFunFact();
     renderDailyTldr();
     renderWeeklyTldr();
     renderToday();
+    renderPodcastStrip();
+    renderSidebar();
+    applyPanelDefaults();
+  }
+
+  /* The other tabs. renderFeed is the slowest step (every paper ever
+     logged is filtered and grouped), so on first load it runs after a
+     yield, once Today has painted. */
+  function renderOtherViews() {
     renderTopicFilter();
     renderFeed();
     renderWeeklyPicks();
     renderSaved();
-    renderPodcastStrip();
     renderEpisodes();
-    renderSidebar();
-    applyPanelDefaults();
+  }
+
+  /* Give the browser a turn to paint and handle input. scheduler.yield()
+     resumes ahead of other queued work; setTimeout is the fallback
+     (Safari). */
+  function yieldToMain() {
+    if (window.scheduler && typeof scheduler.yield === 'function') return scheduler.yield();
+    return new Promise(function (resolve) { setTimeout(resolve, 0); });
   }
 
   /* Sidebar count pills and the scan-window block. The week count is taken
@@ -611,7 +653,11 @@
       return;
     }
     var lines = bulletLines(t.summary);
-    $('daily-tldr-lead').textContent = lines[0] || '';
+    /* The nightly build already put this text in the HTML. Rewriting the
+       same words makes the browser count a new largest paint, after app.js
+       has loaded, so only write it when it differs. */
+    var lead = $('daily-tldr-lead');
+    if (lead.textContent.trim() !== (lines[0] || '')) lead.textContent = lines[0] || '';
 
     /* Use highlights (structured, with paper ids) as the expanded bullets.
        Each highlight's note is the bullet text and its id links to the paper.
@@ -1423,9 +1469,12 @@
   function renderPodcastStrip() {
     var strip = $('podcast-strip');
     if (!strip) return;
+    /* Still loading: keep the placeholder (it holds the space). */
+    if (!state.episodesLoaded) return;
     if (!state.episodes.length) { strip.hidden = true; return; }
     var ep = state.episodes[0];
     strip.hidden = false;
+    $('strip-play').disabled = false;
     $('strip-title').textContent = ep.title;
     $('strip-dur').textContent = fmtDur(ep.durationSec);
     var btn = $('strip-play');
