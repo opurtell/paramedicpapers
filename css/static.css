@@ -10,7 +10,7 @@
   --bg: #FBFAF8; --surface: #FFFFFF; --ink: #14171A; --ink-2: #2A2E33; --ink-3: #5A6067;
   --muted: #646A71; --line: #EAE8E3; --hair: #F0EEE9; --hover: #F4F2ED;
   --accent: #2F5FA8; --accent-lo: #EDF2FB; --accent-hi: #26508F;
-  --warm: #C2562F; --warm-tint: #FAF0EA; --good: #2E7350; --good-lo: #EAF3EE;
+  --warm: #B34E2A; --warm-tint: #FAF0EA; --good: #2E7350; --good-lo: #EAF3EE;
   color-scheme: light;
   --sans: 'IBM Plex Sans', system-ui, -apple-system, sans-serif;
   --serif: Newsreader, Georgia, serif;
@@ -31,6 +31,16 @@ body { font: 16px/1.6 var(--sans); -webkit-font-smoothing: antialiased; }
 a { color: var(--accent); }
 a:hover { color: var(--accent-hi); }
 img { max-width: 100%; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+/* Skip link: first thing Tab reaches; off-screen until focused. */
+.skip-link {
+  position: fixed; top: 12px; left: 12px; z-index: 100;
+  padding: 10px 16px; border-radius: 10px;
+  background: var(--ink); color: var(--bg); font-size: 14px; font-weight: 600; text-decoration: none;
+  translate: 0 -200%;
+}
+.skip-link:focus { translate: 0 0; color: var(--bg); }
 
 /* ── top bar ─────────────────────────────────────────── */
 .sp-top { border-bottom: 1px solid var(--line); background: var(--surface); }
@@ -46,6 +56,8 @@ img { max-width: 100%; }
 .sp-nav { display: flex; gap: 14px; flex-wrap: wrap; font-size: 14px; }
 .sp-nav a { color: var(--ink-3); text-decoration: none; }
 .sp-nav a:hover, .sp-nav a[aria-current="page"] { color: var(--accent); }
+/* Current page: underlined too, not colour alone. */
+.sp-nav a[aria-current="page"] { text-decoration: underline; text-underline-offset: 4px; }
 
 /* ── page body ───────────────────────────────────────── */
 main.sp { max-width: 760px; margin: 0 auto; padding: 20px 16px 64px; }

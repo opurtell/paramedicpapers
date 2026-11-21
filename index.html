@@ -24,7 +24,7 @@
   <link rel="preload" href="/fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/fonts/ibm-plex-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="css/fonts.css?v=1">
-  <link rel="stylesheet" href="css/style.css?v=35">
+  <link rel="stylesheet" href="css/style.css?v=36">
   <!-- Apply a saved dark-theme choice before first paint (light is default). -->
   <script>
     try {
@@ -78,6 +78,7 @@
   </script>
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
   <!-- Icon sprite: Hugeicons free set (stroke-rounded), https://hugeicons.com.
        Copyright (c) 2025 Hugeicons, MIT License.
@@ -126,7 +127,7 @@
     </div>
 
     <nav class="sidebar-nav" aria-label="Views">
-      <button class="nav-item is-on" data-tab="home" type="button"><svg class="hi ico" aria-hidden="true"><use href="#hi-home"/></svg>Today</button>
+      <button class="nav-item" data-tab="home" type="button" aria-current="page"><svg class="hi ico" aria-hidden="true"><use href="#hi-home"/></svg>Today</button>
       <button class="nav-item" data-tab="feed" type="button"><svg class="hi ico" aria-hidden="true"><use href="#hi-feed"/></svg>Papers<span class="nav-pill" id="nav-count-feed"></span></button>
       <button class="nav-item" data-tab="weekly" type="button"><svg class="hi ico" aria-hidden="true"><use href="#hi-weekly"/></svg>PD</button>
       <button class="nav-item" data-tab="podcast" type="button"><svg class="hi ico" aria-hidden="true"><use href="#hi-podcast"/></svg>Podcast</button>
@@ -207,7 +208,7 @@
           <span class="strip-title" id="strip-title"></span>
         </div>
         <span class="strip-dur" id="strip-dur"></span>
-        <span class="strip-link" id="strip-open" role="button" tabindex="0">All episodes <svg class="hi" aria-hidden="true"><use href="#hi-arrow"/></svg></span>
+        <button class="strip-link" id="strip-open" type="button">All episodes <svg class="hi" aria-hidden="true"><use href="#hi-arrow"/></svg></button>
         <span class="strip-progress" id="strip-progress"></span>
       </article>
 
@@ -451,7 +452,7 @@
   </div>
 
   <nav class="tabbar" aria-label="Primary">
-    <button class="tab is-on" data-tab="home" type="button"><svg class="hi ico" aria-hidden="true"><use href="#hi-home"/></svg>Today</button>
+    <button class="tab" data-tab="home" type="button" aria-current="page"><svg class="hi ico" aria-hidden="true"><use href="#hi-home"/></svg>Today</button>
     <button class="tab" data-tab="feed" type="button"><svg class="hi ico" aria-hidden="true"><use href="#hi-feed"/></svg>Papers</button>
     <button class="tab" data-tab="weekly" type="button"><svg class="hi ico" aria-hidden="true"><use href="#hi-weekly"/></svg>PD</button>
     <button class="tab" data-tab="podcast" type="button"><svg class="hi ico" aria-hidden="true"><use href="#hi-podcast"/></svg>Podcast</button>
@@ -515,8 +516,8 @@
 
   <!-- defer keeps the order (cpd.js and podcasts.js rely on app.js's
        window.PP); all three start from DOMContentLoaded as before. -->
-  <script defer src="js/app.js?v=40"></script>
-  <script defer src="js/cpd.js?v=19"></script>
+  <script defer src="js/app.js?v=41"></script>
+  <script defer src="js/cpd.js?v=20"></script>
   <script defer src="js/podcasts.js?v=4"></script>
 </body>
 </html>
