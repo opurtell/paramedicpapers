@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <meta name="theme-color" content="#FBFAF8">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#FBFAF8" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#121417" media="(prefers-color-scheme: dark)">
   <title>Paramedic Papers — Daily Prehospital Research Scan</title>
   <meta name="description" content="Daily curated scan of the latest paramedic and prehospital research papers, with a short morning podcast.">
   <link rel="canonical" href="https://paramedicpapers.com/">
@@ -24,14 +26,19 @@
   <link rel="preload" href="/fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/fonts/ibm-plex-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="css/fonts.css?v=1">
-  <link rel="stylesheet" href="css/style.css?v=37">
-  <!-- Apply a saved dark-theme choice before first paint (light is default). -->
+  <link rel="stylesheet" href="css/style.css?v=38">
+  <!-- Theme follows the device unless the reader chose Light or Dark
+       (pp:theme). Applied before first paint so there's no flash. -->
   <script>
     try {
-      if (localStorage.getItem('pp:theme') === 'dark') {
-        document.documentElement.setAttribute('data-theme', 'dark');
-        document.querySelector('meta[name="theme-color"]').setAttribute('content', '#121417');
-      }
+      (function (t) {
+        if (t !== 'light' && t !== 'dark') return;
+        document.documentElement.setAttribute('data-theme', t);
+        document.querySelector('meta[name="color-scheme"]').content = t;
+        document.querySelectorAll('meta[name="theme-color"]').forEach(function (m) {
+          m.content = t === 'dark' ? '#121417' : '#FBFAF8';
+        });
+      })(localStorage.getItem('pp:theme'));
     } catch (e) {}
   </script>
   <link rel="icon" type="image/png" sizes="32x32" href="icon-32.png">
@@ -167,7 +174,7 @@
       </div>
       <div class="masthead-actions">
         <span class="updated" id="last-updated"></span>
-        <button class="icon-btn" id="btn-theme" type="button" title="Dark mode" aria-label="Dark mode" aria-pressed="false">
+        <button class="icon-btn" id="btn-theme" type="button" title="Switch to dark mode" aria-label="Switch to dark mode">
           <svg class="hi" aria-hidden="true"><use href="#hi-moon"/></svg>
         </button>
         <button class="icon-btn" id="btn-refresh" type="button" title="Refresh data" aria-label="Refresh data">
@@ -522,7 +529,7 @@
 
   <!-- defer keeps the order (cpd.js and podcasts.js rely on app.js's
        window.PP); all three start from DOMContentLoaded as before. -->
-  <script defer src="js/app.js?v=42"></script>
+  <script defer src="js/app.js?v=43"></script>
   <script defer src="js/cpd.js?v=21"></script>
   <script defer src="js/podcasts.js?v=4"></script>
 </body>

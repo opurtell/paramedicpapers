@@ -45,7 +45,15 @@
   --invert-ink:   #FBFAF8;
   --invert-ink-2: #C9CDD2;
 
-  color-scheme: light;
+  /* Solid fills behind white text (dark theme uses deeper shades) */
+  --fill-accent:    var(--accent);
+  --fill-accent-hi: var(--accent-hi);
+  --fill-warm:      var(--warm);
+  --fill-warm-hi:   var(--warm-hi);
+  --fill-good:      var(--good);
+
+  color-scheme: light dark;
+  accent-color: var(--accent);
 
   --sans: 'IBM Plex Sans', system-ui, -apple-system, sans-serif;
   --serif: Newsreader, Georgia, serif;
@@ -55,7 +63,13 @@
   --sidebar-w: 244px;
 }
 
-/* ── dark theme (opt-in via the masthead toggle; light stays default) ── */
+/* ── theme: follows the device; the masthead toggle saves an override ──
+   No saved choice: light or dark from prefers-color-scheme.
+   data-theme="light" | "dark" (set before first paint from pp:theme):
+   the reader's choice, which wins over the device.
+   The dark tokens appear twice below (chosen dark, device dark).
+   Keep the two copies identical. */
+:root[data-theme="light"] { color-scheme: light; }
 :root[data-theme="dark"] {
   --bg:        #121417;
   --surface:   #1A1D21;
@@ -97,16 +111,67 @@
   --invert-ink:   #ECEDEE;
   --invert-ink-2: #AEB4BA;
 
+  --fill-accent:    #3D6BB8;
+  --fill-accent-hi: #4A79C6;
+  --fill-warm:      #B85A33;
+  --fill-warm-hi:   #C66A42;
+  --fill-good:      #2E7350;
+
   color-scheme: dark;
+  scrollbar-color: var(--muted-2) var(--bg);
 }
-/* Filled accent buttons keep white text, so use a deeper accent fill. */
-:root[data-theme="dark"] .chip.is-on,
-:root[data-theme="dark"] .btn-primary { background: #3D6BB8; border-color: #3D6BB8; }
-:root[data-theme="dark"] .btn-primary:hover { background: #4A79C6; }
-:root[data-theme="dark"] .btn-danger { background: #B85A33; border-color: #B85A33; }
-:root[data-theme="dark"] .btn-danger:hover { background: #C66A42; }
-:root[data-theme="dark"] .quiz-opt.is-right .quiz-letter { background: #2E7350; }
-:root[data-theme="dark"] .quiz-opt.is-wrong .quiz-letter { background: #B85A33; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg:        #121417;
+    --surface:   #1A1D21;
+    --ink:       #ECEDEE;
+    --ink-2:     #D3D6D9;
+    --ink-3:     #A3A9B0;
+    --muted:     #9097A0;
+    --muted-2:   #7A8088;
+    --line:      #2A2E33;
+    --line-2:    #33383E;
+    --hair:      #22262A;
+    --accent:    #7DA2E3;
+    --accent-lo: #1C2638;
+    --accent-in: #9BB4E0;
+    --warm:      #E07A52;
+    --warm-lo:   #231B17;
+    --warm-tint: #2C1F18;
+    --good:      #5DB585;
+    --good-lo:   #17271F;
+
+    --hover:        #22262B;
+    --hover-2:      #1F2226;
+    --empty:        #4A5057;
+    --ink-2b:       #BCC1C6;
+    --ink-3b:       #9AA0A7;
+    --line-3:       #383D43;
+    --accent-hi:    #A3BEEC;
+    --accent-line:  #3A5480;
+    --accent-edge:  #2B3B57;
+    --accent-wash:  #1D2330;
+    --accent-ghost: rgba(125,162,227,.10);
+    --chart-2:      #3E5F99;
+    --warm-hi:      #EB9472;
+    --warm-ink:     #F0A584;
+    --warm-rule:    #3A2C25;
+    --bg-glass:     rgba(18,20,23,.9);
+    --shadow-rgb:   0,0,0;
+    --invert-bg:    #24282D;
+    --invert-ink:   #ECEDEE;
+    --invert-ink-2: #AEB4BA;
+
+    --fill-accent:    #3D6BB8;
+    --fill-accent-hi: #4A79C6;
+    --fill-warm:      #B85A33;
+    --fill-warm-hi:   #C66A42;
+    --fill-good:      #2E7350;
+
+    color-scheme: dark;
+    scrollbar-color: var(--muted-2) var(--bg);
+  }
+}
 
 * { box-sizing: border-box; }
 
@@ -390,7 +455,7 @@ a.act { color: var(--accent); }
   border: 1px solid var(--line-2); background: var(--surface); color: var(--ink-3b);
   font-family: var(--mono); font-size: 11px; letter-spacing: .05em; text-transform: uppercase;
 }
-.chip.is-on { background: var(--accent); border-color: var(--accent); color: #FFFFFF; }
+.chip.is-on { background: var(--fill-accent); border-color: var(--fill-accent); color: #FFFFFF; }
 .topic-select {
   -webkit-appearance: none; appearance: none; max-width: 100%;
   padding-right: 26px;
@@ -845,7 +910,7 @@ a.act { color: var(--accent); }
   #page-feed { padding-top: 24px; gap: 18px; }
   .chip-divider { margin: 0 4px; }
   .chip:hover { background: var(--hover); }
-  .chip.is-on:hover { background: var(--accent); }
+  .chip.is-on:hover { background: var(--fill-accent); }
   #feed-list, #weekly-picks, #saved-list {
     display: grid; grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
     gap: 18px; align-items: start;
@@ -1150,12 +1215,12 @@ body.has-player main {
 .btn:hover { background: var(--hover); color: var(--ink); }
 .btn .hi { width: 16px; height: 16px; }
 .btn:disabled { opacity: .5; cursor: default; }
-.btn-primary { background: var(--accent); border-color: var(--accent); color: #FFFFFF; }
-.btn-primary:hover { background: var(--accent-hi); color: #FFFFFF; }
+.btn-primary { background: var(--fill-accent); border-color: var(--fill-accent); color: #FFFFFF; }
+.btn-primary:hover { background: var(--fill-accent-hi); color: #FFFFFF; }
 .btn-quiet { border-color: transparent; background: none; color: var(--warm); padding-inline: 4px; }
 .btn-quiet:hover { background: none; color: var(--warm); text-decoration: underline; }
-.btn-danger { background: var(--warm); border-color: var(--warm); color: #FFFFFF; }
-.btn-danger:hover { background: var(--warm-hi); color: #FFFFFF; }
+.btn-danger { background: var(--fill-warm); border-color: var(--fill-warm); color: #FFFFFF; }
+.btn-danger:hover { background: var(--fill-warm-hi); color: #FFFFFF; }
 .btn-add { align-self: stretch; min-height: 46px; font-size: 15px; }
 .btn-add .hi { stroke-width: 2; }
 .link-inline { background: none; border: 0; padding: 0; cursor: pointer; color: var(--accent); font: inherit; text-decoration: underline; }
@@ -1475,10 +1540,10 @@ body.has-player main {
 .quiz-mark { flex: none; display: inline-flex; width: 20px; justify-content: center; padding-top: 2px; }
 .quiz-mark .hi { width: 20px; height: 20px; stroke-width: 2.2; }
 .quiz-opt.is-right { border: 2px solid var(--good); background: var(--good-lo); padding: 11px 13px; }
-.quiz-opt.is-right .quiz-letter { background: var(--good); color: #FFFFFF; }
+.quiz-opt.is-right .quiz-letter { background: var(--fill-good); color: #FFFFFF; }
 .quiz-opt.is-right .quiz-mark { color: var(--good); }
 .quiz-opt.is-wrong { border: 2px solid var(--warm); background: var(--warm-tint); padding: 11px 13px; }
-.quiz-opt.is-wrong .quiz-letter { background: var(--warm); color: #FFFFFF; }
+.quiz-opt.is-wrong .quiz-letter { background: var(--fill-warm); color: #FFFFFF; }
 .quiz-opt.is-wrong .quiz-mark { color: var(--warm); }
 .quiz-opt.is-dim { color: var(--ink-3); }
 

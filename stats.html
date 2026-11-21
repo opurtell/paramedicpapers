@@ -3,14 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <meta name="theme-color" content="#FBFAF8">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#FBFAF8" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#121417" media="(prefers-color-scheme: dark)">
   <meta name="robots" content="noindex, nofollow">
   <title>Site Stats — Paramedic Papers</title>
   <link rel="stylesheet" href="/css/fonts.css?v=1">
   <link rel="icon" type="image/png" sizes="32x32" href="icon-32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="icon-16.png">
+  <!-- Theme follows the device unless the reader chose Light or Dark
+       (pp:theme). Applied before first paint so there's no flash. -->
   <script>
-    try { if (localStorage.getItem('pp:theme') === 'dark') document.documentElement.setAttribute('data-theme', 'dark'); } catch (e) {}
+    try {
+      (function (t) {
+        if (t !== 'light' && t !== 'dark') return;
+        document.documentElement.setAttribute('data-theme', t);
+        document.querySelector('meta[name="color-scheme"]').content = t;
+        document.querySelectorAll('meta[name="theme-color"]').forEach(function (m) {
+          m.content = t === 'dark' ? '#121417' : '#FBFAF8';
+        });
+      })(localStorage.getItem('pp:theme'));
+    } catch (e) {}
   </script>
   <style>
     /* Tokens copied from css/style.css; this page stands alone. Owner-only:
@@ -28,6 +41,14 @@
       --muted: #9097A0; --line: #2A2E33; --accent: #7DA2E3; --accent-2: #3E5680; --warm: #E07A52; --warm-tint: #2C1F18;
       --up: #6CC08F; --down: #E8836A;
       color-scheme: dark;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --bg: #121417; --surface: #1A1D21; --ink: #ECEDEE; --ink-2: #D3D6D9; --ink-3: #A3A9B0;
+        --muted: #9097A0; --line: #2A2E33; --accent: #7DA2E3; --accent-2: #3E5680; --warm: #E07A52; --warm-tint: #2C1F18;
+        --up: #6CC08F; --down: #E8836A;
+        color-scheme: dark;
+      }
     }
     * { box-sizing: border-box; }
     html, body { margin: 0; background: var(--bg); color: var(--ink); }
