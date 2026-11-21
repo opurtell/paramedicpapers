@@ -105,9 +105,12 @@
   PP.hooks.savedStatus = savedStatus;
 
   document.addEventListener('DOMContentLoaded', function () {
-    $('sheet-backdrop').addEventListener('click', function () { closeSheet(true); });
-    document.addEventListener('keydown', function (e) {
-      if (e.key === 'Escape' && st.sheet) closeSheet(true);
+    /* Esc, the back gesture and a tap outside (closedby="any") close the
+       native dialog without going through closeSheet: treat that as a
+       soft close, so an unsaved entry keeps its draft. */
+    $('sheet').addEventListener('close', function () {
+      /* Skip if closeSheet ran, or a new sheet opened before this fired. */
+      if (st.sheet && !this.open) { st.sheet = null; emptySheetSoon(); }
     });
     boot();
     loadQuizIndex();
@@ -314,20 +317,23 @@
     el.querySelectorAll('[data-close]').forEach(function (b) { b.addEventListener('click', function () { closeSheet(true); }); });
   }
 
+  /* A manual popover, so it shows above an open sheet and stays put when
+     the reader taps elsewhere. Screen readers get it from PP.announce.
+     Browsers without popover fall back to the fixed-position class. */
   var toastTimer = null;
   function toast(text) {
     var el = $('pp-toast');
-    if (!el) {
-      el = document.createElement('div');
-      el.id = 'pp-toast';
-      el.className = 'toast';
-      el.setAttribute('role', 'status');
-      document.body.appendChild(el);
-    }
+    var pop = typeof el.showPopover === 'function';
     el.textContent = text;
+    if (pop && el.matches(':popover-open')) el.hidePopover();  /* re-raise above a sheet opened since */
     el.classList.add('is-on');
+    if (pop) el.showPopover();
+    PP.announce(text);
     clearTimeout(toastTimer);
-    toastTimer = setTimeout(function () { el.classList.remove('is-on'); }, 4000);
+    toastTimer = setTimeout(function () {
+      el.classList.remove('is-on');
+      if (pop && el.matches(':popover-open')) el.hidePopover();
+    }, 4000);
   }
 
   /* ── dates and numbers ──────────────────────────────── */
@@ -462,29 +468,47 @@
 
   /* ── sheets (menu, entry form, goal form) ───────────── */
 
+  /* One native <dialog> (index.html #sheet) holds every sheet. showModal()
+     makes the page behind inert, keeps Tab inside and gives Esc/back; the
+     browser puts focus back where it was on close. A sheet opened while
+     another is showing just swaps the content. */
   function openSheet(sheet, html) {
     st.sheet = sheet;
     var el = $('sheet');
     el.className = 'sheet sheet-' + sheet.type;
     el.innerHTML = html;
-    el.hidden = false;
-    $('sheet-backdrop').hidden = false;
-    document.body.classList.add('has-sheet');
+    if (!el.open) el.showModal();
+    el.scrollTop = 0;
+    focusFirst(el);
+    /* Most callers fill the sheet right after this returns: once they have,
+       move focus off the dialog box itself onto its first control. */
+    Promise.resolve().then(function () { if (document.activeElement === el) focusFirst(el); });
+  }
+
+  function focusFirst(el) {
     var first = el.querySelector('[autofocus]') || el.querySelector('button, input, textarea, select, a');
     if (first) first.focus({ preventScroll: true });
   }
 
-  /* soft = backdrop / Escape: an entry form keeps its draft. */
+  /* soft = tap outside / Esc / back: an entry form keeps its draft. */
   function closeSheet(soft) {
     if (!st.sheet) return;
     if (!soft && st.sheet.type === 'entry') clearDraft();
     if (!soft && st.sheet.type === 'paper') clearPaperDraft(st.sheet.paperId);
     if (!soft && st.sheet.type === 'episode') clearEpisodeDraft(st.sheet.eid);
     st.sheet = null;
-    $('sheet').hidden = true;
-    $('sheet').innerHTML = '';
-    $('sheet-backdrop').hidden = true;
-    document.body.classList.remove('has-sheet');
+    var el = $('sheet');
+    if (el.open) el.close();
+    emptySheetSoon();
+  }
+
+  /* Empty the closed sheet once its exit fade is over (unless it was
+     reopened meanwhile), so stale form ids don't linger in the page. */
+  function emptySheetSoon() {
+    setTimeout(function () {
+      var el = $('sheet');
+      if (!el.open && !st.sheet) el.innerHTML = '';
+    }, 300);
   }
 
   /* The mobile "More" tab. */
@@ -497,7 +521,7 @@
     var saved = PP.savedCount();
     var acct = st.user ? (st.user.name || st.user.email) + ' · ' + (PROVIDER_NAMES[st.user.provider] || '') : 'Sign in';
     var item = function (tab, icon, title, sub, badge) {
-      return '<button class="menu-item' + (PP.state.tab === tab ? ' is-on' : '') + '" data-go="' + tab + '" type="button">' +
+      return '<button class="menu-item" data-go="' + tab + '" type="button"' + (PP.state.tab === tab ? ' aria-current="page"' : '') + '>' +
         '<span class="menu-ico">' + ico(icon) + '</span>' +
         '<span class="menu-text"><span class="menu-title">' + esc(title) + '</span>' +
         (sub ? '<span class="menu-sub">' + esc(sub) + '</span>' : '') + '</span>' +
