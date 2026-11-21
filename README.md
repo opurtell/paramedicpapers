@@ -50,6 +50,17 @@ GitHub Pages sends no headers, so each hand-written page (`index.html`, `about.h
 - A meta policy can't set `frame-ancestors` or report-only mode; those need headers (Cloudflare in front of Pages), which isn't set up.
 - Built pages (`papers/`, `topics/`, `daily/`, `episodes/`) get their policy from greg's `build_static_pages.py`.
 
+### Install (web app manifest)
+
+`site.webmanifest` gives the app a stable `id` (`/`), `scope`, a `start_url`, shortcuts (Today, Papers, PD, Podcast, icons in `shortcuts/`), and screenshots for the install dialog (`screenshots/`, narrow at 780×1688 and wide at 1280×800; the `sizes` must match the files). `icon-maskable-*.png` keep the logo inside the central 80% safe zone; regenerate them from `icon-master-1024.png` if the logo changes. Don't change `id`, or installed copies become a different app. There's no in-page Install button; browsers offer install from their own menu.
+
+### Forms (CPD sheets)
+
+- Required fields use `reqField()` in `js/cpd.js`: a visible `<label for>`, the control with `required` and `data-error`, and an error line below it. `bindChecks(form, touched)` shows the error only after the field is changed and left, or a save is tried (`:user-invalid`, or `.touched:invalid` because the sheets re-render), keeps `aria-invalid` and `aria-describedby` in step, reads a new error out once, and on save focuses the first field to fix. No error shows on load.
+- Every field has a visible label (a `<label>` inside the `<legend>` where the group heading names it); no `aria-label` or placeholder-only fields.
+- Single-line fields that aren't last use `enterkeyhint="next"`; Enter moves to the next field instead of saving (IME-safe).
+- Text boxes grow with their content (`field-sizing: content`, 2 to about 12 lines); form controls are at least 16 px so iPhones don't zoom on focus.
+
 ### GitHub Pages
 
 1. Push this repo to GitHub

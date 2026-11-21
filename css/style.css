@@ -1312,7 +1312,7 @@ body.has-player main {
 /* ── forms ────────────────────────────────────────────── */
 .form { display: flex; flex-direction: column; gap: 14px; }
 .form fieldset { border: 0; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; min-width: 0; }
-.form legend, .field .label {
+.form legend, .field .label, .form .label-sub, .danger-zone .label, .pick-label {
   display: block; padding: 0; margin-bottom: 6px;
   font-size: .8125rem; font-weight: 600; color: var(--ink-2);
 }
@@ -1321,9 +1321,32 @@ body.has-player main {
 .field { display: flex; flex-direction: column; min-width: 0; }
 .form input:not([type="checkbox"]), .form textarea, .form select, .danger-zone input {
   width: 100%; padding: 10px 12px; border: 1px solid var(--line-3); border-radius: 10px;
-  background: var(--surface); color: var(--ink); font: .9375rem/1.4 var(--sans);
+  /* At least 16 px, so iPhones don't zoom in when a field is tapped. */
+  background: var(--surface); color: var(--ink); font: max(1rem, 1em)/1.4 var(--sans);
 }
-.form textarea { resize: vertical; min-height: 44px; }
+/* Text boxes grow with what's typed (field-sizing; fixed rows elsewhere),
+   from two lines up to about twelve, then scroll. */
+.form textarea { resize: vertical; min-height: calc(2lh + 22px); }
+@supports (field-sizing: content) {
+  .form textarea { field-sizing: content; max-height: calc(12lh + 22px); }
+}
+.form legend label { cursor: pointer; }
+.form .label-sub { margin-bottom: -4px; }
+.pick-label { margin-bottom: 8px; }
+/* Required fields: errors only after the field was changed and left, or a
+   save was tried (js/cpd.js bindChecks). Never on first load. */
+.field-err {
+  display: none; align-items: flex-start; gap: 6px; margin: 6px 0 0;
+  font-size: .8125rem; font-weight: 500; line-height: 1.35; color: var(--warm-ink);
+}
+.field-err::before {
+  content: "!"; flex: none; display: grid; place-items: center; width: 1.15em; height: 1.15em; margin-top: .05em;
+  border-radius: 50%; background: var(--warm); color: var(--surface); font-size: .75rem; font-weight: 700; line-height: 1;
+}
+.form :is(input, textarea, select):is(:user-invalid, .touched:invalid) {
+  border-color: var(--warm); box-shadow: inset 0 0 0 1px var(--warm);
+}
+.form :is(input, textarea, select):is(:user-invalid, .touched:invalid) + .field-err { display: flex; }
 .form input:focus, .form textarea:focus, .form select:focus { outline: 2px solid var(--accent); outline-offset: 0; border-color: var(--accent); }
 .form-row { display: grid; grid-template-columns: 1fr; gap: 14px; }
 @media (min-width: 26.25em) { .form-row { grid-template-columns: 1fr 1fr; } }

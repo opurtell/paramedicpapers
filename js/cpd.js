@@ -911,12 +911,13 @@
           }).join('') + '</div></fieldset>' +
         (v.activity_type === 'media' && s.kind === 'manual' && podcastNames()
           ? '<p class="hint">Listening to ' + esc(/^\d/.test(podcastNames()) ? 'one of our ' + podcastNames() : podcastNames()) + '? <button class="link-inline" data-pick-podcast type="button">Pick the episode from the list instead</button>.</p>' : '') +
-        field('Title', '<input name="title" maxlength="200" required value="' + esc(v.title) + '" placeholder="' +
-          (v.activity_type === 'media' ? 'e.g. Podcast name: episode title' : 'e.g. Station journal club: paediatric sepsis') + '">') +
+        reqField('Title', 'title', '<input name="title" maxlength="200" enterkeyhint="next" value="' + esc(v.title) + '" placeholder="' +
+          (v.activity_type === 'media' ? 'e.g. Podcast name: episode title' : 'e.g. Station journal club: paediatric sepsis') + '">',
+          'Give it a title.') +
         field('Short summary <span class="opt">optional</span>', '<textarea name="summary" rows="2" maxlength="4000" placeholder="' +
           (v.activity_type === 'media' ? 'e.g. podcast name, episode and length, what it covered' : 'What it covered') + '">' + esc(v.summary) + '</textarea>') +
         '<div class="form-row">' +
-          field('Date', '<input type="date" name="date" required value="' + esc(v.date) + '" min="' + lim.min + '" max="' + lim.max + '">') +
+          reqField('Date', 'date', '<input type="date" name="date" value="' + esc(v.date) + '" min="' + lim.min + '" max="' + lim.max + '">', dateMsg(lim)) +
           '<div class="field"><span class="label">Time spent</span><div class="stepper">' +
             stepper('h', Math.floor(v.minutes / 60) + ' h', 'hours') + stepper('m', (v.minutes % 60) + ' min', 'minutes') +
           '</div></div>' +
@@ -925,10 +926,11 @@
         '<label class="switch-row"><input type="checkbox" name="interactive" role="switch"' + (v.interactive ? ' checked' : '') + '>' +
           '<span class="switch" aria-hidden="true"></span><span><b>Interactive with other practitioners?</b>' +
           '<span class="hint">A two-way exchange with other practitioners, face to face or live online.</span></span></label>' +
-        (v.interactive ? field('Who with? <span class="opt">roles, not names</span>', '<input name="with_whom" maxlength="200" value="' + esc(v.with_whom) + '" placeholder="e.g. crew partner, station journal club">') : '') +
-        '<fieldset><legend>Learning goal</legend>' +
-          (activeGoals.length ? '<select name="goal_id" aria-label="Pick one of this year’s goals">' + goalOpts + '</select>' : '') +
-          (v.goal_id ? '' : '<input name="learning_goal" maxlength="4000" value="' + esc(v.learning_goal) + '" placeholder="What did you want to get better at?" aria-label="Learning goal">') +
+        (v.interactive ? reqField('Who with? <span class="opt">roles, not names</span>', 'with_whom', '<input name="with_whom" maxlength="200" enterkeyhint="next" value="' + esc(v.with_whom) + '" placeholder="e.g. crew partner, station journal club">', WHO_MSG) : '') +
+        '<fieldset><legend><label for="' + (activeGoals.length ? 'f-goal_id' : 'f-learning_goal') + '">Learning goal</label></legend>' +
+          (activeGoals.length ? '<select name="goal_id" id="f-goal_id">' + goalOpts + '</select>' : '') +
+          (v.goal_id ? '' : (activeGoals.length ? '<label class="label label-sub" for="f-learning_goal">My own goal</label>' : '') +
+            '<input name="learning_goal" id="f-learning_goal" maxlength="4000" enterkeyhint="next" value="' + esc(v.learning_goal) + '" placeholder="What did you want to get better at?">') +
         '</fieldset>' +
         '<fieldset><legend>Reflection <span class="opt">needed for a complete entry</span></legend>' +
           field('What did I learn?', '<textarea name="reflection_learned" rows="3" maxlength="4000">' + esc(v.reflection_learned) + '</textarea>') +
@@ -957,8 +959,93 @@
     }
   }
 
+  var WHO_MSG = 'Say who it was with (roles, not names). That’s your audit evidence.';
+  function dateMsg(lim) {
+    return 'Pick a date from ' + niceDate(lim.min, true) + ' to tomorrow.';
+  }
+
   function field(label, control) {
     return '<label class="field"><span class="label">' + label + '</span>' + control + '</label>';
+  }
+
+  /* A field that must be filled (web guidance phase 7). The label sits
+     above the control and the error line below it; the error shows only
+     once the field has been changed and left, or a save was tried
+     (:user-invalid, or .touched:invalid in css/style.css). The control
+     gets id f-<name>, required, and data-error naming its error line.
+     The sheets re-render on most changes, which resets the browser's own
+     "touched" memory, so bindChecks() keeps it in the sheet's state. */
+  function reqField(label, name, control, msg, idPrefix) {
+    var id = (idPrefix || 'f-') + name;
+    control = control.replace(/^<(input|textarea|select)\b/, '<$1 id="' + id + '" required aria-invalid="false" data-error="' + id + '-err"');
+    return '<div class="field"><label class="label" for="' + id + '">' + label + '</label>' + control +
+      '<p class="field-err" id="' + id + '-err"><span class="sr-only">Error: </span>' + msg + '</p></div>';
+  }
+
+  /* Wires a CPD form: required-field errors after interaction, aria-invalid
+     and aria-describedby kept in step, one polite announcement when an
+     error appears, and Enter on a single-line field with
+     enterkeyhint="next" moving to the next field instead of saving.
+     touched is { name: true } kept on the sheet or run state. Returns
+     check(): marks every required field touched, focuses the first one
+     still empty or out of range, and says whether the form can be saved. */
+  function bindChecks(form, touched) {
+    var fields = Array.prototype.slice.call(form.querySelectorAll('[data-error]'));
+    var said = new WeakSet();   /* fields whose current error was read out */
+    function sync(f, say) {
+      var bad = f.classList.contains('touched') && !f.validity.valid;
+      var errId = f.getAttribute('data-error');
+      var ids = (f.getAttribute('aria-describedby') || '').split(/\s+/).filter(function (x) { return x && x !== errId; });
+      if (bad) ids.push(errId);
+      if (ids.length) f.setAttribute('aria-describedby', ids.join(' ')); else f.removeAttribute('aria-describedby');
+      f.setAttribute('aria-invalid', bad ? 'true' : 'false');
+      if (!bad) said.delete(f);
+      if (bad && say && !said.has(f)) {
+        said.add(f);
+        var err = document.getElementById(errId), lab = f.labels && f.labels[0];
+        /* After focus has landed on the next field and been read out. */
+        setTimeout(function () {
+          if (f.isConnected && f.getAttribute('aria-invalid') === 'true') {
+            PP.announce((lab ? lab.textContent.trim() + ': ' : '') + err.textContent.trim());
+          }
+        }, 500);
+      }
+    }
+    function touch(f) { touched[f.name] = true; f.classList.add('touched'); }
+    fields.forEach(function (f) { if (touched[f.name]) f.classList.add('touched'); sync(f); });
+    form.addEventListener('input', function (e) { if (fields.indexOf(e.target) !== -1) sync(e.target); });
+    form.addEventListener('change', function (e) {
+      if (fields.indexOf(e.target) === -1) return;
+      touch(e.target);
+      sync(e.target, true);
+    });
+    /* Leaving a field that is already flagged (emptied while typing) reads its error once. */
+    form.addEventListener('focusout', function (e) {
+      if (fields.indexOf(e.target) !== -1 && e.target.classList.contains('touched')) sync(e.target, true);
+    });
+    form.addEventListener('keydown', function (e) {
+      var f = e.target;
+      if (e.key !== 'Enter' || e.isComposing || e.keyCode === 229 || e.shiftKey || e.ctrlKey || e.metaKey || e.altKey) return;
+      if (!f.matches || !f.matches('input[enterkeyhint="next"]')) return;
+      var all = Array.prototype.filter.call(form.elements, function (x) {
+        return x.matches('input:not([type="checkbox"]), textarea, select') && !x.disabled && x.offsetParent !== null;
+      });
+      var next = all[all.indexOf(f) + 1];
+      if (!next) return;
+      e.preventDefault();
+      if (fields.indexOf(f) !== -1) { touch(f); sync(f, false); }
+      next.focus();
+    });
+    return function check() {
+      var first = null;
+      fields.forEach(function (f) {
+        touch(f);
+        sync(f);
+        if (!f.validity.valid) { said.add(f); if (!first) first = f; }
+      });
+      if (first) first.focus();
+      return !first;
+    };
   }
 
   function stepper(unit, text, name) {
@@ -969,6 +1056,7 @@
 
   function bindEntrySheet() {
     var el = $('sheet'), s = st.sheet, form = $('entry-form');
+    s.check = bindChecks(form, s.touched || (s.touched = {}));
     el.querySelectorAll('[data-close]').forEach(function (b) { b.addEventListener('click', function () { closeSheet(false); }); });
     var discard = el.querySelector('[data-discard]');
     if (discard) discard.addEventListener('click', function () { clearDraft(); var id = s.id; closeSheet(false); openEntry(id); });
@@ -1041,12 +1129,14 @@
     var s = st.sheet;
     collect();
     var v = s.v;
-    var problem = !v.activity_type ? 'Pick what kind of activity it was.'
-      : !v.title.trim() ? 'Give it a title.'
-      : !v.date ? 'Add the date.'
-      : (v.interactive && !v.with_whom.trim()) ? 'Say who it was with (roles, not names) — that’s your audit evidence.'
-      : '';
-    if (problem) { s.error = problem; renderEntrySheet(); return; }
+    if (!v.activity_type) {
+      s.error = 'Pick what kind of activity it was.';
+      renderEntrySheet();
+      /* Flags any empty required field too; otherwise go to the choices. */
+      if (s.check()) { var chip = $('sheet').querySelector('[data-type]'); if (chip) chip.focus(); }
+      return;
+    }
+    if (!s.check()) return;
 
     var goal = v.goal_id ? st.goals.filter(function (g) { return g.id === v.goal_id; })[0] : null;
     var body = {
@@ -1266,13 +1356,13 @@
             '<output aria-live="polite">' + esc(dur(v.minutes)) + '</output>' +
             '<button type="button" data-pstep="5" aria-label="5 minutes more"' + (v.minutes >= READ_MAX ? ' disabled' : '') + '>' + ico('plus') + '</button></span>' +
           '</div></div>' +
-          field('Date', '<input type="date" name="date" required value="' + esc(v.date) + '" min="' + lim.min + '" max="' + lim.max + '">') +
+          reqField('Date', 'date', '<input type="date" name="date" value="' + esc(v.date) + '" min="' + lim.min + '" max="' + lim.max + '">', dateMsg(lim)) +
         '</div>' +
         '<p class="hint">Reading time only. Reflection doesn’t count toward the 30 hours.</p>' +
         '<label class="switch-row"><input type="checkbox" name="interactive" role="switch"' + (v.interactive ? ' checked' : '') + '>' +
           '<span class="switch" aria-hidden="true"></span><span><b>Discussed it with other practitioners?</b>' +
           '<span class="hint">Logs it as journal club, which counts toward your 8 interactive hours.</span></span></label>' +
-        (v.interactive ? field('Who with? <span class="opt">roles, not names</span>', '<input name="with_whom" maxlength="200" value="' + esc(v.with_whom) + '" placeholder="e.g. crew partner, station journal club">') : '') +
+        (v.interactive ? reqField('Who with? <span class="opt">roles, not names</span>', 'with_whom', '<input name="with_whom" maxlength="200" enterkeyhint="next" value="' + esc(v.with_whom) + '" placeholder="e.g. crew partner, station journal club">', WHO_MSG) : '') +
         goalBlockHTML(s, p && p.learningGoal) +
         reflectionHTML(v, ph) +
         (s.entryId && !v.interactive && !hasDiscussion
@@ -1305,6 +1395,7 @@
 
   function bindPaperSheet() {
     var el = $('sheet'), s = st.sheet, form = $('paper-form');
+    s.check = bindChecks(form, s.touched || (s.touched = {}));
     el.querySelectorAll('[data-close]').forEach(function (b) { b.addEventListener('click', function () { closeSheet(false); }); });
     el.querySelectorAll('[data-close-soft]').forEach(function (a) { a.addEventListener('click', function () { closeSheet(true); }); });
     var discard = el.querySelector('[data-discard]');
@@ -1361,10 +1452,7 @@
     var s = st.sheet;
     collectPaper();
     var v = s.v, p = s.p || {}, e = s.entry;
-    var problem = !v.date ? 'Add the date.'
-      : (v.interactive && !v.with_whom.trim()) ? 'Say who you discussed it with (roles, not names). That’s your audit evidence.'
-      : '';
-    if (problem) { s.error = problem; renderPaperSheet(); return; }
+    if (!s.check()) return;
 
     var body = {
       activity_type: v.interactive ? 'journal_club' : 'reading',
@@ -1637,7 +1725,7 @@
             '<output aria-live="polite">' + esc(dur(v.minutes)) + '</output>' +
             '<button type="button" data-estep="5" aria-label="5 minutes more"' + (v.minutes >= EP_MAX ? ' disabled' : '') + '>' + ico('plus') + '</button></span>' +
           '</div></div>' +
-          field('Date listened', '<input type="date" name="date" required value="' + esc(v.date) + '" min="' + lim.min + '" max="' + lim.max + '">') +
+          reqField('Date listened', 'date', '<input type="date" name="date" value="' + esc(v.date) + '" min="' + lim.min + '" max="' + lim.max + '">', dateMsg(lim)) +
         '</div>' +
         '<p class="hint">Count the time you actually listened. Reflection doesn’t count toward the 30 hours.</p>' +
         '<p class="fine">Discussed it with colleagues afterwards? <button class="link-inline" data-log-discussion type="button">Log that separately</button> as journal club or a case review.</p>' +
@@ -1657,6 +1745,7 @@
 
   function bindEpisodeSheet() {
     var el = $('sheet'), s = st.sheet, form = $('episode-form');
+    s.check = bindChecks(form, s.touched || (s.touched = {}));
     el.querySelectorAll('[data-close]').forEach(function (b) { b.addEventListener('click', function () { closeSheet(false); }); });
     el.querySelectorAll('[data-close-soft]').forEach(function (a) { a.addEventListener('click', function () { closeSheet(true); }); });
     var discard = el.querySelector('[data-discard]');
@@ -1714,7 +1803,7 @@
     var s = st.sheet;
     collectEpisode();
     var v = s.v, p = s.p, ep = s.ep;
-    if (!v.date) { s.error = 'Add the date you listened.'; renderEpisodeSheet(); return; }
+    if (!s.check()) return;
     var body = {
       activity_type: 'media', interactive: false,
       date: v.date, minutes: v.minutes,
@@ -1858,8 +1947,9 @@
     }
     var p = s.podcast;
     setHTML(el, head(p.name) +
+      '<label class="label pick-label" for="pick-q">Search episodes</label>' +
       '<div class="search-wrap pods-search">' + ico('search', 'search-ico') +
-        '<input id="pick-q" type="search" placeholder="Search episodes, e.g. pupils" aria-label="Search episodes" value="' + esc(s.q) + '" autocomplete="off" autofocus>' +
+        '<input id="pick-q" type="search" enterkeyhint="search" placeholder="e.g. pupils" value="' + esc(s.q) + '" autocomplete="off" autofocus>' +
       '</div>' +
       '<div class="pick-list" id="pick-list"></div>' +
       '<p class="fine">Not there? <button class="link-inline" data-add="hand" type="button">Enter it by hand</button></p>');
@@ -1906,8 +1996,8 @@
     var activeGoals = s.goals.filter(function (g) { return g.status === 'active' || g.id === v.goal_id; });
     var linked = v.goal_id ? activeGoals.filter(function (g) { return g.id === v.goal_id; })[0] : null;
     var canSaveGoal = v.learning_goal.trim() && !activeGoals.some(function (g) { return g.text.trim() === v.learning_goal.trim(); });
-    return '<fieldset><legend>Learning goal' + (suggested ? ' <span class="pill pill-inter">Suggested</span>' : '') + '</legend>' +
-      '<textarea name="learning_goal" rows="2" maxlength="4000" aria-label="Learning goal" placeholder="What did you want to get better at?">' + esc(v.learning_goal) + '</textarea>' +
+    return '<fieldset><legend><label for="f-learning_goal">Learning goal</label>' + (suggested ? ' <span class="pill pill-inter">Suggested</span>' : '') + '</legend>' +
+      '<textarea name="learning_goal" id="f-learning_goal" rows="2" maxlength="4000" placeholder="What did you want to get better at?">' + esc(v.learning_goal) + '</textarea>' +
       (activeGoals.length ? '<label class="field"><span class="label">Link to one of my goals <span class="opt">optional</span></span>' +
         '<select name="goal_id"><option value="">None</option>' + activeGoals.map(function (g) {
           return '<option value="' + esc(g.id) + '"' + (g.id === v.goal_id ? ' selected' : '') + '>' + esc(g.text) + '</option>';
@@ -2001,7 +2091,7 @@
       '<div class="sheet-head"><h2 id="sheet-title">' + (s.id ? 'Learning goal' : 'New learning goal') + '</h2>' +
         '<button class="icon-btn" data-close type="button" aria-label="Close">' + ico('plus', 'rot45') + '</button></div>' +
       '<form class="form" id="goal-form" novalidate>' +
-        field('Goal for ' + esc(yearLabel(st.year)), '<textarea name="text" rows="3" maxlength="300" autofocus placeholder="e.g. Get confident reading paediatric ECGs">' + esc(s.text) + '</textarea>') +
+        reqField('Goal for ' + esc(yearLabel(st.year)), 'text', '<textarea name="text" rows="3" maxlength="300" autofocus placeholder="e.g. Get confident reading paediatric ECGs">' + esc(s.text) + '</textarea>', 'Write the goal first.') +
         '<p class="hint">Think about gaps in your practice, your patients’ needs, new evidence, or what your service is focusing on.</p>' +
         (s.id ? '<fieldset><legend>Status</legend><div class="chips">' + statuses.map(function (x) {
           var on = s.status === x[0];
@@ -2020,6 +2110,7 @@
       '</form>');
 
     var el = $('sheet'), form = $('goal-form');
+    var check = bindChecks(form, s.touched || (s.touched = {}));
     var text = form.querySelector('[name="text"]');
     text.addEventListener('input', function () { s.text = text.value; });
     el.querySelectorAll('[data-close]').forEach(function (b) { b.addEventListener('click', function () { closeSheet(false); }); });
@@ -2038,7 +2129,7 @@
     });
     form.addEventListener('submit', function (e) {
       e.preventDefault();
-      if (!s.text.trim()) { s.error = 'Write the goal first.'; renderGoalSheet(); return; }
+      if (!check()) return;
       var req = s.id
         ? api('/api/goals/' + encodeURIComponent(s.id), { method: 'PATCH', body: { text: s.text, status: s.status } })
         : api('/api/goals', { method: 'POST', body: { text: s.text, cpd_year: st.year } });
@@ -2505,9 +2596,9 @@
         '<label class="switch-row"><input type="checkbox" name="group" role="switch"' + (v.group ? ' checked' : '') + '>' +
           '<span class="switch" aria-hidden="true"></span><span><b>Done as a group?</b>' +
           '<span class="hint">With other practitioners, it counts toward your 8 interactive hours.</span></span></label>' +
-        (v.group ? field('Who with? <span class="opt">roles, not names</span>', '<input name="with_whom" maxlength="200" value="' + esc(v.with_whom) + '" placeholder="e.g. station PD session, crew partner">') : '') +
-        '<fieldset><legend>Learning goal</legend>' +
-          '<textarea name="learning_goal" rows="2" maxlength="4000" aria-label="Learning goal">' + esc(v.learning_goal) + '</textarea>' +
+        (v.group ? reqField('Who with? <span class="opt">roles, not names</span>', 'with_whom', '<input name="with_whom" maxlength="200" enterkeyhint="next" value="' + esc(v.with_whom) + '" placeholder="e.g. station PD session, crew partner">', WHO_MSG, 'q-') : '') +
+        '<fieldset><legend><label for="q-learning_goal">Learning goal</label></legend>' +
+          '<textarea name="learning_goal" id="q-learning_goal" rows="2" maxlength="4000">' + esc(v.learning_goal) + '</textarea>' +
           (goals.length ? '<label class="field"><span class="label">Link to one of my goals <span class="opt">optional</span></span>' +
             '<select name="goal_id"><option value="">None</option>' + goals.map(function (g) {
               return '<option value="' + esc(g.id) + '"' + (g.id === v.goal_id ? ' selected' : '') + '>' + esc(g.text) + '</option>';
@@ -2535,6 +2626,7 @@
     });
     var form = $('quiz-form');
     if (!form) return;
+    r.check = bindChecks(form, r.touched || (r.touched = {}));
     if (!qz.goals) {
       goalsFor(cpdYear(todayISO())).then(function (g) {
         qz.goals = g;
@@ -2582,11 +2674,7 @@
   function saveQuiz(quiz, r) {
     collectQuiz(r);
     var v = r.v;
-    if (v.group && !v.with_whom.trim()) {
-      r.error = 'Say who you did it with (roles, not names). That’s your audit evidence.';
-      rerenderLog(quiz, r);
-      return;
-    }
+    if (r.check && !r.check()) return;
     r.saving = true; r.error = '';
     rerenderLog(quiz, r);
     var goal = v.goal_id ? (qz.goals || []).filter(function (g) { return g.id === v.goal_id; })[0] : null;
@@ -2650,8 +2738,9 @@
       '<article class="panel danger-zone">' +
         '<span class="panel-kicker">Delete account</span>' +
         (st.deleting
-          ? '<p class="panel-lead">This permanently deletes your account, goals and every entry. Download your data first if you need it for an audit. Type <b>DELETE</b> to confirm.</p>' +
-            '<input id="delete-confirm" autocomplete="off" autocapitalize="characters" aria-label="Type DELETE to confirm">' +
+          ? '<p class="panel-lead">This permanently deletes your account, goals and every entry. Download your data first if you need it for an audit.</p>' +
+            '<label class="label" for="delete-confirm">Type <b>DELETE</b> to confirm</label>' +
+            '<input id="delete-confirm" autocomplete="off" autocapitalize="characters" spellcheck="false" enterkeyhint="done">' +
             '<div class="sheet-actions"><button class="btn" id="delete-cancel" type="button">Cancel</button>' +
             '<button class="btn btn-danger" id="delete-go" type="button" disabled>Delete my account</button></div>' +
             '<p class="notice notice-warn" id="delete-error" hidden></p>'
