@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-11-20T18:20:11Z",
-  "lastUpdatedSydney": "2026-11-21 05:20 AEDT",
-  "lastUpdatedDate": "2026-11-21",
+  "lastUpdated": "2026-11-21T18:20:58Z",
+  "lastUpdatedSydney": "2026-11-22 05:20 AEDT",
+  "lastUpdatedDate": "2026-11-22",
   "featuredPapers": [
     {
       "id": "43044058",
@@ -46,6 +46,27 @@
       "learningGoal": "Understand how video-assisted emergency calls shape dispatch decisions and prehospital resource use across systems."
     },
     {
+      "id": "10.1016/j.resplu.2026.101565",
+      "title": "Group size matters: a systematic review comparing smaller versus larger group teaching in resuscitation training",
+      "journal": "Resuscitation Plus",
+      "date": "2026-11-22",
+      "pmid": "",
+      "doi": "10.1016/j.resplu.2026.101565",
+      "summary": "Systematic review comparing smaller versus larger group sizes in resuscitation training — abstract not yet available, so results cannot yet be reported.",
+      "relevance": "🟡 Medium — Resuscitation training group size is a universal education question for ambulance services, though without the abstract the findings can't yet be judged.",
+      "featuredReason": "Resuscitation training group size is a universal education question for ambulance services, though without the abstract the findings can't yet be judged.",
+      "pubDate": "2026-11",
+      "topic": "Education & training",
+      "studyType": "Systematic review",
+      "design": "Systematic review",
+      "n": "Not reported (abstract not yet available)",
+      "finding": "Abstract not yet available",
+      "caveat": "Abstract not yet available, so no results or quality appraisal possible",
+      "bottomLine": "Context only",
+      "shortTitle": "Small-group resuscitation training: what works?",
+      "learningGoal": "Strengthen my ability to choose group sizes that maximise skill retention in resuscitation training."
+    },
+    {
       "id": "43056114",
       "title": "Bystander CPR Type and Outcomes After Pediatric Out-of-Hospital Cardiac Arrest",
       "journal": "JAMA Network Open",
@@ -86,27 +107,6 @@
       "bottomLine": "Hypothesis-generating",
       "shortTitle": "Blood stored on ambulances stays within limits to day 42",
       "learningGoal": "Weigh the risks and benefits of storing red blood cells onboard ambulances for prehospital transfusion readiness."
-    },
-    {
-      "id": "10.1016/j.resuscitation.2026.111401",
-      "title": "Out-of-hospital cardiac arrests due to foreign body airway obstruction: A CanROC registry, retrospective cohort study",
-      "journal": "Resuscitation",
-      "date": "2026-11-20",
-      "pmid": "",
-      "doi": "10.1016/j.resuscitation.2026.111401",
-      "summary": "A Canadian CanROC registry cohort of 105,178 EMS-treated out-of-hospital cardiac arrests (2005–2023) found 1,106 (1.1%) were obviously foreign-body-airway-obstruction-related: prehospital ROSC was far more frequent than in presumed cardiac arrests (62.7% vs 37.8%) but survival to discharge was similar (10.6% vs 9.0%).",
-      "relevance": "🟢 High — A Canadian paramedic-model registry answering a question Australian crews face on every choking arrest. Bystander presence and shorter EMS response times drove outcomes — both central to how Australian systems are built, and the same arrest is managed the same way here.",
-      "featuredReason": "A Canadian paramedic-model registry answering a question Australian crews face on every choking arrest. Bystander presence and shorter EMS response times drove outcomes — both central to how Australian systems are built, and the same arrest is managed the same way here.",
-      "pubDate": "2026-11",
-      "topic": "Cardiac arrest",
-      "studyType": "Registry",
-      "design": "Retrospective registry cohort (CanROC, 2005–2023)",
-      "n": "105,178 EMS-treated OHCAs, of which 1,106 obviously FBAO-related",
-      "finding": "FBAO-related arrests achieved prehospital ROSC more often than presumed cardiac arrests (62.7% vs 37.8%, OR 2.77) but survival to discharge did not differ (10.6% vs 9.0%, p=0.094); within FBAO arrests, survival was 18.1% with prehospital ROSC and 0.8% without, and was associated with younger age (aOR 0.76 per decade), shockable rhythm (aOR 4.76) and shorter EMS response time (aOR 0.81 per minute).",
-      "caveat": "Exploratory retrospective design, and 'obviously FBAO-related' classification depends on registry coding rather than verified cause of arrest.",
-      "bottomLine": "Supports current practice",
-      "shortTitle": "Choking arrests: ROSC common, survival still poor",
-      "learningGoal": "Strengthen my recognition of airway obstruction as the reversible cause in cardiac arrest and prioritise early airway clearance."
     }
   ],
   "funFacts": [
@@ -1021,112 +1021,133 @@
   ],
   "funFact": {
     "category": "weird",
-    "fact": "The longest survived cardiac arrest without CPR was around 2 hours — in deep hypothermia. The cold slowed metabolism enough that the brain survived. It's the principle behind ECPR and targeted temperature management, taken to its extreme."
+    "fact": "In WWI, medics used sphagnum moss as wound dressings because it's naturally antiseptic — it can hold up to 20 times its weight in fluid and has a pH that inhibits bacterial growth. It actually worked better than cotton. Nature had the answer the whole time."
   },
   "tldr": {
-    "date": "2026-11-21",
-    "paperCount": 12,
-    "summary": "OHCA day: a 19-year Japanese national registry found bystanders doing rescue-breathing CPR on children had better neurological survival than compression-only CPR, just as compression-only messaging has taken over. Plus paediatric on-scene intervention rates from Los Angeles and an onboard blood-storage study.",
+    "date": "2026-11-22",
+    "paperCount": 4,
+    "summary": "A quieter day led by two resuscitation papers: a US cohort finding most prehospital tourniquets were unjustified yet caused no extra harm, and a German CT study finding gastric distension after OHCA didn't differ by prehospital airway type.",
     "highlights": [
       {
-        "id": "43056114",
-        "pmid": "43056114",
-        "doi": "10.1001/jamanetworkopen.2026.44991",
-        "title": "Rescue breaths linked to better paediatric arrest survival",
-        "journal": "JAMA Network Open",
-        "note": "Adjusted CO-CPR probability rose 14.6% → 55.1% (2005–2023) while RB-CPR fell 41.7% → 10.4%; 30-day neurologically favourable survival was 9.5% with CO-CPR and 3.6% with no bystander CPR, with RB-CPR highest"
+        "id": "43063388",
+        "pmid": "43063388",
+        "doi": "",
+        "title": "Most prehospital tourniquets unjustified, few harmed",
+        "journal": "Rhode Island Medical Journal",
+        "note": "69.4% of tourniquets were unjustified; justified cases were more severely injured and more often needed surgery or transfusion, but unjustified placement showed no difference in mortality, compartment syndrome or nerve palsy"
       },
       {
-        "id": "43062117",
-        "pmid": "43062117",
-        "doi": "10.1080/10903127.2026.2761025",
-        "title": "Incomplete on-scene care in paediatric cardiac arrest",
-        "journal": "Prehospital Emergency Care",
-        "note": "Adrenaline before transport in 58/143 (41%) non-shockable arrests and fluids in 12 (8%); defibrillation in 11/13 (85%) shockable; median scene time 10 minutes; 10/176 (6%) survived to discharge, 6 (3%) with favourable neurology"
+        "id": "43064337",
+        "pmid": "43064337",
+        "doi": "10.1016/j.resuscitation.2026.111399",
+        "title": "Gastric distension after OHCA similar across airways",
+        "journal": "Resuscitation",
+        "note": "Median total gastric volume 594 mL; no significant gastric-volume difference between tracheal (n=87) and supraglottic (n=28) groups; CT-defined aspiration numerically higher with supraglottic airways (78.6% vs 57.5%, OR 2.7, p=0.071)"
       },
       {
-        "id": "43056078",
-        "pmid": "43056078",
-        "doi": "10.1080/10903127.2026.2755973",
-        "title": "Blood stored on ambulances stays within limits to day 42",
-        "journal": "Prehospital Emergency Care",
-        "note": "All units below the 0.8% haemolysis threshold at day 42, but ambulance storage gave higher haemolysis at day 28 (+0.043 pp) and day 42 (+0.096 pp) and extra microerythrocyte accumulation, mostly between days 28 and 42"
-      },
-      {
-        "id": "43061366",
-        "pmid": "43061366",
-        "doi": "10.1136/tsaco-2026-002383",
-        "title": "Blood biomarker assay fits inside an EMS transport window",
-        "journal": "Trauma Surgery & Acute Care Open",
-        "note": "Median teleconsent 2 minutes, device data entry 1 minute, total workflow 6.5 minutes (IQR 5–7); over 90% reported sufficient training and all indicated willingness to adopt"
-      },
-      {
-        "id": "43056149",
-        "pmid": "43056149",
-        "doi": "10.1080/10903127.2026.2767093",
-        "title": "Five dispatch codes drive a third of prehospital blood use",
-        "journal": "Prehospital Emergency Care",
-        "note": "Top five MPDS codes (high-mechanism crash, penetrating central wounds, auto-versus-pedestrian, entrapment, auto-versus-bike/motorcycle) accounted for 29% of units; four medical haemorrhage/arrest codes accounted for a further 11% (51 patients)"
-      },
-      {
-        "id": "43058494",
-        "pmid": "43058494",
-        "doi": "10.1186/s12873-026-01727-0",
-        "title": "Machine-learning OHCA survival model from 370 patients",
-        "journal": "BMC Emergency Medicine",
-        "note": "Test-set ROC-AUC 0.9815 and PR-AUC 0.9515, Brier score 0.127; key features were on-site defibrillation, cumulative adrenaline dose, time to CPR, time to intubation, PCO2 and time to IV access"
-      },
-      {
-        "id": "10.5811/westjem.50492",
+        "id": "10.1186/s12873-026-01831-1",
         "pmid": "",
-        "doi": "10.5811/westjem.50492",
-        "title": "More arrests, more TORs during the pandemic years",
-        "journal": "Western Journal of Emergency Medicine",
-        "note": "OHCA incidence increased across all seasons (peak fall 2020); termination-of-resuscitation rate 56.6% → 61.2% (P=.01); scene times 24.4 → 26.1 minutes (P=.04) with transport times unchanged"
+        "doi": "10.1186/s12873-026-01831-1",
+        "title": "DNAR directives missing when crews arrive",
+        "journal": "BMC Emergency Medicine",
+        "note": "54.0% had encountered CPA with DNAR; among them 80% performed basic life support and 91% transported; four themes centred on inadequate DNAR decision-making processes, absent accommodating systems, scope-of-practice conflicts with patient wishes, and emotional burden"
       },
       {
-        "id": "43062355",
-        "pmid": "43062355",
-        "doi": "10.1080/10903127.2026.2765896",
-        "title": "Smoking flags wider heart risk in EMS staff",
-        "journal": "Prehospital Emergency Care",
-        "note": "Current smokers (6.0%) had adjusted mLE7 score −6.02 (95% CI −7.63 to −4.41) and aOR 0.37 for ideal cardiovascular health versus never smokers; former smokers intermediate (aOR 0.73)"
-      },
-      {
-        "id": "43058777",
-        "pmid": "43058777",
-        "doi": "10.1186/s12912-026-05274-8",
-        "title": "Debriefing works, but nobody reports it the same way",
-        "journal": "BMC Nursing",
-        "note": "Guided debriefing in 15 studies and tool/technology-assisted in 3; debriefing associated with improvements in technical performance, communication, teamwork, clinical reasoning and reflective practice, with inconsistent reporting of facilitation, structure and outcomes"
-      },
-      {
-        "id": "43040104",
-        "pmid": "43040104",
-        "doi": "10.1007/s00484-026-03364-5",
-        "title": "Heat-alert days bring more ambulance dispatches, not fewer",
-        "journal": "International Journal of Biometeorology",
-        "note": "Emergency ambulance dispatches on heat-alert days rose all-cause by 3.11% (95% CI 1.74–4.50), genitourinary by 5.82% and heatstroke by 31.1% (95% CI 21.2–41.8); no significant mortality association"
-      },
-      {
-        "id": "43062363",
-        "pmid": "43062363",
-        "doi": "10.1080/10903127.2026.2765886",
-        "title": "Community paramedicine programs can't agree on names",
-        "journal": "Prehospital Emergency Care",
-        "note": "Inconsistent use and interpretation of MIH, CP and MIH-CP terms; 1 in 4 programs used alternative terminology (e.g. neighbourhood paramedic, EMS outreach), attributed to variable definitions and limited stakeholder understanding"
-      },
-      {
-        "id": "43058711",
-        "pmid": "43058711",
-        "doi": "10.1186/s12909-026-10167-0",
-        "title": "Flipped classroom beats lectures for ECG skills",
-        "journal": "BMC Medical Education",
-        "note": "Flipped-classroom group scored significantly higher at two weeks (mean 6.84, p=0.002) and one month after intervention; groups were equivalent at baseline (p=0.10)"
+        "id": "10.1016/j.resplu.2026.101565",
+        "pmid": "",
+        "doi": "10.1016/j.resplu.2026.101565",
+        "title": "Small-group resuscitation training: what works?",
+        "journal": "Resuscitation Plus",
+        "note": "Abstract not yet available"
       }
     ]
   },
   "dailyUpdates": [
+    {
+      "date": "2026-11-22",
+      "papers": [
+        {
+          "id": "43063388",
+          "title": "Prehospital Tourniquet Use in Rhode Island: High Rates of Unjustified Application with Low Complication Rates",
+          "journal": "Rhode Island Medical Journal",
+          "date": "2026-11-22",
+          "pmid": "43063388",
+          "doi": "",
+          "summary": "US retrospective chart review of 232 prehospital tourniquet applications at a Rhode Island Level 1 trauma centre found 69.4% were unjustified, yet unjustified placement was not associated with higher mortality or complications.",
+          "relevance": "🟡 Medium — Tourniquets are standard kit on Australian ambulances, but this is a single-centre US chart review, so it informs the low-threshold debate rather than settling it.",
+          "pubDate": "2026-12-01",
+          "topic": "Trauma",
+          "studyType": "Cohort",
+          "design": "Retrospective single-centre trauma registry chart review",
+          "n": "232 patients with prehospital tourniquets",
+          "finding": "69.4% of tourniquets were unjustified; justified cases were more severely injured and more often needed surgery or transfusion, but unjustified placement showed no difference in mortality, compartment syndrome or nerve palsy",
+          "caveat": "Single US trauma centre, retrospective chart review, and 'justified' criteria were researcher-defined",
+          "bottomLine": "Supports current practice",
+          "shortTitle": "Most prehospital tourniquets unjustified, few harmed",
+          "learningGoal": "Weigh the risks and benefits of prehospital tourniquet application when injury severity is uncertain."
+        },
+        {
+          "id": "43064337",
+          "title": "Total gastric and intragastric air volumes in immediate post-resuscitation whole-body computed tomography after out-of-hospital cardiac arrest: Association with airway management, aspiration, diaphragmatic position and initial blood gas analysis",
+          "journal": "Resuscitation",
+          "date": "2026-11-22",
+          "pmid": "43064337",
+          "doi": "10.1016/j.resuscitation.2026.111399",
+          "summary": "German single-centre study quantifying gastric volumes on post-resuscitation CT in 120 OHCA patients found no significant difference between tracheal and supraglottic airway groups and no association between gastric air volume and CT-defined aspiration.",
+          "relevance": "🟡 Medium — Both tracheal tubes and supraglottic airways are standard in Australian cardiac arrest care, but the retrospective selected cohort keeps this hypothesis-generating rather than practice-guiding.",
+          "pubDate": "2026-11",
+          "topic": "Cardiac arrest",
+          "studyType": "Cohort",
+          "design": "Retrospective single-centre CT volumetry cohort",
+          "n": "120 OHCA patients with CT within 180 minutes (of 255 screened)",
+          "finding": "Median total gastric volume 594 mL; no significant gastric-volume difference between tracheal (n=87) and supraglottic (n=28) groups; CT-defined aspiration numerically higher with supraglottic airways (78.6% vs 57.5%, OR 2.7, p=0.071)",
+          "caveat": "Retrospective, single-centre, and limited to patients well enough to reach early CT; mechanisms and clinical consequences remain untested",
+          "bottomLine": "Hypothesis-generating",
+          "shortTitle": "Gastric distension after OHCA similar across airways",
+          "learningGoal": "Weigh the evidence on supraglottic versus tracheal airway choices during cardiac arrest and their association with aspiration risk."
+        },
+        {
+          "id": "10.1186/s12873-026-01831-1",
+          "title": "Challenges in managing do-not-attempt-resuscitation cases in prehospital settings: a qualitative study of emergency medical technicians in Japan",
+          "journal": "BMC Emergency Medicine",
+          "date": "2026-11-22",
+          "pmid": "",
+          "doi": "10.1186/s12873-026-01831-1",
+          "summary": "Japanese survey of 302 EMS personnel found over half had encountered cardiac arrest with a DNAR directive yet 80% still performed basic life support and 91% transported, with thematic analysis pointing to gaps in advance care planning and system rules as the upstream drivers of on-scene conflict.",
+          "relevance": "🟡 Medium — Japanese crews work under tighter legal constraints than Australian paramedics, but the themes — absent or unclear directives forcing treatment on scene — are recognisable in Australian practice.",
+          "pubDate": "2026-11-19",
+          "topic": "Operations & systems",
+          "studyType": "Qualitative",
+          "design": "Mixed-methods survey with reflexive thematic analysis",
+          "n": "302 EMS personnel responses (111 free-text)",
+          "finding": "54.0% had encountered CPA with DNAR; among them 80% performed basic life support and 91% transported; four themes centred on inadequate DNAR decision-making processes, absent accommodating systems, scope-of-practice conflicts with patient wishes, and emotional burden",
+          "caveat": "Single Japanese medical-control region, and EMT scope of practice differs from Australian paramedicine",
+          "bottomLine": "Context only",
+          "shortTitle": "DNAR directives missing when crews arrive",
+          "learningGoal": "Understand how advance care directives shape my resuscitation decisions and communication when patients' documented wishes are unclear."
+        },
+        {
+          "id": "10.1016/j.resplu.2026.101565",
+          "title": "Group size matters: a systematic review comparing smaller versus larger group teaching in resuscitation training",
+          "journal": "Resuscitation Plus",
+          "date": "2026-11-22",
+          "pmid": "",
+          "doi": "10.1016/j.resplu.2026.101565",
+          "summary": "Systematic review comparing smaller versus larger group sizes in resuscitation training — abstract not yet available, so results cannot yet be reported.",
+          "relevance": "🟡 Medium — Resuscitation training group size is a universal education question for ambulance services, though without the abstract the findings can't yet be judged.",
+          "pubDate": "2026-11",
+          "topic": "Education & training",
+          "studyType": "Systematic review",
+          "design": "Systematic review",
+          "n": "Not reported (abstract not yet available)",
+          "finding": "Abstract not yet available",
+          "caveat": "Abstract not yet available, so no results or quality appraisal possible",
+          "bottomLine": "Context only",
+          "shortTitle": "Small-group resuscitation training: what works?",
+          "learningGoal": "Strengthen my ability to choose group sizes that maximise skill retention in resuscitation training."
+        }
+      ]
+    },
     {
       "date": "2026-11-21",
       "papers": [
@@ -5418,111 +5439,6 @@
           "learningGoal": "Understand how heat and temperature swings influence demand patterns and my management of dizziness presentations in Australian summer conditions."
         }
       ]
-    },
-    {
-      "date": "2026-10-23",
-      "papers": [
-        {
-          "id": "10.1016/j.resplu.2026.101536",
-          "title": "Infant carry sling-associated out-of-hospital cardiac arrest and other circumstances surrounding such events in children under two years: A five-year regional registry analysis",
-          "journal": "Resuscitation Plus",
-          "date": "2026-10-23",
-          "pmid": "",
-          "doi": "10.1016/j.resplu.2026.101536",
-          "summary": "A five-year English regional registry review of 162 cardiac arrests in children under two found only two linked to infant carry slings, while co-sleeping featured in a third of cases.",
-          "relevance": "🟢 High — Sleep-related infant arrests — co-sleeping, found unresponsive in a cot, bed, sofa or pushchair — are the same scenes Australian crews attend, and nothing about a single-region English ambulance registry makes the numbers system-specific.",
-          "pubDate": "2026-10",
-          "topic": "Paediatrics",
-          "studyType": "Registry",
-          "design": "Retrospective registry service evaluation",
-          "n": "162 children under two who received a resuscitation attempt",
-          "finding": "Only 2 of 162 OHCA were carry sling-associated (1.8% of the 114 infant cases); co-sleeping accounted for 33.3% and children found unresponsive 26.3%",
-          "caveat": "Small single-region sample relying on free-text narrative review — two events over five years can't exclude a rare risk",
-          "bottomLine": "Hypothesis-generating",
-          "shortTitle": "Infant carry slings rarely linked to OHCA",
-          "learningGoal": "Recognise how carry slings and co-sleeping environments contribute to sudden deterioration in infants under two."
-        },
-        {
-          "id": "10.1186/s13049-026-01715-0",
-          "title": "Reproducible intubation contrast without evidence of a unique threshold at Glasgow Coma Scale 8: a two-era nationwide retrospective cohort study",
-          "journal": "Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
-          "date": "2026-10-23",
-          "pmid": "",
-          "doi": "10.1186/s13049-026-01715-0",
-          "summary": "A two-era Japan Trauma Data Bank analysis of roughly 138,000 adults found recorded intubation more likely at GCS 8 than 9, but no evidence of a unique risk threshold at that boundary.",
-          "relevance": "🟡 Medium — It's in-hospital registry data from a physician-assisted Japanese system, and drug-assisted intubation is an intensive care paramedic skill in most Australian services — but the GCS 8 cutoff it interrogates drives prehospital airway and trauma triage thinking everywhere.",
-          "pubDate": "2026-10-22",
-          "topic": "Trauma",
-          "studyType": "Registry",
-          "design": "Retrospective nationwide registry cohort (two eras)",
-          "n": "138,405 adults transported directly from scene (71,988 + 66,417)",
-          "finding": "Recorded intubation was 9.1–10.6 percentage points more frequent at GCS 8 (pooled aOR 1.61, 95% CI 1.36–1.91), but model fit favoured a graded GCS–outcome relationship over a discrete jump at the 8/9 boundary in every outcome and both eras",
-          "caveat": "Outcomes are post-arrival hospital records in patients with no prehospital advanced airway, so the prehospital intubation decision itself isn't tested",
-          "bottomLine": "Hypothesis-generating",
-          "shortTitle": "No unique GCS 8 threshold for intubation",
-          "learningGoal": "Weigh trauma airway decisions against graded consciousness rather than relying on a fixed GCS threshold."
-        },
-        {
-          "id": "10.1177/27536386261496803",
-          "title": "Paediatric out-of-hospital clinical deterioration: A scoping review",
-          "journal": "Paramedicine",
-          "date": "2026-10-23",
-          "pmid": "",
-          "doi": "10.1177/27536386261496803",
-          "summary": "A scoping review of 28 studies found no standardised definition of paediatric out-of-hospital clinical deterioration and almost no research on how crews actually recognise it.",
-          "relevance": "🟢 High — Recognising the deteriorating child is the same clinical problem for Australian crews as anywhere, and most included research comes from health systems structured like ours.",
-          "pubDate": "2026-10-21",
-          "topic": "Paediatrics",
-          "studyType": "Systematic review",
-          "design": "Scoping review (JBI methodology)",
-          "n": "28 studies published 1990–2026, mostly retrospective and from high-income countries",
-          "finding": "No study offered an operational definition of paediatric out-of-hospital deterioration; research leans on single-timepoint vital signs, trauma-specific indices and hospital-derived early warning scores, and no study examined physiological trajectories",
-          "caveat": "A scoping review maps the field without pooling effects, and most included studies were retrospective",
-          "bottomLine": "Context only",
-          "shortTitle": "Paediatric deterioration in the field poorly defined",
-          "learningGoal": "Recognise early physiological deterioration in paediatric patients beyond single vital sign readings."
-        },
-        {
-          "id": "10.1080/10903127.2026.2752064",
-          "title": "Pediatric Clinical Interventions and Adverse Safety Events Among Emergency Medical Services Encounters in Agencies With and Without a Pediatric Emergency Care Coordinator: An Observational Study",
-          "journal": "Prehospital Emergency Care",
-          "date": "2026-10-23",
-          "pmid": "",
-          "doi": "10.1080/10903127.2026.2752064",
-          "summary": "A US cross-sectional study of 2,219 paediatric EMS encounters found agencies with a paediatric emergency care coordinator delivered more procedures and medications, with fewer and less severe adverse safety events.",
-          "relevance": "🟡 Medium — No Australian service runs a dedicated paediatric EMS coordinator role, but the safety gap it targets — missed procedures and medication errors in children — is the same everywhere.",
-          "pubDate": "2026-10-21",
-          "topic": "Paediatrics",
-          "studyType": "Cross-sectional",
-          "design": "Cross-sectional chart review",
-          "n": "2,219 paediatric encounters across 15 EMS agencies, 2019–2023",
-          "finding": "Coordinator agencies performed more procedures (55.4% vs 26.8%) and gave more medications (23.4% vs 7.7%); procedure adverse safety event rates were 13.7% vs 20.0%, with lower assigned harm severity",
-          "caveat": "Cross-sectional design — agencies that adopt a coordinator may differ systematically from those that don't, and adverse events came from chart review",
-          "bottomLine": "Hypothesis-generating",
-          "shortTitle": "Paediatric care coordinators linked to fewer EMS errors",
-          "learningGoal": "Understand how paediatric care coordination roles within agencies influence the safety of prehospital interventions."
-        },
-        {
-          "id": "10.1111/1742-6723.70377",
-          "title": "Establishing the Priorities for Emergency Care Research in Australia and Aotearoa New Zealand",
-          "journal": "Emergency Medicine Australasia",
-          "date": "2026-10-23",
-          "pmid": "",
-          "doi": "10.1111/1742-6723.70377",
-          "summary": "ACEM's Clinical Trials Network, with the James Lind Alliance, has launched a priority setting partnership to set the emergency care research agenda for Australia and Aotearoa New Zealand for the next 5–10 years.",
-          "relevance": "🟡 Medium — It's an ED-led process rather than an ambulance one, but the resulting agenda shapes the emergency care evidence Australian paramedics work from, and the partnership is explicitly seeking clinician and consumer participation.",
-          "pubDate": "2026-10",
-          "topic": "Other",
-          "studyType": "Guideline / statement",
-          "design": "Guideline / statement",
-          "n": "Not reported",
-          "finding": "No results yet — the partnership is underway, aiming to prioritise unanswered questions across the ~11 million annual ED presentations in both countries",
-          "caveat": "This is an announcement of a process, not findings, and prehospital questions may or may not feature in the final priorities",
-          "bottomLine": "Context only",
-          "shortTitle": "AU/NZ emergency care research priorities being set",
-          "learningGoal": "Understand how national emergency care research priorities are set and where paramedic perspectives can shape the agenda."
-        }
-      ]
     }
   ],
   "weeklyTldr": {
@@ -5618,11 +5534,11 @@
   },
   "archive": {
     "url": "data/papers-archive.json",
-    "version": "2026-11-20T18:20:11Z",
-    "days": 99,
-    "papers": 524,
+    "version": "2026-11-21T18:20:58Z",
+    "days": 100,
+    "papers": 529,
     "from": "2026-04-21",
-    "to": "2026-10-22",
+    "to": "2026-10-23",
     "topics": {
       "Airway & ventilation": 25,
       "Cardiac (non-arrest)": 16,
@@ -5633,14 +5549,14 @@
       "Obstetrics": 5,
       "Older people": 5,
       "Operations & systems": 87,
-      "Other": 7,
-      "Paediatrics": 43,
+      "Other": 8,
+      "Paediatrics": 46,
       "Pain & sedation": 12,
       "Respiratory": 4,
       "Sepsis & infection": 9,
       "Stroke & neuro": 16,
       "Toxicology": 12,
-      "Trauma": 69,
+      "Trauma": 70,
       "Workforce & wellbeing": 18
     }
   }
