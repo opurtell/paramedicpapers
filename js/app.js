@@ -14,7 +14,7 @@
   /* Matches the desktop layer in css/style.css. Above it the sidebar takes
      over navigation, search lives in the header and the Feed gains two
      extra filters; below it the mobile layout is untouched. */
-  var DESKTOP = window.matchMedia('(min-width: 960px)');
+  var DESKTOP = window.matchMedia('(min-width: 60em)');
   function isWide() { return DESKTOP.matches; }
 
   var state = {

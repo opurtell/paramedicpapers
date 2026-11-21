@@ -28,6 +28,17 @@ Baseline [Widely available](https://web.dev/baseline) features are used freely; 
 - Movement (transforms, slides, spins, progress bars) only runs inside `@media (prefers-reduced-motion: no-preference)`; colour fades can stay.
 - Collapsed text (TLDRs, fun fact, episode notes, paper details) uses `hidden="until-found"` via `fold()` in `js/app.js`, so find-in-page opens it.
 
+### Text size
+
+Text follows the reader's own text size (browser setting, and on Chrome for Android the phone's text size through `<meta name="text-scale" content="scale">`).
+
+- Font sizes are in `rem` (16 px = 1 rem), never `px`. Never set a font size on `html` or `:root`; body text is `.9375rem` (15 px) on `body`.
+- Media query breakpoints are in `em` (960 px = `60em`), so large text gets the narrower layout. `DESKTOP` in `js/app.js` uses the same `60em`.
+- Widths that hold text (page column `35rem`, empty-state copy) are in `rem` so the column grows with the text.
+- No fixed `height` or `white-space: nowrap` on blocks that hold sentences; use `min-height`. Single-line titles in the podcast strip and player bar still truncate, by design.
+- The mobile tab bar labels stop growing at `3.6vw` so five labels still fit; icons carry the meaning.
+- Check a change at 200% text: in Playwright, `Page.setFontSizes` through a CDP session (`{ standard: 32, fixed: 26 }`).
+
 ### GitHub Pages
 
 1. Push this repo to GitHub
