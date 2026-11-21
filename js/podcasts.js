@@ -36,7 +36,7 @@
   };
 
   var $ = function (id) { return document.getElementById(id); };
-  var esc = PP.esc, ico = PP.ico;
+  var esc = PP.esc, ico = PP.ico, setHTML = window.ppSetHTML;
   var timer = null;
 
   /* ── hooks and the surface js/cpd.js uses ───────────── */
@@ -215,11 +215,10 @@
     var names = (pz.index || []).map(function (p) { return p.name; });
     var lead = names.length === 1 ? 'Listened to ' + names[0] + '?' : 'Listened to an emergency medicine podcast?';
     var stats = PP.hooks.podcastStats ? PP.hooks.podcastStats() : null;
-    el.innerHTML =
-      '<span class="panel-kicker panel-kicker-accent">' + ico('cpd') + 'Log other podcasts as CPD</span>' +
+    setHTML(el, '<span class="panel-kicker panel-kicker-accent">' + ico('cpd') + 'Log other podcasts as CPD</span>' +
       '<p class="panel-lead">' + esc(lead) + ' Find the episode and log it toward your 30 hours.</p>' +
       (stats && stats.count ? '<p class="pods-stats">' + ico('check') + esc(stats.count + ' episode' + (stats.count === 1 ? '' : 's') + ' logged this year · ' + stats.time) + '</p>' : '') +
-      '<a class="btn pods-go" href="#podcasts">Browse podcasts' + ico('arrow') + '</a>';
+      '<a class="btn pods-go" href="#podcasts">Browse podcasts' + ico('arrow') + '</a>');
   }
 
   /* ── views ──────────────────────────────────────────── */
@@ -231,11 +230,11 @@
     if (!pz.id) { renderList(root); return; }
     var p = pz.files[pz.id];
     if (pz.error) {
-      root.innerHTML = '<div class="empty-state"><h2>Podcast not found</h2><p>' + esc(pz.error) + '</p>' +
-        '<a class="btn" href="#podcasts">All podcasts</a></div>';
+      setHTML(root, '<div class="empty-state"><h2>Podcast not found</h2><p>' + esc(pz.error) + '</p>' +
+        '<a class="btn" href="#podcasts">All podcasts</a></div>');
       return;
     }
-    if (!p) { root.innerHTML = '<p class="empty">Loading episodes…</p>'; return; }
+    if (!p) { setHTML(root, '<p class="empty">Loading episodes…</p>'); return; }
     renderPodcast(root, p);
   }
 
@@ -247,13 +246,12 @@
 
   function renderList(root) {
     if (!pz.index) {
-      root.innerHTML = pz.indexError ? '<p class="empty">' + esc(pz.indexError) + '</p>' : '<p class="empty">Loading podcasts…</p>';
+      setHTML(root, pz.indexError ? '<p class="empty">' + esc(pz.indexError) + '</p>' : '<p class="empty">Loading podcasts…</p>');
       return;
     }
     var anzCount = pz.index.filter(isANZ).length;
     var total = pz.index.reduce(function (n, p) { return n + (p.episodes || 0); }, 0);
-    root.innerHTML =
-      '<p class="pods-intro">Pick a podcast, find the episode you listened to, and log it as CPD with the listening time filled in.</p>' +
+    setHTML(root, '<p class="pods-intro">Pick a podcast, find the episode you listened to, and log it as CPD with the listening time filled in.</p>' +
       '<div class="search-wrap pods-search">' + ico('search', 'search-ico') +
         '<input id="pods-list-q" type="search" placeholder="Search ' + esc(pz.index.length) + ' podcasts and ' + esc(total.toLocaleString('en-AU')) + ' episodes" aria-label="Search podcasts and episodes" value="' + esc(pz.listQ) + '" autocomplete="off">' +
       '</div>' +
@@ -264,7 +262,7 @@
       '<div class="pods-list-results" id="pods-list-results"></div>' +
       '<p class="fine pods-foot">Not listed? <a href="#cpd" data-add-podcast>Add it from CPD → Add</a> · ' +
         '<a href="' + SUGGEST + '">Suggest a podcast</a></p>' +
-      '<p class="fine">Episode details from each podcast’s public feed; listen in your podcast app.</p>';
+      '<p class="fine">Episode details from each podcast’s public feed; listen in your podcast app.</p>');
     var q = $('pods-list-q');
     q.addEventListener('input', function () {
       clearTimeout(timer);
@@ -298,14 +296,14 @@
       return ws.every(function (w) { return text.indexOf(w) !== -1; });
     });
 
-    if (!q) { box.innerHTML = cardsHTML(pods, ''); return; }
+    if (!q) { setHTML(box, cardsHTML(pods, '')); return; }
 
     var html = pods.length
       ? '<div class="section-head"><h2>Podcasts</h2><span class="muted-flag">' + pods.length + '</span></div>' + cardsHTML(pods, q)
       : '';
 
     if (!allLoaded()) {
-      box.innerHTML = html + '<p class="empty">Searching episodes…</p>';
+      setHTML(box, html + '<p class="empty">Searching episodes…</p>');
       var asked = pz.listQ;
       loadAll().then(function () { allTried = true; if (pz.listQ === asked) renderListResults(); }, function () {});
       return;
@@ -318,11 +316,11 @@
     });
     eps.sort(function (a, b) { return (b.e.date || '').localeCompare(a.e.date || ''); });
     var rows = eps.slice(0, pz.listShown);
-    box.innerHTML = html +
+    setHTML(box, html +
       '<div class="section-head"><h2>Episodes</h2><span class="muted-flag">' + eps.length + '</span></div>' +
       (eps.length ? '<div class="pods-eps">' + rows.map(function (r) { return rowHTML(r.p, r.e, q, true); }).join('') + '</div>'
         : '<p class="empty">No episodes match. Try fewer words' + (pz.region ? ', or search all regions' : '') + '.</p>') +
-      (eps.length > rows.length ? '<button class="btn pods-more" data-more type="button">Show more (' + (eps.length - rows.length) + ' left)</button>' : '');
+      (eps.length > rows.length ? '<button class="btn pods-more" data-more type="button">Show more (' + (eps.length - rows.length) + ' left)</button>' : ''));
     bindRows(box, function (id) { return pz.files[id]; });
     var more = box.querySelector('[data-more]');
     if (more) more.addEventListener('click', function () { pz.listShown += PAGE; renderListResults(); });
@@ -375,8 +373,7 @@
       }
     }
 
-    root.innerHTML =
-      '<div class="pods-head">' +
+    setHTML(root, '<div class="pods-head">' +
         artHTML(p, 'pods-art pods-art-lg') +
         '<div class="pods-head-main">' +
           '<a class="link-btn pods-all" href="#podcasts">' + ico('chev-left') + 'All podcasts</a>' +
@@ -395,7 +392,7 @@
         chip('year', '', 'Any year', !pz.year) +
         years.map(function (y) { return chip('year', y, y === 'older' ? 'Older' : y, pz.year === y); }).join('') + '</div>' +
       '<div id="pods-results"></div>' +
-      '<p class="fine pods-foot">Episode details from ' + esc(p.name) + '’s public feed; listen in your podcast app.</p>';
+      '<p class="fine pods-foot">Episode details from ' + esc(p.name) + '’s public feed; listen in your podcast app.</p>');
 
     var q = $('pods-q');
     q.addEventListener('input', function () {
@@ -421,12 +418,11 @@
     if (!box) return;
     var list = filtered(p);
     var rows = list.slice(0, pz.shown);
-    box.innerHTML =
-      '<div class="section-head"><h2>Episodes</h2><span class="muted-flag">' +
+    setHTML(box, '<div class="section-head"><h2>Episodes</h2><span class="muted-flag">' +
         (list.length === p.episodes.length ? list.length : list.length + ' of ' + p.episodes.length) + '</span></div>' +
       (list.length ? '<div class="pods-eps">' + rows.map(function (e) { return rowHTML(p, e, pz.q, false); }).join('') + '</div>'
         : '<p class="empty">No episodes match. Try fewer words, or clear the filters.</p>') +
-      (list.length > rows.length ? '<button class="btn pods-more" data-more type="button">Show more (' + (list.length - rows.length) + ' left)</button>' : '');
+      (list.length > rows.length ? '<button class="btn pods-more" data-more type="button">Show more (' + (list.length - rows.length) + ' left)</button>' : ''));
     bindRows(box, function () { return p; });
     var more = box.querySelector('[data-more]');
     if (more) more.addEventListener('click', function () { pz.shown += PAGE; renderResults(p); });

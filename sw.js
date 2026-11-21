@@ -18,14 +18,14 @@
    versions of the same file are deleted when the new one is stored.
    Cross-origin requests (audio, the API, analytics) are left alone. */
 
-var CACHE = 'pp-offline-v2';
+var CACHE = 'pp-offline-v3';
 var SLOW_MS = 6000;  /* past this, a kept copy beats waiting on bad signal */
 var PAGE_CAP = 60;
 var PAGE_DIRS = /^\/(papers|topics|daily|episodes)\//;
 var SHARED_WITH_BUILT_PAGES = ['/css/static.css', '/css/fonts.css', '/js/track.js'];
 var SHELL = [
   '/', '/css/style.css', '/css/fonts.css',
-  '/js/app.js', '/js/cpd.js', '/js/podcasts.js', '/js/track.js',
+  '/js/safe-html.js', '/js/app.js', '/js/cpd.js', '/js/podcasts.js', '/js/track.js',
   '/fonts/newsreader-latin.woff2', '/fonts/ibm-plex-sans-latin.woff2',
   '/fonts/ibm-plex-mono-latin-400.woff2', '/fonts/ibm-plex-mono-latin-500.woff2',
   '/icon-192.png', '/icon-32.png', '/site.webmanifest',
