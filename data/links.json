@@ -1,16 +1,34 @@
 {
- "updated": "2026-11-20",
+ "updated": "2026-11-21",
  "latest": [
   {
-   "key": "43051254",
-   "title": "Traumatic pneumothorax: most EDs don't drain early",
+   "key": "43056114",
+   "title": "Rescue breaths linked to better paediatric arrest survival",
+   "topic": "Paediatrics",
+   "finding": "Adjusted CO-CPR probability rose 14.6% → 55.1% (2005–2023) while RB-CPR fell 41.7% → 10.4%; 30-day neurologically favourable survival was 9.5% with CO-CPR and 3.6% with no bystander CPR, with RB-CPR highest"
+  },
+  {
+   "key": "43062117",
+   "title": "Incomplete on-scene care in paediatric cardiac arrest",
+   "topic": "Paediatrics",
+   "finding": "Adrenaline before transport in 58/143 (41%) non-shockable arrests and fluids in 12 (8%); defibrillation in 11/13 (85%) shockable; median scene time 10 minutes; 10/176 (6%) survived to discharge, 6 (3%) with favourable neurology"
+  },
+  {
+   "key": "43056078",
+   "title": "Blood stored on ambulances stays within limits to day 42",
    "topic": "Trauma",
-   "finding": "231 patients (68.1%) were initially managed without drainage; pneumothorax size >35 mm (aOR 41.0, 95% CI 16.4–102) and haemothorax (aOR 6.3, 95% CI 2.5–15.8) predicted ED-initiated drainage; 22.8% of drained patients had a recorded complication and in-hospital mortality was 5.6%."
+   "finding": "All units below the 0.8% haemolysis threshold at day 42, but ambulance storage gave higher haemolysis at day 28 (+0.043 pp) and day 42 (+0.096 pp) and extra microerythrocyte accumulation, mostly between days 28 and 42"
+  },
+  {
+   "key": "43061366",
+   "title": "Blood biomarker assay fits inside an EMS transport window",
+   "topic": "Trauma",
+   "finding": "Median teleconsent 2 minutes, device data entry 1 minute, total workflow 6.5 minutes (IQR 5–7); over 90% reported sufficient training and all indicated willingness to adopt"
   }
  ],
  "episode": {
-  "date": "2026-11-20",
-  "title": "Updated paediatric traumatic arrest position statement · 20 Nov",
-  "page": "/episodes/2026-11-20/"
+  "date": "2026-11-21",
+  "title": "Rescue breaths linked to better paediatric arrest survival · 21 Nov",
+  "page": "/episodes/2026-11-21/"
  }
 }

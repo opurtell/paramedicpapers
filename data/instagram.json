@@ -1,6 +1,18 @@
 {
- "updated": "2026-11-20",
+ "updated": "2026-11-21",
  "posts": [
+  {
+   "date": "2026-11-21",
+   "hook": "The bystander CPR we taught everyone to skip? Kids did better with it.",
+   "permalink": "https://www.instagram.com/p/Df_ssYtE7wo/",
+   "cover": "https://social.paramedicpapers.com/covers/2026-11-21.jpg",
+   "papers": [
+    "43056114",
+    "43062117",
+    "43056078",
+    "43061366"
+   ]
+  },
   {
    "date": "2026-11-20",
    "hook": "Traumatic pneumothorax: most EDs don't drain early",
@@ -280,12 +292,6 @@
    "hook": "Signs of life in traumatic OHCA · 3 new studies",
    "permalink": "https://www.instagram.com/p/DetJYvqEyjL/",
    "cover": "https://social.paramedicpapers.com/covers/2026-10-16.jpg"
-  },
-  {
-   "date": "2026-10-15",
-   "hook": "Dispatcher CPR and survival in shockable OHCA · 3 new studies",
-   "permalink": "https://www.instagram.com/p/DetIKxWE5pS/",
-   "cover": "https://social.paramedicpapers.com/covers/2026-10-15.jpg"
   }
  ]
 }
