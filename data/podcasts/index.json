@@ -144,6 +144,18 @@
   "updated": "2026-11-03"
  },
  {
+  "id": "rebel-cast",
+  "name": "REBEL Cast",
+  "publisher": "Dr Salim Rezaie",
+  "focus": "Evidence-based evaluation of emergency medicine literature",
+  "region": "US",
+  "site": "https://rebelem.com",
+  "art": "data/podcasts/art/rebel-cast.jpg",
+  "episodes": 50,
+  "latest": "2026-11-02",
+  "updated": "2026-11-21"
+ },
+ {
   "id": "pec-podcast",
   "name": "Prehospital Emergency Care Podcast",
   "publisher": "Prehospital Emergency Care journal",
@@ -178,18 +190,6 @@
   "episodes": 354,
   "latest": "2026-10-17",
   "updated": "2026-10-23"
- },
- {
-  "id": "rebel-cast",
-  "name": "REBEL Cast",
-  "publisher": "Dr Salim Rezaie",
-  "focus": "Evidence-based evaluation of emergency medicine literature",
-  "region": "US",
-  "site": "https://rebelem.com",
-  "art": "data/podcasts/art/rebel-cast.jpg",
-  "episodes": 49,
-  "latest": "2026-10-05",
-  "updated": "2026-10-08"
  },
  {
   "id": "critical-care-reviews",
