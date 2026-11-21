@@ -72,9 +72,19 @@
     if (m) track('view', m[1]);
   }
 
-  track('pageview', location.pathname);
-  route();
-  addEventListener('hashchange', route);
+  /* A page prerendered by speculation rules (the dashboard and static pages
+     prerender a link the moment it's pressed) runs this script before the
+     reader sees it, and may never be shown. Count the view only once it is. */
+  function start() {
+    track('pageview', location.pathname);
+    route();
+    addEventListener('hashchange', route);
+  }
+  if (document.prerendering) {
+    document.addEventListener('prerenderingchange', start, { once: true });
+  } else {
+    start();
+  }
 
   /* Sign-in buttons go to api.paramedicpapers.com/auth/<provider>. */
   document.addEventListener('click', function (e) {
