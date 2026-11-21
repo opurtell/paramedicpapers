@@ -78,6 +78,8 @@
     enableMoreTab();
     showSignupResult();
     renderIntro();
+    bindSkipLink();
+    bindFoldSync();
     bindTabs();
     bindHome();
     bindFeed();
@@ -335,6 +337,40 @@
   }
 
   /* Binds both the mobile tab bar and the desktop sidebar nav. */
+  /* Skip link: move focus to <main> without changing the hash, because the
+     hashchange handler would read "#main" as a route and jump to Today.
+     Without JS the plain #main link still works. */
+  function bindSkipLink() {
+    var link = document.querySelector('.skip-link');
+    if (!link) return;
+    link.addEventListener('click', function (e) {
+      e.preventDefault();
+      var main = $('main');
+      main.setAttribute('tabindex', '-1');
+      main.focus();
+      main.addEventListener('blur', function () { main.removeAttribute('tabindex'); }, { once: true });
+    });
+  }
+
+  /* Collapsed blocks (TLDRs, fun fact, episode notes, paper details) use
+     hidden="until-found", so the browser's find-in-page can still reach
+     them and opens them on a match. Browsers without it (Safari for now)
+     treat the value as plain hidden, which is today's behaviour. */
+  function fold(el, closed) { el.hidden = closed ? 'until-found' : false; }
+
+  /* Find-in-page opened a collapsed block: bring its toggle in step. */
+  function bindFoldSync() {
+    document.addEventListener('beforematch', function (e) {
+      var t = e.target;
+      if (t.classList.contains('ep-notes')) toggleNotes(t.closest('.ep-row'), true);
+      else if (t.classList.contains('facts-wrap')) {
+        var card = t.closest('article');
+        if (card && !card.classList.contains('is-expanded')) toggleCard(card);
+      }
+      /* Home panels sync through collapser(). */
+    });
+  }
+
   function bindTabs() {
     document.querySelectorAll('[data-tab]').forEach(function (btn) {
       btn.addEventListener('click', function () { setTab(btn.getAttribute('data-tab')); });
@@ -352,7 +388,8 @@
     var inMenu = !!MENU[tab];
     document.querySelectorAll('[data-tab]').forEach(function (btn) {
       var t = btn.getAttribute('data-tab');
-      btn.classList.toggle('is-on', t === navTab || (t === 'more' && inMenu));
+      if (t === navTab || (t === 'more' && inMenu)) btn.setAttribute('aria-current', 'page');
+      else btn.removeAttribute('aria-current');
     });
     $('btn-back').hidden = !PARENT[tab];
     $('page-title').textContent = (isWide() ? TITLES_WIDE : TITLES)[tab];
@@ -397,14 +434,14 @@
     [['daily-tldr-toggle', 'daily-tldr-body'],
      ['weekly-tldr-toggle-home', 'weekly-tldr-body-home']].forEach(function (pair) {
       var btn = $(pair[0]), body = $(pair[1]);
-      body.hidden = !wide;
+      fold(body, !wide);
       btn.innerHTML = ico(wide ? 'minus' : 'plus');
       btn.setAttribute('aria-expanded', String(wide));
     });
 
     var factBody = $('fun-fact-body'), factToggle = $('fun-fact-toggle');
     var hasMore = !!factBody.textContent;
-    factBody.hidden = !(wide && hasMore);
+    if (hasMore) fold(factBody, !wide); else factBody.hidden = true;
     factToggle.hidden = !hasMore || wide;
     factToggle.textContent = 'Read more';
     factToggle.setAttribute('aria-expanded', 'false');
@@ -509,6 +546,8 @@
     $('fun-fact-headline').textContent = head;
     $('fun-fact-body').textContent = rest;
     $('fun-fact-toggle').hidden = !rest;
+    /* Still collapsed: let find-in-page reach the rest of the fact. */
+    if (rest && $('fun-fact-body').hidden) fold($('fun-fact-body'), true);
   }
 
   /* Index of the full stop ending the first sentence, or -1. Skips
@@ -1399,7 +1438,7 @@
           '</div>' +
           '<span class="ep-len">' + epLenLabel(ep) + '</span>' +
         '</div>' +
-        (hasNotes ? '<div class="ep-notes" hidden>' + notesHTML(ep) + '</div>' : '') +
+        (hasNotes ? '<div class="ep-notes" hidden="until-found">' + notesHTML(ep) + '</div>' : '') +
       '</div>';
     }).join('');
     list.querySelectorAll('[data-notes]').forEach(function (btn) {
@@ -1443,8 +1482,8 @@
     var notes = row && row.querySelector('.ep-notes');
     var btn = row && row.querySelector('[data-notes]');
     if (!notes) return;
-    var show = open === undefined ? notes.hidden : open;
-    notes.hidden = !show;
+    var show = open === undefined ? !!notes.hidden : open;
+    fold(notes, !show);
     btn.textContent = show ? 'Hide notes' : 'Show notes';
     btn.setAttribute('aria-expanded', String(show));
   }
@@ -1510,9 +1549,6 @@
       if (state.episodes.length) playEpisode(state.episodes[0]);
     });
     $('strip-open').addEventListener('click', function () { setTab('podcast'); });
-    $('strip-open').addEventListener('keydown', function (e) {
-      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); setTab('podcast'); }
-    });
     $('btn-copy-feed').addEventListener('click', function () {
       var btn = $('btn-copy-feed');
       copyText($('feed-url').textContent.trim(), function () { flash(btn, 'Copied'); });
@@ -1664,7 +1700,7 @@
       (ep ? '<button class="act act-ep" data-episode="' + esc(ep.date) + '" type="button">' + ico('play', 'hi-solid') + 'Episode · ' +
             esc(shortDate(new Date(ep.date + 'T00:00:00'))) + '</button>' : '') +
       '</div>' +
-      (facts ? '<div class="facts-wrap" hidden>' + factsHTML(p) + '</div>' : '');
+      (facts ? '<div class="facts-wrap" hidden="until-found">' + factsHTML(p) + '</div>' : '');
   }
 
   /* topic / studyType are optional — rendered only when the backend supplies them. */
@@ -1713,7 +1749,7 @@
     var open = card.classList.toggle('is-expanded');
     var box = card.querySelector('.facts-wrap');
     var btn = card.querySelector('[data-details]');
-    if (box) box.hidden = !open;
+    if (box) fold(box, !open);
     if (btn) {
       btn.textContent = open ? 'Hide details' : 'Details';
       btn.setAttribute('aria-expanded', String(open));
@@ -1944,10 +1980,14 @@
     var btn = $(btnId), body = $(bodyId);
     if (!btn || !body) return;
     btn.addEventListener('click', function () {
-      var open = body.hidden;
-      body.hidden = !open;
+      var open = !!body.hidden;
+      fold(body, !open);
       btn.innerHTML = open ? openLabel : closedLabel;  /* labels are trusted markup */
       btn.setAttribute('aria-expanded', String(open));
+    });
+    body.addEventListener('beforematch', function () {
+      btn.innerHTML = openLabel;
+      btn.setAttribute('aria-expanded', 'true');
     });
   }
 

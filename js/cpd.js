@@ -497,7 +497,7 @@
     var saved = PP.savedCount();
     var acct = st.user ? (st.user.name || st.user.email) + ' · ' + (PROVIDER_NAMES[st.user.provider] || '') : 'Sign in';
     var item = function (tab, icon, title, sub, badge) {
-      return '<button class="menu-item' + (PP.state.tab === tab ? ' is-on' : '') + '" data-go="' + tab + '" type="button">' +
+      return '<button class="menu-item" data-go="' + tab + '" type="button"' + (PP.state.tab === tab ? ' aria-current="page"' : '') + '>' +
         '<span class="menu-ico">' + ico(icon) + '</span>' +
         '<span class="menu-text"><span class="menu-title">' + esc(title) + '</span>' +
         (sub ? '<span class="menu-sub">' + esc(sub) + '</span>' : '') + '</span>' +

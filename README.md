@@ -16,6 +16,18 @@ python3 -m http.server 8000
 npx serve .
 ```
 
+### Browser support
+
+Baseline [Widely available](https://web.dev/baseline) features are used freely; Newly available or limited ones need a fallback or feature detection, so the site still works without them (for example `hidden="until-found"`, which Safari treats as plain `hidden`).
+
+### Accessibility
+
+- Skip link to `#main` first in `<body>` on hand-written pages with a nav before the content.
+- The current view is marked with `aria-current="page"` (set in `setTab()`); CSS styles that, not a class.
+- Focus rings use `:focus-visible`; never set `outline: none` without a visible replacement.
+- Movement (transforms, slides, spins, progress bars) only runs inside `@media (prefers-reduced-motion: no-preference)`; colour fades can stay.
+- Collapsed text (TLDRs, fun fact, episode notes, paper details) uses `hidden="until-found"` via `fold()` in `js/app.js`, so find-in-page opens it.
+
 ### GitHub Pages
 
 1. Push this repo to GitHub
