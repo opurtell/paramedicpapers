@@ -78,7 +78,7 @@
   };
 
   var $ = function (id) { return document.getElementById(id); };
-  var esc = PP.esc, ico = PP.ico;
+  var esc = PP.esc, ico = PP.ico, setHTML = window.ppSetHTML;
 
   /* ── boot ───────────────────────────────────────────── */
 
@@ -300,7 +300,7 @@
       html = 'Saved on this device.' + (st.apiDown ? ''
         : ' <button class="link-inline" type="button" data-saved-signin>Sign in</button> to keep them on all your devices.');
     }
-    el.innerHTML = html;
+    setHTML(el, html);
     el.hidden = !html;
     var b = el.querySelector('[data-saved-signin]');
     if (b) b.addEventListener('click', openSavedSignIn);
@@ -309,11 +309,10 @@
   function openSavedSignIn() {
     openSheet({ type: 'signin' }, '');
     var el = $('sheet');
-    el.innerHTML =
-      '<div class="sheet-grip" aria-hidden="true"></div>' +
+    setHTML(el, '<div class="sheet-grip" aria-hidden="true"></div>' +
       '<div class="sheet-head"><h2 id="sheet-title" class="sr-only">Sign in</h2><span></span>' +
         '<button class="icon-btn" data-close type="button" aria-label="Close">' + ico('plus', 'rot45') + '</button></div>' +
-      signInHTML('Keep your saved papers on every device', '#saved');
+      signInHTML('Keep your saved papers on every device', '#saved'));
     el.querySelectorAll('[data-close]').forEach(function (b) { b.addEventListener('click', function () { closeSheet(true); }); });
   }
 
@@ -395,7 +394,7 @@
     if (chipName) {
       chipName.textContent = st.user ? (st.user.name || st.user.email || 'Account') : 'Sign in';
       $('account-chip-sub').textContent = st.user ? (st.user.email || '') : 'Track your CPD';
-      $('account-chip-avatar').innerHTML = st.user ? esc(initial(st.user)) : ico('user');
+      setHTML($('account-chip-avatar'), st.user ? esc(initial(st.user)) : ico('user'));
     }
     var pill = $('nav-cpd-hours');
     if (pill) {
@@ -425,7 +424,7 @@
         '<span class="pd-cpd-sub">Log papers, quizzes and podcasts toward your 30 hours. Free.</span></span>';
     }
     el.hidden = !html;
-    el.innerHTML = html ? ico('cpd') + html + ico('chev-right', 'entry-chev') : '';
+    setHTML(el, html ? ico('cpd') + html + ico('chev-right', 'entry-chev') : '');
   }
 
   function initial(u) {
@@ -453,16 +452,15 @@
     try { closed = localStorage.getItem(PROMO_KEY) === '1'; } catch (e) {}
     var show = st.checked && !st.user && !st.apiDown && !closed;
     el.hidden = !show;
-    if (!show) { el.innerHTML = ''; return; }
+    if (!show) { el.replaceChildren(); return; }
     if (el.firstChild) return;
-    el.innerHTML =
-      '<a class="cpd-promo-link" href="#cpd"><span class="cpd-promo-new">New</span>' +
+    setHTML(el, '<a class="cpd-promo-link" href="#cpd"><span class="cpd-promo-new">New</span>' +
         '<span>Track your CPD hours, log papers, and take the PD quiz</span>' + ico('arrow') + '</a>' +
-      '<button class="cpd-promo-close" type="button" aria-label="Dismiss">' + ico('x') + '</button>';
+      '<button class="cpd-promo-close" type="button" aria-label="Dismiss">' + ico('x') + '</button>');
     el.querySelector('.cpd-promo-close').addEventListener('click', function () {
       try { localStorage.setItem(PROMO_KEY, '1'); } catch (e) {}
       el.hidden = true;
-      el.innerHTML = '';
+      el.replaceChildren();
     });
   }
 
@@ -476,7 +474,7 @@
     st.sheet = sheet;
     var el = $('sheet');
     el.className = 'sheet sheet-' + sheet.type;
-    el.innerHTML = html;
+    setHTML(el, html);
     if (!el.open) el.showModal();
     el.scrollTop = 0;
     focusFirst(el);
@@ -507,7 +505,7 @@
   function emptySheetSoon() {
     setTimeout(function () {
       var el = $('sheet');
-      if (!el.open && !st.sheet) el.innerHTML = '';
+      if (!el.open && !st.sheet) el.replaceChildren();
     }, 300);
   }
 
@@ -529,15 +527,14 @@
         ico('chev-right', 'menu-chev') + '</button>';
     };
     var el = $('sheet');
-    el.innerHTML =
-      '<div class="sheet-grip" aria-hidden="true"></div>' +
+    setHTML(el, '<div class="sheet-grip" aria-hidden="true"></div>' +
       '<h2 class="sr-only" id="sheet-title">More</h2>' +
       '<nav class="menu-list" aria-label="More">' +
         item('cpd', 'cpd', 'CPD', cpdLine()) +
         item('saved', 'saved', 'Saved', saved ? saved + ' paper' + (saved === 1 ? '' : 's') : 'Papers you keep for later', saved || '') +
         item('account', 'user', 'Account', acct) +
       '</nav>' +
-      '<a class="menu-foot" href="privacy.html">Privacy</a>';
+      '<a class="menu-foot" href="privacy.html">Privacy</a>');
     el.querySelectorAll('[data-go]').forEach(function (b) {
       b.addEventListener('click', function () { closeSheet(true); PP.setTab(b.getAttribute('data-go')); });
     });
@@ -605,19 +602,18 @@
 
   function renderCpd() {
     var root = $('cpd-body');
-    if (!st.checked) { root.innerHTML = loadingHTML(); return; }
-    if (st.apiDown && !st.entries) { root.innerHTML = downHTML(); return; }
-    if (!st.user) { root.innerHTML = signInHTML('Sign in to track your CPD'); return; }
-    if (!st.summary || !st.entries || !st.goals) { root.innerHTML = yearBarHTML() + loadingHTML(); bindYearBar(root); return; }
+    if (!st.checked) { setHTML(root, loadingHTML()); return; }
+    if (st.apiDown && !st.entries) { setHTML(root, downHTML()); return; }
+    if (!st.user) { setHTML(root, signInHTML('Sign in to track your CPD')); return; }
+    if (!st.summary || !st.entries || !st.goals) { setHTML(root, yearBarHTML() + loadingHTML()); bindYearBar(root); return; }
 
-    root.innerHTML =
-      yearBarHTML() +
+    setHTML(root, yearBarHTML() +
       ringsHTML() +
       '<button class="btn btn-primary btn-add" id="cpd-add" type="button">' + ico('plus') + 'Add PD</button>' +
       monthsHTML() +
       goalsHTML() +
       entriesHTML() +
-      exportHTML();
+      exportHTML());
 
     bindYearBar(root);
     $('cpd-add').addEventListener('click', function () { openAdd('choose'); });
@@ -903,8 +899,7 @@
     /* Same bounds as the API: from 1 Dec six years ago to tomorrow. */
     var lim = { min: (+todayISO().slice(0, 4) - 6) + '-12-01', max: addDays(todayISO(), 1) };
 
-    $('sheet').innerHTML =
-      '<div class="sheet-grip" aria-hidden="true"></div>' +
+    setHTML($('sheet'), '<div class="sheet-grip" aria-hidden="true"></div>' +
       '<div class="sheet-head"><h2 id="sheet-title">' + (s.id ? 'Edit PD' : 'Add PD') + '</h2>' +
         '<button class="icon-btn" data-close type="button" aria-label="Close">' + ico('plus', 'rot45') + '</button></div>' +
       (s.restored ? '<p class="notice">Draft restored. <button class="link-inline" data-discard type="button">Discard it</button></p>' : '') +
@@ -952,7 +947,7 @@
             '<button class="btn" data-close type="button">Cancel</button>' +
             '<button class="btn btn-primary" type="submit"' + (s.saving ? ' disabled' : '') + '>' + (s.saving ? 'Saving…' : 'Save') + '</button>') +
         '</div>' +
-      '</form>';
+      '</form>');
 
     bindEntrySheet();
     checkPII();
@@ -1142,12 +1137,11 @@
   function openPaperSignIn(paperId, note) {
     openSheet({ type: 'signin', paperId: paperId }, '');
     var el = $('sheet');
-    el.innerHTML =
-      '<div class="sheet-grip" aria-hidden="true"></div>' +
+    setHTML(el, '<div class="sheet-grip" aria-hidden="true"></div>' +
       '<div class="sheet-head"><h2 id="sheet-title" class="sr-only">Sign in</h2><span></span>' +
         '<button class="icon-btn" data-close type="button" aria-label="Close">' + ico('plus', 'rot45') + '</button></div>' +
       (note ? '<p class="notice notice-warn" role="alert">' + esc(note) + '</p>' : '') +
-      (!st.checked ? loadingHTML() : st.apiDown ? downHTML() : signInHTML('Log this paper toward your 30 CPD hours', '#paper=' + encodeURIComponent(paperId)));
+      (!st.checked ? loadingHTML() : st.apiDown ? downHTML() : signInHTML('Log this paper toward your 30 CPD hours', '#paper=' + encodeURIComponent(paperId))));
     el.querySelectorAll('[data-close]').forEach(function (b) { b.addEventListener('click', function () { closeSheet(true); }); });
     el.querySelectorAll('.btn-provider').forEach(function (a) {
       a.addEventListener('click', function () { try { sessionStorage.setItem(RESUME_KEY, paperId); } catch (e) {} });
@@ -1224,8 +1218,8 @@
     }).catch(function (err) {
       if (!st.sheet || st.sheet.paperId !== paperId) return;
       if (err.status === 401) { openPaperSignIn(paperId, 'You’ve been signed out. Sign in again to log this paper.'); return; }
-      $('sheet').innerHTML = '<div class="sheet-grip" aria-hidden="true"></div><p class="notice notice-warn" role="alert">' + esc(err.message) + '</p>' +
-        '<div class="sheet-actions"><span class="spacer"></span><button class="btn" data-close type="button">Close</button></div>';
+      setHTML($('sheet'), '<div class="sheet-grip" aria-hidden="true"></div><p class="notice notice-warn" role="alert">' + esc(err.message) + '</p>' +
+        '<div class="sheet-actions"><span class="spacer"></span><button class="btn" data-close type="button">Close</button></div>');
       $('sheet').querySelector('[data-close]').addEventListener('click', function () { closeSheet(true); });
     });
   }
@@ -1255,8 +1249,7 @@
 
     if (s.done) { renderPaperDone(); return; }
 
-    $('sheet').innerHTML =
-      '<div class="sheet-grip" aria-hidden="true"></div>' +
+    setHTML($('sheet'), '<div class="sheet-grip" aria-hidden="true"></div>' +
       '<div class="sheet-head sheet-head-top">' + paperHeadHTML(s) +
         '<button class="icon-btn" data-close type="button" aria-label="Close">' + ico('plus', 'rot45') + '</button></div>' +
       (s.notice ? '<p class="notice">' + esc(s.notice) + '</p>' : '') +
@@ -1286,7 +1279,7 @@
           ? '<p class="fine">Discussed it later at journal club or with your crew? <button class="link-inline" data-log-discussion type="button">Log that separately</button></p>' : '') +
         (s.error ? '<p class="notice notice-warn" role="alert">' + esc(s.error) + '</p>' : '') +
         sheetActionsHTML(s, !!s.entryId) +
-      '</form>';
+      '</form>');
 
     bindPaperSheet();
     checkPII();
@@ -1418,8 +1411,7 @@
 
   function renderPaperDone() {
     var s = st.sheet, e = s.done;
-    $('sheet').innerHTML =
-      '<div class="sheet-grip" aria-hidden="true"></div>' +
+    setHTML($('sheet'), '<div class="sheet-grip" aria-hidden="true"></div>' +
       '<div class="paper-done">' +
         '<span class="done-ico">' + ico('check') + '</span>' +
         '<h2 id="sheet-title">' + (s.entryId ? 'Saved' : 'Logged') + ' · ' + esc(dur(e.minutes)) + '</h2>' +
@@ -1429,7 +1421,7 @@
       '</div>' +
       '<div class="sheet-actions"><span class="spacer"></span>' +
         '<button class="btn" data-go-cpd type="button">Open CPD</button>' +
-        '<button class="btn btn-primary" data-close type="button" autofocus>Done</button></div>';
+        '<button class="btn btn-primary" data-close type="button" autofocus>Done</button></div>');
     var el = $('sheet');
     el.querySelector('[data-close]').addEventListener('click', function () { closeSheet(true); });
     el.querySelector('[data-close]').focus();
@@ -1508,12 +1500,11 @@
   function openEpisodeSignIn(podcastId, eid, note) {
     openSheet({ type: 'signin', eid: eid }, '');
     var el = $('sheet');
-    el.innerHTML =
-      '<div class="sheet-grip" aria-hidden="true"></div>' +
+    setHTML(el, '<div class="sheet-grip" aria-hidden="true"></div>' +
       '<div class="sheet-head"><h2 id="sheet-title" class="sr-only">Sign in</h2><span></span>' +
         '<button class="icon-btn" data-close type="button" aria-label="Close">' + ico('plus', 'rot45') + '</button></div>' +
       (note ? '<p class="notice notice-warn" role="alert">' + esc(note) + '</p>' : '') +
-      (!st.checked ? loadingHTML() : st.apiDown ? downHTML() : signInHTML('Log this episode toward your 30 CPD hours', epHash(podcastId, eid)));
+      (!st.checked ? loadingHTML() : st.apiDown ? downHTML() : signInHTML('Log this episode toward your 30 CPD hours', epHash(podcastId, eid))));
     el.querySelectorAll('[data-close]').forEach(function (b) { b.addEventListener('click', function () { closeSheet(true); }); });
     el.querySelectorAll('.btn-provider').forEach(function (a) {
       a.addEventListener('click', function () { try { sessionStorage.setItem(EP_RESUME_KEY, JSON.stringify({ p: podcastId, e: eid })); } catch (e) {} });
@@ -1589,8 +1580,8 @@
     }).catch(function (err) {
       if (!st.sheet || st.sheet.eid !== ep.eid) return;
       if (err.status === 401) { openEpisodeSignIn(p.id, ep.eid, 'You’ve been signed out. Sign in again to log this episode.'); return; }
-      $('sheet').innerHTML = '<div class="sheet-grip" aria-hidden="true"></div><p class="notice notice-warn" role="alert">' + esc(err.message) + '</p>' +
-        '<div class="sheet-actions"><span class="spacer"></span><button class="btn" data-close type="button">Close</button></div>';
+      setHTML($('sheet'), '<div class="sheet-grip" aria-hidden="true"></div><p class="notice notice-warn" role="alert">' + esc(err.message) + '</p>' +
+        '<div class="sheet-actions"><span class="spacer"></span><button class="btn" data-close type="button">Close</button></div>');
       $('sheet').querySelector('[data-close]').addEventListener('click', function () { closeSheet(true); });
     });
   }
@@ -1629,8 +1620,7 @@
     var lim = dateLimits();
     var chips = ep.durationSec ? [['whole', 'Whole episode', epMinutes(ep)], ['half', 'Half', epMinutes(ep, true)]] : [];
 
-    $('sheet').innerHTML =
-      '<div class="sheet-grip" aria-hidden="true"></div>' +
+    setHTML($('sheet'), '<div class="sheet-grip" aria-hidden="true"></div>' +
       '<div class="sheet-head sheet-head-top">' + episodeHeadHTML(s) +
         '<button class="icon-btn" data-close type="button" aria-label="Close">' + ico('plus', 'rot45') + '</button></div>' +
       (s.notice ? '<p class="notice">' + esc(s.notice) + '</p>' : '') +
@@ -1655,7 +1645,7 @@
         reflectionHTML(v, episodePlaceholders(ep)) +
         (s.error ? '<p class="notice notice-warn" role="alert">' + esc(s.error) + '</p>' : '') +
         sheetActionsHTML(s, !!s.entryId) +
-      '</form>';
+      '</form>');
 
     bindEpisodeSheet();
     checkPII();
@@ -1798,13 +1788,13 @@
         '<button class="icon-btn" data-close type="button" aria-label="Close">' + ico('plus', 'rot45') + '</button></div>';
     };
     if (s.step === 'choose') {
-      el.innerHTML = head('Add PD') + '<nav class="menu-list" aria-label="Kind of PD">' +
+      setHTML(el, head('Add PD') + '<nav class="menu-list" aria-label="Kind of PD">' +
         addOption('podcast', 'Podcast episode', 'From our list, or enter one by hand') +
-        addOption('other', 'Other activity', 'Journal club, sim, course, case review…') + '</nav>';
+        addOption('other', 'Other activity', 'Journal club, sim, course, case review…') + '</nav>');
     } else if (s.step === 'podcast') {
-      el.innerHTML = head('Podcast episode') + '<nav class="menu-list" aria-label="Find the episode">' +
+      setHTML(el, head('Podcast episode') + '<nav class="menu-list" aria-label="Find the episode">' +
         addOption('pick', 'Pick from our list', podcastNames() || 'Emergency and prehospital podcasts') +
-        addOption('hand', 'Enter by hand', 'Any other podcast or video') + '</nav>';
+        addOption('hand', 'Enter by hand', 'Any other podcast or video') + '</nav>');
     } else {
       renderPicker(el, head);
       return;
@@ -1839,9 +1829,9 @@
      the CPD tab. One podcast in the list → straight to its episodes. */
   function renderPicker(el, head) {
     var s = st.sheet;
-    if (!PP.podcasts) { el.innerHTML = head('Pick an episode') + '<p class="empty">The podcast list isn’t available right now.</p>'; bindAddSheet(el); return; }
+    if (!PP.podcasts) { setHTML(el, head('Pick an episode') + '<p class="empty">The podcast list isn’t available right now.</p>'); bindAddSheet(el); return; }
     if (!s.index) {
-      el.innerHTML = head('Pick an episode') + loadingHTML();
+      setHTML(el, head('Pick an episode') + loadingHTML());
       bindAddSheet(el);
       PP.podcasts.loadIndex().then(function (idx) {
         if (st.sheet !== s) return;
@@ -1851,9 +1841,9 @@
       return;
     }
     if (!s.podcast) {
-      el.innerHTML = head('Which podcast?') + (s.index.length ? '<nav class="menu-list">' + s.index.map(function (p) {
+      setHTML(el, head('Which podcast?') + (s.index.length ? '<nav class="menu-list">' + s.index.map(function (p) {
         return addOption('pod:' + p.id, p.name, p.focus || '');
-      }).join('') + '</nav>' : '<p class="empty">The podcast list isn’t available right now.</p>');
+      }).join('') + '</nav>' : '<p class="empty">The podcast list isn’t available right now.</p>'));
       bindAddSheet(el);
       el.querySelectorAll('[data-add^="pod:"]').forEach(function (b) {
         b.addEventListener('click', function () {
@@ -1867,12 +1857,12 @@
       return;
     }
     var p = s.podcast;
-    el.innerHTML = head(p.name) +
+    setHTML(el, head(p.name) +
       '<div class="search-wrap pods-search">' + ico('search', 'search-ico') +
         '<input id="pick-q" type="search" placeholder="Search episodes, e.g. pupils" aria-label="Search episodes" value="' + esc(s.q) + '" autocomplete="off" autofocus>' +
       '</div>' +
       '<div class="pick-list" id="pick-list"></div>' +
-      '<p class="fine">Not there? <button class="link-inline" data-add="hand" type="button">Enter it by hand</button></p>';
+      '<p class="fine">Not there? <button class="link-inline" data-add="hand" type="button">Enter it by hand</button></p>');
     bindAddSheet(el);
     var q = $('pick-q'), t = null;
     q.addEventListener('input', function () { clearTimeout(t); t = setTimeout(function () { s.q = q.value; renderPickList(); }, 150); });
@@ -1884,13 +1874,13 @@
     var s = st.sheet, p = s.podcast, box = $('pick-list');
     if (!box) return;
     var list = p.episodes.filter(function (e) { return !s.q || PP.podcasts.matches(e, s.q); }).slice(0, 25);
-    box.innerHTML = list.length ? list.map(function (e) {
+    setHTML(box, list.length ? list.map(function (e) {
       var x = st.loggedEps && st.loggedEps[e.eid];
       return '<button class="pick-row" data-pick="' + esc(e.eid) + '" type="button">' +
         '<span class="ep-date">' + esc(niceDate(e.date, true)) + (e.durationSec ? ' · ' + esc(dur(Math.round(e.durationSec / 60))) : '') +
           (x ? ' · <span class="pods-logged">' + ico('check') + 'Logged</span>' : '') + '</span>' +
         '<span class="pick-title">' + esc(e.title) + '</span></button>';
-    }).join('') : '<p class="empty">No episodes match.</p>';
+    }).join('') : '<p class="empty">No episodes match.</p>');
     box.querySelectorAll('[data-pick]').forEach(function (b) {
       b.addEventListener('click', function () {
         var ep = p.episodes.filter(function (e) { return e.eid === b.getAttribute('data-pick'); })[0];
@@ -2007,8 +1997,7 @@
   function renderGoalSheet() {
     var s = st.sheet;
     var statuses = [['active', 'Active'], ['met', 'Met'], ['dropped', 'Dropped']];
-    $('sheet').innerHTML =
-      '<div class="sheet-grip" aria-hidden="true"></div>' +
+    setHTML($('sheet'), '<div class="sheet-grip" aria-hidden="true"></div>' +
       '<div class="sheet-head"><h2 id="sheet-title">' + (s.id ? 'Learning goal' : 'New learning goal') + '</h2>' +
         '<button class="icon-btn" data-close type="button" aria-label="Close">' + ico('plus', 'rot45') + '</button></div>' +
       '<form class="form" id="goal-form" novalidate>' +
@@ -2028,7 +2017,7 @@
             '<button class="btn" data-close type="button">Cancel</button>' +
             '<button class="btn btn-primary" type="submit">Save</button>') +
         '</div>' +
-      '</form>';
+      '</form>');
 
     var el = $('sheet'), form = $('goal-form');
     var text = form.querySelector('[name="text"]');
@@ -2248,7 +2237,7 @@
     if (!slot) return;
     var q = qz.index && qz.index[0];
     slot.hidden = !q;
-    if (!q) { slot.innerHTML = ''; return; }
+    if (!q) { slot.replaceChildren(); return; }
     var res = resultFor(q.id);
     var quiz = qz.quizzes[q.id];
     if (!quiz && !res && !cardQuizFailed[q.id]) {
@@ -2260,28 +2249,25 @@
 
     if (res || (run && run.done)) {
       if (!res) res = { score: score(quiz, run), total: quiz.questions.length, logged: false };
-      slot.innerHTML =
-        '<a class="brief-card quiz-card" href="#quiz">' + kicker +
+      setHTML(slot, '<a class="brief-card quiz-card" href="#quiz">' + kicker +
           '<span class="brief-card-title"><span class="quiz-done">' + ico('check') + 'Done · ' + res.score + '/' + res.total + '</span></span>' +
           '<span class="brief-card-lead">' + (res.logged ? 'Logged to your CPD.'
             : st.user ? 'Not logged as CPD yet.' : 'Sign in to log it as CPD.') + '</span>' +
           '<span class="brief-card-go">Review it' + ico('arrow') + '</span>' +
-        '</a>' + past;
+        '</a>' + past);
       return;
     }
     if (run && run.answers.length && !run.done) {
-      slot.innerHTML =
-        '<a class="brief-card quiz-card" href="#quiz">' + kicker +
+      setHTML(slot, '<a class="brief-card quiz-card" href="#quiz">' + kicker +
           '<span class="brief-card-title">' + run.answers.length + ' of ' + quiz.questions.length + ' answered</span>' +
           '<span class="brief-card-lead">Pick up where you left off.</span>' +
           '<span class="brief-card-go">Carry on' + ico('arrow') + '</span>' +
-        '</a>' + past;
+        '</a>' + past);
       return;
     }
     if (quiz && quiz.questions && quiz.questions.length) {
       var q1 = quiz.questions[0];
-      slot.innerHTML =
-        '<div class="brief-card quiz-card">' + kicker +
+      setHTML(slot, '<div class="brief-card quiz-card">' + kicker +
           '<span class="quiz-card-sub">Question 1 of ' + quiz.questions.length + ' · about ' + esc(q.est_minutes) + ' min · answer to start</span>' +
           '<p class="quiz-card-q" id="quiz-card-q">' + esc(q1.question) + '</p>' +
           '<div class="quiz-opts" role="group" aria-labelledby="quiz-card-q">' +
@@ -2292,7 +2278,7 @@
             }).join('') +
           '</div>' +
           '<span class="quiz-card-sub">Each answer comes with why. Signed in, the quiz is logged as CPD.</span>' +
-        '</div>' + past;
+        '</div>' + past);
       slot.querySelectorAll('[data-card-opt]').forEach(function (b) {
         b.addEventListener('click', function () {
           var r = qz.run && qz.run.id === quiz.id ? qz.run : restoreRun(quiz);
@@ -2305,12 +2291,11 @@
       return;
     }
     /* Quiz file not here (yet): the plain card. */
-    slot.innerHTML =
-      '<a class="brief-card quiz-card" href="#quiz">' + kicker +
+    setHTML(slot, '<a class="brief-card quiz-card" href="#quiz">' + kicker +
         '<span class="brief-card-title">' + esc(q.count) + ' questions on the brief’s papers</span>' +
         '<span class="brief-card-lead">About ' + esc(q.est_minutes) + ' minutes. Each answer comes with why. Signed in, it’s logged as CPD.</span>' +
         '<span class="brief-card-go">Take the quiz' + ico('arrow') + '</span>' +
-      '</a>' + past;
+      '</a>' + past);
   }
 
   /* ── quiz view ── */
@@ -2319,27 +2304,26 @@
     var root = $('quiz-body');
     if (!root) return;
     PP.renderKicker();
-    if (!qz.index) { root.innerHTML = loadingHTML(); return; }
+    if (!qz.index) { setHTML(root, loadingHTML()); return; }
     if (qz.id === 'all') { renderQuizList(root); return; }
     if (!qz.id) {
-      root.innerHTML = '<div class="empty-state">' + ico('quiz', 'empty-ico') + '<h2>No quiz yet</h2><p>A new short quiz comes with each PD brief issue, every 4 days.</p></div>';
+      setHTML(root, '<div class="empty-state">' + ico('quiz', 'empty-ico') + '<h2>No quiz yet</h2><p>A new short quiz comes with each PD brief issue, every 4 days.</p></div>');
       return;
     }
     if (qz.error) {
-      root.innerHTML = '<div class="empty-state"><h2>Quiz unavailable</h2><p>' + esc(qz.error) + '</p></div>' +
-        (qz.index.length ? '<p class="quiz-foot"><a href="#quiz=all">All quizzes</a></p>' : '');
+      setHTML(root, '<div class="empty-state"><h2>Quiz unavailable</h2><p>' + esc(qz.error) + '</p></div>' +
+        (qz.index.length ? '<p class="quiz-foot"><a href="#quiz=all">All quizzes</a></p>' : ''));
       return;
     }
     var quiz = qz.quizzes[qz.id], r = qz.run;
-    if (!quiz || !r) { root.innerHTML = loadingHTML(); return; }
+    if (!quiz || !r) { setHTML(root, loadingHTML()); return; }
     if (r.done) renderResults(root, quiz, r);
     else if (r.pos < 0) renderIntro(root, quiz);
     else renderQuestion(root, quiz, r);
   }
 
   function renderQuizList(root) {
-    root.innerHTML =
-      '<div class="section-head"><h2>Past quizzes</h2><span class="muted-flag">' + qz.index.length + '</span></div>' +
+    setHTML(root, '<div class="section-head"><h2>Past quizzes</h2><span class="muted-flag">' + qz.index.length + '</span></div>' +
       (qz.index.length ? '<div class="quiz-list">' + qz.index.map(function (q) {
         var a = resultFor(q.id);
         return '<a class="quiz-row" href="#quiz=' + esc(q.id) + '">' +
@@ -2347,7 +2331,7 @@
           '<span class="entry-meta">' + q.count + ' questions · about ' + esc(q.est_minutes) + ' min</span></span>' +
           (a ? '<span class="pill pill-met">' + ico('check') + a.score + '/' + a.total + '</span>' : '') +
           ico('chev-right', 'entry-chev') + '</a>';
-      }).join('') + '</div>' : '<p class="empty">No quizzes yet.</p>');
+      }).join('') + '</div>' : '<p class="empty">No quizzes yet.</p>'));
   }
 
   function quizHeadHTML(quiz, sub) {
@@ -2360,15 +2344,14 @@
   function renderIntro(root, quiz) {
     var a = attemptFor(quiz.id);
     var local = a ? null : resultFor(quiz.id);
-    root.innerHTML =
-      quizHeadHTML(quiz, quiz.questions.length + ' questions · about ' + quiz.est_minutes + ' min') +  /* esc'd in quizHeadHTML */
+    setHTML(root, quizHeadHTML(quiz, quiz.questions.length + ' questions · about ' + quiz.est_minutes + ' min') +  /* esc'd in quizHeadHTML */
       '<p class="quiz-lead">One question per paper from this period’s PD brief. Each answer shows why, with a link to the paper.</p>' +
       (a ? '<p class="notice">' + ico('check') + ' You’ve logged this quiz: ' + a.score + '/' + a.total + '. A retake isn’t logged again.</p>'
         : local ? '<p class="notice">' + ico('check') + ' You scored ' + local.score + '/' + local.total + ' on this device' +
           (local.date ? ' on ' + esc(niceDate(local.date)) : '') + '.' + (st.user ? '' : ' Sign in before you take it again to log it as CPD.') + '</p>' : '') +
       '<button class="btn btn-primary btn-add" data-quiz-start type="button">' + (a || local ? 'Take it again' : 'Start') + '</button>' +
       '<p class="fine">Your time is counted while a question is on screen, for your CPD log.' +
-        (qz.index.length > 1 ? ' <a href="#quiz=all">Past quizzes</a>' : '') + '</p>';
+        (qz.index.length > 1 ? ' <a href="#quiz=all">Past quizzes</a>' : '') + '</p>');
     root.querySelector('[data-quiz-start]').addEventListener('click', function () {
       var r = qz.run;
       r.pos = 0; r.answers = []; r.seconds = 0; r.done = false;
@@ -2392,8 +2375,7 @@
     var q = quiz.questions[r.pos], picked = r.answers[r.pos], answered = picked != null;
     var last = r.pos === quiz.questions.length - 1;
     var right = answered && picked === q.answer;
-    root.innerHTML =
-      '<div class="quiz-top">' + dotsHTML(quiz, r) + '<span class="quiz-count">' + (r.pos + 1) + ' / ' + quiz.questions.length + '</span></div>' +
+    setHTML(root, '<div class="quiz-top">' + dotsHTML(quiz, r) + '<span class="quiz-count">' + (r.pos + 1) + ' / ' + quiz.questions.length + '</span></div>' +
       '<p class="quiz-paper">' + esc(q.topic) + ' · ' + esc(q.short_title) + '</p>' +
       '<h2 class="quiz-q" id="quiz-q" tabindex="-1">' + esc(q.question) + '</h2>' +
       '<div class="quiz-opts" role="group" aria-labelledby="quiz-q">' +
@@ -2415,7 +2397,7 @@
             '<a class="quiz-read" href="#paper=' + esc(encodeURIComponent(q.paper_id)) + '">' + ico('feed') + 'Read the paper</a>' +
           '</div>' +
           '<div class="quiz-nav"><span class="spacer"></span><button class="btn btn-primary" data-quiz-next type="button">' + (last ? 'See results' : 'Next') + ico('chev-right') + '</button></div>'
-        : '');
+        : ''));
 
     root.querySelectorAll('[data-opt]').forEach(function (b) {
       b.addEventListener('click', function () {
@@ -2467,14 +2449,13 @@
         '<p class="quiz-recap-a"><b>' + LETTERS[q.answer] + ': ' + esc(q.options[q.answer]) + '</b></p>' +
         '<p class="quiz-recap-why">' + esc(q.explanation) + ' <a href="#paper=' + esc(encodeURIComponent(q.paper_id)) + '">Read the paper</a></p></div></li>';
     }).join('');
-    root.innerHTML =
-      quizHeadHTML(quiz, 'Your result') +
+    setHTML(root, quizHeadHTML(quiz, 'Your result') +
       '<div class="quiz-score"><span class="quiz-score-n">' + s + '<span>/' + n + '</span></span>' +
         '<span class="quiz-score-line">' + esc(scoreLine(s, n)) + '</span></div>' +
       '<details class="quiz-recap"><summary>Your answers</summary><ol>' + recap + '</ol></details>' +
       '<div id="quiz-log">' + logBlockHTML(quiz, r, s) + '</div>' +
       '<div class="quiz-nav"><button class="btn" data-quiz-again type="button">Try again</button>' +
-        (qz.index.length > 1 ? '<a class="link-btn" href="#quiz=all">Past quizzes</a>' : '') + '</div>';
+        (qz.index.length > 1 ? '<a class="link-btn" href="#quiz=all">Past quizzes</a>' : '') + '</div>');
     root.querySelector('[data-quiz-again]').addEventListener('click', function () {
       r.pos = 0; r.answers = []; r.seconds = 0; r.done = false; r.saved = null; r.error = '';
       saveRun();
@@ -2585,7 +2566,7 @@
   }
 
   function rerenderLog(quiz, r) {
-    $('quiz-log').innerHTML = logBlockHTML(quiz, r, score(quiz, r));
+    setHTML($('quiz-log'), logBlockHTML(quiz, r, score(quiz, r)));
     bindLogBlock(quiz, r);
   }
 
@@ -2641,12 +2622,11 @@
 
   function renderAccount() {
     var root = $('account-body');
-    if (!st.checked) { root.innerHTML = loadingHTML(); return; }
-    if (st.apiDown && !st.user) { root.innerHTML = downHTML(); return; }
-    if (!st.user) { root.innerHTML = signInHTML('Sign in to track your CPD'); st.loginError = ''; return; }
+    if (!st.checked) { setHTML(root, loadingHTML()); return; }
+    if (st.apiDown && !st.user) { setHTML(root, downHTML()); return; }
+    if (!st.user) { setHTML(root, signInHTML('Sign in to track your CPD')); st.loginError = ''; return; }
     var u = st.user;
-    root.innerHTML =
-      '<article class="panel account-card">' +
+    setHTML(root, '<article class="panel account-card">' +
         '<span class="avatar avatar-lg" aria-hidden="true">' + esc(initial(u)) + '</span>' +
         '<div class="account-id"><span class="account-name">' + esc(u.name || 'Your account') + '</span>' +
           '<span class="account-email">' + esc(u.email || '') + '</span>' +
@@ -2677,7 +2657,7 @@
             '<p class="notice notice-warn" id="delete-error" hidden></p>'
           : '<p class="hint">Removes everything we hold about you.</p><button class="btn btn-quiet" id="delete-start" type="button">Delete my account…</button>') +
       '</article>' +
-      '<p class="fine"><a href="privacy.html">Privacy</a> · Questions: newsletter@paramedicpapers.com</p>';
+      '<p class="fine"><a href="privacy.html">Privacy</a> · Questions: newsletter@paramedicpapers.com</p>');
 
     root.querySelectorAll('[data-target]').forEach(function (b) {
       b.addEventListener('click', function () {

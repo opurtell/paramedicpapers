@@ -39,6 +39,17 @@ Text follows the reader's own text size (browser setting, and on Chrome for Andr
 - The mobile tab bar labels stop growing at `3.6vw` so five labels still fit; icons carry the meaning.
 - Check a change at 200% text: in Playwright, `Page.setFontSizes` through a CDP session (`{ standard: 32, fixed: 26 }`).
 
+### Security
+
+GitHub Pages sends no headers, so each hand-written page (`index.html`, `about.html`, `links.html`, `privacy.html`, `404.html`, `stats.html`) carries its Content-Security-Policy as a `<meta http-equiv>` straight after `<meta charset>`.
+
+- **Never write markup with `innerHTML`.** Build it from templates with data through `esc()`, then `setHTML(el, html)` (`window.ppSetHTML`, from `js/safe-html.js`). The policy requires Trusted Types, so a plain string assigned to `innerHTML` throws in Chrome, Edge, Firefox 148+ and Safari 26+. Use `textContent`, or `el.replaceChildren()` to empty an element.
+- `js/safe-html.js` holds the only Trusted Types policy (`pp`). It also strips script tags, `on*` handlers and `javascript:` URLs if a template ever lets them through, and only allows `/sw.js` as a script URL.
+- **Inline `<script>` blocks are allowed by hash.** After editing one (theme pre-paint, intro hide, speculation rules, the stats/privacy code), run `python3 tools/csp.py`; `python3 tools/csp.py --check` fails if a page is out of date. A new outside host (script, image, audio, API, iframe) goes in `BASE` in `tools/csp.py`, then rerun it.
+- `style-src` allows inline styles (progress bars, chart colours, the stand-alone pages' `<style>`).
+- A meta policy can't set `frame-ancestors` or report-only mode; those need headers (Cloudflare in front of Pages), which isn't set up.
+- Built pages (`papers/`, `topics/`, `daily/`, `episodes/`) get their policy from greg's `build_static_pages.py`.
+
 ### GitHub Pages
 
 1. Push this repo to GitHub

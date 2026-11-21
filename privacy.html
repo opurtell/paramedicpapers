@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-adh5bTGOWphKt+D5i3dXD0nT2qcEN4ShhPNw7yFxGqY=' 'sha256-xR9wFuEdt8aUpvrKkajJ/RDt6sXQ3FnK7+uPV+gcGOk=' https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://social.paramedicpapers.com; font-src 'self'; connect-src 'self' https://api.paramedicpapers.com https://audio.paramedicpapers.com https://cloudflareinsights.com https://static.cloudflareinsights.com; media-src 'self' https://audio.paramedicpapers.com https://op3.dev; frame-src https://join.paramedicpapers.com; worker-src 'self'; manifest-src 'self'; object-src 'none'; base-uri 'none'; form-action 'self'; require-trusted-types-for 'script'; trusted-types pp">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <meta name="text-scale" content="scale">
   <meta name="color-scheme" content="light dark">
@@ -64,6 +65,7 @@
     .callout { background: var(--warm-tint); border-left: 3px solid var(--warm); padding: 14px 16px; margin: 24px 0; border-radius: 0 6px 6px 0; }
     .callout strong { color: var(--warm); }
     footer { margin-top: 48px; color: var(--muted); font-size: .875rem; }
+    .link-btn { font: inherit; color: var(--accent); background: none; border: 0; padding: 0; text-decoration: underline; cursor: pointer; }
   </style>
   <!-- Cloudflare Web Analytics: cookie-free visit counts -->
   <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "767370751000434aad7703e82270a359"}'></script>
@@ -175,18 +177,25 @@
 (function () {
   var el = document.getElementById('track-pref');
   if (!el) return;
+  function strong(text) {
+    var b = document.createElement('strong');
+    b.textContent = text;
+    return b;
+  }
   function draw() {
     var t = window.ppTracking;
     if (!t) { el.textContent = '(usage counting isn\u2019t running on this page)'; return; }
     if (navigator.globalPrivacyControl || navigator.doNotTrack === '1') {
-      el.innerHTML = 'usage counting is <strong>off</strong>: your browser sends Global Privacy Control or Do Not Track.';
+      el.replaceChildren('usage counting is ', strong('off'), ': your browser sends Global Privacy Control or Do Not Track.');
       return;
     }
     var off = t.optedOut();
-    el.innerHTML = 'usage counting is <strong>' + (off ? 'off' : 'on') + '</strong> in this browser. ' +
-      '<button type="button" style="font:inherit;color:var(--accent);background:none;border:0;padding:0;text-decoration:underline;cursor:pointer">' +
-      (off ? 'Turn it on' : 'Turn it off') + '</button>';
-    el.querySelector('button').addEventListener('click', function () { t.setOptOut(!off); draw(); });
+    var btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'link-btn';
+    btn.textContent = off ? 'Turn it on' : 'Turn it off';
+    el.replaceChildren('usage counting is ', strong(off ? 'off' : 'on'), ' in this browser. ', btn);
+    btn.addEventListener('click', function () { t.setOptOut(!off); draw(); });
   }
   addEventListener('DOMContentLoaded', draw);
 })();

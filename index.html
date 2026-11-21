@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-adh5bTGOWphKt+D5i3dXD0nT2qcEN4ShhPNw7yFxGqY=' 'sha256-9wunt4KB8Iu9t5K1LrSYDW6/29gTPIWkMQA5JeWqicw=' 'sha256-HRbcZgg1pQrhOJADsjgofXRip3/b1bRqdjJrAhXIoTc=' https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://social.paramedicpapers.com; font-src 'self'; connect-src 'self' https://api.paramedicpapers.com https://audio.paramedicpapers.com https://cloudflareinsights.com https://static.cloudflareinsights.com; media-src 'self' https://audio.paramedicpapers.com https://op3.dev; frame-src https://join.paramedicpapers.com; worker-src 'self'; manifest-src 'self'; object-src 'none'; base-uri 'none'; form-action 'self'; require-trusted-types-for 'script'; trusted-types pp">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <meta name="text-scale" content="scale">
   <meta name="color-scheme" content="light dark">
@@ -566,8 +567,9 @@
 
   <!-- defer keeps the order (cpd.js and podcasts.js rely on app.js's
        window.PP); all three start from DOMContentLoaded as before. -->
-  <script defer src="js/app.js?v=45"></script>
-  <script defer src="js/cpd.js?v=21"></script>
-  <script defer src="js/podcasts.js?v=4"></script>
+  <script defer src="js/safe-html.js?v=1"></script>
+  <script defer src="js/app.js?v=46"></script>
+  <script defer src="js/cpd.js?v=22"></script>
+  <script defer src="js/podcasts.js?v=5"></script>
 </body>
 </html>

@@ -6,6 +6,9 @@
 (function () {
   'use strict';
 
+  /* All markup goes in through js/safe-html.js (Trusted Types policy). */
+  var setHTML = window.ppSetHTML;
+
   var SAVED_KEY = 'pp:saved';
   var POS_KEY = 'pp:pos';    /* episode date -> seconds listened */
   var RATE_KEY = 'pp:rate';
@@ -113,9 +116,9 @@
     } catch (err) {
       console.error(err);
       $('podcast-strip').hidden = true;
-      $('feed-list').innerHTML = '<p class="empty">' + (navigator.onLine === false
+      setHTML($('feed-list'), '<p class="empty">' + (navigator.onLine === false
         ? 'You\u2019re offline and no papers are saved on this device yet. Open the site once with signal and they\u2019ll be kept for next time.'
-        : 'Unable to load research data. Please try again later.') + '</p>';
+        : 'Unable to load research data. Please try again later.') + '</p>');
       return;
     }
     markSeen();
@@ -286,7 +289,7 @@
     var tab = document.querySelector('.tabbar [data-tab="saved"]');
     tab.setAttribute('data-tab', 'more');
     tab.setAttribute('aria-haspopup', 'dialog');
-    tab.innerHTML = ico('menu', 'ico') + 'More';
+    setHTML(tab, ico('menu', 'ico') + 'More');
     document.querySelectorAll('[data-cpd]').forEach(function (el) { el.hidden = false; });
   }
 
@@ -491,7 +494,7 @@
      ['weekly-tldr-toggle-home', 'weekly-tldr-body-home']].forEach(function (pair) {
       var btn = $(pair[0]), body = $(pair[1]);
       fold(body, !wide);
-      btn.innerHTML = ico(wide ? 'minus' : 'plus');
+      setHTML(btn, ico(wide ? 'minus' : 'plus'));
       btn.setAttribute('aria-expanded', String(wide));
     });
 
@@ -648,7 +651,7 @@
       ? 'Latest TLDR · ' + dayLabel(t.date) : "Today's TLDR";
     if (!t || !t.summary) {
       $('daily-tldr-lead').textContent = 'TLDR not yet available for today.';
-      $('daily-tldr-body').innerHTML = '';
+      $('daily-tldr-body').replaceChildren();
       $('daily-tldr-toggle').hidden = true;
       return;
     }
@@ -670,7 +673,7 @@
     } else {
       items = lines.slice(1).map(function (l) { return { text: l, ref: null }; });
     }
-    $('daily-tldr-body').innerHTML = bulletsHTML(items, false);
+    setHTML($('daily-tldr-body'), bulletsHTML(items, false));
     bindBulletLinks($('daily-tldr-body'));
   }
 
@@ -693,7 +696,7 @@
       var bodyEl = $('weekly-tldr-body' + sfx);
       if (!leadEl) return;
       leadEl.textContent = lead;
-      bodyEl.innerHTML = bulletsHTML(items, true);
+      setHTML(bodyEl, bulletsHTML(items, true));
       bindBulletLinks(bodyEl);
     });
   }
@@ -791,10 +794,10 @@
   }
 
   function renderTodayList(papers) {
-    $('today-list').innerHTML = highFirst(papers).map(function (p) {
+    setHTML($('today-list'), highFirst(papers).map(function (p) {
       return '<article class="today-item" data-today-id="' + esc(p.id) + '">' +
         cardInnerHTML(p) + '</article>';
-    }).join('');
+    }).join(''));
     bindActs($('today-list'));
   }
 
@@ -811,10 +814,10 @@
     var topics = Object.keys(counts).sort();
     var sel = $('topic-filter');
     sel.hidden = topics.length < 2;
-    sel.innerHTML = '<option value="">All topics</option>' + topics.map(function (t) {
+    setHTML(sel, '<option value="">All topics</option>' + topics.map(function (t) {
       return '<option value="' + esc(t) + '"' + (t === state.topic ? ' selected' : '') + '>' +
         esc(t) + ' (' + counts[t] + ')</option>';
-    }).join('');
+    }).join(''));
     sel.classList.toggle('is-on', !!state.topic);
   }
 
@@ -834,12 +837,12 @@
     var pinLabel = state.pinnedFrom === 'link' ? 'Shared paper'
       : state.pinnedFrom === 'post' ? 'From Instagram · ' + dayLabel(state.pinnedDate)
       : 'From the TLDR';
-    $('pinned-slot').innerHTML = pins.length ? (
+    setHTML($('pinned-slot'), pins.length ? (
       '<div class="pin-head"><span class="label">' + esc(pinLabel) +
         '</span><span class="rule"></span>' +
       '<button class="act" id="clear-pin" type="button">Clear</button></div>' +
       pins.map(function (p) { return '<article class="paper-card is-pinned">' + cardInnerHTML(p) + '</article>'; }).join('')
-    ) : '';
+    ) : '');
     if (pins.length) {
       $('clear-pin').addEventListener('click', function () { state.pinned = []; renderFeed(); });
       bindActs($('pinned-slot'));
@@ -867,7 +870,7 @@
     state.feedDrawn = 0;
     state.feedTotal = body.length;
 
-    $('feed-list').innerHTML = '';
+    $('feed-list').replaceChildren();
     $('feed-empty').hidden = !!(items.length || pins.length);
     drawFeedPage(Math.max(state.feedLimit || 0, FEED_PAGE));
   }
@@ -909,7 +912,7 @@
     if (old) old.remove();
     if (html) {
       var tmp = document.createElement('div');
-      tmp.innerHTML = html;
+      setHTML(tmp, html);
       var frag = document.createDocumentFragment();
       while (tmp.firstChild) frag.appendChild(tmp.firstChild);
       /* Bind only the new nodes, so earlier cards don't get double handlers. */
@@ -992,8 +995,8 @@
     $('brief-card').hidden = !b;
     if (state.tab === 'brief') renderKicker();
     if (!b) {
-      $('brief-body').innerHTML = '<p class="empty">The PD brief isn’t available right now. ' +
-        '<a href="https://join.paramedicpapers.com">Get it by email</a>.</p>';
+      setHTML($('brief-body'), '<p class="empty">The PD brief isn’t available right now. ' +
+        '<a href="https://join.paramedicpapers.com">Get it by email</a>.</p>');
       return;
     }
     var s = b.synthesis;
@@ -1069,7 +1072,7 @@
       '<span><b>Get the next one by email</b> — the free PD brief, every week on a day you choose.</span>' +
       '<span class="newsletter-cta">Sign up ' + ico('arrow') + '</span></a>' +
       '<p class="brief-fine">Summaries are AI-assisted — check the paper before acting on it.</p>';
-    $('brief-body').innerHTML = out;
+    setHTML($('brief-body'), out);
     var allBtn = $('brief-all-btn');
     allBtn.addEventListener('click', function () {
       var box = $('brief-all'), open = box.hidden;
@@ -1087,11 +1090,10 @@
     $('brief-card-kicker').textContent = 'PD brief · ' + b.span;
     $('brief-card-lead').textContent = s ? s.intro : b.papers.length + ' papers from this period, with their bottom lines.';
     var body = $('brief-card-body');
-    if (!s) { body.innerHTML = ''; return; }
+    if (!s) { body.replaceChildren(); return; }
     var lessons = s.lessons || [], dives = s.deep_dives || [];
     var extra = lessons.length - LESSONS_SHOWN;
-    body.innerHTML =
-      (lessons.length ? '<h3 class="brief-block-h">Lessons learnt</h3>' +
+    setHTML(body, (lessons.length ? '<h3 class="brief-block-h">Lessons learnt</h3>' +
         '<ol class="brief-lessons brief-block-lessons" id="brief-block-lessons">' +
         lessons.map(function (x, i) {
           return '<li' + (i >= LESSONS_SHOWN ? ' class="is-extra" hidden' : '') + '><p>' + esc(x.text) + '</p>' +
@@ -1103,7 +1105,7 @@
           return '<li><a href="#brief=dive-' + (i + 1) + '"><span class="brief-block-dive-t">' + esc(d.topic) + '</span>' +
             ico('chev-right') + '</a></li>';
         }).join('') + '</ul>' : '') +
-      (s.discussion ? '<h3 class="brief-block-h">Crew question</h3><p class="brief-block-discuss">' + esc(s.discussion) + '</p>' : '');
+      (s.discussion ? '<h3 class="brief-block-h">Crew question</h3><p class="brief-block-discuss">' + esc(s.discussion) + '</p>' : ''));
     var more = $('brief-block-more');
     if (more) more.addEventListener('click', function () {
       var open = more.getAttribute('aria-expanded') !== 'true';
@@ -1230,7 +1232,7 @@
   function drawPdPrompt() {
     var el = $('pd-prompt');
     if (!el) return;
-    if (!prompt) { el.hidden = true; el.innerHTML = ''; return; }
+    if (!prompt) { el.hidden = true; el.replaceChildren(); return; }
     var t = prompt.type, it = prompt.item, html = '';
     var LABELS = { evidence: 'Evidence that backs you', crew: 'Crew question', goal: 'Learning goal' };
     var head = '<div class="panel-head"><span class="panel-kicker panel-kicker-accent">Today · ' + LABELS[t] + '</span></div>';
@@ -1260,7 +1262,7 @@
         '<p class="pd-prompt-meta">From <a href="#paper=' + encodeURIComponent(p.id) + '">' + esc(p.shortTitle || p.title) + '</a></p>' +
         footHTML(p);
     }
-    el.innerHTML = html;
+    setHTML(el, html);
     el.className = 'panel pd-prompt is-' + t;
     el.hidden = false;
     if (t === 'goal') bindActs(el);
@@ -1276,7 +1278,7 @@
     var w = state.data.weeklyTldr || {};
     var picks = w.topPicks || state.data.featuredPapers || [];
     $('weekly-pick-week').textContent = pickWeekLabel(w.dateRange);
-    $('weekly-picks').innerHTML = picks.map(function (p, i) {
+    setHTML($('weekly-picks'), picks.map(function (p, i) {
       var why = p.featuredReason || p.why || p.reason || '';
       return '<article class="paper-card">' +
         '<div class="pick-head">' +
@@ -1290,7 +1292,7 @@
         extraHTML(p) +
         footHTML(p) +
       '</article>';
-    }).join('');
+    }).join(''));
     bindActs($('weekly-picks'));
   }
 
@@ -1307,7 +1309,7 @@
     var list = savedPapers();
     $('saved-empty').hidden = list.length > 0;
     $('saved-tools').hidden = list.length === 0;
-    $('saved-list').innerHTML = list.map(cardHTML).join('');
+    setHTML($('saved-list'), list.map(cardHTML).join(''));
     bindActs($('saved-list'));
     renderSavedStatus();
     if (state.tab === 'saved') renderKicker();
@@ -1506,7 +1508,7 @@
     $('episode-count').textContent = state.episodes.length || '';
     $('episodes-empty').hidden = !!state.episodes.length;
     renderLatestEpisode();
-    list.innerHTML = state.episodes.map(function (ep) {
+    setHTML(list, state.episodes.map(function (ep) {
       var hasNotes = (ep.papers && ep.papers.length) || ep.transcript;
       return '<div class="ep-row" data-ep="' + esc(ep.date) + '">' +
         '<div class="ep-main">' +
@@ -1523,7 +1525,7 @@
         '</div>' +
         (hasNotes ? '<div class="ep-notes" hidden="until-found">' + notesHTML(ep) + '</div>' : '') +
       '</div>';
-    }).join('');
+    }).join(''));
     list.querySelectorAll('[data-notes]').forEach(function (btn) {
       btn.addEventListener('click', function () { toggleNotes(btn.closest('.ep-row')); });
     });
@@ -1578,9 +1580,9 @@
     fetch(btn.getAttribute('data-transcript'))
       .then(function (r) { if (!r.ok) throw new Error(r.status); return r.text(); })
       .then(function (text) {
-        box.innerHTML = text.trim().split(/\n\s*\n/).map(function (para) {
+        setHTML(box, text.trim().split(/\n\s*\n/).map(function (para) {
           return '<p>' + esc(para) + '</p>';
-        }).join('');
+        }).join(''));
         box.hidden = false;
         btn.textContent = 'Hide transcript';
       })
@@ -2038,19 +2040,18 @@
     if (kind === 'confirmed' || kind === 'already') {
       try { localStorage.setItem(INTRO_KEY, '1'); } catch (e) {}
     }
-    el.innerHTML =
-      '<div class="panel-head">' +
+    setHTML(el, '<div class="panel-head">' +
         '<span class="panel-kicker panel-kicker-accent">' + (kind === 'expired' ? 'PD brief' : ico('check') + ' PD brief') + '</span>' +
         '<button class="pd-welcome-close" type="button" aria-label="Dismiss">' + ico('x') + '</button>' +
       '</div>' +
       '<h2 class="pd-welcome-head">' + copy.head + '</h2>' +
       '<p class="panel-lead">' + copy.body + '</p>' +
       (copy.tip ? '<p class="notice">' + copy.tip + '</p>' : '') +
-      (copy.cta || '');
+      (copy.cta || ''));
     el.hidden = false;
     el.querySelector('.pd-welcome-close').addEventListener('click', function () {
       el.hidden = true;
-      el.innerHTML = '';
+      el.replaceChildren();
     });
   }
 
@@ -2079,11 +2080,11 @@
     btn.addEventListener('click', function () {
       var open = !!body.hidden;
       fold(body, !open);
-      btn.innerHTML = open ? openLabel : closedLabel;  /* labels are trusted markup */
+      setHTML(btn, open ? openLabel : closedLabel);  /* labels are trusted markup */
       btn.setAttribute('aria-expanded', String(open));
     });
     body.addEventListener('beforematch', function () {
-      btn.innerHTML = openLabel;
+      setHTML(btn, openLabel);
       btn.setAttribute('aria-expanded', 'true');
     });
   }
@@ -2227,7 +2228,7 @@
      always get the latest. */
   function registerOffline() {
     if ('serviceWorker' in navigator && (location.protocol === 'https:' || location.hostname === 'localhost')) {
-      navigator.serviceWorker.register('/sw.js').catch(function (err) { console.warn('Offline copy unavailable:', err && err.message); });
+      navigator.serviceWorker.register(window.ppScriptURL('/sw.js')).catch(function (err) { console.warn('Offline copy unavailable:', err && err.message); });
     }
     window.addEventListener('online', renderOffline);
     window.addEventListener('offline', renderOffline);
