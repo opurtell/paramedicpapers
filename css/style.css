@@ -1766,3 +1766,6 @@ body.has-player main {
 @media (prefers-reduced-motion: no-preference) {
   @view-transition { navigation: auto; }
 }
+
+/* Install app: an icon in the desktop sidebar; phones get it in More. */
+@media not (min-width: 60em) { #btn-install { display: none; } }

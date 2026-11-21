@@ -54,7 +54,9 @@
     /* Other podcasts for CPD (phase 5): js/podcasts.js browses, js/cpd.js logs. */
     podcastsKicker: null, logEpisode: null, episodeAct: null, podcastLogged: null, podcastStats: null, openAdd: null,
     /* Saved papers that follow an account (cpd/plan phase 6): js/cpd.js syncs. */
-    savedChanged: null, savedStatus: null
+    savedChanged: null, savedStatus: null,
+    /* Install app availability changed (js/cpd.js re-renders the More menu). */
+    installChanged: null
   };
 
   /* The small surface js/cpd.js uses, so it doesn't reach into this file. */
@@ -74,7 +76,9 @@
     renderPapers: function () { renderPaperLists(); },
     hooks: hooks,
     renderKicker: function () { renderKicker(); },
-    announce: function (t) { announce(t); }
+    announce: function (t) { announce(t); },
+    canInstall: function () { return canInstall(); },
+    install: function (btn) { return runInstall(btn); }
   };
 
   document.addEventListener('DOMContentLoaded', init);
@@ -93,6 +97,7 @@
     bindSaved();
     $('btn-refresh').addEventListener('click', refresh);
     bindTheme();
+    bindInstall();
     $('btn-back').addEventListener('click', function () { setTab(PARENT[state.tab] || 'home'); });
     window.addEventListener('hashchange', function () {
       if (paperFromHash()) { openPaperLink(); return; }
@@ -1691,6 +1696,67 @@
     announce(text);
     clearTimeout(flashTimers.get(btn));  /* a repeat tap restarts the timer */
     flashTimers.set(btn, setTimeout(function () { el.textContent = orig; }, 1500));
+  }
+
+  /* Install app (web guidance phase 7; Oscar chose a button, 21 Nov 2026).
+     navigator.install() where the browser has it, else the
+     beforeinstallprompt event (Chrome, Edge, Android). The button (the
+     sidebar on desktop, the More menu on phones) shows only when one of
+     them can actually install, and never inside the installed app. No
+     step-by-step fallback for Safari or Firefox: their own menus do it. */
+  var installPrompt = null;
+  var hasWebInstall = typeof Navigator !== 'undefined' && typeof Navigator.prototype.install === 'function';
+  function isInstalledView() {
+    return matchMedia('(display-mode: standalone)').matches || matchMedia('(display-mode: minimal-ui)').matches || navigator.standalone === true;
+  }
+  function canInstall() {
+    return !isInstalledView() && (hasWebInstall || !!installPrompt);
+  }
+  function renderInstall() {
+    var b = $('btn-install');
+    if (b) b.hidden = !canInstall();
+    if (hooks.installChanged) hooks.installChanged();
+  }
+  function bindInstall() {
+    window.addEventListener('beforeinstallprompt', function (e) {
+      e.preventDefault();   /* no automatic mini-infobar; the button offers it */
+      installPrompt = e;
+      renderInstall();
+    });
+    window.addEventListener('appinstalled', function () {
+      installPrompt = null;
+      hasWebInstall = false;
+      renderInstall();
+    });
+    var b = $('btn-install');
+    if (b) b.addEventListener('click', function () { runInstall(b); });
+    renderInstall();
+  }
+  /* Must run straight from a click: navigator.install() needs the tap's
+     user activation, so nothing is awaited before it. */
+  function runInstall(btn) {
+    if (btn && btn.getAttribute('aria-disabled') === 'true') return Promise.resolve();
+    if (btn) btn.setAttribute('aria-disabled', 'true');   /* not disabled: keeps focus */
+    var done = function () { if (btn) btn.removeAttribute('aria-disabled'); renderInstall(); };
+    var job;
+    if (hasWebInstall) {
+      job = navigator.install().then(function () {
+        hasWebInstall = false;
+        announce('Paramedic Papers is installed. Open it from your home screen or apps.');
+      });
+    } else if (installPrompt) {
+      var ev = installPrompt;
+      installPrompt = null;   /* single use */
+      job = ev.prompt().then(function () { return ev.userChoice; }).then(function (c) {
+        announce(c && c.outcome === 'accepted' ? 'Paramedic Papers is installed. Open it from your home screen or apps.' : 'Install cancelled.');
+      });
+    } else {
+      job = Promise.resolve();
+    }
+    return job.catch(function (err) {
+      if (err && err.name === 'AbortError') announce('Install cancelled.');
+      else { announce('Install couldn’t start. Try your browser’s menu instead.'); console.error(err); }
+    }).then(done, done);
   }
 
   /* Read a short status aloud: ariaNotify where the browser has it, else

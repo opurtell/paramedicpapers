@@ -52,7 +52,7 @@ GitHub Pages sends no headers, so each hand-written page (`index.html`, `about.h
 
 ### Install (web app manifest)
 
-`site.webmanifest` gives the app a stable `id` (`/`), `scope`, a `start_url`, shortcuts (Today, Papers, PD, Podcast, icons in `shortcuts/`), and screenshots for the install dialog (`screenshots/`, narrow at 780×1688 and wide at 1280×800; the `sizes` must match the files). `icon-maskable-*.png` keep the logo inside the central 80% safe zone; regenerate them from `icon-master-1024.png` if the logo changes. Don't change `id`, or installed copies become a different app. There's no in-page Install button; browsers offer install from their own menu.
+`site.webmanifest` gives the app a stable `id` (`/`), `scope`, a `start_url`, shortcuts (Today, Papers, PD, Podcast, icons in `shortcuts/`), and screenshots for the install dialog (`screenshots/`, narrow at 780×1688 and wide at 1280×800; the `sizes` must match the files). `icon-maskable-*.png` keep the logo inside the central 80% safe zone; regenerate them from `icon-master-1024.png` if the logo changes. Don't change `id`, or installed copies become a different app. An **Install app** button (`#btn-install` in the desktop sidebar, an item in the phone More menu) uses `navigator.install()` where available, else the captured `beforeinstallprompt` (Chrome, Edge, Android). It shows only when one of them can install and never inside the installed app (`app.js` `bindInstall`/`runInstall`; `PP.canInstall()`, `PP.install(btn)`, `hooks.installChanged`). Safari and Firefox get no button; their own menus install.
 
 ### Forms (CPD sheets)
 
