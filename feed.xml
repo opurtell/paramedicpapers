@@ -25,6 +25,20 @@
     <itunes:explicit>false</itunes:explicit>
     <podcast:guid>09fa3693-e2ac-527c-9d1c-f68df149b888</podcast:guid>
     <item>
+      <title>Most prehospital tourniquets unjustified, few harmed · 22 Nov</title>
+      <link>https://paramedicpapers.com/episodes/2026-11-22/</link>
+      <description>4 papers: prehospital tourniquets mostly unjustified but safe; gastric distension after OHCA similar across airways; DNAR directives missing on scene; resuscitation training group sizes</description>
+      <content:encoded><![CDATA[<p>4 papers: prehospital tourniquets mostly unjustified but safe; gastric distension after OHCA similar across airways; DNAR directives missing on scene; resuscitation training group sizes</p><p>Papers in this episode:</p><ul><li><a href="https://pubmed.ncbi.nlm.nih.gov/43063388/">Most prehospital tourniquets unjustified, few harmed <em>(Rhode Island Medical Journal)</em></a></li><li><a href="https://doi.org/10.1016/j.resuscitation.2026.111399">Gastric distension after OHCA similar across airways <em>(Resuscitation)</em></a></li><li><a href="https://doi.org/10.1186/s12873-026-01831-1">DNAR directives missing when crews arrive <em>(BMC Emergency Medicine)</em></a></li><li><a href="https://doi.org/10.1016/j.resplu.2026.101565">Small-group resuscitation training: what works? <em>(Resuscitation Plus)</em></a></li></ul><p><a href="https://paramedicpapers.com/episodes/2026-11-22/">Show notes and transcript</a></p>]]></content:encoded>
+      <pubDate>Sun, 22 Nov 2026 05:34:42 +1100</pubDate>
+      <guid isPermaLink="false">https://audio.paramedicpapers.com/ep-2026-11-22.mp3</guid>
+      <enclosure url="https://op3.dev/e/audio.paramedicpapers.com/ep-2026-11-22.mp3" length="1020332" type="audio/mpeg"/>
+      <itunes:duration>254</itunes:duration>
+      <itunes:summary>4 papers: prehospital tourniquets mostly unjustified but safe; gastric distension after OHCA similar across airways; DNAR directives missing on scene; resuscitation training group sizes</itunes:summary>
+      <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
+      <itunes:episodeType>full</itunes:episodeType>
+      <podcast:transcript url="https://audio.paramedicpapers.com/ep-2026-11-22.txt" type="text/plain" language="en-au"/>
+    </item>
+    <item>
       <title>Rescue breaths linked to better paediatric arrest survival · 21 Nov</title>
       <link>https://paramedicpapers.com/episodes/2026-11-21/</link>
       <description>4 papers: Rescue breaths linked to better paediatric arrest survival; Incomplete on-scene care in paediatric cardiac arrest; Blood stored on ambulances stays within limits to day 42; Blood biomarker assay fits inside an EMS transport window</description>
@@ -429,20 +443,6 @@
       <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
       <itunes:episodeType>full</itunes:episodeType>
       <podcast:transcript url="https://audio.paramedicpapers.com/ep-2026-10-24.txt" type="text/plain" language="en-au"/>
-    </item>
-    <item>
-      <title>Paramedic Papers Daily — 23 October 2026</title>
-      <link>https://paramedicpapers.com/episodes/2026-10-23/</link>
-      <description>4 papers: Infant carry slings rarely linked to OHCA; No unique GCS 8 threshold for intubation; Paediatric deterioration in the field poorly defined; Paediatric care coordinators linked to fewer EMS errors</description>
-      <content:encoded><![CDATA[<p>4 papers: Infant carry slings rarely linked to OHCA; No unique GCS 8 threshold for intubation; Paediatric deterioration in the field poorly defined; Paediatric care coordinators linked to fewer EMS errors</p><p>Papers in this episode:</p><ul><li><a href="https://doi.org/10.1016/j.resplu.2026.101536">Infant carry slings rarely linked to OHCA <em>(Resuscitation Plus)</em></a></li><li><a href="https://doi.org/10.1186/s13049-026-01715-0">No unique GCS 8 threshold for intubation <em>(Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine)</em></a></li><li><a href="https://doi.org/10.1177/27536386261496803">Paediatric deterioration in the field poorly defined <em>(Paramedicine)</em></a></li><li><a href="https://doi.org/10.1080/10903127.2026.2752064">Paediatric care coordinators linked to fewer EMS errors <em>(Prehospital Emergency Care)</em></a></li></ul><p><a href="https://paramedicpapers.com/episodes/2026-10-23/">Show notes and transcript</a></p>]]></content:encoded>
-      <pubDate>Fri, 23 Oct 2026 07:33:29 +1100</pubDate>
-      <guid isPermaLink="false">https://audio.paramedicpapers.com/ep-2026-10-23.mp3</guid>
-      <enclosure url="https://op3.dev/e/audio.paramedicpapers.com/ep-2026-10-23.mp3" length="1132940" type="audio/mpeg"/>
-      <itunes:duration>283</itunes:duration>
-      <itunes:summary>4 papers: Infant carry slings rarely linked to OHCA; No unique GCS 8 threshold for intubation; Paediatric deterioration in the field poorly defined; Paediatric care coordinators linked to fewer EMS errors</itunes:summary>
-      <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
-      <itunes:episodeType>full</itunes:episodeType>
-      <podcast:transcript url="https://audio.paramedicpapers.com/ep-2026-10-23.txt" type="text/plain" language="en-au"/>
     </item>
   </channel>
 </rss>
