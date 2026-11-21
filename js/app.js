@@ -69,7 +69,8 @@
     hasData: function () { return !!state.data; },
     renderPapers: function () { renderPaperLists(); },
     hooks: hooks,
-    renderKicker: function () { renderKicker(); }
+    renderKicker: function () { renderKicker(); },
+    announce: function (t) { announce(t); }
   };
 
   document.addEventListener('DOMContentLoaded', init);
@@ -79,6 +80,7 @@
     showSignupResult();
     renderIntro();
     bindSkipLink();
+    lightDismissFallback();
     bindFoldSync();
     bindTabs();
     bindHome();
@@ -1551,7 +1553,7 @@
     $('strip-open').addEventListener('click', function () { setTab('podcast'); });
     $('btn-copy-feed').addEventListener('click', function () {
       var btn = $('btn-copy-feed');
-      copyText($('feed-url').textContent.trim(), function () { flash(btn, 'Copied'); });
+      copyText($('feed-url').textContent.trim(), btn, 'Copied');
     });
 
     $('player-play').addEventListener('click', function () {
@@ -1587,31 +1589,38 @@
 
   /* ── clipboard / share ──────────────────────────────── */
 
-  function copyText(text, done) {
-    if (navigator.clipboard && navigator.clipboard.writeText) {
-      navigator.clipboard.writeText(text).then(done, function () { legacyCopy(text, done); });
-    } else {
-      legacyCopy(text, done);
-    }
+  /* Async Clipboard API only (it needs https, which the site always has).
+     The button's label shows the outcome, and screen readers hear it,
+     including when the browser refuses access. */
+  function copyText(text, btn, okText) {
+    var write = navigator.clipboard && navigator.clipboard.writeText
+      ? navigator.clipboard.writeText(text)
+      : Promise.reject(new Error('no clipboard'));
+    write.then(function () { flash(btn, okText); }, function () { flash(btn, 'Copy failed'); });
   }
 
-  function legacyCopy(text, done) {
-    var ta = document.createElement('textarea');
-    ta.value = text;
-    ta.setAttribute('readonly', '');
-    ta.style.position = 'fixed'; ta.style.opacity = '0';
-    document.body.appendChild(ta);
-    ta.select();
-    try { if (document.execCommand('copy')) done(); } catch (e) {}
-    document.body.removeChild(ta);
-  }
-
+  var flashTimers = new WeakMap();
   function flash(btn, text) {
     var el = btn.querySelector('.lbl') || btn;  /* keep the icon beside the label */
     var orig = btn.getAttribute('data-label') || el.textContent;
     btn.setAttribute('data-label', orig);
     el.textContent = text;
-    setTimeout(function () { el.textContent = orig; }, 1500);
+    announce(text);
+    clearTimeout(flashTimers.get(btn));  /* a repeat tap restarts the timer */
+    flashTimers.set(btn, setTimeout(function () { el.textContent = orig; }, 1500));
+  }
+
+  /* Read a short status aloud: ariaNotify where the browser has it, else
+     the page's polite live region (index.html #pp-announce). */
+  var announceTimer = null;
+  function announce(text) {
+    if (typeof document.ariaNotify === 'function') { document.ariaNotify(text); return; }
+    var live = $('pp-announce');
+    if (!live) return;
+    live.textContent = '';
+    requestAnimationFrame(function () { live.textContent = text; });
+    clearTimeout(announceTimer);
+    announceTimer = setTimeout(function () { live.textContent = ''; }, 5000);
   }
 
   /* Native share sheet where there is one (phones), else copy the link. */
@@ -1623,7 +1632,7 @@
       navigator.share({ title: p.title, text: p.title + ' (' + (p.journal || 'paper') + ')', url: url })
         .catch(function () {});
     } else {
-      copyText(url, function () { flash(btn, 'Link copied'); });
+      copyText(url, btn, 'Link copied');
     }
   }
 
@@ -1866,8 +1875,8 @@
   /* The intro's two buttons open popups so the reader stays on Home:
      "How it works" shows the about text, "Get the PD brief" shows the
      join.paramedicpapers.com form in a frame (loaded on first open).
-     Close with the X, Esc (native) or a tap outside. Without <dialog>,
-     or on ctrl/cmd-click, the links work as normal pages. */
+     Close with the X, Esc/back (native) or a tap outside (closedby="any").
+     On ctrl/cmd-click the links work as normal pages. */
   function bindAboutModal() {
     bindPopup(['home-intro-about'], 'about-modal', 'about-modal-close');
     /* The PD tab's sign-up line opens the same popup. */
@@ -1884,29 +1893,36 @@
   function bindPopup(linkIds, dlgId, closeId, onOpen) {
     var links = linkIds.map($).filter(Boolean);
     var dlg = $(dlgId);
-    if (!links.length || !dlg || typeof dlg.showModal !== 'function') return;
-    var opener = null;  /* focus goes back to the link that opened it */
+    if (!links.length || !dlg) return;
     function close() { if (dlg.open) dlg.close(); }
+    /* The X has autofocus; the browser returns focus to the link on close. */
     links.forEach(function (link) {
       link.addEventListener('click', function (e) {
         if (e.metaKey || e.ctrlKey || e.shiftKey || e.button > 0) return;
         e.preventDefault();
-        opener = link;
         if (onOpen) onOpen();
-        document.body.classList.add('has-modal');
         dlg.showModal();
         dlg.scrollTop = 0;
-        $(closeId).focus();
       });
-    });
-    dlg.addEventListener('close', function () {
-      document.body.classList.remove('has-modal');
-      if (opener) opener.focus();
     });
     $(closeId).addEventListener('click', close);
     dlg.querySelectorAll('[data-about-close]').forEach(function (b) { b.addEventListener('click', close); });
-    /* A click on the dialog box itself (not its content) is the backdrop. */
-    dlg.addEventListener('click', function (e) { if (e.target === dlg) close(); });
+  }
+
+  /* closedby="any" gives tap-outside close natively. Safari doesn't have it
+     yet, so there: close when a press both starts and ends outside the
+     dialog's box (a text-selection drag onto the backdrop doesn't count). */
+  function lightDismissFallback() {
+    if ('closedBy' in HTMLDialogElement.prototype) return;
+    function outside(e, dlg) {
+      var r = dlg.getBoundingClientRect();
+      return e.clientX < r.left || e.clientX > r.right || e.clientY < r.top || e.clientY > r.bottom;
+    }
+    document.querySelectorAll('dialog[closedby="any"]').forEach(function (dlg) {
+      var pressedOutside = false;
+      dlg.addEventListener('pointerdown', function (e) { pressedOutside = outside(e, dlg); });
+      dlg.addEventListener('pointerup', function (e) { if (pressedOutside && outside(e, dlg)) dlg.close(); });
+    });
   }
 
   function showSignupResult() {
@@ -1967,7 +1983,7 @@
 
   function bindSaved() {
     $('btn-copy-citations').addEventListener('click', function () {
-      copyText(citationList(), function () { flash($('btn-copy-citations'), 'Copied'); });
+      copyText(citationList(), $('btn-copy-citations'), 'Copied');
     });
     /* Another tab saved or unsaved something. */
     window.addEventListener('storage', function (e) {

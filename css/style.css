@@ -486,7 +486,6 @@ a.act { color: var(--accent); }
   box-shadow: 0 18px 50px -16px rgba(var(--shadow-rgb),.45);
   overscroll-behavior: contain;
 }
-.about-modal::backdrop { background: rgba(0,0,0,.45); }
 .about-modal-in { padding: 0 20px 20px; }
 .about-modal-head {
   position: sticky; top: 0; z-index: 1; margin: 0 -20px 10px; padding: 14px 10px 10px 20px;
@@ -511,7 +510,6 @@ a.act { color: var(--accent); }
 }
 .about-modal-callout strong { color: var(--warm); }
 .about-modal-btns { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; }
-body.has-modal { overflow: hidden; }
 /* Sign-up popup: same box, the head sits above a full-height frame. */
 .join-modal[open] { display: flex; flex-direction: column; height: min(86vh, 760px); height: min(86dvh, 760px); overflow: hidden; }
 .join-modal .about-modal-head { position: static; margin: 0; align-items: center; }
@@ -1041,21 +1039,69 @@ body.has-player main {
 .saved-sync { display: flex; align-items: center; flex-wrap: wrap; gap: 0 4px; margin-bottom: 4px; }
 .saved-sync .hi { width: 14px; height: 14px; stroke-width: 2.2; color: var(--good); margin-right: 2px; }
 
-/* One-line confirmation above the tab bar (js/cpd.js toast()) */
+/* One-line confirmation above the tab bar (js/cpd.js toast()). A manual
+   popover, so it sits in the top layer above an open sheet; .is-on drives
+   the look so browsers without popover still show it. */
 .toast {
-  position: fixed; left: 50%; z-index: 40;
-  bottom: calc(var(--tabbar-h) + env(safe-area-inset-bottom) + 16px);
+  position: fixed; inset: auto auto calc(var(--tabbar-h) + env(safe-area-inset-bottom) + 16px) 50%;
+  margin: 0; border: 0; z-index: 40;
   max-width: calc(100vw - 32px); width: max-content;
   padding: 10px 16px; border-radius: 12px;
   background: var(--ink); color: var(--bg); font-size: 14px; line-height: 1.4;
   box-shadow: 0 6px 20px rgba(var(--shadow-rgb),.18);
-  opacity: 0; transform: translate(-50%, 8px); pointer-events: none;
-  transition: opacity .2s;
+  opacity: 0; transform: translate(-50%, 0); pointer-events: none;
+  transition-property: opacity, display, overlay; transition-duration: .2s;
+  transition-behavior: allow-discrete;
   /* Slide up only when motion is welcome; the fade stays either way. */
-  @media (prefers-reduced-motion: no-preference) { transition: opacity .2s, transform .2s; }
+  @media (prefers-reduced-motion: no-preference) {
+    transform: translate(-50%, 8px);
+    transition-property: opacity, transform, display, overlay;
+  }
 }
-.toast.is-on { opacity: 1; transform: translate(-50%, 0); }
+.toast.is-on {
+  opacity: 1; transform: translate(-50%, 0);
+  @starting-style { opacity: 0; }
+  @media (prefers-reduced-motion: no-preference) {
+    @starting-style { transform: translate(-50%, 8px); }
+  }
+}
 @media (min-width: 960px) { .toast { bottom: 24px; left: calc(50% + var(--sidebar-w) / 2); } }
+
+/* ── native dialogs (About, join, CPD sheet) ──
+   Fade in and out of the top layer; rise or grow only when motion is
+   welcome. Scroll inside a dialog or over its backdrop stays off the page
+   (no body scroll lock: that shifts the layout). */
+:is(.about-modal, .sheet) {
+  overscroll-behavior: contain;
+  opacity: 0;
+  transition-property: opacity, transform, display, overlay;
+  transition-duration: .2s; transition-timing-function: ease-out;
+  transition-behavior: allow-discrete;
+}
+:is(.about-modal, .sheet)[open] {
+  opacity: 1; transform: none;
+  @starting-style { opacity: 0; }
+}
+:is(.about-modal, .sheet)::backdrop {
+  overflow: hidden; overscroll-behavior: contain;
+  background-color: transparent;
+  transition-property: background-color, display, overlay; transition-duration: .2s;
+  transition-behavior: allow-discrete;
+}
+.about-modal[open]::backdrop {
+  background-color: rgba(0,0,0,.45);
+  @starting-style { background-color: transparent; }
+}
+.sheet[open]::backdrop {
+  background-color: rgba(var(--shadow-rgb),.32);
+  @starting-style { background-color: transparent; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .about-modal { transform: scale(.96); }
+  .about-modal[open] { @starting-style { transform: scale(.96); } }
+  .sheet { transform: translateY(32px); }
+  .sheet[open] { @starting-style { transform: translateY(32px); } }
+}
 
 /* Subscribe panel */
 .sub-panel { gap: 7px; padding: 12px 18px; }
@@ -1131,19 +1177,15 @@ body.has-player main {
 .pill-met { background: var(--accent-lo); color: var(--accent); }
 .pill-dropped { color: var(--muted); }
 
-/* ── sheets: bottom sheet on mobile, centred card on desktop ── */
-.sheet-backdrop {
-  position: fixed; inset: 0; z-index: 40;
-  background: rgba(var(--shadow-rgb),.32);
-}
+/* ── sheets: bottom sheet on mobile, centred card on desktop ──
+   A native <dialog> (index.html #sheet); motion is with the other dialogs. */
 .sheet {
-  position: fixed; left: 0; right: 0; bottom: 0; z-index: 41;
-  max-height: calc(100vh - 40px); max-height: calc(100dvh - 40px); overflow-y: auto; overscroll-behavior: contain;
-  background: var(--bg); border-radius: 18px 18px 0 0;
+  inset: auto 0 0 0; margin: 0; border: 0; width: auto; max-width: none;
+  max-height: calc(100vh - 40px); max-height: calc(100dvh - 40px); overflow-y: auto;
+  background: var(--bg); color: var(--ink); border-radius: 18px 18px 0 0;
   padding: 8px 20px calc(20px + env(safe-area-inset-bottom));
   box-shadow: 0 -8px 30px -12px rgba(var(--shadow-rgb),.3);
 }
-body.has-sheet { overflow: hidden; }
 .sheet-grip { width: 36px; height: 4px; border-radius: 2px; background: var(--line-2); margin: 0 auto 12px; }
 .sheet-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 14px; }
 .sheet-head h2 { font-size: 22px; }
@@ -1154,8 +1196,8 @@ body.has-sheet { overflow: hidden; }
 }
 @media (min-width: 960px) {
   .sheet {
-    top: 50%; bottom: auto; left: 50%; right: auto; width: 560px; max-height: 86vh;
-    transform: translate(-50%, -50%); border-radius: 16px; padding: 22px 26px;
+    inset: 0; margin: auto; width: 560px; max-height: 86vh; height: fit-content;
+    border-radius: 16px; padding: 22px 26px;
   }
   .sheet .sheet-grip { display: none; }
 }
