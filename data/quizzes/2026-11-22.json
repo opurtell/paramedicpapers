@@ -1,0 +1,120 @@
+{
+ "id": "2026-11-22",
+ "span": "15 – 22 Nov 2026",
+ "created": "2026-11-22T00:02:30Z",
+ "est_minutes": 10,
+ "questions": [
+  {
+   "paper_id": "43046131",
+   "short_title": "Prehospital TXA lowers mortality in bleeding trauma",
+   "topic": "Trauma",
+   "question": "What does the pooled randomised evidence say about prehospital TXA and 28-30 day mortality in trauma?",
+   "options": [
+    "A rise in thromboembolic events",
+    "No clear reduction in mortality",
+    "Benefit only in isolated head injury",
+    "A reduction in mortality"
+   ],
+   "answer": 3,
+   "explanation": "The three-trial pool showed lower 28-30 day mortality (RR 0.81, 95% CI 0.68-0.95). The pool is small, and the TBI and in-hospital findings come from single trials."
+  },
+  {
+   "paper_id": "43044727",
+   "short_title": "Bystander-attached AEDs linked with best OHCA survival",
+   "topic": "Cardiac arrest",
+   "question": "In this registry cohort, 30-day survival after OHCA was highest when the first AED was attached by which responder group?",
+   "options": [
+    "On-duty first responders",
+    "Community first responders",
+    "Bystanders",
+    "EMS"
+   ],
+   "answer": 2,
+   "explanation": "Bystander attachment came with the highest 30-day survival (28%, vs 9.0% when EMS attached first), likely because it reflects earlier recognition and defibrillation. It's observational, so the responder type alone can't be credited with the difference."
+  },
+  {
+   "paper_id": "43044722",
+   "short_title": "First responder alerts linked to more defibrillation",
+   "topic": "Cardiac arrest",
+   "question": "How did community first responder activation affect bystander defibrillation as the distance to the nearest AED increased?",
+   "options": [
+    "The benefit of activation grew as AED distance increased",
+    "Activation made no difference regardless of AED distance",
+    "Activation only helped when an AED was within 389 m",
+    "The benefit of activation shrank as AED distance increased"
+   ],
+   "answer": 0,
+   "explanation": "Activation attenuated the drop in bystander defibrillation with increasing AED distance, with the predicted gap widest at 1,183 m (13.0% vs 4.8%). Because activation was not randomised and the survival gain was small with a lower confidence bound near zero, this is hypothesis-generating rather than practice-changing."
+  },
+  {
+   "paper_id": "43044058",
+   "short_title": "Mobile app lifts simulated trauma performance",
+   "topic": "Trauma",
+   "question": "What did paramedics using the mobile decision-support app achieve in the simulated trauma scenarios, compared with standard practice?",
+   "options": [
+    "Better pain scores recorded during trauma management",
+    "Faster patient handover times at the receiving facility",
+    "Reduced scene times by several minutes on average",
+    "Completion of all critical actions far more often (35.4% vs 6.3%)"
+   ],
+   "answer": 3,
+   "explanation": "Scenarios with the app met all critical actions 35.4% of the time versus 6.3% without, a large odds increase. This was simulated care at a single US agency, so it is hypothesis-generating and doesn't yet show a patient outcome benefit."
+  },
+  {
+   "paper_id": "43038421",
+   "short_title": "Prehospital STEMI thrombolysis is value for money",
+   "topic": "Cardiac (non-arrest)",
+   "question": "An Australian microsimulation modelled paramedic-administered prehospital thrombolysis for STEMI. What did it conclude about value for money?",
+   "options": [
+    "Only cost-effective if thrombolysis is given within 10 minutes of ECG diagnosis",
+    "Not cost-effective compared with hospital-based thrombolysis",
+    "Cost-effective at AUD 16,750 per QALY gained, with results robust in sensitivity analysis",
+    "Cost-effective only from a societal perspective, not a health provider perspective"
+   ],
+   "answer": 2,
+   "explanation": "The model estimated AUD 16,750 per QALY gained and the result held up across sensitivity analysis. It was a model against a hypothetical counterfactual rather than a randomised comparison, so long-term inputs came from published literature."
+  },
+  {
+   "paper_id": "43044053",
+   "short_title": "Video calls showed no clear resource savings",
+   "topic": "Operations & systems",
+   "question": "What did the CAM-VISION analysis find about video-assisted calls and prehospital resource use?",
+   "options": [
+    "No difference in any measured outcome",
+    "A significant saving in cumulative unit time",
+    "Lower point estimates, but no significant difference",
+    "A significant drop in initial dispatch rates"
+   ],
+   "answer": 2,
+   "explanation": "Dispatch, units and unit time all trended lower with video, but none reached statistical significance. It was a post hoc analysis not powered for resource outcomes, so the results are hypothesis-generating."
+  },
+  {
+   "paper_id": "43056114",
+   "short_title": "Rescue breaths linked to better paediatric arrest survival",
+   "topic": "Paediatrics",
+   "question": "In the Japanese paediatric OHCA registry, how did 30-day neurologically favourable survival compare between CPR types?",
+   "options": [
+    "Compression-only CPR beat rescue-breathing CPR",
+    "Rescue-breathing CPR was highest, and no CPR was lowest",
+    "Any bystander CPR gave worse outcomes than no CPR",
+    "All three CPR types gave similar survival"
+   ],
+   "answer": 1,
+   "explanation": "Survival was 16.0% with rescue-breathing CPR, 9.5% with compression-only and 3.6% with no bystander CPR. It's registry data, so children who got rescue breaths may have differed from those who didn't."
+  },
+  {
+   "paper_id": "43024742",
+   "short_title": "Airway assistant training halved sim intubation time",
+   "topic": "Airway & ventilation",
+   "question": "In this Australian simulation study, what difference did one hour of airway assistant training make when paramedics assisted an ICP intubating a continuously regurgitating manikin?",
+   "options": [
+    "Training made no difference to intubation time or tube placement",
+    "Trained assistants were faster only when they had prior airway experience",
+    "Median intubation time roughly halved, with no oesophageal intubations in either group",
+    "Median intubation time roughly halved, but oesophageal intubations were more common in the trained group"
+   ],
+   "answer": 2,
+   "explanation": "Trained pairs intubated in a median of 53 seconds versus 102.5 seconds, and neither group had oesophageal intubations. It was a pilot with only 12 participants in a simulated setting, so no patient outcomes yet."
+  }
+ ]
+}

@@ -1,120 +1,120 @@
 {
- "id": "2026-11-18",
- "span": "11 – 18 Nov 2026",
- "created": "2026-11-18T00:03:31Z",
+ "id": "2026-11-22",
+ "span": "15 – 22 Nov 2026",
+ "created": "2026-11-22T00:02:30Z",
  "est_minutes": 10,
  "questions": [
   {
-   "paper_id": "43019463",
-   "short_title": "Advanced airway not linked to traumatic arrest survival",
-   "topic": "Cardiac arrest",
-   "question": "A colleague asks whether prehospital advanced airway management improves outcomes in traumatic cardiac arrest. What does this nationwide registry study suggest?",
-   "options": [
-    "No significant association with survival or neurological outcome",
-    "It improves neurological outcome but not survival",
-    "It clearly improves 30-day survival",
-    "It only helps when placed early in the resuscitation"
-   ],
-   "answer": 0,
-   "explanation": "Thirty-day survival was 1.8% with advanced airway versus 1.4% without, and neurological outcomes were similarly flat, even after correcting for resuscitation-time bias. Event rates were extremely low, so a real effect could hide in the confidence intervals — the authors call the findings hypothesis-generating."
-  },
-  {
-   "paper_id": "43023474",
-   "short_title": "Untangling trauma terms for first responders",
-   "topic": "Workforce & wellbeing",
-   "question": "According to this review, what keeps the concepts of secondary traumatic stress, vicarious trauma, compassion fatigue and PTSD from being clearly separated?",
-   "options": [
-    "Symptomatic overlap and measurement tools built for other professions",
-    "They only apply to police and firefighters, not ambulance work",
-    "They differ mainly in how quickly symptoms appear after exposure",
-    "Each concept has its own validated measurement tool for paramedics"
-   ],
-   "answer": 0,
-   "explanation": "The review found conceptual overlap sustained by shared symptoms and tools designed for other professional groups, so they're hard to distinguish in first responders. It's a conceptual synthesis with no intervention data, and covered mixed professions."
-  },
-  {
-   "paper_id": "43030628",
-   "short_title": "Numbers for when on-scene ROSC stops happening",
-   "topic": "Cardiac arrest",
-   "question": "In this Japanese Utstein cohort of shockable-rhythm cardiac arrest, what happened to the probability of achieving on-scene ROSC as on-scene resuscitation went from 10 to 20 minutes after EMS contact?",
-   "options": [
-    "It fell from 6.97% to 0.50%",
-    "It fell from 50.0% to 20.5%",
-    "It stayed steady at around 7%",
-    "It rose as more shocks were delivered"
-   ],
-   "answer": 0,
-   "explanation": "The chance of later ROSC dropped from 6.97% at 10 minutes to 0.50% at 20 minutes. The 50.0% and 20.5% figures are about favourable neurological outcomes, not ROSC probability, and the descriptive design means this can't set transport or cessation rules."
-  },
-  {
-   "paper_id": "43004811",
-   "short_title": "Sydney COAST registry: trauma shock first year",
+   "paper_id": "43046131",
+   "short_title": "Prehospital TXA lowers mortality in bleeding trauma",
    "topic": "Trauma",
-   "question": "In the Sydney COAST registry, which shock criterion most often qualified patients for inclusion?",
+   "question": "What does the pooled randomised evidence say about prehospital TXA and 28-30 day mortality in trauma?",
    "options": [
-    "Hypotension (systolic BP under 100 mmHg)",
-    "Shock index greater than one",
-    "Receiving a blood transfusion",
-    "Needing inotropic support"
+    "A rise in thromboembolic events",
+    "No clear reduction in mortality",
+    "Benefit only in isolated head injury",
+    "A reduction in mortality"
    ],
-   "answer": 0,
-   "explanation": "Hypotension was the qualifying criterion in 90% of the 257 patients. The other criteria were part of the definition but were far less common, and the authors caution that not all shocked patients were actually bleeding."
+   "answer": 3,
+   "explanation": "The three-trial pool showed lower 28-30 day mortality (RR 0.81, 95% CI 0.68-0.95). The pool is small, and the TBI and in-hospital findings come from single trials."
   },
   {
-   "paper_id": "43007266",
-   "short_title": "Roadside capillary troponin for chest pain",
+   "paper_id": "43044727",
+   "short_title": "Bystander-attached AEDs linked with best OHCA survival",
+   "topic": "Cardiac arrest",
+   "question": "In this registry cohort, 30-day survival after OHCA was highest when the first AED was attached by which responder group?",
+   "options": [
+    "On-duty first responders",
+    "Community first responders",
+    "Bystanders",
+    "EMS"
+   ],
+   "answer": 2,
+   "explanation": "Bystander attachment came with the highest 30-day survival (28%, vs 9.0% when EMS attached first), likely because it reflects earlier recognition and defibrillation. It's observational, so the responder type alone can't be credited with the difference."
+  },
+  {
+   "paper_id": "43044722",
+   "short_title": "First responder alerts linked to more defibrillation",
+   "topic": "Cardiac arrest",
+   "question": "How did community first responder activation affect bystander defibrillation as the distance to the nearest AED increased?",
+   "options": [
+    "The benefit of activation grew as AED distance increased",
+    "Activation made no difference regardless of AED distance",
+    "Activation only helped when an AED was within 389 m",
+    "The benefit of activation shrank as AED distance increased"
+   ],
+   "answer": 0,
+   "explanation": "Activation attenuated the drop in bystander defibrillation with increasing AED distance, with the predicted gap widest at 1,183 m (13.0% vs 4.8%). Because activation was not randomised and the survival gain was small with a lower confidence bound near zero, this is hypothesis-generating rather than practice-changing."
+  },
+  {
+   "paper_id": "43044058",
+   "short_title": "Mobile app lifts simulated trauma performance",
+   "topic": "Trauma",
+   "question": "What did paramedics using the mobile decision-support app achieve in the simulated trauma scenarios, compared with standard practice?",
+   "options": [
+    "Better pain scores recorded during trauma management",
+    "Faster patient handover times at the receiving facility",
+    "Reduced scene times by several minutes on average",
+    "Completion of all critical actions far more often (35.4% vs 6.3%)"
+   ],
+   "answer": 3,
+   "explanation": "Scenarios with the app met all critical actions 35.4% of the time versus 6.3% without, a large odds increase. This was simulated care at a single US agency, so it is hypothesis-generating and doesn't yet show a patient outcome benefit."
+  },
+  {
+   "paper_id": "43038421",
+   "short_title": "Prehospital STEMI thrombolysis is value for money",
    "topic": "Cardiac (non-arrest)",
-   "question": "In the VALIDATE study, the prehospital capillary troponin rule-out threshold of <2.2 ng/L identified only 7.1% of patients. What does that figure mean for its usefulness at the roadside?",
+   "question": "An Australian microsimulation modelled paramedic-administered prehospital thrombolysis for STEMI. What did it conclude about value for money?",
    "options": [
-    "It only covered a small slice of patients, limiting its practical impact",
-    "It performed better than the rule-in threshold at confirming NSTEMI",
-    "It correctly identified most patients who actually had NSTEMI",
-    "It ruled out NSTEMI safely in everyone tested"
+    "Only cost-effective if thrombolysis is given within 10 minutes of ECG diagnosis",
+    "Not cost-effective compared with hospital-based thrombolysis",
+    "Cost-effective at AUD 16,750 per QALY gained, with results robust in sensitivity analysis",
+    "Cost-effective only from a societal perspective, not a health provider perspective"
    ],
-   "answer": 0,
-   "explanation": "The threshold had a perfect negative predictive value, but it applied to only 7.1% of patients, so most chest pain patients still couldn't be ruled out prehospital. The findings also come from a physician-staffed French setting and feasibility was hampered by uninterpretable tests, so it's hypothesis-generating only."
+   "answer": 2,
+   "explanation": "The model estimated AUD 16,750 per QALY gained and the result held up across sensitivity analysis. It was a model against a hypothetical counterfactual rather than a randomised comparison, so long-term inputs came from published literature."
   },
   {
-   "paper_id": "43007262",
-   "short_title": "AR-guided FAST training sped up students",
-   "topic": "Education & training",
-   "question": "After the AR-guided FAST training sequence, which view showed no significant reduction in scan time?",
+   "paper_id": "43044053",
+   "short_title": "Video calls showed no clear resource savings",
+   "topic": "Operations & systems",
+   "question": "What did the CAM-VISION analysis find about video-assisted calls and prehospital resource use?",
    "options": [
-    "The perisplenic view",
-    "Morison's pouch view",
-    "The pericardial view",
-    "The Douglas pouch view"
+    "No difference in any measured outcome",
+    "A significant saving in cumulative unit time",
+    "Lower point estimates, but no significant difference",
+    "A significant drop in initial dispatch rates"
    ],
-   "answer": 3,
-   "explanation": "Time fell significantly in the pericardial, Morison's pouch and perisplenic views, but not the Douglas pouch view. Keep in mind the study had no control group, so the improvements can't be confidently attributed to the AR component alone."
+   "answer": 2,
+   "explanation": "Dispatch, units and unit time all trended lower with video, but none reached statistical significance. It was a post hoc analysis not powered for resource outcomes, so the results are hypothesis-generating."
   },
   {
-   "paper_id": "43003391",
-   "short_title": "Fibrinogen concentrate supply grows in Queensland",
-   "topic": "Trauma",
-   "question": "In the Queensland fibrinogen concentrate supply analysis, where did the largest share of supply go?",
+   "paper_id": "43056114",
+   "short_title": "Rescue breaths linked to better paediatric arrest survival",
+   "topic": "Paediatrics",
+   "question": "In the Japanese paediatric OHCA registry, how did 30-day neurologically favourable survival compare between CPR types?",
    "options": [
-    "Ambulance services, for prehospital use",
-    "Retrieval services",
-    "Remote and very remote hospitals",
-    "Hospitals, especially major trauma services"
+    "Compression-only CPR beat rescue-breathing CPR",
+    "Rescue-breathing CPR was highest, and no CPR was lowest",
+    "Any bystander CPR gave worse outcomes than no CPR",
+    "All three CPR types gave similar survival"
    ],
-   "answer": 3,
-   "explanation": "97.0% of the 24,717 g went to 54 hospitals, with 66.2% of hospital supply going to major trauma services. It's a supply study only, so no link to patient outcomes like bleeding control or mortality was made."
+   "answer": 1,
+   "explanation": "Survival was 16.0% with rescue-breathing CPR, 9.5% with compression-only and 3.6% with no bystander CPR. It's registry data, so children who got rescue breaths may have differed from those who didn't."
   },
   {
-   "paper_id": "10.12968/jpar.2026.0027",
-   "short_title": "Paramedic and midwifery students train together",
-   "topic": "Education & training",
-   "question": "What benefit did the peer-led simulation format itself offer, according to student reflections?",
+   "paper_id": "43024742",
+   "short_title": "Airway assistant training halved sim intubation time",
+   "topic": "Airway & ventilation",
+   "question": "In this Australian simulation study, what difference did one hour of airway assistant training make when paramedics assisted an ICP intubating a continuously regurgitating manikin?",
    "options": [
-    "It created psychological safety that supported reflective learning",
-    "It guaranteed improved clinical outcomes in maternity emergencies",
-    "It replaced the need for qualified clinical supervision",
-    "It eliminated the practical challenges of running joint training"
+    "Training made no difference to intubation time or tube placement",
+    "Trained assistants were faster only when they had prior airway experience",
+    "Median intubation time roughly halved, with no oesophageal intubations in either group",
+    "Median intubation time roughly halved, but oesophageal intubations were more common in the trained group"
    ],
-   "answer": 0,
-   "explanation": "Students reported that the student-led format fostered psychological safety and reflective learning. Keep in mind this was a reflective practice report with no outcome measures, so the findings are context rather than proof of effect."
+   "answer": 2,
+   "explanation": "Trained pairs intubated in a median of 53 seconds versus 102.5 seconds, and neither group had oesophageal intubations. It was a pilot with only 12 participants in a simulated setting, so no patient outcomes yet."
   }
  ]
 }
