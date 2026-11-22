@@ -2,8 +2,12 @@
 <html lang="en-AU">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-adh5bTGOWphKt+D5i3dXD0nT2qcEN4ShhPNw7yFxGqY=' 'sha256-tMFa7M6UIQriSS0PCSDo3BcpAdjEmjpiaCtwUp03QEI=' https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://social.paramedicpapers.com; font-src 'self'; connect-src 'self' https://api.paramedicpapers.com https://audio.paramedicpapers.com https://cloudflareinsights.com https://static.cloudflareinsights.com; media-src 'self' https://audio.paramedicpapers.com https://op3.dev; frame-src https://join.paramedicpapers.com; worker-src 'self'; manifest-src 'self'; object-src 'none'; base-uri 'none'; form-action 'self'; require-trusted-types-for 'script'; trusted-types pp">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <meta name="theme-color" content="#FBFAF8">
+  <meta name="text-scale" content="scale">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#FBFAF8" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#121417" media="(prefers-color-scheme: dark)">
   <title>Family-witnessed arrest outcomes vary by age | Paramedic Papers</title>
   <meta name="description" content="An All-Japan Utstein registry analysis of 554,923 witnessed OHCA cases found arrests witnessed by family members had worse neurological outcomes than…">
   <link rel="canonical" href="https://paramedicpapers.com/papers/doi-10-1016-j-resuscitation-2026-111330/">
@@ -20,13 +24,19 @@
   <link rel="preload" href="/fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/fonts/ibm-plex-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/css/fonts.css?v=1">
-  <link rel="stylesheet" href="/css/static.css?v=2">
+  <link rel="stylesheet" href="/css/static.css?v=6">
+  <!-- Theme follows the device unless the reader chose Light or Dark
+       (pp:theme). Applied before first paint so there's no flash. -->
   <script>
     try {
-      if (localStorage.getItem('pp:theme') === 'dark') {
-        document.documentElement.setAttribute('data-theme', 'dark');
-        document.querySelector('meta[name="theme-color"]').setAttribute('content', '#121417');
-      }
+      (function (t) {
+        if (t !== 'light' && t !== 'dark') return;
+        document.documentElement.setAttribute('data-theme', t);
+        document.querySelector('meta[name="color-scheme"]').content = t;
+        document.querySelectorAll('meta[name="theme-color"]').forEach(function (m) {
+          m.content = t === 'dark' ? '#121417' : '#FBFAF8';
+        });
+      })(localStorage.getItem('pp:theme'));
     } catch (e) {}
   </script>
   <link rel="icon" type="image/png" sizes="32x32" href="/icon-32.png">
@@ -34,7 +44,11 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="alternate" type="application/rss+xml" title="Paramedic Papers Daily" href="/feed.xml">
   <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "767370751000434aad7703e82270a359"}'></script>
-  <script defer src="/js/track.js?v=1"></script>
+  <script defer src="/js/track.js?v=2"></script>
+  <script type="speculationrules">
+  {"prefetch": [{"where": {"or": [{"href_matches": "/papers/*"}, {"href_matches": "/topics/*"}, {"href_matches": "/daily/*"}, {"href_matches": "/episodes/*"}, {"href_matches": "/about.html"}]}, "eagerness": "moderate"}],
+   "prerender": [{"where": {"or": [{"href_matches": "/papers/*"}, {"href_matches": "/topics/*"}, {"href_matches": "/daily/*"}, {"href_matches": "/episodes/*"}]}, "eagerness": "conservative"}]}
+  </script>
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",

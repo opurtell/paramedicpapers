@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-11-21T18:20:58Z",
-  "lastUpdatedSydney": "2026-11-22 05:20 AEDT",
-  "lastUpdatedDate": "2026-11-22",
+  "lastUpdated": "2026-11-22T18:20:58Z",
+  "lastUpdatedSydney": "2026-11-23 05:20 AEDT",
+  "lastUpdatedDate": "2026-11-23",
   "featuredPapers": [
     {
       "id": "43044058",
@@ -1021,46 +1021,13 @@
   ],
   "funFact": {
     "category": "weird",
-    "fact": "In WWI, medics used sphagnum moss as wound dressings because it's naturally antiseptic — it can hold up to 20 times its weight in fluid and has a pH that inhibits bacterial growth. It actually worked better than cotton. Nature had the answer the whole time."
+    "fact": "In 1921, a surgeon named Evan O'Neill Kane operated on himself — removing his own appendix under local anaesthetic — to prove it could be done. He reportedly leaned up during the procedure to watch. He recovered fine and went back to work."
   },
   "tldr": {
-    "date": "2026-11-22",
-    "paperCount": 4,
-    "summary": "A quieter day led by two resuscitation papers: a US cohort finding most prehospital tourniquets were unjustified yet caused no extra harm, and a German CT study finding gastric distension after OHCA didn't differ by prehospital airway type.",
-    "highlights": [
-      {
-        "id": "43063388",
-        "pmid": "43063388",
-        "doi": "",
-        "title": "Most prehospital tourniquets unjustified, few harmed",
-        "journal": "Rhode Island Medical Journal",
-        "note": "69.4% of tourniquets were unjustified; justified cases were more severely injured and more often needed surgery or transfusion, but unjustified placement showed no difference in mortality, compartment syndrome or nerve palsy"
-      },
-      {
-        "id": "43064337",
-        "pmid": "43064337",
-        "doi": "10.1016/j.resuscitation.2026.111399",
-        "title": "Gastric distension after OHCA similar across airways",
-        "journal": "Resuscitation",
-        "note": "Median total gastric volume 594 mL; no significant gastric-volume difference between tracheal (n=87) and supraglottic (n=28) groups; CT-defined aspiration numerically higher with supraglottic airways (78.6% vs 57.5%, OR 2.7, p=0.071)"
-      },
-      {
-        "id": "10.1186/s12873-026-01831-1",
-        "pmid": "",
-        "doi": "10.1186/s12873-026-01831-1",
-        "title": "DNAR directives missing when crews arrive",
-        "journal": "BMC Emergency Medicine",
-        "note": "54.0% had encountered CPA with DNAR; among them 80% performed basic life support and 91% transported; four themes centred on inadequate DNAR decision-making processes, absent accommodating systems, scope-of-practice conflicts with patient wishes, and emotional burden"
-      },
-      {
-        "id": "10.1016/j.resplu.2026.101565",
-        "pmid": "",
-        "doi": "10.1016/j.resplu.2026.101565",
-        "title": "Small-group resuscitation training: what works?",
-        "journal": "Resuscitation Plus",
-        "note": "Abstract not yet available"
-      }
-    ]
+    "date": "2026-11-23",
+    "paperCount": 0,
+    "summary": "No new papers today.",
+    "highlights": []
   },
   "dailyUpdates": [
     {
@@ -5534,7 +5501,7 @@
   },
   "archive": {
     "url": "data/papers-archive.json",
-    "version": "2026-11-21T18:20:58Z",
+    "version": "2026-11-22T18:20:58Z",
     "days": 100,
     "papers": 529,
     "from": "2026-04-21",
