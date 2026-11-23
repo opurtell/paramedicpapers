@@ -25,6 +25,20 @@
     <itunes:explicit>false</itunes:explicit>
     <podcast:guid>09fa3693-e2ac-527c-9d1c-f68df149b888</podcast:guid>
     <item>
+      <title>Measuring CPR ventilation rate with capnography · 24 Nov</title>
+      <link>https://paramedicpapers.com/episodes/2026-11-24/</link>
+      <description>2 papers: Measuring CPR ventilation rate with capnography; AED data retrieval is fragmented across Europe</description>
+      <content:encoded><![CDATA[<p>2 papers: Measuring CPR ventilation rate with capnography; AED data retrieval is fragmented across Europe</p><p>Papers in this episode:</p><ul><li><a href="https://doi.org/10.1016/j.resplu.2026.101564">Measuring CPR ventilation rate with capnography <em>(Resuscitation Plus)</em></a></li><li><a href="https://doi.org/10.1016/j.resplu.2026.101562">AED data retrieval is fragmented across Europe <em>(Resuscitation Plus)</em></a></li></ul><p><a href="https://paramedicpapers.com/episodes/2026-11-24/">Show notes and transcript</a></p>]]></content:encoded>
+      <pubDate>Tue, 24 Nov 2026 05:32:53 +1100</pubDate>
+      <guid isPermaLink="false">https://audio.paramedicpapers.com/ep-2026-11-24.mp3</guid>
+      <enclosure url="https://op3.dev/e/audio.paramedicpapers.com/ep-2026-11-24.mp3" length="824972" type="audio/mpeg"/>
+      <itunes:duration>206</itunes:duration>
+      <itunes:summary>2 papers: Measuring CPR ventilation rate with capnography; AED data retrieval is fragmented across Europe</itunes:summary>
+      <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
+      <itunes:episodeType>full</itunes:episodeType>
+      <podcast:transcript url="https://audio.paramedicpapers.com/ep-2026-11-24.txt" type="text/plain" language="en-au"/>
+    </item>
+    <item>
       <title>From the archive: Prehospital Resuscitation with Type O Whole Blood for Trauma and Hemorrhage · 23 Nov</title>
       <link>https://paramedicpapers.com/episodes/2026-11-23/</link>
       <description>From the archive: Prehospital whole blood no better than components (New England Journal of Medicine, 2026)</description>
@@ -429,20 +443,6 @@
       <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
       <itunes:episodeType>full</itunes:episodeType>
       <podcast:transcript url="https://audio.paramedicpapers.com/ep-2026-10-26.txt" type="text/plain" language="en-au"/>
-    </item>
-    <item>
-      <title>Paramedic Papers Daily — 25 October 2026</title>
-      <link>https://paramedicpapers.com/episodes/2026-10-25/</link>
-      <description>4 papers: Hot nights linked to more OHCA; ECPR for OHCA: pump the brakes; How ambulance models shape end-of-life care; Scene-to-door time and stroke thrombectomy</description>
-      <content:encoded><![CDATA[<p>4 papers: Hot nights linked to more OHCA; ECPR for OHCA: pump the brakes; How ambulance models shape end-of-life care; Scene-to-door time and stroke thrombectomy</p><p>Papers in this episode:</p><ul><li><a href="https://doi.org/10.1007/s00484-026-03342-x">Hot nights linked to more OHCA <em>(International Journal of Biometeorology)</em></a></li><li><a href="https://doi.org/10.1080/10903127.2026.2753002">ECPR for OHCA: pump the brakes <em>(Prehospital Emergency Care)</em></a></li><li><a href="https://doi.org/10.1186/s12904-026-02283-x">How ambulance models shape end-of-life care <em>(BMC Palliative Care)</em></a></li><li><a href="https://doi.org/10.1186/s12873-026-01706-5">Scene-to-door time and stroke thrombectomy <em>(BMC Emergency Medicine)</em></a></li></ul><p><a href="https://paramedicpapers.com/episodes/2026-10-25/">Show notes and transcript</a></p>]]></content:encoded>
-      <pubDate>Sun, 25 Oct 2026 07:33:29 +1100</pubDate>
-      <guid isPermaLink="false">https://audio.paramedicpapers.com/ep-2026-10-25.mp3</guid>
-      <enclosure url="https://op3.dev/e/audio.paramedicpapers.com/ep-2026-10-25.mp3" length="1216172" type="audio/mpeg"/>
-      <itunes:duration>303</itunes:duration>
-      <itunes:summary>4 papers: Hot nights linked to more OHCA; ECPR for OHCA: pump the brakes; How ambulance models shape end-of-life care; Scene-to-door time and stroke thrombectomy</itunes:summary>
-      <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
-      <itunes:episodeType>full</itunes:episodeType>
-      <podcast:transcript url="https://audio.paramedicpapers.com/ep-2026-10-25.txt" type="text/plain" language="en-au"/>
     </item>
   </channel>
 </rss>
