@@ -7,9 +7,21 @@
   "region": "Ireland",
   "site": "https://podcasters.spotify.com/pod/show/phcp",
   "art": "data/podcasts/art/prehospital-care-podcast.jpg",
-  "episodes": 403,
-  "latest": "2026-11-19",
-  "updated": "2026-11-20"
+  "episodes": 404,
+  "latest": "2026-11-23",
+  "updated": "2026-11-23"
+ },
+ {
+  "id": "sgem",
+  "name": "The Skeptics' Guide to EM",
+  "publisher": "Dr Ken Milne",
+  "focus": "Critical appraisal of recent emergency medicine papers",
+  "region": "Canada",
+  "site": "https://thesgem.com",
+  "art": "data/podcasts/art/sgem.jpg",
+  "episodes": 114,
+  "latest": "2026-11-21",
+  "updated": "2026-11-23"
  },
  {
   "id": "ems-20-20",
@@ -56,18 +68,6 @@
   "site": "https://emcrit.org",
   "art": "data/podcasts/art/emcrit.jpg",
   "episodes": 167,
-  "latest": "2026-11-14",
-  "updated": "2026-11-15"
- },
- {
-  "id": "sgem",
-  "name": "The Skeptics' Guide to EM",
-  "publisher": "Dr Ken Milne",
-  "focus": "Critical appraisal of recent emergency medicine papers",
-  "region": "Canada",
-  "site": "https://thesgem.com",
-  "art": "data/podcasts/art/sgem.jpg",
-  "episodes": 113,
   "latest": "2026-11-14",
   "updated": "2026-11-15"
  },
