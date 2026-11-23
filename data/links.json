@@ -1,16 +1,16 @@
 {
- "updated": "2026-11-22",
+ "updated": "2026-11-23",
  "latest": [
   {
-   "key": "43064337",
-   "title": "Gastric distension after OHCA similar across airways",
-   "topic": "Cardiac arrest",
-   "finding": "Median total gastric volume 594 mL; no significant gastric-volume difference between tracheal (n=87) and supraglottic (n=28) groups; CT-defined aspiration numerically higher with supraglottic airways (78.6% vs 57.5%, OR 2.7, p=0.071)"
+   "key": "42150044",
+   "title": "Prehospital whole blood no better than components",
+   "topic": "Trauma",
+   "finding": "30-day mortality 25.9% with whole blood vs 20.5% with blood components (adjusted OR 1.24, 95% CI 0.87–1.76; P=0.24). No difference by whole blood storage age (15–21 days vs 1–14 days: adjusted OR 0.99, 95% CI 0.74–1.32)."
   }
  ],
  "episode": {
-  "date": "2026-11-22",
-  "title": "Most prehospital tourniquets unjustified, few harmed · 22 Nov",
-  "page": "/episodes/2026-11-22/"
+  "date": "2026-11-23",
+  "title": "From the archive: Prehospital Resuscitation with Type O Whole Blood for Trauma and Hemorrhage · 23 Nov",
+  "page": "/episodes/2026-11-23/"
  }
 }
