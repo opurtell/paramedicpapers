@@ -1,8 +1,50 @@
 {
-  "lastUpdated": "2026-11-23T18:20:58Z",
-  "lastUpdatedSydney": "2026-11-24 05:20 AEDT",
-  "lastUpdatedDate": "2026-11-24",
+  "lastUpdated": "2026-11-24T18:20:58Z",
+  "lastUpdatedSydney": "2026-11-25 05:20 AEDT",
+  "lastUpdatedDate": "2026-11-25",
   "featuredPapers": [
+    {
+      "id": "43076208",
+      "title": "Prehospital Fluid Resuscitation for Patients With Suspected Sepsis: The PITSTOP-Fluids Factorial Randomized Clinical Trial",
+      "journal": "JAMA",
+      "date": "2026-11-25",
+      "pmid": "43076208",
+      "doi": "10.1001/jama.2026.25614",
+      "summary": "A Canadian multicentre factorial RCT testing liberal versus usual-care prehospital fluid resuscitation in suspected sepsis found hospital mortality was essentially identical at 18.0% versus 18.3%.",
+      "relevance": "🟢 High — Normal saline and fluid boluses are standard Australian ambulance practice, and this trial tested the strategy itself rather than a new drug or device.",
+      "featuredReason": "Normal saline and fluid boluses are standard Australian ambulance practice, and this trial tested the strategy itself rather than a new drug or device.",
+      "pubDate": "2026-11-24",
+      "topic": "Sepsis & infection",
+      "studyType": "RCT",
+      "design": "Multicentre 2×2 factorial randomised controlled trial (4 Ontario paramedic services)",
+      "n": "1646 adults with suspected sepsis (median age 76)",
+      "finding": "Hospital mortality 18.0% with liberal fluids (median 1500 mL) versus 18.3% with usual care (median 500 mL), RR 0.98 (95% CI 0.80–1.20); all 17 secondary outcomes similar.",
+      "caveat": "Suspected sepsis criteria (fever plus SBP <100 mmHg) excluded the sickest patients, and even usual care gave most a bolus.",
+      "bottomLine": "Supports current practice",
+      "shortTitle": "Liberal ambulance fluids did not reduce sepsis mortality",
+      "learningGoal": "Weigh the benefits and harms of liberal prehospital fluid boluses for suspected sepsis before intravenous access and antibiotics."
+    },
+    {
+      "id": "43076168",
+      "title": "Prehospital Antibiotics for Patients With Suspected Sepsis: The PITSTOP-Antibiotics Factorial Randomized Clinical Trial",
+      "journal": "JAMA",
+      "date": "2026-11-25",
+      "pmid": "43076168",
+      "doi": "10.1001/jama.2026.25627",
+      "summary": "A Canadian placebo-controlled RCT testing intramuscular ceftriaxone in the ambulance for suspected sepsis found early antibiotics did not reduce hospital mortality (18.0% versus 18.4% with placebo).",
+      "relevance": "🟢 High — Ceftriaxone is in nearly all Australian ambulance formularies, and whether antibiotics should start in the ambulance is an open question here.",
+      "featuredReason": "Ceftriaxone is in nearly all Australian ambulance formularies, and whether antibiotics should start in the ambulance is an open question here.",
+      "pubDate": "2026-11-24",
+      "topic": "Sepsis & infection",
+      "studyType": "RCT",
+      "design": "Multicentre 2×2 factorial randomised placebo-controlled trial (4 Ontario paramedic services)",
+      "n": "2048 adults with suspected sepsis (median age 75)",
+      "finding": "Hospital mortality 18.0% with ambulance IM ceftriaxone versus 18.4% with placebo, RR 0.97 (95% CI 0.81–1.17); all 17 secondary outcomes similar.",
+      "caveat": "Hospital antibiotics followed within about 4 hours of paramedic arrival for most patients, so prehospital dosing saved little time.",
+      "bottomLine": "Supports current practice",
+      "shortTitle": "Ambulance antibiotics gave no survival benefit in sepsis",
+      "learningGoal": "Weigh the value of prehospital antibiotics for suspected sepsis when timely hospital antibiotic administration is achievable."
+    },
     {
       "id": "10.1016/j.resplu.2026.101565",
       "title": "Group size matters: a systematic review comparing smaller versus larger group teaching in resuscitation training",
@@ -65,48 +107,6 @@
       "bottomLine": "Hypothesis-generating",
       "shortTitle": "Blood stored on ambulances stays within limits to day 42",
       "learningGoal": "Weigh the risks and benefits of storing red blood cells onboard ambulances for prehospital transfusion readiness."
-    },
-    {
-      "id": "10.1016/j.resuscitation.2026.111401",
-      "title": "Out-of-hospital cardiac arrests due to foreign body airway obstruction: A CanROC registry, retrospective cohort study",
-      "journal": "Resuscitation",
-      "date": "2026-11-20",
-      "pmid": "",
-      "doi": "10.1016/j.resuscitation.2026.111401",
-      "summary": "A Canadian CanROC registry cohort of 105,178 EMS-treated out-of-hospital cardiac arrests (2005–2023) found 1,106 (1.1%) were obviously foreign-body-airway-obstruction-related: prehospital ROSC was far more frequent than in presumed cardiac arrests (62.7% vs 37.8%) but survival to discharge was similar (10.6% vs 9.0%).",
-      "relevance": "🟢 High — A Canadian paramedic-model registry answering a question Australian crews face on every choking arrest. Bystander presence and shorter EMS response times drove outcomes — both central to how Australian systems are built, and the same arrest is managed the same way here.",
-      "featuredReason": "A Canadian paramedic-model registry answering a question Australian crews face on every choking arrest. Bystander presence and shorter EMS response times drove outcomes — both central to how Australian systems are built, and the same arrest is managed the same way here.",
-      "pubDate": "2026-11",
-      "topic": "Cardiac arrest",
-      "studyType": "Registry",
-      "design": "Retrospective registry cohort (CanROC, 2005–2023)",
-      "n": "105,178 EMS-treated OHCAs, of which 1,106 obviously FBAO-related",
-      "finding": "FBAO-related arrests achieved prehospital ROSC more often than presumed cardiac arrests (62.7% vs 37.8%, OR 2.77) but survival to discharge did not differ (10.6% vs 9.0%, p=0.094); within FBAO arrests, survival was 18.1% with prehospital ROSC and 0.8% without, and was associated with younger age (aOR 0.76 per decade), shockable rhythm (aOR 4.76) and shorter EMS response time (aOR 0.81 per minute).",
-      "caveat": "Exploratory retrospective design, and 'obviously FBAO-related' classification depends on registry coding rather than verified cause of arrest.",
-      "bottomLine": "Supports current practice",
-      "shortTitle": "Choking arrests: ROSC common, survival still poor",
-      "learningGoal": "Strengthen my recognition of airway obstruction as the reversible cause in cardiac arrest and prioritise early airway clearance."
-    },
-    {
-      "id": "43044058",
-      "title": "A Mobile Application Improves Paramedic Performance in Simulated Trauma Care: A Crossover Randomized Controlled Trial",
-      "journal": "Prehospital Emergency Care",
-      "date": "2026-11-19",
-      "pmid": "43044058",
-      "doi": "10.1080/10903127.2026.2765894",
-      "summary": "A US crossover RCT found paramedic pairs using a mobile app with protocols, decision-support tools and procedure videos completed all critical actions in simulated trauma far more often than with standard practice (35.4% vs 6.3%).",
-      "relevance": "🟢 High — Decision-support apps sit on top of clinical practice every Australian crew already carries; the transferable question is integration with existing app-based guidelines, not the technology itself.",
-      "featuredReason": "Decision-support apps sit on top of clinical practice every Australian crew already carries; the transferable question is integration with existing app-based guidelines, not the technology itself.",
-      "pubDate": "2026-11-17",
-      "topic": "Trauma",
-      "studyType": "RCT",
-      "design": "Crossover randomised controlled trial, high-fidelity simulation",
-      "n": "48 paramedic pairs analysed (112 recruited), adult and paediatric trauma scenarios",
-      "finding": "35.4% of app-supported scenarios met all critical actions vs 6.3% without (adjusted OR 8.28, 95% CI 2.21–31.09); paediatric completion 30.4% vs 0%; users rated the app practical and valuable.",
-      "caveat": "Simulated scenarios rather than patient outcomes, at a single US agency.",
-      "bottomLine": "Hypothesis-generating",
-      "shortTitle": "Mobile app lifts simulated trauma performance",
-      "learningGoal": "Build my judgement on integrating mobile decision-support tools into trauma assessment for adults and children."
     }
   ],
   "funFacts": [
@@ -1021,32 +1021,105 @@
   ],
   "funFact": {
     "category": "weird",
-    "fact": "The first successful tracheostomy on a human was probably performed by Antonio Musa Brasavola in 1546 on a patient with an airway obstruction from tonsillar abscess. The operation had been described for centuries but most doctors considered it essentially a death sentence."
+    "fact": "Your body produces about 25 million new cells per second. By the time you finish reading this fact, you've made roughly 75 million. Most of those are red blood cells — your bone marrow is a 24/7 factory that never shuts down."
   },
   "tldr": {
-    "date": "2026-11-24",
-    "paperCount": 2,
-    "summary": "A cardiac-arrest methods day: a capnography framework for measuring CPR ventilation rate found no association with ROSC, and a European survey showed how fragmented AED data retrieval still is.",
+    "date": "2026-11-25",
+    "paperCount": 3,
+    "summary": "Two landmark Canadian RCTs (the PITSTOP trials, JAMA) show neither liberal prehospital fluids nor ambulance antibiotics cut mortality in suspected sepsis — the biggest prehospital sepsis test yet came back null on both counts.",
     "highlights": [
       {
-        "id": "10.1016/j.resplu.2026.101564",
-        "pmid": "",
-        "doi": "10.1016/j.resplu.2026.101564",
-        "title": "Measuring CPR ventilation rate with capnography",
-        "journal": "Resuscitation Plus",
-        "note": "Moderate-to-good agreement with independent detectors (ICC 0.72–0.82, limits of agreement ±6.8 breaths/min) but no association between ventilation rate and ROSC (OR 1.09 per 2 breaths/min, 95% CI 0.91–1.30)"
+        "id": "43076208",
+        "pmid": "43076208",
+        "doi": "10.1001/jama.2026.25614",
+        "title": "Liberal ambulance fluids did not reduce sepsis mortality",
+        "journal": "JAMA",
+        "note": "Hospital mortality 18.0% with liberal fluids (median 1500 mL) versus 18.3% with usual care (median 500 mL), RR 0.98 (95% CI 0.80–1.20); all 17 secondary outcomes similar."
       },
       {
-        "id": "10.1016/j.resplu.2026.101562",
-        "pmid": "",
-        "doi": "10.1016/j.resplu.2026.101562",
-        "title": "AED data retrieval is fragmented across Europe",
-        "journal": "Resuscitation Plus",
-        "note": "Transitional interfaces in 41.6% of devices and legacy interfaces in 21.7%; free software available for 43.3%, paid software required for 26.7% and distributor access for 13.3%"
+        "id": "43076168",
+        "pmid": "43076168",
+        "doi": "10.1001/jama.2026.25627",
+        "title": "Ambulance antibiotics gave no survival benefit in sepsis",
+        "journal": "JAMA",
+        "note": "Hospital mortality 18.0% with ambulance IM ceftriaxone versus 18.4% with placebo, RR 0.97 (95% CI 0.81–1.17); all 17 secondary outcomes similar."
+      },
+      {
+        "id": "43075951",
+        "pmid": "43075951",
+        "doi": "10.1177/10806032261509593",
+        "title": "Paragliding festival injuries cluster at landing",
+        "journal": "Wilderness & Environmental Medicine",
+        "note": "10 of 13 injuries (76.9%) occurred during landing versus 1 during takeoff; lower-limb trauma predominated; 8 patients went by ground ambulance and 1 deceased pilot required helicopter-assisted recovery."
       }
     ]
   },
   "dailyUpdates": [
+    {
+      "date": "2026-11-25",
+      "papers": [
+        {
+          "id": "43076208",
+          "title": "Prehospital Fluid Resuscitation for Patients With Suspected Sepsis: The PITSTOP-Fluids Factorial Randomized Clinical Trial",
+          "journal": "JAMA",
+          "date": "2026-11-25",
+          "pmid": "43076208",
+          "doi": "10.1001/jama.2026.25614",
+          "summary": "A Canadian multicentre factorial RCT testing liberal versus usual-care prehospital fluid resuscitation in suspected sepsis found hospital mortality was essentially identical at 18.0% versus 18.3%.",
+          "relevance": "🟢 High — Normal saline and fluid boluses are standard Australian ambulance practice, and this trial tested the strategy itself rather than a new drug or device.",
+          "pubDate": "2026-11-24",
+          "topic": "Sepsis & infection",
+          "studyType": "RCT",
+          "design": "Multicentre 2×2 factorial randomised controlled trial (4 Ontario paramedic services)",
+          "n": "1646 adults with suspected sepsis (median age 76)",
+          "finding": "Hospital mortality 18.0% with liberal fluids (median 1500 mL) versus 18.3% with usual care (median 500 mL), RR 0.98 (95% CI 0.80–1.20); all 17 secondary outcomes similar.",
+          "caveat": "Suspected sepsis criteria (fever plus SBP <100 mmHg) excluded the sickest patients, and even usual care gave most a bolus.",
+          "bottomLine": "Supports current practice",
+          "shortTitle": "Liberal ambulance fluids did not reduce sepsis mortality",
+          "learningGoal": "Weigh the benefits and harms of liberal prehospital fluid boluses for suspected sepsis before intravenous access and antibiotics."
+        },
+        {
+          "id": "43076168",
+          "title": "Prehospital Antibiotics for Patients With Suspected Sepsis: The PITSTOP-Antibiotics Factorial Randomized Clinical Trial",
+          "journal": "JAMA",
+          "date": "2026-11-25",
+          "pmid": "43076168",
+          "doi": "10.1001/jama.2026.25627",
+          "summary": "A Canadian placebo-controlled RCT testing intramuscular ceftriaxone in the ambulance for suspected sepsis found early antibiotics did not reduce hospital mortality (18.0% versus 18.4% with placebo).",
+          "relevance": "🟢 High — Ceftriaxone is in nearly all Australian ambulance formularies, and whether antibiotics should start in the ambulance is an open question here.",
+          "pubDate": "2026-11-24",
+          "topic": "Sepsis & infection",
+          "studyType": "RCT",
+          "design": "Multicentre 2×2 factorial randomised placebo-controlled trial (4 Ontario paramedic services)",
+          "n": "2048 adults with suspected sepsis (median age 75)",
+          "finding": "Hospital mortality 18.0% with ambulance IM ceftriaxone versus 18.4% with placebo, RR 0.97 (95% CI 0.81–1.17); all 17 secondary outcomes similar.",
+          "caveat": "Hospital antibiotics followed within about 4 hours of paramedic arrival for most patients, so prehospital dosing saved little time.",
+          "bottomLine": "Supports current practice",
+          "shortTitle": "Ambulance antibiotics gave no survival benefit in sepsis",
+          "learningGoal": "Weigh the value of prehospital antibiotics for suspected sepsis when timely hospital antibiotic administration is achievable."
+        },
+        {
+          "id": "43075951",
+          "title": "Transition-Phase Injuries and Wilderness EMS Operations During a Mountain Paragliding Festival: A Brief Report",
+          "journal": "Wilderness & Environmental Medicine",
+          "date": "2026-11-25",
+          "pmid": "43075951",
+          "doi": "10.1177/10806032261509593",
+          "summary": "A Turkish brief report of wilderness EMS operations at a 2-day mountain paragliding festival recorded 13 injuries across 4716 flights, with more than three-quarters occurring during landing.",
+          "relevance": "🟡 Medium — Terrain-aware event standby and rescue planning translate directly to festival, alpine and flight-sport coverage Australian crews provide.",
+          "pubDate": "2026-11-24",
+          "topic": "Operations & systems",
+          "studyType": "Case series",
+          "design": "Retrospective review of operational and prehospital records from a 2-day mountain paragliding festival (brief report)",
+          "n": "13 injuries across 4716 flights",
+          "finding": "10 of 13 injuries (76.9%) occurred during landing versus 1 during takeoff; lower-limb trauma predominated; 8 patients went by ground ambulance and 1 deceased pilot required helicopter-assisted recovery.",
+          "caveat": "Single 2-day event, small numbers, retrospective operational records.",
+          "bottomLine": "Context only",
+          "shortTitle": "Paragliding festival injuries cluster at landing",
+          "learningGoal": "Recognise landing-phase injury patterns and terrain risks when planning prehospital coverage for mass aviation events."
+        }
+      ]
+    },
     {
       "date": "2026-11-24",
       "papers": [
@@ -1089,6 +1162,46 @@
           "bottomLine": "Context only",
           "shortTitle": "AED data retrieval is fragmented across Europe",
           "learningGoal": "Understand how fragmented AED data access affects post-arrest quality improvement in Australian practice."
+        },
+        {
+          "id": "10.3390/medicina62122290",
+          "title": "Latent Class Analysis of Pre-Hospital Chain-of-Survival Indicators and Outcomes After Out-of-Hospital Cardiac Arrest: A Nationwide Korean Registry Study, 2013–2024",
+          "journal": "Medicina",
+          "date": "2026-11-24",
+          "pmid": "",
+          "doi": "10.3390/medicina62122290",
+          "summary": "A South Korean nationwide registry analysis of 78,226 adult OHCAs (2013–2024) found prehospital chain-of-survival indicators formed no meaningful profile beyond bystander CPR status, which was associated with better survival to discharge (aOR 1.61) and favourable neurological outcome (aOR 2.23).",
+          "relevance": "🟢 High — Bystander CPR and transport intervals are the same questions in every Australian jurisdiction, and this is a 12-year national registry — the rate on the evidence, no system translation needed.",
+          "pubDate": "2026-11-21",
+          "topic": "Cardiac arrest",
+          "studyType": "Registry",
+          "design": "Nationwide registry cohort with latent class analysis",
+          "n": "78,226 adults with OHCA, 2013–2024",
+          "finding": "Bystander CPR was associated with survival to discharge (17.7% vs 10.0%; aOR 1.61, 95% CI 1.52–1.71), ED ROSC (aOR 1.11) and favourable neurological outcome (aOR 2.23, 95% CI 2.04–2.44); call-to-ED time ≤20 min did not separate the latent classes, and ED arrivals within 20 min fell from 28.8% to 5.6% while bystander CPR rose from 66.3% to 75.2%",
+          "caveat": "Latent classes built from three binary indicators collapsed onto bystander CPR status, with no CPR quality or interval causality — association, not effect",
+          "bottomLine": "Supports current practice",
+          "shortTitle": "Bystander CPR defines the prehospital OHCA profile",
+          "learningGoal": "Strengthen my ability to recognise opportunities to coach bystander CPR and its impact on neurological outcomes."
+        },
+        {
+          "id": "10.1371/journal.pone.0361811",
+          "title": "Comparing the Effects of high-quality simulation-based education and video-based education on knowledge, skills, and self-confidence in learning the out-of-hospital chain of survival among adolescent students",
+          "journal": "PLOS One",
+          "date": "2026-11-24",
+          "pmid": "",
+          "doi": "10.1371/journal.pone.0361811",
+          "summary": "A randomised pretest–posttest trial in 120 male secondary-school students found 45 minutes of high-quality simulation-based CPR training produced higher knowledge, skill and self-confidence scores than video-based education immediately afterwards.",
+          "relevance": "🟡 Medium — School CPR education models differ across Australian jurisdictions, but the hands-on-versus-video question is live wherever community CPR training is delivered — and the evidence is a small single-sex trial.",
+          "pubDate": "2026-11-23",
+          "topic": "Education & training",
+          "studyType": "RCT",
+          "design": "Randomised pretest–posttest controlled trial",
+          "n": "120 male secondary students randomised; 111 analysed",
+          "finding": "Both groups improved in knowledge and self-confidence over time (p < 0.001); the simulation group scored significantly higher than the video group on knowledge, CPR skill and self-confidence immediately after training",
+          "caveat": "Small single-sex school sample with no patient-level outcomes, and the abstract's one-month follow-up results were incomplete at the pipeline source",
+          "bottomLine": "Hypothesis-generating",
+          "shortTitle": "Hands-on CPR training beats video for teens",
+          "learningGoal": "Strengthen my ability to advocate for simulation-based CPR education when engaging with community bystander training programs."
         }
       ]
     },
@@ -5033,177 +5146,112 @@
           "learningGoal": "Understand how alcohol-related education and peer support shape clinician wellbeing within the Australian paramedic workforce."
         }
       ]
-    },
-    {
-      "date": "2026-10-26",
-      "papers": [
-        {
-          "id": "42918714",
-          "title": "Pre-hospital pulse pressure as an early predictor of active hemorrhage in trauma patients",
-          "journal": "Injury",
-          "date": "2026-10-26",
-          "pmid": "42918714",
-          "doi": "10.1016/j.injury.2026.113779",
-          "summary": "A retrospective study of 2,177 adult trauma patients across three Canadian level 1 trauma centres found prehospital pulse pressure predicted active haemorrhage (AUC 0.73), with each 10 mmHg narrowing raising the odds by 51% and a cut-off of ≤45 mmHg most useful for ruling bleeding out.",
-          "relevance": "🟢 High — Pulse pressure is just two numbers off the cuff you already take — no new equipment or drugs, so it applies to Australian practice as it stands. The outcome (transfusion or haemorrhage control) is hospital-side, but the flag is raised on scene.",
-          "pubDate": "2026-10-15",
-          "topic": "Trauma",
-          "studyType": "Cohort",
-          "design": "Retrospective multicentre cohort",
-          "n": "2,177 adult trauma patients (68 with active haemorrhage)",
-          "finding": "Prehospital pulse pressure predicted active haemorrhage (AUC 0.73, similar to SBP 0.74); each 10 mmHg narrowing raised the odds by 51% (OR 1.51, 95% CI 1.28–1.79), and PP ≤45 mmHg was best for rule-out given high negative predictive value",
-          "caveat": "Retrospective design with only 68 bleeding patients, so the cut-off needs prospective validation",
-          "bottomLine": "Hypothesis-generating",
-          "shortTitle": "Prehospital pulse pressure flags trauma bleeding",
-          "learningGoal": "Recognise narrowing pulse pressure as an early sign of haemorrhage in trauma patients before blood pressure falls."
-        },
-        {
-          "id": "42926135",
-          "title": "Earlier Versus Later Extracorporeal Cardiopulmonary Resuscitation in Refractory Out-of-Hospital Cardiac Arrest: A Nationwide Sequential Landmark Target Trial Emulation",
-          "journal": "European Heart Journal. Acute Cardiovascular Care",
-          "date": "2026-10-26",
-          "pmid": "42926135",
-          "doi": "10.1093/ehjacc/zuag132",
-          "summary": "A target trial emulation in 58,668 patients with refractory OHCA from the Korean nationwide registry found ECPR was associated with higher 30-day survival at 15, 30 and 60 minutes after ED arrival (+15.0, +14.4 and +7.7 percentage points); an exploratory analysis found the benefit narrowed but remained significant to 120 minutes.",
-          "relevance": "🟡 Medium — ECPR is an in-hospital tool — Australian crews don't deliver it — but the refractory-arrest transport and destination decisions that get a patient to an ECMO centre are ours, and the finding questions the 60-minute cut-off many systems apply.",
-          "pubDate": "2026-10-25",
-          "topic": "Cardiac arrest",
-          "studyType": "Registry",
-          "design": "Nationwide registry target trial emulation (sequential landmark)",
-          "n": "58,668 patients with refractory OHCA (909 received ECPR)",
-          "finding": "Weighted 30-day survival with ECPR vs conventional CPR was 31.0% vs 16.0%, 21.6% vs 7.2% and 10.9% vs 3.2% at 15, 30 and 60 minutes after ED arrival; an exploratory analysis found benefit narrowed but stayed significant to 120 minutes",
-          "caveat": "Propensity-adjusted observational design, not randomised — residual selection bias about who gets ECMO is likely",
-          "bottomLine": "Hypothesis-generating",
-          "shortTitle": "ECPR timing in refractory OHCA: survival gap persists",
-          "learningGoal": "Weigh the benefits and uncertainties of ECPR for refractory cardiac arrest beyond the conventional sixty-minute window."
-        },
-        {
-          "id": "42927462",
-          "title": "Six-degree-of-freedom manikin neck for immobilisation training, incorporating linear potentiometers for real-time motion feedback",
-          "journal": "Proceedings of the Institution of Mechanical Engineers. Part H, Journal of Engineering in Medicine",
-          "date": "2026-10-26",
-          "pmid": "42927462",
-          "doi": "10.1177/09544119261497807",
-          "summary": "Australian engineers built and tested a proof-of-concept instrumented manikin neck with six-degree-of-freedom motion and real-time head-position feedback for immobilisation training, achieving angle measurement error under 0.89° versus motion capture.",
-          "relevance": "🔴 Low — A device prototype, not evidence about patient care — interesting for training programs, but nothing here changes what crews do yet, and the authors note it needs work before paramedic training settings.",
-          "pubDate": "2026-10-25",
-          "topic": "Education & training",
-          "studyType": "Simulation",
-          "design": "Device design, manufacture and bench validation",
-          "n": "One manikin neck prototype (bench-tested against motion capture)",
-          "finding": "The prototype delivered six-degree-of-freedom neck motion with realistic low stiffness and head-angle accuracy within 0.89° RMSE versus optoelectronic motion capture",
-          "caveat": "Proof-of-concept only: range of motion and stiffness were limited by the build, and it hasn't been evaluated in actual paramedic training",
-          "bottomLine": "Context only",
-          "shortTitle": "Instrumented manikin neck for immobilisation training",
-          "learningGoal": "Improve my spinal immobilisation technique by understanding how real-time feedback on neck movement reveals excess motion during handling."
-        }
-      ]
     }
   ],
   "weeklyTldr": {
-    "dateRange": "11–17 Nov 2026",
-    "summary": "An Australian scoping review found paramedic sensitivity for seizure recognition of just 54-59%, with non-convulsive seizures missed in up to 81% of cases\nA Japanese nationwide cohort of 7,217 traumatic arrests found no significant survival or neurological benefit from prehospital advanced airway management once resuscitation-time bias was corrected\nUS registry data built paediatric OHCA risk scores from 26,895 children, sorting them into survival probabilities from 3% to 48% using variables crews already record\nA Norwegian registry study linked sepsis suspicion at dispatch to antibiotic administration 31 minutes earlier after ED arrival\nA Japanese trauma cohort found prehospital rSIG below 24.8 was associated with urgent interventions (adjusted OR 3.17), though not with mortality",
+    "dateRange": "18–24 Nov 2026",
+    "summary": "A 78,226-case South Korean registry found no prehospital chain-of-survival profile beyond bystander CPR status, which was associated with better survival (aOR 1.61) and good neurology (aOR 2.23); the proportion reaching hospital within 20 minutes fell from 28.8% to 5.6% over 12 years\nA Japanese registry of 26,785 paediatric arrests found rescue-breathing bystander CPR was associated with the best 30-day neurologically favourable survival (9.5%) as compression-only CPR rose from 14.6% to 55.1% of cases\nSwedish registry data from 9,413 arrests showed bystander-attached AEDs were associated with 28% 30-day survival versus 9.0% when the crew attached first (OR 2.25), rising to 62% in witnessed shockable arrests\nPooled randomised evidence found prehospital TXA was associated with lower 28–30-day mortality in trauma (RR 0.81, 95% CI 0.68–0.95) without a significant rise in thromboembolic events or seizures\nIn a Canadian registry of 105,178 arrests, foreign-body-airway-obstruction arrests achieved prehospital ROSC far more often than presumed cardiac arrests (62.7% vs 37.8%) but survival to discharge was similar (10.6% vs 9.0%)",
     "highlights": [
       {
-        "text": "An Australian scoping review found paramedic sensitivity for seizure recognition of just 54-59%, with non-convulsive seizures missed in up to 81% of cases",
-        "id": "43019610"
+        "text": "A 78,226-case South Korean registry found no prehospital chain-of-survival profile beyond bystander CPR status, which was associated with better survival (aOR 1.61) and good neurology (aOR 2.23); the proportion reaching hospital within 20 minutes fell from 28.8% to 5.6% over 12 years",
+        "id": "10.3390/medicina62122290"
       },
       {
-        "text": "A Japanese nationwide cohort of 7,217 traumatic arrests found no significant survival or neurological benefit from prehospital advanced airway management once resuscitation-time bias was corrected",
-        "id": "43019463"
+        "text": "A Japanese registry of 26,785 paediatric arrests found rescue-breathing bystander CPR was associated with the best 30-day neurologically favourable survival (9.5%) as compression-only CPR rose from 14.6% to 55.1% of cases",
+        "id": "43056114"
       },
       {
-        "text": "US registry data built paediatric OHCA risk scores from 26,895 children, sorting them into survival probabilities from 3% to 48% using variables crews already record",
-        "id": "43002825"
+        "text": "Swedish registry data from 9,413 arrests showed bystander-attached AEDs were associated with 28% 30-day survival versus 9.0% when the crew attached first (OR 2.25), rising to 62% in witnessed shockable arrests",
+        "id": "43044727"
       },
       {
-        "text": "A Norwegian registry study linked sepsis suspicion at dispatch to antibiotic administration 31 minutes earlier after ED arrival",
-        "id": "10.1186/s13049-026-01730-1"
+        "text": "Pooled randomised evidence found prehospital TXA was associated with lower 28–30-day mortality in trauma (RR 0.81, 95% CI 0.68–0.95) without a significant rise in thromboembolic events or seizures",
+        "id": "43046131"
       },
       {
-        "text": "A Japanese trauma cohort found prehospital rSIG below 24.8 was associated with urgent interventions (adjusted OR 3.17), though not with mortality",
-        "id": "43020495"
+        "text": "In a Canadian registry of 105,178 arrests, foreign-body-airway-obstruction arrests achieved prehospital ROSC far more often than presumed cardiac arrests (62.7% vs 37.8%) but survival to discharge was similar (10.6% vs 9.0%)",
+        "id": "10.1016/j.resuscitation.2026.111401"
       }
     ],
     "topPicks": [
       {
-        "id": "43019610",
-        "title": "Prehospital recognition and differentiation of seizure presentations by paramedics and ambulance nurses: A scoping review",
+        "id": "43056114",
+        "title": "Bystander CPR Type and Outcomes After Pediatric Out-of-Hospital Cardiac Arrest",
         "authors": "",
-        "journal": "Seizure",
-        "summary": "An Australian scoping review of 18 studies found paramedic recognition of seizure presentations remains suboptimal, with sensitivity of 54.0–58.5% and non-recognition of non-convulsive seizures reaching 53.0–81.4%.",
-        "relevance": "🟢 High — Diagnostic accuracy of seizure recognition is a crew-level problem everywhere, and the review covers paramedic practice directly comparable to Australian scope.",
-        "pmid": "43019610",
-        "doi": "10.1016/j.seizure.2026.10.017",
-        "featuredReason": "Australian evidence that seizure recognition - especially non-convulsive seizures - is a crew-level blind spot. It is diagnostic accuracy measured on paramedic practice itself, not a foreign system, and the numbers are uncomfortable.",
-        "pubDate": "2026-10-30",
-        "topic": "Stroke & neuro",
-        "studyType": "Systematic review",
-        "design": "Scoping review (PRISMA-ScR) of 18 studies across five databases",
-        "n": "18 studies (16 paramedic, 2 ambulance nurse) from 1,264 citations",
-        "finding": "Sensitivity 54.0–58.5% and specificity 95.9–96.6% against variable reference standards; recognition rates 56.8–89.7%; non-convulsive seizures missed in 53.0–81.4% of cases",
-        "caveat": "Included studies used variable reference standards and EMS workforce configurations, limiting pooled interpretation",
-        "bottomLine": "Hypothesis-generating",
-        "shortTitle": "Paramedics miss many non-convulsive seizures",
-        "learningGoal": "Recognise non-convulsive seizure presentations in the field to reduce missed diagnoses."
-      },
-      {
-        "id": "43019463",
-        "title": "Prehospital Advanced Airway Management in Traumatic Out-of-Hospital Cardiac Arrest: A Nationwide Cohort Study Using Time-Dependent Propensity Score Sequential Matching",
-        "authors": "",
-        "journal": "Prehospital Emergency Care",
-        "summary": "A Japanese nationwide registry cohort of 7,217 adults with traumatic out-of-hospital cardiac arrest found successful prehospital advanced airway management was not significantly associated with better 30-day survival or neurological outcome when resuscitation-time bias was corrected.",
-        "relevance": "🟢 High — Supraglottic airways are standard Australian cardiac arrest care and intubation is an advanced-tier skill in most services, so the question is squarely ours; the physician-free Japanese EMS model resembles ours more than Europe's.",
-        "pmid": "43019463",
-        "doi": "10.1080/10903127.2026.2755967",
-        "featuredReason": "A 7,217-patient national cohort in a paramedic-staffed system asking whether advanced airways help traumatic arrest. The answer was no significant benefit once timing bias was corrected, which speaks directly to what advanced crews commit scene time to.",
-        "pubDate": "2026-11-12",
-        "topic": "Cardiac arrest",
-        "studyType": "Registry",
-        "design": "Nationwide retrospective registry cohort with time-dependent propensity score sequential matching",
-        "n": "7,217 adults with traumatic OHCA (2,653 received advanced airway management)",
-        "finding": "Thirty-day survival 1.8% with advanced airway vs 1.4% matched controls (corrected RD 0.6%, 95% CI −0.1 to 1.2); favourable neurological outcome 0.2% vs 0.4% (corrected RD −0.2%, 95% CI −0.6 to 0.1) — no significant timing-dependent association",
-        "caveat": "Observational design with extremely low event rates, so even a real effect could hide in the confidence intervals",
-        "bottomLine": "Hypothesis-generating",
-        "shortTitle": "Advanced airway not linked to traumatic arrest survival",
-        "learningGoal": "Weigh the value of advanced airway management during traumatic cardiac arrest against prioritising early ventilation and circulation."
-      },
-      {
-        "id": "43002825",
-        "title": "Predicting survival in pediatric out-of-hospital cardiac arrest: Development and internal validation of risk scores",
-        "authors": "",
-        "journal": "The American Journal of Emergency Medicine",
-        "summary": "A US national registry study (CARES, 2013–2023) developed and internally validated paediatric OHCA risk scores from prehospital variables, classifying 26,895 children into low/moderate/high survival groups with AUROC 0.76–0.82 and average discharge-survival probabilities from 3% to 48%.",
-        "relevance": "🟢 High — Built from a 26,895-patient national arrest registry using variables crews already record — bystander CPR, AED use, first rhythm — so the score travels well beyond the US.",
-        "pmid": "43002825",
-        "doi": "10.1016/j.ajem.2026.10.040",
-        "featuredReason": "Risk scores built from variables crews already document that sort paediatric arrest survival from 3% to 48% - a realistic step toward prognosis-informed handover conversations, once externally validated.",
-        "pubDate": "2026-10-31",
+        "journal": "JAMA Network Open",
+        "summary": "A 19-year Japanese national registry cohort of 26,785 children with OHCA found compression-only bystander CPR rose from 14.6% to 55.1% of cases as rescue-breathing CPR fell from 41.7% to 10.4%, and rescue-breathing CPR was associated with higher 30-day neurologically favourable survival than compression-only CPR (9.5%; 3.6% with no bystander CPR).",
+        "relevance": "🟢 High — Bystander CPR education and dispatcher instructions are core Australian practice, and paediatric arrest is exactly where guidelines have always emphasised rescue breaths — this questions how far compression-only messaging for laypeople should stretch to children.",
+        "pmid": "43056114",
+        "doi": "10.1001/jamanetworkopen.2026.44991",
+        "featuredReason": "Compression-only messaging for laypeople has swept adult CPR education, and this 26,785-child registry suggests children are paying for it — rescue-breathing CPR was associated with the best neurological survival. It lands squarely on Australian CPR education and dispatcher-assisted instructions for paediatric arrest.",
+        "pubDate": "2026-11-02",
         "topic": "Paediatrics",
         "studyType": "Registry",
-        "design": "Registry-based risk-score development and internal validation",
-        "n": "26,895 paediatric OHCA patients",
-        "finding": "27.8% survived to admission and 11.9% to discharge; scores using gender, arrest location, witness status, aetiology, bystander CPR, prehospital AED use and first rhythm reached AUROC 0.76–0.82, with average survival 3–48% across low/moderate/high groups",
-        "caveat": "Internal validation only — not yet externally validated or prospectively tested at the bedside",
+        "design": "Nationwide registry cohort (All-Japan Utstein Registry, 2005–2023)",
+        "n": "26,785 children aged ≤17 with OHCA and known bystander CPR",
+        "finding": "Adjusted CO-CPR probability rose 14.6% → 55.1% (2005–2023) while RB-CPR fell 41.7% → 10.4%; 30-day neurologically favourable survival was 9.5% with CO-CPR and 3.6% with no bystander CPR, with RB-CPR highest",
+        "caveat": "Registry associations — sicker or different children may receive different CPR types, and the abstract's RB-CPR survival figure was incomplete at the pipeline source",
         "bottomLine": "Hypothesis-generating",
-        "shortTitle": "Risk scores sort survival odds in paediatric OHCA",
-        "learningGoal": "Weigh how prehospital arrest features shape prognostic conversations in paediatric out-of-hospital cardiac arrest."
+        "shortTitle": "Rescue breaths linked to better paediatric arrest survival",
+        "learningGoal": "Weigh the benefits of rescue-breathing CPR against compression-only CPR in paediatric out-of-hospital cardiac arrest."
+      },
+      {
+        "id": "43044727",
+        "title": "Survival after out of hospital cardiac arrest in relation to AED usage in a multi response system including AED equipped drones",
+        "authors": "",
+        "journal": "Resuscitation",
+        "summary": "A Swedish registry cohort of 9,413 OHCAs in Västra Götaland found bystander-attached AEDs were associated with the highest 30-day survival (28% vs 9.0% when EMS attached first, OR 2.25), pointing to earlier defibrillation as the key lever.",
+        "relevance": "🟢 High — Bystander defibrillation is a universal weak point in the OHCA chain; the message that earlier community access beats crew arrival applies to every Australian response system.",
+        "pmid": "43044727",
+        "doi": "10.1016/j.resuscitation.2026.111402",
+        "featuredReason": "Bystander defibrillation is the weakest link in every Australian OHCA chain, and this registry quantifies the prize: 28% versus 9% 30-day survival. It makes the case for AED mapping and community access better than any single intervention the crew carries.",
+        "pubDate": "2026-11",
+        "topic": "Cardiac arrest",
+        "studyType": "Registry",
+        "design": "Registry-based cohort study (EMS, dispatch and registry linkage)",
+        "n": "9,413 OHCAs, 2015–2024",
+        "finding": "EMS attached the first AED in 72% of cases; 30-day survival was 28% with bystander attachment vs 9.0% EMS, 8.7% on-duty first responders and 8.6% community first responders; bystander attachment associated with higher 30-day survival (OR 2.25, 95% CI 1.77–2.85), rising to 62% in witnessed shockable arrests.",
+        "caveat": "Observational — bystander attachment likely flags arrests recognised and treated earlier, so attribution to the responder alone isn't possible.",
+        "bottomLine": "Hypothesis-generating",
+        "shortTitle": "Bystander-attached AEDs linked with best OHCA survival",
+        "learningGoal": "Understand how community AED access and drone-delivered defibrillation shape early bystander response in cardiac arrest."
+      },
+      {
+        "id": "43046131",
+        "title": "Prehospital tranexamic acid in trauma and traumatic brain injury: a systematic review with meta-analysis of randomized comparative evidence",
+        "authors": "",
+        "journal": "BMC Emergency Medicine",
+        "summary": "A systematic review of randomised evidence, authored in Saudi Arabia, pooled three trials of prehospital TXA in trauma and found lower 28–30-day mortality (RR 0.81, 95% CI 0.68–0.95) without a significant rise in thromboembolic events or seizures.",
+        "relevance": "🟢 High — TXA is part of standard Australian prehospital trauma care, so this pooled RCT evidence speaks directly to practice rather than a foreign model.",
+        "pmid": "43046131",
+        "doi": "10.1186/s12873-026-01735-0",
+        "featuredReason": "This is the pooled randomised evidence behind a drug Australian crews already draw up on every major trauma call — a mortality benefit without a clear thrombosis signal. Useful ammunition for anyone explaining why early TXA matters, and a check on the TBI question that PATCH raised.",
+        "pubDate": "2026-08-22",
+        "topic": "Trauma",
+        "studyType": "Systematic review",
+        "design": "Systematic review with meta-analysis restricted to randomised trials (Cochrane RoB2)",
+        "n": "21 reports; 3 randomised trials pooled for mortality (PATCH-Trauma, STAAMP, ROC-TXA)",
+        "finding": "Lower 28–30-day mortality with prehospital TXA (RR 0.81, 95% CI 0.68–0.95); TBI mortality (RR 0.87, 95% CI 0.64–1.20) and in-hospital mortality came from single trials; no statistically significant increase in thromboembolic events or seizures.",
+        "caveat": "The mortality pool rests on three trials, and the TBI and in-hospital estimates are single-study; thromboembolic point estimates need watching.",
+        "bottomLine": "Supports current practice",
+        "shortTitle": "Prehospital TXA lowers mortality in bleeding trauma",
+        "learningGoal": "Weigh the benefits and thromboembolic risks of prehospital tranexamic acid for bleeding trauma and head injury in my practice."
       }
     ]
   },
   "archive": {
     "url": "data/papers-archive.json",
-    "version": "2026-11-23T18:20:58Z",
-    "days": 102,
-    "papers": 547,
+    "version": "2026-11-24T18:20:58Z",
+    "days": 103,
+    "papers": 550,
     "from": "2026-04-21",
-    "to": "2026-10-25",
+    "to": "2026-10-26",
     "topics": {
       "Airway & ventilation": 25,
       "Cardiac (non-arrest)": 17,
-      "Cardiac arrest": 157,
+      "Cardiac arrest": 158,
       "Education & preparedness": 1,
-      "Education & training": 29,
+      "Education & training": 30,
       "Mental health (patients)": 9,
       "Obstetrics": 6,
       "Older people": 5,
@@ -5215,7 +5263,7 @@
       "Sepsis & infection": 9,
       "Stroke & neuro": 18,
       "Toxicology": 13,
-      "Trauma": 71,
+      "Trauma": 72,
       "Workforce & wellbeing": 19
     }
   }
