@@ -25,6 +25,20 @@
     <itunes:explicit>false</itunes:explicit>
     <podcast:guid>09fa3693-e2ac-527c-9d1c-f68df149b888</podcast:guid>
     <item>
+      <title>Liberal ambulance fluids did not reduce sepsis mortality · 25 Nov</title>
+      <link>https://paramedicpapers.com/episodes/2026-11-25/</link>
+      <description>3 papers: Liberal ambulance fluids did not reduce sepsis mortality; Ambulance antibiotics gave no survival benefit in sepsis; Paragliding festival injuries cluster at landing</description>
+      <content:encoded><![CDATA[<p>3 papers: Liberal ambulance fluids did not reduce sepsis mortality; Ambulance antibiotics gave no survival benefit in sepsis; Paragliding festival injuries cluster at landing</p><p>Papers in this episode:</p><ul><li><a href="https://doi.org/10.1001/jama.2026.25614">Liberal ambulance fluids did not reduce sepsis mortality <em>(JAMA)</em></a></li><li><a href="https://doi.org/10.1001/jama.2026.25627">Ambulance antibiotics gave no survival benefit in sepsis <em>(JAMA)</em></a></li><li><a href="https://doi.org/10.1177/10806032261509593">Paragliding festival injuries cluster at landing <em>(Wilderness &amp; Environmental Medicine)</em></a></li></ul><p><a href="https://paramedicpapers.com/episodes/2026-11-25/">Show notes and transcript</a></p>]]></content:encoded>
+      <pubDate>Wed, 25 Nov 2026 05:32:59 +1100</pubDate>
+      <guid isPermaLink="false">https://audio.paramedicpapers.com/ep-2026-11-25.mp3</guid>
+      <enclosure url="https://op3.dev/e/audio.paramedicpapers.com/ep-2026-11-25.mp3" length="819212" type="audio/mpeg"/>
+      <itunes:duration>204</itunes:duration>
+      <itunes:summary>3 papers: Liberal ambulance fluids did not reduce sepsis mortality; Ambulance antibiotics gave no survival benefit in sepsis; Paragliding festival injuries cluster at landing</itunes:summary>
+      <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
+      <itunes:episodeType>full</itunes:episodeType>
+      <podcast:transcript url="https://audio.paramedicpapers.com/ep-2026-11-25.txt" type="text/plain" language="en-au"/>
+    </item>
+    <item>
       <title>Measuring CPR ventilation rate with capnography · 24 Nov</title>
       <link>https://paramedicpapers.com/episodes/2026-11-24/</link>
       <description>2 papers: Measuring CPR ventilation rate with capnography; AED data retrieval is fragmented across Europe</description>
@@ -429,20 +443,6 @@
       <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
       <itunes:episodeType>full</itunes:episodeType>
       <podcast:transcript url="https://audio.paramedicpapers.com/ep-2026-10-27.txt" type="text/plain" language="en-au"/>
-    </item>
-    <item>
-      <title>Paramedic Papers Daily — 26 October 2026</title>
-      <link>https://paramedicpapers.com/episodes/2026-10-26/</link>
-      <description>3 papers: Prehospital pulse pressure flags trauma bleeding; ECPR in refractory OHCA: benefit past 60 minutes; Instrumented manikin neck for immobilisation training</description>
-      <content:encoded><![CDATA[<p>3 papers: Prehospital pulse pressure flags trauma bleeding; ECPR in refractory OHCA: benefit past 60 minutes; Instrumented manikin neck for immobilisation training</p><p>Papers in this episode:</p><ul><li><a href="https://doi.org/10.1016/j.injury.2026.113779">Prehospital pulse pressure flags trauma bleeding <em>(Injury)</em></a></li><li><a href="https://doi.org/10.1093/ehjacc/zuag132">ECPR in refractory OHCA: benefit past 60 minutes <em>(European Heart Journal. Acute Cardiovascular Care)</em></a></li><li><a href="https://doi.org/10.1177/09544119261497807">Instrumented manikin neck for immobilisation training <em>(Proceedings of the Institution of Mechanical Engineers. Part H, Journal of Engineering in Medicine)</em></a></li></ul><p><a href="https://paramedicpapers.com/episodes/2026-10-26/">Show notes and transcript</a></p>]]></content:encoded>
-      <pubDate>Mon, 26 Oct 2026 07:34:55 +1100</pubDate>
-      <guid isPermaLink="false">https://audio.paramedicpapers.com/ep-2026-10-26.mp3</guid>
-      <enclosure url="https://op3.dev/e/audio.paramedicpapers.com/ep-2026-10-26.mp3" length="922412" type="audio/mpeg"/>
-      <itunes:duration>230</itunes:duration>
-      <itunes:summary>3 papers: Prehospital pulse pressure flags trauma bleeding; ECPR in refractory OHCA: benefit past 60 minutes; Instrumented manikin neck for immobilisation training</itunes:summary>
-      <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
-      <itunes:episodeType>full</itunes:episodeType>
-      <podcast:transcript url="https://audio.paramedicpapers.com/ep-2026-10-26.txt" type="text/plain" language="en-au"/>
     </item>
   </channel>
 </rss>
