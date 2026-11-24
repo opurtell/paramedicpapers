@@ -1,16 +1,16 @@
 {
- "updated": "2026-11-23",
+ "updated": "2026-11-24",
  "latest": [
   {
-   "key": "42150044",
-   "title": "Prehospital whole blood no better than components",
-   "topic": "Trauma",
-   "finding": "30-day mortality 25.9% with whole blood vs 20.5% with blood components (adjusted OR 1.24, 95% CI 0.87–1.76; P=0.24). No difference by whole blood storage age (15–21 days vs 1–14 days: adjusted OR 0.99, 95% CI 0.74–1.32)."
+   "key": "doi-10-1016-j-resplu-2026-101564",
+   "title": "Measuring CPR ventilation rate with capnography",
+   "topic": "Cardiac arrest",
+   "finding": "Moderate-to-good agreement with independent detectors (ICC 0.72–0.82, limits of agreement ±6.8 breaths/min) but no association between ventilation rate and ROSC (OR 1.09 per 2 breaths/min, 95% CI 0.91–1.30)"
   }
  ],
  "episode": {
-  "date": "2026-11-23",
-  "title": "From the archive: Prehospital Resuscitation with Type O Whole Blood for Trauma and Hemorrhage · 23 Nov",
-  "page": "/episodes/2026-11-23/"
+  "date": "2026-11-24",
+  "title": "Measuring CPR ventilation rate with capnography · 24 Nov",
+  "page": "/episodes/2026-11-24/"
  }
 }
