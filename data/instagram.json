@@ -1,6 +1,17 @@
 {
- "updated": "2026-11-24",
+ "updated": "2026-11-25",
  "posts": [
+  {
+   "date": "2026-11-25",
+   "hook": "Does the size of the sepsis fluid bolus matter? This RCT says no",
+   "permalink": "https://www.instagram.com/p/DgJ_2unE1_G/",
+   "cover": "https://social.paramedicpapers.com/covers/2026-11-25.jpg",
+   "papers": [
+    "43076208",
+    "43076168",
+    "43075951"
+   ]
+  },
   {
    "date": "2026-11-24",
    "hook": "Measuring CPR ventilation rate with capnography",
@@ -295,12 +306,6 @@
    "hook": "Predicting outcomes in PEA cardiac arrest · 4 new studies",
    "permalink": "https://www.instagram.com/p/DetOl6wE0M5/",
    "cover": "https://social.paramedicpapers.com/covers/2026-10-20.jpg"
-  },
-  {
-   "date": "2026-10-19",
-   "hook": "Five scene findings flag kids needing blood · 3 new studies",
-   "permalink": "https://www.instagram.com/p/DetNQd0E7Nn/",
-   "cover": "https://social.paramedicpapers.com/covers/2026-10-19.jpg"
   }
  ]
 }

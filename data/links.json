@@ -1,16 +1,28 @@
 {
- "updated": "2026-11-24",
+ "updated": "2026-11-25",
  "latest": [
   {
-   "key": "doi-10-1016-j-resplu-2026-101564",
-   "title": "Measuring CPR ventilation rate with capnography",
-   "topic": "Cardiac arrest",
-   "finding": "Moderate-to-good agreement with independent detectors (ICC 0.72–0.82, limits of agreement ±6.8 breaths/min) but no association between ventilation rate and ROSC (OR 1.09 per 2 breaths/min, 95% CI 0.91–1.30)"
+   "key": "43076208",
+   "title": "Liberal ambulance fluids did not reduce sepsis mortality",
+   "topic": "Sepsis & infection",
+   "finding": "Hospital mortality 18.0% with liberal fluids (median 1500 mL) versus 18.3% with usual care (median 500 mL), RR 0.98 (95% CI 0.80–1.20); all 17 secondary outcomes similar."
+  },
+  {
+   "key": "43076168",
+   "title": "Ambulance antibiotics gave no survival benefit in sepsis",
+   "topic": "Sepsis & infection",
+   "finding": "Hospital mortality 18.0% with ambulance IM ceftriaxone versus 18.4% with placebo, RR 0.97 (95% CI 0.81–1.17); all 17 secondary outcomes similar."
+  },
+  {
+   "key": "43075951",
+   "title": "Paragliding festival injuries cluster at landing",
+   "topic": "Operations & systems",
+   "finding": "10 of 13 injuries (76.9%) occurred during landing versus 1 during takeoff; lower-limb trauma predominated; 8 patients went by ground ambulance and 1 deceased pilot required helicopter-assisted recovery."
   }
  ],
  "episode": {
-  "date": "2026-11-24",
-  "title": "Measuring CPR ventilation rate with capnography · 24 Nov",
-  "page": "/episodes/2026-11-24/"
+  "date": "2026-11-25",
+  "title": "Liberal ambulance fluids did not reduce sepsis mortality · 25 Nov",
+  "page": "/episodes/2026-11-25/"
  }
 }
