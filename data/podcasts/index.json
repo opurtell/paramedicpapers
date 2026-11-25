@@ -1,5 +1,17 @@
 [
  {
+  "id": "pec-podcast",
+  "name": "Prehospital Emergency Care Podcast",
+  "publisher": "Prehospital Emergency Care journal",
+  "focus": "Papers from the journal Prehospital Emergency Care",
+  "region": "US",
+  "site": "https://pecpodcast.libsyn.com",
+  "art": "data/podcasts/art/pec-podcast.jpg",
+  "episodes": 102,
+  "latest": "2026-11-24",
+  "updated": "2026-11-25"
+ },
+ {
   "id": "prehospital-care-podcast",
   "name": "Pre-Hospital Care Podcast",
   "publisher": "Eoin Walker",
@@ -154,18 +166,6 @@
   "episodes": 50,
   "latest": "2026-11-02",
   "updated": "2026-11-21"
- },
- {
-  "id": "pec-podcast",
-  "name": "Prehospital Emergency Care Podcast",
-  "publisher": "Prehospital Emergency Care journal",
-  "focus": "Papers from the journal Prehospital Emergency Care",
-  "region": "US",
-  "site": "https://pecpodcast.libsyn.com",
-  "art": "data/podcasts/art/pec-podcast.jpg",
-  "episodes": 101,
-  "latest": "2026-10-27",
-  "updated": "2026-10-28"
  },
  {
   "id": "av-clinical-conversations",
