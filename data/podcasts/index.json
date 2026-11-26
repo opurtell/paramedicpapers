@@ -1,5 +1,29 @@
 [
  {
+  "id": "ecritcare",
+  "name": "eCritCare",
+  "publisher": "Dr Swapnil Pawar & Dr Jose Chacko",
+  "focus": "Critical care trials and evidence, one topic per episode",
+  "region": "AU",
+  "site": "http://ecritcarepodcast.libsyn.com/website",
+  "art": "data/podcasts/art/ecritcare.jpg",
+  "episodes": 109,
+  "latest": "2026-11-25",
+  "updated": "2026-11-26"
+ },
+ {
+  "id": "ems-20-20",
+  "name": "EMS 20/20",
+  "publisher": "Spencer Oliver & Christopher Pfingsten",
+  "focus": "Real calls from real responders and the lessons in them",
+  "region": "US",
+  "site": "https://longpausemedia.com/podcasts/ems-20-20",
+  "art": "data/podcasts/art/ems-20-20.jpg",
+  "episodes": 267,
+  "latest": "2026-11-25",
+  "updated": "2026-11-26"
+ },
+ {
   "id": "pec-podcast",
   "name": "Prehospital Emergency Care Podcast",
   "publisher": "Prehospital Emergency Care journal",
@@ -34,30 +58,6 @@
   "episodes": 114,
   "latest": "2026-11-21",
   "updated": "2026-11-23"
- },
- {
-  "id": "ems-20-20",
-  "name": "EMS 20/20",
-  "publisher": "Spencer Oliver & Christopher Pfingsten",
-  "focus": "Real calls from real responders and the lessons in them",
-  "region": "US",
-  "site": "https://longpausemedia.com/podcasts/ems-20-20",
-  "art": "data/podcasts/art/ems-20-20.jpg",
-  "episodes": 266,
-  "latest": "2026-11-19",
-  "updated": "2026-11-20"
- },
- {
-  "id": "ecritcare",
-  "name": "eCritCare",
-  "publisher": "Dr Swapnil Pawar & Dr Jose Chacko",
-  "focus": "Critical care trials and evidence, one topic per episode",
-  "region": "AU",
-  "site": "http://ecritcarepodcast.libsyn.com/website",
-  "art": "data/podcasts/art/ecritcare.jpg",
-  "episodes": 108,
-  "latest": "2026-11-18",
-  "updated": "2026-11-18"
  },
  {
   "id": "resus-room",
