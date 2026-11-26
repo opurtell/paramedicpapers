@@ -1,6 +1,18 @@
 {
- "updated": "2026-11-25",
+ "updated": "2026-11-26",
  "posts": [
+  {
+   "date": "2026-11-26",
+   "hook": "Every minute without a shock, the rhythm slips away",
+   "permalink": "https://www.instagram.com/p/DgMkqaYk78V/",
+   "cover": "https://social.paramedicpapers.com/covers/2026-11-26.jpg",
+   "papers": [
+    "43072274",
+    "43079998",
+    "43080640",
+    "43083469"
+   ]
+  },
   {
    "date": "2026-11-25",
    "hook": "Does the size of the sepsis fluid bolus matter? This RCT says no",
@@ -300,12 +312,6 @@
    "hook": "Feedback device lifts paediatric ventilation quality · 3 new studies",
    "permalink": "https://www.instagram.com/p/Dev4CkME6C7/",
    "cover": "https://social.paramedicpapers.com/covers/2026-10-21.jpg"
-  },
-  {
-   "date": "2026-10-20",
-   "hook": "Predicting outcomes in PEA cardiac arrest · 4 new studies",
-   "permalink": "https://www.instagram.com/p/DetOl6wE0M5/",
-   "cover": "https://social.paramedicpapers.com/covers/2026-10-20.jpg"
   }
  ]
 }

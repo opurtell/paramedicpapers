@@ -1,28 +1,34 @@
 {
- "updated": "2026-11-25",
+ "updated": "2026-11-26",
  "latest": [
   {
-   "key": "43076208",
-   "title": "Liberal ambulance fluids did not reduce sepsis mortality",
-   "topic": "Sepsis & infection",
-   "finding": "Hospital mortality 18.0% with liberal fluids (median 1500 mL) versus 18.3% with usual care (median 500 mL), RR 0.98 (95% CI 0.80–1.20); all 17 secondary outcomes similar."
+   "key": "43072274",
+   "title": "Shockable rhythms decay fast in untreated arrest",
+   "topic": "Cardiac arrest",
+   "finding": "Median initial shockable rhythm prevalence 33.5% in unselected cohorts; increasing time-to-defibrillation was consistently associated with falling shockable-rhythm prevalence, lower defibrillation success, less ROSC and worse survival"
   },
   {
-   "key": "43076168",
-   "title": "Ambulance antibiotics gave no survival benefit in sepsis",
-   "topic": "Sepsis & infection",
-   "finding": "Hospital mortality 18.0% with ambulance IM ceftriaxone versus 18.4% with placebo, RR 0.97 (95% CI 0.81–1.17); all 17 secondary outcomes similar."
+   "key": "43079998",
+   "title": "Simulated prehospital eCPR shows large time savings",
+   "topic": "Cardiac arrest",
+   "finding": "Call-to-decision 18 (SD 5) vs 49 minutes; estimated call-to-ECMO-flow shorter in the prehospital arm, assuming 20 minutes of on-scene cannulation"
   },
   {
-   "key": "43075951",
-   "title": "Paragliding festival injuries cluster at landing",
-   "topic": "Operations & systems",
-   "finding": "10 of 13 injuries (76.9%) occurred during landing versus 1 during takeoff; lower-limb trauma predominated; 8 patients went by ground ambulance and 1 deceased pilot required helicopter-assisted recovery."
+   "key": "43080640",
+   "title": "Heat and ozone together raise cardiac arrest risk",
+   "topic": "Cardiac arrest",
+   "finding": "Above a ~60 ppb ozone threshold, each 10 ppb rise at extreme heat (99th percentile temperature) was associated with RR 1.04 (95% CI 1.03–1.05), with synergistic interaction on both additive and multiplicative scales"
+  },
+  {
+   "key": "43083469",
+   "title": "Recorded burn cooling varied by family citizenship",
+   "topic": "Paediatrics",
+   "finding": "Cooling recorded for 79.1% of Italian vs 61.2% of non-Italian records (difference −17.8 pp, 95% CI −28.0 to −7.9); adjusted odds ratios 2.04 for no first aid and 3.15 for remedies in non-Italian records"
   }
  ],
  "episode": {
-  "date": "2026-11-25",
-  "title": "Liberal ambulance fluids did not reduce sepsis mortality · 25 Nov",
-  "page": "/episodes/2026-11-25/"
+  "date": "2026-11-26",
+  "title": "Shockable rhythms decay fast in untreated arrest · 26 Nov",
+  "page": "/episodes/2026-11-26/"
  }
 }
