@@ -25,6 +25,20 @@
     <itunes:explicit>false</itunes:explicit>
     <podcast:guid>09fa3693-e2ac-527c-9d1c-f68df149b888</podcast:guid>
     <item>
+      <title>Warming prehospital whole blood: no coagulopathy difference · 27 Nov</title>
+      <link>https://paramedicpapers.com/episodes/2026-11-27/</link>
+      <description>4 papers: warming prehospital whole blood; Ten Second Triage review; PTSD in first-year paramedics; trauma access and deprivation in England</description>
+      <content:encoded><![CDATA[<p>4 papers: warming prehospital whole blood; Ten Second Triage review; PTSD in first-year paramedics; trauma access and deprivation in England</p><p>Papers in this episode:</p><ul><li><a href="https://doi.org/10.1016/j.ajem.2026.11.030">Warming prehospital whole blood: no coagulopathy difference <em>(The American Journal of Emergency Medicine)</em></a></li><li><a href="https://doi.org/10.1111/1742-6723.70402">Ten Second Triage review: fast, promising, unproven <em>(Emergency Medicine Australasia)</em></a></li><li><a href="https://doi.org/10.1093/occmed/kqag134">PTSD symptoms climb in the first year on road <em>(Occupational Medicine)</em></a></li><li><a href="https://doi.org/10.1007/s00068-026-03400-4">Deprived areas wait longest for major trauma access <em>(European Journal of Trauma and Emergency Surgery)</em></a></li></ul><p><a href="https://paramedicpapers.com/episodes/2026-11-27/">Show notes and transcript</a></p>]]></content:encoded>
+      <pubDate>Fri, 27 Nov 2026 05:33:12 +1100</pubDate>
+      <guid isPermaLink="false">https://audio.paramedicpapers.com/ep-2026-11-27.mp3</guid>
+      <enclosure url="https://op3.dev/e/audio.paramedicpapers.com/ep-2026-11-27.mp3" length="1351628" type="audio/mpeg"/>
+      <itunes:duration>337</itunes:duration>
+      <itunes:summary>4 papers: warming prehospital whole blood; Ten Second Triage review; PTSD in first-year paramedics; trauma access and deprivation in England</itunes:summary>
+      <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
+      <itunes:episodeType>full</itunes:episodeType>
+      <podcast:transcript url="https://audio.paramedicpapers.com/ep-2026-11-27.txt" type="text/plain" language="en-au"/>
+    </item>
+    <item>
       <title>Shockable rhythms decay fast in untreated arrest · 26 Nov</title>
       <link>https://paramedicpapers.com/episodes/2026-11-26/</link>
       <description>4 papers: Shockable rhythms decay fast in untreated arrest; Simulated prehospital eCPR shows large time savings; Heat and ozone together raise cardiac arrest risk; Recorded burn cooling varied by family citizenship</description>
@@ -429,20 +443,6 @@
       <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
       <itunes:episodeType>full</itunes:episodeType>
       <podcast:transcript url="https://audio.paramedicpapers.com/ep-2026-10-29.txt" type="text/plain" language="en-au"/>
-    </item>
-    <item>
-      <title>Paramedic Papers Daily — 28 October 2026</title>
-      <link>https://paramedicpapers.com/episodes/2026-10-28/</link>
-      <description>4 papers: transport ventilation during CPR feasible; longer on-scene intervals linked to 24-hour mortality; tele-paramedics matched physicians in MCI drill; what drives lay community first responders</description>
-      <content:encoded><![CDATA[<p>4 papers: transport ventilation during CPR feasible; longer on-scene intervals linked to 24-hour mortality; tele-paramedics matched physicians in MCI drill; what drives lay community first responders</p><p>Papers in this episode:</p><ul><li><a href="https://doi.org/10.1186/s12873-026-01692-8">Transport ventilation during CPR feasible in pilot <em>(BMC Emergency Medicine)</em></a></li><li><a href="https://doi.org/10.22037/aaem.v14i1.3081">Longer on-scene intervals linked to 24-hour mortality <em>(Archives of Academic Emergency Medicine)</em></a></li><li><a href="https://doi.org/10.3390/healthcare14203385">Tele-paramedics matched physicians in MCI drill <em>(Healthcare)</em></a></li><li><a href="https://doi.org/10.1186/s12873-026-01826-y">What drives lay community first responders in Denmark <em>(BMC Emergency Medicine)</em></a></li></ul><p><a href="https://paramedicpapers.com/episodes/2026-10-28/">Show notes and transcript</a></p>]]></content:encoded>
-      <pubDate>Wed, 28 Oct 2026 07:33:18 +1100</pubDate>
-      <guid isPermaLink="false">https://audio.paramedicpapers.com/ep-2026-10-28.mp3</guid>
-      <enclosure url="https://op3.dev/e/audio.paramedicpapers.com/ep-2026-10-28.mp3" length="1174892" type="audio/mpeg"/>
-      <itunes:duration>293</itunes:duration>
-      <itunes:summary>4 papers: transport ventilation during CPR feasible; longer on-scene intervals linked to 24-hour mortality; tele-paramedics matched physicians in MCI drill; what drives lay community first responders</itunes:summary>
-      <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
-      <itunes:episodeType>full</itunes:episodeType>
-      <podcast:transcript url="https://audio.paramedicpapers.com/ep-2026-10-28.txt" type="text/plain" language="en-au"/>
     </item>
   </channel>
 </rss>
