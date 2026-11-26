@@ -1,0 +1,120 @@
+{
+ "id": "2026-11-26",
+ "span": "19 – 26 Nov 2026",
+ "created": "2026-11-26T00:02:59Z",
+ "est_minutes": 10,
+ "questions": [
+  {
+   "paper_id": "43044725",
+   "short_title": "Digital support pathway for OHCA bystanders feasible",
+   "topic": "Cardiac arrest",
+   "question": "In the RescQ evaluation of a digital support pathway for bystanders of out-of-hospital cardiac arrest, what proportion of registered adult bystanders actually used the digital resources at least once?",
+   "options": [
+    "About 10%",
+    "96.2%",
+    "About two thirds",
+    "About half"
+   ],
+   "answer": 1,
+   "explanation": "Registered adults engaged with the pathway at very high rates, which supports its feasibility. But this came from a single-region evaluation where only about half of eligible incidents were captured, so it is context rather than proof of a standard model."
+  },
+  {
+   "paper_id": "10.1186/s13049-026-01731-0",
+   "short_title": "Extrication after road collisions: an evidence map",
+   "topic": "Trauma",
+   "question": "What was the main reason this scoping review couldn't draw firm conclusions about extrication effectiveness?",
+   "options": [
+    "Most studies excluded the most severely injured patients",
+    "Entrapment was too rare to measure any outcome",
+    "Only volunteer data were available for clinical outcomes",
+    "Definitions and outcomes were reported inconsistently across studies"
+   ],
+   "answer": 3,
+   "explanation": "The review found fragmented definitions of entrapment, extrication method and time, plus heterogeneous outcome reporting, which blocked pooled analysis and system-level learning. It's a scoping review, so it maps the evidence rather than testing whether any approach works."
+  },
+  {
+   "paper_id": "43055685",
+   "short_title": "Updated paediatric traumatic arrest position statement",
+   "topic": "Trauma",
+   "question": "How does the position statement view compressions and ventilations in paediatric traumatic out-of-hospital circulatory arrest compared with adults?",
+   "options": [
+    "They are of no value unless bystander CPR was given",
+    "They have a smaller role, as haemorrhage dominates paediatric arrest",
+    "They have a larger role, since causes like hypoxia and head injury are more common",
+    "They should only be started after bilateral chest decompression"
+   ],
+   "answer": 2,
+   "explanation": "The statement says compressions and ventilations have a larger role in paediatric than adult traumatic arrest, with children often arresting from head injury, hypoxia and other non-haemorrhagic causes. As US consensus guidance, withholding and termination decisions still follow your local CPGs."
+  },
+  {
+   "paper_id": "10.1016/j.resuscitation.2026.111401",
+   "short_title": "Choking arrests: ROSC common, survival still poor",
+   "topic": "Cardiac arrest",
+   "question": "Compared with presumed cardiac arrests, choking-related out-of-hospital cardiac arrests were notable for what pattern?",
+   "options": [
+    "Better survival to discharge as well as more prehospital ROSC",
+    "Higher rates of prehospital ROSC, but similar survival to discharge",
+    "No difference in prehospital ROSC or survival",
+    "Lower rates of prehospital ROSC but comparable survival"
+   ],
+   "answer": 1,
+   "explanation": "Prehospital ROSC was much more common in FBAO arrests (62.7% vs 37.8%), yet survival to discharge was similar (10.6% vs 9.0%). The registry coding of 'obviously FBAO-related' wasn't independently verified, so treat this as exploratory."
+  },
+  {
+   "paper_id": "43076208",
+   "short_title": "Liberal ambulance fluids did not reduce sepsis mortality",
+   "topic": "Sepsis & infection",
+   "question": "In the PITSTOP-Fluids trial, liberal prehospital fluids (median 1500 mL) versus usual care (median 500 mL) for suspected sepsis had what effect on hospital mortality?",
+   "options": [
+    "Mortality was essentially identical between the two groups",
+    "Usual care had higher mortality from undertreated hypotension",
+    "Liberal fluids reduced mortality by about 20%",
+    "The benefit only appeared in patients over 76 years"
+   ],
+   "answer": 0,
+   "explanation": "Hospital mortality was 18.0% with liberal fluids versus 18.3% with usual care, with all secondary outcomes similar. The trial excluded the sickest patients and even usual care gave most a bolus, so it supports current practice rather than mandating more fluid."
+  },
+  {
+   "paper_id": "43038405",
+   "short_title": "Clinician smartphones linked to tripled interpreter use",
+   "topic": "Operations & systems",
+   "question": "What change was linked to the tripling of virtual interpreter use in this study?",
+   "options": [
+    "Offering interpreters in a wider range of languages",
+    "Switching from audio-only to video interpreter services",
+    "Replacing heavy laptops with lightweight agency-issued smartphones",
+    "Introducing a mandatory interpreter checklist on every job"
+   ],
+   "answer": 2,
+   "explanation": "Requests per 100 encounters rose from 0.19 to 0.57 after clinicians were issued lightweight smartphones instead of laptops. It was a pre-post design, so other workflow changes could have contributed and there were no patient outcome data."
+  },
+  {
+   "paper_id": "43044608",
+   "short_title": "A US systems approach to MCI triage",
+   "topic": "Operations & systems",
+   "question": "In the systems approach to mass-casualty triage described in this review, why is ongoing retriage emphasised?",
+   "options": [
+    "To identify which ambulance service each casualty belongs to",
+    "To move patients away from the incident command post",
+    "To confirm which patients need a transport officer",
+    "To reduce overtriage as casualty conditions change"
+   ],
+   "answer": 3,
+   "explanation": "The review describes dynamic primary, secondary and tertiary triage with repeated retriage so patients are reassessed as conditions change, minimising overtriage. It's a narrative US review, so treat it as context rather than evidence."
+  },
+  {
+   "paper_id": "10.1177/27536386261509154",
+   "short_title": "Paramedic students learn safety from unsafe events",
+   "topic": "Education & training",
+   "question": "In this qualitative study of paramedic students, what role did unsafe or difficult clinical situations play in learning about patient safety?",
+   "options": [
+    "They improved learning only when formally debriefed by clinical supervisors",
+    "They acted as learning triggers, shaped by role modelling, feedback and emotional processing",
+    "They were mainly avoided, as students felt unprepared to process them",
+    "They had no lasting impact on students' future professional practice"
+   ],
+   "answer": 1,
+   "explanation": "Unsafe situations served as triggers for learning, but that learning depended on supervisory responses, feedback and reflection on the emotional impact. Keep in mind this was self-reported student narratives with no follow-up on actual outcomes."
+  }
+ ]
+}
