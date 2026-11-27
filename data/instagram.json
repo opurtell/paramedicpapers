@@ -1,6 +1,15 @@
 {
- "updated": "2026-11-26",
+ "updated": "2026-11-27",
  "posts": [
+  {
+   "date": "2026-11-27",
+   "hook": "Warming prehospital whole blood: no coagulopathy difference",
+   "permalink": "https://www.instagram.com/p/DgPJbe5E6Ok/",
+   "cover": "https://social.paramedicpapers.com/covers/2026-11-27.jpg",
+   "papers": [
+    "43085292"
+   ]
+  },
   {
    "date": "2026-11-26",
    "hook": "Every minute without a shock, the rhythm slips away",
@@ -306,12 +315,6 @@
    "hook": "A resuscitation-heavy day · 4 new studies",
    "permalink": "https://www.instagram.com/p/DeyfgG-E9Dn/",
    "cover": "https://social.paramedicpapers.com/covers/2026-10-22.jpg"
-  },
-  {
-   "date": "2026-10-21",
-   "hook": "Feedback device lifts paediatric ventilation quality · 3 new studies",
-   "permalink": "https://www.instagram.com/p/Dev4CkME6C7/",
-   "cover": "https://social.paramedicpapers.com/covers/2026-10-21.jpg"
   }
  ]
 }

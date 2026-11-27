@@ -1,34 +1,16 @@
 {
- "updated": "2026-11-26",
+ "updated": "2026-11-27",
  "latest": [
   {
-   "key": "43072274",
-   "title": "Shockable rhythms decay fast in untreated arrest",
-   "topic": "Cardiac arrest",
-   "finding": "Median initial shockable rhythm prevalence 33.5% in unselected cohorts; increasing time-to-defibrillation was consistently associated with falling shockable-rhythm prevalence, lower defibrillation success, less ROSC and worse survival"
-  },
-  {
-   "key": "43079998",
-   "title": "Simulated prehospital eCPR shows large time savings",
-   "topic": "Cardiac arrest",
-   "finding": "Call-to-decision 18 (SD 5) vs 49 minutes; estimated call-to-ECMO-flow shorter in the prehospital arm, assuming 20 minutes of on-scene cannulation"
-  },
-  {
-   "key": "43080640",
-   "title": "Heat and ozone together raise cardiac arrest risk",
-   "topic": "Cardiac arrest",
-   "finding": "Above a ~60 ppb ozone threshold, each 10 ppb rise at extreme heat (99th percentile temperature) was associated with RR 1.04 (95% CI 1.03–1.05), with synergistic interaction on both additive and multiplicative scales"
-  },
-  {
-   "key": "43083469",
-   "title": "Recorded burn cooling varied by family citizenship",
-   "topic": "Paediatrics",
-   "finding": "Cooling recorded for 79.1% of Italian vs 61.2% of non-Italian records (difference −17.8 pp, 95% CI −28.0 to −7.9); adjusted odds ratios 2.04 for no first aid and 3.15 for remedies in non-Italian records"
+   "key": "43085292",
+   "title": "Warming prehospital whole blood: no coagulopathy difference",
+   "topic": "Trauma",
+   "finding": "Trauma-induced coagulopathy on ED arrival in 21.3% (warmed) vs 27.7% (cold); adjusted OR 1.07 (95% CI 0.45–2.49), with no association with massive transfusion or 24-hour or 30-day survival."
   }
  ],
  "episode": {
-  "date": "2026-11-26",
-  "title": "Shockable rhythms decay fast in untreated arrest · 26 Nov",
-  "page": "/episodes/2026-11-26/"
+  "date": "2026-11-27",
+  "title": "Warming prehospital whole blood: no coagulopathy difference · 27 Nov",
+  "page": "/episodes/2026-11-27/"
  }
 }
