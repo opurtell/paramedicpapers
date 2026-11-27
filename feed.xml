@@ -25,6 +25,20 @@
     <itunes:explicit>false</itunes:explicit>
     <podcast:guid>09fa3693-e2ac-527c-9d1c-f68df149b888</podcast:guid>
     <item>
+      <title>Reversed airflow common during OHCA mechanical ventilation · 28 Nov</title>
+      <link>https://paramedicpapers.com/episodes/2026-11-28/</link>
+      <description>4 papers: reversed airflow in OHCA ventilation; coagulopathy after prehospital transfusion; electronic records beat paper; non-transport vehicles match stroke times</description>
+      <content:encoded><![CDATA[<p>4 papers: reversed airflow in OHCA ventilation; coagulopathy after prehospital transfusion; electronic records beat paper; non-transport vehicles match stroke times</p><p>Papers in this episode:</p><ul><li><a href="https://doi.org/10.1016/j.resuscitation.2026.111415">Reversed airflow common during OHCA mechanical ventilation <em>(Resuscitation)</em></a></li><li><a href="https://doi.org/10.1186/s12873-026-01763-w">Coagulopathy common after prehospital transfusion in long transports <em>(BMC Emergency Medicine)</em></a></li><li><a href="https://doi.org/10.1186/s12245-026-01442-4">Electronic prehospital records far more complete than paper <em>(International Journal of Emergency Medicine)</em></a></li><li><a href="https://doi.org/10.55633/s3me/104.2026">Non-transport response vehicles match stroke code times <em>(Emergencias)</em></a></li></ul><p><a href="https://paramedicpapers.com/episodes/2026-11-28/">Show notes and transcript</a></p>]]></content:encoded>
+      <pubDate>Sat, 28 Nov 2026 05:33:15 +1100</pubDate>
+      <guid isPermaLink="false">https://audio.paramedicpapers.com/ep-2026-11-28.mp3</guid>
+      <enclosure url="https://op3.dev/e/audio.paramedicpapers.com/ep-2026-11-28.mp3" length="1140716" type="audio/mpeg"/>
+      <itunes:duration>285</itunes:duration>
+      <itunes:summary>4 papers: reversed airflow in OHCA ventilation; coagulopathy after prehospital transfusion; electronic records beat paper; non-transport vehicles match stroke times</itunes:summary>
+      <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
+      <itunes:episodeType>full</itunes:episodeType>
+      <podcast:transcript url="https://audio.paramedicpapers.com/ep-2026-11-28.txt" type="text/plain" language="en-au"/>
+    </item>
+    <item>
       <title>Warming prehospital whole blood: no coagulopathy difference · 27 Nov</title>
       <link>https://paramedicpapers.com/episodes/2026-11-27/</link>
       <description>4 papers: warming prehospital whole blood; Ten Second Triage review; PTSD in first-year paramedics; trauma access and deprivation in England</description>
@@ -429,20 +443,6 @@
       <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
       <itunes:episodeType>full</itunes:episodeType>
       <podcast:transcript url="https://audio.paramedicpapers.com/ep-2026-10-30.txt" type="text/plain" language="en-au"/>
-    </item>
-    <item>
-      <title>Paramedic Papers Daily — 29 October 2026</title>
-      <link>https://paramedicpapers.com/episodes/2026-10-29/</link>
-      <description>4 papers: trauma analgesia safety across four drug classes; field undertriage linked to higher in-hospital mortality; prehospital blood and arrival calcium derangements; prehospital SBP ≥180 and worse stroke outcomes</description>
-      <content:encoded><![CDATA[<p>4 papers: trauma analgesia safety across four drug classes; field undertriage linked to higher in-hospital mortality; prehospital blood and arrival calcium derangements; prehospital SBP ≥180 and worse stroke outcomes</p><p>Papers in this episode:</p><ul><li><a href="https://doi.org/10.1111/1742-6723.70385">Trauma analgesia safety confirmed across four drug classes <em>(Emergency Medicine Australasia)</em></a></li><li><a href="https://doi.org/10.1016/j.surg.2026.110705">Undertriage in trauma linked with higher in-hospital mortality <em>(Surgery)</em></a></li><li><a href="https://doi.org/10.1016/j.ajem.2026.09.029">Prehospital blood linked to arrival hypocalcaemia in trauma <em>(The American Journal of Emergency Medicine)</em></a></li><li><a href="https://doi.org/10.1016/j.jstrokecerebrovasdis.2026.108776">Prehospital SBP ≥180 linked with worse stroke outcomes <em>(Journal of Stroke and Cerebrovascular Diseases)</em></a></li></ul><p><a href="https://paramedicpapers.com/episodes/2026-10-29/">Show notes and transcript</a></p>]]></content:encoded>
-      <pubDate>Thu, 29 Oct 2026 07:35:05 +1100</pubDate>
-      <guid isPermaLink="false">https://audio.paramedicpapers.com/ep-2026-10-29.mp3</guid>
-      <enclosure url="https://op3.dev/e/audio.paramedicpapers.com/ep-2026-10-29.mp3" length="1093292" type="audio/mpeg"/>
-      <itunes:duration>273</itunes:duration>
-      <itunes:summary>4 papers: trauma analgesia safety across four drug classes; field undertriage linked to higher in-hospital mortality; prehospital blood and arrival calcium derangements; prehospital SBP ≥180 and worse stroke outcomes</itunes:summary>
-      <itunes:image href="https://paramedicpapers.com/podcast-cover.jpg"/>
-      <itunes:episodeType>full</itunes:episodeType>
-      <podcast:transcript url="https://audio.paramedicpapers.com/ep-2026-10-29.txt" type="text/plain" language="en-au"/>
     </item>
   </channel>
 </rss>
