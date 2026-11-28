@@ -1,16 +1,16 @@
 {
- "updated": "2026-11-27",
+ "updated": "2026-11-28",
  "latest": [
   {
-   "key": "43085292",
-   "title": "Warming prehospital whole blood: no coagulopathy difference",
-   "topic": "Trauma",
-   "finding": "Trauma-induced coagulopathy on ED arrival in 21.3% (warmed) vs 27.7% (cold); adjusted OR 1.07 (95% CI 0.45–2.49), with no association with massive transfusion or 24-hour or 30-day survival."
+   "key": "43099338",
+   "title": "Electronic prehospital records far more complete than paper",
+   "topic": "Operations & systems",
+   "finding": "Record completeness 90.9% (electronic) vs 48.2% (paper); largest gaps in handover blood pressures, handover SpO2, prehospital time and 12-lead ECG documentation"
   }
  ],
  "episode": {
-  "date": "2026-11-27",
-  "title": "Warming prehospital whole blood: no coagulopathy difference · 27 Nov",
-  "page": "/episodes/2026-11-27/"
+  "date": "2026-11-28",
+  "title": "Reversed airflow common during OHCA mechanical ventilation · 28 Nov",
+  "page": "/episodes/2026-11-28/"
  }
 }
